@@ -1,0 +1,118 @@
+$utf8NoBom = New-Object System.Text.UTF8Encoding $False
+$content = [System.IO.File]::ReadAllText("$PSScriptRoot\generate_data.py", $utf8NoBom)
+
+$new_words = @"
+    ,
+    # --- BATCH A2-1 ---
+    # Routine et actions quotidiennes (A2-1)
+    ("allumer", "turn on", "einschalten", "encender", "verbe", "A2-1"),
+    ("éteindre", "turn off", "ausschalten", "apagar", "verbe", "A2-1"),
+    ("ranger", "tidy up", "aufräumen", "ordenar", "verbe", "A2-1"),
+    ("nettoyer", "clean", "putzen", "limpiar", "verbe", "A2-1"),
+    ("réparer", "repair", "reparieren", "reparar", "verbe", "A2-1"),
+    ("se brosser", "brush (teeth/hair)", "sich bürsten", "cepillarse", "verbe", "A2-1"),
+    ("se doucher", "take a shower", "sich duschen", "ducharse", "verbe", "A2-1"),
+    ("se préparer", "get ready", "sich vorbereiten", "prepararse", "verbe", "A2-1"),
+    ("se reposer", "rest", "sich ausruhen", "descansar", "verbe", "A2-1"),
+    ("s'endormir", "fall asleep", "einschlafen", "dormirse", "verbe", "A2-1"),
+    ("laver", "wash", "waschen", "lavar", "verbe", "A2-1"),
+    ("essuyer", "wipe/dry", "abwischen", "secar", "verbe", "A2-1"),
+    ("repasser", "iron", "bügeln", "planchar", "verbe", "A2-1"),
+    ("balayer", "sweep", "fegen", "barrer", "verbe", "A2-1"),
+    ("cuire", "cook/bake", "kochen/backen", "cocer/hornear", "verbe", "A2-1"),
+    ("couper", "cut", "schneiden", "cortar", "verbe", "A2-1"),
+    ("verser", "pour", "gießen", "verter", "verbe", "A2-1"),
+    ("mélanger", "mix", "mischen", "mezclar", "verbe", "A2-1"),
+
+    # Objets de la maison suite (A2-1)
+    ("le savon", "soap", "die Seife", "el jabón", "nom", "A2-1"),
+    ("le dentifrice", "toothpaste", "die Zahnpasta", "la pasta de dientes", "nom", "A2-1"),
+    ("la brosse", "brush", "die Bürste", "el cepillo", "nom", "A2-1"),
+    ("la serviette", "towel", "das Handtuch", "la toalla", "nom", "A2-1"),
+    ("le shampoing", "shampoo", "das Shampoo", "el champú", "nom", "A2-1"),
+    ("le peigne", "comb", "der Kamm", "el peine", "nom", "A2-1"),
+    ("la couverture", "blanket", "die Decke", "la manta", "nom", "A2-1"),
+    ("l'oreiller", "pillow", "das Kissen", "la almohada", "nom", "A2-1"),
+    ("le drap", "sheet", "das Bettlaken", "la sábana", "nom", "A2-1"),
+    ("l'armoire", "wardrobe", "der Schrank", "el armario", "nom", "A2-1"),
+    ("le tiroir", "drawer", "die Schublade", "el cajón", "nom", "A2-1"),
+    ("le canapé", "sofa", "das Sofa", "el sofá", "nom", "A2-1"),
+    ("le fauteuil", "armchair", "der Sessel", "el sillón", "nom", "A2-1"),
+    ("la télé", "TV", "der Fernseher", "la tele", "nom", "A2-1"),
+    ("le frigo", "fridge", "der Kühlschrank", "la nevera", "nom", "A2-1"),
+    ("le four", "oven", "der Ofen", "el horno", "nom", "A2-1"),
+    ("la poêle", "frying pan", "die Pfanne", "la sartén", "nom", "A2-1"),
+    ("la casserole", "saucepan", "der Topf", "la olla", "nom", "A2-1"),
+    ("l'assiette", "plate", "der Teller", "el plato", "nom", "A2-1"),
+    ("le verre", "glass", "das Glas", "el vaso", "nom", "A2-1"),
+    ("la tasse", "cup", "die Tasse", "la taza", "nom", "A2-1"),
+    ("la fourchette", "fork", "die Gabel", "el tenedor", "nom", "A2-1"),
+    ("le couteau", "knife", "das Messer", "el cuchillo", "nom", "A2-1"),
+    ("la cuillère", "spoon", "der Löffel", "la cuchara", "nom", "A2-1"),
+    ("le bol", "bowl", "die Schüssel", "el bol", "nom", "A2-1"),
+
+    # Nourriture suite (A2-1)
+    ("le repas", "meal", "die Mahlzeit", "la comida", "nom", "A2-1"),
+    ("le petit-déjeuner", "breakfast", "das Frühstück", "el desayuno", "nom", "A2-1"),
+    ("le déjeuner", "lunch", "das Mittagessen", "el almuerzo", "nom", "A2-1"),
+    ("le dîner", "dinner", "das Abendessen", "la cena", "nom", "A2-1"),
+    ("le fromage", "cheese", "der Käse", "el queso", "nom", "A2-1"),
+    ("le beurre", "butter", "die Butter", "la mantequilla", "nom", "A2-1"),
+    ("la confiture", "jam", "die Marmelade", "la mermelada", "nom", "A2-1"),
+    ("le miel", "honey", "der Honig", "la miel", "nom", "A2-1"),
+    ("l'œuf", "egg", "das Ei", "el huevo", "nom", "A2-1"),
+    ("la soupe", "soup", "die Suppe", "la sopa", "nom", "A2-1"),
+    ("le gâteau", "cake", "der Kuchen", "el pastel", "nom", "A2-1"),
+    ("le chocolat", "chocolate", "die Schokolade", "el chocolate", "nom", "A2-1"),
+    ("le bonbon", "candy", "das Bonbon", "el caramelo", "nom", "A2-1"),
+    ("le fruit", "fruit", "das Obst", "la fruta", "nom", "A2-1"),
+    ("le légume", "vegetable", "das Gemüse", "la verdura", "nom", "A2-1"),
+    ("la pomme", "apple", "der Apfel", "la manzana", "nom", "A2-1"),
+    ("la banane", "banana", "die Banane", "el plátano", "nom", "A2-1"),
+    ("l'orange", "orange", "die Orange", "la naranja", "nom", "A2-1"),
+    ("le citron", "lemon", "die Zitrone", "el limón", "nom", "A2-1"),
+    ("le poulet", "chicken", "das Hähnchen", "el pollo", "nom", "A2-1"),
+
+    # Sorties et Loisirs (A2-1)
+    ("inviter", "invite", "einladen", "invitar", "verbe", "A2-1"),
+    ("sortir", "go out", "ausgehen", "salir", "verbe", "A2-1"),
+    ("s'amuser", "have fun", "Spaß haben", "divertirse", "verbe", "A2-1"),
+    ("rire", "laugh", "lachen", "reír", "verbe", "A2-1"),
+    ("sourire", "smile", "lächeln", "sonreír", "verbe", "A2-1"),
+    ("pleurer", "cry", "weinen", "llorar", "verbe", "A2-1"),
+    ("crier", "shout", "schreien", "gritar", "verbe", "A2-1"),
+    ("la fête", "party", "das Fest", "la fiesta", "nom", "A2-1"),
+    ("le cadeau", "gift", "das Geschenk", "el regalo", "nom", "A2-1"),
+    ("le restaurant", "restaurant", "das Restaurant", "el restaurante", "nom", "A2-1"),
+    ("le café", "cafe/coffee", "das Café/der Kaffee", "el café", "nom", "A2-1"),
+    ("la boisson", "drink", "das Getränk", "la bebida", "nom", "A2-1"),
+    ("le menu", "menu", "die Speisekarte", "el menú", "nom", "A2-1"),
+    ("l'addition", "bill", "die Rechnung", "la cuenta", "nom", "A2-1"),
+    ("le serveur", "waiter", "der Kellner", "el camarero", "nom", "A2-1"),
+    ("le client", "customer", "der Kunde", "el cliente", "nom", "A2-1"),
+    ("le cinéma", "cinema", "das Kino", "el cine", "nom", "A2-1"),
+    ("le théâtre", "theater", "das Theater", "el teatro", "nom", "A2-1"),
+    ("le concert", "concert", "das Konzert", "el concierto", "nom", "A2-1"),
+
+    # Vêtements suite (A2-1)
+    ("la chemise", "shirt", "das Hemd", "la camisa", "nom", "A2-1"),
+    ("le t-shirt", "t-shirt", "das T-Shirt", "la camiseta", "nom", "A2-1"),
+    ("le pantalon", "pants", "die Hose", "el pantalón", "nom", "A2-1"),
+    ("le jean", "jeans", "die Jeans", "los vaqueros", "nom", "A2-1"),
+    ("la robe", "dress", "das Kleid", "el vestido", "nom", "A2-1"),
+    ("la jupe", "skirt", "der Rock", "la falda", "nom", "A2-1"),
+    ("le manteau", "coat", "der Mantel", "el abrigo", "nom", "A2-1"),
+    ("la veste", "jacket", "die Jacke", "la chaqueta", "nom", "A2-1"),
+    ("le pull", "sweater", "der Pullover", "el jersey", "nom", "A2-1"),
+    ("la chaussure", "shoe", "der Schuh", "el zapato", "nom", "A2-1"),
+    ("la chaussette", "sock", "die Socke", "el calcetín", "nom", "A2-1"),
+    ("le chapeau", "hat", "der Hut", "el sombrero", "nom", "A2-1"),
+    ("les lunettes", "glasses", "die Brille", "las gafas", "nom", "A2-1"),
+    ("le sac", "bag", "die Tasche", "el bolso/saco", "nom", "A2-1")
+]
+"@
+
+$content = $content -replace '\]\r?\nvocab_list = \[\]', "$new_words`nvocab_list = []"
+
+[System.IO.File]::WriteAllText("$PSScriptRoot\generate_data.py", $content, $utf8NoBom)
+Write-Host "Batch A2-1 injecté."

@@ -1,0 +1,939 @@
+Liste des mots les plus fréquents de la langue française (/1500)
+
+
+1ledét.1'0505612deprép.8621003undét.4195644êtreverbe3519605etconj.3620936àprép.2930837ilpron.2703958avoirverbe2484889neadv.18675510jepron.184186sondét.181161queconj.176161sepron.168684quipron.14839215cedét.141389dansprép.139185enprép.143565dudét.127384ellepron.12639720audét.123502dedét.119106cepron.107074lepron.105873pourprép.10477925pasadv.103083quepron.99412vouspron.89623parprép.82277surprép.8018030faireverbe77608plusadv.75499direverbe72134mepron.71086onpron.7024635mondét.70121luipron.65988nouspron.62554commeconj.59902maisconj.5769040pouvoirverbe55394avecprép.55081toutadj.47221ypron.46031allerverbe4170245voirverbe39659enpron.38935bienadv.37171oùpron.36089sansprép.3591550tupron.35774ouconj.34897leurdét.33950hommesubst.33202siadv.3202455deuxnumér.30211marisubst.30082moipron.30053vouloirverbe29435tepron.2854260femmesubst.26148venirverbe26023quandconj.25592grandadj.25388celuipron.2427065siconj.24024notredét.23883devoirverbe22703làadv.22695joursubst.2223270prendreverbe20489mêmeadv.19994votredét.19942toutadv.19915rienpron.1937975petitadj.19008encoreadv.19176aussiadv.18311quelquedét.17953dontpron.1779780toutpron.17486mersubst.17166trouververbe16833donnerverbe16795tempssubst.1678585çapron.16494peuadv.16251mêmeadj.16081falloirverbe16078sousprép.1594490parlerverbe15814alorsadv.15639mainsubst.15540chosesubst.15524tondét.1551395mettreverbe15339viesubst.15241savoirverbe15102yeuxsubst.14981passerverbe14976100autreadj.14688aprèsprép.14606regarderverbe14604toujoursadv.14336puisconj.14257105jamaisadv.14255celapron.14253aimerverbe14138nonadv.14039heuresubst.13940110croireverbe13881centnumér.13798
+Les 100 derniers !
+
+
+110commencementsubst.728cordesubst.724secrétairesubst.720vaincreverbe720saisonsubst.718105précieuxadj.715précisadj.714consulterverbe712haïrverbe709repousserverbe701100paupièresubst.700certainementadv.696tapissubst.695noireadj.694chassesubst.69195exécuterverbe690nerveuxadj.690nuldét.690communadj.689exposerverbe68990clefsubst.686claireadj.684voyagerverbe683hauteadj.680renverserverbe68085sueursubst.677âgéadj.676fermesubst.675rassurerverbe675retomberverbe67480décrireverbe672mentirverbe670instinctsubst.669armerverbe667paquetsubst.66775dramesubst.666absoluadj.664savoirsubst.661minesubst.660visionsubst.66070étalerverbe659sentiersubst.658demainsubst.657beauadv.655blondadj.65265essuyerverbe651planchesubst.650précéderverbe650dehorssubst.649salutsubst.64760tâchesubst.646désignerverbe644finadj.643abrisubst.642détacherverbe64155recueillirverbe638rencontresubst.636croiserverbe634entretenirverbe633rougesubst.63350professeursubst.627surveillerverbe627visibleadj.627perduadj.625réserververbe62245basadv.620liensubst.618queuesubst.615bandesubst.608confondreverbe60840grainsubst.605mensongesubst.603dégagerverbe602probablementadv.592illusionsubst.59135incapableadj.589parerverbe589épreuvesubst.586immédiatementadv.581attentesubst.57830visiterverbe572instrumentsubst571évidemmentadv.569auparavantadv.556détournerverbe55425explicationsubst.553régulieradj.551reprochesubst.549soucisubst.547plierverbe54620extrêmeadj.544accueillirverbe540juifsubst.538leçonsubst.538redevenirverbe53815approuververbe537parfaitadj.536emparerverbe535aborderverbe532heurterverbe52910telpron.5239noyerverbe5198semerverbe5157fermeadj.5146manchesubst.4945ragesubst.4924grésubst.4913guiderverbe4502piquerverbe4491Meilleur (1500)subst.412
+Liste des mots les plus utilisés de la langue française par espèce(/1500)
+
+
+
+Adjectifs
+47221	tout
+25388	grand
+19008	petit
+16081	même
+14688	autre
+13104	seul
+12593	jeune
+11731	premier
+11483	bon
+10343	quel
+9870	beau
+9515	vieux
+7038	noir
+7019	nouveau
+6650	dernier
+6246	blanc
+6059	cher
+5562	long
+5434	pauvre
+5413	plein
+5385	vrai
+5258	toute
+5087	bas
+4537	gros
+4355	doux
+4332	heureux
+3953	haut
+3878	profond
+3576	rouge
+3393	humain
+3337	général
+3299	français
+3250	froid
+3234	sombre
+3211	sûr
+3190	ancien
+3125	propre
+3054	politique
+3013	possible
+2948	immense
+2929	public
+2914	pareil
+2906	bleu
+2851	fort
+2717	entier
+2704	simple
+2654	nécessaire
+2570	mauvais
+2510	social
+2416	important
+2380	certain
+2307	triste
+2301	joli
+2254	différent
+
+
+Adverbes
+186755	ne
+103083	pas
+75499	plus
+37171	bien
+32024	si
+22695	là
+19994	même
+19915	tout
+19176	encore
+18311	aussi
+16251	peu
+15639	alors
+14336	toujours
+14255	jamais
+14039	non
+12432	très
+11296	ainsi
+9472	moins
+9098	ici
+9005	oui
+8686	trop
+8170	déjà
+7960	tant
+7126	enfin
+7024	maintenant
+6399	beaucoup
+6090	assez
+5996	loin
+5961	point
+5662	presque
+5629	ailleurs
+5544	seulement
+4915	aujourd'hui
+4881	mieux
+4764	autour
+4665	souvent
+4657	dessus
+4355	longtemps
+4350	fort
+4324	comme
+4163	comment
+3834	autant
+3783	d'abord
+3669	surtout
+3508	cependant
+3465	vite
+3281	tard
+3271	pourtant
+3223	ci
+3097	mal
+3076	parfois
+2960	vraiment
+2839	bientôt
+2810	partout
+2515	debout
+2328	plutôt
+2281	lentement
+2280	combien
+2141	hier
+
+
+Conjonctions
+362093	et
+176161	que
+59902	comme
+57690	mais
+34897	ou
+25592	quand
+24024	si
+14257	puis
+13562	donc
+11695	car
+11640	ni
+7824	parce que
+4700	pourquoi
+4041	lorsque
+3189	tandis que
+3139	puisque
+2721	comment
+2297	soit
+1940	or
+
+
+Déterminants
+1050561	le
+419564	un
+181161	son
+141389	ce
+127384	du
+123502	au
+119106	de
+70121	mon
+33950	leur
+23883	notre
+19942	votre
+17953	quelque
+15513	ton
+12051	tout
+8419	chaque
+5774	aucun
+5505	tel
+3667	certain
+3480	plusieurs
+2865	d'autres
+690	nul
+
+Numéraux
+30211	deux
+13798	cent
+11758	mille
+11372	trois
+10970	quatre
+8920	vingt
+6723	cinq
+6609	dix
+5508	neuf
+4463	six
+4052	huit
+3289	sept
+2809	trente
+2073	quarante
+2072	cinquante
+2000	quinze
+1591	douze
+1390	un
+
+Prépositions
+862100	de
+293083	à
+143565	en
+139185	dans
+104779	pour
+82277	par
+80180	sur
+55081	avec
+35915	sans
+15944	sous
+14606	après
+13684	entre
+12781	vers
+12698	chez
+12465	jusque
+10692	contre
+9995	devant
+8907	depuis
+8202	pendant
+7425	avant
+6054	voilà
+4731	près
+4141	dès
+3612	malgré
+3191	voici
+3134	selon
+3019	derrière
+2547	parmi
+2452	afin de
+1955	auprès
+1470	quant à
+1390	hors
+1256	durant
+1078	grâce
+788	plein
+
+Pronoms
+270395	il
+184186	je
+168684	se
+148392	qui
+126397	elle
+107074	ce
+105873	le
+99412	que
+89623	vous
+71086	me
+70246	on
+65988	lui
+62554	nous
+46031	y
+38935	en
+36089	où
+35774	tu
+30053	moi
+28542	te
+24270	celui
+19379	rien
+17797	dont
+17486	tout
+16494	ça
+14253	cela
+13063	autre
+10941	un
+8997	toi
+8574	lequel
+6078	leur
+5152	quoi
+4164	personne
+3910	l'un
+3890	chacun
+2440	auquel
+1838	quelqu'un
+1734	d'autres
+1706	ceci
+1587	l'une
+1322	soi
+1162	sien
+1099	mien
+1078	aucun
+
+Liste des mots les plus utilisés de la langue française : les noms
+
+
+33202	homme
+30082	mari
+26148	femme
+22232	jour
+17166	mer
+16785	temps
+15540	main
+15524	chose
+15241	vie
+14981	yeux
+13940	heure
+13737	monde
+13348	enfant
+13191	fois
+12274	moment
+11999	tête
+11854	père
+11842	fille
+11312	coeur
+11274	an
+10786	terre
+10661	dieu
+10489	monsieur
+10469	voix
+10287	maison
+9991	coup
+9755	air
+9752	mot
+9694	nuit
+9603	eau
+8744	ami
+8649	porte
+8283	amour
+8040	pied
+7944	gens
+7795	nom
+7451	pays
+7433	ciel
+7415	frère
+7399	regard
+7255	âme
+7245	côté
+7182	mort
+7031	esprit
+6983	ville
+6923	rue
+6877	soir
+6835	chambre
+6751	pas
+6692	soleil
+6588	roi
+6489	état
+6425	corps
+6304	bras
+6178	place
+6102	parti
+6004	année
+5954	visage
+5946	bruit
+5946	lettre
+5922	franc
+5861	fond
+5835	force
+5829	effet
+5706	milieu
+5702	saint
+5686	idée
+5623	travail
+5622	lumière
+5527	mois
+5520	fils
+5481	raison
+5416	point
+5391	personne
+5349	peuple
+5343	fait
+5295	parole
+5273	guerre
+5214	pensée
+5179	affaire
+5145	matin
+5127	pierre
+5002	vent
+4977	doute
+4969	front
+4939	ombre
+4932	part
+4916	maître
+4908	besoin
+4908	question
+4859	peine
+4836	tour
+4705	famille
+4653	madame
+4635	sorte
+4618	figure
+4595	droit
+4574	peur
+4571	bout
+4554	lieu
+4541	silence
+4503	chef
+4460	bois
+4457	mari
+4451	histoire
+4429	feu
+4271	partie
+4236	face
+4231	mouvement
+4217	fin
+4155	route
+4097	livre
+4070	arbre
+4058	cas
+4034	mur
+4028	ordre
+3994	est
+3978	bonheur
+3922	intérêt
+3876	argent
+3856	cause
+3825	travers
+3809	grand
+3807	instant
+3784	façon
+3783	oeil
+3763	forme
+3711	chemin
+3704	cheveu
+3656	plaisir
+3639	suite
+3571	sang
+3548	sentiment
+3516	fleur
+3498	service
+3472	table
+3446	paix
+3444	moyen
+3410	lit
+3387	voiture
+3345	être
+3335	nature
+3326	or
+3309	pouvoir
+3307	nouveau
+3292	joie
+3272	président
+3266	bouche
+3256	petit
+3245	sens
+3240	cri
+3238	espèce
+3237	cheval
+3236	loi
+3145	ministre
+3079	société
+3071	politique
+3063	oreille
+3046	fenêtre
+3010	fortune
+3002	compte
+2979	champ
+2961	manier
+2942	action
+2914	garçon
+2906	exemple
+2890	couleur
+2875	papier
+2861	mal
+2820	pièce
+2818	montagne
+2812	sol
+2811	oeuvre
+2797	cours
+2790	désir
+2776	cour
+2753	bord
+2749	douleur
+2732	salle
+2722	premier
+2715	projet
+2701	étude
+2699	journal
+2697	geste
+2664	situation
+2661	oiseau
+2647	siècle
+2633	million
+2616	prix
+2612	groupe
+2610	centre
+2603	malheur
+2602	honneur
+2575	garde
+2547	problème
+2546	larme
+2539	chien
+2534	peau
+2530	reste
+2517	nombre
+2514	mesure
+2507	article
+2502	vue
+2490	âge
+2483	système
+2482	long
+2468	effort
+2455	rêve
+2448	passion
+2426	rapport
+2398	soldat
+2397	lèvre
+2397	signe
+2390	vérité
+2386	mariage
+2365	plan
+2348	dos
+2341	marche
+2334	souvenir
+2333	dame
+2318	conseil
+2314	sou
+2306	coin
+2303	jardin
+2289	doigt
+2288	objet
+2284	fer
+2281	lendemain
+2259	train
+2256	papa
+2252	valeur
+2247	jeu
+2234	secret
+2233	haut
+2226	vieillard
+2222	docteur
+2213	ton
+2204	jambe
+2194	endroit
+2192	minute
+2190	nuage
+2187	présence
+2163	épaule
+2155	feuille
+2155	liberté
+2149	journée
+2143	avenir
+2142	sourire
+2136	résultat
+2125	hôtel
+2124	semaine
+2122	forêt
+2116	qualité
+2108	prince
+2101	bien
+2093	médecin
+2087	volonté
+2086	seigneur
+2077	art
+2070	foule
+2068	ligne
+2061	intérieur
+2054	beauté
+2025	soin
+2017	hasard
+2006	condition
+1997	classe
+1996	voyage
+1955	présent
+
+
+Liste des mots les plus utilisés de la langue française : les verbes
+
+
+351960	être
+248488	avoir
+77608	faire
+72134	dire
+55394	pouvoir
+41702	aller
+39659	voir
+29435	vouloir
+26023	venir
+22703	devoir
+20489	prendre
+16833	trouver
+16795	donner
+16078	falloir
+15814	parler
+15339	mettre
+15102	savoir
+14976	passer
+14604	regarder
+14138	aimer
+13881	croire
+12597	demander
+12155	rester
+12063	répondre
+12009	entendre
+10358	penser
+10288	arriver
+9769	connaître
+9759	devenir
+9585	sentir
+9482	sembler
+9312	tenir
+9037	comprendre
+9002	rendre
+8851	attendre
+8768	sortir
+7625	vivre
+7614	entrer
+7544	reprendre
+7499	porter
+7304	chercher
+7114	revenir
+6892	appeler
+6785	mourir
+6726	partir
+6610	jeter
+6397	suivre
+6256	écrire
+6195	montrer
+6182	tomber
+6169	ouvrir
+5812	arrêter
+5786	perdre
+5783	commencer
+5779	paraître
+5747	marcher
+5494	lever
+5467	permettre
+5417	asseoir
+5216	écouter
+5088	monter
+4904	apercevoir
+4891	recevoir
+4806	servir
+4709	finir
+4662	rire
+4449	crier
+4447	jouer
+4371	tourner
+4272	garder
+4198	reconnaître
+4180	quitter
+4127	manger
+4059	courir
+4022	continuer
+3965	oublier
+3955	descendre
+3920	cacher
+3841	poser
+3778	tirer
+3757	présenter
+3755	ajouter
+3753	agir
+3717	retrouver
+3671	offrir
+3616	apprendre
+3598	tuer
+3559	retourner
+3556	rencontrer
+3482	envoyer
+3438	dormir
+3422	pousser
+3362	rappeler
+3340	lire
+3258	changer
+3254	essayer
+3248	compter
+3245	occuper
+3238	expliquer
+3161	frapper
+3133	travailler
+3124	obtenir
+3099	rentrer
+3096	pleurer
+3079	répéter
+3056	payer
+3053	apporter
+2944	exister
+2937	boire
+2904	sourire
+2889	coucher
+2825	causer
+2794	raconter
+2792	serrer
+2792	songer
+2787	manquer
+2754	nommer
+2735	conduire
+2729	saisir
+2709	demeurer
+2700	remettre
+2689	disparaître
+2678	battre
+2670	toucher
+2645	apparaître
+2635	souffrir
+2590	fermer
+2585	accepter
+2569	tendre
+2555	naître
+2554	sauver
+2544	avancer
+2522	traverser
+2508	souvenir
+2491	couvrir
+2485	gagner
+2481	former
+2477	plaire
+2458	embrasser
+2454	oser
+2427	empêcher
+2420	refuser
+2415	décider
+2401	produire
+2389	charger
+2385	mêler
+2371	espérer
+2349	cesser
+2349	ressembler
+2332	chanter
+2272	approcher
+2265	prier
+2240	échapper
+2239	glisser
+2225	briller
+2218	brûler
+2214	placer
+2202	juger
+2201	suffire
+2190	atteindre
+2146	annoncer
+2135	élever
+2134	acheter
+2133	mener
+2133	préparer
+2118	assurer
+2095	deviner
+2092	considérer
+2069	appartenir
+2067	représenter
+2065	tromper
+2056	vendre
+2047	craindre
+2035	emporter
+1951	exprimer
+1939	rouler
+1931	posséder
+1921	réveiller
+1918	aider
+1918	découvrir
+1912	choisir
+1905	prononcer
+1904	taire
+1886	rêver
+1884	appuyer
+1884	étendre
+1880	trembler
+1864	défendre
+1856	créer
+1853	maintenir
+1814	indiquer
+1812	promettre
+1810	relever
+1809	abandonner
+1797	ignorer
+1769	accompagner
+1763	adresser
+1757	observer
+1753	séparer
+1752	marier
+1751	prévoir
+1731	amener
+1729	obliger
+1720	éclairer
+1719	poursuivre
+1717	livrer
+1696	contenir
+1688	fuir
+1687	couler
+1676	proposer
+1673	éprouver
+1667	retenir
+1645	attacher
+1642	voler
+1636	entraîner
+1633	surprendre
+1601	briser
+1596	imaginer
+1593	diriger
+1581	parvenir
+1574	pénétrer
+1569	remarquer
+1568	éviter
+1556	établir
+1553	réussir
+1550	pencher
+1547	habiter
+1546	entourer
+1544	déclarer
+1535	étonner
+1528	dresser
+1528	durer
+1527	fixer
+1512	désirer
+1503	arracher
+1501	soutenir
+1499	couper
+1497	examiner
+1488	douter
+1487	retirer
+1460	promener
+1447	forcer
+1436	revoir
+1420	remplir
+1419	terminer
+1397	tenter
+1389	remonter
+1383	installer
+1375	soulever
+1373	allumer
+1373	imposer
+1371	respirer
+1370	baisser
+1363	souffler
+1348	attirer
+1344	prêter
+1329	amuser
+1323	éclater
+1314	réunir
+1310	traiter
+1309	engager
+1293	traîner
+1290	employer
+1285	marquer
+1285	prouver
+1284	importer
+1279	exiger
+1277	reposer
+1275	danser
+1268	saluer
+1264	accorder
+1262	achever
+1262	avouer
+1261	distinguer
+1261	emmener
+1238	agiter
+1232	hésiter
+1221	sonner
+1217	composer
+1215	enlever
+Liste des mots les moins utilisés de la langue française : noms et verbes
+
+
+
+Noms
+
+800	chemise
+799	siège
+797	as
+797	patron
+796	calme
+795	printemps
+793	angoisse
+788	habitant
+784	métier
+782	note
+777	fusil
+771	agent
+760	roman
+759	plante
+746	réflexion
+740	accent
+735	repas
+731	étendue
+729	secours
+724	corde
+718	saison
+700	paupière
+695	tapis
+691	chasse
+686	clef
+677	sueur
+675	ferme
+669	instinct
+667	paquet
+666	drame
+661	savoir
+660	mine
+660	vision
+658	sentier
+657	demain
+650	planche
+649	dehors
+647	salut
+646	tâche
+642	abri
+636	rencontre
+633	rouge
+618	lien
+615	queue
+608	bande
+605	grain
+603	mensonge
+
+Verbes
+
+801	contenter
+795	mériter
+791	précipiter
+791	rompre
+784	caresser
+783	étouffer
+782	animer
+778	casser
+763	fonder
+759	franchir
+754	abattre
+754	discuter
+748	fatiguer
+745	consentir
+731	regretter
+730	joindre
+720	vaincre
+712	consulter
+709	haïr
+701	repousser
+690	exécuter
+689	exposer
+683	voyager
+680	renverser
+675	rassurer
+674	retomber
+672	décrire
+670	mentir
+667	armer
+659	étaler
+651	essuyer
+650	précéder
+644	désigner
+641	détacher
+638	recueillir
+634	croiser
+633	entretenir
+627	surveiller
+622	réserver
+608	confondre
+602	dégager
+
+
+
+
+
+http://www.eduscol.education.fr/?./D0102/liste-mots-frequents.htm&./D0102/bandeau.htm&./D0102/menu.htm&
+
