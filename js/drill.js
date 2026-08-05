@@ -31,14 +31,14 @@ function normalizeText(text) {
     return text.trim().toLowerCase().replace(/\s+/g, ' ');
 }
 
-export function initDrillSession(source, target, volume, level = 'all') {
+export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2']) {
     sessionState.langSource = source;
     sessionState.langTarget = target;
     
     // Filtrer les mots qui sont encore "actifs" pour cette paire et qui correspondent au niveau
     const availableWords = vocabulary.filter(w => {
         const isNotValidated = getWordStatus(source, target, w.id) !== 'validé';
-        const matchesLevel = level === 'all' || w.level === level;
+        const matchesLevel = levels.includes(w.level);
         return isNotValidated && matchesLevel;
     });
 

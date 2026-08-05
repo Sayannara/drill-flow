@@ -75,13 +75,25 @@
                 </div>
 
                 <div class="form-group">
-                    <label data-i18n="label_level">Niveau CECRL</label>
-                    <select id="select-level">
-                        <option value="all" selected>Tous les niveaux</option>
-                        <option value="A1">Niveau A1</option>
-                        <option value="A2">Niveau A2</option>
-                        <option value="B1">Niveau B1</option>
-                    </select>
+                    <label data-i18n="label_level">Niveaux CECRL</label>
+                    <div class="level-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;" id="drill-level-checkboxes">
+                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                            <input type="checkbox" id="drill-level-a1" value="A1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(96, 165, 250, 0.2); color: #60a5fa;">A1</span>
+                        </label>
+                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                            <input type="checkbox" id="drill-level-a2" value="A2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(251, 191, 36, 0.2); color: #fbbf24;">A2</span>
+                        </label>
+                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                            <input type="checkbox" id="drill-level-b1" value="B1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(251, 113, 133, 0.2); color: #fb7185;">B1</span>
+                        </label>
+                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                            <input type="checkbox" id="drill-level-b2" value="B2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(167, 139, 250, 0.2); color: #a78bfa;">B2</span>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -225,7 +237,7 @@
                             </label>
                         </div>
                         
-                        <div class="level-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap; margin-left: 0.5rem; border-left: 1px solid var(--border-color); padding-left: 1rem;">
+                        <div class="level-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;">
                             <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                                 <input type="checkbox" id="filter-level-a1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                                 <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(96, 165, 250, 0.2); color: #60a5fa;">A1</span>
@@ -238,6 +250,10 @@
                                 <input type="checkbox" id="filter-level-b1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                                 <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(251, 113, 133, 0.2); color: #fb7185;">B1</span>
                             </label>
+                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                                <input type="checkbox" id="filter-level-b2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(167, 139, 250, 0.2); color: #a78bfa;">B2</span>
+                            </label>
                         </div>
                     </div>
 
@@ -249,7 +265,7 @@
                                 <th data-i18n="th_translation">Traduction</th>
                                 <th data-i18n="th_type" style="width: 120px;">Catégorie</th>
                                 <th data-i18n="th_level" style="width: 80px; text-align: center;">Niveau</th>
-                                <th style="width: 100px; text-align: center;" data-i18n="th_status">Statut</th>
+                                <th style="width: 120px; text-align: center; padding-right: 1.5rem;" data-i18n="th_status">Statut</th>
                             </tr>
                         </thead>
                         <tbody id="prog-table-body">

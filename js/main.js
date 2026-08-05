@@ -106,11 +106,12 @@ function attachViewEvents(viewId) {
         const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
         const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
         const lastVol = localStorage.getItem('voc_last_vol') || '20';
-        const lastLevel = localStorage.getItem('voc_last_level') || 'all';
+        
+        const savedLevelsStr = localStorage.getItem('voc_last_levels');
+        const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2'];
 
         const selectSrc = document.getElementById('select-lang-source');
         const selectTgt = document.getElementById('select-lang-target');
-        const selectLevel = document.getElementById('select-level');
         
         function updateTargetOptions() {
             if (!selectSrc || !selectTgt) return;
@@ -154,7 +155,14 @@ function attachViewEvents(viewId) {
             }
         }
         
-        if (selectLevel) selectLevel.value = lastLevel;
+        const cbA1 = document.getElementById('drill-level-a1');
+        const cbA2 = document.getElementById('drill-level-a2');
+        const cbB1 = document.getElementById('drill-level-b1');
+        const cbB2 = document.getElementById('drill-level-b2');
+        if (cbA1) cbA1.checked = savedLevels.includes('A1');
+        if (cbA2) cbA2.checked = savedLevels.includes('A2');
+        if (cbB1) cbB1.checked = savedLevels.includes('B1');
+        if (cbB2) cbB2.checked = savedLevels.includes('B2');
         
         if (inputVol && volDisp) {
             inputVol.value = lastVol;
@@ -187,9 +195,18 @@ function attachViewEvents(viewId) {
                 }
                 
                 let count = 0;
-                const level = selectLevel ? selectLevel.value : 'all';
+                const getSelectedLevels = () => {
+                    const levels = [];
+                    if (document.getElementById('drill-level-a1')?.checked) levels.push('A1');
+                    if (document.getElementById('drill-level-a2')?.checked) levels.push('A2');
+                    if (document.getElementById('drill-level-b1')?.checked) levels.push('B1');
+                    if (document.getElementById('drill-level-b2')?.checked) levels.push('B2');
+                    return levels.length > 0 ? levels : ['A1', 'A2', 'B1', 'B2'];
+                };
+                const selectedLevels = getSelectedLevels();
+                
                 vocabulary.forEach(w => {
-                    if (getWordStatus(src, tgt, w.id) !== 'validé' && (level === 'all' || w.level === level)) count++;
+                    if (getWordStatus(src, tgt, w.id) !== 'validé' && selectedLevels.includes(w.level)) count++;
                 });
                 
                 const remainingText = translations[lang].subtitle_home_remaining
@@ -199,7 +216,10 @@ function attachViewEvents(viewId) {
 
             if (selectSrc) selectSrc.addEventListener('change', updateAvailableCount);
             if (selectTgt) selectTgt.addEventListener('change', updateAvailableCount);
-            if (selectLevel) selectLevel.addEventListener('change', updateAvailableCount);
+            if (document.getElementById('drill-level-a1')) document.getElementById('drill-level-a1').addEventListener('change', updateAvailableCount);
+            if (document.getElementById('drill-level-a2')) document.getElementById('drill-level-a2').addEventListener('change', updateAvailableCount);
+            if (document.getElementById('drill-level-b1')) document.getElementById('drill-level-b1').addEventListener('change', updateAvailableCount);
+            if (document.getElementById('drill-level-b2')) document.getElementById('drill-level-b2').addEventListener('change', updateAvailableCount);
             updateAvailableCount();
 
             // Empêcher les doublons d'écouteurs si la vue est rechargée
@@ -210,7 +230,14 @@ function attachViewEvents(viewId) {
                 const src = document.getElementById('select-lang-source').value;
                 const tgt = document.getElementById('select-lang-target').value;
                 const vol = parseInt(document.getElementById('input-volume').value, 10);
-                const level = document.getElementById('select-level') ? document.getElementById('select-level').value : 'all';
+                
+                const selectedLevels = [];
+                if (document.getElementById('drill-level-a1')?.checked) selectedLevels.push('A1');
+                if (document.getElementById('drill-level-a2')?.checked) selectedLevels.push('A2');
+                if (document.getElementById('drill-level-b1')?.checked) selectedLevels.push('B1');
+                if (document.getElementById('drill-level-b2')?.checked) selectedLevels.push('B2');
+                if (selectedLevels.length === 0) selectedLevels.push('A1', 'A2', 'B1', 'B2');
+                
                 if (src === tgt) {
                     alert("Les deux langues doivent être différentes.");
                     return;
@@ -220,10 +247,10 @@ function attachViewEvents(viewId) {
                 localStorage.setItem('voc_last_src', src);
                 localStorage.setItem('voc_last_tgt', tgt);
                 localStorage.setItem('voc_last_vol', vol);
-                localStorage.setItem('voc_last_level', level);
+                localStorage.setItem('voc_last_levels', JSON.stringify(selectedLevels));
 
                 renderView('drill');
-                initDrillSession(src, tgt, vol, level);
+                initDrillSession(src, tgt, vol, selectedLevels);
             });
         }
     } else if (viewId === 'drill') {
@@ -360,7 +387,7 @@ function initProgressView() {
         }
     });
 
-    ['a1', 'a2', 'b1'].forEach(level => {
+    ['a1', 'a2', 'b1', 'b2'].forEach(level => {
         const cb = document.getElementById(`filter-level-${level}`);
         if (cb) {
             cb.checked = true;
@@ -394,6 +421,7 @@ function renderProgressTable() {
     const filterA1 = document.getElementById('filter-level-a1') ? document.getElementById('filter-level-a1').checked : true;
     const filterA2 = document.getElementById('filter-level-a2') ? document.getElementById('filter-level-a2').checked : true;
     const filterB1 = document.getElementById('filter-level-b1') ? document.getElementById('filter-level-b1').checked : true;
+    const filterB2 = document.getElementById('filter-level-b2') ? document.getElementById('filter-level-b2').checked : true;
 
     const filtered = vocabulary.filter(word => {
         if (word.type === 'nom' && !filterNom) return false;
@@ -405,6 +433,7 @@ function renderProgressTable() {
         if (word.level === 'A1' && !filterA1) return false;
         if (word.level === 'A2' && !filterA2) return false;
         if (word.level === 'B1' && !filterB1) return false;
+        if (word.level === 'B2' && !filterB2) return false;
 
         const srcText = (word[src] || '').toLowerCase();
         const tgtText = (word[tgt] || '').toLowerCase();
@@ -464,6 +493,7 @@ function renderProgressTable() {
             if (word.level === 'A1') { badgeBg = 'rgba(96, 165, 250, 0.2)'; badgeColor = '#60a5fa'; }
             if (word.level === 'A2') { badgeBg = 'rgba(251, 191, 36, 0.2)'; badgeColor = '#fbbf24'; }
             if (word.level === 'B1') { badgeBg = 'rgba(251, 113, 133, 0.2)'; badgeColor = '#fb7185'; }
+            if (word.level === 'B2') { badgeBg = 'rgba(167, 139, 250, 0.2)'; badgeColor = '#a78bfa'; }
             
             tdLevel.innerHTML = `<span class="type-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; background: ${badgeBg}; color: ${badgeColor}; font-weight: 600;">${word.level}</span>`;
         } else {
