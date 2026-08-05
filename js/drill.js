@@ -172,19 +172,17 @@ function renderCurrentWord() {
     }
 
     // Bouton d'action mobile (phase Saisie)
-    const btnMobileAction = document.getElementById('btn-drill-mobile-action');
-    if (btnMobileAction) {
-        btnMobileAction.style.display = '';
-        btnMobileAction.textContent = translations[lang].btn_check;
-        btnMobileAction.onclick = (e) => {
+    const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
+    const btnMobilePrimary = document.getElementById('btn-mobile-primary');
+    
+    if (btnMobileSecondary && btnMobilePrimary) {
+        btnMobileSecondary.style.visibility = 'hidden';
+        btnMobilePrimary.innerHTML = translations[lang].btn_check;
+        btnMobilePrimary.className = "btn-primary"; // reset du style de base
+        btnMobilePrimary.onclick = (e) => {
             e.stopPropagation();
             handleValidation();
         };
-    }
-    
-    const mobileResultActions = document.getElementById('mobile-result-actions');
-    if (mobileResultActions) {
-        mobileResultActions.style.display = 'none';
     }
 }
 
@@ -301,22 +299,21 @@ function handleValidation() {
             if (btnKeep) btnKeep.onclick = () => proceedNextWord('keep');
             
             if (isMobile) {
-                const btnMobileAction = document.getElementById('btn-drill-mobile-action');
-                if (btnMobileAction) btnMobileAction.style.display = 'none';
+                const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
+                const btnMobilePrimary = document.getElementById('btn-mobile-primary');
                 
-                const mobileResultActions = document.getElementById('mobile-result-actions');
-                const btnMobileKeep = document.getElementById('btn-mobile-keep');
-                const btnMobileValidate = document.getElementById('btn-mobile-validate');
-                if (mobileResultActions && btnMobileKeep && btnMobileValidate) {
-                    mobileResultActions.style.display = 'flex';
-                    btnMobileKeep.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
-                    btnMobileValidate.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                if (btnMobileSecondary && btnMobilePrimary) {
+                    btnMobileSecondary.style.visibility = 'visible';
                     
-                    btnMobileKeep.className = "btn-drill-action btn-secondary-action";
-                    btnMobileValidate.className = "btn-drill-action btn-primary-action";
+                    // Correct : Action par défaut (en bas) = Acquis. Action secondaire (en haut) = À revoir
+                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    btnMobilePrimary.className = "btn-drill-action btn-primary-action";
                     
-                    btnMobileKeep.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
-                    btnMobileValidate.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
+                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
+                    btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
+                    
+                    btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
+                    btnMobileSecondary.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
                 }
             }
         } else {
@@ -393,22 +390,21 @@ function handleValidation() {
             if (btnRemove) btnRemove.onclick = () => proceedNextWord('remove');
             
             if (isMobile) {
-                const btnMobileAction = document.getElementById('btn-drill-mobile-action');
-                if (btnMobileAction) btnMobileAction.style.display = 'none';
+                const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
+                const btnMobilePrimary = document.getElementById('btn-mobile-primary');
                 
-                const mobileResultActions = document.getElementById('mobile-result-actions');
-                const btnMobileKeep = document.getElementById('btn-mobile-keep');
-                const btnMobileValidate = document.getElementById('btn-mobile-validate');
-                if (mobileResultActions && btnMobileKeep && btnMobileValidate) {
-                    mobileResultActions.style.display = 'flex';
-                    btnMobileKeep.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
-                    btnMobileValidate.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                if (btnMobileSecondary && btnMobilePrimary) {
+                    btnMobileSecondary.style.visibility = 'visible';
                     
-                    btnMobileKeep.className = "btn-drill-action btn-primary-action";
-                    btnMobileValidate.className = "btn-drill-action btn-secondary-action";
+                    // Incorrect : Action par défaut (en bas) = À revoir. Action secondaire (en haut) = Acquis
+                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
+                    btnMobilePrimary.className = "btn-drill-action btn-primary-action";
                     
-                    btnMobileKeep.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
-                    btnMobileValidate.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
+                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
+                    
+                    btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
+                    btnMobileSecondary.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
                 }
             }
         }

@@ -187,13 +187,10 @@
                     <input type="text" id="drill-input" data-i18n-placeholder="placeholder_translation" placeholder="Traduction..." autocomplete="off">
                 </div>
                 
-                <!-- Bouton d'action mobile uniquement (Saisie) -->
-                <button id="btn-drill-mobile-action" class="btn-primary mobile-only-btn" style="width: 100%; margin-top: 1rem; padding: 0.8rem; font-size: 1.1rem; border-radius: 8px; font-weight: 600; text-align: center; border: none;"></button>
-                
-                <!-- Boutons d'action mobile uniquement (Résultat) -->
-                <div id="mobile-result-actions" style="display: none; width: 100%; margin-top: 1rem; gap: 0.5rem; justify-content: space-between;">
-                    <button id="btn-mobile-keep" class="btn-drill-action btn-secondary-action" style="flex: 1; padding: 0.8rem; font-size: 1rem; justify-content: center;"></button>
-                    <button id="btn-mobile-validate" class="btn-drill-action btn-primary-action" style="flex: 1; padding: 0.8rem; font-size: 1rem; justify-content: center;"></button>
+                <!-- Actions mobiles unifiées (Saisie & Résultat) -->
+                <div id="mobile-action-container" class="mobile-only-btn" style="width: 100%; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <button id="btn-mobile-secondary" class="btn-drill-action btn-secondary-action" style="padding: 0.8rem; font-size: 1.1rem; justify-content: center; visibility: hidden; border-radius: 8px;">À revoir</button>
+                    <button id="btn-mobile-primary" class="btn-primary" style="padding: 0.8rem; font-size: 1.1rem; justify-content: center; border-radius: 8px; border: none; font-weight: 600;">Vérifier</button>
                 </div>
             </div>
         </div>
