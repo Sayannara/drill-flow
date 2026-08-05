@@ -315,7 +315,7 @@ function handleValidation() {
                     
                     // Correct : Action par défaut (en bas) = Acquis. Action secondaire (en haut) = À revoir
                     btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
-                    btnMobilePrimary.className = "btn-drill-action btn-primary-action";
+                    btnMobilePrimary.className = "btn-primary";
                     
                     btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
                     btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
@@ -406,7 +406,7 @@ function handleValidation() {
                     
                     // Incorrect : Action par défaut (en bas) = À revoir. Action secondaire (en haut) = Acquis
                     btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
-                    btnMobilePrimary.className = "btn-drill-action btn-primary-action";
+                    btnMobilePrimary.className = "btn-primary";
                     
                     btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
                     btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
