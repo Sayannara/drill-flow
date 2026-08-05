@@ -490,10 +490,10 @@ function renderProgressTable() {
         if (word.level) {
             let badgeBg = 'rgba(255,255,255,0.1)';
             let badgeColor = 'inherit';
-            if (word.level === 'A1') { badgeBg = 'rgba(96, 165, 250, 0.2)'; badgeColor = '#60a5fa'; }
-            if (word.level === 'A2') { badgeBg = 'rgba(251, 191, 36, 0.2)'; badgeColor = '#fbbf24'; }
-            if (word.level === 'B1') { badgeBg = 'rgba(251, 113, 133, 0.2)'; badgeColor = '#fb7185'; }
-            if (word.level === 'B2') { badgeBg = 'rgba(167, 139, 250, 0.2)'; badgeColor = '#a78bfa'; }
+            if (word.level === 'A1') { badgeBg = 'rgba(59, 130, 246, 0.2)'; badgeColor = '#3b82f6'; }
+            if (word.level === 'A2') { badgeBg = 'rgba(16, 185, 129, 0.2)'; badgeColor = '#10b981'; }
+            if (word.level === 'B1') { badgeBg = 'rgba(245, 158, 11, 0.2)'; badgeColor = '#f59e0b'; }
+            if (word.level === 'B2') { badgeBg = 'rgba(239, 68, 68, 0.2)'; badgeColor = '#ef4444'; }
             
             tdLevel.innerHTML = `<span class="type-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; background: ${badgeBg}; color: ${badgeColor}; font-weight: 600;">${word.level}</span>`;
         } else {

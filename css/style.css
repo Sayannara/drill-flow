@@ -371,7 +371,8 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     font-size: 1rem;
     line-height: 1;
     font-weight: bold;
-    width: 100px;
+    white-space: nowrap;
+    min-width: 80px;
     transition: background-color 0.2s;
     height: 48px; /* ensures a good click target */
 }
