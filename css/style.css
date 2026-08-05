@@ -304,11 +304,17 @@ input[type="text"].rewrite-field.correct {
 kbd { background: var(--surface-color); border: 1px solid var(--border-color); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: var(--text-primary); }
 
 .session-actions { text-align: center; }
-.data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-.data-table th, .data-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+.data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; table-layout: fixed; }
+.data-table th, .data-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-color); overflow: hidden; text-overflow: ellipsis; }
 .data-table th { color: var(--text-secondary); font-weight: 500; }
 .btn-ghost { background: none; border: none; color: var(--text-secondary); cursor: pointer; text-decoration: underline; }
 .btn-ghost:hover { color: var(--error-color); }
+
+/* Prevent table overflow on desktop */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
 
 /* Bulk actions bar in Progression view */
 .bulk-actions-bar {
