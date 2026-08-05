@@ -1,0 +1,13 @@
+# Fichiers de r\u00e8gles g\u00e9n\u00e9r\u00e9s (exclus du contr\u00f4le de version)
+RULES.md
+
+# Fichiers temporaires OneDrive / Windows
+desktop.ini
+~$*
+~*
+*.tmp
+*.bak
+*.log
+.DS_Store
+
+# (Ajouter d'autres dossiers ou fichiers g\u00e9n\u00e9r\u00e9s dynamiquement ici si besoin)
