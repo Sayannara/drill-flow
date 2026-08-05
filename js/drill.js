@@ -174,11 +174,17 @@ function renderCurrentWord() {
     // Bouton d'action mobile (phase Saisie)
     const btnMobileAction = document.getElementById('btn-drill-mobile-action');
     if (btnMobileAction) {
+        btnMobileAction.style.display = '';
         btnMobileAction.textContent = translations[lang].btn_check;
         btnMobileAction.onclick = (e) => {
             e.stopPropagation();
             handleValidation();
         };
+    }
+    
+    const mobileResultActions = document.getElementById('mobile-result-actions');
+    if (mobileResultActions) {
+        mobileResultActions.style.display = 'none';
     }
 }
 
@@ -279,11 +285,7 @@ function handleValidation() {
             const labelReview = translations[lang].action_review;
             const labelMastered = translations[lang].action_mastered;
             
-            dynamicHints.innerHTML = isMobile ? `
-                <button id="btn-next-keep" class="btn-drill-action btn-secondary-action">
-                    <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
-                </button>
-            ` : `
+            dynamicHints.innerHTML = isMobile ? '' : `
                 <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
                     <kbd class="desktop-only">Entree</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>
                 </button>
@@ -298,13 +300,24 @@ function handleValidation() {
             const btnKeep = document.getElementById('btn-next-keep');
             if (btnKeep) btnKeep.onclick = () => proceedNextWord('keep');
             
-            const btnMobileAction = document.getElementById('btn-drill-mobile-action');
-            if (btnMobileAction) {
-                btnMobileAction.textContent = translations[lang].btn_next;
-                btnMobileAction.onclick = (e) => {
-                    e.stopPropagation();
-                    proceedNextWord('auto');
-                };
+            if (isMobile) {
+                const btnMobileAction = document.getElementById('btn-drill-mobile-action');
+                if (btnMobileAction) btnMobileAction.style.display = 'none';
+                
+                const mobileResultActions = document.getElementById('mobile-result-actions');
+                const btnMobileKeep = document.getElementById('btn-mobile-keep');
+                const btnMobileValidate = document.getElementById('btn-mobile-validate');
+                if (mobileResultActions && btnMobileKeep && btnMobileValidate) {
+                    mobileResultActions.style.display = 'flex';
+                    btnMobileKeep.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
+                    btnMobileValidate.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    
+                    btnMobileKeep.className = "btn-drill-action btn-secondary-action";
+                    btnMobileValidate.className = "btn-drill-action btn-primary-action";
+                    
+                    btnMobileKeep.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
+                    btnMobileValidate.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
+                }
             }
         } else {
             statusBanner.textContent = translations[lang].status_incorrect;
@@ -364,11 +377,7 @@ function handleValidation() {
             const labelReview = translations[lang].action_review;
             const labelMastered = translations[lang].action_mastered;
             
-            dynamicHints.innerHTML = isMobile ? `
-                <button id="btn-next-remove" class="btn-drill-action btn-secondary-action">
-                    <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>
-                </button>
-            ` : `
+            dynamicHints.innerHTML = isMobile ? '' : `
                 <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
                     <kbd class="desktop-only">Entree</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
                 </button>
@@ -383,13 +392,24 @@ function handleValidation() {
             const btnRemove = document.getElementById('btn-next-remove');
             if (btnRemove) btnRemove.onclick = () => proceedNextWord('remove');
             
-            const btnMobileAction = document.getElementById('btn-drill-mobile-action');
-            if (btnMobileAction) {
-                btnMobileAction.textContent = translations[lang].action_review;
-                btnMobileAction.onclick = (e) => {
-                    e.stopPropagation();
-                    proceedNextWord('auto');
-                };
+            if (isMobile) {
+                const btnMobileAction = document.getElementById('btn-drill-mobile-action');
+                if (btnMobileAction) btnMobileAction.style.display = 'none';
+                
+                const mobileResultActions = document.getElementById('mobile-result-actions');
+                const btnMobileKeep = document.getElementById('btn-mobile-keep');
+                const btnMobileValidate = document.getElementById('btn-mobile-validate');
+                if (mobileResultActions && btnMobileKeep && btnMobileValidate) {
+                    mobileResultActions.style.display = 'flex';
+                    btnMobileKeep.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
+                    btnMobileValidate.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    
+                    btnMobileKeep.className = "btn-drill-action btn-primary-action";
+                    btnMobileValidate.className = "btn-drill-action btn-secondary-action";
+                    
+                    btnMobileKeep.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
+                    btnMobileValidate.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
+                }
             }
         }
     } catch (error) {
