@@ -15724,6 +15724,12687 @@ export const vocabulary = [
   },
   {
     "id": "word_1748",
+    "fr": "abandonner",
+    "en": "abandon",
+    "de": "verlassen / aufgeben",
+    "es": "abandonar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1749",
+    "fr": "absent",
+    "en": "absent",
+    "de": "abwesend",
+    "es": "ausente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1750",
+    "fr": "absolu",
+    "en": "absolute",
+    "de": "absolut",
+    "es": "absoluto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1751",
+    "fr": "absorber",
+    "en": "absorb",
+    "de": "absorbieren / aufnehmen",
+    "es": "absorber",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1752",
+    "fr": "abstrait",
+    "en": "abstract",
+    "de": "abstrakt",
+    "es": "abstracto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1753",
+    "fr": "académique / universitaire",
+    "en": "academic",
+    "de": "akademisch",
+    "es": "académico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1754",
+    "fr": "l'universitaire",
+    "en": "academic",
+    "de": "der Akademiker",
+    "es": "el académico",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1755",
+    "fr": "l'accent",
+    "en": "accent",
+    "de": "der Akzent",
+    "es": "el acento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1756",
+    "fr": "acceptable",
+    "en": "acceptable",
+    "de": "akzeptabel",
+    "es": "aceptable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1757",
+    "fr": "accidentellement",
+    "en": "accidentally",
+    "de": "zufällig",
+    "es": "accidentalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1758",
+    "fr": "accueillir / loger",
+    "en": "accommodate",
+    "de": "unterbringen",
+    "es": "alojar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1759",
+    "fr": "accompagner",
+    "en": "accompany",
+    "de": "begleiten",
+    "es": "acompañar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1760",
+    "fr": "accomplir",
+    "en": "accomplish",
+    "de": "erreichen",
+    "es": "lograr",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1761",
+    "fr": "expliquer / justifier",
+    "en": "account for",
+    "de": "erklären / ausmachen",
+    "es": "explicar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1762",
+    "fr": "le comptable",
+    "en": "accountant",
+    "de": "der Buchhalter",
+    "es": "el contador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1763",
+    "fr": "la précision / l'exactitude",
+    "en": "accuracy",
+    "de": "die Genauigkeit",
+    "es": "la precisión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1764",
+    "fr": "précis / exact",
+    "en": "accurate",
+    "de": "genau",
+    "es": "preciso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1765",
+    "fr": "avec précision",
+    "en": "accurately",
+    "de": "genau",
+    "es": "con precisión",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1766",
+    "fr": "accuser",
+    "en": "accuse",
+    "de": "beschuldigen",
+    "es": "acusar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1767",
+    "fr": "reconnaître / admettre",
+    "en": "acknowledge",
+    "de": "anerkennen",
+    "es": "reconocer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1768",
+    "fr": "acquérir",
+    "en": "acquire",
+    "de": "erwerben",
+    "es": "adquirir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1769",
+    "fr": "l'acre (mesure agraire)",
+    "en": "acre",
+    "de": "der Morgen (Flächenmaß)",
+    "es": "el acre",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1770",
+    "fr": "activer",
+    "en": "activate",
+    "de": "aktivieren",
+    "es": "activar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1771",
+    "fr": "réel / véritable",
+    "en": "actual",
+    "de": "tatsächlich",
+    "es": "real",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1772",
+    "fr": "adapter",
+    "en": "adapt",
+    "de": "anpassen",
+    "es": "adaptar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1773",
+    "fr": "l'addiction",
+    "en": "addiction",
+    "de": "die Sucht",
+    "es": "la adicción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1774",
+    "fr": "supplémentaire",
+    "en": "additional",
+    "de": "zusätzlich",
+    "es": "adicional",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1775",
+    "fr": "de plus / en outre",
+    "en": "additionally",
+    "de": "zusätzlich",
+    "es": "además",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1776",
+    "fr": "s'adresser à / aborder",
+    "en": "address",
+    "de": "ansprechen",
+    "es": "dirigirse a",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1777",
+    "fr": "adéquat / suffisant",
+    "en": "adequate",
+    "de": "angemessen",
+    "es": "adecuado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1778",
+    "fr": "adéquatement",
+    "en": "adequately",
+    "de": "angemessen",
+    "es": "adecuadamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1779",
+    "fr": "ajuster",
+    "en": "adjust",
+    "de": "anpassen",
+    "es": "ajustar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1780",
+    "fr": "l'administration",
+    "en": "administration",
+    "de": "die Verwaltung",
+    "es": "la administración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1781",
+    "fr": "adopter",
+    "en": "adopt",
+    "de": "adoptieren / übernehmen",
+    "es": "adoptar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1782",
+    "fr": "l'avance",
+    "en": "advance",
+    "de": "der Fortschritt",
+    "es": "el avance",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1783",
+    "fr": "avancer",
+    "en": "advance",
+    "de": "vorrücken",
+    "es": "avanzar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1784",
+    "fr": "l'affaire",
+    "en": "affair",
+    "de": "die Angelegenheit / die Affäre",
+    "es": "el asunto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1785",
+    "fr": "abordable",
+    "en": "affordable",
+    "de": "erschwinglich",
+    "es": "asequible",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1786",
+    "fr": "ensuite / plus tard",
+    "en": "afterwards",
+    "de": "danach",
+    "es": "después",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1787",
+    "fr": "l'agence",
+    "en": "agency",
+    "de": "die Agentur",
+    "es": "la agencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1788",
+    "fr": "l'ordre du jour",
+    "en": "agenda",
+    "de": "die Tagesordnung",
+    "es": "la agenda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1789",
+    "fr": "agressif",
+    "en": "aggressive",
+    "de": "aggressiv",
+    "es": "agresivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1790",
+    "fr": "l'agriculture",
+    "en": "agriculture",
+    "de": "die Landwirtschaft",
+    "es": "la agricultura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1791",
+    "fr": "l'aide",
+    "en": "aid",
+    "de": "die Hilfe",
+    "es": "la ayuda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1792",
+    "fr": "aider",
+    "en": "aid",
+    "de": "helfen",
+    "es": "ayudar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1793",
+    "fr": "le SIDA",
+    "en": "AIDS",
+    "de": "Aids",
+    "es": "el SIDA",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1794",
+    "fr": "l'aéronef",
+    "en": "aircraft",
+    "de": "das Flugzeug",
+    "es": "la aeronave",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1795",
+    "fr": "alarmer",
+    "en": "alarm",
+    "de": "alarmieren",
+    "es": "alarmar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1796",
+    "fr": "l'extraterrestre / l'étranger",
+    "en": "alien",
+    "de": "der Außerirdische",
+    "es": "el extraterrestre",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1797",
+    "fr": "étranger / extraterrestre",
+    "en": "alien",
+    "de": "fremd",
+    "es": "alienígena",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1798",
+    "fr": "aux côtés de",
+    "en": "alongside",
+    "de": "neben",
+    "es": "junto a",
+    "type": "prep",
+    "level": "B2"
+  },
+  {
+    "id": "word_1799",
+    "fr": "modifier / altérer",
+    "en": "alter",
+    "de": "ändern",
+    "es": "alterar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1800",
+    "fr": "tout à fait / dans l'ensemble",
+    "en": "altogether",
+    "de": "insgesamt",
+    "es": "totalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1801",
+    "fr": "l'ambulance",
+    "en": "ambulance",
+    "de": "der Krankenwagen",
+    "es": "la ambulancia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1802",
+    "fr": "amusant",
+    "en": "amusing",
+    "de": "amüsant",
+    "es": "divertido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1803",
+    "fr": "analyser",
+    "en": "analyse",
+    "de": "analysieren",
+    "es": "analizar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1804",
+    "fr": "l'analyse",
+    "en": "analysis",
+    "de": "die Analyse",
+    "es": "el análisis",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1805",
+    "fr": "l'analyste",
+    "en": "analyst",
+    "de": "der Analyst",
+    "es": "el analista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1806",
+    "fr": "l'ancêtre",
+    "en": "ancestor",
+    "de": "der Vorfahre",
+    "es": "el ancestro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1807",
+    "fr": "l'ange",
+    "en": "angel",
+    "de": "der Engel",
+    "es": "el ángel",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1808",
+    "fr": "la colère",
+    "en": "anger",
+    "de": "der Zorn",
+    "es": "la ira",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1809",
+    "fr": "l'angle",
+    "en": "angle",
+    "de": "der Winkel",
+    "es": "el ángulo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1810",
+    "fr": "l'animation",
+    "en": "animation",
+    "de": "die Animation",
+    "es": "la animación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1811",
+    "fr": "l'anniversaire (événement)",
+    "en": "anniversary",
+    "de": "der Jahrestag",
+    "es": "el aniversario",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1812",
+    "fr": "annuel",
+    "en": "annual",
+    "de": "jährlich",
+    "es": "anual",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1813",
+    "fr": "annuellement",
+    "en": "annually",
+    "de": "jährlich",
+    "es": "anualmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1814",
+    "fr": "anticiper",
+    "en": "anticipate",
+    "de": "erwarten",
+    "es": "anticipar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1815",
+    "fr": "l'anxiété",
+    "en": "anxiety",
+    "de": "die Angst",
+    "es": "la ansiedad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1816",
+    "fr": "anxieux",
+    "en": "anxious",
+    "de": "besorgt",
+    "es": "ansioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1817",
+    "fr": "l'excuse (les excuses)",
+    "en": "apology",
+    "de": "die Entschuldigung",
+    "es": "la disculpa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1818",
+    "fr": "apparent",
+    "en": "apparent",
+    "de": "offensichtlich",
+    "es": "aparente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1819",
+    "fr": "apparemment",
+    "en": "apparently",
+    "de": "anscheinend",
+    "es": "aparentemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1820",
+    "fr": "l'appel (justice) / l'attrait",
+    "en": "appeal",
+    "de": "der Einspruch / der Reiz",
+    "es": "la apelación / el atractivo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1821",
+    "fr": "faire appel / attirer",
+    "en": "appeal",
+    "de": "appellieren / reizen",
+    "es": "apelar / atraer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1822",
+    "fr": "le candidat (emploi/inscription)",
+    "en": "applicant",
+    "de": "der Bewerber",
+    "es": "el solicitante",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1823",
+    "fr": "l'approche",
+    "en": "approach",
+    "de": "der Ansatz / die Annäherung",
+    "es": "el enfoque",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1824",
+    "fr": "approcher",
+    "en": "approach",
+    "de": "sich nähern",
+    "es": "acercarse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1825",
+    "fr": "approprié",
+    "en": "appropriate",
+    "de": "angemessen",
+    "es": "apropiado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1826",
+    "fr": "de manière appropriée",
+    "en": "appropriately",
+    "de": "angemessen",
+    "es": "apropiadamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1827",
+    "fr": "l'approbation",
+    "en": "approval",
+    "de": "die Zustimmung",
+    "es": "la aprobación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1828",
+    "fr": "approuver",
+    "en": "approve",
+    "de": "zustimmen",
+    "es": "aprobar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1829",
+    "fr": "survenir / se poser",
+    "en": "arise",
+    "de": "entstehen",
+    "es": "surgir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1830",
+    "fr": "armé",
+    "en": "armed",
+    "de": "bewaffnet",
+    "es": "armado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1831",
+    "fr": "les armes",
+    "en": "arms",
+    "de": "die Waffen",
+    "es": "las armas",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1832",
+    "fr": "la flèche",
+    "en": "arrow",
+    "de": "der Pfeil",
+    "es": "la flecha",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1833",
+    "fr": "artificiel",
+    "en": "artificial",
+    "de": "künstlich",
+    "es": "artificial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1834",
+    "fr": "artistique",
+    "en": "artistic",
+    "de": "künstlerisch",
+    "es": "artístico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1835",
+    "fr": "l'œuvre d'art",
+    "en": "artwork",
+    "de": "das Kunstwerk",
+    "es": "la obra de arte",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1836",
+    "fr": "honteux (avoir honte)",
+    "en": "ashamed",
+    "de": "beschämt",
+    "es": "avergonzado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1837",
+    "fr": "l'aspect",
+    "en": "aspect",
+    "de": "der Aspekt",
+    "es": "el aspecto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1838",
+    "fr": "évaluer",
+    "en": "assess",
+    "de": "bewerten",
+    "es": "evaluar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1839",
+    "fr": "l'évaluation",
+    "en": "assessment",
+    "de": "die Bewertung",
+    "es": "la evaluación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1840",
+    "fr": "l'atout / le bien",
+    "en": "asset",
+    "de": "der Vermögenswert",
+    "es": "el activo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1841",
+    "fr": "attribuer / assigner",
+    "en": "assign",
+    "de": "zuweisen",
+    "es": "asignar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1842",
+    "fr": "l'assistance / l'aide",
+    "en": "assistance",
+    "de": "die Unterstützung",
+    "es": "la asistencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1843",
+    "fr": "associer",
+    "en": "associate",
+    "de": "assoziieren",
+    "es": "asociar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1844",
+    "fr": "associé",
+    "en": "associated",
+    "de": "verbunden",
+    "es": "asociado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1845",
+    "fr": "l'association",
+    "en": "association",
+    "de": "der Verband / die Vereinigung",
+    "es": "la asociación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1846",
+    "fr": "supposer / présumer",
+    "en": "assume",
+    "de": "annehmen",
+    "es": "suponer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1847",
+    "fr": "la supposition",
+    "en": "assumption",
+    "de": "die Annahme",
+    "es": "la suposición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1848",
+    "fr": "assurer",
+    "en": "assure",
+    "de": "versichern",
+    "es": "asegurar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1849",
+    "fr": "étonnant",
+    "en": "astonishing",
+    "de": "erstaunlich",
+    "es": "asombroso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1850",
+    "fr": "athlétique",
+    "en": "athletic",
+    "de": "athletisch",
+    "es": "atlético",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1851",
+    "fr": "la pièce jointe / l'attachement",
+    "en": "attachment",
+    "de": "der Anhang",
+    "es": "el archivo adjunto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1852",
+    "fr": "la tentative",
+    "en": "attempt",
+    "de": "der Versuch",
+    "es": "el intento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1853",
+    "fr": "tenter",
+    "en": "attempt",
+    "de": "versuchen",
+    "es": "intentar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1854",
+    "fr": "audio",
+    "en": "audio",
+    "de": "Audio-",
+    "es": "de audio",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1855",
+    "fr": "la conscience (sensibilisation)",
+    "en": "awareness",
+    "de": "das Bewusstsein",
+    "es": "la conciencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1856",
+    "fr": "maladroit / gênant",
+    "en": "awkward",
+    "de": "ungeschickt / peinlich",
+    "es": "incómodo / torpe",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1857",
+    "fr": "l'étiquette / le tag",
+    "en": "tag",
+    "de": "das Etikett",
+    "es": "la etiqueta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1858",
+    "fr": "étiqueter / taguer",
+    "en": "tag",
+    "de": "markieren",
+    "es": "etiquetar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1859",
+    "fr": "le conte",
+    "en": "tale",
+    "de": "das Märchen",
+    "es": "el cuento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1860",
+    "fr": "le réservoir / le char",
+    "en": "tank",
+    "de": "der Panzer / der Tank",
+    "es": "el tanque",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1861",
+    "fr": "le robinet / le petit coup",
+    "en": "tap",
+    "de": "der Wasserhahn",
+    "es": "el grifo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1862",
+    "fr": "taper doucement",
+    "en": "tap",
+    "de": "klopfen",
+    "es": "dar golpecitos",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1863",
+    "fr": "la larme / la déchirure",
+    "en": "tear",
+    "de": "die Träne / der Riss",
+    "es": "la lágrima / el desgarro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1864",
+    "fr": "déchirer",
+    "en": "tear",
+    "de": "reißen",
+    "es": "romper / desgarrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1865",
+    "fr": "technologique",
+    "en": "technological",
+    "de": "technologisch",
+    "es": "tecnológico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1866",
+    "fr": "l'adolescent (familier)",
+    "en": "teen",
+    "de": "der Teenager",
+    "es": "el adolescente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1867",
+    "fr": "le temple",
+    "en": "temple",
+    "de": "der Tempel",
+    "es": "el templo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1868",
+    "fr": "temporairement",
+    "en": "temporarily",
+    "de": "vorübergehend",
+    "es": "temporalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1869",
+    "fr": "temporaire",
+    "en": "temporary",
+    "de": "vorübergehend",
+    "es": "temporal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1870",
+    "fr": "la tendance",
+    "en": "tendency",
+    "de": "die Neigung",
+    "es": "la tendencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1871",
+    "fr": "la tension",
+    "en": "tension",
+    "de": "die Spannung",
+    "es": "la tensión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1872",
+    "fr": "le terminal",
+    "en": "terminal",
+    "de": "das Terminal",
+    "es": "la terminal",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1873",
+    "fr": "terminal (phase finale)",
+    "en": "terminal",
+    "de": "im Endstadium",
+    "es": "terminal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1874",
+    "fr": "les termes (conditions)",
+    "en": "terms",
+    "de": "die Bedingungen",
+    "es": "los términos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1875",
+    "fr": "terriblement",
+    "en": "terribly",
+    "de": "schrecklich",
+    "es": "terriblemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1876",
+    "fr": "terrifier",
+    "en": "terrify",
+    "de": "erschrecken",
+    "es": "aterrorizar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1877",
+    "fr": "le territoire",
+    "en": "territory",
+    "de": "das Gebiet",
+    "es": "el territorio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1878",
+    "fr": "la terreur",
+    "en": "terror",
+    "de": "der Schrecken",
+    "es": "el terror",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1879",
+    "fr": "le terrorisme",
+    "en": "terrorism",
+    "de": "der Terrorismus",
+    "es": "el terrorismo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1880",
+    "fr": "le terroriste",
+    "en": "terrorist",
+    "de": "der Terrorist",
+    "es": "el terrorista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1881",
+    "fr": "les tests",
+    "en": "testing",
+    "de": "das Testen",
+    "es": "las pruebas",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1882",
+    "fr": "le manuel scolaire",
+    "en": "textbook",
+    "de": "das Lehrbuch",
+    "es": "el libro de texto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1883",
+    "fr": "le vol (délit)",
+    "en": "theft",
+    "de": "der Diebstahl",
+    "es": "el robo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1884",
+    "fr": "le thérapeute",
+    "en": "therapist",
+    "de": "der Therapeut",
+    "es": "el terapeuta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1885",
+    "fr": "la thérapie",
+    "en": "therapy",
+    "de": "die Therapie",
+    "es": "la terapia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1886",
+    "fr": "la théorie",
+    "en": "theory",
+    "de": "die Theorie",
+    "es": "la teoría",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1887",
+    "fr": "par conséquent / donc",
+    "en": "therefore",
+    "de": "daher",
+    "es": "por lo tanto",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1888",
+    "fr": "minutieux / approfondi",
+    "en": "thorough",
+    "de": "gründlich",
+    "es": "exhaustivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1889",
+    "fr": "minutieusement",
+    "en": "thoroughly",
+    "de": "gründlich",
+    "es": "exhaustivamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1890",
+    "fr": "la menace",
+    "en": "threat",
+    "de": "die Bedrohung",
+    "es": "la amenaza",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1891",
+    "fr": "menacer",
+    "en": "threaten",
+    "de": "bedrohen",
+    "es": "amenazar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1892",
+    "fr": "le pouce",
+    "en": "thumb",
+    "de": "der Daumen",
+    "es": "el pulgar",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1893",
+    "fr": "ainsi",
+    "en": "thus",
+    "de": "somit",
+    "es": "así",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1894",
+    "fr": "le timing / la synchronisation",
+    "en": "timing",
+    "de": "das Timing",
+    "es": "el tiempo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1895",
+    "fr": "le tissu (cellulaire) / le mouchoir",
+    "en": "tissue",
+    "de": "das Gewebe / das Taschentuch",
+    "es": "el tejido / el pañuelo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1896",
+    "fr": "le ton",
+    "en": "tone",
+    "de": "der Ton",
+    "es": "el tono",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1897",
+    "fr": "dur / difficile",
+    "en": "tough",
+    "de": "zäh / hart",
+    "es": "duro / difícil",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1898",
+    "fr": "le tournoi",
+    "en": "tournament",
+    "de": "das Turnier",
+    "es": "el torneo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1899",
+    "fr": "toxique",
+    "en": "toxic",
+    "de": "giftig",
+    "es": "tóxico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1900",
+    "fr": "la trace",
+    "en": "trace",
+    "de": "die Spur",
+    "es": "el rastro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1901",
+    "fr": "retracer / tracer",
+    "en": "trace",
+    "de": "zurückverfolgen",
+    "es": "rastrear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1902",
+    "fr": "la piste / le chemin",
+    "en": "track",
+    "de": "die Spur",
+    "es": "la pista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1903",
+    "fr": "suivre (à la trace)",
+    "en": "track",
+    "de": "verfolgen",
+    "es": "rastrear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1904",
+    "fr": "le commerce (activité)",
+    "en": "trading",
+    "de": "der Handel",
+    "es": "el comercio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1905",
+    "fr": "la tragédie",
+    "en": "tragedy",
+    "de": "die Tragödie",
+    "es": "la tragedia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1906",
+    "fr": "tragique",
+    "en": "tragic",
+    "de": "tragisch",
+    "es": "trágico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1907",
+    "fr": "le trait (de caractère)",
+    "en": "trait",
+    "de": "der Charakterzug",
+    "es": "el rasgo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1908",
+    "fr": "le transfert",
+    "en": "transfer",
+    "de": "die Übertragung",
+    "es": "la transferencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1909",
+    "fr": "transférer",
+    "en": "transfer",
+    "de": "übertragen",
+    "es": "transferir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1910",
+    "fr": "transformer",
+    "en": "transform",
+    "de": "verwandeln",
+    "es": "transformar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1911",
+    "fr": "la transition",
+    "en": "transition",
+    "de": "der Übergang",
+    "es": "la transición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1912",
+    "fr": "transmettre",
+    "en": "transmit",
+    "de": "übertragen",
+    "es": "transmitir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1913",
+    "fr": "le piège",
+    "en": "trap",
+    "de": "die Falle",
+    "es": "la trampa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1914",
+    "fr": "piéger",
+    "en": "trap",
+    "de": "in die Falle locken",
+    "es": "atrapar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1915",
+    "fr": "le trésor",
+    "en": "treasure",
+    "de": "der Schatz",
+    "es": "el tesoro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1916",
+    "fr": "le procès / l'essai",
+    "en": "trial",
+    "de": "der Prozess",
+    "es": "el juicio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1917",
+    "fr": "la tribu",
+    "en": "tribe",
+    "de": "der Stamm",
+    "es": "la tribu",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1918",
+    "fr": "le billion (mille milliards)",
+    "en": "trillion",
+    "de": "die Billion",
+    "es": "el billón",
+    "type": "num",
+    "level": "B2"
+  },
+  {
+    "id": "word_1919",
+    "fr": "la troupe",
+    "en": "troop",
+    "de": "die Truppe",
+    "es": "la tropa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1920",
+    "fr": "tropical",
+    "en": "tropical",
+    "de": "tropisch",
+    "es": "tropical",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1921",
+    "fr": "vraiment / véritablement",
+    "en": "truly",
+    "de": "wirklich",
+    "es": "verdaderamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1922",
+    "fr": "la confiance",
+    "en": "trust",
+    "de": "das Vertrauen",
+    "es": "la confianza",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1923",
+    "fr": "faire confiance à",
+    "en": "trust",
+    "de": "vertrauen",
+    "es": "confiar en",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1924",
+    "fr": "le tsunami",
+    "en": "tsunami",
+    "de": "der Tsunami",
+    "es": "el tsunami",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1925",
+    "fr": "l'air (mélodie)",
+    "en": "tune",
+    "de": "die Melodie",
+    "es": "la melodía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1926",
+    "fr": "le tunnel",
+    "en": "tunnel",
+    "de": "der Tunnel",
+    "es": "el túnel",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1927",
+    "fr": "ultime",
+    "en": "ultimate",
+    "de": "ultimativ",
+    "es": "último",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1928",
+    "fr": "finalement",
+    "en": "ultimately",
+    "de": "letztendlich",
+    "es": "finalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1929",
+    "fr": "inacceptable",
+    "en": "unacceptable",
+    "de": "inakzeptabel",
+    "es": "inaceptable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1930",
+    "fr": "l'incertitude",
+    "en": "uncertainty",
+    "de": "die Unsicherheit",
+    "es": "la incertidumbre",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1931",
+    "fr": "inconscient",
+    "en": "unconscious",
+    "de": "bewusstlos",
+    "es": "inconsciente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1932",
+    "fr": "subir / éprouver",
+    "en": "undergo",
+    "de": "durchmachen",
+    "es": "someterse a",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1933",
+    "fr": "entreprendre",
+    "en": "undertake",
+    "de": "unternehmen",
+    "es": "emprender",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1934",
+    "fr": "inattendu",
+    "en": "unexpected",
+    "de": "unerwartet",
+    "es": "inesperado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1935",
+    "fr": "se dérouler / déplier",
+    "en": "unfold",
+    "de": "sich entfalten",
+    "es": "desarrollarse / desplegar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1936",
+    "fr": "malheureux",
+    "en": "unfortunate",
+    "de": "unglücklich",
+    "es": "desafortunado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1937",
+    "fr": "unique",
+    "en": "unique",
+    "de": "einzigartig",
+    "es": "único",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1938",
+    "fr": "unir",
+    "en": "unite",
+    "de": "vereinen",
+    "es": "unir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1939",
+    "fr": "l'unité",
+    "en": "unity",
+    "de": "die Einheit",
+    "es": "la unidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1940",
+    "fr": "universel",
+    "en": "universal",
+    "de": "universell",
+    "es": "universal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1941",
+    "fr": "l'univers",
+    "en": "universe",
+    "de": "das Universum",
+    "es": "el universo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1942",
+    "fr": "inconnu",
+    "en": "unknown",
+    "de": "unbekannt",
+    "es": "desconocido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1943",
+    "fr": "supérieur",
+    "en": "upper",
+    "de": "ober",
+    "es": "superior",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1944",
+    "fr": "vers le haut",
+    "en": "upwards",
+    "de": "aufwärts",
+    "es": "hacia arriba",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1945",
+    "fr": "urbain",
+    "en": "urban",
+    "de": "städtisch",
+    "es": "urbano",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1946",
+    "fr": "exhorter / pousser",
+    "en": "urge",
+    "de": "drängen",
+    "es": "instar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1947",
+    "fr": "urgent",
+    "en": "urgent",
+    "de": "dringend",
+    "es": "urgente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1948",
+    "fr": "l'usage",
+    "en": "usage",
+    "de": "die Nutzung",
+    "es": "el uso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1949",
+    "fr": "inutile",
+    "en": "useless",
+    "de": "nutzlos",
+    "es": "inútil",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1950",
+    "fr": "valide",
+    "en": "valid",
+    "de": "gültig",
+    "es": "válido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1951",
+    "fr": "la variation",
+    "en": "variation",
+    "de": "die Schwankung",
+    "es": "la variación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1952",
+    "fr": "varier",
+    "en": "vary",
+    "de": "variieren",
+    "es": "variar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1953",
+    "fr": "vaste",
+    "en": "vast",
+    "de": "riesig",
+    "es": "vasto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1954",
+    "fr": "le lieu (événement)",
+    "en": "venue",
+    "de": "der Veranstaltungsort",
+    "es": "el lugar",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1955",
+    "fr": "vertical",
+    "en": "vertical",
+    "de": "vertikal",
+    "es": "vertical",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1956",
+    "fr": "via / par",
+    "en": "via",
+    "de": "über",
+    "es": "vía",
+    "type": "prep",
+    "level": "B2"
+  },
+  {
+    "id": "word_1957",
+    "fr": "la victoire",
+    "en": "victory",
+    "de": "der Sieg",
+    "es": "la victoria",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1958",
+    "fr": "victorieux",
+    "en": "victorious",
+    "de": "siegreich",
+    "es": "victorioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1959",
+    "fr": "le point de vue",
+    "en": "viewpoint",
+    "de": "der Standpunkt",
+    "es": "el punto de vista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1960",
+    "fr": "la violence",
+    "en": "violence",
+    "de": "die Gewalt",
+    "es": "la violencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1961",
+    "fr": "virtuel",
+    "en": "virtual",
+    "de": "virtuell",
+    "es": "virtual",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1962",
+    "fr": "le visa",
+    "en": "visa",
+    "de": "das Visum",
+    "es": "el visado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1963",
+    "fr": "visible",
+    "en": "visible",
+    "de": "sichtbar",
+    "es": "visible",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1964",
+    "fr": "la vision",
+    "en": "vision",
+    "de": "die Vision",
+    "es": "la visión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1965",
+    "fr": "visuel",
+    "en": "visual",
+    "de": "visuell",
+    "es": "visual",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1966",
+    "fr": "vital",
+    "en": "vital",
+    "de": "lebenswichtig",
+    "es": "vital",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1967",
+    "fr": "la vitamine",
+    "en": "vitamin",
+    "de": "das Vitamin",
+    "es": "la vitamina",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1968",
+    "fr": "le volume",
+    "en": "volume",
+    "de": "die Lautstärke",
+    "es": "el volumen",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1969",
+    "fr": "volontairement",
+    "en": "voluntarily",
+    "de": "freiwillig",
+    "es": "voluntariamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1970",
+    "fr": "volontaire",
+    "en": "voluntary",
+    "de": "freiwillig",
+    "es": "voluntario",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1971",
+    "fr": "le vote (action)",
+    "en": "voting",
+    "de": "die Abstimmung",
+    "es": "la votación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1972",
+    "fr": "le salaire",
+    "en": "wage",
+    "de": "der Lohn",
+    "es": "el salario",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1973",
+    "fr": "errer / se promener",
+    "en": "wander",
+    "de": "wandern",
+    "es": "deambular",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1974",
+    "fr": "le réchauffement",
+    "en": "warming",
+    "de": "die Erwärmung",
+    "es": "el calentamiento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1975",
+    "fr": "la faiblesse",
+    "en": "weakness",
+    "de": "die Schwäche",
+    "es": "la debilidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1976",
+    "fr": "la richesse",
+    "en": "wealth",
+    "de": "der Reichtum",
+    "es": "la riqueza",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1977",
+    "fr": "riche",
+    "en": "wealthy",
+    "de": "wohlhabend",
+    "es": "rico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1978",
+    "fr": "hebdomadaire",
+    "en": "weekly",
+    "de": "wöchentlich",
+    "es": "semanal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1979",
+    "fr": "bizarre",
+    "en": "weird",
+    "de": "seltsam",
+    "es": "raro",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1980",
+    "fr": "le bien-être / l'aide sociale",
+    "en": "welfare",
+    "de": "die Wohlfahrt",
+    "es": "el bienestar",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1981",
+    "fr": "le blé",
+    "en": "wheat",
+    "de": "der Weizen",
+    "es": "el trigo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1982",
+    "fr": "tandis que",
+    "en": "whereas",
+    "de": "wohingegen",
+    "es": "mientras que",
+    "type": "conj",
+    "level": "B2"
+  },
+  {
+    "id": "word_1983",
+    "fr": "partout où",
+    "en": "wherever",
+    "de": "wo auch immer",
+    "es": "dondequiera que",
+    "type": "conj",
+    "level": "B2"
+  },
+  {
+    "id": "word_1984",
+    "fr": "chuchoter",
+    "en": "whisper",
+    "de": "flüstern",
+    "es": "susurrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1985",
+    "fr": "quiconque",
+    "en": "whoever",
+    "de": "wer auch immer",
+    "es": "quienquiera que",
+    "type": "pron",
+    "level": "B2"
+  },
+  {
+    "id": "word_1986",
+    "fr": "qui / que (complément)",
+    "en": "whom",
+    "de": "wem / wen",
+    "es": "a quien",
+    "type": "pron",
+    "level": "B2"
+  },
+  {
+    "id": "word_1987",
+    "fr": "largement",
+    "en": "widely",
+    "de": "weit",
+    "es": "ampliamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1988",
+    "fr": "répandu",
+    "en": "widespread",
+    "de": "weit verbreitet",
+    "es": "generalizado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1989",
+    "fr": "la veuve",
+    "en": "widow",
+    "de": "die Witwe",
+    "es": "la viuda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1990",
+    "fr": "la faune",
+    "en": "wildlife",
+    "de": "die Tierwelt",
+    "es": "la vida silvestre",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1991",
+    "fr": "disposé à",
+    "en": "willing",
+    "de": "bereit",
+    "es": "dispuesto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1992",
+    "fr": "le fil (de fer/électrique)",
+    "en": "wire",
+    "de": "der Draht",
+    "es": "el alambre",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1993",
+    "fr": "la sagesse",
+    "en": "wisdom",
+    "de": "die Weisheit",
+    "es": "la sabiduría",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1994",
+    "fr": "sage",
+    "en": "wise",
+    "de": "weise",
+    "es": "sabio",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_1995",
+    "fr": "retirer",
+    "en": "withdraw",
+    "de": "zurückziehen",
+    "es": "retirar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1996",
+    "fr": "le témoin",
+    "en": "witness",
+    "de": "der Zeuge",
+    "es": "el testigo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1997",
+    "fr": "être témoin de",
+    "en": "witness",
+    "de": "bezeugen",
+    "es": "presenciar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_1998",
+    "fr": "le loup",
+    "en": "wolf",
+    "de": "der Wolf",
+    "es": "el lobo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_1999",
+    "fr": "la main-d'œuvre",
+    "en": "workforce",
+    "de": "die Belegschaft",
+    "es": "la fuerza laboral",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2000",
+    "fr": "le lieu de travail",
+    "en": "workplace",
+    "de": "der Arbeitsplatz",
+    "es": "el lugar de trabajo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2001",
+    "fr": "l'atelier / l'entraînement",
+    "en": "workshop",
+    "de": "die Werkstatt",
+    "es": "el taller",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2002",
+    "fr": "le ver",
+    "en": "worm",
+    "de": "der Wurm",
+    "es": "el gusano",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2003",
+    "fr": "la blessure",
+    "en": "wound",
+    "de": "die Wunde",
+    "es": "la herida",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2004",
+    "fr": "blesser",
+    "en": "wound",
+    "de": "verwunden",
+    "es": "herir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2005",
+    "fr": "emballer / envelopper",
+    "en": "wrap",
+    "de": "einwickeln",
+    "es": "envolver",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2006",
+    "fr": "le poignet",
+    "en": "wrist",
+    "de": "das Handgelenk",
+    "es": "la muñeca",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2007",
+    "fr": "la bactérie",
+    "en": "bacteria",
+    "de": "die Bakterien",
+    "es": "la bacteria",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2008",
+    "fr": "le badge / l'insigne",
+    "en": "badge",
+    "de": "das Abzeichen",
+    "es": "la insignia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2009",
+    "fr": "équilibré",
+    "en": "balanced",
+    "de": "ausgewogen",
+    "es": "equilibrado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2010",
+    "fr": "le ballet",
+    "en": "ballet",
+    "de": "das Ballett",
+    "es": "el ballet",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2011",
+    "fr": "le ballon (baudruche)",
+    "en": "balloon",
+    "de": "der Ballon",
+    "es": "el globo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2012",
+    "fr": "à peine",
+    "en": "barely",
+    "de": "kaum",
+    "es": "apenas",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2013",
+    "fr": "la bonne affaire",
+    "en": "bargain",
+    "de": "das Schnäppchen",
+    "es": "la ganga",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2014",
+    "fr": "la barrière",
+    "en": "barrier",
+    "de": "die Barriere",
+    "es": "la barrera",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2015",
+    "fr": "basé sur",
+    "en": "based on",
+    "de": "basierend auf",
+    "es": "basado en",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2016",
+    "fr": "le sous-sol",
+    "en": "basement",
+    "de": "der Keller",
+    "es": "el sótano",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2017",
+    "fr": "fondamentalement / en gros",
+    "en": "basically",
+    "de": "grundsätzlich",
+    "es": "básicamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2018",
+    "fr": "la base / le fondement",
+    "en": "basis",
+    "de": "die Basis",
+    "es": "la base",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2019",
+    "fr": "le panier",
+    "en": "basket",
+    "de": "der Korb",
+    "es": "la cesta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2020",
+    "fr": "la batte / la chauve-souris",
+    "en": "bat",
+    "de": "der Schläger / die Fledermaus",
+    "es": "el bate / el murciélago",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2021",
+    "fr": "supporter / endurer",
+    "en": "bear",
+    "de": "ertragen",
+    "es": "soportar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2022",
+    "fr": "supplier",
+    "en": "beg",
+    "de": "betteln",
+    "es": "rogar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2023",
+    "fr": "l'être",
+    "en": "being",
+    "de": "das Wesen",
+    "es": "el ser",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2024",
+    "fr": "bénéfique",
+    "en": "beneficial",
+    "de": "vorteilhaft",
+    "es": "beneficioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2025",
+    "fr": "courbé / plié",
+    "en": "bent",
+    "de": "gebogen",
+    "es": "doblado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2026",
+    "fr": "à côté de",
+    "en": "beside",
+    "de": "neben",
+    "es": "al lado de",
+    "type": "prep",
+    "level": "B2"
+  },
+  {
+    "id": "word_2027",
+    "fr": "en outre / d'ailleurs",
+    "en": "besides",
+    "de": "außerdem",
+    "es": "además",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2028",
+    "fr": "parier",
+    "en": "bet",
+    "de": "wetten",
+    "es": "apostar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2029",
+    "fr": "au-delà de",
+    "en": "beyond",
+    "de": "jenseits",
+    "es": "más allá de",
+    "type": "prep",
+    "level": "B2"
+  },
+  {
+    "id": "word_2030",
+    "fr": "le biais / le préjugé",
+    "en": "bias",
+    "de": "die Voreingenommenheit",
+    "es": "el sesgo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2031",
+    "fr": "faire une offre (enchère)",
+    "en": "bid",
+    "de": "bieten",
+    "es": "pujar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2032",
+    "fr": "biologique",
+    "en": "biological",
+    "de": "biologisch",
+    "es": "biológico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2033",
+    "fr": "amer",
+    "en": "bitter",
+    "de": "bitter",
+    "es": "amargo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2034",
+    "fr": "le blâme",
+    "en": "blame",
+    "de": "die Schuld",
+    "es": "la culpa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2035",
+    "fr": "blâmer",
+    "en": "blame",
+    "de": "beschuldigen",
+    "es": "culpar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2036",
+    "fr": "la couverture",
+    "en": "blanket",
+    "de": "die Decke",
+    "es": "la manta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2037",
+    "fr": "aveugle",
+    "en": "blind",
+    "de": "blind",
+    "es": "ciego",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2038",
+    "fr": "audacieux / en gras",
+    "en": "bold",
+    "de": "mutig / fett (Schrift)",
+    "es": "audaz / negrita",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2039",
+    "fr": "le bombardement",
+    "en": "bombing",
+    "de": "der Bombenangriff",
+    "es": "el bombardeo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2040",
+    "fr": "le lien (affectif/chimique)",
+    "en": "bond",
+    "de": "die Bindung",
+    "es": "el vínculo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2041",
+    "fr": "stimuler / booster",
+    "en": "boost",
+    "de": "ankurbeln",
+    "es": "impulsar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2042",
+    "fr": "lié / contraint",
+    "en": "bound",
+    "de": "gebunden",
+    "es": "atado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2043",
+    "fr": "le sein / la poitrine",
+    "en": "breast",
+    "de": "die Brust",
+    "es": "el pecho",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2044",
+    "fr": "la brique",
+    "en": "brick",
+    "de": "der Ziegel",
+    "es": "el ladrillo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2045",
+    "fr": "bref / court",
+    "en": "brief",
+    "de": "kurz",
+    "es": "breve",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2046",
+    "fr": "brièvement",
+    "en": "briefly",
+    "de": "kurz",
+    "es": "brevemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2047",
+    "fr": "large / vaste",
+    "en": "broad",
+    "de": "breit",
+    "es": "amplio",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2048",
+    "fr": "l'émission (TV/radio)",
+    "en": "broadcast",
+    "de": "die Sendung",
+    "es": "la transmisión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2049",
+    "fr": "diffuser",
+    "en": "broadcast",
+    "de": "senden",
+    "es": "transmitir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2050",
+    "fr": "le diffuseur / le présentateur",
+    "en": "broadcaster",
+    "de": "der Sender",
+    "es": "el locutor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2051",
+    "fr": "largement",
+    "en": "broadly",
+    "de": "weitgehend",
+    "es": "ampliamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2052",
+    "fr": "le dollar (familier)",
+    "en": "buck",
+    "de": "der Dollar",
+    "es": "el dólar",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2053",
+    "fr": "le budget",
+    "en": "budget",
+    "de": "das Budget",
+    "es": "el presupuesto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2054",
+    "fr": "le bug / l'insecte",
+    "en": "bug",
+    "de": "der Käfer",
+    "es": "el insecto / el error",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2055",
+    "fr": "la balle (fusil)",
+    "en": "bullet",
+    "de": "die Kugel",
+    "es": "la bala",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2056",
+    "fr": "le bouquet / la bande",
+    "en": "bunch",
+    "de": "der Haufen",
+    "es": "el manojo / el grupo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2057",
+    "fr": "le buisson",
+    "en": "bush",
+    "de": "der Busch",
+    "es": "el arbusto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2058",
+    "fr": "sauf / à part",
+    "en": "but",
+    "de": "außer",
+    "es": "sino / excepto",
+    "type": "prep",
+    "level": "B2"
+  },
+  {
+    "id": "word_2059",
+    "fr": "la cabine / le chalet",
+    "en": "cabin",
+    "de": "die Hütte",
+    "es": "la cabaña",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2060",
+    "fr": "le câble",
+    "en": "cable",
+    "de": "das Kabel",
+    "es": "el cable",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2061",
+    "fr": "calculer",
+    "en": "calculate",
+    "de": "berechnen",
+    "es": "calcular",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2062",
+    "fr": "le canal",
+    "en": "canal",
+    "de": "der Kanal",
+    "es": "el canal",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2063",
+    "fr": "annuler",
+    "en": "cancel",
+    "de": "absagen",
+    "es": "cancelar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2064",
+    "fr": "le cancer",
+    "en": "cancer",
+    "de": "der Krebs",
+    "es": "el cáncer",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2065",
+    "fr": "la bougie",
+    "en": "candle",
+    "de": "die Kerze",
+    "es": "la vela",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2066",
+    "fr": "capable",
+    "en": "capable",
+    "de": "fähig",
+    "es": "capaz",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2067",
+    "fr": "la capacité",
+    "en": "capacity",
+    "de": "die Kapazität",
+    "es": "la capacidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2068",
+    "fr": "capturer",
+    "en": "capture",
+    "de": "einfangen",
+    "es": "capturar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2069",
+    "fr": "le carbone",
+    "en": "carbon",
+    "de": "der Kohlenstoff",
+    "es": "el carbono",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2070",
+    "fr": "le casting",
+    "en": "cast",
+    "de": "die Besetzung",
+    "es": "el elenco",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2071",
+    "fr": "jeter / distribuer (rôle)",
+    "en": "cast",
+    "de": "werfen",
+    "es": "lanzar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2072",
+    "fr": "décontracté",
+    "en": "casual",
+    "de": "lässig",
+    "es": "casual",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2073",
+    "fr": "la catastrophe",
+    "en": "catastrophe",
+    "de": "die Katastrophe",
+    "es": "la catástrofe",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2074",
+    "fr": "la grotte",
+    "en": "cave",
+    "de": "die Höhle",
+    "es": "la cueva",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2075",
+    "fr": "la cellule",
+    "en": "cell",
+    "de": "die Zelle",
+    "es": "la célula",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2076",
+    "fr": "la certitude",
+    "en": "certainty",
+    "de": "die Gewissheit",
+    "es": "la certeza",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2077",
+    "fr": "le certificat",
+    "en": "certificate",
+    "de": "das Zertifikat",
+    "es": "el certificado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2078",
+    "fr": "le président (d'une réunion/comité)",
+    "en": "chairman",
+    "de": "der Vorsitzende",
+    "es": "el presidente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2079",
+    "fr": "stimulant / difficile",
+    "en": "challenging",
+    "de": "herausfordernd",
+    "es": "desafiante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2080",
+    "fr": "le championnat",
+    "en": "championship",
+    "de": "die Meisterschaft",
+    "es": "el campeonato",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2081",
+    "fr": "la caractéristique",
+    "en": "characteristic",
+    "de": "die Eigenschaft",
+    "es": "la característica",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2082",
+    "fr": "charmant",
+    "en": "charming",
+    "de": "charmant",
+    "es": "encantador",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2083",
+    "fr": "poursuivre / chasser",
+    "en": "chase",
+    "de": "jagen",
+    "es": "perseguir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2084",
+    "fr": "la joue",
+    "en": "cheek",
+    "de": "die Wange",
+    "es": "la mejilla",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2085",
+    "fr": "acclamer / encourager",
+    "en": "cheer",
+    "de": "jubeln",
+    "es": "animar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2086",
+    "fr": "le chef / principal",
+    "en": "chief",
+    "de": "der Chef",
+    "es": "el jefe",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2087",
+    "fr": "hacher / couper",
+    "en": "chop",
+    "de": "hacken",
+    "es": "picar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2088",
+    "fr": "le circuit",
+    "en": "circuit",
+    "de": "der Kreislauf",
+    "es": "el circuito",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2089",
+    "fr": "la circonstance",
+    "en": "circumstance",
+    "de": "der Umstand",
+    "es": "la circunstancia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2090",
+    "fr": "citer (un texte)",
+    "en": "cite",
+    "de": "zitieren",
+    "es": "citar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2091",
+    "fr": "le citoyen",
+    "en": "citizen",
+    "de": "der Bürger",
+    "es": "el ciudadano",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2092",
+    "fr": "civil",
+    "en": "civil",
+    "de": "zivil",
+    "es": "civil",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2093",
+    "fr": "la civilisation",
+    "en": "civilization",
+    "de": "die Zivilisation",
+    "es": "la civilización",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2094",
+    "fr": "clarifier",
+    "en": "clarify",
+    "de": "klären",
+    "es": "aclarar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2095",
+    "fr": "classique",
+    "en": "classic",
+    "de": "klassisch",
+    "es": "clásico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2096",
+    "fr": "classer",
+    "en": "classify",
+    "de": "klassifizieren",
+    "es": "clasificar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2097",
+    "fr": "la clause / la proposition",
+    "en": "clause",
+    "de": "die Klausel",
+    "es": "la cláusula",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2098",
+    "fr": "la falaise",
+    "en": "cliff",
+    "de": "die Klippe",
+    "es": "el acantilado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2099",
+    "fr": "la clinique",
+    "en": "clinic",
+    "de": "die Klinik",
+    "es": "la clínica",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2100",
+    "fr": "le clip / la pince",
+    "en": "clip",
+    "de": "der Clip",
+    "es": "el clip",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2101",
+    "fr": "étroitement / de près",
+    "en": "closely",
+    "de": "eng",
+    "es": "estrechamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2102",
+    "fr": "la coïncidence",
+    "en": "coincidence",
+    "de": "der Zufall",
+    "es": "la coincidencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2103",
+    "fr": "s'effondrer",
+    "en": "collapse",
+    "de": "zusammenbrechen",
+    "es": "colapsar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2104",
+    "fr": "le collectionneur",
+    "en": "collector",
+    "de": "der Sammler",
+    "es": "el coleccionista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2105",
+    "fr": "la colonie",
+    "en": "colony",
+    "de": "die Kolonie",
+    "es": "la colonia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2106",
+    "fr": "coloré / vif",
+    "en": "colourful",
+    "de": "bunt",
+    "es": "colorido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2107",
+    "fr": "la combinaison",
+    "en": "combination",
+    "de": "die Kombination",
+    "es": "la combinación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2108",
+    "fr": "le confort",
+    "en": "comfort",
+    "de": "der Komfort",
+    "es": "el confort",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2109",
+    "fr": "la bande dessinée",
+    "en": "comic",
+    "de": "der Comic",
+    "es": "el cómic",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2110",
+    "fr": "comique",
+    "en": "comic",
+    "de": "komisch",
+    "es": "cómico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2111",
+    "fr": "le commandement / l'ordre",
+    "en": "command",
+    "de": "der Befehl",
+    "es": "el mando",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2112",
+    "fr": "commander",
+    "en": "command",
+    "de": "befehlen",
+    "es": "comandar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2113",
+    "fr": "le commandant",
+    "en": "commander",
+    "de": "der Kommandant",
+    "es": "el comandante",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2114",
+    "fr": "la commission",
+    "en": "commission",
+    "de": "die Kommission",
+    "es": "la comisión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2115",
+    "fr": "l'engagement",
+    "en": "commitment",
+    "de": "das Engagement",
+    "es": "el compromiso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2116",
+    "fr": "le comité",
+    "en": "committee",
+    "de": "das Komitee",
+    "es": "el comité",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2117",
+    "fr": "communément",
+    "en": "commonly",
+    "de": "gewöhnlich",
+    "es": "comúnmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2118",
+    "fr": "comparatif",
+    "en": "comparative",
+    "de": "vergleichend",
+    "es": "comparativo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2119",
+    "fr": "l'achèvement",
+    "en": "completion",
+    "de": "der Abschluss",
+    "es": "la finalización",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2120",
+    "fr": "compliqué",
+    "en": "complicated",
+    "de": "kompliziert",
+    "es": "complicado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2121",
+    "fr": "le composant",
+    "en": "component",
+    "de": "die Komponente",
+    "es": "el componente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2122",
+    "fr": "composer",
+    "en": "compose",
+    "de": "komponieren",
+    "es": "componer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2123",
+    "fr": "le compositeur",
+    "en": "composer",
+    "de": "der Komponist",
+    "es": "el compositor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2124",
+    "fr": "le composé / l'enceinte",
+    "en": "compound",
+    "de": "die Verbindung",
+    "es": "el compuesto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2125",
+    "fr": "complet / exhaustif",
+    "en": "comprehensive",
+    "de": "umfassend",
+    "es": "exhaustivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2126",
+    "fr": "obligatoire",
+    "en": "compulsory",
+    "de": "verpflichtend",
+    "es": "obligatorio",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2127",
+    "fr": "la concentration",
+    "en": "concentration",
+    "de": "die Konzentration",
+    "es": "la concentración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2128",
+    "fr": "le concept",
+    "en": "concept",
+    "de": "das Konzept",
+    "es": "el concepto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2129",
+    "fr": "la préoccupation / le souci",
+    "en": "concern",
+    "de": "die Sorge",
+    "es": "la preocupación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2130",
+    "fr": "concerner",
+    "en": "concern",
+    "de": "betreffen",
+    "es": "concernir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2131",
+    "fr": "concerné / inquiet",
+    "en": "concerned",
+    "de": "besorgt",
+    "es": "preocupado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2132",
+    "fr": "la conclusion",
+    "en": "conclusion",
+    "de": "die Schlussfolgerung",
+    "es": "la conclusión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2133",
+    "fr": "le béton / concret",
+    "en": "concrete",
+    "de": "der Beton",
+    "es": "el hormigón / concreto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2134",
+    "fr": "mener / conduire",
+    "en": "conduct",
+    "de": "durchführen",
+    "es": "conducir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2135",
+    "fr": "avouer",
+    "en": "confess",
+    "de": "gestehen",
+    "es": "confesar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2136",
+    "fr": "la confiance",
+    "en": "confidence",
+    "de": "das Vertrauen",
+    "es": "la confianza",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2137",
+    "fr": "le conflit",
+    "en": "conflict",
+    "de": "der Konflikt",
+    "es": "el conflicto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2138",
+    "fr": "déroutant",
+    "en": "confusing",
+    "de": "verwirrend",
+    "es": "confuso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2139",
+    "fr": "la confusion",
+    "en": "confusion",
+    "de": "die Verwirrung",
+    "es": "la confusión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2140",
+    "fr": "conscient",
+    "en": "conscious",
+    "de": "bewusst",
+    "es": "consciente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2141",
+    "fr": "la conséquence",
+    "en": "consequence",
+    "de": "die Konsequenz",
+    "es": "la consecuencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2142",
+    "fr": "par conséquent",
+    "en": "consequently",
+    "de": "folglich",
+    "es": "en consecuencia",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2143",
+    "fr": "la conservation",
+    "en": "conservation",
+    "de": "die Erhaltung",
+    "es": "la conservación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2144",
+    "fr": "conservateur",
+    "en": "conservative",
+    "de": "konservativ",
+    "es": "conservador",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2145",
+    "fr": "considérable",
+    "en": "considerable",
+    "de": "erheblich",
+    "es": "considerable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2146",
+    "fr": "considérablement",
+    "en": "considerably",
+    "de": "erheblich",
+    "es": "considerablemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2147",
+    "fr": "la considération",
+    "en": "consideration",
+    "de": "die Überlegung",
+    "es": "la consideración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2148",
+    "fr": "consister en",
+    "en": "consist of",
+    "de": "bestehen aus",
+    "es": "consistir en",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2149",
+    "fr": "cohérent / constant",
+    "en": "consistent",
+    "de": "konsequent",
+    "es": "coherente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2150",
+    "fr": "régulièrement / constamment",
+    "en": "consistently",
+    "de": "konsequent",
+    "es": "consistentemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2151",
+    "fr": "la conspiration",
+    "en": "conspiracy",
+    "de": "die Verschwörung",
+    "es": "la conspiración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2152",
+    "fr": "constant",
+    "en": "constant",
+    "de": "konstant",
+    "es": "constante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2153",
+    "fr": "constamment",
+    "en": "constantly",
+    "de": "ständig",
+    "es": "constantemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2154",
+    "fr": "construire",
+    "en": "construct",
+    "de": "konstruieren",
+    "es": "construir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2155",
+    "fr": "la construction",
+    "en": "construction",
+    "de": "die Konstruktion",
+    "es": "la construcción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2156",
+    "fr": "consulter",
+    "en": "consult",
+    "de": "konsultieren",
+    "es": "consultar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2157",
+    "fr": "le consultant",
+    "en": "consultant",
+    "de": "der Berater",
+    "es": "el consultor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2158",
+    "fr": "le consommateur",
+    "en": "consumer",
+    "de": "der Verbraucher",
+    "es": "el consumidor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2159",
+    "fr": "la consommation",
+    "en": "consumption",
+    "de": "der Verbrauch",
+    "es": "el consumo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2160",
+    "fr": "contemporain",
+    "en": "contemporary",
+    "de": "zeitgenössisch",
+    "es": "contemporáneo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2161",
+    "fr": "le concours / la compétition",
+    "en": "contest",
+    "de": "der Wettbewerb",
+    "es": "el concurso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2162",
+    "fr": "le contexte",
+    "en": "context",
+    "de": "der Kontext",
+    "es": "el contexto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2163",
+    "fr": "le contrat",
+    "en": "contract",
+    "de": "der Vertrag",
+    "es": "el contrato",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2164",
+    "fr": "contribuer",
+    "en": "contribute",
+    "de": "beitragen",
+    "es": "contribuir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2165",
+    "fr": "la contribution",
+    "en": "contribution",
+    "de": "der Beitrag",
+    "es": "la contribución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2166",
+    "fr": "controversé",
+    "en": "controversial",
+    "de": "umstritten",
+    "es": "controvertido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2167",
+    "fr": "la controverse",
+    "en": "controversy",
+    "de": "die Kontroverse",
+    "es": "la controversia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2168",
+    "fr": "la commodité",
+    "en": "convenience",
+    "de": "die Bequemlichkeit",
+    "es": "la conveniencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2169",
+    "fr": "la convention",
+    "en": "convention",
+    "de": "die Konvention",
+    "es": "la convención",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2170",
+    "fr": "conventionnel",
+    "en": "conventional",
+    "de": "konventionell",
+    "es": "convencional",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2171",
+    "fr": "convertir",
+    "en": "convert",
+    "de": "konvertieren",
+    "es": "convertir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2172",
+    "fr": "transmettre",
+    "en": "convey",
+    "de": "vermitteln",
+    "es": "transmitir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2173",
+    "fr": "convaincu",
+    "en": "convinced",
+    "de": "überzeugt",
+    "es": "convencido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2174",
+    "fr": "convaincant",
+    "en": "convincing",
+    "de": "überzeugend",
+    "es": "convincente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2175",
+    "fr": "faire face (à une difficulté)",
+    "en": "cope",
+    "de": "bewältigen",
+    "es": "hacer frente",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2176",
+    "fr": "le noyau / le centre",
+    "en": "core",
+    "de": "der Kern",
+    "es": "el núcleo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2177",
+    "fr": "d'entreprise",
+    "en": "corporate",
+    "de": "Unternehmens-",
+    "es": "corporativo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2178",
+    "fr": "la société (entreprise)",
+    "en": "corporation",
+    "de": "das Unternehmen",
+    "es": "la corporación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2179",
+    "fr": "le couloir",
+    "en": "corridor",
+    "de": "der Flur",
+    "es": "el pasillo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2180",
+    "fr": "le conseil",
+    "en": "council",
+    "de": "der Rat",
+    "es": "el consejo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2181",
+    "fr": "le comptoir / le plan de travail",
+    "en": "counter",
+    "de": "die Theke",
+    "es": "el mostrador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2182",
+    "fr": "le comté",
+    "en": "county",
+    "de": "der Landkreis",
+    "es": "el condado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2183",
+    "fr": "le courage",
+    "en": "courage",
+    "de": "der Mut",
+    "es": "el coraje",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2184",
+    "fr": "la couverture (médiatique / réseau)",
+    "en": "coverage",
+    "de": "die Berichterstattung",
+    "es": "la cobertura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2185",
+    "fr": "le cow-boy",
+    "en": "cowboy",
+    "de": "der Cowboy",
+    "es": "el vaquero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2186",
+    "fr": "craquer / fendre",
+    "en": "crack",
+    "de": "knacken",
+    "es": "agrietar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2187",
+    "fr": "le crash / l'accident",
+    "en": "crash",
+    "de": "der Absturz",
+    "es": "el choque",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2188",
+    "fr": "s'écraser",
+    "en": "crash",
+    "de": "abstürzen",
+    "es": "chocar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2189",
+    "fr": "la création",
+    "en": "creation",
+    "de": "die Kreation",
+    "es": "la creación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2190",
+    "fr": "la créativité",
+    "en": "creativity",
+    "de": "die Kreativität",
+    "es": "la creatividad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2191",
+    "fr": "la créature",
+    "en": "creature",
+    "de": "die Kreatur",
+    "es": "la criatura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2192",
+    "fr": "l'équipage",
+    "en": "crew",
+    "de": "die Besatzung",
+    "es": "la tripulación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2193",
+    "fr": "la crise",
+    "en": "crisis",
+    "de": "die Krise",
+    "es": "la crisis",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2194",
+    "fr": "le critique",
+    "en": "critic",
+    "de": "der Kritiker",
+    "es": "el crítico",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2195",
+    "fr": "critique",
+    "en": "critical",
+    "de": "kritisch",
+    "es": "crítico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2196",
+    "fr": "gravement / d'un œil critique",
+    "en": "critically",
+    "de": "kritisch",
+    "es": "críticamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2197",
+    "fr": "la critique",
+    "en": "criticism",
+    "de": "die Kritik",
+    "es": "la crítica",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2198",
+    "fr": "critiquer",
+    "en": "criticise",
+    "de": "kritisieren",
+    "es": "criticar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2199",
+    "fr": "la culture (agricole)",
+    "en": "crop",
+    "de": "die Ernte",
+    "es": "la cosecha",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2200",
+    "fr": "crucial",
+    "en": "crucial",
+    "de": "entscheidend",
+    "es": "crucial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2201",
+    "fr": "la croisière",
+    "en": "cruise",
+    "de": "die Kreuzfahrt",
+    "es": "el crucero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2202",
+    "fr": "le signal / la réplique",
+    "en": "cue",
+    "de": "das Stichwort",
+    "es": "la señal",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2203",
+    "fr": "le remède",
+    "en": "cure",
+    "de": "das Heilmittel",
+    "es": "la cura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2204",
+    "fr": "guérir",
+    "en": "cure",
+    "de": "heilen",
+    "es": "curar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2205",
+    "fr": "curieux",
+    "en": "curious",
+    "de": "neugierig",
+    "es": "curioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2206",
+    "fr": "le programme d'études",
+    "en": "curriculum",
+    "de": "der Lehrplan",
+    "es": "el plan de estudios",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2207",
+    "fr": "la courbe",
+    "en": "curve",
+    "de": "die Kurve",
+    "es": "la curva",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2208",
+    "fr": "courber",
+    "en": "curve",
+    "de": "biegen",
+    "es": "curvar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2209",
+    "fr": "courbe (adj)",
+    "en": "curved",
+    "de": "gebogen",
+    "es": "curvado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2210",
+    "fr": "les produits laitiers",
+    "en": "dairy",
+    "de": "die Molkereiprodukte",
+    "es": "los lácteos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2211",
+    "fr": "laitier",
+    "en": "dairy",
+    "de": "Molkerei-",
+    "es": "lácteo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2212",
+    "fr": "oser",
+    "en": "dare",
+    "de": "wagen",
+    "es": "atreverse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2213",
+    "fr": "l'obscurité",
+    "en": "darkness",
+    "de": "die Dunkelheit",
+    "es": "la oscuridad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2214",
+    "fr": "les données",
+    "en": "data",
+    "de": "die Daten",
+    "es": "los datos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2215",
+    "fr": "la base de données",
+    "en": "database",
+    "de": "die Datenbank",
+    "es": "la base de datos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2216",
+    "fr": "la date limite",
+    "en": "deadline",
+    "de": "die Frist",
+    "es": "la fecha límite",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2217",
+    "fr": "mortel",
+    "en": "deadly",
+    "de": "tödlich",
+    "es": "mortal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2218",
+    "fr": "le concessionnaire / le revendeur",
+    "en": "dealer",
+    "de": "der Händler",
+    "es": "el distribuidor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2219",
+    "fr": "le débat",
+    "en": "debate",
+    "de": "die Debatte",
+    "es": "el debate",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2220",
+    "fr": "débattre",
+    "en": "debate",
+    "de": "debattieren",
+    "es": "debatir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2221",
+    "fr": "la dette",
+    "en": "debt",
+    "de": "die Schulden",
+    "es": "la deuda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2222",
+    "fr": "décent",
+    "en": "decent",
+    "de": "anständig",
+    "es": "decente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2223",
+    "fr": "le pont (bateau)",
+    "en": "deck",
+    "de": "das Deck",
+    "es": "la cubierta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2224",
+    "fr": "déclarer",
+    "en": "declare",
+    "de": "erklären",
+    "es": "declarar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2225",
+    "fr": "le déclin",
+    "en": "decline",
+    "de": "der Rückgang",
+    "es": "el declive",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2226",
+    "fr": "décliner",
+    "en": "decline",
+    "de": "ablehnen / abnehmen",
+    "es": "rechazar / declinar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2227",
+    "fr": "la décoration",
+    "en": "decoration",
+    "de": "die Dekoration",
+    "es": "la decoración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2228",
+    "fr": "la diminution",
+    "en": "decrease",
+    "de": "die Abnahme",
+    "es": "la disminución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2229",
+    "fr": "diminuer",
+    "en": "decrease",
+    "de": "abnehmen",
+    "es": "disminuir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2230",
+    "fr": "profondément",
+    "en": "deeply",
+    "de": "tief",
+    "es": "profundamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2231",
+    "fr": "la défaite",
+    "en": "defeat",
+    "de": "die Niederlage",
+    "es": "la derrota",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2232",
+    "fr": "vaincre",
+    "en": "defeat",
+    "de": "besiegen",
+    "es": "derrotar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2233",
+    "fr": "la défense",
+    "en": "defence",
+    "de": "die Verteidigung",
+    "es": "la defensa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2234",
+    "fr": "défendre",
+    "en": "defend",
+    "de": "verteidigen",
+    "es": "defender",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2235",
+    "fr": "le défenseur",
+    "en": "defender",
+    "de": "der Verteidiger",
+    "es": "el defensor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2236",
+    "fr": "définir",
+    "en": "define",
+    "de": "definieren",
+    "es": "definir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2237",
+    "fr": "la définition",
+    "en": "definition",
+    "de": "die Definition",
+    "es": "la definición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2238",
+    "fr": "le retard",
+    "en": "delay",
+    "de": "die Verzögerung",
+    "es": "el retraso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2239",
+    "fr": "retarder",
+    "en": "delay",
+    "de": "verzögern",
+    "es": "retrasar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2240",
+    "fr": "supprimer / effacer",
+    "en": "delete",
+    "de": "löschen",
+    "es": "eliminar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2241",
+    "fr": "délibéré",
+    "en": "deliberate",
+    "de": "absichtlich",
+    "es": "deliberado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2242",
+    "fr": "délibérément",
+    "en": "deliberately",
+    "de": "absichtlich",
+    "es": "deliberadamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2243",
+    "fr": "le plaisir / le délice",
+    "en": "delight",
+    "de": "die Freude",
+    "es": "el deleite",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2244",
+    "fr": "ravi",
+    "en": "delighted",
+    "de": "erfreut",
+    "es": "encantado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2245",
+    "fr": "la livraison",
+    "en": "delivery",
+    "de": "die Lieferung",
+    "es": "la entrega",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2246",
+    "fr": "la demande / l'exigence",
+    "en": "demand",
+    "de": "die Nachfrage",
+    "es": "la demanda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2247",
+    "fr": "exiger",
+    "en": "demand",
+    "de": "fordern",
+    "es": "exigir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2248",
+    "fr": "la démocratie",
+    "en": "democracy",
+    "de": "die Demokratie",
+    "es": "la democracia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2249",
+    "fr": "démocratique",
+    "en": "democratic",
+    "de": "demokratisch",
+    "es": "democrático",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2250",
+    "fr": "démontrer / manifester",
+    "en": "demonstrate",
+    "de": "demonstrieren",
+    "es": "demostrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2251",
+    "fr": "la manifestation / la démonstration",
+    "en": "demonstration",
+    "de": "die Demonstration",
+    "es": "la manifestación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2252",
+    "fr": "nier",
+    "en": "deny",
+    "de": "leugnen",
+    "es": "negar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2253",
+    "fr": "partir / décoller",
+    "en": "depart",
+    "de": "abreisen",
+    "es": "partir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2254",
+    "fr": "dépendant",
+    "en": "dependent",
+    "de": "abhängig",
+    "es": "dependiente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2255",
+    "fr": "l'acompte / le dépôt",
+    "en": "deposit",
+    "de": "die Anzahlung",
+    "es": "el depósito",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2256",
+    "fr": "déposer",
+    "en": "deposit",
+    "de": "deponieren",
+    "es": "depositar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2257",
+    "fr": "déprimé",
+    "en": "depressed",
+    "de": "deprimiert",
+    "es": "deprimido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2258",
+    "fr": "déprimant",
+    "en": "depressing",
+    "de": "deprimierend",
+    "es": "deprimente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2259",
+    "fr": "la dépression",
+    "en": "depression",
+    "de": "die Depression",
+    "es": "la depresión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2260",
+    "fr": "la profondeur",
+    "en": "depth",
+    "de": "die Tiefe",
+    "es": "la profundidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2261",
+    "fr": "dériver / tirer",
+    "en": "derive",
+    "de": "ableiten",
+    "es": "derivar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2262",
+    "fr": "mériter",
+    "en": "deserve",
+    "de": "verdienen",
+    "es": "merecer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2263",
+    "fr": "le désir",
+    "en": "desire",
+    "de": "das Verlangen",
+    "es": "el deseo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2264",
+    "fr": "désirer",
+    "en": "desire",
+    "de": "begehren",
+    "es": "desear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2265",
+    "fr": "désespéré",
+    "en": "desperate",
+    "de": "verzweifelt",
+    "es": "desesperado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2266",
+    "fr": "désespérément",
+    "en": "desperately",
+    "de": "verzweifelt",
+    "es": "desesperadamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2267",
+    "fr": "la destruction",
+    "en": "destruction",
+    "de": "die Zerstörung",
+    "es": "la destrucción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2268",
+    "fr": "détaillé",
+    "en": "detailed",
+    "de": "detailliert",
+    "es": "detallado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2269",
+    "fr": "détecter",
+    "en": "detect",
+    "de": "erkennen",
+    "es": "detectar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2270",
+    "fr": "déterminer",
+    "en": "determine",
+    "de": "bestimmen",
+    "es": "determinar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2271",
+    "fr": "la détermination",
+    "en": "determination",
+    "de": "die Entschlossenheit",
+    "es": "la determinación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2272",
+    "fr": "le diable",
+    "en": "devil",
+    "de": "der Teufel",
+    "es": "el diablo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2273",
+    "fr": "consacrer",
+    "en": "devote",
+    "de": "widmen",
+    "es": "dedicar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2274",
+    "fr": "différer",
+    "en": "differ",
+    "de": "sich unterscheiden",
+    "es": "diferir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2275",
+    "fr": "creuser",
+    "en": "dig",
+    "de": "graben",
+    "es": "cavar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2276",
+    "fr": "la pièce de 10 cents",
+    "en": "dime",
+    "de": "der Zehnpfennig",
+    "es": "la moneda de diez centavos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2277",
+    "fr": "le handicap",
+    "en": "disability",
+    "de": "die Behinderung",
+    "es": "la discapacidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2278",
+    "fr": "handicapé",
+    "en": "disabled",
+    "de": "behindert",
+    "es": "discapacitado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2279",
+    "fr": "le désaccord",
+    "en": "disagreement",
+    "de": "die Meinungsverschiedenheit",
+    "es": "el desacuerdo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2280",
+    "fr": "décevoir",
+    "en": "disappoint",
+    "de": "enttäuschen",
+    "es": "decepcionar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2281",
+    "fr": "la déception",
+    "en": "disappointment",
+    "de": "die Enttäuschung",
+    "es": "la decepción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2282",
+    "fr": "le disque",
+    "en": "disc",
+    "de": "die Scheibe",
+    "es": "el disco",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2283",
+    "fr": "la discipline",
+    "en": "discipline",
+    "de": "die Disziplin",
+    "es": "la disciplina",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2284",
+    "fr": "décourager",
+    "en": "discourage",
+    "de": "entmutigen",
+    "es": "desanimar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2285",
+    "fr": "malhonnête",
+    "en": "dishonest",
+    "de": "unehrlich",
+    "es": "deshonesto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2286",
+    "fr": "rejeter / renvoyer",
+    "en": "dismiss",
+    "de": "entlassen",
+    "es": "despedir / descartar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2287",
+    "fr": "le trouble / le désordre",
+    "en": "disorder",
+    "de": "die Störung",
+    "es": "el trastorno",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2288",
+    "fr": "l'affichage",
+    "en": "display",
+    "de": "die Anzeige",
+    "es": "la pantalla / la exhibición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2289",
+    "fr": "afficher / exposer",
+    "en": "display",
+    "de": "anzeigen",
+    "es": "exhibir / mostrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2290",
+    "fr": "lointain",
+    "en": "distant",
+    "de": "entfernt",
+    "es": "distante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2291",
+    "fr": "distinct",
+    "en": "distinct",
+    "de": "deutlich",
+    "es": "distinto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2292",
+    "fr": "distinguer",
+    "en": "distinguish",
+    "de": "unterscheiden",
+    "es": "distinguir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2293",
+    "fr": "distraire",
+    "en": "distract",
+    "de": "ablenken",
+    "es": "distraer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2294",
+    "fr": "distribuer",
+    "en": "distribute",
+    "de": "verteilen",
+    "es": "distribuir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2295",
+    "fr": "la distribution",
+    "en": "distribution",
+    "de": "die Verteilung",
+    "es": "la distribución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2296",
+    "fr": "le district",
+    "en": "district",
+    "de": "der Bezirk",
+    "es": "el distrito",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2297",
+    "fr": "déranger",
+    "en": "disturb",
+    "de": "stören",
+    "es": "molestar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2298",
+    "fr": "plonger",
+    "en": "dive",
+    "de": "tauchen",
+    "es": "bucear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2299",
+    "fr": "divers",
+    "en": "diverse",
+    "de": "vielfältig",
+    "es": "diverso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2300",
+    "fr": "la diversité",
+    "en": "diversity",
+    "de": "die Vielfalt",
+    "es": "la diversidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2301",
+    "fr": "la division",
+    "en": "division",
+    "de": "die Abteilung",
+    "es": "la división",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2302",
+    "fr": "le divorce",
+    "en": "divorce",
+    "de": "die Scheidung",
+    "es": "el divorcio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2303",
+    "fr": "divorcer",
+    "en": "divorce",
+    "de": "sich scheiden lassen",
+    "es": "divorciarse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2304",
+    "fr": "le document",
+    "en": "document",
+    "de": "das Dokument",
+    "es": "el documento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2305",
+    "fr": "documenter",
+    "en": "document",
+    "de": "dokumentieren",
+    "es": "documentar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2306",
+    "fr": "domestique",
+    "en": "domestic",
+    "de": "inländisch / häuslich",
+    "es": "nacional / doméstico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2307",
+    "fr": "dominant",
+    "en": "dominant",
+    "de": "dominant",
+    "es": "dominante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2308",
+    "fr": "dominer",
+    "en": "dominate",
+    "de": "dominieren",
+    "es": "dominar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2309",
+    "fr": "le don",
+    "en": "donation",
+    "de": "die Spende",
+    "es": "la donación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2310",
+    "fr": "le point",
+    "en": "dot",
+    "de": "der Punkt",
+    "es": "el punto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2311",
+    "fr": "vers le bas",
+    "en": "downwards",
+    "de": "abwärts",
+    "es": "hacia abajo",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2312",
+    "fr": "la douzaine",
+    "en": "dozen",
+    "de": "das Dutzend",
+    "es": "la docena",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2313",
+    "fr": "le brouillon",
+    "en": "draft",
+    "de": "der Entwurf",
+    "es": "el borrador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2314",
+    "fr": "rédiger (un brouillon)",
+    "en": "draft",
+    "de": "entwerfen",
+    "es": "redactar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2315",
+    "fr": "traîner (par terre)",
+    "en": "drag",
+    "de": "ziehen",
+    "es": "arrastrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2316",
+    "fr": "dramatique / spectaculaire",
+    "en": "dramatic",
+    "de": "dramatisch",
+    "es": "dramático",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2317",
+    "fr": "spectaculairement",
+    "en": "dramatically",
+    "de": "dramatisch",
+    "es": "dramáticamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2318",
+    "fr": "la sécheresse",
+    "en": "drought",
+    "de": "die Dürre",
+    "es": "la sequía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2319",
+    "fr": "terne / ennuyeux",
+    "en": "dull",
+    "de": "langweilig",
+    "es": "aburrido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2320",
+    "fr": "jeter / larguer",
+    "en": "dump",
+    "de": "abladen",
+    "es": "arrojar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2321",
+    "fr": "la durée",
+    "en": "duration",
+    "de": "die Dauer",
+    "es": "la duración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2322",
+    "fr": "dynamique",
+    "en": "dynamic",
+    "de": "dynamisch",
+    "es": "dinámico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2323",
+    "fr": "impatient / avide",
+    "en": "eager",
+    "de": "eifrig",
+    "es": "ansioso / entusiasta",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2324",
+    "fr": "l'économie (science)",
+    "en": "economics",
+    "de": "die Wirtschaftswissenschaften",
+    "es": "la economía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2325",
+    "fr": "l'économiste",
+    "en": "economist",
+    "de": "der Ökonom",
+    "es": "el economista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2326",
+    "fr": "éditer / modifier",
+    "en": "edit",
+    "de": "bearbeiten",
+    "es": "editar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2327",
+    "fr": "l'édition (publication)",
+    "en": "edition",
+    "de": "die Ausgabe",
+    "es": "la edición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2328",
+    "fr": "éditorial",
+    "en": "editorial",
+    "de": "redaktionell",
+    "es": "editorial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2329",
+    "fr": "efficace (rendement)",
+    "en": "efficient",
+    "de": "effizient",
+    "es": "eficiente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2330",
+    "fr": "efficacement",
+    "en": "efficiently",
+    "de": "effizient",
+    "es": "eficientemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2331",
+    "fr": "le coude",
+    "en": "elbow",
+    "de": "der Ellbogen",
+    "es": "el codo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2332",
+    "fr": "âgé (personne)",
+    "en": "elderly",
+    "de": "ältere",
+    "es": "anciano",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2333",
+    "fr": "élire",
+    "en": "elect",
+    "de": "wählen",
+    "es": "elegir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2334",
+    "fr": "l'élément",
+    "en": "element",
+    "de": "das Element",
+    "es": "el elemento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2335",
+    "fr": "l'électronique",
+    "en": "electronics",
+    "de": "die Elektronik",
+    "es": "la electrónica",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2336",
+    "fr": "élégant",
+    "en": "elegant",
+    "de": "elegant",
+    "es": "elegante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2337",
+    "fr": "élémentaire",
+    "en": "elementary",
+    "de": "elementar",
+    "es": "elemental",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2338",
+    "fr": "éliminer",
+    "en": "eliminate",
+    "de": "beseitigen",
+    "es": "eliminar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2339",
+    "fr": "ailleurs",
+    "en": "elsewhere",
+    "de": "woanders",
+    "es": "en otro lugar",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2340",
+    "fr": "embrasser (idée) / enlacer",
+    "en": "embrace",
+    "de": "umarmen",
+    "es": "abrazar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2341",
+    "fr": "émerger",
+    "en": "emerge",
+    "de": "auftauchen",
+    "es": "emerger",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2342",
+    "fr": "l'émission (gaz)",
+    "en": "emission",
+    "de": "die Emission",
+    "es": "la emisión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2343",
+    "fr": "émotionnel",
+    "en": "emotional",
+    "de": "emotional",
+    "es": "emocional",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2344",
+    "fr": "émotionnellement",
+    "en": "emotionally",
+    "de": "emotional",
+    "es": "emocionalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2345",
+    "fr": "l'accent / l'importance",
+    "en": "emphasis",
+    "de": "die Betonung",
+    "es": "el énfasis",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2346",
+    "fr": "souligner / mettre l'accent sur",
+    "en": "emphasise",
+    "de": "betonen",
+    "es": "enfatizar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2347",
+    "fr": "l'empire",
+    "en": "empire",
+    "de": "das Reich",
+    "es": "el imperio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2348",
+    "fr": "permettre (rendre capable)",
+    "en": "enable",
+    "de": "ermöglichen",
+    "es": "permitir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2349",
+    "fr": "rencontrer (problème/personne)",
+    "en": "encounter",
+    "de": "begegnen",
+    "es": "encontrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2350",
+    "fr": "s'engager / impliquer",
+    "en": "engage",
+    "de": "engagieren",
+    "es": "involucrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2351",
+    "fr": "améliorer / mettre en valeur",
+    "en": "enhance",
+    "de": "verbessern",
+    "es": "mejorar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2352",
+    "fr": "agréable",
+    "en": "enjoyable",
+    "de": "angenehm",
+    "es": "agradable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2353",
+    "fr": "la demande / l'enquête",
+    "en": "enquiry",
+    "de": "die Anfrage",
+    "es": "la consulta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2354",
+    "fr": "assurer / garantir",
+    "en": "ensure",
+    "de": "sicherstellen",
+    "es": "asegurar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2355",
+    "fr": "divertissant",
+    "en": "entertaining",
+    "de": "unterhaltsam",
+    "es": "entretenido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2356",
+    "fr": "l'enthousiasme",
+    "en": "enthusiasm",
+    "de": "die Begeisterung",
+    "es": "el entusiasmo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2357",
+    "fr": "enthousiaste",
+    "en": "enthusiastic",
+    "de": "begeistert",
+    "es": "entusiasta",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2358",
+    "fr": "entier",
+    "en": "entire",
+    "de": "ganz",
+    "es": "entero",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2359",
+    "fr": "entièrement",
+    "en": "entirely",
+    "de": "vollständig",
+    "es": "enteramente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2360",
+    "fr": "l'entrepreneur",
+    "en": "entrepreneur",
+    "de": "der Unternehmer",
+    "es": "el emprendedor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2361",
+    "fr": "l'enveloppe",
+    "en": "envelope",
+    "de": "der Umschlag",
+    "es": "el sobre",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2362",
+    "fr": "équiper",
+    "en": "equip",
+    "de": "ausstatten",
+    "es": "equipar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2363",
+    "fr": "équivalent",
+    "en": "equivalent",
+    "de": "äquivalent",
+    "es": "equivalente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2364",
+    "fr": "l'ère",
+    "en": "era",
+    "de": "die Ära",
+    "es": "la era",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2365",
+    "fr": "entrer en éruption",
+    "en": "erupt",
+    "de": "ausbrechen",
+    "es": "entrar en erupción",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2366",
+    "fr": "essentiellement",
+    "en": "essentially",
+    "de": "im Wesentlichen",
+    "es": "esencialmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2367",
+    "fr": "établir",
+    "en": "establish",
+    "de": "gründen / etablieren",
+    "es": "establecer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2368",
+    "fr": "le domaine / la propriété",
+    "en": "estate",
+    "de": "das Anwesen",
+    "es": "la propiedad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2369",
+    "fr": "l'estimation",
+    "en": "estimate",
+    "de": "die Schätzung",
+    "es": "la estimación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2370",
+    "fr": "estimer",
+    "en": "estimate",
+    "de": "schätzen",
+    "es": "estimar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2371",
+    "fr": "l'éthique",
+    "en": "ethic",
+    "de": "die Ethik",
+    "es": "la ética",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2372",
+    "fr": "éthique",
+    "en": "ethical",
+    "de": "ethisch",
+    "es": "ético",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2373",
+    "fr": "ethnique",
+    "en": "ethnic",
+    "de": "ethnisch",
+    "es": "étnico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2374",
+    "fr": "évaluer",
+    "en": "evaluate",
+    "de": "auswerten",
+    "es": "evaluar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2375",
+    "fr": "l'évaluation",
+    "en": "evaluation",
+    "de": "die Bewertung",
+    "es": "la evaluación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2376",
+    "fr": "même (adv)",
+    "en": "even",
+    "de": "sogar",
+    "es": "incluso",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2377",
+    "fr": "la preuve",
+    "en": "evidence",
+    "de": "der Beweis",
+    "es": "la evidencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2378",
+    "fr": "évident",
+    "en": "evident",
+    "de": "offensichtlich",
+    "es": "evidente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2379",
+    "fr": "le mal",
+    "en": "evil",
+    "de": "das Böse",
+    "es": "el mal",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2380",
+    "fr": "maléfique",
+    "en": "evil",
+    "de": "böse",
+    "es": "malvado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2381",
+    "fr": "l'évolution",
+    "en": "evolution",
+    "de": "die Evolution",
+    "es": "la evolución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2382",
+    "fr": "évoluer",
+    "en": "evolve",
+    "de": "sich entwickeln",
+    "es": "evolucionar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2383",
+    "fr": "l'examen",
+    "en": "examination",
+    "de": "die Prüfung",
+    "es": "el examen",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2384",
+    "fr": "dépasser / excéder",
+    "en": "exceed",
+    "de": "überschreiten",
+    "es": "exceder",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2385",
+    "fr": "l'exception",
+    "en": "exception",
+    "de": "die Ausnahme",
+    "es": "la excepción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2386",
+    "fr": "excessif",
+    "en": "excessive",
+    "de": "übermäßig",
+    "es": "excesivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2387",
+    "fr": "exclure",
+    "en": "exclude",
+    "de": "ausschließen",
+    "es": "excluir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2388",
+    "fr": "l'excuse",
+    "en": "excuse",
+    "de": "die Ausrede",
+    "es": "la excusa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2389",
+    "fr": "excuser",
+    "en": "excuse",
+    "de": "entschuldigen",
+    "es": "excusar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2390",
+    "fr": "le cadre / l'exécutif",
+    "en": "executive",
+    "de": "die Führungskraft",
+    "es": "el ejecutivo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2391",
+    "fr": "l'existence",
+    "en": "existence",
+    "de": "die Existenz",
+    "es": "la existencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2392",
+    "fr": "exotique",
+    "en": "exotic",
+    "de": "exotisch",
+    "es": "exótico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2393",
+    "fr": "l'expansion",
+    "en": "expansion",
+    "de": "die Erweiterung",
+    "es": "la expansión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2394",
+    "fr": "l'attente",
+    "en": "expectation",
+    "de": "die Erwartung",
+    "es": "la expectativa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2395",
+    "fr": "la dépense",
+    "en": "expense",
+    "de": "die Ausgabe",
+    "es": "el gasto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2396",
+    "fr": "l'expertise",
+    "en": "expertise",
+    "de": "das Fachwissen",
+    "es": "la experiencia (técnica)",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2397",
+    "fr": "exploiter",
+    "en": "exploit",
+    "de": "ausbeuten",
+    "es": "explotar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2398",
+    "fr": "l'exploration",
+    "en": "exploration",
+    "de": "die Erkundung",
+    "es": "la exploración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2399",
+    "fr": "exposer",
+    "en": "expose",
+    "de": "aussetzen",
+    "es": "exponer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2400",
+    "fr": "l'exposition",
+    "en": "exposure",
+    "de": "die Aussetzung",
+    "es": "la exposición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2401",
+    "fr": "étendre / prolonger",
+    "en": "extend",
+    "de": "erweitern",
+    "es": "extender",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2402",
+    "fr": "l'extension",
+    "en": "extension",
+    "de": "die Erweiterung",
+    "es": "la extensión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2403",
+    "fr": "extensif / vaste",
+    "en": "extensive",
+    "de": "umfangreich",
+    "es": "extenso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2404",
+    "fr": "largement (extensivement)",
+    "en": "extensively",
+    "de": "ausführlich",
+    "es": "extensamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2405",
+    "fr": "l'étendue",
+    "en": "extent",
+    "de": "das Ausmaß",
+    "es": "la medida",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2406",
+    "fr": "externe",
+    "en": "external",
+    "de": "extern",
+    "es": "externo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2407",
+    "fr": "l'extrait",
+    "en": "extract",
+    "de": "der Auszug",
+    "es": "el extracto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2408",
+    "fr": "extraire",
+    "en": "extract",
+    "de": "extrahieren",
+    "es": "extraer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2409",
+    "fr": "extraordinaire",
+    "en": "extraordinary",
+    "de": "außergewöhnlich",
+    "es": "extraordinario",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2410",
+    "fr": "le tissu",
+    "en": "fabric",
+    "de": "der Stoff",
+    "es": "la tela",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2411",
+    "fr": "fabuleux",
+    "en": "fabulous",
+    "de": "fabelhaft",
+    "es": "fabuloso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2412",
+    "fr": "l'installation / l'équipement",
+    "en": "facility",
+    "de": "die Einrichtung",
+    "es": "la instalación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2413",
+    "fr": "le facteur",
+    "en": "factor",
+    "de": "der Faktor",
+    "es": "el factor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2414",
+    "fr": "la faculté",
+    "en": "faculty",
+    "de": "die Fakultät",
+    "es": "la facultad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2415",
+    "fr": "échoué / raté",
+    "en": "failed",
+    "de": "gescheitert",
+    "es": "fallido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2416",
+    "fr": "l'échec",
+    "en": "failure",
+    "de": "das Scheitern",
+    "es": "el fracaso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2417",
+    "fr": "la foi",
+    "en": "faith",
+    "de": "der Glaube",
+    "es": "la fe",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2418",
+    "fr": "le faux",
+    "en": "fake",
+    "de": "die Fälschung",
+    "es": "lo falso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2419",
+    "fr": "faux",
+    "en": "fake",
+    "de": "falsch",
+    "es": "falso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2420",
+    "fr": "la renommée",
+    "en": "fame",
+    "de": "der Ruhm",
+    "es": "la fama",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2421",
+    "fr": "la fantaisie",
+    "en": "fantasy",
+    "de": "die Fantasie",
+    "es": "la fantasía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2422",
+    "fr": "le tarif (transport)",
+    "en": "fare",
+    "de": "der Fahrpreis",
+    "es": "la tarifa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2423",
+    "fr": "la faute / le défaut",
+    "en": "fault",
+    "de": "der Fehler",
+    "es": "la culpa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2424",
+    "fr": "favoriser",
+    "en": "favour",
+    "de": "bevorzugen",
+    "es": "favorecer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2425",
+    "fr": "la plume",
+    "en": "feather",
+    "de": "die Feder",
+    "es": "la pluma",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2426",
+    "fr": "les frais",
+    "en": "fee",
+    "de": "die Gebühr",
+    "es": "la tarifa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2427",
+    "fr": "le retour (d'information)",
+    "en": "feedback",
+    "de": "die Rückmeldung",
+    "es": "los comentarios",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2428",
+    "fr": "le confrère / le compagnon",
+    "en": "fellow",
+    "de": "der Kollege",
+    "es": "el compañero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2429",
+    "fr": "la finance",
+    "en": "finance",
+    "de": "die Finanzen",
+    "es": "las finanzas",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2430",
+    "fr": "financer",
+    "en": "finance",
+    "de": "finanzieren",
+    "es": "financiar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2431",
+    "fr": "la découverte / le résultat",
+    "en": "finding",
+    "de": "der Befund",
+    "es": "el hallazgo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2432",
+    "fr": "le pompier",
+    "en": "firefighter",
+    "de": "der Feuerwehrmann",
+    "es": "el bombero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2433",
+    "fr": "le feu d'artifice",
+    "en": "firework",
+    "de": "das Feuerwerk",
+    "es": "el fuego artificial",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2434",
+    "fr": "l'entreprise",
+    "en": "firm",
+    "de": "die Firma",
+    "es": "la empresa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2435",
+    "fr": "ferme",
+    "en": "firm",
+    "de": "fest",
+    "es": "firme",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2436",
+    "fr": "fermement",
+    "en": "firmly",
+    "de": "fest",
+    "es": "firmemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2437",
+    "fr": "la flamme",
+    "en": "flame",
+    "de": "die Flamme",
+    "es": "la llama",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2438",
+    "fr": "clignoter",
+    "en": "flash",
+    "de": "blinken",
+    "es": "parpadear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2439",
+    "fr": "la saveur",
+    "en": "flavour",
+    "de": "der Geschmack",
+    "es": "el sabor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2440",
+    "fr": "flexible",
+    "en": "flexible",
+    "de": "flexibel",
+    "es": "flexible",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2441",
+    "fr": "flotter",
+    "en": "float",
+    "de": "schweben",
+    "es": "flotar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2442",
+    "fr": "pliant",
+    "en": "folding",
+    "de": "zusammenklappbar",
+    "es": "plegable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2443",
+    "fr": "affectueux",
+    "en": "fond",
+    "de": "liebevoll",
+    "es": "aficionado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2444",
+    "fr": "l'imbécile / le fou",
+    "en": "fool",
+    "de": "der Narr",
+    "es": "el tonto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2445",
+    "fr": "tromper",
+    "en": "fool",
+    "de": "täuschen",
+    "es": "engañar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2446",
+    "fr": "interdire",
+    "en": "forbid",
+    "de": "verbieten",
+    "es": "prohibir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2447",
+    "fr": "les prévisions",
+    "en": "forecast",
+    "de": "die Vorhersage",
+    "es": "el pronóstico",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2448",
+    "fr": "prévoir",
+    "en": "forecast",
+    "de": "vorhersagen",
+    "es": "pronosticar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2449",
+    "fr": "pardonner",
+    "en": "forgive",
+    "de": "vergeben",
+    "es": "perdonar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2450",
+    "fr": "le format",
+    "en": "format",
+    "de": "das Format",
+    "es": "el formato",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2451",
+    "fr": "la formation (géologique/sportive)",
+    "en": "formation",
+    "de": "die Formation",
+    "es": "la formación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2452",
+    "fr": "ancien / précédent",
+    "en": "former",
+    "de": "früher",
+    "es": "anterior",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2453",
+    "fr": "autrefois",
+    "en": "formerly",
+    "de": "früher",
+    "es": "anteriormente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2454",
+    "fr": "chanceux",
+    "en": "fortunate",
+    "de": "glücklich",
+    "es": "afortunado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2455",
+    "fr": "la fortune",
+    "en": "fortune",
+    "de": "das Vermögen",
+    "es": "la fortuna",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2456",
+    "fr": "le forum",
+    "en": "forum",
+    "de": "das Forum",
+    "es": "el foro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2457",
+    "fr": "fonder",
+    "en": "found",
+    "de": "gründen",
+    "es": "fundar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2458",
+    "fr": "la fondation",
+    "en": "foundation",
+    "de": "die Gründung",
+    "es": "la fundación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2459",
+    "fr": "le fondateur",
+    "en": "founder",
+    "de": "der Gründer",
+    "es": "el fundador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2460",
+    "fr": "la fraction",
+    "en": "fraction",
+    "de": "der Bruchteil",
+    "es": "la fracción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2461",
+    "fr": "le fragment",
+    "en": "fragment",
+    "de": "das Fragment",
+    "es": "el fragmento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2462",
+    "fr": "le cadre / la structure",
+    "en": "framework",
+    "de": "der Rahmen",
+    "es": "el marco",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2463",
+    "fr": "la fraude",
+    "en": "fraud",
+    "de": "der Betrug",
+    "es": "el fraude",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2464",
+    "fr": "la liberté",
+    "en": "freedom",
+    "de": "die Freiheit",
+    "es": "la libertad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2465",
+    "fr": "librement",
+    "en": "freely",
+    "de": "frei",
+    "es": "libremente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2466",
+    "fr": "la fréquence",
+    "en": "frequency",
+    "de": "die Häufigkeit",
+    "es": "la frecuencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2467",
+    "fr": "fréquent",
+    "en": "frequent",
+    "de": "häufig",
+    "es": "frecuente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2468",
+    "fr": "frustré",
+    "en": "frustrated",
+    "de": "frustriert",
+    "es": "frustrado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2469",
+    "fr": "accomplir / remplir (promesse)",
+    "en": "fulfil",
+    "de": "erfüllen",
+    "es": "cumplir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2470",
+    "fr": "à temps plein",
+    "en": "full-time",
+    "de": "Vollzeit-",
+    "es": "a tiempo completo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2471",
+    "fr": "pleinement",
+    "en": "fully",
+    "de": "vollständig",
+    "es": "plenamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2472",
+    "fr": "le fonds",
+    "en": "fund",
+    "de": "der Fonds",
+    "es": "el fondo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2473",
+    "fr": "financer",
+    "en": "fund",
+    "de": "finanzieren",
+    "es": "financiar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2474",
+    "fr": "fondamental",
+    "en": "fundamental",
+    "de": "grundlegend",
+    "es": "fundamental",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2475",
+    "fr": "fondamentalement",
+    "en": "fundamentally",
+    "de": "grundsätzlich",
+    "es": "fundamentalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2476",
+    "fr": "le financement",
+    "en": "funding",
+    "de": "die Finanzierung",
+    "es": "la financiación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2477",
+    "fr": "les funérailles",
+    "en": "funeral",
+    "de": "das Begräbnis",
+    "es": "el funeral",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2478",
+    "fr": "furieux",
+    "en": "furious",
+    "de": "wütend",
+    "es": "furioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2479",
+    "fr": "de plus",
+    "en": "furthermore",
+    "de": "außerdem",
+    "es": "además",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2480",
+    "fr": "gagner / obtenir",
+    "en": "gain",
+    "de": "gewinnen",
+    "es": "ganar / obtener",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2481",
+    "fr": "le gallon",
+    "en": "gallon",
+    "de": "die Gallone",
+    "es": "el galón",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2482",
+    "fr": "le jeu vidéo",
+    "en": "gaming",
+    "de": "das Spielen",
+    "es": "el juego",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2483",
+    "fr": "le gang / la bande",
+    "en": "gang",
+    "de": "die Bande",
+    "es": "la pandilla",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2484",
+    "fr": "gay",
+    "en": "gay",
+    "de": "schwul",
+    "es": "gay",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2485",
+    "fr": "le genre (masculin/féminin)",
+    "en": "gender",
+    "de": "das Geschlecht",
+    "es": "el género",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2486",
+    "fr": "le gène",
+    "en": "gene",
+    "de": "das Gen",
+    "es": "el gen",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2487",
+    "fr": "générer",
+    "en": "generate",
+    "de": "erzeugen",
+    "es": "generar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2488",
+    "fr": "génétique",
+    "en": "genetic",
+    "de": "genetisch",
+    "es": "genético",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2489",
+    "fr": "le génie",
+    "en": "genius",
+    "de": "das Genie",
+    "es": "el genio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2490",
+    "fr": "le genre (style)",
+    "en": "genre",
+    "de": "das Genre",
+    "es": "el género",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2491",
+    "fr": "véritable / authentique",
+    "en": "genuine",
+    "de": "echt",
+    "es": "genuino",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2492",
+    "fr": "véritablement",
+    "en": "genuinely",
+    "de": "wirklich",
+    "es": "genuinamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2493",
+    "fr": "le geste",
+    "en": "gesture",
+    "de": "die Geste",
+    "es": "el gesto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2494",
+    "fr": "la mondialisation",
+    "en": "globalization",
+    "de": "die Globalisierung",
+    "es": "la globalización",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2495",
+    "fr": "le globe",
+    "en": "globe",
+    "de": "der Globus",
+    "es": "el globo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2496",
+    "fr": "doré",
+    "en": "golden",
+    "de": "golden",
+    "es": "dorado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2497",
+    "fr": "la bonté",
+    "en": "goodness",
+    "de": "die Güte",
+    "es": "la bondad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2498",
+    "fr": "magnifique",
+    "en": "gorgeous",
+    "de": "wunderschön",
+    "es": "hermoso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2499",
+    "fr": "gouverner",
+    "en": "govern",
+    "de": "regieren",
+    "es": "gobernar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2500",
+    "fr": "saisir / attraper",
+    "en": "grab",
+    "de": "greifen",
+    "es": "agarrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2501",
+    "fr": "progressivement",
+    "en": "gradually",
+    "de": "allmählich",
+    "es": "gradualmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2502",
+    "fr": "grandiose",
+    "en": "grand",
+    "de": "großartig",
+    "es": "grandioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2503",
+    "fr": "la subvention",
+    "en": "grant",
+    "de": "der Zuschuss",
+    "es": "la subvención",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2504",
+    "fr": "accorder",
+    "en": "grant",
+    "de": "gewähren",
+    "es": "conceder",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2505",
+    "fr": "graphique",
+    "en": "graphic",
+    "de": "grafisch",
+    "es": "gráfico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2506",
+    "fr": "les graphismes",
+    "en": "graphics",
+    "de": "die Grafik",
+    "es": "los gráficos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2507",
+    "fr": "la tombe",
+    "en": "grave",
+    "de": "das Grab",
+    "es": "la tumba",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2508",
+    "fr": "grandement",
+    "en": "greatly",
+    "de": "sehr",
+    "es": "grandemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2509",
+    "fr": "la serre",
+    "en": "greenhouse",
+    "de": "das Gewächshaus",
+    "es": "el invernadero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2510",
+    "fr": "garantir",
+    "en": "guarantee",
+    "de": "garantieren",
+    "es": "garantizar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2511",
+    "fr": "la directive",
+    "en": "guideline",
+    "de": "die Richtlinie",
+    "es": "la pauta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2512",
+    "fr": "l'habitat",
+    "en": "habitat",
+    "de": "der Lebensraum",
+    "es": "el hábitat",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2513",
+    "fr": "gérer / manipuler",
+    "en": "handle",
+    "de": "handhaben",
+    "es": "manejar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2514",
+    "fr": "le port",
+    "en": "harbour",
+    "de": "der Hafen",
+    "es": "el puerto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2515",
+    "fr": "le mal / le tort",
+    "en": "harm",
+    "de": "der Schaden",
+    "es": "el daño",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2516",
+    "fr": "nuire à",
+    "en": "harm",
+    "de": "schaden",
+    "es": "dañar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2517",
+    "fr": "nuisible",
+    "en": "harmful",
+    "de": "schädlich",
+    "es": "dañino",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2518",
+    "fr": "le siège social",
+    "en": "headquarters",
+    "de": "der Hauptsitz",
+    "es": "la sede",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2519",
+    "fr": "guérir",
+    "en": "heal",
+    "de": "heilen",
+    "es": "sanar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2520",
+    "fr": "les soins de santé",
+    "en": "healthcare",
+    "de": "die Gesundheitsversorgung",
+    "es": "la atención sanitaria",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2521",
+    "fr": "l'ouïe / l'audience",
+    "en": "hearing",
+    "de": "das Gehör / die Anhörung",
+    "es": "la audición / la audiencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2522",
+    "fr": "le paradis",
+    "en": "heaven",
+    "de": "der Himmel",
+    "es": "el cielo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2523",
+    "fr": "le talon",
+    "en": "heel",
+    "de": "die Ferse",
+    "es": "el talón",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2524",
+    "fr": "l'enfer",
+    "en": "hell",
+    "de": "die Hölle",
+    "es": "el infierno",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2525",
+    "fr": "le casque",
+    "en": "helmet",
+    "de": "der Helm",
+    "es": "el casco",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2526",
+    "fr": "l'herbe (aromatique)",
+    "en": "herb",
+    "de": "das Kraut",
+    "es": "la hierba",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2527",
+    "fr": "hésiter",
+    "en": "hesitate",
+    "de": "zögern",
+    "es": "dudar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2528",
+    "fr": "caché",
+    "en": "hidden",
+    "de": "versteckt",
+    "es": "oculto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2529",
+    "fr": "hilarant",
+    "en": "hilarious",
+    "de": "sehr lustig",
+    "es": "divertidísimo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2530",
+    "fr": "la hanche",
+    "en": "hip",
+    "de": "die Hüfte",
+    "es": "la cadera",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2531",
+    "fr": "l'historien",
+    "en": "historian",
+    "de": "der Historiker",
+    "es": "el historiador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2532",
+    "fr": "creux",
+    "en": "hollow",
+    "de": "hohl",
+    "es": "hueco",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2533",
+    "fr": "saint",
+    "en": "holy",
+    "de": "heilig",
+    "es": "santo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2534",
+    "fr": "sans-abri",
+    "en": "homeless",
+    "de": "obdachlos",
+    "es": "sin hogar",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2535",
+    "fr": "l'honnêteté",
+    "en": "honesty",
+    "de": "die Ehrlichkeit",
+    "es": "la honestidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2536",
+    "fr": "l'honneur",
+    "en": "honour",
+    "de": "die Ehre",
+    "es": "el honor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2537",
+    "fr": "le crochet",
+    "en": "hook",
+    "de": "der Haken",
+    "es": "el gancho",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2538",
+    "fr": "avec un peu de chance",
+    "en": "hopefully",
+    "de": "hoffentlich",
+    "es": "con suerte",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2539",
+    "fr": "le ménage / le foyer",
+    "en": "household",
+    "de": "der Haushalt",
+    "es": "el hogar",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2540",
+    "fr": "le logement",
+    "en": "housing",
+    "de": "das Wohnungswesen",
+    "es": "la vivienda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2541",
+    "fr": "humoristique",
+    "en": "humorous",
+    "de": "humorvoll",
+    "es": "humorístico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2542",
+    "fr": "l'humour",
+    "en": "humour",
+    "de": "der Humor",
+    "es": "el humor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2543",
+    "fr": "la faim",
+    "en": "hunger",
+    "de": "der Hunger",
+    "es": "el hambre",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2544",
+    "fr": "la chasse",
+    "en": "hunting",
+    "de": "die Jagd",
+    "es": "la caza",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2545",
+    "fr": "l'icône",
+    "en": "icon",
+    "de": "die Ikone / das Symbol",
+    "es": "el icono",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2546",
+    "fr": "la carte d'identité",
+    "en": "ID",
+    "de": "der Ausweis",
+    "es": "el carné de identidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2547",
+    "fr": "l'idéal",
+    "en": "ideal",
+    "de": "das Ideal",
+    "es": "el ideal",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2548",
+    "fr": "idéal",
+    "en": "ideal",
+    "de": "ideal",
+    "es": "ideal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2549",
+    "fr": "identique",
+    "en": "identical",
+    "de": "identisch",
+    "es": "idéntico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2550",
+    "fr": "l'identité",
+    "en": "identity",
+    "de": "die Identität",
+    "es": "la identidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2551",
+    "fr": "l'illusion",
+    "en": "illusion",
+    "de": "die Illusion",
+    "es": "la ilusión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2552",
+    "fr": "illustrer",
+    "en": "illustrate",
+    "de": "veranschaulichen",
+    "es": "ilustrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2553",
+    "fr": "l'illustration",
+    "en": "illustration",
+    "de": "die Abbildung",
+    "es": "la ilustración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2554",
+    "fr": "l'imagination",
+    "en": "imagination",
+    "de": "die Vorstellungskraft",
+    "es": "la imaginación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2555",
+    "fr": "l'immigration",
+    "en": "immigration",
+    "de": "die Einwanderung",
+    "es": "la inmigración",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2556",
+    "fr": "immunisé",
+    "en": "immune",
+    "de": "immun",
+    "es": "inmune",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2557",
+    "fr": "impatient",
+    "en": "impatient",
+    "de": "ungeduldig",
+    "es": "impaciente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2558",
+    "fr": "mettre en œuvre",
+    "en": "implement",
+    "de": "umsetzen",
+    "es": "implementar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2559",
+    "fr": "l'implication",
+    "en": "implication",
+    "de": "die Auswirkung",
+    "es": "la implicación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2560",
+    "fr": "impliquer / insinuer",
+    "en": "imply",
+    "de": "implizieren",
+    "es": "implicar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2561",
+    "fr": "imposer",
+    "en": "impose",
+    "de": "aufzwingen",
+    "es": "imponer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2562",
+    "fr": "impressionner",
+    "en": "impress",
+    "de": "beeindrucken",
+    "es": "impresionar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2563",
+    "fr": "impressionné",
+    "en": "impressed",
+    "de": "beeindruckt",
+    "es": "impresionado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2564",
+    "fr": "l'incitation",
+    "en": "incentive",
+    "de": "der Anreiz",
+    "es": "el incentivo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2565",
+    "fr": "le pouce (mesure)",
+    "en": "inch",
+    "de": "der Zoll (Maß)",
+    "es": "la pulgada",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2566",
+    "fr": "l'incident",
+    "en": "incident",
+    "de": "der Vorfall",
+    "es": "el incidente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2567",
+    "fr": "le revenu",
+    "en": "income",
+    "de": "das Einkommen",
+    "es": "los ingresos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2568",
+    "fr": "incorporer / intégrer",
+    "en": "incorporate",
+    "de": "einbeziehen",
+    "es": "incorporar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2569",
+    "fr": "incorrect",
+    "en": "incorrect",
+    "de": "falsch",
+    "es": "incorrecto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2570",
+    "fr": "de plus en plus",
+    "en": "increasingly",
+    "de": "zunehmend",
+    "es": "cada vez más",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2571",
+    "fr": "l'indépendance",
+    "en": "independence",
+    "de": "die Unabhängigkeit",
+    "es": "la independencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2572",
+    "fr": "l'index / l'indice",
+    "en": "index",
+    "de": "der Index",
+    "es": "el índice",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2573",
+    "fr": "l'indication",
+    "en": "indication",
+    "de": "der Hinweis",
+    "es": "la indicación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2574",
+    "fr": "industriel",
+    "en": "industrial",
+    "de": "industriell",
+    "es": "industrial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2575",
+    "fr": "inévitable",
+    "en": "inevitable",
+    "de": "unvermeidlich",
+    "es": "inevitable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2576",
+    "fr": "inévitablement",
+    "en": "inevitably",
+    "de": "unweigerlich",
+    "es": "inevitablemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2577",
+    "fr": "l'infection",
+    "en": "infection",
+    "de": "die Infektion",
+    "es": "la infección",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2578",
+    "fr": "déduire",
+    "en": "infer",
+    "de": "schließen",
+    "es": "inferir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2579",
+    "fr": "l'inflation",
+    "en": "inflation",
+    "de": "die Inflation",
+    "es": "la inflación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2580",
+    "fr": "les infos (fam.)",
+    "en": "info",
+    "de": "die Info",
+    "es": "la información",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2581",
+    "fr": "informer",
+    "en": "inform",
+    "de": "informieren",
+    "es": "informar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2582",
+    "fr": "l'habitant",
+    "en": "inhabitant",
+    "de": "der Einwohner",
+    "es": "el habitante",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2583",
+    "fr": "hériter",
+    "en": "inherit",
+    "de": "erben",
+    "es": "heredar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2584",
+    "fr": "initial",
+    "en": "initial",
+    "de": "anfänglich",
+    "es": "inicial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2585",
+    "fr": "initialement",
+    "en": "initially",
+    "de": "anfangs",
+    "es": "inicialmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2586",
+    "fr": "l'initiative",
+    "en": "initiative",
+    "de": "die Initiative",
+    "es": "la iniciativa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2587",
+    "fr": "l'encre",
+    "en": "ink",
+    "de": "die Tinte",
+    "es": "la tinta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2588",
+    "fr": "intérieur (plus profond)",
+    "en": "inner",
+    "de": "inner",
+    "es": "interior",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2589",
+    "fr": "l'innovation",
+    "en": "innovation",
+    "de": "die Innovation",
+    "es": "la innovación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2590",
+    "fr": "innovant",
+    "en": "innovative",
+    "de": "innovativ",
+    "es": "innovador",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2591",
+    "fr": "la contribution / la saisie",
+    "en": "input",
+    "de": "die Eingabe / der Beitrag",
+    "es": "la aportación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2592",
+    "fr": "insérer",
+    "en": "insert",
+    "de": "einfügen",
+    "es": "insertar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2593",
+    "fr": "l'aperçu / la perspicacité",
+    "en": "insight",
+    "de": "die Erkenntnis",
+    "es": "la percepción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2594",
+    "fr": "insister",
+    "en": "insist",
+    "de": "darauf bestehen",
+    "es": "insistir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2595",
+    "fr": "l'inspecteur",
+    "en": "inspector",
+    "de": "der Inspektor",
+    "es": "el inspector",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2596",
+    "fr": "inspirer",
+    "en": "inspire",
+    "de": "inspirieren",
+    "es": "inspirar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2597",
+    "fr": "installer",
+    "en": "install",
+    "de": "installieren",
+    "es": "instalar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2598",
+    "fr": "l'installation",
+    "en": "installation",
+    "de": "die Installation",
+    "es": "la instalación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2599",
+    "fr": "l'exemple / le cas",
+    "en": "instance",
+    "de": "das Beispiel",
+    "es": "el caso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2600",
+    "fr": "instantané",
+    "en": "instant",
+    "de": "sofortig",
+    "es": "instantáneo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2601",
+    "fr": "instantanément",
+    "en": "instantly",
+    "de": "sofort",
+    "es": "instantáneamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2602",
+    "fr": "l'institut",
+    "en": "institute",
+    "de": "das Institut",
+    "es": "el instituto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2603",
+    "fr": "l'institution",
+    "en": "institution",
+    "de": "die Institution",
+    "es": "la institución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2604",
+    "fr": "l'assurance",
+    "en": "insurance",
+    "de": "die Versicherung",
+    "es": "el seguro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2605",
+    "fr": "intégrer",
+    "en": "integrate",
+    "de": "integrieren",
+    "es": "integrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2606",
+    "fr": "intellectuel",
+    "en": "intellectual",
+    "de": "intellektuell",
+    "es": "intelectual",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2607",
+    "fr": "prévu / voulu",
+    "en": "intended",
+    "de": "beabsichtigt",
+    "es": "previsto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2608",
+    "fr": "intense",
+    "en": "intense",
+    "de": "intensiv",
+    "es": "intenso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2609",
+    "fr": "interagir",
+    "en": "interact",
+    "de": "interagieren",
+    "es": "interactuar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2610",
+    "fr": "l'interaction",
+    "en": "interaction",
+    "de": "die Interaktion",
+    "es": "la interacción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2611",
+    "fr": "interne",
+    "en": "internal",
+    "de": "intern",
+    "es": "interno",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2612",
+    "fr": "interpréter",
+    "en": "interpret",
+    "de": "interpretieren",
+    "es": "interpretar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2613",
+    "fr": "l'interprétation",
+    "en": "interpretation",
+    "de": "die Interpretation",
+    "es": "la interpretación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2614",
+    "fr": "interrompre",
+    "en": "interrupt",
+    "de": "unterbrechen",
+    "es": "interrumpir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2615",
+    "fr": "l'intervalle / l'entracte",
+    "en": "interval",
+    "de": "das Intervall / die Pause",
+    "es": "el intervalo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2616",
+    "fr": "envahir",
+    "en": "invade",
+    "de": "einmarschieren",
+    "es": "invadir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2617",
+    "fr": "l'invasion",
+    "en": "invasion",
+    "de": "die Invasion",
+    "es": "la invasión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2618",
+    "fr": "l'enquête",
+    "en": "investigation",
+    "de": "die Untersuchung",
+    "es": "la investigación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2619",
+    "fr": "l'investissement",
+    "en": "investment",
+    "de": "die Investition",
+    "es": "la inversión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2620",
+    "fr": "l'investisseur",
+    "en": "investor",
+    "de": "der Investor",
+    "es": "el inversor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2621",
+    "fr": "isoler",
+    "en": "isolate",
+    "de": "isolieren",
+    "es": "aislar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2622",
+    "fr": "isolé",
+    "en": "isolated",
+    "de": "isoliert",
+    "es": "aislado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2623",
+    "fr": "émettre / délivrer",
+    "en": "issue",
+    "de": "ausstellen",
+    "es": "emitir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2624",
+    "fr": "la prison",
+    "en": "jail",
+    "de": "das Gefängnis",
+    "es": "la cárcel",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2625",
+    "fr": "le jet (avion/eau)",
+    "en": "jet",
+    "de": "der Jet",
+    "es": "el jet",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2626",
+    "fr": "l'articulation / le joint",
+    "en": "joint",
+    "de": "das Gelenk",
+    "es": "la articulación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2627",
+    "fr": "commun / conjoint",
+    "en": "joint",
+    "de": "gemeinsam",
+    "es": "conjunto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2628",
+    "fr": "le journalisme",
+    "en": "journalism",
+    "de": "der Journalismus",
+    "es": "el periodismo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2629",
+    "fr": "la joie",
+    "en": "joy",
+    "de": "die Freude",
+    "es": "la alegría",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2630",
+    "fr": "le jugement",
+    "en": "judgement",
+    "de": "das Urteil",
+    "es": "el juicio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2631",
+    "fr": "le junior",
+    "en": "junior",
+    "de": "der Junior",
+    "es": "el menor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2632",
+    "fr": "le jury",
+    "en": "jury",
+    "de": "die Jury",
+    "es": "el jurado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2633",
+    "fr": "la justice",
+    "en": "justice",
+    "de": "die Gerechtigkeit",
+    "es": "la justicia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2634",
+    "fr": "justifier",
+    "en": "justify",
+    "de": "rechtfertigen",
+    "es": "justificar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2635",
+    "fr": "kidnapper",
+    "en": "kidnap",
+    "de": "entführen",
+    "es": "secuestrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2636",
+    "fr": "le rein",
+    "en": "kidney",
+    "de": "die Niere",
+    "es": "el riñón",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2637",
+    "fr": "le jardin d'enfants",
+    "en": "kindergarten",
+    "de": "der Kindergarten",
+    "es": "el jardín de infancia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2638",
+    "fr": "le kit / l'équipement",
+    "en": "kit",
+    "de": "die Ausrüstung",
+    "es": "el kit",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2639",
+    "fr": "le travail (main d'œuvre)",
+    "en": "labour",
+    "de": "die Arbeit",
+    "es": "el trabajo (físico)",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2640",
+    "fr": "l'échelle",
+    "en": "ladder",
+    "de": "die Leiter",
+    "es": "la escalera",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2641",
+    "fr": "l'atterrissage",
+    "en": "landing",
+    "de": "die Landung",
+    "es": "el aterrizaje",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2642",
+    "fr": "le paysage",
+    "en": "landscape",
+    "de": "die Landschaft",
+    "es": "el paisaje",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2643",
+    "fr": "la voie (route)",
+    "en": "lane",
+    "de": "die Fahrspur",
+    "es": "el carril",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2644",
+    "fr": "largement / en grande partie",
+    "en": "largely",
+    "de": "größtenteils",
+    "es": "en gran parte",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2645",
+    "fr": "le laser",
+    "en": "laser",
+    "de": "der Laser",
+    "es": "el láser",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2646",
+    "fr": "dernièrement",
+    "en": "lately",
+    "de": "kürzlich",
+    "es": "últimamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2647",
+    "fr": "lancer (produit/fusée)",
+    "en": "launch",
+    "de": "starten",
+    "es": "lanzar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2648",
+    "fr": "le leadership",
+    "en": "leadership",
+    "de": "die Führung",
+    "es": "el liderazgo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2649",
+    "fr": "la ligue",
+    "en": "league",
+    "de": "die Liga",
+    "es": "la liga",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2650",
+    "fr": "s'appuyer / se pencher",
+    "en": "lean",
+    "de": "sich anlehnen",
+    "es": "apoyarse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2651",
+    "fr": "la légende",
+    "en": "legend",
+    "de": "die Legende",
+    "es": "la leyenda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2652",
+    "fr": "la lentille / l'objectif",
+    "en": "lens",
+    "de": "die Linse / das Objektiv",
+    "es": "la lente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2653",
+    "fr": "la licence / le permis",
+    "en": "licence",
+    "de": "die Lizenz",
+    "es": "la licencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2654",
+    "fr": "la durée de vie",
+    "en": "lifetime",
+    "de": "die Lebenszeit",
+    "es": "la vida útil",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2655",
+    "fr": "l'éclairage",
+    "en": "lighting",
+    "de": "die Beleuchtung",
+    "es": "la iluminación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2656",
+    "fr": "de même",
+    "en": "likewise",
+    "de": "ebenso",
+    "es": "igualmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2657",
+    "fr": "la limitation",
+    "en": "limitation",
+    "de": "die Einschränkung",
+    "es": "la limitación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2658",
+    "fr": "limité",
+    "en": "limited",
+    "de": "begrenzt",
+    "es": "limitado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2659",
+    "fr": "littéralement",
+    "en": "literally",
+    "de": "buchstäblich",
+    "es": "literalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2660",
+    "fr": "littéraire",
+    "en": "literary",
+    "de": "literarisch",
+    "es": "literario",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2661",
+    "fr": "les déchets (jetés par terre)",
+    "en": "litter",
+    "de": "der Abfall",
+    "es": "la basura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2662",
+    "fr": "animé / vivant",
+    "en": "lively",
+    "de": "lebhaft",
+    "es": "animado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2663",
+    "fr": "le foie",
+    "en": "liver",
+    "de": "die Leber",
+    "es": "el hígado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2664",
+    "fr": "la charge",
+    "en": "load",
+    "de": "die Ladung",
+    "es": "la carga",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2665",
+    "fr": "charger (camion/arme)",
+    "en": "load",
+    "de": "laden",
+    "es": "cargar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2666",
+    "fr": "le prêt",
+    "en": "loan",
+    "de": "der Kredit",
+    "es": "el préstamo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2667",
+    "fr": "logique",
+    "en": "logical",
+    "de": "logisch",
+    "es": "lógico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2668",
+    "fr": "le logo",
+    "en": "logo",
+    "de": "das Logo",
+    "es": "el logo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2669",
+    "fr": "à long terme",
+    "en": "long-term",
+    "de": "langfristig",
+    "es": "a largo plazo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2670",
+    "fr": "lâche (pas serré)",
+    "en": "loose",
+    "de": "lose",
+    "es": "suelto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2671",
+    "fr": "le seigneur",
+    "en": "lord",
+    "de": "der Herr",
+    "es": "el señor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2672",
+    "fr": "la loterie",
+    "en": "lottery",
+    "de": "die Lotterie",
+    "es": "la lotería",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2673",
+    "fr": "baisser",
+    "en": "lower",
+    "de": "senken",
+    "es": "bajar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2674",
+    "fr": "fidèle / loyal",
+    "en": "loyal",
+    "de": "treu",
+    "es": "leal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2675",
+    "fr": "le poumon",
+    "en": "lung",
+    "de": "die Lunge",
+    "es": "el pulmón",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2676",
+    "fr": "les paroles (de chanson)",
+    "en": "lyric",
+    "de": "der Liedtext",
+    "es": "la letra (de canción)",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2677",
+    "fr": "magnifique",
+    "en": "magnificent",
+    "de": "großartig",
+    "es": "magnífico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2678",
+    "fr": "maintenir",
+    "en": "maintain",
+    "de": "aufrechterhalten",
+    "es": "mantener",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2679",
+    "fr": "la majorité",
+    "en": "majority",
+    "de": "die Mehrheit",
+    "es": "la mayoría",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2680",
+    "fr": "le maquillage",
+    "en": "makeup",
+    "de": "das Make-up",
+    "es": "el maquillaje",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2681",
+    "fr": "la fabrication / la création",
+    "en": "making",
+    "de": "die Herstellung",
+    "es": "la fabricación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2682",
+    "fr": "fabriquer",
+    "en": "manufacture",
+    "de": "herstellen",
+    "es": "fabricar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2683",
+    "fr": "la fabrication / l'industrie",
+    "en": "manufacturing",
+    "de": "die Fertigung",
+    "es": "la manufactura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2684",
+    "fr": "le marathon",
+    "en": "marathon",
+    "de": "der Marathon",
+    "es": "el maratón",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2685",
+    "fr": "la marge",
+    "en": "margin",
+    "de": "der Spielraum",
+    "es": "el margen",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2686",
+    "fr": "le marqueur",
+    "en": "marker",
+    "de": "der Marker",
+    "es": "el marcador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2687",
+    "fr": "martial (arts)",
+    "en": "martial",
+    "de": "kriegerisch (Kampf-)",
+    "es": "marcial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2688",
+    "fr": "la masse / de masse",
+    "en": "mass",
+    "de": "die Masse",
+    "es": "la masa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2689",
+    "fr": "massif",
+    "en": "massive",
+    "de": "massiv",
+    "es": "masivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2690",
+    "fr": "le maître",
+    "en": "master",
+    "de": "der Meister",
+    "es": "el maestro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2691",
+    "fr": "maîtriser",
+    "en": "master",
+    "de": "meistern",
+    "es": "dominar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2692",
+    "fr": "assorti / correspondant",
+    "en": "matching",
+    "de": "passend",
+    "es": "a juego",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2693",
+    "fr": "le compagnon / le pote",
+    "en": "mate",
+    "de": "der Kumpel",
+    "es": "el compañero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2694",
+    "fr": "s'accoupler",
+    "en": "mate",
+    "de": "sich paaren",
+    "es": "aparearse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2695",
+    "fr": "le maximum",
+    "en": "maximum",
+    "de": "das Maximum",
+    "es": "el máximo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2696",
+    "fr": "les moyens",
+    "en": "means",
+    "de": "die Mittel",
+    "es": "los medios",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2697",
+    "fr": "la mesure",
+    "en": "measurement",
+    "de": "die Messung",
+    "es": "la medición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2698",
+    "fr": "le mécanicien",
+    "en": "mechanic",
+    "de": "der Mechaniker",
+    "es": "el mecánico",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2699",
+    "fr": "mécanique",
+    "en": "mechanical",
+    "de": "mechanisch",
+    "es": "mecánico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2700",
+    "fr": "le mécanisme",
+    "en": "mechanism",
+    "de": "der Mechanismus",
+    "es": "el mecanismo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2701",
+    "fr": "la médaille",
+    "en": "medal",
+    "de": "die Medaille",
+    "es": "la medalla",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2702",
+    "fr": "le médicament",
+    "en": "medication",
+    "de": "das Medikament",
+    "es": "la medicación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2703",
+    "fr": "le moyen / le support",
+    "en": "medium",
+    "de": "das Medium",
+    "es": "el medio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2704",
+    "fr": "fondre",
+    "en": "melt",
+    "de": "schmelzen",
+    "es": "derretir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2705",
+    "fr": "l'adhésion / l'affiliation",
+    "en": "membership",
+    "de": "die Mitgliedschaft",
+    "es": "la membresía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2706",
+    "fr": "mémorable",
+    "en": "memorable",
+    "de": "unvergesslich",
+    "es": "memorable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2707",
+    "fr": "la métaphore",
+    "en": "metaphor",
+    "de": "die Metapher",
+    "es": "la metáfora",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2708",
+    "fr": "la méthode",
+    "en": "method",
+    "de": "die Methode",
+    "es": "el método",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2709",
+    "fr": "militaire",
+    "en": "military",
+    "de": "militärisch",
+    "es": "militar",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2710",
+    "fr": "le mineur (mine)",
+    "en": "miner",
+    "de": "der Bergmann",
+    "es": "el minero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2711",
+    "fr": "le minéral",
+    "en": "mineral",
+    "de": "das Mineral",
+    "es": "el mineral",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2712",
+    "fr": "le minimum",
+    "en": "minimum",
+    "de": "das Minimum",
+    "es": "el mínimo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2713",
+    "fr": "le ministre",
+    "en": "minister",
+    "de": "der Minister",
+    "es": "el ministro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2714",
+    "fr": "mineur / de moindre importance",
+    "en": "minor",
+    "de": "geringfügig",
+    "es": "menor",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2715",
+    "fr": "la minorité",
+    "en": "minority",
+    "de": "die Minderheit",
+    "es": "la minoría",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2716",
+    "fr": "misérable / malheureux",
+    "en": "miserable",
+    "de": "elend",
+    "es": "miserable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2717",
+    "fr": "la mission",
+    "en": "mission",
+    "de": "die Mission",
+    "es": "la misión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2718",
+    "fr": "erroné / dans l'erreur",
+    "en": "mistaken",
+    "de": "falsch",
+    "es": "equivocado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2719",
+    "fr": "mélangé / mixte",
+    "en": "mixed",
+    "de": "gemischt",
+    "es": "mezclado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2720",
+    "fr": "le mode",
+    "en": "mode",
+    "de": "der Modus",
+    "es": "el modo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2721",
+    "fr": "modeste",
+    "en": "modest",
+    "de": "bescheiden",
+    "es": "modesto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2722",
+    "fr": "modifier",
+    "en": "modify",
+    "de": "ändern",
+    "es": "modificar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2723",
+    "fr": "le moniteur / l'écran",
+    "en": "monitor",
+    "de": "der Monitor",
+    "es": "el monitor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2724",
+    "fr": "surveiller",
+    "en": "monitor",
+    "de": "überwachen",
+    "es": "monitorear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2725",
+    "fr": "le monstre",
+    "en": "monster",
+    "de": "das Monster",
+    "es": "el monstruo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2726",
+    "fr": "mensuel",
+    "en": "monthly",
+    "de": "monatlich",
+    "es": "mensual",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2727",
+    "fr": "le monument",
+    "en": "monument",
+    "de": "das Denkmal",
+    "es": "el monumento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2728",
+    "fr": "moral",
+    "en": "moral",
+    "de": "moralisch",
+    "es": "moral",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2729",
+    "fr": "de plus / en outre",
+    "en": "moreover",
+    "de": "außerdem",
+    "es": "además",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2730",
+    "fr": "l'hypothèque",
+    "en": "mortgage",
+    "de": "die Hypothek",
+    "es": "la hipoteca",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2731",
+    "fr": "la mosquée",
+    "en": "mosque",
+    "de": "die Moschee",
+    "es": "la mezquita",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2732",
+    "fr": "le moustique",
+    "en": "mosquito",
+    "de": "die Mücke",
+    "es": "el mosquito",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2733",
+    "fr": "le mouvement",
+    "en": "motion",
+    "de": "die Bewegung",
+    "es": "el movimiento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2734",
+    "fr": "motiver",
+    "en": "motivate",
+    "de": "motivieren",
+    "es": "motivar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2735",
+    "fr": "la motivation",
+    "en": "motivation",
+    "de": "die Motivation",
+    "es": "la motivación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2736",
+    "fr": "le moteur",
+    "en": "motor",
+    "de": "der Motor",
+    "es": "el motor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2737",
+    "fr": "monter (à cheval/assembler)",
+    "en": "mount",
+    "de": "aufsteigen / montieren",
+    "es": "montar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2738",
+    "fr": "émouvant",
+    "en": "moving",
+    "de": "bewegend",
+    "es": "conmovedor",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2739",
+    "fr": "multiple",
+    "en": "multiple",
+    "de": "mehrfach",
+    "es": "múltiple",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2740",
+    "fr": "multiplier",
+    "en": "multiply",
+    "de": "multiplizieren",
+    "es": "multiplicar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2741",
+    "fr": "mystérieux",
+    "en": "mysterious",
+    "de": "geheimnisvoll",
+    "es": "misterioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2742",
+    "fr": "le mythe",
+    "en": "myth",
+    "de": "der Mythos",
+    "es": "el mito",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2743",
+    "fr": "nu",
+    "en": "naked",
+    "de": "nackt",
+    "es": "desnudo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2744",
+    "fr": "méchant / désagréable",
+    "en": "nasty",
+    "de": "gemein",
+    "es": "desagradable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2745",
+    "fr": "la navigation",
+    "en": "navigation",
+    "de": "die Navigation",
+    "es": "la navegación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2746",
+    "fr": "à proximité",
+    "en": "nearby",
+    "de": "in der Nähe",
+    "es": "cercano",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2747",
+    "fr": "soigné / propre",
+    "en": "neat",
+    "de": "ordentlich",
+    "es": "limpio / ordenado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2748",
+    "fr": "la nécessité",
+    "en": "necessity",
+    "de": "die Notwendigkeit",
+    "es": "la necesidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2749",
+    "fr": "le négatif",
+    "en": "negative",
+    "de": "das Negativ",
+    "es": "el negativo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2750",
+    "fr": "négocier",
+    "en": "negotiate",
+    "de": "verhandeln",
+    "es": "negociar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2751",
+    "fr": "la négociation",
+    "en": "negotiation",
+    "de": "die Verhandlung",
+    "es": "la negociación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2752",
+    "fr": "le nerf",
+    "en": "nerve",
+    "de": "der Nerv",
+    "es": "el nervio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2753",
+    "fr": "neutre",
+    "en": "neutral",
+    "de": "neutral",
+    "es": "neutral",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2754",
+    "fr": "néanmoins",
+    "en": "nevertheless",
+    "de": "dennoch",
+    "es": "sin embargo",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2755",
+    "fr": "nouvellement",
+    "en": "newly",
+    "de": "neu",
+    "es": "recientemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2756",
+    "fr": "le nickel",
+    "en": "nickel",
+    "de": "das Nickel",
+    "es": "el níquel",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2757",
+    "fr": "le cauchemar",
+    "en": "nightmare",
+    "de": "der Albtraum",
+    "es": "la pesadilla",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2758",
+    "fr": "la nostalgie",
+    "en": "nostalgia",
+    "de": "die Nostalgie",
+    "es": "la nostalgia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2759",
+    "fr": "le carnet",
+    "en": "notebook",
+    "de": "das Notizbuch",
+    "es": "el cuaderno",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2760",
+    "fr": "la notion",
+    "en": "notion",
+    "de": "die Vorstellung",
+    "es": "la noción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2761",
+    "fr": "le romancier",
+    "en": "novelist",
+    "de": "der Romanschriftsteller",
+    "es": "el novelista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2762",
+    "fr": "de nos jours",
+    "en": "nowadays",
+    "de": "heutzutage",
+    "es": "hoy en día",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2763",
+    "fr": "nombreux",
+    "en": "numerous",
+    "de": "zahlreich",
+    "es": "numeroso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2764",
+    "fr": "les soins infirmiers",
+    "en": "nursing",
+    "de": "die Pflege",
+    "es": "la enfermería",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2765",
+    "fr": "la nutrition",
+    "en": "nutrition",
+    "de": "die Ernährung",
+    "es": "la nutrición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2766",
+    "fr": "l'obésité",
+    "en": "obesity",
+    "de": "die Fettleibigkeit",
+    "es": "la obesidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2767",
+    "fr": "obéir",
+    "en": "obey",
+    "de": "gehorchen",
+    "es": "obedecer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2768",
+    "fr": "l'objet",
+    "en": "object",
+    "de": "das Objekt",
+    "es": "el objeto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2769",
+    "fr": "objecter / s'opposer",
+    "en": "object",
+    "de": "widersprechen",
+    "es": "objetar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2770",
+    "fr": "l'objectif",
+    "en": "objective",
+    "de": "das Ziel",
+    "es": "el objetivo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2771",
+    "fr": "obligatoire",
+    "en": "obligatory",
+    "de": "obligatorisch",
+    "es": "obligatorio",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2772",
+    "fr": "l'obligation",
+    "en": "obligation",
+    "de": "die Verpflichtung",
+    "es": "la obligación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2773",
+    "fr": "l'observation",
+    "en": "observation",
+    "de": "die Beobachtung",
+    "es": "la observación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2774",
+    "fr": "observer",
+    "en": "observe",
+    "de": "beobachten",
+    "es": "observar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2775",
+    "fr": "l'observateur",
+    "en": "observer",
+    "de": "der Beobachter",
+    "es": "el observador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2776",
+    "fr": "l'obstacle",
+    "en": "obstacle",
+    "de": "das Hindernis",
+    "es": "el obstáculo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2777",
+    "fr": "obtenir",
+    "en": "obtain",
+    "de": "erhalten",
+    "es": "obtener",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2778",
+    "fr": "occasionnellement",
+    "en": "occasionally",
+    "de": "gelegentlich",
+    "es": "ocasionalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2779",
+    "fr": "l'occupation / la profession",
+    "en": "occupation",
+    "de": "die Beschäftigung",
+    "es": "la ocupación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2780",
+    "fr": "occuper",
+    "en": "occupy",
+    "de": "besetzen",
+    "es": "ocupar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2781",
+    "fr": "l'infraction / l'offense",
+    "en": "offence",
+    "de": "das Vergehen",
+    "es": "la ofensa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2782",
+    "fr": "offenser",
+    "en": "offend",
+    "de": "beleidigen",
+    "es": "ofender",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2783",
+    "fr": "le délinquant",
+    "en": "offender",
+    "de": "der Straftäter",
+    "es": "el delincuente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2784",
+    "fr": "offensant",
+    "en": "offensive",
+    "de": "beleidigend",
+    "es": "ofensivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2785",
+    "fr": "en cours",
+    "en": "ongoing",
+    "de": "laufend",
+    "es": "en curso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2786",
+    "fr": "en avant / à partir de",
+    "en": "onwards",
+    "de": "vorwärts",
+    "es": "en adelante",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2787",
+    "fr": "l'ouverture",
+    "en": "opening",
+    "de": "die Eröffnung",
+    "es": "la apertura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2788",
+    "fr": "ouvertement",
+    "en": "openly",
+    "de": "offen",
+    "es": "abiertamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2789",
+    "fr": "l'opéra",
+    "en": "opera",
+    "de": "die Oper",
+    "es": "la ópera",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2790",
+    "fr": "opérer / fonctionner",
+    "en": "operate",
+    "de": "operieren / bedienen",
+    "es": "operar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2791",
+    "fr": "l'opérateur",
+    "en": "operator",
+    "de": "der Betreiber",
+    "es": "el operador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2792",
+    "fr": "l'adversaire",
+    "en": "opponent",
+    "de": "der Gegner",
+    "es": "el oponente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2793",
+    "fr": "s'opposer",
+    "en": "oppose",
+    "de": "sich widersetzen",
+    "es": "oponerse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2794",
+    "fr": "opposé",
+    "en": "opposed",
+    "de": "dagegen",
+    "es": "opuesto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2795",
+    "fr": "l'opposition",
+    "en": "opposition",
+    "de": "die Opposition",
+    "es": "la oposición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2796",
+    "fr": "optique",
+    "en": "optical",
+    "de": "optisch",
+    "es": "óptico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2797",
+    "fr": "optimiste",
+    "en": "optimistic",
+    "de": "optimistisch",
+    "es": "optimista",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2798",
+    "fr": "l'orchestre",
+    "en": "orchestra",
+    "de": "das Orchester",
+    "es": "la orquesta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2799",
+    "fr": "l'organe",
+    "en": "organ",
+    "de": "das Organ",
+    "es": "el órgano",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2800",
+    "fr": "organique",
+    "en": "organic",
+    "de": "biologisch",
+    "es": "orgánico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2801",
+    "fr": "l'origine",
+    "en": "origin",
+    "de": "der Ursprung",
+    "es": "el origen",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2802",
+    "fr": "sinon / autrement",
+    "en": "otherwise",
+    "de": "sonst",
+    "es": "de lo contrario",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2803",
+    "fr": "le résultat / l'issue",
+    "en": "outcome",
+    "de": "das Ergebnis",
+    "es": "el resultado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2804",
+    "fr": "extérieur",
+    "en": "outer",
+    "de": "äußere",
+    "es": "exterior",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2805",
+    "fr": "la tenue",
+    "en": "outfit",
+    "de": "das Outfit",
+    "es": "el atuendo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2806",
+    "fr": "le contour / le résumé",
+    "en": "outline",
+    "de": "der Umriss",
+    "es": "el contorno",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2807",
+    "fr": "esquisser",
+    "en": "outline",
+    "de": "skizzieren",
+    "es": "esbozar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2808",
+    "fr": "le rendement / la sortie",
+    "en": "output",
+    "de": "die Ausgabe / die Leistung",
+    "es": "la salida / la producción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2809",
+    "fr": "exceptionnel",
+    "en": "outstanding",
+    "de": "hervorragend",
+    "es": "sobresaliente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2810",
+    "fr": "global / en général",
+    "en": "overall",
+    "de": "insgesamt",
+    "es": "en general",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2811",
+    "fr": "surmonter",
+    "en": "overcome",
+    "de": "überwinden",
+    "es": "superar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2812",
+    "fr": "pendant la nuit / du jour au lendemain",
+    "en": "overnight",
+    "de": "über Nacht",
+    "es": "de la noche a la mañana",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2813",
+    "fr": "à l'étranger / outre-mer",
+    "en": "overseas",
+    "de": "in Übersee",
+    "es": "en el extranjero",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2814",
+    "fr": "devoir (argent)",
+    "en": "owe",
+    "de": "schulden",
+    "es": "deber (dinero)",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2815",
+    "fr": "la propriété (fait de posséder)",
+    "en": "ownership",
+    "de": "das Eigentum",
+    "es": "la propiedad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2816",
+    "fr": "l'oxygène",
+    "en": "oxygen",
+    "de": "der Sauerstoff",
+    "es": "el oxígeno",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2817",
+    "fr": "le rythme / l'allure",
+    "en": "pace",
+    "de": "das Tempo",
+    "es": "el ritmo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2818",
+    "fr": "faire les cent pas",
+    "en": "pace",
+    "de": "auf und ab gehen",
+    "es": "caminar de un lado a otro",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2819",
+    "fr": "le paquet",
+    "en": "packet",
+    "de": "das Paket",
+    "es": "el paquete",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2820",
+    "fr": "la paume / le palmier",
+    "en": "palm",
+    "de": "die Handfläche / die Palme",
+    "es": "la palma",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2821",
+    "fr": "le panneau / le comité",
+    "en": "panel",
+    "de": "das Panel",
+    "es": "el panel",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2822",
+    "fr": "la panique",
+    "en": "panic",
+    "de": "die Panik",
+    "es": "el pánico",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2823",
+    "fr": "paniquer",
+    "en": "panic",
+    "de": "in Panik geraten",
+    "es": "entrar en pánico",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2824",
+    "fr": "le défilé",
+    "en": "parade",
+    "de": "die Parade",
+    "es": "el desfile",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2825",
+    "fr": "parallèle",
+    "en": "parallel",
+    "de": "parallel",
+    "es": "paralelo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2826",
+    "fr": "le parlement",
+    "en": "parliament",
+    "de": "das Parlament",
+    "es": "el parlamento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2827",
+    "fr": "à temps partiel",
+    "en": "part-time",
+    "de": "Teilzeit-",
+    "es": "a tiempo parcial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2828",
+    "fr": "le participant",
+    "en": "participant",
+    "de": "der Teilnehmer",
+    "es": "el participante",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2829",
+    "fr": "la participation",
+    "en": "participation",
+    "de": "die Teilnahme",
+    "es": "la participación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2830",
+    "fr": "en partie",
+    "en": "partly",
+    "de": "teilweise",
+    "es": "en parte",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2831",
+    "fr": "le partenariat",
+    "en": "partnership",
+    "de": "die Partnerschaft",
+    "es": "la asociación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2832",
+    "fr": "le passage",
+    "en": "passage",
+    "de": "die Durchfahrt / der Abschnitt",
+    "es": "el pasaje",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2833",
+    "fr": "passionné",
+    "en": "passionate",
+    "de": "leidenschaftlich",
+    "es": "apasionado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2834",
+    "fr": "le mot de passe",
+    "en": "password",
+    "de": "das Passwort",
+    "es": "la contraseña",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2835",
+    "fr": "la rustine / le patch",
+    "en": "patch",
+    "de": "der Flicken",
+    "es": "el parche",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2836",
+    "fr": "la patience",
+    "en": "patience",
+    "de": "die Geduld",
+    "es": "la paciencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2837",
+    "fr": "la pause",
+    "en": "pause",
+    "de": "die Pause",
+    "es": "la pausa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2838",
+    "fr": "faire une pause",
+    "en": "pause",
+    "de": "pausieren",
+    "es": "hacer una pausa",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2839",
+    "fr": "le pair (collègue/égal)",
+    "en": "peer",
+    "de": "der Gleichaltrige",
+    "es": "el compañero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2840",
+    "fr": "la peine / la pénalité",
+    "en": "penalty",
+    "de": "die Strafe",
+    "es": "la penalidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2841",
+    "fr": "la pension (retraite)",
+    "en": "pension",
+    "de": "die Rente",
+    "es": "la pensión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2842",
+    "fr": "percevoir",
+    "en": "perceive",
+    "de": "wahrnehmen",
+    "es": "percibir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2843",
+    "fr": "la perception",
+    "en": "perception",
+    "de": "die Wahrnehmung",
+    "es": "la percepción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2844",
+    "fr": "permanent",
+    "en": "permanent",
+    "de": "dauerhaft",
+    "es": "permanente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2845",
+    "fr": "en permanence",
+    "en": "permanently",
+    "de": "dauerhaft",
+    "es": "permanentemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2846",
+    "fr": "le permis",
+    "en": "permit",
+    "de": "die Genehmigung",
+    "es": "el permiso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2847",
+    "fr": "permettre",
+    "en": "permit",
+    "de": "erlauben",
+    "es": "permitir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2848",
+    "fr": "la perspective",
+    "en": "perspective",
+    "de": "die Perspektive",
+    "es": "la perspectiva",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2849",
+    "fr": "la pharmacie",
+    "en": "pharmacy",
+    "de": "die Apotheke",
+    "es": "la farmacia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2850",
+    "fr": "la phase",
+    "en": "phase",
+    "de": "die Phase",
+    "es": "la fase",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2851",
+    "fr": "le phénomène",
+    "en": "phenomenon",
+    "de": "das Phänomen",
+    "es": "el fenómeno",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2852",
+    "fr": "la philosophie",
+    "en": "philosophy",
+    "de": "die Philosophie",
+    "es": "la filosofía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2853",
+    "fr": "le médecin",
+    "en": "physician",
+    "de": "der Arzt",
+    "es": "el médico",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2854",
+    "fr": "le tas / la pile",
+    "en": "pile",
+    "de": "der Stapel",
+    "es": "la pila",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2855",
+    "fr": "empiler",
+    "en": "pile",
+    "de": "stapeln",
+    "es": "apilar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2856",
+    "fr": "la pilule",
+    "en": "pill",
+    "de": "die Pille",
+    "es": "la píldora",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2857",
+    "fr": "le terrain / la hauteur (son)",
+    "en": "pitch",
+    "de": "das Spielfeld / die Tonhöhe",
+    "es": "el campo / el tono",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2858",
+    "fr": "la pitié / le dommage",
+    "en": "pity",
+    "de": "das Mitleid",
+    "es": "la piedad / la lástima",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2859",
+    "fr": "le placement / le stage",
+    "en": "placement",
+    "de": "die Vermittlung / das Praktikum",
+    "es": "la colocación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2860",
+    "fr": "uni / simple (pas compliqué)",
+    "en": "plain",
+    "de": "schlicht",
+    "es": "liso / simple",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2861",
+    "fr": "pointu",
+    "en": "pointed",
+    "de": "spitz",
+    "es": "puntiagudo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2862",
+    "fr": "la popularité",
+    "en": "popularity",
+    "de": "die Popularität",
+    "es": "la popularidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2863",
+    "fr": "la portion",
+    "en": "portion",
+    "de": "die Portion",
+    "es": "la porción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2864",
+    "fr": "la pose",
+    "en": "pose",
+    "de": "die Pose",
+    "es": "la pose",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2865",
+    "fr": "poser (pour photo) / constituer",
+    "en": "pose",
+    "de": "posieren",
+    "es": "posar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2866",
+    "fr": "positif",
+    "en": "positive",
+    "de": "positiv",
+    "es": "positivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2867",
+    "fr": "posséder",
+    "en": "possess",
+    "de": "besitzen",
+    "es": "poseer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2868",
+    "fr": "le potentiel",
+    "en": "potential",
+    "de": "das Potenzial",
+    "es": "el potencial",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2869",
+    "fr": "potentiel",
+    "en": "potential",
+    "de": "potenziell",
+    "es": "potencial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2870",
+    "fr": "potentiellement",
+    "en": "potentially",
+    "de": "möglicherweise",
+    "es": "potencialmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2871",
+    "fr": "louer (féliciter)",
+    "en": "praise",
+    "de": "loben",
+    "es": "alabar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2872",
+    "fr": "précieux",
+    "en": "precious",
+    "de": "wertvoll",
+    "es": "precioso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2873",
+    "fr": "précis",
+    "en": "precise",
+    "de": "präzise",
+    "es": "preciso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2874",
+    "fr": "précisément",
+    "en": "precisely",
+    "de": "genau",
+    "es": "precisamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2875",
+    "fr": "prévisible",
+    "en": "predictable",
+    "de": "vorhersehbar",
+    "es": "predecible",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2876",
+    "fr": "la préférence",
+    "en": "preference",
+    "de": "die Vorliebe",
+    "es": "la preferencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2877",
+    "fr": "enceinte",
+    "en": "pregnant",
+    "de": "schwanger",
+    "es": "embarazada",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2878",
+    "fr": "la préparation",
+    "en": "preparation",
+    "de": "die Vorbereitung",
+    "es": "la preparación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2879",
+    "fr": "la présence",
+    "en": "presence",
+    "de": "die Präsenz",
+    "es": "la presencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2880",
+    "fr": "préserver",
+    "en": "preserve",
+    "de": "erhalten",
+    "es": "preservar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2881",
+    "fr": "présidentiel",
+    "en": "presidential",
+    "de": "präsidentiell",
+    "es": "presidencial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2882",
+    "fr": "la fierté",
+    "en": "pride",
+    "de": "der Stolz",
+    "es": "el orgullo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2883",
+    "fr": "principalement",
+    "en": "primarily",
+    "de": "hauptsächlich",
+    "es": "principalmente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2884",
+    "fr": "premier / de premier ordre",
+    "en": "prime",
+    "de": "Haupt-",
+    "es": "principal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2885",
+    "fr": "principal / le directeur",
+    "en": "principal",
+    "de": "Haupt-",
+    "es": "principal",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2886",
+    "fr": "le principe",
+    "en": "principle",
+    "de": "das Prinzip",
+    "es": "el principio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2887",
+    "fr": "préalable",
+    "en": "prior",
+    "de": "vorherig",
+    "es": "previo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2888",
+    "fr": "la priorité",
+    "en": "priority",
+    "de": "die Priorität",
+    "es": "la prioridad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2889",
+    "fr": "la vie privée",
+    "en": "privacy",
+    "de": "die Privatsphäre",
+    "es": "la privacidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2890",
+    "fr": "la probabilité",
+    "en": "probability",
+    "de": "die Wahrscheinlichkeit",
+    "es": "la probabilidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2891",
+    "fr": "probable",
+    "en": "probable",
+    "de": "wahrscheinlich",
+    "es": "probable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2892",
+    "fr": "la procédure",
+    "en": "procedure",
+    "de": "das Verfahren",
+    "es": "el procedimiento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2893",
+    "fr": "procéder / avancer",
+    "en": "proceed",
+    "de": "fortfahren",
+    "es": "proceder",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2894",
+    "fr": "professionnel",
+    "en": "professional",
+    "de": "professionell",
+    "es": "profesional",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2895",
+    "fr": "la programmation",
+    "en": "programming",
+    "de": "die Programmierung",
+    "es": "la programación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2896",
+    "fr": "progressif",
+    "en": "progressive",
+    "de": "fortschrittlich",
+    "es": "progresivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2897",
+    "fr": "interdire",
+    "en": "prohibit",
+    "de": "verbieten",
+    "es": "prohibir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2898",
+    "fr": "prometteur",
+    "en": "promising",
+    "de": "vielversprechend",
+    "es": "prometedor",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2899",
+    "fr": "la promotion",
+    "en": "promotion",
+    "de": "die Beförderung",
+    "es": "la promoción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2900",
+    "fr": "inciter / provoquer",
+    "en": "prompt",
+    "de": "veranlassen",
+    "es": "provocar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2901",
+    "fr": "la preuve",
+    "en": "proof",
+    "de": "der Beweis",
+    "es": "la prueba",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2902",
+    "fr": "la proportion",
+    "en": "proportion",
+    "de": "die Proportion",
+    "es": "la proporción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2903",
+    "fr": "la proposition",
+    "en": "proposal",
+    "de": "der Vorschlag",
+    "es": "la propuesta",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2904",
+    "fr": "proposer",
+    "en": "propose",
+    "de": "vorschlagen",
+    "es": "proponer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2905",
+    "fr": "la perspective (d'avenir)",
+    "en": "prospect",
+    "de": "die Aussicht",
+    "es": "la perspectiva",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2906",
+    "fr": "la protection",
+    "en": "protection",
+    "de": "der Schutz",
+    "es": "la protección",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2907",
+    "fr": "la protéine",
+    "en": "protein",
+    "de": "das Protein",
+    "es": "la proteína",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2908",
+    "fr": "le manifestant",
+    "en": "protester",
+    "de": "der Demonstrant",
+    "es": "el manifestante",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2909",
+    "fr": "prouvé",
+    "en": "proven",
+    "de": "erwiesen",
+    "es": "probado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2910",
+    "fr": "psychologique",
+    "en": "psychological",
+    "de": "psychologisch",
+    "es": "psicológico",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2911",
+    "fr": "le psychologue",
+    "en": "psychologist",
+    "de": "der Psychologe",
+    "es": "el psicólogo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2912",
+    "fr": "la psychologie",
+    "en": "psychology",
+    "de": "die Psychologie",
+    "es": "la psicología",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2913",
+    "fr": "la publication",
+    "en": "publication",
+    "de": "die Veröffentlichung",
+    "es": "la publicación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2914",
+    "fr": "la publicité (attention médiatique)",
+    "en": "publicity",
+    "de": "die Öffentlichkeit",
+    "es": "la publicidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2915",
+    "fr": "l'édition (industrie)",
+    "en": "publishing",
+    "de": "das Verlagswesen",
+    "es": "la edición",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2916",
+    "fr": "le punk",
+    "en": "punk",
+    "de": "der Punk",
+    "es": "el punk",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2917",
+    "fr": "l'élève",
+    "en": "pupil",
+    "de": "der Schüler",
+    "es": "el alumno",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2918",
+    "fr": "l'achat",
+    "en": "purchase",
+    "de": "der Kauf",
+    "es": "la compra",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2919",
+    "fr": "acheter",
+    "en": "purchase",
+    "de": "kaufen",
+    "es": "comprar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2920",
+    "fr": "pur",
+    "en": "pure",
+    "de": "rein",
+    "es": "puro",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2921",
+    "fr": "purement",
+    "en": "purely",
+    "de": "rein",
+    "es": "puramente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2922",
+    "fr": "poursuivre",
+    "en": "pursue",
+    "de": "verfolgen",
+    "es": "perseguir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2923",
+    "fr": "la poursuite",
+    "en": "pursuit",
+    "de": "das Streben",
+    "es": "la búsqueda / la persecución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2924",
+    "fr": "le casse-tête / le puzzle",
+    "en": "puzzle",
+    "de": "das Rätsel",
+    "es": "el rompecabezas",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2925",
+    "fr": "interroger / remettre en question",
+    "en": "question",
+    "de": "hinterfragen",
+    "es": "cuestionar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2926",
+    "fr": "le questionnaire",
+    "en": "questionnaire",
+    "de": "der Fragebogen",
+    "es": "el cuestionario",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2927",
+    "fr": "racial",
+    "en": "racial",
+    "de": "rassisch",
+    "es": "racial",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2928",
+    "fr": "le racisme",
+    "en": "racism",
+    "de": "der Rassismus",
+    "es": "el racismo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2929",
+    "fr": "raciste",
+    "en": "racist",
+    "de": "rassistisch",
+    "es": "racista",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2930",
+    "fr": "le radar",
+    "en": "radar",
+    "de": "das Radar",
+    "es": "el radar",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2931",
+    "fr": "les radiations / le rayonnement",
+    "en": "radiation",
+    "de": "die Strahlung",
+    "es": "la radiación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2932",
+    "fr": "le rail",
+    "en": "rail",
+    "de": "die Schiene",
+    "es": "el riel",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2933",
+    "fr": "aléatoire",
+    "en": "random",
+    "de": "zufällig",
+    "es": "aleatorio",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2934",
+    "fr": "le rang",
+    "en": "rank",
+    "de": "der Rang",
+    "es": "el rango",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2935",
+    "fr": "classer",
+    "en": "rank",
+    "de": "einstufen",
+    "es": "clasificar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2936",
+    "fr": "rapide",
+    "en": "rapid",
+    "de": "schnell",
+    "es": "rápido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2937",
+    "fr": "rapidement",
+    "en": "rapidly",
+    "de": "schnell",
+    "es": "rápidamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2938",
+    "fr": "cru",
+    "en": "raw",
+    "de": "roh",
+    "es": "crudo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2939",
+    "fr": "réaliste",
+    "en": "realistic",
+    "de": "realistisch",
+    "es": "realista",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2940",
+    "fr": "raisonnable",
+    "en": "reasonable",
+    "de": "vernünftig",
+    "es": "razonable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2941",
+    "fr": "raisonnablement",
+    "en": "reasonably",
+    "de": "angemessen",
+    "es": "razonablemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2942",
+    "fr": "reconstruire",
+    "en": "rebuild",
+    "de": "wiederaufbauen",
+    "es": "reconstruir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2943",
+    "fr": "se rappeler",
+    "en": "recall",
+    "de": "sich erinnern",
+    "es": "recordar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2944",
+    "fr": "le récepteur",
+    "en": "receiver",
+    "de": "der Empfänger",
+    "es": "el receptor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2945",
+    "fr": "la récession",
+    "en": "recession",
+    "de": "die Rezession",
+    "es": "la recesión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2946",
+    "fr": "estimer / calculer",
+    "en": "reckon",
+    "de": "schätzen",
+    "es": "calcular",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2947",
+    "fr": "la reconnaissance",
+    "en": "recognition",
+    "de": "die Anerkennung",
+    "es": "el reconocimiento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2948",
+    "fr": "récupérer / se rétablir",
+    "en": "recover",
+    "de": "sich erholen",
+    "es": "recuperarse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2949",
+    "fr": "la récupération / le rétablissement",
+    "en": "recovery",
+    "de": "die Genesung",
+    "es": "la recuperación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2950",
+    "fr": "recruter",
+    "en": "recruit",
+    "de": "rekrutieren",
+    "es": "reclutar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2951",
+    "fr": "la réduction",
+    "en": "reduction",
+    "de": "die Reduzierung",
+    "es": "la reducción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2952",
+    "fr": "l'arbitre",
+    "en": "referee",
+    "de": "der Schiedsrichter",
+    "es": "el árbitro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2953",
+    "fr": "le réfugié",
+    "en": "refugee",
+    "de": "der Flüchtling",
+    "es": "el refugiado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2954",
+    "fr": "considérer",
+    "en": "regard",
+    "de": "betrachten",
+    "es": "considerar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2955",
+    "fr": "régional",
+    "en": "regional",
+    "de": "regional",
+    "es": "regional",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2956",
+    "fr": "inscrire / enregistrer",
+    "en": "register",
+    "de": "registrieren",
+    "es": "registrar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2957",
+    "fr": "l'inscription",
+    "en": "registration",
+    "de": "die Registrierung",
+    "es": "el registro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2958",
+    "fr": "regretter",
+    "en": "regret",
+    "de": "bedauern",
+    "es": "arrepentirse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2959",
+    "fr": "réguler / réglementer",
+    "en": "regulate",
+    "de": "regulieren",
+    "es": "regular",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2960",
+    "fr": "le règlement",
+    "en": "regulation",
+    "de": "die Vorschrift",
+    "es": "la regulación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2961",
+    "fr": "renforcer",
+    "en": "reinforce",
+    "de": "verstärken",
+    "es": "reforzar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2962",
+    "fr": "relativement",
+    "en": "relatively",
+    "de": "relativ",
+    "es": "relativamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2963",
+    "fr": "pertinent",
+    "en": "relevant",
+    "de": "relevant",
+    "es": "relevante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2964",
+    "fr": "le soulagement",
+    "en": "relief",
+    "de": "die Erleichterung",
+    "es": "el alivio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2965",
+    "fr": "soulager",
+    "en": "relieve",
+    "de": "erleichtern",
+    "es": "aliviar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2966",
+    "fr": "soulagé",
+    "en": "relieved",
+    "de": "erleichtert",
+    "es": "aliviado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2967",
+    "fr": "compter sur",
+    "en": "rely on",
+    "de": "sich verlassen auf",
+    "es": "confiar en",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2968",
+    "fr": "la remarque",
+    "en": "remark",
+    "de": "die Bemerkung",
+    "es": "el comentario",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2969",
+    "fr": "remarquer",
+    "en": "remark",
+    "de": "bemerken",
+    "es": "comentar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2970",
+    "fr": "remarquable",
+    "en": "remarkable",
+    "de": "bemerkenswert",
+    "es": "notable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2971",
+    "fr": "remarquablement",
+    "en": "remarkably",
+    "de": "bemerkenswert",
+    "es": "notablemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2972",
+    "fr": "le signalement / le reportage",
+    "en": "reporting",
+    "de": "die Berichterstattung",
+    "es": "los informes",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2973",
+    "fr": "le représentant",
+    "en": "representative",
+    "de": "der Vertreter",
+    "es": "el representante",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2974",
+    "fr": "représentatif",
+    "en": "representative",
+    "de": "repräsentativ",
+    "es": "representativo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_2975",
+    "fr": "la réputation",
+    "en": "reputation",
+    "de": "der Ruf",
+    "es": "la reputación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2976",
+    "fr": "l'exigence",
+    "en": "requirement",
+    "de": "die Anforderung",
+    "es": "el requisito",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2977",
+    "fr": "secourir / sauver",
+    "en": "rescue",
+    "de": "retten",
+    "es": "rescatar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2978",
+    "fr": "la recherche (étude)",
+    "en": "research",
+    "de": "die Forschung",
+    "es": "la investigación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2979",
+    "fr": "faire des recherches",
+    "en": "research",
+    "de": "forschen",
+    "es": "investigar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2980",
+    "fr": "réserver",
+    "en": "reserve",
+    "de": "reservieren",
+    "es": "reservar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2981",
+    "fr": "le résident",
+    "en": "resident",
+    "de": "der Bewohner",
+    "es": "el residente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2982",
+    "fr": "démissionner",
+    "en": "resign",
+    "de": "zurücktreten",
+    "es": "renunciar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2983",
+    "fr": "résister",
+    "en": "resist",
+    "de": "widerstehen",
+    "es": "resistir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2984",
+    "fr": "la résolution",
+    "en": "resolution",
+    "de": "die Lösung / der Vorsatz",
+    "es": "la resolución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2985",
+    "fr": "résoudre (problème)",
+    "en": "resolve",
+    "de": "lösen",
+    "es": "resolver",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2986",
+    "fr": "la station (vacances) / le recours",
+    "en": "resort",
+    "de": "das Resort",
+    "es": "el centro vacacional",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2987",
+    "fr": "restaurer",
+    "en": "restore",
+    "de": "wiederherstellen",
+    "es": "restaurar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2988",
+    "fr": "restreindre",
+    "en": "restrict",
+    "de": "einschränken",
+    "es": "restringir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2989",
+    "fr": "la restriction",
+    "en": "restriction",
+    "de": "die Einschränkung",
+    "es": "la restricción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2990",
+    "fr": "le CV (curriculum vitae)",
+    "en": "résumé",
+    "de": "der Lebenslauf",
+    "es": "el currículum",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2991",
+    "fr": "la vente au détail",
+    "en": "retail",
+    "de": "der Einzelhandel",
+    "es": "la venta al por menor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2992",
+    "fr": "retenir / conserver",
+    "en": "retain",
+    "de": "behalten",
+    "es": "retener",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2993",
+    "fr": "la retraite",
+    "en": "retirement",
+    "de": "der Ruhestand",
+    "es": "la jubilación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2994",
+    "fr": "révéler",
+    "en": "reveal",
+    "de": "enthüllen",
+    "es": "revelar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_2995",
+    "fr": "le revenu (État/entreprise)",
+    "en": "revenue",
+    "de": "die Einnahmen",
+    "es": "los ingresos",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2996",
+    "fr": "la révision",
+    "en": "revision",
+    "de": "die Überarbeitung",
+    "es": "la revisión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2997",
+    "fr": "la révolution",
+    "en": "revolution",
+    "de": "die Revolution",
+    "es": "la revolución",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2998",
+    "fr": "la récompense",
+    "en": "reward",
+    "de": "die Belohnung",
+    "es": "la recompensa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_2999",
+    "fr": "récompenser",
+    "en": "reward",
+    "de": "belohnen",
+    "es": "recompensar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3000",
+    "fr": "le rythme",
+    "en": "rhythm",
+    "de": "der Rhythmus",
+    "es": "el ritmo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3001",
+    "fr": "débarrassé de",
+    "en": "rid",
+    "de": "losgeworden",
+    "es": "librado (de)",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3002",
+    "fr": "ridicule",
+    "en": "ridiculous",
+    "de": "lächerlich",
+    "es": "ridículo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3003",
+    "fr": "risqué",
+    "en": "risky",
+    "de": "riskant",
+    "es": "arriesgado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3004",
+    "fr": "le rival",
+    "en": "rival",
+    "de": "der Rivale",
+    "es": "el rival",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3005",
+    "fr": "voler (quelqu'un)",
+    "en": "rob",
+    "de": "ausrauben",
+    "es": "robar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3006",
+    "fr": "le vol (à main armée)",
+    "en": "robbery",
+    "de": "der Raub",
+    "es": "el robo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3007",
+    "fr": "la fusée",
+    "en": "rocket",
+    "de": "die Rakete",
+    "es": "el cohete",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3008",
+    "fr": "la romance",
+    "en": "romance",
+    "de": "die Romantik",
+    "es": "el romance",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3009",
+    "fr": "la racine",
+    "en": "root",
+    "de": "die Wurzel",
+    "es": "la raíz",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3010",
+    "fr": "la rose",
+    "en": "rose",
+    "de": "die Rose",
+    "es": "la rosa",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3011",
+    "fr": "approximativement / grossièrement",
+    "en": "roughly",
+    "de": "ungefähr",
+    "es": "aproximadamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3012",
+    "fr": "frotter",
+    "en": "rub",
+    "de": "reiben",
+    "es": "frotar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3013",
+    "fr": "le caoutchouc",
+    "en": "rubber",
+    "de": "der Gummi",
+    "es": "el caucho",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3014",
+    "fr": "ruiner",
+    "en": "ruin",
+    "de": "ruinieren",
+    "es": "arruinar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3015",
+    "fr": "rural",
+    "en": "rural",
+    "de": "ländlich",
+    "es": "rural",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3016",
+    "fr": "se précipiter",
+    "en": "rush",
+    "de": "eilen",
+    "es": "apresurarse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3017",
+    "fr": "le satellite",
+    "en": "satellite",
+    "de": "der Satellit",
+    "es": "el satélite",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3018",
+    "fr": "la satisfaction",
+    "en": "satisfaction",
+    "de": "die Zufriedenheit",
+    "es": "la satisfacción",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3019",
+    "fr": "satisfait",
+    "en": "satisfied",
+    "de": "zufrieden",
+    "es": "satisfecho",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3020",
+    "fr": "satisfaire",
+    "en": "satisfy",
+    "de": "befriedigen",
+    "es": "satisfacer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3021",
+    "fr": "l'économie (argent mis de côté)",
+    "en": "saving",
+    "de": "die Ersparnis",
+    "es": "el ahorro",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3022",
+    "fr": "l'échelle / la balance",
+    "en": "scale",
+    "de": "die Waage / der Maßstab",
+    "es": "la escala",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3023",
+    "fr": "le scandale",
+    "en": "scandal",
+    "de": "der Skandal",
+    "es": "el escándalo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3024",
+    "fr": "effrayer",
+    "en": "scare",
+    "de": "erschrecken",
+    "es": "asustar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3025",
+    "fr": "l'érudit / le boursier",
+    "en": "scholar",
+    "de": "der Gelehrte",
+    "es": "el erudito",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3026",
+    "fr": "la bourse d'études",
+    "en": "scholarship",
+    "de": "das Stipendium",
+    "es": "la beca",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3027",
+    "fr": "gratter",
+    "en": "scratch",
+    "de": "kratzen",
+    "es": "rascar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3028",
+    "fr": "hurler / crier",
+    "en": "scream",
+    "de": "schreien",
+    "es": "gritar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3029",
+    "fr": "le dépistage / la projection",
+    "en": "screening",
+    "de": "das Screening / die Vorführung",
+    "es": "la proyección / el cribado",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3030",
+    "fr": "le secteur",
+    "en": "sector",
+    "de": "der Sektor",
+    "es": "el sector",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3031",
+    "fr": "sécuriser / obtenir",
+    "en": "secure",
+    "de": "sichern",
+    "es": "asegurar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3032",
+    "fr": "chercher",
+    "en": "seek",
+    "de": "suchen",
+    "es": "buscar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3033",
+    "fr": "le chercheur / le demandeur",
+    "en": "seeker",
+    "de": "der Suchende",
+    "es": "el buscador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3034",
+    "fr": "sélectionner",
+    "en": "select",
+    "de": "auswählen",
+    "es": "seleccionar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3035",
+    "fr": "la sélection",
+    "en": "selection",
+    "de": "die Auswahl",
+    "es": "la selección",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3036",
+    "fr": "le soi / la propre personne",
+    "en": "self",
+    "de": "das Selbst",
+    "es": "el yo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3037",
+    "fr": "le séminaire",
+    "en": "seminar",
+    "de": "das Seminar",
+    "es": "el seminario",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3038",
+    "fr": "supérieur / aîné",
+    "en": "senior",
+    "de": "senior",
+    "es": "mayor / superior",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3039",
+    "fr": "sensible",
+    "en": "sensitive",
+    "de": "sensibel",
+    "es": "sensible",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3040",
+    "fr": "la séquence",
+    "en": "sequence",
+    "de": "die Sequenz",
+    "es": "la secuencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3041",
+    "fr": "la session",
+    "en": "session",
+    "de": "die Sitzung",
+    "es": "la sesión",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3042",
+    "fr": "régler / s'installer",
+    "en": "settle",
+    "de": "siedeln / klären",
+    "es": "establecerse / resolver",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3043",
+    "fr": "le colon (qui s'établit)",
+    "en": "settler",
+    "de": "der Siedler",
+    "es": "el colono",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3044",
+    "fr": "sévère / grave",
+    "en": "severe",
+    "de": "schwer",
+    "es": "severo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3045",
+    "fr": "sévèrement",
+    "en": "severely",
+    "de": "schwerwiegend",
+    "es": "severamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3046",
+    "fr": "sexy",
+    "en": "sexy",
+    "de": "sexy",
+    "es": "sexy",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3047",
+    "fr": "l'ombre (espace ombragé)",
+    "en": "shade",
+    "de": "der Schatten",
+    "es": "la sombra",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3048",
+    "fr": "l'ombre (forme projetée)",
+    "en": "shadow",
+    "de": "der Schatten",
+    "es": "la sombra (silueta)",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3049",
+    "fr": "peu profond / superficiel",
+    "en": "shallow",
+    "de": "flach",
+    "es": "poco profundo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3050",
+    "fr": "la honte",
+    "en": "shame",
+    "de": "die Schande",
+    "es": "la vergüenza",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3051",
+    "fr": "en forme de",
+    "en": "shaped",
+    "de": "geformt",
+    "es": "en forma de",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3052",
+    "fr": "l'abri",
+    "en": "shelter",
+    "de": "der Unterschlupf",
+    "es": "el refugio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3053",
+    "fr": "la fusillade / le tournage",
+    "en": "shooting",
+    "de": "die Schießerei",
+    "es": "el tiroteo / el rodaje",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3054",
+    "fr": "le rivage",
+    "en": "shore",
+    "de": "das Ufer",
+    "es": "la orilla",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3055",
+    "fr": "à court terme",
+    "en": "short-term",
+    "de": "kurzfristig",
+    "es": "a corto plazo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3056",
+    "fr": "la pénurie",
+    "en": "shortage",
+    "de": "der Mangel",
+    "es": "la escasez",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3057",
+    "fr": "bientôt / sous peu",
+    "en": "shortly",
+    "de": "in Kürze",
+    "es": "en breve",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3058",
+    "fr": "le frère ou la sœur",
+    "en": "sibling",
+    "de": "das Geschwister",
+    "es": "el hermano o hermana",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3059",
+    "fr": "le trottoir (US)",
+    "en": "sidewalk",
+    "de": "der Bürgersteig",
+    "es": "la acera",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3060",
+    "fr": "la signature",
+    "en": "signature",
+    "de": "die Unterschrift",
+    "es": "la firma",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3061",
+    "fr": "la signification / l'importance",
+    "en": "significance",
+    "de": "die Bedeutung",
+    "es": "el significado / la importancia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3062",
+    "fr": "significatif",
+    "en": "significant",
+    "de": "bedeutend",
+    "es": "significativo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3063",
+    "fr": "significativement",
+    "en": "significantly",
+    "de": "erheblich",
+    "es": "significativamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3064",
+    "fr": "le silence",
+    "en": "silence",
+    "de": "die Stille",
+    "es": "el silencio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3065",
+    "fr": "la soie",
+    "en": "silk",
+    "de": "die Seide",
+    "es": "la seda",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3066",
+    "fr": "sincère",
+    "en": "sincere",
+    "de": "aufrichtig",
+    "es": "sincero",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3067",
+    "fr": "qualifié / habile",
+    "en": "skilled",
+    "de": "qualifiziert",
+    "es": "experto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3068",
+    "fr": "le crâne",
+    "en": "skull",
+    "de": "der Schädel",
+    "es": "el cráneo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3069",
+    "fr": "l'esclave",
+    "en": "slave",
+    "de": "der Sklave",
+    "es": "el esclavo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3070",
+    "fr": "glisser",
+    "en": "slide",
+    "de": "rutschen",
+    "es": "deslizarse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3071",
+    "fr": "léger / infime",
+    "en": "slight",
+    "de": "leicht",
+    "es": "ligero",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3072",
+    "fr": "glisser / déraper",
+    "en": "slip",
+    "de": "ausrutschen",
+    "es": "resbalar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3073",
+    "fr": "le slogan",
+    "en": "slogan",
+    "de": "der Slogan",
+    "es": "el eslogan",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3074",
+    "fr": "la pente",
+    "en": "slope",
+    "de": "der Hang",
+    "es": "la pendiente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3075",
+    "fr": "soi-disant",
+    "en": "so-called",
+    "de": "sogenannt",
+    "es": "llamado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3076",
+    "fr": "solaire",
+    "en": "solar",
+    "de": "Solar-",
+    "es": "solar",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3077",
+    "fr": "d'une manière ou d'une autre",
+    "en": "somehow",
+    "de": "irgendwie",
+    "es": "de alguna manera",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3078",
+    "fr": "un jour (futur/passé)",
+    "en": "sometime",
+    "de": "irgendwann",
+    "es": "algún día",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3079",
+    "fr": "quelque peu",
+    "en": "somewhat",
+    "de": "etwas",
+    "es": "un poco",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3080",
+    "fr": "sophistiqué",
+    "en": "sophisticated",
+    "de": "anspruchsvoll",
+    "es": "sofisticado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3081",
+    "fr": "l'âme",
+    "en": "soul",
+    "de": "die Seele",
+    "es": "el alma",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3082",
+    "fr": "la source",
+    "en": "source",
+    "de": "die Quelle",
+    "es": "la fuente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3083",
+    "fr": "de rechange / libre",
+    "en": "spare",
+    "de": "überschüssig / Ersatz-",
+    "es": "de repuesto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3084",
+    "fr": "se spécialiser",
+    "en": "specialise",
+    "de": "sich spezialisieren",
+    "es": "especializarse",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3085",
+    "fr": "le spécialiste",
+    "en": "specialist",
+    "de": "der Spezialist",
+    "es": "el especialista",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3086",
+    "fr": "l'espèce",
+    "en": "species",
+    "de": "die Art",
+    "es": "la especie",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3087",
+    "fr": "spécifier",
+    "en": "specify",
+    "de": "angeben",
+    "es": "especificar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3088",
+    "fr": "spectaculaire",
+    "en": "spectacular",
+    "de": "spektakulär",
+    "es": "espectacular",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3089",
+    "fr": "le spectateur (sport)",
+    "en": "spectator",
+    "de": "der Zuschauer",
+    "es": "el espectador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3090",
+    "fr": "spéculer",
+    "en": "speculate",
+    "de": "spekulieren",
+    "es": "especular",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3091",
+    "fr": "la spéculation",
+    "en": "speculation",
+    "de": "die Spekulation",
+    "es": "la especulación",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3092",
+    "fr": "l'épice",
+    "en": "spice",
+    "de": "das Gewürz",
+    "es": "la especia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3093",
+    "fr": "renverser (liquide)",
+    "en": "spill",
+    "de": "verschütten",
+    "es": "derramar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3094",
+    "fr": "spirituel",
+    "en": "spiritual",
+    "de": "spirituell",
+    "es": "espiritual",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3095",
+    "fr": "en dépit de",
+    "en": "in spite of",
+    "de": "trotz",
+    "es": "a pesar de",
+    "type": "prep",
+    "level": "B2"
+  },
+  {
+    "id": "word_3096",
+    "fr": "fendre / diviser",
+    "en": "split",
+    "de": "teilen",
+    "es": "dividir",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3097",
+    "fr": "gâcher / gâter",
+    "en": "spoil",
+    "de": "verderben",
+    "es": "estropear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3098",
+    "fr": "le porte-parole",
+    "en": "spokesman",
+    "de": "der Sprecher",
+    "es": "el portavoz",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3099",
+    "fr": "le porte-parole (neutre)",
+    "en": "spokesperson",
+    "de": "der Sprecher",
+    "es": "el portavoz",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3100",
+    "fr": "la porte-parole",
+    "en": "spokeswoman",
+    "de": "die Sprecherin",
+    "es": "la portavoz",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3101",
+    "fr": "le sponsor / le parrain",
+    "en": "sponsor",
+    "de": "der Sponsor",
+    "es": "el patrocinador",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3102",
+    "fr": "sponsoriser",
+    "en": "sponsor",
+    "de": "sponsern",
+    "es": "patrocinar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3103",
+    "fr": "le parrainage",
+    "en": "sponsorship",
+    "de": "das Sponsoring",
+    "es": "el patrocinio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3104",
+    "fr": "stable",
+    "en": "stable",
+    "de": "stabil",
+    "es": "estable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3105",
+    "fr": "le stand",
+    "en": "stall",
+    "de": "der Stand",
+    "es": "el puesto",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3106",
+    "fr": "la position (opinion)",
+    "en": "stance",
+    "de": "die Haltung",
+    "es": "la postura",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3107",
+    "fr": "fixer (du regard)",
+    "en": "stare",
+    "de": "starren",
+    "es": "mirar fijamente",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3108",
+    "fr": "mourir de faim",
+    "en": "starve",
+    "de": "verhungern",
+    "es": "morir de hambre",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3109",
+    "fr": "la statistique",
+    "en": "statistic",
+    "de": "die Statistik",
+    "es": "la estadística",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3110",
+    "fr": "le statut",
+    "en": "status",
+    "de": "der Status",
+    "es": "el estatus",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3111",
+    "fr": "régulièrement",
+    "en": "steadily",
+    "de": "stetig",
+    "es": "constantemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3112",
+    "fr": "constant / régulier",
+    "en": "steady",
+    "de": "stetig",
+    "es": "estable",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3113",
+    "fr": "la vapeur",
+    "en": "steam",
+    "de": "der Dampf",
+    "es": "el vapor",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3114",
+    "fr": "l'acier",
+    "en": "steel",
+    "de": "der Stahl",
+    "es": "el acero",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3115",
+    "fr": "raide / abrupt",
+    "en": "steep",
+    "de": "steil",
+    "es": "empinado",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3116",
+    "fr": "collant",
+    "en": "sticky",
+    "de": "klebrig",
+    "es": "pegajoso",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3117",
+    "fr": "rigide / raide",
+    "en": "stiff",
+    "de": "steif",
+    "es": "rígido",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3118",
+    "fr": "stimuler",
+    "en": "stimulate",
+    "de": "stimulieren",
+    "es": "estimular",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3119",
+    "fr": "le stock / l'action (bourse)",
+    "en": "stock",
+    "de": "der Bestand / die Aktie",
+    "es": "las acciones / el inventario",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3120",
+    "fr": "le ruisseau / le flux",
+    "en": "stream",
+    "de": "der Bach",
+    "es": "el arroyo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3121",
+    "fr": "renforcer",
+    "en": "strengthen",
+    "de": "stärken",
+    "es": "fortalecer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3122",
+    "fr": "s'étirer / étendre",
+    "en": "stretch",
+    "de": "strecken",
+    "es": "estirar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3123",
+    "fr": "strict",
+    "en": "strict",
+    "de": "streng",
+    "es": "estricto",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3124",
+    "fr": "strictement",
+    "en": "strictly",
+    "de": "streng",
+    "es": "estrictamente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3125",
+    "fr": "la grève",
+    "en": "strike",
+    "de": "der Streik",
+    "es": "la huelga",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3126",
+    "fr": "frapper",
+    "en": "strike",
+    "de": "schlagen",
+    "es": "golpear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3127",
+    "fr": "frappant",
+    "en": "striking",
+    "de": "auffallend",
+    "es": "llamativo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3128",
+    "fr": "l'accident vasculaire cérébral / le coup",
+    "en": "stroke",
+    "de": "der Schlaganfall",
+    "es": "el derrame cerebral / el golpe",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3129",
+    "fr": "lutter",
+    "en": "struggle",
+    "de": "kämpfen",
+    "es": "luchar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3130",
+    "fr": "superbe / éblouissant",
+    "en": "stunning",
+    "de": "atemberaubend",
+    "es": "deslumbrante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3131",
+    "fr": "soumettre",
+    "en": "submit",
+    "de": "einreichen",
+    "es": "enviar / someter",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3132",
+    "fr": "la substance",
+    "en": "substance",
+    "de": "die Substanz",
+    "es": "la sustancia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3133",
+    "fr": "la banlieue",
+    "en": "suburb",
+    "de": "der Vorort",
+    "es": "el suburbio",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3134",
+    "fr": "la souffrance",
+    "en": "suffering",
+    "de": "das Leiden",
+    "es": "el sufrimiento",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3135",
+    "fr": "suffisant",
+    "en": "sufficient",
+    "de": "ausreichend",
+    "es": "suficiente",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3136",
+    "fr": "suffisamment",
+    "en": "sufficiently",
+    "de": "ausreichend",
+    "es": "suficientemente",
+    "type": "adverbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3137",
+    "fr": "la somme",
+    "en": "sum",
+    "de": "die Summe",
+    "es": "la suma",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3138",
+    "fr": "super",
+    "en": "super",
+    "de": "super",
+    "es": "súper",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3139",
+    "fr": "le chirurgien",
+    "en": "surgeon",
+    "de": "der Chirurg",
+    "es": "el cirujano",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3140",
+    "fr": "la chirurgie",
+    "en": "surgery",
+    "de": "die Operation",
+    "es": "la cirugía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3141",
+    "fr": "entourer",
+    "en": "surround",
+    "de": "umgeben",
+    "es": "rodear",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3142",
+    "fr": "environnant",
+    "en": "surrounding",
+    "de": "umliegend",
+    "es": "circundante",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3143",
+    "fr": "la survie",
+    "en": "survival",
+    "de": "das Überleben",
+    "es": "la supervivencia",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3144",
+    "fr": "le survivant",
+    "en": "survivor",
+    "de": "der Überlebende",
+    "es": "el sobreviviente",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3145",
+    "fr": "le suspect",
+    "en": "suspect",
+    "de": "der Verdächtige",
+    "es": "el sospechoso",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3146",
+    "fr": "suspecter / se douter",
+    "en": "suspect",
+    "de": "verdächtigen",
+    "es": "sospechar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3147",
+    "fr": "suspendre",
+    "en": "suspend",
+    "de": "suspendieren",
+    "es": "suspender",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3148",
+    "fr": "la durabilité",
+    "en": "sustainability",
+    "de": "die Nachhaltigkeit",
+    "es": "la sostenibilidad",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3149",
+    "fr": "durable",
+    "en": "sustainable",
+    "de": "nachhaltig",
+    "es": "sostenible",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3150",
+    "fr": "avaler",
+    "en": "swallow",
+    "de": "schlucken",
+    "es": "tragar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3151",
+    "fr": "jurer",
+    "en": "swear",
+    "de": "schwören",
+    "es": "jurar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3152",
+    "fr": "balayer",
+    "en": "sweep",
+    "de": "fegen",
+    "es": "barrer",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3153",
+    "fr": "le symbole",
+    "en": "symbol",
+    "de": "das Symbol",
+    "es": "el símbolo",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3154",
+    "fr": "symboliser",
+    "en": "symbolise",
+    "de": "symbolisieren",
+    "es": "simbolizar",
+    "type": "verbe",
+    "level": "B2"
+  },
+  {
+    "id": "word_3155",
+    "fr": "compatissant",
+    "en": "sympathetic",
+    "de": "mitfühlend",
+    "es": "compasivo",
+    "type": "adjectif",
+    "level": "B2"
+  },
+  {
+    "id": "word_3156",
+    "fr": "la compassion / la sympathie",
+    "en": "sympathy",
+    "de": "das Mitgefühl",
+    "es": "la simpatía",
+    "type": "nom",
+    "level": "B2"
+  },
+  {
+    "id": "word_3157",
     "fr": "un / une",
     "en": "a / an",
     "de": "ein / eine",
@@ -15732,7 +28413,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1749",
+    "id": "word_3158",
     "fr": "au sujet de",
     "en": "about",
     "de": "\u00fcber",
@@ -15741,7 +28422,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1750",
+    "id": "word_3159",
     "fr": "au-dessus",
     "en": "above",
     "de": "\u00fcber",
@@ -15750,7 +28431,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1751",
+    "id": "word_3160",
     "fr": "\u00e0 travers",
     "en": "across",
     "de": "\u00fcber",
@@ -15759,7 +28440,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1752",
+    "id": "word_3161",
     "fr": "l'action",
     "en": "action",
     "de": "die Aktion",
@@ -15768,7 +28449,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1753",
+    "id": "word_3162",
     "fr": "l'activit\u00e9",
     "en": "activity",
     "de": "die Aktivit\u00e4t",
@@ -15777,7 +28458,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1754",
+    "id": "word_3163",
     "fr": "l'acteur",
     "en": "actor",
     "de": "der Schauspieler",
@@ -15786,7 +28467,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1755",
+    "id": "word_3164",
     "fr": "l'actrice",
     "en": "actress",
     "de": "die Schauspielerin",
@@ -15795,7 +28476,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1756",
+    "id": "word_3165",
     "fr": "ajouter",
     "en": "add",
     "de": "hinzuf\u00fcgen",
@@ -15804,7 +28485,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1757",
+    "id": "word_3166",
     "fr": "l'adresse",
     "en": "address",
     "de": "die Adresse",
@@ -15813,7 +28494,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1758",
+    "id": "word_3167",
     "fr": "l'adulte",
     "en": "adult",
     "de": "der Erwachsene",
@@ -15822,7 +28503,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1759",
+    "id": "word_3168",
     "fr": "effray\u00e9",
     "en": "afraid",
     "de": "ver\u00e4ngstigt",
@@ -15831,7 +28512,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1760",
+    "id": "word_3169",
     "fr": "apr\u00e8s",
     "en": "after",
     "de": "nach",
@@ -15840,7 +28521,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1761",
+    "id": "word_3170",
     "fr": "l'apr\u00e8s-midi",
     "en": "afternoon",
     "de": "der Nachmittag",
@@ -15849,7 +28530,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1762",
+    "id": "word_3171",
     "fr": "encore",
     "en": "again",
     "de": "wieder",
@@ -15858,7 +28539,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1763",
+    "id": "word_3172",
     "fr": "l'\u00e2ge",
     "en": "age",
     "de": "das Alter",
@@ -15867,7 +28548,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1764",
+    "id": "word_3173",
     "fr": "il y a (temps)",
     "en": "ago",
     "de": "vor",
@@ -15876,7 +28557,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1765",
+    "id": "word_3174",
     "fr": "l'air",
     "en": "air",
     "de": "die Luft",
@@ -15885,7 +28566,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1766",
+    "id": "word_3175",
     "fr": "l'a\u00e9roport",
     "en": "airport",
     "de": "der Flughafen",
@@ -15894,7 +28575,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1767",
+    "id": "word_3176",
     "fr": "tout",
     "en": "all",
     "de": "alles",
@@ -15903,7 +28584,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1768",
+    "id": "word_3177",
     "fr": "d'accord",
     "en": "all right",
     "de": "in Ordnung",
@@ -15912,7 +28593,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1769",
+    "id": "word_3178",
     "fr": "aussi",
     "en": "also",
     "de": "auch",
@@ -15921,7 +28602,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1770",
+    "id": "word_3179",
     "fr": "toujours",
     "en": "always",
     "de": "immer",
@@ -15930,7 +28611,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1771",
+    "id": "word_3180",
     "fr": "incroyable",
     "en": "amazing",
     "de": "erstaunlich",
@@ -15939,7 +28620,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1772",
+    "id": "word_3181",
     "fr": "et",
     "en": "and",
     "de": "und",
@@ -15948,7 +28629,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1773",
+    "id": "word_3182",
     "fr": "en col\u00e8re",
     "en": "angry",
     "de": "w\u00fctend",
@@ -15957,7 +28638,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1774",
+    "id": "word_3183",
     "fr": "l'animal",
     "en": "animal",
     "de": "das Tier",
@@ -15966,7 +28647,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1775",
+    "id": "word_3184",
     "fr": "un autre",
     "en": "another",
     "de": "ein anderer",
@@ -15975,7 +28656,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1776",
+    "id": "word_3185",
     "fr": "r\u00e9pondre",
     "en": "answer",
     "de": "antworten",
@@ -15984,7 +28665,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1777",
+    "id": "word_3186",
     "fr": "la r\u00e9ponse",
     "en": "answer",
     "de": "die Antwort",
@@ -15993,7 +28674,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1778",
+    "id": "word_3187",
     "fr": "n'importe quel",
     "en": "any",
     "de": "irgendein",
@@ -16002,7 +28683,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1779",
+    "id": "word_3188",
     "fr": "n'importe qui",
     "en": "anyone",
     "de": "jemand",
@@ -16011,7 +28692,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1780",
+    "id": "word_3189",
     "fr": "n'importe quoi",
     "en": "anything",
     "de": "etwas",
@@ -16020,7 +28701,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1781",
+    "id": "word_3190",
     "fr": "l'appartement",
     "en": "apartment",
     "de": "die Wohnung",
@@ -16029,7 +28710,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1782",
+    "id": "word_3191",
     "fr": "la pomme",
     "en": "apple",
     "de": "der Apfel",
@@ -16038,7 +28719,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1783",
+    "id": "word_3192",
     "fr": "avril",
     "en": "April",
     "de": "April",
@@ -16047,7 +28728,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1784",
+    "id": "word_3193",
     "fr": "la zone",
     "en": "area",
     "de": "das Gebiet",
@@ -16056,7 +28737,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1785",
+    "id": "word_3194",
     "fr": "le bras",
     "en": "arm",
     "de": "der Arm",
@@ -16065,7 +28746,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1786",
+    "id": "word_3195",
     "fr": "autour",
     "en": "around",
     "de": "um",
@@ -16074,7 +28755,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1787",
+    "id": "word_3196",
     "fr": "arriver",
     "en": "arrive",
     "de": "ankommen",
@@ -16083,7 +28764,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1788",
+    "id": "word_3197",
     "fr": "l'art",
     "en": "art",
     "de": "die Kunst",
@@ -16092,7 +28773,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1789",
+    "id": "word_3198",
     "fr": "l'article",
     "en": "article",
     "de": "der Artikel",
@@ -16101,7 +28782,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1790",
+    "id": "word_3199",
     "fr": "l'artiste",
     "en": "artist",
     "de": "der K\u00fcnstler",
@@ -16110,7 +28791,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1791",
+    "id": "word_3200",
     "fr": "comme",
     "en": "as",
     "de": "wie",
@@ -16119,7 +28800,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1792",
+    "id": "word_3201",
     "fr": "demander",
     "en": "ask",
     "de": "fragen",
@@ -16128,7 +28809,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1793",
+    "id": "word_3202",
     "fr": "\u00e0",
     "en": "at",
     "de": "an / um",
@@ -16137,7 +28818,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1794",
+    "id": "word_3203",
     "fr": "ao\u00fbt",
     "en": "August",
     "de": "August",
@@ -16146,7 +28827,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1795",
+    "id": "word_3204",
     "fr": "la tante",
     "en": "aunt",
     "de": "die Tante",
@@ -16155,7 +28836,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1796",
+    "id": "word_3205",
     "fr": "l'automne",
     "en": "autumn",
     "de": "der Herbst",
@@ -16164,7 +28845,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1797",
+    "id": "word_3206",
     "fr": "loin",
     "en": "away",
     "de": "weg",
@@ -16173,7 +28854,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1798",
+    "id": "word_3207",
     "fr": "le b\u00e9b\u00e9",
     "en": "baby",
     "de": "das Baby",
@@ -16182,7 +28863,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1799",
+    "id": "word_3208",
     "fr": "en arri\u00e8re",
     "en": "back",
     "de": "zur\u00fcck",
@@ -16191,7 +28872,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1800",
+    "id": "word_3209",
     "fr": "mauvais",
     "en": "bad",
     "de": "schlecht",
@@ -16200,7 +28881,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1801",
+    "id": "word_3210",
     "fr": "le sac",
     "en": "bag",
     "de": "die Tasche",
@@ -16209,7 +28890,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1802",
+    "id": "word_3211",
     "fr": "la balle",
     "en": "ball",
     "de": "der Ball",
@@ -16218,7 +28899,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1803",
+    "id": "word_3212",
     "fr": "la banane",
     "en": "banana",
     "de": "die Banane",
@@ -16227,7 +28908,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1804",
+    "id": "word_3213",
     "fr": "le groupe",
     "en": "band",
     "de": "die Band",
@@ -16236,7 +28917,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1805",
+    "id": "word_3214",
     "fr": "la banque",
     "en": "bank",
     "de": "die Bank",
@@ -16245,7 +28926,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1806",
+    "id": "word_3215",
     "fr": "le bar",
     "en": "bar",
     "de": "die Bar",
@@ -16254,7 +28935,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1807",
+    "id": "word_3216",
     "fr": "le bain",
     "en": "bath",
     "de": "das Bad",
@@ -16263,7 +28944,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1808",
+    "id": "word_3217",
     "fr": "la salle de bain",
     "en": "bathroom",
     "de": "das Badezimmer",
@@ -16272,7 +28953,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1809",
+    "id": "word_3218",
     "fr": "\u00eatre",
     "en": "be",
     "de": "sein",
@@ -16281,7 +28962,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1810",
+    "id": "word_3219",
     "fr": "la plage",
     "en": "beach",
     "de": "der Strand",
@@ -16290,7 +28971,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1811",
+    "id": "word_3220",
     "fr": "beau",
     "en": "beautiful",
     "de": "sch\u00f6n",
@@ -16299,7 +28980,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1812",
+    "id": "word_3221",
     "fr": "parce que",
     "en": "because",
     "de": "weil",
@@ -16308,7 +28989,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1813",
+    "id": "word_3222",
     "fr": "devenir",
     "en": "become",
     "de": "werden",
@@ -16317,7 +28998,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1814",
+    "id": "word_3223",
     "fr": "le lit",
     "en": "bed",
     "de": "das Bett",
@@ -16326,7 +29007,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1815",
+    "id": "word_3224",
     "fr": "la chambre",
     "en": "bedroom",
     "de": "das Schlafzimmer",
@@ -16335,7 +29016,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1816",
+    "id": "word_3225",
     "fr": "la bi\u00e8re",
     "en": "beer",
     "de": "das Bier",
@@ -16344,7 +29025,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1817",
+    "id": "word_3226",
     "fr": "avant",
     "en": "before",
     "de": "vor",
@@ -16353,7 +29034,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1818",
+    "id": "word_3227",
     "fr": "commencer",
     "en": "begin",
     "de": "beginnen",
@@ -16362,7 +29043,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1819",
+    "id": "word_3228",
     "fr": "le d\u00e9but",
     "en": "beginning",
     "de": "der Anfang",
@@ -16371,7 +29052,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1820",
+    "id": "word_3229",
     "fr": "derri\u00e8re",
     "en": "behind",
     "de": "hinter",
@@ -16380,7 +29061,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1821",
+    "id": "word_3230",
     "fr": "croire",
     "en": "believe",
     "de": "glauben",
@@ -16389,7 +29070,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1822",
+    "id": "word_3231",
     "fr": "en dessous",
     "en": "below",
     "de": "unter",
@@ -16398,7 +29079,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1823",
+    "id": "word_3232",
     "fr": "le meilleur",
     "en": "best",
     "de": "am besten",
@@ -16407,7 +29088,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1824",
+    "id": "word_3233",
     "fr": "mieux",
     "en": "better",
     "de": "besser",
@@ -16416,7 +29097,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1825",
+    "id": "word_3234",
     "fr": "entre",
     "en": "between",
     "de": "zwischen",
@@ -16425,7 +29106,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1826",
+    "id": "word_3235",
     "fr": "le v\u00e9lo",
     "en": "bicycle",
     "de": "das Fahrrad",
@@ -16434,7 +29115,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1827",
+    "id": "word_3236",
     "fr": "grand",
     "en": "big",
     "de": "gro\u00df",
@@ -16443,7 +29124,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1828",
+    "id": "word_3237",
     "fr": "le v\u00e9lo (familier)",
     "en": "bike",
     "de": "das Fahrrad",
@@ -16452,7 +29133,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1829",
+    "id": "word_3238",
     "fr": "l'addition",
     "en": "bill",
     "de": "die Rechnung",
@@ -16461,7 +29142,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1830",
+    "id": "word_3239",
     "fr": "l'oiseau",
     "en": "bird",
     "de": "der Vogel",
@@ -16470,7 +29151,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1831",
+    "id": "word_3240",
     "fr": "l'anniversaire",
     "en": "birthday",
     "de": "der Geburtstag",
@@ -16479,7 +29160,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1832",
+    "id": "word_3241",
     "fr": "noir",
     "en": "black",
     "de": "schwarz",
@@ -16488,7 +29169,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1833",
+    "id": "word_3242",
     "fr": "le blog",
     "en": "blog",
     "de": "der Blog",
@@ -16497,7 +29178,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1834",
+    "id": "word_3243",
     "fr": "blond",
     "en": "blonde",
     "de": "blond",
@@ -16506,7 +29187,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1835",
+    "id": "word_3244",
     "fr": "bleu",
     "en": "blue",
     "de": "blau",
@@ -16515,7 +29196,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1836",
+    "id": "word_3245",
     "fr": "le bateau",
     "en": "boat",
     "de": "das Boot",
@@ -16524,7 +29205,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1837",
+    "id": "word_3246",
     "fr": "le corps",
     "en": "body",
     "de": "der K\u00f6rper",
@@ -16533,7 +29214,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1838",
+    "id": "word_3247",
     "fr": "le livre",
     "en": "book",
     "de": "das Buch",
@@ -16542,7 +29223,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1839",
+    "id": "word_3248",
     "fr": "la botte",
     "en": "boot",
     "de": "der Stiefel",
@@ -16551,7 +29232,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1840",
+    "id": "word_3249",
     "fr": "ennuy\u00e9",
     "en": "bored",
     "de": "gelangweilt",
@@ -16560,7 +29241,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1841",
+    "id": "word_3250",
     "fr": "ennuyeux",
     "en": "boring",
     "de": "langweilig",
@@ -16569,7 +29250,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1842",
+    "id": "word_3251",
     "fr": "n\u00e9",
     "en": "born",
     "de": "geboren",
@@ -16578,7 +29259,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1843",
+    "id": "word_3252",
     "fr": "les deux",
     "en": "both",
     "de": "beide",
@@ -16587,7 +29268,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1844",
+    "id": "word_3253",
     "fr": "la bouteille",
     "en": "bottle",
     "de": "die Flasche",
@@ -16596,7 +29277,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1845",
+    "id": "word_3254",
     "fr": "le fond",
     "en": "bottom",
     "de": "der Boden",
@@ -16605,7 +29286,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1846",
+    "id": "word_3255",
     "fr": "la bo\u00eete",
     "en": "box",
     "de": "die Box",
@@ -16614,7 +29295,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1847",
+    "id": "word_3256",
     "fr": "le gar\u00e7on",
     "en": "boy",
     "de": "der Junge",
@@ -16623,7 +29304,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1848",
+    "id": "word_3257",
     "fr": "le petit-ami",
     "en": "boyfriend",
     "de": "der Freund",
@@ -16632,7 +29313,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1849",
+    "id": "word_3258",
     "fr": "le pain",
     "en": "bread",
     "de": "das Brot",
@@ -16641,7 +29322,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1850",
+    "id": "word_3259",
     "fr": "casser",
     "en": "break",
     "de": "brechen",
@@ -16650,7 +29331,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1851",
+    "id": "word_3260",
     "fr": "le petit-d\u00e9jeuner",
     "en": "breakfast",
     "de": "das Fr\u00fchst\u00fcck",
@@ -16659,7 +29340,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1852",
+    "id": "word_3261",
     "fr": "apporter",
     "en": "bring",
     "de": "bringen",
@@ -16668,7 +29349,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1853",
+    "id": "word_3262",
     "fr": "le fr\u00e8re",
     "en": "brother",
     "de": "der Bruder",
@@ -16677,7 +29358,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1854",
+    "id": "word_3263",
     "fr": "marron",
     "en": "brown",
     "de": "braun",
@@ -16686,7 +29367,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1855",
+    "id": "word_3264",
     "fr": "construire",
     "en": "build",
     "de": "bauen",
@@ -16695,7 +29376,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1856",
+    "id": "word_3265",
     "fr": "le b\u00e2timent",
     "en": "building",
     "de": "das Geb\u00e4ude",
@@ -16704,7 +29385,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1857",
+    "id": "word_3266",
     "fr": "le bus",
     "en": "bus",
     "de": "der Bus",
@@ -16713,7 +29394,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1858",
+    "id": "word_3267",
     "fr": "l'entreprise",
     "en": "business",
     "de": "das Gesch\u00e4ft",
@@ -16722,7 +29403,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1859",
+    "id": "word_3268",
     "fr": "occup\u00e9",
     "en": "busy",
     "de": "besch\u00e4ftigt",
@@ -16731,7 +29412,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1860",
+    "id": "word_3269",
     "fr": "mais",
     "en": "but",
     "de": "aber",
@@ -16740,7 +29421,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1861",
+    "id": "word_3270",
     "fr": "le beurre",
     "en": "butter",
     "de": "die Butter",
@@ -16749,7 +29430,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1862",
+    "id": "word_3271",
     "fr": "acheter",
     "en": "buy",
     "de": "kaufen",
@@ -16758,7 +29439,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1863",
+    "id": "word_3272",
     "fr": "par",
     "en": "by",
     "de": "von / durch",
@@ -16767,7 +29448,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1864",
+    "id": "word_3273",
     "fr": "au revoir",
     "en": "bye",
     "de": "tsch\u00fcss",
@@ -16776,7 +29457,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1865",
+    "id": "word_3274",
     "fr": "le caf\u00e9 (lieu)",
     "en": "cafe",
     "de": "das Caf\u00e9",
@@ -16785,7 +29466,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1866",
+    "id": "word_3275",
     "fr": "le g\u00e2teau",
     "en": "cake",
     "de": "der Kuchen",
@@ -16794,7 +29475,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1867",
+    "id": "word_3276",
     "fr": "appeler",
     "en": "call",
     "de": "anrufen",
@@ -16803,7 +29484,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1868",
+    "id": "word_3277",
     "fr": "l'appareil photo",
     "en": "camera",
     "de": "die Kamera",
@@ -16812,7 +29493,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1869",
+    "id": "word_3278",
     "fr": "pouvoir",
     "en": "can",
     "de": "k\u00f6nnen",
@@ -16821,7 +29502,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1870",
+    "id": "word_3279",
     "fr": "ne pas pouvoir",
     "en": "cannot",
     "de": "nicht k\u00f6nnen",
@@ -16830,7 +29511,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1871",
+    "id": "word_3280",
     "fr": "la capitale",
     "en": "capital",
     "de": "die Hauptstadt",
@@ -16839,7 +29520,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1872",
+    "id": "word_3281",
     "fr": "la voiture",
     "en": "car",
     "de": "das Auto",
@@ -16848,7 +29529,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1873",
+    "id": "word_3282",
     "fr": "la carte",
     "en": "card",
     "de": "die Karte",
@@ -16857,7 +29538,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1874",
+    "id": "word_3283",
     "fr": "la carotte",
     "en": "carrot",
     "de": "die Karotte",
@@ -16866,7 +29547,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1875",
+    "id": "word_3284",
     "fr": "porter",
     "en": "carry",
     "de": "tragen",
@@ -16875,7 +29556,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1876",
+    "id": "word_3285",
     "fr": "le chat",
     "en": "cat",
     "de": "die Katze",
@@ -16884,7 +29565,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1877",
+    "id": "word_3286",
     "fr": "le CD",
     "en": "CD",
     "de": "die CD",
@@ -16893,7 +29574,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1878",
+    "id": "word_3287",
     "fr": "le centime",
     "en": "cent",
     "de": "der Cent",
@@ -16902,7 +29583,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1879",
+    "id": "word_3288",
     "fr": "le centre",
     "en": "centre",
     "de": "das Zentrum",
@@ -16911,7 +29592,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1880",
+    "id": "word_3289",
     "fr": "la chaise",
     "en": "chair",
     "de": "der Stuhl",
@@ -16920,7 +29601,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1881",
+    "id": "word_3290",
     "fr": "changer",
     "en": "change",
     "de": "\u00e4ndern",
@@ -16929,7 +29610,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1882",
+    "id": "word_3291",
     "fr": "le graphique",
     "en": "chart",
     "de": "das Diagramm",
@@ -16938,7 +29619,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1883",
+    "id": "word_3292",
     "fr": "bon march\u00e9",
     "en": "cheap",
     "de": "billig",
@@ -16947,7 +29628,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1884",
+    "id": "word_3293",
     "fr": "v\u00e9rifier",
     "en": "check",
     "de": "\u00fcberpr\u00fcfen",
@@ -16956,7 +29637,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1885",
+    "id": "word_3294",
     "fr": "le fromage",
     "en": "cheese",
     "de": "der K\u00e4se",
@@ -16965,7 +29646,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1886",
+    "id": "word_3295",
     "fr": "le poulet",
     "en": "chicken",
     "de": "das H\u00e4hnchen",
@@ -16974,7 +29655,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1887",
+    "id": "word_3296",
     "fr": "l'enfant",
     "en": "child",
     "de": "das Kind",
@@ -16983,7 +29664,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1888",
+    "id": "word_3297",
     "fr": "le chocolat",
     "en": "chocolate",
     "de": "die Schokolade",
@@ -16992,7 +29673,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1889",
+    "id": "word_3298",
     "fr": "choisir",
     "en": "choose",
     "de": "w\u00e4hlen",
@@ -17001,7 +29682,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1890",
+    "id": "word_3299",
     "fr": "le cin\u00e9ma",
     "en": "cinema",
     "de": "das Kino",
@@ -17010,7 +29691,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1891",
+    "id": "word_3300",
     "fr": "la ville",
     "en": "city",
     "de": "die Stadt",
@@ -17019,7 +29700,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1892",
+    "id": "word_3301",
     "fr": "la classe",
     "en": "class",
     "de": "die Klasse",
@@ -17028,7 +29709,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1893",
+    "id": "word_3302",
     "fr": "la salle de classe",
     "en": "classroom",
     "de": "das Klassenzimmer",
@@ -17037,7 +29718,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1894",
+    "id": "word_3303",
     "fr": "nettoyer",
     "en": "clean",
     "de": "putzen",
@@ -17046,7 +29727,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1895",
+    "id": "word_3304",
     "fr": "propre",
     "en": "clean",
     "de": "sauber",
@@ -17055,7 +29736,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1896",
+    "id": "word_3305",
     "fr": "grimper",
     "en": "climb",
     "de": "klettern",
@@ -17064,7 +29745,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1897",
+    "id": "word_3306",
     "fr": "l'horloge",
     "en": "clock",
     "de": "die Uhr",
@@ -17073,7 +29754,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1898",
+    "id": "word_3307",
     "fr": "fermer",
     "en": "close",
     "de": "schlie\u00dfen",
@@ -17082,7 +29763,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1899",
+    "id": "word_3308",
     "fr": "les v\u00eatements",
     "en": "clothes",
     "de": "die Kleidung",
@@ -17091,7 +29772,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1900",
+    "id": "word_3309",
     "fr": "le club",
     "en": "club",
     "de": "der Club",
@@ -17100,7 +29781,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1901",
+    "id": "word_3310",
     "fr": "le manteau",
     "en": "coat",
     "de": "der Mantel",
@@ -17109,7 +29790,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1902",
+    "id": "word_3311",
     "fr": "le caf\u00e9 (boisson)",
     "en": "coffee",
     "de": "der Kaffee",
@@ -17118,7 +29799,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1903",
+    "id": "word_3312",
     "fr": "froid",
     "en": "cold",
     "de": "kalt",
@@ -17127,7 +29808,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1904",
+    "id": "word_3313",
     "fr": "le coll\u00e8ge",
     "en": "college",
     "de": "das College",
@@ -17136,7 +29817,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1905",
+    "id": "word_3314",
     "fr": "la couleur",
     "en": "colour",
     "de": "die Farbe",
@@ -17145,7 +29826,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1906",
+    "id": "word_3315",
     "fr": "venir",
     "en": "come",
     "de": "kommen",
@@ -17154,7 +29835,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1907",
+    "id": "word_3316",
     "fr": "l'entreprise (2)",
     "en": "company",
     "de": "das Unternehmen",
@@ -17163,7 +29844,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1908",
+    "id": "word_3317",
     "fr": "compl\u00e9ter",
     "en": "complete",
     "de": "vervollst\u00e4ndigen",
@@ -17172,7 +29853,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1909",
+    "id": "word_3318",
     "fr": "l'ordinateur",
     "en": "computer",
     "de": "der Computer",
@@ -17181,7 +29862,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1910",
+    "id": "word_3319",
     "fr": "le concert",
     "en": "concert",
     "de": "das Konzert",
@@ -17190,7 +29871,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1911",
+    "id": "word_3320",
     "fr": "cuisiner",
     "en": "cook",
     "de": "kochen",
@@ -17199,7 +29880,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1912",
+    "id": "word_3321",
     "fr": "la cuisine (action)",
     "en": "cooking",
     "de": "das Kochen",
@@ -17208,7 +29889,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1913",
+    "id": "word_3322",
     "fr": "g\u00e9nial / frais",
     "en": "cool",
     "de": "cool",
@@ -17217,7 +29898,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1914",
+    "id": "word_3323",
     "fr": "correct",
     "en": "correct",
     "de": "richtig",
@@ -17226,7 +29907,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1915",
+    "id": "word_3324",
     "fr": "co\u00fbter",
     "en": "cost",
     "de": "kosten",
@@ -17235,7 +29916,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1916",
+    "id": "word_3325",
     "fr": "pourrait",
     "en": "could",
     "de": "k\u00f6nnte",
@@ -17244,7 +29925,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1917",
+    "id": "word_3326",
     "fr": "le pays",
     "en": "country",
     "de": "das Land",
@@ -17253,7 +29934,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1918",
+    "id": "word_3327",
     "fr": "le cours",
     "en": "course",
     "de": "der Kurs",
@@ -17262,7 +29943,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1919",
+    "id": "word_3328",
     "fr": "le cousin",
     "en": "cousin",
     "de": "der Cousin",
@@ -17271,7 +29952,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1920",
+    "id": "word_3329",
     "fr": "la vache",
     "en": "cow",
     "de": "die Kuh",
@@ -17280,7 +29961,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1921",
+    "id": "word_3330",
     "fr": "la cr\u00e8me",
     "en": "cream",
     "de": "die Sahne",
@@ -17289,7 +29970,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1922",
+    "id": "word_3331",
     "fr": "la tasse",
     "en": "cup",
     "de": "die Tasse",
@@ -17298,7 +29979,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1923",
+    "id": "word_3332",
     "fr": "le client",
     "en": "customer",
     "de": "der Kunde",
@@ -17307,7 +29988,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1924",
+    "id": "word_3333",
     "fr": "couper",
     "en": "cut",
     "de": "schneiden",
@@ -17316,7 +29997,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1925",
+    "id": "word_3334",
     "fr": "le papa",
     "en": "dad",
     "de": "der Papa",
@@ -17325,7 +30006,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1926",
+    "id": "word_3335",
     "fr": "quotidien",
     "en": "daily",
     "de": "t\u00e4glich",
@@ -17334,7 +30015,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1927",
+    "id": "word_3336",
     "fr": "danser",
     "en": "dance",
     "de": "tanzen",
@@ -17343,7 +30024,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1928",
+    "id": "word_3337",
     "fr": "le danseur",
     "en": "dancer",
     "de": "der T\u00e4nzer",
@@ -17352,7 +30033,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1929",
+    "id": "word_3338",
     "fr": "la danse",
     "en": "dancing",
     "de": "das Tanzen",
@@ -17361,7 +30042,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1930",
+    "id": "word_3339",
     "fr": "dangereux",
     "en": "dangerous",
     "de": "gef\u00e4hrlich",
@@ -17370,7 +30051,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1931",
+    "id": "word_3340",
     "fr": "sombre",
     "en": "dark",
     "de": "dunkel",
@@ -17379,7 +30060,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1932",
+    "id": "word_3341",
     "fr": "la date",
     "en": "date",
     "de": "das Datum",
@@ -17388,7 +30069,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1933",
+    "id": "word_3342",
     "fr": "la fille (enfant)",
     "en": "daughter",
     "de": "die Tochter",
@@ -17397,7 +30078,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1934",
+    "id": "word_3343",
     "fr": "le jour",
     "en": "day",
     "de": "der Tag",
@@ -17406,7 +30087,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1935",
+    "id": "word_3344",
     "fr": "cher (affection)",
     "en": "dear",
     "de": "lieb",
@@ -17415,7 +30096,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1936",
+    "id": "word_3345",
     "fr": "d\u00e9cembre",
     "en": "December",
     "de": "Dezember",
@@ -17424,7 +30105,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1937",
+    "id": "word_3346",
     "fr": "d\u00e9cider",
     "en": "decide",
     "de": "entscheiden",
@@ -17433,7 +30114,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1938",
+    "id": "word_3347",
     "fr": "d\u00e9licieux",
     "en": "delicious",
     "de": "k\u00f6stlich",
@@ -17442,7 +30123,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1939",
+    "id": "word_3348",
     "fr": "le bureau",
     "en": "desk",
     "de": "der Schreibtisch",
@@ -17451,7 +30132,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1940",
+    "id": "word_3349",
     "fr": "le d\u00e9tail",
     "en": "detail",
     "de": "das Detail",
@@ -17460,7 +30141,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1941",
+    "id": "word_3350",
     "fr": "le dialogue",
     "en": "dialogue",
     "de": "der Dialog",
@@ -17469,7 +30150,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1942",
+    "id": "word_3351",
     "fr": "le dictionnaire",
     "en": "dictionary",
     "de": "das W\u00f6rterbuch",
@@ -17478,7 +30159,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1943",
+    "id": "word_3352",
     "fr": "mourir",
     "en": "die",
     "de": "sterben",
@@ -17487,7 +30168,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1944",
+    "id": "word_3353",
     "fr": "le r\u00e9gime",
     "en": "diet",
     "de": "die Di\u00e4t",
@@ -17496,7 +30177,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1945",
+    "id": "word_3354",
     "fr": "diff\u00e9rent",
     "en": "different",
     "de": "anders",
@@ -17505,7 +30186,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1946",
+    "id": "word_3355",
     "fr": "difficile",
     "en": "difficult",
     "de": "schwierig",
@@ -17514,7 +30195,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1947",
+    "id": "word_3356",
     "fr": "le d\u00eener",
     "en": "dinner",
     "de": "das Abendessen",
@@ -17523,7 +30204,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1948",
+    "id": "word_3357",
     "fr": "sale",
     "en": "dirty",
     "de": "schmutzig",
@@ -17532,7 +30213,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1949",
+    "id": "word_3358",
     "fr": "le plat",
     "en": "dish",
     "de": "das Gericht",
@@ -17541,7 +30222,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1950",
+    "id": "word_3359",
     "fr": "faire",
     "en": "do",
     "de": "tun / machen",
@@ -17550,7 +30231,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1951",
+    "id": "word_3360",
     "fr": "le docteur",
     "en": "doctor",
     "de": "der Arzt",
@@ -17559,7 +30240,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1952",
+    "id": "word_3361",
     "fr": "le chien",
     "en": "dog",
     "de": "der Hund",
@@ -17568,7 +30249,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1953",
+    "id": "word_3362",
     "fr": "le dollar",
     "en": "dollar",
     "de": "der Dollar",
@@ -17577,7 +30258,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1954",
+    "id": "word_3363",
     "fr": "la porte",
     "en": "door",
     "de": "die T\u00fcr",
@@ -17586,7 +30267,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1955",
+    "id": "word_3364",
     "fr": "en bas",
     "en": "down",
     "de": "unten",
@@ -17595,7 +30276,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1956",
+    "id": "word_3365",
     "fr": "en bas (escaliers)",
     "en": "downstairs",
     "de": "unten",
@@ -17604,7 +30285,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1957",
+    "id": "word_3366",
     "fr": "dessiner",
     "en": "draw",
     "de": "zeichnen",
@@ -17613,7 +30294,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1958",
+    "id": "word_3367",
     "fr": "la robe",
     "en": "dress",
     "de": "das Kleid",
@@ -17622,7 +30303,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1959",
+    "id": "word_3368",
     "fr": "boire",
     "en": "drink",
     "de": "trinken",
@@ -17631,7 +30312,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1960",
+    "id": "word_3369",
     "fr": "conduire",
     "en": "drive",
     "de": "fahren",
@@ -17640,7 +30321,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1961",
+    "id": "word_3370",
     "fr": "le chauffeur",
     "en": "driver",
     "de": "der Fahrer",
@@ -17649,7 +30330,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1962",
+    "id": "word_3371",
     "fr": "la conduite",
     "en": "driving",
     "de": "das Fahren",
@@ -17658,7 +30339,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1963",
+    "id": "word_3372",
     "fr": "sec",
     "en": "dry",
     "de": "trocken",
@@ -17667,7 +30348,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1964",
+    "id": "word_3373",
     "fr": "pendant",
     "en": "during",
     "de": "w\u00e4hrend",
@@ -17676,7 +30357,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1965",
+    "id": "word_3374",
     "fr": "le DVD",
     "en": "DVD",
     "de": "die DVD",
@@ -17685,7 +30366,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1966",
+    "id": "word_3375",
     "fr": "chaque",
     "en": "each",
     "de": "jeder",
@@ -17694,7 +30375,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1967",
+    "id": "word_3376",
     "fr": "l'oreille",
     "en": "ear",
     "de": "das Ohr",
@@ -17703,7 +30384,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1968",
+    "id": "word_3377",
     "fr": "t\u00f4t",
     "en": "early",
     "de": "fr\u00fch",
@@ -17712,7 +30393,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1969",
+    "id": "word_3378",
     "fr": "l'est (direction)",
     "en": "east",
     "de": "der Osten",
@@ -17721,7 +30402,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1970",
+    "id": "word_3379",
     "fr": "facile",
     "en": "easy",
     "de": "einfach",
@@ -17730,7 +30411,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1971",
+    "id": "word_3380",
     "fr": "manger",
     "en": "eat",
     "de": "essen",
@@ -17739,7 +30420,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1972",
+    "id": "word_3381",
     "fr": "l'\u0153uf",
     "en": "egg",
     "de": "das Ei",
@@ -17748,7 +30429,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1973",
+    "id": "word_3382",
     "fr": "huit",
     "en": "eight",
     "de": "acht",
@@ -17757,7 +30438,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1974",
+    "id": "word_3383",
     "fr": "dix-huit",
     "en": "eighteen",
     "de": "achtzehn",
@@ -17766,7 +30447,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1975",
+    "id": "word_3384",
     "fr": "quatre-vingts",
     "en": "eighty",
     "de": "achtzig",
@@ -17775,7 +30456,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1976",
+    "id": "word_3385",
     "fr": "l'\u00e9l\u00e9phant",
     "en": "elephant",
     "de": "der Elefant",
@@ -17784,7 +30465,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1977",
+    "id": "word_3386",
     "fr": "onze",
     "en": "eleven",
     "de": "elf",
@@ -17793,7 +30474,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1978",
+    "id": "word_3387",
     "fr": "d'autre",
     "en": "else",
     "de": "sonst",
@@ -17802,7 +30483,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1979",
+    "id": "word_3388",
     "fr": "l'e-mail",
     "en": "email",
     "de": "die E-Mail",
@@ -17811,7 +30492,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1980",
+    "id": "word_3389",
     "fr": "la fin",
     "en": "end",
     "de": "das Ende",
@@ -17820,7 +30501,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1981",
+    "id": "word_3390",
     "fr": "profiter",
     "en": "enjoy",
     "de": "genie\u00dfen",
@@ -17829,7 +30510,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1982",
+    "id": "word_3391",
     "fr": "assez",
     "en": "enough",
     "de": "genug",
@@ -17838,7 +30519,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1983",
+    "id": "word_3392",
     "fr": "l'euro",
     "en": "euro",
     "de": "der Euro",
@@ -17847,7 +30528,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1984",
+    "id": "word_3393",
     "fr": "m\u00eame",
     "en": "even",
     "de": "sogar",
@@ -17856,7 +30537,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1985",
+    "id": "word_3394",
     "fr": "le soir",
     "en": "evening",
     "de": "der Abend",
@@ -17865,7 +30546,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1986",
+    "id": "word_3395",
     "fr": "jamais (d\u00e9j\u00e0)",
     "en": "ever",
     "de": "jemals",
@@ -17874,7 +30555,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1987",
+    "id": "word_3396",
     "fr": "chaque (2)",
     "en": "every",
     "de": "jeder",
@@ -17883,7 +30564,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1988",
+    "id": "word_3397",
     "fr": "tout le monde",
     "en": "everybody",
     "de": "jeder",
@@ -17892,7 +30573,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1989",
+    "id": "word_3398",
     "fr": "chacun",
     "en": "everyone",
     "de": "jeder",
@@ -17901,7 +30582,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1990",
+    "id": "word_3399",
     "fr": "tout",
     "en": "everything",
     "de": "alles",
@@ -17910,7 +30591,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1991",
+    "id": "word_3400",
     "fr": "l'examen",
     "en": "exam",
     "de": "die Pr\u00fcfung",
@@ -17919,7 +30600,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1992",
+    "id": "word_3401",
     "fr": "l'exemple",
     "en": "example",
     "de": "das Beispiel",
@@ -17928,7 +30609,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1993",
+    "id": "word_3402",
     "fr": "excit\u00e9",
     "en": "excited",
     "de": "aufgeregt",
@@ -17937,7 +30618,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1994",
+    "id": "word_3403",
     "fr": "passionnant",
     "en": "exciting",
     "de": "aufregend",
@@ -17946,7 +30627,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1995",
+    "id": "word_3404",
     "fr": "l'exercice",
     "en": "exercise",
     "de": "die \u00dcbung",
@@ -17955,7 +30636,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1996",
+    "id": "word_3405",
     "fr": "cher (prix)",
     "en": "expensive",
     "de": "teuer",
@@ -17964,7 +30645,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1997",
+    "id": "word_3406",
     "fr": "expliquer",
     "en": "explain",
     "de": "erkl\u00e4ren",
@@ -17973,7 +30654,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1998",
+    "id": "word_3407",
     "fr": "suppl\u00e9mentaire",
     "en": "extra",
     "de": "zus\u00e4tzlich",
@@ -17982,7 +30663,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_1999",
+    "id": "word_3408",
     "fr": "l'\u0153il",
     "en": "eye",
     "de": "das Auge",
@@ -17991,7 +30672,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2000",
+    "id": "word_3409",
     "fr": "le visage",
     "en": "face",
     "de": "das Gesicht",
@@ -18000,7 +30681,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2001",
+    "id": "word_3410",
     "fr": "tomber",
     "en": "fall",
     "de": "fallen",
@@ -18009,7 +30690,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2002",
+    "id": "word_3411",
     "fr": "faux",
     "en": "false",
     "de": "falsch",
@@ -18018,7 +30699,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2003",
+    "id": "word_3412",
     "fr": "la famille",
     "en": "family",
     "de": "die Familie",
@@ -18027,7 +30708,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2004",
+    "id": "word_3413",
     "fr": "c\u00e9l\u00e8bre",
     "en": "famous",
     "de": "ber\u00fchmt",
@@ -18036,7 +30717,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2005",
+    "id": "word_3414",
     "fr": "fantastique",
     "en": "fantastic",
     "de": "fantastisch",
@@ -18045,7 +30726,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2006",
+    "id": "word_3415",
     "fr": "loin",
     "en": "far",
     "de": "weit",
@@ -18054,7 +30735,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2007",
+    "id": "word_3416",
     "fr": "la ferme",
     "en": "farm",
     "de": "der Bauernhof",
@@ -18063,7 +30744,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2008",
+    "id": "word_3417",
     "fr": "le fermier",
     "en": "farmer",
     "de": "der Bauer",
@@ -18072,7 +30753,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2009",
+    "id": "word_3418",
     "fr": "rapide",
     "en": "fast",
     "de": "schnell",
@@ -18081,7 +30762,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2010",
+    "id": "word_3419",
     "fr": "gros",
     "en": "fat",
     "de": "dick",
@@ -18090,7 +30771,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2011",
+    "id": "word_3420",
     "fr": "le p\u00e8re",
     "en": "father",
     "de": "der Vater",
@@ -18099,7 +30780,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2012",
+    "id": "word_3421",
     "fr": "pr\u00e9f\u00e9r\u00e9",
     "en": "favourite",
     "de": "lieblings",
@@ -18108,7 +30789,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2013",
+    "id": "word_3422",
     "fr": "f\u00e9vrier",
     "en": "February",
     "de": "Februar",
@@ -18117,7 +30798,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2014",
+    "id": "word_3423",
     "fr": "ressentir",
     "en": "feel",
     "de": "f\u00fchlen",
@@ -18126,7 +30807,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2015",
+    "id": "word_3424",
     "fr": "le festival",
     "en": "festival",
     "de": "das Festival",
@@ -18135,7 +30816,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2016",
+    "id": "word_3425",
     "fr": "peu",
     "en": "few",
     "de": "wenige",
@@ -18144,7 +30825,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2017",
+    "id": "word_3426",
     "fr": "quinze",
     "en": "fifteen",
     "de": "f\u00fcnfzehn",
@@ -18153,7 +30834,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2018",
+    "id": "word_3427",
     "fr": "cinqui\u00e8me",
     "en": "fifth",
     "de": "f\u00fcnfte",
@@ -18162,7 +30843,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2019",
+    "id": "word_3428",
     "fr": "cinquante",
     "en": "fifty",
     "de": "f\u00fcnfzig",
@@ -18171,7 +30852,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2020",
+    "id": "word_3429",
     "fr": "remplir",
     "en": "fill",
     "de": "f\u00fcllen",
@@ -18180,7 +30861,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2021",
+    "id": "word_3430",
     "fr": "le film",
     "en": "film",
     "de": "der Film",
@@ -18189,7 +30870,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2022",
+    "id": "word_3431",
     "fr": "final",
     "en": "final",
     "de": "endg\u00fcltig",
@@ -18198,7 +30879,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2023",
+    "id": "word_3432",
     "fr": "trouver",
     "en": "find",
     "de": "finden",
@@ -18207,7 +30888,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2024",
+    "id": "word_3433",
     "fr": "bien",
     "en": "fine",
     "de": "gut",
@@ -18216,7 +30897,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2025",
+    "id": "word_3434",
     "fr": "finir",
     "en": "finish",
     "de": "beenden",
@@ -18225,7 +30906,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2026",
+    "id": "word_3435",
     "fr": "le feu",
     "en": "fire",
     "de": "das Feuer",
@@ -18234,7 +30915,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2027",
+    "id": "word_3436",
     "fr": "premier",
     "en": "first",
     "de": "erste",
@@ -18243,7 +30924,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2028",
+    "id": "word_3437",
     "fr": "le poisson",
     "en": "fish",
     "de": "der Fisch",
@@ -18252,7 +30933,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2029",
+    "id": "word_3438",
     "fr": "cinq",
     "en": "five",
     "de": "f\u00fcnf",
@@ -18261,7 +30942,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2030",
+    "id": "word_3439",
     "fr": "r\u00e9parer / fixer",
     "en": "fix",
     "de": "reparieren",
@@ -18270,7 +30951,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2031",
+    "id": "word_3440",
     "fr": "l'appartement",
     "en": "flat",
     "de": "die Wohnung",
@@ -18279,7 +30960,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2032",
+    "id": "word_3441",
     "fr": "le vol",
     "en": "flight",
     "de": "der Flug",
@@ -18288,7 +30969,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2033",
+    "id": "word_3442",
     "fr": "le sol / l'\u00e9tage",
     "en": "floor",
     "de": "der Boden",
@@ -18297,7 +30978,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2034",
+    "id": "word_3443",
     "fr": "la fleur",
     "en": "flower",
     "de": "die Blume",
@@ -18306,7 +30987,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2035",
+    "id": "word_3444",
     "fr": "voler (air)",
     "en": "fly",
     "de": "fliegen",
@@ -18315,7 +30996,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2036",
+    "id": "word_3445",
     "fr": "suivre",
     "en": "follow",
     "de": "folgen",
@@ -18324,7 +31005,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2037",
+    "id": "word_3446",
     "fr": "la nourriture",
     "en": "food",
     "de": "das Essen",
@@ -18333,7 +31014,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2038",
+    "id": "word_3447",
     "fr": "le pied",
     "en": "foot",
     "de": "der Fu\u00df",
@@ -18342,7 +31023,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2039",
+    "id": "word_3448",
     "fr": "le football",
     "en": "football",
     "de": "der Fu\u00dfball",
@@ -18351,7 +31032,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2040",
+    "id": "word_3449",
     "fr": "pour",
     "en": "for",
     "de": "f\u00fcr",
@@ -18360,7 +31041,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2041",
+    "id": "word_3450",
     "fr": "oublier",
     "en": "forget",
     "de": "vergessen",
@@ -18369,7 +31050,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2042",
+    "id": "word_3451",
     "fr": "le formulaire",
     "en": "form",
     "de": "das Formular",
@@ -18378,7 +31059,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2043",
+    "id": "word_3452",
     "fr": "quarante",
     "en": "forty",
     "de": "vierzig",
@@ -18387,7 +31068,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2044",
+    "id": "word_3453",
     "fr": "quatre",
     "en": "four",
     "de": "vier",
@@ -18396,7 +31077,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2045",
+    "id": "word_3454",
     "fr": "quatorze",
     "en": "fourteen",
     "de": "vierzehn",
@@ -18405,7 +31086,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2046",
+    "id": "word_3455",
     "fr": "quatri\u00e8me",
     "en": "fourth",
     "de": "vierte",
@@ -18414,7 +31095,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2047",
+    "id": "word_3456",
     "fr": "libre / gratuit",
     "en": "free",
     "de": "frei",
@@ -18423,7 +31104,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2048",
+    "id": "word_3457",
     "fr": "vendredi",
     "en": "Friday",
     "de": "Freitag",
@@ -18432,7 +31113,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2049",
+    "id": "word_3458",
     "fr": "l'ami",
     "en": "friend",
     "de": "der Freund",
@@ -18441,7 +31122,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2050",
+    "id": "word_3459",
     "fr": "amical",
     "en": "friendly",
     "de": "freundlich",
@@ -18450,7 +31131,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2051",
+    "id": "word_3460",
     "fr": "de (provenance)",
     "en": "from",
     "de": "von",
@@ -18459,7 +31140,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2052",
+    "id": "word_3461",
     "fr": "le devant",
     "en": "front",
     "de": "die Vorderseite",
@@ -18468,7 +31149,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2053",
+    "id": "word_3462",
     "fr": "le fruit",
     "en": "fruit",
     "de": "das Obst",
@@ -18477,7 +31158,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2054",
+    "id": "word_3463",
     "fr": "plein",
     "en": "full",
     "de": "voll",
@@ -18486,7 +31167,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2055",
+    "id": "word_3464",
     "fr": "l'amusement",
     "en": "fun",
     "de": "der Spa\u00df",
@@ -18495,7 +31176,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2056",
+    "id": "word_3465",
     "fr": "dr\u00f4le",
     "en": "funny",
     "de": "lustig",
@@ -18504,7 +31185,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2057",
+    "id": "word_3466",
     "fr": "le futur",
     "en": "future",
     "de": "die Zukunft",
@@ -18513,7 +31194,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2058",
+    "id": "word_3467",
     "fr": "le jeu",
     "en": "game",
     "de": "das Spiel",
@@ -18522,7 +31203,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2059",
+    "id": "word_3468",
     "fr": "le jardin",
     "en": "garden",
     "de": "der Garten",
@@ -18531,7 +31212,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2060",
+    "id": "word_3469",
     "fr": "la g\u00e9ographie",
     "en": "geography",
     "de": "die Geografie",
@@ -18540,7 +31221,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2061",
+    "id": "word_3470",
     "fr": "obtenir",
     "en": "get",
     "de": "bekommen",
@@ -18549,7 +31230,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2062",
+    "id": "word_3471",
     "fr": "la fille",
     "en": "girl",
     "de": "das M\u00e4dchen",
@@ -18558,7 +31239,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2063",
+    "id": "word_3472",
     "fr": "la petite-amie",
     "en": "girlfriend",
     "de": "die Freundin",
@@ -18567,7 +31248,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2064",
+    "id": "word_3473",
     "fr": "donner",
     "en": "give",
     "de": "geben",
@@ -18576,7 +31257,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2065",
+    "id": "word_3474",
     "fr": "le verre",
     "en": "glass",
     "de": "das Glas",
@@ -18585,7 +31266,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2066",
+    "id": "word_3475",
     "fr": "aller",
     "en": "go",
     "de": "gehen",
@@ -18594,7 +31275,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2067",
+    "id": "word_3476",
     "fr": "bon",
     "en": "good",
     "de": "gut",
@@ -18603,7 +31284,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2068",
+    "id": "word_3477",
     "fr": "au revoir",
     "en": "goodbye",
     "de": "auf Wiedersehen",
@@ -18612,7 +31293,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2069",
+    "id": "word_3478",
     "fr": "le grand-p\u00e8re",
     "en": "grandfather",
     "de": "der Gro\u00dfvater",
@@ -18621,7 +31302,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2070",
+    "id": "word_3479",
     "fr": "la grand-m\u00e8re",
     "en": "grandmother",
     "de": "die Gro\u00dfmutter",
@@ -18630,7 +31311,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2071",
+    "id": "word_3480",
     "fr": "le grand-parent",
     "en": "grandparent",
     "de": "das Gro\u00dfelternteil",
@@ -18639,7 +31320,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2072",
+    "id": "word_3481",
     "fr": "super",
     "en": "great",
     "de": "gro\u00dfartig",
@@ -18648,7 +31329,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2073",
+    "id": "word_3482",
     "fr": "vert",
     "en": "green",
     "de": "gr\u00fcn",
@@ -18657,7 +31338,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2074",
+    "id": "word_3483",
     "fr": "gris",
     "en": "grey",
     "de": "grau",
@@ -18666,7 +31347,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2075",
+    "id": "word_3484",
     "fr": "le groupe",
     "en": "group",
     "de": "die Gruppe",
@@ -18675,7 +31356,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2076",
+    "id": "word_3485",
     "fr": "grandir",
     "en": "grow",
     "de": "wachsen",
@@ -18684,7 +31365,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2077",
+    "id": "word_3486",
     "fr": "deviner",
     "en": "guess",
     "de": "raten",
@@ -18693,7 +31374,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2078",
+    "id": "word_3487",
     "fr": "la guitare",
     "en": "guitar",
     "de": "die Gitarre",
@@ -18702,7 +31383,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2079",
+    "id": "word_3488",
     "fr": "la salle de sport",
     "en": "gym",
     "de": "das Fitnessstudio",
@@ -18711,7 +31392,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2080",
+    "id": "word_3489",
     "fr": "les cheveux",
     "en": "hair",
     "de": "die Haare",
@@ -18720,7 +31401,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2081",
+    "id": "word_3490",
     "fr": "la moiti\u00e9",
     "en": "half",
     "de": "die H\u00e4lfte",
@@ -18729,7 +31410,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2082",
+    "id": "word_3491",
     "fr": "la main",
     "en": "hand",
     "de": "die Hand",
@@ -18738,7 +31419,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2083",
+    "id": "word_3492",
     "fr": "se passer",
     "en": "happen",
     "de": "passieren",
@@ -18747,7 +31428,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2084",
+    "id": "word_3493",
     "fr": "heureux",
     "en": "happy",
     "de": "gl\u00fccklich",
@@ -18756,7 +31437,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2085",
+    "id": "word_3494",
     "fr": "dur",
     "en": "hard",
     "de": "hart",
@@ -18765,7 +31446,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2086",
+    "id": "word_3495",
     "fr": "le chapeau",
     "en": "hat",
     "de": "der Hut",
@@ -18774,7 +31455,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2087",
+    "id": "word_3496",
     "fr": "d\u00e9tester",
     "en": "hate",
     "de": "hassen",
@@ -18783,7 +31464,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2088",
+    "id": "word_3497",
     "fr": "avoir",
     "en": "have",
     "de": "haben",
@@ -18792,7 +31473,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2089",
+    "id": "word_3498",
     "fr": "devoir",
     "en": "have to",
     "de": "m\u00fcssen",
@@ -18801,7 +31482,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2090",
+    "id": "word_3499",
     "fr": "il",
     "en": "he",
     "de": "er",
@@ -18810,7 +31491,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2091",
+    "id": "word_3500",
     "fr": "la t\u00eate",
     "en": "head",
     "de": "der Kopf",
@@ -18819,7 +31500,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2092",
+    "id": "word_3501",
     "fr": "la sant\u00e9",
     "en": "health",
     "de": "die Gesundheit",
@@ -18828,7 +31509,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2093",
+    "id": "word_3502",
     "fr": "en bonne sant\u00e9",
     "en": "healthy",
     "de": "gesund",
@@ -18837,7 +31518,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2094",
+    "id": "word_3503",
     "fr": "entendre",
     "en": "hear",
     "de": "h\u00f6ren",
@@ -18846,7 +31527,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2095",
+    "id": "word_3504",
     "fr": "bonjour",
     "en": "hello",
     "de": "hallo",
@@ -18855,7 +31536,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2096",
+    "id": "word_3505",
     "fr": "aider",
     "en": "help",
     "de": "helfen",
@@ -18864,7 +31545,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2097",
+    "id": "word_3506",
     "fr": "elle / la sienne",
     "en": "her",
     "de": "ihr",
@@ -18873,7 +31554,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2098",
+    "id": "word_3507",
     "fr": "ici",
     "en": "here",
     "de": "hier",
@@ -18882,7 +31563,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2099",
+    "id": "word_3508",
     "fr": "h\u00e9",
     "en": "hey",
     "de": "hey",
@@ -18891,7 +31572,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2100",
+    "id": "word_3509",
     "fr": "salut",
     "en": "hi",
     "de": "hallo",
@@ -18900,7 +31581,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2101",
+    "id": "word_3510",
     "fr": "haut",
     "en": "high",
     "de": "hoch",
@@ -18909,7 +31590,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2102",
+    "id": "word_3511",
     "fr": "lui",
     "en": "him",
     "de": "ihn",
@@ -18918,7 +31599,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2103",
+    "id": "word_3512",
     "fr": "son / le sien",
     "en": "his",
     "de": "sein",
@@ -18927,7 +31608,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2104",
+    "id": "word_3513",
     "fr": "l'histoire",
     "en": "history",
     "de": "die Geschichte",
@@ -18936,7 +31617,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2105",
+    "id": "word_3514",
     "fr": "le passe-temps",
     "en": "hobby",
     "de": "das Hobby",
@@ -18945,7 +31626,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2106",
+    "id": "word_3515",
     "fr": "les vacances",
     "en": "holiday",
     "de": "der Urlaub",
@@ -18954,7 +31635,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2107",
+    "id": "word_3516",
     "fr": "la maison",
     "en": "home",
     "de": "das Zuhause",
@@ -18963,7 +31644,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2108",
+    "id": "word_3517",
     "fr": "les devoirs",
     "en": "homework",
     "de": "die Hausaufgaben",
@@ -18972,7 +31653,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2109",
+    "id": "word_3518",
     "fr": "esp\u00e9rer",
     "en": "hope",
     "de": "hoffen",
@@ -18981,7 +31662,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2110",
+    "id": "word_3519",
     "fr": "le cheval",
     "en": "horse",
     "de": "das Pferd",
@@ -18990,7 +31671,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2111",
+    "id": "word_3520",
     "fr": "l'h\u00f4pital",
     "en": "hospital",
     "de": "das Krankenhaus",
@@ -18999,7 +31680,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2112",
+    "id": "word_3521",
     "fr": "chaud",
     "en": "hot",
     "de": "hei\u00df",
@@ -19008,7 +31689,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2113",
+    "id": "word_3522",
     "fr": "l'h\u00f4tel",
     "en": "hotel",
     "de": "das Hotel",
@@ -19017,7 +31698,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2114",
+    "id": "word_3523",
     "fr": "l'heure",
     "en": "hour",
     "de": "die Stunde",
@@ -19026,7 +31707,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2115",
+    "id": "word_3524",
     "fr": "la maison (b\u00e2timent)",
     "en": "house",
     "de": "das Haus",
@@ -19035,7 +31716,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2116",
+    "id": "word_3525",
     "fr": "comment",
     "en": "how",
     "de": "wie",
@@ -19044,7 +31725,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2117",
+    "id": "word_3526",
     "fr": "cent",
     "en": "hundred",
     "de": "hundert",
@@ -19053,7 +31734,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2118",
+    "id": "word_3527",
     "fr": "affam\u00e9",
     "en": "hungry",
     "de": "hungrig",
@@ -19062,7 +31743,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2119",
+    "id": "word_3528",
     "fr": "le mari",
     "en": "husband",
     "de": "der Ehemann",
@@ -19071,7 +31752,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2120",
+    "id": "word_3529",
     "fr": "je",
     "en": "I",
     "de": "ich",
@@ -19080,7 +31761,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2121",
+    "id": "word_3530",
     "fr": "la glace / le gla\u00e7on",
     "en": "ice",
     "de": "das Eis",
@@ -19089,7 +31770,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2122",
+    "id": "word_3531",
     "fr": "la cr\u00e8me glac\u00e9e",
     "en": "ice cream",
     "de": "das Eis",
@@ -19098,7 +31779,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2123",
+    "id": "word_3532",
     "fr": "l'id\u00e9e",
     "en": "idea",
     "de": "die Idee",
@@ -19107,7 +31788,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2124",
+    "id": "word_3533",
     "fr": "si",
     "en": "if",
     "de": "wenn",
@@ -19116,7 +31797,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2125",
+    "id": "word_3534",
     "fr": "imaginer",
     "en": "imagine",
     "de": "sich vorstellen",
@@ -19125,7 +31806,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2126",
+    "id": "word_3535",
     "fr": "important",
     "en": "important",
     "de": "wichtig",
@@ -19134,7 +31815,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2127",
+    "id": "word_3536",
     "fr": "dans",
     "en": "in",
     "de": "in",
@@ -19143,7 +31824,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2128",
+    "id": "word_3537",
     "fr": "inclure",
     "en": "include",
     "de": "einschlie\u00dfen",
@@ -19152,7 +31833,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2129",
+    "id": "word_3538",
     "fr": "l'information",
     "en": "information",
     "de": "die Information",
@@ -19161,7 +31842,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2130",
+    "id": "word_3539",
     "fr": "int\u00e9ressant",
     "en": "interesting",
     "de": "interessant",
@@ -19170,7 +31851,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2131",
+    "id": "word_3540",
     "fr": "Internet",
     "en": "internet",
     "de": "das Internet",
@@ -19179,7 +31860,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2132",
+    "id": "word_3541",
     "fr": "l'interview",
     "en": "interview",
     "de": "das Interview",
@@ -19188,7 +31869,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2133",
+    "id": "word_3542",
     "fr": "dans / vers l'int\u00e9rieur",
     "en": "into",
     "de": "in ... hinein",
@@ -19197,7 +31878,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2134",
+    "id": "word_3543",
     "fr": "l'\u00eele",
     "en": "island",
     "de": "die Insel",
@@ -19206,7 +31887,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2135",
+    "id": "word_3544",
     "fr": "il / elle (chose)",
     "en": "it",
     "de": "es",
@@ -19215,7 +31896,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2136",
+    "id": "word_3545",
     "fr": "son / sa (chose)",
     "en": "its",
     "de": "sein / ihr",
@@ -19224,7 +31905,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2137",
+    "id": "word_3546",
     "fr": "la veste",
     "en": "jacket",
     "de": "die Jacke",
@@ -19233,7 +31914,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2138",
+    "id": "word_3547",
     "fr": "janvier",
     "en": "January",
     "de": "Januar",
@@ -19242,7 +31923,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2139",
+    "id": "word_3548",
     "fr": "le jean",
     "en": "jeans",
     "de": "die Jeans",
@@ -19251,7 +31932,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2140",
+    "id": "word_3549",
     "fr": "le travail (emploi)",
     "en": "job",
     "de": "der Job",
@@ -19260,7 +31941,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2141",
+    "id": "word_3550",
     "fr": "rejoindre",
     "en": "join",
     "de": "beitreten",
@@ -19269,7 +31950,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2142",
+    "id": "word_3551",
     "fr": "le voyage (trajet)",
     "en": "journey",
     "de": "die Reise",
@@ -19278,7 +31959,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2143",
+    "id": "word_3552",
     "fr": "le jus",
     "en": "juice",
     "de": "der Saft",
@@ -19287,7 +31968,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2144",
+    "id": "word_3553",
     "fr": "juillet",
     "en": "July",
     "de": "Juli",
@@ -19296,7 +31977,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2145",
+    "id": "word_3554",
     "fr": "juin",
     "en": "June",
     "de": "Juni",
@@ -19305,7 +31986,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2146",
+    "id": "word_3555",
     "fr": "juste",
     "en": "just",
     "de": "nur / gerade",
@@ -19314,7 +31995,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2147",
+    "id": "word_3556",
     "fr": "garder",
     "en": "keep",
     "de": "behalten",
@@ -19323,7 +32004,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2148",
+    "id": "word_3557",
     "fr": "la cl\u00e9",
     "en": "key",
     "de": "der Schl\u00fcssel",
@@ -19332,7 +32013,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2149",
+    "id": "word_3558",
     "fr": "le kilom\u00e8tre",
     "en": "kilometre",
     "de": "der Kilometer",
@@ -19341,7 +32022,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2150",
+    "id": "word_3559",
     "fr": "aimable / gentil",
     "en": "kind",
     "de": "freundlich",
@@ -19350,7 +32031,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2151",
+    "id": "word_3560",
     "fr": "la cuisine (pi\u00e8ce)",
     "en": "kitchen",
     "de": "die K\u00fcche",
@@ -19359,7 +32040,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2152",
+    "id": "word_3561",
     "fr": "savoir / conna\u00eetre",
     "en": "know",
     "de": "wissen / kennen",
@@ -19368,7 +32049,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2153",
+    "id": "word_3562",
     "fr": "le lac",
     "en": "lake",
     "de": "der See",
@@ -19377,7 +32058,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2154",
+    "id": "word_3563",
     "fr": "la langue",
     "en": "language",
     "de": "die Sprache",
@@ -19386,7 +32067,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2155",
+    "id": "word_3564",
     "fr": "grand (vaste)",
     "en": "large",
     "de": "gro\u00df",
@@ -19395,7 +32076,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2156",
+    "id": "word_3565",
     "fr": "dernier",
     "en": "last",
     "de": "letzte",
@@ -19404,7 +32085,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2157",
+    "id": "word_3566",
     "fr": "tard",
     "en": "late",
     "de": "sp\u00e4t",
@@ -19413,7 +32094,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2158",
+    "id": "word_3567",
     "fr": "plus tard",
     "en": "later",
     "de": "sp\u00e4ter",
@@ -19422,7 +32103,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2159",
+    "id": "word_3568",
     "fr": "rire",
     "en": "laugh",
     "de": "lachen",
@@ -19431,7 +32112,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2160",
+    "id": "word_3569",
     "fr": "apprendre",
     "en": "learn",
     "de": "lernen",
@@ -19440,7 +32121,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2161",
+    "id": "word_3570",
     "fr": "quitter / laisser",
     "en": "leave",
     "de": "verlassen",
@@ -19449,7 +32130,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2162",
+    "id": "word_3571",
     "fr": "la gauche",
     "en": "left",
     "de": "links",
@@ -19458,7 +32139,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2163",
+    "id": "word_3572",
     "fr": "la jambe",
     "en": "leg",
     "de": "das Bein",
@@ -19467,7 +32148,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2164",
+    "id": "word_3573",
     "fr": "la le\u00e7on",
     "en": "lesson",
     "de": "die Lektion",
@@ -19476,7 +32157,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2165",
+    "id": "word_3574",
     "fr": "laisser / louer",
     "en": "let",
     "de": "lassen",
@@ -19485,7 +32166,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2166",
+    "id": "word_3575",
     "fr": "la lettre (alphabet/courrier)",
     "en": "letter",
     "de": "der Brief / der Buchstabe",
@@ -19494,7 +32175,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2167",
+    "id": "word_3576",
     "fr": "la biblioth\u00e8que",
     "en": "library",
     "de": "die Bibliothek",
@@ -19503,7 +32184,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2168",
+    "id": "word_3577",
     "fr": "le mensonge",
     "en": "lie",
     "de": "die L\u00fcge",
@@ -19512,7 +32193,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2169",
+    "id": "word_3578",
     "fr": "la vie",
     "en": "life",
     "de": "das Leben",
@@ -19521,7 +32202,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2170",
+    "id": "word_3579",
     "fr": "la lumi\u00e8re",
     "en": "light",
     "de": "das Licht",
@@ -19530,7 +32211,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2171",
+    "id": "word_3580",
     "fr": "aimer",
     "en": "like",
     "de": "m\u00f6gen",
@@ -19539,7 +32220,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2172",
+    "id": "word_3581",
     "fr": "comme",
     "en": "like",
     "de": "wie",
@@ -19548,7 +32229,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2173",
+    "id": "word_3582",
     "fr": "la ligne",
     "en": "line",
     "de": "die Linie",
@@ -19557,7 +32238,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2174",
+    "id": "word_3583",
     "fr": "le lion",
     "en": "lion",
     "de": "der L\u00f6we",
@@ -19566,7 +32247,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2175",
+    "id": "word_3584",
     "fr": "la liste",
     "en": "list",
     "de": "die Liste",
@@ -19575,7 +32256,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2176",
+    "id": "word_3585",
     "fr": "\u00e9couter",
     "en": "listen",
     "de": "zuh\u00f6ren",
@@ -19584,7 +32265,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2177",
+    "id": "word_3586",
     "fr": "petit",
     "en": "little",
     "de": "klein / wenig",
@@ -19593,7 +32274,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2178",
+    "id": "word_3587",
     "fr": "vivre",
     "en": "live",
     "de": "leben",
@@ -19602,7 +32283,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2179",
+    "id": "word_3588",
     "fr": "local",
     "en": "local",
     "de": "lokal",
@@ -19611,7 +32292,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2180",
+    "id": "word_3589",
     "fr": "long",
     "en": "long",
     "de": "lang",
@@ -19620,7 +32301,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2181",
+    "id": "word_3590",
     "fr": "regarder",
     "en": "look",
     "de": "schauen",
@@ -19629,7 +32310,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2182",
+    "id": "word_3591",
     "fr": "perdre",
     "en": "lose",
     "de": "verlieren",
@@ -19638,7 +32319,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2183",
+    "id": "word_3592",
     "fr": "beaucoup",
     "en": "a lot",
     "de": "viel",
@@ -19647,7 +32328,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2184",
+    "id": "word_3593",
     "fr": "aimer (amour)",
     "en": "love",
     "de": "lieben",
@@ -19656,7 +32337,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2185",
+    "id": "word_3594",
     "fr": "le d\u00e9jeuner",
     "en": "lunch",
     "de": "das Mittagessen",
@@ -19665,7 +32346,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2186",
+    "id": "word_3595",
     "fr": "la machine",
     "en": "machine",
     "de": "die Maschine",
@@ -19674,7 +32355,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2187",
+    "id": "word_3596",
     "fr": "le magazine",
     "en": "magazine",
     "de": "das Magazin",
@@ -19683,7 +32364,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2188",
+    "id": "word_3597",
     "fr": "principal",
     "en": "main",
     "de": "haupt-",
@@ -19692,7 +32373,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2189",
+    "id": "word_3598",
     "fr": "faire / fabriquer",
     "en": "make",
     "de": "machen",
@@ -19701,7 +32382,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2190",
+    "id": "word_3599",
     "fr": "l'homme",
     "en": "man",
     "de": "der Mann",
@@ -19710,7 +32391,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2191",
+    "id": "word_3600",
     "fr": "beaucoup (d\u00e9nombrable)",
     "en": "many",
     "de": "viele",
@@ -19719,7 +32400,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2192",
+    "id": "word_3601",
     "fr": "la carte (g\u00e9ographique)",
     "en": "map",
     "de": "die Karte",
@@ -19728,7 +32409,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2193",
+    "id": "word_3602",
     "fr": "mars",
     "en": "March",
     "de": "M\u00e4rz",
@@ -19737,7 +32418,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2194",
+    "id": "word_3603",
     "fr": "le march\u00e9",
     "en": "market",
     "de": "der Markt",
@@ -19746,7 +32427,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2195",
+    "id": "word_3604",
     "fr": "mari\u00e9",
     "en": "married",
     "de": "verheiratet",
@@ -19755,7 +32436,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2196",
+    "id": "word_3605",
     "fr": "le match",
     "en": "match",
     "de": "das Spiel",
@@ -19764,7 +32445,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2197",
+    "id": "word_3606",
     "fr": "la mati\u00e8re / le probl\u00e8me",
     "en": "matter",
     "de": "die Angelegenheit",
@@ -19773,7 +32454,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2198",
+    "id": "word_3607",
     "fr": "mai",
     "en": "May",
     "de": "Mai",
@@ -19782,7 +32463,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2199",
+    "id": "word_3608",
     "fr": "peut-\u00eatre",
     "en": "maybe",
     "de": "vielleicht",
@@ -19791,7 +32472,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2200",
+    "id": "word_3609",
     "fr": "moi",
     "en": "me",
     "de": "mich / mir",
@@ -19800,7 +32481,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2201",
+    "id": "word_3610",
     "fr": "le repas",
     "en": "meal",
     "de": "die Mahlzeit",
@@ -19809,7 +32490,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2202",
+    "id": "word_3611",
     "fr": "signifier",
     "en": "mean",
     "de": "bedeuten",
@@ -19818,7 +32499,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2203",
+    "id": "word_3612",
     "fr": "la viande",
     "en": "meat",
     "de": "das Fleisch",
@@ -19827,7 +32508,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2204",
+    "id": "word_3613",
     "fr": "rencontrer",
     "en": "meet",
     "de": "treffen",
@@ -19836,7 +32517,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2205",
+    "id": "word_3614",
     "fr": "la r\u00e9union",
     "en": "meeting",
     "de": "das Meeting",
@@ -19845,7 +32526,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2206",
+    "id": "word_3615",
     "fr": "le membre",
     "en": "member",
     "de": "das Mitglied",
@@ -19854,7 +32535,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2207",
+    "id": "word_3616",
     "fr": "le menu",
     "en": "menu",
     "de": "die Speisekarte",
@@ -19863,7 +32544,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2208",
+    "id": "word_3617",
     "fr": "le message",
     "en": "message",
     "de": "die Nachricht",
@@ -19872,7 +32553,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2209",
+    "id": "word_3618",
     "fr": "le m\u00e8tre",
     "en": "metre",
     "de": "der Meter",
@@ -19881,7 +32562,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2210",
+    "id": "word_3619",
     "fr": "le minuit",
     "en": "midnight",
     "de": "die Mitternacht",
@@ -19890,7 +32571,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2211",
+    "id": "word_3620",
     "fr": "le mile",
     "en": "mile",
     "de": "die Meile",
@@ -19899,7 +32580,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2212",
+    "id": "word_3621",
     "fr": "le lait",
     "en": "milk",
     "de": "die Milch",
@@ -19908,7 +32589,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2213",
+    "id": "word_3622",
     "fr": "le million",
     "en": "million",
     "de": "die Million",
@@ -19917,7 +32598,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2214",
+    "id": "word_3623",
     "fr": "la minute",
     "en": "minute",
     "de": "die Minute",
@@ -19926,7 +32607,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2215",
+    "id": "word_3624",
     "fr": "manquer",
     "en": "miss",
     "de": "vermissen",
@@ -19935,7 +32616,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2216",
+    "id": "word_3625",
     "fr": "l'erreur",
     "en": "mistake",
     "de": "der Fehler",
@@ -19944,7 +32625,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2217",
+    "id": "word_3626",
     "fr": "le mod\u00e8le",
     "en": "model",
     "de": "das Modell",
@@ -19953,7 +32634,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2218",
+    "id": "word_3627",
     "fr": "moderne",
     "en": "modern",
     "de": "modern",
@@ -19962,7 +32643,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2219",
+    "id": "word_3628",
     "fr": "le moment",
     "en": "moment",
     "de": "der Moment",
@@ -19971,7 +32652,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2220",
+    "id": "word_3629",
     "fr": "lundi",
     "en": "Monday",
     "de": "Montag",
@@ -19980,7 +32661,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2221",
+    "id": "word_3630",
     "fr": "l'argent",
     "en": "money",
     "de": "das Geld",
@@ -19989,7 +32670,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2222",
+    "id": "word_3631",
     "fr": "le mois",
     "en": "month",
     "de": "der Monat",
@@ -19998,7 +32679,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2223",
+    "id": "word_3632",
     "fr": "plus",
     "en": "more",
     "de": "mehr",
@@ -20007,7 +32688,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2224",
+    "id": "word_3633",
     "fr": "le matin",
     "en": "morning",
     "de": "der Morgen",
@@ -20016,7 +32697,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2225",
+    "id": "word_3634",
     "fr": "la plupart",
     "en": "most",
     "de": "die meisten",
@@ -20025,7 +32706,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2226",
+    "id": "word_3635",
     "fr": "la m\u00e8re",
     "en": "mother",
     "de": "die Mutter",
@@ -20034,7 +32715,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2227",
+    "id": "word_3636",
     "fr": "la montagne",
     "en": "mountain",
     "de": "der Berg",
@@ -20043,7 +32724,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2228",
+    "id": "word_3637",
     "fr": "la souris",
     "en": "mouse",
     "de": "die Maus",
@@ -20052,7 +32733,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2229",
+    "id": "word_3638",
     "fr": "la bouche",
     "en": "mouth",
     "de": "der Mund",
@@ -20061,7 +32742,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2230",
+    "id": "word_3639",
     "fr": "bouger",
     "en": "move",
     "de": "bewegen",
@@ -20070,7 +32751,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2231",
+    "id": "word_3640",
     "fr": "le film (US)",
     "en": "movie",
     "de": "der Film",
@@ -20079,7 +32760,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2232",
+    "id": "word_3641",
     "fr": "beaucoup (ind\u00e9nombrable)",
     "en": "much",
     "de": "viel",
@@ -20088,7 +32769,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2233",
+    "id": "word_3642",
     "fr": "le mus\u00e9e",
     "en": "museum",
     "de": "das Museum",
@@ -20097,7 +32778,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2234",
+    "id": "word_3643",
     "fr": "la musique",
     "en": "music",
     "de": "die Musik",
@@ -20106,7 +32787,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2235",
+    "id": "word_3644",
     "fr": "devoir (obligation)",
     "en": "must",
     "de": "m\u00fcssen",
@@ -20115,7 +32796,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2236",
+    "id": "word_3645",
     "fr": "mon / ma / mes",
     "en": "my",
     "de": "mein",
@@ -20124,7 +32805,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2237",
+    "id": "word_3646",
     "fr": "le nom",
     "en": "name",
     "de": "der Name",
@@ -20133,7 +32814,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2238",
+    "id": "word_3647",
     "fr": "naturel",
     "en": "natural",
     "de": "nat\u00fcrlich",
@@ -20142,7 +32823,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2239",
+    "id": "word_3648",
     "fr": "la nature",
     "en": "nature",
     "de": "die Natur",
@@ -20151,7 +32832,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2240",
+    "id": "word_3649",
     "fr": "pr\u00e8s",
     "en": "near",
     "de": "in der N\u00e4he",
@@ -20160,7 +32841,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2241",
+    "id": "word_3650",
     "fr": "le besoin",
     "en": "need",
     "de": "das Bed\u00fcrfnis",
@@ -20169,7 +32850,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2242",
+    "id": "word_3651",
     "fr": "avoir besoin",
     "en": "need",
     "de": "brauchen",
@@ -20178,7 +32859,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2243",
+    "id": "word_3652",
     "fr": "n\u00e9gatif",
     "en": "negative",
     "de": "negativ",
@@ -20187,7 +32868,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2244",
+    "id": "word_3653",
     "fr": "jamais",
     "en": "never",
     "de": "nie",
@@ -20196,7 +32877,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2245",
+    "id": "word_3654",
     "fr": "nouveau",
     "en": "new",
     "de": "neu",
@@ -20205,7 +32886,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2246",
+    "id": "word_3655",
     "fr": "les informations / nouvelles",
     "en": "news",
     "de": "die Nachrichten",
@@ -20214,7 +32895,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2247",
+    "id": "word_3656",
     "fr": "le journal",
     "en": "newspaper",
     "de": "die Zeitung",
@@ -20223,7 +32904,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2248",
+    "id": "word_3657",
     "fr": "suivant",
     "en": "next",
     "de": "n\u00e4chste",
@@ -20232,7 +32913,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2249",
+    "id": "word_3658",
     "fr": "agr\u00e9able",
     "en": "nice",
     "de": "nett",
@@ -20241,7 +32922,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2250",
+    "id": "word_3659",
     "fr": "la nuit",
     "en": "night",
     "de": "die Nacht",
@@ -20250,7 +32931,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2251",
+    "id": "word_3660",
     "fr": "neuf",
     "en": "nine",
     "de": "neun",
@@ -20259,7 +32940,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2252",
+    "id": "word_3661",
     "fr": "dix-neuf",
     "en": "nineteen",
     "de": "neunzehn",
@@ -20268,7 +32949,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2253",
+    "id": "word_3662",
     "fr": "quatre-vingt-dix",
     "en": "ninety",
     "de": "neunzig",
@@ -20277,7 +32958,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2254",
+    "id": "word_3663",
     "fr": "non",
     "en": "no",
     "de": "nein",
@@ -20286,7 +32967,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2255",
+    "id": "word_3664",
     "fr": "personne",
     "en": "no one",
     "de": "niemand",
@@ -20295,7 +32976,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2256",
+    "id": "word_3665",
     "fr": "personne",
     "en": "nobody",
     "de": "niemand",
@@ -20304,7 +32985,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2257",
+    "id": "word_3666",
     "fr": "le nord",
     "en": "north",
     "de": "der Norden",
@@ -20313,7 +32994,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2258",
+    "id": "word_3667",
     "fr": "le nez",
     "en": "nose",
     "de": "die Nase",
@@ -20322,7 +33003,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2259",
+    "id": "word_3668",
     "fr": "pas",
     "en": "not",
     "de": "nicht",
@@ -20331,7 +33012,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2260",
+    "id": "word_3669",
     "fr": "la note",
     "en": "note",
     "de": "die Notiz",
@@ -20340,7 +33021,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2261",
+    "id": "word_3670",
     "fr": "rien",
     "en": "nothing",
     "de": "nichts",
@@ -20349,7 +33030,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2262",
+    "id": "word_3671",
     "fr": "novembre",
     "en": "November",
     "de": "November",
@@ -20358,7 +33039,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2263",
+    "id": "word_3672",
     "fr": "maintenant",
     "en": "now",
     "de": "jetzt",
@@ -20367,7 +33048,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2264",
+    "id": "word_3673",
     "fr": "le nombre / le num\u00e9ro",
     "en": "number",
     "de": "die Nummer",
@@ -20376,7 +33057,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2265",
+    "id": "word_3674",
     "fr": "l'infirmi\u00e8re",
     "en": "nurse",
     "de": "die Krankenschwester",
@@ -20385,7 +33066,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2266",
+    "id": "word_3675",
     "fr": "l'objet",
     "en": "object",
     "de": "das Objekt",
@@ -20394,7 +33075,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2267",
+    "id": "word_3676",
     "fr": "octobre",
     "en": "October",
     "de": "Oktober",
@@ -20403,7 +33084,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2268",
+    "id": "word_3677",
     "fr": "de",
     "en": "of",
     "de": "von",
@@ -20412,7 +33093,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2269",
+    "id": "word_3678",
     "fr": "\u00e9teint / d\u00e9tach\u00e9",
     "en": "off",
     "de": "aus",
@@ -20421,7 +33102,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2270",
+    "id": "word_3679",
     "fr": "le bureau (lieu)",
     "en": "office",
     "de": "das B\u00fcro",
@@ -20430,7 +33111,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2271",
+    "id": "word_3680",
     "fr": "souvent",
     "en": "often",
     "de": "oft",
@@ -20439,7 +33120,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2272",
+    "id": "word_3681",
     "fr": "d'accord",
     "en": "ok",
     "de": "okay",
@@ -20448,7 +33129,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2273",
+    "id": "word_3682",
     "fr": "vieux",
     "en": "old",
     "de": "alt",
@@ -20457,7 +33138,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2274",
+    "id": "word_3683",
     "fr": "sur",
     "en": "on",
     "de": "auf",
@@ -20466,7 +33147,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2275",
+    "id": "word_3684",
     "fr": "une fois",
     "en": "once",
     "de": "einmal",
@@ -20475,7 +33156,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2276",
+    "id": "word_3685",
     "fr": "un",
     "en": "one",
     "de": "eins",
@@ -20484,7 +33165,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2277",
+    "id": "word_3686",
     "fr": "l'oignon",
     "en": "onion",
     "de": "die Zwiebel",
@@ -20493,7 +33174,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2278",
+    "id": "word_3687",
     "fr": "en ligne",
     "en": "online",
     "de": "online",
@@ -20502,7 +33183,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2279",
+    "id": "word_3688",
     "fr": "seulement",
     "en": "only",
     "de": "nur",
@@ -20511,7 +33192,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2280",
+    "id": "word_3689",
     "fr": "ouvert",
     "en": "open",
     "de": "offen",
@@ -20520,7 +33201,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2281",
+    "id": "word_3690",
     "fr": "l'opinion",
     "en": "opinion",
     "de": "die Meinung",
@@ -20529,7 +33210,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2282",
+    "id": "word_3691",
     "fr": "ou",
     "en": "or",
     "de": "oder",
@@ -20538,7 +33219,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2283",
+    "id": "word_3692",
     "fr": "l'orange (fruit)",
     "en": "orange",
     "de": "die Orange",
@@ -20547,7 +33228,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2284",
+    "id": "word_3693",
     "fr": "autre",
     "en": "other",
     "de": "andere",
@@ -20556,7 +33237,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2285",
+    "id": "word_3694",
     "fr": "notre",
     "en": "our",
     "de": "unser",
@@ -20565,7 +33246,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2286",
+    "id": "word_3695",
     "fr": "dehors",
     "en": "out",
     "de": "heraus",
@@ -20574,7 +33255,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2287",
+    "id": "word_3696",
     "fr": "\u00e0 l'ext\u00e9rieur",
     "en": "outside",
     "de": "drau\u00dfen",
@@ -20583,7 +33264,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2288",
+    "id": "word_3697",
     "fr": "au-dessus",
     "en": "over",
     "de": "\u00fcber",
@@ -20592,7 +33273,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2289",
+    "id": "word_3698",
     "fr": "propre (\u00e0 soi)",
     "en": "own",
     "de": "eigen",
@@ -20601,7 +33282,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2290",
+    "id": "word_3699",
     "fr": "la page",
     "en": "page",
     "de": "die Seite",
@@ -20610,7 +33291,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2291",
+    "id": "word_3700",
     "fr": "peindre",
     "en": "paint",
     "de": "malen",
@@ -20619,7 +33300,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2292",
+    "id": "word_3701",
     "fr": "la peinture",
     "en": "painting",
     "de": "das Gem\u00e4lde",
@@ -20628,7 +33309,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2293",
+    "id": "word_3702",
     "fr": "la paire",
     "en": "pair",
     "de": "das Paar",
@@ -20637,7 +33318,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2294",
+    "id": "word_3703",
     "fr": "le pantalon (US)",
     "en": "pants",
     "de": "die Hose",
@@ -20646,7 +33327,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2295",
+    "id": "word_3704",
     "fr": "le papier",
     "en": "paper",
     "de": "das Papier",
@@ -20655,7 +33336,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2296",
+    "id": "word_3705",
     "fr": "le parent",
     "en": "parent",
     "de": "das Elternteil",
@@ -20664,7 +33345,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2297",
+    "id": "word_3706",
     "fr": "le parc",
     "en": "park",
     "de": "der Park",
@@ -20673,7 +33354,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2298",
+    "id": "word_3707",
     "fr": "la partie",
     "en": "part",
     "de": "der Teil",
@@ -20682,7 +33363,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2299",
+    "id": "word_3708",
     "fr": "la f\u00eate",
     "en": "party",
     "de": "die Party",
@@ -20691,7 +33372,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2300",
+    "id": "word_3709",
     "fr": "le pass",
     "en": "pass",
     "de": "der Pass",
@@ -20700,7 +33381,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2301",
+    "id": "word_3710",
     "fr": "pass\u00e9",
     "en": "past",
     "de": "vergangen",
@@ -20709,7 +33390,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2302",
+    "id": "word_3711",
     "fr": "payer",
     "en": "pay",
     "de": "bezahlen",
@@ -20718,7 +33399,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2303",
+    "id": "word_3712",
     "fr": "le stylo",
     "en": "pen",
     "de": "der Stift",
@@ -20727,7 +33408,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2304",
+    "id": "word_3713",
     "fr": "le crayon",
     "en": "pencil",
     "de": "der Bleistift",
@@ -20736,7 +33417,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2305",
+    "id": "word_3714",
     "fr": "les gens",
     "en": "people",
     "de": "die Leute",
@@ -20745,7 +33426,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2306",
+    "id": "word_3715",
     "fr": "le poivre",
     "en": "pepper",
     "de": "der Pfeffer",
@@ -20754,7 +33435,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2307",
+    "id": "word_3716",
     "fr": "parfait",
     "en": "perfect",
     "de": "perfekt",
@@ -20763,7 +33444,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2308",
+    "id": "word_3717",
     "fr": "la personne",
     "en": "person",
     "de": "die Person",
@@ -20772,7 +33453,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2309",
+    "id": "word_3718",
     "fr": "la photo",
     "en": "photo",
     "de": "das Foto",
@@ -20781,7 +33462,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2310",
+    "id": "word_3719",
     "fr": "la photographie",
     "en": "photograph",
     "de": "die Fotografie",
@@ -20790,7 +33471,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2311",
+    "id": "word_3720",
     "fr": "le piano",
     "en": "piano",
     "de": "das Klavier",
@@ -20799,7 +33480,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2312",
+    "id": "word_3721",
     "fr": "la photo / image",
     "en": "picture",
     "de": "das Bild",
@@ -20808,7 +33489,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2313",
+    "id": "word_3722",
     "fr": "le morceau / la pi\u00e8ce",
     "en": "piece",
     "de": "das St\u00fcck",
@@ -20817,7 +33498,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2314",
+    "id": "word_3723",
     "fr": "le porc",
     "en": "pig",
     "de": "das Schwein",
@@ -20826,7 +33507,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2315",
+    "id": "word_3724",
     "fr": "la pizza",
     "en": "pizza",
     "de": "die Pizza",
@@ -20835,7 +33516,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2316",
+    "id": "word_3725",
     "fr": "l'endroit",
     "en": "place",
     "de": "der Ort",
@@ -20844,7 +33525,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2317",
+    "id": "word_3726",
     "fr": "le plan",
     "en": "plan",
     "de": "der Plan",
@@ -20853,7 +33534,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2318",
+    "id": "word_3727",
     "fr": "l'avion",
     "en": "plane",
     "de": "das Flugzeug",
@@ -20862,7 +33543,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2319",
+    "id": "word_3728",
     "fr": "la plante",
     "en": "plant",
     "de": "die Pflanze",
@@ -20871,7 +33552,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2320",
+    "id": "word_3729",
     "fr": "jouer",
     "en": "play",
     "de": "spielen",
@@ -20880,7 +33561,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2321",
+    "id": "word_3730",
     "fr": "le joueur",
     "en": "player",
     "de": "der Spieler",
@@ -20889,7 +33570,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2322",
+    "id": "word_3731",
     "fr": "s'il te pla\u00eet",
     "en": "please",
     "de": "bitte",
@@ -20898,7 +33579,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2323",
+    "id": "word_3732",
     "fr": "le point",
     "en": "point",
     "de": "der Punkt",
@@ -20907,7 +33588,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2324",
+    "id": "word_3733",
     "fr": "la police",
     "en": "police",
     "de": "die Polizei",
@@ -20916,7 +33597,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2325",
+    "id": "word_3734",
     "fr": "l'officier de police",
     "en": "policeman",
     "de": "der Polizist",
@@ -20925,7 +33606,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2326",
+    "id": "word_3735",
     "fr": "la piscine",
     "en": "pool",
     "de": "der Pool",
@@ -20934,7 +33615,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2327",
+    "id": "word_3736",
     "fr": "pauvre",
     "en": "poor",
     "de": "arm",
@@ -20943,7 +33624,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2328",
+    "id": "word_3737",
     "fr": "populaire",
     "en": "popular",
     "de": "beliebt",
@@ -20952,7 +33633,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2329",
+    "id": "word_3738",
     "fr": "positif",
     "en": "positive",
     "de": "positiv",
@@ -20961,7 +33642,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2330",
+    "id": "word_3739",
     "fr": "possible",
     "en": "possible",
     "de": "m\u00f6glich",
@@ -20970,7 +33651,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2331",
+    "id": "word_3740",
     "fr": "la pomme de terre",
     "en": "potato",
     "de": "die Kartoffel",
@@ -20979,7 +33660,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2332",
+    "id": "word_3741",
     "fr": "la livre (monnaie/poids)",
     "en": "pound",
     "de": "das Pfund",
@@ -20988,7 +33669,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2333",
+    "id": "word_3742",
     "fr": "la pratique",
     "en": "practice",
     "de": "die \u00dcbung",
@@ -20997,7 +33678,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2334",
+    "id": "word_3743",
     "fr": "pratiquer",
     "en": "practise",
     "de": "\u00fcben",
@@ -21006,7 +33687,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2335",
+    "id": "word_3744",
     "fr": "pr\u00e9f\u00e9rer",
     "en": "prefer",
     "de": "bevorzugen",
@@ -21015,7 +33696,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2336",
+    "id": "word_3745",
     "fr": "pr\u00e9parer",
     "en": "prepare",
     "de": "vorbereiten",
@@ -21024,7 +33705,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2337",
+    "id": "word_3746",
     "fr": "le cadeau",
     "en": "present",
     "de": "das Geschenk",
@@ -21033,7 +33714,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2338",
+    "id": "word_3747",
     "fr": "le prix",
     "en": "price",
     "de": "der Preis",
@@ -21042,7 +33723,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2339",
+    "id": "word_3748",
     "fr": "le probl\u00e8me",
     "en": "problem",
     "de": "das Problem",
@@ -21051,7 +33732,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2340",
+    "id": "word_3749",
     "fr": "le produit",
     "en": "product",
     "de": "das Produkt",
@@ -21060,7 +33741,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2341",
+    "id": "word_3750",
     "fr": "le projet",
     "en": "project",
     "de": "das Projekt",
@@ -21069,7 +33750,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2342",
+    "id": "word_3751",
     "fr": "le pub",
     "en": "pub",
     "de": "die Kneipe",
@@ -21078,7 +33759,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2343",
+    "id": "word_3752",
     "fr": "mettre",
     "en": "put",
     "de": "legen / setzen",
@@ -21087,7 +33768,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2344",
+    "id": "word_3753",
     "fr": "le quart",
     "en": "quarter",
     "de": "das Viertel",
@@ -21096,7 +33777,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2345",
+    "id": "word_3754",
     "fr": "la question",
     "en": "question",
     "de": "die Frage",
@@ -21105,7 +33786,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2346",
+    "id": "word_3755",
     "fr": "rapide",
     "en": "quick",
     "de": "schnell",
@@ -21114,7 +33795,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2347",
+    "id": "word_3756",
     "fr": "rapidement",
     "en": "quickly",
     "de": "schnell",
@@ -21123,7 +33804,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2348",
+    "id": "word_3757",
     "fr": "calme",
     "en": "quiet",
     "de": "ruhig",
@@ -21132,7 +33813,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2349",
+    "id": "word_3758",
     "fr": "assez / plut\u00f4t",
     "en": "quite",
     "de": "ziemlich",
@@ -21141,7 +33822,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2350",
+    "id": "word_3759",
     "fr": "la radio",
     "en": "radio",
     "de": "das Radio",
@@ -21150,7 +33831,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2351",
+    "id": "word_3760",
     "fr": "la pluie",
     "en": "rain",
     "de": "der Regen",
@@ -21159,7 +33840,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2352",
+    "id": "word_3761",
     "fr": "lire",
     "en": "read",
     "de": "lesen",
@@ -21168,7 +33849,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2353",
+    "id": "word_3762",
     "fr": "le lecteur",
     "en": "reader",
     "de": "der Leser",
@@ -21177,7 +33858,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2354",
+    "id": "word_3763",
     "fr": "la lecture",
     "en": "reading",
     "de": "das Lesen",
@@ -21186,7 +33867,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2355",
+    "id": "word_3764",
     "fr": "pr\u00eat",
     "en": "ready",
     "de": "bereit",
@@ -21195,7 +33876,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2356",
+    "id": "word_3765",
     "fr": "vraiment",
     "en": "really",
     "de": "wirklich",
@@ -21204,7 +33885,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2357",
+    "id": "word_3766",
     "fr": "la raison",
     "en": "reason",
     "de": "der Grund",
@@ -21213,7 +33894,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2358",
+    "id": "word_3767",
     "fr": "rouge",
     "en": "red",
     "de": "rot",
@@ -21222,7 +33903,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2359",
+    "id": "word_3768",
     "fr": "se d\u00e9tendre",
     "en": "relax",
     "de": "sich entspannen",
@@ -21231,7 +33912,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2360",
+    "id": "word_3769",
     "fr": "se souvenir",
     "en": "remember",
     "de": "sich erinnern",
@@ -21240,7 +33921,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2361",
+    "id": "word_3770",
     "fr": "le restaurant",
     "en": "restaurant",
     "de": "das Restaurant",
@@ -21249,7 +33930,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2362",
+    "id": "word_3771",
     "fr": "le r\u00e9sultat",
     "en": "result",
     "de": "das Ergebnis",
@@ -21258,7 +33939,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2363",
+    "id": "word_3772",
     "fr": "le retour",
     "en": "return",
     "de": "die R\u00fcckkehr",
@@ -21267,7 +33948,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2364",
+    "id": "word_3773",
     "fr": "le riz",
     "en": "rice",
     "de": "der Reis",
@@ -21276,7 +33957,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2365",
+    "id": "word_3774",
     "fr": "riche",
     "en": "rich",
     "de": "reich",
@@ -21285,7 +33966,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2366",
+    "id": "word_3775",
     "fr": "monter (cheval/v\u00e9lo)",
     "en": "ride",
     "de": "reiten / fahren",
@@ -21294,7 +33975,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2367",
+    "id": "word_3776",
     "fr": "la droite",
     "en": "right",
     "de": "rechts",
@@ -21303,7 +33984,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2368",
+    "id": "word_3777",
     "fr": "la rivi\u00e8re",
     "en": "river",
     "de": "der Fluss",
@@ -21312,7 +33993,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2369",
+    "id": "word_3778",
     "fr": "la route",
     "en": "road",
     "de": "die Stra\u00dfe",
@@ -21321,7 +34002,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2370",
+    "id": "word_3779",
     "fr": "la chambre / la pi\u00e8ce",
     "en": "room",
     "de": "das Zimmer",
@@ -21330,7 +34011,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2371",
+    "id": "word_3780",
     "fr": "la routine",
     "en": "routine",
     "de": "die Routine",
@@ -21339,7 +34020,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2372",
+    "id": "word_3781",
     "fr": "la r\u00e8gle",
     "en": "rule",
     "de": "die Regel",
@@ -21348,7 +34029,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2373",
+    "id": "word_3782",
     "fr": "courir",
     "en": "run",
     "de": "rennen",
@@ -21357,7 +34038,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2374",
+    "id": "word_3783",
     "fr": "triste",
     "en": "sad",
     "de": "traurig",
@@ -21366,7 +34047,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2375",
+    "id": "word_3784",
     "fr": "la salade",
     "en": "salad",
     "de": "der Salat",
@@ -21375,7 +34056,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2376",
+    "id": "word_3785",
     "fr": "le sel",
     "en": "salt",
     "de": "das Salz",
@@ -21384,7 +34065,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2377",
+    "id": "word_3786",
     "fr": "le m\u00eame",
     "en": "same",
     "de": "das gleiche",
@@ -21393,7 +34074,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2378",
+    "id": "word_3787",
     "fr": "le sandwich",
     "en": "sandwich",
     "de": "das Sandwich",
@@ -21402,7 +34083,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2379",
+    "id": "word_3788",
     "fr": "samedi",
     "en": "Saturday",
     "de": "Samstag",
@@ -21411,7 +34092,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2380",
+    "id": "word_3789",
     "fr": "dire",
     "en": "say",
     "de": "sagen",
@@ -21420,7 +34101,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2381",
+    "id": "word_3790",
     "fr": "l'\u00e9cole",
     "en": "school",
     "de": "die Schule",
@@ -21429,7 +34110,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2382",
+    "id": "word_3791",
     "fr": "la science",
     "en": "science",
     "de": "die Wissenschaft",
@@ -21438,7 +34119,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2383",
+    "id": "word_3792",
     "fr": "le scientifique",
     "en": "scientist",
     "de": "der Wissenschaftler",
@@ -21447,7 +34128,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2384",
+    "id": "word_3793",
     "fr": "la mer",
     "en": "sea",
     "de": "das Meer",
@@ -21456,7 +34137,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2385",
+    "id": "word_3794",
     "fr": "la saison",
     "en": "season",
     "de": "die Jahreszeit",
@@ -21465,7 +34146,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2386",
+    "id": "word_3795",
     "fr": "deuxi\u00e8me",
     "en": "second",
     "de": "zweite",
@@ -21474,7 +34155,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2387",
+    "id": "word_3796",
     "fr": "la seconde (temps)",
     "en": "second",
     "de": "die Sekunde",
@@ -21483,7 +34164,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2388",
+    "id": "word_3797",
     "fr": "voir",
     "en": "see",
     "de": "sehen",
@@ -21492,7 +34173,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2389",
+    "id": "word_3798",
     "fr": "envoyer",
     "en": "send",
     "de": "senden",
@@ -21501,7 +34182,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2390",
+    "id": "word_3799",
     "fr": "la phrase",
     "en": "sentence",
     "de": "der Satz",
@@ -21510,7 +34191,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2391",
+    "id": "word_3800",
     "fr": "septembre",
     "en": "September",
     "de": "September",
@@ -21519,7 +34200,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2392",
+    "id": "word_3801",
     "fr": "sept",
     "en": "seven",
     "de": "sieben",
@@ -21528,7 +34209,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2393",
+    "id": "word_3802",
     "fr": "dix-sept",
     "en": "seventeen",
     "de": "siebzehn",
@@ -21537,7 +34218,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2394",
+    "id": "word_3803",
     "fr": "soixante-dix",
     "en": "seventy",
     "de": "siebzig",
@@ -21546,7 +34227,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2395",
+    "id": "word_3804",
     "fr": "partager",
     "en": "share",
     "de": "teilen",
@@ -21555,7 +34236,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2396",
+    "id": "word_3805",
     "fr": "elle",
     "en": "she",
     "de": "sie",
@@ -21564,7 +34245,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2397",
+    "id": "word_3806",
     "fr": "le mouton",
     "en": "sheep",
     "de": "das Schaf",
@@ -21573,7 +34254,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2398",
+    "id": "word_3807",
     "fr": "la chemise",
     "en": "shirt",
     "de": "das Hemd",
@@ -21582,7 +34263,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2399",
+    "id": "word_3808",
     "fr": "la chaussure",
     "en": "shoe",
     "de": "der Schuh",
@@ -21591,7 +34272,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2400",
+    "id": "word_3809",
     "fr": "le magasin",
     "en": "shop",
     "de": "der Laden",
@@ -21600,7 +34281,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2401",
+    "id": "word_3810",
     "fr": "faire les courses",
     "en": "shopping",
     "de": "einkaufen",
@@ -21609,7 +34290,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2402",
+    "id": "word_3811",
     "fr": "court",
     "en": "short",
     "de": "kurz",
@@ -21618,7 +34299,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2403",
+    "id": "word_3812",
     "fr": "devrait",
     "en": "should",
     "de": "sollte",
@@ -21627,7 +34308,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2404",
+    "id": "word_3813",
     "fr": "montrer",
     "en": "show",
     "de": "zeigen",
@@ -21636,7 +34317,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2405",
+    "id": "word_3814",
     "fr": "le spectacle",
     "en": "show",
     "de": "die Show",
@@ -21645,7 +34326,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2406",
+    "id": "word_3815",
     "fr": "la douche",
     "en": "shower",
     "de": "die Dusche",
@@ -21654,7 +34335,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2407",
+    "id": "word_3816",
     "fr": "malade",
     "en": "sick",
     "de": "krank",
@@ -21663,7 +34344,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2408",
+    "id": "word_3817",
     "fr": "similaire",
     "en": "similar",
     "de": "\u00e4hnlich",
@@ -21672,7 +34353,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2409",
+    "id": "word_3818",
     "fr": "chanter",
     "en": "sing",
     "de": "singen",
@@ -21681,7 +34362,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2410",
+    "id": "word_3819",
     "fr": "le chanteur",
     "en": "singer",
     "de": "der S\u00e4nger",
@@ -21690,7 +34371,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2411",
+    "id": "word_3820",
     "fr": "la s\u0153ur",
     "en": "sister",
     "de": "die Schwester",
@@ -21699,7 +34380,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2412",
+    "id": "word_3821",
     "fr": "s'asseoir",
     "en": "sit",
     "de": "sitzen",
@@ -21708,7 +34389,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2413",
+    "id": "word_3822",
     "fr": "la situation",
     "en": "situation",
     "de": "die Situation",
@@ -21717,7 +34398,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2414",
+    "id": "word_3823",
     "fr": "six",
     "en": "six",
     "de": "sechs",
@@ -21726,7 +34407,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2415",
+    "id": "word_3824",
     "fr": "seize",
     "en": "sixteen",
     "de": "sechzehn",
@@ -21735,7 +34416,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2416",
+    "id": "word_3825",
     "fr": "soixante",
     "en": "sixty",
     "de": "sechzig",
@@ -21744,7 +34425,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2417",
+    "id": "word_3826",
     "fr": "la comp\u00e9tence",
     "en": "skill",
     "de": "die F\u00e4higkeit",
@@ -21753,7 +34434,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2418",
+    "id": "word_3827",
     "fr": "la jupe",
     "en": "skirt",
     "de": "der Rock",
@@ -21762,7 +34443,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2419",
+    "id": "word_3828",
     "fr": "dormir",
     "en": "sleep",
     "de": "schlafen",
@@ -21771,7 +34452,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2420",
+    "id": "word_3829",
     "fr": "lent",
     "en": "slow",
     "de": "langsam",
@@ -21780,7 +34461,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2421",
+    "id": "word_3830",
     "fr": "petit (taille)",
     "en": "small",
     "de": "klein",
@@ -21789,7 +34470,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2422",
+    "id": "word_3831",
     "fr": "intelligent",
     "en": "smart",
     "de": "klug",
@@ -21798,7 +34479,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2423",
+    "id": "word_3832",
     "fr": "fumer",
     "en": "smoke",
     "de": "rauchen",
@@ -21807,7 +34488,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2424",
+    "id": "word_3833",
     "fr": "le serpent",
     "en": "snake",
     "de": "die Schlange",
@@ -21816,7 +34497,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2425",
+    "id": "word_3834",
     "fr": "la neige",
     "en": "snow",
     "de": "der Schnee",
@@ -21825,7 +34506,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2426",
+    "id": "word_3835",
     "fr": "donc / alors",
     "en": "so",
     "de": "also",
@@ -21834,7 +34515,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2427",
+    "id": "word_3836",
     "fr": "le canap\u00e9",
     "en": "sofa",
     "de": "das Sofa",
@@ -21843,7 +34524,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2428",
+    "id": "word_3837",
     "fr": "quelques / du",
     "en": "some",
     "de": "einige / etwas",
@@ -21852,7 +34533,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2429",
+    "id": "word_3838",
     "fr": "quelqu'un (somebody)",
     "en": "somebody",
     "de": "jemand",
@@ -21861,7 +34542,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2430",
+    "id": "word_3839",
     "fr": "quelqu'un (someone)",
     "en": "someone",
     "de": "jemand",
@@ -21870,7 +34551,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2431",
+    "id": "word_3840",
     "fr": "quelque chose",
     "en": "something",
     "de": "etwas",
@@ -21879,7 +34560,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2432",
+    "id": "word_3841",
     "fr": "parfois",
     "en": "sometimes",
     "de": "manchmal",
@@ -21888,7 +34569,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2433",
+    "id": "word_3842",
     "fr": "le fils",
     "en": "son",
     "de": "der Sohn",
@@ -21897,7 +34578,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2434",
+    "id": "word_3843",
     "fr": "la chanson",
     "en": "song",
     "de": "das Lied",
@@ -21906,7 +34587,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2435",
+    "id": "word_3844",
     "fr": "bient\u00f4t",
     "en": "soon",
     "de": "bald",
@@ -21915,7 +34596,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2436",
+    "id": "word_3845",
     "fr": "d\u00e9sol\u00e9",
     "en": "sorry",
     "de": "entschuldigung",
@@ -21924,7 +34605,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2437",
+    "id": "word_3846",
     "fr": "le son / le bruit",
     "en": "sound",
     "de": "der Klang / das Ger\u00e4usch",
@@ -21933,7 +34614,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2438",
+    "id": "word_3847",
     "fr": "la soupe",
     "en": "soup",
     "de": "die Suppe",
@@ -21942,7 +34623,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2439",
+    "id": "word_3848",
     "fr": "le sud",
     "en": "south",
     "de": "der S\u00fcden",
@@ -21951,7 +34632,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2440",
+    "id": "word_3849",
     "fr": "l'espace",
     "en": "space",
     "de": "der Raum / der Platz",
@@ -21960,7 +34641,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2441",
+    "id": "word_3850",
     "fr": "parler",
     "en": "speak",
     "de": "sprechen",
@@ -21969,7 +34650,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2442",
+    "id": "word_3851",
     "fr": "sp\u00e9cial",
     "en": "special",
     "de": "speziell",
@@ -21978,7 +34659,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2443",
+    "id": "word_3852",
     "fr": "\u00e9peler",
     "en": "spell",
     "de": "buchstabieren",
@@ -21987,7 +34668,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2444",
+    "id": "word_3853",
     "fr": "l'orthographe",
     "en": "spelling",
     "de": "die Rechtschreibung",
@@ -21996,7 +34677,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2445",
+    "id": "word_3854",
     "fr": "d\u00e9penser / passer (temps)",
     "en": "spend",
     "de": "verbringen / ausgeben",
@@ -22005,7 +34686,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2446",
+    "id": "word_3855",
     "fr": "le sport",
     "en": "sport",
     "de": "der Sport",
@@ -22014,7 +34695,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2447",
+    "id": "word_3856",
     "fr": "le printemps",
     "en": "spring",
     "de": "der Fr\u00fchling",
@@ -22023,7 +34704,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2448",
+    "id": "word_3857",
     "fr": "se tenir debout",
     "en": "stand",
     "de": "stehen",
@@ -22032,7 +34713,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2449",
+    "id": "word_3858",
     "fr": "commencer",
     "en": "start",
     "de": "anfangen",
@@ -22041,7 +34722,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2450",
+    "id": "word_3859",
     "fr": "la gare / la station",
     "en": "station",
     "de": "der Bahnhof / die Station",
@@ -22050,7 +34731,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2451",
+    "id": "word_3860",
     "fr": "arr\u00eater",
     "en": "stop",
     "de": "stoppen",
@@ -22059,7 +34740,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2452",
+    "id": "word_3861",
     "fr": "l'histoire",
     "en": "story",
     "de": "die Geschichte",
@@ -22068,7 +34749,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2453",
+    "id": "word_3862",
     "fr": "la rue",
     "en": "street",
     "de": "die Stra\u00dfe",
@@ -22077,7 +34758,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2454",
+    "id": "word_3863",
     "fr": "fort",
     "en": "strong",
     "de": "stark",
@@ -22086,7 +34767,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2455",
+    "id": "word_3864",
     "fr": "l'\u00e9tudiant",
     "en": "student",
     "de": "der Student",
@@ -22095,7 +34776,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2456",
+    "id": "word_3865",
     "fr": "\u00e9tudier",
     "en": "study",
     "de": "studieren / lernen",
@@ -22104,7 +34785,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2457",
+    "id": "word_3866",
     "fr": "le style",
     "en": "style",
     "de": "der Stil",
@@ -22113,7 +34794,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2458",
+    "id": "word_3867",
     "fr": "le sujet / la mati\u00e8re",
     "en": "subject",
     "de": "das Thema / das Fach",
@@ -22122,7 +34803,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2459",
+    "id": "word_3868",
     "fr": "le sucre",
     "en": "sugar",
     "de": "der Zucker",
@@ -22131,7 +34812,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2460",
+    "id": "word_3869",
     "fr": "l'\u00e9t\u00e9",
     "en": "summer",
     "de": "der Sommer",
@@ -22140,7 +34821,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2461",
+    "id": "word_3870",
     "fr": "le soleil",
     "en": "sun",
     "de": "die Sonne",
@@ -22149,7 +34830,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2462",
+    "id": "word_3871",
     "fr": "dimanche",
     "en": "Sunday",
     "de": "Sonntag",
@@ -22158,7 +34839,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2463",
+    "id": "word_3872",
     "fr": "le supermarch\u00e9",
     "en": "supermarket",
     "de": "der Supermarkt",
@@ -22167,7 +34848,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2464",
+    "id": "word_3873",
     "fr": "s\u00fbr",
     "en": "sure",
     "de": "sicher",
@@ -22176,7 +34857,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2465",
+    "id": "word_3874",
     "fr": "le pull",
     "en": "sweater",
     "de": "der Pullover",
@@ -22185,7 +34866,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2466",
+    "id": "word_3875",
     "fr": "nager",
     "en": "swim",
     "de": "schwimmen",
@@ -22194,7 +34875,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2467",
+    "id": "word_3876",
     "fr": "la natation",
     "en": "swimming",
     "de": "das Schwimmen",
@@ -22203,7 +34884,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2468",
+    "id": "word_3877",
     "fr": "la table",
     "en": "table",
     "de": "der Tisch",
@@ -22212,7 +34893,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2469",
+    "id": "word_3878",
     "fr": "prendre",
     "en": "take",
     "de": "nehmen",
@@ -22221,7 +34902,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2470",
+    "id": "word_3879",
     "fr": "parler",
     "en": "talk",
     "de": "reden",
@@ -22230,7 +34911,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2471",
+    "id": "word_3880",
     "fr": "grand (taille)",
     "en": "tall",
     "de": "gro\u00df",
@@ -22239,7 +34920,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2472",
+    "id": "word_3881",
     "fr": "le taxi",
     "en": "taxi",
     "de": "das Taxi",
@@ -22248,7 +34929,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2473",
+    "id": "word_3882",
     "fr": "le th\u00e9",
     "en": "tea",
     "de": "der Tee",
@@ -22257,7 +34938,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2474",
+    "id": "word_3883",
     "fr": "enseigner",
     "en": "teach",
     "de": "unterrichten",
@@ -22266,7 +34947,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2475",
+    "id": "word_3884",
     "fr": "le professeur",
     "en": "teacher",
     "de": "der Lehrer",
@@ -22275,7 +34956,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2476",
+    "id": "word_3885",
     "fr": "l'\u00e9quipe",
     "en": "team",
     "de": "das Team",
@@ -22284,7 +34965,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2477",
+    "id": "word_3886",
     "fr": "l'adolescent",
     "en": "teenager",
     "de": "der Teenager",
@@ -22293,7 +34974,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2478",
+    "id": "word_3887",
     "fr": "le t\u00e9l\u00e9phone",
     "en": "telephone",
     "de": "das Telefon",
@@ -22302,7 +34983,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2479",
+    "id": "word_3888",
     "fr": "la t\u00e9l\u00e9vision",
     "en": "television",
     "de": "das Fernsehen",
@@ -22311,7 +34992,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2480",
+    "id": "word_3889",
     "fr": "raconter / dire",
     "en": "tell",
     "de": "erz\u00e4hlen",
@@ -22320,7 +35001,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2481",
+    "id": "word_3890",
     "fr": "dix",
     "en": "ten",
     "de": "zehn",
@@ -22329,7 +35010,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2482",
+    "id": "word_3891",
     "fr": "le tennis",
     "en": "tennis",
     "de": "das Tennis",
@@ -22338,7 +35019,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2483",
+    "id": "word_3892",
     "fr": "terrible",
     "en": "terrible",
     "de": "schrecklich",
@@ -22347,7 +35028,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2484",
+    "id": "word_3893",
     "fr": "le test",
     "en": "test",
     "de": "der Test",
@@ -22356,7 +35037,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2485",
+    "id": "word_3894",
     "fr": "le texte",
     "en": "text",
     "de": "der Text",
@@ -22365,7 +35046,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2486",
+    "id": "word_3895",
     "fr": "que (comparaison)",
     "en": "than",
     "de": "als",
@@ -22374,7 +35055,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2487",
+    "id": "word_3896",
     "fr": "remercier",
     "en": "thank",
     "de": "danken",
@@ -22383,7 +35064,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2488",
+    "id": "word_3897",
     "fr": "merci",
     "en": "thanks",
     "de": "danke",
@@ -22392,7 +35073,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2489",
+    "id": "word_3898",
     "fr": "que / cela",
     "en": "that",
     "de": "dass / das",
@@ -22401,7 +35082,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2490",
+    "id": "word_3899",
     "fr": "le / la / les",
     "en": "the",
     "de": "der / die / das",
@@ -22410,7 +35091,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2491",
+    "id": "word_3900",
     "fr": "le th\u00e9\u00e2tre",
     "en": "theatre",
     "de": "das Theater",
@@ -22419,7 +35100,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2492",
+    "id": "word_3901",
     "fr": "leur",
     "en": "their",
     "de": "ihr",
@@ -22428,7 +35109,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2493",
+    "id": "word_3902",
     "fr": "eux / les",
     "en": "them",
     "de": "sie / ihnen",
@@ -22437,7 +35118,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2494",
+    "id": "word_3903",
     "fr": "ensuite / alors",
     "en": "then",
     "de": "dann",
@@ -22446,7 +35127,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2495",
+    "id": "word_3904",
     "fr": "l\u00e0-bas",
     "en": "there",
     "de": "dort",
@@ -22455,7 +35136,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2496",
+    "id": "word_3905",
     "fr": "ils / elles",
     "en": "they",
     "de": "sie",
@@ -22464,7 +35145,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2497",
+    "id": "word_3906",
     "fr": "la chose",
     "en": "thing",
     "de": "das Ding",
@@ -22473,7 +35154,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2498",
+    "id": "word_3907",
     "fr": "penser",
     "en": "think",
     "de": "denken",
@@ -22482,7 +35163,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2499",
+    "id": "word_3908",
     "fr": "troisi\u00e8me",
     "en": "third",
     "de": "dritte",
@@ -22491,7 +35172,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2500",
+    "id": "word_3909",
     "fr": "assoiff\u00e9",
     "en": "thirsty",
     "de": "durstig",
@@ -22500,7 +35181,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2501",
+    "id": "word_3910",
     "fr": "treize",
     "en": "thirteen",
     "de": "dreizehn",
@@ -22509,7 +35190,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2502",
+    "id": "word_3911",
     "fr": "trente",
     "en": "thirty",
     "de": "drei\u00dfig",
@@ -22518,7 +35199,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2503",
+    "id": "word_3912",
     "fr": "ce / ceci",
     "en": "this",
     "de": "dies",
@@ -22527,7 +35208,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2504",
+    "id": "word_3913",
     "fr": "mille",
     "en": "thousand",
     "de": "tausend",
@@ -22536,7 +35217,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2505",
+    "id": "word_3914",
     "fr": "trois",
     "en": "three",
     "de": "drei",
@@ -22545,7 +35226,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2506",
+    "id": "word_3915",
     "fr": "\u00e0 travers / par",
     "en": "through",
     "de": "durch",
@@ -22554,7 +35235,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2507",
+    "id": "word_3916",
     "fr": "jeudi",
     "en": "Thursday",
     "de": "Donnerstag",
@@ -22563,7 +35244,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2508",
+    "id": "word_3917",
     "fr": "le billet / ticket",
     "en": "ticket",
     "de": "das Ticket",
@@ -22572,7 +35253,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2509",
+    "id": "word_3918",
     "fr": "le temps / l'heure",
     "en": "time",
     "de": "die Zeit",
@@ -22581,7 +35262,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2510",
+    "id": "word_3919",
     "fr": "fatigu\u00e9",
     "en": "tired",
     "de": "m\u00fcde",
@@ -22590,7 +35271,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2511",
+    "id": "word_3920",
     "fr": "le titre",
     "en": "title",
     "de": "der Titel",
@@ -22599,7 +35280,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2512",
+    "id": "word_3921",
     "fr": "\u00e0 / vers",
     "en": "to",
     "de": "zu",
@@ -22608,7 +35289,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2513",
+    "id": "word_3922",
     "fr": "aujourd'hui",
     "en": "today",
     "de": "heute",
@@ -22617,7 +35298,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2514",
+    "id": "word_3923",
     "fr": "ensemble",
     "en": "together",
     "de": "zusammen",
@@ -22626,7 +35307,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2515",
+    "id": "word_3924",
     "fr": "les toilettes",
     "en": "toilet",
     "de": "die Toilette",
@@ -22635,7 +35316,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2516",
+    "id": "word_3925",
     "fr": "la tomate",
     "en": "tomato",
     "de": "die Tomate",
@@ -22644,7 +35325,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2517",
+    "id": "word_3926",
     "fr": "demain",
     "en": "tomorrow",
     "de": "morgen",
@@ -22653,7 +35334,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2518",
+    "id": "word_3927",
     "fr": "ce soir",
     "en": "tonight",
     "de": "heute Abend",
@@ -22662,7 +35343,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2519",
+    "id": "word_3928",
     "fr": "aussi / trop",
     "en": "too",
     "de": "auch / zu",
@@ -22671,7 +35352,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2520",
+    "id": "word_3929",
     "fr": "le haut / sommet",
     "en": "top",
     "de": "oben",
@@ -22680,7 +35361,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2521",
+    "id": "word_3930",
     "fr": "la dent",
     "en": "tooth",
     "de": "der Zahn",
@@ -22689,7 +35370,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2522",
+    "id": "word_3931",
     "fr": "le touriste",
     "en": "tourist",
     "de": "der Tourist",
@@ -22698,7 +35379,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2523",
+    "id": "word_3932",
     "fr": "la ville",
     "en": "town",
     "de": "die Stadt",
@@ -22707,7 +35388,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2524",
+    "id": "word_3933",
     "fr": "le trafic / circulation",
     "en": "traffic",
     "de": "der Verkehr",
@@ -22716,7 +35397,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2525",
+    "id": "word_3934",
     "fr": "le train",
     "en": "train",
     "de": "der Zug",
@@ -22725,7 +35406,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2526",
+    "id": "word_3935",
     "fr": "voyager",
     "en": "travel",
     "de": "reisen",
@@ -22734,7 +35415,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2527",
+    "id": "word_3936",
     "fr": "l'arbre",
     "en": "tree",
     "de": "der Baum",
@@ -22743,7 +35424,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2528",
+    "id": "word_3937",
     "fr": "le voyage (court)",
     "en": "trip",
     "de": "die Reise",
@@ -22752,7 +35433,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2529",
+    "id": "word_3938",
     "fr": "le pantalon",
     "en": "trousers",
     "de": "die Hose",
@@ -22761,7 +35442,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2530",
+    "id": "word_3939",
     "fr": "vrai",
     "en": "true",
     "de": "wahr",
@@ -22770,7 +35451,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2531",
+    "id": "word_3940",
     "fr": "essayer",
     "en": "try",
     "de": "versuchen",
@@ -22779,7 +35460,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2532",
+    "id": "word_3941",
     "fr": "le t-shirt",
     "en": "T-shirt",
     "de": "das T-Shirt",
@@ -22788,7 +35469,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2533",
+    "id": "word_3942",
     "fr": "mardi",
     "en": "Tuesday",
     "de": "Dienstag",
@@ -22797,7 +35478,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2534",
+    "id": "word_3943",
     "fr": "tourner",
     "en": "turn",
     "de": "drehen",
@@ -22806,7 +35487,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2535",
+    "id": "word_3944",
     "fr": "la t\u00e9l\u00e9",
     "en": "TV",
     "de": "der Fernseher",
@@ -22815,7 +35496,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2536",
+    "id": "word_3945",
     "fr": "douze",
     "en": "twelve",
     "de": "zw\u00f6lf",
@@ -22824,7 +35505,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2537",
+    "id": "word_3946",
     "fr": "vingt",
     "en": "twenty",
     "de": "zwanzig",
@@ -22833,7 +35514,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2538",
+    "id": "word_3947",
     "fr": "deux fois",
     "en": "twice",
     "de": "zweimal",
@@ -22842,7 +35523,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2539",
+    "id": "word_3948",
     "fr": "deux",
     "en": "two",
     "de": "zwei",
@@ -22851,7 +35532,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2540",
+    "id": "word_3949",
     "fr": "le type / genre",
     "en": "type",
     "de": "der Typ",
@@ -22860,7 +35541,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2541",
+    "id": "word_3950",
     "fr": "le parapluie",
     "en": "umbrella",
     "de": "der Regenschirm",
@@ -22869,7 +35550,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2542",
+    "id": "word_3951",
     "fr": "l'oncle",
     "en": "uncle",
     "de": "der Onkel",
@@ -22878,7 +35559,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2543",
+    "id": "word_3952",
     "fr": "sous",
     "en": "under",
     "de": "unter",
@@ -22887,7 +35568,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2544",
+    "id": "word_3953",
     "fr": "comprendre",
     "en": "understand",
     "de": "verstehen",
@@ -22896,7 +35577,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2545",
+    "id": "word_3954",
     "fr": "l'universit\u00e9",
     "en": "university",
     "de": "die Universit\u00e4t",
@@ -22905,7 +35586,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2546",
+    "id": "word_3955",
     "fr": "jusqu'\u00e0",
     "en": "until",
     "de": "bis",
@@ -22914,7 +35595,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2547",
+    "id": "word_3956",
     "fr": "en haut",
     "en": "up",
     "de": "auf / hoch",
@@ -22923,7 +35604,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2548",
+    "id": "word_3957",
     "fr": "en haut (escaliers)",
     "en": "upstairs",
     "de": "oben",
@@ -22932,7 +35613,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2549",
+    "id": "word_3958",
     "fr": "nous",
     "en": "us",
     "de": "uns",
@@ -22941,7 +35622,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2550",
+    "id": "word_3959",
     "fr": "utiliser",
     "en": "use",
     "de": "benutzen",
@@ -22950,7 +35631,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2551",
+    "id": "word_3960",
     "fr": "habituellement",
     "en": "usually",
     "de": "normalerweise",
@@ -22959,7 +35640,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2552",
+    "id": "word_3961",
     "fr": "les vacances (US)",
     "en": "vacation",
     "de": "der Urlaub",
@@ -22968,7 +35649,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2553",
+    "id": "word_3962",
     "fr": "le l\u00e9gume",
     "en": "vegetable",
     "de": "das Gem\u00fcse",
@@ -22977,7 +35658,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2554",
+    "id": "word_3963",
     "fr": "tr\u00e8s",
     "en": "very",
     "de": "sehr",
@@ -22986,7 +35667,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2555",
+    "id": "word_3964",
     "fr": "la vid\u00e9o",
     "en": "video",
     "de": "das Video",
@@ -22995,7 +35676,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2556",
+    "id": "word_3965",
     "fr": "le village",
     "en": "village",
     "de": "das Dorf",
@@ -23004,7 +35685,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2557",
+    "id": "word_3966",
     "fr": "visiter",
     "en": "visit",
     "de": "besuchen",
@@ -23013,7 +35694,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2558",
+    "id": "word_3967",
     "fr": "le visiteur",
     "en": "visitor",
     "de": "der Besucher",
@@ -23022,7 +35703,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2559",
+    "id": "word_3968",
     "fr": "attendre",
     "en": "wait",
     "de": "warten",
@@ -23031,7 +35712,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2560",
+    "id": "word_3969",
     "fr": "le serveur",
     "en": "waiter",
     "de": "der Kellner",
@@ -23040,7 +35721,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2561",
+    "id": "word_3970",
     "fr": "se r\u00e9veiller",
     "en": "wake",
     "de": "aufwachen",
@@ -23049,7 +35730,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2562",
+    "id": "word_3971",
     "fr": "marcher",
     "en": "walk",
     "de": "gehen",
@@ -23058,7 +35739,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2563",
+    "id": "word_3972",
     "fr": "le mur",
     "en": "wall",
     "de": "die Wand",
@@ -23067,7 +35748,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2564",
+    "id": "word_3973",
     "fr": "vouloir",
     "en": "want",
     "de": "wollen",
@@ -23076,7 +35757,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2565",
+    "id": "word_3974",
     "fr": "chaud / chaleureux",
     "en": "warm",
     "de": "warm",
@@ -23085,7 +35766,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2566",
+    "id": "word_3975",
     "fr": "laver",
     "en": "wash",
     "de": "waschen",
@@ -23094,7 +35775,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2567",
+    "id": "word_3976",
     "fr": "la montre",
     "en": "watch",
     "de": "die Uhr",
@@ -23103,7 +35784,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2568",
+    "id": "word_3977",
     "fr": "regarder (TV)",
     "en": "watch",
     "de": "schauen",
@@ -23112,7 +35793,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2569",
+    "id": "word_3978",
     "fr": "l'eau",
     "en": "water",
     "de": "das Wasser",
@@ -23121,7 +35802,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2570",
+    "id": "word_3979",
     "fr": "le chemin / la fa\u00e7on",
     "en": "way",
     "de": "der Weg / die Art",
@@ -23130,7 +35811,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2571",
+    "id": "word_3980",
     "fr": "nous",
     "en": "we",
     "de": "wir",
@@ -23139,7 +35820,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2572",
+    "id": "word_3981",
     "fr": "porter (v\u00eatements)",
     "en": "wear",
     "de": "tragen",
@@ -23148,7 +35829,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2573",
+    "id": "word_3982",
     "fr": "le temps (m\u00e9t\u00e9o)",
     "en": "weather",
     "de": "das Wetter",
@@ -23157,7 +35838,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2574",
+    "id": "word_3983",
     "fr": "le site web",
     "en": "website",
     "de": "die Website",
@@ -23166,7 +35847,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2575",
+    "id": "word_3984",
     "fr": "mercredi",
     "en": "Wednesday",
     "de": "Mittwoch",
@@ -23175,7 +35856,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2576",
+    "id": "word_3985",
     "fr": "la semaine",
     "en": "week",
     "de": "die Woche",
@@ -23184,7 +35865,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2577",
+    "id": "word_3986",
     "fr": "le week-end",
     "en": "weekend",
     "de": "das Wochenende",
@@ -23193,7 +35874,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2578",
+    "id": "word_3987",
     "fr": "bien",
     "en": "well",
     "de": "gut",
@@ -23202,7 +35883,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2579",
+    "id": "word_3988",
     "fr": "l'ouest",
     "en": "west",
     "de": "der Westen",
@@ -23211,7 +35892,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2580",
+    "id": "word_3989",
     "fr": "quoi",
     "en": "what",
     "de": "was",
@@ -23220,7 +35901,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2581",
+    "id": "word_3990",
     "fr": "quand",
     "en": "when",
     "de": "wann",
@@ -23229,7 +35910,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2582",
+    "id": "word_3991",
     "fr": "o\u00f9",
     "en": "where",
     "de": "wo",
@@ -23238,7 +35919,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2583",
+    "id": "word_3992",
     "fr": "lequel",
     "en": "which",
     "de": "welcher",
@@ -23247,7 +35928,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2584",
+    "id": "word_3993",
     "fr": "blanc",
     "en": "white",
     "de": "wei\u00df",
@@ -23256,7 +35937,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2585",
+    "id": "word_3994",
     "fr": "qui",
     "en": "who",
     "de": "wer",
@@ -23265,7 +35946,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2586",
+    "id": "word_3995",
     "fr": "pourquoi",
     "en": "why",
     "de": "warum",
@@ -23274,7 +35955,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2587",
+    "id": "word_3996",
     "fr": "la femme (\u00e9pouse)",
     "en": "wife",
     "de": "die Ehefrau",
@@ -23283,7 +35964,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2588",
+    "id": "word_3997",
     "fr": "gagner",
     "en": "win",
     "de": "gewinnen",
@@ -23292,7 +35973,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2589",
+    "id": "word_3998",
     "fr": "la fen\u00eatre",
     "en": "window",
     "de": "das Fenster",
@@ -23301,7 +35982,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2590",
+    "id": "word_3999",
     "fr": "le vin",
     "en": "wine",
     "de": "der Wein",
@@ -23310,7 +35991,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2591",
+    "id": "word_4000",
     "fr": "l'hiver",
     "en": "winter",
     "de": "der Winter",
@@ -23319,7 +36000,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2592",
+    "id": "word_4001",
     "fr": "avec",
     "en": "with",
     "de": "mit",
@@ -23328,7 +36009,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2593",
+    "id": "word_4002",
     "fr": "sans",
     "en": "without",
     "de": "ohne",
@@ -23337,7 +36018,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2594",
+    "id": "word_4003",
     "fr": "la femme",
     "en": "woman",
     "de": "die Frau",
@@ -23346,7 +36027,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2595",
+    "id": "word_4004",
     "fr": "merveilleux",
     "en": "wonderful",
     "de": "wunderbar",
@@ -23355,7 +36036,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2596",
+    "id": "word_4005",
     "fr": "le mot",
     "en": "word",
     "de": "das Wort",
@@ -23364,7 +36045,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2597",
+    "id": "word_4006",
     "fr": "le travail",
     "en": "work",
     "de": "die Arbeit",
@@ -23373,7 +36054,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2598",
+    "id": "word_4007",
     "fr": "travailler",
     "en": "work",
     "de": "arbeiten",
@@ -23382,7 +36063,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2599",
+    "id": "word_4008",
     "fr": "le travailleur",
     "en": "worker",
     "de": "der Arbeiter",
@@ -23391,7 +36072,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2600",
+    "id": "word_4009",
     "fr": "le monde",
     "en": "world",
     "de": "die Welt",
@@ -23400,7 +36081,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2601",
+    "id": "word_4010",
     "fr": "voudrait",
     "en": "would",
     "de": "w\u00fcrde",
@@ -23409,7 +36090,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2602",
+    "id": "word_4011",
     "fr": "\u00e9crire",
     "en": "write",
     "de": "schreiben",
@@ -23418,7 +36099,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2603",
+    "id": "word_4012",
     "fr": "l'\u00e9crivain",
     "en": "writer",
     "de": "der Autor",
@@ -23427,7 +36108,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2604",
+    "id": "word_4013",
     "fr": "l'\u00e9criture",
     "en": "writing",
     "de": "das Schreiben",
@@ -23436,7 +36117,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2605",
+    "id": "word_4014",
     "fr": "faux (erreur)",
     "en": "wrong",
     "de": "falsch",
@@ -23445,7 +36126,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2606",
+    "id": "word_4015",
     "fr": "l'ann\u00e9e",
     "en": "year",
     "de": "das Jahr",
@@ -23454,7 +36135,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2607",
+    "id": "word_4016",
     "fr": "jaune",
     "en": "yellow",
     "de": "gelb",
@@ -23463,7 +36144,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2608",
+    "id": "word_4017",
     "fr": "oui",
     "en": "yes",
     "de": "ja",
@@ -23472,7 +36153,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2609",
+    "id": "word_4018",
     "fr": "hier",
     "en": "yesterday",
     "de": "gestern",
@@ -23481,7 +36162,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2610",
+    "id": "word_4019",
     "fr": "toi / vous",
     "en": "you",
     "de": "du / ihr / Sie",
@@ -23490,7 +36171,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2611",
+    "id": "word_4020",
     "fr": "jeune",
     "en": "young",
     "de": "jung",
@@ -23499,7 +36180,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2612",
+    "id": "word_4021",
     "fr": "ton / votre",
     "en": "your",
     "de": "dein / euer / Ihr",
@@ -23508,7 +36189,7 @@ export const vocabulary = [
     "level": "A1"
   },
   {
-    "id": "word_2613",
+    "id": "word_4022",
     "fr": "le zoo",
     "en": "zoo",
     "de": "der Zoo",
