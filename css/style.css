@@ -554,6 +554,10 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     .mobile-only-btn {
         display: block !important;
     }
+    
+    #mobile-action-container {
+        display: flex !important;
+    }
 
     .app-header {
         position: relative;
