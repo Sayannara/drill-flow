@@ -1,10 +1,11 @@
 $utf8NoBom = New-Object System.Text.UTF8Encoding $False
 
-$parts = @('append_part1.ps1', 'append_part2.ps1', 'append_part3.ps1', 'append_part4.ps1', 'append_part5.ps1', 'append_part6.ps1')
+# Trouver tous les fichiers append_partX.ps1 et add_a2_batchX.ps1 et les trier
+$files = Get-ChildItem -Path $PSScriptRoot -Filter "*.ps1" | Where-Object { $_.Name -match "^append_part\d+\.ps1$" -or $_.Name -match "^add_a2_batch\d+\.ps1$" } | Sort-Object Name
 $allWords = @()
 
-foreach ($file in $parts) {
-    $path = "$PSScriptRoot\$file"
+foreach ($file in $files) {
+    $path = $file.FullName
     if (Test-Path $path) {
         $content = [System.IO.File]::ReadAllText($path, $utf8NoBom)
         
