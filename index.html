@@ -130,61 +130,64 @@
             </div>
 
             <div class="flashcard">
-                <!-- Zone de résultat et comparaison en HAUT -->
-                <div class="result-section hidden" id="drill-result" style="margin-top: 0; margin-bottom: 1.5rem;">
-                    <div id="result-status" class="status-banner">Correct !</div>
-                    
-                    <div class="result-comparison">
-                        <div class="comparison-line">
-                            <span class="comparison-label" data-i18n="label_word">Mot:</span>
-                            <span id="result-asked" class="comparison-text" style="color: var(--text-primary); font-weight: 500;">...</span>
-                        </div>
-                        <div class="comparison-line" id="result-user-container" style="display: none;">
-                            <span class="comparison-label" data-i18n="label_user">Entré:</span>
-                            <span id="result-user" class="comparison-text user-saisie">...</span>
-                        </div>
-                        <div class="comparison-line" id="result-expected-container">
-                            <span class="comparison-label" data-i18n="label_expected">Attendu:</span>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                                <span id="result-expected" class="comparison-text expected-saisie">...</span>
-                                <button id="btn-speak-expected" class="icon-btn speak-btn" title="Entendre la prononciation" style="margin-left: 0; display: inline-flex; align-items: center; justify-content: center; padding: 0.35rem;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                                    </svg>
-                                </button>
+                <!-- Wrapper dynamique à hauteur minimale fixe pour empêcher les boutons de sauter -->
+                <div id="drill-dynamic-area" style="min-height: 380px; display: flex; flex-direction: column; justify-content: center;">
+                    <!-- Zone de résultat et comparaison en HAUT -->
+                    <div class="result-section hidden" id="drill-result" style="margin-top: 0; margin-bottom: 1.5rem;">
+                        <div id="result-status" class="status-banner">Correct !</div>
+                        
+                        <div class="result-comparison">
+                            <div class="comparison-line">
+                                <span class="comparison-label" data-i18n="label_word">Mot:</span>
+                                <span id="result-asked" class="comparison-text" style="color: var(--text-primary); font-weight: 500;">...</span>
+                            </div>
+                            <div class="comparison-line" id="result-user-container" style="display: none;">
+                                <span class="comparison-label" data-i18n="label_user">Entré:</span>
+                                <span id="result-user" class="comparison-text user-saisie">...</span>
+                            </div>
+                            <div class="comparison-line" id="result-expected-container">
+                                <span class="comparison-label" data-i18n="label_expected">Attendu:</span>
+                                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                                    <span id="result-expected" class="comparison-text expected-saisie">...</span>
+                                    <button id="btn-speak-expected" class="icon-btn speak-btn" title="Entendre la prononciation" style="margin-left: 0; display: inline-flex; align-items: center; justify-content: center; padding: 0.35rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="comparison-line" id="example-correct-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
+                                <span class="comparison-label"></span>
+                                <span id="example-correct-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
+                            </div>
+                            <div class="comparison-line" id="rewrite-line" style="display: none;">
+                                <span class="comparison-label" data-i18n="label_rewrite">Récrire:</span>
+                                <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off">
+                            </div>
+                            <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
+                                <span class="comparison-label"></span>
+                                <span id="example-incorrect-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
                             </div>
                         </div>
-                        <div class="comparison-line" id="example-correct-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
-                            <span class="comparison-label"></span>
-                            <span id="example-correct-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
-                        </div>
-                        <div class="comparison-line" id="rewrite-line" style="display: none;">
-                            <span class="comparison-label" data-i18n="label_rewrite">Récrire:</span>
-                            <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off">
-                        </div>
-                        <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
-                            <span class="comparison-label"></span>
-                            <span id="example-incorrect-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
+
+                        <div class="keyboard-hints" id="dynamic-hints">
+                            <!-- Rempli en JS -->
                         </div>
                     </div>
 
-                    <div class="keyboard-hints" id="dynamic-hints">
-                        <!-- Rempli en JS -->
+                    <!-- Mot demandé et saisie en BAS -->
+                    <div id="drill-word-wrapper" style="display: flex; align-items: flex-start; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                        <div class="word-source" id="drill-word-source" style="margin-bottom: 0;">...</div>
+                        <div style="display: flex; gap: 0.35rem; margin-top: 0.35rem;">
+                            <span id="drill-word-type-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">nom</span>
+                            <span id="drill-word-level-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">A1</span>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Mot demandé et saisie en BAS -->
-                <div style="display: flex; align-items: flex-start; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <div class="word-source" id="drill-word-source" style="margin-bottom: 0;">...</div>
-                    <div style="display: flex; gap: 0.35rem; margin-top: 0.35rem;">
-                        <span id="drill-word-type-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">nom</span>
-                        <span id="drill-word-level-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">A1</span>
+                    
+                    <div class="input-section" id="drill-input-wrapper">
+                        <input type="text" id="drill-input" data-i18n-placeholder="placeholder_translation" placeholder="Traduction..." autocomplete="off">
                     </div>
-                </div>
-                
-                <div class="input-section">
-                    <input type="text" id="drill-input" data-i18n-placeholder="placeholder_translation" placeholder="Traduction..." autocomplete="off">
                 </div>
                 
                 <!-- Actions mobiles unifiées (Saisie & Résultat) -->

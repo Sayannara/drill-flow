@@ -76,6 +76,9 @@ function renderCurrentWord() {
     const langTargetEl = document.getElementById('drill-lang-target');
 
     // Cacher le résultat, vider l'input
+    const inputWrapperEl = document.getElementById('drill-input-wrapper');
+    if (inputWrapperEl) inputWrapperEl.style.display = 'block';
+    
     resultSection.classList.add('hidden');
     inputEl.value = '';
     inputEl.disabled = false;
@@ -121,6 +124,9 @@ function renderCurrentWord() {
     const currentWord = sessionState.words[sessionState.currentIndex];
     wordSourceEl.textContent = currentWord[sessionState.langSource];
     wordSourceEl.style.display = '';
+    
+    const wordWrapperEl = document.getElementById('drill-word-wrapper');
+    if (wordWrapperEl) wordWrapperEl.style.display = 'flex';
     
     const lang = getAppLanguage();
 
@@ -222,15 +228,17 @@ function handleValidation() {
         const dynamicHints = document.getElementById('dynamic-hints');
 
         resultSection.classList.remove('hidden');
-        inputEl.style.display = 'none'; // Masquer l'input de saisie
+        
+        const inputWrapperEl = document.getElementById('drill-input-wrapper');
+        if (inputWrapperEl) inputWrapperEl.style.display = 'none';
+        
         inputEl.disabled = true;
         inputEl.blur(); // Masque le clavier virtuel sur mobile
         sessionState.isWaitingAction = true;
 
-        const wordSourceEl = document.getElementById('drill-word-source');
-        if (wordSourceEl) {
-            wordSourceEl.style.display = 'none';
-        }
+        const wordWrapperEl = document.getElementById('drill-word-wrapper');
+        if (wordWrapperEl) wordWrapperEl.style.display = 'none';
+        
         const badgeEl = document.getElementById('drill-word-type-badge');
         if (badgeEl) {
             badgeEl.classList.add('hidden');
