@@ -504,24 +504,6 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     transition: all 0.2s;
 }
 
-.btn-drill-action.btn-primary-action {
-    background-color: #1e293b;
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
-.btn-drill-action.btn-primary-action:hover {
-    background-color: #0f172a;
-}
-
-[data-theme="light"] .btn-drill-action.btn-primary-action {
-    background-color: #0f172a;
-    color: #ffffff;
-    border: 1px solid #0f172a;
-}
-[data-theme="light"] .btn-drill-action.btn-primary-action:hover {
-    background-color: #1e293b;
-}
-
 .btn-drill-action.btn-secondary-action {
     background-color: rgba(100, 116, 139, 0.1);
     color: var(--text-primary);
