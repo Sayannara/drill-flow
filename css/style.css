@@ -37,7 +37,8 @@ body {
     font-family: var(--font-sans);
     line-height: 1.5;
     transition: background-color 0.3s ease, color 0.3s ease;
-    min-height: 100vh;
+    min-height: 100vh; /* fallback */
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
@@ -583,6 +584,9 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     }
     .card {
         padding: 1.25rem 1rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
     }
     
     /* Drill / Exercise */
