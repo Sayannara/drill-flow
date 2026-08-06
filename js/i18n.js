@@ -9,7 +9,7 @@ export const translations = {
         
         // Home View
         title_home: "Nouvelle session",
-        subtitle_home_intro: "Apprenez gratuitement les {total} mots les plus utilisés !",
+        subtitle_home_intro: "{total} mots à apprendre gratuitement !",
         subtitle_home_remaining: "Il vous reste {remaining} mots à valider.",
         label_source: "Langue de départ (Source)",
         label_target: "Langue d'arrivée (Cible)",
@@ -119,7 +119,7 @@ export const translations = {
         
         // Home View
         title_home: "New Session",
-        subtitle_home_intro: "Learn the {total} most common words for free!",
+        subtitle_home_intro: "{total} words to learn for free!",
         subtitle_home_remaining: "You have {remaining} words remaining to validate.",
         label_source: "Source Language",
         label_target: "Target Language",
@@ -229,7 +229,7 @@ export const translations = {
         
         // Home View
         title_home: "Neue Sitzung",
-        subtitle_home_intro: "Lernen Sie kostenlos die {total} am häufigsten verwendeten Wörter!",
+        subtitle_home_intro: "{total} Wörter kostenlos lernen!",
         subtitle_home_remaining: "Sie müssen noch {remaining} Wörter lernen.",
         label_source: "Ausgangssprache",
         label_target: "Zielsprache",
@@ -339,7 +339,7 @@ export const translations = {
         
         // Home View
         title_home: "Nueva sesión",
-        subtitle_home_intro: "¡Aprenda gratis las {total} palabras más utilizadas!",
+        subtitle_home_intro: "¡{total} palabras para aprender gratis!",
         subtitle_home_remaining: "Le quedan {remaining} palabras por validar.",
         label_source: "Idioma de origen",
         label_target: "Idioma de destino",
