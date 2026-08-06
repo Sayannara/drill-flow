@@ -107,8 +107,8 @@ function attachViewEvents(viewId) {
         const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
         const lastVol = localStorage.getItem('voc_last_vol') || '20';
         
-        const savedLevelsStr = localStorage.getItem('voc_last_levels');
-        const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2'];
+        const savedLevelsStr = localStorage.getItem('drill_levels');
+        const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2', 'C1'];
 
         const selectSrc = document.getElementById('select-lang-source');
         const selectTgt = document.getElementById('select-lang-target');
@@ -159,10 +159,12 @@ function attachViewEvents(viewId) {
         const cbA2 = document.getElementById('drill-level-a2');
         const cbB1 = document.getElementById('drill-level-b1');
         const cbB2 = document.getElementById('drill-level-b2');
+        const cbC1 = document.getElementById('drill-level-c1');
         if (cbA1) cbA1.checked = savedLevels.includes('A1');
         if (cbA2) cbA2.checked = savedLevels.includes('A2');
         if (cbB1) cbB1.checked = savedLevels.includes('B1');
         if (cbB2) cbB2.checked = savedLevels.includes('B2');
+        if (cbC1) cbC1.checked = savedLevels.includes('C1');
         
         if (inputVol && volDisp) {
             inputVol.value = lastVol;
@@ -201,7 +203,8 @@ function attachViewEvents(viewId) {
                     if (document.getElementById('drill-level-a2')?.checked) levels.push('A2');
                     if (document.getElementById('drill-level-b1')?.checked) levels.push('B1');
                     if (document.getElementById('drill-level-b2')?.checked) levels.push('B2');
-                    return levels.length > 0 ? levels : ['A1', 'A2', 'B1', 'B2'];
+                    if (document.getElementById('drill-level-c1')?.checked) levels.push('C1');
+                    return levels.length > 0 ? levels : ['A1', 'A2', 'B1', 'B2', 'C1'];
                 };
                 const selectedLevels = getSelectedLevels();
                 
@@ -220,6 +223,7 @@ function attachViewEvents(viewId) {
             if (document.getElementById('drill-level-a2')) document.getElementById('drill-level-a2').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-b1')) document.getElementById('drill-level-b1').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-b2')) document.getElementById('drill-level-b2').addEventListener('change', updateAvailableCount);
+            if (document.getElementById('drill-level-c1')) document.getElementById('drill-level-c1').addEventListener('change', updateAvailableCount);
             updateAvailableCount();
 
             // Empêcher les doublons d'écouteurs si la vue est rechargée
@@ -236,7 +240,8 @@ function attachViewEvents(viewId) {
                 if (document.getElementById('drill-level-a2')?.checked) selectedLevels.push('A2');
                 if (document.getElementById('drill-level-b1')?.checked) selectedLevels.push('B1');
                 if (document.getElementById('drill-level-b2')?.checked) selectedLevels.push('B2');
-                if (selectedLevels.length === 0) selectedLevels.push('A1', 'A2', 'B1', 'B2');
+                if (document.getElementById('drill-level-c1')?.checked) selectedLevels.push('C1');
+                if (selectedLevels.length === 0) selectedLevels.push('A1', 'A2', 'B1', 'B2', 'C1');
                 
                 if (src === tgt) {
                     alert("Les deux langues doivent être différentes.");
@@ -247,7 +252,7 @@ function attachViewEvents(viewId) {
                 localStorage.setItem('voc_last_src', src);
                 localStorage.setItem('voc_last_tgt', tgt);
                 localStorage.setItem('voc_last_vol', vol);
-                localStorage.setItem('voc_last_levels', JSON.stringify(selectedLevels));
+                localStorage.setItem('drill_levels', JSON.stringify(selectedLevels));
 
                 renderView('drill');
                 initDrillSession(src, tgt, vol, selectedLevels);
@@ -387,11 +392,12 @@ function initProgressView() {
         }
     });
 
-    ['a1', 'a2', 'b1', 'b2'].forEach(level => {
-        const cb = document.getElementById(`filter-level-${level}`);
-        if (cb) {
-            cb.checked = true;
-            cb.onchange = () => {
+    // 2. Attach listeners for word level filters
+    ['a1', 'a2', 'b1', 'b2', 'c1'].forEach(level => {
+        const checkbox = document.getElementById(`filter-level-${level}`);
+        if (checkbox) {
+            checkbox.checked = true;
+            checkbox.onchange = () => {
                 renderProgressTable();
             };
         }
@@ -422,6 +428,7 @@ function renderProgressTable() {
     const filterA2 = document.getElementById('filter-level-a2') ? document.getElementById('filter-level-a2').checked : true;
     const filterB1 = document.getElementById('filter-level-b1') ? document.getElementById('filter-level-b1').checked : true;
     const filterB2 = document.getElementById('filter-level-b2') ? document.getElementById('filter-level-b2').checked : true;
+    const filterC1 = document.getElementById('filter-level-c1') ? document.getElementById('filter-level-c1').checked : true;
 
     const filtered = vocabulary.filter(word => {
         if (word.type === 'nom' && !filterNom) return false;
@@ -434,6 +441,7 @@ function renderProgressTable() {
         if (word.level === 'A2' && !filterA2) return false;
         if (word.level === 'B1' && !filterB1) return false;
         if (word.level === 'B2' && !filterB2) return false;
+        if (word.level === 'C1' && !filterC1) return false;
 
         const srcText = (word[src] || '').toLowerCase();
         const tgtText = (word[tgt] || '').toLowerCase();
@@ -494,6 +502,7 @@ function renderProgressTable() {
             if (word.level === 'A2') { badgeBg = 'rgba(16, 185, 129, 0.2)'; badgeColor = '#10b981'; }
             if (word.level === 'B1') { badgeBg = 'rgba(245, 158, 11, 0.2)'; badgeColor = '#f59e0b'; }
             if (word.level === 'B2') { badgeBg = 'rgba(239, 68, 68, 0.2)'; badgeColor = '#ef4444'; }
+            if (word.level === 'C1') { badgeBg = 'rgba(139, 92, 246, 0.2)'; badgeColor = '#8b5cf6'; }
             
             tdLevel.innerHTML = `<span class="type-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; background: ${badgeBg}; color: ${badgeColor}; font-weight: 600;">${word.level}</span>`;
         } else {
