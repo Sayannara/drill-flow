@@ -314,10 +314,10 @@ function handleValidation() {
                     btnMobileSecondary.style.visibility = 'visible';
                     
                     // Correct : Action par défaut (en bas) = Acquis. Action secondaire (en haut) = À revoir
-                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
                     btnMobilePrimary.className = "btn-primary";
                     
-                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
+                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
                     btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
                     
                     btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
@@ -405,10 +405,10 @@ function handleValidation() {
                     btnMobileSecondary.style.visibility = 'visible';
                     
                     // Incorrect : Action par défaut (en bas) = À revoir. Action secondaire (en haut) = Acquis
-                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
+                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
                     btnMobilePrimary.className = "btn-primary";
                     
-                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
                     btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
                     
                     btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
