@@ -1,9 +1,9 @@
-﻿export const vocabulary = [
+export const vocabulary = [
   {
     "id": "word_1",
-    "fr": "la capacitÃ©",
+    "fr": "la capacité",
     "en": "ability",
-    "de": "die FÃ¤higkeit",
+    "de": "die Fähigkeit",
     "es": "la capacidad",
     "type": "nom",
     "level": "A2"
@@ -12,14 +12,14 @@
     "id": "word_2",
     "fr": "capable",
     "en": "able",
-    "de": "fÃ¤hig",
+    "de": "fähig",
     "es": "capaz",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_3",
-    "fr": "Ã  l'Ã©tranger",
+    "fr": "à l'étranger",
     "en": "abroad",
     "de": "im Ausland",
     "es": "en el extranjero",
@@ -100,7 +100,7 @@
   },
   {
     "id": "word_12",
-    "fr": "faire de la publicitÃ©",
+    "fr": "faire de la publicité",
     "en": "advertise",
     "de": "werben",
     "es": "anunciar",
@@ -109,7 +109,7 @@
   },
   {
     "id": "word_13",
-    "fr": "la publicitÃ©",
+    "fr": "la publicité",
     "en": "advertisement",
     "de": "die Werbung",
     "es": "el anuncio",
@@ -118,7 +118,7 @@
   },
   {
     "id": "word_14",
-    "fr": "la publicitÃ© (domaine)",
+    "fr": "la publicité (domaine)",
     "en": "advertising",
     "de": "die Werbung",
     "es": "la publicidad",
@@ -145,10 +145,10 @@
   },
   {
     "id": "word_17",
-    "fr": "aprÃ¨s",
+    "fr": "après",
     "en": "after",
     "de": "nachdem",
-    "es": "despuÃ©s de",
+    "es": "después de",
     "type": "prep",
     "level": "A2"
   },
@@ -163,7 +163,7 @@
   },
   {
     "id": "word_19",
-    "fr": "Ãªtre d'accord",
+    "fr": "être d'accord",
     "en": "agree",
     "de": "zustimmen",
     "es": "estar de acuerdo",
@@ -181,10 +181,10 @@
   },
   {
     "id": "word_21",
-    "fr": "la compagnie aÃ©rienne",
+    "fr": "la compagnie aérienne",
     "en": "airline",
     "de": "die Fluggesellschaft",
-    "es": "la aerolÃ­nea",
+    "es": "la aerolínea",
     "type": "nom",
     "level": "A2"
   },
@@ -244,7 +244,7 @@
   },
   {
     "id": "word_28",
-    "fr": "dÃ©jÃ ",
+    "fr": "déjà",
     "en": "already",
     "de": "schon",
     "es": "ya",
@@ -271,7 +271,7 @@
   },
   {
     "id": "word_31",
-    "fr": "la quantitÃ©",
+    "fr": "la quantité",
     "en": "amount",
     "de": "die Menge",
     "es": "la cantidad",
@@ -291,7 +291,7 @@
     "id": "word_33",
     "fr": "la cheville",
     "en": "ankle",
-    "de": "der KnÃ¶chel",
+    "de": "der Knöchel",
     "es": "el tobillo",
     "type": "nom",
     "level": "A2"
@@ -325,7 +325,7 @@
   },
   {
     "id": "word_37",
-    "fr": "de toute faÃ§on",
+    "fr": "de toute façon",
     "en": "anyway",
     "de": "jedenfalls",
     "es": "de todos modos",
@@ -334,9 +334,9 @@
   },
   {
     "id": "word_38",
-    "fr": "n'importe oÃ¹",
+    "fr": "n'importe où",
     "en": "anywhere",
-    "de": "Ã¼berall",
+    "de": "überall",
     "es": "en cualquier lugar",
     "type": "adverbe",
     "level": "A2"
@@ -346,13 +346,13 @@
     "fr": "l'application",
     "en": "app",
     "de": "die App",
-    "es": "la aplicaciÃ³n",
+    "es": "la aplicación",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_40",
-    "fr": "apparaÃ®tre",
+    "fr": "apparaître",
     "en": "appear",
     "de": "erscheinen",
     "es": "aparecer",
@@ -415,10 +415,10 @@
   },
   {
     "id": "word_47",
-    "fr": "l'armÃ©e",
+    "fr": "l'armée",
     "en": "army",
     "de": "die Armee",
-    "es": "el ejÃ©rcito",
+    "es": "el ejército",
     "type": "nom",
     "level": "A2"
   },
@@ -478,7 +478,7 @@
   },
   {
     "id": "word_54",
-    "fr": "l'athlÃ¨te",
+    "fr": "l'athlète",
     "en": "athlete",
     "de": "der Athlet",
     "es": "el atleta",
@@ -505,7 +505,7 @@
   },
   {
     "id": "word_57",
-    "fr": "assister Ã ",
+    "fr": "assister à",
     "en": "attend",
     "de": "teilnehmen",
     "es": "asistir",
@@ -517,7 +517,7 @@
     "fr": "l'attention",
     "en": "attention",
     "de": "die Aufmerksamkeit",
-    "es": "la atenciÃ³n",
+    "es": "la atención",
     "type": "nom",
     "level": "A2"
   },
@@ -535,7 +535,7 @@
     "fr": "le public",
     "en": "audience",
     "de": "das Publikum",
-    "es": "el pÃºblico",
+    "es": "el público",
     "type": "nom",
     "level": "A2"
   },
@@ -552,7 +552,7 @@
     "id": "word_62",
     "fr": "disponible",
     "en": "available",
-    "de": "verfÃ¼gbar",
+    "de": "verfügbar",
     "es": "disponible",
     "type": "adjectif",
     "level": "A2"
@@ -568,7 +568,7 @@
   },
   {
     "id": "word_64",
-    "fr": "Ã©viter",
+    "fr": "éviter",
     "en": "avoid",
     "de": "vermeiden",
     "es": "evitar",
@@ -577,7 +577,7 @@
   },
   {
     "id": "word_65",
-    "fr": "le prix / la rÃ©compense",
+    "fr": "le prix / la récompense",
     "en": "award",
     "de": "die Auszeichnung",
     "es": "el premio",
@@ -616,7 +616,7 @@
     "fr": "le baseball",
     "en": "baseball",
     "de": "der Baseball",
-    "es": "el bÃ©isbol",
+    "es": "el béisbol",
     "type": "nom",
     "level": "A2"
   },
@@ -651,7 +651,7 @@
     "id": "word_73",
     "fr": "l'ours",
     "en": "bear",
-    "de": "der BÃ¤r",
+    "de": "der Bär",
     "es": "el oso",
     "type": "nom",
     "level": "A2"
@@ -667,7 +667,7 @@
   },
   {
     "id": "word_75",
-    "fr": "le bÅ“uf (viande)",
+    "fr": "le bœuf (viande)",
     "en": "beef",
     "de": "das Rindfleisch",
     "es": "la carne de res",
@@ -696,7 +696,7 @@
     "id": "word_78",
     "fr": "appartenir",
     "en": "belong",
-    "de": "gehÃ¶ren",
+    "de": "gehören",
     "es": "pertenecer",
     "type": "verbe",
     "level": "A2"
@@ -705,14 +705,14 @@
     "id": "word_79",
     "fr": "la ceinture",
     "en": "belt",
-    "de": "der GÃ¼rtel",
-    "es": "el cinturÃ³n",
+    "de": "der Gürtel",
+    "es": "el cinturón",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_80",
-    "fr": "le bÃ©nÃ©fice",
+    "fr": "le bénéfice",
     "en": "benefit",
     "de": "der Nutzen",
     "es": "el beneficio",
@@ -759,7 +759,7 @@
     "id": "word_85",
     "fr": "la poubelle",
     "en": "bin",
-    "de": "der MÃ¼lleimer",
+    "de": "der Mülleimer",
     "es": "el cubo de basura",
     "type": "nom",
     "level": "A2"
@@ -769,7 +769,7 @@
     "fr": "la biologie",
     "en": "biology",
     "de": "die Biologie",
-    "es": "la biologÃ­a",
+    "es": "la biología",
     "type": "nom",
     "level": "A2"
   },
@@ -795,7 +795,7 @@
     "id": "word_89",
     "fr": "le morceau",
     "en": "bit",
-    "de": "das StÃ¼ck",
+    "de": "das Stück",
     "es": "el pedazo",
     "type": "nom",
     "level": "A2"
@@ -856,7 +856,7 @@
   },
   {
     "id": "word_96",
-    "fr": "rÃ©server",
+    "fr": "réserver",
     "en": "book",
     "de": "buchen",
     "es": "reservar",
@@ -894,8 +894,8 @@
     "id": "word_100",
     "fr": "le bol",
     "en": "bowl",
-    "de": "die SchÃ¼ssel",
-    "es": "el tazÃ³n",
+    "de": "die Schüssel",
+    "es": "el tazón",
     "type": "nom",
     "level": "A2"
   },
@@ -912,7 +912,7 @@
     "id": "word_102",
     "fr": "le pont",
     "en": "bridge",
-    "de": "die BrÃ¼cke",
+    "de": "die Brücke",
     "es": "el puente",
     "type": "nom",
     "level": "A2"
@@ -928,7 +928,7 @@
   },
   {
     "id": "word_104",
-    "fr": "gÃ©nial",
+    "fr": "génial",
     "en": "brilliant",
     "de": "brillant",
     "es": "genial",
@@ -937,7 +937,7 @@
   },
   {
     "id": "word_105",
-    "fr": "cassÃ©",
+    "fr": "cassé",
     "en": "broken",
     "de": "kaputt",
     "es": "roto",
@@ -948,7 +948,7 @@
     "id": "word_106",
     "fr": "la brosse",
     "en": "brush",
-    "de": "die BÃ¼rste",
+    "de": "die Bürste",
     "es": "el cepillo",
     "type": "nom",
     "level": "A2"
@@ -957,7 +957,7 @@
     "id": "word_107",
     "fr": "brosser",
     "en": "brush",
-    "de": "bÃ¼rsten",
+    "de": "bürsten",
     "es": "cepillar",
     "type": "verbe",
     "level": "A2"
@@ -973,7 +973,7 @@
   },
   {
     "id": "word_109",
-    "fr": "brÃ»ler",
+    "fr": "brûler",
     "en": "burn",
     "de": "brennen",
     "es": "quemar",
@@ -984,7 +984,7 @@
     "id": "word_110",
     "fr": "l'homme d'affaires",
     "en": "businessman",
-    "de": "der GeschÃ¤ftsmann",
+    "de": "der Geschäftsmann",
     "es": "el empresario",
     "type": "nom",
     "level": "A2"
@@ -1003,7 +1003,7 @@
     "fr": "le bouton",
     "en": "button",
     "de": "der Knopf",
-    "es": "el botÃ³n",
+    "es": "el botón",
     "type": "nom",
     "level": "A2"
   },
@@ -1056,7 +1056,7 @@
     "id": "word_118",
     "fr": "se soucier",
     "en": "care",
-    "de": "sich kÃ¼mmern",
+    "de": "sich kümmern",
     "es": "importar",
     "type": "verbe",
     "level": "A2"
@@ -1090,7 +1090,7 @@
   },
   {
     "id": "word_122",
-    "fr": "le dessin animÃ©",
+    "fr": "le dessin animé",
     "en": "cartoon",
     "de": "der Zeichentrickfilm",
     "es": "el dibujo animado",
@@ -1126,7 +1126,7 @@
   },
   {
     "id": "word_126",
-    "fr": "le chÃ¢teau",
+    "fr": "le château",
     "en": "castle",
     "de": "die Burg",
     "es": "el castillo",
@@ -1162,7 +1162,7 @@
   },
   {
     "id": "word_130",
-    "fr": "cÃ©lÃ©brer",
+    "fr": "célébrer",
     "en": "celebrate",
     "de": "feiern",
     "es": "celebrar",
@@ -1171,9 +1171,9 @@
   },
   {
     "id": "word_131",
-    "fr": "la cÃ©lÃ©britÃ©",
+    "fr": "la célébrité",
     "en": "celebrity",
-    "de": "die BerÃ¼hmtheit",
+    "de": "die Berühmtheit",
     "es": "la celebridad",
     "type": "nom",
     "level": "A2"
@@ -1198,7 +1198,7 @@
   },
   {
     "id": "word_134",
-    "fr": "la chance / l'opportunitÃ©",
+    "fr": "la chance / l'opportunité",
     "en": "chance",
     "de": "die Chance",
     "es": "la oportunidad",
@@ -1207,10 +1207,10 @@
   },
   {
     "id": "word_135",
-    "fr": "le caractÃ¨re",
+    "fr": "le caractère",
     "en": "character",
     "de": "der Charakter",
-    "es": "el carÃ¡cter",
+    "es": "el carácter",
     "type": "nom",
     "level": "A2"
   },
@@ -1218,7 +1218,7 @@
     "id": "word_136",
     "fr": "l'association caritative",
     "en": "charity",
-    "de": "die WohltÃ¤tigkeit",
+    "de": "die Wohltätigkeit",
     "es": "la caridad",
     "type": "nom",
     "level": "A2"
@@ -1245,7 +1245,7 @@
     "id": "word_139",
     "fr": "le chef",
     "en": "chef",
-    "de": "der KÃ¼chenchef",
+    "de": "der Küchenchef",
     "es": "el chef",
     "type": "nom",
     "level": "A2"
@@ -1255,7 +1255,7 @@
     "fr": "la chimie",
     "en": "chemistry",
     "de": "die Chemie",
-    "es": "la quÃ­mica",
+    "es": "la química",
     "type": "nom",
     "level": "A2"
   },
@@ -1273,13 +1273,13 @@
     "fr": "le choix",
     "en": "choice",
     "de": "die Wahl",
-    "es": "la elecciÃ³n",
+    "es": "la elección",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_143",
-    "fr": "l'Ã©glise",
+    "fr": "l'église",
     "en": "church",
     "de": "die Kirche",
     "es": "la iglesia",
@@ -1300,7 +1300,7 @@
     "fr": "le cercle",
     "en": "circle",
     "de": "der Kreis",
-    "es": "el cÃ­rculo",
+    "es": "el círculo",
     "type": "nom",
     "level": "A2"
   },
@@ -1309,7 +1309,7 @@
     "fr": "classique",
     "en": "classical",
     "de": "klassisch",
-    "es": "clÃ¡sico",
+    "es": "clásico",
     "type": "adjectif",
     "level": "A2"
   },
@@ -1360,7 +1360,7 @@
   },
   {
     "id": "word_152",
-    "fr": "fermÃ©",
+    "fr": "fermé",
     "en": "closed",
     "de": "geschlossen",
     "es": "cerrado",
@@ -1369,7 +1369,7 @@
   },
   {
     "id": "word_153",
-    "fr": "les vÃªtements",
+    "fr": "les vêtements",
     "en": "clothing",
     "de": "die Kleidung",
     "es": "la ropa",
@@ -1387,7 +1387,7 @@
   },
   {
     "id": "word_155",
-    "fr": "l'entraÃ®neur",
+    "fr": "l'entraîneur",
     "en": "coach",
     "de": "der Trainer",
     "es": "el entrenador",
@@ -1396,9 +1396,9 @@
   },
   {
     "id": "word_156",
-    "fr": "la cÃ´te",
+    "fr": "la côte",
     "en": "coast",
-    "de": "die KÃ¼ste",
+    "de": "die Küste",
     "es": "la costa",
     "type": "nom",
     "level": "A2"
@@ -1408,22 +1408,22 @@
     "fr": "le code",
     "en": "code",
     "de": "der Code",
-    "es": "el cÃ³digo",
+    "es": "el código",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_158",
-    "fr": "la piÃ¨ce de monnaie",
+    "fr": "la pièce de monnaie",
     "en": "coin",
-    "de": "die MÃ¼nze",
+    "de": "die Münze",
     "es": "la moneda",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_159",
-    "fr": "le collÃ¨gue",
+    "fr": "le collègue",
     "en": "colleague",
     "de": "der Kollege",
     "es": "el colega",
@@ -1450,9 +1450,9 @@
   },
   {
     "id": "word_162",
-    "fr": "la comÃ©die",
+    "fr": "la comédie",
     "en": "comedy",
-    "de": "die KomÃ¶die",
+    "de": "die Komödie",
     "es": "la comedia",
     "type": "nom",
     "level": "A2"
@@ -1462,7 +1462,7 @@
     "fr": "confortable",
     "en": "comfortable",
     "de": "bequem",
-    "es": "cÃ³modo",
+    "es": "cómodo",
     "type": "adjectif",
     "level": "A2"
   },
@@ -1471,7 +1471,7 @@
     "fr": "commun",
     "en": "common",
     "de": "gemeinsam",
-    "es": "comÃºn",
+    "es": "común",
     "type": "adjectif",
     "level": "A2"
   },
@@ -1495,7 +1495,7 @@
   },
   {
     "id": "word_167",
-    "fr": "la communautÃ©",
+    "fr": "la communauté",
     "en": "community",
     "de": "die Gemeinschaft",
     "es": "la comunidad",
@@ -1522,7 +1522,7 @@
   },
   {
     "id": "word_170",
-    "fr": "la compÃ©tition",
+    "fr": "la compétition",
     "en": "competition",
     "de": "der Wettbewerb",
     "es": "la competencia",
@@ -1540,9 +1540,9 @@
   },
   {
     "id": "word_172",
-    "fr": "complÃ¨tement",
+    "fr": "complètement",
     "en": "completely",
-    "de": "vollstÃ¤ndig",
+    "de": "vollständig",
     "es": "completamente",
     "type": "adverbe",
     "level": "A2"
@@ -1552,13 +1552,13 @@
     "fr": "la condition",
     "en": "condition",
     "de": "die Bedingung",
-    "es": "la condiciÃ³n",
+    "es": "la condición",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_174",
-    "fr": "la confÃ©rence",
+    "fr": "la conférence",
     "en": "conference",
     "de": "die Konferenz",
     "es": "la conferencia",
@@ -1576,7 +1576,7 @@
   },
   {
     "id": "word_176",
-    "fr": "connectÃ©",
+    "fr": "connecté",
     "en": "connected",
     "de": "verbunden",
     "es": "conectado",
@@ -1585,7 +1585,7 @@
   },
   {
     "id": "word_177",
-    "fr": "considÃ©rer",
+    "fr": "considérer",
     "en": "consider",
     "de": "betrachten",
     "es": "considerar",
@@ -1624,13 +1624,13 @@
     "fr": "la conversation",
     "en": "conversation",
     "de": "die Konversation",
-    "es": "la conversaciÃ³n",
+    "es": "la conversación",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_182",
-    "fr": "le contrÃ´le",
+    "fr": "le contrôle",
     "en": "control",
     "de": "die Kontrolle",
     "es": "el control",
@@ -1639,7 +1639,7 @@
   },
   {
     "id": "word_183",
-    "fr": "contrÃ´ler",
+    "fr": "contrôler",
     "en": "control",
     "de": "kontrollieren",
     "es": "controlar",
@@ -1657,7 +1657,7 @@
   },
   {
     "id": "word_185",
-    "fr": "la cuisiniÃ¨re (four)",
+    "fr": "la cuisinière (four)",
     "en": "cooker",
     "de": "der Herd",
     "es": "la cocina",
@@ -1704,7 +1704,7 @@
     "id": "word_190",
     "fr": "compter",
     "en": "count",
-    "de": "zÃ¤hlen",
+    "de": "zählen",
     "es": "contar",
     "type": "verbe",
     "level": "A2"
@@ -1722,14 +1722,14 @@
     "id": "word_192",
     "fr": "fou",
     "en": "crazy",
-    "de": "verrÃ¼ckt",
+    "de": "verrückt",
     "es": "loco",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_193",
-    "fr": "crÃ©atif",
+    "fr": "créatif",
     "en": "creative",
     "de": "kreativ",
     "es": "creativo",
@@ -1758,7 +1758,7 @@
     "id": "word_196",
     "fr": "traverser",
     "en": "cross",
-    "de": "Ã¼berqueren",
+    "de": "überqueren",
     "es": "cruzar",
     "type": "verbe",
     "level": "A2"
@@ -1783,9 +1783,9 @@
   },
   {
     "id": "word_199",
-    "fr": "bondÃ©",
+    "fr": "bondé",
     "en": "crowded",
-    "de": "Ã¼berfÃ¼llt",
+    "de": "überfüllt",
     "es": "lleno",
     "type": "adjectif",
     "level": "A2"
@@ -1810,7 +1810,7 @@
   },
   {
     "id": "word_202",
-    "fr": "bouclÃ©",
+    "fr": "bouclé",
     "en": "curly",
     "de": "lockig",
     "es": "rizado",
@@ -1837,7 +1837,7 @@
   },
   {
     "id": "word_205",
-    "fr": "faire du vÃ©lo",
+    "fr": "faire du vélo",
     "en": "cycle",
     "de": "Rad fahren",
     "es": "ir en bicicleta",
@@ -1848,7 +1848,7 @@
     "id": "word_206",
     "fr": "quotidiennement",
     "en": "daily",
-    "de": "tÃ¤glich",
+    "de": "täglich",
     "es": "diariamente",
     "type": "adverbe",
     "level": "A2"
@@ -1882,7 +1882,7 @@
   },
   {
     "id": "word_210",
-    "fr": "gÃ©rer",
+    "fr": "gérer",
     "en": "deal with",
     "de": "sich befassen mit",
     "es": "lidiar con",
@@ -1900,10 +1900,10 @@
   },
   {
     "id": "word_212",
-    "fr": "la dÃ©cision",
+    "fr": "la décision",
     "en": "decision",
     "de": "die Entscheidung",
-    "es": "la decisiÃ³n",
+    "es": "la decisión",
     "type": "nom",
     "level": "A2"
   },
@@ -1918,7 +1918,7 @@
   },
   {
     "id": "word_214",
-    "fr": "dÃ©finitivement",
+    "fr": "définitivement",
     "en": "definitely",
     "de": "definitiv",
     "es": "definitivamente",
@@ -1927,7 +1927,7 @@
   },
   {
     "id": "word_215",
-    "fr": "le diplÃ´me / le degrÃ©",
+    "fr": "le diplôme / le degré",
     "en": "degree",
     "de": "der Abschluss",
     "es": "el grado",
@@ -1945,7 +1945,7 @@
   },
   {
     "id": "word_217",
-    "fr": "le dÃ©partement",
+    "fr": "le département",
     "en": "department",
     "de": "die Abteilung",
     "es": "el departamento",
@@ -1954,16 +1954,16 @@
   },
   {
     "id": "word_218",
-    "fr": "dÃ©pendre",
+    "fr": "dépendre",
     "en": "depend",
-    "de": "abhÃ¤ngen",
+    "de": "abhängen",
     "es": "depender",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_219",
-    "fr": "dÃ©crire",
+    "fr": "décrire",
     "en": "describe",
     "de": "beschreiben",
     "es": "describir",
@@ -1975,15 +1975,15 @@
     "fr": "la description",
     "en": "description",
     "de": "die Beschreibung",
-    "es": "la descripciÃ³n",
+    "es": "la descripción",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_221",
-    "fr": "le dÃ©sert",
+    "fr": "le désert",
     "en": "desert",
-    "de": "die WÃ¼ste",
+    "de": "die Wüste",
     "es": "el desierto",
     "type": "nom",
     "level": "A2"
@@ -1993,7 +1993,7 @@
     "fr": "le design",
     "en": "design",
     "de": "das Design",
-    "es": "el diseÃ±o",
+    "es": "el diseño",
     "type": "nom",
     "level": "A2"
   },
@@ -2002,7 +2002,7 @@
     "fr": "concevoir",
     "en": "design",
     "de": "entwerfen",
-    "es": "diseÃ±ar",
+    "es": "diseñar",
     "type": "verbe",
     "level": "A2"
   },
@@ -2011,22 +2011,22 @@
     "fr": "le designer",
     "en": "designer",
     "de": "der Designer",
-    "es": "el diseÃ±ador",
+    "es": "el diseñador",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_225",
-    "fr": "dÃ©truire",
+    "fr": "détruire",
     "en": "destroy",
-    "de": "zerstÃ¶ren",
+    "de": "zerstören",
     "es": "destruir",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_226",
-    "fr": "le dÃ©tective",
+    "fr": "le détective",
     "en": "detective",
     "de": "der Detektiv",
     "es": "el detective",
@@ -2035,7 +2035,7 @@
   },
   {
     "id": "word_227",
-    "fr": "dÃ©velopper",
+    "fr": "développer",
     "en": "develop",
     "de": "entwickeln",
     "es": "desarrollar",
@@ -2046,7 +2046,7 @@
     "id": "word_228",
     "fr": "l'appareil",
     "en": "device",
-    "de": "das GerÃ¤t",
+    "de": "das Gerät",
     "es": "el dispositivo",
     "type": "nom",
     "level": "A2"
@@ -2062,7 +2062,7 @@
   },
   {
     "id": "word_230",
-    "fr": "la diffÃ©rence",
+    "fr": "la différence",
     "en": "difference",
     "de": "der Unterschied",
     "es": "la diferencia",
@@ -2071,7 +2071,7 @@
   },
   {
     "id": "word_231",
-    "fr": "diffÃ©remment",
+    "fr": "différemment",
     "en": "differently",
     "de": "anders",
     "es": "diferentemente",
@@ -2080,7 +2080,7 @@
   },
   {
     "id": "word_232",
-    "fr": "numÃ©rique",
+    "fr": "numérique",
     "en": "digital",
     "de": "digital",
     "es": "digital",
@@ -2110,7 +2110,7 @@
     "fr": "la direction",
     "en": "direction",
     "de": "die Richtung",
-    "es": "la direcciÃ³n",
+    "es": "la dirección",
     "type": "nom",
     "level": "A2"
   },
@@ -2125,7 +2125,7 @@
   },
   {
     "id": "word_237",
-    "fr": "Ãªtre en dÃ©saccord",
+    "fr": "être en désaccord",
     "en": "disagree",
     "de": "nicht zustimmen",
     "es": "no estar de acuerdo",
@@ -2134,7 +2134,7 @@
   },
   {
     "id": "word_238",
-    "fr": "disparaÃ®tre",
+    "fr": "disparaître",
     "en": "disappear",
     "de": "verschwinden",
     "es": "desaparecer",
@@ -2143,7 +2143,7 @@
   },
   {
     "id": "word_239",
-    "fr": "le dÃ©sastre",
+    "fr": "le désastre",
     "en": "disaster",
     "de": "die Katastrophe",
     "es": "el desastre",
@@ -2152,7 +2152,7 @@
   },
   {
     "id": "word_240",
-    "fr": "dÃ©couvrir",
+    "fr": "découvrir",
     "en": "discover",
     "de": "entdecken",
     "es": "descubrir",
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "word_241",
-    "fr": "la dÃ©couverte",
+    "fr": "la découverte",
     "en": "discovery",
     "de": "die Entdeckung",
     "es": "el descubrimiento",
@@ -2173,7 +2173,7 @@
     "fr": "la discussion",
     "en": "discussion",
     "de": "die Diskussion",
-    "es": "la discusiÃ³n",
+    "es": "la discusión",
     "type": "nom",
     "level": "A2"
   },
@@ -2197,7 +2197,7 @@
   },
   {
     "id": "word_245",
-    "fr": "divorcÃ©",
+    "fr": "divorcé",
     "en": "divorced",
     "de": "geschieden",
     "es": "divorciado",
@@ -2233,7 +2233,7 @@
   },
   {
     "id": "word_249",
-    "fr": "tÃ©lÃ©charger",
+    "fr": "télécharger",
     "en": "download",
     "de": "herunterladen",
     "es": "descargar",
@@ -2242,7 +2242,7 @@
   },
   {
     "id": "word_250",
-    "fr": "en bas (Ã©tage)",
+    "fr": "en bas (étage)",
     "en": "downstairs",
     "de": "unten",
     "es": "abajo",
@@ -2269,19 +2269,19 @@
   },
   {
     "id": "word_253",
-    "fr": "le rÃªve",
+    "fr": "le rêve",
     "en": "dream",
     "de": "der Traum",
-    "es": "el sueÃ±o",
+    "es": "el sueño",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_254",
-    "fr": "rÃªver",
+    "fr": "rêver",
     "en": "dream",
-    "de": "trÃ¤umen",
-    "es": "soÃ±ar",
+    "de": "träumen",
+    "es": "soñar",
     "type": "verbe",
     "level": "A2"
   },
@@ -2299,7 +2299,7 @@
     "fr": "la conduite",
     "en": "driving",
     "de": "das Fahren",
-    "es": "la conducciÃ³n",
+    "es": "la conducción",
     "type": "nom",
     "level": "A2"
   },
@@ -2314,7 +2314,7 @@
   },
   {
     "id": "word_258",
-    "fr": "la drogue / le mÃ©dicament",
+    "fr": "la drogue / le médicament",
     "en": "drug",
     "de": "das Medikament",
     "es": "la droga",
@@ -2332,7 +2332,7 @@
   },
   {
     "id": "word_260",
-    "fr": "sÃ©cher",
+    "fr": "sécher",
     "en": "dry",
     "de": "trocknen",
     "es": "secar",
@@ -2371,16 +2371,16 @@
     "fr": "facilement",
     "en": "easily",
     "de": "leicht",
-    "es": "fÃ¡cilmente",
+    "es": "fácilmente",
     "type": "adverbe",
     "level": "A2"
   },
   {
     "id": "word_265",
-    "fr": "l'Ã©ducation",
+    "fr": "l'éducation",
     "en": "education",
     "de": "die Bildung",
-    "es": "la educaciÃ³n",
+    "es": "la educación",
     "type": "nom",
     "level": "A2"
   },
@@ -2395,37 +2395,37 @@
   },
   {
     "id": "word_267",
-    "fr": "Ã©lectrique",
+    "fr": "électrique",
     "en": "electric",
     "de": "elektrisch",
-    "es": "elÃ©ctrico",
+    "es": "eléctrico",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_268",
-    "fr": "Ã©lectrique (matÃ©riel)",
+    "fr": "électrique (matériel)",
     "en": "electrical",
     "de": "elektrisch",
-    "es": "elÃ©ctrico",
+    "es": "eléctrico",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_269",
-    "fr": "l'Ã©lectricitÃ©",
+    "fr": "l'électricité",
     "en": "electricity",
-    "de": "die ElektrizitÃ¤t",
+    "de": "die Elektrizität",
     "es": "la electricidad",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_270",
-    "fr": "Ã©lectronique",
+    "fr": "électronique",
     "en": "electronic",
     "de": "elektronisch",
-    "es": "electrÃ³nico",
+    "es": "electrónico",
     "type": "adjectif",
     "level": "A2"
   },
@@ -2433,14 +2433,14 @@
     "id": "word_271",
     "fr": "employer",
     "en": "employ",
-    "de": "beschÃ¤ftigen",
+    "de": "beschäftigen",
     "es": "emplear",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_272",
-    "fr": "l'employÃ©",
+    "fr": "l'employé",
     "en": "employee",
     "de": "der Mitarbeiter",
     "es": "el empleado",
@@ -2461,7 +2461,7 @@
     "fr": "vide",
     "en": "empty",
     "de": "leer",
-    "es": "vacÃ­o",
+    "es": "vacío",
     "type": "adjectif",
     "level": "A2"
   },
@@ -2476,10 +2476,10 @@
   },
   {
     "id": "word_276",
-    "fr": "l'Ã©nergie",
+    "fr": "l'énergie",
     "en": "energy",
     "de": "die Energie",
-    "es": "la energÃ­a",
+    "es": "la energía",
     "type": "nom",
     "level": "A2"
   },
@@ -2494,7 +2494,7 @@
   },
   {
     "id": "word_278",
-    "fr": "l'ingÃ©nieur",
+    "fr": "l'ingénieur",
     "en": "engineer",
     "de": "der Ingenieur",
     "es": "el ingeniero",
@@ -2503,7 +2503,7 @@
   },
   {
     "id": "word_279",
-    "fr": "Ã©norme",
+    "fr": "énorme",
     "en": "enormous",
     "de": "enorm",
     "es": "enorme",
@@ -2521,7 +2521,7 @@
   },
   {
     "id": "word_281",
-    "fr": "assez (quantitÃ©)",
+    "fr": "assez (quantité)",
     "en": "enough",
     "de": "genug",
     "es": "suficiente",
@@ -2530,9 +2530,9 @@
   },
   {
     "id": "word_282",
-    "fr": "l'Ã©quipement",
+    "fr": "l'équipement",
     "en": "equipment",
-    "de": "die AusrÃ¼stung",
+    "de": "die Ausrüstung",
     "es": "el equipo",
     "type": "nom",
     "level": "A2"
@@ -2548,7 +2548,7 @@
   },
   {
     "id": "word_284",
-    "fr": "surtout / particuliÃ¨rement",
+    "fr": "surtout / particulièrement",
     "en": "especially",
     "de": "besonders",
     "es": "especialmente",
@@ -2568,7 +2568,7 @@
     "id": "word_286",
     "fr": "quotidien",
     "en": "everyday",
-    "de": "alltÃ¤glich",
+    "de": "alltäglich",
     "es": "cotidiano",
     "type": "adjectif",
     "level": "A2"
@@ -2577,7 +2577,7 @@
     "id": "word_287",
     "fr": "partout",
     "en": "everywhere",
-    "de": "Ã¼berall",
+    "de": "überall",
     "es": "en todas partes",
     "type": "adverbe",
     "level": "A2"
@@ -2613,7 +2613,7 @@
     "id": "word_291",
     "fr": "sauf",
     "en": "except",
-    "de": "auÃŸer",
+    "de": "außer",
     "es": "excepto",
     "type": "prep",
     "level": "A2"
@@ -2629,7 +2629,7 @@
   },
   {
     "id": "word_293",
-    "fr": "s'attendre Ã ",
+    "fr": "s'attendre à",
     "en": "expect",
     "de": "erwarten",
     "es": "esperar",
@@ -2638,7 +2638,7 @@
   },
   {
     "id": "word_294",
-    "fr": "l'expÃ©rience",
+    "fr": "l'expérience",
     "en": "experience",
     "de": "die Erfahrung",
     "es": "la experiencia",
@@ -2647,7 +2647,7 @@
   },
   {
     "id": "word_295",
-    "fr": "l'expÃ©rience scientifique",
+    "fr": "l'expérience scientifique",
     "en": "experiment",
     "de": "das Experiment",
     "es": "el experimento",
@@ -2667,8 +2667,8 @@
     "id": "word_297",
     "fr": "l'explication",
     "en": "explanation",
-    "de": "die ErklÃ¤rung",
-    "es": "la explicaciÃ³n",
+    "de": "die Erklärung",
+    "es": "la explicación",
     "type": "nom",
     "level": "A2"
   },
@@ -2676,7 +2676,7 @@
     "id": "word_298",
     "fr": "exprimer",
     "en": "express",
-    "de": "ausdrÃ¼cken",
+    "de": "ausdrücken",
     "es": "expresar",
     "type": "verbe",
     "level": "A2"
@@ -2686,13 +2686,13 @@
     "fr": "l'expression",
     "en": "expression",
     "de": "der Ausdruck",
-    "es": "la expresiÃ³n",
+    "es": "la expresión",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_300",
-    "fr": "extrÃªme",
+    "fr": "extrême",
     "en": "extreme",
     "de": "extrem",
     "es": "extremo",
@@ -2701,7 +2701,7 @@
   },
   {
     "id": "word_301",
-    "fr": "extrÃªmement",
+    "fr": "extrêmement",
     "en": "extremely",
     "de": "extrem",
     "es": "extremadamente",
@@ -2713,13 +2713,13 @@
     "fr": "l'usine",
     "en": "factory",
     "de": "die Fabrik",
-    "es": "la fÃ¡brica",
+    "es": "la fábrica",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_303",
-    "fr": "Ã©chouer",
+    "fr": "échouer",
     "en": "fail",
     "de": "scheitern",
     "es": "fallar",
@@ -2728,7 +2728,7 @@
   },
   {
     "id": "word_304",
-    "fr": "juste / Ã©quitable",
+    "fr": "juste / équitable",
     "en": "fair",
     "de": "fair",
     "es": "justo",
@@ -2793,14 +2793,14 @@
     "id": "word_311",
     "fr": "le sentiment",
     "en": "feeling",
-    "de": "das GefÃ¼hl",
+    "de": "das Gefühl",
     "es": "el sentimiento",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_312",
-    "fr": "la femelle / fÃ©minin",
+    "fr": "la femelle / féminin",
     "en": "female",
     "de": "weiblich",
     "es": "la hembra",
@@ -2812,7 +2812,7 @@
     "fr": "la fiction",
     "en": "fiction",
     "de": "die Fiktion",
-    "es": "la ficciÃ³n",
+    "es": "la ficción",
     "type": "nom",
     "level": "A2"
   },
@@ -2838,7 +2838,7 @@
     "id": "word_316",
     "fr": "combattre",
     "en": "fight",
-    "de": "kÃ¤mpfen",
+    "de": "kämpfen",
     "es": "pelear",
     "type": "verbe",
     "level": "A2"
@@ -2866,7 +2866,7 @@
     "fr": "le film",
     "en": "film",
     "de": "der Film",
-    "es": "la pelÃ­cula",
+    "es": "la película",
     "type": "nom",
     "level": "A2"
   },
@@ -2874,7 +2874,7 @@
     "id": "word_320",
     "fr": "finalement",
     "en": "finally",
-    "de": "schlieÃŸlich",
+    "de": "schließlich",
     "es": "finalmente",
     "type": "adverbe",
     "level": "A2"
@@ -2899,7 +2899,7 @@
   },
   {
     "id": "word_323",
-    "fr": "premiÃ¨rement",
+    "fr": "premièrement",
     "en": "firstly",
     "de": "erstens",
     "es": "en primer lugar",
@@ -2908,7 +2908,7 @@
   },
   {
     "id": "word_324",
-    "fr": "pÃªcher",
+    "fr": "pêcher",
     "en": "fish",
     "de": "angeln",
     "es": "pescar",
@@ -2917,7 +2917,7 @@
   },
   {
     "id": "word_325",
-    "fr": "la pÃªche",
+    "fr": "la pêche",
     "en": "fishing",
     "de": "das Angeln",
     "es": "la pesca",
@@ -2926,7 +2926,7 @@
   },
   {
     "id": "word_326",
-    "fr": "en forme (santÃ©)",
+    "fr": "en forme (santé)",
     "en": "fit",
     "de": "fit",
     "es": "en forma",
@@ -2989,16 +2989,16 @@
   },
   {
     "id": "word_333",
-    "fr": "Ã©tranger",
+    "fr": "étranger",
     "en": "foreign",
-    "de": "auslÃ¤ndisch",
+    "de": "ausländisch",
     "es": "extranjero",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_334",
-    "fr": "la forÃªt",
+    "fr": "la forêt",
     "en": "forest",
     "de": "der Wald",
     "es": "el bosque",
@@ -3027,7 +3027,7 @@
     "id": "word_337",
     "fr": "heureusement",
     "en": "fortunately",
-    "de": "glÃ¼cklicherweise",
+    "de": "glücklicherweise",
     "es": "afortunadamente",
     "type": "adverbe",
     "level": "A2"
@@ -3036,7 +3036,7 @@
     "id": "word_338",
     "fr": "en avant",
     "en": "forward",
-    "de": "vorwÃ¤rts",
+    "de": "vorwärts",
     "es": "adelante",
     "type": "adverbe",
     "level": "A2"
@@ -3052,9 +3052,9 @@
   },
   {
     "id": "word_340",
-    "fr": "le rÃ©frigÃ©rateur",
+    "fr": "le réfrigérateur",
     "en": "fridge",
-    "de": "der KÃ¼hlschrank",
+    "de": "der Kühlschrank",
     "es": "el refrigerador",
     "type": "nom",
     "level": "A2"
@@ -3072,7 +3072,7 @@
     "id": "word_342",
     "fr": "les meubles",
     "en": "furniture",
-    "de": "die MÃ¶bel",
+    "de": "die Möbel",
     "es": "los muebles",
     "type": "nom",
     "level": "A2"
@@ -3082,7 +3082,7 @@
     "fr": "plus loin",
     "en": "further",
     "de": "weiter",
-    "es": "mÃ¡s lejos",
+    "es": "más lejos",
     "type": "adverbe",
     "level": "A2"
   },
@@ -3091,15 +3091,15 @@
     "fr": "la galerie",
     "en": "gallery",
     "de": "die Galerie",
-    "es": "la galerÃ­a",
+    "es": "la galería",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_345",
-    "fr": "l'Ã©cart / le trou",
+    "fr": "l'écart / le trou",
     "en": "gap",
-    "de": "die LÃ¼cke",
+    "de": "die Lücke",
     "es": "el hueco",
     "type": "nom",
     "level": "A2"
@@ -3124,7 +3124,7 @@
   },
   {
     "id": "word_348",
-    "fr": "gÃ©nÃ©ral",
+    "fr": "général",
     "en": "general",
     "de": "allgemein",
     "es": "general",
@@ -3151,7 +3151,7 @@
   },
   {
     "id": "word_351",
-    "fr": "la chÃ¨vre",
+    "fr": "la chèvre",
     "en": "goat",
     "de": "die Ziege",
     "es": "la cabra",
@@ -3216,7 +3216,7 @@
     "id": "word_358",
     "fr": "saluer",
     "en": "greet",
-    "de": "grÃ¼ÃŸen",
+    "de": "grüßen",
     "es": "saludar",
     "type": "verbe",
     "level": "A2"
@@ -3232,7 +3232,7 @@
   },
   {
     "id": "word_360",
-    "fr": "l'invitÃ©",
+    "fr": "l'invité",
     "en": "guest",
     "de": "der Gast",
     "es": "el invitado",
@@ -3243,8 +3243,8 @@
     "id": "word_361",
     "fr": "le guide",
     "en": "guide",
-    "de": "der FÃ¼hrer",
-    "es": "el guÃ­a",
+    "de": "der Führer",
+    "es": "el guía",
     "type": "nom",
     "level": "A2"
   },
@@ -3252,7 +3252,7 @@
     "id": "word_362",
     "fr": "guider",
     "en": "guide",
-    "de": "fÃ¼hren",
+    "de": "führen",
     "es": "guiar",
     "type": "verbe",
     "level": "A2"
@@ -3280,15 +3280,15 @@
     "fr": "l'habitude",
     "en": "habit",
     "de": "die Gewohnheit",
-    "es": "el hÃ¡bito",
+    "es": "el hábito",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_366",
-    "fr": "la moitiÃ©",
+    "fr": "la moitié",
     "en": "half",
-    "de": "die HÃ¤lfte",
+    "de": "die Hälfte",
     "es": "la mitad",
     "type": "nom",
     "level": "A2"
@@ -3306,14 +3306,14 @@
     "id": "word_368",
     "fr": "joyeusement",
     "en": "happily",
-    "de": "glÃ¼cklich",
+    "de": "glücklich",
     "es": "felizmente",
     "type": "adverbe",
     "level": "A2"
   },
   {
     "id": "word_369",
-    "fr": "le mal de tÃªte",
+    "fr": "le mal de tête",
     "en": "headache",
     "de": "die Kopfschmerzen",
     "es": "el dolor de cabeza",
@@ -3322,10 +3322,10 @@
   },
   {
     "id": "word_370",
-    "fr": "le cÅ“ur",
+    "fr": "le cœur",
     "en": "heart",
     "de": "das Herz",
-    "es": "el corazÃ³n",
+    "es": "el corazón",
     "type": "nom",
     "level": "A2"
   },
@@ -3351,7 +3351,7 @@
     "id": "word_373",
     "fr": "la taille / la hauteur",
     "en": "height",
-    "de": "die HÃ¶he",
+    "de": "die Höhe",
     "es": "la altura",
     "type": "nom",
     "level": "A2"
@@ -3361,22 +3361,22 @@
     "fr": "utile",
     "en": "helpful",
     "de": "hilfreich",
-    "es": "Ãºtil",
+    "es": "útil",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_375",
-    "fr": "le hÃ©ros",
+    "fr": "le héros",
     "en": "hero",
     "de": "der Held",
-    "es": "el hÃ©roe",
+    "es": "el héroe",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_376",
-    "fr": "le sien / la sienne (Ã  elle)",
+    "fr": "le sien / la sienne (à elle)",
     "en": "hers",
     "de": "ihrer",
     "es": "suyo (de ella)",
@@ -3385,7 +3385,7 @@
   },
   {
     "id": "word_377",
-    "fr": "elle-mÃªme",
+    "fr": "elle-même",
     "en": "herself",
     "de": "sie selbst",
     "es": "ella misma",
@@ -3414,26 +3414,26 @@
     "id": "word_380",
     "fr": "la colline",
     "en": "hill",
-    "de": "der HÃ¼gel",
+    "de": "der Hügel",
     "es": "la colina",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_381",
-    "fr": "lui-mÃªme",
+    "fr": "lui-même",
     "en": "himself",
     "de": "er selbst",
-    "es": "Ã©l mismo",
+    "es": "él mismo",
     "type": "pron",
     "level": "A2"
   },
   {
     "id": "word_382",
-    "fr": "le sien (Ã  lui)",
+    "fr": "le sien (à lui)",
     "en": "his",
     "de": "sein",
-    "es": "suyo (de Ã©l)",
+    "es": "suyo (de él)",
     "type": "pron",
     "level": "A2"
   },
@@ -3520,7 +3520,7 @@
   },
   {
     "id": "word_392",
-    "fr": "se dÃ©pÃªcher",
+    "fr": "se dépêcher",
     "en": "hurry",
     "de": "sich beeilen",
     "es": "apurarse",
@@ -3529,7 +3529,7 @@
   },
   {
     "id": "word_393",
-    "fr": "la hÃ¢te",
+    "fr": "la hâte",
     "en": "hurry",
     "de": "die Eile",
     "es": "la prisa",
@@ -3547,7 +3547,7 @@
   },
   {
     "id": "word_395",
-    "fr": "idÃ©al",
+    "fr": "idéal",
     "en": "ideal",
     "de": "ideal",
     "es": "ideal",
@@ -3601,7 +3601,7 @@
   },
   {
     "id": "word_401",
-    "fr": "immÃ©diatement",
+    "fr": "immédiatement",
     "en": "immediately",
     "de": "sofort",
     "es": "inmediatamente",
@@ -3612,7 +3612,7 @@
     "id": "word_402",
     "fr": "impossible",
     "en": "impossible",
-    "de": "unmÃ¶glich",
+    "de": "unmöglich",
     "es": "imposible",
     "type": "adjectif",
     "level": "A2"
@@ -3630,7 +3630,7 @@
     "id": "word_404",
     "fr": "y compris",
     "en": "including",
-    "de": "einschlieÃŸlich",
+    "de": "einschließlich",
     "es": "incluyendo",
     "type": "prep",
     "level": "A2"
@@ -3639,7 +3639,7 @@
     "id": "word_405",
     "fr": "augmenter",
     "en": "increase",
-    "de": "erhÃ¶hen",
+    "de": "erhöhen",
     "es": "aumentar",
     "type": "verbe",
     "level": "A2"
@@ -3649,15 +3649,15 @@
     "fr": "incroyable",
     "en": "incredible",
     "de": "unglaublich",
-    "es": "increÃ­ble",
+    "es": "increíble",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_407",
-    "fr": "indÃ©pendant",
+    "fr": "indépendant",
     "en": "independent",
-    "de": "unabhÃ¤ngig",
+    "de": "unabhängig",
     "es": "independiente",
     "type": "adjectif",
     "level": "A2"
@@ -3694,7 +3694,7 @@
     "fr": "la blessure",
     "en": "injury",
     "de": "die Verletzung",
-    "es": "la lesiÃ³n",
+    "es": "la lesión",
     "type": "nom",
     "level": "A2"
   },
@@ -3718,7 +3718,7 @@
   },
   {
     "id": "word_414",
-    "fr": "Ã  l'intÃ©rieur",
+    "fr": "à l'intérieur",
     "en": "inside",
     "de": "drinnen",
     "es": "adentro",
@@ -3739,7 +3739,7 @@
     "fr": "l'instruction",
     "en": "instruction",
     "de": "die Anweisung",
-    "es": "la instrucciÃ³n",
+    "es": "la instrucción",
     "type": "nom",
     "level": "A2"
   },
@@ -3783,8 +3783,8 @@
     "id": "word_421",
     "fr": "l'introduction",
     "en": "introduction",
-    "de": "die EinfÃ¼hrung",
-    "es": "la introducciÃ³n",
+    "de": "die Einführung",
+    "es": "la introducción",
     "type": "nom",
     "level": "A2"
   },
@@ -3802,7 +3802,7 @@
     "fr": "l'invention",
     "en": "invention",
     "de": "die Erfindung",
-    "es": "la invenciÃ³n",
+    "es": "la invención",
     "type": "nom",
     "level": "A2"
   },
@@ -3811,7 +3811,7 @@
     "fr": "l'invitation",
     "en": "invitation",
     "de": "die Einladung",
-    "es": "la invitaciÃ³n",
+    "es": "la invitación",
     "type": "nom",
     "level": "A2"
   },
@@ -3835,19 +3835,19 @@
   },
   {
     "id": "word_427",
-    "fr": "l'article / l'Ã©lÃ©ment",
+    "fr": "l'article / l'élément",
     "en": "item",
     "de": "der Artikel",
-    "es": "el artÃ­culo",
+    "es": "el artículo",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_428",
-    "fr": "lui-mÃªme (chose)",
+    "fr": "lui-même (chose)",
     "en": "itself",
     "de": "sich selbst",
-    "es": "sÃ­ mismo",
+    "es": "sí mismo",
     "type": "pron",
     "level": "A2"
   },
@@ -3919,7 +3919,7 @@
     "fr": "le gamin",
     "en": "kid",
     "de": "das Kind",
-    "es": "el niÃ±o",
+    "es": "el niño",
     "type": "nom",
     "level": "A2"
   },
@@ -3927,7 +3927,7 @@
     "id": "word_437",
     "fr": "tuer",
     "en": "kill",
-    "de": "tÃ¶ten",
+    "de": "töten",
     "es": "matar",
     "type": "verbe",
     "level": "A2"
@@ -3936,7 +3936,7 @@
     "id": "word_438",
     "fr": "le roi",
     "en": "king",
-    "de": "der KÃ¶nig",
+    "de": "der König",
     "es": "el rey",
     "type": "nom",
     "level": "A2"
@@ -3945,7 +3945,7 @@
     "id": "word_439",
     "fr": "embrasser",
     "en": "kiss",
-    "de": "kÃ¼ssen",
+    "de": "küssen",
     "es": "besar",
     "type": "verbe",
     "level": "A2"
@@ -3979,7 +3979,7 @@
   },
   {
     "id": "word_443",
-    "fr": "frapper (Ã  la porte)",
+    "fr": "frapper (à la porte)",
     "en": "knock",
     "de": "klopfen",
     "es": "tocar",
@@ -4027,7 +4027,7 @@
     "fr": "la lampe",
     "en": "lamp",
     "de": "die Lampe",
-    "es": "la lÃ¡mpara",
+    "es": "la lámpara",
     "type": "nom",
     "level": "A2"
   },
@@ -4045,7 +4045,7 @@
     "fr": "l'ordinateur portable",
     "en": "laptop",
     "de": "der Laptop",
-    "es": "la computadora portÃ¡til",
+    "es": "la computadora portátil",
     "type": "nom",
     "level": "A2"
   },
@@ -4053,7 +4053,7 @@
     "id": "word_451",
     "fr": "le rire",
     "en": "laughter",
-    "de": "das GelÃ¤chter",
+    "de": "das Gelächter",
     "es": "la risa",
     "type": "nom",
     "level": "A2"
@@ -4089,7 +4089,7 @@
     "id": "word_455",
     "fr": "mener",
     "en": "lead",
-    "de": "fÃ¼hren",
+    "de": "führen",
     "es": "guiar",
     "type": "verbe",
     "level": "A2"
@@ -4098,8 +4098,8 @@
     "id": "word_456",
     "fr": "le leader",
     "en": "leader",
-    "de": "der AnfÃ¼hrer",
-    "es": "el lÃ­der",
+    "de": "der Anführer",
+    "es": "el líder",
     "type": "nom",
     "level": "A2"
   },
@@ -4123,7 +4123,7 @@
   },
   {
     "id": "word_459",
-    "fr": "la confÃ©rence (cours)",
+    "fr": "la conférence (cours)",
     "en": "lecture",
     "de": "die Vorlesung",
     "es": "la conferencia",
@@ -4135,13 +4135,13 @@
     "fr": "le citron",
     "en": "lemon",
     "de": "die Zitrone",
-    "es": "el limÃ³n",
+    "es": "el limón",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_461",
-    "fr": "prÃªter",
+    "fr": "prêter",
     "en": "lend",
     "de": "leihen",
     "es": "prestar",
@@ -4195,7 +4195,7 @@
   },
   {
     "id": "word_467",
-    "fr": "lÃ©ger",
+    "fr": "léger",
     "en": "light",
     "de": "leicht",
     "es": "ligero",
@@ -4233,7 +4233,7 @@
     "id": "word_471",
     "fr": "l'auditeur",
     "en": "listener",
-    "de": "der ZuhÃ¶rer",
+    "de": "der Zuhörer",
     "es": "el oyente",
     "type": "nom",
     "level": "A2"
@@ -4260,7 +4260,7 @@
     "id": "word_474",
     "fr": "verrouiller",
     "en": "lock",
-    "de": "abschlieÃŸen",
+    "de": "abschließen",
     "es": "cerrar con llave",
     "type": "verbe",
     "level": "A2"
@@ -4279,7 +4279,7 @@
     "fr": "le camion",
     "en": "lorry",
     "de": "der Lastwagen",
-    "es": "el camiÃ³n",
+    "es": "el camión",
     "type": "nom",
     "level": "A2"
   },
@@ -4332,7 +4332,7 @@
     "id": "word_482",
     "fr": "la chance",
     "en": "luck",
-    "de": "das GlÃ¼ck",
+    "de": "das Glück",
     "es": "la suerte",
     "type": "nom",
     "level": "A2"
@@ -4341,7 +4341,7 @@
     "id": "word_483",
     "fr": "chanceux",
     "en": "lucky",
-    "de": "glÃ¼cklich",
+    "de": "glücklich",
     "es": "afortunado",
     "type": "adjectif",
     "level": "A2"
@@ -4375,16 +4375,16 @@
   },
   {
     "id": "word_487",
-    "fr": "mÃ¢le / masculin",
+    "fr": "mâle / masculin",
     "en": "male",
-    "de": "mÃ¤nnlich",
+    "de": "männlich",
     "es": "masculino",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_488",
-    "fr": "gÃ©rer",
+    "fr": "gérer",
     "en": "manage",
     "de": "verwalten",
     "es": "manejar",
@@ -4402,7 +4402,7 @@
   },
   {
     "id": "word_490",
-    "fr": "la maniÃ¨re",
+    "fr": "la manière",
     "en": "manner",
     "de": "die Art und Weise",
     "es": "la manera",
@@ -4441,13 +4441,13 @@
     "fr": "le masque",
     "en": "mask",
     "de": "die Maske",
-    "es": "la mÃ¡scara",
+    "es": "la máscara",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_495",
-    "fr": "le matÃ©riel / la matiÃ¨re",
+    "fr": "le matériel / la matière",
     "en": "material",
     "de": "das Material",
     "es": "el material",
@@ -4456,10 +4456,10 @@
   },
   {
     "id": "word_496",
-    "fr": "les mathÃ©matiques",
+    "fr": "les mathématiques",
     "en": "mathematics",
     "de": "die Mathematik",
-    "es": "las matemÃ¡ticas",
+    "es": "las matemáticas",
     "type": "nom",
     "level": "A2"
   },
@@ -4468,13 +4468,13 @@
     "fr": "pourrait",
     "en": "may",
     "de": "darf",
-    "es": "podrÃ­a",
+    "es": "podría",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_498",
-    "fr": "les mÃ©dias",
+    "fr": "les médias",
     "en": "media",
     "de": "die Medien",
     "es": "los medios",
@@ -4483,16 +4483,16 @@
   },
   {
     "id": "word_499",
-    "fr": "mÃ©dical",
+    "fr": "médical",
     "en": "medical",
     "de": "medizinisch",
-    "es": "mÃ©dico",
+    "es": "médico",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_500",
-    "fr": "le mÃ©dicament",
+    "fr": "le médicament",
     "en": "medicine",
     "de": "die Medizin",
     "es": "la medicina",
@@ -4501,7 +4501,7 @@
   },
   {
     "id": "word_501",
-    "fr": "la mÃ©moire",
+    "fr": "la mémoire",
     "en": "memory",
     "de": "die Erinnerung",
     "es": "la memoria",
@@ -4512,14 +4512,14 @@
     "id": "word_502",
     "fr": "mentionner",
     "en": "mention",
-    "de": "erwÃ¤hnen",
+    "de": "erwähnen",
     "es": "mencionar",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_503",
-    "fr": "le mÃ©tal",
+    "fr": "le métal",
     "en": "metal",
     "de": "das Metall",
     "es": "el metal",
@@ -4539,8 +4539,8 @@
     "id": "word_505",
     "fr": "pourrait (conditionnel)",
     "en": "might",
-    "de": "kÃ¶nnte",
-    "es": "podrÃ­a",
+    "de": "könnte",
+    "es": "podría",
     "type": "verbe",
     "level": "A2"
   },
@@ -4567,7 +4567,7 @@
     "fr": "le mien",
     "en": "mine",
     "de": "meiner",
-    "es": "mÃ­o",
+    "es": "mío",
     "type": "pron",
     "level": "A2"
   },
@@ -4594,7 +4594,7 @@
     "fr": "mobile",
     "en": "mobile",
     "de": "mobil",
-    "es": "mÃ³vil",
+    "es": "móvil",
     "type": "adjectif",
     "level": "A2"
   },
@@ -4657,13 +4657,13 @@
     "fr": "le musicien",
     "en": "musician",
     "de": "der Musiker",
-    "es": "el mÃºsico",
+    "es": "el músico",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_519",
-    "fr": "moi-mÃªme",
+    "fr": "moi-même",
     "en": "myself",
     "de": "ich selbst",
     "es": "yo mismo",
@@ -4672,7 +4672,7 @@
   },
   {
     "id": "word_520",
-    "fr": "Ã©troit",
+    "fr": "étroit",
     "en": "narrow",
     "de": "schmal",
     "es": "estrecho",
@@ -4692,7 +4692,7 @@
     "id": "word_522",
     "fr": "naturel",
     "en": "natural",
-    "de": "natÃ¼rlich",
+    "de": "natürlich",
     "es": "natural",
     "type": "adjectif",
     "level": "A2"
@@ -4717,7 +4717,7 @@
   },
   {
     "id": "word_525",
-    "fr": "nÃ©cessaire",
+    "fr": "nécessaire",
     "en": "necessary",
     "de": "notwendig",
     "es": "necesario",
@@ -4737,7 +4737,7 @@
     "id": "word_527",
     "fr": "le besoin",
     "en": "need",
-    "de": "das BedÃ¼rfnis",
+    "de": "das Bedürfnis",
     "es": "la necesidad",
     "type": "nom",
     "level": "A2"
@@ -4755,7 +4755,7 @@
     "id": "word_529",
     "fr": "nerveux",
     "en": "nervous",
-    "de": "nervÃ¶s",
+    "de": "nervös",
     "es": "nervioso",
     "type": "adjectif",
     "level": "A2"
@@ -4780,7 +4780,7 @@
   },
   {
     "id": "word_532",
-    "fr": "le rÃ©seau",
+    "fr": "le réseau",
     "en": "network",
     "de": "das Netzwerk",
     "es": "la red",
@@ -4791,7 +4791,7 @@
     "id": "word_533",
     "fr": "le bruit",
     "en": "noise",
-    "de": "der LÃ¤rm",
+    "de": "der Lärm",
     "es": "el ruido",
     "type": "nom",
     "level": "A2"
@@ -4879,10 +4879,10 @@
   },
   {
     "id": "word_543",
-    "fr": "l'ocÃ©an",
+    "fr": "l'océan",
     "en": "ocean",
     "de": "der Ozean",
-    "es": "el ocÃ©ano",
+    "es": "el océano",
     "type": "nom",
     "level": "A2"
   },
@@ -4915,9 +4915,9 @@
   },
   {
     "id": "word_547",
-    "fr": "l'huile / le pÃ©trole",
+    "fr": "l'huile / le pétrole",
     "en": "oil",
-    "de": "das Ã–l",
+    "de": "das Öl",
     "es": "el aceite",
     "type": "nom",
     "level": "A2"
@@ -4936,7 +4936,7 @@
     "fr": "l'option",
     "en": "option",
     "de": "die Option",
-    "es": "la opciÃ³n",
+    "es": "la opción",
     "type": "nom",
     "level": "A2"
   },
@@ -4944,7 +4944,7 @@
     "id": "word_550",
     "fr": "ordinaire",
     "en": "ordinary",
-    "de": "gewÃ¶hnlich",
+    "de": "gewöhnlich",
     "es": "ordinario",
     "type": "adjectif",
     "level": "A2"
@@ -4954,7 +4954,7 @@
     "fr": "l'organisation",
     "en": "organisation",
     "de": "die Organisation",
-    "es": "la organizaciÃ³n",
+    "es": "la organización",
     "type": "nom",
     "level": "A2"
   },
@@ -4978,7 +4978,7 @@
   },
   {
     "id": "word_554",
-    "fr": "nous-mÃªmes",
+    "fr": "nous-mêmes",
     "en": "ourselves",
     "de": "wir selbst",
     "es": "nosotros mismos",
@@ -4987,9 +4987,9 @@
   },
   {
     "id": "word_555",
-    "fr": "Ã  l'extÃ©rieur",
+    "fr": "à l'extérieur",
     "en": "outside",
-    "de": "drauÃŸen",
+    "de": "draußen",
     "es": "afuera",
     "type": "adverbe",
     "level": "A2"
@@ -5005,7 +5005,7 @@
   },
   {
     "id": "word_557",
-    "fr": "le propriÃ©taire",
+    "fr": "le propriétaire",
     "en": "owner",
     "de": "der Besitzer",
     "es": "el propietario",
@@ -5095,7 +5095,7 @@
   },
   {
     "id": "word_567",
-    "fr": "le passÃ©",
+    "fr": "le passé",
     "en": "past",
     "de": "die Vergangenheit",
     "es": "el pasado",
@@ -5113,10 +5113,10 @@
   },
   {
     "id": "word_569",
-    "fr": "le motif / le modÃ¨le",
+    "fr": "le motif / le modèle",
     "en": "pattern",
     "de": "das Muster",
-    "es": "el patrÃ³n",
+    "es": "el patrón",
     "type": "nom",
     "level": "A2"
   },
@@ -5169,17 +5169,17 @@
     "id": "word_575",
     "fr": "performer / accomplir",
     "en": "perform",
-    "de": "auffÃ¼hren",
+    "de": "aufführen",
     "es": "realizar",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_576",
-    "fr": "peut-Ãªtre",
+    "fr": "peut-être",
     "en": "perhaps",
     "de": "vielleicht",
-    "es": "quizÃ¡s",
+    "es": "quizás",
     "type": "adverbe",
     "level": "A2"
   },
@@ -5194,9 +5194,9 @@
   },
   {
     "id": "word_578",
-    "fr": "la personnalitÃ©",
+    "fr": "la personnalité",
     "en": "personality",
-    "de": "die PersÃ¶nlichkeit",
+    "de": "die Persönlichkeit",
     "es": "la personalidad",
     "type": "nom",
     "level": "A2"
@@ -5233,7 +5233,7 @@
     "fr": "physique",
     "en": "physical",
     "de": "physisch",
-    "es": "fÃ­sico",
+    "es": "físico",
     "type": "adjectif",
     "level": "A2"
   },
@@ -5242,7 +5242,7 @@
     "fr": "la physique",
     "en": "physics",
     "de": "die Physik",
-    "es": "la fÃ­sica",
+    "es": "la física",
     "type": "nom",
     "level": "A2"
   },
@@ -5250,7 +5250,7 @@
     "id": "word_584",
     "fr": "choisir / cueillir",
     "en": "pick",
-    "de": "pflÃ¼cken / auswÃ¤hlen",
+    "de": "pflücken / auswählen",
     "es": "recoger / elegir",
     "type": "verbe",
     "level": "A2"
@@ -5275,7 +5275,7 @@
   },
   {
     "id": "word_587",
-    "fr": "la planÃ¨te",
+    "fr": "la planète",
     "en": "planet",
     "de": "der Planet",
     "es": "el planeta",
@@ -5296,7 +5296,7 @@
     "fr": "le plastique",
     "en": "plastic",
     "de": "das Plastik",
-    "es": "el plÃ¡stico",
+    "es": "el plástico",
     "type": "nom",
     "level": "A2"
   },
@@ -5314,7 +5314,7 @@
     "fr": "la plateforme / le quai",
     "en": "platform",
     "de": "der Bahnsteig",
-    "es": "el andÃ©n",
+    "es": "el andén",
     "type": "nom",
     "level": "A2"
   },
@@ -5329,7 +5329,7 @@
   },
   {
     "id": "word_593",
-    "fr": "la prise (Ã©lectrique)",
+    "fr": "la prise (électrique)",
     "en": "plug",
     "de": "der Stecker",
     "es": "el enchufe",
@@ -5349,7 +5349,7 @@
     "id": "word_595",
     "fr": "poli",
     "en": "polite",
-    "de": "hÃ¶flich",
+    "de": "höflich",
     "es": "educado",
     "type": "adjectif",
     "level": "A2"
@@ -5359,13 +5359,13 @@
     "fr": "la pollution",
     "en": "pollution",
     "de": "die Verschmutzung",
-    "es": "la contaminaciÃ³n",
+    "es": "la contaminación",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_597",
-    "fr": "l'Ã©tang",
+    "fr": "l'étang",
     "en": "pond",
     "de": "der Teich",
     "es": "el estanque",
@@ -5385,8 +5385,8 @@
     "id": "word_599",
     "fr": "la population",
     "en": "population",
-    "de": "die BevÃ¶lkerung",
-    "es": "la poblaciÃ³n",
+    "de": "die Bevölkerung",
+    "es": "la población",
     "type": "nom",
     "level": "A2"
   },
@@ -5395,7 +5395,7 @@
     "fr": "la position",
     "en": "position",
     "de": "die Position",
-    "es": "la posiciÃ³n",
+    "es": "la posición",
     "type": "nom",
     "level": "A2"
   },
@@ -5404,15 +5404,15 @@
     "fr": "la possession",
     "en": "possession",
     "de": "der Besitz",
-    "es": "la posesiÃ³n",
+    "es": "la posesión",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_602",
-    "fr": "la possibilitÃ©",
+    "fr": "la possibilité",
     "en": "possibility",
-    "de": "die MÃ¶glichkeit",
+    "de": "die Möglichkeit",
     "es": "la posibilidad",
     "type": "nom",
     "level": "A2"
@@ -5422,13 +5422,13 @@
     "fr": "l'affiche",
     "en": "poster",
     "de": "das Poster",
-    "es": "el pÃ³ster",
+    "es": "el póster",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_604",
-    "fr": "le pouvoir / l'Ã©nergie",
+    "fr": "le pouvoir / l'énergie",
     "en": "power",
     "de": "die Macht / die Kraft",
     "es": "el poder",
@@ -5437,7 +5437,7 @@
   },
   {
     "id": "word_605",
-    "fr": "prÃ©dire",
+    "fr": "prédire",
     "en": "predict",
     "de": "vorhersagen",
     "es": "predecir",
@@ -5446,7 +5446,7 @@
   },
   {
     "id": "word_606",
-    "fr": "prÃ©fÃ©rer",
+    "fr": "préférer",
     "en": "prefer",
     "de": "bevorzugen",
     "es": "preferir",
@@ -5455,7 +5455,7 @@
   },
   {
     "id": "word_607",
-    "fr": "prÃ©parer",
+    "fr": "préparer",
     "en": "prepare",
     "de": "vorbereiten",
     "es": "preparar",
@@ -5464,16 +5464,16 @@
   },
   {
     "id": "word_608",
-    "fr": "le prÃ©sident",
+    "fr": "le président",
     "en": "president",
-    "de": "der PrÃ¤sident",
+    "de": "der Präsident",
     "es": "el presidente",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_609",
-    "fr": "empÃªcher",
+    "fr": "empêcher",
     "en": "prevent",
     "de": "verhindern",
     "es": "prevenir",
@@ -5502,14 +5502,14 @@
     "id": "word_612",
     "fr": "la prison",
     "en": "prison",
-    "de": "das GefÃ¤ngnis",
-    "es": "la prisiÃ³n",
+    "de": "das Gefängnis",
+    "es": "la prisión",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_613",
-    "fr": "le prix / la rÃ©compense",
+    "fr": "le prix / la récompense",
     "en": "prize",
     "de": "der Preis",
     "es": "el premio",
@@ -5554,7 +5554,7 @@
   },
   {
     "id": "word_618",
-    "fr": "le progrÃ¨s",
+    "fr": "le progrès",
     "en": "progress",
     "de": "der Fortschritt",
     "es": "el progreso",
@@ -5581,9 +5581,9 @@
   },
   {
     "id": "word_621",
-    "fr": "protÃ©ger",
+    "fr": "protéger",
     "en": "protect",
-    "de": "schÃ¼tzen",
+    "de": "schützen",
     "es": "proteger",
     "type": "verbe",
     "level": "A2"
@@ -5601,8 +5601,8 @@
     "id": "word_623",
     "fr": "public",
     "en": "public",
-    "de": "Ã¶ffentlich",
-    "es": "pÃºblico",
+    "de": "öffentlich",
+    "es": "público",
     "type": "adjectif",
     "level": "A2"
   },
@@ -5610,7 +5610,7 @@
     "id": "word_624",
     "fr": "publier",
     "en": "publish",
-    "de": "verÃ¶ffentlichen",
+    "de": "veröffentlichen",
     "es": "publicar",
     "type": "verbe",
     "level": "A2"
@@ -5628,23 +5628,23 @@
     "id": "word_626",
     "fr": "pousser",
     "en": "push",
-    "de": "drÃ¼cken",
+    "de": "drücken",
     "es": "empujar",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_627",
-    "fr": "la qualitÃ©",
+    "fr": "la qualité",
     "en": "quality",
-    "de": "die QualitÃ¤t",
+    "de": "die Qualität",
     "es": "la calidad",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_628",
-    "fr": "la quantitÃ©",
+    "fr": "la quantité",
     "en": "quantity",
     "de": "die Menge",
     "es": "la cantidad",
@@ -5655,7 +5655,7 @@
     "id": "word_629",
     "fr": "la reine",
     "en": "queen",
-    "de": "die KÃ¶nigin",
+    "de": "die Königin",
     "es": "la reina",
     "type": "nom",
     "level": "A2"
@@ -5716,10 +5716,10 @@
   },
   {
     "id": "word_636",
-    "fr": "plutÃ´t",
+    "fr": "plutôt",
     "en": "rather",
     "de": "eher",
-    "es": "mÃ¡s bien",
+    "es": "más bien",
     "type": "adverbe",
     "level": "A2"
   },
@@ -5734,7 +5734,7 @@
   },
   {
     "id": "word_638",
-    "fr": "rÃ©agir",
+    "fr": "réagir",
     "en": "react",
     "de": "reagieren",
     "es": "reaccionar",
@@ -5761,28 +5761,28 @@
   },
   {
     "id": "word_641",
-    "fr": "rÃ©cent",
+    "fr": "récent",
     "en": "recent",
-    "de": "kÃ¼rzlich",
+    "de": "kürzlich",
     "es": "reciente",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_642",
-    "fr": "rÃ©cemment",
+    "fr": "récemment",
     "en": "recently",
-    "de": "kÃ¼rzlich",
+    "de": "kürzlich",
     "es": "recientemente",
     "type": "adverbe",
     "level": "A2"
   },
   {
     "id": "word_643",
-    "fr": "la rÃ©ception",
+    "fr": "la réception",
     "en": "reception",
     "de": "der Empfang",
-    "es": "la recepciÃ³n",
+    "es": "la recepción",
     "type": "nom",
     "level": "A2"
   },
@@ -5797,7 +5797,7 @@
   },
   {
     "id": "word_645",
-    "fr": "reconnaÃ®tre",
+    "fr": "reconnaître",
     "en": "recognise",
     "de": "erkennen",
     "es": "reconocer",
@@ -5818,7 +5818,7 @@
     "fr": "l'enregistrement",
     "en": "record",
     "de": "die Aufnahme",
-    "es": "el disco / el rÃ©cord",
+    "es": "el disco / el récord",
     "type": "nom",
     "level": "A2"
   },
@@ -5836,7 +5836,7 @@
     "fr": "l'enregistrement",
     "en": "recording",
     "de": "die Aufnahme",
-    "es": "la grabaciÃ³n",
+    "es": "la grabación",
     "type": "nom",
     "level": "A2"
   },
@@ -5851,7 +5851,7 @@
   },
   {
     "id": "word_651",
-    "fr": "rÃ©duire",
+    "fr": "réduire",
     "en": "reduce",
     "de": "reduzieren",
     "es": "reducir",
@@ -5860,7 +5860,7 @@
   },
   {
     "id": "word_652",
-    "fr": "se rÃ©fÃ©rer",
+    "fr": "se référer",
     "en": "refer",
     "de": "sich beziehen",
     "es": "referirse",
@@ -5878,18 +5878,18 @@
   },
   {
     "id": "word_654",
-    "fr": "la rÃ©gion",
+    "fr": "la région",
     "en": "region",
     "de": "die Region",
-    "es": "la regiÃ³n",
+    "es": "la región",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_655",
-    "fr": "rÃ©gulier",
+    "fr": "régulier",
     "en": "regular",
-    "de": "regelmÃ¤ÃŸig",
+    "de": "regelmäßig",
     "es": "regular",
     "type": "adjectif",
     "level": "A2"
@@ -5899,7 +5899,7 @@
     "fr": "la relation",
     "en": "relationship",
     "de": "die Beziehung",
-    "es": "la relaciÃ³n",
+    "es": "la relación",
     "type": "nom",
     "level": "A2"
   },
@@ -5914,7 +5914,7 @@
   },
   {
     "id": "word_658",
-    "fr": "rÃ©parer",
+    "fr": "réparer",
     "en": "repair",
     "de": "reparieren",
     "es": "reparar",
@@ -5932,7 +5932,7 @@
   },
   {
     "id": "word_660",
-    "fr": "rÃ©pondre",
+    "fr": "répondre",
     "en": "reply",
     "de": "antworten",
     "es": "responder",
@@ -6016,7 +6016,7 @@
     "fr": "la revue / la critique",
     "en": "review",
     "de": "die Bewertung",
-    "es": "la reseÃ±a",
+    "es": "la reseña",
     "type": "nom",
     "level": "A2"
   },
@@ -6024,7 +6024,7 @@
     "id": "word_670",
     "fr": "passer en revue",
     "en": "review",
-    "de": "Ã¼berprÃ¼fen",
+    "de": "überprüfen",
     "es": "revisar",
     "type": "verbe",
     "level": "A2"
@@ -6067,7 +6067,7 @@
   },
   {
     "id": "word_675",
-    "fr": "le rÃ´le",
+    "fr": "le rôle",
     "en": "role",
     "de": "die Rolle",
     "es": "el papel",
@@ -6103,9 +6103,9 @@
   },
   {
     "id": "word_679",
-    "fr": "les dÃ©chets",
+    "fr": "les déchets",
     "en": "rubbish",
-    "de": "der MÃ¼ll",
+    "de": "der Müll",
     "es": "la basura",
     "type": "nom",
     "level": "A2"
@@ -6114,7 +6114,7 @@
     "id": "word_680",
     "fr": "impoli",
     "en": "rude",
-    "de": "unhÃ¶flich",
+    "de": "unhöflich",
     "es": "grosero",
     "type": "adjectif",
     "level": "A2"
@@ -6132,14 +6132,14 @@
     "id": "word_682",
     "fr": "le coureur",
     "en": "runner",
-    "de": "der LÃ¤ufer",
+    "de": "der Läufer",
     "es": "el corredor",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_683",
-    "fr": "la course Ã  pied",
+    "fr": "la course à pied",
     "en": "running",
     "de": "das Laufen",
     "es": "la carrera",
@@ -6157,7 +6157,7 @@
   },
   {
     "id": "word_685",
-    "fr": "sÃ»r / en sÃ©curitÃ©",
+    "fr": "sûr / en sécurité",
     "en": "safe",
     "de": "sicher",
     "es": "seguro",
@@ -6187,7 +6187,7 @@
     "fr": "la voile (sport)",
     "en": "sailing",
     "de": "das Segeln",
-    "es": "la navegaciÃ³n",
+    "es": "la navegación",
     "type": "nom",
     "level": "A2"
   },
@@ -6213,14 +6213,14 @@
     "id": "word_691",
     "fr": "la sauce",
     "en": "sauce",
-    "de": "die SoÃŸe",
+    "de": "die Soße",
     "es": "la salsa",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_692",
-    "fr": "sauver / Ã©conomiser",
+    "fr": "sauver / économiser",
     "en": "save",
     "de": "sparen / retten",
     "es": "guardar / salvar",
@@ -6229,16 +6229,16 @@
   },
   {
     "id": "word_693",
-    "fr": "effrayÃ©",
+    "fr": "effrayé",
     "en": "scared",
-    "de": "verÃ¤ngstigt",
+    "de": "verängstigt",
     "es": "asustado",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_694",
-    "fr": "l'Ã©charpe",
+    "fr": "l'écharpe",
     "en": "scarf",
     "de": "der Schal",
     "es": "la bufanda",
@@ -6256,7 +6256,7 @@
   },
   {
     "id": "word_696",
-    "fr": "la scÃ¨ne",
+    "fr": "la scène",
     "en": "scene",
     "de": "die Szene",
     "es": "la escena",
@@ -6292,7 +6292,7 @@
   },
   {
     "id": "word_700",
-    "fr": "l'Ã©cran",
+    "fr": "l'écran",
     "en": "screen",
     "de": "der Bildschirm",
     "es": "la pantalla",
@@ -6304,7 +6304,7 @@
     "fr": "la recherche",
     "en": "search",
     "de": "die Suche",
-    "es": "la bÃºsqueda",
+    "es": "la búsqueda",
     "type": "nom",
     "level": "A2"
   },
@@ -6328,7 +6328,7 @@
   },
   {
     "id": "word_704",
-    "fr": "le siÃ¨ge",
+    "fr": "le siège",
     "en": "seat",
     "de": "der Sitz",
     "es": "el asiento",
@@ -6337,7 +6337,7 @@
   },
   {
     "id": "word_705",
-    "fr": "deuxiÃ¨me",
+    "fr": "deuxième",
     "en": "second",
     "de": "zweite",
     "es": "segundo",
@@ -6346,7 +6346,7 @@
   },
   {
     "id": "word_706",
-    "fr": "deuxiÃ¨mement",
+    "fr": "deuxièmement",
     "en": "secondly",
     "de": "zweitens",
     "es": "en segundo lugar",
@@ -6364,9 +6364,9 @@
   },
   {
     "id": "word_708",
-    "fr": "le secrÃ©taire",
+    "fr": "le secrétaire",
     "en": "secretary",
-    "de": "der SekretÃ¤r",
+    "de": "der Sekretär",
     "es": "el secretario",
     "type": "nom",
     "level": "A2"
@@ -6400,7 +6400,7 @@
   },
   {
     "id": "word_712",
-    "fr": "sÃ©parÃ©",
+    "fr": "séparé",
     "en": "separate",
     "de": "getrennt",
     "es": "separado",
@@ -6409,7 +6409,7 @@
   },
   {
     "id": "word_713",
-    "fr": "la sÃ©rie",
+    "fr": "la série",
     "en": "series",
     "de": "die Serie",
     "es": "la serie",
@@ -6418,7 +6418,7 @@
   },
   {
     "id": "word_714",
-    "fr": "sÃ©rieux",
+    "fr": "sérieux",
     "en": "serious",
     "de": "ernst",
     "es": "serio",
@@ -6456,7 +6456,7 @@
     "id": "word_718",
     "fr": "secouer",
     "en": "shake",
-    "de": "schÃ¼tteln",
+    "de": "schütteln",
     "es": "agitar",
     "type": "verbe",
     "level": "A2"
@@ -6508,7 +6508,7 @@
   },
   {
     "id": "word_724",
-    "fr": "l'Ã©paule",
+    "fr": "l'épaule",
     "en": "shoulder",
     "de": "die Schulter",
     "es": "el hombro",
@@ -6528,14 +6528,14 @@
     "id": "word_726",
     "fr": "fermer",
     "en": "shut",
-    "de": "schlieÃŸen",
+    "de": "schließen",
     "es": "cerrar",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_727",
-    "fr": "le cÃ´tÃ©",
+    "fr": "le côté",
     "en": "side",
     "de": "die Seite",
     "es": "el lado",
@@ -6547,13 +6547,13 @@
     "fr": "le signe / le panneau",
     "en": "sign",
     "de": "das Schild",
-    "es": "la seÃ±al",
+    "es": "la señal",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_729",
-    "fr": "l'argent (mÃ©tal)",
+    "fr": "l'argent (métal)",
     "en": "silver",
     "de": "das Silber",
     "es": "la plata",
@@ -6564,7 +6564,7 @@
     "id": "word_730",
     "fr": "similaire",
     "en": "similar",
-    "de": "Ã¤hnlich",
+    "de": "ähnlich",
     "es": "similar",
     "type": "adjectif",
     "level": "A2"
@@ -6598,7 +6598,7 @@
   },
   {
     "id": "word_734",
-    "fr": "cÃ©libataire / unique",
+    "fr": "célibataire / unique",
     "en": "single",
     "de": "ledig / einzeln",
     "es": "soltero / solo",
@@ -6610,7 +6610,7 @@
     "fr": "monsieur",
     "en": "sir",
     "de": "mein Herr",
-    "es": "seÃ±or",
+    "es": "señor",
     "type": "nom",
     "level": "A2"
   },
@@ -6627,8 +6627,8 @@
     "id": "word_737",
     "fr": "la taille",
     "en": "size",
-    "de": "die GrÃ¶ÃŸe",
-    "es": "el tamaÃ±o",
+    "de": "die Größe",
+    "es": "el tamaño",
     "type": "nom",
     "level": "A2"
   },
@@ -6637,7 +6637,7 @@
     "fr": "le ski",
     "en": "ski",
     "de": "der Ski",
-    "es": "el esquÃ­",
+    "es": "el esquí",
     "type": "nom",
     "level": "A2"
   },
@@ -6655,7 +6655,7 @@
     "fr": "le ski (sport)",
     "en": "skiing",
     "de": "das Skifahren",
-    "es": "el esquÃ­",
+    "es": "el esquí",
     "type": "nom",
     "level": "A2"
   },
@@ -6691,7 +6691,7 @@
     "fr": "le smartphone",
     "en": "smartphone",
     "de": "das Smartphone",
-    "es": "el telÃ©fono inteligente",
+    "es": "el teléfono inteligente",
     "type": "nom",
     "level": "A2"
   },
@@ -6717,7 +6717,7 @@
     "id": "word_747",
     "fr": "le sourire",
     "en": "smile",
-    "de": "das LÃ¤cheln",
+    "de": "das Lächeln",
     "es": "la sonrisa",
     "type": "nom",
     "level": "A2"
@@ -6726,14 +6726,14 @@
     "id": "word_748",
     "fr": "sourire",
     "en": "smile",
-    "de": "lÃ¤cheln",
-    "es": "sonreÃ­r",
+    "de": "lächeln",
+    "es": "sonreír",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_749",
-    "fr": "la fumÃ©e",
+    "fr": "la fumée",
     "en": "smoke",
     "de": "der Rauch",
     "es": "el humo",
@@ -6763,7 +6763,7 @@
     "fr": "le savon",
     "en": "soap",
     "de": "die Seife",
-    "es": "el jabÃ³n",
+    "es": "el jabón",
     "type": "nom",
     "level": "A2"
   },
@@ -6771,8 +6771,8 @@
     "id": "word_753",
     "fr": "le football",
     "en": "soccer",
-    "de": "der FuÃŸball",
-    "es": "el fÃºtbol",
+    "de": "der Fußball",
+    "es": "el fútbol",
     "type": "nom",
     "level": "A2"
   },
@@ -6790,7 +6790,7 @@
     "fr": "la chaussette",
     "en": "sock",
     "de": "die Socke",
-    "es": "el calcetÃ­n",
+    "es": "el calcetín",
     "type": "nom",
     "level": "A2"
   },
@@ -6816,8 +6816,8 @@
     "id": "word_758",
     "fr": "la solution",
     "en": "solution",
-    "de": "die LÃ¶sung",
-    "es": "la soluciÃ³n",
+    "de": "die Lösung",
+    "es": "la solución",
     "type": "nom",
     "level": "A2"
   },
@@ -6826,7 +6826,7 @@
     "fr": "quelque part",
     "en": "somewhere",
     "de": "irgendwo",
-    "es": "en algÃºn lugar",
+    "es": "en algún lugar",
     "type": "adverbe",
     "level": "A2"
   },
@@ -6850,10 +6850,10 @@
   },
   {
     "id": "word_762",
-    "fr": "spÃ©cifique",
+    "fr": "spécifique",
     "en": "specific",
     "de": "spezifisch",
-    "es": "especÃ­fico",
+    "es": "específico",
     "type": "adjectif",
     "level": "A2"
   },
@@ -6877,25 +6877,25 @@
   },
   {
     "id": "word_765",
-    "fr": "l'araignÃ©e",
+    "fr": "l'araignée",
     "en": "spider",
     "de": "die Spinne",
-    "es": "la araÃ±a",
+    "es": "la araña",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_766",
-    "fr": "la cuillÃ¨re",
+    "fr": "la cuillère",
     "en": "spoon",
-    "de": "der LÃ¶ffel",
+    "de": "der Löffel",
     "es": "la cuchara",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_767",
-    "fr": "le carrÃ© / la place",
+    "fr": "le carré / la place",
     "en": "square",
     "de": "das Quadrat / der Platz",
     "es": "el cuadrado / la plaza",
@@ -6904,18 +6904,18 @@
   },
   {
     "id": "word_768",
-    "fr": "l'Ã©cureuil",
+    "fr": "l'écureuil",
     "en": "squirrel",
-    "de": "das EichhÃ¶rnchen",
+    "de": "das Eichhörnchen",
     "es": "la ardilla",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_769",
-    "fr": "la scÃ¨ne (thÃ©Ã¢tre)",
+    "fr": "la scène (théâtre)",
     "en": "stage",
-    "de": "die BÃ¼hne",
+    "de": "die Bühne",
     "es": "el escenario",
     "type": "nom",
     "level": "A2"
@@ -6940,7 +6940,7 @@
   },
   {
     "id": "word_772",
-    "fr": "l'Ã©toile",
+    "fr": "l'étoile",
     "en": "star",
     "de": "der Stern",
     "es": "la estrella",
@@ -6949,7 +6949,7 @@
   },
   {
     "id": "word_773",
-    "fr": "l'Ã©tat",
+    "fr": "l'état",
     "en": "state",
     "de": "der Staat",
     "es": "el estado",
@@ -6958,10 +6958,10 @@
   },
   {
     "id": "word_774",
-    "fr": "la dÃ©claration",
+    "fr": "la déclaration",
     "en": "statement",
     "de": "die Aussage",
-    "es": "la declaraciÃ³n",
+    "es": "la declaración",
     "type": "nom",
     "level": "A2"
   },
@@ -6976,7 +6976,7 @@
   },
   {
     "id": "word_776",
-    "fr": "voler (dÃ©rober)",
+    "fr": "voler (dérober)",
     "en": "steal",
     "de": "stehlen",
     "es": "robar",
@@ -6985,7 +6985,7 @@
   },
   {
     "id": "word_777",
-    "fr": "le pas / l'Ã©tape",
+    "fr": "le pas / l'étape",
     "en": "step",
     "de": "der Schritt",
     "es": "el paso",
@@ -7006,7 +7006,7 @@
     "fr": "encore / toujours",
     "en": "still",
     "de": "noch",
-    "es": "todavÃ­a",
+    "es": "todavía",
     "type": "adverbe",
     "level": "A2"
   },
@@ -7015,7 +7015,7 @@
     "fr": "l'estomac",
     "en": "stomach",
     "de": "der Magen",
-    "es": "el estÃ³mago",
+    "es": "el estómago",
     "type": "nom",
     "level": "A2"
   },
@@ -7032,14 +7032,14 @@
     "id": "word_782",
     "fr": "le magasin",
     "en": "store",
-    "de": "das GeschÃ¤ft",
+    "de": "das Geschäft",
     "es": "la tienda",
     "type": "nom",
     "level": "A2"
   },
   {
     "id": "word_783",
-    "fr": "la tempÃªte",
+    "fr": "la tempête",
     "en": "storm",
     "de": "der Sturm",
     "es": "la tormenta",
@@ -7057,10 +7057,10 @@
   },
   {
     "id": "word_785",
-    "fr": "Ã©trange",
+    "fr": "étrange",
     "en": "strange",
     "de": "seltsam",
-    "es": "extraÃ±o",
+    "es": "extraño",
     "type": "adjectif",
     "level": "A2"
   },
@@ -7078,7 +7078,7 @@
     "fr": "le stress",
     "en": "stress",
     "de": "der Stress",
-    "es": "el estrÃ©s",
+    "es": "el estrés",
     "type": "nom",
     "level": "A2"
   },
@@ -7087,22 +7087,22 @@
     "fr": "stupide",
     "en": "stupid",
     "de": "dumm",
-    "es": "estÃºpido",
+    "es": "estúpido",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_789",
-    "fr": "rÃ©ussir",
+    "fr": "réussir",
     "en": "succeed",
     "de": "Erfolg haben",
-    "es": "tener Ã©xito",
+    "es": "tener éxito",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_790",
-    "fr": "couronnÃ© de succÃ¨s",
+    "fr": "couronné de succès",
     "en": "successful",
     "de": "erfolgreich",
     "es": "exitoso",
@@ -7122,14 +7122,14 @@
     "id": "word_792",
     "fr": "soudainement",
     "en": "suddenly",
-    "de": "plÃ¶tzlich",
+    "de": "plötzlich",
     "es": "de repente",
     "type": "adverbe",
     "level": "A2"
   },
   {
     "id": "word_793",
-    "fr": "suggÃ©rer",
+    "fr": "suggérer",
     "en": "suggest",
     "de": "vorschlagen",
     "es": "sugerir",
@@ -7158,7 +7158,7 @@
     "id": "word_796",
     "fr": "le soutien",
     "en": "support",
-    "de": "die UnterstÃ¼tzung",
+    "de": "die Unterstützung",
     "es": "el apoyo",
     "type": "nom",
     "level": "A2"
@@ -7167,7 +7167,7 @@
     "id": "word_797",
     "fr": "soutenir",
     "en": "support",
-    "de": "unterstÃ¼tzen",
+    "de": "unterstützen",
     "es": "apoyar",
     "type": "verbe",
     "level": "A2"
@@ -7185,7 +7185,7 @@
     "id": "word_799",
     "fr": "la surprise",
     "en": "surprise",
-    "de": "die Ãœberraschung",
+    "de": "die Überraschung",
     "es": "la sorpresa",
     "type": "nom",
     "level": "A2"
@@ -7194,7 +7194,7 @@
     "id": "word_800",
     "fr": "surprendre",
     "en": "surprise",
-    "de": "Ã¼berraschen",
+    "de": "überraschen",
     "es": "sorprender",
     "type": "verbe",
     "level": "A2"
@@ -7203,7 +7203,7 @@
     "id": "word_801",
     "fr": "surpris",
     "en": "surprised",
-    "de": "Ã¼berrascht",
+    "de": "überrascht",
     "es": "sorprendido",
     "type": "adjectif",
     "level": "A2"
@@ -7212,23 +7212,23 @@
     "id": "word_802",
     "fr": "surprenant",
     "en": "surprising",
-    "de": "Ã¼berraschend",
+    "de": "überraschend",
     "es": "sorprendente",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_803",
-    "fr": "doux / sucrÃ©",
+    "fr": "doux / sucré",
     "en": "sweet",
-    "de": "sÃ¼ÃŸ",
+    "de": "süß",
     "es": "dulce",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_804",
-    "fr": "la balanÃ§oire",
+    "fr": "la balançoire",
     "en": "swing",
     "de": "die Schaukel",
     "es": "el columpio",
@@ -7255,7 +7255,7 @@
   },
   {
     "id": "word_807",
-    "fr": "la discussion / l'exposÃ©",
+    "fr": "la discussion / l'exposé",
     "en": "talk",
     "de": "der Vortrag",
     "es": "la charla",
@@ -7273,7 +7273,7 @@
   },
   {
     "id": "word_809",
-    "fr": "la tÃ¢che",
+    "fr": "la tâche",
     "en": "task",
     "de": "die Aufgabe",
     "es": "la tarea",
@@ -7282,7 +7282,7 @@
   },
   {
     "id": "word_810",
-    "fr": "le goÃ»t",
+    "fr": "le goût",
     "en": "taste",
     "de": "der Geschmack",
     "es": "el sabor",
@@ -7291,7 +7291,7 @@
   },
   {
     "id": "word_811",
-    "fr": "goÃ»ter",
+    "fr": "goûter",
     "en": "taste",
     "de": "schmecken",
     "es": "probar",
@@ -7303,7 +7303,7 @@
     "fr": "l'enseignement",
     "en": "teaching",
     "de": "das Lehren",
-    "es": "la enseÃ±anza",
+    "es": "la enseñanza",
     "type": "nom",
     "level": "A2"
   },
@@ -7312,7 +7312,7 @@
     "fr": "la technologie",
     "en": "technology",
     "de": "die Technologie",
-    "es": "la tecnologÃ­a",
+    "es": "la tecnología",
     "type": "nom",
     "level": "A2"
   },
@@ -7327,7 +7327,7 @@
   },
   {
     "id": "word_815",
-    "fr": "la tempÃ©rature",
+    "fr": "la température",
     "en": "temperature",
     "de": "die Temperatur",
     "es": "la temperatura",
@@ -7348,7 +7348,7 @@
     "fr": "le terme / le trimestre",
     "en": "term",
     "de": "der Begriff / das Semester",
-    "es": "el tÃ©rmino",
+    "es": "el término",
     "type": "nom",
     "level": "A2"
   },
@@ -7363,7 +7363,7 @@
   },
   {
     "id": "word_819",
-    "fr": "eux-mÃªmes",
+    "fr": "eux-mêmes",
     "en": "themselves",
     "de": "sich selbst",
     "es": "ellos mismos",
@@ -7372,7 +7372,7 @@
   },
   {
     "id": "word_820",
-    "fr": "Ã©pais",
+    "fr": "épais",
     "en": "thick",
     "de": "dick",
     "es": "grueso",
@@ -7384,7 +7384,7 @@
     "fr": "le voleur",
     "en": "thief",
     "de": "der Dieb",
-    "es": "el ladrÃ³n",
+    "es": "el ladrón",
     "type": "nom",
     "level": "A2"
   },
@@ -7392,14 +7392,14 @@
     "id": "word_822",
     "fr": "mince",
     "en": "thin",
-    "de": "dÃ¼nn",
+    "de": "dünn",
     "es": "delgado",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_823",
-    "fr": "la pensÃ©e / la rÃ©flexion",
+    "fr": "la pensée / la réflexion",
     "en": "thinking",
     "de": "das Denken",
     "es": "el pensamiento",
@@ -7417,7 +7417,7 @@
   },
   {
     "id": "word_825",
-    "fr": "la pensÃ©e",
+    "fr": "la pensée",
     "en": "thought",
     "de": "der Gedanke",
     "es": "el pensamiento",
@@ -7435,7 +7435,7 @@
   },
   {
     "id": "word_827",
-    "fr": "bien rangÃ©",
+    "fr": "bien rangé",
     "en": "tidy",
     "de": "ordentlich",
     "es": "ordenado",
@@ -7446,7 +7446,7 @@
     "id": "word_828",
     "fr": "ranger",
     "en": "tidy",
-    "de": "aufrÃ¤umen",
+    "de": "aufräumen",
     "es": "ordenar",
     "type": "verbe",
     "level": "A2"
@@ -7507,7 +7507,7 @@
   },
   {
     "id": "word_835",
-    "fr": "le haut / supÃ©rieur",
+    "fr": "le haut / supérieur",
     "en": "top",
     "de": "die Spitze",
     "es": "la parte superior",
@@ -7527,7 +7527,7 @@
     "id": "word_837",
     "fr": "toucher",
     "en": "touch",
-    "de": "berÃ¼hren",
+    "de": "berühren",
     "es": "tocar",
     "type": "verbe",
     "level": "A2"
@@ -7600,7 +7600,7 @@
     "fr": "la tradition",
     "en": "tradition",
     "de": "die Tradition",
-    "es": "la tradiciÃ³n",
+    "es": "la tradición",
     "type": "nom",
     "level": "A2"
   },
@@ -7624,7 +7624,7 @@
   },
   {
     "id": "word_848",
-    "fr": "l'entraÃ®nement",
+    "fr": "l'entraînement",
     "en": "training",
     "de": "das Training",
     "es": "el entrenamiento",
@@ -7651,9 +7651,9 @@
   },
   {
     "id": "word_851",
-    "fr": "l'ennui / le problÃ¨me",
+    "fr": "l'ennui / le problème",
     "en": "trouble",
-    "de": "der Ã„rger / das Problem",
+    "de": "der Ärger / das Problem",
     "es": "el problema",
     "type": "nom",
     "level": "A2"
@@ -7663,7 +7663,7 @@
     "fr": "le camion (US)",
     "en": "truck",
     "de": "der Lastwagen",
-    "es": "el camiÃ³n",
+    "es": "el camión",
     "type": "nom",
     "level": "A2"
   },
@@ -7681,7 +7681,7 @@
     "fr": "typique",
     "en": "typical",
     "de": "typisch",
-    "es": "tÃ­pico",
+    "es": "típico",
     "type": "adjectif",
     "level": "A2"
   },
@@ -7690,16 +7690,16 @@
     "fr": "souterrain",
     "en": "underground",
     "de": "unterirdisch",
-    "es": "subterrÃ¡neo",
+    "es": "subterráneo",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_856",
-    "fr": "la comprÃ©hension",
+    "fr": "la compréhension",
     "en": "understanding",
-    "de": "das VerstÃ¤ndnis",
-    "es": "la comprensiÃ³n",
+    "de": "das Verständnis",
+    "es": "la comprensión",
     "type": "nom",
     "level": "A2"
   },
@@ -7716,7 +7716,7 @@
     "id": "word_858",
     "fr": "malheureux",
     "en": "unhappy",
-    "de": "unglÃ¼cklich",
+    "de": "unglücklich",
     "es": "infeliz",
     "type": "adjectif",
     "level": "A2"
@@ -7732,7 +7732,7 @@
   },
   {
     "id": "word_860",
-    "fr": "l'unitÃ©",
+    "fr": "l'unité",
     "en": "unit",
     "de": "die Einheit",
     "es": "la unidad",
@@ -7752,16 +7752,16 @@
     "id": "word_862",
     "fr": "inhabituel",
     "en": "unusual",
-    "de": "ungewÃ¶hnlich",
+    "de": "ungewöhnlich",
     "es": "inusual",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_863",
-    "fr": "contrariÃ©",
+    "fr": "contrarié",
     "en": "upset",
-    "de": "verÃ¤rgert",
+    "de": "verärgert",
     "es": "molesto",
     "type": "adjectif",
     "level": "A2"
@@ -7789,7 +7789,7 @@
     "fr": "avoir l'habitude de",
     "en": "used to",
     "de": "pflegte zu",
-    "es": "solÃ­a",
+    "es": "solía",
     "type": "verbe",
     "level": "A2"
   },
@@ -7797,8 +7797,8 @@
     "id": "word_867",
     "fr": "utile",
     "en": "useful",
-    "de": "nÃ¼tzlich",
-    "es": "Ãºtil",
+    "de": "nützlich",
+    "es": "útil",
     "type": "adjectif",
     "level": "A2"
   },
@@ -7815,14 +7815,14 @@
     "id": "word_869",
     "fr": "habituel",
     "en": "usual",
-    "de": "Ã¼blich",
+    "de": "üblich",
     "es": "habitual",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_870",
-    "fr": "la vallÃ©e",
+    "fr": "la vallée",
     "en": "valley",
     "de": "das Tal",
     "es": "el valle",
@@ -7840,7 +7840,7 @@
   },
   {
     "id": "word_872",
-    "fr": "la variÃ©tÃ©",
+    "fr": "la variété",
     "en": "variety",
     "de": "die Vielfalt",
     "es": "la variedad",
@@ -7915,7 +7915,7 @@
     "fr": "faible",
     "en": "weak",
     "de": "schwach",
-    "es": "dÃ©bil",
+    "es": "débil",
     "type": "adjectif",
     "level": "A2"
   },
@@ -7959,14 +7959,14 @@
     "id": "word_885",
     "fr": "souhaiter la bienvenue",
     "en": "welcome",
-    "de": "begrÃ¼ÃŸen",
+    "de": "begrüßen",
     "es": "dar la bienvenida",
     "type": "verbe",
     "level": "A2"
   },
   {
     "id": "word_886",
-    "fr": "mouillÃ©",
+    "fr": "mouillé",
     "en": "wet",
     "de": "nass",
     "es": "mojado",
@@ -7986,7 +7986,7 @@
     "id": "word_888",
     "fr": "pendant que",
     "en": "while",
-    "de": "wÃ¤hrend",
+    "de": "während",
     "es": "mientras",
     "type": "conjonction",
     "level": "A2"
@@ -8002,7 +8002,7 @@
   },
   {
     "id": "word_890",
-    "fr": "Ã  qui / dont",
+    "fr": "à qui / dont",
     "en": "whose",
     "de": "wessen",
     "es": "cuyo",
@@ -8058,7 +8058,7 @@
     "id": "word_896",
     "fr": "souhaiter",
     "en": "wish",
-    "de": "wÃ¼nschen",
+    "de": "wünschen",
     "es": "desear",
     "type": "verbe",
     "level": "A2"
@@ -8076,14 +8076,14 @@
     "id": "word_898",
     "fr": "en bois",
     "en": "wooden",
-    "de": "hÃ¶lzern",
+    "de": "hölzern",
     "es": "de madera",
     "type": "adjectif",
     "level": "A2"
   },
   {
     "id": "word_899",
-    "fr": "qui travaille (en Ã©tat de marche)",
+    "fr": "qui travaille (en état de marche)",
     "en": "working",
     "de": "funktionierend",
     "es": "trabajando",
@@ -8101,7 +8101,7 @@
   },
   {
     "id": "word_901",
-    "fr": "s'inquiÃ©ter",
+    "fr": "s'inquiéter",
     "en": "worry",
     "de": "sich sorgen",
     "es": "preocuparse",
@@ -8110,10 +8110,10 @@
   },
   {
     "id": "word_902",
-    "fr": "l'inquiÃ©tude",
+    "fr": "l'inquiétude",
     "en": "worry",
     "de": "die Sorge",
-    "es": "la preocupaciÃ³n",
+    "es": "la preocupación",
     "type": "nom",
     "level": "A2"
   },
@@ -8146,16 +8146,16 @@
   },
   {
     "id": "word_906",
-    "fr": "encore (dans une phrase nÃ©gative/question)",
+    "fr": "encore (dans une phrase négative/question)",
     "en": "yet",
     "de": "noch",
-    "es": "todavÃ­a",
+    "es": "todavía",
     "type": "adverbe",
     "level": "A2"
   },
   {
     "id": "word_907",
-    "fr": "le tien / la vÃ´tre",
+    "fr": "le tien / la vôtre",
     "en": "yours",
     "de": "deins",
     "es": "tuyo",
@@ -8164,7 +8164,7 @@
   },
   {
     "id": "word_908",
-    "fr": "zÃ©ro",
+    "fr": "zéro",
     "en": "zero",
     "de": "null",
     "es": "cero",
@@ -8182,16 +8182,16 @@
   },
   {
     "id": "word_910",
-    "fr": "acadÃ©mique / universitaire",
+    "fr": "académique / universitaire",
     "en": "academic",
     "de": "akademisch",
-    "es": "acadÃ©mico",
+    "es": "académico",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_911",
-    "fr": "l'accÃ¨s",
+    "fr": "l'accès",
     "en": "access",
     "de": "der Zugang",
     "es": "el acceso",
@@ -8200,7 +8200,7 @@
   },
   {
     "id": "word_912",
-    "fr": "accÃ©der",
+    "fr": "accéder",
     "en": "access",
     "de": "zugreifen",
     "es": "acceder",
@@ -8230,7 +8230,7 @@
     "fr": "selon",
     "en": "according to",
     "de": "laut / nach",
-    "es": "segÃºn",
+    "es": "según",
     "type": "prep",
     "level": "B1"
   },
@@ -8245,7 +8245,7 @@
   },
   {
     "id": "word_917",
-    "fr": "l'annonce / la publicitÃ©",
+    "fr": "l'annonce / la publicité",
     "en": "ad",
     "de": "die Anzeige",
     "es": "el anuncio",
@@ -8256,8 +8256,8 @@
     "id": "word_918",
     "fr": "l'addition / l'ajout",
     "en": "addition",
-    "de": "die ErgÃ¤nzung / der Zusatz",
-    "es": "la adiciÃ³n",
+    "de": "die Ergänzung / der Zusatz",
+    "es": "la adición",
     "type": "nom",
     "level": "B1"
   },
@@ -8281,7 +8281,7 @@
   },
   {
     "id": "word_921",
-    "fr": "avancÃ©",
+    "fr": "avancé",
     "en": "advanced",
     "de": "fortgeschritten",
     "es": "avanzado",
@@ -8308,7 +8308,7 @@
   },
   {
     "id": "word_924",
-    "fr": "Ã¢gÃ©",
+    "fr": "âgé",
     "en": "aged",
     "de": "gealtert",
     "es": "envejecido",
@@ -8374,7 +8374,7 @@
     "fr": "l'album",
     "en": "album",
     "de": "das Album",
-    "es": "el Ã¡lbum",
+    "es": "el álbum",
     "type": "nom",
     "level": "B1"
   },
@@ -8392,7 +8392,7 @@
     "fr": "alcoolique",
     "en": "alcoholic",
     "de": "alkoholisch",
-    "es": "alcohÃ³lico",
+    "es": "alcohólico",
     "type": "adjectif",
     "level": "B1"
   },
@@ -8407,7 +8407,7 @@
   },
   {
     "id": "word_935",
-    "fr": "Ã©merveillÃ©",
+    "fr": "émerveillé",
     "en": "amazed",
     "de": "erstaunt",
     "es": "asombrado",
@@ -8419,7 +8419,7 @@
     "fr": "l'ambition",
     "en": "ambition",
     "de": "die Ambition",
-    "es": "la ambiciÃ³n",
+    "es": "la ambición",
     "type": "nom",
     "level": "B1"
   },
@@ -8436,7 +8436,7 @@
     "id": "word_938",
     "fr": "annoncer",
     "en": "announce",
-    "de": "ankÃ¼ndigen",
+    "de": "ankündigen",
     "es": "anunciar",
     "type": "verbe",
     "level": "B1"
@@ -8445,7 +8445,7 @@
     "id": "word_939",
     "fr": "l'annonce",
     "en": "announcement",
-    "de": "die AnkÃ¼ndigung",
+    "de": "die Ankündigung",
     "es": "el anuncio",
     "type": "nom",
     "level": "B1"
@@ -8454,32 +8454,32 @@
     "id": "word_940",
     "fr": "agacer",
     "en": "annoy",
-    "de": "Ã¤rgern",
+    "de": "ärgern",
     "es": "molestar",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_941",
-    "fr": "agacÃ©",
+    "fr": "agacé",
     "en": "annoyed",
-    "de": "verÃ¤rgert",
+    "de": "verärgert",
     "es": "molesto",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_942",
-    "fr": "agaÃ§ant",
+    "fr": "agaçant",
     "en": "annoying",
-    "de": "Ã¤rgerlich",
+    "de": "ärgerlich",
     "es": "molesto",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_943",
-    "fr": "Ã  part / sÃ©parÃ©",
+    "fr": "à part / séparé",
     "en": "apart",
     "de": "auseinander",
     "es": "aparte",
@@ -8515,9 +8515,9 @@
   },
   {
     "id": "word_947",
-    "fr": "apprÃ©cier",
+    "fr": "apprécier",
     "en": "appreciate",
-    "de": "schÃ¤tzen",
+    "de": "schätzen",
     "es": "apreciar",
     "type": "verbe",
     "level": "B1"
@@ -8526,14 +8526,14 @@
     "id": "word_948",
     "fr": "approximativement",
     "en": "approximately",
-    "de": "ungefÃ¤hr",
+    "de": "ungefähr",
     "es": "aproximadamente",
     "type": "adverbe",
     "level": "B1"
   },
   {
     "id": "word_949",
-    "fr": "arrÃªter (police)",
+    "fr": "arrêter (police)",
     "en": "arrest",
     "de": "verhaften",
     "es": "arrestar",
@@ -8542,7 +8542,7 @@
   },
   {
     "id": "word_950",
-    "fr": "l'arrivÃ©e",
+    "fr": "l'arrivée",
     "en": "arrival",
     "de": "die Ankunft",
     "es": "la llegada",
@@ -8554,7 +8554,7 @@
     "fr": "le devoir / la mission",
     "en": "assignment",
     "de": "die Aufgabe",
-    "es": "la asignaciÃ³n",
+    "es": "la asignación",
     "type": "nom",
     "level": "B1"
   },
@@ -8569,10 +8569,10 @@
   },
   {
     "id": "word_953",
-    "fr": "l'atmosphÃ¨re",
+    "fr": "l'atmosphère",
     "en": "atmosphere",
-    "de": "die AtmosphÃ¤re",
-    "es": "la atmÃ³sfera",
+    "de": "die Atmosphäre",
+    "es": "la atmósfera",
     "type": "nom",
     "level": "B1"
   },
@@ -8580,7 +8580,7 @@
     "id": "word_954",
     "fr": "attacher / joindre",
     "en": "attach",
-    "de": "anhÃ¤ngen",
+    "de": "anhängen",
     "es": "adjuntar",
     "type": "verbe",
     "level": "B1"
@@ -8608,15 +8608,15 @@
     "fr": "l'attraction",
     "en": "attraction",
     "de": "die Attraktion",
-    "es": "la atracciÃ³n",
+    "es": "la atracción",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_958",
-    "fr": "l'autoritÃ©",
+    "fr": "l'autorité",
     "en": "authority",
-    "de": "die BehÃ¶rde",
+    "de": "die Behörde",
     "es": "la autoridad",
     "type": "nom",
     "level": "B1"
@@ -8632,7 +8632,7 @@
   },
   {
     "id": "word_960",
-    "fr": "dÃ©cerner un prix",
+    "fr": "décerner un prix",
     "en": "award",
     "de": "verleihen",
     "es": "premiar",
@@ -8650,10 +8650,10 @@
   },
   {
     "id": "word_962",
-    "fr": "en arriÃ¨re",
+    "fr": "en arrière",
     "en": "backwards",
-    "de": "rÃ¼ckwÃ¤rts",
-    "es": "hacia atrÃ¡s",
+    "de": "rückwärts",
+    "es": "hacia atrás",
     "type": "adverbe",
     "level": "B1"
   },
@@ -8668,7 +8668,7 @@
   },
   {
     "id": "word_964",
-    "fr": "l'Ã©quilibre",
+    "fr": "l'équilibre",
     "en": "balance",
     "de": "das Gleichgewicht",
     "es": "el equilibrio",
@@ -8677,7 +8677,7 @@
   },
   {
     "id": "word_965",
-    "fr": "Ã©quilibrer",
+    "fr": "équilibrer",
     "en": "balance",
     "de": "ausgleichen",
     "es": "equilibrar",
@@ -8689,7 +8689,7 @@
     "fr": "l'interdiction",
     "en": "ban",
     "de": "das Verbot",
-    "es": "la prohibiciÃ³n",
+    "es": "la prohibición",
     "type": "nom",
     "level": "B1"
   },
@@ -8704,7 +8704,7 @@
   },
   {
     "id": "word_968",
-    "fr": "la rive (d'une riviÃ¨re)",
+    "fr": "la rive (d'une rivière)",
     "en": "bank",
     "de": "das Ufer",
     "es": "la orilla",
@@ -8734,7 +8734,7 @@
     "fr": "basique / fondamental",
     "en": "basic",
     "de": "grundlegend",
-    "es": "bÃ¡sico",
+    "es": "básico",
     "type": "adjectif",
     "level": "B1"
   },
@@ -8743,7 +8743,7 @@
     "fr": "la batterie",
     "en": "battery",
     "de": "die Batterie",
-    "es": "la baterÃ­a",
+    "es": "la batería",
     "type": "nom",
     "level": "B1"
   },
@@ -8758,9 +8758,9 @@
   },
   {
     "id": "word_974",
-    "fr": "la beautÃ©",
+    "fr": "la beauté",
     "en": "beauty",
-    "de": "die SchÃ¶nheit",
+    "de": "die Schönheit",
     "es": "la belleza",
     "type": "nom",
     "level": "B1"
@@ -8812,7 +8812,7 @@
   },
   {
     "id": "word_980",
-    "fr": "bÃ©nÃ©ficier",
+    "fr": "bénéficier",
     "en": "benefit",
     "de": "profitieren",
     "es": "beneficiarse",
@@ -8823,7 +8823,7 @@
     "id": "word_981",
     "fr": "mordre",
     "en": "bite",
-    "de": "beiÃŸen",
+    "de": "beißen",
     "es": "morder",
     "type": "verbe",
     "level": "B1"
@@ -8875,7 +8875,7 @@
   },
   {
     "id": "word_987",
-    "fr": "la rÃ©servation",
+    "fr": "la réservation",
     "en": "booking",
     "de": "die Buchung",
     "es": "la reserva",
@@ -8884,7 +8884,7 @@
   },
   {
     "id": "word_988",
-    "fr": "la frontiÃ¨re",
+    "fr": "la frontière",
     "en": "border",
     "de": "die Grenze",
     "es": "la frontera",
@@ -8893,9 +8893,9 @@
   },
   {
     "id": "word_989",
-    "fr": "dÃ©ranger",
+    "fr": "déranger",
     "en": "bother",
-    "de": "belÃ¤stigen / stÃ¶ren",
+    "de": "belästigen / stören",
     "es": "molestar",
     "type": "verbe",
     "level": "B1"
@@ -8932,7 +8932,7 @@
     "fr": "la respiration / le souffle",
     "en": "breath",
     "de": "der Atem",
-    "es": "la respiraciÃ³n",
+    "es": "la respiración",
     "type": "nom",
     "level": "B1"
   },
@@ -8950,13 +8950,13 @@
     "fr": "la respiration (action)",
     "en": "breathing",
     "de": "die Atmung",
-    "es": "la respiraciÃ³n",
+    "es": "la respiración",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_996",
-    "fr": "la mariÃ©e",
+    "fr": "la mariée",
     "en": "bride",
     "de": "die Braut",
     "es": "la novia",
@@ -8974,7 +8974,7 @@
   },
   {
     "id": "word_998",
-    "fr": "Ã©clater",
+    "fr": "éclater",
     "en": "burst",
     "de": "platzen",
     "es": "estallar",
@@ -9004,7 +9004,7 @@
     "fr": "la campagne (militaire/pub)",
     "en": "campaign",
     "de": "die Kampagne",
-    "es": "la campaÃ±a",
+    "es": "la campaña",
     "type": "nom",
     "level": "B1"
   },
@@ -9030,7 +9030,7 @@
     "id": "word_1004",
     "fr": "la casquette",
     "en": "cap",
-    "de": "die MÃ¼tze",
+    "de": "die Mütze",
     "es": "la gorra",
     "type": "nom",
     "level": "B1"
@@ -9039,14 +9039,14 @@
     "id": "word_1005",
     "fr": "le capitaine",
     "en": "captain",
-    "de": "der KapitÃ¤n",
-    "es": "el capitÃ¡n",
+    "de": "der Kapitän",
+    "es": "el capitán",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1006",
-    "fr": "la carriÃ¨re",
+    "fr": "la carrière",
     "en": "career",
     "de": "die Karriere",
     "es": "la carrera",
@@ -9055,7 +9055,7 @@
   },
   {
     "id": "word_1007",
-    "fr": "nÃ©gligent / imprudent",
+    "fr": "négligent / imprudent",
     "en": "careless",
     "de": "unvorsichtig",
     "es": "descuidado",
@@ -9064,10 +9064,10 @@
   },
   {
     "id": "word_1008",
-    "fr": "la catÃ©gorie",
+    "fr": "la catégorie",
     "en": "category",
     "de": "die Kategorie",
-    "es": "la categorÃ­a",
+    "es": "la categoría",
     "type": "nom",
     "level": "B1"
   },
@@ -9082,10 +9082,10 @@
   },
   {
     "id": "word_1010",
-    "fr": "la cÃ©lÃ©bration",
+    "fr": "la célébration",
     "en": "celebration",
     "de": "die Feier",
-    "es": "la celebraciÃ³n",
+    "es": "la celebración",
     "type": "nom",
     "level": "B1"
   },
@@ -9100,7 +9100,7 @@
   },
   {
     "id": "word_1012",
-    "fr": "le siÃ¨cle",
+    "fr": "le siècle",
     "en": "century",
     "de": "das Jahrhundert",
     "es": "el siglo",
@@ -9109,7 +9109,7 @@
   },
   {
     "id": "word_1013",
-    "fr": "la cÃ©rÃ©monie",
+    "fr": "la cérémonie",
     "en": "ceremony",
     "de": "die Zeremonie",
     "es": "la ceremonia",
@@ -9118,7 +9118,7 @@
   },
   {
     "id": "word_1014",
-    "fr": "la chaÃ®ne",
+    "fr": "la chaîne",
     "en": "chain",
     "de": "die Kette",
     "es": "la cadena",
@@ -9127,16 +9127,16 @@
   },
   {
     "id": "word_1015",
-    "fr": "le dÃ©fi",
+    "fr": "le défi",
     "en": "challenge",
     "de": "die Herausforderung",
-    "es": "el desafÃ­o",
+    "es": "el desafío",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1016",
-    "fr": "dÃ©fier",
+    "fr": "défier",
     "en": "challenge",
     "de": "herausfordern",
     "es": "desafiar",
@@ -9148,13 +9148,13 @@
     "fr": "le champion",
     "en": "champion",
     "de": "der Meister",
-    "es": "el campeÃ³n",
+    "es": "el campeón",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1018",
-    "fr": "le canal / la chaÃ®ne",
+    "fr": "le canal / la chaîne",
     "en": "channel",
     "de": "der Kanal",
     "es": "el canal",
@@ -9166,13 +9166,13 @@
     "fr": "le chapitre",
     "en": "chapter",
     "de": "das Kapitel",
-    "es": "el capÃ­tulo",
+    "es": "el capítulo",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1020",
-    "fr": "la charge (Ã©lectrique) / l'accusation",
+    "fr": "la charge (électrique) / l'accusation",
     "en": "charge",
     "de": "die Ladung",
     "es": "la carga",
@@ -9192,7 +9192,7 @@
     "id": "word_1022",
     "fr": "tricher",
     "en": "cheat",
-    "de": "betrÃ¼gen",
+    "de": "betrügen",
     "es": "hacer trampa",
     "type": "verbe",
     "level": "B1"
@@ -9201,7 +9201,7 @@
     "id": "word_1023",
     "fr": "joyeux",
     "en": "cheerful",
-    "de": "frÃ¶hlich",
+    "de": "fröhlich",
     "es": "alegre",
     "type": "adjectif",
     "level": "B1"
@@ -9211,7 +9211,7 @@
     "fr": "le produit chimique",
     "en": "chemical",
     "de": "die Chemikalie",
-    "es": "el producto quÃ­mico",
+    "es": "el producto químico",
     "type": "nom",
     "level": "B1"
   },
@@ -9220,7 +9220,7 @@
     "fr": "chimique",
     "en": "chemical",
     "de": "chemisch",
-    "es": "quÃ­mico",
+    "es": "químico",
     "type": "adjectif",
     "level": "B1"
   },
@@ -9244,7 +9244,7 @@
   },
   {
     "id": "word_1028",
-    "fr": "rÃ©clamer / prÃ©tendre",
+    "fr": "réclamer / prétendre",
     "en": "claim",
     "de": "behaupten",
     "es": "reclamar",
@@ -9253,7 +9253,7 @@
   },
   {
     "id": "word_1029",
-    "fr": "la rÃ©clamation",
+    "fr": "la réclamation",
     "en": "claim",
     "de": "der Anspruch",
     "es": "el reclamo",
@@ -9328,7 +9328,7 @@
     "fr": "le charbon",
     "en": "coal",
     "de": "die Kohle",
-    "es": "el carbÃ³n",
+    "es": "el carbón",
     "type": "nom",
     "level": "B1"
   },
@@ -9337,13 +9337,13 @@
     "fr": "la collection",
     "en": "collection",
     "de": "die Sammlung",
-    "es": "la colecciÃ³n",
+    "es": "la colección",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1039",
-    "fr": "colorÃ©",
+    "fr": "coloré",
     "en": "coloured",
     "de": "farbig",
     "es": "coloreado",
@@ -9379,7 +9379,7 @@
   },
   {
     "id": "word_1043",
-    "fr": "la publicitÃ© (tÃ©lÃ© / radio)",
+    "fr": "la publicité (télé / radio)",
     "en": "commercial",
     "de": "der Werbespot",
     "es": "el anuncio comercial",
@@ -9400,7 +9400,7 @@
     "fr": "la communication",
     "en": "communication",
     "de": "die Kommunikation",
-    "es": "la comunicaciÃ³n",
+    "es": "la comunicación",
     "type": "nom",
     "level": "B1"
   },
@@ -9409,7 +9409,7 @@
     "fr": "la comparaison",
     "en": "comparison",
     "de": "der Vergleich",
-    "es": "la comparaciÃ³n",
+    "es": "la comparación",
     "type": "nom",
     "level": "B1"
   },
@@ -9424,9 +9424,9 @@
   },
   {
     "id": "word_1048",
-    "fr": "compÃ©titif",
+    "fr": "compétitif",
     "en": "competitive",
-    "de": "wettbewerbsfÃ¤hig",
+    "de": "wettbewerbsfähig",
     "es": "competitivo",
     "type": "adjectif",
     "level": "B1"
@@ -9462,7 +9462,7 @@
     "id": "word_1052",
     "fr": "conclure",
     "en": "conclude",
-    "de": "schlieÃŸen",
+    "de": "schließen",
     "es": "concluir",
     "type": "verbe",
     "level": "B1"
@@ -9480,7 +9480,7 @@
     "id": "word_1054",
     "fr": "confirmer",
     "en": "confirm",
-    "de": "bestÃ¤tigen",
+    "de": "bestätigen",
     "es": "confirmar",
     "type": "verbe",
     "level": "B1"
@@ -9508,7 +9508,7 @@
     "fr": "la connexion",
     "en": "connection",
     "de": "die Verbindung",
-    "es": "la conexiÃ³n",
+    "es": "la conexión",
     "type": "nom",
     "level": "B1"
   },
@@ -9534,7 +9534,7 @@
     "id": "word_1060",
     "fr": "le conteneur",
     "en": "container",
-    "de": "der BehÃ¤lter",
+    "de": "der Behälter",
     "es": "el contenedor",
     "type": "nom",
     "level": "B1"
@@ -9588,7 +9588,7 @@
     "id": "word_1066",
     "fr": "convaincre",
     "en": "convince",
-    "de": "Ã¼berzeugen",
+    "de": "überzeugen",
     "es": "convencer",
     "type": "verbe",
     "level": "B1"
@@ -9604,19 +9604,19 @@
   },
   {
     "id": "word_1068",
-    "fr": "le costume / le dÃ©guisement",
+    "fr": "le costume / le déguisement",
     "en": "costume",
-    "de": "das KostÃ¼m",
+    "de": "das Kostüm",
     "es": "el disfraz",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1069",
-    "fr": "la chaumiÃ¨re / le chalet",
+    "fr": "la chaumière / le chalet",
     "en": "cottage",
     "de": "das Ferienhaus",
-    "es": "la cabaÃ±a",
+    "es": "la cabaña",
     "type": "nom",
     "level": "B1"
   },
@@ -9625,7 +9625,7 @@
     "fr": "le coton",
     "en": "cotton",
     "de": "die Baumwolle",
-    "es": "el algodÃ³n",
+    "es": "el algodón",
     "type": "nom",
     "level": "B1"
   },
@@ -9676,7 +9676,7 @@
   },
   {
     "id": "word_1076",
-    "fr": "crÃ©er",
+    "fr": "créer",
     "en": "create",
     "de": "erstellen",
     "es": "crear",
@@ -9685,10 +9685,10 @@
   },
   {
     "id": "word_1077",
-    "fr": "le crÃ©dit",
+    "fr": "le crédit",
     "en": "credit",
     "de": "der Kredit",
-    "es": "el crÃ©dito",
+    "es": "el crédito",
     "type": "nom",
     "level": "B1"
   },
@@ -9723,7 +9723,7 @@
     "id": "word_1081",
     "fr": "la devise / la monnaie",
     "en": "currency",
-    "de": "die WÃ¤hrung",
+    "de": "die Währung",
     "es": "la moneda",
     "type": "nom",
     "level": "B1"
@@ -9766,10 +9766,10 @@
   },
   {
     "id": "word_1086",
-    "fr": "les dÃ©gÃ¢ts",
+    "fr": "les dégâts",
     "en": "damage",
     "de": "der Schaden",
-    "es": "el daÃ±o",
+    "es": "el daño",
     "type": "nom",
     "level": "B1"
   },
@@ -9777,14 +9777,14 @@
     "id": "word_1087",
     "fr": "endommager",
     "en": "damage",
-    "de": "beschÃ¤digen",
-    "es": "daÃ±ar",
+    "de": "beschädigen",
+    "es": "dañar",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1088",
-    "fr": "traiter / nÃ©gocier",
+    "fr": "traiter / négocier",
     "en": "deal",
     "de": "handeln",
     "es": "tratar",
@@ -9793,16 +9793,16 @@
   },
   {
     "id": "word_1089",
-    "fr": "la dÃ©cennie",
+    "fr": "la décennie",
     "en": "decade",
     "de": "das Jahrzehnt",
-    "es": "la dÃ©cada",
+    "es": "la década",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1090",
-    "fr": "dÃ©corer",
+    "fr": "décorer",
     "en": "decorate",
     "de": "dekorieren",
     "es": "decorar",
@@ -9820,7 +9820,7 @@
   },
   {
     "id": "word_1092",
-    "fr": "dÃ©finitif",
+    "fr": "définitif",
     "en": "definite",
     "de": "definitiv",
     "es": "definitivo",
@@ -9838,7 +9838,7 @@
   },
   {
     "id": "word_1094",
-    "fr": "le dÃ©part",
+    "fr": "le départ",
     "en": "departure",
     "de": "die Abfahrt",
     "es": "la salida",
@@ -9856,7 +9856,7 @@
   },
   {
     "id": "word_1096",
-    "fr": "malgrÃ©",
+    "fr": "malgré",
     "en": "despite",
     "de": "trotz",
     "es": "a pesar de",
@@ -9874,7 +9874,7 @@
   },
   {
     "id": "word_1098",
-    "fr": "dÃ©terminÃ©",
+    "fr": "déterminé",
     "en": "determined",
     "de": "entschlossen",
     "es": "determinado",
@@ -9883,7 +9883,7 @@
   },
   {
     "id": "word_1099",
-    "fr": "le dÃ©veloppement",
+    "fr": "le développement",
     "en": "development",
     "de": "die Entwicklung",
     "es": "el desarrollo",
@@ -9910,7 +9910,7 @@
   },
   {
     "id": "word_1102",
-    "fr": "la difficultÃ©",
+    "fr": "la difficulté",
     "en": "difficulty",
     "de": "die Schwierigkeit",
     "es": "la dificultad",
@@ -9937,7 +9937,7 @@
   },
   {
     "id": "word_1105",
-    "fr": "la saletÃ© / la terre",
+    "fr": "la saleté / la terre",
     "en": "dirt",
     "de": "der Schmutz",
     "es": "la suciedad",
@@ -9946,7 +9946,7 @@
   },
   {
     "id": "word_1106",
-    "fr": "le dÃ©savantage",
+    "fr": "le désavantage",
     "en": "disadvantage",
     "de": "der Nachteil",
     "es": "la desventaja",
@@ -9955,18 +9955,18 @@
   },
   {
     "id": "word_1107",
-    "fr": "dÃ©Ã§u",
+    "fr": "déçu",
     "en": "disappointed",
-    "de": "enttÃ¤uscht",
+    "de": "enttäuscht",
     "es": "decepcionado",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1108",
-    "fr": "dÃ©cevant",
+    "fr": "décevant",
     "en": "disappointing",
-    "de": "enttÃ¤uschend",
+    "de": "enttäuschend",
     "es": "decepcionante",
     "type": "adjectif",
     "level": "B1"
@@ -9993,7 +9993,7 @@
     "id": "word_1111",
     "fr": "ne pas aimer",
     "en": "dislike",
-    "de": "nicht mÃ¶gen",
+    "de": "nicht mögen",
     "es": "no gustar",
     "type": "verbe",
     "level": "B1"
@@ -10045,7 +10045,7 @@
   },
   {
     "id": "word_1117",
-    "fr": "habillÃ©",
+    "fr": "habillé",
     "en": "dressed",
     "de": "gekleidet",
     "es": "vestido",
@@ -10063,16 +10063,16 @@
   },
   {
     "id": "word_1119",
-    "fr": "attendu / dÃ»",
+    "fr": "attendu / dû",
     "en": "due",
-    "de": "fÃ¤llig",
+    "de": "fällig",
     "es": "debido",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1120",
-    "fr": "la poussiÃ¨re",
+    "fr": "la poussière",
     "en": "dust",
     "de": "der Staub",
     "es": "el polvo",
@@ -10101,26 +10101,26 @@
     "id": "word_1123",
     "fr": "oriental / de l'est",
     "en": "eastern",
-    "de": "Ã¶stlich",
+    "de": "östlich",
     "es": "oriental",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1124",
-    "fr": "Ã©conomique",
+    "fr": "économique",
     "en": "economic",
     "de": "wirtschaftlich",
-    "es": "econÃ³mico",
+    "es": "económico",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1125",
-    "fr": "l'Ã©conomie",
+    "fr": "l'économie",
     "en": "economy",
     "de": "die Wirtschaft",
-    "es": "la economÃ­a",
+    "es": "la economía",
     "type": "nom",
     "level": "B1"
   },
@@ -10135,7 +10135,7 @@
   },
   {
     "id": "word_1127",
-    "fr": "l'Ã©diteur / le rÃ©dacteur",
+    "fr": "l'éditeur / le rédacteur",
     "en": "editor",
     "de": "der Redakteur",
     "es": "el editor",
@@ -10144,7 +10144,7 @@
   },
   {
     "id": "word_1128",
-    "fr": "Ã©duquer",
+    "fr": "éduquer",
     "en": "educate",
     "de": "ausbilden",
     "es": "educar",
@@ -10153,7 +10153,7 @@
   },
   {
     "id": "word_1129",
-    "fr": "Ã©duquÃ©",
+    "fr": "éduqué",
     "en": "educated",
     "de": "gebildet",
     "es": "educado",
@@ -10162,7 +10162,7 @@
   },
   {
     "id": "word_1130",
-    "fr": "Ã©ducatif",
+    "fr": "éducatif",
     "en": "educational",
     "de": "lehrreich",
     "es": "educativo",
@@ -10207,16 +10207,16 @@
   },
   {
     "id": "word_1135",
-    "fr": "l'Ã©lection",
+    "fr": "l'élection",
     "en": "election",
     "de": "die Wahl",
-    "es": "la elecciÃ³n",
+    "es": "la elección",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1136",
-    "fr": "gÃªnÃ© / embarrassÃ©",
+    "fr": "gêné / embarrassé",
     "en": "embarrassed",
     "de": "verlegen",
     "es": "avergonzado",
@@ -10225,7 +10225,7 @@
   },
   {
     "id": "word_1137",
-    "fr": "gÃªnant / embarrassant",
+    "fr": "gênant / embarrassant",
     "en": "embarrassing",
     "de": "peinlich",
     "es": "vergonzoso",
@@ -10243,10 +10243,10 @@
   },
   {
     "id": "word_1139",
-    "fr": "l'Ã©motion",
+    "fr": "l'émotion",
     "en": "emotion",
     "de": "die Emotion",
-    "es": "la emociÃ³n",
+    "es": "la emoción",
     "type": "nom",
     "level": "B1"
   },
@@ -10254,7 +10254,7 @@
     "id": "word_1140",
     "fr": "l'emploi",
     "en": "employment",
-    "de": "die BeschÃ¤ftigung",
+    "de": "die Beschäftigung",
     "es": "el empleo",
     "type": "nom",
     "level": "B1"
@@ -10279,7 +10279,7 @@
   },
   {
     "id": "word_1143",
-    "fr": "fiancÃ© / occupÃ©",
+    "fr": "fiancé / occupé",
     "en": "engaged",
     "de": "verlobt / besetzt",
     "es": "comprometido",
@@ -10288,10 +10288,10 @@
   },
   {
     "id": "word_1144",
-    "fr": "l'ingÃ©nierie",
+    "fr": "l'ingénierie",
     "en": "engineering",
     "de": "das Ingenieurwesen",
-    "es": "la ingenierÃ­a",
+    "es": "la ingeniería",
     "type": "nom",
     "level": "B1"
   },
@@ -10315,7 +10315,7 @@
   },
   {
     "id": "word_1147",
-    "fr": "l'entrÃ©e",
+    "fr": "l'entrée",
     "en": "entrance",
     "de": "der Eingang",
     "es": "la entrada",
@@ -10324,7 +10324,7 @@
   },
   {
     "id": "word_1148",
-    "fr": "l'entrÃ©e (droit/action)",
+    "fr": "l'entrée (droit/action)",
     "en": "entry",
     "de": "der Eintritt",
     "es": "la entrada",
@@ -10351,7 +10351,7 @@
   },
   {
     "id": "word_1151",
-    "fr": "l'Ã©pisode",
+    "fr": "l'épisode",
     "en": "episode",
     "de": "die Episode",
     "es": "el episodio",
@@ -10360,7 +10360,7 @@
   },
   {
     "id": "word_1152",
-    "fr": "Ã©gal",
+    "fr": "égal",
     "en": "equal",
     "de": "gleich",
     "es": "igual",
@@ -10369,16 +10369,16 @@
   },
   {
     "id": "word_1153",
-    "fr": "Ã©galement",
+    "fr": "également",
     "en": "equally",
-    "de": "gleichermaÃŸen",
+    "de": "gleichermaßen",
     "es": "igualmente",
     "type": "adverbe",
     "level": "B1"
   },
   {
     "id": "word_1154",
-    "fr": "s'Ã©chapper",
+    "fr": "s'échapper",
     "en": "escape",
     "de": "entkommen",
     "es": "escapar",
@@ -10396,7 +10396,7 @@
   },
   {
     "id": "word_1156",
-    "fr": "l'Ã©vÃ©nement",
+    "fr": "l'événement",
     "en": "event",
     "de": "das Ereignis",
     "es": "el evento",
@@ -10407,7 +10407,7 @@
     "id": "word_1157",
     "fr": "finalement",
     "en": "eventually",
-    "de": "schlieÃŸlich",
+    "de": "schließlich",
     "es": "finalmente",
     "type": "adverbe",
     "level": "B1"
@@ -10423,7 +10423,7 @@
   },
   {
     "id": "word_1159",
-    "fr": "l'Ã©change",
+    "fr": "l'échange",
     "en": "exchange",
     "de": "der Austausch",
     "es": "el intercambio",
@@ -10432,7 +10432,7 @@
   },
   {
     "id": "word_1160",
-    "fr": "Ã©changer",
+    "fr": "échanger",
     "en": "exchange",
     "de": "austauschen",
     "es": "intercambiar",
@@ -10444,7 +10444,7 @@
     "fr": "l'excitation",
     "en": "excitement",
     "de": "die Aufregung",
-    "es": "la emociÃ³n",
+    "es": "la emoción",
     "type": "nom",
     "level": "B1"
   },
@@ -10453,13 +10453,13 @@
     "fr": "l'exposition",
     "en": "exhibition",
     "de": "die Ausstellung",
-    "es": "la exposiciÃ³n",
+    "es": "la exposición",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1163",
-    "fr": "Ã©tendre / se dÃ©velopper",
+    "fr": "étendre / se développer",
     "en": "expand",
     "de": "erweitern",
     "es": "expandir",
@@ -10477,16 +10477,16 @@
   },
   {
     "id": "word_1165",
-    "fr": "l'expÃ©dition",
+    "fr": "l'expédition",
     "en": "expedition",
     "de": "die Expedition",
-    "es": "la expediciÃ³n",
+    "es": "la expedición",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1166",
-    "fr": "expÃ©rimentÃ©",
+    "fr": "expérimenté",
     "en": "experienced",
     "de": "erfahren",
     "es": "experimentado",
@@ -10516,7 +10516,7 @@
     "fr": "l'explosion",
     "en": "explosion",
     "de": "die Explosion",
-    "es": "la explosiÃ³n",
+    "es": "la explosión",
     "type": "nom",
     "level": "B1"
   },
@@ -10525,7 +10525,7 @@
     "fr": "l'exportation",
     "en": "export",
     "de": "der Export",
-    "es": "la exportaciÃ³n",
+    "es": "la exportación",
     "type": "nom",
     "level": "B1"
   },
@@ -10540,7 +10540,7 @@
   },
   {
     "id": "word_1172",
-    "fr": "faire face Ã ",
+    "fr": "faire face à",
     "en": "face",
     "de": "sich stellen",
     "es": "enfrentar",
@@ -10558,7 +10558,7 @@
   },
   {
     "id": "word_1174",
-    "fr": "assez / plutÃ´t",
+    "fr": "assez / plutôt",
     "en": "fairly",
     "de": "ziemlich",
     "es": "bastante",
@@ -10594,7 +10594,7 @@
   },
   {
     "id": "word_1178",
-    "fr": "Ã  la mode",
+    "fr": "à la mode",
     "en": "fashionable",
     "de": "modisch",
     "es": "de moda",
@@ -10632,23 +10632,23 @@
     "id": "word_1182",
     "fr": "craindre",
     "en": "fear",
-    "de": "fÃ¼rchten",
+    "de": "fürchten",
     "es": "temer",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1183",
-    "fr": "la caractÃ©ristique",
+    "fr": "la caractéristique",
     "en": "feature",
     "de": "das Merkmal",
-    "es": "la caracterÃ­stica",
+    "es": "la característica",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1184",
-    "fr": "prÃ©senter (avoir pour vedette)",
+    "fr": "présenter (avoir pour vedette)",
     "en": "feature",
     "de": "in der Hauptrolle zeigen",
     "es": "presentar",
@@ -10659,14 +10659,14 @@
     "id": "word_1185",
     "fr": "nourrir",
     "en": "feed",
-    "de": "fÃ¼ttern",
+    "de": "füttern",
     "es": "alimentar",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1186",
-    "fr": "la clÃ´ture",
+    "fr": "la clôture",
     "en": "fence",
     "de": "der Zaun",
     "es": "la valla",
@@ -10677,7 +10677,7 @@
     "id": "word_1187",
     "fr": "le combat",
     "en": "fighting",
-    "de": "das KÃ¤mpfen",
+    "de": "das Kämpfen",
     "es": "la pelea",
     "type": "nom",
     "level": "B1"
@@ -10732,7 +10732,7 @@
     "fr": "la forme (physique)",
     "en": "fitness",
     "de": "die Fitness",
-    "es": "la aptitud fÃ­sica",
+    "es": "la aptitud física",
     "type": "nom",
     "level": "B1"
   },
@@ -10758,8 +10758,8 @@
     "id": "word_1196",
     "fr": "l'inondation",
     "en": "flood",
-    "de": "die Ãœberschwemmung",
-    "es": "la inundaciÃ³n",
+    "de": "die Überschwemmung",
+    "es": "la inundación",
     "type": "nom",
     "level": "B1"
   },
@@ -10767,7 +10767,7 @@
     "id": "word_1197",
     "fr": "inonder",
     "en": "flood",
-    "de": "Ã¼berschwemmen",
+    "de": "überschwemmen",
     "es": "inundar",
     "type": "verbe",
     "level": "B1"
@@ -10794,7 +10794,7 @@
     "id": "word_1200",
     "fr": "couler",
     "en": "flow",
-    "de": "flieÃŸen",
+    "de": "fließen",
     "es": "fluir",
     "type": "verbe",
     "level": "B1"
@@ -10821,7 +10821,7 @@
     "id": "word_1203",
     "fr": "les gens / folklorique",
     "en": "folk",
-    "de": "die Leute / volkstÃ¼mlich",
+    "de": "die Leute / volkstümlich",
     "es": "la gente / popular",
     "type": "nom",
     "level": "B1"
@@ -10857,7 +10857,7 @@
     "id": "word_1207",
     "fr": "pour toujours",
     "en": "forever",
-    "de": "fÃ¼r immer",
+    "de": "für immer",
     "es": "para siempre",
     "type": "adverbe",
     "level": "B1"
@@ -10882,16 +10882,16 @@
   },
   {
     "id": "word_1210",
-    "fr": "frÃ©quemment",
+    "fr": "fréquemment",
     "en": "frequently",
-    "de": "hÃ¤ufig",
+    "de": "häufig",
     "es": "frecuentemente",
     "type": "adverbe",
     "level": "B1"
   },
   {
     "id": "word_1211",
-    "fr": "l'amitiÃ©",
+    "fr": "l'amitié",
     "en": "friendship",
     "de": "die Freundschaft",
     "es": "la amistad",
@@ -10909,7 +10909,7 @@
   },
   {
     "id": "word_1213",
-    "fr": "effrayÃ©",
+    "fr": "effrayé",
     "en": "frightened",
     "de": "erschrocken",
     "es": "asustado",
@@ -10920,14 +10920,14 @@
     "id": "word_1214",
     "fr": "effrayant",
     "en": "frightening",
-    "de": "beÃ¤ngstigend",
+    "de": "beängstigend",
     "es": "aterrador",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1215",
-    "fr": "gelÃ©",
+    "fr": "gelé",
     "en": "frozen",
     "de": "gefroren",
     "es": "congelado",
@@ -10939,7 +10939,7 @@
     "fr": "frire",
     "en": "fry",
     "de": "braten",
-    "es": "freÃ­r",
+    "es": "freír",
     "type": "verbe",
     "level": "B1"
   },
@@ -10957,7 +10957,7 @@
     "fr": "la fonction",
     "en": "function",
     "de": "die Funktion",
-    "es": "la funciÃ³n",
+    "es": "la función",
     "type": "nom",
     "level": "B1"
   },
@@ -10999,7 +10999,7 @@
   },
   {
     "id": "word_1223",
-    "fr": "gÃ©nÃ©ralement",
+    "fr": "généralement",
     "en": "generally",
     "de": "allgemein",
     "es": "generalmente",
@@ -11008,18 +11008,18 @@
   },
   {
     "id": "word_1224",
-    "fr": "la gÃ©nÃ©ration",
+    "fr": "la génération",
     "en": "generation",
     "de": "die Generation",
-    "es": "la generaciÃ³n",
+    "es": "la generación",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1225",
-    "fr": "gÃ©nÃ©reux",
+    "fr": "généreux",
     "en": "generous",
-    "de": "groÃŸzÃ¼gig",
+    "de": "großzügig",
     "es": "generoso",
     "type": "adjectif",
     "level": "B1"
@@ -11044,7 +11044,7 @@
   },
   {
     "id": "word_1228",
-    "fr": "le fantÃ´me",
+    "fr": "le fantôme",
     "en": "ghost",
     "de": "der Geist",
     "es": "el fantasma",
@@ -11053,7 +11053,7 @@
   },
   {
     "id": "word_1229",
-    "fr": "le gÃ©ant",
+    "fr": "le géant",
     "en": "giant",
     "de": "der Riese",
     "es": "el gigante",
@@ -11062,7 +11062,7 @@
   },
   {
     "id": "word_1230",
-    "fr": "gÃ©ant",
+    "fr": "géant",
     "en": "giant",
     "de": "riesig",
     "es": "gigante",
@@ -11116,7 +11116,7 @@
   },
   {
     "id": "word_1236",
-    "fr": "la note / l'annÃ©e scolaire",
+    "fr": "la note / l'année scolaire",
     "en": "grade",
     "de": "die Note / die Klasse",
     "es": "el grado",
@@ -11125,7 +11125,7 @@
   },
   {
     "id": "word_1237",
-    "fr": "obtenir un diplÃ´me",
+    "fr": "obtenir un diplôme",
     "en": "graduate",
     "de": "einen Abschluss machen",
     "es": "graduarse",
@@ -11163,7 +11163,7 @@
     "id": "word_1241",
     "fr": "le garde",
     "en": "guard",
-    "de": "der WÃ¤chter",
+    "de": "der Wächter",
     "es": "el guardia",
     "type": "nom",
     "level": "B1"
@@ -11190,7 +11190,7 @@
     "id": "word_1244",
     "fr": "pendre / accrocher",
     "en": "hang",
-    "de": "hÃ¤ngen",
+    "de": "hängen",
     "es": "colgar",
     "type": "verbe",
     "level": "B1"
@@ -11199,14 +11199,14 @@
     "id": "word_1245",
     "fr": "le bonheur",
     "en": "happiness",
-    "de": "das GlÃ¼ck",
+    "de": "das Glück",
     "es": "la felicidad",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1246",
-    "fr": "Ã  peine",
+    "fr": "à peine",
     "en": "hardly",
     "de": "kaum",
     "es": "apenas",
@@ -11227,7 +11227,7 @@
     "fr": "le chauffage",
     "en": "heating",
     "de": "die Heizung",
-    "es": "la calefacciÃ³n",
+    "es": "la calefacción",
     "type": "nom",
     "level": "B1"
   },
@@ -11242,16 +11242,16 @@
   },
   {
     "id": "word_1250",
-    "fr": "l'hÃ©licoptÃ¨re",
+    "fr": "l'hélicoptère",
     "en": "helicopter",
     "de": "der Hubschrauber",
-    "es": "el helicÃ³ptero",
+    "es": "el helicóptero",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1251",
-    "fr": "surligner / mettre en Ã©vidence",
+    "fr": "surligner / mettre en évidence",
     "en": "highlight",
     "de": "hervorheben",
     "es": "resaltar",
@@ -11262,7 +11262,7 @@
     "id": "word_1252",
     "fr": "hautement",
     "en": "highly",
-    "de": "hÃ¶chst",
+    "de": "höchst",
     "es": "altamente",
     "type": "adverbe",
     "level": "B1"
@@ -11299,22 +11299,22 @@
     "fr": "historique",
     "en": "historic",
     "de": "historisch",
-    "es": "histÃ³rico",
+    "es": "histórico",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1257",
-    "fr": "historique (relatif Ã  l'histoire)",
+    "fr": "historique (relatif à l'histoire)",
     "en": "historical",
     "de": "historisch",
-    "es": "histÃ³rico",
+    "es": "histórico",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1258",
-    "fr": "honnÃªte",
+    "fr": "honnête",
     "en": "honest",
     "de": "ehrlich",
     "es": "honesto",
@@ -11350,16 +11350,16 @@
   },
   {
     "id": "word_1262",
-    "fr": "l'hÃ´te",
+    "fr": "l'hôte",
     "en": "host",
     "de": "der Gastgeber",
-    "es": "el anfitriÃ³n",
+    "es": "el anfitrión",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1263",
-    "fr": "hÃ©berger / animer",
+    "fr": "héberger / animer",
     "en": "host",
     "de": "veranstalten",
     "es": "albergar",
@@ -11389,7 +11389,7 @@
     "fr": "l'ouragan",
     "en": "hurricane",
     "de": "der Hurrikan",
-    "es": "el huracÃ¡n",
+    "es": "el huracán",
     "type": "nom",
     "level": "B1"
   },
@@ -11413,7 +11413,7 @@
   },
   {
     "id": "word_1269",
-    "fr": "illÃ©gal",
+    "fr": "illégal",
     "en": "illegal",
     "de": "illegal",
     "es": "ilegal",
@@ -11424,14 +11424,14 @@
     "id": "word_1270",
     "fr": "imaginaire",
     "en": "imaginary",
-    "de": "imaginÃ¤r",
+    "de": "imaginär",
     "es": "imaginario",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1271",
-    "fr": "immÃ©diat",
+    "fr": "immédiat",
     "en": "immediate",
     "de": "sofortig",
     "es": "inmediato",
@@ -11461,7 +11461,7 @@
     "fr": "l'importation",
     "en": "import",
     "de": "der Import",
-    "es": "la importaciÃ³n",
+    "es": "la importación",
     "type": "nom",
     "level": "B1"
   },
@@ -11488,7 +11488,7 @@
     "fr": "l'impression",
     "en": "impression",
     "de": "der Eindruck",
-    "es": "la impresiÃ³n",
+    "es": "la impresión",
     "type": "nom",
     "level": "B1"
   },
@@ -11503,7 +11503,7 @@
   },
   {
     "id": "word_1279",
-    "fr": "amÃ©liorer",
+    "fr": "améliorer",
     "en": "improve",
     "de": "verbessern",
     "es": "mejorar",
@@ -11512,7 +11512,7 @@
   },
   {
     "id": "word_1280",
-    "fr": "l'amÃ©lioration",
+    "fr": "l'amélioration",
     "en": "improvement",
     "de": "die Verbesserung",
     "es": "la mejora",
@@ -11524,7 +11524,7 @@
     "fr": "incroyablement",
     "en": "incredibly",
     "de": "unglaublich",
-    "es": "increÃ­blemente",
+    "es": "increíblemente",
     "type": "adverbe",
     "level": "B1"
   },
@@ -11532,7 +11532,7 @@
     "id": "word_1282",
     "fr": "en effet",
     "en": "indeed",
-    "de": "tatsÃ¤chlich",
+    "de": "tatsächlich",
     "es": "de hecho",
     "type": "adverbe",
     "level": "B1"
@@ -11557,7 +11557,7 @@
   },
   {
     "id": "word_1285",
-    "fr": "intÃ©rieur (adj)",
+    "fr": "intérieur (adj)",
     "en": "indoor",
     "de": "Innen-",
     "es": "interior",
@@ -11566,7 +11566,7 @@
   },
   {
     "id": "word_1286",
-    "fr": "Ã  l'intÃ©rieur",
+    "fr": "à l'intérieur",
     "en": "indoors",
     "de": "drinnen",
     "es": "adentro",
@@ -11575,9 +11575,9 @@
   },
   {
     "id": "word_1287",
-    "fr": "le nourrisson / le bÃ©bÃ©",
+    "fr": "le nourrisson / le bébé",
     "en": "infant",
-    "de": "der SÃ¤ugling",
+    "de": "der Säugling",
     "es": "el infante",
     "type": "nom",
     "level": "B1"
@@ -11602,7 +11602,7 @@
   },
   {
     "id": "word_1290",
-    "fr": "l'ingrÃ©dient",
+    "fr": "l'ingrédient",
     "en": "ingredient",
     "de": "die Zutat",
     "es": "el ingrediente",
@@ -11620,7 +11620,7 @@
   },
   {
     "id": "word_1292",
-    "fr": "blessÃ©",
+    "fr": "blessé",
     "en": "injured",
     "de": "verletzt",
     "es": "herido",
@@ -11650,7 +11650,7 @@
     "fr": "avoir l'intention de",
     "en": "intend",
     "de": "beabsichtigen",
-    "es": "tener la intenciÃ³n",
+    "es": "tener la intención",
     "type": "verbe",
     "level": "B1"
   },
@@ -11659,7 +11659,7 @@
     "fr": "l'intention",
     "en": "intention",
     "de": "die Absicht",
-    "es": "la intenciÃ³n",
+    "es": "la intención",
     "type": "nom",
     "level": "B1"
   },
@@ -11674,7 +11674,7 @@
   },
   {
     "id": "word_1298",
-    "fr": "enquÃªter",
+    "fr": "enquêter",
     "en": "investigate",
     "de": "untersuchen",
     "es": "investigar",
@@ -11683,7 +11683,7 @@
   },
   {
     "id": "word_1299",
-    "fr": "impliquÃ©",
+    "fr": "impliqué",
     "en": "involved",
     "de": "beteiligt",
     "es": "involucrado",
@@ -11692,9 +11692,9 @@
   },
   {
     "id": "word_1300",
-    "fr": "le fer / le fer Ã  repasser",
+    "fr": "le fer / le fer à repasser",
     "en": "iron",
-    "de": "das Eisen / das BÃ¼geleisen",
+    "de": "das Eisen / das Bügeleisen",
     "es": "el hierro",
     "type": "nom",
     "level": "B1"
@@ -11703,14 +11703,14 @@
     "id": "word_1301",
     "fr": "repasser",
     "en": "iron",
-    "de": "bÃ¼geln",
+    "de": "bügeln",
     "es": "planchar",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1302",
-    "fr": "le problÃ¨me / l'Ã©dition",
+    "fr": "le problème / l'édition",
     "en": "issue",
     "de": "das Problem / die Ausgabe",
     "es": "el asunto",
@@ -11722,7 +11722,7 @@
     "fr": "l'informatique (IT)",
     "en": "IT",
     "de": "die Informatik",
-    "es": "la informÃ¡tica",
+    "es": "la informática",
     "type": "nom",
     "level": "B1"
   },
@@ -11755,7 +11755,7 @@
   },
   {
     "id": "word_1307",
-    "fr": "vif / passionnÃ©",
+    "fr": "vif / passionné",
     "en": "keen",
     "de": "eifrig",
     "es": "entusiasta",
@@ -11764,7 +11764,7 @@
   },
   {
     "id": "word_1308",
-    "fr": "clÃ© (principal)",
+    "fr": "clé (principal)",
     "en": "key",
     "de": "Haupt-",
     "es": "clave",
@@ -11784,14 +11784,14 @@
     "id": "word_1310",
     "fr": "le meurtre",
     "en": "killing",
-    "de": "die TÃ¶tung",
+    "de": "die Tötung",
     "es": "el asesinato",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1311",
-    "fr": "gentil / attentionnÃ©",
+    "fr": "gentil / attentionné",
     "en": "kind",
     "de": "freundlich",
     "es": "amable",
@@ -11802,14 +11802,14 @@
     "id": "word_1312",
     "fr": "le royaume",
     "en": "kingdom",
-    "de": "das KÃ¶nigreich",
+    "de": "das Königreich",
     "es": "el reino",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1313",
-    "fr": "l'Ã©tiquette",
+    "fr": "l'étiquette",
     "en": "label",
     "de": "das Etikett",
     "es": "la etiqueta",
@@ -11818,7 +11818,7 @@
   },
   {
     "id": "word_1314",
-    "fr": "Ã©tiqueter",
+    "fr": "étiqueter",
     "en": "label",
     "de": "beschriften",
     "es": "etiquetar",
@@ -11854,10 +11854,10 @@
   },
   {
     "id": "word_1318",
-    "fr": "le plus rÃ©cent / dernier",
+    "fr": "le plus récent / dernier",
     "en": "latest",
     "de": "neueste",
-    "es": "Ãºltimo",
+    "es": "último",
     "type": "adjectif",
     "level": "B1"
   },
@@ -11881,7 +11881,7 @@
   },
   {
     "id": "word_1321",
-    "fr": "le plomb (mÃ©tal)",
+    "fr": "le plomb (métal)",
     "en": "lead",
     "de": "das Blei",
     "es": "el plomo",
@@ -11890,9 +11890,9 @@
   },
   {
     "id": "word_1322",
-    "fr": "principal / de tÃªte",
+    "fr": "principal / de tête",
     "en": "leading",
-    "de": "fÃ¼hrend",
+    "de": "führend",
     "es": "principal",
     "type": "adjectif",
     "level": "B1"
@@ -11917,7 +11917,7 @@
   },
   {
     "id": "word_1325",
-    "fr": "lÃ©gal",
+    "fr": "légal",
     "en": "legal",
     "de": "legal",
     "es": "legal",
@@ -11937,14 +11937,14 @@
     "id": "word_1327",
     "fr": "la longueur",
     "en": "length",
-    "de": "die LÃ¤nge",
+    "de": "die Länge",
     "es": "la longitud",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1328",
-    "fr": "niveler / Ã©galiser",
+    "fr": "niveler / égaliser",
     "en": "level",
     "de": "ebnen",
     "es": "nivelar",
@@ -11955,7 +11955,7 @@
     "id": "word_1329",
     "fr": "mentir",
     "en": "lie",
-    "de": "lÃ¼gen",
+    "de": "lügen",
     "es": "mentir",
     "type": "verbe",
     "level": "B1"
@@ -11965,7 +11965,7 @@
     "fr": "la limite",
     "en": "limit",
     "de": "das Limit",
-    "es": "el lÃ­mite",
+    "es": "el límite",
     "type": "nom",
     "level": "B1"
   },
@@ -11980,7 +11980,7 @@
   },
   {
     "id": "word_1332",
-    "fr": "la lÃ¨vre",
+    "fr": "la lèvre",
     "en": "lip",
     "de": "die Lippe",
     "es": "el labio",
@@ -11991,14 +11991,14 @@
     "id": "word_1333",
     "fr": "le liquide",
     "en": "liquid",
-    "de": "die FlÃ¼ssigkeit",
-    "es": "el lÃ­quido",
+    "de": "die Flüssigkeit",
+    "es": "el líquido",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1334",
-    "fr": "la littÃ©rature",
+    "fr": "la littérature",
     "en": "literature",
     "de": "die Literatur",
     "es": "la literatura",
@@ -12034,7 +12034,7 @@
   },
   {
     "id": "word_1338",
-    "fr": "situÃ©",
+    "fr": "situé",
     "en": "located",
     "de": "gelegen",
     "es": "ubicado",
@@ -12046,7 +12046,7 @@
     "fr": "l'emplacement / le lieu",
     "en": "location",
     "de": "der Standort",
-    "es": "la ubicaciÃ³n",
+    "es": "la ubicación",
     "type": "nom",
     "level": "B1"
   },
@@ -12073,7 +12073,7 @@
     "fr": "la perte",
     "en": "loss",
     "de": "der Verlust",
-    "es": "la pÃ©rdida",
+    "es": "la pérdida",
     "type": "nom",
     "level": "B1"
   },
@@ -12090,7 +12090,7 @@
     "id": "word_1344",
     "fr": "fou",
     "en": "mad",
-    "de": "verrÃ¼ckt",
+    "de": "verrückt",
     "es": "loco",
     "type": "adjectif",
     "level": "B1"
@@ -12108,7 +12108,7 @@
     "id": "word_1346",
     "fr": "principalement",
     "en": "mainly",
-    "de": "hauptsÃ¤chlich",
+    "de": "hauptsächlich",
     "es": "principalmente",
     "type": "adverbe",
     "level": "B1"
@@ -12127,7 +12127,7 @@
     "fr": "la gestion",
     "en": "management",
     "de": "das Management",
-    "es": "la gestiÃ³n",
+    "es": "la gestión",
     "type": "nom",
     "level": "B1"
   },
@@ -12151,7 +12151,7 @@
   },
   {
     "id": "word_1351",
-    "fr": "le matÃ©riau / la matiÃ¨re",
+    "fr": "le matériau / la matière",
     "en": "material",
     "de": "das Material",
     "es": "el material",
@@ -12171,7 +12171,7 @@
     "id": "word_1353",
     "fr": "la mesure",
     "en": "measure",
-    "de": "die MaÃŸnahme",
+    "de": "die Maßnahme",
     "es": "la medida",
     "type": "nom",
     "level": "B1"
@@ -12205,7 +12205,7 @@
   },
   {
     "id": "word_1357",
-    "fr": "le dÃ©sordre",
+    "fr": "le désordre",
     "en": "mess",
     "de": "die Unordnung",
     "es": "el desorden",
@@ -12214,7 +12214,7 @@
   },
   {
     "id": "word_1358",
-    "fr": "doux / lÃ©ger",
+    "fr": "doux / léger",
     "en": "mild",
     "de": "mild",
     "es": "suave",
@@ -12225,7 +12225,7 @@
     "id": "word_1359",
     "fr": "le moulin",
     "en": "mill",
-    "de": "die MÃ¼hle",
+    "de": "die Mühle",
     "es": "el molino",
     "type": "nom",
     "level": "B1"
@@ -12241,7 +12241,7 @@
   },
   {
     "id": "word_1361",
-    "fr": "mÃ©langer",
+    "fr": "mélanger",
     "en": "mix",
     "de": "mischen",
     "es": "mezclar",
@@ -12250,7 +12250,7 @@
   },
   {
     "id": "word_1362",
-    "fr": "le mÃ©lange",
+    "fr": "le mélange",
     "en": "mixture",
     "de": "die Mischung",
     "es": "la mezcla",
@@ -12259,7 +12259,7 @@
   },
   {
     "id": "word_1363",
-    "fr": "le modÃ¨le",
+    "fr": "le modèle",
     "en": "model",
     "de": "das Modell",
     "es": "el modelo",
@@ -12271,7 +12271,7 @@
     "fr": "l'humeur",
     "en": "mood",
     "de": "die Stimmung",
-    "es": "el estado de Ã¡nimo",
+    "es": "el estado de ánimo",
     "type": "nom",
     "level": "B1"
   },
@@ -12307,13 +12307,13 @@
     "fr": "le muscle",
     "en": "muscle",
     "de": "der Muskel",
-    "es": "el mÃºsculo",
+    "es": "el músculo",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1369",
-    "fr": "le mystÃ¨re",
+    "fr": "le mystère",
     "en": "mystery",
     "de": "das Mysterium",
     "es": "el misterio",
@@ -12325,15 +12325,15 @@
     "fr": "l'ongle / le clou",
     "en": "nail",
     "de": "der Nagel",
-    "es": "la uÃ±a / el clavo",
+    "es": "la uña / el clavo",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1371",
-    "fr": "le rÃ©cit",
+    "fr": "le récit",
     "en": "narrative",
-    "de": "die ErzÃ¤hlung",
+    "de": "die Erzählung",
     "es": "la narrativa",
     "type": "nom",
     "level": "B1"
@@ -12343,13 +12343,13 @@
     "fr": "la nation",
     "en": "nation",
     "de": "die Nation",
-    "es": "la naciÃ³n",
+    "es": "la nación",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1373",
-    "fr": "natif / indigÃ¨ne",
+    "fr": "natif / indigène",
     "en": "native",
     "de": "einheimisch",
     "es": "nativo",
@@ -12360,14 +12360,14 @@
     "id": "word_1374",
     "fr": "naturellement",
     "en": "naturally",
-    "de": "natÃ¼rlich",
+    "de": "natürlich",
     "es": "naturalmente",
     "type": "adverbe",
     "level": "B1"
   },
   {
     "id": "word_1375",
-    "fr": "nÃ©cessairement",
+    "fr": "nécessairement",
     "en": "necessarily",
     "de": "notwendigerweise",
     "es": "necesariamente",
@@ -12385,7 +12385,7 @@
   },
   {
     "id": "word_1377",
-    "fr": "nÃ©gatif",
+    "fr": "négatif",
     "en": "negative",
     "de": "negativ",
     "es": "negativo",
@@ -12432,7 +12432,7 @@
     "id": "word_1382",
     "fr": "du nord",
     "en": "northern",
-    "de": "nÃ¶rdlich",
+    "de": "nördlich",
     "es": "del norte",
     "type": "adjectif",
     "level": "B1"
@@ -12448,7 +12448,7 @@
   },
   {
     "id": "word_1384",
-    "fr": "nuclÃ©aire",
+    "fr": "nucléaire",
     "en": "nuclear",
     "de": "nuklear",
     "es": "nuclear",
@@ -12457,7 +12457,7 @@
   },
   {
     "id": "word_1385",
-    "fr": "Ã©vident",
+    "fr": "évident",
     "en": "obvious",
     "de": "offensichtlich",
     "es": "obvio",
@@ -12466,7 +12466,7 @@
   },
   {
     "id": "word_1386",
-    "fr": "Ã©videmment",
+    "fr": "évidemment",
     "en": "obviously",
     "de": "offensichtlich",
     "es": "obviamente",
@@ -12478,7 +12478,7 @@
     "fr": "l'occasion",
     "en": "occasion",
     "de": "die Gelegenheit",
-    "es": "la ocasiÃ³n",
+    "es": "la ocasión",
     "type": "nom",
     "level": "B1"
   },
@@ -12493,10 +12493,10 @@
   },
   {
     "id": "word_1389",
-    "fr": "Ã©trange / impair",
+    "fr": "étrange / impair",
     "en": "odd",
     "de": "seltsam / ungerade",
-    "es": "extraÃ±o / impar",
+    "es": "extraño / impar",
     "type": "adjectif",
     "level": "B1"
   },
@@ -12511,7 +12511,7 @@
   },
   {
     "id": "word_1391",
-    "fr": "dÃ©modÃ©",
+    "fr": "démodé",
     "en": "old-fashioned",
     "de": "altmodisch",
     "es": "anticuado",
@@ -12532,22 +12532,22 @@
     "fr": "l'opinion",
     "en": "opinion",
     "de": "die Meinung",
-    "es": "la opiniÃ³n",
+    "es": "la opinión",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1394",
-    "fr": "l'opÃ©ration",
+    "fr": "l'opération",
     "en": "operation",
     "de": "der Betrieb / die Operation",
-    "es": "la operaciÃ³n",
+    "es": "la operación",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1395",
-    "fr": "l'opportunitÃ©",
+    "fr": "l'opportunité",
     "en": "opportunity",
     "de": "die Gelegenheit",
     "es": "la oportunidad",
@@ -12556,7 +12556,7 @@
   },
   {
     "id": "word_1396",
-    "fr": "organisÃ©",
+    "fr": "organisé",
     "en": "organised",
     "de": "organisiert",
     "es": "organizado",
@@ -12583,9 +12583,9 @@
   },
   {
     "id": "word_1399",
-    "fr": "Ã  l'origine",
+    "fr": "à l'origine",
     "en": "originally",
-    "de": "ursprÃ¼nglich",
+    "de": "ursprünglich",
     "es": "originalmente",
     "type": "adverbe",
     "level": "B1"
@@ -12595,13 +12595,13 @@
     "fr": "devrait",
     "en": "ought to",
     "de": "sollte",
-    "es": "deberÃ­a",
+    "es": "debería",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1401",
-    "fr": "le nÃ´tre",
+    "fr": "le nôtre",
     "en": "ours",
     "de": "unsere",
     "es": "nuestro",
@@ -12621,7 +12621,7 @@
     "id": "word_1403",
     "fr": "en plein air (adv)",
     "en": "outdoors",
-    "de": "drauÃŸen",
+    "de": "draußen",
     "es": "afuera",
     "type": "adverbe",
     "level": "B1"
@@ -12655,19 +12655,19 @@
   },
   {
     "id": "word_1407",
-    "fr": "pÃ¢le",
+    "fr": "pâle",
     "en": "pale",
     "de": "blass",
-    "es": "pÃ¡lido",
+    "es": "pálido",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1408",
-    "fr": "la casserole / la poÃªle",
+    "fr": "la casserole / la poêle",
     "en": "pan",
     "de": "die Pfanne",
-    "es": "la sartÃ©n",
+    "es": "la sartén",
     "type": "nom",
     "level": "B1"
   },
@@ -12682,7 +12682,7 @@
   },
   {
     "id": "word_1410",
-    "fr": "particuliÃ¨rement",
+    "fr": "particulièrement",
     "en": "particularly",
     "de": "besonders",
     "es": "particularmente",
@@ -12694,7 +12694,7 @@
     "fr": "la passion",
     "en": "passion",
     "de": "die Leidenschaft",
-    "es": "la pasiÃ³n",
+    "es": "la pasión",
     "type": "nom",
     "level": "B1"
   },
@@ -12721,7 +12721,7 @@
     "fr": "paisible",
     "en": "peaceful",
     "de": "friedlich",
-    "es": "pacÃ­fico",
+    "es": "pacífico",
     "type": "adjectif",
     "level": "B1"
   },
@@ -12756,7 +12756,7 @@
     "id": "word_1418",
     "fr": "personnellement",
     "en": "personally",
-    "de": "persÃ¶nlich",
+    "de": "persönlich",
     "es": "personalmente",
     "type": "adverbe",
     "level": "B1"
@@ -12774,7 +12774,7 @@
     "id": "word_1420",
     "fr": "persuader",
     "en": "persuade",
-    "de": "Ã¼berreden",
+    "de": "überreden",
     "es": "persuadir",
     "type": "verbe",
     "level": "B1"
@@ -12784,7 +12784,7 @@
     "fr": "le photographe",
     "en": "photographer",
     "de": "der Fotograf",
-    "es": "el fotÃ³grafo",
+    "es": "el fotógrafo",
     "type": "nom",
     "level": "B1"
   },
@@ -12793,13 +12793,13 @@
     "fr": "la photographie (art)",
     "en": "photography",
     "de": "die Fotografie",
-    "es": "la fotografÃ­a",
+    "es": "la fotografía",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1423",
-    "fr": "l'Ã©pingle",
+    "fr": "l'épingle",
     "en": "pin",
     "de": "die Nadel",
     "es": "el alfiler",
@@ -12808,7 +12808,7 @@
   },
   {
     "id": "word_1424",
-    "fr": "Ã©pingler",
+    "fr": "épingler",
     "en": "pin",
     "de": "anstecken",
     "es": "fijar (con alfiler)",
@@ -12820,7 +12820,7 @@
     "fr": "le tuyau",
     "en": "pipe",
     "de": "das Rohr",
-    "es": "la tuberÃ­a",
+    "es": "la tubería",
     "type": "nom",
     "level": "B1"
   },
@@ -12829,13 +12829,13 @@
     "fr": "la planification",
     "en": "planning",
     "de": "die Planung",
-    "es": "la planificaciÃ³n",
+    "es": "la planificación",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1427",
-    "fr": "agrÃ©able",
+    "fr": "agréable",
     "en": "pleasant",
     "de": "angenehm",
     "es": "agradable",
@@ -12846,7 +12846,7 @@
     "id": "word_1428",
     "fr": "le plaisir",
     "en": "pleasure",
-    "de": "das VergnÃ¼gen",
+    "de": "das Vergnügen",
     "es": "el placer",
     "type": "nom",
     "level": "B1"
@@ -12874,13 +12874,13 @@
     "fr": "plus",
     "en": "plus",
     "de": "plus",
-    "es": "mÃ¡s",
+    "es": "más",
     "type": "prep",
     "level": "B1"
   },
   {
     "id": "word_1432",
-    "fr": "le poÃ¨me",
+    "fr": "le poème",
     "en": "poem",
     "de": "das Gedicht",
     "es": "el poema",
@@ -12889,7 +12889,7 @@
   },
   {
     "id": "word_1433",
-    "fr": "le poÃ¨te",
+    "fr": "le poète",
     "en": "poet",
     "de": "der Dichter",
     "es": "el poeta",
@@ -12898,10 +12898,10 @@
   },
   {
     "id": "word_1434",
-    "fr": "la poÃ©sie",
+    "fr": "la poésie",
     "en": "poetry",
     "de": "die Poesie",
-    "es": "la poesÃ­a",
+    "es": "la poesía",
     "type": "nom",
     "level": "B1"
   },
@@ -12910,7 +12910,7 @@
     "fr": "pointer / indiquer",
     "en": "point",
     "de": "zeigen",
-    "es": "seÃ±alar",
+    "es": "señalar",
     "type": "verbe",
     "level": "B1"
   },
@@ -12934,7 +12934,7 @@
   },
   {
     "id": "word_1438",
-    "fr": "vÃ©nÃ©neux",
+    "fr": "vénéneux",
     "en": "poisonous",
     "de": "giftig",
     "es": "venenoso",
@@ -12943,10 +12943,10 @@
   },
   {
     "id": "word_1439",
-    "fr": "la politique (rÃ¨gle)",
+    "fr": "la politique (règle)",
     "en": "policy",
     "de": "die Richtlinie",
-    "es": "la polÃ­tica",
+    "es": "la política",
     "type": "nom",
     "level": "B1"
   },
@@ -12955,7 +12955,7 @@
     "fr": "politique",
     "en": "political",
     "de": "politisch",
-    "es": "polÃ­tico",
+    "es": "político",
     "type": "adjectif",
     "level": "B1"
   },
@@ -12964,7 +12964,7 @@
     "fr": "le politicien",
     "en": "politician",
     "de": "der Politiker",
-    "es": "el polÃ­tico",
+    "es": "el político",
     "type": "nom",
     "level": "B1"
   },
@@ -12973,7 +12973,7 @@
     "fr": "la politique (domaine)",
     "en": "politics",
     "de": "die Politik",
-    "es": "la polÃ­tica",
+    "es": "la política",
     "type": "nom",
     "level": "B1"
   },
@@ -12990,7 +12990,7 @@
     "id": "word_1444",
     "fr": "le portrait",
     "en": "portrait",
-    "de": "das PortrÃ¤t",
+    "de": "das Porträt",
     "es": "el retrato",
     "type": "nom",
     "level": "B1"
@@ -13000,7 +13000,7 @@
     "fr": "la position",
     "en": "position",
     "de": "die Position",
-    "es": "la posiciÃ³n",
+    "es": "la posición",
     "type": "nom",
     "level": "B1"
   },
@@ -13017,7 +13017,7 @@
     "id": "word_1447",
     "fr": "probablement",
     "en": "possibly",
-    "de": "mÃ¶glicherweise",
+    "de": "möglicherweise",
     "es": "posiblemente",
     "type": "adverbe",
     "level": "B1"
@@ -13035,14 +13035,14 @@
     "id": "word_1449",
     "fr": "verser",
     "en": "pour",
-    "de": "gieÃŸen",
+    "de": "gießen",
     "es": "verter",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1450",
-    "fr": "la pauvretÃ©",
+    "fr": "la pauvreté",
     "en": "poverty",
     "de": "die Armut",
     "es": "la pobreza",
@@ -13060,7 +13060,7 @@
   },
   {
     "id": "word_1452",
-    "fr": "le pouvoir / l'Ã©lectricitÃ©",
+    "fr": "le pouvoir / l'électricité",
     "en": "power",
     "de": "die Macht / der Strom",
     "es": "el poder",
@@ -13071,7 +13071,7 @@
     "id": "word_1453",
     "fr": "puissant",
     "en": "powerful",
-    "de": "mÃ¤chtig",
+    "de": "mächtig",
     "es": "poderoso",
     "type": "adjectif",
     "level": "B1"
@@ -13081,7 +13081,7 @@
     "fr": "pratique",
     "en": "practical",
     "de": "praktisch",
-    "es": "prÃ¡ctico",
+    "es": "práctico",
     "type": "adjectif",
     "level": "B1"
   },
@@ -13096,25 +13096,25 @@
   },
   {
     "id": "word_1456",
-    "fr": "la priÃ¨re",
+    "fr": "la prière",
     "en": "prayer",
     "de": "das Gebet",
-    "es": "la oraciÃ³n",
+    "es": "la oración",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1457",
-    "fr": "la prÃ©diction",
+    "fr": "la prédiction",
     "en": "prediction",
     "de": "die Vorhersage",
-    "es": "la predicciÃ³n",
+    "es": "la predicción",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1458",
-    "fr": "prÃ©parÃ©",
+    "fr": "préparé",
     "en": "prepared",
     "de": "vorbereitet",
     "es": "preparado",
@@ -13123,10 +13123,10 @@
   },
   {
     "id": "word_1459",
-    "fr": "la prÃ©sentation",
+    "fr": "la présentation",
     "en": "presentation",
-    "de": "die PrÃ¤sentation",
-    "es": "la presentaciÃ³n",
+    "de": "die Präsentation",
+    "es": "la presentación",
     "type": "nom",
     "level": "B1"
   },
@@ -13144,13 +13144,13 @@
     "fr": "la pression",
     "en": "pressure",
     "de": "der Druck",
-    "es": "la presiÃ³n",
+    "es": "la presión",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1462",
-    "fr": "prÃ©tendre / faire semblant",
+    "fr": "prétendre / faire semblant",
     "en": "pretend",
     "de": "so tun als ob",
     "es": "fingir",
@@ -13159,7 +13159,7 @@
   },
   {
     "id": "word_1463",
-    "fr": "prÃ©cÃ©dent",
+    "fr": "précédent",
     "en": "previous",
     "de": "vorherig",
     "es": "anterior",
@@ -13168,7 +13168,7 @@
   },
   {
     "id": "word_1464",
-    "fr": "prÃ©cÃ©demment",
+    "fr": "précédemment",
     "en": "previously",
     "de": "zuvor",
     "es": "previamente",
@@ -13177,7 +13177,7 @@
   },
   {
     "id": "word_1465",
-    "fr": "le prÃªtre",
+    "fr": "le prêtre",
     "en": "priest",
     "de": "der Priester",
     "es": "el sacerdote",
@@ -13188,7 +13188,7 @@
     "id": "word_1466",
     "fr": "primaire / principal",
     "en": "primary",
-    "de": "primÃ¤r",
+    "de": "primär",
     "es": "primario",
     "type": "adjectif",
     "level": "B1"
@@ -13198,7 +13198,7 @@
     "fr": "le prince",
     "en": "prince",
     "de": "der Prinz",
-    "es": "el prÃ­ncipe",
+    "es": "el príncipe",
     "type": "nom",
     "level": "B1"
   },
@@ -13216,7 +13216,7 @@
     "fr": "l'impression",
     "en": "printing",
     "de": "das Drucken",
-    "es": "la impresiÃ³n",
+    "es": "la impresión",
     "type": "nom",
     "level": "B1"
   },
@@ -13231,7 +13231,7 @@
   },
   {
     "id": "word_1471",
-    "fr": "privÃ©",
+    "fr": "privé",
     "en": "private",
     "de": "privat",
     "es": "privado",
@@ -13288,7 +13288,7 @@
     "fr": "la production",
     "en": "production",
     "de": "die Produktion",
-    "es": "la producciÃ³n",
+    "es": "la producción",
     "type": "nom",
     "level": "B1"
   },
@@ -13297,7 +13297,7 @@
     "fr": "la profession",
     "en": "profession",
     "de": "der Beruf",
-    "es": "la profesiÃ³n",
+    "es": "la profesión",
     "type": "nom",
     "level": "B1"
   },
@@ -13323,14 +13323,14 @@
     "id": "word_1481",
     "fr": "promouvoir",
     "en": "promote",
-    "de": "fÃ¶rdern",
+    "de": "fördern",
     "es": "promover",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1482",
-    "fr": "appropriÃ©",
+    "fr": "approprié",
     "en": "proper",
     "de": "angemessen",
     "es": "adecuado",
@@ -13348,7 +13348,7 @@
   },
   {
     "id": "word_1484",
-    "fr": "la propriÃ©tÃ©",
+    "fr": "la propriété",
     "en": "property",
     "de": "das Eigentum",
     "es": "la propiedad",
@@ -13429,16 +13429,16 @@
   },
   {
     "id": "word_1493",
-    "fr": "la qualification / le diplÃ´me",
+    "fr": "la qualification / le diplôme",
     "en": "qualification",
     "de": "die Qualifikation",
-    "es": "la cualificaciÃ³n",
+    "es": "la cualificación",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1494",
-    "fr": "qualifiÃ©",
+    "fr": "qualifié",
     "en": "qualified",
     "de": "qualifiziert",
     "es": "cualificado",
@@ -13528,7 +13528,7 @@
   },
   {
     "id": "word_1504",
-    "fr": "la gamme / la portÃ©e",
+    "fr": "la gamme / la portée",
     "en": "range",
     "de": "das Sortiment / die Reichweite",
     "es": "la gama / el alcance",
@@ -13555,25 +13555,25 @@
   },
   {
     "id": "word_1507",
-    "fr": "la rÃ©action",
+    "fr": "la réaction",
     "en": "reaction",
     "de": "die Reaktion",
-    "es": "la reacciÃ³n",
+    "es": "la reacción",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1508",
-    "fr": "la rÃ©alitÃ©",
+    "fr": "la réalité",
     "en": "reality",
-    "de": "die RealitÃ¤t",
+    "de": "die Realität",
     "es": "la realidad",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1509",
-    "fr": "le reÃ§u",
+    "fr": "le reçu",
     "en": "receipt",
     "de": "die Quittung",
     "es": "el recibo",
@@ -13585,13 +13585,13 @@
     "fr": "la recommandation",
     "en": "recommendation",
     "de": "die Empfehlung",
-    "es": "la recomendaciÃ³n",
+    "es": "la recomendación",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1511",
-    "fr": "la rÃ©fÃ©rence",
+    "fr": "la référence",
     "en": "reference",
     "de": "die Referenz",
     "es": "la referencia",
@@ -13600,7 +13600,7 @@
   },
   {
     "id": "word_1512",
-    "fr": "reflÃ©ter / rÃ©flÃ©chir",
+    "fr": "refléter / réfléchir",
     "en": "reflect",
     "de": "widerspiegeln",
     "es": "reflejar",
@@ -13609,9 +13609,9 @@
   },
   {
     "id": "word_1513",
-    "fr": "rÃ©guliÃ¨rement",
+    "fr": "régulièrement",
     "en": "regularly",
-    "de": "regelmÃ¤ÃŸig",
+    "de": "regelmäßig",
     "es": "regularmente",
     "type": "adverbe",
     "level": "B1"
@@ -13629,14 +13629,14 @@
     "id": "word_1515",
     "fr": "raconter / relier",
     "en": "relate",
-    "de": "erzÃ¤hlen / verbinden",
+    "de": "erzählen / verbinden",
     "es": "relatar / relacionar",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1516",
-    "fr": "liÃ© / apparentÃ©",
+    "fr": "lié / apparenté",
     "en": "related",
     "de": "verwandt / verbunden",
     "es": "relacionado",
@@ -13648,7 +13648,7 @@
     "fr": "la relation",
     "en": "relation",
     "de": "die Beziehung",
-    "es": "la relaciÃ³n",
+    "es": "la relación",
     "type": "nom",
     "level": "B1"
   },
@@ -13663,7 +13663,7 @@
   },
   {
     "id": "word_1519",
-    "fr": "dÃ©tendu",
+    "fr": "détendu",
     "en": "relaxed",
     "de": "entspannt",
     "es": "relajado",
@@ -13681,9 +13681,9 @@
   },
   {
     "id": "word_1521",
-    "fr": "libÃ©rer / sortir",
+    "fr": "libérer / sortir",
     "en": "release",
-    "de": "freilassen / verÃ¶ffentlichen",
+    "de": "freilassen / veröffentlichen",
     "es": "liberar / lanzar",
     "type": "verbe",
     "level": "B1"
@@ -13692,7 +13692,7 @@
     "id": "word_1522",
     "fr": "fiable",
     "en": "reliable",
-    "de": "zuverlÃ¤ssig",
+    "de": "zuverlässig",
     "es": "fiable",
     "type": "adjectif",
     "level": "B1"
@@ -13702,7 +13702,7 @@
     "fr": "la religion",
     "en": "religion",
     "de": "die Religion",
-    "es": "la religiÃ³n",
+    "es": "la religión",
     "type": "nom",
     "level": "B1"
   },
@@ -13710,7 +13710,7 @@
     "id": "word_1524",
     "fr": "religieux",
     "en": "religious",
-    "de": "religiÃ¶s",
+    "de": "religiös",
     "es": "religioso",
     "type": "adjectif",
     "level": "B1"
@@ -13726,7 +13726,7 @@
   },
   {
     "id": "word_1526",
-    "fr": "rappeler (qqch Ã  qqn)",
+    "fr": "rappeler (qqch à qqn)",
     "en": "remind",
     "de": "erinnern",
     "es": "recordar",
@@ -13735,7 +13735,7 @@
   },
   {
     "id": "word_1527",
-    "fr": "Ã©loignÃ© / Ã  distance",
+    "fr": "éloigné / à distance",
     "en": "remote",
     "de": "abgelegen",
     "es": "remoto",
@@ -13762,7 +13762,7 @@
   },
   {
     "id": "word_1530",
-    "fr": "rÃ©pÃ©tÃ©",
+    "fr": "répété",
     "en": "repeated",
     "de": "wiederholt",
     "es": "repetido",
@@ -13771,7 +13771,7 @@
   },
   {
     "id": "word_1531",
-    "fr": "reprÃ©senter",
+    "fr": "représenter",
     "en": "represent",
     "de": "vertreten",
     "es": "representar",
@@ -13780,7 +13780,7 @@
   },
   {
     "id": "word_1532",
-    "fr": "exiger / nÃ©cessiter",
+    "fr": "exiger / nécessiter",
     "en": "require",
     "de": "erfordern",
     "es": "requerir",
@@ -13789,7 +13789,7 @@
   },
   {
     "id": "word_1533",
-    "fr": "la rÃ©servation",
+    "fr": "la réservation",
     "en": "reservation",
     "de": "die Reservierung",
     "es": "la reserva",
@@ -13825,7 +13825,7 @@
   },
   {
     "id": "word_1537",
-    "fr": "la rÃ©ponse",
+    "fr": "la réponse",
     "en": "response",
     "de": "die Antwort",
     "es": "la respuesta",
@@ -13834,7 +13834,7 @@
   },
   {
     "id": "word_1538",
-    "fr": "la responsabilitÃ©",
+    "fr": "la responsabilité",
     "en": "responsibility",
     "de": "die Verantwortung",
     "es": "la responsabilidad",
@@ -13852,7 +13852,7 @@
   },
   {
     "id": "word_1540",
-    "fr": "le rÃ©sultat",
+    "fr": "le résultat",
     "en": "result",
     "de": "das Ergebnis",
     "es": "el resultado",
@@ -13870,7 +13870,7 @@
   },
   {
     "id": "word_1542",
-    "fr": "retraitÃ©",
+    "fr": "retraité",
     "en": "retired",
     "de": "im Ruhestand",
     "es": "jubilado",
@@ -13879,9 +13879,9 @@
   },
   {
     "id": "word_1543",
-    "fr": "rÃ©viser",
+    "fr": "réviser",
     "en": "revise",
-    "de": "Ã¼berarbeiten",
+    "de": "überarbeiten",
     "es": "revisar",
     "type": "verbe",
     "level": "B1"
@@ -13897,7 +13897,7 @@
   },
   {
     "id": "word_1545",
-    "fr": "s'Ã©lever / augmenter",
+    "fr": "s'élever / augmenter",
     "en": "rise",
     "de": "steigen",
     "es": "subir",
@@ -13945,7 +13945,7 @@
     "fr": "romantique",
     "en": "romantic",
     "de": "romantisch",
-    "es": "romÃ¡ntico",
+    "es": "romántico",
     "type": "adjectif",
     "level": "B1"
   },
@@ -13963,13 +13963,13 @@
     "fr": "rugueux / brutal",
     "en": "rough",
     "de": "rau",
-    "es": "Ã¡spero / duro",
+    "es": "áspero / duro",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1553",
-    "fr": "la rangÃ©e",
+    "fr": "la rangée",
     "en": "row",
     "de": "die Reihe",
     "es": "la fila",
@@ -13980,7 +13980,7 @@
     "id": "word_1554",
     "fr": "royal",
     "en": "royal",
-    "de": "kÃ¶niglich",
+    "de": "königlich",
     "es": "real",
     "type": "adjectif",
     "level": "B1"
@@ -14005,7 +14005,7 @@
   },
   {
     "id": "word_1557",
-    "fr": "la sÃ©curitÃ©",
+    "fr": "la sécurité",
     "en": "safety",
     "de": "die Sicherheit",
     "es": "la seguridad",
@@ -14023,7 +14023,7 @@
   },
   {
     "id": "word_1559",
-    "fr": "l'Ã©chantillon",
+    "fr": "l'échantillon",
     "en": "sample",
     "de": "das Muster",
     "es": "la muestra",
@@ -14053,13 +14053,13 @@
     "fr": "scientifique",
     "en": "scientific",
     "de": "wissenschaftlich",
-    "es": "cientÃ­fico",
+    "es": "científico",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1563",
-    "fr": "le scÃ©nario / le script",
+    "fr": "le scénario / le script",
     "en": "script",
     "de": "das Skript",
     "es": "el guion",
@@ -14079,14 +14079,14 @@
     "id": "word_1565",
     "fr": "secondaire",
     "en": "secondary",
-    "de": "sekundÃ¤r",
+    "de": "sekundär",
     "es": "secundario",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1566",
-    "fr": "la sÃ©curitÃ©",
+    "fr": "la sécurité",
     "en": "security",
     "de": "die Sicherheit",
     "es": "la seguridad",
@@ -14104,16 +14104,16 @@
   },
   {
     "id": "word_1568",
-    "fr": "sensÃ© / raisonnable",
+    "fr": "sensé / raisonnable",
     "en": "sensible",
-    "de": "vernÃ¼nftig",
+    "de": "vernünftig",
     "es": "sensato",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1569",
-    "fr": "sÃ©parer",
+    "fr": "séparer",
     "en": "separate",
     "de": "trennen",
     "es": "separar",
@@ -14122,7 +14122,7 @@
   },
   {
     "id": "word_1570",
-    "fr": "sÃ©rieusement",
+    "fr": "sérieusement",
     "en": "seriously",
     "de": "ernsthaft",
     "es": "seriamente",
@@ -14158,7 +14158,7 @@
   },
   {
     "id": "word_1574",
-    "fr": "le cadre / le rÃ©glage",
+    "fr": "le cadre / le réglage",
     "en": "setting",
     "de": "die Einstellung",
     "es": "el entorno",
@@ -14194,7 +14194,7 @@
   },
   {
     "id": "word_1578",
-    "fr": "l'Ã©tagÃ¨re",
+    "fr": "l'étagère",
     "en": "shelf",
     "de": "das Regal",
     "es": "el estante",
@@ -14221,7 +14221,7 @@
   },
   {
     "id": "word_1581",
-    "fr": "dÃ©placer / dÃ©caler",
+    "fr": "déplacer / décaler",
     "en": "shift",
     "de": "verschieben",
     "es": "desplazar",
@@ -14241,7 +14241,7 @@
     "id": "word_1583",
     "fr": "brillant",
     "en": "shiny",
-    "de": "glÃ¤nzend",
+    "de": "glänzend",
     "es": "brillante",
     "type": "adjectif",
     "level": "B1"
@@ -14250,7 +14250,7 @@
     "id": "word_1584",
     "fr": "tirer (arme) / filmer",
     "en": "shoot",
-    "de": "schieÃŸen / filmen",
+    "de": "schießen / filmen",
     "es": "disparar / filmar",
     "type": "verbe",
     "level": "B1"
@@ -14286,8 +14286,8 @@
     "id": "word_1588",
     "fr": "timide",
     "en": "shy",
-    "de": "schÃ¼chtern",
-    "es": "tÃ­mido",
+    "de": "schüchtern",
+    "es": "tímido",
     "type": "adjectif",
     "level": "B1"
   },
@@ -14305,7 +14305,7 @@
     "fr": "le signal",
     "en": "signal",
     "de": "das Signal",
-    "es": "la seÃ±al",
+    "es": "la señal",
     "type": "nom",
     "level": "B1"
   },
@@ -14320,7 +14320,7 @@
   },
   {
     "id": "word_1592",
-    "fr": "bÃªte / stupide",
+    "fr": "bête / stupide",
     "en": "silly",
     "de": "albern",
     "es": "tonto",
@@ -14329,16 +14329,16 @@
   },
   {
     "id": "word_1593",
-    "fr": "la similaritÃ©",
+    "fr": "la similarité",
     "en": "similarity",
-    "de": "die Ã„hnlichkeit",
+    "de": "die Ähnlichkeit",
     "es": "la similitud",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1594",
-    "fr": "de la mÃªme maniÃ¨re",
+    "fr": "de la même manière",
     "en": "similarly",
     "de": "ebenso",
     "es": "de manera similar",
@@ -14374,9 +14374,9 @@
   },
   {
     "id": "word_1598",
-    "fr": "la compÃ©tence",
+    "fr": "la compétence",
     "en": "skill",
-    "de": "die FÃ¤higkeit",
+    "de": "die Fähigkeit",
     "es": "la habilidad",
     "type": "nom",
     "level": "B1"
@@ -14385,7 +14385,7 @@
     "id": "word_1599",
     "fr": "sauter / omettre",
     "en": "skip",
-    "de": "Ã¼berspringen",
+    "de": "überspringen",
     "es": "saltar",
     "type": "verbe",
     "level": "B1"
@@ -14428,7 +14428,7 @@
   },
   {
     "id": "word_1604",
-    "fr": "lÃ©gÃ¨rement",
+    "fr": "légèrement",
     "en": "slightly",
     "de": "leicht",
     "es": "ligeramente",
@@ -14437,7 +14437,7 @@
   },
   {
     "id": "word_1605",
-    "fr": "Ã©lÃ©gant / intelligent",
+    "fr": "élégant / intelligent",
     "en": "smart",
     "de": "schick / schlau",
     "es": "elegante / inteligente",
@@ -14455,7 +14455,7 @@
   },
   {
     "id": "word_1607",
-    "fr": "la sociÃ©tÃ©",
+    "fr": "la société",
     "en": "society",
     "de": "die Gesellschaft",
     "es": "la sociedad",
@@ -14485,15 +14485,15 @@
     "fr": "solide",
     "en": "solid",
     "de": "fest",
-    "es": "sÃ³lido",
+    "es": "sólido",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1611",
-    "fr": "rÃ©soudre",
+    "fr": "résoudre",
     "en": "solve",
-    "de": "lÃ¶sen",
+    "de": "lösen",
     "es": "resolver",
     "type": "verbe",
     "level": "B1"
@@ -14511,7 +14511,7 @@
     "id": "word_1613",
     "fr": "du sud",
     "en": "southern",
-    "de": "sÃ¼dlich",
+    "de": "südlich",
     "es": "del sur",
     "type": "adjectif",
     "level": "B1"
@@ -14527,10 +14527,10 @@
   },
   {
     "id": "word_1615",
-    "fr": "spÃ©cifiquement",
+    "fr": "spécifiquement",
     "en": "specifically",
     "de": "spezifisch",
-    "es": "especÃ­ficamente",
+    "es": "específicamente",
     "type": "adverbe",
     "level": "B1"
   },
@@ -14545,7 +14545,7 @@
   },
   {
     "id": "word_1617",
-    "fr": "les dÃ©penses",
+    "fr": "les dépenses",
     "en": "spending",
     "de": "die Ausgaben",
     "es": "los gastos",
@@ -14554,9 +14554,9 @@
   },
   {
     "id": "word_1618",
-    "fr": "Ã©picÃ©",
+    "fr": "épicé",
     "en": "spicy",
-    "de": "wÃ¼rzig",
+    "de": "würzig",
     "es": "picante",
     "type": "adjectif",
     "level": "B1"
@@ -14566,13 +14566,13 @@
     "fr": "l'esprit",
     "en": "spirit",
     "de": "der Geist",
-    "es": "el espÃ­ritu",
+    "es": "el espíritu",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1620",
-    "fr": "parlÃ© / oral",
+    "fr": "parlé / oral",
     "en": "spoken",
     "de": "gesprochen",
     "es": "hablado",
@@ -14590,7 +14590,7 @@
   },
   {
     "id": "word_1622",
-    "fr": "repÃ©rer",
+    "fr": "repérer",
     "en": "spot",
     "de": "entdecken",
     "es": "detectar",
@@ -14599,7 +14599,7 @@
   },
   {
     "id": "word_1623",
-    "fr": "rÃ©pandre / Ã©taler",
+    "fr": "répandre / étaler",
     "en": "spread",
     "de": "verbreiten",
     "es": "extender / propagar",
@@ -14620,7 +14620,7 @@
     "fr": "l'espion",
     "en": "spy",
     "de": "der Spion",
-    "es": "el espÃ­a",
+    "es": "el espía",
     "type": "nom",
     "level": "B1"
   },
@@ -14644,7 +14644,7 @@
   },
   {
     "id": "word_1628",
-    "fr": "le personnel (employÃ©s)",
+    "fr": "le personnel (employés)",
     "en": "staff",
     "de": "das Personal",
     "es": "el personal",
@@ -14656,13 +14656,13 @@
     "fr": "le standard / la norme",
     "en": "standard",
     "de": "der Standard",
-    "es": "el estÃ¡ndar",
+    "es": "el estándar",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1630",
-    "fr": "dÃ©clarer",
+    "fr": "déclarer",
     "en": "state",
     "de": "aussagen",
     "es": "declarar",
@@ -14689,7 +14689,7 @@
   },
   {
     "id": "word_1633",
-    "fr": "le bÃ¢ton",
+    "fr": "le bâton",
     "en": "stick",
     "de": "der Stock",
     "es": "el palo",
@@ -14707,10 +14707,10 @@
   },
   {
     "id": "word_1635",
-    "fr": "l'Ã©tranger (personne)",
+    "fr": "l'étranger (personne)",
     "en": "stranger",
     "de": "der Fremde",
-    "es": "el extraÃ±o",
+    "es": "el extraño",
     "type": "nom",
     "level": "B1"
   },
@@ -14718,7 +14718,7 @@
     "id": "word_1636",
     "fr": "la force",
     "en": "strength",
-    "de": "die StÃ¤rke",
+    "de": "die Stärke",
     "es": "la fuerza",
     "type": "nom",
     "level": "B1"
@@ -14761,7 +14761,7 @@
   },
   {
     "id": "word_1641",
-    "fr": "avec succÃ¨s",
+    "fr": "avec succès",
     "en": "successfully",
     "de": "erfolgreich",
     "es": "exitosamente",
@@ -14772,7 +14772,7 @@
     "id": "word_1642",
     "fr": "soudain",
     "en": "sudden",
-    "de": "plÃ¶tzlich",
+    "de": "plötzlich",
     "es": "repentino",
     "type": "adjectif",
     "level": "B1"
@@ -14788,7 +14788,7 @@
   },
   {
     "id": "word_1644",
-    "fr": "convenir Ã ",
+    "fr": "convenir à",
     "en": "suit",
     "de": "passen",
     "es": "convenir / adaptar",
@@ -14797,7 +14797,7 @@
   },
   {
     "id": "word_1645",
-    "fr": "appropriÃ©",
+    "fr": "approprié",
     "en": "suitable",
     "de": "geeignet",
     "es": "adecuado",
@@ -14806,16 +14806,16 @@
   },
   {
     "id": "word_1646",
-    "fr": "le succÃ¨s",
+    "fr": "le succès",
     "en": "success",
     "de": "der Erfolg",
-    "es": "el Ã©xito",
+    "es": "el éxito",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1647",
-    "fr": "rÃ©sumer",
+    "fr": "résumer",
     "en": "summarise",
     "de": "zusammenfassen",
     "es": "resumir",
@@ -14824,7 +14824,7 @@
   },
   {
     "id": "word_1648",
-    "fr": "le rÃ©sumÃ©",
+    "fr": "le résumé",
     "en": "summary",
     "de": "die Zusammenfassung",
     "es": "el resumen",
@@ -14853,14 +14853,14 @@
     "id": "word_1651",
     "fr": "le supporter / le partisan",
     "en": "supporter",
-    "de": "der AnhÃ¤nger",
+    "de": "der Anhänger",
     "es": "el partidario",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1652",
-    "fr": "sÃ»rement",
+    "fr": "sûrement",
     "en": "surely",
     "de": "sicherlich",
     "es": "seguramente",
@@ -14871,7 +14871,7 @@
     "id": "word_1653",
     "fr": "la surface",
     "en": "surface",
-    "de": "die OberflÃ¤che",
+    "de": "die Oberfläche",
     "es": "la superficie",
     "type": "nom",
     "level": "B1"
@@ -14880,14 +14880,14 @@
     "id": "word_1654",
     "fr": "survivre",
     "en": "survive",
-    "de": "Ã¼berleben",
+    "de": "überleben",
     "es": "sobrevivir",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1655",
-    "fr": "le sondage / l'enquÃªte",
+    "fr": "le sondage / l'enquête",
     "en": "survey",
     "de": "die Umfrage",
     "es": "la encuesta",
@@ -14905,7 +14905,7 @@
   },
   {
     "id": "word_1657",
-    "fr": "changer / Ã©changer",
+    "fr": "changer / échanger",
     "en": "switch",
     "de": "wechseln",
     "es": "cambiar",
@@ -14914,7 +14914,7 @@
   },
   {
     "id": "word_1658",
-    "fr": "l'Ã©pÃ©e",
+    "fr": "l'épée",
     "en": "sword",
     "de": "das Schwert",
     "es": "la espada",
@@ -14923,10 +14923,10 @@
   },
   {
     "id": "word_1659",
-    "fr": "le symptÃ´me",
+    "fr": "le symptôme",
     "en": "symptom",
     "de": "das Symptom",
-    "es": "el sÃ­ntoma",
+    "es": "el síntoma",
     "type": "nom",
     "level": "B1"
   },
@@ -14959,7 +14959,7 @@
   },
   {
     "id": "word_1663",
-    "fr": "le ruban (adhÃ©sif) / la cassette",
+    "fr": "le ruban (adhésif) / la cassette",
     "en": "tape",
     "de": "das Klebeband / die Kassette",
     "es": "la cinta",
@@ -14968,7 +14968,7 @@
   },
   {
     "id": "word_1664",
-    "fr": "l'impÃ´t / la taxe",
+    "fr": "l'impôt / la taxe",
     "en": "tax",
     "de": "die Steuer",
     "es": "el impuesto",
@@ -14980,7 +14980,7 @@
     "fr": "technique",
     "en": "technical",
     "de": "technisch",
-    "es": "tÃ©cnico",
+    "es": "técnico",
     "type": "adjectif",
     "level": "B1"
   },
@@ -14989,13 +14989,13 @@
     "fr": "la technique",
     "en": "technique",
     "de": "die Technik",
-    "es": "la tÃ©cnica",
+    "es": "la técnica",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1667",
-    "fr": "avoir tendance Ã ",
+    "fr": "avoir tendance à",
     "en": "tend",
     "de": "neigen zu",
     "es": "tender",
@@ -15004,7 +15004,7 @@
   },
   {
     "id": "word_1668",
-    "fr": "le thÃ¨me",
+    "fr": "le thème",
     "en": "theme",
     "de": "das Thema",
     "es": "el tema",
@@ -15033,14 +15033,14 @@
     "id": "word_1671",
     "fr": "tout au long de / partout dans",
     "en": "throughout",
-    "de": "durchgehend / Ã¼berall",
+    "de": "durchgehend / überall",
     "es": "a lo largo de",
     "type": "prep",
     "level": "B1"
   },
   {
     "id": "word_1672",
-    "fr": "serrÃ© / Ã©troit",
+    "fr": "serré / étroit",
     "en": "tight",
     "de": "eng",
     "es": "apretado",
@@ -15049,7 +15049,7 @@
   },
   {
     "id": "word_1673",
-    "fr": "jusqu'Ã  (temps)",
+    "fr": "jusqu'à (temps)",
     "en": "till",
     "de": "bis",
     "es": "hasta",
@@ -15058,10 +15058,10 @@
   },
   {
     "id": "word_1674",
-    "fr": "la boÃ®te de conserve / l'Ã©tain",
+    "fr": "la boîte de conserve / l'étain",
     "en": "tin",
     "de": "die Dose",
-    "es": "la lata / el estaÃ±o",
+    "es": "la lata / el estaño",
     "type": "nom",
     "level": "B1"
   },
@@ -15085,7 +15085,7 @@
   },
   {
     "id": "word_1677",
-    "fr": "le sujet (thÃ¨me)",
+    "fr": "le sujet (thème)",
     "en": "topic",
     "de": "das Thema",
     "es": "el tema",
@@ -15105,7 +15105,7 @@
     "id": "word_1679",
     "fr": "totalement",
     "en": "totally",
-    "de": "vÃ¶llig",
+    "de": "völlig",
     "es": "totalmente",
     "type": "adverbe",
     "level": "B1"
@@ -15121,7 +15121,7 @@
   },
   {
     "id": "word_1681",
-    "fr": "Ã©changer / commercer",
+    "fr": "échanger / commercer",
     "en": "trade",
     "de": "handeln",
     "es": "comerciar",
@@ -15132,8 +15132,8 @@
     "id": "word_1682",
     "fr": "la bande-annonce / la remorque",
     "en": "trailer",
-    "de": "der AnhÃ¤nger / der Trailer",
-    "es": "el remolque / el trÃ¡iler",
+    "de": "der Anhänger / der Trailer",
+    "es": "el remolque / el tráiler",
     "type": "nom",
     "level": "B1"
   },
@@ -15141,7 +15141,7 @@
     "id": "word_1683",
     "fr": "traduire",
     "en": "translate",
-    "de": "Ã¼bersetzen",
+    "de": "übersetzen",
     "es": "traducir",
     "type": "verbe",
     "level": "B1"
@@ -15150,8 +15150,8 @@
     "id": "word_1684",
     "fr": "la traduction",
     "en": "translation",
-    "de": "die Ãœbersetzung",
-    "es": "la traducciÃ³n",
+    "de": "die Übersetzung",
+    "es": "la traducción",
     "type": "nom",
     "level": "B1"
   },
@@ -15193,16 +15193,16 @@
   },
   {
     "id": "word_1689",
-    "fr": "tromper / piÃ©ger",
+    "fr": "tromper / piéger",
     "en": "trick",
     "de": "austricksen",
-    "es": "engaÃ±ar",
+    "es": "engañar",
     "type": "verbe",
     "level": "B1"
   },
   {
     "id": "word_1690",
-    "fr": "la vÃ©ritÃ©",
+    "fr": "la vérité",
     "en": "truth",
     "de": "die Wahrheit",
     "es": "la verdad",
@@ -15211,7 +15211,7 @@
   },
   {
     "id": "word_1691",
-    "fr": "le tube / le mÃ©tro (Londres)",
+    "fr": "le tube / le métro (Londres)",
     "en": "tube",
     "de": "das Rohr / die U-Bahn",
     "es": "el tubo",
@@ -15222,7 +15222,7 @@
     "id": "word_1692",
     "fr": "la tortue (marine)",
     "en": "turtle",
-    "de": "die SchildkrÃ¶te",
+    "de": "die Schildkröte",
     "es": "la tortuga",
     "type": "nom",
     "level": "B1"
@@ -15232,7 +15232,7 @@
     "fr": "taper (clavier)",
     "en": "type",
     "de": "tippen",
-    "es": "escribir a mÃ¡quina",
+    "es": "escribir a máquina",
     "type": "verbe",
     "level": "B1"
   },
@@ -15241,7 +15241,7 @@
     "fr": "typiquement",
     "en": "typically",
     "de": "typischerweise",
-    "es": "tÃ­picamente",
+    "es": "típicamente",
     "type": "adverbe",
     "level": "B1"
   },
@@ -15250,7 +15250,7 @@
     "fr": "le pneu",
     "en": "tyre",
     "de": "der Reifen",
-    "es": "el neumÃ¡tico",
+    "es": "el neumático",
     "type": "nom",
     "level": "B1"
   },
@@ -15258,7 +15258,7 @@
     "id": "word_1696",
     "fr": "laid",
     "en": "ugly",
-    "de": "hÃ¤sslich",
+    "de": "hässlich",
     "es": "feo",
     "type": "adjectif",
     "level": "B1"
@@ -15267,7 +15267,7 @@
     "id": "word_1697",
     "fr": "incapable",
     "en": "unable",
-    "de": "unfÃ¤hig",
+    "de": "unfähig",
     "es": "incapaz",
     "type": "adjectif",
     "level": "B1"
@@ -15277,22 +15277,22 @@
     "fr": "inconfortable",
     "en": "uncomfortable",
     "de": "unbequem",
-    "es": "incÃ³modo",
+    "es": "incómodo",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1699",
-    "fr": "les sous-vÃªtements",
+    "fr": "les sous-vêtements",
     "en": "underwear",
-    "de": "die UnterwÃ¤sche",
+    "de": "die Unterwäsche",
     "es": "la ropa interior",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1700",
-    "fr": "au chÃ´mage",
+    "fr": "au chômage",
     "en": "unemployed",
     "de": "arbeitslos",
     "es": "desempleado",
@@ -15301,7 +15301,7 @@
   },
   {
     "id": "word_1701",
-    "fr": "le chÃ´mage",
+    "fr": "le chômage",
     "en": "unemployment",
     "de": "die Arbeitslosigkeit",
     "es": "el desempleo",
@@ -15322,13 +15322,13 @@
     "fr": "le syndicat / l'union",
     "en": "union",
     "de": "die Gewerkschaft",
-    "es": "la uniÃ³n",
+    "es": "la unión",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1704",
-    "fr": "Ã  moins que",
+    "fr": "à moins que",
     "en": "unless",
     "de": "es sei denn",
     "es": "a menos que",
@@ -15337,7 +15337,7 @@
   },
   {
     "id": "word_1705",
-    "fr": "contrairement Ã ",
+    "fr": "contrairement à",
     "en": "unlike",
     "de": "im Gegensatz zu",
     "es": "a diferencia de",
@@ -15357,14 +15357,14 @@
     "id": "word_1707",
     "fr": "inutile",
     "en": "unnecessary",
-    "de": "unnÃ¶tig",
+    "de": "unnötig",
     "es": "innecesario",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1708",
-    "fr": "dÃ©sagrÃ©able",
+    "fr": "désagréable",
     "en": "unpleasant",
     "de": "unangenehm",
     "es": "desagradable",
@@ -15373,7 +15373,7 @@
   },
   {
     "id": "word_1709",
-    "fr": "mettre Ã  jour",
+    "fr": "mettre à jour",
     "en": "update",
     "de": "aktualisieren",
     "es": "actualizar",
@@ -15400,7 +15400,7 @@
   },
   {
     "id": "word_1712",
-    "fr": "utilisÃ© / d'occasion",
+    "fr": "utilisé / d'occasion",
     "en": "used",
     "de": "gebraucht",
     "es": "usado",
@@ -15409,7 +15409,7 @@
   },
   {
     "id": "word_1713",
-    "fr": "prÃ©cieux / de valeur",
+    "fr": "précieux / de valeur",
     "en": "valuable",
     "de": "wertvoll",
     "es": "valioso",
@@ -15436,10 +15436,10 @@
   },
   {
     "id": "word_1716",
-    "fr": "le vÃ©hicule",
+    "fr": "le véhicule",
     "en": "vehicle",
     "de": "das Fahrzeug",
-    "es": "el vehÃ­culo",
+    "es": "el vehículo",
     "type": "nom",
     "level": "B1"
   },
@@ -15448,7 +15448,7 @@
     "fr": "la version",
     "en": "version",
     "de": "die Version",
-    "es": "la versiÃ³n",
+    "es": "la versión",
     "type": "nom",
     "level": "B1"
   },
@@ -15457,7 +15457,7 @@
     "fr": "la victime",
     "en": "victim",
     "de": "das Opfer",
-    "es": "la vÃ­ctima",
+    "es": "la víctima",
     "type": "nom",
     "level": "B1"
   },
@@ -15474,14 +15474,14 @@
     "id": "word_1720",
     "fr": "violent",
     "en": "violent",
-    "de": "gewalttÃ¤tig",
+    "de": "gewalttätig",
     "es": "violento",
     "type": "adjectif",
     "level": "B1"
   },
   {
     "id": "word_1721",
-    "fr": "le bÃ©nÃ©vole",
+    "fr": "le bénévole",
     "en": "volunteer",
     "de": "der Freiwillige",
     "es": "el voluntario",
@@ -15510,7 +15510,7 @@
     "id": "word_1724",
     "fr": "voter",
     "en": "vote",
-    "de": "wÃ¤hlen",
+    "de": "wählen",
     "es": "votar",
     "type": "verbe",
     "level": "B1"
@@ -15535,7 +15535,7 @@
   },
   {
     "id": "word_1727",
-    "fr": "le gaspillage / les dÃ©chets",
+    "fr": "le gaspillage / les déchets",
     "en": "waste",
     "de": "der Abfall",
     "es": "el desperdicio",
@@ -15598,7 +15598,7 @@
   },
   {
     "id": "word_1734",
-    "fr": "Ã  chaque fois que",
+    "fr": "à chaque fois que",
     "en": "whenever",
     "de": "wann auch immer",
     "es": "siempre que",
@@ -15618,7 +15618,7 @@
     "id": "word_1736",
     "fr": "pendant que / bien que",
     "en": "while",
-    "de": "wÃ¤hrend",
+    "de": "während",
     "es": "mientras",
     "type": "conjonction",
     "level": "B1"
@@ -15627,14 +15627,14 @@
     "id": "word_1737",
     "fr": "l'aile",
     "en": "wing",
-    "de": "der FlÃ¼gel",
+    "de": "der Flügel",
     "es": "el ala",
     "type": "nom",
     "level": "B1"
   },
   {
     "id": "word_1738",
-    "fr": "Ã  l'intÃ©rieur de / en l'espace de",
+    "fr": "à l'intérieur de / en l'espace de",
     "en": "within",
     "de": "innerhalb",
     "es": "dentro de",
@@ -15688,7 +15688,7 @@
   },
   {
     "id": "word_1744",
-    "fr": "Ã©crit",
+    "fr": "écrit",
     "en": "written",
     "de": "geschrieben",
     "es": "escrito",
@@ -15769,10 +15769,10 @@
   },
   {
     "id": "word_1753",
-    "fr": "acadÃ©mique / universitaire",
+    "fr": "académique / universitaire",
     "en": "academic",
     "de": "akademisch",
-    "es": "acadÃ©mico",
+    "es": "académico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -15781,7 +15781,7 @@
     "fr": "l'universitaire",
     "en": "academic",
     "de": "der Akademiker",
-    "es": "el acadÃ©mico",
+    "es": "el académico",
     "type": "nom",
     "level": "B2"
   },
@@ -15807,7 +15807,7 @@
     "id": "word_1757",
     "fr": "accidentellement",
     "en": "accidentally",
-    "de": "zufÃ¤llig",
+    "de": "zufällig",
     "es": "accidentalmente",
     "type": "adverbe",
     "level": "B2"
@@ -15826,7 +15826,7 @@
     "fr": "accompagner",
     "en": "accompany",
     "de": "begleiten",
-    "es": "acompaÃ±ar",
+    "es": "acompañar",
     "type": "verbe",
     "level": "B2"
   },
@@ -15843,7 +15843,7 @@
     "id": "word_1761",
     "fr": "expliquer / justifier",
     "en": "account for",
-    "de": "erklÃ¤ren / ausmachen",
+    "de": "erklären / ausmachen",
     "es": "explicar",
     "type": "verbe",
     "level": "B2"
@@ -15859,16 +15859,16 @@
   },
   {
     "id": "word_1763",
-    "fr": "la prÃ©cision / l'exactitude",
+    "fr": "la précision / l'exactitude",
     "en": "accuracy",
     "de": "die Genauigkeit",
-    "es": "la precisiÃ³n",
+    "es": "la precisión",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1764",
-    "fr": "prÃ©cis / exact",
+    "fr": "précis / exact",
     "en": "accurate",
     "de": "genau",
     "es": "preciso",
@@ -15877,10 +15877,10 @@
   },
   {
     "id": "word_1765",
-    "fr": "avec prÃ©cision",
+    "fr": "avec précision",
     "en": "accurately",
     "de": "genau",
-    "es": "con precisiÃ³n",
+    "es": "con precisión",
     "type": "adverbe",
     "level": "B2"
   },
@@ -15895,7 +15895,7 @@
   },
   {
     "id": "word_1767",
-    "fr": "reconnaÃ®tre / admettre",
+    "fr": "reconnaître / admettre",
     "en": "acknowledge",
     "de": "anerkennen",
     "es": "reconocer",
@@ -15904,7 +15904,7 @@
   },
   {
     "id": "word_1768",
-    "fr": "acquÃ©rir",
+    "fr": "acquérir",
     "en": "acquire",
     "de": "erwerben",
     "es": "adquirir",
@@ -15915,7 +15915,7 @@
     "id": "word_1769",
     "fr": "l'acre (mesure agraire)",
     "en": "acre",
-    "de": "der Morgen (FlÃ¤chenmaÃŸ)",
+    "de": "der Morgen (Flächenmaß)",
     "es": "el acre",
     "type": "nom",
     "level": "B2"
@@ -15931,9 +15931,9 @@
   },
   {
     "id": "word_1771",
-    "fr": "rÃ©el / vÃ©ritable",
+    "fr": "réel / véritable",
     "en": "actual",
-    "de": "tatsÃ¤chlich",
+    "de": "tatsächlich",
     "es": "real",
     "type": "adjectif",
     "level": "B2"
@@ -15952,15 +15952,15 @@
     "fr": "l'addiction",
     "en": "addiction",
     "de": "die Sucht",
-    "es": "la adicciÃ³n",
+    "es": "la adicción",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1774",
-    "fr": "supplÃ©mentaire",
+    "fr": "supplémentaire",
     "en": "additional",
-    "de": "zusÃ¤tzlich",
+    "de": "zusätzlich",
     "es": "adicional",
     "type": "adjectif",
     "level": "B2"
@@ -15969,14 +15969,14 @@
     "id": "word_1775",
     "fr": "de plus / en outre",
     "en": "additionally",
-    "de": "zusÃ¤tzlich",
-    "es": "ademÃ¡s",
+    "de": "zusätzlich",
+    "es": "además",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_1776",
-    "fr": "s'adresser Ã  / aborder",
+    "fr": "s'adresser à / aborder",
     "en": "address",
     "de": "ansprechen",
     "es": "dirigirse a",
@@ -15985,7 +15985,7 @@
   },
   {
     "id": "word_1777",
-    "fr": "adÃ©quat / suffisant",
+    "fr": "adéquat / suffisant",
     "en": "adequate",
     "de": "angemessen",
     "es": "adecuado",
@@ -15994,7 +15994,7 @@
   },
   {
     "id": "word_1778",
-    "fr": "adÃ©quatement",
+    "fr": "adéquatement",
     "en": "adequately",
     "de": "angemessen",
     "es": "adecuadamente",
@@ -16015,7 +16015,7 @@
     "fr": "l'administration",
     "en": "administration",
     "de": "die Verwaltung",
-    "es": "la administraciÃ³n",
+    "es": "la administración",
     "type": "nom",
     "level": "B2"
   },
@@ -16023,7 +16023,7 @@
     "id": "word_1781",
     "fr": "adopter",
     "en": "adopt",
-    "de": "adoptieren / Ã¼bernehmen",
+    "de": "adoptieren / übernehmen",
     "es": "adoptar",
     "type": "verbe",
     "level": "B2"
@@ -16041,7 +16041,7 @@
     "id": "word_1783",
     "fr": "avancer",
     "en": "advance",
-    "de": "vorrÃ¼cken",
+    "de": "vorrücken",
     "es": "avanzar",
     "type": "verbe",
     "level": "B2"
@@ -16050,7 +16050,7 @@
     "id": "word_1784",
     "fr": "l'affaire",
     "en": "affair",
-    "de": "die Angelegenheit / die AffÃ¤re",
+    "de": "die Angelegenheit / die Affäre",
     "es": "el asunto",
     "type": "nom",
     "level": "B2"
@@ -16069,7 +16069,7 @@
     "fr": "ensuite / plus tard",
     "en": "afterwards",
     "de": "danach",
-    "es": "despuÃ©s",
+    "es": "después",
     "type": "adverbe",
     "level": "B2"
   },
@@ -16138,7 +16138,7 @@
   },
   {
     "id": "word_1794",
-    "fr": "l'aÃ©ronef",
+    "fr": "l'aéronef",
     "en": "aircraft",
     "de": "das Flugzeug",
     "es": "la aeronave",
@@ -16156,25 +16156,25 @@
   },
   {
     "id": "word_1796",
-    "fr": "l'extraterrestre / l'Ã©tranger",
+    "fr": "l'extraterrestre / l'étranger",
     "en": "alien",
-    "de": "der AuÃŸerirdische",
+    "de": "der Außerirdische",
     "es": "el extraterrestre",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1797",
-    "fr": "Ã©tranger / extraterrestre",
+    "fr": "étranger / extraterrestre",
     "en": "alien",
     "de": "fremd",
-    "es": "alienÃ­gena",
+    "es": "alienígena",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_1798",
-    "fr": "aux cÃ´tÃ©s de",
+    "fr": "aux côtés de",
     "en": "alongside",
     "de": "neben",
     "es": "junto a",
@@ -16183,16 +16183,16 @@
   },
   {
     "id": "word_1799",
-    "fr": "modifier / altÃ©rer",
+    "fr": "modifier / altérer",
     "en": "alter",
-    "de": "Ã¤ndern",
+    "de": "ändern",
     "es": "alterar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_1800",
-    "fr": "tout Ã  fait / dans l'ensemble",
+    "fr": "tout à fait / dans l'ensemble",
     "en": "altogether",
     "de": "insgesamt",
     "es": "totalmente",
@@ -16212,7 +16212,7 @@
     "id": "word_1802",
     "fr": "amusant",
     "en": "amusing",
-    "de": "amÃ¼sant",
+    "de": "amüsant",
     "es": "divertido",
     "type": "adjectif",
     "level": "B2"
@@ -16231,7 +16231,7 @@
     "fr": "l'analyse",
     "en": "analysis",
     "de": "die Analyse",
-    "es": "el anÃ¡lisis",
+    "es": "el análisis",
     "type": "nom",
     "level": "B2"
   },
@@ -16246,7 +16246,7 @@
   },
   {
     "id": "word_1806",
-    "fr": "l'ancÃªtre",
+    "fr": "l'ancêtre",
     "en": "ancestor",
     "de": "der Vorfahre",
     "es": "el ancestro",
@@ -16258,13 +16258,13 @@
     "fr": "l'ange",
     "en": "angel",
     "de": "der Engel",
-    "es": "el Ã¡ngel",
+    "es": "el ángel",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1808",
-    "fr": "la colÃ¨re",
+    "fr": "la colère",
     "en": "anger",
     "de": "der Zorn",
     "es": "la ira",
@@ -16276,7 +16276,7 @@
     "fr": "l'angle",
     "en": "angle",
     "de": "der Winkel",
-    "es": "el Ã¡ngulo",
+    "es": "el ángulo",
     "type": "nom",
     "level": "B2"
   },
@@ -16285,13 +16285,13 @@
     "fr": "l'animation",
     "en": "animation",
     "de": "die Animation",
-    "es": "la animaciÃ³n",
+    "es": "la animación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1811",
-    "fr": "l'anniversaire (Ã©vÃ©nement)",
+    "fr": "l'anniversaire (événement)",
     "en": "anniversary",
     "de": "der Jahrestag",
     "es": "el aniversario",
@@ -16302,7 +16302,7 @@
     "id": "word_1812",
     "fr": "annuel",
     "en": "annual",
-    "de": "jÃ¤hrlich",
+    "de": "jährlich",
     "es": "anual",
     "type": "adjectif",
     "level": "B2"
@@ -16311,7 +16311,7 @@
     "id": "word_1813",
     "fr": "annuellement",
     "en": "annually",
-    "de": "jÃ¤hrlich",
+    "de": "jährlich",
     "es": "anualmente",
     "type": "adverbe",
     "level": "B2"
@@ -16327,7 +16327,7 @@
   },
   {
     "id": "word_1815",
-    "fr": "l'anxiÃ©tÃ©",
+    "fr": "l'anxiété",
     "en": "anxiety",
     "de": "die Angst",
     "es": "la ansiedad",
@@ -16375,7 +16375,7 @@
     "fr": "l'appel (justice) / l'attrait",
     "en": "appeal",
     "de": "der Einspruch / der Reiz",
-    "es": "la apelaciÃ³n / el atractivo",
+    "es": "la apelación / el atractivo",
     "type": "nom",
     "level": "B2"
   },
@@ -16401,7 +16401,7 @@
     "id": "word_1823",
     "fr": "l'approche",
     "en": "approach",
-    "de": "der Ansatz / die AnnÃ¤herung",
+    "de": "der Ansatz / die Annäherung",
     "es": "el enfoque",
     "type": "nom",
     "level": "B2"
@@ -16410,14 +16410,14 @@
     "id": "word_1824",
     "fr": "approcher",
     "en": "approach",
-    "de": "sich nÃ¤hern",
+    "de": "sich nähern",
     "es": "acercarse",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_1825",
-    "fr": "appropriÃ©",
+    "fr": "approprié",
     "en": "appropriate",
     "de": "angemessen",
     "es": "apropiado",
@@ -16426,7 +16426,7 @@
   },
   {
     "id": "word_1826",
-    "fr": "de maniÃ¨re appropriÃ©e",
+    "fr": "de manière appropriée",
     "en": "appropriately",
     "de": "angemessen",
     "es": "apropiadamente",
@@ -16438,7 +16438,7 @@
     "fr": "l'approbation",
     "en": "approval",
     "de": "die Zustimmung",
-    "es": "la aprobaciÃ³n",
+    "es": "la aprobación",
     "type": "nom",
     "level": "B2"
   },
@@ -16462,7 +16462,7 @@
   },
   {
     "id": "word_1830",
-    "fr": "armÃ©",
+    "fr": "armé",
     "en": "armed",
     "de": "bewaffnet",
     "es": "armado",
@@ -16480,7 +16480,7 @@
   },
   {
     "id": "word_1832",
-    "fr": "la flÃ¨che",
+    "fr": "la flèche",
     "en": "arrow",
     "de": "der Pfeil",
     "es": "la flecha",
@@ -16491,7 +16491,7 @@
     "id": "word_1833",
     "fr": "artificiel",
     "en": "artificial",
-    "de": "kÃ¼nstlich",
+    "de": "künstlich",
     "es": "artificial",
     "type": "adjectif",
     "level": "B2"
@@ -16500,14 +16500,14 @@
     "id": "word_1834",
     "fr": "artistique",
     "en": "artistic",
-    "de": "kÃ¼nstlerisch",
-    "es": "artÃ­stico",
+    "de": "künstlerisch",
+    "es": "artístico",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_1835",
-    "fr": "l'Å“uvre d'art",
+    "fr": "l'œuvre d'art",
     "en": "artwork",
     "de": "das Kunstwerk",
     "es": "la obra de arte",
@@ -16518,7 +16518,7 @@
     "id": "word_1836",
     "fr": "honteux (avoir honte)",
     "en": "ashamed",
-    "de": "beschÃ¤mt",
+    "de": "beschämt",
     "es": "avergonzado",
     "type": "adjectif",
     "level": "B2"
@@ -16534,7 +16534,7 @@
   },
   {
     "id": "word_1838",
-    "fr": "Ã©valuer",
+    "fr": "évaluer",
     "en": "assess",
     "de": "bewerten",
     "es": "evaluar",
@@ -16543,10 +16543,10 @@
   },
   {
     "id": "word_1839",
-    "fr": "l'Ã©valuation",
+    "fr": "l'évaluation",
     "en": "assessment",
     "de": "die Bewertung",
-    "es": "la evaluaciÃ³n",
+    "es": "la evaluación",
     "type": "nom",
     "level": "B2"
   },
@@ -16554,7 +16554,7 @@
     "id": "word_1840",
     "fr": "l'atout / le bien",
     "en": "asset",
-    "de": "der VermÃ¶genswert",
+    "de": "der Vermögenswert",
     "es": "el activo",
     "type": "nom",
     "level": "B2"
@@ -16572,7 +16572,7 @@
     "id": "word_1842",
     "fr": "l'assistance / l'aide",
     "en": "assistance",
-    "de": "die UnterstÃ¼tzung",
+    "de": "die Unterstützung",
     "es": "la asistencia",
     "type": "nom",
     "level": "B2"
@@ -16588,7 +16588,7 @@
   },
   {
     "id": "word_1844",
-    "fr": "associÃ©",
+    "fr": "associé",
     "en": "associated",
     "de": "verbunden",
     "es": "asociado",
@@ -16600,13 +16600,13 @@
     "fr": "l'association",
     "en": "association",
     "de": "der Verband / die Vereinigung",
-    "es": "la asociaciÃ³n",
+    "es": "la asociación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1846",
-    "fr": "supposer / prÃ©sumer",
+    "fr": "supposer / présumer",
     "en": "assume",
     "de": "annehmen",
     "es": "suponer",
@@ -16618,7 +16618,7 @@
     "fr": "la supposition",
     "en": "assumption",
     "de": "die Annahme",
-    "es": "la suposiciÃ³n",
+    "es": "la suposición",
     "type": "nom",
     "level": "B2"
   },
@@ -16633,7 +16633,7 @@
   },
   {
     "id": "word_1849",
-    "fr": "Ã©tonnant",
+    "fr": "étonnant",
     "en": "astonishing",
     "de": "erstaunlich",
     "es": "asombroso",
@@ -16642,16 +16642,16 @@
   },
   {
     "id": "word_1850",
-    "fr": "athlÃ©tique",
+    "fr": "athlétique",
     "en": "athletic",
     "de": "athletisch",
-    "es": "atlÃ©tico",
+    "es": "atlético",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_1851",
-    "fr": "la piÃ¨ce jointe / l'attachement",
+    "fr": "la pièce jointe / l'attachement",
     "en": "attachment",
     "de": "der Anhang",
     "es": "el archivo adjunto",
@@ -16696,16 +16696,16 @@
   },
   {
     "id": "word_1856",
-    "fr": "maladroit / gÃªnant",
+    "fr": "maladroit / gênant",
     "en": "awkward",
     "de": "ungeschickt / peinlich",
-    "es": "incÃ³modo / torpe",
+    "es": "incómodo / torpe",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_1857",
-    "fr": "l'Ã©tiquette / le tag",
+    "fr": "l'étiquette / le tag",
     "en": "tag",
     "de": "das Etikett",
     "es": "la etiqueta",
@@ -16714,7 +16714,7 @@
   },
   {
     "id": "word_1858",
-    "fr": "Ã©tiqueter / taguer",
+    "fr": "étiqueter / taguer",
     "en": "tag",
     "de": "markieren",
     "es": "etiquetar",
@@ -16725,14 +16725,14 @@
     "id": "word_1859",
     "fr": "le conte",
     "en": "tale",
-    "de": "das MÃ¤rchen",
+    "de": "das Märchen",
     "es": "el cuento",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1860",
-    "fr": "le rÃ©servoir / le char",
+    "fr": "le réservoir / le char",
     "en": "tank",
     "de": "der Panzer / der Tank",
     "es": "el tanque",
@@ -16759,18 +16759,18 @@
   },
   {
     "id": "word_1863",
-    "fr": "la larme / la dÃ©chirure",
+    "fr": "la larme / la déchirure",
     "en": "tear",
-    "de": "die TrÃ¤ne / der Riss",
-    "es": "la lÃ¡grima / el desgarro",
+    "de": "die Träne / der Riss",
+    "es": "la lágrima / el desgarro",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1864",
-    "fr": "dÃ©chirer",
+    "fr": "déchirer",
     "en": "tear",
-    "de": "reiÃŸen",
+    "de": "reißen",
     "es": "romper / desgarrar",
     "type": "verbe",
     "level": "B2"
@@ -16780,7 +16780,7 @@
     "fr": "technologique",
     "en": "technological",
     "de": "technologisch",
-    "es": "tecnolÃ³gico",
+    "es": "tecnológico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -16806,7 +16806,7 @@
     "id": "word_1868",
     "fr": "temporairement",
     "en": "temporarily",
-    "de": "vorÃ¼bergehend",
+    "de": "vorübergehend",
     "es": "temporalmente",
     "type": "adverbe",
     "level": "B2"
@@ -16815,7 +16815,7 @@
     "id": "word_1869",
     "fr": "temporaire",
     "en": "temporary",
-    "de": "vorÃ¼bergehend",
+    "de": "vorübergehend",
     "es": "temporal",
     "type": "adjectif",
     "level": "B2"
@@ -16834,7 +16834,7 @@
     "fr": "la tension",
     "en": "tension",
     "de": "die Spannung",
-    "es": "la tensiÃ³n",
+    "es": "la tensión",
     "type": "nom",
     "level": "B2"
   },
@@ -16861,7 +16861,7 @@
     "fr": "les termes (conditions)",
     "en": "terms",
     "de": "die Bedingungen",
-    "es": "los tÃ©rminos",
+    "es": "los términos",
     "type": "nom",
     "level": "B2"
   },
@@ -16939,7 +16939,7 @@
   },
   {
     "id": "word_1883",
-    "fr": "le vol (dÃ©lit)",
+    "fr": "le vol (délit)",
     "en": "theft",
     "de": "der Diebstahl",
     "es": "el robo",
@@ -16948,7 +16948,7 @@
   },
   {
     "id": "word_1884",
-    "fr": "le thÃ©rapeute",
+    "fr": "le thérapeute",
     "en": "therapist",
     "de": "der Therapeut",
     "es": "el terapeuta",
@@ -16957,7 +16957,7 @@
   },
   {
     "id": "word_1885",
-    "fr": "la thÃ©rapie",
+    "fr": "la thérapie",
     "en": "therapy",
     "de": "die Therapie",
     "es": "la terapia",
@@ -16966,16 +16966,16 @@
   },
   {
     "id": "word_1886",
-    "fr": "la thÃ©orie",
+    "fr": "la théorie",
     "en": "theory",
     "de": "die Theorie",
-    "es": "la teorÃ­a",
+    "es": "la teoría",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1887",
-    "fr": "par consÃ©quent / donc",
+    "fr": "par conséquent / donc",
     "en": "therefore",
     "de": "daher",
     "es": "por lo tanto",
@@ -16986,7 +16986,7 @@
     "id": "word_1888",
     "fr": "minutieux / approfondi",
     "en": "thorough",
-    "de": "grÃ¼ndlich",
+    "de": "gründlich",
     "es": "exhaustivo",
     "type": "adjectif",
     "level": "B2"
@@ -16995,7 +16995,7 @@
     "id": "word_1889",
     "fr": "minutieusement",
     "en": "thoroughly",
-    "de": "grÃ¼ndlich",
+    "de": "gründlich",
     "es": "exhaustivamente",
     "type": "adverbe",
     "level": "B2"
@@ -17032,7 +17032,7 @@
     "fr": "ainsi",
     "en": "thus",
     "de": "somit",
-    "es": "asÃ­",
+    "es": "así",
     "type": "adverbe",
     "level": "B2"
   },
@@ -17050,7 +17050,7 @@
     "fr": "le tissu (cellulaire) / le mouchoir",
     "en": "tissue",
     "de": "das Gewebe / das Taschentuch",
-    "es": "el tejido / el paÃ±uelo",
+    "es": "el tejido / el pañuelo",
     "type": "nom",
     "level": "B2"
   },
@@ -17067,8 +17067,8 @@
     "id": "word_1897",
     "fr": "dur / difficile",
     "en": "tough",
-    "de": "zÃ¤h / hart",
-    "es": "duro / difÃ­cil",
+    "de": "zäh / hart",
+    "es": "duro / difícil",
     "type": "adjectif",
     "level": "B2"
   },
@@ -17086,7 +17086,7 @@
     "fr": "toxique",
     "en": "toxic",
     "de": "giftig",
-    "es": "tÃ³xico",
+    "es": "tóxico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -17103,7 +17103,7 @@
     "id": "word_1901",
     "fr": "retracer / tracer",
     "en": "trace",
-    "de": "zurÃ¼ckverfolgen",
+    "de": "zurückverfolgen",
     "es": "rastrear",
     "type": "verbe",
     "level": "B2"
@@ -17119,7 +17119,7 @@
   },
   {
     "id": "word_1903",
-    "fr": "suivre (Ã  la trace)",
+    "fr": "suivre (à la trace)",
     "en": "track",
     "de": "verfolgen",
     "es": "rastrear",
@@ -17128,7 +17128,7 @@
   },
   {
     "id": "word_1904",
-    "fr": "le commerce (activitÃ©)",
+    "fr": "le commerce (activité)",
     "en": "trading",
     "de": "der Handel",
     "es": "el comercio",
@@ -17137,9 +17137,9 @@
   },
   {
     "id": "word_1905",
-    "fr": "la tragÃ©die",
+    "fr": "la tragédie",
     "en": "tragedy",
-    "de": "die TragÃ¶die",
+    "de": "die Tragödie",
     "es": "la tragedia",
     "type": "nom",
     "level": "B2"
@@ -17149,13 +17149,13 @@
     "fr": "tragique",
     "en": "tragic",
     "de": "tragisch",
-    "es": "trÃ¡gico",
+    "es": "trágico",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_1907",
-    "fr": "le trait (de caractÃ¨re)",
+    "fr": "le trait (de caractère)",
     "en": "trait",
     "de": "der Charakterzug",
     "es": "el rasgo",
@@ -17166,16 +17166,16 @@
     "id": "word_1908",
     "fr": "le transfert",
     "en": "transfer",
-    "de": "die Ãœbertragung",
+    "de": "die Übertragung",
     "es": "la transferencia",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_1909",
-    "fr": "transfÃ©rer",
+    "fr": "transférer",
     "en": "transfer",
-    "de": "Ã¼bertragen",
+    "de": "übertragen",
     "es": "transferir",
     "type": "verbe",
     "level": "B2"
@@ -17193,8 +17193,8 @@
     "id": "word_1911",
     "fr": "la transition",
     "en": "transition",
-    "de": "der Ãœbergang",
-    "es": "la transiciÃ³n",
+    "de": "der Übergang",
+    "es": "la transición",
     "type": "nom",
     "level": "B2"
   },
@@ -17202,14 +17202,14 @@
     "id": "word_1912",
     "fr": "transmettre",
     "en": "transmit",
-    "de": "Ã¼bertragen",
+    "de": "übertragen",
     "es": "transmitir",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_1913",
-    "fr": "le piÃ¨ge",
+    "fr": "le piège",
     "en": "trap",
     "de": "die Falle",
     "es": "la trampa",
@@ -17218,7 +17218,7 @@
   },
   {
     "id": "word_1914",
-    "fr": "piÃ©ger",
+    "fr": "piéger",
     "en": "trap",
     "de": "in die Falle locken",
     "es": "atrapar",
@@ -17227,7 +17227,7 @@
   },
   {
     "id": "word_1915",
-    "fr": "le trÃ©sor",
+    "fr": "le trésor",
     "en": "treasure",
     "de": "der Schatz",
     "es": "el tesoro",
@@ -17236,7 +17236,7 @@
   },
   {
     "id": "word_1916",
-    "fr": "le procÃ¨s / l'essai",
+    "fr": "le procès / l'essai",
     "en": "trial",
     "de": "der Prozess",
     "es": "el juicio",
@@ -17257,7 +17257,7 @@
     "fr": "le billion (mille milliards)",
     "en": "trillion",
     "de": "die Billion",
-    "es": "el billÃ³n",
+    "es": "el billón",
     "type": "num",
     "level": "B2"
   },
@@ -17281,7 +17281,7 @@
   },
   {
     "id": "word_1921",
-    "fr": "vraiment / vÃ©ritablement",
+    "fr": "vraiment / véritablement",
     "en": "truly",
     "de": "wirklich",
     "es": "verdaderamente",
@@ -17299,7 +17299,7 @@
   },
   {
     "id": "word_1923",
-    "fr": "faire confiance Ã ",
+    "fr": "faire confiance à",
     "en": "trust",
     "de": "vertrauen",
     "es": "confiar en",
@@ -17317,10 +17317,10 @@
   },
   {
     "id": "word_1925",
-    "fr": "l'air (mÃ©lodie)",
+    "fr": "l'air (mélodie)",
     "en": "tune",
     "de": "die Melodie",
-    "es": "la melodÃ­a",
+    "es": "la melodía",
     "type": "nom",
     "level": "B2"
   },
@@ -17329,7 +17329,7 @@
     "fr": "le tunnel",
     "en": "tunnel",
     "de": "der Tunnel",
-    "es": "el tÃºnel",
+    "es": "el túnel",
     "type": "nom",
     "level": "B2"
   },
@@ -17338,7 +17338,7 @@
     "fr": "ultime",
     "en": "ultimate",
     "de": "ultimativ",
-    "es": "Ãºltimo",
+    "es": "último",
     "type": "adjectif",
     "level": "B2"
   },
@@ -17380,7 +17380,7 @@
   },
   {
     "id": "word_1932",
-    "fr": "subir / Ã©prouver",
+    "fr": "subir / éprouver",
     "en": "undergo",
     "de": "durchmachen",
     "es": "someterse a",
@@ -17407,7 +17407,7 @@
   },
   {
     "id": "word_1935",
-    "fr": "se dÃ©rouler / dÃ©plier",
+    "fr": "se dérouler / déplier",
     "en": "unfold",
     "de": "sich entfalten",
     "es": "desarrollarse / desplegar",
@@ -17418,7 +17418,7 @@
     "id": "word_1936",
     "fr": "malheureux",
     "en": "unfortunate",
-    "de": "unglÃ¼cklich",
+    "de": "unglücklich",
     "es": "desafortunado",
     "type": "adjectif",
     "level": "B2"
@@ -17428,7 +17428,7 @@
     "fr": "unique",
     "en": "unique",
     "de": "einzigartig",
-    "es": "Ãºnico",
+    "es": "único",
     "type": "adjectif",
     "level": "B2"
   },
@@ -17443,7 +17443,7 @@
   },
   {
     "id": "word_1939",
-    "fr": "l'unitÃ©",
+    "fr": "l'unité",
     "en": "unity",
     "de": "die Einheit",
     "es": "la unidad",
@@ -17479,7 +17479,7 @@
   },
   {
     "id": "word_1943",
-    "fr": "supÃ©rieur",
+    "fr": "supérieur",
     "en": "upper",
     "de": "ober",
     "es": "superior",
@@ -17490,7 +17490,7 @@
     "id": "word_1944",
     "fr": "vers le haut",
     "en": "upwards",
-    "de": "aufwÃ¤rts",
+    "de": "aufwärts",
     "es": "hacia arriba",
     "type": "adverbe",
     "level": "B2"
@@ -17499,7 +17499,7 @@
     "id": "word_1945",
     "fr": "urbain",
     "en": "urban",
-    "de": "stÃ¤dtisch",
+    "de": "städtisch",
     "es": "urbano",
     "type": "adjectif",
     "level": "B2"
@@ -17508,7 +17508,7 @@
     "id": "word_1946",
     "fr": "exhorter / pousser",
     "en": "urge",
-    "de": "drÃ¤ngen",
+    "de": "drängen",
     "es": "instar",
     "type": "verbe",
     "level": "B2"
@@ -17536,7 +17536,7 @@
     "fr": "inutile",
     "en": "useless",
     "de": "nutzlos",
-    "es": "inÃºtil",
+    "es": "inútil",
     "type": "adjectif",
     "level": "B2"
   },
@@ -17544,8 +17544,8 @@
     "id": "word_1950",
     "fr": "valide",
     "en": "valid",
-    "de": "gÃ¼ltig",
-    "es": "vÃ¡lido",
+    "de": "gültig",
+    "es": "válido",
     "type": "adjectif",
     "level": "B2"
   },
@@ -17554,7 +17554,7 @@
     "fr": "la variation",
     "en": "variation",
     "de": "die Schwankung",
-    "es": "la variaciÃ³n",
+    "es": "la variación",
     "type": "nom",
     "level": "B2"
   },
@@ -17578,7 +17578,7 @@
   },
   {
     "id": "word_1954",
-    "fr": "le lieu (Ã©vÃ©nement)",
+    "fr": "le lieu (événement)",
     "en": "venue",
     "de": "der Veranstaltungsort",
     "es": "el lugar",
@@ -17598,8 +17598,8 @@
     "id": "word_1956",
     "fr": "via / par",
     "en": "via",
-    "de": "Ã¼ber",
-    "es": "vÃ­a",
+    "de": "über",
+    "es": "vía",
     "type": "prep",
     "level": "B2"
   },
@@ -17671,7 +17671,7 @@
     "fr": "la vision",
     "en": "vision",
     "de": "die Vision",
-    "es": "la visiÃ³n",
+    "es": "la visión",
     "type": "nom",
     "level": "B2"
   },
@@ -17706,7 +17706,7 @@
     "id": "word_1968",
     "fr": "le volume",
     "en": "volume",
-    "de": "die LautstÃ¤rke",
+    "de": "die Lautstärke",
     "es": "el volumen",
     "type": "nom",
     "level": "B2"
@@ -17734,7 +17734,7 @@
     "fr": "le vote (action)",
     "en": "voting",
     "de": "die Abstimmung",
-    "es": "la votaciÃ³n",
+    "es": "la votación",
     "type": "nom",
     "level": "B2"
   },
@@ -17758,9 +17758,9 @@
   },
   {
     "id": "word_1974",
-    "fr": "le rÃ©chauffement",
+    "fr": "le réchauffement",
     "en": "warming",
-    "de": "die ErwÃ¤rmung",
+    "de": "die Erwärmung",
     "es": "el calentamiento",
     "type": "nom",
     "level": "B2"
@@ -17769,7 +17769,7 @@
     "id": "word_1975",
     "fr": "la faiblesse",
     "en": "weakness",
-    "de": "die SchwÃ¤che",
+    "de": "die Schwäche",
     "es": "la debilidad",
     "type": "nom",
     "level": "B2"
@@ -17796,7 +17796,7 @@
     "id": "word_1978",
     "fr": "hebdomadaire",
     "en": "weekly",
-    "de": "wÃ¶chentlich",
+    "de": "wöchentlich",
     "es": "semanal",
     "type": "adjectif",
     "level": "B2"
@@ -17812,7 +17812,7 @@
   },
   {
     "id": "word_1980",
-    "fr": "le bien-Ãªtre / l'aide sociale",
+    "fr": "le bien-être / l'aide sociale",
     "en": "welfare",
     "de": "die Wohlfahrt",
     "es": "el bienestar",
@@ -17821,7 +17821,7 @@
   },
   {
     "id": "word_1981",
-    "fr": "le blÃ©",
+    "fr": "le blé",
     "en": "wheat",
     "de": "der Weizen",
     "es": "el trigo",
@@ -17839,7 +17839,7 @@
   },
   {
     "id": "word_1983",
-    "fr": "partout oÃ¹",
+    "fr": "partout où",
     "en": "wherever",
     "de": "wo auch immer",
     "es": "dondequiera que",
@@ -17850,7 +17850,7 @@
     "id": "word_1984",
     "fr": "chuchoter",
     "en": "whisper",
-    "de": "flÃ¼stern",
+    "de": "flüstern",
     "es": "susurrar",
     "type": "verbe",
     "level": "B2"
@@ -17866,7 +17866,7 @@
   },
   {
     "id": "word_1986",
-    "fr": "qui / que (complÃ©ment)",
+    "fr": "qui / que (complément)",
     "en": "whom",
     "de": "wem / wen",
     "es": "a quien",
@@ -17884,7 +17884,7 @@
   },
   {
     "id": "word_1988",
-    "fr": "rÃ©pandu",
+    "fr": "répandu",
     "en": "widespread",
     "de": "weit verbreitet",
     "es": "generalizado",
@@ -17911,7 +17911,7 @@
   },
   {
     "id": "word_1991",
-    "fr": "disposÃ© Ã ",
+    "fr": "disposé à",
     "en": "willing",
     "de": "bereit",
     "es": "dispuesto",
@@ -17920,7 +17920,7 @@
   },
   {
     "id": "word_1992",
-    "fr": "le fil (de fer/Ã©lectrique)",
+    "fr": "le fil (de fer/électrique)",
     "en": "wire",
     "de": "der Draht",
     "es": "el alambre",
@@ -17932,7 +17932,7 @@
     "fr": "la sagesse",
     "en": "wisdom",
     "de": "die Weisheit",
-    "es": "la sabidurÃ­a",
+    "es": "la sabiduría",
     "type": "nom",
     "level": "B2"
   },
@@ -17949,14 +17949,14 @@
     "id": "word_1995",
     "fr": "retirer",
     "en": "withdraw",
-    "de": "zurÃ¼ckziehen",
+    "de": "zurückziehen",
     "es": "retirar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_1996",
-    "fr": "le tÃ©moin",
+    "fr": "le témoin",
     "en": "witness",
     "de": "der Zeuge",
     "es": "el testigo",
@@ -17965,7 +17965,7 @@
   },
   {
     "id": "word_1997",
-    "fr": "Ãªtre tÃ©moin de",
+    "fr": "être témoin de",
     "en": "witness",
     "de": "bezeugen",
     "es": "presenciar",
@@ -17983,7 +17983,7 @@
   },
   {
     "id": "word_1999",
-    "fr": "la main-d'Å“uvre",
+    "fr": "la main-d'œuvre",
     "en": "workforce",
     "de": "die Belegschaft",
     "es": "la fuerza laboral",
@@ -18001,7 +18001,7 @@
   },
   {
     "id": "word_2001",
-    "fr": "l'atelier / l'entraÃ®nement",
+    "fr": "l'atelier / l'entraînement",
     "en": "workshop",
     "de": "die Werkstatt",
     "es": "el taller",
@@ -18049,13 +18049,13 @@
     "fr": "le poignet",
     "en": "wrist",
     "de": "das Handgelenk",
-    "es": "la muÃ±eca",
+    "es": "la muñeca",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2007",
-    "fr": "la bactÃ©rie",
+    "fr": "la bactérie",
     "en": "bacteria",
     "de": "die Bakterien",
     "es": "la bacteria",
@@ -18073,7 +18073,7 @@
   },
   {
     "id": "word_2009",
-    "fr": "Ã©quilibrÃ©",
+    "fr": "équilibré",
     "en": "balanced",
     "de": "ausgewogen",
     "es": "equilibrado",
@@ -18100,7 +18100,7 @@
   },
   {
     "id": "word_2012",
-    "fr": "Ã  peine",
+    "fr": "à peine",
     "en": "barely",
     "de": "kaum",
     "es": "apenas",
@@ -18111,14 +18111,14 @@
     "id": "word_2013",
     "fr": "la bonne affaire",
     "en": "bargain",
-    "de": "das SchnÃ¤ppchen",
+    "de": "das Schnäppchen",
     "es": "la ganga",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2014",
-    "fr": "la barriÃ¨re",
+    "fr": "la barrière",
     "en": "barrier",
     "de": "die Barriere",
     "es": "la barrera",
@@ -18127,7 +18127,7 @@
   },
   {
     "id": "word_2015",
-    "fr": "basÃ© sur",
+    "fr": "basé sur",
     "en": "based on",
     "de": "basierend auf",
     "es": "basado en",
@@ -18139,7 +18139,7 @@
     "fr": "le sous-sol",
     "en": "basement",
     "de": "der Keller",
-    "es": "el sÃ³tano",
+    "es": "el sótano",
     "type": "nom",
     "level": "B2"
   },
@@ -18147,8 +18147,8 @@
     "id": "word_2017",
     "fr": "fondamentalement / en gros",
     "en": "basically",
-    "de": "grundsÃ¤tzlich",
-    "es": "bÃ¡sicamente",
+    "de": "grundsätzlich",
+    "es": "básicamente",
     "type": "adverbe",
     "level": "B2"
   },
@@ -18174,8 +18174,8 @@
     "id": "word_2020",
     "fr": "la batte / la chauve-souris",
     "en": "bat",
-    "de": "der SchlÃ¤ger / die Fledermaus",
-    "es": "el bate / el murciÃ©lago",
+    "de": "der Schläger / die Fledermaus",
+    "es": "el bate / el murciélago",
     "type": "nom",
     "level": "B2"
   },
@@ -18199,7 +18199,7 @@
   },
   {
     "id": "word_2023",
-    "fr": "l'Ãªtre",
+    "fr": "l'être",
     "en": "being",
     "de": "das Wesen",
     "es": "el ser",
@@ -18208,7 +18208,7 @@
   },
   {
     "id": "word_2024",
-    "fr": "bÃ©nÃ©fique",
+    "fr": "bénéfique",
     "en": "beneficial",
     "de": "vorteilhaft",
     "es": "beneficioso",
@@ -18217,7 +18217,7 @@
   },
   {
     "id": "word_2025",
-    "fr": "courbÃ© / pliÃ©",
+    "fr": "courbé / plié",
     "en": "bent",
     "de": "gebogen",
     "es": "doblado",
@@ -18226,7 +18226,7 @@
   },
   {
     "id": "word_2026",
-    "fr": "Ã  cÃ´tÃ© de",
+    "fr": "à côté de",
     "en": "beside",
     "de": "neben",
     "es": "al lado de",
@@ -18237,8 +18237,8 @@
     "id": "word_2027",
     "fr": "en outre / d'ailleurs",
     "en": "besides",
-    "de": "auÃŸerdem",
-    "es": "ademÃ¡s",
+    "de": "außerdem",
+    "es": "además",
     "type": "adverbe",
     "level": "B2"
   },
@@ -18253,16 +18253,16 @@
   },
   {
     "id": "word_2029",
-    "fr": "au-delÃ  de",
+    "fr": "au-delà de",
     "en": "beyond",
     "de": "jenseits",
-    "es": "mÃ¡s allÃ¡ de",
+    "es": "más allá de",
     "type": "prep",
     "level": "B2"
   },
   {
     "id": "word_2030",
-    "fr": "le biais / le prÃ©jugÃ©",
+    "fr": "le biais / le préjugé",
     "en": "bias",
     "de": "die Voreingenommenheit",
     "es": "el sesgo",
@@ -18271,7 +18271,7 @@
   },
   {
     "id": "word_2031",
-    "fr": "faire une offre (enchÃ¨re)",
+    "fr": "faire une offre (enchère)",
     "en": "bid",
     "de": "bieten",
     "es": "pujar",
@@ -18283,7 +18283,7 @@
     "fr": "biologique",
     "en": "biological",
     "de": "biologisch",
-    "es": "biolÃ³gico",
+    "es": "biológico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -18298,7 +18298,7 @@
   },
   {
     "id": "word_2034",
-    "fr": "le blÃ¢me",
+    "fr": "le blâme",
     "en": "blame",
     "de": "die Schuld",
     "es": "la culpa",
@@ -18307,7 +18307,7 @@
   },
   {
     "id": "word_2035",
-    "fr": "blÃ¢mer",
+    "fr": "blâmer",
     "en": "blame",
     "de": "beschuldigen",
     "es": "culpar",
@@ -18355,7 +18355,7 @@
     "fr": "le lien (affectif/chimique)",
     "en": "bond",
     "de": "die Bindung",
-    "es": "el vÃ­nculo",
+    "es": "el vínculo",
     "type": "nom",
     "level": "B2"
   },
@@ -18370,7 +18370,7 @@
   },
   {
     "id": "word_2042",
-    "fr": "liÃ© / contraint",
+    "fr": "lié / contraint",
     "en": "bound",
     "de": "gebunden",
     "es": "atado",
@@ -18406,7 +18406,7 @@
   },
   {
     "id": "word_2046",
-    "fr": "briÃ¨vement",
+    "fr": "brièvement",
     "en": "briefly",
     "de": "kurz",
     "es": "brevemente",
@@ -18424,10 +18424,10 @@
   },
   {
     "id": "word_2048",
-    "fr": "l'Ã©mission (TV/radio)",
+    "fr": "l'émission (TV/radio)",
     "en": "broadcast",
     "de": "die Sendung",
-    "es": "la transmisiÃ³n",
+    "es": "la transmisión",
     "type": "nom",
     "level": "B2"
   },
@@ -18442,7 +18442,7 @@
   },
   {
     "id": "word_2050",
-    "fr": "le diffuseur / le prÃ©sentateur",
+    "fr": "le diffuseur / le présentateur",
     "en": "broadcaster",
     "de": "der Sender",
     "es": "el locutor",
@@ -18463,7 +18463,7 @@
     "fr": "le dollar (familier)",
     "en": "buck",
     "de": "der Dollar",
-    "es": "el dÃ³lar",
+    "es": "el dólar",
     "type": "nom",
     "level": "B2"
   },
@@ -18480,7 +18480,7 @@
     "id": "word_2054",
     "fr": "le bug / l'insecte",
     "en": "bug",
-    "de": "der KÃ¤fer",
+    "de": "der Käfer",
     "es": "el insecto / el error",
     "type": "nom",
     "level": "B2"
@@ -18514,9 +18514,9 @@
   },
   {
     "id": "word_2058",
-    "fr": "sauf / Ã  part",
+    "fr": "sauf / à part",
     "en": "but",
-    "de": "auÃŸer",
+    "de": "außer",
     "es": "sino / excepto",
     "type": "prep",
     "level": "B2"
@@ -18525,14 +18525,14 @@
     "id": "word_2059",
     "fr": "la cabine / le chalet",
     "en": "cabin",
-    "de": "die HÃ¼tte",
-    "es": "la cabaÃ±a",
+    "de": "die Hütte",
+    "es": "la cabaña",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2060",
-    "fr": "le cÃ¢ble",
+    "fr": "le câble",
     "en": "cable",
     "de": "das Kabel",
     "es": "el cable",
@@ -18571,7 +18571,7 @@
     "fr": "le cancer",
     "en": "cancer",
     "de": "der Krebs",
-    "es": "el cÃ¡ncer",
+    "es": "el cáncer",
     "type": "nom",
     "level": "B2"
   },
@@ -18588,16 +18588,16 @@
     "id": "word_2066",
     "fr": "capable",
     "en": "capable",
-    "de": "fÃ¤hig",
+    "de": "fähig",
     "es": "capaz",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2067",
-    "fr": "la capacitÃ©",
+    "fr": "la capacité",
     "en": "capacity",
-    "de": "die KapazitÃ¤t",
+    "de": "die Kapazität",
     "es": "la capacidad",
     "type": "nom",
     "level": "B2"
@@ -18631,7 +18631,7 @@
   },
   {
     "id": "word_2071",
-    "fr": "jeter / distribuer (rÃ´le)",
+    "fr": "jeter / distribuer (rôle)",
     "en": "cast",
     "de": "werfen",
     "es": "lanzar",
@@ -18640,9 +18640,9 @@
   },
   {
     "id": "word_2072",
-    "fr": "dÃ©contractÃ©",
+    "fr": "décontracté",
     "en": "casual",
-    "de": "lÃ¤ssig",
+    "de": "lässig",
     "es": "casual",
     "type": "adjectif",
     "level": "B2"
@@ -18652,7 +18652,7 @@
     "fr": "la catastrophe",
     "en": "catastrophe",
     "de": "die Katastrophe",
-    "es": "la catÃ¡strofe",
+    "es": "la catástrofe",
     "type": "nom",
     "level": "B2"
   },
@@ -18660,7 +18660,7 @@
     "id": "word_2074",
     "fr": "la grotte",
     "en": "cave",
-    "de": "die HÃ¶hle",
+    "de": "die Höhle",
     "es": "la cueva",
     "type": "nom",
     "level": "B2"
@@ -18670,7 +18670,7 @@
     "fr": "la cellule",
     "en": "cell",
     "de": "die Zelle",
-    "es": "la cÃ©lula",
+    "es": "la célula",
     "type": "nom",
     "level": "B2"
   },
@@ -18694,7 +18694,7 @@
   },
   {
     "id": "word_2078",
-    "fr": "le prÃ©sident (d'une rÃ©union/comitÃ©)",
+    "fr": "le président (d'une réunion/comité)",
     "en": "chairman",
     "de": "der Vorsitzende",
     "es": "el presidente",
@@ -18721,10 +18721,10 @@
   },
   {
     "id": "word_2081",
-    "fr": "la caractÃ©ristique",
+    "fr": "la caractéristique",
     "en": "characteristic",
     "de": "die Eigenschaft",
-    "es": "la caracterÃ­stica",
+    "es": "la característica",
     "type": "nom",
     "level": "B2"
   },
@@ -18813,7 +18813,7 @@
     "id": "word_2091",
     "fr": "le citoyen",
     "en": "citizen",
-    "de": "der BÃ¼rger",
+    "de": "der Bürger",
     "es": "el ciudadano",
     "type": "nom",
     "level": "B2"
@@ -18832,7 +18832,7 @@
     "fr": "la civilisation",
     "en": "civilization",
     "de": "die Zivilisation",
-    "es": "la civilizaciÃ³n",
+    "es": "la civilización",
     "type": "nom",
     "level": "B2"
   },
@@ -18840,7 +18840,7 @@
     "id": "word_2094",
     "fr": "clarifier",
     "en": "clarify",
-    "de": "klÃ¤ren",
+    "de": "klären",
     "es": "aclarar",
     "type": "verbe",
     "level": "B2"
@@ -18850,7 +18850,7 @@
     "fr": "classique",
     "en": "classic",
     "de": "klassisch",
-    "es": "clÃ¡sico",
+    "es": "clásico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -18868,7 +18868,7 @@
     "fr": "la clause / la proposition",
     "en": "clause",
     "de": "die Klausel",
-    "es": "la clÃ¡usula",
+    "es": "la cláusula",
     "type": "nom",
     "level": "B2"
   },
@@ -18886,7 +18886,7 @@
     "fr": "la clinique",
     "en": "clinic",
     "de": "die Klinik",
-    "es": "la clÃ­nica",
+    "es": "la clínica",
     "type": "nom",
     "level": "B2"
   },
@@ -18901,7 +18901,7 @@
   },
   {
     "id": "word_2101",
-    "fr": "Ã©troitement / de prÃ¨s",
+    "fr": "étroitement / de près",
     "en": "closely",
     "de": "eng",
     "es": "estrechamente",
@@ -18910,7 +18910,7 @@
   },
   {
     "id": "word_2102",
-    "fr": "la coÃ¯ncidence",
+    "fr": "la coïncidence",
     "en": "coincidence",
     "de": "der Zufall",
     "es": "la coincidencia",
@@ -18946,7 +18946,7 @@
   },
   {
     "id": "word_2106",
-    "fr": "colorÃ© / vif",
+    "fr": "coloré / vif",
     "en": "colourful",
     "de": "bunt",
     "es": "colorido",
@@ -18958,7 +18958,7 @@
     "fr": "la combinaison",
     "en": "combination",
     "de": "die Kombination",
-    "es": "la combinaciÃ³n",
+    "es": "la combinación",
     "type": "nom",
     "level": "B2"
   },
@@ -18973,10 +18973,10 @@
   },
   {
     "id": "word_2109",
-    "fr": "la bande dessinÃ©e",
+    "fr": "la bande dessinée",
     "en": "comic",
     "de": "der Comic",
-    "es": "el cÃ³mic",
+    "es": "el cómic",
     "type": "nom",
     "level": "B2"
   },
@@ -18985,7 +18985,7 @@
     "fr": "comique",
     "en": "comic",
     "de": "komisch",
-    "es": "cÃ³mico",
+    "es": "cómico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -19021,7 +19021,7 @@
     "fr": "la commission",
     "en": "commission",
     "de": "die Kommission",
-    "es": "la comisiÃ³n",
+    "es": "la comisión",
     "type": "nom",
     "level": "B2"
   },
@@ -19036,19 +19036,19 @@
   },
   {
     "id": "word_2116",
-    "fr": "le comitÃ©",
+    "fr": "le comité",
     "en": "committee",
     "de": "das Komitee",
-    "es": "el comitÃ©",
+    "es": "el comité",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2117",
-    "fr": "communÃ©ment",
+    "fr": "communément",
     "en": "commonly",
-    "de": "gewÃ¶hnlich",
-    "es": "comÃºnmente",
+    "de": "gewöhnlich",
+    "es": "comúnmente",
     "type": "adverbe",
     "level": "B2"
   },
@@ -19063,16 +19063,16 @@
   },
   {
     "id": "word_2119",
-    "fr": "l'achÃ¨vement",
+    "fr": "l'achèvement",
     "en": "completion",
     "de": "der Abschluss",
-    "es": "la finalizaciÃ³n",
+    "es": "la finalización",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2120",
-    "fr": "compliquÃ©",
+    "fr": "compliqué",
     "en": "complicated",
     "de": "kompliziert",
     "es": "complicado",
@@ -19108,7 +19108,7 @@
   },
   {
     "id": "word_2124",
-    "fr": "le composÃ© / l'enceinte",
+    "fr": "le composé / l'enceinte",
     "en": "compound",
     "de": "die Verbindung",
     "es": "el compuesto",
@@ -19138,7 +19138,7 @@
     "fr": "la concentration",
     "en": "concentration",
     "de": "die Konzentration",
-    "es": "la concentraciÃ³n",
+    "es": "la concentración",
     "type": "nom",
     "level": "B2"
   },
@@ -19153,10 +19153,10 @@
   },
   {
     "id": "word_2129",
-    "fr": "la prÃ©occupation / le souci",
+    "fr": "la préoccupation / le souci",
     "en": "concern",
     "de": "die Sorge",
-    "es": "la preocupaciÃ³n",
+    "es": "la preocupación",
     "type": "nom",
     "level": "B2"
   },
@@ -19171,7 +19171,7 @@
   },
   {
     "id": "word_2131",
-    "fr": "concernÃ© / inquiet",
+    "fr": "concerné / inquiet",
     "en": "concerned",
     "de": "besorgt",
     "es": "preocupado",
@@ -19183,16 +19183,16 @@
     "fr": "la conclusion",
     "en": "conclusion",
     "de": "die Schlussfolgerung",
-    "es": "la conclusiÃ³n",
+    "es": "la conclusión",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2133",
-    "fr": "le bÃ©ton / concret",
+    "fr": "le béton / concret",
     "en": "concrete",
     "de": "der Beton",
-    "es": "el hormigÃ³n / concreto",
+    "es": "el hormigón / concreto",
     "type": "nom",
     "level": "B2"
   },
@@ -19200,7 +19200,7 @@
     "id": "word_2134",
     "fr": "mener / conduire",
     "en": "conduct",
-    "de": "durchfÃ¼hren",
+    "de": "durchführen",
     "es": "conducir",
     "type": "verbe",
     "level": "B2"
@@ -19234,7 +19234,7 @@
   },
   {
     "id": "word_2138",
-    "fr": "dÃ©routant",
+    "fr": "déroutant",
     "en": "confusing",
     "de": "verwirrend",
     "es": "confuso",
@@ -19246,7 +19246,7 @@
     "fr": "la confusion",
     "en": "confusion",
     "de": "die Verwirrung",
-    "es": "la confusiÃ³n",
+    "es": "la confusión",
     "type": "nom",
     "level": "B2"
   },
@@ -19261,7 +19261,7 @@
   },
   {
     "id": "word_2141",
-    "fr": "la consÃ©quence",
+    "fr": "la conséquence",
     "en": "consequence",
     "de": "die Konsequenz",
     "es": "la consecuencia",
@@ -19270,7 +19270,7 @@
   },
   {
     "id": "word_2142",
-    "fr": "par consÃ©quent",
+    "fr": "par conséquent",
     "en": "consequently",
     "de": "folglich",
     "es": "en consecuencia",
@@ -19282,7 +19282,7 @@
     "fr": "la conservation",
     "en": "conservation",
     "de": "die Erhaltung",
-    "es": "la conservaciÃ³n",
+    "es": "la conservación",
     "type": "nom",
     "level": "B2"
   },
@@ -19297,7 +19297,7 @@
   },
   {
     "id": "word_2145",
-    "fr": "considÃ©rable",
+    "fr": "considérable",
     "en": "considerable",
     "de": "erheblich",
     "es": "considerable",
@@ -19306,7 +19306,7 @@
   },
   {
     "id": "word_2146",
-    "fr": "considÃ©rablement",
+    "fr": "considérablement",
     "en": "considerably",
     "de": "erheblich",
     "es": "considerablemente",
@@ -19315,10 +19315,10 @@
   },
   {
     "id": "word_2147",
-    "fr": "la considÃ©ration",
+    "fr": "la considération",
     "en": "consideration",
-    "de": "die Ãœberlegung",
-    "es": "la consideraciÃ³n",
+    "de": "die Überlegung",
+    "es": "la consideración",
     "type": "nom",
     "level": "B2"
   },
@@ -19333,7 +19333,7 @@
   },
   {
     "id": "word_2149",
-    "fr": "cohÃ©rent / constant",
+    "fr": "cohérent / constant",
     "en": "consistent",
     "de": "konsequent",
     "es": "coherente",
@@ -19342,7 +19342,7 @@
   },
   {
     "id": "word_2150",
-    "fr": "rÃ©guliÃ¨rement / constamment",
+    "fr": "régulièrement / constamment",
     "en": "consistently",
     "de": "konsequent",
     "es": "consistentemente",
@@ -19353,8 +19353,8 @@
     "id": "word_2151",
     "fr": "la conspiration",
     "en": "conspiracy",
-    "de": "die VerschwÃ¶rung",
-    "es": "la conspiraciÃ³n",
+    "de": "die Verschwörung",
+    "es": "la conspiración",
     "type": "nom",
     "level": "B2"
   },
@@ -19371,7 +19371,7 @@
     "id": "word_2153",
     "fr": "constamment",
     "en": "constantly",
-    "de": "stÃ¤ndig",
+    "de": "ständig",
     "es": "constantemente",
     "type": "adverbe",
     "level": "B2"
@@ -19390,7 +19390,7 @@
     "fr": "la construction",
     "en": "construction",
     "de": "die Konstruktion",
-    "es": "la construcciÃ³n",
+    "es": "la construcción",
     "type": "nom",
     "level": "B2"
   },
@@ -19434,14 +19434,14 @@
     "id": "word_2160",
     "fr": "contemporain",
     "en": "contemporary",
-    "de": "zeitgenÃ¶ssisch",
-    "es": "contemporÃ¡neo",
+    "de": "zeitgenössisch",
+    "es": "contemporáneo",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2161",
-    "fr": "le concours / la compÃ©tition",
+    "fr": "le concours / la compétition",
     "en": "contest",
     "de": "der Wettbewerb",
     "es": "el concurso",
@@ -19480,13 +19480,13 @@
     "fr": "la contribution",
     "en": "contribution",
     "de": "der Beitrag",
-    "es": "la contribuciÃ³n",
+    "es": "la contribución",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2166",
-    "fr": "controversÃ©",
+    "fr": "controversé",
     "en": "controversial",
     "de": "umstritten",
     "es": "controvertido",
@@ -19504,7 +19504,7 @@
   },
   {
     "id": "word_2168",
-    "fr": "la commoditÃ©",
+    "fr": "la commodité",
     "en": "convenience",
     "de": "die Bequemlichkeit",
     "es": "la conveniencia",
@@ -19516,7 +19516,7 @@
     "fr": "la convention",
     "en": "convention",
     "de": "die Konvention",
-    "es": "la convenciÃ³n",
+    "es": "la convención",
     "type": "nom",
     "level": "B2"
   },
@@ -19551,7 +19551,7 @@
     "id": "word_2173",
     "fr": "convaincu",
     "en": "convinced",
-    "de": "Ã¼berzeugt",
+    "de": "überzeugt",
     "es": "convencido",
     "type": "adjectif",
     "level": "B2"
@@ -19560,16 +19560,16 @@
     "id": "word_2174",
     "fr": "convaincant",
     "en": "convincing",
-    "de": "Ã¼berzeugend",
+    "de": "überzeugend",
     "es": "convincente",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2175",
-    "fr": "faire face (Ã  une difficultÃ©)",
+    "fr": "faire face (à une difficulté)",
     "en": "cope",
-    "de": "bewÃ¤ltigen",
+    "de": "bewältigen",
     "es": "hacer frente",
     "type": "verbe",
     "level": "B2"
@@ -19579,7 +19579,7 @@
     "fr": "le noyau / le centre",
     "en": "core",
     "de": "der Kern",
-    "es": "el nÃºcleo",
+    "es": "el núcleo",
     "type": "nom",
     "level": "B2"
   },
@@ -19594,10 +19594,10 @@
   },
   {
     "id": "word_2178",
-    "fr": "la sociÃ©tÃ© (entreprise)",
+    "fr": "la société (entreprise)",
     "en": "corporation",
     "de": "das Unternehmen",
-    "es": "la corporaciÃ³n",
+    "es": "la corporación",
     "type": "nom",
     "level": "B2"
   },
@@ -19630,7 +19630,7 @@
   },
   {
     "id": "word_2182",
-    "fr": "le comtÃ©",
+    "fr": "le comté",
     "en": "county",
     "de": "der Landkreis",
     "es": "el condado",
@@ -19648,7 +19648,7 @@
   },
   {
     "id": "word_2184",
-    "fr": "la couverture (mÃ©diatique / rÃ©seau)",
+    "fr": "la couverture (médiatique / réseau)",
     "en": "coverage",
     "de": "die Berichterstattung",
     "es": "la cobertura",
@@ -19684,34 +19684,34 @@
   },
   {
     "id": "word_2188",
-    "fr": "s'Ã©craser",
+    "fr": "s'écraser",
     "en": "crash",
-    "de": "abstÃ¼rzen",
+    "de": "abstürzen",
     "es": "chocar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2189",
-    "fr": "la crÃ©ation",
+    "fr": "la création",
     "en": "creation",
     "de": "die Kreation",
-    "es": "la creaciÃ³n",
+    "es": "la creación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2190",
-    "fr": "la crÃ©ativitÃ©",
+    "fr": "la créativité",
     "en": "creativity",
-    "de": "die KreativitÃ¤t",
+    "de": "die Kreativität",
     "es": "la creatividad",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2191",
-    "fr": "la crÃ©ature",
+    "fr": "la créature",
     "en": "creature",
     "de": "die Kreatur",
     "es": "la criatura",
@@ -19720,10 +19720,10 @@
   },
   {
     "id": "word_2192",
-    "fr": "l'Ã©quipage",
+    "fr": "l'équipage",
     "en": "crew",
     "de": "die Besatzung",
-    "es": "la tripulaciÃ³n",
+    "es": "la tripulación",
     "type": "nom",
     "level": "B2"
   },
@@ -19741,7 +19741,7 @@
     "fr": "le critique",
     "en": "critic",
     "de": "der Kritiker",
-    "es": "el crÃ­tico",
+    "es": "el crítico",
     "type": "nom",
     "level": "B2"
   },
@@ -19750,16 +19750,16 @@
     "fr": "critique",
     "en": "critical",
     "de": "kritisch",
-    "es": "crÃ­tico",
+    "es": "crítico",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2196",
-    "fr": "gravement / d'un Å“il critique",
+    "fr": "gravement / d'un œil critique",
     "en": "critically",
     "de": "kritisch",
-    "es": "crÃ­ticamente",
+    "es": "críticamente",
     "type": "adverbe",
     "level": "B2"
   },
@@ -19768,7 +19768,7 @@
     "fr": "la critique",
     "en": "criticism",
     "de": "die Kritik",
-    "es": "la crÃ­tica",
+    "es": "la crítica",
     "type": "nom",
     "level": "B2"
   },
@@ -19801,7 +19801,7 @@
   },
   {
     "id": "word_2201",
-    "fr": "la croisiÃ¨re",
+    "fr": "la croisière",
     "en": "cruise",
     "de": "die Kreuzfahrt",
     "es": "el crucero",
@@ -19810,16 +19810,16 @@
   },
   {
     "id": "word_2202",
-    "fr": "le signal / la rÃ©plique",
+    "fr": "le signal / la réplique",
     "en": "cue",
     "de": "das Stichwort",
-    "es": "la seÃ±al",
+    "es": "la señal",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2203",
-    "fr": "le remÃ¨de",
+    "fr": "le remède",
     "en": "cure",
     "de": "das Heilmittel",
     "es": "la cura",
@@ -19828,7 +19828,7 @@
   },
   {
     "id": "word_2204",
-    "fr": "guÃ©rir",
+    "fr": "guérir",
     "en": "cure",
     "de": "heilen",
     "es": "curar",
@@ -19846,7 +19846,7 @@
   },
   {
     "id": "word_2206",
-    "fr": "le programme d'Ã©tudes",
+    "fr": "le programme d'études",
     "en": "curriculum",
     "de": "der Lehrplan",
     "es": "el plan de estudios",
@@ -19885,7 +19885,7 @@
     "fr": "les produits laitiers",
     "en": "dairy",
     "de": "die Molkereiprodukte",
-    "es": "los lÃ¡cteos",
+    "es": "los lácteos",
     "type": "nom",
     "level": "B2"
   },
@@ -19894,7 +19894,7 @@
     "fr": "laitier",
     "en": "dairy",
     "de": "Molkerei-",
-    "es": "lÃ¡cteo",
+    "es": "lácteo",
     "type": "adjectif",
     "level": "B2"
   },
@@ -19909,7 +19909,7 @@
   },
   {
     "id": "word_2213",
-    "fr": "l'obscuritÃ©",
+    "fr": "l'obscurité",
     "en": "darkness",
     "de": "die Dunkelheit",
     "es": "la oscuridad",
@@ -19918,7 +19918,7 @@
   },
   {
     "id": "word_2214",
-    "fr": "les donnÃ©es",
+    "fr": "les données",
     "en": "data",
     "de": "die Daten",
     "es": "los datos",
@@ -19927,7 +19927,7 @@
   },
   {
     "id": "word_2215",
-    "fr": "la base de donnÃ©es",
+    "fr": "la base de données",
     "en": "database",
     "de": "die Datenbank",
     "es": "la base de datos",
@@ -19939,7 +19939,7 @@
     "fr": "la date limite",
     "en": "deadline",
     "de": "die Frist",
-    "es": "la fecha lÃ­mite",
+    "es": "la fecha límite",
     "type": "nom",
     "level": "B2"
   },
@@ -19947,7 +19947,7 @@
     "id": "word_2217",
     "fr": "mortel",
     "en": "deadly",
-    "de": "tÃ¶dlich",
+    "de": "tödlich",
     "es": "mortal",
     "type": "adjectif",
     "level": "B2"
@@ -19956,14 +19956,14 @@
     "id": "word_2218",
     "fr": "le concessionnaire / le revendeur",
     "en": "dealer",
-    "de": "der HÃ¤ndler",
+    "de": "der Händler",
     "es": "el distribuidor",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2219",
-    "fr": "le dÃ©bat",
+    "fr": "le débat",
     "en": "debate",
     "de": "die Debatte",
     "es": "el debate",
@@ -19972,7 +19972,7 @@
   },
   {
     "id": "word_2220",
-    "fr": "dÃ©battre",
+    "fr": "débattre",
     "en": "debate",
     "de": "debattieren",
     "es": "debatir",
@@ -19990,9 +19990,9 @@
   },
   {
     "id": "word_2222",
-    "fr": "dÃ©cent",
+    "fr": "décent",
     "en": "decent",
-    "de": "anstÃ¤ndig",
+    "de": "anständig",
     "es": "decente",
     "type": "adjectif",
     "level": "B2"
@@ -20008,25 +20008,25 @@
   },
   {
     "id": "word_2224",
-    "fr": "dÃ©clarer",
+    "fr": "déclarer",
     "en": "declare",
-    "de": "erklÃ¤ren",
+    "de": "erklären",
     "es": "declarar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2225",
-    "fr": "le dÃ©clin",
+    "fr": "le déclin",
     "en": "decline",
-    "de": "der RÃ¼ckgang",
+    "de": "der Rückgang",
     "es": "el declive",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2226",
-    "fr": "dÃ©cliner",
+    "fr": "décliner",
     "en": "decline",
     "de": "ablehnen / abnehmen",
     "es": "rechazar / declinar",
@@ -20035,10 +20035,10 @@
   },
   {
     "id": "word_2227",
-    "fr": "la dÃ©coration",
+    "fr": "la décoration",
     "en": "decoration",
     "de": "die Dekoration",
-    "es": "la decoraciÃ³n",
+    "es": "la decoración",
     "type": "nom",
     "level": "B2"
   },
@@ -20047,7 +20047,7 @@
     "fr": "la diminution",
     "en": "decrease",
     "de": "die Abnahme",
-    "es": "la disminuciÃ³n",
+    "es": "la disminución",
     "type": "nom",
     "level": "B2"
   },
@@ -20062,7 +20062,7 @@
   },
   {
     "id": "word_2230",
-    "fr": "profondÃ©ment",
+    "fr": "profondément",
     "en": "deeply",
     "de": "tief",
     "es": "profundamente",
@@ -20071,7 +20071,7 @@
   },
   {
     "id": "word_2231",
-    "fr": "la dÃ©faite",
+    "fr": "la défaite",
     "en": "defeat",
     "de": "die Niederlage",
     "es": "la derrota",
@@ -20089,7 +20089,7 @@
   },
   {
     "id": "word_2233",
-    "fr": "la dÃ©fense",
+    "fr": "la défense",
     "en": "defence",
     "de": "die Verteidigung",
     "es": "la defensa",
@@ -20098,7 +20098,7 @@
   },
   {
     "id": "word_2234",
-    "fr": "dÃ©fendre",
+    "fr": "défendre",
     "en": "defend",
     "de": "verteidigen",
     "es": "defender",
@@ -20107,7 +20107,7 @@
   },
   {
     "id": "word_2235",
-    "fr": "le dÃ©fenseur",
+    "fr": "le défenseur",
     "en": "defender",
     "de": "der Verteidiger",
     "es": "el defensor",
@@ -20116,7 +20116,7 @@
   },
   {
     "id": "word_2236",
-    "fr": "dÃ©finir",
+    "fr": "définir",
     "en": "define",
     "de": "definieren",
     "es": "definir",
@@ -20125,10 +20125,10 @@
   },
   {
     "id": "word_2237",
-    "fr": "la dÃ©finition",
+    "fr": "la définition",
     "en": "definition",
     "de": "die Definition",
-    "es": "la definiciÃ³n",
+    "es": "la definición",
     "type": "nom",
     "level": "B2"
   },
@@ -20136,7 +20136,7 @@
     "id": "word_2238",
     "fr": "le retard",
     "en": "delay",
-    "de": "die VerzÃ¶gerung",
+    "de": "die Verzögerung",
     "es": "el retraso",
     "type": "nom",
     "level": "B2"
@@ -20145,7 +20145,7 @@
     "id": "word_2239",
     "fr": "retarder",
     "en": "delay",
-    "de": "verzÃ¶gern",
+    "de": "verzögern",
     "es": "retrasar",
     "type": "verbe",
     "level": "B2"
@@ -20154,14 +20154,14 @@
     "id": "word_2240",
     "fr": "supprimer / effacer",
     "en": "delete",
-    "de": "lÃ¶schen",
+    "de": "löschen",
     "es": "eliminar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2241",
-    "fr": "dÃ©libÃ©rÃ©",
+    "fr": "délibéré",
     "en": "deliberate",
     "de": "absichtlich",
     "es": "deliberado",
@@ -20170,7 +20170,7 @@
   },
   {
     "id": "word_2242",
-    "fr": "dÃ©libÃ©rÃ©ment",
+    "fr": "délibérément",
     "en": "deliberately",
     "de": "absichtlich",
     "es": "deliberadamente",
@@ -20179,7 +20179,7 @@
   },
   {
     "id": "word_2243",
-    "fr": "le plaisir / le dÃ©lice",
+    "fr": "le plaisir / le délice",
     "en": "delight",
     "de": "die Freude",
     "es": "el deleite",
@@ -20224,7 +20224,7 @@
   },
   {
     "id": "word_2248",
-    "fr": "la dÃ©mocratie",
+    "fr": "la démocratie",
     "en": "democracy",
     "de": "die Demokratie",
     "es": "la democracia",
@@ -20233,16 +20233,16 @@
   },
   {
     "id": "word_2249",
-    "fr": "dÃ©mocratique",
+    "fr": "démocratique",
     "en": "democratic",
     "de": "demokratisch",
-    "es": "democrÃ¡tico",
+    "es": "democrático",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2250",
-    "fr": "dÃ©montrer / manifester",
+    "fr": "démontrer / manifester",
     "en": "demonstrate",
     "de": "demonstrieren",
     "es": "demostrar",
@@ -20251,10 +20251,10 @@
   },
   {
     "id": "word_2251",
-    "fr": "la manifestation / la dÃ©monstration",
+    "fr": "la manifestation / la démonstration",
     "en": "demonstration",
     "de": "die Demonstration",
-    "es": "la manifestaciÃ³n",
+    "es": "la manifestación",
     "type": "nom",
     "level": "B2"
   },
@@ -20269,7 +20269,7 @@
   },
   {
     "id": "word_2253",
-    "fr": "partir / dÃ©coller",
+    "fr": "partir / décoller",
     "en": "depart",
     "de": "abreisen",
     "es": "partir",
@@ -20278,25 +20278,25 @@
   },
   {
     "id": "word_2254",
-    "fr": "dÃ©pendant",
+    "fr": "dépendant",
     "en": "dependent",
-    "de": "abhÃ¤ngig",
+    "de": "abhängig",
     "es": "dependiente",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2255",
-    "fr": "l'acompte / le dÃ©pÃ´t",
+    "fr": "l'acompte / le dépôt",
     "en": "deposit",
     "de": "die Anzahlung",
-    "es": "el depÃ³sito",
+    "es": "el depósito",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2256",
-    "fr": "dÃ©poser",
+    "fr": "déposer",
     "en": "deposit",
     "de": "deponieren",
     "es": "depositar",
@@ -20305,7 +20305,7 @@
   },
   {
     "id": "word_2257",
-    "fr": "dÃ©primÃ©",
+    "fr": "déprimé",
     "en": "depressed",
     "de": "deprimiert",
     "es": "deprimido",
@@ -20314,7 +20314,7 @@
   },
   {
     "id": "word_2258",
-    "fr": "dÃ©primant",
+    "fr": "déprimant",
     "en": "depressing",
     "de": "deprimierend",
     "es": "deprimente",
@@ -20323,10 +20323,10 @@
   },
   {
     "id": "word_2259",
-    "fr": "la dÃ©pression",
+    "fr": "la dépression",
     "en": "depression",
     "de": "die Depression",
-    "es": "la depresiÃ³n",
+    "es": "la depresión",
     "type": "nom",
     "level": "B2"
   },
@@ -20341,7 +20341,7 @@
   },
   {
     "id": "word_2261",
-    "fr": "dÃ©river / tirer",
+    "fr": "dériver / tirer",
     "en": "derive",
     "de": "ableiten",
     "es": "derivar",
@@ -20350,7 +20350,7 @@
   },
   {
     "id": "word_2262",
-    "fr": "mÃ©riter",
+    "fr": "mériter",
     "en": "deserve",
     "de": "verdienen",
     "es": "merecer",
@@ -20359,7 +20359,7 @@
   },
   {
     "id": "word_2263",
-    "fr": "le dÃ©sir",
+    "fr": "le désir",
     "en": "desire",
     "de": "das Verlangen",
     "es": "el deseo",
@@ -20368,7 +20368,7 @@
   },
   {
     "id": "word_2264",
-    "fr": "dÃ©sirer",
+    "fr": "désirer",
     "en": "desire",
     "de": "begehren",
     "es": "desear",
@@ -20377,7 +20377,7 @@
   },
   {
     "id": "word_2265",
-    "fr": "dÃ©sespÃ©rÃ©",
+    "fr": "désespéré",
     "en": "desperate",
     "de": "verzweifelt",
     "es": "desesperado",
@@ -20386,7 +20386,7 @@
   },
   {
     "id": "word_2266",
-    "fr": "dÃ©sespÃ©rÃ©ment",
+    "fr": "désespérément",
     "en": "desperately",
     "de": "verzweifelt",
     "es": "desesperadamente",
@@ -20397,14 +20397,14 @@
     "id": "word_2267",
     "fr": "la destruction",
     "en": "destruction",
-    "de": "die ZerstÃ¶rung",
-    "es": "la destrucciÃ³n",
+    "de": "die Zerstörung",
+    "es": "la destrucción",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2268",
-    "fr": "dÃ©taillÃ©",
+    "fr": "détaillé",
     "en": "detailed",
     "de": "detailliert",
     "es": "detallado",
@@ -20413,7 +20413,7 @@
   },
   {
     "id": "word_2269",
-    "fr": "dÃ©tecter",
+    "fr": "détecter",
     "en": "detect",
     "de": "erkennen",
     "es": "detectar",
@@ -20422,7 +20422,7 @@
   },
   {
     "id": "word_2270",
-    "fr": "dÃ©terminer",
+    "fr": "déterminer",
     "en": "determine",
     "de": "bestimmen",
     "es": "determinar",
@@ -20431,10 +20431,10 @@
   },
   {
     "id": "word_2271",
-    "fr": "la dÃ©termination",
+    "fr": "la détermination",
     "en": "determination",
     "de": "die Entschlossenheit",
-    "es": "la determinaciÃ³n",
+    "es": "la determinación",
     "type": "nom",
     "level": "B2"
   },
@@ -20458,7 +20458,7 @@
   },
   {
     "id": "word_2274",
-    "fr": "diffÃ©rer",
+    "fr": "différer",
     "en": "differ",
     "de": "sich unterscheiden",
     "es": "diferir",
@@ -20476,7 +20476,7 @@
   },
   {
     "id": "word_2276",
-    "fr": "la piÃ¨ce de 10 cents",
+    "fr": "la pièce de 10 cents",
     "en": "dime",
     "de": "der Zehnpfennig",
     "es": "la moneda de diez centavos",
@@ -20494,7 +20494,7 @@
   },
   {
     "id": "word_2278",
-    "fr": "handicapÃ©",
+    "fr": "handicapé",
     "en": "disabled",
     "de": "behindert",
     "es": "discapacitado",
@@ -20503,7 +20503,7 @@
   },
   {
     "id": "word_2279",
-    "fr": "le dÃ©saccord",
+    "fr": "le désaccord",
     "en": "disagreement",
     "de": "die Meinungsverschiedenheit",
     "es": "el desacuerdo",
@@ -20512,19 +20512,19 @@
   },
   {
     "id": "word_2280",
-    "fr": "dÃ©cevoir",
+    "fr": "décevoir",
     "en": "disappoint",
-    "de": "enttÃ¤uschen",
+    "de": "enttäuschen",
     "es": "decepcionar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2281",
-    "fr": "la dÃ©ception",
+    "fr": "la déception",
     "en": "disappointment",
-    "de": "die EnttÃ¤uschung",
-    "es": "la decepciÃ³n",
+    "de": "die Enttäuschung",
+    "es": "la decepción",
     "type": "nom",
     "level": "B2"
   },
@@ -20548,7 +20548,7 @@
   },
   {
     "id": "word_2284",
-    "fr": "dÃ©courager",
+    "fr": "décourager",
     "en": "discourage",
     "de": "entmutigen",
     "es": "desanimar",
@@ -20557,7 +20557,7 @@
   },
   {
     "id": "word_2285",
-    "fr": "malhonnÃªte",
+    "fr": "malhonnête",
     "en": "dishonest",
     "de": "unehrlich",
     "es": "deshonesto",
@@ -20575,9 +20575,9 @@
   },
   {
     "id": "word_2287",
-    "fr": "le trouble / le dÃ©sordre",
+    "fr": "le trouble / le désordre",
     "en": "disorder",
-    "de": "die StÃ¶rung",
+    "de": "die Störung",
     "es": "el trastorno",
     "type": "nom",
     "level": "B2"
@@ -20587,7 +20587,7 @@
     "fr": "l'affichage",
     "en": "display",
     "de": "die Anzeige",
-    "es": "la pantalla / la exhibiciÃ³n",
+    "es": "la pantalla / la exhibición",
     "type": "nom",
     "level": "B2"
   },
@@ -20650,7 +20650,7 @@
     "fr": "la distribution",
     "en": "distribution",
     "de": "die Verteilung",
-    "es": "la distribuciÃ³n",
+    "es": "la distribución",
     "type": "nom",
     "level": "B2"
   },
@@ -20665,9 +20665,9 @@
   },
   {
     "id": "word_2297",
-    "fr": "dÃ©ranger",
+    "fr": "déranger",
     "en": "disturb",
-    "de": "stÃ¶ren",
+    "de": "stören",
     "es": "molestar",
     "type": "verbe",
     "level": "B2"
@@ -20685,14 +20685,14 @@
     "id": "word_2299",
     "fr": "divers",
     "en": "diverse",
-    "de": "vielfÃ¤ltig",
+    "de": "vielfältig",
     "es": "diverso",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2300",
-    "fr": "la diversitÃ©",
+    "fr": "la diversité",
     "en": "diversity",
     "de": "die Vielfalt",
     "es": "la diversidad",
@@ -20704,7 +20704,7 @@
     "fr": "la division",
     "en": "division",
     "de": "die Abteilung",
-    "es": "la divisiÃ³n",
+    "es": "la división",
     "type": "nom",
     "level": "B2"
   },
@@ -20748,8 +20748,8 @@
     "id": "word_2306",
     "fr": "domestique",
     "en": "domestic",
-    "de": "inlÃ¤ndisch / hÃ¤uslich",
-    "es": "nacional / domÃ©stico",
+    "de": "inländisch / häuslich",
+    "es": "nacional / doméstico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -20776,7 +20776,7 @@
     "fr": "le don",
     "en": "donation",
     "de": "die Spende",
-    "es": "la donaciÃ³n",
+    "es": "la donación",
     "type": "nom",
     "level": "B2"
   },
@@ -20793,7 +20793,7 @@
     "id": "word_2311",
     "fr": "vers le bas",
     "en": "downwards",
-    "de": "abwÃ¤rts",
+    "de": "abwärts",
     "es": "hacia abajo",
     "type": "adverbe",
     "level": "B2"
@@ -20818,7 +20818,7 @@
   },
   {
     "id": "word_2314",
-    "fr": "rÃ©diger (un brouillon)",
+    "fr": "rédiger (un brouillon)",
     "en": "draft",
     "de": "entwerfen",
     "es": "redactar",
@@ -20827,7 +20827,7 @@
   },
   {
     "id": "word_2315",
-    "fr": "traÃ®ner (par terre)",
+    "fr": "traîner (par terre)",
     "en": "drag",
     "de": "ziehen",
     "es": "arrastrar",
@@ -20839,7 +20839,7 @@
     "fr": "dramatique / spectaculaire",
     "en": "dramatic",
     "de": "dramatisch",
-    "es": "dramÃ¡tico",
+    "es": "dramático",
     "type": "adjectif",
     "level": "B2"
   },
@@ -20848,16 +20848,16 @@
     "fr": "spectaculairement",
     "en": "dramatically",
     "de": "dramatisch",
-    "es": "dramÃ¡ticamente",
+    "es": "dramáticamente",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2318",
-    "fr": "la sÃ©cheresse",
+    "fr": "la sécheresse",
     "en": "drought",
-    "de": "die DÃ¼rre",
-    "es": "la sequÃ­a",
+    "de": "die Dürre",
+    "es": "la sequía",
     "type": "nom",
     "level": "B2"
   },
@@ -20881,10 +20881,10 @@
   },
   {
     "id": "word_2321",
-    "fr": "la durÃ©e",
+    "fr": "la durée",
     "en": "duration",
     "de": "die Dauer",
-    "es": "la duraciÃ³n",
+    "es": "la duración",
     "type": "nom",
     "level": "B2"
   },
@@ -20893,7 +20893,7 @@
     "fr": "dynamique",
     "en": "dynamic",
     "de": "dynamisch",
-    "es": "dinÃ¡mico",
+    "es": "dinámico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -20908,25 +20908,25 @@
   },
   {
     "id": "word_2324",
-    "fr": "l'Ã©conomie (science)",
+    "fr": "l'économie (science)",
     "en": "economics",
     "de": "die Wirtschaftswissenschaften",
-    "es": "la economÃ­a",
+    "es": "la economía",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2325",
-    "fr": "l'Ã©conomiste",
+    "fr": "l'économiste",
     "en": "economist",
-    "de": "der Ã–konom",
+    "de": "der Ökonom",
     "es": "el economista",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2326",
-    "fr": "Ã©diter / modifier",
+    "fr": "éditer / modifier",
     "en": "edit",
     "de": "bearbeiten",
     "es": "editar",
@@ -20935,16 +20935,16 @@
   },
   {
     "id": "word_2327",
-    "fr": "l'Ã©dition (publication)",
+    "fr": "l'édition (publication)",
     "en": "edition",
     "de": "die Ausgabe",
-    "es": "la ediciÃ³n",
+    "es": "la edición",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2328",
-    "fr": "Ã©ditorial",
+    "fr": "éditorial",
     "en": "editorial",
     "de": "redaktionell",
     "es": "editorial",
@@ -20980,25 +20980,25 @@
   },
   {
     "id": "word_2332",
-    "fr": "Ã¢gÃ© (personne)",
+    "fr": "âgé (personne)",
     "en": "elderly",
-    "de": "Ã¤ltere",
+    "de": "ältere",
     "es": "anciano",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2333",
-    "fr": "Ã©lire",
+    "fr": "élire",
     "en": "elect",
-    "de": "wÃ¤hlen",
+    "de": "wählen",
     "es": "elegir",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2334",
-    "fr": "l'Ã©lÃ©ment",
+    "fr": "l'élément",
     "en": "element",
     "de": "das Element",
     "es": "el elemento",
@@ -21007,16 +21007,16 @@
   },
   {
     "id": "word_2335",
-    "fr": "l'Ã©lectronique",
+    "fr": "l'électronique",
     "en": "electronics",
     "de": "die Elektronik",
-    "es": "la electrÃ³nica",
+    "es": "la electrónica",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2336",
-    "fr": "Ã©lÃ©gant",
+    "fr": "élégant",
     "en": "elegant",
     "de": "elegant",
     "es": "elegante",
@@ -21025,7 +21025,7 @@
   },
   {
     "id": "word_2337",
-    "fr": "Ã©lÃ©mentaire",
+    "fr": "élémentaire",
     "en": "elementary",
     "de": "elementar",
     "es": "elemental",
@@ -21034,7 +21034,7 @@
   },
   {
     "id": "word_2338",
-    "fr": "Ã©liminer",
+    "fr": "éliminer",
     "en": "eliminate",
     "de": "beseitigen",
     "es": "eliminar",
@@ -21052,7 +21052,7 @@
   },
   {
     "id": "word_2340",
-    "fr": "embrasser (idÃ©e) / enlacer",
+    "fr": "embrasser (idée) / enlacer",
     "en": "embrace",
     "de": "umarmen",
     "es": "abrazar",
@@ -21061,7 +21061,7 @@
   },
   {
     "id": "word_2341",
-    "fr": "Ã©merger",
+    "fr": "émerger",
     "en": "emerge",
     "de": "auftauchen",
     "es": "emerger",
@@ -21070,16 +21070,16 @@
   },
   {
     "id": "word_2342",
-    "fr": "l'Ã©mission (gaz)",
+    "fr": "l'émission (gaz)",
     "en": "emission",
     "de": "die Emission",
-    "es": "la emisiÃ³n",
+    "es": "la emisión",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2343",
-    "fr": "Ã©motionnel",
+    "fr": "émotionnel",
     "en": "emotional",
     "de": "emotional",
     "es": "emocional",
@@ -21088,7 +21088,7 @@
   },
   {
     "id": "word_2344",
-    "fr": "Ã©motionnellement",
+    "fr": "émotionnellement",
     "en": "emotionally",
     "de": "emotional",
     "es": "emocionalmente",
@@ -21100,7 +21100,7 @@
     "fr": "l'accent / l'importance",
     "en": "emphasis",
     "de": "die Betonung",
-    "es": "el Ã©nfasis",
+    "es": "el énfasis",
     "type": "nom",
     "level": "B2"
   },
@@ -21126,14 +21126,14 @@
     "id": "word_2348",
     "fr": "permettre (rendre capable)",
     "en": "enable",
-    "de": "ermÃ¶glichen",
+    "de": "ermöglichen",
     "es": "permitir",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2349",
-    "fr": "rencontrer (problÃ¨me/personne)",
+    "fr": "rencontrer (problème/personne)",
     "en": "encounter",
     "de": "begegnen",
     "es": "encontrar",
@@ -21151,7 +21151,7 @@
   },
   {
     "id": "word_2351",
-    "fr": "amÃ©liorer / mettre en valeur",
+    "fr": "améliorer / mettre en valeur",
     "en": "enhance",
     "de": "verbessern",
     "es": "mejorar",
@@ -21160,7 +21160,7 @@
   },
   {
     "id": "word_2352",
-    "fr": "agrÃ©able",
+    "fr": "agréable",
     "en": "enjoyable",
     "de": "angenehm",
     "es": "agradable",
@@ -21169,7 +21169,7 @@
   },
   {
     "id": "word_2353",
-    "fr": "la demande / l'enquÃªte",
+    "fr": "la demande / l'enquête",
     "en": "enquiry",
     "de": "die Anfrage",
     "es": "la consulta",
@@ -21223,9 +21223,9 @@
   },
   {
     "id": "word_2359",
-    "fr": "entiÃ¨rement",
+    "fr": "entièrement",
     "en": "entirely",
-    "de": "vollstÃ¤ndig",
+    "de": "vollständig",
     "es": "enteramente",
     "type": "adverbe",
     "level": "B2"
@@ -21250,7 +21250,7 @@
   },
   {
     "id": "word_2362",
-    "fr": "Ã©quiper",
+    "fr": "équiper",
     "en": "equip",
     "de": "ausstatten",
     "es": "equipar",
@@ -21259,28 +21259,28 @@
   },
   {
     "id": "word_2363",
-    "fr": "Ã©quivalent",
+    "fr": "équivalent",
     "en": "equivalent",
-    "de": "Ã¤quivalent",
+    "de": "äquivalent",
     "es": "equivalente",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2364",
-    "fr": "l'Ã¨re",
+    "fr": "l'ère",
     "en": "era",
-    "de": "die Ã„ra",
+    "de": "die Ära",
     "es": "la era",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2365",
-    "fr": "entrer en Ã©ruption",
+    "fr": "entrer en éruption",
     "en": "erupt",
     "de": "ausbrechen",
-    "es": "entrar en erupciÃ³n",
+    "es": "entrar en erupción",
     "type": "verbe",
     "level": "B2"
   },
@@ -21295,16 +21295,16 @@
   },
   {
     "id": "word_2367",
-    "fr": "Ã©tablir",
+    "fr": "établir",
     "en": "establish",
-    "de": "grÃ¼nden / etablieren",
+    "de": "gründen / etablieren",
     "es": "establecer",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2368",
-    "fr": "le domaine / la propriÃ©tÃ©",
+    "fr": "le domaine / la propriété",
     "en": "estate",
     "de": "das Anwesen",
     "es": "la propiedad",
@@ -21315,8 +21315,8 @@
     "id": "word_2369",
     "fr": "l'estimation",
     "en": "estimate",
-    "de": "die SchÃ¤tzung",
-    "es": "la estimaciÃ³n",
+    "de": "die Schätzung",
+    "es": "la estimación",
     "type": "nom",
     "level": "B2"
   },
@@ -21324,26 +21324,26 @@
     "id": "word_2370",
     "fr": "estimer",
     "en": "estimate",
-    "de": "schÃ¤tzen",
+    "de": "schätzen",
     "es": "estimar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2371",
-    "fr": "l'Ã©thique",
+    "fr": "l'éthique",
     "en": "ethic",
     "de": "die Ethik",
-    "es": "la Ã©tica",
+    "es": "la ética",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2372",
-    "fr": "Ã©thique",
+    "fr": "éthique",
     "en": "ethical",
     "de": "ethisch",
-    "es": "Ã©tico",
+    "es": "ético",
     "type": "adjectif",
     "level": "B2"
   },
@@ -21352,13 +21352,13 @@
     "fr": "ethnique",
     "en": "ethnic",
     "de": "ethnisch",
-    "es": "Ã©tnico",
+    "es": "étnico",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2374",
-    "fr": "Ã©valuer",
+    "fr": "évaluer",
     "en": "evaluate",
     "de": "auswerten",
     "es": "evaluar",
@@ -21367,16 +21367,16 @@
   },
   {
     "id": "word_2375",
-    "fr": "l'Ã©valuation",
+    "fr": "l'évaluation",
     "en": "evaluation",
     "de": "die Bewertung",
-    "es": "la evaluaciÃ³n",
+    "es": "la evaluación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2376",
-    "fr": "mÃªme (adv)",
+    "fr": "même (adv)",
     "en": "even",
     "de": "sogar",
     "es": "incluso",
@@ -21394,7 +21394,7 @@
   },
   {
     "id": "word_2378",
-    "fr": "Ã©vident",
+    "fr": "évident",
     "en": "evident",
     "de": "offensichtlich",
     "es": "evidente",
@@ -21405,32 +21405,32 @@
     "id": "word_2379",
     "fr": "le mal",
     "en": "evil",
-    "de": "das BÃ¶se",
+    "de": "das Böse",
     "es": "el mal",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2380",
-    "fr": "malÃ©fique",
+    "fr": "maléfique",
     "en": "evil",
-    "de": "bÃ¶se",
+    "de": "böse",
     "es": "malvado",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2381",
-    "fr": "l'Ã©volution",
+    "fr": "l'évolution",
     "en": "evolution",
     "de": "die Evolution",
-    "es": "la evoluciÃ³n",
+    "es": "la evolución",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2382",
-    "fr": "Ã©voluer",
+    "fr": "évoluer",
     "en": "evolve",
     "de": "sich entwickeln",
     "es": "evolucionar",
@@ -21441,16 +21441,16 @@
     "id": "word_2383",
     "fr": "l'examen",
     "en": "examination",
-    "de": "die PrÃ¼fung",
+    "de": "die Prüfung",
     "es": "el examen",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2384",
-    "fr": "dÃ©passer / excÃ©der",
+    "fr": "dépasser / excéder",
     "en": "exceed",
-    "de": "Ã¼berschreiten",
+    "de": "überschreiten",
     "es": "exceder",
     "type": "verbe",
     "level": "B2"
@@ -21460,7 +21460,7 @@
     "fr": "l'exception",
     "en": "exception",
     "de": "die Ausnahme",
-    "es": "la excepciÃ³n",
+    "es": "la excepción",
     "type": "nom",
     "level": "B2"
   },
@@ -21468,7 +21468,7 @@
     "id": "word_2386",
     "fr": "excessif",
     "en": "excessive",
-    "de": "Ã¼bermÃ¤ÃŸig",
+    "de": "übermäßig",
     "es": "excesivo",
     "type": "adjectif",
     "level": "B2"
@@ -21477,7 +21477,7 @@
     "id": "word_2387",
     "fr": "exclure",
     "en": "exclude",
-    "de": "ausschlieÃŸen",
+    "de": "ausschließen",
     "es": "excluir",
     "type": "verbe",
     "level": "B2"
@@ -21502,9 +21502,9 @@
   },
   {
     "id": "word_2390",
-    "fr": "le cadre / l'exÃ©cutif",
+    "fr": "le cadre / l'exécutif",
     "en": "executive",
-    "de": "die FÃ¼hrungskraft",
+    "de": "die Führungskraft",
     "es": "el ejecutivo",
     "type": "nom",
     "level": "B2"
@@ -21523,7 +21523,7 @@
     "fr": "exotique",
     "en": "exotic",
     "de": "exotisch",
-    "es": "exÃ³tico",
+    "es": "exótico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -21532,7 +21532,7 @@
     "fr": "l'expansion",
     "en": "expansion",
     "de": "die Erweiterung",
-    "es": "la expansiÃ³n",
+    "es": "la expansión",
     "type": "nom",
     "level": "B2"
   },
@@ -21547,7 +21547,7 @@
   },
   {
     "id": "word_2395",
-    "fr": "la dÃ©pense",
+    "fr": "la dépense",
     "en": "expense",
     "de": "die Ausgabe",
     "es": "el gasto",
@@ -21559,7 +21559,7 @@
     "fr": "l'expertise",
     "en": "expertise",
     "de": "das Fachwissen",
-    "es": "la experiencia (tÃ©cnica)",
+    "es": "la experiencia (técnica)",
     "type": "nom",
     "level": "B2"
   },
@@ -21577,7 +21577,7 @@
     "fr": "l'exploration",
     "en": "exploration",
     "de": "die Erkundung",
-    "es": "la exploraciÃ³n",
+    "es": "la exploración",
     "type": "nom",
     "level": "B2"
   },
@@ -21595,13 +21595,13 @@
     "fr": "l'exposition",
     "en": "exposure",
     "de": "die Aussetzung",
-    "es": "la exposiciÃ³n",
+    "es": "la exposición",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2401",
-    "fr": "Ã©tendre / prolonger",
+    "fr": "étendre / prolonger",
     "en": "extend",
     "de": "erweitern",
     "es": "extender",
@@ -21613,7 +21613,7 @@
     "fr": "l'extension",
     "en": "extension",
     "de": "die Erweiterung",
-    "es": "la extensiÃ³n",
+    "es": "la extensión",
     "type": "nom",
     "level": "B2"
   },
@@ -21630,16 +21630,16 @@
     "id": "word_2404",
     "fr": "largement (extensivement)",
     "en": "extensively",
-    "de": "ausfÃ¼hrlich",
+    "de": "ausführlich",
     "es": "extensamente",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2405",
-    "fr": "l'Ã©tendue",
+    "fr": "l'étendue",
     "en": "extent",
-    "de": "das AusmaÃŸ",
+    "de": "das Ausmaß",
     "es": "la medida",
     "type": "nom",
     "level": "B2"
@@ -21675,7 +21675,7 @@
     "id": "word_2409",
     "fr": "extraordinaire",
     "en": "extraordinary",
-    "de": "auÃŸergewÃ¶hnlich",
+    "de": "außergewöhnlich",
     "es": "extraordinario",
     "type": "adjectif",
     "level": "B2"
@@ -21700,10 +21700,10 @@
   },
   {
     "id": "word_2412",
-    "fr": "l'installation / l'Ã©quipement",
+    "fr": "l'installation / l'équipement",
     "en": "facility",
     "de": "die Einrichtung",
-    "es": "la instalaciÃ³n",
+    "es": "la instalación",
     "type": "nom",
     "level": "B2"
   },
@@ -21718,16 +21718,16 @@
   },
   {
     "id": "word_2414",
-    "fr": "la facultÃ©",
+    "fr": "la faculté",
     "en": "faculty",
-    "de": "die FakultÃ¤t",
+    "de": "die Fakultät",
     "es": "la facultad",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2415",
-    "fr": "Ã©chouÃ© / ratÃ©",
+    "fr": "échoué / raté",
     "en": "failed",
     "de": "gescheitert",
     "es": "fallido",
@@ -21736,7 +21736,7 @@
   },
   {
     "id": "word_2416",
-    "fr": "l'Ã©chec",
+    "fr": "l'échec",
     "en": "failure",
     "de": "das Scheitern",
     "es": "el fracaso",
@@ -21756,7 +21756,7 @@
     "id": "word_2418",
     "fr": "le faux",
     "en": "fake",
-    "de": "die FÃ¤lschung",
+    "de": "die Fälschung",
     "es": "lo falso",
     "type": "nom",
     "level": "B2"
@@ -21772,7 +21772,7 @@
   },
   {
     "id": "word_2420",
-    "fr": "la renommÃ©e",
+    "fr": "la renommée",
     "en": "fame",
     "de": "der Ruhm",
     "es": "la fama",
@@ -21784,7 +21784,7 @@
     "fr": "la fantaisie",
     "en": "fantasy",
     "de": "die Fantasie",
-    "es": "la fantasÃ­a",
+    "es": "la fantasía",
     "type": "nom",
     "level": "B2"
   },
@@ -21799,7 +21799,7 @@
   },
   {
     "id": "word_2423",
-    "fr": "la faute / le dÃ©faut",
+    "fr": "la faute / le défaut",
     "en": "fault",
     "de": "der Fehler",
     "es": "la culpa",
@@ -21828,7 +21828,7 @@
     "id": "word_2426",
     "fr": "les frais",
     "en": "fee",
-    "de": "die GebÃ¼hr",
+    "de": "die Gebühr",
     "es": "la tarifa",
     "type": "nom",
     "level": "B2"
@@ -21837,17 +21837,17 @@
     "id": "word_2427",
     "fr": "le retour (d'information)",
     "en": "feedback",
-    "de": "die RÃ¼ckmeldung",
+    "de": "die Rückmeldung",
     "es": "los comentarios",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2428",
-    "fr": "le confrÃ¨re / le compagnon",
+    "fr": "le confrère / le compagnon",
     "en": "fellow",
     "de": "der Kollege",
-    "es": "el compaÃ±ero",
+    "es": "el compañero",
     "type": "nom",
     "level": "B2"
   },
@@ -21871,7 +21871,7 @@
   },
   {
     "id": "word_2431",
-    "fr": "la dÃ©couverte / le rÃ©sultat",
+    "fr": "la découverte / le résultat",
     "en": "finding",
     "de": "der Befund",
     "es": "el hallazgo",
@@ -21988,7 +21988,7 @@
   },
   {
     "id": "word_2444",
-    "fr": "l'imbÃ©cile / le fou",
+    "fr": "l'imbécile / le fou",
     "en": "fool",
     "de": "der Narr",
     "es": "el tonto",
@@ -21999,8 +21999,8 @@
     "id": "word_2445",
     "fr": "tromper",
     "en": "fool",
-    "de": "tÃ¤uschen",
-    "es": "engaÃ±ar",
+    "de": "täuschen",
+    "es": "engañar",
     "type": "verbe",
     "level": "B2"
   },
@@ -22015,16 +22015,16 @@
   },
   {
     "id": "word_2447",
-    "fr": "les prÃ©visions",
+    "fr": "les prévisions",
     "en": "forecast",
     "de": "die Vorhersage",
-    "es": "el pronÃ³stico",
+    "es": "el pronóstico",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2448",
-    "fr": "prÃ©voir",
+    "fr": "prévoir",
     "en": "forecast",
     "de": "vorhersagen",
     "es": "pronosticar",
@@ -22051,18 +22051,18 @@
   },
   {
     "id": "word_2451",
-    "fr": "la formation (gÃ©ologique/sportive)",
+    "fr": "la formation (géologique/sportive)",
     "en": "formation",
     "de": "die Formation",
-    "es": "la formaciÃ³n",
+    "es": "la formación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2452",
-    "fr": "ancien / prÃ©cÃ©dent",
+    "fr": "ancien / précédent",
     "en": "former",
-    "de": "frÃ¼her",
+    "de": "früher",
     "es": "anterior",
     "type": "adjectif",
     "level": "B2"
@@ -22071,7 +22071,7 @@
     "id": "word_2453",
     "fr": "autrefois",
     "en": "formerly",
-    "de": "frÃ¼her",
+    "de": "früher",
     "es": "anteriormente",
     "type": "adverbe",
     "level": "B2"
@@ -22080,7 +22080,7 @@
     "id": "word_2454",
     "fr": "chanceux",
     "en": "fortunate",
-    "de": "glÃ¼cklich",
+    "de": "glücklich",
     "es": "afortunado",
     "type": "adjectif",
     "level": "B2"
@@ -22089,7 +22089,7 @@
     "id": "word_2455",
     "fr": "la fortune",
     "en": "fortune",
-    "de": "das VermÃ¶gen",
+    "de": "das Vermögen",
     "es": "la fortuna",
     "type": "nom",
     "level": "B2"
@@ -22107,7 +22107,7 @@
     "id": "word_2457",
     "fr": "fonder",
     "en": "found",
-    "de": "grÃ¼nden",
+    "de": "gründen",
     "es": "fundar",
     "type": "verbe",
     "level": "B2"
@@ -22116,8 +22116,8 @@
     "id": "word_2458",
     "fr": "la fondation",
     "en": "foundation",
-    "de": "die GrÃ¼ndung",
-    "es": "la fundaciÃ³n",
+    "de": "die Gründung",
+    "es": "la fundación",
     "type": "nom",
     "level": "B2"
   },
@@ -22125,7 +22125,7 @@
     "id": "word_2459",
     "fr": "le fondateur",
     "en": "founder",
-    "de": "der GrÃ¼nder",
+    "de": "der Gründer",
     "es": "el fundador",
     "type": "nom",
     "level": "B2"
@@ -22135,7 +22135,7 @@
     "fr": "la fraction",
     "en": "fraction",
     "de": "der Bruchteil",
-    "es": "la fracciÃ³n",
+    "es": "la fracción",
     "type": "nom",
     "level": "B2"
   },
@@ -22168,7 +22168,7 @@
   },
   {
     "id": "word_2464",
-    "fr": "la libertÃ©",
+    "fr": "la liberté",
     "en": "freedom",
     "de": "die Freiheit",
     "es": "la libertad",
@@ -22186,25 +22186,25 @@
   },
   {
     "id": "word_2466",
-    "fr": "la frÃ©quence",
+    "fr": "la fréquence",
     "en": "frequency",
-    "de": "die HÃ¤ufigkeit",
+    "de": "die Häufigkeit",
     "es": "la frecuencia",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2467",
-    "fr": "frÃ©quent",
+    "fr": "fréquent",
     "en": "frequent",
-    "de": "hÃ¤ufig",
+    "de": "häufig",
     "es": "frecuente",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2468",
-    "fr": "frustrÃ©",
+    "fr": "frustré",
     "en": "frustrated",
     "de": "frustriert",
     "es": "frustrado",
@@ -22215,14 +22215,14 @@
     "id": "word_2469",
     "fr": "accomplir / remplir (promesse)",
     "en": "fulfil",
-    "de": "erfÃ¼llen",
+    "de": "erfüllen",
     "es": "cumplir",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2470",
-    "fr": "Ã  temps plein",
+    "fr": "à temps plein",
     "en": "full-time",
     "de": "Vollzeit-",
     "es": "a tiempo completo",
@@ -22233,7 +22233,7 @@
     "id": "word_2471",
     "fr": "pleinement",
     "en": "fully",
-    "de": "vollstÃ¤ndig",
+    "de": "vollständig",
     "es": "plenamente",
     "type": "adverbe",
     "level": "B2"
@@ -22269,7 +22269,7 @@
     "id": "word_2475",
     "fr": "fondamentalement",
     "en": "fundamentally",
-    "de": "grundsÃ¤tzlich",
+    "de": "grundsätzlich",
     "es": "fundamentalmente",
     "type": "adverbe",
     "level": "B2"
@@ -22279,15 +22279,15 @@
     "fr": "le financement",
     "en": "funding",
     "de": "die Finanzierung",
-    "es": "la financiaciÃ³n",
+    "es": "la financiación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2477",
-    "fr": "les funÃ©railles",
+    "fr": "les funérailles",
     "en": "funeral",
-    "de": "das BegrÃ¤bnis",
+    "de": "das Begräbnis",
     "es": "el funeral",
     "type": "nom",
     "level": "B2"
@@ -22296,7 +22296,7 @@
     "id": "word_2478",
     "fr": "furieux",
     "en": "furious",
-    "de": "wÃ¼tend",
+    "de": "wütend",
     "es": "furioso",
     "type": "adjectif",
     "level": "B2"
@@ -22305,8 +22305,8 @@
     "id": "word_2479",
     "fr": "de plus",
     "en": "furthermore",
-    "de": "auÃŸerdem",
-    "es": "ademÃ¡s",
+    "de": "außerdem",
+    "es": "además",
     "type": "adverbe",
     "level": "B2"
   },
@@ -22324,13 +22324,13 @@
     "fr": "le gallon",
     "en": "gallon",
     "de": "die Gallone",
-    "es": "el galÃ³n",
+    "es": "el galón",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2482",
-    "fr": "le jeu vidÃ©o",
+    "fr": "le jeu vidéo",
     "en": "gaming",
     "de": "das Spielen",
     "es": "el juego",
@@ -22357,16 +22357,16 @@
   },
   {
     "id": "word_2485",
-    "fr": "le genre (masculin/fÃ©minin)",
+    "fr": "le genre (masculin/féminin)",
     "en": "gender",
     "de": "das Geschlecht",
-    "es": "el gÃ©nero",
+    "es": "el género",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2486",
-    "fr": "le gÃ¨ne",
+    "fr": "le gène",
     "en": "gene",
     "de": "das Gen",
     "es": "el gen",
@@ -22375,7 +22375,7 @@
   },
   {
     "id": "word_2487",
-    "fr": "gÃ©nÃ©rer",
+    "fr": "générer",
     "en": "generate",
     "de": "erzeugen",
     "es": "generar",
@@ -22384,16 +22384,16 @@
   },
   {
     "id": "word_2488",
-    "fr": "gÃ©nÃ©tique",
+    "fr": "génétique",
     "en": "genetic",
     "de": "genetisch",
-    "es": "genÃ©tico",
+    "es": "genético",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2489",
-    "fr": "le gÃ©nie",
+    "fr": "le génie",
     "en": "genius",
     "de": "das Genie",
     "es": "el genio",
@@ -22405,13 +22405,13 @@
     "fr": "le genre (style)",
     "en": "genre",
     "de": "das Genre",
-    "es": "el gÃ©nero",
+    "es": "el género",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2491",
-    "fr": "vÃ©ritable / authentique",
+    "fr": "véritable / authentique",
     "en": "genuine",
     "de": "echt",
     "es": "genuino",
@@ -22420,7 +22420,7 @@
   },
   {
     "id": "word_2492",
-    "fr": "vÃ©ritablement",
+    "fr": "véritablement",
     "en": "genuinely",
     "de": "wirklich",
     "es": "genuinamente",
@@ -22441,7 +22441,7 @@
     "fr": "la mondialisation",
     "en": "globalization",
     "de": "die Globalisierung",
-    "es": "la globalizaciÃ³n",
+    "es": "la globalización",
     "type": "nom",
     "level": "B2"
   },
@@ -22456,7 +22456,7 @@
   },
   {
     "id": "word_2496",
-    "fr": "dorÃ©",
+    "fr": "doré",
     "en": "golden",
     "de": "golden",
     "es": "dorado",
@@ -22465,9 +22465,9 @@
   },
   {
     "id": "word_2497",
-    "fr": "la bontÃ©",
+    "fr": "la bonté",
     "en": "goodness",
-    "de": "die GÃ¼te",
+    "de": "die Güte",
     "es": "la bondad",
     "type": "nom",
     "level": "B2"
@@ -22476,7 +22476,7 @@
     "id": "word_2498",
     "fr": "magnifique",
     "en": "gorgeous",
-    "de": "wunderschÃ¶n",
+    "de": "wunderschön",
     "es": "hermoso",
     "type": "adjectif",
     "level": "B2"
@@ -22503,7 +22503,7 @@
     "id": "word_2501",
     "fr": "progressivement",
     "en": "gradually",
-    "de": "allmÃ¤hlich",
+    "de": "allmählich",
     "es": "gradualmente",
     "type": "adverbe",
     "level": "B2"
@@ -22512,7 +22512,7 @@
     "id": "word_2502",
     "fr": "grandiose",
     "en": "grand",
-    "de": "groÃŸartig",
+    "de": "großartig",
     "es": "grandioso",
     "type": "adjectif",
     "level": "B2"
@@ -22522,7 +22522,7 @@
     "fr": "la subvention",
     "en": "grant",
     "de": "der Zuschuss",
-    "es": "la subvenciÃ³n",
+    "es": "la subvención",
     "type": "nom",
     "level": "B2"
   },
@@ -22530,7 +22530,7 @@
     "id": "word_2504",
     "fr": "accorder",
     "en": "grant",
-    "de": "gewÃ¤hren",
+    "de": "gewähren",
     "es": "conceder",
     "type": "verbe",
     "level": "B2"
@@ -22540,7 +22540,7 @@
     "fr": "graphique",
     "en": "graphic",
     "de": "grafisch",
-    "es": "grÃ¡fico",
+    "es": "gráfico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -22549,7 +22549,7 @@
     "fr": "les graphismes",
     "en": "graphics",
     "de": "die Grafik",
-    "es": "los grÃ¡ficos",
+    "es": "los gráficos",
     "type": "nom",
     "level": "B2"
   },
@@ -22575,7 +22575,7 @@
     "id": "word_2509",
     "fr": "la serre",
     "en": "greenhouse",
-    "de": "das GewÃ¤chshaus",
+    "de": "das Gewächshaus",
     "es": "el invernadero",
     "type": "nom",
     "level": "B2"
@@ -22603,13 +22603,13 @@
     "fr": "l'habitat",
     "en": "habitat",
     "de": "der Lebensraum",
-    "es": "el hÃ¡bitat",
+    "es": "el hábitat",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2513",
-    "fr": "gÃ©rer / manipuler",
+    "fr": "gérer / manipuler",
     "en": "handle",
     "de": "handhaben",
     "es": "manejar",
@@ -22630,16 +22630,16 @@
     "fr": "le mal / le tort",
     "en": "harm",
     "de": "der Schaden",
-    "es": "el daÃ±o",
+    "es": "el daño",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2516",
-    "fr": "nuire Ã ",
+    "fr": "nuire à",
     "en": "harm",
     "de": "schaden",
-    "es": "daÃ±ar",
+    "es": "dañar",
     "type": "verbe",
     "level": "B2"
   },
@@ -22647,14 +22647,14 @@
     "id": "word_2517",
     "fr": "nuisible",
     "en": "harmful",
-    "de": "schÃ¤dlich",
-    "es": "daÃ±ino",
+    "de": "schädlich",
+    "es": "dañino",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2518",
-    "fr": "le siÃ¨ge social",
+    "fr": "le siège social",
     "en": "headquarters",
     "de": "der Hauptsitz",
     "es": "la sede",
@@ -22663,7 +22663,7 @@
   },
   {
     "id": "word_2519",
-    "fr": "guÃ©rir",
+    "fr": "guérir",
     "en": "heal",
     "de": "heilen",
     "es": "sanar",
@@ -22672,19 +22672,19 @@
   },
   {
     "id": "word_2520",
-    "fr": "les soins de santÃ©",
+    "fr": "les soins de santé",
     "en": "healthcare",
     "de": "die Gesundheitsversorgung",
-    "es": "la atenciÃ³n sanitaria",
+    "es": "la atención sanitaria",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2521",
-    "fr": "l'ouÃ¯e / l'audience",
+    "fr": "l'ouïe / l'audience",
     "en": "hearing",
-    "de": "das GehÃ¶r / die AnhÃ¶rung",
-    "es": "la audiciÃ³n / la audiencia",
+    "de": "das Gehör / die Anhörung",
+    "es": "la audición / la audiencia",
     "type": "nom",
     "level": "B2"
   },
@@ -22702,7 +22702,7 @@
     "fr": "le talon",
     "en": "heel",
     "de": "die Ferse",
-    "es": "el talÃ³n",
+    "es": "el talón",
     "type": "nom",
     "level": "B2"
   },
@@ -22710,7 +22710,7 @@
     "id": "word_2524",
     "fr": "l'enfer",
     "en": "hell",
-    "de": "die HÃ¶lle",
+    "de": "die Hölle",
     "es": "el infierno",
     "type": "nom",
     "level": "B2"
@@ -22735,16 +22735,16 @@
   },
   {
     "id": "word_2527",
-    "fr": "hÃ©siter",
+    "fr": "hésiter",
     "en": "hesitate",
-    "de": "zÃ¶gern",
+    "de": "zögern",
     "es": "dudar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2528",
-    "fr": "cachÃ©",
+    "fr": "caché",
     "en": "hidden",
     "de": "versteckt",
     "es": "oculto",
@@ -22756,7 +22756,7 @@
     "fr": "hilarant",
     "en": "hilarious",
     "de": "sehr lustig",
-    "es": "divertidÃ­simo",
+    "es": "divertidísimo",
     "type": "adjectif",
     "level": "B2"
   },
@@ -22764,7 +22764,7 @@
     "id": "word_2530",
     "fr": "la hanche",
     "en": "hip",
-    "de": "die HÃ¼fte",
+    "de": "die Hüfte",
     "es": "la cadera",
     "type": "nom",
     "level": "B2"
@@ -22807,7 +22807,7 @@
   },
   {
     "id": "word_2535",
-    "fr": "l'honnÃªtetÃ©",
+    "fr": "l'honnêteté",
     "en": "honesty",
     "de": "die Ehrlichkeit",
     "es": "la honestidad",
@@ -22843,7 +22843,7 @@
   },
   {
     "id": "word_2539",
-    "fr": "le mÃ©nage / le foyer",
+    "fr": "le ménage / le foyer",
     "en": "household",
     "de": "der Haushalt",
     "es": "el hogar",
@@ -22864,7 +22864,7 @@
     "fr": "humoristique",
     "en": "humorous",
     "de": "humorvoll",
-    "es": "humorÃ­stico",
+    "es": "humorístico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -22897,7 +22897,7 @@
   },
   {
     "id": "word_2545",
-    "fr": "l'icÃ´ne",
+    "fr": "l'icône",
     "en": "icon",
     "de": "die Ikone / das Symbol",
     "es": "el icono",
@@ -22906,16 +22906,16 @@
   },
   {
     "id": "word_2546",
-    "fr": "la carte d'identitÃ©",
+    "fr": "la carte d'identité",
     "en": "ID",
     "de": "der Ausweis",
-    "es": "el carnÃ© de identidad",
+    "es": "el carné de identidad",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2547",
-    "fr": "l'idÃ©al",
+    "fr": "l'idéal",
     "en": "ideal",
     "de": "das Ideal",
     "es": "el ideal",
@@ -22924,7 +22924,7 @@
   },
   {
     "id": "word_2548",
-    "fr": "idÃ©al",
+    "fr": "idéal",
     "en": "ideal",
     "de": "ideal",
     "es": "ideal",
@@ -22936,15 +22936,15 @@
     "fr": "identique",
     "en": "identical",
     "de": "identisch",
-    "es": "idÃ©ntico",
+    "es": "idéntico",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2550",
-    "fr": "l'identitÃ©",
+    "fr": "l'identité",
     "en": "identity",
-    "de": "die IdentitÃ¤t",
+    "de": "die Identität",
     "es": "la identidad",
     "type": "nom",
     "level": "B2"
@@ -22954,7 +22954,7 @@
     "fr": "l'illusion",
     "en": "illusion",
     "de": "die Illusion",
-    "es": "la ilusiÃ³n",
+    "es": "la ilusión",
     "type": "nom",
     "level": "B2"
   },
@@ -22972,7 +22972,7 @@
     "fr": "l'illustration",
     "en": "illustration",
     "de": "die Abbildung",
-    "es": "la ilustraciÃ³n",
+    "es": "la ilustración",
     "type": "nom",
     "level": "B2"
   },
@@ -22981,7 +22981,7 @@
     "fr": "l'imagination",
     "en": "imagination",
     "de": "die Vorstellungskraft",
-    "es": "la imaginaciÃ³n",
+    "es": "la imaginación",
     "type": "nom",
     "level": "B2"
   },
@@ -22990,13 +22990,13 @@
     "fr": "l'immigration",
     "en": "immigration",
     "de": "die Einwanderung",
-    "es": "la inmigraciÃ³n",
+    "es": "la inmigración",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2556",
-    "fr": "immunisÃ©",
+    "fr": "immunisé",
     "en": "immune",
     "de": "immun",
     "es": "inmune",
@@ -23014,7 +23014,7 @@
   },
   {
     "id": "word_2558",
-    "fr": "mettre en Å“uvre",
+    "fr": "mettre en œuvre",
     "en": "implement",
     "de": "umsetzen",
     "es": "implementar",
@@ -23026,7 +23026,7 @@
     "fr": "l'implication",
     "en": "implication",
     "de": "die Auswirkung",
-    "es": "la implicaciÃ³n",
+    "es": "la implicación",
     "type": "nom",
     "level": "B2"
   },
@@ -23059,7 +23059,7 @@
   },
   {
     "id": "word_2563",
-    "fr": "impressionnÃ©",
+    "fr": "impressionné",
     "en": "impressed",
     "de": "beeindruckt",
     "es": "impresionado",
@@ -23079,7 +23079,7 @@
     "id": "word_2565",
     "fr": "le pouce (mesure)",
     "en": "inch",
-    "de": "der Zoll (MaÃŸ)",
+    "de": "der Zoll (Maß)",
     "es": "la pulgada",
     "type": "nom",
     "level": "B2"
@@ -23104,7 +23104,7 @@
   },
   {
     "id": "word_2568",
-    "fr": "incorporer / intÃ©grer",
+    "fr": "incorporer / intégrer",
     "en": "incorporate",
     "de": "einbeziehen",
     "es": "incorporar",
@@ -23125,15 +23125,15 @@
     "fr": "de plus en plus",
     "en": "increasingly",
     "de": "zunehmend",
-    "es": "cada vez mÃ¡s",
+    "es": "cada vez más",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2571",
-    "fr": "l'indÃ©pendance",
+    "fr": "l'indépendance",
     "en": "independence",
-    "de": "die UnabhÃ¤ngigkeit",
+    "de": "die Unabhängigkeit",
     "es": "la independencia",
     "type": "nom",
     "level": "B2"
@@ -23143,7 +23143,7 @@
     "fr": "l'index / l'indice",
     "en": "index",
     "de": "der Index",
-    "es": "el Ã­ndice",
+    "es": "el índice",
     "type": "nom",
     "level": "B2"
   },
@@ -23152,7 +23152,7 @@
     "fr": "l'indication",
     "en": "indication",
     "de": "der Hinweis",
-    "es": "la indicaciÃ³n",
+    "es": "la indicación",
     "type": "nom",
     "level": "B2"
   },
@@ -23167,7 +23167,7 @@
   },
   {
     "id": "word_2575",
-    "fr": "inÃ©vitable",
+    "fr": "inévitable",
     "en": "inevitable",
     "de": "unvermeidlich",
     "es": "inevitable",
@@ -23176,7 +23176,7 @@
   },
   {
     "id": "word_2576",
-    "fr": "inÃ©vitablement",
+    "fr": "inévitablement",
     "en": "inevitably",
     "de": "unweigerlich",
     "es": "inevitablemente",
@@ -23188,15 +23188,15 @@
     "fr": "l'infection",
     "en": "infection",
     "de": "die Infektion",
-    "es": "la infecciÃ³n",
+    "es": "la infección",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2578",
-    "fr": "dÃ©duire",
+    "fr": "déduire",
     "en": "infer",
-    "de": "schlieÃŸen",
+    "de": "schließen",
     "es": "inferir",
     "type": "verbe",
     "level": "B2"
@@ -23206,7 +23206,7 @@
     "fr": "l'inflation",
     "en": "inflation",
     "de": "die Inflation",
-    "es": "la inflaciÃ³n",
+    "es": "la inflación",
     "type": "nom",
     "level": "B2"
   },
@@ -23215,7 +23215,7 @@
     "fr": "les infos (fam.)",
     "en": "info",
     "de": "die Info",
-    "es": "la informaciÃ³n",
+    "es": "la información",
     "type": "nom",
     "level": "B2"
   },
@@ -23239,7 +23239,7 @@
   },
   {
     "id": "word_2583",
-    "fr": "hÃ©riter",
+    "fr": "hériter",
     "en": "inherit",
     "de": "erben",
     "es": "heredar",
@@ -23250,7 +23250,7 @@
     "id": "word_2584",
     "fr": "initial",
     "en": "initial",
-    "de": "anfÃ¤nglich",
+    "de": "anfänglich",
     "es": "inicial",
     "type": "adjectif",
     "level": "B2"
@@ -23284,7 +23284,7 @@
   },
   {
     "id": "word_2588",
-    "fr": "intÃ©rieur (plus profond)",
+    "fr": "intérieur (plus profond)",
     "en": "inner",
     "de": "inner",
     "es": "interior",
@@ -23296,7 +23296,7 @@
     "fr": "l'innovation",
     "en": "innovation",
     "de": "die Innovation",
-    "es": "la innovaciÃ³n",
+    "es": "la innovación",
     "type": "nom",
     "level": "B2"
   },
@@ -23314,25 +23314,25 @@
     "fr": "la contribution / la saisie",
     "en": "input",
     "de": "die Eingabe / der Beitrag",
-    "es": "la aportaciÃ³n",
+    "es": "la aportación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2592",
-    "fr": "insÃ©rer",
+    "fr": "insérer",
     "en": "insert",
-    "de": "einfÃ¼gen",
+    "de": "einfügen",
     "es": "insertar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2593",
-    "fr": "l'aperÃ§u / la perspicacitÃ©",
+    "fr": "l'aperçu / la perspicacité",
     "en": "insight",
     "de": "die Erkenntnis",
-    "es": "la percepciÃ³n",
+    "es": "la percepción",
     "type": "nom",
     "level": "B2"
   },
@@ -23377,7 +23377,7 @@
     "fr": "l'installation",
     "en": "installation",
     "de": "die Installation",
-    "es": "la instalaciÃ³n",
+    "es": "la instalación",
     "type": "nom",
     "level": "B2"
   },
@@ -23392,19 +23392,19 @@
   },
   {
     "id": "word_2600",
-    "fr": "instantanÃ©",
+    "fr": "instantané",
     "en": "instant",
     "de": "sofortig",
-    "es": "instantÃ¡neo",
+    "es": "instantáneo",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2601",
-    "fr": "instantanÃ©ment",
+    "fr": "instantanément",
     "en": "instantly",
     "de": "sofort",
-    "es": "instantÃ¡neamente",
+    "es": "instantáneamente",
     "type": "adverbe",
     "level": "B2"
   },
@@ -23422,7 +23422,7 @@
     "fr": "l'institution",
     "en": "institution",
     "de": "die Institution",
-    "es": "la instituciÃ³n",
+    "es": "la institución",
     "type": "nom",
     "level": "B2"
   },
@@ -23437,7 +23437,7 @@
   },
   {
     "id": "word_2605",
-    "fr": "intÃ©grer",
+    "fr": "intégrer",
     "en": "integrate",
     "de": "integrieren",
     "es": "integrar",
@@ -23455,7 +23455,7 @@
   },
   {
     "id": "word_2607",
-    "fr": "prÃ©vu / voulu",
+    "fr": "prévu / voulu",
     "en": "intended",
     "de": "beabsichtigt",
     "es": "previsto",
@@ -23485,7 +23485,7 @@
     "fr": "l'interaction",
     "en": "interaction",
     "de": "die Interaktion",
-    "es": "la interacciÃ³n",
+    "es": "la interacción",
     "type": "nom",
     "level": "B2"
   },
@@ -23500,7 +23500,7 @@
   },
   {
     "id": "word_2612",
-    "fr": "interprÃ©ter",
+    "fr": "interpréter",
     "en": "interpret",
     "de": "interpretieren",
     "es": "interpretar",
@@ -23509,10 +23509,10 @@
   },
   {
     "id": "word_2613",
-    "fr": "l'interprÃ©tation",
+    "fr": "l'interprétation",
     "en": "interpretation",
     "de": "die Interpretation",
-    "es": "la interpretaciÃ³n",
+    "es": "la interpretación",
     "type": "nom",
     "level": "B2"
   },
@@ -23548,16 +23548,16 @@
     "fr": "l'invasion",
     "en": "invasion",
     "de": "die Invasion",
-    "es": "la invasiÃ³n",
+    "es": "la invasión",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2618",
-    "fr": "l'enquÃªte",
+    "fr": "l'enquête",
     "en": "investigation",
     "de": "die Untersuchung",
-    "es": "la investigaciÃ³n",
+    "es": "la investigación",
     "type": "nom",
     "level": "B2"
   },
@@ -23566,7 +23566,7 @@
     "fr": "l'investissement",
     "en": "investment",
     "de": "die Investition",
-    "es": "la inversiÃ³n",
+    "es": "la inversión",
     "type": "nom",
     "level": "B2"
   },
@@ -23590,7 +23590,7 @@
   },
   {
     "id": "word_2622",
-    "fr": "isolÃ©",
+    "fr": "isolé",
     "en": "isolated",
     "de": "isoliert",
     "es": "aislado",
@@ -23599,7 +23599,7 @@
   },
   {
     "id": "word_2623",
-    "fr": "Ã©mettre / dÃ©livrer",
+    "fr": "émettre / délivrer",
     "en": "issue",
     "de": "ausstellen",
     "es": "emitir",
@@ -23610,8 +23610,8 @@
     "id": "word_2624",
     "fr": "la prison",
     "en": "jail",
-    "de": "das GefÃ¤ngnis",
-    "es": "la cÃ¡rcel",
+    "de": "das Gefängnis",
+    "es": "la cárcel",
     "type": "nom",
     "level": "B2"
   },
@@ -23629,7 +23629,7 @@
     "fr": "l'articulation / le joint",
     "en": "joint",
     "de": "das Gelenk",
-    "es": "la articulaciÃ³n",
+    "es": "la articulación",
     "type": "nom",
     "level": "B2"
   },
@@ -23656,7 +23656,7 @@
     "fr": "la joie",
     "en": "joy",
     "de": "die Freude",
-    "es": "la alegrÃ­a",
+    "es": "la alegría",
     "type": "nom",
     "level": "B2"
   },
@@ -23709,7 +23709,7 @@
     "id": "word_2635",
     "fr": "kidnapper",
     "en": "kidnap",
-    "de": "entfÃ¼hren",
+    "de": "entführen",
     "es": "secuestrar",
     "type": "verbe",
     "level": "B2"
@@ -23719,7 +23719,7 @@
     "fr": "le rein",
     "en": "kidney",
     "de": "die Niere",
-    "es": "el riÃ±Ã³n",
+    "es": "el riñón",
     "type": "nom",
     "level": "B2"
   },
@@ -23728,31 +23728,31 @@
     "fr": "le jardin d'enfants",
     "en": "kindergarten",
     "de": "der Kindergarten",
-    "es": "el jardÃ­n de infancia",
+    "es": "el jardín de infancia",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2638",
-    "fr": "le kit / l'Ã©quipement",
+    "fr": "le kit / l'équipement",
     "en": "kit",
-    "de": "die AusrÃ¼stung",
+    "de": "die Ausrüstung",
     "es": "el kit",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2639",
-    "fr": "le travail (main d'Å“uvre)",
+    "fr": "le travail (main d'œuvre)",
     "en": "labour",
     "de": "die Arbeit",
-    "es": "el trabajo (fÃ­sico)",
+    "es": "el trabajo (físico)",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2640",
-    "fr": "l'Ã©chelle",
+    "fr": "l'échelle",
     "en": "ladder",
     "de": "die Leiter",
     "es": "la escalera",
@@ -23790,7 +23790,7 @@
     "id": "word_2644",
     "fr": "largement / en grande partie",
     "en": "largely",
-    "de": "grÃ¶ÃŸtenteils",
+    "de": "größtenteils",
     "es": "en gran parte",
     "type": "adverbe",
     "level": "B2"
@@ -23800,22 +23800,22 @@
     "fr": "le laser",
     "en": "laser",
     "de": "der Laser",
-    "es": "el lÃ¡ser",
+    "es": "el láser",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2646",
-    "fr": "derniÃ¨rement",
+    "fr": "dernièrement",
     "en": "lately",
-    "de": "kÃ¼rzlich",
-    "es": "Ãºltimamente",
+    "de": "kürzlich",
+    "es": "últimamente",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2647",
-    "fr": "lancer (produit/fusÃ©e)",
+    "fr": "lancer (produit/fusée)",
     "en": "launch",
     "de": "starten",
     "es": "lanzar",
@@ -23826,7 +23826,7 @@
     "id": "word_2648",
     "fr": "le leadership",
     "en": "leadership",
-    "de": "die FÃ¼hrung",
+    "de": "die Führung",
     "es": "el liderazgo",
     "type": "nom",
     "level": "B2"
@@ -23851,7 +23851,7 @@
   },
   {
     "id": "word_2651",
-    "fr": "la lÃ©gende",
+    "fr": "la légende",
     "en": "legend",
     "de": "die Legende",
     "es": "la leyenda",
@@ -23878,25 +23878,25 @@
   },
   {
     "id": "word_2654",
-    "fr": "la durÃ©e de vie",
+    "fr": "la durée de vie",
     "en": "lifetime",
     "de": "die Lebenszeit",
-    "es": "la vida Ãºtil",
+    "es": "la vida útil",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2655",
-    "fr": "l'Ã©clairage",
+    "fr": "l'éclairage",
     "en": "lighting",
     "de": "die Beleuchtung",
-    "es": "la iluminaciÃ³n",
+    "es": "la iluminación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2656",
-    "fr": "de mÃªme",
+    "fr": "de même",
     "en": "likewise",
     "de": "ebenso",
     "es": "igualmente",
@@ -23907,14 +23907,14 @@
     "id": "word_2657",
     "fr": "la limitation",
     "en": "limitation",
-    "de": "die EinschrÃ¤nkung",
-    "es": "la limitaciÃ³n",
+    "de": "die Einschränkung",
+    "es": "la limitación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2658",
-    "fr": "limitÃ©",
+    "fr": "limité",
     "en": "limited",
     "de": "begrenzt",
     "es": "limitado",
@@ -23923,16 +23923,16 @@
   },
   {
     "id": "word_2659",
-    "fr": "littÃ©ralement",
+    "fr": "littéralement",
     "en": "literally",
-    "de": "buchstÃ¤blich",
+    "de": "buchstäblich",
     "es": "literalmente",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2660",
-    "fr": "littÃ©raire",
+    "fr": "littéraire",
     "en": "literary",
     "de": "literarisch",
     "es": "literario",
@@ -23941,7 +23941,7 @@
   },
   {
     "id": "word_2661",
-    "fr": "les dÃ©chets (jetÃ©s par terre)",
+    "fr": "les déchets (jetés par terre)",
     "en": "litter",
     "de": "der Abfall",
     "es": "la basura",
@@ -23950,7 +23950,7 @@
   },
   {
     "id": "word_2662",
-    "fr": "animÃ© / vivant",
+    "fr": "animé / vivant",
     "en": "lively",
     "de": "lebhaft",
     "es": "animado",
@@ -23962,7 +23962,7 @@
     "fr": "le foie",
     "en": "liver",
     "de": "die Leber",
-    "es": "el hÃ­gado",
+    "es": "el hígado",
     "type": "nom",
     "level": "B2"
   },
@@ -23986,10 +23986,10 @@
   },
   {
     "id": "word_2666",
-    "fr": "le prÃªt",
+    "fr": "le prêt",
     "en": "loan",
     "de": "der Kredit",
-    "es": "el prÃ©stamo",
+    "es": "el préstamo",
     "type": "nom",
     "level": "B2"
   },
@@ -23998,7 +23998,7 @@
     "fr": "logique",
     "en": "logical",
     "de": "logisch",
-    "es": "lÃ³gico",
+    "es": "lógico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -24013,7 +24013,7 @@
   },
   {
     "id": "word_2669",
-    "fr": "Ã  long terme",
+    "fr": "à long terme",
     "en": "long-term",
     "de": "langfristig",
     "es": "a largo plazo",
@@ -24022,7 +24022,7 @@
   },
   {
     "id": "word_2670",
-    "fr": "lÃ¢che (pas serrÃ©)",
+    "fr": "lâche (pas serré)",
     "en": "loose",
     "de": "lose",
     "es": "suelto",
@@ -24034,7 +24034,7 @@
     "fr": "le seigneur",
     "en": "lord",
     "de": "der Herr",
-    "es": "el seÃ±or",
+    "es": "el señor",
     "type": "nom",
     "level": "B2"
   },
@@ -24043,7 +24043,7 @@
     "fr": "la loterie",
     "en": "lottery",
     "de": "die Lotterie",
-    "es": "la loterÃ­a",
+    "es": "la lotería",
     "type": "nom",
     "level": "B2"
   },
@@ -24058,7 +24058,7 @@
   },
   {
     "id": "word_2674",
-    "fr": "fidÃ¨le / loyal",
+    "fr": "fidèle / loyal",
     "en": "loyal",
     "de": "treu",
     "es": "leal",
@@ -24070,7 +24070,7 @@
     "fr": "le poumon",
     "en": "lung",
     "de": "die Lunge",
-    "es": "el pulmÃ³n",
+    "es": "el pulmón",
     "type": "nom",
     "level": "B2"
   },
@@ -24079,7 +24079,7 @@
     "fr": "les paroles (de chanson)",
     "en": "lyric",
     "de": "der Liedtext",
-    "es": "la letra (de canciÃ³n)",
+    "es": "la letra (de canción)",
     "type": "nom",
     "level": "B2"
   },
@@ -24087,8 +24087,8 @@
     "id": "word_2677",
     "fr": "magnifique",
     "en": "magnificent",
-    "de": "groÃŸartig",
-    "es": "magnÃ­fico",
+    "de": "großartig",
+    "es": "magnífico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -24103,10 +24103,10 @@
   },
   {
     "id": "word_2679",
-    "fr": "la majoritÃ©",
+    "fr": "la majorité",
     "en": "majority",
     "de": "die Mehrheit",
-    "es": "la mayorÃ­a",
+    "es": "la mayoría",
     "type": "nom",
     "level": "B2"
   },
@@ -24121,10 +24121,10 @@
   },
   {
     "id": "word_2681",
-    "fr": "la fabrication / la crÃ©ation",
+    "fr": "la fabrication / la création",
     "en": "making",
     "de": "die Herstellung",
-    "es": "la fabricaciÃ³n",
+    "es": "la fabricación",
     "type": "nom",
     "level": "B2"
   },
@@ -24151,7 +24151,7 @@
     "fr": "le marathon",
     "en": "marathon",
     "de": "der Marathon",
-    "es": "el maratÃ³n",
+    "es": "el maratón",
     "type": "nom",
     "level": "B2"
   },
@@ -24202,7 +24202,7 @@
   },
   {
     "id": "word_2690",
-    "fr": "le maÃ®tre",
+    "fr": "le maître",
     "en": "master",
     "de": "der Meister",
     "es": "el maestro",
@@ -24211,7 +24211,7 @@
   },
   {
     "id": "word_2691",
-    "fr": "maÃ®triser",
+    "fr": "maîtriser",
     "en": "master",
     "de": "meistern",
     "es": "dominar",
@@ -24232,7 +24232,7 @@
     "fr": "le compagnon / le pote",
     "en": "mate",
     "de": "der Kumpel",
-    "es": "el compaÃ±ero",
+    "es": "el compañero",
     "type": "nom",
     "level": "B2"
   },
@@ -24250,7 +24250,7 @@
     "fr": "le maximum",
     "en": "maximum",
     "de": "das Maximum",
-    "es": "el mÃ¡ximo",
+    "es": "el máximo",
     "type": "nom",
     "level": "B2"
   },
@@ -24268,31 +24268,31 @@
     "fr": "la mesure",
     "en": "measurement",
     "de": "die Messung",
-    "es": "la mediciÃ³n",
+    "es": "la medición",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2698",
-    "fr": "le mÃ©canicien",
+    "fr": "le mécanicien",
     "en": "mechanic",
     "de": "der Mechaniker",
-    "es": "el mecÃ¡nico",
+    "es": "el mecánico",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2699",
-    "fr": "mÃ©canique",
+    "fr": "mécanique",
     "en": "mechanical",
     "de": "mechanisch",
-    "es": "mecÃ¡nico",
+    "es": "mecánico",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2700",
-    "fr": "le mÃ©canisme",
+    "fr": "le mécanisme",
     "en": "mechanism",
     "de": "der Mechanismus",
     "es": "el mecanismo",
@@ -24301,7 +24301,7 @@
   },
   {
     "id": "word_2701",
-    "fr": "la mÃ©daille",
+    "fr": "la médaille",
     "en": "medal",
     "de": "die Medaille",
     "es": "la medalla",
@@ -24310,10 +24310,10 @@
   },
   {
     "id": "word_2702",
-    "fr": "le mÃ©dicament",
+    "fr": "le médicament",
     "en": "medication",
     "de": "das Medikament",
-    "es": "la medicaciÃ³n",
+    "es": "la medicación",
     "type": "nom",
     "level": "B2"
   },
@@ -24337,16 +24337,16 @@
   },
   {
     "id": "word_2705",
-    "fr": "l'adhÃ©sion / l'affiliation",
+    "fr": "l'adhésion / l'affiliation",
     "en": "membership",
     "de": "die Mitgliedschaft",
-    "es": "la membresÃ­a",
+    "es": "la membresía",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2706",
-    "fr": "mÃ©morable",
+    "fr": "mémorable",
     "en": "memorable",
     "de": "unvergesslich",
     "es": "memorable",
@@ -24355,19 +24355,19 @@
   },
   {
     "id": "word_2707",
-    "fr": "la mÃ©taphore",
+    "fr": "la métaphore",
     "en": "metaphor",
     "de": "die Metapher",
-    "es": "la metÃ¡fora",
+    "es": "la metáfora",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2708",
-    "fr": "la mÃ©thode",
+    "fr": "la méthode",
     "en": "method",
     "de": "die Methode",
-    "es": "el mÃ©todo",
+    "es": "el método",
     "type": "nom",
     "level": "B2"
   },
@@ -24375,7 +24375,7 @@
     "id": "word_2709",
     "fr": "militaire",
     "en": "military",
-    "de": "militÃ¤risch",
+    "de": "militärisch",
     "es": "militar",
     "type": "adjectif",
     "level": "B2"
@@ -24391,7 +24391,7 @@
   },
   {
     "id": "word_2711",
-    "fr": "le minÃ©ral",
+    "fr": "le minéral",
     "en": "mineral",
     "de": "das Mineral",
     "es": "el mineral",
@@ -24403,7 +24403,7 @@
     "fr": "le minimum",
     "en": "minimum",
     "de": "das Minimum",
-    "es": "el mÃ­nimo",
+    "es": "el mínimo",
     "type": "nom",
     "level": "B2"
   },
@@ -24420,23 +24420,23 @@
     "id": "word_2714",
     "fr": "mineur / de moindre importance",
     "en": "minor",
-    "de": "geringfÃ¼gig",
+    "de": "geringfügig",
     "es": "menor",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2715",
-    "fr": "la minoritÃ©",
+    "fr": "la minorité",
     "en": "minority",
     "de": "die Minderheit",
-    "es": "la minorÃ­a",
+    "es": "la minoría",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2716",
-    "fr": "misÃ©rable / malheureux",
+    "fr": "misérable / malheureux",
     "en": "miserable",
     "de": "elend",
     "es": "miserable",
@@ -24448,13 +24448,13 @@
     "fr": "la mission",
     "en": "mission",
     "de": "die Mission",
-    "es": "la misiÃ³n",
+    "es": "la misión",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2718",
-    "fr": "erronÃ© / dans l'erreur",
+    "fr": "erroné / dans l'erreur",
     "en": "mistaken",
     "de": "falsch",
     "es": "equivocado",
@@ -24463,7 +24463,7 @@
   },
   {
     "id": "word_2719",
-    "fr": "mÃ©langÃ© / mixte",
+    "fr": "mélangé / mixte",
     "en": "mixed",
     "de": "gemischt",
     "es": "mezclado",
@@ -24492,14 +24492,14 @@
     "id": "word_2722",
     "fr": "modifier",
     "en": "modify",
-    "de": "Ã¤ndern",
+    "de": "ändern",
     "es": "modificar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2723",
-    "fr": "le moniteur / l'Ã©cran",
+    "fr": "le moniteur / l'écran",
     "en": "monitor",
     "de": "der Monitor",
     "es": "el monitor",
@@ -24510,7 +24510,7 @@
     "id": "word_2724",
     "fr": "surveiller",
     "en": "monitor",
-    "de": "Ã¼berwachen",
+    "de": "überwachen",
     "es": "monitorear",
     "type": "verbe",
     "level": "B2"
@@ -24555,14 +24555,14 @@
     "id": "word_2729",
     "fr": "de plus / en outre",
     "en": "moreover",
-    "de": "auÃŸerdem",
-    "es": "ademÃ¡s",
+    "de": "außerdem",
+    "es": "además",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2730",
-    "fr": "l'hypothÃ¨que",
+    "fr": "l'hypothèque",
     "en": "mortgage",
     "de": "die Hypothek",
     "es": "la hipoteca",
@@ -24571,7 +24571,7 @@
   },
   {
     "id": "word_2731",
-    "fr": "la mosquÃ©e",
+    "fr": "la mosquée",
     "en": "mosque",
     "de": "die Moschee",
     "es": "la mezquita",
@@ -24582,7 +24582,7 @@
     "id": "word_2732",
     "fr": "le moustique",
     "en": "mosquito",
-    "de": "die MÃ¼cke",
+    "de": "die Mücke",
     "es": "el mosquito",
     "type": "nom",
     "level": "B2"
@@ -24610,7 +24610,7 @@
     "fr": "la motivation",
     "en": "motivation",
     "de": "die Motivation",
-    "es": "la motivaciÃ³n",
+    "es": "la motivación",
     "type": "nom",
     "level": "B2"
   },
@@ -24625,7 +24625,7 @@
   },
   {
     "id": "word_2737",
-    "fr": "monter (Ã  cheval/assembler)",
+    "fr": "monter (à cheval/assembler)",
     "en": "mount",
     "de": "aufsteigen / montieren",
     "es": "montar",
@@ -24634,7 +24634,7 @@
   },
   {
     "id": "word_2738",
-    "fr": "Ã©mouvant",
+    "fr": "émouvant",
     "en": "moving",
     "de": "bewegend",
     "es": "conmovedor",
@@ -24646,7 +24646,7 @@
     "fr": "multiple",
     "en": "multiple",
     "de": "mehrfach",
-    "es": "mÃºltiple",
+    "es": "múltiple",
     "type": "adjectif",
     "level": "B2"
   },
@@ -24661,7 +24661,7 @@
   },
   {
     "id": "word_2741",
-    "fr": "mystÃ©rieux",
+    "fr": "mystérieux",
     "en": "mysterious",
     "de": "geheimnisvoll",
     "es": "misterioso",
@@ -24688,7 +24688,7 @@
   },
   {
     "id": "word_2744",
-    "fr": "mÃ©chant / dÃ©sagrÃ©able",
+    "fr": "méchant / désagréable",
     "en": "nasty",
     "de": "gemein",
     "es": "desagradable",
@@ -24700,22 +24700,22 @@
     "fr": "la navigation",
     "en": "navigation",
     "de": "die Navigation",
-    "es": "la navegaciÃ³n",
+    "es": "la navegación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2746",
-    "fr": "Ã  proximitÃ©",
+    "fr": "à proximité",
     "en": "nearby",
-    "de": "in der NÃ¤he",
+    "de": "in der Nähe",
     "es": "cercano",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2747",
-    "fr": "soignÃ© / propre",
+    "fr": "soigné / propre",
     "en": "neat",
     "de": "ordentlich",
     "es": "limpio / ordenado",
@@ -24724,7 +24724,7 @@
   },
   {
     "id": "word_2748",
-    "fr": "la nÃ©cessitÃ©",
+    "fr": "la nécessité",
     "en": "necessity",
     "de": "die Notwendigkeit",
     "es": "la necesidad",
@@ -24733,7 +24733,7 @@
   },
   {
     "id": "word_2749",
-    "fr": "le nÃ©gatif",
+    "fr": "le négatif",
     "en": "negative",
     "de": "das Negativ",
     "es": "el negativo",
@@ -24742,7 +24742,7 @@
   },
   {
     "id": "word_2750",
-    "fr": "nÃ©gocier",
+    "fr": "négocier",
     "en": "negotiate",
     "de": "verhandeln",
     "es": "negociar",
@@ -24751,10 +24751,10 @@
   },
   {
     "id": "word_2751",
-    "fr": "la nÃ©gociation",
+    "fr": "la négociation",
     "en": "negotiation",
     "de": "die Verhandlung",
-    "es": "la negociaciÃ³n",
+    "es": "la negociación",
     "type": "nom",
     "level": "B2"
   },
@@ -24778,7 +24778,7 @@
   },
   {
     "id": "word_2754",
-    "fr": "nÃ©anmoins",
+    "fr": "néanmoins",
     "en": "nevertheless",
     "de": "dennoch",
     "es": "sin embargo",
@@ -24799,7 +24799,7 @@
     "fr": "le nickel",
     "en": "nickel",
     "de": "das Nickel",
-    "es": "el nÃ­quel",
+    "es": "el níquel",
     "type": "nom",
     "level": "B2"
   },
@@ -24835,7 +24835,7 @@
     "fr": "la notion",
     "en": "notion",
     "de": "die Vorstellung",
-    "es": "la nociÃ³n",
+    "es": "la noción",
     "type": "nom",
     "level": "B2"
   },
@@ -24853,7 +24853,7 @@
     "fr": "de nos jours",
     "en": "nowadays",
     "de": "heutzutage",
-    "es": "hoy en dÃ­a",
+    "es": "hoy en día",
     "type": "adverbe",
     "level": "B2"
   },
@@ -24871,7 +24871,7 @@
     "fr": "les soins infirmiers",
     "en": "nursing",
     "de": "die Pflege",
-    "es": "la enfermerÃ­a",
+    "es": "la enfermería",
     "type": "nom",
     "level": "B2"
   },
@@ -24879,14 +24879,14 @@
     "id": "word_2765",
     "fr": "la nutrition",
     "en": "nutrition",
-    "de": "die ErnÃ¤hrung",
-    "es": "la nutriciÃ³n",
+    "de": "die Ernährung",
+    "es": "la nutrición",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2766",
-    "fr": "l'obÃ©sitÃ©",
+    "fr": "l'obésité",
     "en": "obesity",
     "de": "die Fettleibigkeit",
     "es": "la obesidad",
@@ -24895,7 +24895,7 @@
   },
   {
     "id": "word_2767",
-    "fr": "obÃ©ir",
+    "fr": "obéir",
     "en": "obey",
     "de": "gehorchen",
     "es": "obedecer",
@@ -24943,7 +24943,7 @@
     "fr": "l'obligation",
     "en": "obligation",
     "de": "die Verpflichtung",
-    "es": "la obligaciÃ³n",
+    "es": "la obligación",
     "type": "nom",
     "level": "B2"
   },
@@ -24952,7 +24952,7 @@
     "fr": "l'observation",
     "en": "observation",
     "de": "die Beobachtung",
-    "es": "la observaciÃ³n",
+    "es": "la observación",
     "type": "nom",
     "level": "B2"
   },
@@ -24979,7 +24979,7 @@
     "fr": "l'obstacle",
     "en": "obstacle",
     "de": "das Hindernis",
-    "es": "el obstÃ¡culo",
+    "es": "el obstáculo",
     "type": "nom",
     "level": "B2"
   },
@@ -25005,8 +25005,8 @@
     "id": "word_2779",
     "fr": "l'occupation / la profession",
     "en": "occupation",
-    "de": "die BeschÃ¤ftigung",
-    "es": "la ocupaciÃ³n",
+    "de": "die Beschäftigung",
+    "es": "la ocupación",
     "type": "nom",
     "level": "B2"
   },
@@ -25039,9 +25039,9 @@
   },
   {
     "id": "word_2783",
-    "fr": "le dÃ©linquant",
+    "fr": "le délinquant",
     "en": "offender",
-    "de": "der StraftÃ¤ter",
+    "de": "der Straftäter",
     "es": "el delincuente",
     "type": "nom",
     "level": "B2"
@@ -25066,9 +25066,9 @@
   },
   {
     "id": "word_2786",
-    "fr": "en avant / Ã  partir de",
+    "fr": "en avant / à partir de",
     "en": "onwards",
-    "de": "vorwÃ¤rts",
+    "de": "vorwärts",
     "es": "en adelante",
     "type": "adverbe",
     "level": "B2"
@@ -25077,7 +25077,7 @@
     "id": "word_2787",
     "fr": "l'ouverture",
     "en": "opening",
-    "de": "die ErÃ¶ffnung",
+    "de": "die Eröffnung",
     "es": "la apertura",
     "type": "nom",
     "level": "B2"
@@ -25093,16 +25093,16 @@
   },
   {
     "id": "word_2789",
-    "fr": "l'opÃ©ra",
+    "fr": "l'opéra",
     "en": "opera",
     "de": "die Oper",
-    "es": "la Ã³pera",
+    "es": "la ópera",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2790",
-    "fr": "opÃ©rer / fonctionner",
+    "fr": "opérer / fonctionner",
     "en": "operate",
     "de": "operieren / bedienen",
     "es": "operar",
@@ -25111,7 +25111,7 @@
   },
   {
     "id": "word_2791",
-    "fr": "l'opÃ©rateur",
+    "fr": "l'opérateur",
     "en": "operator",
     "de": "der Betreiber",
     "es": "el operador",
@@ -25138,7 +25138,7 @@
   },
   {
     "id": "word_2794",
-    "fr": "opposÃ©",
+    "fr": "opposé",
     "en": "opposed",
     "de": "dagegen",
     "es": "opuesto",
@@ -25150,7 +25150,7 @@
     "fr": "l'opposition",
     "en": "opposition",
     "de": "die Opposition",
-    "es": "la oposiciÃ³n",
+    "es": "la oposición",
     "type": "nom",
     "level": "B2"
   },
@@ -25159,7 +25159,7 @@
     "fr": "optique",
     "en": "optical",
     "de": "optisch",
-    "es": "Ã³ptico",
+    "es": "óptico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -25186,7 +25186,7 @@
     "fr": "l'organe",
     "en": "organ",
     "de": "das Organ",
-    "es": "el Ã³rgano",
+    "es": "el órgano",
     "type": "nom",
     "level": "B2"
   },
@@ -25195,7 +25195,7 @@
     "fr": "organique",
     "en": "organic",
     "de": "biologisch",
-    "es": "orgÃ¡nico",
+    "es": "orgánico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -25219,7 +25219,7 @@
   },
   {
     "id": "word_2803",
-    "fr": "le rÃ©sultat / l'issue",
+    "fr": "le résultat / l'issue",
     "en": "outcome",
     "de": "das Ergebnis",
     "es": "el resultado",
@@ -25228,9 +25228,9 @@
   },
   {
     "id": "word_2804",
-    "fr": "extÃ©rieur",
+    "fr": "extérieur",
     "en": "outer",
-    "de": "Ã¤uÃŸere",
+    "de": "äußere",
     "es": "exterior",
     "type": "adjectif",
     "level": "B2"
@@ -25246,7 +25246,7 @@
   },
   {
     "id": "word_2806",
-    "fr": "le contour / le rÃ©sumÃ©",
+    "fr": "le contour / le résumé",
     "en": "outline",
     "de": "der Umriss",
     "es": "el contorno",
@@ -25267,7 +25267,7 @@
     "fr": "le rendement / la sortie",
     "en": "output",
     "de": "die Ausgabe / die Leistung",
-    "es": "la salida / la producciÃ³n",
+    "es": "la salida / la producción",
     "type": "nom",
     "level": "B2"
   },
@@ -25282,7 +25282,7 @@
   },
   {
     "id": "word_2810",
-    "fr": "global / en gÃ©nÃ©ral",
+    "fr": "global / en général",
     "en": "overall",
     "de": "insgesamt",
     "es": "en general",
@@ -25293,7 +25293,7 @@
     "id": "word_2811",
     "fr": "surmonter",
     "en": "overcome",
-    "de": "Ã¼berwinden",
+    "de": "überwinden",
     "es": "superar",
     "type": "verbe",
     "level": "B2"
@@ -25302,16 +25302,16 @@
     "id": "word_2812",
     "fr": "pendant la nuit / du jour au lendemain",
     "en": "overnight",
-    "de": "Ã¼ber Nacht",
-    "es": "de la noche a la maÃ±ana",
+    "de": "über Nacht",
+    "es": "de la noche a la mañana",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2813",
-    "fr": "Ã  l'Ã©tranger / outre-mer",
+    "fr": "à l'étranger / outre-mer",
     "en": "overseas",
-    "de": "in Ãœbersee",
+    "de": "in Übersee",
     "es": "en el extranjero",
     "type": "adverbe",
     "level": "B2"
@@ -25327,7 +25327,7 @@
   },
   {
     "id": "word_2815",
-    "fr": "la propriÃ©tÃ© (fait de possÃ©der)",
+    "fr": "la propriété (fait de posséder)",
     "en": "ownership",
     "de": "das Eigentum",
     "es": "la propiedad",
@@ -25336,10 +25336,10 @@
   },
   {
     "id": "word_2816",
-    "fr": "l'oxygÃ¨ne",
+    "fr": "l'oxygène",
     "en": "oxygen",
     "de": "der Sauerstoff",
-    "es": "el oxÃ­geno",
+    "es": "el oxígeno",
     "type": "nom",
     "level": "B2"
   },
@@ -25374,14 +25374,14 @@
     "id": "word_2820",
     "fr": "la paume / le palmier",
     "en": "palm",
-    "de": "die HandflÃ¤che / die Palme",
+    "de": "die Handfläche / die Palme",
     "es": "la palma",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2821",
-    "fr": "le panneau / le comitÃ©",
+    "fr": "le panneau / le comité",
     "en": "panel",
     "de": "das Panel",
     "es": "el panel",
@@ -25393,7 +25393,7 @@
     "fr": "la panique",
     "en": "panic",
     "de": "die Panik",
-    "es": "el pÃ¡nico",
+    "es": "el pánico",
     "type": "nom",
     "level": "B2"
   },
@@ -25402,13 +25402,13 @@
     "fr": "paniquer",
     "en": "panic",
     "de": "in Panik geraten",
-    "es": "entrar en pÃ¡nico",
+    "es": "entrar en pánico",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2824",
-    "fr": "le dÃ©filÃ©",
+    "fr": "le défilé",
     "en": "parade",
     "de": "die Parade",
     "es": "el desfile",
@@ -25417,7 +25417,7 @@
   },
   {
     "id": "word_2825",
-    "fr": "parallÃ¨le",
+    "fr": "parallèle",
     "en": "parallel",
     "de": "parallel",
     "es": "paralelo",
@@ -25435,7 +25435,7 @@
   },
   {
     "id": "word_2827",
-    "fr": "Ã  temps partiel",
+    "fr": "à temps partiel",
     "en": "part-time",
     "de": "Teilzeit-",
     "es": "a tiempo parcial",
@@ -25456,7 +25456,7 @@
     "fr": "la participation",
     "en": "participation",
     "de": "die Teilnahme",
-    "es": "la participaciÃ³n",
+    "es": "la participación",
     "type": "nom",
     "level": "B2"
   },
@@ -25474,7 +25474,7 @@
     "fr": "le partenariat",
     "en": "partnership",
     "de": "die Partnerschaft",
-    "es": "la asociaciÃ³n",
+    "es": "la asociación",
     "type": "nom",
     "level": "B2"
   },
@@ -25489,7 +25489,7 @@
   },
   {
     "id": "word_2833",
-    "fr": "passionnÃ©",
+    "fr": "passionné",
     "en": "passionate",
     "de": "leidenschaftlich",
     "es": "apasionado",
@@ -25501,7 +25501,7 @@
     "fr": "le mot de passe",
     "en": "password",
     "de": "das Passwort",
-    "es": "la contraseÃ±a",
+    "es": "la contraseña",
     "type": "nom",
     "level": "B2"
   },
@@ -25543,16 +25543,16 @@
   },
   {
     "id": "word_2839",
-    "fr": "le pair (collÃ¨gue/Ã©gal)",
+    "fr": "le pair (collègue/égal)",
     "en": "peer",
     "de": "der Gleichaltrige",
-    "es": "el compaÃ±ero",
+    "es": "el compañero",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2840",
-    "fr": "la peine / la pÃ©nalitÃ©",
+    "fr": "la peine / la pénalité",
     "en": "penalty",
     "de": "die Strafe",
     "es": "la penalidad",
@@ -25564,7 +25564,7 @@
     "fr": "la pension (retraite)",
     "en": "pension",
     "de": "die Rente",
-    "es": "la pensiÃ³n",
+    "es": "la pensión",
     "type": "nom",
     "level": "B2"
   },
@@ -25582,7 +25582,7 @@
     "fr": "la perception",
     "en": "perception",
     "de": "die Wahrnehmung",
-    "es": "la percepciÃ³n",
+    "es": "la percepción",
     "type": "nom",
     "level": "B2"
   },
@@ -25651,10 +25651,10 @@
   },
   {
     "id": "word_2851",
-    "fr": "le phÃ©nomÃ¨ne",
+    "fr": "le phénomène",
     "en": "phenomenon",
-    "de": "das PhÃ¤nomen",
-    "es": "el fenÃ³meno",
+    "de": "das Phänomen",
+    "es": "el fenómeno",
     "type": "nom",
     "level": "B2"
   },
@@ -25663,16 +25663,16 @@
     "fr": "la philosophie",
     "en": "philosophy",
     "de": "die Philosophie",
-    "es": "la filosofÃ­a",
+    "es": "la filosofía",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2853",
-    "fr": "le mÃ©decin",
+    "fr": "le médecin",
     "en": "physician",
     "de": "der Arzt",
-    "es": "el mÃ©dico",
+    "es": "el médico",
     "type": "nom",
     "level": "B2"
   },
@@ -25699,7 +25699,7 @@
     "fr": "la pilule",
     "en": "pill",
     "de": "die Pille",
-    "es": "la pÃ­ldora",
+    "es": "la píldora",
     "type": "nom",
     "level": "B2"
   },
@@ -25707,17 +25707,17 @@
     "id": "word_2857",
     "fr": "le terrain / la hauteur (son)",
     "en": "pitch",
-    "de": "das Spielfeld / die TonhÃ¶he",
+    "de": "das Spielfeld / die Tonhöhe",
     "es": "el campo / el tono",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2858",
-    "fr": "la pitiÃ© / le dommage",
+    "fr": "la pitié / le dommage",
     "en": "pity",
     "de": "das Mitleid",
-    "es": "la piedad / la lÃ¡stima",
+    "es": "la piedad / la lástima",
     "type": "nom",
     "level": "B2"
   },
@@ -25726,13 +25726,13 @@
     "fr": "le placement / le stage",
     "en": "placement",
     "de": "die Vermittlung / das Praktikum",
-    "es": "la colocaciÃ³n",
+    "es": "la colocación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2860",
-    "fr": "uni / simple (pas compliquÃ©)",
+    "fr": "uni / simple (pas compliqué)",
     "en": "plain",
     "de": "schlicht",
     "es": "liso / simple",
@@ -25750,9 +25750,9 @@
   },
   {
     "id": "word_2862",
-    "fr": "la popularitÃ©",
+    "fr": "la popularité",
     "en": "popularity",
-    "de": "die PopularitÃ¤t",
+    "de": "die Popularität",
     "es": "la popularidad",
     "type": "nom",
     "level": "B2"
@@ -25762,7 +25762,7 @@
     "fr": "la portion",
     "en": "portion",
     "de": "die Portion",
-    "es": "la porciÃ³n",
+    "es": "la porción",
     "type": "nom",
     "level": "B2"
   },
@@ -25795,7 +25795,7 @@
   },
   {
     "id": "word_2867",
-    "fr": "possÃ©der",
+    "fr": "posséder",
     "en": "possess",
     "de": "besitzen",
     "es": "poseer",
@@ -25824,14 +25824,14 @@
     "id": "word_2870",
     "fr": "potentiellement",
     "en": "potentially",
-    "de": "mÃ¶glicherweise",
+    "de": "möglicherweise",
     "es": "potencialmente",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_2871",
-    "fr": "louer (fÃ©liciter)",
+    "fr": "louer (féliciter)",
     "en": "praise",
     "de": "loben",
     "es": "alabar",
@@ -25840,7 +25840,7 @@
   },
   {
     "id": "word_2872",
-    "fr": "prÃ©cieux",
+    "fr": "précieux",
     "en": "precious",
     "de": "wertvoll",
     "es": "precioso",
@@ -25849,16 +25849,16 @@
   },
   {
     "id": "word_2873",
-    "fr": "prÃ©cis",
+    "fr": "précis",
     "en": "precise",
-    "de": "prÃ¤zise",
+    "de": "präzise",
     "es": "preciso",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2874",
-    "fr": "prÃ©cisÃ©ment",
+    "fr": "précisément",
     "en": "precisely",
     "de": "genau",
     "es": "precisamente",
@@ -25867,7 +25867,7 @@
   },
   {
     "id": "word_2875",
-    "fr": "prÃ©visible",
+    "fr": "prévisible",
     "en": "predictable",
     "de": "vorhersehbar",
     "es": "predecible",
@@ -25876,7 +25876,7 @@
   },
   {
     "id": "word_2876",
-    "fr": "la prÃ©fÃ©rence",
+    "fr": "la préférence",
     "en": "preference",
     "de": "die Vorliebe",
     "es": "la preferencia",
@@ -25894,25 +25894,25 @@
   },
   {
     "id": "word_2878",
-    "fr": "la prÃ©paration",
+    "fr": "la préparation",
     "en": "preparation",
     "de": "die Vorbereitung",
-    "es": "la preparaciÃ³n",
+    "es": "la preparación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2879",
-    "fr": "la prÃ©sence",
+    "fr": "la présence",
     "en": "presence",
-    "de": "die PrÃ¤senz",
+    "de": "die Präsenz",
     "es": "la presencia",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2880",
-    "fr": "prÃ©server",
+    "fr": "préserver",
     "en": "preserve",
     "de": "erhalten",
     "es": "preservar",
@@ -25921,16 +25921,16 @@
   },
   {
     "id": "word_2881",
-    "fr": "prÃ©sidentiel",
+    "fr": "présidentiel",
     "en": "presidential",
-    "de": "prÃ¤sidentiell",
+    "de": "präsidentiell",
     "es": "presidencial",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2882",
-    "fr": "la fiertÃ©",
+    "fr": "la fierté",
     "en": "pride",
     "de": "der Stolz",
     "es": "el orgullo",
@@ -25941,7 +25941,7 @@
     "id": "word_2883",
     "fr": "principalement",
     "en": "primarily",
-    "de": "hauptsÃ¤chlich",
+    "de": "hauptsächlich",
     "es": "principalmente",
     "type": "adverbe",
     "level": "B2"
@@ -25975,7 +25975,7 @@
   },
   {
     "id": "word_2887",
-    "fr": "prÃ©alable",
+    "fr": "préalable",
     "en": "prior",
     "de": "vorherig",
     "es": "previo",
@@ -25984,25 +25984,25 @@
   },
   {
     "id": "word_2888",
-    "fr": "la prioritÃ©",
+    "fr": "la priorité",
     "en": "priority",
-    "de": "die PrioritÃ¤t",
+    "de": "die Priorität",
     "es": "la prioridad",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2889",
-    "fr": "la vie privÃ©e",
+    "fr": "la vie privée",
     "en": "privacy",
-    "de": "die PrivatsphÃ¤re",
+    "de": "die Privatsphäre",
     "es": "la privacidad",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2890",
-    "fr": "la probabilitÃ©",
+    "fr": "la probabilité",
     "en": "probability",
     "de": "die Wahrscheinlichkeit",
     "es": "la probabilidad",
@@ -26020,7 +26020,7 @@
   },
   {
     "id": "word_2892",
-    "fr": "la procÃ©dure",
+    "fr": "la procédure",
     "en": "procedure",
     "de": "das Verfahren",
     "es": "el procedimiento",
@@ -26029,7 +26029,7 @@
   },
   {
     "id": "word_2893",
-    "fr": "procÃ©der / avancer",
+    "fr": "procéder / avancer",
     "en": "proceed",
     "de": "fortfahren",
     "es": "proceder",
@@ -26050,7 +26050,7 @@
     "fr": "la programmation",
     "en": "programming",
     "de": "die Programmierung",
-    "es": "la programaciÃ³n",
+    "es": "la programación",
     "type": "nom",
     "level": "B2"
   },
@@ -26085,8 +26085,8 @@
     "id": "word_2899",
     "fr": "la promotion",
     "en": "promotion",
-    "de": "die BefÃ¶rderung",
-    "es": "la promociÃ³n",
+    "de": "die Beförderung",
+    "es": "la promoción",
     "type": "nom",
     "level": "B2"
   },
@@ -26113,7 +26113,7 @@
     "fr": "la proportion",
     "en": "proportion",
     "de": "die Proportion",
-    "es": "la proporciÃ³n",
+    "es": "la proporción",
     "type": "nom",
     "level": "B2"
   },
@@ -26149,16 +26149,16 @@
     "fr": "la protection",
     "en": "protection",
     "de": "der Schutz",
-    "es": "la protecciÃ³n",
+    "es": "la protección",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2907",
-    "fr": "la protÃ©ine",
+    "fr": "la protéine",
     "en": "protein",
     "de": "das Protein",
-    "es": "la proteÃ­na",
+    "es": "la proteína",
     "type": "nom",
     "level": "B2"
   },
@@ -26173,7 +26173,7 @@
   },
   {
     "id": "word_2909",
-    "fr": "prouvÃ©",
+    "fr": "prouvé",
     "en": "proven",
     "de": "erwiesen",
     "es": "probado",
@@ -26185,7 +26185,7 @@
     "fr": "psychologique",
     "en": "psychological",
     "de": "psychologisch",
-    "es": "psicolÃ³gico",
+    "es": "psicológico",
     "type": "adjectif",
     "level": "B2"
   },
@@ -26194,7 +26194,7 @@
     "fr": "le psychologue",
     "en": "psychologist",
     "de": "der Psychologe",
-    "es": "el psicÃ³logo",
+    "es": "el psicólogo",
     "type": "nom",
     "level": "B2"
   },
@@ -26203,7 +26203,7 @@
     "fr": "la psychologie",
     "en": "psychology",
     "de": "die Psychologie",
-    "es": "la psicologÃ­a",
+    "es": "la psicología",
     "type": "nom",
     "level": "B2"
   },
@@ -26211,26 +26211,26 @@
     "id": "word_2913",
     "fr": "la publication",
     "en": "publication",
-    "de": "die VerÃ¶ffentlichung",
-    "es": "la publicaciÃ³n",
+    "de": "die Veröffentlichung",
+    "es": "la publicación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2914",
-    "fr": "la publicitÃ© (attention mÃ©diatique)",
+    "fr": "la publicité (attention médiatique)",
     "en": "publicity",
-    "de": "die Ã–ffentlichkeit",
+    "de": "die Öffentlichkeit",
     "es": "la publicidad",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2915",
-    "fr": "l'Ã©dition (industrie)",
+    "fr": "l'édition (industrie)",
     "en": "publishing",
     "de": "das Verlagswesen",
-    "es": "la ediciÃ³n",
+    "es": "la edición",
     "type": "nom",
     "level": "B2"
   },
@@ -26245,9 +26245,9 @@
   },
   {
     "id": "word_2917",
-    "fr": "l'Ã©lÃ¨ve",
+    "fr": "l'élève",
     "en": "pupil",
-    "de": "der SchÃ¼ler",
+    "de": "der Schüler",
     "es": "el alumno",
     "type": "nom",
     "level": "B2"
@@ -26302,15 +26302,15 @@
     "fr": "la poursuite",
     "en": "pursuit",
     "de": "das Streben",
-    "es": "la bÃºsqueda / la persecuciÃ³n",
+    "es": "la búsqueda / la persecución",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2924",
-    "fr": "le casse-tÃªte / le puzzle",
+    "fr": "le casse-tête / le puzzle",
     "en": "puzzle",
-    "de": "das RÃ¤tsel",
+    "de": "das Rätsel",
     "es": "el rompecabezas",
     "type": "nom",
     "level": "B2"
@@ -26374,7 +26374,7 @@
     "fr": "les radiations / le rayonnement",
     "en": "radiation",
     "de": "die Strahlung",
-    "es": "la radiaciÃ³n",
+    "es": "la radiación",
     "type": "nom",
     "level": "B2"
   },
@@ -26389,9 +26389,9 @@
   },
   {
     "id": "word_2933",
-    "fr": "alÃ©atoire",
+    "fr": "aléatoire",
     "en": "random",
-    "de": "zufÃ¤llig",
+    "de": "zufällig",
     "es": "aleatorio",
     "type": "adjectif",
     "level": "B2"
@@ -26419,7 +26419,7 @@
     "fr": "rapide",
     "en": "rapid",
     "de": "schnell",
-    "es": "rÃ¡pido",
+    "es": "rápido",
     "type": "adjectif",
     "level": "B2"
   },
@@ -26428,7 +26428,7 @@
     "fr": "rapidement",
     "en": "rapidly",
     "de": "schnell",
-    "es": "rÃ¡pidamente",
+    "es": "rápidamente",
     "type": "adverbe",
     "level": "B2"
   },
@@ -26443,7 +26443,7 @@
   },
   {
     "id": "word_2939",
-    "fr": "rÃ©aliste",
+    "fr": "réaliste",
     "en": "realistic",
     "de": "realistisch",
     "es": "realista",
@@ -26454,7 +26454,7 @@
     "id": "word_2940",
     "fr": "raisonnable",
     "en": "reasonable",
-    "de": "vernÃ¼nftig",
+    "de": "vernünftig",
     "es": "razonable",
     "type": "adjectif",
     "level": "B2"
@@ -26488,19 +26488,19 @@
   },
   {
     "id": "word_2944",
-    "fr": "le rÃ©cepteur",
+    "fr": "le récepteur",
     "en": "receiver",
-    "de": "der EmpfÃ¤nger",
+    "de": "der Empfänger",
     "es": "el receptor",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2945",
-    "fr": "la rÃ©cession",
+    "fr": "la récession",
     "en": "recession",
     "de": "die Rezession",
-    "es": "la recesiÃ³n",
+    "es": "la recesión",
     "type": "nom",
     "level": "B2"
   },
@@ -26508,7 +26508,7 @@
     "id": "word_2946",
     "fr": "estimer / calculer",
     "en": "reckon",
-    "de": "schÃ¤tzen",
+    "de": "schätzen",
     "es": "calcular",
     "type": "verbe",
     "level": "B2"
@@ -26524,7 +26524,7 @@
   },
   {
     "id": "word_2948",
-    "fr": "rÃ©cupÃ©rer / se rÃ©tablir",
+    "fr": "récupérer / se rétablir",
     "en": "recover",
     "de": "sich erholen",
     "es": "recuperarse",
@@ -26533,10 +26533,10 @@
   },
   {
     "id": "word_2949",
-    "fr": "la rÃ©cupÃ©ration / le rÃ©tablissement",
+    "fr": "la récupération / le rétablissement",
     "en": "recovery",
     "de": "die Genesung",
-    "es": "la recuperaciÃ³n",
+    "es": "la recuperación",
     "type": "nom",
     "level": "B2"
   },
@@ -26551,10 +26551,10 @@
   },
   {
     "id": "word_2951",
-    "fr": "la rÃ©duction",
+    "fr": "la réduction",
     "en": "reduction",
     "de": "die Reduzierung",
-    "es": "la reducciÃ³n",
+    "es": "la reducción",
     "type": "nom",
     "level": "B2"
   },
@@ -26563,22 +26563,22 @@
     "fr": "l'arbitre",
     "en": "referee",
     "de": "der Schiedsrichter",
-    "es": "el Ã¡rbitro",
+    "es": "el árbitro",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2953",
-    "fr": "le rÃ©fugiÃ©",
+    "fr": "le réfugié",
     "en": "refugee",
-    "de": "der FlÃ¼chtling",
+    "de": "der Flüchtling",
     "es": "el refugiado",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2954",
-    "fr": "considÃ©rer",
+    "fr": "considérer",
     "en": "regard",
     "de": "betrachten",
     "es": "considerar",
@@ -26587,7 +26587,7 @@
   },
   {
     "id": "word_2955",
-    "fr": "rÃ©gional",
+    "fr": "régional",
     "en": "regional",
     "de": "regional",
     "es": "regional",
@@ -26623,7 +26623,7 @@
   },
   {
     "id": "word_2959",
-    "fr": "rÃ©guler / rÃ©glementer",
+    "fr": "réguler / réglementer",
     "en": "regulate",
     "de": "regulieren",
     "es": "regular",
@@ -26632,10 +26632,10 @@
   },
   {
     "id": "word_2960",
-    "fr": "le rÃ¨glement",
+    "fr": "le règlement",
     "en": "regulation",
     "de": "die Vorschrift",
-    "es": "la regulaciÃ³n",
+    "es": "la regulación",
     "type": "nom",
     "level": "B2"
   },
@@ -26643,7 +26643,7 @@
     "id": "word_2961",
     "fr": "renforcer",
     "en": "reinforce",
-    "de": "verstÃ¤rken",
+    "de": "verstärken",
     "es": "reforzar",
     "type": "verbe",
     "level": "B2"
@@ -26686,7 +26686,7 @@
   },
   {
     "id": "word_2966",
-    "fr": "soulagÃ©",
+    "fr": "soulagé",
     "en": "relieved",
     "de": "erleichtert",
     "es": "aliviado",
@@ -26749,7 +26749,7 @@
   },
   {
     "id": "word_2973",
-    "fr": "le reprÃ©sentant",
+    "fr": "le représentant",
     "en": "representative",
     "de": "der Vertreter",
     "es": "el representante",
@@ -26758,19 +26758,19 @@
   },
   {
     "id": "word_2974",
-    "fr": "reprÃ©sentatif",
+    "fr": "représentatif",
     "en": "representative",
-    "de": "reprÃ¤sentativ",
+    "de": "repräsentativ",
     "es": "representativo",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_2975",
-    "fr": "la rÃ©putation",
+    "fr": "la réputation",
     "en": "reputation",
     "de": "der Ruf",
-    "es": "la reputaciÃ³n",
+    "es": "la reputación",
     "type": "nom",
     "level": "B2"
   },
@@ -26794,10 +26794,10 @@
   },
   {
     "id": "word_2978",
-    "fr": "la recherche (Ã©tude)",
+    "fr": "la recherche (étude)",
     "en": "research",
     "de": "die Forschung",
-    "es": "la investigaciÃ³n",
+    "es": "la investigación",
     "type": "nom",
     "level": "B2"
   },
@@ -26812,7 +26812,7 @@
   },
   {
     "id": "word_2980",
-    "fr": "rÃ©server",
+    "fr": "réserver",
     "en": "reserve",
     "de": "reservieren",
     "es": "reservar",
@@ -26821,7 +26821,7 @@
   },
   {
     "id": "word_2981",
-    "fr": "le rÃ©sident",
+    "fr": "le résident",
     "en": "resident",
     "de": "der Bewohner",
     "es": "el residente",
@@ -26830,16 +26830,16 @@
   },
   {
     "id": "word_2982",
-    "fr": "dÃ©missionner",
+    "fr": "démissionner",
     "en": "resign",
-    "de": "zurÃ¼cktreten",
+    "de": "zurücktreten",
     "es": "renunciar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2983",
-    "fr": "rÃ©sister",
+    "fr": "résister",
     "en": "resist",
     "de": "widerstehen",
     "es": "resistir",
@@ -26848,18 +26848,18 @@
   },
   {
     "id": "word_2984",
-    "fr": "la rÃ©solution",
+    "fr": "la résolution",
     "en": "resolution",
-    "de": "die LÃ¶sung / der Vorsatz",
-    "es": "la resoluciÃ³n",
+    "de": "die Lösung / der Vorsatz",
+    "es": "la resolución",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2985",
-    "fr": "rÃ©soudre (problÃ¨me)",
+    "fr": "résoudre (problème)",
     "en": "resolve",
-    "de": "lÃ¶sen",
+    "de": "lösen",
     "es": "resolver",
     "type": "verbe",
     "level": "B2"
@@ -26886,7 +26886,7 @@
     "id": "word_2988",
     "fr": "restreindre",
     "en": "restrict",
-    "de": "einschrÃ¤nken",
+    "de": "einschränken",
     "es": "restringir",
     "type": "verbe",
     "level": "B2"
@@ -26895,23 +26895,23 @@
     "id": "word_2989",
     "fr": "la restriction",
     "en": "restriction",
-    "de": "die EinschrÃ¤nkung",
-    "es": "la restricciÃ³n",
+    "de": "die Einschränkung",
+    "es": "la restricción",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2990",
     "fr": "le CV (curriculum vitae)",
-    "en": "rÃ©sumÃ©",
+    "en": "résumé",
     "de": "der Lebenslauf",
-    "es": "el currÃ­culum",
+    "es": "el currículum",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2991",
-    "fr": "la vente au dÃ©tail",
+    "fr": "la vente au détail",
     "en": "retail",
     "de": "der Einzelhandel",
     "es": "la venta al por menor",
@@ -26932,22 +26932,22 @@
     "fr": "la retraite",
     "en": "retirement",
     "de": "der Ruhestand",
-    "es": "la jubilaciÃ³n",
+    "es": "la jubilación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2994",
-    "fr": "rÃ©vÃ©ler",
+    "fr": "révéler",
     "en": "reveal",
-    "de": "enthÃ¼llen",
+    "de": "enthüllen",
     "es": "revelar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_2995",
-    "fr": "le revenu (Ã‰tat/entreprise)",
+    "fr": "le revenu (État/entreprise)",
     "en": "revenue",
     "de": "die Einnahmen",
     "es": "los ingresos",
@@ -26956,25 +26956,25 @@
   },
   {
     "id": "word_2996",
-    "fr": "la rÃ©vision",
+    "fr": "la révision",
     "en": "revision",
-    "de": "die Ãœberarbeitung",
-    "es": "la revisiÃ³n",
+    "de": "die Überarbeitung",
+    "es": "la revisión",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2997",
-    "fr": "la rÃ©volution",
+    "fr": "la révolution",
     "en": "revolution",
     "de": "die Revolution",
-    "es": "la revoluciÃ³n",
+    "es": "la revolución",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_2998",
-    "fr": "la rÃ©compense",
+    "fr": "la récompense",
     "en": "reward",
     "de": "die Belohnung",
     "es": "la recompensa",
@@ -26983,7 +26983,7 @@
   },
   {
     "id": "word_2999",
-    "fr": "rÃ©compenser",
+    "fr": "récompenser",
     "en": "reward",
     "de": "belohnen",
     "es": "recompensar",
@@ -27001,7 +27001,7 @@
   },
   {
     "id": "word_3001",
-    "fr": "dÃ©barrassÃ© de",
+    "fr": "débarrassé de",
     "en": "rid",
     "de": "losgeworden",
     "es": "librado (de)",
@@ -27012,14 +27012,14 @@
     "id": "word_3002",
     "fr": "ridicule",
     "en": "ridiculous",
-    "de": "lÃ¤cherlich",
-    "es": "ridÃ­culo",
+    "de": "lächerlich",
+    "es": "ridículo",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_3003",
-    "fr": "risquÃ©",
+    "fr": "risqué",
     "en": "risky",
     "de": "riskant",
     "es": "arriesgado",
@@ -27046,7 +27046,7 @@
   },
   {
     "id": "word_3006",
-    "fr": "le vol (Ã  main armÃ©e)",
+    "fr": "le vol (à main armée)",
     "en": "robbery",
     "de": "der Raub",
     "es": "el robo",
@@ -27055,7 +27055,7 @@
   },
   {
     "id": "word_3007",
-    "fr": "la fusÃ©e",
+    "fr": "la fusée",
     "en": "rocket",
     "de": "die Rakete",
     "es": "el cohete",
@@ -27076,7 +27076,7 @@
     "fr": "la racine",
     "en": "root",
     "de": "die Wurzel",
-    "es": "la raÃ­z",
+    "es": "la raíz",
     "type": "nom",
     "level": "B2"
   },
@@ -27091,9 +27091,9 @@
   },
   {
     "id": "word_3011",
-    "fr": "approximativement / grossiÃ¨rement",
+    "fr": "approximativement / grossièrement",
     "en": "roughly",
-    "de": "ungefÃ¤hr",
+    "de": "ungefähr",
     "es": "aproximadamente",
     "type": "adverbe",
     "level": "B2"
@@ -27129,14 +27129,14 @@
     "id": "word_3015",
     "fr": "rural",
     "en": "rural",
-    "de": "lÃ¤ndlich",
+    "de": "ländlich",
     "es": "rural",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_3016",
-    "fr": "se prÃ©cipiter",
+    "fr": "se précipiter",
     "en": "rush",
     "de": "eilen",
     "es": "apresurarse",
@@ -27148,7 +27148,7 @@
     "fr": "le satellite",
     "en": "satellite",
     "de": "der Satellit",
-    "es": "el satÃ©lite",
+    "es": "el satélite",
     "type": "nom",
     "level": "B2"
   },
@@ -27157,7 +27157,7 @@
     "fr": "la satisfaction",
     "en": "satisfaction",
     "de": "die Zufriedenheit",
-    "es": "la satisfacciÃ³n",
+    "es": "la satisfacción",
     "type": "nom",
     "level": "B2"
   },
@@ -27181,7 +27181,7 @@
   },
   {
     "id": "word_3021",
-    "fr": "l'Ã©conomie (argent mis de cÃ´tÃ©)",
+    "fr": "l'économie (argent mis de côté)",
     "en": "saving",
     "de": "die Ersparnis",
     "es": "el ahorro",
@@ -27190,9 +27190,9 @@
   },
   {
     "id": "word_3022",
-    "fr": "l'Ã©chelle / la balance",
+    "fr": "l'échelle / la balance",
     "en": "scale",
-    "de": "die Waage / der MaÃŸstab",
+    "de": "die Waage / der Maßstab",
     "es": "la escala",
     "type": "nom",
     "level": "B2"
@@ -27202,7 +27202,7 @@
     "fr": "le scandale",
     "en": "scandal",
     "de": "der Skandal",
-    "es": "el escÃ¡ndalo",
+    "es": "el escándalo",
     "type": "nom",
     "level": "B2"
   },
@@ -27217,7 +27217,7 @@
   },
   {
     "id": "word_3025",
-    "fr": "l'Ã©rudit / le boursier",
+    "fr": "l'érudit / le boursier",
     "en": "scholar",
     "de": "der Gelehrte",
     "es": "el erudito",
@@ -27226,7 +27226,7 @@
   },
   {
     "id": "word_3026",
-    "fr": "la bourse d'Ã©tudes",
+    "fr": "la bourse d'études",
     "en": "scholarship",
     "de": "das Stipendium",
     "es": "la beca",
@@ -27253,10 +27253,10 @@
   },
   {
     "id": "word_3029",
-    "fr": "le dÃ©pistage / la projection",
+    "fr": "le dépistage / la projection",
     "en": "screening",
-    "de": "das Screening / die VorfÃ¼hrung",
-    "es": "la proyecciÃ³n / el cribado",
+    "de": "das Screening / die Vorführung",
+    "es": "la proyección / el cribado",
     "type": "nom",
     "level": "B2"
   },
@@ -27271,7 +27271,7 @@
   },
   {
     "id": "word_3031",
-    "fr": "sÃ©curiser / obtenir",
+    "fr": "sécuriser / obtenir",
     "en": "secure",
     "de": "sichern",
     "es": "asegurar",
@@ -27298,19 +27298,19 @@
   },
   {
     "id": "word_3034",
-    "fr": "sÃ©lectionner",
+    "fr": "sélectionner",
     "en": "select",
-    "de": "auswÃ¤hlen",
+    "de": "auswählen",
     "es": "seleccionar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_3035",
-    "fr": "la sÃ©lection",
+    "fr": "la sélection",
     "en": "selection",
     "de": "die Auswahl",
-    "es": "la selecciÃ³n",
+    "es": "la selección",
     "type": "nom",
     "level": "B2"
   },
@@ -27325,7 +27325,7 @@
   },
   {
     "id": "word_3037",
-    "fr": "le sÃ©minaire",
+    "fr": "le séminaire",
     "en": "seminar",
     "de": "das Seminar",
     "es": "el seminario",
@@ -27334,7 +27334,7 @@
   },
   {
     "id": "word_3038",
-    "fr": "supÃ©rieur / aÃ®nÃ©",
+    "fr": "supérieur / aîné",
     "en": "senior",
     "de": "senior",
     "es": "mayor / superior",
@@ -27352,7 +27352,7 @@
   },
   {
     "id": "word_3040",
-    "fr": "la sÃ©quence",
+    "fr": "la séquence",
     "en": "sequence",
     "de": "die Sequenz",
     "es": "la secuencia",
@@ -27364,22 +27364,22 @@
     "fr": "la session",
     "en": "session",
     "de": "die Sitzung",
-    "es": "la sesiÃ³n",
+    "es": "la sesión",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_3042",
-    "fr": "rÃ©gler / s'installer",
+    "fr": "régler / s'installer",
     "en": "settle",
-    "de": "siedeln / klÃ¤ren",
+    "de": "siedeln / klären",
     "es": "establecerse / resolver",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_3043",
-    "fr": "le colon (qui s'Ã©tablit)",
+    "fr": "le colon (qui s'établit)",
     "en": "settler",
     "de": "der Siedler",
     "es": "el colono",
@@ -27388,7 +27388,7 @@
   },
   {
     "id": "word_3044",
-    "fr": "sÃ©vÃ¨re / grave",
+    "fr": "sévère / grave",
     "en": "severe",
     "de": "schwer",
     "es": "severo",
@@ -27397,7 +27397,7 @@
   },
   {
     "id": "word_3045",
-    "fr": "sÃ©vÃ¨rement",
+    "fr": "sévèrement",
     "en": "severely",
     "de": "schwerwiegend",
     "es": "severamente",
@@ -27415,7 +27415,7 @@
   },
   {
     "id": "word_3047",
-    "fr": "l'ombre (espace ombragÃ©)",
+    "fr": "l'ombre (espace ombragé)",
     "en": "shade",
     "de": "der Schatten",
     "es": "la sombra",
@@ -27424,7 +27424,7 @@
   },
   {
     "id": "word_3048",
-    "fr": "l'ombre (forme projetÃ©e)",
+    "fr": "l'ombre (forme projetée)",
     "en": "shadow",
     "de": "der Schatten",
     "es": "la sombra (silueta)",
@@ -27445,7 +27445,7 @@
     "fr": "la honte",
     "en": "shame",
     "de": "die Schande",
-    "es": "la vergÃ¼enza",
+    "es": "la vergüenza",
     "type": "nom",
     "level": "B2"
   },
@@ -27471,7 +27471,7 @@
     "id": "word_3053",
     "fr": "la fusillade / le tournage",
     "en": "shooting",
-    "de": "die SchieÃŸerei",
+    "de": "die Schießerei",
     "es": "el tiroteo / el rodaje",
     "type": "nom",
     "level": "B2"
@@ -27487,7 +27487,7 @@
   },
   {
     "id": "word_3055",
-    "fr": "Ã  court terme",
+    "fr": "à court terme",
     "en": "short-term",
     "de": "kurzfristig",
     "es": "a corto plazo",
@@ -27496,7 +27496,7 @@
   },
   {
     "id": "word_3056",
-    "fr": "la pÃ©nurie",
+    "fr": "la pénurie",
     "en": "shortage",
     "de": "der Mangel",
     "es": "la escasez",
@@ -27505,16 +27505,16 @@
   },
   {
     "id": "word_3057",
-    "fr": "bientÃ´t / sous peu",
+    "fr": "bientôt / sous peu",
     "en": "shortly",
-    "de": "in KÃ¼rze",
+    "de": "in Kürze",
     "es": "en breve",
     "type": "adverbe",
     "level": "B2"
   },
   {
     "id": "word_3058",
-    "fr": "le frÃ¨re ou la sÅ“ur",
+    "fr": "le frère ou la sœur",
     "en": "sibling",
     "de": "das Geschwister",
     "es": "el hermano o hermana",
@@ -27525,7 +27525,7 @@
     "id": "word_3059",
     "fr": "le trottoir (US)",
     "en": "sidewalk",
-    "de": "der BÃ¼rgersteig",
+    "de": "der Bürgersteig",
     "es": "la acera",
     "type": "nom",
     "level": "B2"
@@ -27586,7 +27586,7 @@
   },
   {
     "id": "word_3066",
-    "fr": "sincÃ¨re",
+    "fr": "sincère",
     "en": "sincere",
     "de": "aufrichtig",
     "es": "sincero",
@@ -27595,7 +27595,7 @@
   },
   {
     "id": "word_3067",
-    "fr": "qualifiÃ© / habile",
+    "fr": "qualifié / habile",
     "en": "skilled",
     "de": "qualifiziert",
     "es": "experto",
@@ -27604,10 +27604,10 @@
   },
   {
     "id": "word_3068",
-    "fr": "le crÃ¢ne",
+    "fr": "le crâne",
     "en": "skull",
-    "de": "der SchÃ¤del",
-    "es": "el crÃ¡neo",
+    "de": "der Schädel",
+    "es": "el cráneo",
     "type": "nom",
     "level": "B2"
   },
@@ -27631,7 +27631,7 @@
   },
   {
     "id": "word_3071",
-    "fr": "lÃ©ger / infime",
+    "fr": "léger / infime",
     "en": "slight",
     "de": "leicht",
     "es": "ligero",
@@ -27640,7 +27640,7 @@
   },
   {
     "id": "word_3072",
-    "fr": "glisser / dÃ©raper",
+    "fr": "glisser / déraper",
     "en": "slip",
     "de": "ausrutschen",
     "es": "resbalar",
@@ -27685,7 +27685,7 @@
   },
   {
     "id": "word_3077",
-    "fr": "d'une maniÃ¨re ou d'une autre",
+    "fr": "d'une manière ou d'une autre",
     "en": "somehow",
     "de": "irgendwie",
     "es": "de alguna manera",
@@ -27694,10 +27694,10 @@
   },
   {
     "id": "word_3078",
-    "fr": "un jour (futur/passÃ©)",
+    "fr": "un jour (futur/passé)",
     "en": "sometime",
     "de": "irgendwann",
-    "es": "algÃºn dÃ­a",
+    "es": "algún día",
     "type": "adverbe",
     "level": "B2"
   },
@@ -27712,7 +27712,7 @@
   },
   {
     "id": "word_3080",
-    "fr": "sophistiquÃ©",
+    "fr": "sophistiqué",
     "en": "sophisticated",
     "de": "anspruchsvoll",
     "es": "sofisticado",
@@ -27721,7 +27721,7 @@
   },
   {
     "id": "word_3081",
-    "fr": "l'Ã¢me",
+    "fr": "l'âme",
     "en": "soul",
     "de": "die Seele",
     "es": "el alma",
@@ -27741,14 +27741,14 @@
     "id": "word_3083",
     "fr": "de rechange / libre",
     "en": "spare",
-    "de": "Ã¼berschÃ¼ssig / Ersatz-",
+    "de": "überschüssig / Ersatz-",
     "es": "de repuesto",
     "type": "adjectif",
     "level": "B2"
   },
   {
     "id": "word_3084",
-    "fr": "se spÃ©cialiser",
+    "fr": "se spécialiser",
     "en": "specialise",
     "de": "sich spezialisieren",
     "es": "especializarse",
@@ -27757,7 +27757,7 @@
   },
   {
     "id": "word_3085",
-    "fr": "le spÃ©cialiste",
+    "fr": "le spécialiste",
     "en": "specialist",
     "de": "der Spezialist",
     "es": "el especialista",
@@ -27766,7 +27766,7 @@
   },
   {
     "id": "word_3086",
-    "fr": "l'espÃ¨ce",
+    "fr": "l'espèce",
     "en": "species",
     "de": "die Art",
     "es": "la especie",
@@ -27775,7 +27775,7 @@
   },
   {
     "id": "word_3087",
-    "fr": "spÃ©cifier",
+    "fr": "spécifier",
     "en": "specify",
     "de": "angeben",
     "es": "especificar",
@@ -27786,7 +27786,7 @@
     "id": "word_3088",
     "fr": "spectaculaire",
     "en": "spectacular",
-    "de": "spektakulÃ¤r",
+    "de": "spektakulär",
     "es": "espectacular",
     "type": "adjectif",
     "level": "B2"
@@ -27802,7 +27802,7 @@
   },
   {
     "id": "word_3090",
-    "fr": "spÃ©culer",
+    "fr": "spéculer",
     "en": "speculate",
     "de": "spekulieren",
     "es": "especular",
@@ -27811,18 +27811,18 @@
   },
   {
     "id": "word_3091",
-    "fr": "la spÃ©culation",
+    "fr": "la spéculation",
     "en": "speculation",
     "de": "die Spekulation",
-    "es": "la especulaciÃ³n",
+    "es": "la especulación",
     "type": "nom",
     "level": "B2"
   },
   {
     "id": "word_3092",
-    "fr": "l'Ã©pice",
+    "fr": "l'épice",
     "en": "spice",
-    "de": "das GewÃ¼rz",
+    "de": "das Gewürz",
     "es": "la especia",
     "type": "nom",
     "level": "B2"
@@ -27831,7 +27831,7 @@
     "id": "word_3093",
     "fr": "renverser (liquide)",
     "en": "spill",
-    "de": "verschÃ¼tten",
+    "de": "verschütten",
     "es": "derramar",
     "type": "verbe",
     "level": "B2"
@@ -27847,7 +27847,7 @@
   },
   {
     "id": "word_3095",
-    "fr": "en dÃ©pit de",
+    "fr": "en dépit de",
     "en": "in spite of",
     "de": "trotz",
     "es": "a pesar de",
@@ -27865,7 +27865,7 @@
   },
   {
     "id": "word_3097",
-    "fr": "gÃ¢cher / gÃ¢ter",
+    "fr": "gâcher / gâter",
     "en": "spoil",
     "de": "verderben",
     "es": "estropear",
@@ -27976,7 +27976,7 @@
     "fr": "la statistique",
     "en": "statistic",
     "de": "die Statistik",
-    "es": "la estadÃ­stica",
+    "es": "la estadística",
     "type": "nom",
     "level": "B2"
   },
@@ -27991,7 +27991,7 @@
   },
   {
     "id": "word_3111",
-    "fr": "rÃ©guliÃ¨rement",
+    "fr": "régulièrement",
     "en": "steadily",
     "de": "stetig",
     "es": "constantemente",
@@ -28000,7 +28000,7 @@
   },
   {
     "id": "word_3112",
-    "fr": "constant / rÃ©gulier",
+    "fr": "constant / régulier",
     "en": "steady",
     "de": "stetig",
     "es": "estable",
@@ -28048,7 +28048,7 @@
     "fr": "rigide / raide",
     "en": "stiff",
     "de": "steif",
-    "es": "rÃ­gido",
+    "es": "rígido",
     "type": "adjectif",
     "level": "B2"
   },
@@ -28083,14 +28083,14 @@
     "id": "word_3121",
     "fr": "renforcer",
     "en": "strengthen",
-    "de": "stÃ¤rken",
+    "de": "stärken",
     "es": "fortalecer",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_3122",
-    "fr": "s'Ã©tirer / Ã©tendre",
+    "fr": "s'étirer / étendre",
     "en": "stretch",
     "de": "strecken",
     "es": "estirar",
@@ -28117,7 +28117,7 @@
   },
   {
     "id": "word_3125",
-    "fr": "la grÃ¨ve",
+    "fr": "la grève",
     "en": "strike",
     "de": "der Streik",
     "es": "la huelga",
@@ -28144,7 +28144,7 @@
   },
   {
     "id": "word_3128",
-    "fr": "l'accident vasculaire cÃ©rÃ©bral / le coup",
+    "fr": "l'accident vasculaire cérébral / le coup",
     "en": "stroke",
     "de": "der Schlaganfall",
     "es": "el derrame cerebral / el golpe",
@@ -28155,14 +28155,14 @@
     "id": "word_3129",
     "fr": "lutter",
     "en": "struggle",
-    "de": "kÃ¤mpfen",
+    "de": "kämpfen",
     "es": "luchar",
     "type": "verbe",
     "level": "B2"
   },
   {
     "id": "word_3130",
-    "fr": "superbe / Ã©blouissant",
+    "fr": "superbe / éblouissant",
     "en": "stunning",
     "de": "atemberaubend",
     "es": "deslumbrante",
@@ -28237,7 +28237,7 @@
     "fr": "super",
     "en": "super",
     "de": "super",
-    "es": "sÃºper",
+    "es": "súper",
     "type": "adjectif",
     "level": "B2"
   },
@@ -28255,7 +28255,7 @@
     "fr": "la chirurgie",
     "en": "surgery",
     "de": "die Operation",
-    "es": "la cirugÃ­a",
+    "es": "la cirugía",
     "type": "nom",
     "level": "B2"
   },
@@ -28281,7 +28281,7 @@
     "id": "word_3143",
     "fr": "la survie",
     "en": "survival",
-    "de": "das Ãœberleben",
+    "de": "das Überleben",
     "es": "la supervivencia",
     "type": "nom",
     "level": "B2"
@@ -28290,7 +28290,7 @@
     "id": "word_3144",
     "fr": "le survivant",
     "en": "survivor",
-    "de": "der Ãœberlebende",
+    "de": "der Überlebende",
     "es": "el sobreviviente",
     "type": "nom",
     "level": "B2"
@@ -28299,7 +28299,7 @@
     "id": "word_3145",
     "fr": "le suspect",
     "en": "suspect",
-    "de": "der VerdÃ¤chtige",
+    "de": "der Verdächtige",
     "es": "el sospechoso",
     "type": "nom",
     "level": "B2"
@@ -28308,7 +28308,7 @@
     "id": "word_3146",
     "fr": "suspecter / se douter",
     "en": "suspect",
-    "de": "verdÃ¤chtigen",
+    "de": "verdächtigen",
     "es": "sospechar",
     "type": "verbe",
     "level": "B2"
@@ -28324,7 +28324,7 @@
   },
   {
     "id": "word_3148",
-    "fr": "la durabilitÃ©",
+    "fr": "la durabilité",
     "en": "sustainability",
     "de": "die Nachhaltigkeit",
     "es": "la sostenibilidad",
@@ -28353,7 +28353,7 @@
     "id": "word_3151",
     "fr": "jurer",
     "en": "swear",
-    "de": "schwÃ¶ren",
+    "de": "schwören",
     "es": "jurar",
     "type": "verbe",
     "level": "B2"
@@ -28372,7 +28372,7 @@
     "fr": "le symbole",
     "en": "symbol",
     "de": "das Symbol",
-    "es": "el sÃ­mbolo",
+    "es": "el símbolo",
     "type": "nom",
     "level": "B2"
   },
@@ -28389,7 +28389,7 @@
     "id": "word_3155",
     "fr": "compatissant",
     "en": "sympathetic",
-    "de": "mitfÃ¼hlend",
+    "de": "mitfühlend",
     "es": "compasivo",
     "type": "adjectif",
     "level": "B2"
@@ -28398,8 +28398,8 @@
     "id": "word_3156",
     "fr": "la compassion / la sympathie",
     "en": "sympathy",
-    "de": "das MitgefÃ¼hl",
-    "es": "la simpatÃ­a",
+    "de": "das Mitgefühl",
+    "es": "la simpatía",
     "type": "nom",
     "level": "B2"
   },
@@ -36203,7 +36203,7 @@
   "fr":"intersection",
   "en":"intersection",
   "de":"Kreuzung",
-  "es":"intersecciÃ³n",
+  "es":"intersección",
   "type":"nom",
   "level":"C1"
 },
@@ -36221,7 +36221,7 @@
   "fr":"intervention",
   "en":"intervention",
   "de":"Eingriff",
-  "es":"intervenciÃ³n",
+  "es":"intervención",
   "type":"nom",
   "level":"C1"
 },
@@ -36230,7 +36230,7 @@
   "fr":"intime",
   "en":"intimate",
   "de":"intim",
-  "es":"Ã­ntimo",
+  "es":"íntimo",
   "type":"adjectif",
   "level":"C1"
 },
@@ -36254,7 +36254,7 @@
 },
   {
   "id":"word_4029",
-  "fr":"enquÃªteur",
+  "fr":"enquêteur",
   "en":"investigator",
   "de":"Ermittler",
   "es":"investigador",
@@ -36284,7 +36284,7 @@
   "fr":"implication",
   "en":"involvement",
   "de":"Beteiligung",
-  "es":"implicaciÃ³n",
+  "es":"implicación",
   "type":"nom",
   "level":"C1"
 },
@@ -36293,7 +36293,7 @@
   "fr":"ironique",
   "en":"ironic",
   "de":"ironisch",
-  "es":"irÃ³nico",
+  "es":"irónico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -36302,7 +36302,7 @@
   "fr":"ironiquement",
   "en":"ironically",
   "de":"ironischerweise",
-  "es":"irÃ³nicamente",
+  "es":"irónicamente",
   "type":"adverbe",
   "level":"C1"
 },
@@ -36311,7 +36311,7 @@
   "fr":"ironie",
   "en":"irony",
   "de":"Ironie",
-  "es":"ironÃ­a",
+  "es":"ironía",
   "type":"nom",
   "level":"C1"
 },
@@ -36347,7 +36347,7 @@
   "fr":"juridiction",
   "en":"jurisdiction",
   "de":"Gerichtsbarkeit",
-  "es":"jurisdicciÃ³n",
+  "es":"jurisdicción",
   "type":"nom",
   "level":"C1"
 },
@@ -36365,13 +36365,13 @@
   "fr":"justification",
   "en":"justification",
   "de":"Rechtfertigung",
-  "es":"justificaciÃ³n",
+  "es":"justificación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4042",
-  "fr":"propriÃ©taire",
+  "fr":"propriétaire",
   "en":"landlord",
   "de":"Vermieter",
   "es":"propietario",
@@ -36380,7 +36380,7 @@
 },
   {
   "id":"word_4043",
-  "fr":"point de repÃ¨re",
+  "fr":"point de repère",
   "en":"landmark",
   "de":"Wahrzeichen",
   "es":"monumento",
@@ -36391,16 +36391,16 @@
   "id":"word_4044",
   "fr":"genoux",
   "en":"lap",
-  "de":"SchoÃŸ",
+  "de":"Schoß",
   "es":"regazo",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4045",
-  "fr":"Ã  grande Ã©chelle",
+  "fr":"à grande échelle",
   "en":"large-scale",
-  "de":"groÃŸflÃ¤chig",
+  "de":"großflächig",
   "es":"a gran escala",
   "type":"adjectif",
   "level":"C1"
@@ -36410,13 +36410,13 @@
   "fr":"dernier",
   "en":"latter",
   "de":"letzterer",
-  "es":"Ãºltimo",
+  "es":"último",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4047",
-  "fr":"lÃ©gislateur",
+  "fr":"législateur",
   "en":"lawmaker",
   "de":"Gesetzgeber",
   "es":"legislador",
@@ -36428,13 +36428,13 @@
   "fr":"pelouse",
   "en":"lawn",
   "de":"Rasen",
-  "es":"cÃ©sped",
+  "es":"césped",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4049",
-  "fr":"procÃ¨s",
+  "fr":"procès",
   "en":"lawsuit",
   "de":"Klage",
   "es":"demanda",
@@ -36446,7 +36446,7 @@
   "fr":"disposition",
   "en":"layout",
   "de":"Layout",
-  "es":"diseÃ±o",
+  "es":"diseño",
   "type":"nom",
   "level":"C1"
 },
@@ -36470,7 +36470,7 @@
 },
   {
   "id":"word_4053",
-  "fr":"hÃ©ritage",
+  "fr":"héritage",
   "en":"legacy",
   "de":"Erbe",
   "es":"legado",
@@ -36479,25 +36479,25 @@
 },
   {
   "id":"word_4054",
-  "fr":"lÃ©gendaire",
+  "fr":"légendaire",
   "en":"legendary",
-  "de":"legendÃ¤r",
+  "de":"legendär",
   "es":"legendario",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4055",
-  "fr":"lÃ©gislation",
+  "fr":"législation",
   "en":"legislation",
   "de":"Gesetzgebung",
-  "es":"legislaciÃ³n",
+  "es":"legislación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4056",
-  "fr":"lÃ©gislatif",
+  "fr":"législatif",
   "en":"legislative",
   "de":"legislativ",
   "es":"legislativo",
@@ -36506,7 +36506,7 @@
 },
   {
   "id":"word_4057",
-  "fr":"assemblÃ©e lÃ©gislative",
+  "fr":"assemblée législative",
   "en":"legislature",
   "de":"Legislative",
   "es":"legislatura",
@@ -36515,10 +36515,10 @@
 },
   {
   "id":"word_4058",
-  "fr":"lÃ©gitime",
+  "fr":"légitime",
   "en":"legitimate",
   "de":"legitim",
-  "es":"legÃ­timo",
+  "es":"legítimo",
   "type":"adjectif",
   "level":"C1"
 },
@@ -36553,7 +36553,7 @@
   "id":"word_4062",
   "fr":"mortel",
   "en":"lethal",
-  "de":"tÃ¶dlich",
+  "de":"tödlich",
   "es":"letal",
   "type":"adjectif",
   "level":"C1"
@@ -36569,7 +36569,7 @@
 },
   {
   "id":"word_4064",
-  "fr":"responsabilitÃ©",
+  "fr":"responsabilité",
   "en":"liability",
   "de":"Haftung",
   "es":"responsabilidad",
@@ -36578,7 +36578,7 @@
 },
   {
   "id":"word_4065",
-  "fr":"libÃ©ral",
+  "fr":"libéral",
   "en":"liberal",
   "de":"liberal",
   "es":"liberal",
@@ -36587,16 +36587,16 @@
 },
   {
   "id":"word_4066",
-  "fr":"libÃ©ration",
+  "fr":"libération",
   "en":"liberation",
   "de":"Befreiung",
-  "es":"liberaciÃ³n",
+  "es":"liberación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4067",
-  "fr":"libertÃ©",
+  "fr":"liberté",
   "en":"liberty",
   "de":"Freiheit",
   "es":"libertad",
@@ -36614,7 +36614,7 @@
 },
   {
   "id":"word_4069",
-  "fr":"probabilitÃ©",
+  "fr":"probabilité",
   "en":"likelihood",
   "de":"Wahrscheinlichkeit",
   "es":"probabilidad",
@@ -36625,14 +36625,14 @@
   "id":"word_4070",
   "fr":"membre",
   "en":"limb",
-  "de":"GliedmaÃŸ",
+  "de":"Gliedmaß",
   "es":"miembro",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4071",
-  "fr":"linÃ©aire",
+  "fr":"linéaire",
   "en":"linear",
   "de":"linear",
   "es":"lineal",
@@ -36644,7 +36644,7 @@
   "fr":"programmation",
   "en":"line-up",
   "de":"Aufstellung",
-  "es":"alineaciÃ³n",
+  "es":"alineación",
   "type":"nom",
   "level":"C1"
 },
@@ -36668,10 +36668,10 @@
 },
   {
   "id":"word_4075",
-  "fr":"alphabÃ©tisation",
+  "fr":"alphabétisation",
   "en":"literacy",
   "de":"Alphabetisierung",
-  "es":"alfabetizaciÃ³n",
+  "es":"alfabetización",
   "type":"nom",
   "level":"C1"
 },
@@ -36680,7 +36680,7 @@
   "fr":"hall",
   "en":"lobby",
   "de":"Lobby",
-  "es":"vestÃ­bulo",
+  "es":"vestíbulo",
   "type":"nom",
   "level":"C1"
 },
@@ -36689,7 +36689,7 @@
   "fr":"logique",
   "en":"logic",
   "de":"Logik",
-  "es":"lÃ³gica",
+  "es":"lógica",
   "type":"nom",
   "level":"C1"
 },
@@ -36697,7 +36697,7 @@
   "id":"word_4078",
   "fr":"de longue date",
   "en":"long-standing",
-  "de":"langjÃ¤hrig",
+  "de":"langjährig",
   "es":"de largo tiempo",
   "type":"adjectif",
   "level":"C1"
@@ -36706,7 +36706,7 @@
   "id":"word_4079",
   "fr":"de longue date",
   "en":"long-time",
-  "de":"langjÃ¤hrig",
+  "de":"langjährig",
   "es":"de mucho tiempo",
   "type":"adjectif",
   "level":"C1"
@@ -36731,9 +36731,9 @@
 },
   {
   "id":"word_4082",
-  "fr":"loyautÃ©",
+  "fr":"loyauté",
   "en":"loyalty",
-  "de":"LoyalitÃ¤t",
+  "de":"Loyalität",
   "es":"lealtad",
   "type":"nom",
   "level":"C1"
@@ -36752,16 +36752,16 @@
   "fr":"magique",
   "en":"magical",
   "de":"magisch",
-  "es":"mÃ¡gico",
+  "es":"mágico",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4085",
-  "fr":"magnÃ©tique",
+  "fr":"magnétique",
   "en":"magnetic",
   "de":"magnetisch",
-  "es":"magnÃ©tico",
+  "es":"magnético",
   "type":"adjectif",
   "level":"C1"
 },
@@ -36769,7 +36769,7 @@
   "id":"word_4086",
   "fr":"ampleur",
   "en":"magnitude",
-  "de":"AusmaÃŸ",
+  "de":"Ausmaß",
   "es":"magnitud",
   "type":"nom",
   "level":"C1"
@@ -36842,7 +36842,7 @@
   "fr":"manipulation",
   "en":"manipulation",
   "de":"Manipulation",
-  "es":"manipulaciÃ³n",
+  "es":"manipulación",
   "type":"nom",
   "level":"C1"
 },
@@ -36884,7 +36884,7 @@
 },
   {
   "id":"word_4099",
-  "fr":"marchÃ©",
+  "fr":"marché",
   "en":"marketplace",
   "de":"Marktplatz",
   "es":"mercado",
@@ -36902,10 +36902,10 @@
 },
   {
   "id":"word_4101",
-  "fr":"mathÃ©matique",
+  "fr":"mathématique",
   "en":"mathematical",
   "de":"mathematisch",
-  "es":"matemÃ¡tico",
+  "es":"matemático",
   "type":"adjectif",
   "level":"C1"
 },
@@ -36920,10 +36920,10 @@
 },
   {
   "id":"word_4103",
-  "fr":"rÃ©publique",
+  "fr":"république",
   "en":"republic (n)",
   "de":"Republik",
-  "es":"repÃºblica",
+  "es":"república",
   "type":"nom",
   "level":"C1"
 },
@@ -36931,14 +36931,14 @@
   "id":"word_4104",
   "fr":"ressembler",
   "en":"to resemble (v)",
-  "de":"Ã¤hneln",
+  "de":"ähneln",
   "es":"parecerse",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4105",
-  "fr":"rÃ©sider",
+  "fr":"résider",
   "en":"to reside (v)",
   "de":"wohnen",
   "es":"residir",
@@ -36947,7 +36947,7 @@
 },
   {
   "id":"word_4106",
-  "fr":"rÃ©sidence",
+  "fr":"résidence",
   "en":"residence (n)",
   "de":"Wohnsitz",
   "es":"residencia",
@@ -36956,7 +36956,7 @@
 },
   {
   "id":"word_4107",
-  "fr":"rÃ©sidentiel",
+  "fr":"résidentiel",
   "en":"residential (adj)",
   "de":"Wohn-",
   "es":"residencial",
@@ -36965,25 +36965,25 @@
 },
   {
   "id":"word_4108",
-  "fr":"rÃ©sidu",
+  "fr":"résidu",
   "en":"residue (n)",
-  "de":"RÃ¼ckstand",
+  "de":"Rückstand",
   "es":"residuo",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4109",
-  "fr":"dÃ©mission",
+  "fr":"démission",
   "en":"resignation (n)",
-  "de":"RÃ¼cktritt",
-  "es":"dimisiÃ³n",
+  "de":"Rücktritt",
+  "es":"dimisión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4110",
-  "fr":"rÃ©sistance",
+  "fr":"résistance",
   "en":"resistance (n)",
   "de":"Widerstand",
   "es":"resistencia",
@@ -37013,7 +37013,7 @@
   "fr":"restauration",
   "en":"restoration (n)",
   "de":"Restaurierung",
-  "es":"restauraciÃ³n",
+  "es":"restauración",
   "type":"nom",
   "level":"C1"
 },
@@ -37021,8 +37021,8 @@
   "id":"word_4114",
   "fr":"retenue",
   "en":"restraint (n)",
-  "de":"ZurÃ¼ckhaltung",
-  "es":"restricciÃ³n",
+  "de":"Zurückhaltung",
+  "es":"restricción",
   "type":"nom",
   "level":"C1"
 },
@@ -37039,26 +37039,26 @@
   "id":"word_4116",
   "fr":"retraite",
   "en":"retreat (n) / to retreat (v)",
-  "de":"RÃ¼ckzug",
+  "de":"Rückzug",
   "es":"retirada",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4117",
-  "fr":"rÃ©cupÃ©rer",
+  "fr":"récupérer",
   "en":"to retrieve (v)",
-  "de":"zurÃ¼ckholen",
+  "de":"zurückholen",
   "es":"recuperar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4118",
-  "fr":"rÃ©vÃ©lation",
+  "fr":"révélation",
   "en":"revelation (n)",
-  "de":"EnthÃ¼llung",
-  "es":"revelaciÃ³n",
+  "de":"Enthüllung",
+  "es":"revelación",
   "type":"nom",
   "level":"C1"
 },
@@ -37100,25 +37100,25 @@
 },
   {
   "id":"word_4123",
-  "fr":"rÃ©volutionnaire",
+  "fr":"révolutionnaire",
   "en":"revolutionary (adj / n)",
-  "de":"revolutionÃ¤r",
+  "de":"revolutionär",
   "es":"revolucionario",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4124",
-  "fr":"rhÃ©torique",
+  "fr":"rhétorique",
   "en":"rhetoric (n)",
   "de":"Rhetorik",
-  "es":"retÃ³rica",
+  "es":"retórica",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4125",
-  "fr":"Ã©meute",
+  "fr":"émeute",
   "en":"riot (n)",
   "de":"Aufstand",
   "es":"disturbio",
@@ -37127,9 +37127,9 @@
 },
   {
   "id":"word_4126",
-  "fr":"dÃ©chirer",
+  "fr":"déchirer",
   "en":"to rip (v)",
-  "de":"zerreiÃŸen",
+  "de":"zerreißen",
   "es":"rasgar",
   "type":"verbe",
   "level":"C1"
@@ -37163,9 +37163,9 @@
 },
   {
   "id":"word_4130",
-  "fr":"dÃ©butant",
+  "fr":"débutant",
   "en":"rookie (n)",
-  "de":"AnfÃ¤nger",
+  "de":"Anfänger",
   "es":"novato",
   "type":"nom",
   "level":"C1"
@@ -37193,13 +37193,13 @@
   "fr":"rotation",
   "en":"rotation (n)",
   "de":"Rotation",
-  "es":"rotaciÃ³n",
+  "es":"rotación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4134",
-  "fr":"dÃ©cision",
+  "fr":"décision",
   "en":"ruling (n / adj)",
   "de":"Urteil",
   "es":"fallo",
@@ -37210,14 +37210,14 @@
   "id":"word_4135",
   "fr":"rumeur",
   "en":"rumour (n)",
-  "de":"GerÃ¼cht",
+  "de":"Gerücht",
   "es":"rumor",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4136",
-  "fr":"sacrÃ©",
+  "fr":"sacré",
   "en":"sacred (adj)",
   "de":"heilig",
   "es":"sagrado",
@@ -37256,7 +37256,7 @@
   "fr":"sanction",
   "en":"sanction (n)",
   "de":"Sanktion",
-  "es":"sanciÃ³n",
+  "es":"sanción",
   "type":"nom",
   "level":"C1"
 },
@@ -37271,7 +37271,7 @@
 },
   {
   "id":"word_4142",
-  "fr":"scÃ©nario",
+  "fr":"scénario",
   "en":"scenario (n)",
   "de":"Szenario",
   "es":"escenario",
@@ -37280,7 +37280,7 @@
 },
   {
   "id":"word_4143",
-  "fr":"Ã©parpillÃ©",
+  "fr":"éparpillé",
   "en":"scattered (adj)",
   "de":"verstreut",
   "es":"disperso",
@@ -37289,7 +37289,7 @@
 },
   {
   "id":"word_4144",
-  "fr":"portÃ©e",
+  "fr":"portée",
   "en":"scope (n)",
   "de":"Umfang",
   "es":"alcance",
@@ -37309,7 +37309,7 @@
   "id":"word_4146",
   "fr":"examen minutieux",
   "en":"scrutiny (n)",
-  "de":"ÃœberprÃ¼fung",
+  "de":"Überprüfung",
   "es":"escrutinio",
   "type":"nom",
   "level":"C1"
@@ -37325,7 +37325,7 @@
 },
   {
   "id":"word_4148",
-  "fr":"deuxiÃ¨mement",
+  "fr":"deuxièmement",
   "en":"secondly (adv)",
   "de":"zweitens",
   "es":"en segundo lugar",
@@ -37334,9 +37334,9 @@
 },
   {
   "id":"word_4149",
-  "fr":"laÃ¯c",
+  "fr":"laïc",
   "en":"secular (adj)",
-  "de":"sÃ¤kular",
+  "de":"säkular",
   "es":"secular",
   "type":"adjectif",
   "level":"C1"
@@ -37379,7 +37379,7 @@
 },
   {
   "id":"word_4154",
-  "fr":"sÃ©lectif",
+  "fr":"sélectif",
   "en":"selective (adj)",
   "de":"selektiv",
   "es":"selectivo",
@@ -37391,15 +37391,15 @@
   "fr":"sensation",
   "en":"sensation (n)",
   "de":"Sensation",
-  "es":"sensaciÃ³n",
+  "es":"sensación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4156",
-  "fr":"sensibilitÃ©",
+  "fr":"sensibilité",
   "en":"sensitivity (n)",
-  "de":"SensibilitÃ¤t",
+  "de":"Sensibilität",
   "es":"sensibilidad",
   "type":"nom",
   "level":"C1"
@@ -37415,16 +37415,16 @@
 },
   {
   "id":"word_4158",
-  "fr":"sÃ©paration",
+  "fr":"séparation",
   "en":"separation (n)",
   "de":"Trennung",
-  "es":"separaciÃ³n",
+  "es":"separación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4159",
-  "fr":"en sÃ©rie",
+  "fr":"en série",
   "en":"serial (adj)",
   "de":"Serien-",
   "es":"en serie",
@@ -37445,15 +37445,15 @@
   "fr":"configuration",
   "en":"setup (n)",
   "de":"Aufbau",
-  "es":"configuraciÃ³n",
+  "es":"configuración",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4162",
-  "fr":"sexualitÃ©",
+  "fr":"sexualité",
   "en":"sexuality (n)",
-  "de":"SexualitÃ¤t",
+  "de":"Sexualität",
   "es":"sexualidad",
   "type":"nom",
   "level":"C1"
@@ -37462,7 +37462,7 @@
   "id":"word_4163",
   "fr":"actionnaire",
   "en":"shareholder (n)",
-  "de":"AktionÃ¤r",
+  "de":"Aktionär",
   "es":"accionista",
   "type":"nom",
   "level":"C1"
@@ -37496,16 +37496,16 @@
 },
   {
   "id":"word_4167",
-  "fr":"expÃ©dition",
+  "fr":"expédition",
   "en":"shipping (n)",
   "de":"Versand",
-  "es":"envÃ­o",
+  "es":"envío",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4168",
-  "fr":"rÃ©trÃ©cir",
+  "fr":"rétrécir",
   "en":"to shrink (v)",
   "de":"schrumpfen",
   "es":"encoger",
@@ -37514,7 +37514,7 @@
 },
   {
   "id":"word_4169",
-  "fr":"hausser les Ã©paules",
+  "fr":"hausser les épaules",
   "en":"to shrug (v)",
   "de":"mit den Schultern zucken",
   "es":"encogerse de hombros",
@@ -37544,31 +37544,31 @@
   "fr":"simulation",
   "en":"simulation (n)",
   "de":"Simulation",
-  "es":"simulaciÃ³n",
+  "es":"simulación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4173",
-  "fr":"simultanÃ©ment",
+  "fr":"simultanément",
   "en":"simultaneously (adv)",
   "de":"gleichzeitig",
-  "es":"simultÃ¡neamente",
+  "es":"simultáneamente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4174",
-  "fr":"pÃ©chÃ©",
+  "fr":"péché",
   "en":"sin (n)",
-  "de":"SÃ¼nde",
+  "de":"Sünde",
   "es":"pecado",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4175",
-  "fr":"situÃ©",
+  "fr":"situé",
   "en":"situated (adj)",
   "de":"gelegen",
   "es":"situado",
@@ -37580,7 +37580,7 @@
   "fr":"sceptique",
   "en":"sceptical (adj)",
   "de":"skeptisch",
-  "es":"escÃ©ptico",
+  "es":"escéptico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -37595,9 +37595,9 @@
 },
   {
   "id":"word_4178",
-  "fr":"rÃ©duire",
+  "fr":"réduire",
   "en":"slash (n) / to slash (v)",
-  "de":"kÃ¼rzen",
+  "de":"kürzen",
   "es":"reducir",
   "type":"verbe",
   "level":"C1"
@@ -37643,7 +37643,7 @@
   "fr":"orientation",
   "en":"orientation",
   "de":"Orientierung",
-  "es":"orientaciÃ³n",
+  "es":"orientación",
   "type":"nom",
   "level":"C1"
 },
@@ -37658,7 +37658,7 @@
 },
   {
   "id":"word_4185",
-  "fr":"Ã©pidÃ©mie",
+  "fr":"épidémie",
   "en":"outbreak",
   "de":"Ausbruch",
   "es":"brote",
@@ -37670,13 +37670,13 @@
   "fr":"sortie",
   "en":"outing",
   "de":"Ausflug",
-  "es":"excursiÃ³n",
+  "es":"excursión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4187",
-  "fr":"dÃ©bouchÃ©",
+  "fr":"débouché",
   "en":"outlet",
   "de":"Ventil",
   "es":"salida",
@@ -37696,16 +37696,16 @@
   "id":"word_4189",
   "fr":"scandale",
   "en":"outrage",
-  "de":"EmpÃ¶rung",
-  "es":"indignaciÃ³n",
+  "de":"Empörung",
+  "es":"indignación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4190",
-  "fr":"Ã©tranger",
+  "fr":"étranger",
   "en":"outsider",
-  "de":"AuÃŸenseiter",
+  "de":"Außenseiter",
   "es":"forastero",
   "type":"nom",
   "level":"C1"
@@ -37714,7 +37714,7 @@
   "id":"word_4191",
   "fr":"ignorer",
   "en":"overlook",
-  "de":"Ã¼bersehen",
+  "de":"übersehen",
   "es":"pasar por alto",
   "type":"verbe",
   "level":"C1"
@@ -37723,7 +37723,7 @@
   "id":"word_4192",
   "fr":"excessivement",
   "en":"overly",
-  "de":"Ã¼bermÃ¤ÃŸig",
+  "de":"übermäßig",
   "es":"excesivamente",
   "type":"adverbe",
   "level":"C1"
@@ -37750,26 +37750,26 @@
   "id":"word_4195",
   "fr":"submerger",
   "en":"overwhelm",
-  "de":"Ã¼berwÃ¤ltigen",
+  "de":"überwältigen",
   "es":"abrumar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4196",
-  "fr":"Ã©crasant",
+  "fr":"écrasant",
   "en":"overwhelming",
-  "de":"Ã¼berwÃ¤ltigend",
+  "de":"überwältigend",
   "es":"abrumador",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4197",
-  "fr":"paramÃ¨tre",
+  "fr":"paramètre",
   "en":"parameter",
   "de":"Parameter",
-  "es":"parÃ¡metro",
+  "es":"parámetro",
   "type":"nom",
   "level":"C1"
 },
@@ -37802,7 +37802,7 @@
 },
   {
   "id":"word_4201",
-  "fr":"dÃ©cÃ¨s",
+  "fr":"décès",
   "en":"passing",
   "de":"Tod",
   "es":"fallecimiento",
@@ -37894,7 +37894,7 @@
   "id":"word_4211",
   "fr":"persister",
   "en":"persist",
-  "de":"hartnÃ¤ckig bleiben",
+  "de":"hartnäckig bleiben",
   "es":"persistir",
   "type":"verbe",
   "level":"C1"
@@ -37919,10 +37919,10 @@
 },
   {
   "id":"word_4214",
-  "fr":"pÃ©tition",
+  "fr":"pétition",
   "en":"petition",
   "de":"Petition",
-  "es":"peticiÃ³n",
+  "es":"petición",
   "type":"nom",
   "level":"C1"
 },
@@ -37931,7 +37931,7 @@
   "fr":"philosophe",
   "en":"philosopher",
   "de":"Philosoph",
-  "es":"filÃ³sofo",
+  "es":"filósofo",
   "type":"nom",
   "level":"C1"
 },
@@ -37940,7 +37940,7 @@
   "fr":"philosophique",
   "en":"philosophical",
   "de":"philosophisch",
-  "es":"filosÃ³fico",
+  "es":"filosófico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -37958,7 +37958,7 @@
   "fr":"pipeline",
   "en":"pipeline",
   "de":"Pipeline",
-  "es":"tuberÃ­a",
+  "es":"tubería",
   "type":"nom",
   "level":"C1"
 },
@@ -37985,7 +37985,7 @@
   "fr":"supplication",
   "en":"plea",
   "de":"Bitte",
-  "es":"sÃºplica",
+  "es":"súplica",
   "type":"nom",
   "level":"C1"
 },
@@ -37993,7 +37993,7 @@
   "id":"word_4222",
   "fr":"plaider",
   "en":"plead",
-  "de":"plÃ¤dieren",
+  "de":"plädieren",
   "es":"declararse",
   "type":"verbe",
   "level":"C1"
@@ -38011,14 +38011,14 @@
   "id":"word_4224",
   "fr":"plonger",
   "en":"plunge",
-  "de":"stÃ¼rzen",
+  "de":"stürzen",
   "es":"hundir",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4225",
-  "fr":"pÃ´le",
+  "fr":"pôle",
   "en":"pole",
   "de":"Pol",
   "es":"polo",
@@ -38045,7 +38045,7 @@
 },
   {
   "id":"word_4228",
-  "fr":"dÃ©peindre",
+  "fr":"dépeindre",
   "en":"portray",
   "de":"darstellen",
   "es":"retratar",
@@ -38063,7 +38063,7 @@
 },
   {
   "id":"word_4230",
-  "fr":"d\u0027aprÃ¨s-guerre",
+  "fr":"d\u0027après-guerre",
   "en":"post-war",
   "de":"Nachkriegs-",
   "es":"de posguerra",
@@ -38081,7 +38081,7 @@
 },
   {
   "id":"word_4232",
-  "fr":"prÃªcher",
+  "fr":"prêcher",
   "en":"preach",
   "de":"predigen",
   "es":"predicar",
@@ -38090,7 +38090,7 @@
 },
   {
   "id":"word_4233",
-  "fr":"prÃ©cÃ©der",
+  "fr":"précéder",
   "en":"precede",
   "de":"vorausgehen",
   "es":"preceder",
@@ -38099,25 +38099,25 @@
 },
   {
   "id":"word_4234",
-  "fr":"prÃ©cÃ©dent",
+  "fr":"précédent",
   "en":"precedent",
-  "de":"PrÃ¤zedenzfall",
+  "de":"Präzedenzfall",
   "es":"precedente",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4235",
-  "fr":"prÃ©cision",
+  "fr":"précision",
   "en":"precision",
-  "de":"PrÃ¤zision",
-  "es":"precisiÃ³n",
+  "de":"Präzision",
+  "es":"precisión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4236",
-  "fr":"prÃ©dateur",
+  "fr":"prédateur",
   "en":"predator",
   "de":"Raubtier",
   "es":"depredador",
@@ -38126,9 +38126,9 @@
 },
   {
   "id":"word_4237",
-  "fr":"prÃ©dÃ©cesseur",
+  "fr":"prédécesseur",
   "en":"predecessor",
-  "de":"VorgÃ¤nger",
+  "de":"Vorgänger",
   "es":"predecesor",
   "type":"nom",
   "level":"C1"
@@ -38137,7 +38137,7 @@
   "id":"word_4238",
   "fr":"principalement",
   "en":"predominantly",
-  "de":"Ã¼berwiegend",
+  "de":"überwiegend",
   "es":"predominantemente",
   "type":"adverbe",
   "level":"C1"
@@ -38153,7 +38153,7 @@
 },
   {
   "id":"word_4240",
-  "fr":"prÃ©jugÃ©",
+  "fr":"préjugé",
   "en":"prejudice",
   "de":"Vorurteil",
   "es":"prejuicio",
@@ -38162,9 +38162,9 @@
 },
   {
   "id":"word_4241",
-  "fr":"prÃ©liminaire",
+  "fr":"préliminaire",
   "en":"preliminary",
-  "de":"vorlÃ¤ufig",
+  "de":"vorläufig",
   "es":"preliminar",
   "type":"adjectif",
   "level":"C1"
@@ -38180,9 +38180,9 @@
 },
   {
   "id":"word_4243",
-  "fr":"prÃ©misse",
+  "fr":"prémisse",
   "en":"premise",
-  "de":"PrÃ¤misse",
+  "de":"Prämisse",
   "es":"premisa",
   "type":"nom",
   "level":"C1"
@@ -38191,7 +38191,7 @@
   "id":"word_4244",
   "fr":"prime",
   "en":"premium",
-  "de":"PrÃ¤mie",
+  "de":"Prämie",
   "es":"prima",
   "type":"nom",
   "level":"C1"
@@ -38225,27 +38225,27 @@
 },
   {
   "id":"word_4248",
-  "fr":"prÃ©servation",
+  "fr":"préservation",
   "en":"preservation",
   "de":"Erhaltung",
-  "es":"preservaciÃ³n",
+  "es":"preservación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4249",
-  "fr":"prÃ©sider",
+  "fr":"présider",
   "en":"preside",
-  "de":"den Vorsitz fÃ¼hren",
+  "de":"den Vorsitz führen",
   "es":"presidir",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4250",
-  "fr":"prÃ©sidence",
+  "fr":"présidence",
   "en":"presidency",
-  "de":"PrÃ¤sidentschaft",
+  "de":"Präsidentschaft",
   "es":"presidencia",
   "type":"nom",
   "level":"C1"
@@ -38270,7 +38270,7 @@
 },
   {
   "id":"word_4253",
-  "fr":"prÃ©sumer",
+  "fr":"présumer",
   "en":"presume",
   "de":"vermuten",
   "es":"suponer",
@@ -38279,7 +38279,7 @@
 },
   {
   "id":"word_4254",
-  "fr":"prÃ©valoir",
+  "fr":"prévaloir",
   "en":"prevail",
   "de":"sich durchsetzen",
   "es":"prevalecer",
@@ -38288,7 +38288,7 @@
 },
   {
   "id":"word_4255",
-  "fr":"prÃ©valence",
+  "fr":"prévalence",
   "en":"prevalence",
   "de":"Verbreitung",
   "es":"prevalencia",
@@ -38297,10 +38297,10 @@
 },
   {
   "id":"word_4256",
-  "fr":"prÃ©vention",
+  "fr":"prévention",
   "en":"prevention",
-  "de":"PrÃ¤vention",
-  "es":"prevenciÃ³n",
+  "de":"Prävention",
+  "es":"prevención",
   "type":"nom",
   "level":"C1"
 },
@@ -38318,13 +38318,13 @@
   "fr":"privatisation",
   "en":"privatization",
   "de":"Privatisierung",
-  "es":"privatizaciÃ³n",
+  "es":"privatización",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4259",
-  "fr":"privilÃ¨ge",
+  "fr":"privilège",
   "en":"privilege",
   "de":"Privileg",
   "es":"privilegio",
@@ -38342,16 +38342,16 @@
 },
   {
   "id":"word_4261",
-  "fr":"problÃ©matique",
+  "fr":"problématique",
   "en":"problematic",
   "de":"problematisch",
-  "es":"problemÃ¡tico",
+  "es":"problemático",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4262",
-  "fr":"procÃ©dure",
+  "fr":"procédure",
   "en":"proceeding",
   "de":"Verfahren",
   "es":"procedimiento",
@@ -38369,7 +38369,7 @@
 },
   {
   "id":"word_4264",
-  "fr":"utilitÃ©",
+  "fr":"utilité",
   "en":"utility",
   "de":"Nutzen",
   "es":"utilidad",
@@ -38387,9 +38387,9 @@
 },
   {
   "id":"word_4266",
-  "fr":"tout Ã  fait",
+  "fr":"tout à fait",
   "en":"utterly",
-  "de":"vÃ¶llig",
+  "de":"völlig",
   "es":"completamente",
   "type":"adverbe",
   "level":"C1"
@@ -38399,7 +38399,7 @@
   "fr":"vide",
   "en":"vacuum",
   "de":"Vakuum",
-  "es":"vacÃ­o",
+  "es":"vacío",
   "type":"nom",
   "level":"C1"
 },
@@ -38414,16 +38414,16 @@
 },
   {
   "id":"word_4269",
-  "fr":"validitÃ©",
+  "fr":"validité",
   "en":"validity",
-  "de":"GÃ¼ltigkeit",
+  "de":"Gültigkeit",
   "es":"validez",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4270",
-  "fr":"disparaÃ®tre",
+  "fr":"disparaître",
   "en":"to vanish",
   "de":"verschwinden",
   "es":"desaparecer",
@@ -38441,9 +38441,9 @@
 },
   {
   "id":"word_4272",
-  "fr":"variÃ©",
+  "fr":"varié",
   "en":"varied",
-  "de":"vielfÃ¤ltig",
+  "de":"vielfältig",
   "es":"variado",
   "type":"adjectif",
   "level":"C1"
@@ -38486,9 +38486,9 @@
 },
   {
   "id":"word_4277",
-  "fr":"vÃ©rifier",
+  "fr":"vérifier",
   "en":"to verify",
-  "de":"Ã¼berprÃ¼fen",
+  "de":"überprüfen",
   "es":"verificar",
   "type":"verbe",
   "level":"C1"
@@ -38522,7 +38522,7 @@
 },
   {
   "id":"word_4281",
-  "fr":"vÃ©tÃ©ran",
+  "fr":"vétéran",
   "en":"veteran",
   "de":"Veteran",
   "es":"veterano",
@@ -38560,7 +38560,7 @@
   "id":"word_4285",
   "fr":"vicieux",
   "en":"vicious",
-  "de":"bÃ¶sartig",
+  "de":"bösartig",
   "es":"vicioso",
   "type":"adjectif",
   "level":"C1"
@@ -38578,8 +38578,8 @@
   "id":"word_4287",
   "fr":"violation",
   "en":"violation",
-  "de":"VerstoÃŸ",
-  "es":"violaciÃ³n",
+  "de":"Verstoß",
+  "es":"violación",
   "type":"nom",
   "level":"C1"
 },
@@ -38605,14 +38605,14 @@
   "id":"word_4290",
   "fr":"jurer",
   "en":"to vow",
-  "de":"schwÃ¶ren",
+  "de":"schwören",
   "es":"jurar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4291",
-  "fr":"vulnÃ©rabilitÃ©",
+  "fr":"vulnérabilité",
   "en":"vulnerability",
   "de":"Verwundbarkeit",
   "es":"vulnerabilidad",
@@ -38621,7 +38621,7 @@
 },
   {
   "id":"word_4292",
-  "fr":"vulnÃ©rable",
+  "fr":"vulnérable",
   "en":"vulnerable",
   "de":"verwundbar",
   "es":"vulnerable",
@@ -38639,10 +38639,10 @@
 },
   {
   "id":"word_4294",
-  "fr":"entrepÃ´t",
+  "fr":"entrepôt",
   "en":"warehouse",
   "de":"Lagerhaus",
-  "es":"almacÃ©n",
+  "es":"almacén",
   "type":"nom",
   "level":"C1"
 },
@@ -38650,7 +38650,7 @@
   "id":"word_4295",
   "fr":"guerre",
   "en":"warfare",
-  "de":"KriegsfÃ¼hrung",
+  "de":"Kriegsführung",
   "es":"guerra",
   "type":"nom",
   "level":"C1"
@@ -38677,7 +38677,7 @@
   "id":"word_4298",
   "fr":"affaiblir",
   "en":"to weaken",
-  "de":"schwÃ¤chen",
+  "de":"schwächen",
   "es":"debilitar",
   "type":"verbe",
   "level":"C1"
@@ -38711,7 +38711,7 @@
 },
   {
   "id":"word_4302",
-  "fr":"bien-Ãªtre",
+  "fr":"bien-être",
   "en":"well-being",
   "de":"Wohlbefinden",
   "es":"bienestar",
@@ -38722,7 +38722,7 @@
   "id":"word_4303",
   "fr":"que ce soit",
   "en":"whatsoever",
-  "de":"Ã¼berhaupt",
+  "de":"überhaupt",
   "es":"en absoluto",
   "type":"adverbe",
   "level":"C1"
@@ -38738,16 +38738,16 @@
 },
   {
   "id":"word_4305",
-  "fr":"entiÃ¨rement",
+  "fr":"entièrement",
   "en":"wholly",
-  "de":"gÃ¤nzlich",
+  "de":"gänzlich",
   "es":"totalmente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4306",
-  "fr":"Ã©largir",
+  "fr":"élargir",
   "en":"to widen",
   "de":"verbreitern",
   "es":"ensanchar",
@@ -38765,10 +38765,10 @@
 },
   {
   "id":"word_4308",
-  "fr":"volontÃ©",
+  "fr":"volonté",
   "en":"willingness",
   "de":"Bereitschaft",
-  "es":"disposiciÃ³n",
+  "es":"disposición",
   "type":"nom",
   "level":"C1"
 },
@@ -38794,14 +38794,14 @@
   "id":"word_4311",
   "fr":"retrait",
   "en":"withdrawal",
-  "de":"RÃ¼ckzug",
+  "de":"Rückzug",
   "es":"retirada",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4312",
-  "fr":"entraÃ®nement",
+  "fr":"entraînement",
   "en":"workout",
   "de":"Training",
   "es":"entrenamiento",
@@ -38813,7 +38813,7 @@
   "fr":"culte",
   "en":"worship",
   "de":"Anbetung",
-  "es":"adoraciÃ³n",
+  "es":"adoración",
   "type":"nom",
   "level":"C1"
 },
@@ -38830,17 +38830,17 @@
   "id":"word_4315",
   "fr":"digne",
   "en":"worthy",
-  "de":"wÃ¼rdig",
+  "de":"würdig",
   "es":"digno",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4316",
-  "fr":"mÃ©fait",
+  "fr":"méfait",
   "en":"wrongdoing",
   "de":"Fehlverhalten",
-  "es":"fechorÃ­a",
+  "es":"fechoría",
   "type":"nom",
   "level":"C1"
 },
@@ -38891,7 +38891,7 @@
 },
   {
   "id":"word_4322",
-  "fr":"acadÃ©mie",
+  "fr":"académie",
   "en":"academy",
   "de":"Akademie",
   "es":"academia",
@@ -38900,7 +38900,7 @@
 },
   {
   "id":"word_4323",
-  "fr":"accÃ©lÃ©rer",
+  "fr":"accélérer",
   "en":"to accelerate",
   "de":"beschleunigen",
   "es":"acelerar",
@@ -38912,7 +38912,7 @@
   "fr":"acceptation",
   "en":"acceptance",
   "de":"Akzeptanz",
-  "es":"aceptaciÃ³n",
+  "es":"aceptación",
   "type":"nom",
   "level":"C1"
 },
@@ -38920,7 +38920,7 @@
   "id":"word_4325",
   "fr":"accessible",
   "en":"accessible",
-  "de":"zugÃ¤nglich",
+  "de":"zugänglich",
   "es":"accesible",
   "type":"adjectif",
   "level":"C1"
@@ -38936,7 +38936,7 @@
 },
   {
   "id":"word_4327",
-  "fr":"en consÃ©quence",
+  "fr":"en conséquence",
   "en":"accordingly",
   "de":"dementsprechend",
   "es":"en consecuencia",
@@ -38945,7 +38945,7 @@
 },
   {
   "id":"word_4328",
-  "fr":"responsabilitÃ©",
+  "fr":"responsabilité",
   "en":"accountability",
   "de":"Rechenschaftspflicht",
   "es":"responsabilidad",
@@ -38975,7 +38975,7 @@
   "fr":"accumulation",
   "en":"accumulation",
   "de":"Ansammlung",
-  "es":"acumulaciÃ³n",
+  "es":"acumulación",
   "type":"nom",
   "level":"C1"
 },
@@ -38984,13 +38984,13 @@
   "fr":"accusation",
   "en":"accusation",
   "de":"Anklage",
-  "es":"acusaciÃ³n",
+  "es":"acusación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4333",
-  "fr":"accusÃ©",
+  "fr":"accusé",
   "en":"accused",
   "de":"Angeklagte",
   "es":"acusado",
@@ -39001,8 +39001,8 @@
   "id":"word_4334",
   "fr":"acide",
   "en":"acid",
-  "de":"SÃ¤ure",
-  "es":"Ã¡cido",
+  "de":"Säure",
+  "es":"ácido",
   "type":"nom",
   "level":"C1"
 },
@@ -39011,7 +39011,7 @@
   "fr":"acquisition",
   "en":"acquisition",
   "de":"Erwerb",
-  "es":"adquisiciÃ³n",
+  "es":"adquisición",
   "type":"nom",
   "level":"C1"
 },
@@ -39020,7 +39020,7 @@
   "fr":"activation",
   "en":"activation",
   "de":"Aktivierung",
-  "es":"activaciÃ³n",
+  "es":"activación",
   "type":"nom",
   "level":"C1"
 },
@@ -39047,13 +39047,13 @@
   "fr":"adaptation",
   "en":"adaptation",
   "de":"Anpassung",
-  "es":"adaptaciÃ³n",
+  "es":"adaptación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4340",
-  "fr":"adhÃ©rer",
+  "fr":"adhérer",
   "en":"to adhere",
   "de":"festhalten",
   "es":"adherirse",
@@ -39110,7 +39110,7 @@
   "fr":"admission",
   "en":"admission",
   "de":"Zulassung",
-  "es":"admisiÃ³n",
+  "es":"admisión",
   "type":"nom",
   "level":"C1"
 },
@@ -39128,13 +39128,13 @@
   "fr":"adoption",
   "en":"adoption",
   "de":"Adoption",
-  "es":"adopciÃ³n",
+  "es":"adopción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4349",
-  "fr":"dÃ©favorable",
+  "fr":"défavorable",
   "en":"adverse",
   "de":"nachteilig",
   "es":"adverso",
@@ -39143,19 +39143,19 @@
 },
   {
   "id":"word_4350",
-  "fr":"dÃ©fenseur",
+  "fr":"défenseur",
   "en":"advocate",
-  "de":"BefÃ¼rworter",
+  "de":"Befürworter",
   "es":"defensor",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4351",
-  "fr":"esthÃ©tique",
+  "fr":"esthétique",
   "en":"aesthetic",
-  "de":"Ã¤sthetisch",
-  "es":"estÃ©tico",
+  "de":"ästhetisch",
+  "es":"estético",
   "type":"adjectif",
   "level":"C1"
 },
@@ -39182,7 +39182,7 @@
   "fr":"agression",
   "en":"aggression",
   "de":"Aggression",
-  "es":"agresiÃ³n",
+  "es":"agresión",
   "type":"nom",
   "level":"C1"
 },
@@ -39191,7 +39191,7 @@
   "fr":"agricole",
   "en":"agricultural",
   "de":"landwirtschaftlich",
-  "es":"agrÃ­cola",
+  "es":"agrícola",
   "type":"adjectif",
   "level":"C1"
 },
@@ -39227,7 +39227,7 @@
   "fr":"alignement",
   "en":"alignment",
   "de":"Ausrichtung",
-  "es":"alineaciÃ³n",
+  "es":"alineación",
   "type":"nom",
   "level":"C1"
 },
@@ -39235,23 +39235,23 @@
   "id":"word_4360",
   "fr":"semblable",
   "en":"alike",
-  "de":"Ã¤hnlich",
+  "de":"ähnlich",
   "es":"similar",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4361",
-  "fr":"allÃ©gation",
+  "fr":"allégation",
   "en":"allegation",
   "de":"Behauptung",
-  "es":"alegaciÃ³n",
+  "es":"alegación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4362",
-  "fr":"allÃ©guer",
+  "fr":"alléguer",
   "en":"to allege",
   "de":"behaupten",
   "es":"alegar",
@@ -39260,7 +39260,7 @@
 },
   {
   "id":"word_4363",
-  "fr":"prÃ©tendument",
+  "fr":"prétendument",
   "en":"allegedly",
   "de":"angeblich",
   "es":"supuestamente",
@@ -39271,7 +39271,7 @@
   "id":"word_4364",
   "fr":"alliance",
   "en":"alliance",
-  "de":"BÃ¼ndnis",
+  "de":"Bündnis",
   "es":"alianza",
   "type":"nom",
   "level":"C1"
@@ -39290,13 +39290,13 @@
   "fr":"allocation",
   "en":"allocation",
   "de":"Zuweisung",
-  "es":"asignaciÃ³n",
+  "es":"asignación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4367",
-  "fr":"indemnitÃ©",
+  "fr":"indemnité",
   "en":"allowance",
   "de":"Zulage",
   "es":"subsidio",
@@ -39305,9 +39305,9 @@
 },
   {
   "id":"word_4368",
-  "fr":"alliÃ©",
+  "fr":"allié",
   "en":"ally",
-  "de":"VerbÃ¼ndete",
+  "de":"Verbündete",
   "es":"aliado",
   "type":"nom",
   "level":"C1"
@@ -39343,7 +39343,7 @@
   "id":"word_4372",
   "fr":"modifier",
   "en":"to amend",
-  "de":"Ã¤ndern",
+  "de":"ändern",
   "es":"enmendar",
   "type":"verbe",
   "level":"C1"
@@ -39352,7 +39352,7 @@
   "id":"word_4373",
   "fr":"amendement",
   "en":"amendment",
-  "de":"Ã„nderung",
+  "de":"Änderung",
   "es":"enmienda",
   "type":"nom",
   "level":"C1"
@@ -39371,7 +39371,7 @@
   "fr":"analogie",
   "en":"analogy",
   "de":"Analogie",
-  "es":"analogÃ­a",
+  "es":"analogía",
   "type":"nom",
   "level":"C1"
 },
@@ -39389,13 +39389,13 @@
   "fr":"anonyme",
   "en":"anonymous",
   "de":"anonym",
-  "es":"anÃ³nimo",
+  "es":"anónimo",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4378",
-  "fr":"vÃªtements",
+  "fr":"vêtements",
   "en":"apparel",
   "de":"Bekleidung",
   "es":"ropa",
@@ -39413,7 +39413,7 @@
 },
   {
   "id":"word_4380",
-  "fr":"appÃ©tit",
+  "fr":"appétit",
   "en":"appetite",
   "de":"Appetit",
   "es":"apetito",
@@ -39449,10 +39449,10 @@
 },
   {
   "id":"word_4384",
-  "fr":"apprÃ©ciation",
+  "fr":"appréciation",
   "en":"appreciation",
-  "de":"WertschÃ¤tzung",
-  "es":"apreciaciÃ³n",
+  "de":"Wertschätzung",
+  "es":"apreciación",
   "type":"nom",
   "level":"C1"
 },
@@ -39460,7 +39460,7 @@
   "id":"word_4385",
   "fr":"arbitraire",
   "en":"arbitrary",
-  "de":"willkÃ¼rlich",
+  "de":"willkürlich",
   "es":"arbitrario",
   "type":"adjectif",
   "level":"C1"
@@ -39470,7 +39470,7 @@
   "fr":"architectural",
   "en":"architectural",
   "de":"architektonisch",
-  "es":"arquitectÃ³nico",
+  "es":"arquitectónico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -39485,7 +39485,7 @@
 },
   {
   "id":"word_4388",
-  "fr":"arÃ¨ne",
+  "fr":"arène",
   "en":"arena",
   "de":"Arena",
   "es":"arena",
@@ -39533,7 +39533,7 @@
   "fr":"aspiration",
   "en":"aspiration",
   "de":"Streben",
-  "es":"aspiraciÃ³n",
+  "es":"aspiración",
   "type":"nom",
   "level":"C1"
 },
@@ -39568,7 +39568,7 @@
   "id":"word_4397",
   "en":"to heighten",
   "fr":"intensifier",
-  "de":"verstÃ¤rken",
+  "de":"verstärken",
   "es":"intensificar",
   "type":"verbe",
   "level":"C1"
@@ -39585,16 +39585,16 @@
   {
   "id":"word_4399",
   "en":"hierarchy",
-  "fr":"la hiÃ©rarchie",
+  "fr":"la hiérarchie",
   "de":"die Hierarchie",
-  "es":"la jerarquÃ­a",
+  "es":"la jerarquía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4400",
   "en":"high-profile",
-  "fr":"trÃ¨s en vue",
+  "fr":"très en vue",
   "de":"bekannt",
   "es":"de alto perfil",
   "type":"adjectif",
@@ -39632,7 +39632,7 @@
   "en":"hostage",
   "fr":"l\u0027otage",
   "de":"die Geisel",
-  "es":"el rehÃ©n",
+  "es":"el rehén",
   "type":"nom",
   "level":"C1"
 },
@@ -39648,7 +39648,7 @@
   {
   "id":"word_4406",
   "en":"hostility",
-  "fr":"l\u0027hostilitÃ©",
+  "fr":"l\u0027hostilité",
   "de":"die Feindseligkeit",
   "es":"la hostilidad",
   "type":"nom",
@@ -39658,7 +39658,7 @@
   "id":"word_4407",
   "en":"humanitarian",
   "fr":"humanitaire",
-  "de":"humanitÃ¤r",
+  "de":"humanitär",
   "es":"humanitario",
   "type":"adjectif",
   "level":"C1"
@@ -39666,7 +39666,7 @@
   {
   "id":"word_4408",
   "en":"humanity",
-  "fr":"l\u0027humanitÃ©",
+  "fr":"l\u0027humanité",
   "de":"die Menschheit",
   "es":"la humanidad",
   "type":"nom",
@@ -39684,18 +39684,18 @@
   {
   "id":"word_4410",
   "en":"hydrogen",
-  "fr":"l\u0027hydrogÃ¨ne",
+  "fr":"l\u0027hydrogène",
   "de":"der Wasserstoff",
-  "es":"el hidrÃ³geno",
+  "es":"el hidrógeno",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4411",
   "en":"hypothesis",
-  "fr":"l\u0027hypothÃ¨se",
+  "fr":"l\u0027hypothèse",
   "de":"die Hypothese",
-  "es":"la hipÃ³tesis",
+  "es":"la hipótesis",
   "type":"nom",
   "level":"C1"
 },
@@ -39704,25 +39704,25 @@
   "en":"identification",
   "fr":"l\u0027identification",
   "de":"die Identifizierung",
-  "es":"la identificaciÃ³n",
+  "es":"la identificación",
   "type":"nom",
   "level":"B2"
 },
   {
   "id":"word_4413",
   "en":"ideological",
-  "fr":"idÃ©ologique",
+  "fr":"idéologique",
   "de":"ideologisch",
-  "es":"ideolÃ³gico",
+  "es":"ideológico",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4414",
   "en":"ideology",
-  "fr":"l\u0027idÃ©ologie",
+  "fr":"l\u0027idéologie",
   "de":"die Ideologie",
-  "es":"la ideologÃ­a",
+  "es":"la ideología",
   "type":"nom",
   "level":"C1"
 },
@@ -39740,7 +39740,7 @@
   "en":"imagery",
   "fr":"l\u0027imagerie",
   "de":"die Bildsprache",
-  "es":"la imaginerÃ­a",
+  "es":"la imaginería",
   "type":"nom",
   "level":"C1"
 },
@@ -39765,9 +39765,9 @@
   {
   "id":"word_4419",
   "en":"implementation",
-  "fr":"la mise en Å“uvre",
+  "fr":"la mise en œuvre",
   "de":"die Umsetzung",
-  "es":"la implementaciÃ³n",
+  "es":"la implementación",
   "type":"nom",
   "level":"C1"
 },
@@ -39783,8 +39783,8 @@
   {
   "id":"word_4421",
   "en":"inability",
-  "fr":"l\u0027incapacitÃ©",
-  "de":"die UnfÃ¤higkeit",
+  "fr":"l\u0027incapacité",
+  "de":"die Unfähigkeit",
   "es":"la incapacidad",
   "type":"nom",
   "level":"C1"
@@ -39792,7 +39792,7 @@
   {
   "id":"word_4422",
   "en":"inadequate",
-  "fr":"inadÃ©quat",
+  "fr":"inadéquat",
   "de":"unangemessen",
   "es":"inadecuado",
   "type":"adjectif",
@@ -39801,7 +39801,7 @@
   {
   "id":"word_4423",
   "en":"inappropriate",
-  "fr":"inappropriÃ©",
+  "fr":"inapproprié",
   "de":"unpassend",
   "es":"inapropiado",
   "type":"adjectif",
@@ -39810,7 +39810,7 @@
   {
   "id":"word_4424",
   "en":"to incarcerate",
-  "fr":"incarcÃ©rer",
+  "fr":"incarcérer",
   "de":"inhaftieren",
   "es":"encarcelar",
   "type":"verbe",
@@ -39819,9 +39819,9 @@
   {
   "id":"word_4425",
   "en":"incarceration",
-  "fr":"l\u0027incarcÃ©ration",
+  "fr":"l\u0027incarcération",
   "de":"die Inhaftierung",
-  "es":"la encarcelaciÃ³n",
+  "es":"la encarcelación",
   "type":"nom",
   "level":"C1"
 },
@@ -39848,7 +39848,7 @@
   "en":"inclusion",
   "fr":"l\u0027inclusion",
   "de":"die Inklusion",
-  "es":"la inclusiÃ³n",
+  "es":"la inclusión",
   "type":"nom",
   "level":"B2"
 },
@@ -39875,16 +39875,16 @@
   "en":"indictment",
   "fr":"l\u0027inculpation",
   "de":"die Anklage",
-  "es":"la acusaciÃ³n",
+  "es":"la acusación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4432",
   "en":"indigenous",
-  "fr":"indigÃ¨ne",
+  "fr":"indigène",
   "de":"indigen",
-  "es":"indÃ­gena",
+  "es":"indígena",
   "type":"adjectif",
   "level":"C1"
 },
@@ -39892,7 +39892,7 @@
   "id":"word_4433",
   "en":"to induce",
   "fr":"induire",
-  "de":"herbeifÃ¼hren",
+  "de":"herbeiführen",
   "es":"inducir",
   "type":"verbe",
   "level":"C1"
@@ -39909,7 +39909,7 @@
   {
   "id":"word_4435",
   "en":"inequality",
-  "fr":"l\u0027inÃ©galitÃ©",
+  "fr":"l\u0027inégalité",
   "de":"die Ungleichheit",
   "es":"la desigualdad",
   "type":"nom",
@@ -39918,8 +39918,8 @@
   {
   "id":"word_4436",
   "en":"infamous",
-  "fr":"tristement cÃ©lÃ¨bre",
-  "de":"berÃ¼chtigt",
+  "fr":"tristement célèbre",
+  "de":"berüchtigt",
   "es":"infame",
   "type":"adjectif",
   "level":"C1"
@@ -39937,7 +39937,7 @@
   "id":"word_4438",
   "en":"to inflict",
   "fr":"infliger",
-  "de":"zufÃ¼gen",
+  "de":"zufügen",
   "es":"infligir",
   "type":"verbe",
   "level":"C1"
@@ -39963,8 +39963,8 @@
   {
   "id":"word_4441",
   "en":"inherent",
-  "fr":"inhÃ©rent",
-  "de":"inhÃ¤rent",
+  "fr":"inhérent",
+  "de":"inhärent",
   "es":"inherente",
   "type":"adjectif",
   "level":"C1"
@@ -40001,7 +40001,7 @@
   "en":"injection",
   "fr":"l\u0027injection",
   "de":"die Injektion",
-  "es":"la inyecciÃ³n",
+  "es":"la inyección",
   "type":"nom",
   "level":"B2"
 },
@@ -40017,7 +40017,7 @@
   {
   "id":"word_4447",
   "en":"inmate",
-  "fr":"le dÃ©tenu",
+  "fr":"le détenu",
   "de":"der Insasse",
   "es":"el recluso",
   "type":"nom",
@@ -40026,7 +40026,7 @@
   {
   "id":"word_4448",
   "en":"to inquire",
-  "fr":"s\u0027enquÃ©rir",
+  "fr":"s\u0027enquérir",
   "de":"sich erkundigen",
   "es":"inquirir",
   "type":"verbe",
@@ -40036,15 +40036,15 @@
   "id":"word_4449",
   "en":"insertion",
   "fr":"l\u0027insertion",
-  "de":"die EinfÃ¼gung",
-  "es":"la inserciÃ³n",
+  "de":"die Einfügung",
+  "es":"la inserción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4450",
   "en":"insider",
-  "fr":"l\u0027initiÃ©",
+  "fr":"l\u0027initié",
   "de":"der Insider",
   "es":"el informante",
   "type":"nom",
@@ -40064,7 +40064,7 @@
   "en":"inspection",
   "fr":"l\u0027inspection",
   "de":"die Inspektion",
-  "es":"la inspecciÃ³n",
+  "es":"la inspección",
   "type":"nom",
   "level":"B2"
 },
@@ -40073,7 +40073,7 @@
   "en":"inspiration",
   "fr":"l\u0027inspiration",
   "de":"die Inspiration",
-  "es":"la inspiraciÃ³n",
+  "es":"la inspiración",
   "type":"nom",
   "level":"B2"
 },
@@ -40107,7 +40107,7 @@
   {
   "id":"word_4457",
   "en":"instrumental",
-  "fr":"dÃ©terminant",
+  "fr":"déterminant",
   "de":"hilfreich",
   "es":"fundamental",
   "type":"adjectif",
@@ -40152,7 +40152,7 @@
   {
   "id":"word_4462",
   "en":"integral",
-  "fr":"intÃ©gral",
+  "fr":"intégral",
   "de":"wesentlich",
   "es":"integral",
   "type":"adjectif",
@@ -40161,7 +40161,7 @@
   {
   "id":"word_4463",
   "en":"integrated",
-  "fr":"intÃ©grÃ©",
+  "fr":"intégré",
   "de":"integriert",
   "es":"integrado",
   "type":"adjectif",
@@ -40170,17 +40170,17 @@
   {
   "id":"word_4464",
   "en":"integration",
-  "fr":"l\u0027intÃ©gration",
+  "fr":"l\u0027intégration",
   "de":"die Integration",
-  "es":"la integraciÃ³n",
+  "es":"la integración",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4465",
   "en":"integrity",
-  "fr":"l\u0027intÃ©gritÃ©",
-  "de":"die IntegritÃ¤t",
+  "fr":"l\u0027intégrité",
+  "de":"die Integrität",
   "es":"la integridad",
   "type":"nom",
   "level":"C1"
@@ -40197,8 +40197,8 @@
   {
   "id":"word_4467",
   "en":"intensity",
-  "fr":"l\u0027intensitÃ©",
-  "de":"die IntensitÃ¤t",
+  "fr":"l\u0027intensité",
+  "de":"die Intensität",
   "es":"la intensidad",
   "type":"nom",
   "level":"B2"
@@ -40217,7 +40217,7 @@
   "en":"intent",
   "fr":"l\u0027intention",
   "de":"die Absicht",
-  "es":"la intenciÃ³n",
+  "es":"la intención",
   "type":"nom",
   "level":"C1"
 },
@@ -40242,7 +40242,7 @@
   {
   "id":"word_4472",
   "en":"to interfere",
-  "fr":"interfÃ©rer",
+  "fr":"interférer",
   "de":"sich einmischen",
   "es":"interferir",
   "type":"verbe",
@@ -40251,7 +40251,7 @@
   {
   "id":"word_4473",
   "en":"interference",
-  "fr":"l\u0027interfÃ©rence",
+  "fr":"l\u0027interférence",
   "de":"die Einmischung",
   "es":"la interferencia",
   "type":"nom",
@@ -40260,8 +40260,8 @@
   {
   "id":"word_4474",
   "en":"interim",
-  "fr":"intÃ©rimaire",
-  "de":"vorlÃ¤ufig",
+  "fr":"intérimaire",
+  "de":"vorläufig",
   "es":"interino",
   "type":"adjectif",
   "level":"C1"
@@ -40269,7 +40269,7 @@
   {
   "id":"word_4475",
   "en":"interior",
-  "fr":"l\u0027intÃ©rieur",
+  "fr":"l\u0027intérieur",
   "de":"das Innere",
   "es":"el interior",
   "type":"nom",
@@ -40278,7 +40278,7 @@
   {
   "id":"word_4476",
   "en":"intermediate",
-  "fr":"intermÃ©diaire",
+  "fr":"intermédiaire",
   "de":"mittlere",
   "es":"intermedio",
   "type":"adjectif",
@@ -40289,13 +40289,13 @@
   "fr":"suspension",
   "en":"suspension",
   "de":"Suspendierung",
-  "es":"suspensiÃ³n",
+  "es":"suspensión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4478",
-  "fr":"soupÃ§on",
+  "fr":"soupçon",
   "en":"suspicion",
   "de":"Verdacht",
   "es":"sospecha",
@@ -40306,7 +40306,7 @@
   "id":"word_4479",
   "fr":"suspect",
   "en":"suspicious",
-  "de":"verdÃ¤chtig",
+  "de":"verdächtig",
   "es":"sospechoso",
   "type":"adjectif",
   "level":"C1"
@@ -40325,7 +40325,7 @@
   "fr":"symbolique",
   "en":"symbolic",
   "de":"symbolisch",
-  "es":"simbÃ³lico",
+  "es":"simbólico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -40334,31 +40334,31 @@
   "fr":"syndrome",
   "en":"syndrome",
   "de":"Syndrom",
-  "es":"sÃ­ndrome",
+  "es":"síndrome",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4483",
-  "fr":"synthÃ¨se",
+  "fr":"synthèse",
   "en":"synthesis",
   "de":"Synthese",
-  "es":"sÃ­ntesis",
+  "es":"síntesis",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4484",
-  "fr":"systÃ©matique",
+  "fr":"systématique",
   "en":"systematic",
   "de":"systematisch",
-  "es":"sistemÃ¡tico",
+  "es":"sistemático",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4485",
-  "fr":"s\u0027attaquer Ã ",
+  "fr":"s\u0027attaquer à",
   "en":"to tackle",
   "de":"in Angriff nehmen",
   "es":"abordar",
@@ -40370,7 +40370,7 @@
   "fr":"tactique",
   "en":"tactic",
   "de":"Taktik",
-  "es":"tÃ¡ctica",
+  "es":"táctica",
   "type":"nom",
   "level":"C1"
 },
@@ -40379,7 +40379,7 @@
   "fr":"tactique",
   "en":"tactical",
   "de":"taktisch",
-  "es":"tÃ¡ctico",
+  "es":"táctico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -40430,7 +40430,7 @@
 },
   {
   "id":"word_4493",
-  "fr":"mettre fin Ã ",
+  "fr":"mettre fin à",
   "en":"to terminate",
   "de":"beenden",
   "es":"terminar",
@@ -40441,7 +40441,7 @@
   "id":"word_4494",
   "fr":"terrain",
   "en":"terrain",
-  "de":"GelÃ¤nde",
+  "de":"Gelände",
   "es":"terreno",
   "type":"nom",
   "level":"C1"
@@ -40450,14 +40450,14 @@
   "id":"word_4495",
   "fr":"formidable",
   "en":"terrific",
-  "de":"groÃŸartig",
+  "de":"großartig",
   "es":"formidable",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4496",
-  "fr":"tÃ©moigner",
+  "fr":"témoigner",
   "en":"to testify",
   "de":"aussagen",
   "es":"testificar",
@@ -40466,7 +40466,7 @@
 },
   {
   "id":"word_4497",
-  "fr":"tÃ©moignage",
+  "fr":"témoignage",
   "en":"testimony",
   "de":"Zeugenaussage",
   "es":"testimonio",
@@ -40486,14 +40486,14 @@
   "id":"word_4499",
   "fr":"heureusement",
   "en":"thankfully",
-  "de":"glÃ¼cklicherweise",
+  "de":"glücklicherweise",
   "es":"afortunadamente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4500",
-  "fr":"thÃ©Ã¢tral",
+  "fr":"théâtral",
   "en":"theatrical",
   "de":"theatralisch",
   "es":"teatral",
@@ -40502,19 +40502,19 @@
 },
   {
   "id":"word_4501",
-  "fr":"thÃ©ologie",
+  "fr":"théologie",
   "en":"theology",
   "de":"Theologie",
-  "es":"teologÃ­a",
+  "es":"teología",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4502",
-  "fr":"thÃ©orique",
+  "fr":"théorique",
   "en":"theoretical",
   "de":"theoretisch",
-  "es":"teÃ³rico",
+  "es":"teórico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -40538,7 +40538,7 @@
 },
   {
   "id":"word_4505",
-  "fr":"thÃ¨se",
+  "fr":"thèse",
   "en":"thesis",
   "de":"These",
   "es":"tesis",
@@ -40547,7 +40547,7 @@
 },
   {
   "id":"word_4506",
-  "fr":"attentionnÃ©",
+  "fr":"attentionné",
   "en":"thoughtful",
   "de":"nachdenklich",
   "es":"atento",
@@ -40583,7 +40583,7 @@
 },
   {
   "id":"word_4510",
-  "fr":"prospÃ©rer",
+  "fr":"prospérer",
   "en":"to thrive",
   "de":"gedeihen",
   "es":"prosperar",
@@ -40592,7 +40592,7 @@
 },
   {
   "id":"word_4511",
-  "fr":"marÃ©e",
+  "fr":"marée",
   "en":"tide",
   "de":"Gezeiten",
   "es":"marea",
@@ -40637,7 +40637,7 @@
 },
   {
   "id":"word_4516",
-  "fr":"tolÃ©rance",
+  "fr":"tolérance",
   "en":"tolerance",
   "de":"Toleranz",
   "es":"tolerancia",
@@ -40646,7 +40646,7 @@
 },
   {
   "id":"word_4517",
-  "fr":"tolÃ©rer",
+  "fr":"tolérer",
   "en":"to tolerate",
   "de":"tolerieren",
   "es":"tolerar",
@@ -40655,7 +40655,7 @@
 },
   {
   "id":"word_4518",
-  "fr":"pÃ©age",
+  "fr":"péage",
   "en":"toll",
   "de":"Maut",
   "es":"peaje",
@@ -40682,7 +40682,7 @@
 },
   {
   "id":"word_4521",
-  "fr":"marque dÃ©posÃ©e",
+  "fr":"marque déposée",
   "en":"trademark",
   "de":"Markenzeichen",
   "es":"marca registrada",
@@ -40700,9 +40700,9 @@
 },
   {
   "id":"word_4523",
-  "fr":"traÃ®tre",
+  "fr":"traître",
   "en":"traitor",
-  "de":"VerrÃ¤ter",
+  "de":"Verräter",
   "es":"traidor",
   "type":"nom",
   "level":"C1"
@@ -40712,7 +40712,7 @@
   "fr":"transaction",
   "en":"transaction",
   "de":"Transaktion",
-  "es":"transacciÃ³n",
+  "es":"transacción",
   "type":"nom",
   "level":"C1"
 },
@@ -40721,7 +40721,7 @@
   "fr":"transcription",
   "en":"transcript",
   "de":"Niederschrift",
-  "es":"transcripciÃ³n",
+  "es":"transcripción",
   "type":"nom",
   "level":"C1"
 },
@@ -40730,7 +40730,7 @@
   "fr":"transformation",
   "en":"transformation",
   "de":"Transformation",
-  "es":"transformaciÃ³n",
+  "es":"transformación",
   "type":"nom",
   "level":"C1"
 },
@@ -40739,7 +40739,7 @@
   "fr":"transit",
   "en":"transit",
   "de":"Transit",
-  "es":"trÃ¡nsito",
+  "es":"tránsito",
   "type":"nom",
   "level":"C1"
 },
@@ -40747,8 +40747,8 @@
   "id":"word_4528",
   "fr":"transmission",
   "en":"transmission",
-  "de":"Ãœbertragung",
-  "es":"transmisiÃ³n",
+  "de":"Übertragung",
+  "es":"transmisión",
   "type":"nom",
   "level":"C1"
 },
@@ -40781,7 +40781,7 @@
 },
   {
   "id":"word_4532",
-  "fr":"traitÃ©",
+  "fr":"traité",
   "en":"treaty",
   "de":"Vertrag",
   "es":"tratado",
@@ -40790,7 +40790,7 @@
 },
   {
   "id":"word_4533",
-  "fr":"Ã©norme",
+  "fr":"énorme",
   "en":"tremendous",
   "de":"enorm",
   "es":"tremendo",
@@ -40817,9 +40817,9 @@
 },
   {
   "id":"word_4536",
-  "fr":"dÃ©clencheur",
+  "fr":"déclencheur",
   "en":"trigger",
-  "de":"AuslÃ¶ser",
+  "de":"Auslöser",
   "es":"desencadenante",
   "type":"nom",
   "level":"C1"
@@ -40829,7 +40829,7 @@
   "fr":"trio",
   "en":"trio",
   "de":"Trio",
-  "es":"trÃ­o",
+  "es":"trío",
   "type":"nom",
   "level":"C1"
 },
@@ -40844,16 +40844,16 @@
 },
   {
   "id":"word_4539",
-  "fr":"trophÃ©e",
+  "fr":"trophée",
   "en":"trophy",
-  "de":"TrophÃ¤e",
+  "de":"Trophäe",
   "es":"trofeo",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4540",
-  "fr":"troublÃ©",
+  "fr":"troublé",
   "en":"troubled",
   "de":"beunruhigt",
   "es":"preocupado",
@@ -40864,17 +40864,17 @@
   "id":"word_4541",
   "fr":"administrateur",
   "en":"trustee",
-  "de":"TreuhÃ¤nder",
+  "de":"Treuhänder",
   "es":"fideicomisario",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4542",
-  "fr":"frais de scolaritÃ©",
+  "fr":"frais de scolarité",
   "en":"tuition",
   "de":"Schulgeld",
-  "es":"matrÃ­cula",
+  "es":"matrícula",
   "type":"nom",
   "level":"C1"
 },
@@ -40892,7 +40892,7 @@
   "fr":"taux de participation",
   "en":"turnout",
   "de":"Wahlbeteiligung",
-  "es":"participaciÃ³n",
+  "es":"participación",
   "type":"nom",
   "level":"C1"
 },
@@ -40925,7 +40925,7 @@
 },
   {
   "id":"word_4548",
-  "fr":"Ã©tudiant de premier cycle",
+  "fr":"étudiant de premier cycle",
   "en":"undergraduate",
   "de":"Student",
   "es":"estudiante de pregrado",
@@ -40970,7 +40970,7 @@
 },
   {
   "id":"word_4553",
-  "fr":"sans prÃ©cÃ©dent",
+  "fr":"sans précédent",
   "en":"unprecedented",
   "de":"beispiellos",
   "es":"sin precedentes",
@@ -40979,27 +40979,27 @@
 },
   {
   "id":"word_4554",
-  "fr":"dÃ©voiler",
+  "fr":"dévoiler",
   "en":"to unveil",
-  "de":"enthÃ¼llen",
+  "de":"enthüllen",
   "es":"desvelar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4555",
-  "fr":"Ã  venir",
+  "fr":"à venir",
   "en":"upcoming",
   "de":"bevorstehend",
-  "es":"prÃ³ximo",
+  "es":"próximo",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4556",
-  "fr":"mettre Ã  jour",
+  "fr":"mettre à jour",
   "en":"to upgrade",
-  "de":"aufrÃ¼sten",
+  "de":"aufrüsten",
   "es":"actualizar",
   "type":"verbe",
   "level":"C1"
@@ -41015,7 +41015,7 @@
 },
   {
   "id":"word_4558",
-  "fr":"monter en flÃ¨che",
+  "fr":"monter en flèche",
   "en":"to soar",
   "de":"aufsteigen",
   "es":"elevarse",
@@ -41036,7 +41036,7 @@
   "fr":"seul",
   "en":"sole",
   "de":"einzig",
-  "es":"Ãºnico",
+  "es":"único",
   "type":"adjectif",
   "level":"C1"
 },
@@ -41044,16 +41044,16 @@
   "id":"word_4561",
   "fr":"uniquement",
   "en":"solely",
-  "de":"ausschlieÃŸlich",
+  "de":"ausschließlich",
   "es":"solamente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4562",
-  "fr":"solidaritÃ©",
+  "fr":"solidarité",
   "en":"solidarity",
-  "de":"SolidaritÃ¤t",
+  "de":"Solidarität",
   "es":"solidaridad",
   "type":"nom",
   "level":"C1"
@@ -41069,16 +41069,16 @@
 },
   {
   "id":"word_4564",
-  "fr":"souverainetÃ©",
+  "fr":"souveraineté",
   "en":"sovereignty",
-  "de":"SouverÃ¤nitÃ¤t",
-  "es":"soberanÃ­a",
+  "de":"Souveränität",
+  "es":"soberanía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4565",
-  "fr":"durÃ©e / s\u0027Ã©tendre",
+  "fr":"durée / s\u0027étendre",
   "en":"span / to span",
   "de":"Spanne / umspannen",
   "es":"lapso / abarcar",
@@ -41087,16 +41087,16 @@
 },
   {
   "id":"word_4566",
-  "fr":"Ã©tincelle / dÃ©clencher",
+  "fr":"étincelle / déclencher",
   "en":"spark / to spark",
-  "de":"Funke / auslÃ¶sen",
+  "de":"Funke / auslösen",
   "es":"chispa / desatar",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4567",
-  "fr":"spÃ©cialisÃ©",
+  "fr":"spécialisé",
   "en":"specialised",
   "de":"spezialisiert",
   "es":"especializado",
@@ -41105,19 +41105,19 @@
 },
   {
   "id":"word_4568",
-  "fr":"spÃ©cification",
+  "fr":"spécification",
   "en":"specification",
   "de":"Spezifikation",
-  "es":"especificaciÃ³n",
+  "es":"especificación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4569",
-  "fr":"spÃ©cimen",
+  "fr":"spécimen",
   "en":"specimen",
   "de":"Exemplar",
-  "es":"espÃ©cimen",
+  "es":"espécimen",
   "type":"nom",
   "level":"C1"
 },
@@ -41126,7 +41126,7 @@
   "fr":"spectacle",
   "en":"spectacle",
   "de":"Spektakel",
-  "es":"espectÃ¡culo",
+  "es":"espectáculo",
   "type":"nom",
   "level":"C1"
 },
@@ -41141,9 +41141,9 @@
 },
   {
   "id":"word_4572",
-  "fr":"sphÃ¨re",
+  "fr":"sphère",
   "en":"sphere",
-  "de":"SphÃ¤re",
+  "de":"Sphäre",
   "es":"esfera",
   "type":"nom",
   "level":"C1"
@@ -41159,9 +41159,9 @@
 },
   {
   "id":"word_4574",
-  "fr":"colonne vertÃ©brale",
+  "fr":"colonne vertébrale",
   "en":"spine",
-  "de":"WirbelsÃ¤ule",
+  "de":"Wirbelsäule",
   "es":"columna vertebral",
   "type":"nom",
   "level":"C1"
@@ -41180,7 +41180,7 @@
   "fr":"conjoint",
   "en":"spouse",
   "de":"Ehepartner",
-  "es":"cÃ³nyuge",
+  "es":"cónyuge",
   "type":"nom",
   "level":"C1"
 },
@@ -41189,7 +41189,7 @@
   "fr":"escouade",
   "en":"squad",
   "de":"Trupp",
-  "es":"escuadrÃ³n",
+  "es":"escuadrón",
   "type":"nom",
   "level":"C1"
 },
@@ -41197,7 +41197,7 @@
   "id":"word_4578",
   "fr":"presser",
   "en":"to squeeze",
-  "de":"drÃ¼cken",
+  "de":"drücken",
   "es":"apretar",
   "type":"verbe",
   "level":"C1"
@@ -41207,15 +41207,15 @@
   "fr":"poignarder",
   "en":"to stab",
   "de":"erstechen",
-  "es":"apuÃ±alar",
+  "es":"apuñalar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4580",
-  "fr":"stabilitÃ©",
+  "fr":"stabilité",
   "en":"stability",
-  "de":"StabilitÃ¤t",
+  "de":"Stabilität",
   "es":"estabilidad",
   "type":"nom",
   "level":"C1"
@@ -41240,16 +41240,16 @@
 },
   {
   "id":"word_4583",
-  "fr":"rÃ©putation",
+  "fr":"réputation",
   "en":"standing",
   "de":"Ansehen",
-  "es":"reputaciÃ³n",
+  "es":"reputación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4584",
-  "fr":"austÃ¨re",
+  "fr":"austère",
   "en":"stark",
   "de":"kahl",
   "es":"austero",
@@ -41261,7 +41261,7 @@
   "fr":"statistique",
   "en":"statistical",
   "de":"statistisch",
-  "es":"estadÃ­stico",
+  "es":"estadístico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -41276,7 +41276,7 @@
 },
   {
   "id":"word_4587",
-  "fr":"dÃ©couler de",
+  "fr":"découler de",
   "en":"to stem from",
   "de":"stammen aus",
   "es":"derivar de",
@@ -41285,7 +41285,7 @@
 },
   {
   "id":"word_4588",
-  "fr":"stÃ©rÃ©otype",
+  "fr":"stéréotype",
   "en":"stereotype",
   "de":"Stereotyp",
   "es":"estereotipo",
@@ -41297,7 +41297,7 @@
   "fr":"stimulus",
   "en":"stimulus",
   "de":"Reiz",
-  "es":"estÃ­mulo",
+  "es":"estímulo",
   "type":"nom",
   "level":"C1"
 },
@@ -41305,7 +41305,7 @@
   "id":"word_4590",
   "fr":"remuer",
   "en":"to stir",
-  "de":"rÃ¼hren",
+  "de":"rühren",
   "es":"remover",
   "type":"verbe",
   "level":"C1"
@@ -41333,7 +41333,7 @@
   "fr":"tension",
   "en":"strain",
   "de":"Belastung",
-  "es":"tensiÃ³n",
+  "es":"tensión",
   "type":"nom",
   "level":"C1"
 },
@@ -41348,10 +41348,10 @@
 },
   {
   "id":"word_4595",
-  "fr":"stratÃ©gique",
+  "fr":"stratégique",
   "en":"strategic",
   "de":"strategisch",
-  "es":"estratÃ©gico",
+  "es":"estratégico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -41384,7 +41384,7 @@
 },
   {
   "id":"word_4599",
-  "fr":"trÃ©bucher",
+  "fr":"trébucher",
   "en":"to stumble",
   "de":"stolpern",
   "es":"tropezar",
@@ -41393,9 +41393,9 @@
 },
   {
   "id":"word_4600",
-  "fr":"Ã©tourdir",
+  "fr":"étourdir",
   "en":"to stun",
-  "de":"betÃ¤uben",
+  "de":"betäuben",
   "es":"aturdir",
   "type":"verbe",
   "level":"C1"
@@ -41405,13 +41405,13 @@
   "fr":"soumission",
   "en":"submission",
   "de":"Unterwerfung",
-  "es":"sumisiÃ³n",
+  "es":"sumisión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4602",
-  "fr":"abonnÃ©",
+  "fr":"abonné",
   "en":"subscriber",
   "de":"Abonnent",
   "es":"suscriptor",
@@ -41423,13 +41423,13 @@
   "fr":"abonnement",
   "en":"subscription",
   "de":"Abonnement",
-  "es":"suscripciÃ³n",
+  "es":"suscripción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4604",
-  "fr":"ultÃ©rieur",
+  "fr":"ultérieur",
   "en":"subsequent",
   "de":"darauffolgend",
   "es":"subsecuente",
@@ -41440,7 +41440,7 @@
   "id":"word_4605",
   "fr":"par la suite",
   "en":"subsequently",
-  "de":"anschlieÃŸend",
+  "de":"anschließend",
   "es":"posteriormente",
   "type":"adverbe",
   "level":"C1"
@@ -41486,7 +41486,7 @@
   "fr":"substitution",
   "en":"substitution",
   "de":"Substitution",
-  "es":"sustituciÃ³n",
+  "es":"sustitución",
   "type":"nom",
   "level":"C1"
 },
@@ -41503,7 +41503,7 @@
   "id":"word_4612",
   "fr":"banlieusard",
   "en":"suburban",
-  "de":"vorstÃ¤dtisch",
+  "de":"vorstädtisch",
   "es":"suburbano",
   "type":"adjectif",
   "level":"C1"
@@ -41513,7 +41513,7 @@
   "fr":"succession",
   "en":"succession",
   "de":"Nachfolge",
-  "es":"sucesiÃ³n",
+  "es":"sucesión",
   "type":"nom",
   "level":"C1"
 },
@@ -41585,7 +41585,7 @@
   "fr":"superbe",
   "en":"superb",
   "de":"hervorragend",
-  "es":"magnÃ­fico",
+  "es":"magnífico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -41600,9 +41600,9 @@
 },
   {
   "id":"word_4623",
-  "fr":"supÃ©rieur",
+  "fr":"supérieur",
   "en":"superior",
-  "de":"Ã¼berlegen",
+  "de":"überlegen",
   "es":"superior",
   "type":"adjectif",
   "level":"C1"
@@ -41611,7 +41611,7 @@
   "id":"word_4624",
   "fr":"superviser",
   "en":"to supervise",
-  "de":"Ã¼berwachen",
+  "de":"überwachen",
   "es":"supervisar",
   "type":"verbe",
   "level":"C1"
@@ -41621,7 +41621,7 @@
   "fr":"supervision",
   "en":"supervision",
   "de":"Aufsicht",
-  "es":"supervisiÃ³n",
+  "es":"supervisión",
   "type":"nom",
   "level":"C1"
 },
@@ -41636,9 +41636,9 @@
 },
   {
   "id":"word_4627",
-  "fr":"supplÃ©ment / complÃ©ter",
+  "fr":"supplément / compléter",
   "en":"supplement / to supplement",
-  "de":"ErgÃ¤nzung / ergÃ¤nzen",
+  "de":"Ergänzung / ergänzen",
   "es":"suplemento / complementar",
   "type":"nom",
   "level":"C1"
@@ -41647,7 +41647,7 @@
   "id":"word_4628",
   "fr":"solidaire",
   "en":"supportive",
-  "de":"unterstÃ¼tzend",
+  "de":"unterstützend",
   "es":"solidario",
   "type":"adjectif",
   "level":"C1"
@@ -41663,16 +41663,16 @@
 },
   {
   "id":"word_4630",
-  "fr":"rÃ©primer",
+  "fr":"réprimer",
   "en":"to suppress",
-  "de":"unterdrÃ¼cken",
+  "de":"unterdrücken",
   "es":"reprimir",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4631",
-  "fr":"suprÃªme",
+  "fr":"suprême",
   "en":"supreme",
   "de":"oberste",
   "es":"supremo",
@@ -41681,7 +41681,7 @@
 },
   {
   "id":"word_4632",
-  "fr":"montÃ©e / monter",
+  "fr":"montée / monter",
   "en":"surge / to surge",
   "de":"Anstieg / ansteigen",
   "es":"oleada / surgir",
@@ -41693,7 +41693,7 @@
   "fr":"chirurgical",
   "en":"surgical",
   "de":"chirurgisch",
-  "es":"quirÃºrgico",
+  "es":"quirúrgico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -41701,7 +41701,7 @@
   "id":"word_4634",
   "fr":"surplus",
   "en":"surplus",
-  "de":"Ãœberschuss",
+  "de":"Überschuss",
   "es":"excedente",
   "type":"nom",
   "level":"C1"
@@ -41719,7 +41719,7 @@
   "id":"word_4636",
   "fr":"surveillance",
   "en":"surveillance",
-  "de":"Ãœberwachung",
+  "de":"Überwachung",
   "es":"vigilancia",
   "type":"nom",
   "level":"C1"
@@ -41771,7 +41771,7 @@
 },
   {
   "id":"word_4642",
-  "fr":"acadÃ©mie",
+  "fr":"académie",
   "en":"academy",
   "de":"Akademie",
   "es":"academia",
@@ -41780,7 +41780,7 @@
 },
   {
   "id":"word_4643",
-  "fr":"accÃ©lÃ©rer",
+  "fr":"accélérer",
   "en":"to accelerate",
   "de":"beschleunigen",
   "es":"acelerar",
@@ -41792,7 +41792,7 @@
   "fr":"acceptation",
   "en":"acceptance",
   "de":"Akzeptanz",
-  "es":"aceptaciÃ³n",
+  "es":"aceptación",
   "type":"nom",
   "level":"C1"
 },
@@ -41800,7 +41800,7 @@
   "id":"word_4645",
   "fr":"accessible",
   "en":"accessible",
-  "de":"zugÃ¤nglich",
+  "de":"zugänglich",
   "es":"accesible",
   "type":"adjectif",
   "level":"C1"
@@ -41816,7 +41816,7 @@
 },
   {
   "id":"word_4647",
-  "fr":"en consÃ©quence",
+  "fr":"en conséquence",
   "en":"accordingly",
   "de":"dementsprechend",
   "es":"en consecuencia",
@@ -41825,7 +41825,7 @@
 },
   {
   "id":"word_4648",
-  "fr":"responsabilitÃ©",
+  "fr":"responsabilité",
   "en":"accountability",
   "de":"Rechenschaftspflicht",
   "es":"responsabilidad",
@@ -41855,7 +41855,7 @@
   "fr":"accumulation",
   "en":"accumulation",
   "de":"Ansammlung",
-  "es":"acumulaciÃ³n",
+  "es":"acumulación",
   "type":"nom",
   "level":"C1"
 },
@@ -41864,13 +41864,13 @@
   "fr":"accusation",
   "en":"accusation",
   "de":"Anklage",
-  "es":"acusaciÃ³n",
+  "es":"acusación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4653",
-  "fr":"accusÃ©",
+  "fr":"accusé",
   "en":"accused",
   "de":"Angeklagte",
   "es":"acusado",
@@ -41881,8 +41881,8 @@
   "id":"word_4654",
   "fr":"acide",
   "en":"acid",
-  "de":"SÃ¤ure",
-  "es":"Ã¡cido",
+  "de":"Säure",
+  "es":"ácido",
   "type":"nom",
   "level":"C1"
 },
@@ -41891,7 +41891,7 @@
   "fr":"acquisition",
   "en":"acquisition",
   "de":"Erwerb",
-  "es":"adquisiciÃ³n",
+  "es":"adquisición",
   "type":"nom",
   "level":"C1"
 },
@@ -41900,7 +41900,7 @@
   "fr":"activation",
   "en":"activation",
   "de":"Aktivierung",
-  "es":"activaciÃ³n",
+  "es":"activación",
   "type":"nom",
   "level":"C1"
 },
@@ -41927,13 +41927,13 @@
   "fr":"adaptation",
   "en":"adaptation",
   "de":"Anpassung",
-  "es":"adaptaciÃ³n",
+  "es":"adaptación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4660",
-  "fr":"adhÃ©rer",
+  "fr":"adhérer",
   "en":"to adhere",
   "de":"festhalten",
   "es":"adherirse",
@@ -41990,7 +41990,7 @@
   "fr":"admission",
   "en":"admission",
   "de":"Zulassung",
-  "es":"admisiÃ³n",
+  "es":"admisión",
   "type":"nom",
   "level":"C1"
 },
@@ -42008,13 +42008,13 @@
   "fr":"adoption",
   "en":"adoption",
   "de":"Adoption",
-  "es":"adopciÃ³n",
+  "es":"adopción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4669",
-  "fr":"dÃ©favorable",
+  "fr":"défavorable",
   "en":"adverse",
   "de":"nachteilig",
   "es":"adverso",
@@ -42023,19 +42023,19 @@
 },
   {
   "id":"word_4670",
-  "fr":"dÃ©fenseur",
+  "fr":"défenseur",
   "en":"advocate",
-  "de":"BefÃ¼rworter",
+  "de":"Befürworter",
   "es":"defensor",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4671",
-  "fr":"esthÃ©tique",
+  "fr":"esthétique",
   "en":"aesthetic",
-  "de":"Ã¤sthetisch",
-  "es":"estÃ©tico",
+  "de":"ästhetisch",
+  "es":"estético",
   "type":"adjectif",
   "level":"C1"
 },
@@ -42062,7 +42062,7 @@
   "fr":"agression",
   "en":"aggression",
   "de":"Aggression",
-  "es":"agresiÃ³n",
+  "es":"agresión",
   "type":"nom",
   "level":"C1"
 },
@@ -42071,7 +42071,7 @@
   "fr":"agricole",
   "en":"agricultural",
   "de":"landwirtschaftlich",
-  "es":"agrÃ­cola",
+  "es":"agrícola",
   "type":"adjectif",
   "level":"C1"
 },
@@ -42107,7 +42107,7 @@
   "fr":"alignement",
   "en":"alignment",
   "de":"Ausrichtung",
-  "es":"alineaciÃ³n",
+  "es":"alineación",
   "type":"nom",
   "level":"C1"
 },
@@ -42115,23 +42115,23 @@
   "id":"word_4680",
   "fr":"semblable",
   "en":"alike",
-  "de":"Ã¤hnlich",
+  "de":"ähnlich",
   "es":"similar",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4681",
-  "fr":"allÃ©gation",
+  "fr":"allégation",
   "en":"allegation",
   "de":"Behauptung",
-  "es":"alegaciÃ³n",
+  "es":"alegación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4682",
-  "fr":"allÃ©guer",
+  "fr":"alléguer",
   "en":"to allege",
   "de":"behaupten",
   "es":"alegar",
@@ -42140,7 +42140,7 @@
 },
   {
   "id":"word_4683",
-  "fr":"prÃ©tendument",
+  "fr":"prétendument",
   "en":"allegedly",
   "de":"angeblich",
   "es":"supuestamente",
@@ -42151,7 +42151,7 @@
   "id":"word_4684",
   "fr":"alliance",
   "en":"alliance",
-  "de":"BÃ¼ndnis",
+  "de":"Bündnis",
   "es":"alianza",
   "type":"nom",
   "level":"C1"
@@ -42170,13 +42170,13 @@
   "fr":"allocation",
   "en":"allocation",
   "de":"Zuweisung",
-  "es":"asignaciÃ³n",
+  "es":"asignación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4687",
-  "fr":"indemnitÃ©",
+  "fr":"indemnité",
   "en":"allowance",
   "de":"Zulage",
   "es":"subsidio",
@@ -42185,9 +42185,9 @@
 },
   {
   "id":"word_4688",
-  "fr":"alliÃ©",
+  "fr":"allié",
   "en":"ally",
-  "de":"VerbÃ¼ndete",
+  "de":"Verbündete",
   "es":"aliado",
   "type":"nom",
   "level":"C1"
@@ -42223,7 +42223,7 @@
   "id":"word_4692",
   "fr":"modifier",
   "en":"to amend",
-  "de":"Ã¤ndern",
+  "de":"ändern",
   "es":"enmendar",
   "type":"verbe",
   "level":"C1"
@@ -42232,7 +42232,7 @@
   "id":"word_4693",
   "fr":"amendement",
   "en":"amendment",
-  "de":"Ã„nderung",
+  "de":"Änderung",
   "es":"enmienda",
   "type":"nom",
   "level":"C1"
@@ -42251,7 +42251,7 @@
   "fr":"analogie",
   "en":"analogy",
   "de":"Analogie",
-  "es":"analogÃ­a",
+  "es":"analogía",
   "type":"nom",
   "level":"C1"
 },
@@ -42269,13 +42269,13 @@
   "fr":"anonyme",
   "en":"anonymous",
   "de":"anonym",
-  "es":"anÃ³nimo",
+  "es":"anónimo",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4698",
-  "fr":"vÃªtements",
+  "fr":"vêtements",
   "en":"apparel",
   "de":"Bekleidung",
   "es":"ropa",
@@ -42293,7 +42293,7 @@
 },
   {
   "id":"word_4700",
-  "fr":"appÃ©tit",
+  "fr":"appétit",
   "en":"appetite",
   "de":"Appetit",
   "es":"apetito",
@@ -42329,10 +42329,10 @@
 },
   {
   "id":"word_4704",
-  "fr":"apprÃ©ciation",
+  "fr":"appréciation",
   "en":"appreciation",
-  "de":"WertschÃ¤tzung",
-  "es":"apreciaciÃ³n",
+  "de":"Wertschätzung",
+  "es":"apreciación",
   "type":"nom",
   "level":"C1"
 },
@@ -42340,7 +42340,7 @@
   "id":"word_4705",
   "fr":"arbitraire",
   "en":"arbitrary",
-  "de":"willkÃ¼rlich",
+  "de":"willkürlich",
   "es":"arbitrario",
   "type":"adjectif",
   "level":"C1"
@@ -42350,7 +42350,7 @@
   "fr":"architectural",
   "en":"architectural",
   "de":"architektonisch",
-  "es":"arquitectÃ³nico",
+  "es":"arquitectónico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -42365,7 +42365,7 @@
 },
   {
   "id":"word_4708",
-  "fr":"arÃ¨ne",
+  "fr":"arène",
   "en":"arena",
   "de":"Arena",
   "es":"arena",
@@ -42413,7 +42413,7 @@
   "fr":"aspiration",
   "en":"aspiration",
   "de":"Streben",
-  "es":"aspiraciÃ³n",
+  "es":"aspiración",
   "type":"nom",
   "level":"C1"
 },
@@ -42449,7 +42449,7 @@
   "fr":"orientation",
   "en":"orientation",
   "de":"Orientierung",
-  "es":"orientaciÃ³n",
+  "es":"orientación",
   "type":"nom",
   "level":"C1"
 },
@@ -42464,7 +42464,7 @@
 },
   {
   "id":"word_4719",
-  "fr":"Ã©pidÃ©mie",
+  "fr":"épidémie",
   "en":"outbreak",
   "de":"Ausbruch",
   "es":"brote",
@@ -42476,13 +42476,13 @@
   "fr":"sortie",
   "en":"outing",
   "de":"Ausflug",
-  "es":"excursiÃ³n",
+  "es":"excursión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4721",
-  "fr":"dÃ©bouchÃ©",
+  "fr":"débouché",
   "en":"outlet",
   "de":"Ventil",
   "es":"salida",
@@ -42502,16 +42502,16 @@
   "id":"word_4723",
   "fr":"scandale",
   "en":"outrage",
-  "de":"EmpÃ¶rung",
-  "es":"indignaciÃ³n",
+  "de":"Empörung",
+  "es":"indignación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4724",
-  "fr":"Ã©tranger",
+  "fr":"étranger",
   "en":"outsider",
-  "de":"AuÃŸenseiter",
+  "de":"Außenseiter",
   "es":"forastero",
   "type":"nom",
   "level":"C1"
@@ -42520,7 +42520,7 @@
   "id":"word_4725",
   "fr":"ignorer",
   "en":"overlook",
-  "de":"Ã¼bersehen",
+  "de":"übersehen",
   "es":"pasar por alto",
   "type":"verbe",
   "level":"C1"
@@ -42529,7 +42529,7 @@
   "id":"word_4726",
   "fr":"excessivement",
   "en":"overly",
-  "de":"Ã¼bermÃ¤ÃŸig",
+  "de":"übermäßig",
   "es":"excesivamente",
   "type":"adverbe",
   "level":"C1"
@@ -42556,26 +42556,26 @@
   "id":"word_4729",
   "fr":"submerger",
   "en":"overwhelm",
-  "de":"Ã¼berwÃ¤ltigen",
+  "de":"überwältigen",
   "es":"abrumar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4730",
-  "fr":"Ã©crasant",
+  "fr":"écrasant",
   "en":"overwhelming",
-  "de":"Ã¼berwÃ¤ltigend",
+  "de":"überwältigend",
   "es":"abrumador",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4731",
-  "fr":"paramÃ¨tre",
+  "fr":"paramètre",
   "en":"parameter",
   "de":"Parameter",
-  "es":"parÃ¡metro",
+  "es":"parámetro",
   "type":"nom",
   "level":"C1"
 },
@@ -42608,7 +42608,7 @@
 },
   {
   "id":"word_4735",
-  "fr":"dÃ©cÃ¨s",
+  "fr":"décès",
   "en":"passing",
   "de":"Tod",
   "es":"fallecimiento",
@@ -42700,7 +42700,7 @@
   "id":"word_4745",
   "fr":"persister",
   "en":"persist",
-  "de":"hartnÃ¤ckig bleiben",
+  "de":"hartnäckig bleiben",
   "es":"persistir",
   "type":"verbe",
   "level":"C1"
@@ -42725,10 +42725,10 @@
 },
   {
   "id":"word_4748",
-  "fr":"pÃ©tition",
+  "fr":"pétition",
   "en":"petition",
   "de":"Petition",
-  "es":"peticiÃ³n",
+  "es":"petición",
   "type":"nom",
   "level":"C1"
 },
@@ -42737,7 +42737,7 @@
   "fr":"philosophe",
   "en":"philosopher",
   "de":"Philosoph",
-  "es":"filÃ³sofo",
+  "es":"filósofo",
   "type":"nom",
   "level":"C1"
 },
@@ -42746,7 +42746,7 @@
   "fr":"philosophique",
   "en":"philosophical",
   "de":"philosophisch",
-  "es":"filosÃ³fico",
+  "es":"filosófico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -42764,7 +42764,7 @@
   "fr":"pipeline",
   "en":"pipeline",
   "de":"Pipeline",
-  "es":"tuberÃ­a",
+  "es":"tubería",
   "type":"nom",
   "level":"C1"
 },
@@ -42791,7 +42791,7 @@
   "fr":"supplication",
   "en":"plea",
   "de":"Bitte",
-  "es":"sÃºplica",
+  "es":"súplica",
   "type":"nom",
   "level":"C1"
 },
@@ -42799,7 +42799,7 @@
   "id":"word_4756",
   "fr":"plaider",
   "en":"plead",
-  "de":"plÃ¤dieren",
+  "de":"plädieren",
   "es":"declararse",
   "type":"verbe",
   "level":"C1"
@@ -42817,14 +42817,14 @@
   "id":"word_4758",
   "fr":"plonger",
   "en":"plunge",
-  "de":"stÃ¼rzen",
+  "de":"stürzen",
   "es":"hundir",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4759",
-  "fr":"pÃ´le",
+  "fr":"pôle",
   "en":"pole",
   "de":"Pol",
   "es":"polo",
@@ -42851,7 +42851,7 @@
 },
   {
   "id":"word_4762",
-  "fr":"dÃ©peindre",
+  "fr":"dépeindre",
   "en":"portray",
   "de":"darstellen",
   "es":"retratar",
@@ -42869,7 +42869,7 @@
 },
   {
   "id":"word_4764",
-  "fr":"d\u0027aprÃ¨s-guerre",
+  "fr":"d\u0027après-guerre",
   "en":"post-war",
   "de":"Nachkriegs-",
   "es":"de posguerra",
@@ -42887,7 +42887,7 @@
 },
   {
   "id":"word_4766",
-  "fr":"prÃªcher",
+  "fr":"prêcher",
   "en":"preach",
   "de":"predigen",
   "es":"predicar",
@@ -42896,7 +42896,7 @@
 },
   {
   "id":"word_4767",
-  "fr":"prÃ©cÃ©der",
+  "fr":"précéder",
   "en":"precede",
   "de":"vorausgehen",
   "es":"preceder",
@@ -42905,25 +42905,25 @@
 },
   {
   "id":"word_4768",
-  "fr":"prÃ©cÃ©dent",
+  "fr":"précédent",
   "en":"precedent",
-  "de":"PrÃ¤zedenzfall",
+  "de":"Präzedenzfall",
   "es":"precedente",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4769",
-  "fr":"prÃ©cision",
+  "fr":"précision",
   "en":"precision",
-  "de":"PrÃ¤zision",
-  "es":"precisiÃ³n",
+  "de":"Präzision",
+  "es":"precisión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4770",
-  "fr":"prÃ©dateur",
+  "fr":"prédateur",
   "en":"predator",
   "de":"Raubtier",
   "es":"depredador",
@@ -42932,9 +42932,9 @@
 },
   {
   "id":"word_4771",
-  "fr":"prÃ©dÃ©cesseur",
+  "fr":"prédécesseur",
   "en":"predecessor",
-  "de":"VorgÃ¤nger",
+  "de":"Vorgänger",
   "es":"predecesor",
   "type":"nom",
   "level":"C1"
@@ -42943,7 +42943,7 @@
   "id":"word_4772",
   "fr":"principalement",
   "en":"predominantly",
-  "de":"Ã¼berwiegend",
+  "de":"überwiegend",
   "es":"predominantemente",
   "type":"adverbe",
   "level":"C1"
@@ -42959,7 +42959,7 @@
 },
   {
   "id":"word_4774",
-  "fr":"prÃ©jugÃ©",
+  "fr":"préjugé",
   "en":"prejudice",
   "de":"Vorurteil",
   "es":"prejuicio",
@@ -42968,9 +42968,9 @@
 },
   {
   "id":"word_4775",
-  "fr":"prÃ©liminaire",
+  "fr":"préliminaire",
   "en":"preliminary",
-  "de":"vorlÃ¤ufig",
+  "de":"vorläufig",
   "es":"preliminar",
   "type":"adjectif",
   "level":"C1"
@@ -42986,9 +42986,9 @@
 },
   {
   "id":"word_4777",
-  "fr":"prÃ©misse",
+  "fr":"prémisse",
   "en":"premise",
-  "de":"PrÃ¤misse",
+  "de":"Prämisse",
   "es":"premisa",
   "type":"nom",
   "level":"C1"
@@ -42997,7 +42997,7 @@
   "id":"word_4778",
   "fr":"prime",
   "en":"premium",
-  "de":"PrÃ¤mie",
+  "de":"Prämie",
   "es":"prima",
   "type":"nom",
   "level":"C1"
@@ -43031,27 +43031,27 @@
 },
   {
   "id":"word_4782",
-  "fr":"prÃ©servation",
+  "fr":"préservation",
   "en":"preservation",
   "de":"Erhaltung",
-  "es":"preservaciÃ³n",
+  "es":"preservación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4783",
-  "fr":"prÃ©sider",
+  "fr":"présider",
   "en":"preside",
-  "de":"den Vorsitz fÃ¼hren",
+  "de":"den Vorsitz führen",
   "es":"presidir",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4784",
-  "fr":"prÃ©sidence",
+  "fr":"présidence",
   "en":"presidency",
-  "de":"PrÃ¤sidentschaft",
+  "de":"Präsidentschaft",
   "es":"presidencia",
   "type":"nom",
   "level":"C1"
@@ -43076,7 +43076,7 @@
 },
   {
   "id":"word_4787",
-  "fr":"prÃ©sumer",
+  "fr":"présumer",
   "en":"presume",
   "de":"vermuten",
   "es":"suponer",
@@ -43085,7 +43085,7 @@
 },
   {
   "id":"word_4788",
-  "fr":"prÃ©valoir",
+  "fr":"prévaloir",
   "en":"prevail",
   "de":"sich durchsetzen",
   "es":"prevalecer",
@@ -43094,7 +43094,7 @@
 },
   {
   "id":"word_4789",
-  "fr":"prÃ©valence",
+  "fr":"prévalence",
   "en":"prevalence",
   "de":"Verbreitung",
   "es":"prevalencia",
@@ -43103,10 +43103,10 @@
 },
   {
   "id":"word_4790",
-  "fr":"prÃ©vention",
+  "fr":"prévention",
   "en":"prevention",
-  "de":"PrÃ¤vention",
-  "es":"prevenciÃ³n",
+  "de":"Prävention",
+  "es":"prevención",
   "type":"nom",
   "level":"C1"
 },
@@ -43124,13 +43124,13 @@
   "fr":"privatisation",
   "en":"privatization",
   "de":"Privatisierung",
-  "es":"privatizaciÃ³n",
+  "es":"privatización",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4793",
-  "fr":"privilÃ¨ge",
+  "fr":"privilège",
   "en":"privilege",
   "de":"Privileg",
   "es":"privilegio",
@@ -43148,16 +43148,16 @@
 },
   {
   "id":"word_4795",
-  "fr":"problÃ©matique",
+  "fr":"problématique",
   "en":"problematic",
   "de":"problematisch",
-  "es":"problemÃ¡tico",
+  "es":"problemático",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4796",
-  "fr":"procÃ©dure",
+  "fr":"procédure",
   "en":"proceeding",
   "de":"Verfahren",
   "es":"procedimiento",
@@ -43168,7 +43168,7 @@
   "id":"word_4797",
   "fr":"les recettes",
   "en":"the proceeds",
-  "de":"der Erlös",
+  "de":"der Erl�s",
   "es":"las ganancias",
   "type":"nom",
   "level":"C1"
@@ -43195,7 +43195,7 @@
   "id":"word_4800",
   "fr":"proclamer",
   "en":"to proclaim",
-  "de":"verkünden",
+  "de":"verk�nden",
   "es":"proclamar",
   "type":"verbe",
   "level":"C1"
@@ -43211,9 +43211,9 @@
 },
   {
   "id":"word_4802",
-  "fr":"la productivité",
+  "fr":"la productivit�",
   "en":"the productivity",
-  "de":"die Produktivität",
+  "de":"die Produktivit�t",
   "es":"la productividad",
   "type":"nom",
   "level":"C1"
@@ -43231,7 +43231,7 @@
   "id":"word_4804",
   "fr":"profond",
   "en":"profound",
-  "de":"tiefgründig",
+  "de":"tiefgr�ndig",
   "es":"profundo",
   "type":"adjectif",
   "level":"C1"
@@ -43241,13 +43241,13 @@
   "fr":"la projection",
   "en":"the projection",
   "de":"die Projektion",
-  "es":"la proyección",
+  "es":"la proyecci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4806",
-  "fr":"éminent",
+  "fr":"�minent",
   "en":"prominent",
   "de":"prominent",
   "es":"prominente",
@@ -43256,9 +43256,9 @@
 },
   {
   "id":"word_4807",
-  "fr":"prononcé",
+  "fr":"prononc�",
   "en":"pronounced",
-  "de":"ausgeprägt",
+  "de":"ausgepr�gt",
   "es":"pronunciado",
   "type":"adjectif",
   "level":"C1"
@@ -43277,7 +43277,7 @@
   "fr":"la proposition",
   "en":"the proposition",
   "de":"der Vorschlag",
-  "es":"la proposición",
+  "es":"la proposici�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43295,7 +43295,7 @@
   "fr":"l\u0027accusation",
   "en":"the prosecution",
   "de":"die Anklage",
-  "es":"la acusación",
+  "es":"la acusaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43312,14 +43312,14 @@
   "id":"word_4813",
   "fr":"prospectif",
   "en":"prospective",
-  "de":"zukünftig",
+  "de":"zuk�nftig",
   "es":"prospectivo",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4814",
-  "fr":"la prospérité",
+  "fr":"la prosp�rit�",
   "en":"the prosperity",
   "de":"der Wohlstand",
   "es":"la prosperidad",
@@ -43330,7 +43330,7 @@
   "id":"word_4815",
   "fr":"protecteur",
   "en":"protective",
-  "de":"schützend",
+  "de":"sch�tzend",
   "es":"protector",
   "type":"adjectif",
   "level":"C1"
@@ -43367,7 +43367,7 @@
   "fr":"la disposition",
   "en":"the provision",
   "de":"die Bereitstellung",
-  "es":"la provisión",
+  "es":"la provisi�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43385,7 +43385,7 @@
   "fr":"psychiatrique",
   "en":"psychiatric",
   "de":"psychiatrisch",
-  "es":"psiquiátrico",
+  "es":"psiqui�trico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -43400,7 +43400,7 @@
 },
   {
   "id":"word_4823",
-  "fr":"la requête",
+  "fr":"la requ�te",
   "en":"the query",
   "de":"die Abfrage",
   "es":"la consulta",
@@ -43409,10 +43409,10 @@
 },
   {
   "id":"word_4824",
-  "fr":"la quête",
+  "fr":"la qu�te",
   "en":"the quest",
   "de":"die Suche",
-  "es":"la búsqueda",
+  "es":"la b�squeda",
   "type":"nom",
   "level":"C1"
 },
@@ -43466,7 +43466,7 @@
   "fr":"le classement",
   "en":"the ranking",
   "de":"die Platzierung",
-  "es":"la clasificación",
+  "es":"la clasificaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43475,7 +43475,7 @@
   "fr":"le viol",
   "en":"the rape",
   "de":"die Vergewaltigung",
-  "es":"la violación",
+  "es":"la violaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43483,8 +43483,8 @@
   "id":"word_4832",
   "fr":"le ratio",
   "en":"the ratio",
-  "de":"das Verhältnis",
-  "es":"la proporción",
+  "de":"das Verh�ltnis",
+  "es":"la proporci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43511,16 +43511,16 @@
   "fr":"volontiers",
   "en":"readily",
   "de":"bereitwillig",
-  "es":"fácilmente",
+  "es":"f�cilmente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4836",
-  "fr":"la réalisation",
+  "fr":"la r�alisation",
   "en":"the realization",
   "de":"die Erkenntnis",
-  "es":"la realización",
+  "es":"la realizaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43535,7 +43535,7 @@
 },
   {
   "id":"word_4838",
-  "fr":"l\u0027arrière",
+  "fr":"l\u0027arri�re",
   "en":"the rear",
   "de":"das Heck",
   "es":"la parte trasera",
@@ -43571,10 +43571,10 @@
 },
   {
   "id":"word_4842",
-  "fr":"la rébellion",
+  "fr":"la r�bellion",
   "en":"the rebellion",
   "de":"die Rebellion",
-  "es":"la rebelión",
+  "es":"la rebeli�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43582,7 +43582,7 @@
   "id":"word_4843",
   "fr":"le destinataire",
   "en":"the recipient",
-  "de":"der Empfänger",
+  "de":"der Empf�nger",
   "es":"el destinatario",
   "type":"nom",
   "level":"C1"
@@ -43592,7 +43592,7 @@
   "fr":"la reconstruction",
   "en":"the reconstruction",
   "de":"der Wiederaufbau",
-  "es":"la reconstrucción",
+  "es":"la reconstrucci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43600,7 +43600,7 @@
   "id":"word_4845",
   "fr":"raconter",
   "en":"to recount",
-  "de":"erzählen",
+  "de":"erz�hlen",
   "es":"relatar",
   "type":"verbe",
   "level":"C1"
@@ -43616,25 +43616,25 @@
 },
   {
   "id":"word_4847",
-  "fr":"le référendum",
+  "fr":"le r�f�rendum",
   "en":"the referendum",
   "de":"das Referendum",
-  "es":"el referéndum",
+  "es":"el refer�ndum",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4848",
-  "fr":"la réflexion",
+  "fr":"la r�flexion",
   "en":"the reflection",
   "de":"die Reflexion",
-  "es":"la reflexión",
+  "es":"la reflexi�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4849",
-  "fr":"la réforme",
+  "fr":"la r�forme",
   "en":"the reform",
   "de":"die Reform",
   "es":"la reforma",
@@ -43663,32 +43663,32 @@
   "id":"word_4852",
   "fr":"regagner",
   "en":"to regain",
-  "de":"zurückgewinnen",
+  "de":"zur�ckgewinnen",
   "es":"recuperar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4853",
-  "fr":"indépendamment",
+  "fr":"ind�pendamment",
   "en":"regardless",
-  "de":"unabhängig davon",
+  "de":"unabh�ngig davon",
   "es":"independientemente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4854",
-  "fr":"le régime",
+  "fr":"le r�gime",
   "en":"the regime",
   "de":"das Regime",
-  "es":"el régimen",
+  "es":"el r�gimen",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4855",
-  "fr":"le régulateur",
+  "fr":"le r�gulateur",
   "en":"the regulator",
   "de":"der Regulator",
   "es":"el regulador",
@@ -43697,7 +43697,7 @@
 },
   {
   "id":"word_4856",
-  "fr":"réglementaire",
+  "fr":"r�glementaire",
   "en":"regulatory",
   "de":"regulatorisch",
   "es":"regulador",
@@ -43706,16 +43706,16 @@
 },
   {
   "id":"word_4857",
-  "fr":"la réhabilitation",
+  "fr":"la r�habilitation",
   "en":"the rehabilitation",
   "de":"die Rehabilitation",
-  "es":"la rehabilitación",
+  "es":"la rehabilitaci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4858",
-  "fr":"le règne",
+  "fr":"le r�gne",
   "en":"the reign",
   "de":"die Herrschaft",
   "es":"el reinado",
@@ -43742,16 +43742,16 @@
 },
   {
   "id":"word_4861",
-  "fr":"la fiabilité",
+  "fr":"la fiabilit�",
   "en":"the reliability",
-  "de":"die Zuverlässigkeit",
+  "de":"die Zuverl�ssigkeit",
   "es":"la fiabilidad",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4862",
-  "fr":"réticent",
+  "fr":"r�ticent",
   "en":"reluctant",
   "de":"widerwillig",
   "es":"renuente",
@@ -43771,14 +43771,14 @@
   "id":"word_4864",
   "fr":"les restes",
   "en":"the remains",
-  "de":"die Überreste",
+  "de":"die �berreste",
   "es":"los restos",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4865",
-  "fr":"le remède",
+  "fr":"le rem�de",
   "en":"the remedy",
   "de":"das Heilmittel",
   "es":"el remedio",
@@ -43799,7 +43799,7 @@
   "fr":"le retrait",
   "en":"the removal",
   "de":"die Entfernung",
-  "es":"la eliminación",
+  "es":"la eliminaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43823,7 +43823,7 @@
 },
   {
   "id":"word_4870",
-  "fr":"renommé",
+  "fr":"renomm�",
   "en":"renowned",
   "de":"renommiert",
   "es":"renombrado",
@@ -43853,16 +43853,16 @@
   "fr":"selon certaines sources",
   "en":"reportedly",
   "de":"angeblich",
-  "es":"según los informes",
+  "es":"seg�n los informes",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4874",
-  "fr":"la représentation",
+  "fr":"la repr�sentation",
   "en":"the representation",
   "de":"die Darstellung",
-  "es":"la representación",
+  "es":"la representaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -43880,16 +43880,16 @@
   "fr":"la reproduction",
   "en":"the reproduction",
   "de":"die Reproduktion",
-  "es":"la reproducción",
+  "es":"la reproducci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4877",
-  "fr":"rÃ©publique",
+  "fr":"république",
   "en":"republic (n)",
   "de":"Republik",
-  "es":"repÃºblica",
+  "es":"república",
   "type":"nom",
   "level":"C1"
 },
@@ -43897,14 +43897,14 @@
   "id":"word_4878",
   "fr":"ressembler",
   "en":"to resemble (v)",
-  "de":"Ã¤hneln",
+  "de":"ähneln",
   "es":"parecerse",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4879",
-  "fr":"rÃ©sider",
+  "fr":"résider",
   "en":"to reside (v)",
   "de":"wohnen",
   "es":"residir",
@@ -43913,7 +43913,7 @@
 },
   {
   "id":"word_4880",
-  "fr":"rÃ©sidence",
+  "fr":"résidence",
   "en":"residence (n)",
   "de":"Wohnsitz",
   "es":"residencia",
@@ -43922,7 +43922,7 @@
 },
   {
   "id":"word_4881",
-  "fr":"rÃ©sidentiel",
+  "fr":"résidentiel",
   "en":"residential (adj)",
   "de":"Wohn-",
   "es":"residencial",
@@ -43931,25 +43931,25 @@
 },
   {
   "id":"word_4882",
-  "fr":"rÃ©sidu",
+  "fr":"résidu",
   "en":"residue (n)",
-  "de":"RÃ¼ckstand",
+  "de":"Rückstand",
   "es":"residuo",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4883",
-  "fr":"dÃ©mission",
+  "fr":"démission",
   "en":"resignation (n)",
-  "de":"RÃ¼cktritt",
-  "es":"dimisiÃ³n",
+  "de":"Rücktritt",
+  "es":"dimisión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4884",
-  "fr":"rÃ©sistance",
+  "fr":"résistance",
   "en":"resistance (n)",
   "de":"Widerstand",
   "es":"resistencia",
@@ -43979,7 +43979,7 @@
   "fr":"restauration",
   "en":"restoration (n)",
   "de":"Restaurierung",
-  "es":"restauraciÃ³n",
+  "es":"restauración",
   "type":"nom",
   "level":"C1"
 },
@@ -43987,8 +43987,8 @@
   "id":"word_4888",
   "fr":"retenue",
   "en":"restraint (n)",
-  "de":"ZurÃ¼ckhaltung",
-  "es":"restricciÃ³n",
+  "de":"Zurückhaltung",
+  "es":"restricción",
   "type":"nom",
   "level":"C1"
 },
@@ -44005,26 +44005,26 @@
   "id":"word_4890",
   "fr":"retraite",
   "en":"retreat (n) / to retreat (v)",
-  "de":"RÃ¼ckzug",
+  "de":"Rückzug",
   "es":"retirada",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4891",
-  "fr":"rÃ©cupÃ©rer",
+  "fr":"récupérer",
   "en":"to retrieve (v)",
-  "de":"zurÃ¼ckholen",
+  "de":"zurückholen",
   "es":"recuperar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4892",
-  "fr":"rÃ©vÃ©lation",
+  "fr":"révélation",
   "en":"revelation (n)",
-  "de":"EnthÃ¼llung",
-  "es":"revelaciÃ³n",
+  "de":"Enthüllung",
+  "es":"revelación",
   "type":"nom",
   "level":"C1"
 },
@@ -44066,25 +44066,25 @@
 },
   {
   "id":"word_4897",
-  "fr":"rÃ©volutionnaire",
+  "fr":"révolutionnaire",
   "en":"revolutionary (adj / n)",
-  "de":"revolutionÃ¤r",
+  "de":"revolutionär",
   "es":"revolucionario",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_4898",
-  "fr":"rhÃ©torique",
+  "fr":"rhétorique",
   "en":"rhetoric (n)",
   "de":"Rhetorik",
-  "es":"retÃ³rica",
+  "es":"retórica",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4899",
-  "fr":"Ã©meute",
+  "fr":"émeute",
   "en":"riot (n)",
   "de":"Aufstand",
   "es":"disturbio",
@@ -44093,9 +44093,9 @@
 },
   {
   "id":"word_4900",
-  "fr":"dÃ©chirer",
+  "fr":"déchirer",
   "en":"to rip (v)",
-  "de":"zerreiÃŸen",
+  "de":"zerreißen",
   "es":"rasgar",
   "type":"verbe",
   "level":"C1"
@@ -44129,9 +44129,9 @@
 },
   {
   "id":"word_4904",
-  "fr":"dÃ©butant",
+  "fr":"débutant",
   "en":"rookie (n)",
-  "de":"AnfÃ¤nger",
+  "de":"Anfänger",
   "es":"novato",
   "type":"nom",
   "level":"C1"
@@ -44159,13 +44159,13 @@
   "fr":"rotation",
   "en":"rotation (n)",
   "de":"Rotation",
-  "es":"rotaciÃ³n",
+  "es":"rotación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4908",
-  "fr":"dÃ©cision",
+  "fr":"décision",
   "en":"ruling (n / adj)",
   "de":"Urteil",
   "es":"fallo",
@@ -44176,14 +44176,14 @@
   "id":"word_4909",
   "fr":"rumeur",
   "en":"rumour (n)",
-  "de":"GerÃ¼cht",
+  "de":"Gerücht",
   "es":"rumor",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4910",
-  "fr":"sacrÃ©",
+  "fr":"sacré",
   "en":"sacred (adj)",
   "de":"heilig",
   "es":"sagrado",
@@ -44222,7 +44222,7 @@
   "fr":"sanction",
   "en":"sanction (n)",
   "de":"Sanktion",
-  "es":"sanciÃ³n",
+  "es":"sanción",
   "type":"nom",
   "level":"C1"
 },
@@ -44237,7 +44237,7 @@
 },
   {
   "id":"word_4916",
-  "fr":"scÃ©nario",
+  "fr":"scénario",
   "en":"scenario (n)",
   "de":"Szenario",
   "es":"escenario",
@@ -44246,7 +44246,7 @@
 },
   {
   "id":"word_4917",
-  "fr":"Ã©parpillÃ©",
+  "fr":"éparpillé",
   "en":"scattered (adj)",
   "de":"verstreut",
   "es":"disperso",
@@ -44255,7 +44255,7 @@
 },
   {
   "id":"word_4918",
-  "fr":"portÃ©e",
+  "fr":"portée",
   "en":"scope (n)",
   "de":"Umfang",
   "es":"alcance",
@@ -44275,7 +44275,7 @@
   "id":"word_4920",
   "fr":"examen minutieux",
   "en":"scrutiny (n)",
-  "de":"ÃœberprÃ¼fung",
+  "de":"Überprüfung",
   "es":"escrutinio",
   "type":"nom",
   "level":"C1"
@@ -44291,7 +44291,7 @@
 },
   {
   "id":"word_4922",
-  "fr":"deuxiÃ¨mement",
+  "fr":"deuxièmement",
   "en":"secondly (adv)",
   "de":"zweitens",
   "es":"en segundo lugar",
@@ -44300,9 +44300,9 @@
 },
   {
   "id":"word_4923",
-  "fr":"laÃ¯c",
+  "fr":"laïc",
   "en":"secular (adj)",
-  "de":"sÃ¤kular",
+  "de":"säkular",
   "es":"secular",
   "type":"adjectif",
   "level":"C1"
@@ -44345,7 +44345,7 @@
 },
   {
   "id":"word_4928",
-  "fr":"sÃ©lectif",
+  "fr":"sélectif",
   "en":"selective (adj)",
   "de":"selektiv",
   "es":"selectivo",
@@ -44357,15 +44357,15 @@
   "fr":"sensation",
   "en":"sensation (n)",
   "de":"Sensation",
-  "es":"sensaciÃ³n",
+  "es":"sensación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4930",
-  "fr":"sensibilitÃ©",
+  "fr":"sensibilité",
   "en":"sensitivity (n)",
-  "de":"SensibilitÃ¤t",
+  "de":"Sensibilität",
   "es":"sensibilidad",
   "type":"nom",
   "level":"C1"
@@ -44381,16 +44381,16 @@
 },
   {
   "id":"word_4932",
-  "fr":"sÃ©paration",
+  "fr":"séparation",
   "en":"separation (n)",
   "de":"Trennung",
-  "es":"separaciÃ³n",
+  "es":"separación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4933",
-  "fr":"en sÃ©rie",
+  "fr":"en série",
   "en":"serial (adj)",
   "de":"Serien-",
   "es":"en serie",
@@ -44411,15 +44411,15 @@
   "fr":"configuration",
   "en":"setup (n)",
   "de":"Aufbau",
-  "es":"configuraciÃ³n",
+  "es":"configuración",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4936",
-  "fr":"sexualitÃ©",
+  "fr":"sexualité",
   "en":"sexuality (n)",
-  "de":"SexualitÃ¤t",
+  "de":"Sexualität",
   "es":"sexualidad",
   "type":"nom",
   "level":"C1"
@@ -44428,7 +44428,7 @@
   "id":"word_4937",
   "fr":"actionnaire",
   "en":"shareholder (n)",
-  "de":"AktionÃ¤r",
+  "de":"Aktionär",
   "es":"accionista",
   "type":"nom",
   "level":"C1"
@@ -44462,16 +44462,16 @@
 },
   {
   "id":"word_4941",
-  "fr":"expÃ©dition",
+  "fr":"expédition",
   "en":"shipping (n)",
   "de":"Versand",
-  "es":"envÃ­o",
+  "es":"envío",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4942",
-  "fr":"rÃ©trÃ©cir",
+  "fr":"rétrécir",
   "en":"to shrink (v)",
   "de":"schrumpfen",
   "es":"encoger",
@@ -44480,7 +44480,7 @@
 },
   {
   "id":"word_4943",
-  "fr":"hausser les Ã©paules",
+  "fr":"hausser les épaules",
   "en":"to shrug (v)",
   "de":"mit den Schultern zucken",
   "es":"encogerse de hombros",
@@ -44510,31 +44510,31 @@
   "fr":"simulation",
   "en":"simulation (n)",
   "de":"Simulation",
-  "es":"simulaciÃ³n",
+  "es":"simulación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4947",
-  "fr":"simultanÃ©ment",
+  "fr":"simultanément",
   "en":"simultaneously (adv)",
   "de":"gleichzeitig",
-  "es":"simultÃ¡neamente",
+  "es":"simultáneamente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4948",
-  "fr":"pÃ©chÃ©",
+  "fr":"péché",
   "en":"sin (n)",
-  "de":"SÃ¼nde",
+  "de":"Sünde",
   "es":"pecado",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4949",
-  "fr":"situÃ©",
+  "fr":"situé",
   "en":"situated (adj)",
   "de":"gelegen",
   "es":"situado",
@@ -44546,7 +44546,7 @@
   "fr":"sceptique",
   "en":"sceptical (adj)",
   "de":"skeptisch",
-  "es":"escÃ©ptico",
+  "es":"escéptico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -44561,9 +44561,9 @@
 },
   {
   "id":"word_4952",
-  "fr":"rÃ©duire",
+  "fr":"réduire",
   "en":"slash (n) / to slash (v)",
-  "de":"kÃ¼rzen",
+  "de":"kürzen",
   "es":"reducir",
   "type":"verbe",
   "level":"C1"
@@ -44615,7 +44615,7 @@
 },
   {
   "id":"word_4958",
-  "fr":"monter en flÃ¨che",
+  "fr":"monter en flèche",
   "en":"to soar",
   "de":"aufsteigen",
   "es":"elevarse",
@@ -44636,7 +44636,7 @@
   "fr":"seul",
   "en":"sole",
   "de":"einzig",
-  "es":"Ãºnico",
+  "es":"único",
   "type":"adjectif",
   "level":"C1"
 },
@@ -44644,16 +44644,16 @@
   "id":"word_4961",
   "fr":"uniquement",
   "en":"solely",
-  "de":"ausschlieÃŸlich",
+  "de":"ausschließlich",
   "es":"solamente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_4962",
-  "fr":"solidaritÃ©",
+  "fr":"solidarité",
   "en":"solidarity",
-  "de":"SolidaritÃ¤t",
+  "de":"Solidarität",
   "es":"solidaridad",
   "type":"nom",
   "level":"C1"
@@ -44669,16 +44669,16 @@
 },
   {
   "id":"word_4964",
-  "fr":"souverainetÃ©",
+  "fr":"souveraineté",
   "en":"sovereignty",
-  "de":"SouverÃ¤nitÃ¤t",
-  "es":"soberanÃ­a",
+  "de":"Souveränität",
+  "es":"soberanía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4965",
-  "fr":"durÃ©e / s\u0027Ã©tendre",
+  "fr":"durée / s\u0027étendre",
   "en":"span / to span",
   "de":"Spanne / umspannen",
   "es":"lapso / abarcar",
@@ -44687,16 +44687,16 @@
 },
   {
   "id":"word_4966",
-  "fr":"Ã©tincelle / dÃ©clencher",
+  "fr":"étincelle / déclencher",
   "en":"spark / to spark",
-  "de":"Funke / auslÃ¶sen",
+  "de":"Funke / auslösen",
   "es":"chispa / desatar",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4967",
-  "fr":"spÃ©cialisÃ©",
+  "fr":"spécialisé",
   "en":"specialised",
   "de":"spezialisiert",
   "es":"especializado",
@@ -44705,19 +44705,19 @@
 },
   {
   "id":"word_4968",
-  "fr":"spÃ©cification",
+  "fr":"spécification",
   "en":"specification",
   "de":"Spezifikation",
-  "es":"especificaciÃ³n",
+  "es":"especificación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4969",
-  "fr":"spÃ©cimen",
+  "fr":"spécimen",
   "en":"specimen",
   "de":"Exemplar",
-  "es":"espÃ©cimen",
+  "es":"espécimen",
   "type":"nom",
   "level":"C1"
 },
@@ -44726,7 +44726,7 @@
   "fr":"spectacle",
   "en":"spectacle",
   "de":"Spektakel",
-  "es":"espectÃ¡culo",
+  "es":"espectáculo",
   "type":"nom",
   "level":"C1"
 },
@@ -44741,9 +44741,9 @@
 },
   {
   "id":"word_4972",
-  "fr":"sphÃ¨re",
+  "fr":"sphère",
   "en":"sphere",
-  "de":"SphÃ¤re",
+  "de":"Sphäre",
   "es":"esfera",
   "type":"nom",
   "level":"C1"
@@ -44759,9 +44759,9 @@
 },
   {
   "id":"word_4974",
-  "fr":"colonne vertÃ©brale",
+  "fr":"colonne vertébrale",
   "en":"spine",
-  "de":"WirbelsÃ¤ule",
+  "de":"Wirbelsäule",
   "es":"columna vertebral",
   "type":"nom",
   "level":"C1"
@@ -44780,7 +44780,7 @@
   "fr":"conjoint",
   "en":"spouse",
   "de":"Ehepartner",
-  "es":"cÃ³nyuge",
+  "es":"cónyuge",
   "type":"nom",
   "level":"C1"
 },
@@ -44789,7 +44789,7 @@
   "fr":"escouade",
   "en":"squad",
   "de":"Trupp",
-  "es":"escuadrÃ³n",
+  "es":"escuadrón",
   "type":"nom",
   "level":"C1"
 },
@@ -44797,7 +44797,7 @@
   "id":"word_4978",
   "fr":"presser",
   "en":"to squeeze",
-  "de":"drÃ¼cken",
+  "de":"drücken",
   "es":"apretar",
   "type":"verbe",
   "level":"C1"
@@ -44807,15 +44807,15 @@
   "fr":"poignarder",
   "en":"to stab",
   "de":"erstechen",
-  "es":"apuÃ±alar",
+  "es":"apuñalar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_4980",
-  "fr":"stabilitÃ©",
+  "fr":"stabilité",
   "en":"stability",
-  "de":"StabilitÃ¤t",
+  "de":"Stabilität",
   "es":"estabilidad",
   "type":"nom",
   "level":"C1"
@@ -44840,16 +44840,16 @@
 },
   {
   "id":"word_4983",
-  "fr":"rÃ©putation",
+  "fr":"réputation",
   "en":"standing",
   "de":"Ansehen",
-  "es":"reputaciÃ³n",
+  "es":"reputación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_4984",
-  "fr":"austÃ¨re",
+  "fr":"austère",
   "en":"stark",
   "de":"kahl",
   "es":"austero",
@@ -44861,7 +44861,7 @@
   "fr":"statistique",
   "en":"statistical",
   "de":"statistisch",
-  "es":"estadÃ­stico",
+  "es":"estadístico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -44876,7 +44876,7 @@
 },
   {
   "id":"word_4987",
-  "fr":"dÃ©couler de",
+  "fr":"découler de",
   "en":"to stem from",
   "de":"stammen aus",
   "es":"derivar de",
@@ -44885,7 +44885,7 @@
 },
   {
   "id":"word_4988",
-  "fr":"stÃ©rÃ©otype",
+  "fr":"stéréotype",
   "en":"stereotype",
   "de":"Stereotyp",
   "es":"estereotipo",
@@ -44897,7 +44897,7 @@
   "fr":"stimulus",
   "en":"stimulus",
   "de":"Reiz",
-  "es":"estÃ­mulo",
+  "es":"estímulo",
   "type":"nom",
   "level":"C1"
 },
@@ -44905,7 +44905,7 @@
   "id":"word_4990",
   "fr":"remuer",
   "en":"to stir",
-  "de":"rÃ¼hren",
+  "de":"rühren",
   "es":"remover",
   "type":"verbe",
   "level":"C1"
@@ -44933,7 +44933,7 @@
   "fr":"tension",
   "en":"strain",
   "de":"Belastung",
-  "es":"tensiÃ³n",
+  "es":"tensión",
   "type":"nom",
   "level":"C1"
 },
@@ -44948,10 +44948,10 @@
 },
   {
   "id":"word_4995",
-  "fr":"stratÃ©gique",
+  "fr":"stratégique",
   "en":"strategic",
   "de":"strategisch",
-  "es":"estratÃ©gico",
+  "es":"estratégico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -44984,7 +44984,7 @@
 },
   {
   "id":"word_4999",
-  "fr":"trÃ©bucher",
+  "fr":"trébucher",
   "en":"to stumble",
   "de":"stolpern",
   "es":"tropezar",
@@ -44993,9 +44993,9 @@
 },
   {
   "id":"word_5000",
-  "fr":"Ã©tourdir",
+  "fr":"étourdir",
   "en":"to stun",
-  "de":"betÃ¤uben",
+  "de":"betäuben",
   "es":"aturdir",
   "type":"verbe",
   "level":"C1"
@@ -45005,13 +45005,13 @@
   "fr":"soumission",
   "en":"submission",
   "de":"Unterwerfung",
-  "es":"sumisiÃ³n",
+  "es":"sumisión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5002",
-  "fr":"abonnÃ©",
+  "fr":"abonné",
   "en":"subscriber",
   "de":"Abonnent",
   "es":"suscriptor",
@@ -45023,13 +45023,13 @@
   "fr":"abonnement",
   "en":"subscription",
   "de":"Abonnement",
-  "es":"suscripciÃ³n",
+  "es":"suscripción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5004",
-  "fr":"ultÃ©rieur",
+  "fr":"ultérieur",
   "en":"subsequent",
   "de":"darauffolgend",
   "es":"subsecuente",
@@ -45040,7 +45040,7 @@
   "id":"word_5005",
   "fr":"par la suite",
   "en":"subsequently",
-  "de":"anschlieÃŸend",
+  "de":"anschließend",
   "es":"posteriormente",
   "type":"adverbe",
   "level":"C1"
@@ -45086,7 +45086,7 @@
   "fr":"substitution",
   "en":"substitution",
   "de":"Substitution",
-  "es":"sustituciÃ³n",
+  "es":"sustitución",
   "type":"nom",
   "level":"C1"
 },
@@ -45103,7 +45103,7 @@
   "id":"word_5012",
   "fr":"banlieusard",
   "en":"suburban",
-  "de":"vorstÃ¤dtisch",
+  "de":"vorstädtisch",
   "es":"suburbano",
   "type":"adjectif",
   "level":"C1"
@@ -45113,7 +45113,7 @@
   "fr":"succession",
   "en":"succession",
   "de":"Nachfolge",
-  "es":"sucesiÃ³n",
+  "es":"sucesión",
   "type":"nom",
   "level":"C1"
 },
@@ -45185,7 +45185,7 @@
   "fr":"superbe",
   "en":"superb",
   "de":"hervorragend",
-  "es":"magnÃ­fico",
+  "es":"magnífico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -45200,9 +45200,9 @@
 },
   {
   "id":"word_5023",
-  "fr":"supÃ©rieur",
+  "fr":"supérieur",
   "en":"superior",
-  "de":"Ã¼berlegen",
+  "de":"überlegen",
   "es":"superior",
   "type":"adjectif",
   "level":"C1"
@@ -45211,7 +45211,7 @@
   "id":"word_5024",
   "fr":"superviser",
   "en":"to supervise",
-  "de":"Ã¼berwachen",
+  "de":"überwachen",
   "es":"supervisar",
   "type":"verbe",
   "level":"C1"
@@ -45221,7 +45221,7 @@
   "fr":"supervision",
   "en":"supervision",
   "de":"Aufsicht",
-  "es":"supervisiÃ³n",
+  "es":"supervisión",
   "type":"nom",
   "level":"C1"
 },
@@ -45236,9 +45236,9 @@
 },
   {
   "id":"word_5027",
-  "fr":"supplÃ©ment / complÃ©ter",
+  "fr":"supplément / compléter",
   "en":"supplement / to supplement",
-  "de":"ErgÃ¤nzung / ergÃ¤nzen",
+  "de":"Ergänzung / ergänzen",
   "es":"suplemento / complementar",
   "type":"nom",
   "level":"C1"
@@ -45247,7 +45247,7 @@
   "id":"word_5028",
   "fr":"solidaire",
   "en":"supportive",
-  "de":"unterstÃ¼tzend",
+  "de":"unterstützend",
   "es":"solidario",
   "type":"adjectif",
   "level":"C1"
@@ -45263,16 +45263,16 @@
 },
   {
   "id":"word_5030",
-  "fr":"rÃ©primer",
+  "fr":"réprimer",
   "en":"to suppress",
-  "de":"unterdrÃ¼cken",
+  "de":"unterdrücken",
   "es":"reprimir",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_5031",
-  "fr":"suprÃªme",
+  "fr":"suprême",
   "en":"supreme",
   "de":"oberste",
   "es":"supremo",
@@ -45281,7 +45281,7 @@
 },
   {
   "id":"word_5032",
-  "fr":"montÃ©e / monter",
+  "fr":"montée / monter",
   "en":"surge / to surge",
   "de":"Anstieg / ansteigen",
   "es":"oleada / surgir",
@@ -45293,7 +45293,7 @@
   "fr":"chirurgical",
   "en":"surgical",
   "de":"chirurgisch",
-  "es":"quirÃºrgico",
+  "es":"quirúrgico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -45301,7 +45301,7 @@
   "id":"word_5034",
   "fr":"surplus",
   "en":"surplus",
-  "de":"Ãœberschuss",
+  "de":"Überschuss",
   "es":"excedente",
   "type":"nom",
   "level":"C1"
@@ -45319,7 +45319,7 @@
   "id":"word_5036",
   "fr":"surveillance",
   "en":"surveillance",
-  "de":"Ãœberwachung",
+  "de":"Überwachung",
   "es":"vigilancia",
   "type":"nom",
   "level":"C1"
@@ -45329,13 +45329,13 @@
   "fr":"suspension",
   "en":"suspension",
   "de":"Suspendierung",
-  "es":"suspensiÃ³n",
+  "es":"suspensión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5038",
-  "fr":"soupÃ§on",
+  "fr":"soupçon",
   "en":"suspicion",
   "de":"Verdacht",
   "es":"sospecha",
@@ -45346,7 +45346,7 @@
   "id":"word_5039",
   "fr":"suspect",
   "en":"suspicious",
-  "de":"verdÃ¤chtig",
+  "de":"verdächtig",
   "es":"sospechoso",
   "type":"adjectif",
   "level":"C1"
@@ -45365,7 +45365,7 @@
   "fr":"symbolique",
   "en":"symbolic",
   "de":"symbolisch",
-  "es":"simbÃ³lico",
+  "es":"simbólico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -45374,31 +45374,31 @@
   "fr":"syndrome",
   "en":"syndrome",
   "de":"Syndrom",
-  "es":"sÃ­ndrome",
+  "es":"síndrome",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5043",
-  "fr":"synthÃ¨se",
+  "fr":"synthèse",
   "en":"synthesis",
   "de":"Synthese",
-  "es":"sÃ­ntesis",
+  "es":"síntesis",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5044",
-  "fr":"systÃ©matique",
+  "fr":"systématique",
   "en":"systematic",
   "de":"systematisch",
-  "es":"sistemÃ¡tico",
+  "es":"sistemático",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5045",
-  "fr":"s\u0027attaquer Ã ",
+  "fr":"s\u0027attaquer à",
   "en":"to tackle",
   "de":"in Angriff nehmen",
   "es":"abordar",
@@ -45410,7 +45410,7 @@
   "fr":"tactique",
   "en":"tactic",
   "de":"Taktik",
-  "es":"tÃ¡ctica",
+  "es":"táctica",
   "type":"nom",
   "level":"C1"
 },
@@ -45419,7 +45419,7 @@
   "fr":"tactique",
   "en":"tactical",
   "de":"taktisch",
-  "es":"tÃ¡ctico",
+  "es":"táctico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -45470,7 +45470,7 @@
 },
   {
   "id":"word_5053",
-  "fr":"mettre fin Ã ",
+  "fr":"mettre fin à",
   "en":"to terminate",
   "de":"beenden",
   "es":"terminar",
@@ -45481,7 +45481,7 @@
   "id":"word_5054",
   "fr":"terrain",
   "en":"terrain",
-  "de":"GelÃ¤nde",
+  "de":"Gelände",
   "es":"terreno",
   "type":"nom",
   "level":"C1"
@@ -45490,14 +45490,14 @@
   "id":"word_5055",
   "fr":"formidable",
   "en":"terrific",
-  "de":"groÃŸartig",
+  "de":"großartig",
   "es":"formidable",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5056",
-  "fr":"tÃ©moigner",
+  "fr":"témoigner",
   "en":"to testify",
   "de":"aussagen",
   "es":"testificar",
@@ -45506,7 +45506,7 @@
 },
   {
   "id":"word_5057",
-  "fr":"tÃ©moignage",
+  "fr":"témoignage",
   "en":"testimony",
   "de":"Zeugenaussage",
   "es":"testimonio",
@@ -45526,14 +45526,14 @@
   "id":"word_5059",
   "fr":"heureusement",
   "en":"thankfully",
-  "de":"glÃ¼cklicherweise",
+  "de":"glücklicherweise",
   "es":"afortunadamente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_5060",
-  "fr":"thÃ©Ã¢tral",
+  "fr":"théâtral",
   "en":"theatrical",
   "de":"theatralisch",
   "es":"teatral",
@@ -45542,19 +45542,19 @@
 },
   {
   "id":"word_5061",
-  "fr":"thÃ©ologie",
+  "fr":"théologie",
   "en":"theology",
   "de":"Theologie",
-  "es":"teologÃ­a",
+  "es":"teología",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5062",
-  "fr":"thÃ©orique",
+  "fr":"théorique",
   "en":"theoretical",
   "de":"theoretisch",
-  "es":"teÃ³rico",
+  "es":"teórico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -45578,7 +45578,7 @@
 },
   {
   "id":"word_5065",
-  "fr":"thÃ¨se",
+  "fr":"thèse",
   "en":"thesis",
   "de":"These",
   "es":"tesis",
@@ -45587,7 +45587,7 @@
 },
   {
   "id":"word_5066",
-  "fr":"attentionnÃ©",
+  "fr":"attentionné",
   "en":"thoughtful",
   "de":"nachdenklich",
   "es":"atento",
@@ -45623,7 +45623,7 @@
 },
   {
   "id":"word_5070",
-  "fr":"prospÃ©rer",
+  "fr":"prospérer",
   "en":"to thrive",
   "de":"gedeihen",
   "es":"prosperar",
@@ -45632,7 +45632,7 @@
 },
   {
   "id":"word_5071",
-  "fr":"marÃ©e",
+  "fr":"marée",
   "en":"tide",
   "de":"Gezeiten",
   "es":"marea",
@@ -45677,7 +45677,7 @@
 },
   {
   "id":"word_5076",
-  "fr":"tolÃ©rance",
+  "fr":"tolérance",
   "en":"tolerance",
   "de":"Toleranz",
   "es":"tolerancia",
@@ -45686,7 +45686,7 @@
 },
   {
   "id":"word_5077",
-  "fr":"tolÃ©rer",
+  "fr":"tolérer",
   "en":"to tolerate",
   "de":"tolerieren",
   "es":"tolerar",
@@ -45695,7 +45695,7 @@
 },
   {
   "id":"word_5078",
-  "fr":"pÃ©age",
+  "fr":"péage",
   "en":"toll",
   "de":"Maut",
   "es":"peaje",
@@ -45722,7 +45722,7 @@
 },
   {
   "id":"word_5081",
-  "fr":"marque dÃ©posÃ©e",
+  "fr":"marque déposée",
   "en":"trademark",
   "de":"Markenzeichen",
   "es":"marca registrada",
@@ -45740,9 +45740,9 @@
 },
   {
   "id":"word_5083",
-  "fr":"traÃ®tre",
+  "fr":"traître",
   "en":"traitor",
-  "de":"VerrÃ¤ter",
+  "de":"Verräter",
   "es":"traidor",
   "type":"nom",
   "level":"C1"
@@ -45752,7 +45752,7 @@
   "fr":"transaction",
   "en":"transaction",
   "de":"Transaktion",
-  "es":"transacciÃ³n",
+  "es":"transacción",
   "type":"nom",
   "level":"C1"
 },
@@ -45761,7 +45761,7 @@
   "fr":"transcription",
   "en":"transcript",
   "de":"Niederschrift",
-  "es":"transcripciÃ³n",
+  "es":"transcripción",
   "type":"nom",
   "level":"C1"
 },
@@ -45770,7 +45770,7 @@
   "fr":"transformation",
   "en":"transformation",
   "de":"Transformation",
-  "es":"transformaciÃ³n",
+  "es":"transformación",
   "type":"nom",
   "level":"C1"
 },
@@ -45779,7 +45779,7 @@
   "fr":"transit",
   "en":"transit",
   "de":"Transit",
-  "es":"trÃ¡nsito",
+  "es":"tránsito",
   "type":"nom",
   "level":"C1"
 },
@@ -45787,8 +45787,8 @@
   "id":"word_5088",
   "fr":"transmission",
   "en":"transmission",
-  "de":"Ãœbertragung",
-  "es":"transmisiÃ³n",
+  "de":"Übertragung",
+  "es":"transmisión",
   "type":"nom",
   "level":"C1"
 },
@@ -45821,7 +45821,7 @@
 },
   {
   "id":"word_5092",
-  "fr":"traitÃ©",
+  "fr":"traité",
   "en":"treaty",
   "de":"Vertrag",
   "es":"tratado",
@@ -45830,7 +45830,7 @@
 },
   {
   "id":"word_5093",
-  "fr":"Ã©norme",
+  "fr":"énorme",
   "en":"tremendous",
   "de":"enorm",
   "es":"tremendo",
@@ -45857,9 +45857,9 @@
 },
   {
   "id":"word_5096",
-  "fr":"dÃ©clencheur",
+  "fr":"déclencheur",
   "en":"trigger",
-  "de":"AuslÃ¶ser",
+  "de":"Auslöser",
   "es":"desencadenante",
   "type":"nom",
   "level":"C1"
@@ -45869,7 +45869,7 @@
   "fr":"trio",
   "en":"trio",
   "de":"Trio",
-  "es":"trÃ­o",
+  "es":"trío",
   "type":"nom",
   "level":"C1"
 },
@@ -45884,16 +45884,16 @@
 },
   {
   "id":"word_5099",
-  "fr":"trophÃ©e",
+  "fr":"trophée",
   "en":"trophy",
-  "de":"TrophÃ¤e",
+  "de":"Trophäe",
   "es":"trofeo",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5100",
-  "fr":"troublÃ©",
+  "fr":"troublé",
   "en":"troubled",
   "de":"beunruhigt",
   "es":"preocupado",
@@ -45904,17 +45904,17 @@
   "id":"word_5101",
   "fr":"administrateur",
   "en":"trustee",
-  "de":"TreuhÃ¤nder",
+  "de":"Treuhänder",
   "es":"fideicomisario",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5102",
-  "fr":"frais de scolaritÃ©",
+  "fr":"frais de scolarité",
   "en":"tuition",
   "de":"Schulgeld",
-  "es":"matrÃ­cula",
+  "es":"matrícula",
   "type":"nom",
   "level":"C1"
 },
@@ -45932,7 +45932,7 @@
   "fr":"taux de participation",
   "en":"turnout",
   "de":"Wahlbeteiligung",
-  "es":"participaciÃ³n",
+  "es":"participación",
   "type":"nom",
   "level":"C1"
 },
@@ -45965,7 +45965,7 @@
 },
   {
   "id":"word_5108",
-  "fr":"Ã©tudiant de premier cycle",
+  "fr":"étudiant de premier cycle",
   "en":"undergraduate",
   "de":"Student",
   "es":"estudiante de pregrado",
@@ -46010,7 +46010,7 @@
 },
   {
   "id":"word_5113",
-  "fr":"sans prÃ©cÃ©dent",
+  "fr":"sans précédent",
   "en":"unprecedented",
   "de":"beispiellos",
   "es":"sin precedentes",
@@ -46019,27 +46019,27 @@
 },
   {
   "id":"word_5114",
-  "fr":"dÃ©voiler",
+  "fr":"dévoiler",
   "en":"to unveil",
-  "de":"enthÃ¼llen",
+  "de":"enthüllen",
   "es":"desvelar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_5115",
-  "fr":"Ã  venir",
+  "fr":"à venir",
   "en":"upcoming",
   "de":"bevorstehend",
-  "es":"prÃ³ximo",
+  "es":"próximo",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5116",
-  "fr":"mettre Ã  jour",
+  "fr":"mettre à jour",
   "en":"to upgrade",
-  "de":"aufrÃ¼sten",
+  "de":"aufrüsten",
   "es":"actualizar",
   "type":"verbe",
   "level":"C1"
@@ -46055,7 +46055,7 @@
 },
   {
   "id":"word_5118",
-  "fr":"utilitÃ©",
+  "fr":"utilité",
   "en":"utility",
   "de":"Nutzen",
   "es":"utilidad",
@@ -46073,9 +46073,9 @@
 },
   {
   "id":"word_5120",
-  "fr":"tout Ã  fait",
+  "fr":"tout à fait",
   "en":"utterly",
-  "de":"vÃ¶llig",
+  "de":"völlig",
   "es":"completamente",
   "type":"adverbe",
   "level":"C1"
@@ -46085,7 +46085,7 @@
   "fr":"vide",
   "en":"vacuum",
   "de":"Vakuum",
-  "es":"vacÃ­o",
+  "es":"vacío",
   "type":"nom",
   "level":"C1"
 },
@@ -46100,16 +46100,16 @@
 },
   {
   "id":"word_5123",
-  "fr":"validitÃ©",
+  "fr":"validité",
   "en":"validity",
-  "de":"GÃ¼ltigkeit",
+  "de":"Gültigkeit",
   "es":"validez",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5124",
-  "fr":"disparaÃ®tre",
+  "fr":"disparaître",
   "en":"to vanish",
   "de":"verschwinden",
   "es":"desaparecer",
@@ -46127,9 +46127,9 @@
 },
   {
   "id":"word_5126",
-  "fr":"variÃ©",
+  "fr":"varié",
   "en":"varied",
-  "de":"vielfÃ¤ltig",
+  "de":"vielfältig",
   "es":"variado",
   "type":"adjectif",
   "level":"C1"
@@ -46172,9 +46172,9 @@
 },
   {
   "id":"word_5131",
-  "fr":"vÃ©rifier",
+  "fr":"vérifier",
   "en":"to verify",
-  "de":"Ã¼berprÃ¼fen",
+  "de":"überprüfen",
   "es":"verificar",
   "type":"verbe",
   "level":"C1"
@@ -46208,7 +46208,7 @@
 },
   {
   "id":"word_5135",
-  "fr":"vÃ©tÃ©ran",
+  "fr":"vétéran",
   "en":"veteran",
   "de":"Veteran",
   "es":"veterano",
@@ -46246,7 +46246,7 @@
   "id":"word_5139",
   "fr":"vicieux",
   "en":"vicious",
-  "de":"bÃ¶sartig",
+  "de":"bösartig",
   "es":"vicioso",
   "type":"adjectif",
   "level":"C1"
@@ -46264,8 +46264,8 @@
   "id":"word_5141",
   "fr":"violation",
   "en":"violation",
-  "de":"VerstoÃŸ",
-  "es":"violaciÃ³n",
+  "de":"Verstoß",
+  "es":"violación",
   "type":"nom",
   "level":"C1"
 },
@@ -46291,14 +46291,14 @@
   "id":"word_5144",
   "fr":"jurer",
   "en":"to vow",
-  "de":"schwÃ¶ren",
+  "de":"schwören",
   "es":"jurar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_5145",
-  "fr":"vulnÃ©rabilitÃ©",
+  "fr":"vulnérabilité",
   "en":"vulnerability",
   "de":"Verwundbarkeit",
   "es":"vulnerabilidad",
@@ -46307,7 +46307,7 @@
 },
   {
   "id":"word_5146",
-  "fr":"vulnÃ©rable",
+  "fr":"vulnérable",
   "en":"vulnerable",
   "de":"verwundbar",
   "es":"vulnerable",
@@ -46325,10 +46325,10 @@
 },
   {
   "id":"word_5148",
-  "fr":"entrepÃ´t",
+  "fr":"entrepôt",
   "en":"warehouse",
   "de":"Lagerhaus",
-  "es":"almacÃ©n",
+  "es":"almacén",
   "type":"nom",
   "level":"C1"
 },
@@ -46336,7 +46336,7 @@
   "id":"word_5149",
   "fr":"guerre",
   "en":"warfare",
-  "de":"KriegsfÃ¼hrung",
+  "de":"Kriegsführung",
   "es":"guerra",
   "type":"nom",
   "level":"C1"
@@ -46363,7 +46363,7 @@
   "id":"word_5152",
   "fr":"affaiblir",
   "en":"to weaken",
-  "de":"schwÃ¤chen",
+  "de":"schwächen",
   "es":"debilitar",
   "type":"verbe",
   "level":"C1"
@@ -46397,7 +46397,7 @@
 },
   {
   "id":"word_5156",
-  "fr":"bien-Ãªtre",
+  "fr":"bien-être",
   "en":"well-being",
   "de":"Wohlbefinden",
   "es":"bienestar",
@@ -46408,7 +46408,7 @@
   "id":"word_5157",
   "fr":"que ce soit",
   "en":"whatsoever",
-  "de":"Ã¼berhaupt",
+  "de":"überhaupt",
   "es":"en absoluto",
   "type":"adverbe",
   "level":"C1"
@@ -46424,16 +46424,16 @@
 },
   {
   "id":"word_5159",
-  "fr":"entiÃ¨rement",
+  "fr":"entièrement",
   "en":"wholly",
-  "de":"gÃ¤nzlich",
+  "de":"gänzlich",
   "es":"totalmente",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_5160",
-  "fr":"Ã©largir",
+  "fr":"élargir",
   "en":"to widen",
   "de":"verbreitern",
   "es":"ensanchar",
@@ -46451,10 +46451,10 @@
 },
   {
   "id":"word_5162",
-  "fr":"volontÃ©",
+  "fr":"volonté",
   "en":"willingness",
   "de":"Bereitschaft",
-  "es":"disposiciÃ³n",
+  "es":"disposición",
   "type":"nom",
   "level":"C1"
 },
@@ -46480,14 +46480,14 @@
   "id":"word_5165",
   "fr":"retrait",
   "en":"withdrawal",
-  "de":"RÃ¼ckzug",
+  "de":"Rückzug",
   "es":"retirada",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5166",
-  "fr":"entraÃ®nement",
+  "fr":"entraînement",
   "en":"workout",
   "de":"Training",
   "es":"entrenamiento",
@@ -46499,7 +46499,7 @@
   "fr":"culte",
   "en":"worship",
   "de":"Anbetung",
-  "es":"adoraciÃ³n",
+  "es":"adoración",
   "type":"nom",
   "level":"C1"
 },
@@ -46516,17 +46516,17 @@
   "id":"word_5169",
   "fr":"digne",
   "en":"worthy",
-  "de":"wÃ¼rdig",
+  "de":"würdig",
   "es":"digno",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5170",
-  "fr":"mÃ©fait",
+  "fr":"méfait",
   "en":"wrongdoing",
   "de":"Fehlverhalten",
-  "es":"fechorÃ­a",
+  "es":"fechoría",
   "type":"nom",
   "level":"C1"
 },
@@ -46541,7 +46541,7 @@
 },
   {
   "id":"word_5172",
-  "fr":"assemblÃ©e",
+  "fr":"assemblée",
   "en":"assembly",
   "de":"Versammlung",
   "es":"asamblea",
@@ -46562,7 +46562,7 @@
   "fr":"affirmation",
   "en":"assertion",
   "de":"Behauptung",
-  "es":"afirmaciÃ³n",
+  "es":"afirmación",
   "type":"nom",
   "level":"C1"
 },
@@ -46571,7 +46571,7 @@
   "fr":"assurance",
   "en":"assurance",
   "de":"Zusicherung",
-  "es":"garantÃ­a",
+  "es":"garantía",
   "type":"nom",
   "level":"C1"
 },
@@ -46586,9 +46586,9 @@
 },
   {
   "id":"word_5177",
-  "fr":"atrocitÃ©",
+  "fr":"atrocité",
   "en":"atrocity",
-  "de":"GrÃ¤ueltat",
+  "de":"Gräueltat",
   "es":"atrocidad",
   "type":"nom",
   "level":"C1"
@@ -46604,7 +46604,7 @@
 },
   {
   "id":"word_5179",
-  "fr":"prÃ©sence",
+  "fr":"présence",
   "en":"attendance",
   "de":"Anwesenheit",
   "es":"asistencia",
@@ -46622,7 +46622,7 @@
 },
   {
   "id":"word_5181",
-  "fr":"enchÃ¨res",
+  "fr":"enchères",
   "en":"auction",
   "de":"Auktion",
   "es":"subasta",
@@ -46633,8 +46633,8 @@
   "id":"word_5182",
   "fr":"audit / auditer",
   "en":"audit / to audit",
-  "de":"PrÃ¼fung / prÃ¼fen",
-  "es":"auditorÃ­a / auditar",
+  "de":"Prüfung / prüfen",
+  "es":"auditoría / auditar",
   "type":"nom",
   "level":"C1"
 },
@@ -46643,7 +46643,7 @@
   "fr":"authentique",
   "en":"authentic",
   "de":"authentisch",
-  "es":"autÃ©ntico",
+  "es":"auténtico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -46670,15 +46670,15 @@
   "fr":"autonomie",
   "en":"autonomy",
   "de":"Autonomie",
-  "es":"autonomÃ­a",
+  "es":"autonomía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5187",
-  "fr":"disponibilitÃ©",
+  "fr":"disponibilité",
   "en":"availability",
-  "de":"VerfÃ¼gbarkeit",
+  "de":"Verfügbarkeit",
   "es":"disponibilidad",
   "type":"nom",
   "level":"C1"
@@ -46697,7 +46697,7 @@
   "fr":"toile de fond",
   "en":"backdrop",
   "de":"Hintergrund",
-  "es":"telÃ³n de fondo",
+  "es":"telón de fondo",
   "type":"nom",
   "level":"C1"
 },
@@ -46705,7 +46705,7 @@
   "id":"word_5190",
   "fr":"soutien",
   "en":"backing",
-  "de":"UnterstÃ¼tzung",
+  "de":"Unterstützung",
   "es":"respaldo",
   "type":"nom",
   "level":"C1"
@@ -46748,7 +46748,7 @@
 },
   {
   "id":"word_5195",
-  "fr":"banniÃ¨re",
+  "fr":"bannière",
   "en":"banner",
   "de":"Banner",
   "es":"pancarta",
@@ -46787,7 +46787,7 @@
   "fr":"baie",
   "en":"bay",
   "de":"Bucht",
-  "es":"bahÃ­a",
+  "es":"bahía",
   "type":"nom",
   "level":"C1"
 },
@@ -46802,7 +46802,7 @@
 },
   {
   "id":"word_5201",
-  "fr":"bÃªte",
+  "fr":"bête",
   "en":"beast",
   "de":"Biest",
   "es":"bestia",
@@ -46829,7 +46829,7 @@
 },
   {
   "id":"word_5204",
-  "fr":"bien-aimÃ©",
+  "fr":"bien-aimé",
   "en":"beloved",
   "de":"geliebt",
   "es":"amado",
@@ -46847,9 +46847,9 @@
 },
   {
   "id":"word_5206",
-  "fr":"rÃ©fÃ©rence",
+  "fr":"référence",
   "en":"benchmark",
-  "de":"MaÃŸstab",
+  "de":"Maßstab",
   "es":"punto de referencia",
   "type":"nom",
   "level":"C1"
@@ -46865,9 +46865,9 @@
 },
   {
   "id":"word_5208",
-  "fr":"bÃ©nÃ©ficiaire",
+  "fr":"bénéficiaire",
   "en":"beneficiary",
-  "de":"BegÃ¼nstigter",
+  "de":"Begünstigter",
   "es":"beneficiario",
   "type":"nom",
   "level":"C1"
@@ -46886,7 +46886,7 @@
   "fr":"trahison",
   "en":"betrayal",
   "de":"Verrat",
-  "es":"traiciÃ³n",
+  "es":"traición",
   "type":"nom",
   "level":"C1"
 },
@@ -46894,7 +46894,7 @@
   "id":"word_5211",
   "fr":"boisson",
   "en":"beverage",
-  "de":"GetrÃ¤nk",
+  "de":"Getränk",
   "es":"bebida",
   "type":"nom",
   "level":"C1"
@@ -46913,13 +46913,13 @@
   "fr":"biographie",
   "en":"biography",
   "de":"Biografie",
-  "es":"biografÃ­a",
+  "es":"biografía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5214",
-  "fr":"Ã©vÃªque",
+  "fr":"évêque",
   "en":"bishop",
   "de":"Bischof",
   "es":"obispo",
@@ -46949,7 +46949,7 @@
   "fr":"explosion",
   "en":"blast / to blast",
   "de":"Explosion",
-  "es":"explosiÃ³n",
+  "es":"explosión",
   "type":"nom",
   "level":"C1"
 },
@@ -46964,7 +46964,7 @@
 },
   {
   "id":"word_5219",
-  "fr":"mÃ©lange",
+  "fr":"mélange",
   "en":"blend / to blend",
   "de":"Mischung",
   "es":"mezcla",
@@ -46973,7 +46973,7 @@
 },
   {
   "id":"word_5220",
-  "fr":"bÃ©nir",
+  "fr":"bénir",
   "en":"to bless",
   "de":"segnen",
   "es":"bendecir",
@@ -46982,10 +46982,10 @@
 },
   {
   "id":"word_5221",
-  "fr":"bÃ©nÃ©diction",
+  "fr":"bénédiction",
   "en":"blessing",
   "de":"Segen",
-  "es":"bendiciÃ³n",
+  "es":"bendición",
   "type":"nom",
   "level":"C1"
 },
@@ -47020,17 +47020,17 @@
   "id":"word_5225",
   "fr":"rebondir",
   "en":"to bounce",
-  "de":"hÃ¼pfen",
+  "de":"hüpfen",
   "es":"rebotar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_5226",
-  "fr":"frontiÃ¨re",
+  "fr":"frontière",
   "en":"boundary",
   "de":"Grenze",
-  "es":"lÃ­mite",
+  "es":"límite",
   "type":"nom",
   "level":"C1"
 },
@@ -47047,7 +47047,7 @@
   "id":"word_5228",
   "fr":"violation",
   "en":"breach / to breach",
-  "de":"VerstoÃŸ",
+  "de":"Verstoß",
   "es":"brecha",
   "type":"nom",
   "level":"C1"
@@ -47057,13 +47057,13 @@
   "fr":"panne",
   "en":"breakdown",
   "de":"Zusammenbruch",
-  "es":"averÃ­a",
+  "es":"avería",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5230",
-  "fr":"percÃ©e",
+  "fr":"percée",
   "en":"breakthrough",
   "de":"Durchbruch",
   "es":"avance",
@@ -47072,16 +47072,16 @@
 },
   {
   "id":"word_5231",
-  "fr":"Ã©lever",
+  "fr":"élever",
   "en":"to breed",
-  "de":"zÃ¼chten",
+  "de":"züchten",
   "es":"criar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_5232",
-  "fr":"haut dÃ©bit",
+  "fr":"haut débit",
   "en":"broadband",
   "de":"Breitband",
   "es":"banda ancha",
@@ -47137,7 +47137,7 @@
   "id":"word_5238",
   "fr":"bureaucratie",
   "en":"bureaucracy",
-  "de":"BÃ¼rokratie",
+  "de":"Bürokratie",
   "es":"burocracia",
   "type":"nom",
   "level":"C1"
@@ -47146,7 +47146,7 @@
   "id":"word_5239",
   "fr":"enterrement",
   "en":"burial",
-  "de":"BegrÃ¤bnis",
+  "de":"Begräbnis",
   "es":"entierro",
   "type":"nom",
   "level":"C1"
@@ -47165,7 +47165,7 @@
   "fr":"calcul",
   "en":"calculation",
   "de":"Berechnung",
-  "es":"cÃ¡lculo",
+  "es":"cálculo",
   "type":"nom",
   "level":"C1"
 },
@@ -47180,9 +47180,9 @@
 },
   {
   "id":"word_5243",
-  "fr":"capacitÃ©",
+  "fr":"capacité",
   "en":"capability",
-  "de":"FÃ¤higkeit",
+  "de":"Fähigkeit",
   "es":"capacidad",
   "type":"nom",
   "level":"C1"
@@ -47219,7 +47219,7 @@
   "fr":"wagon",
   "en":"carriage",
   "de":"Wagen",
-  "es":"vagÃ³n",
+  "es":"vagón",
   "type":"nom",
   "level":"C1"
 },
@@ -47237,7 +47237,7 @@
   "fr":"victime",
   "en":"casualty",
   "de":"Opfer",
-  "es":"vÃ­ctima",
+  "es":"víctima",
   "type":"nom",
   "level":"C1"
 },
@@ -47246,7 +47246,7 @@
   "fr":"catalogue",
   "en":"catalogue",
   "de":"Katalog",
-  "es":"catÃ¡logo",
+  "es":"catálogo",
   "type":"nom",
   "level":"C1"
 },
@@ -47261,7 +47261,7 @@
 },
   {
   "id":"word_5252",
-  "fr":"bétail",
+  "fr":"b�tail",
   "en":"cattle",
   "de":"Vieh",
   "es":"ganado",
@@ -47273,7 +47273,7 @@
   "fr":"prudence",
   "en":"caution",
   "de":"Vorsicht",
-  "es":"precaución",
+  "es":"precauci�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47290,14 +47290,14 @@
   "id":"word_5255",
   "fr":"cesser",
   "en":"to cease",
-  "de":"aufhören",
+  "de":"aufh�ren",
   "es":"cesar",
   "type":"verbe",
   "level":"B2"
 },
   {
   "id":"word_5256",
-  "fr":"cimetière",
+  "fr":"cimeti�re",
   "en":"cemetery",
   "de":"Friedhof",
   "es":"cementerio",
@@ -47309,7 +47309,7 @@
   "fr":"chambre",
   "en":"chamber",
   "de":"Kammer",
-  "es":"cámara",
+  "es":"c�mara",
   "type":"nom",
   "level":"B2"
 },
@@ -47324,7 +47324,7 @@
 },
   {
   "id":"word_5259",
-  "fr":"caractériser",
+  "fr":"caract�riser",
   "en":"to characterise",
   "de":"charakterisieren",
   "es":"caracterizar",
@@ -47351,7 +47351,7 @@
 },
   {
   "id":"word_5262",
-  "fr":"chœur",
+  "fr":"ch�ur",
   "en":"choir",
   "de":"Chor",
   "es":"coro",
@@ -47363,7 +47363,7 @@
   "fr":"chronique",
   "en":"chronic",
   "de":"chronisch",
-  "es":"crónico",
+  "es":"cr�nico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -47371,7 +47371,7 @@
   "id":"word_5264",
   "fr":"morceau",
   "en":"chunk",
-  "de":"Stück",
+  "de":"St�ck",
   "es":"trozo",
   "type":"nom",
   "level":"B2"
@@ -47390,16 +47390,16 @@
   "fr":"circulation",
   "en":"circulation",
   "de":"Zirkulation",
-  "es":"circulación",
+  "es":"circulaci�n",
   "type":"nom",
   "level":"B2"
 },
   {
   "id":"word_5267",
-  "fr":"citoyenneté",
+  "fr":"citoyennet�",
   "en":"citizenship",
-  "de":"Staatsbürgerschaft",
-  "es":"ciudadanía",
+  "de":"Staatsb�rgerschaft",
+  "es":"ciudadan�a",
   "type":"nom",
   "level":"B2"
 },
@@ -47407,8 +47407,8 @@
   "id":"word_5268",
   "fr":"civique",
   "en":"civic",
-  "de":"bürgerlich",
-  "es":"cívico",
+  "de":"b�rgerlich",
+  "es":"c�vico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -47423,7 +47423,7 @@
 },
   {
   "id":"word_5270",
-  "fr":"clarté",
+  "fr":"clart�",
   "en":"clarity",
   "de":"Klarheit",
   "es":"claridad",
@@ -47434,7 +47434,7 @@
   "id":"word_5271",
   "fr":"affrontement",
   "en":"clash",
-  "de":"Zusammenstoß",
+  "de":"Zusammensto�",
   "es":"choque",
   "type":"nom",
   "level":"B2"
@@ -47444,7 +47444,7 @@
   "fr":"classification",
   "en":"classification",
   "de":"Klassifikation",
-  "es":"clasificación",
+  "es":"clasificaci�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47462,7 +47462,7 @@
   "fr":"clinique",
   "en":"clinical",
   "de":"klinisch",
-  "es":"clínico",
+  "es":"cl�nico",
   "type":"adjectif",
   "level":"B2"
 },
@@ -47470,7 +47470,7 @@
   "id":"word_5275",
   "fr":"fermeture",
   "en":"closure",
-  "de":"Schließung",
+  "de":"Schlie�ung",
   "es":"cierre",
   "type":"nom",
   "level":"C1"
@@ -47489,15 +47489,15 @@
   "fr":"coalition",
   "en":"coalition",
   "de":"Koalition",
-  "es":"coalición",
+  "es":"coalici�n",
   "type":"nom",
   "level":"B2"
 },
   {
   "id":"word_5278",
-  "fr":"côtier",
+  "fr":"c�tier",
   "en":"coastal",
-  "de":"küstennah",
+  "de":"k�stennah",
   "es":"costero",
   "type":"adjectif",
   "level":"B2"
@@ -47507,7 +47507,7 @@
   "fr":"cocktail",
   "en":"cocktail",
   "de":"Cocktail",
-  "es":"cóctel",
+  "es":"c�ctel",
   "type":"nom",
   "level":"B1"
 },
@@ -47522,7 +47522,7 @@
 },
   {
   "id":"word_5281",
-  "fr":"coïncider",
+  "fr":"co�ncider",
   "en":"to coincide",
   "de":"zusammenfallen",
   "es":"coincidir",
@@ -47543,7 +47543,7 @@
   "fr":"collaboration",
   "en":"collaboration",
   "de":"Zusammenarbeit",
-  "es":"colaboración",
+  "es":"colaboraci�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47561,7 +47561,7 @@
   "fr":"collision",
   "en":"collision",
   "de":"Kollision",
-  "es":"colisión",
+  "es":"colisi�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47642,7 +47642,7 @@
   "fr":"marchandise",
   "en":"commodity",
   "de":"Rohstoff",
-  "es":"mercancía",
+  "es":"mercanc�a",
   "type":"nom",
   "level":"C1"
 },
@@ -47659,8 +47659,8 @@
   "id":"word_5296",
   "fr":"compagnon",
   "en":"companion",
-  "de":"Gefährte",
-  "es":"compañero",
+  "de":"Gef�hrte",
+  "es":"compa�ero",
   "type":"nom",
   "level":"B2"
 },
@@ -47677,8 +47677,8 @@
   "id":"word_5298",
   "fr":"compassion",
   "en":"compassion",
-  "de":"Mitgefühl",
-  "es":"compasión",
+  "de":"Mitgef�hl",
+  "es":"compasi�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47695,7 +47695,7 @@
   "id":"word_5300",
   "fr":"convaincant",
   "en":"compelling",
-  "de":"überzeugend",
+  "de":"�berzeugend",
   "es":"convincente",
   "type":"adjectif",
   "level":"C1"
@@ -47713,14 +47713,14 @@
   "id":"word_5302",
   "fr":"compensation",
   "en":"compensation",
-  "de":"Entschädigung",
-  "es":"compensación",
+  "de":"Entsch�digung",
+  "es":"compensaci�n",
   "type":"nom",
   "level":"B2"
 },
   {
   "id":"word_5303",
-  "fr":"compétence",
+  "fr":"comp�tence",
   "en":"competence",
   "de":"Kompetenz",
   "es":"competencia",
@@ -47729,7 +47729,7 @@
 },
   {
   "id":"word_5304",
-  "fr":"compétent",
+  "fr":"comp�tent",
   "en":"competent",
   "de":"kompetent",
   "es":"competente",
@@ -47747,25 +47747,25 @@
 },
   {
   "id":"word_5306",
-  "fr":"complément",
+  "fr":"compl�ment",
   "en":"complement",
-  "de":"Ergänzung",
+  "de":"Erg�nzung",
   "es":"complemento",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5307",
-  "fr":"complexité",
+  "fr":"complexit�",
   "en":"complexity",
-  "de":"Komplexität",
+  "de":"Komplexit�t",
   "es":"complejidad",
   "type":"nom",
   "level":"B2"
 },
   {
   "id":"word_5308",
-  "fr":"conformité",
+  "fr":"conformit�",
   "en":"compliance",
   "de":"Einhaltung",
   "es":"cumplimiento",
@@ -47777,7 +47777,7 @@
   "fr":"complication",
   "en":"complication",
   "de":"Komplikation",
-  "es":"complicación",
+  "es":"complicaci�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47795,7 +47795,7 @@
   "fr":"composition",
   "en":"composition",
   "de":"Zusammensetzung",
-  "es":"composición",
+  "es":"composici�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47837,7 +47837,7 @@
 },
   {
   "id":"word_5316",
-  "fr":"concéder",
+  "fr":"conc�der",
   "en":"to concede",
   "de":"zugestehen",
   "es":"conceder",
@@ -47858,7 +47858,7 @@
   "fr":"conception",
   "en":"conception",
   "de":"Konzeption",
-  "es":"concepción",
+  "es":"concepci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -47866,8 +47866,8 @@
   "id":"word_5319",
   "fr":"concession",
   "en":"concession",
-  "de":"Zugeständnis",
-  "es":"concesión",
+  "de":"Zugest�ndnis",
+  "es":"concesi�n",
   "type":"nom",
   "level":"C1"
 },
@@ -47882,7 +47882,7 @@
 },
   {
   "id":"word_5321",
-  "fr":"conférer",
+  "fr":"conf�rer",
   "en":"to confer",
   "de":"beraten",
   "es":"conferir",
@@ -47893,8 +47893,8 @@
   "id":"word_5322",
   "fr":"confession",
   "en":"confession",
-  "de":"Geständnis",
-  "es":"confesión",
+  "de":"Gest�ndnis",
+  "es":"confesi�n",
   "type":"nom",
   "level":"C1"
 },
@@ -47903,7 +47903,7 @@
   "fr":"configuration",
   "en":"configuration",
   "de":"Konfiguration",
-  "es":"configuración",
+  "es":"configuraci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -47911,7 +47911,7 @@
   "id":"word_5324",
   "fr":"confiner",
   "en":"to confine",
-  "de":"beschränken",
+  "de":"beschr�nken",
   "es":"confinar",
   "type":"verbe",
   "level":"C1"
@@ -47920,8 +47920,8 @@
   "id":"word_5325",
   "fr":"confirmation",
   "en":"confirmation",
-  "de":"Bestätigung",
-  "es":"confirmación",
+  "de":"Best�tigung",
+  "es":"confirmaci�n",
   "type":"nom",
   "level":"B2"
 },
@@ -47939,13 +47939,13 @@
   "fr":"confrontation",
   "en":"confrontation",
   "de":"Konfrontation",
-  "es":"confrontación",
+  "es":"confrontaci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5328",
-  "fr":"féliciter",
+  "fr":"f�liciter",
   "en":"to congratulate",
   "de":"gratulieren",
   "es":"felicitar",
@@ -47954,16 +47954,16 @@
 },
   {
   "id":"word_5329",
-  "fr":"congrégation",
+  "fr":"congr�gation",
   "en":"congregation",
   "de":"Gemeinde",
-  "es":"congregación",
+  "es":"congregaci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5330",
-  "fr":"du congrès",
+  "fr":"du congr�s",
   "en":"congressional",
   "de":"kongressional",
   "es":"del congreso",
@@ -47972,7 +47972,7 @@
 },
   {
   "id":"word_5331",
-  "fr":"conquÃ©rir",
+  "fr":"conquérir",
   "en":"to conquer",
   "de":"erobern",
   "es":"conquistar",
@@ -48008,7 +48008,7 @@
 },
   {
   "id":"word_5335",
-  "fr":"consÃ©cutif",
+  "fr":"consécutif",
   "en":"consecutive",
   "de":"aufeinanderfolgend",
   "es":"consecutivo",
@@ -48044,7 +48044,7 @@
 },
   {
   "id":"word_5339",
-  "fr":"cohÃ©rence",
+  "fr":"cohérence",
   "en":"consistency",
   "de":"Konsistenz",
   "es":"coherencia",
@@ -48065,7 +48065,7 @@
   "fr":"consolidation",
   "en":"consolidation",
   "de":"Konsolidierung",
-  "es":"consolidaciÃ³n",
+  "es":"consolidación",
   "type":"nom",
   "level":"C1"
 },
@@ -48083,7 +48083,7 @@
   "fr":"constitution",
   "en":"constitution",
   "de":"Verfassung",
-  "es":"constituciÃ³n",
+  "es":"constitución",
   "type":"nom",
   "level":"C1"
 },
@@ -48091,7 +48091,7 @@
   "id":"word_5344",
   "fr":"constitutionnel",
   "en":"constitutional",
-  "de":"verfassungsmÃ¤ÃŸig",
+  "de":"verfassungsmäßig",
   "es":"constitucional",
   "type":"adjectif",
   "level":"C1"
@@ -48100,8 +48100,8 @@
   "id":"word_5345",
   "fr":"contrainte",
   "en":"constraint",
-  "de":"EinschrÃ¤nkung",
-  "es":"restricciÃ³n",
+  "de":"Einschränkung",
+  "es":"restricción",
   "type":"nom",
   "level":"C1"
 },
@@ -48118,14 +48118,14 @@
   "id":"word_5347",
   "fr":"envisager",
   "en":"to contemplate",
-  "de":"erwÃ¤gen",
+  "de":"erwägen",
   "es":"contemplar",
   "type":"verbe",
   "level":"C1"
 },
   {
   "id":"word_5348",
-  "fr":"mÃ©pris",
+  "fr":"mépris",
   "en":"contempt",
   "de":"Verachtung",
   "es":"desprecio",
@@ -48145,7 +48145,7 @@
   "id":"word_5350",
   "fr":"candidat",
   "en":"contender",
-  "de":"AnwÃ¤rter",
+  "de":"Anwärter",
   "es":"contendiente",
   "type":"nom",
   "level":"C1"
@@ -48164,7 +48164,7 @@
   "fr":"affirmation",
   "en":"contention",
   "de":"Behauptung",
-  "es":"afirmaciÃ³n",
+  "es":"afirmación",
   "type":"nom",
   "level":"C1"
 },
@@ -48191,7 +48191,7 @@
   "fr":"contradiction",
   "en":"contradiction",
   "de":"Widerspruch",
-  "es":"contradicciÃ³n",
+  "es":"contradicción",
   "type":"nom",
   "level":"C1"
 },
@@ -48218,15 +48218,15 @@
   "fr":"conversion",
   "en":"conversion",
   "de":"Umwandlung",
-  "es":"conversiÃ³n",
+  "es":"conversión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5359",
-  "fr":"dÃ©tenu",
+  "fr":"détenu",
   "en":"convict",
-  "de":"StrÃ¤fling",
+  "de":"Sträfling",
   "es":"convicto",
   "type":"nom",
   "level":"C1"
@@ -48235,14 +48235,14 @@
   "id":"word_5360",
   "fr":"conviction",
   "en":"conviction",
-  "de":"Ãœberzeugung",
-  "es":"convicciÃ³n",
+  "de":"Überzeugung",
+  "es":"convicción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5361",
-  "fr":"coopÃ©rer",
+  "fr":"coopérer",
   "en":"to cooperate",
   "de":"kooperieren",
   "es":"cooperar",
@@ -48251,7 +48251,7 @@
 },
   {
   "id":"word_5362",
-  "fr":"coopÃ©ratif",
+  "fr":"coopératif",
   "en":"cooperative",
   "de":"kooperativ",
   "es":"cooperativo",
@@ -48272,7 +48272,7 @@
   "fr":"coordination",
   "en":"coordination",
   "de":"Koordination",
-  "es":"coordinaciÃ³n",
+  "es":"coordinación",
   "type":"nom",
   "level":"C1"
 },
@@ -48299,13 +48299,13 @@
   "fr":"correction",
   "en":"correction",
   "de":"Korrektur",
-  "es":"correcciÃ³n",
+  "es":"corrección",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5368",
-  "fr":"corrÃ©ler",
+  "fr":"corréler",
   "en":"to correlate",
   "de":"korrelieren",
   "es":"correlacionar",
@@ -48314,10 +48314,10 @@
 },
   {
   "id":"word_5369",
-  "fr":"corrÃ©lation",
+  "fr":"corrélation",
   "en":"correlation",
   "de":"Korrelation",
-  "es":"correlaciÃ³n",
+  "es":"correlación",
   "type":"nom",
   "level":"C1"
 },
@@ -48359,7 +48359,7 @@
 },
   {
   "id":"word_5374",
-  "fr":"en consÃ©quence",
+  "fr":"en conséquence",
   "en":"correspondingly",
   "de":"entsprechend",
   "es":"en consecuencia",
@@ -48380,13 +48380,13 @@
   "fr":"corruption",
   "en":"corruption",
   "de":"Korruption",
-  "es":"corrupciÃ³n",
+  "es":"corrupción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5377",
-  "fr":"coÃ»teux",
+  "fr":"coûteux",
   "en":"costly",
   "de":"kostspielig",
   "es":"costoso",
@@ -48433,8 +48433,8 @@
   "id":"word_5382",
   "fr":"homologue",
   "en":"counterpart",
-  "de":"GegenstÃ¼ck",
-  "es":"homÃ³logo",
+  "de":"Gegenstück",
+  "es":"homólogo",
   "type":"nom",
   "level":"C1"
 },
@@ -48442,7 +48442,7 @@
   "id":"word_5383",
   "fr":"innombrable",
   "en":"countless",
-  "de":"unzÃ¤hlig",
+  "de":"unzählig",
   "es":"incontable",
   "type":"adjectif",
   "level":"C1"
@@ -48460,8 +48460,8 @@
   "id":"word_5385",
   "fr":"courtoisie",
   "en":"courtesy",
-  "de":"HÃ¶flichkeit",
-  "es":"cortesÃ­a",
+  "de":"Höflichkeit",
+  "es":"cortesía",
   "type":"nom",
   "level":"C1"
 },
@@ -48470,7 +48470,7 @@
   "fr":"artisanat",
   "en":"craft",
   "de":"Handwerk",
-  "es":"artesanÃ­a",
+  "es":"artesanía",
   "type":"nom",
   "level":"C1"
 },
@@ -48485,28 +48485,28 @@
 },
   {
   "id":"word_5388",
-  "fr":"crÃ©ateur",
+  "fr":"créateur",
   "en":"creator",
-  "de":"SchÃ¶pfer",
+  "de":"Schöpfer",
   "es":"creador",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5389",
-  "fr":"crÃ©dibilitÃ©",
+  "fr":"crédibilité",
   "en":"credibility",
-  "de":"GlaubwÃ¼rdigkeit",
+  "de":"Glaubwürdigkeit",
   "es":"credibilidad",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5390",
-  "fr":"crÃ©dible",
+  "fr":"crédible",
   "en":"credible",
-  "de":"glaubwÃ¼rdig",
-  "es":"creÃ­ble",
+  "de":"glaubwürdig",
+  "es":"creíble",
   "type":"adjectif",
   "level":"C1"
 },
@@ -48521,7 +48521,7 @@
 },
   {
   "id":"word_5392",
-  "fr":"critÃ¨re",
+  "fr":"critère",
   "en":"criterion",
   "de":"Kriterium",
   "es":"criterio",
@@ -48533,7 +48533,7 @@
   "fr":"critique",
   "en":"critique",
   "de":"Kritik",
-  "es":"crÃ­tica",
+  "es":"crítica",
   "type":"nom",
   "level":"C1"
 },
@@ -48557,7 +48557,7 @@
 },
   {
   "id":"word_5396",
-  "fr":"Ã©craser",
+  "fr":"écraser",
   "en":"to crush",
   "de":"zerquetschen",
   "es":"aplastar",
@@ -48593,7 +48593,7 @@
 },
   {
   "id":"word_5400",
-  "fr":"curiositÃ©",
+  "fr":"curiosité",
   "en":"curiosity",
   "de":"Neugier",
   "es":"curiosidad",
@@ -48623,7 +48623,7 @@
   "fr":"cynique",
   "en":"cynical",
   "de":"zynisch",
-  "es":"cÃ­nico",
+  "es":"cínico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -48640,7 +48640,7 @@
   "id":"word_5405",
   "fr":"dommageable",
   "en":"damaging",
-  "de":"schÃ¤dlich",
+  "de":"schädlich",
   "es":"perjudicial",
   "type":"adjectif",
   "level":"C1"
@@ -48649,32 +48649,32 @@
   "id":"word_5406",
   "fr":"aube",
   "en":"dawn",
-  "de":"MorgendÃ¤mmerung",
+  "de":"Morgendämmerung",
   "es":"amanecer",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5407",
-  "fr":"dÃ©bris",
+  "fr":"débris",
   "en":"debris",
-  "de":"TrÃ¼mmer",
+  "de":"Trümmer",
   "es":"escombros",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5408",
-  "fr":"dÃ©buts",
+  "fr":"débuts",
   "en":"debut",
-  "de":"DebÃ¼t",
+  "de":"Debüt",
   "es":"debut",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5409",
-  "fr":"prise de dÃ©cision",
+  "fr":"prise de décision",
   "en":"decision-making",
   "de":"Entscheidungsfindung",
   "es":"toma de decisiones",
@@ -48683,7 +48683,7 @@
 },
   {
   "id":"word_5410",
-  "fr":"dÃ©cisif",
+  "fr":"décisif",
   "en":"decisive",
   "de":"entscheidend",
   "es":"decisivo",
@@ -48693,16 +48693,16 @@
   {
   "id":"word_5411",
   "en":"declaration",
-  "fr":"déclaration",
-  "de":"Erklärung",
-  "es":"declaración",
+  "fr":"d�claration",
+  "de":"Erkl�rung",
+  "es":"declaraci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5412",
   "en":"dedicated",
-  "fr":"dédié",
+  "fr":"d�di�",
   "de":"engagiert",
   "es":"dedicado",
   "type":"adjectif",
@@ -48711,9 +48711,9 @@
   {
   "id":"word_5413",
   "en":"dedication",
-  "fr":"dévouement",
+  "fr":"d�vouement",
   "de":"Hingabe",
-  "es":"dedicación",
+  "es":"dedicaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -48738,7 +48738,7 @@
   {
   "id":"word_5416",
   "en":"default",
-  "fr":"défaut",
+  "fr":"d�faut",
   "de":"Standard",
   "es":"defecto",
   "type":"nom",
@@ -48747,7 +48747,7 @@
   {
   "id":"word_5417",
   "en":"defect",
-  "fr":"défaut",
+  "fr":"d�faut",
   "de":"Defekt",
   "es":"defecto",
   "type":"nom",
@@ -48756,7 +48756,7 @@
   {
   "id":"word_5418",
   "en":"defensive",
-  "fr":"défensif",
+  "fr":"d�fensif",
   "de":"defensiv",
   "es":"defensivo",
   "type":"adjectif",
@@ -48765,7 +48765,7 @@
   {
   "id":"word_5419",
   "en":"deficiency",
-  "fr":"déficience",
+  "fr":"d�ficience",
   "de":"Mangel",
   "es":"deficiencia",
   "type":"nom",
@@ -48774,17 +48774,17 @@
   {
   "id":"word_5420",
   "en":"deficit",
-  "fr":"déficit",
+  "fr":"d�ficit",
   "de":"Defizit",
-  "es":"déficit",
+  "es":"d�ficit",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5421",
   "en":"definitive",
-  "fr":"définitif",
-  "de":"endgültig",
+  "fr":"d�finitif",
+  "de":"endg�ltig",
   "es":"definitivo",
   "type":"adjectif",
   "level":"C1"
@@ -48792,7 +48792,7 @@
   {
   "id":"word_5422",
   "en":"to defy",
-  "fr":"défier",
+  "fr":"d�fier",
   "de":"trotzen",
   "es":"desafiar",
   "type":"verbe",
@@ -48801,7 +48801,7 @@
   {
   "id":"word_5423",
   "en":"delegate",
-  "fr":"délégué",
+  "fr":"d�l�gu�",
   "de":"Delegierte",
   "es":"delegado",
   "type":"nom",
@@ -48810,16 +48810,16 @@
   {
   "id":"word_5424",
   "en":"delegation",
-  "fr":"délégation",
+  "fr":"d�l�gation",
   "de":"Delegation",
-  "es":"delegación",
+  "es":"delegaci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5425",
   "en":"delicate",
-  "fr":"délicat",
+  "fr":"d�licat",
   "de":"zart",
   "es":"delicado",
   "type":"adjectif",
@@ -48828,8 +48828,8 @@
   {
   "id":"word_5426",
   "en":"demon",
-  "fr":"démon",
-  "de":"Dämon",
+  "fr":"d�mon",
+  "de":"D�mon",
   "es":"demonio",
   "type":"nom",
   "level":"C1"
@@ -48837,16 +48837,16 @@
   {
   "id":"word_5427",
   "en":"denial",
-  "fr":"déni",
+  "fr":"d�ni",
   "de":"Leugnung",
-  "es":"negación",
+  "es":"negaci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5428",
   "en":"to denounce",
-  "fr":"dénoncer",
+  "fr":"d�noncer",
   "de":"anprangern",
   "es":"denunciar",
   "type":"verbe",
@@ -48864,7 +48864,7 @@
   {
   "id":"word_5430",
   "en":"density",
-  "fr":"densité",
+  "fr":"densit�",
   "de":"Dichte",
   "es":"densidad",
   "type":"nom",
@@ -48873,8 +48873,8 @@
   {
   "id":"word_5431",
   "en":"dependence",
-  "fr":"dépendance",
-  "de":"Abhängigkeit",
+  "fr":"d�pendance",
+  "de":"Abh�ngigkeit",
   "es":"dependencia",
   "type":"nom",
   "level":"C1"
@@ -48882,7 +48882,7 @@
   {
   "id":"word_5432",
   "en":"to depict",
-  "fr":"décrire",
+  "fr":"d�crire",
   "de":"darstellen",
   "es":"representar",
   "type":"verbe",
@@ -48891,7 +48891,7 @@
   {
   "id":"word_5433",
   "en":"to deploy",
-  "fr":"déployer",
+  "fr":"d�ployer",
   "de":"einsetzen",
   "es":"desplegar",
   "type":"verbe",
@@ -48900,7 +48900,7 @@
   {
   "id":"word_5434",
   "en":"deployment",
-  "fr":"déploiement",
+  "fr":"d�ploiement",
   "de":"Einsatz",
   "es":"despliegue",
   "type":"nom",
@@ -48945,7 +48945,7 @@
   {
   "id":"word_5439",
   "en":"to designate",
-  "fr":"désigner",
+  "fr":"d�signer",
   "de":"ernennen",
   "es":"designar",
   "type":"verbe",
@@ -48954,8 +48954,8 @@
   {
   "id":"word_5440",
   "en":"desirable",
-  "fr":"désirable",
-  "de":"wünschenswert",
+  "fr":"d�sirable",
+  "de":"w�nschenswert",
   "es":"deseable",
   "type":"adjectif",
   "level":"C1"
@@ -48964,7 +48964,7 @@
   "id":"word_5441",
   "en":"destructive",
   "fr":"destructeur",
-  "de":"zerstörerisch",
+  "de":"zerst�rerisch",
   "es":"destructivo",
   "type":"adjectif",
   "level":"C1"
@@ -48972,7 +48972,7 @@
   {
   "id":"word_5442",
   "en":"to detain",
-  "fr":"détenir",
+  "fr":"d�tenir",
   "de":"festhalten",
   "es":"detener",
   "type":"verbe",
@@ -48981,25 +48981,25 @@
   {
   "id":"word_5443",
   "en":"detection",
-  "fr":"détection",
+  "fr":"d�tection",
   "de":"Erkennung",
-  "es":"detección",
+  "es":"detecci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5444",
   "en":"detention",
-  "fr":"détention",
+  "fr":"d�tention",
   "de":"Inhaftierung",
-  "es":"detención",
+  "es":"detenci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5445",
   "en":"to deteriorate",
-  "fr":"détériorer",
+  "fr":"d�t�riorer",
   "de":"verschlechtern",
   "es":"deteriorar",
   "type":"verbe",
@@ -49008,8 +49008,8 @@
   {
   "id":"word_5446",
   "en":"to devastate",
-  "fr":"dévaster",
-  "de":"verwüsten",
+  "fr":"d�vaster",
+  "de":"verw�sten",
   "es":"devastar",
   "type":"verbe",
   "level":"C1"
@@ -49037,7 +49037,7 @@
   "en":"diagnosis",
   "fr":"diagnostic",
   "de":"Diagnose",
-  "es":"diagnóstico",
+  "es":"diagn�stico",
   "type":"nom",
   "level":"C1"
 },
@@ -49062,7 +49062,7 @@
   {
   "id":"word_5452",
   "en":"to differentiate",
-  "fr":"différencier",
+  "fr":"diff�rencier",
   "de":"unterscheiden",
   "es":"diferenciar",
   "type":"verbe",
@@ -49071,8 +49071,8 @@
   {
   "id":"word_5453",
   "en":"dignity",
-  "fr":"dignité",
-  "de":"Würde",
+  "fr":"dignit�",
+  "de":"W�rde",
   "es":"dignidad",
   "type":"nom",
   "level":"C1"
@@ -49091,7 +49091,7 @@
   "en":"dimension",
   "fr":"dimension",
   "de":"Dimension",
-  "es":"dimensión",
+  "es":"dimensi�n",
   "type":"nom",
   "level":"C1"
 },
@@ -49118,7 +49118,7 @@
   "en":"diplomat",
   "fr":"diplomate",
   "de":"Diplomat",
-  "es":"diplomático",
+  "es":"diplom�tico",
   "type":"nom",
   "level":"C1"
 },
@@ -49127,14 +49127,14 @@
   "en":"diplomatic",
   "fr":"diplomatique",
   "de":"diplomatisch",
-  "es":"diplomático",
+  "es":"diplom�tico",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5460",
   "en":"directory",
-  "fr":"répertoire",
+  "fr":"r�pertoire",
   "de":"Verzeichnis",
   "es":"directorio",
   "type":"nom",
@@ -49143,7 +49143,7 @@
   {
   "id":"word_5461",
   "en":"disastrous",
-  "fr":"désastreux",
+  "fr":"d�sastreux",
   "de":"katastrophal",
   "es":"desastroso",
   "type":"adjectif",
@@ -49161,7 +49161,7 @@
   {
   "id":"word_5463",
   "en":"to discharge",
-  "fr":"décharger",
+  "fr":"d�charger",
   "de":"entlassen",
   "es":"descargar",
   "type":"verbe",
@@ -49170,7 +49170,7 @@
   {
   "id":"word_5464",
   "en":"to disclose",
-  "fr":"révéler",
+  "fr":"r�v�ler",
   "de":"offenlegen",
   "es":"revelar",
   "type":"verbe",
@@ -49179,9 +49179,9 @@
   {
   "id":"word_5465",
   "en":"disclosure",
-  "fr":"révélation",
+  "fr":"r�v�lation",
   "de":"Offenlegung",
-  "es":"divulgación",
+  "es":"divulgaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -49197,9 +49197,9 @@
   {
   "id":"word_5467",
   "en":"discretion",
-  "fr":"discrétion",
+  "fr":"discr�tion",
   "de":"Ermessen",
-  "es":"discreción",
+  "es":"discreci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -49208,7 +49208,7 @@
   "en":"discrimination",
   "fr":"discrimination",
   "de":"Diskriminierung",
-  "es":"discriminación",
+  "es":"discriminaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -49233,8 +49233,8 @@
   {
   "id":"word_5471",
   "en":"to displace",
-  "fr":"déplacer",
-  "de":"verdrängen",
+  "fr":"d�placer",
+  "de":"verdr�ngen",
   "es":"desplazar",
   "type":"verbe",
   "level":"C1"
@@ -49242,16 +49242,16 @@
   {
   "id":"word_5472",
   "en":"disposal",
-  "fr":"élimination",
+  "fr":"�limination",
   "de":"Entsorgung",
-  "es":"eliminación",
+  "es":"eliminaci�n",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5473",
   "en":"to dispose of",
-  "fr":"se débarrasser de",
+  "fr":"se d�barrasser de",
   "de":"entsorgen",
   "es":"deshacerse de",
   "type":"verbe",
@@ -49270,7 +49270,7 @@
   "id":"word_5475",
   "en":"to disrupt",
   "fr":"perturber",
-  "de":"stören",
+  "de":"st�ren",
   "es":"interrumpir",
   "type":"verbe",
   "level":"C1"
@@ -49279,8 +49279,8 @@
   "id":"word_5476",
   "en":"disruption",
   "fr":"perturbation",
-  "de":"Störung",
-  "es":"interrupción",
+  "de":"St�rung",
+  "es":"interrupci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -49288,7 +49288,7 @@
   "id":"word_5477",
   "en":"to dissolve",
   "fr":"dissoudre",
-  "de":"auflösen",
+  "de":"aufl�sen",
   "es":"disolver",
   "type":"verbe",
   "level":"C1"
@@ -49298,7 +49298,7 @@
   "en":"distinction",
   "fr":"distinction",
   "de":"Unterscheidung",
-  "es":"distinción",
+  "es":"distinci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -49314,7 +49314,7 @@
   {
   "id":"word_5480",
   "en":"to distort",
-  "fr":"déformer",
+  "fr":"d�former",
   "de":"verzerren",
   "es":"distorsionar",
   "type":"verbe",
@@ -49323,7 +49323,7 @@
   {
   "id":"word_5481",
   "en":"distress",
-  "fr":"détresse",
+  "fr":"d�tresse",
   "de":"Not",
   "es":"angustia",
   "type":"nom",
@@ -49332,8 +49332,8 @@
   {
   "id":"word_5482",
   "en":"disturbing",
-  "fr":"dérangeant",
-  "de":"verstörend",
+  "fr":"d�rangeant",
+  "de":"verst�rend",
   "es":"inquietante",
   "type":"adjectif",
   "level":"C1"
@@ -49341,7 +49341,7 @@
   {
   "id":"word_5483",
   "en":"to divert",
-  "fr":"détourner",
+  "fr":"d�tourner",
   "de":"umleiten",
   "es":"desviar",
   "type":"verbe",
@@ -49351,7 +49351,7 @@
   "id":"word_5484",
   "en":"divine",
   "fr":"divin",
-  "de":"göttlich",
+  "de":"g�ttlich",
   "es":"divino",
   "type":"adjectif",
   "level":"C1"
@@ -49370,7 +49370,7 @@
   "en":"documentation",
   "fr":"documentation",
   "de":"Dokumentation",
-  "es":"documentación",
+  "es":"documentaci�n",
   "type":"nom",
   "level":"C1"
 },
@@ -49378,7 +49378,7 @@
   "id":"word_5487",
   "en":"domain",
   "fr":"domaine",
-  "de":"Domäne",
+  "de":"Dom�ne",
   "es":"dominio",
   "type":"nom",
   "level":"C1"
@@ -49413,7 +49413,7 @@
   {
   "id":"word_5491",
   "en":"drawback",
-  "fr":"inconvÃ©nient",
+  "fr":"inconvénient",
   "de":"Nachteil",
   "es":"inconveniente",
   "type":"nom",
@@ -49431,7 +49431,7 @@
   {
   "id":"word_5493",
   "en":"drift",
-  "fr":"dÃ©river",
+  "fr":"dériver",
   "de":"treiben",
   "es":"derivar",
   "type":"verbe",
@@ -49478,7 +49478,7 @@
   "en":"duo",
   "fr":"duo",
   "de":"Duo",
-  "es":"dÃºo",
+  "es":"dúo",
   "type":"nom",
   "level":"C1"
 },
@@ -49494,7 +49494,7 @@
   {
   "id":"word_5500",
   "en":"ease",
-  "fr":"facilitÃ©",
+  "fr":"facilité",
   "de":"Leichtigkeit",
   "es":"facilidad",
   "type":"nom",
@@ -49503,7 +49503,7 @@
   {
   "id":"word_5501",
   "en":"echo",
-  "fr":"Ã©cho",
+  "fr":"écho",
   "de":"Echo",
   "es":"eco",
   "type":"nom",
@@ -49512,17 +49512,17 @@
   {
   "id":"word_5502",
   "en":"ecological",
-  "fr":"Ã©cologique",
-  "de":"Ã¶kologisch",
-  "es":"ecolÃ³gico",
+  "fr":"écologique",
+  "de":"ökologisch",
+  "es":"ecológico",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5503",
   "en":"educator",
-  "fr":"Ã©ducateur",
-  "de":"PÃ¤dagoge",
+  "fr":"éducateur",
+  "de":"Pädagoge",
   "es":"educador",
   "type":"nom",
   "level":"C1"
@@ -49530,7 +49530,7 @@
   {
   "id":"word_5504",
   "en":"effectiveness",
-  "fr":"efficacitÃ©",
+  "fr":"efficacité",
   "de":"Wirksamkeit",
   "es":"eficacia",
   "type":"nom",
@@ -49557,7 +49557,7 @@
   {
   "id":"word_5507",
   "en":"elaborate",
-  "fr":"Ã©laborÃ©",
+  "fr":"élaboré",
   "de":"aufwendig",
   "es":"elaborado",
   "type":"adjectif",
@@ -49566,7 +49566,7 @@
   {
   "id":"word_5508",
   "en":"electoral",
-  "fr":"Ã©lectoral",
+  "fr":"électoral",
   "de":"Wahl",
   "es":"electoral",
   "type":"adjectif",
@@ -49575,7 +49575,7 @@
   {
   "id":"word_5509",
   "en":"elevate",
-  "fr":"Ã©lever",
+  "fr":"élever",
   "de":"erheben",
   "es":"elevar",
   "type":"verbe",
@@ -49584,7 +49584,7 @@
   {
   "id":"word_5510",
   "en":"eligible",
-  "fr":"Ã©ligible",
+  "fr":"éligible",
   "de":"berechtigt",
   "es":"elegible",
   "type":"adjectif",
@@ -49593,9 +49593,9 @@
   {
   "id":"word_5511",
   "en":"elite",
-  "fr":"Ã©lite",
+  "fr":"élite",
   "de":"Elite",
-  "es":"Ã©lite",
+  "es":"élite",
   "type":"nom",
   "level":"C1"
 },
@@ -49613,7 +49613,7 @@
   "en":"embarrassment",
   "fr":"embarras",
   "de":"Verlegenheit",
-  "es":"vergÃ¼enza",
+  "es":"vergüenza",
   "type":"nom",
   "level":"C1"
 },
@@ -49629,7 +49629,7 @@
   {
   "id":"word_5515",
   "en":"embed",
-  "fr":"intÃ©grer",
+  "fr":"intégrer",
   "de":"einbetten",
   "es":"incrustar",
   "type":"verbe",
@@ -49639,7 +49639,7 @@
   "id":"word_5516",
   "en":"embody",
   "fr":"incarner",
-  "de":"verkÃ¶rpern",
+  "de":"verkörpern",
   "es":"encarnar",
   "type":"verbe",
   "level":"C1"
@@ -49647,7 +49647,7 @@
   {
   "id":"word_5517",
   "en":"emergence",
-  "fr":"Ã©mergence",
+  "fr":"émergence",
   "de":"Entstehung",
   "es":"surgimiento",
   "type":"nom",
@@ -49658,7 +49658,7 @@
   "en":"empirical",
   "fr":"empirique",
   "de":"empirisch",
-  "es":"empÃ­rico",
+  "es":"empírico",
   "type":"adjectif",
   "level":"C1"
 },
@@ -49666,7 +49666,7 @@
   "id":"word_5519",
   "en":"empower",
   "fr":"habiliter",
-  "de":"befÃ¤higen",
+  "de":"befähigen",
   "es":"empoderar",
   "type":"verbe",
   "level":"C1"
@@ -49694,7 +49694,7 @@
   "en":"encouragement",
   "fr":"encouragement",
   "de":"Ermutigung",
-  "es":"estÃ­mulo",
+  "es":"estímulo",
   "type":"nom",
   "level":"C1"
 },
@@ -49711,7 +49711,7 @@
   "id":"word_5524",
   "en":"endeavour",
   "fr":"effort",
-  "de":"BemÃ¼hung",
+  "de":"Bemühung",
   "es":"esfuerzo",
   "type":"nom",
   "level":"C1"
@@ -49729,7 +49729,7 @@
   "id":"word_5526",
   "en":"endorse",
   "fr":"approuver",
-  "de":"befÃ¼rworten",
+  "de":"befürworten",
   "es":"respaldar",
   "type":"verbe",
   "level":"C1"
@@ -49738,7 +49738,7 @@
   "id":"word_5527",
   "en":"endorsement",
   "fr":"approbation",
-  "de":"BefÃ¼rwortung",
+  "de":"Befürwortung",
   "es":"respaldo",
   "type":"nom",
   "level":"C1"
@@ -49818,7 +49818,7 @@
   {
   "id":"word_5536",
   "en":"enthusiast",
-  "fr":"passionnÃ©",
+  "fr":"passionné",
   "de":"Enthusiast",
   "es":"entusiasta",
   "type":"nom",
@@ -49836,7 +49836,7 @@
   {
   "id":"word_5538",
   "en":"entity",
-  "fr":"entitÃ©",
+  "fr":"entité",
   "de":"Einheit",
   "es":"entidad",
   "type":"nom",
@@ -49845,7 +49845,7 @@
   {
   "id":"word_5539",
   "en":"epidemic",
-  "fr":"Ã©pidÃ©mie",
+  "fr":"épidémie",
   "de":"Epidemie",
   "es":"epidemia",
   "type":"nom",
@@ -49854,7 +49854,7 @@
   {
   "id":"word_5540",
   "en":"equality",
-  "fr":"Ã©galitÃ©",
+  "fr":"égalité",
   "de":"Gleichheit",
   "es":"igualdad",
   "type":"nom",
@@ -49863,16 +49863,16 @@
   {
   "id":"word_5541",
   "en":"equation",
-  "fr":"Ã©quation",
+  "fr":"équation",
   "de":"Gleichung",
-  "es":"ecuaciÃ³n",
+  "es":"ecuación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5542",
   "en":"erect",
-  "fr":"Ã©riger",
+  "fr":"ériger",
   "de":"errichten",
   "es":"erigir",
   "type":"verbe",
@@ -49908,7 +49908,7 @@
   {
   "id":"word_5546",
   "en":"establishment",
-  "fr":"Ã©tablissement",
+  "fr":"établissement",
   "de":"Einrichtung",
   "es":"establecimiento",
   "type":"nom",
@@ -49917,7 +49917,7 @@
   {
   "id":"word_5547",
   "en":"eternal",
-  "fr":"Ã©ternel",
+  "fr":"éternel",
   "de":"ewig",
   "es":"eterno",
   "type":"adjectif",
@@ -49926,7 +49926,7 @@
   {
   "id":"word_5548",
   "en":"evacuate",
-  "fr":"Ã©vacuer",
+  "fr":"évacuer",
   "de":"evakuieren",
   "es":"evacuar",
   "type":"verbe",
@@ -49935,7 +49935,7 @@
   {
   "id":"word_5549",
   "en":"evoke",
-  "fr":"Ã©voquer",
+  "fr":"évoquer",
   "de":"hervorrufen",
   "es":"evocar",
   "type":"verbe",
@@ -49944,8 +49944,8 @@
   {
   "id":"word_5550",
   "en":"evolutionary",
-  "fr":"Ã©volutionnaire",
-  "de":"evolutionÃ¤r",
+  "fr":"évolutionnaire",
+  "de":"evolutionär",
   "es":"evolutivo",
   "type":"adjectif",
   "level":"C1"
@@ -49953,8 +49953,8 @@
   {
   "id":"word_5551",
   "en":"exaggerate",
-  "fr":"exagÃ©rer",
-  "de":"Ã¼bertreiben",
+  "fr":"exagérer",
+  "de":"übertreiben",
   "es":"exagerar",
   "type":"verbe",
   "level":"C1"
@@ -49972,7 +49972,7 @@
   "id":"word_5553",
   "en":"exceptional",
   "fr":"exceptionnel",
-  "de":"auÃŸergewÃ¶hnlich",
+  "de":"außergewöhnlich",
   "es":"excepcional",
   "type":"adjectif",
   "level":"C1"
@@ -49980,8 +49980,8 @@
   {
   "id":"word_5554",
   "en":"excess",
-  "fr":"excÃ¨s",
-  "de":"Ãœberschuss",
+  "fr":"excès",
+  "de":"Überschuss",
   "es":"exceso",
   "type":"nom",
   "level":"C1"
@@ -49991,7 +49991,7 @@
   "en":"exclusion",
   "fr":"exclusion",
   "de":"Ausschluss",
-  "es":"exclusiÃ³n",
+  "es":"exclusión",
   "type":"nom",
   "level":"C1"
 },
@@ -50008,7 +50008,7 @@
   "id":"word_5557",
   "en":"exclusively",
   "fr":"exclusivement",
-  "de":"ausschlieÃŸlich",
+  "de":"ausschließlich",
   "es":"exclusivamente",
   "type":"adverbe",
   "level":"C1"
@@ -50016,8 +50016,8 @@
   {
   "id":"word_5558",
   "en":"execute",
-  "fr":"exÃ©cuter",
-  "de":"ausfÃ¼hren",
+  "fr":"exécuter",
+  "de":"ausführen",
   "es":"ejecutar",
   "type":"verbe",
   "level":"C1"
@@ -50025,9 +50025,9 @@
   {
   "id":"word_5559",
   "en":"execution",
-  "fr":"exÃ©cution",
-  "de":"AusfÃ¼hrung",
-  "es":"ejecuciÃ³n",
+  "fr":"exécution",
+  "de":"Ausführung",
+  "es":"ejecución",
   "type":"nom",
   "level":"C1"
 },
@@ -50035,7 +50035,7 @@
   "id":"word_5560",
   "en":"exert",
   "fr":"exercer",
-  "de":"ausÃ¼ben",
+  "de":"ausüben",
   "es":"ejercer",
   "type":"verbe",
   "level":"C1"
@@ -50052,7 +50052,7 @@
   {
   "id":"word_5562",
   "en":"expenditure",
-  "fr":"dÃ©pense",
+  "fr":"dépense",
   "de":"Ausgabe",
   "es":"gasto",
   "type":"nom",
@@ -50061,7 +50061,7 @@
   {
   "id":"word_5563",
   "en":"experimental",
-  "fr":"expÃ©rimental",
+  "fr":"expérimental",
   "de":"experimentell",
   "es":"experimental",
   "type":"adjectif",
@@ -50081,7 +50081,7 @@
   "en":"explicit",
   "fr":"explicite",
   "de":"explizit",
-  "es":"explÃ­cito",
+  "es":"explícito",
   "type":"adjectif",
   "level":"C1"
 },
@@ -50089,8 +50089,8 @@
   "id":"word_5566",
   "en":"explicitly",
   "fr":"explicitement",
-  "de":"ausdrÃ¼cklich",
-  "es":"explÃ­citamente",
+  "de":"ausdrücklich",
+  "es":"explícitamente",
   "type":"adverbe",
   "level":"C1"
 },
@@ -50099,7 +50099,7 @@
   "en":"exploitation",
   "fr":"exploitation",
   "de":"Ausbeutung",
-  "es":"explotaciÃ³n",
+  "es":"explotación",
   "type":"nom",
   "level":"C1"
 },
@@ -50115,7 +50115,7 @@
   {
   "id":"word_5569",
   "en":"extremist",
-  "fr":"extrÃ©miste",
+  "fr":"extrémiste",
   "de":"Extremist",
   "es":"extremista",
   "type":"nom",
@@ -50137,7 +50137,7 @@
   "type":"nom",
   "en":"faction",
   "fr":"faction",
-  "es":"facciÃ³n"
+  "es":"facción"
 },
   {
   "id":"word_5572",
@@ -50154,12 +50154,12 @@
   "level":"C1",
   "type":"nom",
   "en":"fairness",
-  "fr":"Ã©quitÃ©",
+  "fr":"équité",
   "es":"equidad"
 },
   {
   "id":"word_5574",
-  "de":"tÃ¶dlich",
+  "de":"tödlich",
   "level":"C1",
   "type":"adjectif",
   "en":"fatal",
@@ -50177,7 +50177,7 @@
 },
   {
   "id":"word_5576",
-  "de":"gÃ¼nstig",
+  "de":"günstig",
   "level":"C1",
   "type":"adjectif",
   "en":"favourable",
@@ -50191,7 +50191,7 @@
   "type":"nom",
   "en":"feat",
   "fr":"exploit",
-  "es":"hazaÃ±a"
+  "es":"hazaña"
 },
   {
   "id":"word_5578",
@@ -50208,7 +50208,7 @@
   "level":"C1",
   "type":"nom",
   "en":"feminist",
-  "fr":"fÃ©ministe",
+  "fr":"féministe",
   "es":"feminista"
 },
   {
@@ -50226,7 +50226,7 @@
   "level":"C1",
   "type":"adjectif",
   "en":"fierce",
-  "fr":"fÃ©roce",
+  "fr":"féroce",
   "es":"feroz"
 },
   {
@@ -50235,7 +50235,7 @@
   "level":"C1",
   "type":"nom",
   "en":"filmmaker",
-  "fr":"cinÃ©aste",
+  "fr":"cinéaste",
   "es":"cineasta"
 },
   {
@@ -50253,7 +50253,7 @@
   "level":"C1",
   "type":"nom",
   "en":"firearm",
-  "fr":"arme Ã  feu",
+  "fr":"arme à feu",
   "es":"arma de fuego"
 },
   {
@@ -50271,7 +50271,7 @@
   "level":"C1",
   "type":"nom",
   "en":"flaw",
-  "fr":"dÃ©faut",
+  "fr":"défaut",
   "es":"defecto"
 },
   {
@@ -50312,11 +50312,11 @@
 },
   {
   "id":"word_5591",
-  "de":"FlexibilitÃ¤t",
+  "de":"Flexibilität",
   "level":"C1",
   "type":"nom",
   "en":"flexibility",
-  "fr":"flexibilitÃ©",
+  "fr":"flexibilité",
   "es":"flexibilidad"
 },
   {
@@ -50325,12 +50325,12 @@
   "level":"C1",
   "type":"verbe",
   "en":"flourish",
-  "fr":"prospÃ©rer",
+  "fr":"prospérer",
   "es":"florecer"
 },
   {
   "id":"word_5593",
-  "de":"FlÃ¼ssigkeit",
+  "de":"Flüssigkeit",
   "level":"C1",
   "type":"nom",
   "en":"fluid",
@@ -50343,7 +50343,7 @@
   "level":"C1",
   "type":"nom",
   "en":"footage",
-  "fr":"sÃ©quence",
+  "fr":"séquence",
   "es":"metraje"
 },
   {
@@ -50352,16 +50352,16 @@
   "level":"C1",
   "type":"verbe",
   "en":"foresee",
-  "fr":"prÃ©voir",
+  "fr":"prévoir",
   "es":"prever"
 },
   {
   "id":"word_5596",
-  "de":"AuslÃ¤nder",
+  "de":"Ausländer",
   "level":"C1",
   "type":"nom",
   "en":"foreigner",
-  "fr":"Ã©tranger",
+  "fr":"étranger",
   "es":"extranjero"
 },
   {
@@ -50380,7 +50380,7 @@
   "type":"nom",
   "en":"formula",
   "fr":"formule",
-  "es":"fÃ³rmula"
+  "es":"fórmula"
 },
   {
   "id":"word_5599",
@@ -50407,11 +50407,11 @@
   "type":"adjectif",
   "en":"forthcoming",
   "fr":"prochain",
-  "es":"prÃ³ximo"
+  "es":"próximo"
 },
   {
   "id":"word_5602",
-  "de":"fÃ¶rdern",
+  "de":"fördern",
   "level":"C1",
   "type":"verbe",
   "en":"foster",
@@ -50425,7 +50425,7 @@
   "type":"adjectif",
   "en":"fragile",
   "fr":"fragile",
-  "es":"frÃ¡gil"
+  "es":"frágil"
 },
   {
   "id":"word_5604",
@@ -50447,7 +50447,7 @@
 },
   {
   "id":"word_5606",
-  "de":"betrÃ¼gerisch",
+  "de":"betrügerisch",
   "level":"C1",
   "type":"adjectif",
   "en":"fraudulent",
@@ -50470,7 +50470,7 @@
   "type":"nom",
   "en":"frustration",
   "fr":"frustration",
-  "es":"frustraciÃ³n"
+  "es":"frustración"
 },
   {
   "id":"word_5609",
@@ -50488,11 +50488,11 @@
   "type":"nom",
   "en":"fundraising",
   "fr":"collecte de fonds",
-  "es":"recaudaciÃ³n de fondos"
+  "es":"recaudación de fondos"
 },
   {
   "id":"word_5611",
-  "de":"GlÃ¼cksspiel",
+  "de":"Glücksspiel",
   "level":"C1",
   "type":"nom",
   "en":"gambling",
@@ -50506,7 +50506,7 @@
   "type":"nom",
   "en":"gathering",
   "fr":"rassemblement",
-  "es":"reuniÃ³n"
+  "es":"reunión"
 },
   {
   "id":"word_5613",
@@ -50519,11 +50519,11 @@
 },
   {
   "id":"word_5614",
-  "de":"AusrÃ¼stung",
+  "de":"Ausrüstung",
   "level":"C1",
   "type":"nom",
   "en":"gear",
-  "fr":"Ã©quipement",
+  "fr":"équipement",
   "es":"equipo"
 },
   {
@@ -50532,16 +50532,16 @@
   "level":"C1",
   "type":"adjectif",
   "en":"generic",
-  "fr":"gÃ©nÃ©rique",
-  "es":"genÃ©rico"
+  "fr":"générique",
+  "es":"genérico"
 },
   {
   "id":"word_5616",
-  "de":"VÃ¶lkermord",
+  "de":"Völkermord",
   "level":"C1",
   "type":"nom",
   "en":"genocide",
-  "fr":"gÃ©nocide",
+  "fr":"génocide",
   "es":"genocidio"
 },
   {
@@ -50550,16 +50550,16 @@
   "level":"C1",
   "type":"verbe",
   "en":"glance",
-  "fr":"jeter un coup d\u0027Å“il",
+  "fr":"jeter un coup d\u0027œil",
   "es":"echar un vistazo"
 },
   {
   "id":"word_5618",
-  "de":"flÃ¼chtiger Blick",
+  "de":"flüchtiger Blick",
   "level":"C1",
   "type":"nom",
   "en":"glimpse",
-  "fr":"aperÃ§u",
+  "fr":"aperçu",
   "es":"vistazo"
 },
   {
@@ -50582,7 +50582,7 @@
 },
   {
   "id":"word_5621",
-  "de":"RegierungsfÃ¼hrung",
+  "de":"Regierungsführung",
   "level":"C1",
   "type":"nom",
   "en":"governance",
@@ -50595,7 +50595,7 @@
   "level":"C1",
   "type":"nom",
   "en":"grace",
-  "fr":"grÃ¢ce",
+  "fr":"grâce",
   "es":"gracia"
 },
   {
@@ -50622,7 +50622,7 @@
   "level":"C1",
   "type":"nom",
   "en":"gravity",
-  "fr":"gravitÃ©",
+  "fr":"gravité",
   "es":"gravedad"
 },
   {
@@ -50631,7 +50631,7 @@
   "level":"C1",
   "type":"nom",
   "en":"grid",
-  "fr":"rÃ©seau",
+  "fr":"réseau",
   "es":"red"
 },
   {
@@ -50650,7 +50650,7 @@
   "type":"verbe",
   "en":"grin",
   "fr":"sourire",
-  "es":"sonreÃ­r"
+  "es":"sonreír"
 },
   {
   "id":"word_5629",
@@ -50685,7 +50685,7 @@
   "level":"C1",
   "type":"nom",
   "en":"guerrilla",
-  "fr":"guÃ©rilla",
+  "fr":"guérilla",
   "es":"guerrilla"
 },
   {
@@ -50695,7 +50695,7 @@
   "type":"nom",
   "en":"guidance",
   "fr":"conseils",
-  "es":"orientaciÃ³n"
+  "es":"orientación"
 },
   {
   "id":"word_5634",
@@ -50703,12 +50703,12 @@
   "level":"C1",
   "type":"nom",
   "en":"guilt",
-  "fr":"culpabilitÃ©",
+  "fr":"culpabilité",
   "es":"culpa"
 },
   {
   "id":"word_5635",
-  "de":"BauchgefÃ¼hl",
+  "de":"Bauchgefühl",
   "level":"C1",
   "type":"nom",
   "en":"gut",
@@ -50717,7 +50717,7 @@
 },
   {
   "id":"word_5636",
-  "de":"begrÃ¼ÃŸen",
+  "de":"begrüßen",
   "level":"C1",
   "type":"verbe",
   "en":"hail",
@@ -50730,7 +50730,7 @@
   "level":"C1",
   "type":"adverbe",
   "en":"halfway",
-  "fr":"Ã  mi-chemin",
+  "fr":"à mi-chemin",
   "es":"a medio camino"
 },
   {
@@ -50739,7 +50739,7 @@
   "level":"C1",
   "type":"verbe",
   "en":"halt",
-  "fr":"arrÃªter",
+  "fr":"arrêter",
   "es":"detener"
 },
   {
@@ -50748,8 +50748,8 @@
   "level":"C1",
   "type":"nom",
   "en":"handful",
-  "fr":"poignÃ©e",
-  "es":"puÃ±ado"
+  "fr":"poignée",
+  "es":"puñado"
 },
   {
   "id":"word_5640",
@@ -50767,15 +50767,15 @@
   "type":"adjectif",
   "en":"handy",
   "fr":"pratique",
-  "es":"prÃ¡ctico"
+  "es":"práctico"
 },
   {
   "id":"word_5642",
-  "de":"BelÃ¤stigung",
+  "de":"Belästigung",
   "level":"C1",
   "type":"nom",
   "en":"harassment",
-  "fr":"harcÃ¨lement",
+  "fr":"harcèlement",
   "es":"acoso"
 },
   {
@@ -50784,7 +50784,7 @@
   "level":"C1",
   "type":"nom",
   "en":"hardware",
-  "fr":"matÃ©riel",
+  "fr":"matériel",
   "es":"hardware"
 },
   {
@@ -50794,7 +50794,7 @@
   "type":"nom",
   "en":"harmony",
   "fr":"harmonie",
-  "es":"armonÃ­a"
+  "es":"armonía"
 },
   {
   "id":"word_5645",
@@ -50802,7 +50802,7 @@
   "level":"C1",
   "type":"adjectif",
   "en":"harsh",
-  "fr":"sÃ©vÃ¨re",
+  "fr":"sévère",
   "es":"duro"
 },
   {
@@ -50811,7 +50811,7 @@
   "level":"C1",
   "type":"nom",
   "en":"harvest",
-  "fr":"rÃ©colte",
+  "fr":"récolte",
   "es":"cosecha"
 },
   {
@@ -50847,14 +50847,14 @@
   "level":"C1",
   "type":"adverbe",
   "en":"hence",
-  "fr":"d\u0027oÃ¹",
+  "fr":"d\u0027où",
   "es":"por lo tanto"
 },
   {
   "id":"word_5651",
   "en":"to heighten",
   "fr":"intensifier",
-  "de":"verstÃ¤rken",
+  "de":"verstärken",
   "es":"intensificar",
   "type":"verbe",
   "level":"C1"
@@ -50871,16 +50871,16 @@
   {
   "id":"word_5653",
   "en":"hierarchy",
-  "fr":"la hiÃ©rarchie",
+  "fr":"la hiérarchie",
   "de":"die Hierarchie",
-  "es":"la jerarquÃ­a",
+  "es":"la jerarquía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5654",
   "en":"high-profile",
-  "fr":"trÃ¨s en vue",
+  "fr":"très en vue",
   "de":"bekannt",
   "es":"de alto perfil",
   "type":"adjectif",
@@ -50918,7 +50918,7 @@
   "en":"hostage",
   "fr":"l\u0027otage",
   "de":"die Geisel",
-  "es":"el rehÃ©n",
+  "es":"el rehén",
   "type":"nom",
   "level":"C1"
 },
@@ -50934,7 +50934,7 @@
   {
   "id":"word_5660",
   "en":"hostility",
-  "fr":"l\u0027hostilitÃ©",
+  "fr":"l\u0027hostilité",
   "de":"die Feindseligkeit",
   "es":"la hostilidad",
   "type":"nom",
@@ -50944,7 +50944,7 @@
   "id":"word_5661",
   "en":"humanitarian",
   "fr":"humanitaire",
-  "de":"humanitÃ¤r",
+  "de":"humanitär",
   "es":"humanitario",
   "type":"adjectif",
   "level":"C1"
@@ -50952,7 +50952,7 @@
   {
   "id":"word_5662",
   "en":"humanity",
-  "fr":"l\u0027humanitÃ©",
+  "fr":"l\u0027humanité",
   "de":"die Menschheit",
   "es":"la humanidad",
   "type":"nom",
@@ -50970,18 +50970,18 @@
   {
   "id":"word_5664",
   "en":"hydrogen",
-  "fr":"l\u0027hydrogÃ¨ne",
+  "fr":"l\u0027hydrogène",
   "de":"der Wasserstoff",
-  "es":"el hidrÃ³geno",
+  "es":"el hidrógeno",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5665",
   "en":"hypothesis",
-  "fr":"l\u0027hypothÃ¨se",
+  "fr":"l\u0027hypothèse",
   "de":"die Hypothese",
-  "es":"la hipÃ³tesis",
+  "es":"la hipótesis",
   "type":"nom",
   "level":"C1"
 },
@@ -50990,25 +50990,25 @@
   "en":"identification",
   "fr":"l\u0027identification",
   "de":"die Identifizierung",
-  "es":"la identificaciÃ³n",
+  "es":"la identificación",
   "type":"nom",
   "level":"B2"
 },
   {
   "id":"word_5667",
   "en":"ideological",
-  "fr":"idÃ©ologique",
+  "fr":"idéologique",
   "de":"ideologisch",
-  "es":"ideolÃ³gico",
+  "es":"ideológico",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5668",
   "en":"ideology",
-  "fr":"l\u0027idÃ©ologie",
+  "fr":"l\u0027idéologie",
   "de":"die Ideologie",
-  "es":"la ideologÃ­a",
+  "es":"la ideología",
   "type":"nom",
   "level":"C1"
 },
@@ -51026,7 +51026,7 @@
   "en":"imagery",
   "fr":"l\u0027imagerie",
   "de":"die Bildsprache",
-  "es":"la imaginerÃ­a",
+  "es":"la imaginería",
   "type":"nom",
   "level":"C1"
 },
@@ -51051,9 +51051,9 @@
   {
   "id":"word_5673",
   "en":"implementation",
-  "fr":"la mise en Å“uvre",
+  "fr":"la mise en œuvre",
   "de":"die Umsetzung",
-  "es":"la implementaciÃ³n",
+  "es":"la implementación",
   "type":"nom",
   "level":"C1"
 },
@@ -51069,8 +51069,8 @@
   {
   "id":"word_5675",
   "en":"inability",
-  "fr":"l\u0027incapacitÃ©",
-  "de":"die UnfÃ¤higkeit",
+  "fr":"l\u0027incapacité",
+  "de":"die Unfähigkeit",
   "es":"la incapacidad",
   "type":"nom",
   "level":"C1"
@@ -51078,7 +51078,7 @@
   {
   "id":"word_5676",
   "en":"inadequate",
-  "fr":"inadÃ©quat",
+  "fr":"inadéquat",
   "de":"unangemessen",
   "es":"inadecuado",
   "type":"adjectif",
@@ -51087,7 +51087,7 @@
   {
   "id":"word_5677",
   "en":"inappropriate",
-  "fr":"inappropriÃ©",
+  "fr":"inapproprié",
   "de":"unpassend",
   "es":"inapropiado",
   "type":"adjectif",
@@ -51096,7 +51096,7 @@
   {
   "id":"word_5678",
   "en":"to incarcerate",
-  "fr":"incarcÃ©rer",
+  "fr":"incarcérer",
   "de":"inhaftieren",
   "es":"encarcelar",
   "type":"verbe",
@@ -51105,9 +51105,9 @@
   {
   "id":"word_5679",
   "en":"incarceration",
-  "fr":"l\u0027incarcÃ©ration",
+  "fr":"l\u0027incarcération",
   "de":"die Inhaftierung",
-  "es":"la encarcelaciÃ³n",
+  "es":"la encarcelación",
   "type":"nom",
   "level":"C1"
 },
@@ -51134,7 +51134,7 @@
   "en":"inclusion",
   "fr":"l\u0027inclusion",
   "de":"die Inklusion",
-  "es":"la inclusiÃ³n",
+  "es":"la inclusión",
   "type":"nom",
   "level":"B2"
 },
@@ -51161,16 +51161,16 @@
   "en":"indictment",
   "fr":"l\u0027inculpation",
   "de":"die Anklage",
-  "es":"la acusaciÃ³n",
+  "es":"la acusación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5686",
   "en":"indigenous",
-  "fr":"indigÃ¨ne",
+  "fr":"indigène",
   "de":"indigen",
-  "es":"indÃ­gena",
+  "es":"indígena",
   "type":"adjectif",
   "level":"C1"
 },
@@ -51178,7 +51178,7 @@
   "id":"word_5687",
   "en":"to induce",
   "fr":"induire",
-  "de":"herbeifÃ¼hren",
+  "de":"herbeiführen",
   "es":"inducir",
   "type":"verbe",
   "level":"C1"
@@ -51195,7 +51195,7 @@
   {
   "id":"word_5689",
   "en":"inequality",
-  "fr":"l\u0027inÃ©galitÃ©",
+  "fr":"l\u0027inégalité",
   "de":"die Ungleichheit",
   "es":"la desigualdad",
   "type":"nom",
@@ -51204,8 +51204,8 @@
   {
   "id":"word_5690",
   "en":"infamous",
-  "fr":"tristement cÃ©lÃ¨bre",
-  "de":"berÃ¼chtigt",
+  "fr":"tristement célèbre",
+  "de":"berüchtigt",
   "es":"infame",
   "type":"adjectif",
   "level":"C1"
@@ -51223,7 +51223,7 @@
   "id":"word_5692",
   "en":"to inflict",
   "fr":"infliger",
-  "de":"zufÃ¼gen",
+  "de":"zufügen",
   "es":"infligir",
   "type":"verbe",
   "level":"C1"
@@ -51249,8 +51249,8 @@
   {
   "id":"word_5695",
   "en":"inherent",
-  "fr":"inhÃ©rent",
-  "de":"inhÃ¤rent",
+  "fr":"inhérent",
+  "de":"inhärent",
   "es":"inherente",
   "type":"adjectif",
   "level":"C1"
@@ -51287,7 +51287,7 @@
   "en":"injection",
   "fr":"l\u0027injection",
   "de":"die Injektion",
-  "es":"la inyecciÃ³n",
+  "es":"la inyección",
   "type":"nom",
   "level":"B2"
 },
@@ -51303,7 +51303,7 @@
   {
   "id":"word_5701",
   "en":"inmate",
-  "fr":"le dÃ©tenu",
+  "fr":"le détenu",
   "de":"der Insasse",
   "es":"el recluso",
   "type":"nom",
@@ -51312,7 +51312,7 @@
   {
   "id":"word_5702",
   "en":"to inquire",
-  "fr":"s\u0027enquÃ©rir",
+  "fr":"s\u0027enquérir",
   "de":"sich erkundigen",
   "es":"inquirir",
   "type":"verbe",
@@ -51322,15 +51322,15 @@
   "id":"word_5703",
   "en":"insertion",
   "fr":"l\u0027insertion",
-  "de":"die EinfÃ¼gung",
-  "es":"la inserciÃ³n",
+  "de":"die Einfügung",
+  "es":"la inserción",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5704",
   "en":"insider",
-  "fr":"l\u0027initiÃ©",
+  "fr":"l\u0027initié",
   "de":"der Insider",
   "es":"el informante",
   "type":"nom",
@@ -51350,7 +51350,7 @@
   "en":"inspection",
   "fr":"l\u0027inspection",
   "de":"die Inspektion",
-  "es":"la inspecciÃ³n",
+  "es":"la inspección",
   "type":"nom",
   "level":"B2"
 },
@@ -51359,7 +51359,7 @@
   "en":"inspiration",
   "fr":"l\u0027inspiration",
   "de":"die Inspiration",
-  "es":"la inspiraciÃ³n",
+  "es":"la inspiración",
   "type":"nom",
   "level":"B2"
 },
@@ -51393,7 +51393,7 @@
   {
   "id":"word_5711",
   "en":"instrumental",
-  "fr":"dÃ©terminant",
+  "fr":"déterminant",
   "de":"hilfreich",
   "es":"fundamental",
   "type":"adjectif",
@@ -51438,7 +51438,7 @@
   {
   "id":"word_5716",
   "en":"integral",
-  "fr":"intÃ©gral",
+  "fr":"intégral",
   "de":"wesentlich",
   "es":"integral",
   "type":"adjectif",
@@ -51447,7 +51447,7 @@
   {
   "id":"word_5717",
   "en":"integrated",
-  "fr":"intÃ©grÃ©",
+  "fr":"intégré",
   "de":"integriert",
   "es":"integrado",
   "type":"adjectif",
@@ -51456,17 +51456,17 @@
   {
   "id":"word_5718",
   "en":"integration",
-  "fr":"l\u0027intÃ©gration",
+  "fr":"l\u0027intégration",
   "de":"die Integration",
-  "es":"la integraciÃ³n",
+  "es":"la integración",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5719",
   "en":"integrity",
-  "fr":"l\u0027intÃ©gritÃ©",
-  "de":"die IntegritÃ¤t",
+  "fr":"l\u0027intégrité",
+  "de":"die Integrität",
   "es":"la integridad",
   "type":"nom",
   "level":"C1"
@@ -51483,8 +51483,8 @@
   {
   "id":"word_5721",
   "en":"intensity",
-  "fr":"l\u0027intensitÃ©",
-  "de":"die IntensitÃ¤t",
+  "fr":"l\u0027intensité",
+  "de":"die Intensität",
   "es":"la intensidad",
   "type":"nom",
   "level":"B2"
@@ -51503,7 +51503,7 @@
   "en":"intent",
   "fr":"l\u0027intention",
   "de":"die Absicht",
-  "es":"la intenciÃ³n",
+  "es":"la intención",
   "type":"nom",
   "level":"C1"
 },
@@ -51528,7 +51528,7 @@
   {
   "id":"word_5726",
   "en":"to interfere",
-  "fr":"interfÃ©rer",
+  "fr":"interférer",
   "de":"sich einmischen",
   "es":"interferir",
   "type":"verbe",
@@ -51537,7 +51537,7 @@
   {
   "id":"word_5727",
   "en":"interference",
-  "fr":"l\u0027interfÃ©rence",
+  "fr":"l\u0027interférence",
   "de":"die Einmischung",
   "es":"la interferencia",
   "type":"nom",
@@ -51546,8 +51546,8 @@
   {
   "id":"word_5728",
   "en":"interim",
-  "fr":"intÃ©rimaire",
-  "de":"vorlÃ¤ufig",
+  "fr":"intérimaire",
+  "de":"vorläufig",
   "es":"interino",
   "type":"adjectif",
   "level":"C1"
@@ -51555,7 +51555,7 @@
   {
   "id":"word_5729",
   "en":"interior",
-  "fr":"l\u0027intÃ©rieur",
+  "fr":"l\u0027intérieur",
   "de":"das Innere",
   "es":"el interior",
   "type":"nom",
@@ -51564,7 +51564,7 @@
   {
   "id":"word_5730",
   "en":"intermediate",
-  "fr":"intermÃ©diaire",
+  "fr":"intermédiaire",
   "de":"mittlere",
   "es":"intermedio",
   "type":"adjectif",
@@ -51599,7 +51599,7 @@
 },
   {
   "id":"word_5734",
-  "fr":"mÃ©diÃ©val",
+  "fr":"médiéval",
   "en":"medieval",
   "de":"mittelalterlich",
   "es":"medieval",
@@ -51608,34 +51608,34 @@
 },
   {
   "id":"word_5735",
-  "fr":"mÃ©ditation",
+  "fr":"méditation",
   "en":"meditation",
   "de":"Meditation",
-  "es":"meditaciÃ³n",
+  "es":"meditación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5736",
-  "fr":"mÃ©lodie",
+  "fr":"mélodie",
   "en":"melody",
   "de":"Melodie",
-  "es":"melodÃ­a",
+  "es":"melodía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5737",
-  "fr":"mÃ©morandum",
+  "fr":"mémorandum",
   "en":"memo",
   "de":"Memo",
-  "es":"memorÃ¡ndum",
+  "es":"memorándum",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5738",
-  "fr":"mÃ©moires",
+  "fr":"mémoires",
   "en":"memoir",
   "de":"Memoiren",
   "es":"memorias",
@@ -51644,7 +51644,7 @@
 },
   {
   "id":"word_5739",
-  "fr":"mÃ©morial",
+  "fr":"mémorial",
   "en":"memorial",
   "de":"Denkmal",
   "es":"memorial",
@@ -51671,7 +51671,7 @@
 },
   {
   "id":"word_5742",
-  "fr":"misÃ©ricorde",
+  "fr":"miséricorde",
   "en":"mercy",
   "de":"Barmherzigkeit",
   "es":"misericordia",
@@ -51682,7 +51682,7 @@
   "id":"word_5743",
   "fr":"simple",
   "en":"mere",
-  "de":"bloÃŸ",
+  "de":"bloß",
   "es":"mero",
   "type":"adjectif",
   "level":"C1"
@@ -51710,16 +51710,16 @@
   "fr":"fusion",
   "en":"merger",
   "de":"Fusion",
-  "es":"fusiÃ³n",
+  "es":"fusión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5747",
-  "fr":"mÃ©rite",
+  "fr":"mérite",
   "en":"merit",
   "de":"Verdienst",
-  "es":"mÃ©rito",
+  "es":"mérito",
   "type":"nom",
   "level":"C1"
 },
@@ -51737,7 +51737,7 @@
   "fr":"migration",
   "en":"migration",
   "de":"Migration",
-  "es":"migraciÃ³n",
+  "es":"migración",
   "type":"nom",
   "level":"C1"
 },
@@ -51764,7 +51764,7 @@
   "fr":"minimal",
   "en":"minimal",
   "de":"minimal",
-  "es":"mÃ­nimo",
+  "es":"mínimo",
   "type":"adjectif",
   "level":"C1"
 },
@@ -51779,16 +51779,16 @@
 },
   {
   "id":"word_5754",
-  "fr":"exploitation miniÃ¨re",
+  "fr":"exploitation minière",
   "en":"mining",
   "de":"Bergbau",
-  "es":"minerÃ­a",
+  "es":"minería",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5755",
-  "fr":"ministÃ¨re",
+  "fr":"ministère",
   "en":"ministry",
   "de":"Ministerium",
   "es":"ministerio",
@@ -51815,7 +51815,7 @@
 },
   {
   "id":"word_5758",
-  "fr":"misÃ¨re",
+  "fr":"misère",
   "en":"misery",
   "de":"Elend",
   "es":"miseria",
@@ -51826,8 +51826,8 @@
   "id":"word_5759",
   "fr":"trompeur",
   "en":"misleading",
-  "de":"irrefÃ¼hrend",
-  "es":"engaÃ±oso",
+  "de":"irreführend",
+  "es":"engañoso",
   "type":"adjectif",
   "level":"C1"
 },
@@ -51836,7 +51836,7 @@
   "fr":"mauvaise gestion",
   "en":"mismanagement",
   "de":"Missmanagement",
-  "es":"mala gestiÃ³n",
+  "es":"mala gestión",
   "type":"nom",
   "level":"C1"
 },
@@ -51860,9 +51860,9 @@
 },
   {
   "id":"word_5763",
-  "fr":"mobilitÃ©",
+  "fr":"mobilité",
   "en":"mobility",
-  "de":"MobilitÃ¤t",
+  "de":"Mobilität",
   "es":"movilidad",
   "type":"nom",
   "level":"C1"
@@ -51878,7 +51878,7 @@
 },
   {
   "id":"word_5765",
-  "fr":"modÃ©rÃ©",
+  "fr":"modéré",
   "en":"moderate",
   "de":"moderat",
   "es":"moderado",
@@ -51890,7 +51890,7 @@
   "fr":"modification",
   "en":"modification",
   "de":"Modifikation",
-  "es":"modificaciÃ³n",
+  "es":"modificación",
   "type":"nom",
   "level":"C1"
 },
@@ -51899,13 +51899,13 @@
   "fr":"module",
   "en":"module",
   "de":"Modul",
-  "es":"mÃ³dulo",
+  "es":"módulo",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5768",
-  "fr":"Ã©lan",
+  "fr":"élan",
   "en":"momentum",
   "de":"Schwung",
   "es":"impulso",
@@ -51916,7 +51916,7 @@
   "id":"word_5769",
   "fr":"moine",
   "en":"monk",
-  "de":"MÃ¶nch",
+  "de":"Mönch",
   "es":"monje",
   "type":"nom",
   "level":"C1"
@@ -51932,7 +51932,7 @@
 },
   {
   "id":"word_5771",
-  "fr":"moralitÃ©",
+  "fr":"moralité",
   "en":"morality",
   "de":"Moral",
   "es":"moralidad",
@@ -51952,7 +51952,7 @@
   "id":"word_5773",
   "fr":"municipal",
   "en":"municipal",
-  "de":"stÃ¤dtisch",
+  "de":"städtisch",
   "es":"municipal",
   "type":"adjectif",
   "level":"C1"
@@ -51968,7 +51968,7 @@
 },
   {
   "id":"word_5775",
-  "fr":"naÃ¯f",
+  "fr":"naïf",
   "en":"naive",
   "de":"naiv",
   "es":"ingenuo",
@@ -51977,16 +51977,16 @@
 },
   {
   "id":"word_5776",
-  "fr":"Ã  savoir",
+  "fr":"à savoir",
   "en":"namely",
-  "de":"nÃ¤mlich",
+  "de":"nämlich",
   "es":"a saber",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_5777",
-  "fr":"Ã  l\u0027Ã©chelle nationale",
+  "fr":"à l\u0027échelle nationale",
   "en":"nationwide",
   "de":"landesweit",
   "es":"a nivel nacional",
@@ -52004,9 +52004,9 @@
 },
   {
   "id":"word_5779",
-  "fr":"nÃ©gliger",
+  "fr":"négliger",
   "en":"to neglect",
-  "de":"vernachlÃ¤ssigen",
+  "de":"vernachlässigen",
   "es":"descuidar",
   "type":"verbe",
   "level":"C1"
@@ -52025,7 +52025,7 @@
   "fr":"bulletin d\u0027information",
   "en":"newsletter",
   "de":"Newsletter",
-  "es":"boletÃ­n informativo",
+  "es":"boletín informativo",
   "type":"nom",
   "level":"C1"
 },
@@ -52049,7 +52049,7 @@
 },
   {
   "id":"word_5784",
-  "fr":"hocher la tÃªte",
+  "fr":"hocher la tête",
   "en":"to nod",
   "de":"nicken",
   "es":"asentir",
@@ -52070,7 +52070,7 @@
   "fr":"nomination",
   "en":"nomination",
   "de":"Nominierung",
-  "es":"nominaciÃ³n",
+  "es":"nominación",
   "type":"nom",
   "level":"C1"
 },
@@ -52085,7 +52085,7 @@
 },
   {
   "id":"word_5788",
-  "fr":"nÃ©anmoins",
+  "fr":"néanmoins",
   "en":"nonetheless",
   "de":"dennoch",
   "es":"sin embargo",
@@ -52094,9 +52094,9 @@
 },
   {
   "id":"word_5789",
-  "fr":"Ã  but non lucratif",
+  "fr":"à but non lucratif",
   "en":"non-profit",
-  "de":"gemeinnÃ¼tzig",
+  "de":"gemeinnützig",
   "es":"sin fines de lucro",
   "type":"adjectif",
   "level":"C1"
@@ -52150,17 +52150,17 @@
   "id":"word_5795",
   "fr":"notoire",
   "en":"notorious",
-  "de":"berÃ¼chtigt",
+  "de":"berüchtigt",
   "es":"notorio",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5796",
-  "fr":"pÃ©piniÃ¨re",
+  "fr":"pépinière",
   "en":"nursery",
   "de":"Kinderstube",
-  "es":"guarderÃ­a",
+  "es":"guardería",
   "type":"nom",
   "level":"C1"
 },
@@ -52169,7 +52169,7 @@
   "fr":"objection",
   "en":"objection",
   "de":"Einwand",
-  "es":"objeciÃ³n",
+  "es":"objeción",
   "type":"nom",
   "level":"C1"
 },
@@ -52184,7 +52184,7 @@
 },
   {
   "id":"word_5799",
-  "fr":"obsÃ©der",
+  "fr":"obséder",
   "en":"to obsess",
   "de":"besessen",
   "es":"obsesionar",
@@ -52196,7 +52196,7 @@
   "fr":"obsession",
   "en":"obsession",
   "de":"Besessenheit",
-  "es":"obsesiÃ³n",
+  "es":"obsesión",
   "type":"nom",
   "level":"C1"
 },
@@ -52238,7 +52238,7 @@
 },
   {
   "id":"word_5805",
-  "fr":"progÃ©niture",
+  "fr":"progéniture",
   "en":"offspring",
   "de":"Nachwuchs",
   "es":"descendencia",
@@ -52247,7 +52247,7 @@
 },
   {
   "id":"word_5806",
-  "fr":"opÃ©rationnel",
+  "fr":"opérationnel",
   "en":"operational",
   "de":"betriebsbereit",
   "es":"operativo",
@@ -52276,7 +52276,7 @@
   "id":"word_5809",
   "fr":"oral",
   "en":"oral",
-  "de":"mÃ¼ndlich",
+  "de":"mündlich",
   "es":"oral",
   "type":"adjectif",
   "level":"C1"
@@ -52319,7 +52319,7 @@
 },
   {
   "id":"word_5814",
-  "fr":"mÃ©diÃ©val",
+  "fr":"médiéval",
   "en":"medieval",
   "de":"mittelalterlich",
   "es":"medieval",
@@ -52328,34 +52328,34 @@
 },
   {
   "id":"word_5815",
-  "fr":"mÃ©ditation",
+  "fr":"méditation",
   "en":"meditation",
   "de":"Meditation",
-  "es":"meditaciÃ³n",
+  "es":"meditación",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5816",
-  "fr":"mÃ©lodie",
+  "fr":"mélodie",
   "en":"melody",
   "de":"Melodie",
-  "es":"melodÃ­a",
+  "es":"melodía",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5817",
-  "fr":"mÃ©morandum",
+  "fr":"mémorandum",
   "en":"memo",
   "de":"Memo",
-  "es":"memorÃ¡ndum",
+  "es":"memorándum",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5818",
-  "fr":"mÃ©moires",
+  "fr":"mémoires",
   "en":"memoir",
   "de":"Memoiren",
   "es":"memorias",
@@ -52364,7 +52364,7 @@
 },
   {
   "id":"word_5819",
-  "fr":"mÃ©morial",
+  "fr":"mémorial",
   "en":"memorial",
   "de":"Denkmal",
   "es":"memorial",
@@ -52391,7 +52391,7 @@
 },
   {
   "id":"word_5822",
-  "fr":"misÃ©ricorde",
+  "fr":"miséricorde",
   "en":"mercy",
   "de":"Barmherzigkeit",
   "es":"misericordia",
@@ -52402,7 +52402,7 @@
   "id":"word_5823",
   "fr":"simple",
   "en":"mere",
-  "de":"bloÃŸ",
+  "de":"bloß",
   "es":"mero",
   "type":"adjectif",
   "level":"C1"
@@ -52430,16 +52430,16 @@
   "fr":"fusion",
   "en":"merger",
   "de":"Fusion",
-  "es":"fusiÃ³n",
+  "es":"fusión",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5827",
-  "fr":"mÃ©rite",
+  "fr":"mérite",
   "en":"merit",
   "de":"Verdienst",
-  "es":"mÃ©rito",
+  "es":"mérito",
   "type":"nom",
   "level":"C1"
 },
@@ -52457,7 +52457,7 @@
   "fr":"migration",
   "en":"migration",
   "de":"Migration",
-  "es":"migraciÃ³n",
+  "es":"migración",
   "type":"nom",
   "level":"C1"
 },
@@ -52484,7 +52484,7 @@
   "fr":"minimal",
   "en":"minimal",
   "de":"minimal",
-  "es":"mÃ­nimo",
+  "es":"mínimo",
   "type":"adjectif",
   "level":"C1"
 },
@@ -52499,16 +52499,16 @@
 },
   {
   "id":"word_5834",
-  "fr":"exploitation miniÃ¨re",
+  "fr":"exploitation minière",
   "en":"mining",
   "de":"Bergbau",
-  "es":"minerÃ­a",
+  "es":"minería",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5835",
-  "fr":"ministÃ¨re",
+  "fr":"ministère",
   "en":"ministry",
   "de":"Ministerium",
   "es":"ministerio",
@@ -52535,7 +52535,7 @@
 },
   {
   "id":"word_5838",
-  "fr":"misÃ¨re",
+  "fr":"misère",
   "en":"misery",
   "de":"Elend",
   "es":"miseria",
@@ -52546,8 +52546,8 @@
   "id":"word_5839",
   "fr":"trompeur",
   "en":"misleading",
-  "de":"irrefÃ¼hrend",
-  "es":"engaÃ±oso",
+  "de":"irreführend",
+  "es":"engañoso",
   "type":"adjectif",
   "level":"C1"
 },
@@ -52556,7 +52556,7 @@
   "fr":"mauvaise gestion",
   "en":"mismanagement",
   "de":"Missmanagement",
-  "es":"mala gestiÃ³n",
+  "es":"mala gestión",
   "type":"nom",
   "level":"C1"
 },
@@ -52580,9 +52580,9 @@
 },
   {
   "id":"word_5843",
-  "fr":"mobilitÃ©",
+  "fr":"mobilité",
   "en":"mobility",
-  "de":"MobilitÃ¤t",
+  "de":"Mobilität",
   "es":"movilidad",
   "type":"nom",
   "level":"C1"
@@ -52598,7 +52598,7 @@
 },
   {
   "id":"word_5845",
-  "fr":"modÃ©rÃ©",
+  "fr":"modéré",
   "en":"moderate",
   "de":"moderat",
   "es":"moderado",
@@ -52610,7 +52610,7 @@
   "fr":"modification",
   "en":"modification",
   "de":"Modifikation",
-  "es":"modificaciÃ³n",
+  "es":"modificación",
   "type":"nom",
   "level":"C1"
 },
@@ -52619,13 +52619,13 @@
   "fr":"module",
   "en":"module",
   "de":"Modul",
-  "es":"mÃ³dulo",
+  "es":"módulo",
   "type":"nom",
   "level":"C1"
 },
   {
   "id":"word_5848",
-  "fr":"Ã©lan",
+  "fr":"élan",
   "en":"momentum",
   "de":"Schwung",
   "es":"impulso",
@@ -52636,7 +52636,7 @@
   "id":"word_5849",
   "fr":"moine",
   "en":"monk",
-  "de":"MÃ¶nch",
+  "de":"Mönch",
   "es":"monje",
   "type":"nom",
   "level":"C1"
@@ -52652,7 +52652,7 @@
 },
   {
   "id":"word_5851",
-  "fr":"moralitÃ©",
+  "fr":"moralité",
   "en":"morality",
   "de":"Moral",
   "es":"moralidad",
@@ -52672,7 +52672,7 @@
   "id":"word_5853",
   "fr":"municipal",
   "en":"municipal",
-  "de":"stÃ¤dtisch",
+  "de":"städtisch",
   "es":"municipal",
   "type":"adjectif",
   "level":"C1"
@@ -52688,7 +52688,7 @@
 },
   {
   "id":"word_5855",
-  "fr":"naÃ¯f",
+  "fr":"naïf",
   "en":"naive",
   "de":"naiv",
   "es":"ingenuo",
@@ -52697,16 +52697,16 @@
 },
   {
   "id":"word_5856",
-  "fr":"Ã  savoir",
+  "fr":"à savoir",
   "en":"namely",
-  "de":"nÃ¤mlich",
+  "de":"nämlich",
   "es":"a saber",
   "type":"adverbe",
   "level":"C1"
 },
   {
   "id":"word_5857",
-  "fr":"Ã  l\u0027Ã©chelle nationale",
+  "fr":"à l\u0027échelle nationale",
   "en":"nationwide",
   "de":"landesweit",
   "es":"a nivel nacional",
@@ -52724,9 +52724,9 @@
 },
   {
   "id":"word_5859",
-  "fr":"nÃ©gliger",
+  "fr":"négliger",
   "en":"to neglect",
-  "de":"vernachlÃ¤ssigen",
+  "de":"vernachlässigen",
   "es":"descuidar",
   "type":"verbe",
   "level":"C1"
@@ -52745,7 +52745,7 @@
   "fr":"bulletin d\u0027information",
   "en":"newsletter",
   "de":"Newsletter",
-  "es":"boletÃ­n informativo",
+  "es":"boletín informativo",
   "type":"nom",
   "level":"C1"
 },
@@ -52769,7 +52769,7 @@
 },
   {
   "id":"word_5864",
-  "fr":"hocher la tÃªte",
+  "fr":"hocher la tête",
   "en":"to nod",
   "de":"nicken",
   "es":"asentir",
@@ -52790,7 +52790,7 @@
   "fr":"nomination",
   "en":"nomination",
   "de":"Nominierung",
-  "es":"nominaciÃ³n",
+  "es":"nominación",
   "type":"nom",
   "level":"C1"
 },
@@ -52805,7 +52805,7 @@
 },
   {
   "id":"word_5868",
-  "fr":"nÃ©anmoins",
+  "fr":"néanmoins",
   "en":"nonetheless",
   "de":"dennoch",
   "es":"sin embargo",
@@ -52814,9 +52814,9 @@
 },
   {
   "id":"word_5869",
-  "fr":"Ã  but non lucratif",
+  "fr":"à but non lucratif",
   "en":"non-profit",
-  "de":"gemeinnÃ¼tzig",
+  "de":"gemeinnützig",
   "es":"sin fines de lucro",
   "type":"adjectif",
   "level":"C1"
@@ -52870,17 +52870,17 @@
   "id":"word_5875",
   "fr":"notoire",
   "en":"notorious",
-  "de":"berÃ¼chtigt",
+  "de":"berüchtigt",
   "es":"notorio",
   "type":"adjectif",
   "level":"C1"
 },
   {
   "id":"word_5876",
-  "fr":"pÃ©piniÃ¨re",
+  "fr":"pépinière",
   "en":"nursery",
   "de":"Kinderstube",
-  "es":"guarderÃ­a",
+  "es":"guardería",
   "type":"nom",
   "level":"C1"
 },
@@ -52889,7 +52889,7 @@
   "fr":"objection",
   "en":"objection",
   "de":"Einwand",
-  "es":"objeciÃ³n",
+  "es":"objeción",
   "type":"nom",
   "level":"C1"
 },
@@ -52904,7 +52904,7 @@
 },
   {
   "id":"word_5879",
-  "fr":"obsÃ©der",
+  "fr":"obséder",
   "en":"to obsess",
   "de":"besessen",
   "es":"obsesionar",
@@ -52916,7 +52916,7 @@
   "fr":"obsession",
   "en":"obsession",
   "de":"Besessenheit",
-  "es":"obsesiÃ³n",
+  "es":"obsesión",
   "type":"nom",
   "level":"C1"
 },
@@ -52958,7 +52958,7 @@
 },
   {
   "id":"word_5885",
-  "fr":"progÃ©niture",
+  "fr":"progéniture",
   "en":"offspring",
   "de":"Nachwuchs",
   "es":"descendencia",
@@ -52967,7 +52967,7 @@
 },
   {
   "id":"word_5886",
-  "fr":"opÃ©rationnel",
+  "fr":"opérationnel",
   "en":"operational",
   "de":"betriebsbereit",
   "es":"operativo",
@@ -52996,7 +52996,7 @@
   "id":"word_5889",
   "fr":"oral",
   "en":"oral",
-  "de":"mÃ¼ndlich",
+  "de":"mündlich",
   "es":"oral",
   "type":"adjectif",
   "level":"C1"
@@ -53009,5 +53009,26385 @@
   "es":"organizacional",
   "type":"adjectif",
   "level":"C1"
+}
+,
+  {
+  "id":"word_5891",
+  "fr":"superflu",
+  "en":"superfluous",
+  "de":"überflüssig",
+  "es":"superfluo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5892",
+  "fr":"remplacer",
+  "en":"to supersede",
+  "de":"ersetzen",
+  "es":"reemplazar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5893",
+  "fr":"superstition",
+  "en":"superstition",
+  "de":"Aberglaube",
+  "es":"superstición",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_5894",
+  "fr":"couché sur le dos",
+  "en":"supine",
+  "de":"auf dem Rücken liegend",
+  "es":"supino",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5895",
+  "fr":"supplanter",
+  "en":"to supplant",
+  "de":"verdrängen",
+  "es":"suplantar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5896",
+  "fr":"souple",
+  "en":"supple",
+  "de":"geschmeidig",
+  "es":"flexible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5897",
+  "fr":"suprémaciste",
+  "en":"supremacist",
+  "de":"Rassist",
+  "es":"supremacista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5898",
+  "fr":"suprématie",
+  "en":"supremacy",
+  "de":"Vorherrschaft",
+  "es":"supremacía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5899",
+  "fr":"excès",
+  "en":"surfeit",
+  "de":"Übermaß",
+  "es":"exceso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5900",
+  "fr":"présumer",
+  "en":"to surmise",
+  "de":"vermuten",
+  "es":"suponer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5901",
+  "fr":"surmonter",
+  "en":"to surmount",
+  "de":"überwinden",
+  "es":"superar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5902",
+  "fr":"dépasser",
+  "en":"to surpass",
+  "de":"übertreffen",
+  "es":"superar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5903",
+  "fr":"subreptice",
+  "en":"surreptitious",
+  "de":"heimlich",
+  "es":"subrepticio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5904",
+  "fr":"substitut",
+  "en":"surrogate",
+  "de":"Ersatz",
+  "es":"sustituto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5905",
+  "fr":"sensibilité",
+  "en":"susceptibility",
+  "de":"Anfälligkeit",
+  "es":"susceptibilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5906",
+  "fr":"susceptible",
+  "en":"susceptible",
+  "de":"anfällig",
+  "es":"susceptible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5907",
+  "fr":"subsistance",
+  "en":"sustenance",
+  "de":"Nahrung",
+  "es":"sustento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5908",
+  "fr":"bande",
+  "en":"swathe",
+  "de":"Schwaden",
+  "es":"franja",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5909",
+  "fr":"escroquerie",
+  "en":"swindle",
+  "de":"Schwindel",
+  "es":"estafa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5910",
+  "fr":"sycophanterie",
+  "en":"sycophancy",
+  "de":"Kriecherei",
+  "es":"adulación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5911",
+  "fr":"sycophante",
+  "en":"sycophant",
+  "de":"Speichellecker",
+  "es":"adulador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5912",
+  "fr":"obséquieux",
+  "en":"sycophantic",
+  "de":"kriecherisch",
+  "es":"adulador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5913",
+  "fr":"programme",
+  "en":"syllabus",
+  "de":"Lehrplan",
+  "es":"plan de estudios",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_5914",
+  "fr":"symbiose",
+  "en":"symbiosis",
+  "de":"Symbiose",
+  "es":"simbiosis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5915",
+  "fr":"symbolisme",
+  "en":"symbolism",
+  "de":"Symbolik",
+  "es":"simbolismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5916",
+  "fr":"symposium",
+  "en":"symposium",
+  "de":"Symposium",
+  "es":"simposio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5917",
+  "fr":"syndicat",
+  "en":"syndicate",
+  "de":"Syndikat",
+  "es":"sindicato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5918",
+  "fr":"synergie",
+  "en":"synergy",
+  "de":"Synergie",
+  "es":"sinergia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5919",
+  "fr":"synopsis",
+  "en":"synopsis",
+  "de":"Zusammenfassung",
+  "es":"sinopsis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5920",
+  "fr":"tableau",
+  "en":"tableau",
+  "de":"Tableau",
+  "es":"cuadro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5921",
+  "fr":"tabloïd",
+  "en":"tabloid",
+  "de":"Boulevardzeitung",
+  "es":"tabloide",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_5922",
+  "fr":"tabou",
+  "en":"taboo",
+  "de":"Tabu",
+  "es":"tabú",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_5923",
+  "fr":"tacite",
+  "en":"tacit",
+  "de":"stillschweigend",
+  "es":"tácito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5924",
+  "fr":"taciturne",
+  "en":"taciturn",
+  "de":"wortkarg",
+  "es":"taciturno",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5925",
+  "fr":"tact",
+  "en":"tact",
+  "de":"Taktgefühl",
+  "es":"tacto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5926",
+  "fr":"tacticien",
+  "en":"tactician",
+  "de":"Taktiker",
+  "es":"táctico",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5927",
+  "fr":"souillure",
+  "en":"taint",
+  "de":"Makel",
+  "es":"mancha",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5928",
+  "fr":"talisman",
+  "en":"talisman",
+  "de":"Talisman",
+  "es":"talismán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5929",
+  "fr":"tangentiel",
+  "en":"tangential",
+  "de":"tangential",
+  "es":"tangencial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5930",
+  "fr":"tangible",
+  "en":"tangible",
+  "de":"greifbar",
+  "es":"tangible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5931",
+  "fr":"équivalent",
+  "en":"tantamount",
+  "de":"gleichbedeutend",
+  "es":"equivalente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5932",
+  "fr":"crise de colère",
+  "en":"tantrum",
+  "de":"Wutanfall",
+  "es":"rabieta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5933",
+  "fr":"tarif",
+  "en":"tariff",
+  "de":"Tarif",
+  "es":"tarifa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5934",
+  "fr":"ternir",
+  "en":"to tarnish",
+  "de":"trüben",
+  "es":"manchar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5935",
+  "fr":"maître de corvée",
+  "en":"taskmaster",
+  "de":"Antreiber",
+  "es":"capataz",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5936",
+  "fr":"voyant",
+  "en":"tawdry",
+  "de":"geschmacklos",
+  "es":"llamativo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5937",
+  "fr":"fastidieux",
+  "en":"tedious",
+  "de":"mühsam",
+  "es":"tedioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5938",
+  "fr":"ennui",
+  "en":"tedium",
+  "de":"Langeweile",
+  "es":"tedio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5939",
+  "fr":"télépathie",
+  "en":"telepathy",
+  "de":"Telepathie",
+  "es":"telepatía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5940",
+  "fr":"témérité",
+  "en":"temerity",
+  "de":"Kühnheit",
+  "es":"temeridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5941",
+  "fr":"tempérament",
+  "en":"temperament",
+  "de":"Temperament",
+  "es":"temperamento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5942",
+  "fr":"tempérance",
+  "en":"temperance",
+  "de":"Mäßigung",
+  "es":"templanza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5943",
+  "fr":"tumultueux",
+  "en":"tempestuous",
+  "de":"stürmisch",
+  "es":"tempestuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5944",
+  "fr":"tempo",
+  "en":"tempo",
+  "de":"Tempo",
+  "es":"ritmo",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_5945",
+  "fr":"temporel",
+  "en":"temporal",
+  "de":"zeitlich",
+  "es":"temporal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5946",
+  "fr":"tenace",
+  "en":"tenacious",
+  "de":"hartnäckig",
+  "es":"tenaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5947",
+  "fr":"ténacité",
+  "en":"tenacity",
+  "de":"Hartnäckigkeit",
+  "es":"tenacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5948",
+  "fr":"principe",
+  "en":"tenet",
+  "de":"Grundsatz",
+  "es":"dogma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5949",
+  "fr":"teneur",
+  "en":"tenor",
+  "de":"Tenor",
+  "es":"tenor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5950",
+  "fr":"provisoire",
+  "en":"tentative",
+  "de":"vorläufig",
+  "es":"tentativo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5951",
+  "fr":"ténu",
+  "en":"tenuous",
+  "de":"dürftig",
+  "es":"tenue",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5952",
+  "fr":"résiliation",
+  "en":"termination",
+  "de":"Beendigung",
+  "es":"terminación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5953",
+  "fr":"terminologie",
+  "en":"terminology",
+  "de":"Terminologie",
+  "es":"terminología",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_5954",
+  "fr":"terminus",
+  "en":"terminus",
+  "de":"Endstation",
+  "es":"término",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5955",
+  "fr":"laconique",
+  "en":"terse",
+  "de":"knapp",
+  "es":"conciso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5956",
+  "fr":"témoignage",
+  "en":"testament",
+  "de":"Zeugnis",
+  "es":"testamento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5957",
+  "fr":"témoignage",
+  "en":"testimonial",
+  "de":"Empfehlungsschreiben",
+  "es":"testimonio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5958",
+  "fr":"attache",
+  "en":"tether",
+  "de":"Leine",
+  "es":"atadura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5959",
+  "fr":"théâtralité",
+  "en":"theatricality",
+  "de":"Theatralik",
+  "es":"teatralidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5960",
+  "fr":"théologien",
+  "en":"theologian",
+  "de":"Theologe",
+  "es":"teólogo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5961",
+  "fr":"théorème",
+  "en":"theorem",
+  "de":"Lehrsatz",
+  "es":"teorema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5962",
+  "fr":"dictionnaire des synonymes",
+  "en":"thesaurus",
+  "de":"Thesaurus",
+  "es":"tesauro",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_5963",
+  "fr":"fourré",
+  "en":"thicket",
+  "de":"Dickicht",
+  "es":"matorral",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5964",
+  "fr":"artère",
+  "en":"thoroughfare",
+  "de":"Verkehrsader",
+  "es":"vía pública",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5965",
+  "fr":"emprise",
+  "en":"thrall",
+  "de":"Bann",
+  "es":"esclavitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5966",
+  "fr":"économie",
+  "en":"thrift",
+  "de":"Sparsamkeit",
+  "es":"frugalidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5967",
+  "fr":"retour en arrière",
+  "en":"throwback",
+  "de":"Rückfall",
+  "es":"retroceso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5968",
+  "fr":"contrecarrer",
+  "en":"to thwart",
+  "de":"vereiteln",
+  "es":"frustrar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5969",
+  "fr":"timbre",
+  "en":"timbre",
+  "de":"Klangfarbe",
+  "es":"timbre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5970",
+  "fr":"timidité",
+  "en":"timidity",
+  "de":"Schüchternheit",
+  "es":"timidez",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5971",
+  "fr":"le rationalisme",
+  "en":"rationalism",
+  "de":"der Rationalismus",
+  "es":"el racionalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5972",
+  "fr":"bruyant",
+  "en":"raucous",
+  "de":"lärmend",
+  "es":"ruidoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5973",
+  "fr":"le ravage",
+  "en":"ravage",
+  "de":"die Verwüstung",
+  "es":"el estrago",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5974",
+  "fr":"le ravin",
+  "en":"ravine",
+  "de":"die Schlucht",
+  "es":"el barranco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5975",
+  "fr":"rejeter",
+  "en":"to rebuff",
+  "de":"zurückweisen",
+  "es":"rechazar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5976",
+  "fr":"réprimander",
+  "en":"to rebuke",
+  "de":"zurechtweisen",
+  "es":"reprender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5977",
+  "fr":"la réfutation",
+  "en":"rebuttal",
+  "de":"die Widerlegung",
+  "es":"la refutación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5978",
+  "fr":"la récalcitrance",
+  "en":"recalcitrance",
+  "de":"die Widerspenstigkeit",
+  "es":"la recalcitrancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5979",
+  "fr":"récalcitrant",
+  "en":"recalcitrant",
+  "de":"widerspenstig",
+  "es":"recalcitrante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5980",
+  "fr":"se rétracter",
+  "en":"to recant",
+  "de":"widerrufen",
+  "es":"retractarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5981",
+  "fr":"la récidive",
+  "en":"recidivism",
+  "de":"der Rückfall",
+  "es":"la reincidencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5982",
+  "fr":"réciproque",
+  "en":"reciprocal",
+  "de":"gegenseitig",
+  "es":"recíproco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5983",
+  "fr":"rendre la pareille",
+  "en":"to reciprocate",
+  "de":"erwidern",
+  "es":"corresponder",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5984",
+  "fr":"la réciprocité",
+  "en":"reciprocity",
+  "de":"die Gegenseitigkeit",
+  "es":"la reciprocidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5985",
+  "fr":"l\u0027imprudence",
+  "en":"recklessness",
+  "de":"die Rücksichtslosigkeit",
+  "es":"la imprudencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5986",
+  "fr":"la récupération",
+  "en":"reclamation",
+  "de":"die Rückgewinnung",
+  "es":"la recuperación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5987",
+  "fr":"le reclus",
+  "en":"recluse",
+  "de":"der Einsiedler",
+  "es":"el recluso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5988",
+  "fr":"solitaire",
+  "en":"reclusive",
+  "de":"zurückgezogen",
+  "es":"solitario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5989",
+  "fr":"réconcilier",
+  "en":"to reconcile",
+  "de":"versöhnen",
+  "es":"reconciliar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5990",
+  "fr":"abscons",
+  "en":"recondite",
+  "de":"abstrus",
+  "es":"recóndito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_5991",
+  "fr":"la reconnaissance",
+  "en":"reconnaissance",
+  "de":"die Aufklärung",
+  "es":"el reconocimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5992",
+  "fr":"le recours",
+  "en":"recourse",
+  "de":"der Rückgriff",
+  "es":"el recurso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5993",
+  "fr":"la récrimination",
+  "en":"recrimination",
+  "de":"die gegenseitige Beschuldigung",
+  "es":"la recriminación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5994",
+  "fr":"la rectification",
+  "en":"rectification",
+  "de":"die Berichtigung",
+  "es":"la rectificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5995",
+  "fr":"rectifier",
+  "en":"to rectify",
+  "de":"berichtigen",
+  "es":"rectificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5996",
+  "fr":"la rectitude",
+  "en":"rectitude",
+  "de":"die Rechtschaffenheit",
+  "es":"la rectitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5997",
+  "fr":"racheter",
+  "en":"to redeem",
+  "de":"erlösen",
+  "es":"redimir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_5998",
+  "fr":"la rédemption",
+  "en":"redemption",
+  "de":"die Erlösung",
+  "es":"la redención",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_5999",
+  "fr":"la réparation",
+  "en":"redress",
+  "de":"die Wiedergutmachung",
+  "es":"la reparación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6000",
+  "fr":"la raffinerie",
+  "en":"refinery",
+  "de":"die Raffinerie",
+  "es":"la refinería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6001",
+  "fr":"la réformation",
+  "en":"reformation",
+  "de":"die Reformation",
+  "es":"la reformación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6002",
+  "fr":"réfractaire",
+  "en":"refractory",
+  "de":"widerspenstig",
+  "es":"refractario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6003",
+  "fr":"la réfutation",
+  "en":"refutation",
+  "de":"die Widerlegung",
+  "es":"la refutación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6004",
+  "fr":"réfuter",
+  "en":"to refute",
+  "de":"widerlegen",
+  "es":"refutar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6005",
+  "fr":"le régent",
+  "en":"regent",
+  "de":"der Regent",
+  "es":"el regente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6006",
+  "fr":"le registraire",
+  "en":"registrar",
+  "de":"der Standesbeamte",
+  "es":"el registrador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6007",
+  "fr":"la régression",
+  "en":"regression",
+  "de":"die Regression",
+  "es":"la regresión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6008",
+  "fr":"le remboursement",
+  "en":"reimbursement",
+  "de":"die Erstattung",
+  "es":"el reembolso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6009",
+  "fr":"la réincarnation",
+  "en":"reincarnation",
+  "de":"die Reinkarnation",
+  "es":"la reencarnación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6010",
+  "fr":"la réitération",
+  "en":"reiteration",
+  "de":"die Wiederholung",
+  "es":"la reiteración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6011",
+  "fr":"reléguer",
+  "en":"to relegate",
+  "de":"verbannen",
+  "es":"relegar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6012",
+  "fr":"la relégation",
+  "en":"relegation",
+  "de":"die Verbannung",
+  "es":"la relegación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6013",
+  "fr":"la relique",
+  "en":"relic",
+  "de":"das Relikt",
+  "es":"la reliquia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6014",
+  "fr":"abandonner",
+  "en":"to relinquish",
+  "de":"aufgeben",
+  "es":"renunciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6015",
+  "fr":"savourer",
+  "en":"to relish",
+  "de":"genießen",
+  "es":"disfrutar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6016",
+  "fr":"la réticence",
+  "en":"reluctance",
+  "de":"das Zögern",
+  "es":"la reticencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6017",
+  "fr":"le souvenir",
+  "en":"remembrance",
+  "de":"die Erinnerung",
+  "es":"el recuerdo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6018",
+  "fr":"évocateur",
+  "en":"reminiscent",
+  "de":"erinnernd",
+  "es":"evocador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6019",
+  "fr":"négligent",
+  "en":"remiss",
+  "de":"nachlässig",
+  "es":"negligente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6020",
+  "fr":"la rémission",
+  "en":"remission",
+  "de":"die Remission",
+  "es":"la remisión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6021",
+  "fr":"remettre",
+  "en":"to remit",
+  "de":"überweisen",
+  "es":"remitir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6022",
+  "fr":"le reste",
+  "en":"remnant",
+  "de":"der Überrest",
+  "es":"el remanente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6023",
+  "fr":"le remords",
+  "en":"remorse",
+  "de":"die Reue",
+  "es":"el remordimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6024",
+  "fr":"la rémunération",
+  "en":"remuneration",
+  "de":"die Vergütung",
+  "es":"la remuneración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6025",
+  "fr":"la renaissance",
+  "en":"renaissance",
+  "de":"die Renaissance",
+  "es":"el renacimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6026",
+  "fr":"l\u0027interprétation",
+  "en":"rendition",
+  "de":"die Interpretation",
+  "es":"la interpretación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6027",
+  "fr":"le renégat",
+  "en":"renegade",
+  "de":"der Abtrünnige",
+  "es":"el renegado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6028",
+  "fr":"revenir",
+  "en":"to renege",
+  "de":"wortbrüchig werden",
+  "es":"retractarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6029",
+  "fr":"renoncer",
+  "en":"to renounce",
+  "de":"verzichten",
+  "es":"renunciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6030",
+  "fr":"la renommée",
+  "en":"renown",
+  "de":"das Renommee",
+  "es":"el renombre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6031",
+  "fr":"la réparation",
+  "en":"reparation",
+  "de":"die Wiedergutmachung",
+  "es":"la reparación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6032",
+  "fr":"le rapatriement",
+  "en":"repatriation",
+  "de":"die Rückführung",
+  "es":"la repatriación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6033",
+  "fr":"abroger",
+  "en":"to repeal",
+  "de":"aufheben",
+  "es":"derogar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6034",
+  "fr":"la repentance",
+  "en":"repentance",
+  "de":"die Reue",
+  "es":"el arrepentimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6035",
+  "fr":"la répercussion",
+  "en":"repercussion",
+  "de":"die Auswirkung",
+  "es":"la repercusión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6036",
+  "fr":"le répertoire",
+  "en":"repertoire",
+  "de":"das Repertoire",
+  "es":"el repertorio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6037",
+  "fr":"réapprovisionner",
+  "en":"to replenish",
+  "de":"auffüllen",
+  "es":"reabastecer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6038",
+  "fr":"plein",
+  "en":"replete",
+  "de":"voll",
+  "es":"repleto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6039",
+  "fr":"le dépôt",
+  "en":"repository",
+  "de":"das Depot",
+  "es":"el repositorio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6040",
+  "fr":"répréhensible",
+  "en":"reprehensible",
+  "de":"verwerflich",
+  "es":"reprensible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6041",
+  "fr":"la répression",
+  "en":"repression",
+  "de":"die Unterdrückung",
+  "es":"la represión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6042",
+  "fr":"le sursis",
+  "en":"reprieve",
+  "de":"der Aufschub",
+  "es":"el indulto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6043",
+  "fr":"la réprimande / réprimander",
+  "en":"reprimand (n) / to reprimand (v)",
+  "de":"der Tadel / tadeln",
+  "es":"la reprimenda / reprender",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6044",
+  "fr":"les représailles",
+  "en":"reprisal",
+  "de":"die Vergeltung",
+  "es":"la represalia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6045",
+  "fr":"reprocher",
+  "en":"to reproach",
+  "de":"vorwerfen",
+  "es":"reprochar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6046",
+  "fr":"répudier",
+  "en":"to repudiate",
+  "de":"zurückweisen",
+  "es":"repudiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6047",
+  "fr":"la répudiation",
+  "en":"repudiation",
+  "de":"die Zurückweisung",
+  "es":"el repudio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6048",
+  "fr":"la répugnance",
+  "en":"repugnance",
+  "de":"der Widerwillen",
+  "es":"la repugnancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6049",
+  "fr":"répugnant",
+  "en":"repugnant",
+  "de":"widerlich",
+  "es":"repugnante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6050",
+  "fr":"la réputation",
+  "en":"repute",
+  "de":"der Ruf",
+  "es":"la reputación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6051",
+  "fr":"la nuance",
+  "en":"nuance",
+  "de":"die Nuance",
+  "es":"el matiz",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6052",
+  "fr":"le rustre",
+  "en":"oaf",
+  "de":"der Tölpel",
+  "es":"el zoquete",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6053",
+  "fr":"l\u0027oasis",
+  "en":"oasis",
+  "de":"die Oase",
+  "es":"el oasis",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6054",
+  "fr":"obstiné",
+  "en":"obdurate",
+  "de":"halsstarrig",
+  "es":"obstinado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6055",
+  "fr":"obscurcir",
+  "en":"obfuscate",
+  "de":"verschleiern",
+  "es":"ofuscar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6056",
+  "fr":"l\u0027obscurcissement",
+  "en":"obfuscation",
+  "de":"die Verschleierung",
+  "es":"la ofuscación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6057",
+  "fr":"la notice nécrologique",
+  "en":"obituary",
+  "de":"der Nachruf",
+  "es":"el obituario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6058",
+  "fr":"anéantir",
+  "en":"obliterate",
+  "de":"auslöschen",
+  "es":"obliterar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6059",
+  "fr":"l\u0027oubli",
+  "en":"oblivion",
+  "de":"die Vergessenheit",
+  "es":"el olvido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6060",
+  "fr":"l\u0027obscénité",
+  "en":"obscenity",
+  "de":"die Obszönität",
+  "es":"la obscenidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6061",
+  "fr":"obscur",
+  "en":"obscure",
+  "de":"obskur",
+  "es":"oscuro",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6062",
+  "fr":"l\u0027obscurité",
+  "en":"obscurity",
+  "de":"die Dunkelheit",
+  "es":"la oscuridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6063",
+  "fr":"obséquieux",
+  "en":"obsequious",
+  "de":"unterwürfig",
+  "es":"obsequioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6064",
+  "fr":"le respect",
+  "en":"observance",
+  "de":"die Einhaltung",
+  "es":"la observancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6065",
+  "fr":"l\u0027obsolescence",
+  "en":"obsolescence",
+  "de":"die Obsoleszenz",
+  "es":"la obsolescencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6066",
+  "fr":"obsolète",
+  "en":"obsolete",
+  "de":"veraltet",
+  "es":"obsoleto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6067",
+  "fr":"obstiné",
+  "en":"obstinate",
+  "de":"eigensinnig",
+  "es":"obstinado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6068",
+  "fr":"bruyant",
+  "en":"obstreperous",
+  "de":"widerspenstig",
+  "es":"alborotador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6069",
+  "fr":"obtus",
+  "en":"obtuse",
+  "de":"stumpfsinnig",
+  "es":"obtuso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6070",
+  "fr":"obvier",
+  "en":"obviate",
+  "de":"zuvorkommen",
+  "es":"obviar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6071",
+  "fr":"l\u0027ode",
+  "en":"ode",
+  "de":"die Ode",
+  "es":"la oda",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6072",
+  "fr":"l\u0027odyssée",
+  "en":"odyssey",
+  "de":"die Odyssee",
+  "es":"la odisea",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6073",
+  "fr":"officieux",
+  "en":"officious",
+  "de":"aufdringlich",
+  "es":"oficioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6074",
+  "fr":"l\u0027oligarchie",
+  "en":"oligarchy",
+  "de":"die Oligarchie",
+  "es":"la oligarquía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6075",
+  "fr":"le présage",
+  "en":"omen",
+  "de":"das Omen",
+  "es":"el presagio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6076",
+  "fr":"de mauvais augure",
+  "en":"ominous",
+  "de":"unheilvoll",
+  "es":"ominoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6077",
+  "fr":"l\u0027omission",
+  "en":"omission",
+  "de":"die Auslassung",
+  "es":"la omisión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6078",
+  "fr":"l\u0027omnipotence",
+  "en":"omnipotence",
+  "de":"die Allmacht",
+  "es":"la omnipotencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6079",
+  "fr":"l\u0027omniscience",
+  "en":"omniscience",
+  "de":"die Allwissenheit",
+  "es":"la omnisciencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6080",
+  "fr":"onéreux",
+  "en":"onerous",
+  "de":"lästig",
+  "es":"oneroso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6081",
+  "fr":"le début",
+  "en":"onset",
+  "de":"der Beginn",
+  "es":"el inicio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6082",
+  "fr":"l\u0027assaut",
+  "en":"onslaught",
+  "de":"der Ansturm",
+  "es":"el ataque",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6083",
+  "fr":"le fardeau",
+  "en":"onus",
+  "de":"die Beweislast",
+  "es":"la responsabilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6084",
+  "fr":"l\u0027opacité",
+  "en":"opacity",
+  "de":"die Undurchsichtigkeit",
+  "es":"la opacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6085",
+  "fr":"opaque",
+  "en":"opaque",
+  "de":"undurchsichtig",
+  "es":"opaco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6086",
+  "fr":"opportuniste",
+  "en":"opportunistic",
+  "de":"opportunistisch",
+  "es":"oportunista",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6087",
+  "fr":"l\u0027opulence",
+  "en":"opulence",
+  "de":"die Opulenz",
+  "es":"la opulencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6088",
+  "fr":"opulent",
+  "en":"opulent",
+  "de":"opulent",
+  "es":"opulento",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6089",
+  "fr":"l\u0027oracle",
+  "en":"oracle",
+  "de":"das Orakel",
+  "es":"el oráculo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6090",
+  "fr":"l\u0027orateur",
+  "en":"orator",
+  "de":"der Redner",
+  "es":"el orador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6091",
+  "fr":"l\u0027éloquence",
+  "en":"oratory",
+  "de":"die Redekunst",
+  "es":"la oratoria",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6092",
+  "fr":"l\u0027épreuve",
+  "en":"ordeal",
+  "de":"die Zerreißprobe",
+  "es":"la terrible experiencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6093",
+  "fr":"l\u0027ordonnance",
+  "en":"ordinance",
+  "de":"die Verordnung",
+  "es":"la ordenanza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6094",
+  "fr":"orné",
+  "en":"ornate",
+  "de":"verziert",
+  "es":"ornamentado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6095",
+  "fr":"l\u0027orthodoxie",
+  "en":"orthodoxy",
+  "de":"die Orthodoxie",
+  "es":"la ortodoxia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6096",
+  "fr":"l\u0027oscillation",
+  "en":"oscillation",
+  "de":"die Schwingung",
+  "es":"la oscilación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6097",
+  "fr":"prétendu",
+  "en":"ostensible",
+  "de":"angeblich",
+  "es":"ostensible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6098",
+  "fr":"l\u0027ostentation",
+  "en":"ostentation",
+  "de":"die Zurschaustellung",
+  "es":"la ostentación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6099",
+  "fr":"ostentatoire",
+  "en":"ostentatious",
+  "de":"prahlerisch",
+  "es":"ostentoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6100",
+  "fr":"ostraciser",
+  "en":"ostracise",
+  "de":"ächten",
+  "es":"ostracizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6101",
+  "fr":"l\u0027ostracisme",
+  "en":"ostracism",
+  "de":"die Ächtung",
+  "es":"el ostracismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6102",
+  "fr":"évincer",
+  "en":"oust",
+  "de":"verdrängen",
+  "es":"derrocar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6103",
+  "fr":"l\u0027emporter sur",
+  "en":"outweigh",
+  "de":"überwiegen",
+  "es":"superar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6104",
+  "fr":"l\u0027ovation",
+  "en":"ovation",
+  "de":"die Ovation",
+  "es":"la ovación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6105",
+  "fr":"l\u0027omission",
+  "en":"oversight",
+  "de":"das Versehen",
+  "es":"el descuido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6106",
+  "fr":"outrecuidant",
+  "en":"overweening",
+  "de":"anmaßend",
+  "es":"presuntuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6107",
+  "fr":"l\u0027oxymore",
+  "en":"oxymoron",
+  "de":"das Oxymoron",
+  "es":"el oxímoron",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6108",
+  "fr":"le pacifisme",
+  "en":"pacifism",
+  "de":"der Pazifismus",
+  "es":"el pacifismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6109",
+  "fr":"pacifier",
+  "en":"pacify",
+  "de":"besänftigen",
+  "es":"pacificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6110",
+  "fr":"le spectacle",
+  "en":"pageant",
+  "de":"der Festzug",
+  "es":"el desfile",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6111",
+  "fr":"l\u0027apparat",
+  "en":"pageantry",
+  "de":"der Prunk",
+  "es":"la pompa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6112",
+  "fr":"minutieux",
+  "en":"painstaking",
+  "de":"sorgfältig",
+  "es":"esmerado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6113",
+  "fr":"appétissant",
+  "en":"palatable",
+  "de":"schmackhaft",
+  "es":"sabroso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6114",
+  "fr":"palatial",
+  "en":"palatial",
+  "de":"palastartig",
+  "es":"palaciego",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6115",
+  "fr":"le porteur",
+  "en":"pallbearer",
+  "de":"der Sargträger",
+  "es":"el portador del féretro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6116",
+  "fr":"pallier",
+  "en":"palliate",
+  "de":"lindern",
+  "es":"paliar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6117",
+  "fr":"pâle",
+  "en":"pallid",
+  "de":"blass",
+  "es":"pálido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6118",
+  "fr":"la pâleur",
+  "en":"pallor",
+  "de":"die Blässe",
+  "es":"la palidez",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6119",
+  "fr":"palpable",
+  "en":"palpable",
+  "de":"greifbar",
+  "es":"palpable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6120",
+  "fr":"la palpitation",
+  "en":"palpitation",
+  "de":"das Herzklopfen",
+  "es":"la palpitación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6121",
+  "fr":"dérisoire",
+  "en":"paltry",
+  "de":"armselig",
+  "es":"insignificante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6122",
+  "fr":"dorloter",
+  "en":"pamper",
+  "de":"verwöhnen",
+  "es":"mimar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6123",
+  "fr":"la panacée",
+  "en":"panacea",
+  "de":"das Allheilmittel",
+  "es":"la panacea",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6124",
+  "fr":"le panache",
+  "en":"panache",
+  "de":"das Flair",
+  "es":"el garbo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6125",
+  "fr":"le pandémonium",
+  "en":"pandemonium",
+  "de":"das Pandämonium",
+  "es":"el pandemónium",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6126",
+  "fr":"le serrement",
+  "en":"pang",
+  "de":"der Stich",
+  "es":"la punzada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6127",
+  "fr":"le panorama",
+  "en":"panorama",
+  "de":"das Panorama",
+  "es":"el panorama",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6128",
+  "fr":"la parabole",
+  "en":"parable",
+  "de":"das Gleichnis",
+  "es":"la parábola",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6129",
+  "fr":"le paradigme",
+  "en":"paradigm",
+  "de":"das Paradigma",
+  "es":"el paradigma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6130",
+  "fr":"le paradoxe",
+  "en":"paradox",
+  "de":"das Paradoxon",
+  "es":"el paradoja",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6131",
+  "fr":"laconique",
+  "en":"laconic",
+  "de":"lakonisch",
+  "es":"lacónico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6132",
+  "fr":"traînard",
+  "en":"laggard",
+  "de":"Nachzügler",
+  "es":"rezagado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6133",
+  "fr":"fustiger",
+  "en":"to lambaste",
+  "de":"kritisieren",
+  "es":"criticar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6134",
+  "fr":"lamenter",
+  "en":"to lament",
+  "de":"klagen",
+  "es":"lamentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6135",
+  "fr":"lamentable",
+  "en":"lamentable",
+  "de":"bedauerlich",
+  "es":"lamentable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6136",
+  "fr":"satire",
+  "en":"lampoon",
+  "de":"Spottgedicht",
+  "es":"sátira",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6137",
+  "fr":"languissant",
+  "en":"languid",
+  "de":"träge",
+  "es":"lánguido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6138",
+  "fr":"languir",
+  "en":"to languish",
+  "de":"schmachten",
+  "es":"languidecer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6139",
+  "fr":"laps",
+  "en":"lapse",
+  "de":"Fehler",
+  "es":"lapso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6140",
+  "fr":"larcin",
+  "en":"larceny",
+  "de":"Diebstahl",
+  "es":"hurto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6141",
+  "fr":"largesse",
+  "en":"largesse",
+  "de":"Freigiebigkeit",
+  "es":"generosidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6142",
+  "fr":"latent",
+  "en":"latent",
+  "de":"latent",
+  "es":"latente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6143",
+  "fr":"latitude",
+  "en":"latitude",
+  "de":"Breitengrad",
+  "es":"latitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6144",
+  "fr":"louer",
+  "en":"to laud",
+  "de":"loben",
+  "es":"alabar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6145",
+  "fr":"louable",
+  "en":"laudable",
+  "de":"lobenswert",
+  "es":"loable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6146",
+  "fr":"lauréat",
+  "en":"laureate",
+  "de":"Preisträger",
+  "es":"laureado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6147",
+  "fr":"lutrin",
+  "en":"lectern",
+  "de":"Rednerpult",
+  "es":"atril",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6148",
+  "fr":"méfiant de",
+  "en":"leery of",
+  "de":"misstrauisch",
+  "es":"receloso de",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6149",
+  "fr":"marge",
+  "en":"leeway",
+  "de":"Spielraum",
+  "es":"margen",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6150",
+  "fr":"indulgent",
+  "en":"lenient",
+  "de":"nachsichtig",
+  "es":"indulgente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6151",
+  "fr":"léthargique",
+  "en":"lethargic",
+  "de":"lethargisch",
+  "es":"letárgico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6152",
+  "fr":"léthargie",
+  "en":"lethargy",
+  "de":"Lethargie",
+  "es":"letargo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6153",
+  "fr":"réfléchi",
+  "en":"level-headed",
+  "de":"besonnen",
+  "es":"sensato",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6154",
+  "fr":"légèreté",
+  "en":"levity",
+  "de":"Leichtsinn",
+  "es":"levedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6155",
+  "fr":"prélever",
+  "en":"to levy",
+  "de":"erheben",
+  "es":"recaudar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6156",
+  "fr":"lexique",
+  "en":"lexicon",
+  "de":"Lexikon",
+  "es":"léxico",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6157",
+  "fr":"liaison",
+  "en":"liaison",
+  "de":"Verbindung",
+  "es":"enlace",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6158",
+  "fr":"licencieux",
+  "en":"licentious",
+  "de":"ausschweifend",
+  "es":"licencioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6159",
+  "fr":"limbes",
+  "en":"limbo",
+  "de":"Schwebe",
+  "es":"limbo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6160",
+  "fr":"lignée",
+  "en":"lineage",
+  "de":"Abstammung",
+  "es":"linaje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6161",
+  "fr":"linguiste",
+  "en":"linguist",
+  "de":"Linguist",
+  "es":"lingüista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6162",
+  "fr":"liquider",
+  "en":"to liquidate",
+  "de":"liquidieren",
+  "es":"liquidar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6163",
+  "fr":"liquidation",
+  "en":"liquidation",
+  "de":"Liquidation",
+  "es":"liquidación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6164",
+  "fr":"litanie",
+  "en":"litany",
+  "de":"Litanei",
+  "es":"letanía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6165",
+  "fr":"plaideur",
+  "en":"litigant",
+  "de":"Streitpartei",
+  "es":"litigante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6166",
+  "fr":"procédurier",
+  "en":"litigious",
+  "de":"streitsüchtig",
+  "es":"litigioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6167",
+  "fr":"liturgie",
+  "en":"liturgy",
+  "de":"Liturgie",
+  "es":"liturgia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6168",
+  "fr":"détester",
+  "en":"to loathe",
+  "de":"verabscheuen",
+  "es":"odiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6169",
+  "fr":"longévité",
+  "en":"longevity",
+  "de":"Langlebigkeit",
+  "es":"longevidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6170",
+  "fr":"faille",
+  "en":"loophole",
+  "de":"Schlupfloch",
+  "es":"laguna",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6171",
+  "fr":"loquace",
+  "en":"loquacious",
+  "de":"geschwätzig",
+  "es":"locuaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6172",
+  "fr":"tradition",
+  "en":"lore",
+  "de":"Überlieferung",
+  "es":"tradición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6173",
+  "fr":"goujat",
+  "en":"lout",
+  "de":"Flegel",
+  "es":"patán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6174",
+  "fr":"lucide",
+  "en":"lucid",
+  "de":"klar",
+  "es":"lúcido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6175",
+  "fr":"ridicule",
+  "en":"ludicrous",
+  "de":"lächerlich",
+  "es":"absurdo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6176",
+  "fr":"lugubre",
+  "en":"lugubrious",
+  "de":"düster",
+  "es":"lúgubre",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6177",
+  "fr":"tiède",
+  "en":"lukewarm",
+  "de":"lauwarm",
+  "es":"tibio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6178",
+  "fr":"sommité",
+  "en":"luminary",
+  "de":"Koryphäe",
+  "es":"lumbrera",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6179",
+  "fr":"lumineux",
+  "en":"luminous",
+  "de":"leuchtend",
+  "es":"luminoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6180",
+  "fr":"lustre",
+  "en":"lustre",
+  "de":"Glanz",
+  "es":"lustre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6181",
+  "fr":"luxuriant",
+  "en":"luxuriant",
+  "de":"üppig",
+  "es":"exuberante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6182",
+  "fr":"machination",
+  "en":"machination",
+  "de":"Machenschaft",
+  "es":"maquinación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6183",
+  "fr":"machisme",
+  "en":"machismo",
+  "de":"Machismo",
+  "es":"machismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6184",
+  "fr":"macrocosme",
+  "en":"macrocosm",
+  "de":"Makrokosmos",
+  "es":"macrocosmos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6185",
+  "fr":"extravagant",
+  "en":"madcap",
+  "de":"verrückt",
+  "es":"alocado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6186",
+  "fr":"maelström",
+  "en":"maelstrom",
+  "de":"Mahlstrom",
+  "es":"vorágine",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6187",
+  "fr":"maestro",
+  "en":"maestro",
+  "de":"Maestro",
+  "es":"maestro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6188",
+  "fr":"magnanime",
+  "en":"magnanimous",
+  "de":"großmütig",
+  "es":"magnánimo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6189",
+  "fr":"magnat",
+  "en":"magnate",
+  "de":"Magnat",
+  "es":"magnate",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6190",
+  "fr":"pilier",
+  "en":"mainstay",
+  "de":"Stütze",
+  "es":"pilar",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6191",
+  "fr":"maladie",
+  "en":"malady",
+  "de":"Krankheit",
+  "es":"enfermedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6192",
+  "fr":"malaise",
+  "en":"malaise",
+  "de":"Unbehagen",
+  "es":"malestar",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6193",
+  "fr":"mécontent",
+  "en":"malcontent",
+  "de":"Unzufriedener",
+  "es":"descontento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6194",
+  "fr":"malveillant",
+  "en":"malevolent",
+  "de":"böswillig",
+  "es":"malévolo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6195",
+  "fr":"malversation",
+  "en":"malfeasance",
+  "de":"Fehlverhalten",
+  "es":"malversación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6196",
+  "fr":"malice",
+  "en":"malice",
+  "de":"Bosheit",
+  "es":"malicia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6197",
+  "fr":"diffamer",
+  "en":"to malign",
+  "de":"verleumden",
+  "es":"difamar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6198",
+  "fr":"malléable",
+  "en":"malleable",
+  "de":"formbar",
+  "es":"maleable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6199",
+  "fr":"malodorant",
+  "en":"malodorous",
+  "de":"übelriechend",
+  "es":"maloliente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6200",
+  "fr":"manifestation",
+  "en":"manifestation",
+  "de":"Manifestation",
+  "es":"manifestación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6201",
+  "fr":"maniérisme",
+  "en":"mannerism",
+  "de":"Manierismus",
+  "es":"amaneramiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6202",
+  "fr":"manoir",
+  "en":"manor",
+  "de":"Herrenhaus",
+  "es":"mansión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6203",
+  "fr":"manteau",
+  "en":"mantle",
+  "de":"Mantel",
+  "es":"manto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6204",
+  "fr":"maraudeur",
+  "en":"marauder",
+  "de":"Plünderer",
+  "es":"merodeador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6205",
+  "fr":"chapiteau",
+  "en":"marquee",
+  "de":"Festzelt",
+  "es":"marquesina",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6206",
+  "fr":"martyre",
+  "en":"martyrdom",
+  "de":"Märtyrertum",
+  "es":"martirio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6207",
+  "fr":"masochisme",
+  "en":"masochism",
+  "de":"Masochismus",
+  "es":"masoquismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6208",
+  "fr":"mascarade",
+  "en":"masquerade",
+  "de":"Maskerade",
+  "es":"mascarada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6209",
+  "fr":"matérialisme",
+  "en":"materialism",
+  "de":"Materialismus",
+  "es":"materialismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6210",
+  "fr":"matriarche",
+  "en":"matriarch",
+  "de":"Matriarchin",
+  "es":"matriarca",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6211",
+  "fr":"libertinage",
+  "en":"wantonness",
+  "de":"Zügellosigkeit",
+  "es":"desenfreno",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6212",
+  "fr":"directeur",
+  "en":"warden",
+  "de":"Aufseher",
+  "es":"alcaide",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6213",
+  "fr":"seigneur de la guerre",
+  "en":"warlord",
+  "de":"Kriegsherr",
+  "es":"señor de la guerra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6214",
+  "fr":"garantie",
+  "en":"warranty",
+  "de":"Garantie",
+  "es":"garantía",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6215",
+  "fr":"désert",
+  "en":"wasteland",
+  "de":"Ödland",
+  "es":"páramo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6216",
+  "fr":"chien de garde",
+  "en":"watchdog",
+  "de":"Wachhund",
+  "es":"perro guardián",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6217",
+  "fr":"mot d\u0027ordre",
+  "en":"watchword",
+  "de":"Parole",
+  "es":"consigna",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6218",
+  "fr":"tournant",
+  "en":"watershed",
+  "de":"Wendepunkt",
+  "es":"punto de inflexión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6219",
+  "fr":"hésiter",
+  "en":"waver",
+  "de":"schwanken",
+  "es":"vacilar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6220",
+  "fr":"rebelle",
+  "en":"wayward",
+  "de":"eigensinnig",
+  "es":"caprichoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6221",
+  "fr":"caprice",
+  "en":"waywardness",
+  "de":"Eigensinn",
+  "es":"capricho",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6222",
+  "fr":"armement",
+  "en":"weaponry",
+  "de":"Waffen",
+  "es":"armamento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6223",
+  "fr":"lassitude",
+  "en":"weariness",
+  "de":"Müdigkeit",
+  "es":"cansancio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6224",
+  "fr":"mariage",
+  "en":"wedlock",
+  "de":"Ehe",
+  "es":"matrimonio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6225",
+  "fr":"quai",
+  "en":"wharf",
+  "de":"Kai",
+  "es":"muelle",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6226",
+  "fr":"enjôleur",
+  "en":"wheedling",
+  "de":"schmeichelnd",
+  "es":"adulador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6227",
+  "fr":"par lequel",
+  "en":"whereby",
+  "de":"wodurch",
+  "es":"por el cual",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6228",
+  "fr":"moyens",
+  "en":"wherewithal",
+  "de":"nötige Mittel",
+  "es":"medios",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6229",
+  "fr":"caprice",
+  "en":"whim",
+  "de":"Laune",
+  "es":"antojo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6230",
+  "fr":"fantasque",
+  "en":"whimsical",
+  "de":"skurril",
+  "es":"extravagante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6231",
+  "fr":"fantaisie",
+  "en":"whimsy",
+  "de":"Grille",
+  "es":"fantasía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6232",
+  "fr":"tourbillon",
+  "en":"whirlpool",
+  "de":"Strudel",
+  "es":"remolino",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6233",
+  "fr":"tourbillon",
+  "en":"whirlwind",
+  "de":"Wirbelsturm",
+  "es":"torbellino",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6234",
+  "fr":"lanceur d\u0027alerte",
+  "en":"whistleblower",
+  "de":"Whistleblower",
+  "es":"denunciante",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6235",
+  "fr":"blanchiment",
+  "en":"whitewash",
+  "de":"Schönfärberei",
+  "es":"encubrimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6236",
+  "fr":"méchanceté",
+  "en":"wickedness",
+  "de":"Bosheit",
+  "es":"maldad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6237",
+  "fr":"manier",
+  "en":"wield",
+  "de":"handhaben",
+  "es":"blandir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6238",
+  "fr":"terre sauvage",
+  "en":"wilderness",
+  "de":"Wildnis",
+  "es":"desierto",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6239",
+  "fr":"feu de forêt",
+  "en":"wildfire",
+  "de":"Lauffeuer",
+  "es":"incendio forestal",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6240",
+  "fr":"obstination",
+  "en":"willfulness",
+  "de":"Eigensinn",
+  "es":"obstinación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6241",
+  "fr":"aubaine",
+  "en":"windfall",
+  "de":"Glücksfall",
+  "es":"ganancia inesperada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6242",
+  "fr":"volute",
+  "en":"wisp",
+  "de":"Bündel",
+  "es":"mechón",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6243",
+  "fr":"mélancolique",
+  "en":"wistful",
+  "de":"wehmütig",
+  "es":"melancólico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6244",
+  "fr":"mélancolie",
+  "en":"wistfulness",
+  "de":"Wehmut",
+  "es":"melancolía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6245",
+  "fr":"sorcellerie",
+  "en":"witchcraft",
+  "de":"Hexerei",
+  "es":"brujería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6246",
+  "fr":"résister",
+  "en":"withstand",
+  "de":"widerstehen",
+  "es":"resistir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6247",
+  "fr":"trait d\u0027esprit",
+  "en":"witticism",
+  "de":"Witz",
+  "es":"broma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6248",
+  "fr":"sorcellerie",
+  "en":"wizardry",
+  "de":"Zauberei",
+  "es":"brujería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6249",
+  "fr":"ridé",
+  "en":"wizened",
+  "de":"verschrumpelt",
+  "es":"arrugado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6250",
+  "fr":"malheur",
+  "en":"woe",
+  "de":"Wehe",
+  "es":"aflicción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6251",
+  "fr":"verbosité",
+  "en":"wordiness",
+  "de":"Weitschweifigkeit",
+  "es":"verbosidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6252",
+  "fr":"finition",
+  "en":"workmanship",
+  "de":"Verarbeitung",
+  "es":"acabado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6253",
+  "fr":"colère",
+  "en":"wrath",
+  "de":"Zorn",
+  "es":"ira",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6254",
+  "fr":"débris",
+  "en":"wreckage",
+  "de":"Wrack",
+  "es":"restos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6255",
+  "fr":"misérable",
+  "en":"wretched",
+  "de":"elend",
+  "es":"miserable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6256",
+  "fr":"fautif",
+  "en":"wrongdoer",
+  "de":"Missetäter",
+  "es":"malhechor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6257",
+  "fr":"désabusé",
+  "en":"wry",
+  "de":"ironisch",
+  "es":"irónico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6258",
+  "fr":"xénophobe",
+  "en":"xenophobe",
+  "de":"Xenophob",
+  "es":"xenófobo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6259",
+  "fr":"xénophobie",
+  "en":"xenophobia",
+  "de":"Xenophobie",
+  "es":"xenofobia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6260",
+  "fr":"critère",
+  "en":"yardstick",
+  "de":"Maßstab",
+  "es":"criterio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6261",
+  "fr":"fil",
+  "en":"yarn",
+  "de":"Garn",
+  "es":"hilo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6262",
+  "fr":"désir ardent",
+  "en":"yearning",
+  "de":"Sehnsucht",
+  "es":"anhelo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6263",
+  "fr":"joug",
+  "en":"yoke",
+  "de":"Joch",
+  "es":"yugo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6264",
+  "fr":"plouc",
+  "en":"yokel",
+  "de":"Hinterwäldler",
+  "es":"paleto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6265",
+  "fr":"jeune",
+  "en":"youngster",
+  "de":"Jugendlicher",
+  "es":"joven",
+  "type":"nom",
+  "level":"B1"
+},
+  {
+  "id":"word_6266",
+  "fr":"zèle",
+  "en":"zeal",
+  "de":"Eifer",
+  "es":"celo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6267",
+  "fr":"fanatique",
+  "en":"zealot",
+  "de":"Fanatiker",
+  "es":"fanático",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6268",
+  "fr":"fanatisme",
+  "en":"zealotry",
+  "de":"Fanatismus",
+  "es":"fanatismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6269",
+  "fr":"zélé",
+  "en":"zealous",
+  "de":"eifrig",
+  "es":"entusiasta",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6270",
+  "fr":"l\u0027air du temps",
+  "en":"zeitgeist",
+  "de":"Zeitgeist",
+  "es":"espíritu de la época",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6271",
+  "fr":"zénith",
+  "en":"zenith",
+  "de":"Zenit",
+  "es":"cenit",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6272",
+  "fr":"zeste",
+  "en":"zest",
+  "de":"Begeisterung",
+  "es":"entusiasmo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6273",
+  "fr":"zigzag",
+  "en":"zigzag",
+  "de":"Zickzack",
+  "es":"zigzag",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6274",
+  "fr":"zodiaque",
+  "en":"zodiac",
+  "de":"Tierkreis",
+  "es":"zodíaco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6275",
+  "fr":"zoologie",
+  "en":"zoology",
+  "de":"Zoologie",
+  "es":"zoología",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6276",
+  "en":"annihilation",
+  "fr":"annihilation",
+  "de":"Vernichtung",
+  "es":"aniquilación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6277",
+  "en":"annum",
+  "fr":"année",
+  "de":"Jahr",
+  "es":"año",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6278",
+  "en":"anomaly",
+  "fr":"anomalie",
+  "de":"Anomalie",
+  "es":"anomalía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6279",
+  "en":"antagonise",
+  "fr":"contrarier",
+  "de":"verärgern",
+  "es":"antagonizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6280",
+  "en":"antecedent",
+  "fr":"antécédent",
+  "de":"Vorläufer",
+  "es":"antecedente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6281",
+  "en":"antidote",
+  "fr":"antidote",
+  "de":"Gegengift",
+  "es":"antídoto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6282",
+  "en":"antipathy",
+  "fr":"antipathie",
+  "de":"Antipathie",
+  "es":"antipatía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6283",
+  "en":"antiquated",
+  "fr":"antiquaire",
+  "de":"veraltet",
+  "es":"anticuado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6284",
+  "en":"antiquity",
+  "fr":"antiquité",
+  "de":"Antike",
+  "es":"antigüedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6285",
+  "en":"antithesis",
+  "fr":"antithèse",
+  "de":"Antithese",
+  "es":"antítesis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6286",
+  "en":"apathetic",
+  "fr":"apathique",
+  "de":"apathisch",
+  "es":"apático",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6287",
+  "en":"aperture",
+  "fr":"ouverture",
+  "de":"Öffnung",
+  "es":"apertura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6288",
+  "en":"apex",
+  "fr":"sommet",
+  "de":"Spitze",
+  "es":"apogeo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6289",
+  "en":"aplomb",
+  "fr":"aplomb",
+  "de":"Souveränität",
+  "es":"aplomo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6290",
+  "en":"apostle",
+  "fr":"apôtre",
+  "de":"Apostel",
+  "es":"apóstol",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6291",
+  "en":"apparatus",
+  "fr":"appareil",
+  "de":"Apparat",
+  "es":"aparato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6292",
+  "en":"apparition",
+  "fr":"apparition",
+  "de":"Erscheinung",
+  "es":"aparición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6293",
+  "en":"appease",
+  "fr":"apaiser",
+  "de":"beschwichtigen",
+  "es":"apaciguar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6294",
+  "en":"appellation",
+  "fr":"appellation",
+  "de":"Bezeichnung",
+  "es":"apelación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6295",
+  "en":"apprehension",
+  "fr":"appréhension",
+  "de":"Besorgnis",
+  "es":"aprensión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6296",
+  "en":"apprehensive",
+  "fr":"appréhensif",
+  "de":"besorgt",
+  "es":"aprensivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6297",
+  "en":"aptitude",
+  "fr":"aptitude",
+  "de":"Begabung",
+  "es":"aptitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6298",
+  "en":"arbiter",
+  "fr":"arbitre",
+  "de":"Schiedsrichter",
+  "es":"árbitro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6299",
+  "en":"arcane",
+  "fr":"arcane",
+  "de":"geheimnisvoll",
+  "es":"arcano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6300",
+  "en":"archetype",
+  "fr":"archétype",
+  "de":"Archetyp",
+  "es":"arquetipo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6301",
+  "en":"archipelago",
+  "fr":"archipel",
+  "de":"Archipel",
+  "es":"archipiélago",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6302",
+  "en":"ardour",
+  "fr":"ardeur",
+  "de":"Inbrunst",
+  "es":"ardor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6303",
+  "en":"arduous",
+  "fr":"ardu",
+  "de":"mühsam",
+  "es":"arduo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6304",
+  "en":"arguably",
+  "fr":"discutablement",
+  "de":"wohl",
+  "es":"podría decirse",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6305",
+  "en":"armistice",
+  "fr":"armistice",
+  "de":"Waffenstillstand",
+  "es":"armisticio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6306",
+  "en":"arrogance",
+  "fr":"arrogance",
+  "de":"Arroganz",
+  "es":"arrogancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6307",
+  "en":"artifice",
+  "fr":"artifice",
+  "de":"Kunstgriff",
+  "es":"artificio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6308",
+  "en":"artisan",
+  "fr":"artisan",
+  "de":"Handwerker",
+  "es":"artesano",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6309",
+  "en":"ascendancy",
+  "fr":"ascendance",
+  "de":"Vormachtstellung",
+  "es":"ascendencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6310",
+  "en":"ascertain",
+  "fr":"constater",
+  "de":"feststellen",
+  "es":"cerciorarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6311",
+  "en":"aspersion",
+  "fr":"aspersion",
+  "de":"Verleumdung",
+  "es":"aspersión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6312",
+  "en":"assiduous",
+  "fr":"assidu",
+  "de":"fleißig",
+  "es":"asiduo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6313",
+  "en":"assuage",
+  "fr":"apaiser",
+  "de":"lindern",
+  "es":"mitigar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6314",
+  "en":"astute",
+  "fr":"astucieux",
+  "de":"scharfsinnig",
+  "es":"astuto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6315",
+  "en":"atone",
+  "fr":"expier",
+  "de":"sühnen",
+  "es":"expiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6316",
+  "en":"attrition",
+  "fr":"attrition",
+  "de":"Zermürbung",
+  "es":"desgaste",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6317",
+  "en":"audacity",
+  "fr":"audace",
+  "de":"Kühnheit",
+  "es":"audacia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6318",
+  "en":"augment",
+  "fr":"augmenter",
+  "de":"vermehren",
+  "es":"aumentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6319",
+  "en":"auspicious",
+  "fr":"favorable",
+  "de":"vielversprechend",
+  "es":"auspicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6320",
+  "en":"austere",
+  "fr":"austère",
+  "de":"streng",
+  "es":"austero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6321",
+  "en":"autocracy",
+  "fr":"autocratie",
+  "de":"Autokratie",
+  "es":"autocracia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6322",
+  "en":"autocrat",
+  "fr":"autocrate",
+  "de":"Autokrat",
+  "es":"autócrata",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6323",
+  "en":"avarice",
+  "fr":"avarice",
+  "de":"Habgier",
+  "es":"avaricia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6324",
+  "en":"aversion",
+  "fr":"aversion",
+  "de":"Abneigung",
+  "es":"aversión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6325",
+  "en":"axiom",
+  "fr":"axiome",
+  "de":"Axiom",
+  "es":"axioma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6326",
+  "en":"axiomatic",
+  "fr":"axiomatique",
+  "de":"axiomatisch",
+  "es":"axiomático",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6327",
+  "en":"backlash",
+  "fr":"retour de bâton",
+  "de":"Rückschlag",
+  "es":"reacción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6328",
+  "en":"baleful",
+  "fr":"funeste",
+  "de":"unheilvoll",
+  "es":"funesto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6329",
+  "en":"balk",
+  "fr":"rechigner",
+  "de":"zurückschrecken",
+  "es":"resistirse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6330",
+  "en":"ballast",
+  "fr":"ballast",
+  "de":"Ballast",
+  "es":"lastre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6331",
+  "en":"balm",
+  "fr":"baume",
+  "de":"Balsam",
+  "es":"bálsamo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6332",
+  "en":"banal",
+  "fr":"banal",
+  "de":"banal",
+  "es":"banal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6333",
+  "en":"bane",
+  "fr":"fléau",
+  "de":"Fluch",
+  "es":"ruina",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6334",
+  "en":"barrage",
+  "fr":"barrage",
+  "de":"Sperrfeuer",
+  "es":"bombardeo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6335",
+  "en":"bastion",
+  "fr":"bastion",
+  "de":"Bastion",
+  "es":"bastión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6336",
+  "en":"bear up",
+  "fr":"résister",
+  "de":"durchhalten",
+  "es":"soportar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6337",
+  "en":"bedlam",
+  "fr":"chahut",
+  "de":"Tollhaus",
+  "es":"caos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6338",
+  "en":"beguile",
+  "fr":"séduire",
+  "de":"betören",
+  "es":"engañar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6339",
+  "en":"behemoth",
+  "fr":"béhémoth",
+  "de":"Ungetüm",
+  "es":"gigante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6340",
+  "en":"beleaguer",
+  "fr":"assiéger",
+  "de":"belagern",
+  "es":"acosar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6341",
+  "en":"belie",
+  "fr":"démentir",
+  "de":"Lügen strafen",
+  "es":"desmentir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6342",
+  "en":"bellicose",
+  "fr":"belliqueux",
+  "de":"kriegerisch",
+  "es":"belicoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6343",
+  "en":"belligerent",
+  "fr":"belligérant",
+  "de":"streitlustig",
+  "es":"beligerante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6344",
+  "en":"bellwether",
+  "fr":"indicateur",
+  "de":"Leithammel",
+  "es":"indicador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6345",
+  "en":"bemoan",
+  "fr":"déplorer",
+  "de":"beklagen",
+  "es":"lamentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6346",
+  "en":"benefactor",
+  "fr":"bienfaiteur",
+  "de":"Wohltäter",
+  "es":"benefactor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6347",
+  "en":"benevolence",
+  "fr":"bienveillance",
+  "de":"Wohlwollen",
+  "es":"benevolencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6348",
+  "en":"benevolent",
+  "fr":"bienveillant",
+  "de":"gütig",
+  "es":"benevolente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6349",
+  "en":"bequeath",
+  "fr":"léguer",
+  "de":"vererben",
+  "es":"legar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6350",
+  "en":"bequest",
+  "fr":"legs",
+  "de":"Vermächtnis",
+  "es":"legado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6351",
+  "en":"berate",
+  "fr":"réprimander",
+  "de":"beschimpfen",
+  "es":"regañar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6352",
+  "en":"bereavement",
+  "fr":"deuil",
+  "de":"Trauerfall",
+  "es":"duelo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6353",
+  "en":"bereft",
+  "fr":"dépourvu",
+  "de":"beraubt",
+  "es":"desprovisto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6354",
+  "en":"beseech",
+  "fr":"implorer",
+  "de":"anflehen",
+  "es":"suplicar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6355",
+  "en":"beset",
+  "fr":"assaillir",
+  "de":"bedrängen",
+  "es":"acosar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6356",
+  "fr":"flatter servilement",
+  "en":"to fawn over",
+  "de":"scharwenzeln um",
+  "es":"adular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6357",
+  "fr":"façade",
+  "en":"façade",
+  "de":"Fassade",
+  "es":"fachada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6358",
+  "fr":"incompétent",
+  "en":"feckless",
+  "de":"nutzlos",
+  "es":"irresponsable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6359",
+  "fr":"feindre",
+  "en":"to feign",
+  "de":"vortäuschen",
+  "es":"fingir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6360",
+  "fr":"fougueux",
+  "en":"feisty",
+  "de":"temperamentvoll",
+  "es":"enérgico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6361",
+  "fr":"fermentation",
+  "en":"fermentation",
+  "de":"Gärung",
+  "es":"fermentación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6362",
+  "fr":"féroce",
+  "en":"ferocious",
+  "de":"wild",
+  "es":"feroz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6363",
+  "fr":"débusquer",
+  "en":"to ferret out",
+  "de":"aufspüren",
+  "es":"descubrir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6364",
+  "fr":"fervent",
+  "en":"fervent",
+  "de":"inbrünstig",
+  "es":"ferviente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6365",
+  "fr":"ardent",
+  "en":"fervid",
+  "de":"leidenschaftlich",
+  "es":"apasionado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6366",
+  "fr":"ferveur",
+  "en":"fervour",
+  "de":"Inbrunst",
+  "es":"fervor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6367",
+  "fr":"fétiche",
+  "en":"fetish",
+  "de":"Fetisch",
+  "es":"fetiche",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6368",
+  "fr":"querelle",
+  "en":"feud",
+  "de":"Fehde",
+  "es":"enemistad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6369",
+  "fr":"fiasco",
+  "en":"fiasco",
+  "de":"Fiasko",
+  "es":"fiasco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6370",
+  "fr":"inconstant",
+  "en":"fickle",
+  "de":"wankelmütig",
+  "es":"inconstante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6371",
+  "fr":"fidélité",
+  "en":"fidelity",
+  "de":"Treue",
+  "es":"fidelidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6372",
+  "fr":"invention",
+  "en":"figment",
+  "de":"Hirngespinst",
+  "es":"invención",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6373",
+  "fr":"figure de proue",
+  "en":"figurehead",
+  "de":"Aushängeschild",
+  "es":"mascarón de proa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6374",
+  "fr":"obstruction parlementaire",
+  "en":"filibuster",
+  "de":"Filibuster",
+  "es":"filibusterismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6375",
+  "fr":"finesse",
+  "en":"finesse",
+  "de":"Finesse",
+  "es":"delicadeza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6376",
+  "fr":"fissure",
+  "en":"fissure",
+  "de":"Riss",
+  "es":"fisura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6377",
+  "fr":"flagrant",
+  "en":"flagrant",
+  "de":"eklatant",
+  "es":"flagrante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6378",
+  "fr":"étaler",
+  "en":"to flaunt",
+  "de":"zur Schau stellen",
+  "es":"alardear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6379",
+  "fr":"fugace",
+  "en":"fleeting",
+  "de":"flüchtig",
+  "es":"fugaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6380",
+  "fr":"fragile",
+  "en":"flimsy",
+  "de":"fadenscheinig",
+  "es":"endeble",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6381",
+  "fr":"flore",
+  "en":"flora",
+  "de":"Flora",
+  "es":"flora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6382",
+  "fr":"épaves",
+  "en":"flotsam",
+  "de":"Treibgut",
+  "es":"restos flotantes",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6383",
+  "fr":"bafouer",
+  "en":"to flout",
+  "de":"missachten",
+  "es":"incumplir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6384",
+  "fr":"flux",
+  "en":"flux",
+  "de":"Wandel",
+  "es":"flujo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6385",
+  "fr":"fourrage",
+  "en":"fodder",
+  "de":"Futter",
+  "es":"forraje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6386",
+  "fr":"travers",
+  "en":"foible",
+  "de":"Schwäche",
+  "es":"debilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6387",
+  "fr":"folie",
+  "en":"folly",
+  "de":"Torheit",
+  "es":"locura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6388",
+  "fr":"fomenter",
+  "en":"to foment",
+  "de":"schüren",
+  "es":"fomentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6389",
+  "fr":"témérité",
+  "en":"foolhardiness",
+  "de":"Tollkühnheit",
+  "es":"temeridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6390",
+  "fr":"incursion",
+  "en":"foray",
+  "de":"Streifzug",
+  "es":"incursión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6391",
+  "fr":"indulgence",
+  "en":"forbearance",
+  "de":"Nachsicht",
+  "es":"indulgencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6392",
+  "fr":"précurseur",
+  "en":"forerunner",
+  "de":"Vorläufer",
+  "es":"precursor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6393",
+  "fr":"prévenir",
+  "en":"to forestall",
+  "de":"zuvorkommen",
+  "es":"prevenir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6394",
+  "fr":"confiscation",
+  "en":"forfeiture",
+  "de":"Verfall",
+  "es":"confiscación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6395",
+  "fr":"renoncer à",
+  "en":"to forgo",
+  "de":"verzichten",
+  "es":"prescindir de",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6396",
+  "fr":"délaissé",
+  "en":"forlorn",
+  "de":"verlassen",
+  "es":"desolado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6397",
+  "fr":"redoutable",
+  "en":"formidable",
+  "de":"beeindruckend",
+  "es":"formidable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6398",
+  "fr":"abandonner",
+  "en":"to forsake",
+  "de":"im Stich lassen",
+  "es":"abandonar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6399",
+  "fr":"point fort",
+  "en":"forte",
+  "de":"Stärke",
+  "es":"punto fuerte",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6400",
+  "fr":"courage",
+  "en":"fortitude",
+  "de":"Tapferkeit",
+  "es":"fortaleza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6401",
+  "fr":"fortuit",
+  "en":"fortuitous",
+  "de":"zufällig",
+  "es":"fortuito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6402",
+  "fr":"sombrer",
+  "en":"to founder",
+  "de":"scheitern",
+  "es":"fracasar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6403",
+  "fr":"grincheux",
+  "en":"fractious",
+  "de":"widerspenstig",
+  "es":"rebelde",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6404",
+  "fr":"tendu",
+  "en":"fraught",
+  "de":"angespannt",
+  "es":"tenso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6405",
+  "fr":"mêlée",
+  "en":"fray",
+  "de":"Handgemenge",
+  "es":"refriega",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6406",
+  "fr":"frénétique",
+  "en":"frenetic",
+  "de":"hektisch",
+  "es":"frenético",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6407",
+  "fr":"frénésie",
+  "en":"frenzy",
+  "de":"Rausch",
+  "es":"frenesí",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6408",
+  "fr":"étudiant de première année",
+  "en":"freshman",
+  "de":"Studienanfänger",
+  "es":"estudiante de primer año",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6409",
+  "fr":"agité",
+  "en":"fretful",
+  "de":"unruhig",
+  "es":"inquieto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6410",
+  "fr":"frivole",
+  "en":"frivolous",
+  "de":"frivol",
+  "es":"frívolo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6411",
+  "fr":"frugal",
+  "en":"frugal",
+  "de":"sparsam",
+  "es":"frugal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6412",
+  "fr":"aboutissement",
+  "en":"fruition",
+  "de":"Verwirklichung",
+  "es":"realización",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6413",
+  "fr":"point d\u0027appui",
+  "en":"fulcrum",
+  "de":"Dreh- und Angelpunkt",
+  "es":"punto de apoyo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6414",
+  "fr":"excessif",
+  "en":"fulsome",
+  "de":"überschwänglich",
+  "es":"excesivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6415",
+  "fr":"fureur",
+  "en":"furor",
+  "de":"Aufruhr",
+  "es":"furor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6416",
+  "fr":"furtif",
+  "en":"furtive",
+  "de":"verstohlen",
+  "es":"furtivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6417",
+  "fr":"vain",
+  "en":"futile",
+  "de":"vergeblich",
+  "es":"inútil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6418",
+  "fr":"futilité",
+  "en":"futility",
+  "de":"Sinnlosigkeit",
+  "es":"inutilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6419",
+  "fr":"gaffe",
+  "en":"gaffe",
+  "de":"Patzer",
+  "es":"metedura de pata",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6420",
+  "fr":"galvaniser",
+  "en":"to galvanise",
+  "de":"wachrütteln",
+  "es":"galvanizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6421",
+  "fr":"stratagème",
+  "en":"gambit",
+  "de":"Schachzug",
+  "es":"táctica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6422",
+  "fr":"criard",
+  "en":"garish",
+  "de":"grell",
+  "es":"chillón",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6423",
+  "fr":"recueillir",
+  "en":"to garner",
+  "de":"sammeln",
+  "es":"reunir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6424",
+  "fr":"garnison",
+  "en":"garrison",
+  "de":"Garnison",
+  "es":"guarnición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6425",
+  "fr":"volubile",
+  "en":"garrulous",
+  "de":"gesprächig",
+  "es":"locuaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6426",
+  "fr":"maladroit",
+  "en":"gauche",
+  "de":"ungeschickt",
+  "es":"torpe",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6427",
+  "fr":"gant",
+  "en":"gauntlet",
+  "de":"Fehdehandschuh",
+  "es":"guantelete",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6428",
+  "fr":"généalogie",
+  "en":"genealogy",
+  "de":"Genealogie",
+  "es":"genealogía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6429",
+  "fr":"genèse",
+  "en":"genesis",
+  "de":"Entstehung",
+  "es":"génesis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6430",
+  "fr":"affable",
+  "en":"genial",
+  "de":"freundlich",
+  "es":"afable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6431",
+  "fr":"s\u0027agenouiller",
+  "en":"to genuflect",
+  "de":"knien",
+  "es":"arrodillarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6432",
+  "fr":"pertinent",
+  "en":"germane",
+  "de":"relevant",
+  "es":"pertinente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6433",
+  "fr":"gestation",
+  "en":"gestation",
+  "de":"Tragzeit",
+  "es":"gestación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6434",
+  "fr":"prudemment",
+  "en":"gingerly",
+  "de":"behutsam",
+  "es":"cautelosamente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6435",
+  "fr":"essentiel",
+  "en":"gist",
+  "de":"Wesentliche",
+  "es":"meollo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6436",
+  "fr":"le plaignant",
+  "en":"plaintiff",
+  "de":"der Kläger",
+  "es":"el demandante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6437",
+  "fr":"la plasticité",
+  "en":"plasticity",
+  "de":"die Plastizität",
+  "es":"la plasticidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6438",
+  "fr":"la platitude",
+  "en":"platitude",
+  "de":"die Binsenweisheit",
+  "es":"la platitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6439",
+  "fr":"le dramaturge",
+  "en":"playwright",
+  "de":"der Dramatiker",
+  "es":"el dramaturgo",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6440",
+  "fr":"le plébiscite",
+  "en":"plebiscite",
+  "de":"die Volksabstimmung",
+  "es":"el plebiscito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6441",
+  "fr":"la pléthore",
+  "en":"plethora",
+  "de":"die Fülle",
+  "es":"la plétora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6442",
+  "fr":"la détresse",
+  "en":"plight",
+  "de":"die Notlage",
+  "es":"el apuro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6443",
+  "fr":"le stratagème",
+  "en":"ploy",
+  "de":"der Trick",
+  "es":"la estratagema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6444",
+  "fr":"piller",
+  "en":"to plunder",
+  "de":"plündern",
+  "es":"saquear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6445",
+  "fr":"le podium",
+  "en":"podium",
+  "de":"das Podium",
+  "es":"el podio",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6446",
+  "fr":"le caractère poignant",
+  "en":"poignancy",
+  "de":"die Eindringlichkeit",
+  "es":"la intensidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6447",
+  "fr":"poignant",
+  "en":"poignant",
+  "de":"ergreifend",
+  "es":"conmovedor",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6448",
+  "fr":"l\u0027assurance",
+  "en":"poise",
+  "de":"die Haltung",
+  "es":"el aplomo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6449",
+  "fr":"la polémique",
+  "en":"polemic",
+  "de":"die Polemik",
+  "es":"la polémica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6450",
+  "fr":"le polyglotte",
+  "en":"polyglot",
+  "de":"der Polyglott",
+  "es":"el políglota",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6451",
+  "fr":"le faste",
+  "en":"pomp",
+  "de":"der Pomp",
+  "es":"la pompa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6452",
+  "fr":"pompeux",
+  "en":"pompous",
+  "de":"pompös",
+  "es":"pomposo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6453",
+  "fr":"méditer",
+  "en":"to ponder",
+  "de":"nachdenken",
+  "es":"ponderar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6454",
+  "fr":"pesant",
+  "en":"ponderous",
+  "de":"schwerfällig",
+  "es":"pesado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6455",
+  "fr":"pontifier",
+  "en":"to pontificate",
+  "de":"schwadronieren",
+  "es":"pontificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6456",
+  "fr":"la populace",
+  "en":"populace",
+  "de":"die Bevölkerung",
+  "es":"el pueblo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6457",
+  "fr":"le populisme",
+  "en":"populism",
+  "de":"der Populismus",
+  "es":"el populismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6458",
+  "fr":"présager",
+  "en":"to portend",
+  "de":"voraussagen",
+  "es":"presagiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6459",
+  "fr":"le présage",
+  "en":"portent",
+  "de":"das Vorzeichen",
+  "es":"el presagio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6460",
+  "fr":"de mauvais augure",
+  "en":"portentous",
+  "de":"unheilvoll",
+  "es":"portentoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6461",
+  "fr":"la postérité",
+  "en":"posterity",
+  "de":"die Nachwelt",
+  "es":"la posteridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6462",
+  "fr":"posthume",
+  "en":"posthumous",
+  "de":"posthum",
+  "es":"póstumo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6463",
+  "fr":"l\u0027autopsie",
+  "en":"postmortem",
+  "de":"die Obduktion",
+  "es":"la autopsia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6464",
+  "fr":"postuler",
+  "en":"to postulate",
+  "de":"postulieren",
+  "es":"postular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6465",
+  "fr":"le pragmatisme",
+  "en":"pragmatism",
+  "de":"der Pragmatismus",
+  "es":"el pragmatismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6466",
+  "fr":"le pragmatique",
+  "en":"pragmatist",
+  "de":"der Pragmatiker",
+  "es":"el pragmático",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6467",
+  "fr":"le préambule",
+  "en":"preamble",
+  "de":"die Präambel",
+  "es":"el preámbulo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6468",
+  "fr":"précaire",
+  "en":"precarious",
+  "de":"prekär",
+  "es":"precario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6469",
+  "fr":"la préséance",
+  "en":"precedence",
+  "de":"der Vorrang",
+  "es":"la precedencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6470",
+  "fr":"le précipice",
+  "en":"precipice",
+  "de":"der Abgrund",
+  "es":"el precipicio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6471",
+  "fr":"précipiter",
+  "en":"to precipitate",
+  "de":"herbeiführen",
+  "es":"precipitar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6472",
+  "fr":"escarpé",
+  "en":"precipitous",
+  "de":"steil",
+  "es":"escarpado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6473",
+  "fr":"empêcher",
+  "en":"to preclude",
+  "de":"ausschließen",
+  "es":"impedir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6474",
+  "fr":"précoce",
+  "en":"precocious",
+  "de":"altklug",
+  "es":"precoz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6475",
+  "fr":"le précurseur",
+  "en":"precursor",
+  "de":"der Vorläufer",
+  "es":"el precursor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6476",
+  "fr":"la prédilection",
+  "en":"predilection",
+  "de":"die Vorliebe",
+  "es":"la predilección",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6477",
+  "fr":"la prédominance",
+  "en":"predominance",
+  "de":"die Vorherrschaft",
+  "es":"el predominio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6478",
+  "fr":"prééminent",
+  "en":"preeminent",
+  "de":"herausragend",
+  "es":"preeminente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6479",
+  "fr":"prévenir",
+  "en":"to preempt",
+  "de":"zuvorkommen",
+  "es":"prevenir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6480",
+  "fr":"le prélude",
+  "en":"prelude",
+  "de":"der Auftakt",
+  "es":"el preludio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6481",
+  "fr":"la prémonition",
+  "en":"premonition",
+  "de":"die Vorahnung",
+  "es":"la premonición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6482",
+  "fr":"la prépondérance",
+  "en":"preponderance",
+  "de":"das Überwiegen",
+  "es":"la preponderancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6483",
+  "fr":"absurde",
+  "en":"preposterous",
+  "de":"absurd",
+  "es":"absurdo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6484",
+  "fr":"la condition préalable",
+  "en":"prerequisite",
+  "de":"die Voraussetzung",
+  "es":"el prerrequisito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6485",
+  "fr":"la prérogative",
+  "en":"prerogative",
+  "de":"das Vorrecht",
+  "es":"la prerrogativa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6486",
+  "fr":"la présomption",
+  "en":"presumption",
+  "de":"die Vermutung",
+  "es":"la presunción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6487",
+  "fr":"présomptueux",
+  "en":"presumptuous",
+  "de":"anmaßend",
+  "es":"presuntuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6488",
+  "fr":"le faux-semblant",
+  "en":"pretence",
+  "de":"der Vorwand",
+  "es":"el pretexto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6489",
+  "fr":"le prétendant",
+  "en":"pretender",
+  "de":"der Thronanwärter",
+  "es":"el pretendiente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6490",
+  "fr":"prétentieux",
+  "en":"pretentious",
+  "de":"prätentiös",
+  "es":"pretencioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6491",
+  "fr":"le prétexte",
+  "en":"pretext",
+  "de":"der Vorwand",
+  "es":"el pretexto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6492",
+  "fr":"répandu",
+  "en":"prevalent",
+  "de":"vorherrschend",
+  "es":"predominante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6493",
+  "fr":"tergiverser",
+  "en":"to prevaricate",
+  "de":"ausweichen",
+  "es":"prevaricar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6494",
+  "fr":"la primauté",
+  "en":"primacy",
+  "de":"der Vorrang",
+  "es":"la primacía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6495",
+  "fr":"primitif",
+  "en":"primeval",
+  "de":"ursprünglich",
+  "es":"primigenio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6496",
+  "fr":"immaculé",
+  "en":"pristine",
+  "de":"makellos",
+  "es":"inmaculado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6497",
+  "fr":"la privation",
+  "en":"privation",
+  "de":"die Entbehrung",
+  "es":"la privación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6498",
+  "fr":"la probité",
+  "en":"probity",
+  "de":"die Rechtschaffenheit",
+  "es":"la probidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6499",
+  "fr":"la proclamation",
+  "en":"proclamation",
+  "de":"die Proklamation",
+  "es":"la proclamación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6500",
+  "fr":"la propension",
+  "en":"proclivity",
+  "de":"die Neigung",
+  "es":"la proclividad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6501",
+  "fr":"procrastiner",
+  "en":"to procrastinate",
+  "de":"aufschieben",
+  "es":"procrastinar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6502",
+  "fr":"procurer",
+  "en":"to procure",
+  "de":"beschaffen",
+  "es":"procurar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6503",
+  "fr":"l\u0027approvisionnement",
+  "en":"procurement",
+  "de":"die Beschaffung",
+  "es":"la adquisición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6504",
+  "fr":"prodigue",
+  "en":"prodigal",
+  "de":"verschwenderisch",
+  "es":"pródigo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6505",
+  "fr":"prodigieux",
+  "en":"prodigious",
+  "de":"erstaunlich",
+  "es":"prodigioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6506",
+  "fr":"le prodige",
+  "en":"prodigy",
+  "de":"das Wunderkind",
+  "es":"el prodigio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6507",
+  "fr":"profane",
+  "en":"profane",
+  "de":"profan",
+  "es":"profano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6508",
+  "fr":"le blasphème",
+  "en":"profanity",
+  "de":"die Obszönität",
+  "es":"la profanidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6509",
+  "fr":"professer",
+  "en":"to profess",
+  "de":"bekennen",
+  "es":"profesar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6510",
+  "fr":"offrir",
+  "en":"to proffer",
+  "de":"anbieten",
+  "es":"proferir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6511",
+  "fr":"la compétence",
+  "en":"proficiency",
+  "de":"das Können",
+  "es":"la competencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6512",
+  "fr":"dissolu",
+  "en":"profligate",
+  "de":"lasterhaft",
+  "es":"derrochador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6513",
+  "fr":"la profusion",
+  "en":"profusion",
+  "de":"die Fülle",
+  "es":"la profusión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6514",
+  "fr":"la progéniture",
+  "en":"progeny",
+  "de":"die Nachkommenschaft",
+  "es":"la progenie",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6515",
+  "fr":"le pronostic",
+  "en":"prognosis",
+  "de":"die Prognose",
+  "es":"el pronóstico",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6516",
+  "fr":"att�nuer",
+  "en":"to abate",
+  "de":"nachlassen",
+  "es":"disminuir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6517",
+  "fr":"abdiquer",
+  "en":"to abdicate",
+  "de":"abdanken",
+  "es":"abdicar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6518",
+  "fr":"aberration",
+  "en":"aberration",
+  "de":"Abweichung",
+  "es":"aberraci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6519",
+  "fr":"encourager",
+  "en":"to abet",
+  "de":"anstiften",
+  "es":"incitar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6520",
+  "fr":"suspension",
+  "en":"abeyance",
+  "de":"Schwebe",
+  "es":"suspensi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6521",
+  "fr":"abhorrer",
+  "en":"to abhor",
+  "de":"verabscheuen",
+  "es":"aborrecer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6522",
+  "fr":"constant",
+  "en":"abiding",
+  "de":"best�ndig",
+  "es":"duradero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6523",
+  "fr":"abject",
+  "en":"abject",
+  "de":"elend",
+  "es":"abyecto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6524",
+  "fr":"abjurer",
+  "en":"to abjure",
+  "de":"abschw�ren",
+  "es":"abjurar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6525",
+  "fr":"abroger",
+  "en":"to abrogate",
+  "de":"abschaffen",
+  "es":"abrogar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6526",
+  "fr":"abrogation",
+  "en":"abrogation",
+  "de":"Abschaffung",
+  "es":"abrogaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6527",
+  "fr":"s\u0027enfuir",
+  "en":"to abscond",
+  "de":"sich absetzen",
+  "es":"fugarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6528",
+  "fr":"absoudre",
+  "en":"to absolve",
+  "de":"freisprechen",
+  "es":"absolver",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6529",
+  "fr":"s\u0027abstenir",
+  "en":"to abstain",
+  "de":"sich enthalten",
+  "es":"abstenerse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6530",
+  "fr":"abstention",
+  "en":"abstention",
+  "de":"Enthaltung",
+  "es":"abstenci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6531",
+  "fr":"abstinence",
+  "en":"abstinence",
+  "de":"Enthaltsamkeit",
+  "es":"abstinencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6532",
+  "fr":"abstrus",
+  "en":"abstruse",
+  "de":"abstrus",
+  "es":"abstruso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6533",
+  "fr":"ab�me",
+  "en":"abyss",
+  "de":"Abgrund",
+  "es":"abismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6534",
+  "fr":"acc�der",
+  "en":"to accede",
+  "de":"zustimmen",
+  "es":"acceder",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6535",
+  "fr":"accentuer",
+  "en":"to accentuate",
+  "de":"betonen",
+  "es":"acentuar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6536",
+  "fr":"accession",
+  "en":"accession",
+  "de":"Beitritt",
+  "es":"adhesi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6537",
+  "fr":"acclam�",
+  "en":"acclaimed",
+  "de":"gefeiert",
+  "es":"aclamado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6538",
+  "fr":"acclamation",
+  "en":"acclamation",
+  "de":"Akklamation",
+  "es":"aclamaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6539",
+  "fr":"accolade",
+  "en":"accolade",
+  "de":"Auszeichnung",
+  "es":"galard�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6540",
+  "fr":"complice",
+  "en":"accomplice",
+  "de":"Komplize",
+  "es":"c�mplice",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6541",
+  "fr":"accoster",
+  "en":"to accost",
+  "de":"ansprechen",
+  "es":"abordar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6542",
+  "fr":"accr�diter",
+  "en":"to accredit",
+  "de":"akkreditieren",
+  "es":"acreditar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6543",
+  "fr":"accr�ditation",
+  "en":"accreditation",
+  "de":"Akkreditierung",
+  "es":"acreditaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6544",
+  "fr":"accumuler",
+  "en":"to accrue",
+  "de":"anfallen",
+  "es":"acumular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6545",
+  "fr":"acerbe",
+  "en":"acerbic",
+  "de":"scharf",
+  "es":"acerbo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6546",
+  "fr":"acquiescer",
+  "en":"to acquiesce",
+  "de":"einwilligen",
+  "es":"consentir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6547",
+  "fr":"acquiescement",
+  "en":"acquiescence",
+  "de":"Zustimmung",
+  "es":"aquiescencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6548",
+  "fr":"acquitter",
+  "en":"to acquit",
+  "de":"freisprechen",
+  "es":"absolver",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6549",
+  "fr":"acrimonieux",
+  "en":"acrimonious",
+  "de":"bitter",
+  "es":"acrimonioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6550",
+  "fr":"acrimonie",
+  "en":"acrimony",
+  "de":"Erbitterung",
+  "es":"acritud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6551",
+  "fr":"acuit�",
+  "en":"acuity",
+  "de":"Sch�rfe",
+  "es":"agudeza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6552",
+  "fr":"perspicacit�",
+  "en":"acumen",
+  "de":"Scharfsinn",
+  "es":"perspicacia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6553",
+  "fr":"adage",
+  "en":"adage",
+  "de":"Sprichwort",
+  "es":"adagio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6554",
+  "fr":"inflexible",
+  "en":"adamant",
+  "de":"unnachgiebig",
+  "es":"firme",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6555",
+  "fr":"adh�sion",
+  "en":"adherence",
+  "de":"Festhalten",
+  "es":"adherencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6556",
+  "fr":"adh�rent",
+  "en":"adherent",
+  "de":"Anh�nger",
+  "es":"partidario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6557",
+  "fr":"adjuration",
+  "en":"adjuration",
+  "de":"Beschw�rung",
+  "es":"adjuraci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6558",
+  "fr":"admission",
+  "en":"admittance",
+  "de":"Zutritt",
+  "es":"admisi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6559",
+  "fr":"r�primander",
+  "en":"to admonish",
+  "de":"ermahnen",
+  "es":"amonestar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6560",
+  "fr":"adroit",
+  "en":"adroit",
+  "de":"geschickt",
+  "es":"diestro",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6561",
+  "fr":"adulation",
+  "en":"adulation",
+  "de":"Schmeichelei",
+  "es":"adulaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6562",
+  "fr":"av�nement",
+  "en":"advent",
+  "de":"Aufkommen",
+  "es":"advenimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6563",
+  "fr":"adversaire",
+  "en":"adversary",
+  "de":"Gegner",
+  "es":"adversario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6564",
+  "fr":"adversit�",
+  "en":"adversity",
+  "de":"Ungl�ck",
+  "es":"adversidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6565",
+  "fr":"�gide",
+  "en":"aegis",
+  "de":"�gide",
+  "es":"�gida",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6566",
+  "fr":"affable",
+  "en":"affable",
+  "de":"umg�nglich",
+  "es":"afable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6567",
+  "fr":"affectation",
+  "en":"affectation",
+  "de":"Geziertheit",
+  "es":"afectaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6568",
+  "fr":"d�claration sous serment",
+  "en":"affidavit",
+  "de":"eidesstattliche Erkl�rung",
+  "es":"declaraci�n jurada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6569",
+  "fr":"affinit�",
+  "en":"affinity",
+  "de":"Affinit�t",
+  "es":"afinidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6570",
+  "fr":"affliction",
+  "en":"affliction",
+  "de":"Leiden",
+  "es":"aflicci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6571",
+  "fr":"alacrit�",
+  "en":"alacrity",
+  "de":"Eifer",
+  "es":"alacridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6572",
+  "fr":"bien que",
+  "en":"albeit",
+  "de":"obgleich",
+  "es":"aunque",
+  "type":"conjonction",
+  "level":"C2"
+},
+  {
+  "id":"word_6573",
+  "fr":"alchimie",
+  "en":"alchemy",
+  "de":"Alchemie",
+  "es":"alquimia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6574",
+  "fr":"all�geance",
+  "en":"allegiance",
+  "de":"Treue",
+  "es":"lealtad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6575",
+  "fr":"all�gorie",
+  "en":"allegory",
+  "de":"Allegorie",
+  "es":"alegor�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6576",
+  "fr":"soulager",
+  "en":"to alleviate",
+  "de":"lindern",
+  "es":"aliviar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6577",
+  "fr":"faire allusion",
+  "en":"to allude",
+  "de":"anspielen",
+  "es":"aludir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6578",
+  "fr":"allusion",
+  "en":"allusion",
+  "de":"Anspielung",
+  "es":"alusi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6579",
+  "fr":"distant",
+  "en":"aloof",
+  "de":"distanziert",
+  "es":"distante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6580",
+  "fr":"altercation",
+  "en":"altercation",
+  "de":"Auseinandersetzung",
+  "es":"altercado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6581",
+  "fr":"altruiste",
+  "en":"altruistic",
+  "de":"altruistisch",
+  "es":"altruista",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6582",
+  "fr":"amalgame",
+  "en":"amalgamation",
+  "de":"Zusammenschluss",
+  "es":"amalgama",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6583",
+  "fr":"ambigu�t�",
+  "en":"ambiguity",
+  "de":"Mehrdeutigkeit",
+  "es":"ambig�edad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6584",
+  "fr":"ambivalent",
+  "en":"ambivalent",
+  "de":"ambivalent",
+  "es":"ambivalente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6585",
+  "fr":"ambroisien",
+  "en":"ambrosial",
+  "de":"ambrosisch",
+  "es":"ambrosiano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6586",
+  "fr":"am�liorer",
+  "en":"to ameliorate",
+  "de":"verbessern",
+  "es":"mejorar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6587",
+  "fr":"dispos�",
+  "en":"amenable",
+  "de":"zug�nglich",
+  "es":"dispuesto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6588",
+  "fr":"anachronisme",
+  "en":"anachronism",
+  "de":"Anachronismus",
+  "es":"anacronismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6589",
+  "fr":"anachronique",
+  "en":"anachronistic",
+  "de":"anachronistisch",
+  "es":"anacr�nico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6590",
+  "fr":"analogue",
+  "en":"analogous",
+  "de":"analog",
+  "es":"an�logo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6591",
+  "fr":"anarchie",
+  "en":"anarchy",
+  "de":"Anarchie",
+  "es":"anarqu�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6592",
+  "fr":"anath�me",
+  "en":"anathema",
+  "de":"Gr�uel",
+  "es":"anatema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6593",
+  "fr":"anecdote",
+  "en":"anecdote",
+  "de":"Anekdote",
+  "es":"an�cdota",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6594",
+  "fr":"angoisse",
+  "en":"anguish",
+  "de":"Qual",
+  "es":"angustia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6595",
+  "fr":"animosit�",
+  "en":"animosity",
+  "de":"Feindseligkeit",
+  "es":"animosidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6596",
+  "fr":"inhumanité",
+  "en":"inhumanity",
+  "de":"Unmenschlichkeit",
+  "es":"inhumanidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6597",
+  "fr":"hostile",
+  "en":"inimical",
+  "de":"feindlich",
+  "es":"hostil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6598",
+  "fr":"inique",
+  "en":"iniquitous",
+  "de":"ungerecht",
+  "es":"inicuo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6599",
+  "fr":"injonction",
+  "en":"injunction",
+  "de":"einstweilige Verfügung",
+  "es":"mandato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6600",
+  "fr":"soupçon",
+  "en":"inkling",
+  "de":"Ahnung",
+  "es":"indicio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6601",
+  "fr":"inoffensif",
+  "en":"innocuous",
+  "de":"harmlos",
+  "es":"inocuo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6602",
+  "fr":"insinuation",
+  "en":"innuendo",
+  "de":"Anspielung",
+  "es":"insinuación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6603",
+  "fr":"innombrable",
+  "en":"innumerable",
+  "de":"unzählig",
+  "es":"innumerable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6604",
+  "fr":"inquisition",
+  "en":"inquisition",
+  "de":"Inquisition",
+  "es":"inquisición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6605",
+  "fr":"insatiable",
+  "en":"insatiable",
+  "de":"unersättlich",
+  "es":"insaciable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6606",
+  "fr":"impénétrable",
+  "en":"inscrutable",
+  "de":"unergründlich",
+  "es":"inescrutable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6607",
+  "fr":"insidieux",
+  "en":"insidious",
+  "de":"heimtückisch",
+  "es":"insidioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6608",
+  "fr":"insipide",
+  "en":"insipid",
+  "de":"fade",
+  "es":"insípido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6609",
+  "fr":"insolent",
+  "en":"insolent",
+  "de":"unverschämt",
+  "es":"insolente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6610",
+  "fr":"insoluble",
+  "en":"insoluble",
+  "de":"unlöslich",
+  "es":"insoluble",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6611",
+  "fr":"insouciant",
+  "en":"insouciant",
+  "de":"sorglos",
+  "es":"despreocupado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6612",
+  "fr":"instiguer",
+  "en":"to instigate",
+  "de":"anstiften",
+  "es":"instigar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6613",
+  "fr":"insurrection",
+  "en":"insurgency",
+  "de":"Aufstand",
+  "es":"insurgencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6614",
+  "fr":"insurmontable",
+  "en":"insurmountable",
+  "de":"unüberwindbar",
+  "es":"insuperable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6615",
+  "fr":"insurrection",
+  "en":"insurrection",
+  "de":"Aufstand",
+  "es":"insurrección",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6616",
+  "fr":"intelligentsia",
+  "en":"intelligentsia",
+  "de":"Intelligenzija",
+  "es":"intelectualidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6617",
+  "fr":"entre autres",
+  "en":"inter alia",
+  "de":"unter anderem",
+  "es":"entre otras cosas",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6618",
+  "fr":"intermède",
+  "en":"interlude",
+  "de":"Zwischenspiel",
+  "es":"interludio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6619",
+  "fr":"par intermittence",
+  "en":"intermittently",
+  "de":"mit Unterbrechungen",
+  "es":"intermitentemente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6620",
+  "fr":"intestine",
+  "en":"internecine",
+  "de":"mörderisch",
+  "es":"intestino",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6621",
+  "fr":"insinuation",
+  "en":"intimation",
+  "de":"Andeutung",
+  "es":"insinuación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6622",
+  "fr":"intimidation",
+  "en":"intimidation",
+  "de":"Einschüchterung",
+  "es":"intimidación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6623",
+  "fr":"intransigeance",
+  "en":"intransigence",
+  "de":"Unnachgiebigkeit",
+  "es":"intransigencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6624",
+  "fr":"intransigeant",
+  "en":"intransigent",
+  "de":"unnachgiebig",
+  "es":"intransigente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6625",
+  "fr":"intrépide",
+  "en":"intrepid",
+  "de":"unerschrocken",
+  "es":"intrépido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6626",
+  "fr":"intrinsèque",
+  "en":"intrinsic",
+  "de":"wesentlich",
+  "es":"intrínseco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6627",
+  "fr":"introspection",
+  "en":"introspection",
+  "de":"Selbstbeobachtung",
+  "es":"introspección",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6628",
+  "fr":"intrusif",
+  "en":"intrusive",
+  "de":"aufdringlich",
+  "es":"intrusivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6629",
+  "fr":"intuition",
+  "en":"intuition",
+  "de":"Intuition",
+  "es":"intuición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6630",
+  "fr":"inonder",
+  "en":"to inundate",
+  "de":"überschwemmen",
+  "es":"inundar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6631",
+  "fr":"invasif",
+  "en":"invasive",
+  "de":"invasiv",
+  "es":"invasivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6632",
+  "fr":"invective",
+  "en":"invective",
+  "de":"Schmähung",
+  "es":"invectiva",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6633",
+  "fr":"invétéré",
+  "en":"inveterate",
+  "de":"eingefleischt",
+  "es":"empedernido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6634",
+  "fr":"désobligeant",
+  "en":"invidious",
+  "de":"kränkend",
+  "es":"odioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6635",
+  "fr":"invocation",
+  "en":"invocation",
+  "de":"Beschwörung",
+  "es":"invocación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6636",
+  "fr":"iota",
+  "en":"iota",
+  "de":"Jota",
+  "es":"ápice",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6637",
+  "fr":"irascible",
+  "en":"irascible",
+  "de":"jähzornig",
+  "es":"irascible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6638",
+  "fr":"colère",
+  "en":"ire",
+  "de":"Zorn",
+  "es":"ira",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6639",
+  "fr":"irriter",
+  "en":"to irk",
+  "de":"ärgern",
+  "es":"irritar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6640",
+  "fr":"irréprochable",
+  "en":"irreproachable",
+  "de":"tadellos",
+  "es":"irreprochable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6641",
+  "fr":"irrévérencieux",
+  "en":"irreverent",
+  "de":"respektlos",
+  "es":"irreverente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6642",
+  "fr":"itinérant",
+  "en":"itinerant",
+  "de":"umherziehend",
+  "es":"itinerante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6643",
+  "fr":"itinéraire",
+  "en":"itinerary",
+  "de":"Reiseroute",
+  "es":"itinerario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6644",
+  "fr":"blasé",
+  "en":"jaded",
+  "de":"abgestumpft",
+  "es":"hastiado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6645",
+  "fr":"rassemblement",
+  "en":"jamboree",
+  "de":"Jamboree",
+  "es":"reunión festiva",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6646",
+  "fr":"jargon",
+  "en":"jargon",
+  "de":"Fachjargon",
+  "es":"jerga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6647",
+  "fr":"désabusé",
+  "en":"jaundiced",
+  "de":"voreingenommen",
+  "es":"prejuicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6648",
+  "fr":"escapade",
+  "en":"jaunt",
+  "de":"Ausflug",
+  "es":"excursión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6649",
+  "fr":"compromettre",
+  "en":"to jeopardise",
+  "de":"gefährden",
+  "es":"comprometer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6650",
+  "fr":"chauvinisme",
+  "en":"jingoism",
+  "de":"Chauvinismus",
+  "es":"chovinismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6651",
+  "fr":"jovial",
+  "en":"jocular",
+  "de":"scherzhaft",
+  "es":"jocoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6652",
+  "fr":"jovialité",
+  "en":"jocularity",
+  "de":"Scherzhaftigkeit",
+  "es":"jocosidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6653",
+  "fr":"compagnon",
+  "en":"journeyman",
+  "de":"Geselle",
+  "es":"oficial",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6654",
+  "fr":"joute",
+  "en":"joust",
+  "de":"Turnier",
+  "es":"justa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6655",
+  "fr":"jubilation",
+  "en":"jubilation",
+  "de":"Jubel",
+  "es":"júbilo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6656",
+  "fr":"jubilé",
+  "en":"jubilee",
+  "de":"Jubiläum",
+  "es":"jubileo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6657",
+  "fr":"judicieux",
+  "en":"judicious",
+  "de":"vernünftig",
+  "es":"juicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6658",
+  "fr":"mastodonte",
+  "en":"juggernaut",
+  "de":"Moloch",
+  "es":"gigante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6659",
+  "fr":"moment",
+  "en":"juncture",
+  "de":"Zeitpunkt",
+  "es":"coyuntura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6660",
+  "fr":"jurisprudence",
+  "en":"jurisprudence",
+  "de":"Rechtswissenschaft",
+  "es":"jurisprudencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6661",
+  "fr":"juriste",
+  "en":"jurist",
+  "de":"Jurist",
+  "es":"jurista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6662",
+  "fr":"juxtaposer",
+  "en":"to juxtapose",
+  "de":"nebeneinanderstellen",
+  "es":"yuxtaponer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6663",
+  "fr":"juxtaposition",
+  "en":"juxtaposition",
+  "de":"Gegenüberstellung",
+  "es":"yuxtaposición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6664",
+  "fr":"kaléidoscope",
+  "en":"kaleidoscope",
+  "de":"Kaleidoskop",
+  "es":"caleidoscopio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6665",
+  "fr":"connaissance",
+  "en":"ken",
+  "de":"Horizont",
+  "es":"conocimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6666",
+  "fr":"noyau",
+  "en":"kernel",
+  "de":"Kern",
+  "es":"núcleo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6667",
+  "fr":"thème principal",
+  "en":"keynote",
+  "de":"Grundgedanke",
+  "es":"tema central",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6668",
+  "fr":"allumer",
+  "en":"to kindle",
+  "de":"entfachen",
+  "es":"encender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6669",
+  "fr":"apparenté",
+  "en":"kindred",
+  "de":"Verwandtschaft",
+  "es":"afín",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6670",
+  "fr":"parenté",
+  "en":"kinship",
+  "de":"Verwandtschaft",
+  "es":"parentesco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6671",
+  "fr":"monticule",
+  "en":"knoll",
+  "de":"Hügel",
+  "es":"montículo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6672",
+  "fr":"félicitations",
+  "en":"kudos",
+  "de":"Anerkennung",
+  "es":"felicitaciones",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6673",
+  "fr":"labyrinthe",
+  "en":"labyrinth",
+  "de":"Labyrinth",
+  "es":"laberinto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6674",
+  "fr":"nonchalant",
+  "en":"lackadaisical",
+  "de":"lustlos",
+  "es":"apático",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6675",
+  "fr":"terne",
+  "en":"lacklustre",
+  "de":"glanzlos",
+  "es":"deslucido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6676",
+  "fr":"laconique",
+  "en":"laconic",
+  "de":"lakonisch",
+  "es":"lacónico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6677",
+  "fr":"traînard",
+  "en":"laggard",
+  "de":"Nachzügler",
+  "es":"rezagado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6678",
+  "fr":"fustiger",
+  "en":"to lambaste",
+  "de":"kritisieren",
+  "es":"criticar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6679",
+  "fr":"lamenter",
+  "en":"to lament",
+  "de":"klagen",
+  "es":"lamentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6680",
+  "fr":"lamentable",
+  "en":"lamentable",
+  "de":"bedauerlich",
+  "es":"lamentable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6681",
+  "fr":"satire",
+  "en":"lampoon",
+  "de":"Spottgedicht",
+  "es":"sátira",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6682",
+  "fr":"languissant",
+  "en":"languid",
+  "de":"träge",
+  "es":"lánguido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6683",
+  "fr":"languir",
+  "en":"to languish",
+  "de":"schmachten",
+  "es":"languidecer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6684",
+  "fr":"laps",
+  "en":"lapse",
+  "de":"Fehler",
+  "es":"lapso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6685",
+  "fr":"larcin",
+  "en":"larceny",
+  "de":"Diebstahl",
+  "es":"hurto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6686",
+  "fr":"largesse",
+  "en":"largesse",
+  "de":"Freigiebigkeit",
+  "es":"generosidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6687",
+  "fr":"latent",
+  "en":"latent",
+  "de":"latent",
+  "es":"latente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6688",
+  "fr":"latitude",
+  "en":"latitude",
+  "de":"Breitengrad",
+  "es":"latitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6689",
+  "fr":"louer",
+  "en":"to laud",
+  "de":"loben",
+  "es":"alabar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6690",
+  "fr":"louable",
+  "en":"laudable",
+  "de":"lobenswert",
+  "es":"loable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6691",
+  "fr":"lauréat",
+  "en":"laureate",
+  "de":"Preisträger",
+  "es":"laureado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6692",
+  "fr":"lutrin",
+  "en":"lectern",
+  "de":"Rednerpult",
+  "es":"atril",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6693",
+  "fr":"méfiant de",
+  "en":"leery of",
+  "de":"misstrauisch",
+  "es":"receloso de",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6694",
+  "fr":"marge",
+  "en":"leeway",
+  "de":"Spielraum",
+  "es":"margen",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6695",
+  "fr":"indulgent",
+  "en":"lenient",
+  "de":"nachsichtig",
+  "es":"indulgente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6696",
+  "fr":"léthargique",
+  "en":"lethargic",
+  "de":"lethargisch",
+  "es":"letárgico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6697",
+  "fr":"léthargie",
+  "en":"lethargy",
+  "de":"Lethargie",
+  "es":"letargo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6698",
+  "fr":"réfléchi",
+  "en":"level-headed",
+  "de":"besonnen",
+  "es":"sensato",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6699",
+  "fr":"légèreté",
+  "en":"levity",
+  "de":"Leichtsinn",
+  "es":"levedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6700",
+  "fr":"prélever",
+  "en":"to levy",
+  "de":"erheben",
+  "es":"recaudar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6701",
+  "fr":"lexique",
+  "en":"lexicon",
+  "de":"Lexikon",
+  "es":"léxico",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6702",
+  "fr":"liaison",
+  "en":"liaison",
+  "de":"Verbindung",
+  "es":"enlace",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6703",
+  "fr":"licencieux",
+  "en":"licentious",
+  "de":"ausschweifend",
+  "es":"licencioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6704",
+  "fr":"limbes",
+  "en":"limbo",
+  "de":"Schwebe",
+  "es":"limbo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6705",
+  "fr":"lignée",
+  "en":"lineage",
+  "de":"Abstammung",
+  "es":"linaje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6706",
+  "fr":"linguiste",
+  "en":"linguist",
+  "de":"Linguist",
+  "es":"lingüista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6707",
+  "fr":"liquider",
+  "en":"to liquidate",
+  "de":"liquidieren",
+  "es":"liquidar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6708",
+  "fr":"liquidation",
+  "en":"liquidation",
+  "de":"Liquidation",
+  "es":"liquidación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6709",
+  "fr":"litanie",
+  "en":"litany",
+  "de":"Litanei",
+  "es":"letanía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6710",
+  "fr":"plaideur",
+  "en":"litigant",
+  "de":"Streitpartei",
+  "es":"litigante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6711",
+  "fr":"procédurier",
+  "en":"litigious",
+  "de":"streitsüchtig",
+  "es":"litigioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6712",
+  "fr":"liturgie",
+  "en":"liturgy",
+  "de":"Liturgie",
+  "es":"liturgia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6713",
+  "fr":"détester",
+  "en":"to loathe",
+  "de":"verabscheuen",
+  "es":"odiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6714",
+  "fr":"longévité",
+  "en":"longevity",
+  "de":"Langlebigkeit",
+  "es":"longevidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6715",
+  "fr":"faille",
+  "en":"loophole",
+  "de":"Schlupfloch",
+  "es":"laguna",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6716",
+  "fr":"loquace",
+  "en":"loquacious",
+  "de":"geschwätzig",
+  "es":"locuaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6717",
+  "fr":"tradition",
+  "en":"lore",
+  "de":"Überlieferung",
+  "es":"tradición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6718",
+  "fr":"goujat",
+  "en":"lout",
+  "de":"Flegel",
+  "es":"patán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6719",
+  "fr":"lucide",
+  "en":"lucid",
+  "de":"klar",
+  "es":"lúcido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6720",
+  "fr":"ridicule",
+  "en":"ludicrous",
+  "de":"lächerlich",
+  "es":"absurdo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6721",
+  "fr":"lugubre",
+  "en":"lugubrious",
+  "de":"düster",
+  "es":"lúgubre",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6722",
+  "fr":"tiède",
+  "en":"lukewarm",
+  "de":"lauwarm",
+  "es":"tibio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6723",
+  "fr":"sommité",
+  "en":"luminary",
+  "de":"Koryphäe",
+  "es":"lumbrera",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6724",
+  "fr":"lumineux",
+  "en":"luminous",
+  "de":"leuchtend",
+  "es":"luminoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6725",
+  "fr":"lustre",
+  "en":"lustre",
+  "de":"Glanz",
+  "es":"lustre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6726",
+  "fr":"luxuriant",
+  "en":"luxuriant",
+  "de":"üppig",
+  "es":"exuberante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6727",
+  "fr":"machination",
+  "en":"machination",
+  "de":"Machenschaft",
+  "es":"maquinación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6728",
+  "fr":"machisme",
+  "en":"machismo",
+  "de":"Machismo",
+  "es":"machismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6729",
+  "fr":"macrocosme",
+  "en":"macrocosm",
+  "de":"Makrokosmos",
+  "es":"macrocosmos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6730",
+  "fr":"extravagant",
+  "en":"madcap",
+  "de":"verrückt",
+  "es":"alocado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6731",
+  "fr":"maelström",
+  "en":"maelstrom",
+  "de":"Mahlstrom",
+  "es":"vorágine",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6732",
+  "fr":"maestro",
+  "en":"maestro",
+  "de":"Maestro",
+  "es":"maestro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6733",
+  "fr":"magnanime",
+  "en":"magnanimous",
+  "de":"großmütig",
+  "es":"magnánimo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6734",
+  "fr":"magnat",
+  "en":"magnate",
+  "de":"Magnat",
+  "es":"magnate",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6735",
+  "fr":"pilier",
+  "en":"mainstay",
+  "de":"Stütze",
+  "es":"pilar",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6736",
+  "fr":"maladie",
+  "en":"malady",
+  "de":"Krankheit",
+  "es":"enfermedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6737",
+  "fr":"malaise",
+  "en":"malaise",
+  "de":"Unbehagen",
+  "es":"malestar",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6738",
+  "fr":"mécontent",
+  "en":"malcontent",
+  "de":"Unzufriedener",
+  "es":"descontento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6739",
+  "fr":"malveillant",
+  "en":"malevolent",
+  "de":"böswillig",
+  "es":"malévolo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6740",
+  "fr":"malversation",
+  "en":"malfeasance",
+  "de":"Fehlverhalten",
+  "es":"malversación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6741",
+  "fr":"malice",
+  "en":"malice",
+  "de":"Bosheit",
+  "es":"malicia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6742",
+  "fr":"diffamer",
+  "en":"to malign",
+  "de":"verleumden",
+  "es":"difamar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6743",
+  "fr":"malléable",
+  "en":"malleable",
+  "de":"formbar",
+  "es":"maleable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6744",
+  "fr":"malodorant",
+  "en":"malodorous",
+  "de":"übelriechend",
+  "es":"maloliente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6745",
+  "fr":"manifestation",
+  "en":"manifestation",
+  "de":"Manifestation",
+  "es":"manifestación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6746",
+  "fr":"maniérisme",
+  "en":"mannerism",
+  "de":"Manierismus",
+  "es":"amaneramiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6747",
+  "fr":"manoir",
+  "en":"manor",
+  "de":"Herrenhaus",
+  "es":"mansión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6748",
+  "fr":"manteau",
+  "en":"mantle",
+  "de":"Mantel",
+  "es":"manto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6749",
+  "fr":"maraudeur",
+  "en":"marauder",
+  "de":"Plünderer",
+  "es":"merodeador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6750",
+  "fr":"chapiteau",
+  "en":"marquee",
+  "de":"Festzelt",
+  "es":"marquesina",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6751",
+  "fr":"martyre",
+  "en":"martyrdom",
+  "de":"Märtyrertum",
+  "es":"martirio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6752",
+  "fr":"masochisme",
+  "en":"masochism",
+  "de":"Masochismus",
+  "es":"masoquismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6753",
+  "fr":"mascarade",
+  "en":"masquerade",
+  "de":"Maskerade",
+  "es":"mascarada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6754",
+  "fr":"matérialisme",
+  "en":"materialism",
+  "de":"Materialismus",
+  "es":"materialismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6755",
+  "fr":"matriarche",
+  "en":"matriarch",
+  "de":"Matriarchin",
+  "es":"matriarca",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6756",
+  "fr":"pleurnichard",
+  "en":"maudlin",
+  "de":"weinerlich",
+  "es":"llor�n",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6757",
+  "fr":"franc-tireur",
+  "en":"maverick",
+  "de":"Einzelg�nger",
+  "es":"disidente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6758",
+  "fr":"maxime",
+  "en":"maxim",
+  "de":"Maxime",
+  "es":"m�xima",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6759",
+  "fr":"chaos",
+  "en":"mayhem",
+  "de":"Chaos",
+  "es":"caos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6760",
+  "fr":"maigre",
+  "en":"meagre",
+  "de":"d�rftig",
+  "es":"magro",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6761",
+  "fr":"m�diateur",
+  "en":"mediator",
+  "de":"Vermittler",
+  "es":"mediador",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6762",
+  "fr":"m�diocrit�",
+  "en":"mediocrity",
+  "de":"Mittelm��igkeit",
+  "es":"mediocridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6763",
+  "fr":"m�galomanie",
+  "en":"megalomania",
+  "de":"Gr��enwahn",
+  "es":"megaloman�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6764",
+  "fr":"m�lancolie",
+  "en":"melancholy",
+  "de":"Melancholie",
+  "es":"melancol�a",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6765",
+  "fr":"m�l�e",
+  "en":"melee",
+  "de":"Handgemenge",
+  "es":"reyerta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6766",
+  "fr":"souvenir",
+  "en":"memento",
+  "de":"Andenken",
+  "es":"recuerdo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6767",
+  "fr":"objets de collection",
+  "en":"memorabilia",
+  "de":"Erinnerungsst�cke",
+  "es":"recuerdos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6768",
+  "fr":"mena�ant",
+  "en":"menacing",
+  "de":"bedrohlich",
+  "es":"amenazante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6769",
+  "fr":"mendace",
+  "en":"mendacious",
+  "de":"verlogen",
+  "es":"mendaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6770",
+  "fr":"mercenaire",
+  "en":"mercenary",
+  "de":"S�ldner",
+  "es":"mercenario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6771",
+  "fr":"m�ritocratie",
+  "en":"meritocracy",
+  "de":"Meritokratie",
+  "es":"meritocracia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6772",
+  "fr":"messie",
+  "en":"messiah",
+  "de":"Messias",
+  "es":"mes�as",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6773",
+  "fr":"m�tamorphose",
+  "en":"metamorphosis",
+  "de":"Metamorphose",
+  "es":"metamorfosis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6774",
+  "fr":"m�thodologie",
+  "en":"methodology",
+  "de":"Methodik",
+  "es":"metodolog�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6775",
+  "fr":"m�ticuleux",
+  "en":"meticulous",
+  "de":"sorgf�ltig",
+  "es":"meticuloso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6776",
+  "fr":"cran",
+  "en":"mettle",
+  "de":"Mut",
+  "es":"coraje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6777",
+  "fr":"microcosme",
+  "en":"microcosm",
+  "de":"Mikrokosmos",
+  "es":"microcosmos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6778",
+  "fr":"larbin",
+  "en":"minion",
+  "de":"Scherge",
+  "es":"secuaz",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6779",
+  "fr":"minuties",
+  "en":"minutiae",
+  "de":"Kleinigkeiten",
+  "es":"minucias",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6780",
+  "fr":"mirage",
+  "en":"mirage",
+  "de":"Fata Morgana",
+  "es":"espejismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6781",
+  "fr":"bourbier",
+  "en":"mire",
+  "de":"Sumpf",
+  "es":"cenagal",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6782",
+  "fr":"misanthrope",
+  "en":"misanthrope",
+  "de":"Misanthrop",
+  "es":"mis�ntropo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6783",
+  "fr":"espi�gle",
+  "en":"mischievous",
+  "de":"schelmisch",
+  "es":"travieso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6784",
+  "fr":"appr�hension",
+  "en":"misgiving",
+  "de":"Bedenken",
+  "es":"recelo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6785",
+  "fr":"m�saventure",
+  "en":"mishap",
+  "de":"Missgeschick",
+  "es":"percance",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6786",
+  "fr":"terme inappropri�",
+  "en":"misnomer",
+  "de":"Fehlbezeichnung",
+  "es":"nombre inapropiado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6787",
+  "fr":"misogynie",
+  "en":"misogyny",
+  "de":"Misogynie",
+  "es":"misoginia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6788",
+  "fr":"att�nuer",
+  "en":"mitigate",
+  "de":"mildern",
+  "es":"mitigar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6789",
+  "fr":"minimum",
+  "en":"modicum",
+  "de":"Mindestma�",
+  "es":"pizca",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6790",
+  "fr":"magnat",
+  "en":"mogul",
+  "de":"Mogul",
+  "es":"magnate",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6791",
+  "fr":"apaiser",
+  "en":"mollify",
+  "de":"bes�nftigen",
+  "es":"apaciguar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6792",
+  "fr":"surnom",
+  "en":"moniker",
+  "de":"Spitzname",
+  "es":"apodo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6793",
+  "fr":"monolithe",
+  "en":"monolith",
+  "de":"Monolith",
+  "es":"monolito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6794",
+  "fr":"monologue",
+  "en":"monologue",
+  "de":"Monolog",
+  "es":"mon�logo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6795",
+  "fr":"montage",
+  "en":"montage",
+  "de":"Montage",
+  "es":"montaje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6796",
+  "fr":"moratoire",
+  "en":"moratorium",
+  "de":"Moratorium",
+  "es":"moratoria",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6797",
+  "fr":"mordant",
+  "en":"mordant",
+  "de":"bei�end",
+  "es":"mordaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6798",
+  "fr":"morgue",
+  "en":"morgue",
+  "de":"Leichenschauhaus",
+  "es":"morgue",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6799",
+  "fr":"moribond",
+  "en":"moribund",
+  "de":"sterbend",
+  "es":"moribundo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6800",
+  "fr":"morose",
+  "en":"morose",
+  "de":"m�rrisch",
+  "es":"malhumorado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6801",
+  "fr":"mortel",
+  "en":"mortal",
+  "de":"sterblich",
+  "es":"mortal",
+  "type":"adjectif",
+  "level":"B2"
+},
+  {
+  "id":"word_6802",
+  "fr":"mortifiant",
+  "en":"mortifying",
+  "de":"besch�mend",
+  "es":"mortificante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6803",
+  "fr":"mosa�que",
+  "en":"mosaic",
+  "de":"Mosaik",
+  "es":"mosaico",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6804",
+  "fr":"�touffer",
+  "en":"muffle",
+  "de":"d�mpfen",
+  "es":"amortiguar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6805",
+  "fr":"multitude",
+  "en":"multitude",
+  "de":"Vielzahl",
+  "es":"multitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6806",
+  "fr":"banal",
+  "en":"mundane",
+  "de":"allt�glich",
+  "es":"mundano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6807",
+  "fr":"munificent",
+  "en":"munificent",
+  "de":"freigiebig",
+  "es":"munificente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6808",
+  "fr":"munition",
+  "en":"munition",
+  "de":"Munition",
+  "es":"munici�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6809",
+  "fr":"fresque",
+  "en":"mural",
+  "de":"Wandgem�lde",
+  "es":"mural",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6810",
+  "fr":"muable",
+  "en":"mutable",
+  "de":"ver�nderlich",
+  "es":"mutable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6811",
+  "fr":"myope",
+  "en":"myopic",
+  "de":"kurzsichtig",
+  "es":"miope",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6812",
+  "fr":"myriade",
+  "en":"myriad",
+  "de":"Myriade",
+  "es":"mir�ada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6813",
+  "fr":"mystique",
+  "en":"mystique",
+  "de":"Mystik",
+  "es":"m�stica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6814",
+  "fr":"nadir",
+  "en":"nadir",
+  "de":"Tiefpunkt",
+  "es":"nadir",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6815",
+  "fr":"harceler",
+  "en":"nag",
+  "de":"n�rgeln",
+  "es":"rega�ar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6816",
+  "fr":"na�vet�",
+  "en":"naivety",
+  "de":"Naivit�t",
+  "es":"ingenuidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6817",
+  "fr":"homonyme",
+  "en":"namesake",
+  "de":"Namensvetter",
+  "es":"hom�nimo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6818",
+  "fr":"narcissisme",
+  "en":"narcissism",
+  "de":"Narzissmus",
+  "es":"narcisismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6819",
+  "fr":"naissant",
+  "en":"nascent",
+  "de":"aufkommend",
+  "es":"naciente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6820",
+  "fr":"n�buleux",
+  "en":"nebulous",
+  "de":"nebul�s",
+  "es":"nebuloso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6821",
+  "fr":"n�faste",
+  "en":"nefarious",
+  "de":"schn�de",
+  "es":"nefasto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6822",
+  "fr":"n�gligence",
+  "en":"negligence",
+  "de":"Fahrl�ssigkeit",
+  "es":"negligencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6823",
+  "fr":"n�m�sis",
+  "en":"nemesis",
+  "de":"Erzfeind",
+  "es":"n�mesis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6824",
+  "fr":"n�ophyte",
+  "en":"neophyte",
+  "de":"Neophyt",
+  "es":"ne�fito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6825",
+  "fr":"n�potisme",
+  "en":"nepotism",
+  "de":"Vetternwirtschaft",
+  "es":"nepotismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6826",
+  "fr":"lien",
+  "en":"nexus",
+  "de":"Verbindung",
+  "es":"nexo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6827",
+  "fr":"nihilisme",
+  "en":"nihilism",
+  "de":"Nihilismus",
+  "es":"nihilismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6828",
+  "fr":"nirvana",
+  "en":"nirvana",
+  "de":"Nirwana",
+  "es":"nirvana",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6829",
+  "fr":"nomenclature",
+  "en":"nomenclature",
+  "de":"Nomenklatur",
+  "es":"nomenclatura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6830",
+  "fr":"nonchalance",
+  "en":"nonchalance",
+  "de":"L�ssigkeit",
+  "es":"despreocupaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6831",
+  "fr":"nonchalant",
+  "en":"nonchalant",
+  "de":"l�ssig",
+  "es":"despreocupado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6832",
+  "fr":"nullit�",
+  "en":"nonentity",
+  "de":"Niemand",
+  "es":"nulidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6833",
+  "fr":"notori�t�",
+  "en":"notoriety",
+  "de":"Ber�hmtheit",
+  "es":"notoriedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6834",
+  "fr":"novice",
+  "en":"novice",
+  "de":"Anf�nger",
+  "es":"novato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6835",
+  "fr":"nocif",
+  "en":"noxious",
+  "de":"sch�dlich",
+  "es":"nocivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6836",
+  "fr":"la nuance",
+  "en":"nuance",
+  "de":"die Nuance",
+  "es":"el matiz",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6837",
+  "fr":"le rustre",
+  "en":"oaf",
+  "de":"der Tölpel",
+  "es":"el zoquete",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6838",
+  "fr":"l\u0027oasis",
+  "en":"oasis",
+  "de":"die Oase",
+  "es":"el oasis",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_6839",
+  "fr":"obstiné",
+  "en":"obdurate",
+  "de":"halsstarrig",
+  "es":"obstinado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6840",
+  "fr":"obscurcir",
+  "en":"obfuscate",
+  "de":"verschleiern",
+  "es":"ofuscar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6841",
+  "fr":"l\u0027obscurcissement",
+  "en":"obfuscation",
+  "de":"die Verschleierung",
+  "es":"la ofuscación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6842",
+  "fr":"la notice nécrologique",
+  "en":"obituary",
+  "de":"der Nachruf",
+  "es":"el obituario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6843",
+  "fr":"anéantir",
+  "en":"obliterate",
+  "de":"auslöschen",
+  "es":"obliterar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6844",
+  "fr":"l\u0027oubli",
+  "en":"oblivion",
+  "de":"die Vergessenheit",
+  "es":"el olvido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6845",
+  "fr":"l\u0027obscénité",
+  "en":"obscenity",
+  "de":"die Obszönität",
+  "es":"la obscenidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6846",
+  "fr":"obscur",
+  "en":"obscure",
+  "de":"obskur",
+  "es":"oscuro",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6847",
+  "fr":"l\u0027obscurité",
+  "en":"obscurity",
+  "de":"die Dunkelheit",
+  "es":"la oscuridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6848",
+  "fr":"obséquieux",
+  "en":"obsequious",
+  "de":"unterwürfig",
+  "es":"obsequioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6849",
+  "fr":"le respect",
+  "en":"observance",
+  "de":"die Einhaltung",
+  "es":"la observancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6850",
+  "fr":"l\u0027obsolescence",
+  "en":"obsolescence",
+  "de":"die Obsoleszenz",
+  "es":"la obsolescencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6851",
+  "fr":"obsolète",
+  "en":"obsolete",
+  "de":"veraltet",
+  "es":"obsoleto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6852",
+  "fr":"obstiné",
+  "en":"obstinate",
+  "de":"eigensinnig",
+  "es":"obstinado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6853",
+  "fr":"bruyant",
+  "en":"obstreperous",
+  "de":"widerspenstig",
+  "es":"alborotador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6854",
+  "fr":"obtus",
+  "en":"obtuse",
+  "de":"stumpfsinnig",
+  "es":"obtuso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6855",
+  "fr":"obvier",
+  "en":"obviate",
+  "de":"zuvorkommen",
+  "es":"obviar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6856",
+  "fr":"l\u0027ode",
+  "en":"ode",
+  "de":"die Ode",
+  "es":"la oda",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6857",
+  "fr":"l\u0027odyssée",
+  "en":"odyssey",
+  "de":"die Odyssee",
+  "es":"la odisea",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6858",
+  "fr":"officieux",
+  "en":"officious",
+  "de":"aufdringlich",
+  "es":"oficioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6859",
+  "fr":"l\u0027oligarchie",
+  "en":"oligarchy",
+  "de":"die Oligarchie",
+  "es":"la oligarquía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6860",
+  "fr":"le présage",
+  "en":"omen",
+  "de":"das Omen",
+  "es":"el presagio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6861",
+  "fr":"de mauvais augure",
+  "en":"ominous",
+  "de":"unheilvoll",
+  "es":"ominoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6862",
+  "fr":"l\u0027omission",
+  "en":"omission",
+  "de":"die Auslassung",
+  "es":"la omisión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6863",
+  "fr":"l\u0027omnipotence",
+  "en":"omnipotence",
+  "de":"die Allmacht",
+  "es":"la omnipotencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6864",
+  "fr":"l\u0027omniscience",
+  "en":"omniscience",
+  "de":"die Allwissenheit",
+  "es":"la omnisciencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6865",
+  "fr":"onéreux",
+  "en":"onerous",
+  "de":"lästig",
+  "es":"oneroso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6866",
+  "fr":"le début",
+  "en":"onset",
+  "de":"der Beginn",
+  "es":"el inicio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6867",
+  "fr":"l\u0027assaut",
+  "en":"onslaught",
+  "de":"der Ansturm",
+  "es":"el ataque",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6868",
+  "fr":"le fardeau",
+  "en":"onus",
+  "de":"die Beweislast",
+  "es":"la responsabilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6869",
+  "fr":"l\u0027opacité",
+  "en":"opacity",
+  "de":"die Undurchsichtigkeit",
+  "es":"la opacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6870",
+  "fr":"opaque",
+  "en":"opaque",
+  "de":"undurchsichtig",
+  "es":"opaco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6871",
+  "fr":"opportuniste",
+  "en":"opportunistic",
+  "de":"opportunistisch",
+  "es":"oportunista",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6872",
+  "fr":"l\u0027opulence",
+  "en":"opulence",
+  "de":"die Opulenz",
+  "es":"la opulencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6873",
+  "fr":"opulent",
+  "en":"opulent",
+  "de":"opulent",
+  "es":"opulento",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6874",
+  "fr":"l\u0027oracle",
+  "en":"oracle",
+  "de":"das Orakel",
+  "es":"el oráculo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6875",
+  "fr":"l\u0027orateur",
+  "en":"orator",
+  "de":"der Redner",
+  "es":"el orador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6876",
+  "fr":"l\u0027éloquence",
+  "en":"oratory",
+  "de":"die Redekunst",
+  "es":"la oratoria",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6877",
+  "fr":"l\u0027épreuve",
+  "en":"ordeal",
+  "de":"die Zerreißprobe",
+  "es":"la terrible experiencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6878",
+  "fr":"l\u0027ordonnance",
+  "en":"ordinance",
+  "de":"die Verordnung",
+  "es":"la ordenanza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6879",
+  "fr":"orné",
+  "en":"ornate",
+  "de":"verziert",
+  "es":"ornamentado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6880",
+  "fr":"l\u0027orthodoxie",
+  "en":"orthodoxy",
+  "de":"die Orthodoxie",
+  "es":"la ortodoxia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6881",
+  "fr":"l\u0027oscillation",
+  "en":"oscillation",
+  "de":"die Schwingung",
+  "es":"la oscilación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6882",
+  "fr":"prétendu",
+  "en":"ostensible",
+  "de":"angeblich",
+  "es":"ostensible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6883",
+  "fr":"l\u0027ostentation",
+  "en":"ostentation",
+  "de":"die Zurschaustellung",
+  "es":"la ostentación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6884",
+  "fr":"ostentatoire",
+  "en":"ostentatious",
+  "de":"prahlerisch",
+  "es":"ostentoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6885",
+  "fr":"ostraciser",
+  "en":"ostracise",
+  "de":"ächten",
+  "es":"ostracizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6886",
+  "fr":"l\u0027ostracisme",
+  "en":"ostracism",
+  "de":"die Ächtung",
+  "es":"el ostracismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6887",
+  "fr":"évincer",
+  "en":"oust",
+  "de":"verdrängen",
+  "es":"derrocar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6888",
+  "fr":"l\u0027emporter sur",
+  "en":"outweigh",
+  "de":"überwiegen",
+  "es":"superar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6889",
+  "fr":"l\u0027ovation",
+  "en":"ovation",
+  "de":"die Ovation",
+  "es":"la ovación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6890",
+  "fr":"l\u0027omission",
+  "en":"oversight",
+  "de":"das Versehen",
+  "es":"el descuido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6891",
+  "fr":"outrecuidant",
+  "en":"overweening",
+  "de":"anmaßend",
+  "es":"presuntuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6892",
+  "fr":"l\u0027oxymore",
+  "en":"oxymoron",
+  "de":"das Oxymoron",
+  "es":"el oxímoron",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6893",
+  "fr":"le pacifisme",
+  "en":"pacifism",
+  "de":"der Pazifismus",
+  "es":"el pacifismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6894",
+  "fr":"pacifier",
+  "en":"pacify",
+  "de":"besänftigen",
+  "es":"pacificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6895",
+  "fr":"le spectacle",
+  "en":"pageant",
+  "de":"der Festzug",
+  "es":"el desfile",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6896",
+  "fr":"l\u0027apparat",
+  "en":"pageantry",
+  "de":"der Prunk",
+  "es":"la pompa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6897",
+  "fr":"minutieux",
+  "en":"painstaking",
+  "de":"sorgfältig",
+  "es":"esmerado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6898",
+  "fr":"appétissant",
+  "en":"palatable",
+  "de":"schmackhaft",
+  "es":"sabroso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6899",
+  "fr":"palatial",
+  "en":"palatial",
+  "de":"palastartig",
+  "es":"palaciego",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6900",
+  "fr":"le porteur",
+  "en":"pallbearer",
+  "de":"der Sargträger",
+  "es":"el portador del féretro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6901",
+  "fr":"pallier",
+  "en":"palliate",
+  "de":"lindern",
+  "es":"paliar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6902",
+  "fr":"pâle",
+  "en":"pallid",
+  "de":"blass",
+  "es":"pálido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6903",
+  "fr":"la pâleur",
+  "en":"pallor",
+  "de":"die Blässe",
+  "es":"la palidez",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6904",
+  "fr":"palpable",
+  "en":"palpable",
+  "de":"greifbar",
+  "es":"palpable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6905",
+  "fr":"la palpitation",
+  "en":"palpitation",
+  "de":"das Herzklopfen",
+  "es":"la palpitación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6906",
+  "fr":"dérisoire",
+  "en":"paltry",
+  "de":"armselig",
+  "es":"insignificante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_6907",
+  "fr":"dorloter",
+  "en":"pamper",
+  "de":"verwöhnen",
+  "es":"mimar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_6908",
+  "fr":"la panacée",
+  "en":"panacea",
+  "de":"das Allheilmittel",
+  "es":"la panacea",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6909",
+  "fr":"le panache",
+  "en":"panache",
+  "de":"das Flair",
+  "es":"el garbo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6910",
+  "fr":"le pandémonium",
+  "en":"pandemonium",
+  "de":"das Pandämonium",
+  "es":"el pandemónium",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6911",
+  "fr":"le serrement",
+  "en":"pang",
+  "de":"der Stich",
+  "es":"la punzada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6912",
+  "fr":"le panorama",
+  "en":"panorama",
+  "de":"das Panorama",
+  "es":"el panorama",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6913",
+  "fr":"la parabole",
+  "en":"parable",
+  "de":"das Gleichnis",
+  "es":"la parábola",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6914",
+  "fr":"le paradigme",
+  "en":"paradigm",
+  "de":"das Paradigma",
+  "es":"el paradigma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6915",
+  "fr":"le paradoxe",
+  "en":"paradox",
+  "de":"das Paradoxon",
+  "es":"el paradoja",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6916",
+  "de":"Paragon",
+  "level":"C2",
+  "type":"nom",
+  "en":"paragon",
+  "fr":"parangon",
+  "es":"paragón"
+},
+  {
+  "id":"word_6917",
+  "de":"höchste",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"paramount",
+  "fr":"primordial",
+  "es":"primordial"
+},
+  {
+  "id":"word_6918",
+  "de":"Utensilien",
+  "level":"C2",
+  "type":"nom",
+  "en":"paraphernalia",
+  "fr":"attirail",
+  "es":"parafernalia"
+},
+  {
+  "id":"word_6919",
+  "de":"Paria",
+  "level":"C2",
+  "type":"nom",
+  "en":"pariah",
+  "fr":"paria",
+  "es":"paria"
+},
+  {
+  "id":"word_6920",
+  "de":"Parität",
+  "level":"C2",
+  "type":"nom",
+  "en":"parity",
+  "fr":"parité",
+  "es":"paridad"
+},
+  {
+  "id":"word_6921",
+  "de":"Sprachgebrauch",
+  "level":"C2",
+  "type":"nom",
+  "en":"parlance",
+  "fr":"jargon",
+  "es":"jerga"
+},
+  {
+  "id":"word_6922",
+  "de":"provinziell",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"parochial",
+  "fr":"paroissial",
+  "es":"parroquial"
+},
+  {
+  "id":"word_6923",
+  "de":"Parodie",
+  "level":"C2",
+  "type":"nom",
+  "en":"parody",
+  "fr":"parodie",
+  "es":"parodia"
+},
+  {
+  "id":"word_6924",
+  "de":"sparsam",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"parsimonious",
+  "fr":"parcimonieux",
+  "es":"parsimonioso"
+},
+  {
+  "id":"word_6925",
+  "de":"Sparsamkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"parsimony",
+  "fr":"parcimonie",
+  "es":"parsimonia"
+},
+  {
+  "id":"word_6926",
+  "de":"Partisan",
+  "level":"C2",
+  "type":"nom",
+  "en":"partisan",
+  "fr":"partisan",
+  "es":"partidista"
+},
+  {
+  "id":"word_6927",
+  "de":"Parteilichkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"partisanship",
+  "fr":"partisanerie",
+  "es":"partidismo"
+},
+  {
+  "id":"word_6928",
+  "de":"offensichtlich",
+  "level":"C2",
+  "type":"adverbe",
+  "en":"patently",
+  "fr":"manifestement",
+  "es":"patentemente"
+},
+  {
+  "id":"word_6929",
+  "de":"Pathos",
+  "level":"C2",
+  "type":"nom",
+  "en":"pathos",
+  "fr":"pathos",
+  "es":"pathos"
+},
+  {
+  "id":"word_6930",
+  "de":"Patriarch",
+  "level":"C2",
+  "type":"nom",
+  "en":"patriarch",
+  "fr":"patriarche",
+  "es":"patriarca"
+},
+  {
+  "id":"word_6931",
+  "de":"Schirmherrschaft",
+  "level":"C2",
+  "type":"nom",
+  "en":"patronage",
+  "fr":"patronage",
+  "es":"patrocinio"
+},
+  {
+  "id":"word_6932",
+  "de":"Mangel",
+  "level":"C2",
+  "type":"nom",
+  "en":"paucity",
+  "fr":"pénurie",
+  "es":"escasez"
+},
+  {
+  "id":"word_6933",
+  "de":"Pavillon",
+  "level":"C2",
+  "type":"nom",
+  "en":"pavilion",
+  "fr":"pavillon",
+  "es":"pabellón"
+},
+  {
+  "id":"word_6934",
+  "de":"Pädagogik",
+  "level":"C2",
+  "type":"nom",
+  "en":"pedagogy",
+  "fr":"pédagogie",
+  "es":"pedagogía"
+},
+  {
+  "id":"word_6935",
+  "de":"Pedant",
+  "level":"C2",
+  "type":"nom",
+  "en":"pedant",
+  "fr":"pédant",
+  "es":"pedante"
+},
+  {
+  "id":"word_6936",
+  "de":"pedantisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pedantic",
+  "fr":"pédant",
+  "es":"pedante"
+},
+  {
+  "id":"word_6937",
+  "de":"Pedanterie",
+  "level":"C2",
+  "type":"nom",
+  "en":"pedantry",
+  "fr":"pédanterie",
+  "es":"pedantería"
+},
+  {
+  "id":"word_6938",
+  "de":"Podest",
+  "level":"C2",
+  "type":"nom",
+  "en":"pedestal",
+  "fr":"piédestal",
+  "es":"pedestal"
+},
+  {
+  "id":"word_6939",
+  "de":"Stammbaum",
+  "level":"C2",
+  "type":"nom",
+  "en":"pedigree",
+  "fr":"pedigree",
+  "es":"pedigrí"
+},
+  {
+  "id":"word_6940",
+  "de":"mürrisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"peevish",
+  "fr":"hargneux",
+  "es":"malhumorado"
+},
+  {
+  "id":"word_6941",
+  "de":"abwertend",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pejorative",
+  "fr":"péjoratif",
+  "es":"peyorativo"
+},
+  {
+  "id":"word_6942",
+  "de":"Vorliebe",
+  "level":"C2",
+  "type":"nom",
+  "en":"penchant",
+  "fr":"penchant",
+  "es":"inclinación"
+},
+  {
+  "id":"word_6943",
+  "de":"ausstehend",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pending",
+  "fr":"en attente",
+  "es":"pendiente"
+},
+  {
+  "id":"word_6944",
+  "de":"Reue",
+  "level":"C2",
+  "type":"nom",
+  "en":"penitence",
+  "fr":"pénitence",
+  "es":"penitencia"
+},
+  {
+  "id":"word_6945",
+  "de":"reumütig",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"penitent",
+  "fr":"pénitent",
+  "es":"penitente"
+},
+  {
+  "id":"word_6946",
+  "de":"Wimpel",
+  "level":"C2",
+  "type":"nom",
+  "en":"pennant",
+  "fr":"fanion",
+  "es":"banderín"
+},
+  {
+  "id":"word_6947",
+  "de":"nachdenklich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pensive",
+  "fr":"pensif",
+  "es":"pensativo"
+},
+  {
+  "id":"word_6948",
+  "de":"Armut",
+  "level":"C2",
+  "type":"nom",
+  "en":"penury",
+  "fr":"pénurie",
+  "es":"penuria"
+},
+  {
+  "id":"word_6949",
+  "de":"kategorisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"peremptory",
+  "fr":"péremptoire",
+  "es":"perentorio"
+},
+  {
+  "id":"word_6950",
+  "de":"mehrjährig",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"perennial",
+  "fr":"pérenne",
+  "es":"perenne"
+},
+  {
+  "id":"word_6951",
+  "de":"perfide",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"perfidious",
+  "fr":"perfide",
+  "es":"pérfido"
+},
+  {
+  "id":"word_6952",
+  "de":"oberflächlich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"perfunctory",
+  "fr":"superficiel",
+  "es":"superficial"
+},
+  {
+  "id":"word_6953",
+  "de":"Gefahr",
+  "level":"C2",
+  "type":"nom",
+  "en":"peril",
+  "fr":"péril",
+  "es":"peligro"
+},
+  {
+  "id":"word_6954",
+  "de":"gefährlich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"perilous",
+  "fr":"périlleux",
+  "es":"peligroso"
+},
+  {
+  "id":"word_6955",
+  "de":"Umfang",
+  "level":"C2",
+  "type":"nom",
+  "en":"perimeter",
+  "fr":"périmètre",
+  "es":"perímetro"
+},
+  {
+  "id":"word_6956",
+  "de":"Peripherie",
+  "level":"C2",
+  "type":"nom",
+  "en":"periphery",
+  "fr":"périphérie",
+  "es":"periferia"
+},
+  {
+  "id":"word_6957",
+  "de":"Meineidiger",
+  "level":"C2",
+  "type":"nom",
+  "en":"perjurer",
+  "fr":"parjure",
+  "es":"perjuro"
+},
+  {
+  "id":"word_6958",
+  "de":"Meineid",
+  "level":"C2",
+  "type":"nom",
+  "en":"perjury",
+  "fr":"parjure",
+  "es":"perjurio"
+},
+  {
+  "id":"word_6959",
+  "de":"Beständigkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"permanence",
+  "fr":"permanence",
+  "es":"permanencia"
+},
+  {
+  "id":"word_6960",
+  "de":"durchdringen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"permeate",
+  "fr":"imprégner",
+  "es":"impregnar"
+},
+  {
+  "id":"word_6961",
+  "de":"Permutation",
+  "level":"C2",
+  "type":"nom",
+  "en":"permutation",
+  "fr":"permutation",
+  "es":"permutación"
+},
+  {
+  "id":"word_6962",
+  "de":"verderblich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pernicious",
+  "fr":"pernicieux",
+  "es":"pernicioso"
+},
+  {
+  "id":"word_6963",
+  "de":"Täter",
+  "level":"C2",
+  "type":"nom",
+  "en":"perpetrator",
+  "fr":"auteur",
+  "es":"autor"
+},
+  {
+  "id":"word_6964",
+  "de":"ewig",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"perpetual",
+  "fr":"perpétuel",
+  "es":"perpetuo"
+},
+  {
+  "id":"word_6965",
+  "de":"verewigen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"perpetuate",
+  "fr":"perpétuer",
+  "es":"perpetuar"
+},
+  {
+  "id":"word_6966",
+  "de":"Ratlosigkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"perplexity",
+  "fr":"perplexité",
+  "es":"perplejidad"
+},
+  {
+  "id":"word_6967",
+  "de":"verfolgen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"persecute",
+  "fr":"persécuter",
+  "es":"perseguir"
+},
+  {
+  "id":"word_6968",
+  "de":"Ausdauer",
+  "level":"C2",
+  "type":"nom",
+  "en":"perseverance",
+  "fr":"persévérance",
+  "es":"perseverancia"
+},
+  {
+  "id":"word_6969",
+  "de":"scharfsinnig",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"perspicacious",
+  "fr":"perspicace",
+  "es":"perspicaz"
+},
+  {
+  "id":"word_6970",
+  "de":"beunruhigt",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"perturbed",
+  "fr":"perturbé",
+  "es":"perturbado"
+},
+  {
+  "id":"word_6971",
+  "de":"durchlesen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"peruse",
+  "fr":"parcourir",
+  "es":"leer detenidamente"
+},
+  {
+  "id":"word_6972",
+  "de":"durchdringen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"pervade",
+  "fr":"imprégner",
+  "es":"impregnar"
+},
+  {
+  "id":"word_6973",
+  "de":"allgegenwärtig",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pervasive",
+  "fr":"omniprésent",
+  "es":"omnipresente"
+},
+  {
+  "id":"word_6974",
+  "de":"pervertieren",
+  "level":"C2",
+  "type":"verbe",
+  "en":"pervert",
+  "fr":"pervertir",
+  "es":"pervertir"
+},
+  {
+  "id":"word_6975",
+  "de":"Pessimismus",
+  "level":"C2",
+  "type":"nom",
+  "en":"pessimism",
+  "fr":"pessimisme",
+  "es":"pesimismo"
+},
+  {
+  "id":"word_6976",
+  "de":"launisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"petulant",
+  "fr":"pétulant",
+  "es":"petulante"
+},
+  {
+  "id":"word_6977",
+  "de":"philanthropisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"philanthropic",
+  "fr":"philanthropique",
+  "es":"filantrópico"
+},
+  {
+  "id":"word_6978",
+  "de":"Philanthrop",
+  "level":"C2",
+  "type":"nom",
+  "en":"philanthropist",
+  "fr":"philanthrope",
+  "es":"filántropo"
+},
+  {
+  "id":"word_6979",
+  "de":"Banause",
+  "level":"C2",
+  "type":"nom",
+  "en":"philistine",
+  "fr":"béotien",
+  "es":"filisteo"
+},
+  {
+  "id":"word_6980",
+  "de":"phlegmatisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"phlegmatic",
+  "fr":"flegmatique",
+  "es":"flemático"
+},
+  {
+  "id":"word_6981",
+  "de":"Phönix",
+  "level":"C2",
+  "type":"nom",
+  "en":"phoenix",
+  "fr":"phénix",
+  "es":"fénix"
+},
+  {
+  "id":"word_6982",
+  "de":"Frömmigkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"piety",
+  "fr":"piété",
+  "es":"piedad"
+},
+  {
+  "id":"word_6983",
+  "de":"plündern",
+  "level":"C2",
+  "type":"verbe",
+  "en":"pillage",
+  "fr":"piller",
+  "es":"saquear"
+},
+  {
+  "id":"word_6984",
+  "de":"Gipfel",
+  "level":"C2",
+  "type":"nom",
+  "en":"pinnacle",
+  "fr":"apogée",
+  "es":"cúspide"
+},
+  {
+  "id":"word_6985",
+  "de":"bahnbrechend",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pioneering",
+  "fr":"pionnier",
+  "es":"pionero"
+},
+  {
+  "id":"word_6986",
+  "de":"fromm",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pious",
+  "fr":"pieux",
+  "es":"piadoso"
+},
+  {
+  "id":"word_6987",
+  "de":"Ärger",
+  "level":"C2",
+  "type":"nom",
+  "en":"pique",
+  "fr":"dépit",
+  "es":"resentimiento"
+},
+  {
+  "id":"word_6988",
+  "de":"Piraterie",
+  "level":"C2",
+  "type":"nom",
+  "en":"piracy",
+  "fr":"piraterie",
+  "es":"piratería"
+},
+  {
+  "id":"word_6989",
+  "de":"Falle",
+  "level":"C2",
+  "type":"nom",
+  "en":"pitfall",
+  "fr":"piège",
+  "es":"escollo"
+},
+  {
+  "id":"word_6990",
+  "de":"prägnant",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"pithy",
+  "fr":"concis",
+  "es":"conciso"
+},
+  {
+  "id":"word_6991",
+  "de":"Almosen",
+  "level":"C2",
+  "type":"nom",
+  "en":"pittance",
+  "fr":"pitance",
+  "es":"miseria"
+},
+  {
+  "id":"word_6992",
+  "de":"beschwichtigen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"placate",
+  "fr":"apaiser",
+  "es":"aplacar"
+},
+  {
+  "id":"word_6993",
+  "de":"Placebo",
+  "level":"C2",
+  "type":"nom",
+  "en":"placebo",
+  "fr":"placebo",
+  "es":"placebo"
+},
+  {
+  "id":"word_6994",
+  "de":"gelassen",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"placid",
+  "fr":"placide",
+  "es":"plácido"
+},
+  {
+  "id":"word_6995",
+  "de":"Plagiat",
+  "level":"C2",
+  "type":"nom",
+  "en":"plagiarism",
+  "fr":"plagiat",
+  "es":"plagio"
+},
+  {
+  "id":"word_6996",
+  "fr":"le plaignant",
+  "en":"plaintiff",
+  "de":"der Kläger",
+  "es":"el demandante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6997",
+  "fr":"la plasticité",
+  "en":"plasticity",
+  "de":"die Plastizität",
+  "es":"la plasticidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6998",
+  "fr":"la platitude",
+  "en":"platitude",
+  "de":"die Binsenweisheit",
+  "es":"la platitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_6999",
+  "fr":"le dramaturge",
+  "en":"playwright",
+  "de":"der Dramatiker",
+  "es":"el dramaturgo",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7000",
+  "fr":"le plébiscite",
+  "en":"plebiscite",
+  "de":"die Volksabstimmung",
+  "es":"el plebiscito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7001",
+  "fr":"la pléthore",
+  "en":"plethora",
+  "de":"die Fülle",
+  "es":"la plétora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7002",
+  "fr":"la détresse",
+  "en":"plight",
+  "de":"die Notlage",
+  "es":"el apuro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7003",
+  "fr":"le stratagème",
+  "en":"ploy",
+  "de":"der Trick",
+  "es":"la estratagema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7004",
+  "fr":"piller",
+  "en":"to plunder",
+  "de":"plündern",
+  "es":"saquear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7005",
+  "fr":"le podium",
+  "en":"podium",
+  "de":"das Podium",
+  "es":"el podio",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7006",
+  "fr":"le caractère poignant",
+  "en":"poignancy",
+  "de":"die Eindringlichkeit",
+  "es":"la intensidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7007",
+  "fr":"poignant",
+  "en":"poignant",
+  "de":"ergreifend",
+  "es":"conmovedor",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7008",
+  "fr":"l\u0027assurance",
+  "en":"poise",
+  "de":"die Haltung",
+  "es":"el aplomo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7009",
+  "fr":"la polémique",
+  "en":"polemic",
+  "de":"die Polemik",
+  "es":"la polémica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7010",
+  "fr":"le polyglotte",
+  "en":"polyglot",
+  "de":"der Polyglott",
+  "es":"el políglota",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7011",
+  "fr":"le faste",
+  "en":"pomp",
+  "de":"der Pomp",
+  "es":"la pompa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7012",
+  "fr":"pompeux",
+  "en":"pompous",
+  "de":"pompös",
+  "es":"pomposo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7013",
+  "fr":"méditer",
+  "en":"to ponder",
+  "de":"nachdenken",
+  "es":"ponderar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7014",
+  "fr":"pesant",
+  "en":"ponderous",
+  "de":"schwerfällig",
+  "es":"pesado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7015",
+  "fr":"pontifier",
+  "en":"to pontificate",
+  "de":"schwadronieren",
+  "es":"pontificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7016",
+  "fr":"la populace",
+  "en":"populace",
+  "de":"die Bevölkerung",
+  "es":"el pueblo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7017",
+  "fr":"le populisme",
+  "en":"populism",
+  "de":"der Populismus",
+  "es":"el populismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7018",
+  "fr":"présager",
+  "en":"to portend",
+  "de":"voraussagen",
+  "es":"presagiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7019",
+  "fr":"le présage",
+  "en":"portent",
+  "de":"das Vorzeichen",
+  "es":"el presagio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7020",
+  "fr":"de mauvais augure",
+  "en":"portentous",
+  "de":"unheilvoll",
+  "es":"portentoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7021",
+  "fr":"la postérité",
+  "en":"posterity",
+  "de":"die Nachwelt",
+  "es":"la posteridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7022",
+  "fr":"posthume",
+  "en":"posthumous",
+  "de":"posthum",
+  "es":"póstumo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7023",
+  "fr":"l\u0027autopsie",
+  "en":"postmortem",
+  "de":"die Obduktion",
+  "es":"la autopsia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7024",
+  "fr":"postuler",
+  "en":"to postulate",
+  "de":"postulieren",
+  "es":"postular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7025",
+  "fr":"le pragmatisme",
+  "en":"pragmatism",
+  "de":"der Pragmatismus",
+  "es":"el pragmatismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7026",
+  "fr":"le pragmatique",
+  "en":"pragmatist",
+  "de":"der Pragmatiker",
+  "es":"el pragmático",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7027",
+  "fr":"le préambule",
+  "en":"preamble",
+  "de":"die Präambel",
+  "es":"el preámbulo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7028",
+  "fr":"précaire",
+  "en":"precarious",
+  "de":"prekär",
+  "es":"precario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7029",
+  "fr":"la préséance",
+  "en":"precedence",
+  "de":"der Vorrang",
+  "es":"la precedencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7030",
+  "fr":"le précipice",
+  "en":"precipice",
+  "de":"der Abgrund",
+  "es":"el precipicio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7031",
+  "fr":"précipiter",
+  "en":"to precipitate",
+  "de":"herbeiführen",
+  "es":"precipitar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7032",
+  "fr":"escarpé",
+  "en":"precipitous",
+  "de":"steil",
+  "es":"escarpado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7033",
+  "fr":"empêcher",
+  "en":"to preclude",
+  "de":"ausschließen",
+  "es":"impedir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7034",
+  "fr":"précoce",
+  "en":"precocious",
+  "de":"altklug",
+  "es":"precoz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7035",
+  "fr":"le précurseur",
+  "en":"precursor",
+  "de":"der Vorläufer",
+  "es":"el precursor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7036",
+  "fr":"la prédilection",
+  "en":"predilection",
+  "de":"die Vorliebe",
+  "es":"la predilección",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7037",
+  "fr":"la prédominance",
+  "en":"predominance",
+  "de":"die Vorherrschaft",
+  "es":"el predominio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7038",
+  "fr":"prééminent",
+  "en":"preeminent",
+  "de":"herausragend",
+  "es":"preeminente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7039",
+  "fr":"prévenir",
+  "en":"to preempt",
+  "de":"zuvorkommen",
+  "es":"prevenir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7040",
+  "fr":"le prélude",
+  "en":"prelude",
+  "de":"der Auftakt",
+  "es":"el preludio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7041",
+  "fr":"la prémonition",
+  "en":"premonition",
+  "de":"die Vorahnung",
+  "es":"la premonición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7042",
+  "fr":"la prépondérance",
+  "en":"preponderance",
+  "de":"das Überwiegen",
+  "es":"la preponderancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7043",
+  "fr":"absurde",
+  "en":"preposterous",
+  "de":"absurd",
+  "es":"absurdo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7044",
+  "fr":"la condition préalable",
+  "en":"prerequisite",
+  "de":"die Voraussetzung",
+  "es":"el prerrequisito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7045",
+  "fr":"la prérogative",
+  "en":"prerogative",
+  "de":"das Vorrecht",
+  "es":"la prerrogativa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7046",
+  "fr":"la présomption",
+  "en":"presumption",
+  "de":"die Vermutung",
+  "es":"la presunción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7047",
+  "fr":"présomptueux",
+  "en":"presumptuous",
+  "de":"anmaßend",
+  "es":"presuntuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7048",
+  "fr":"le faux-semblant",
+  "en":"pretence",
+  "de":"der Vorwand",
+  "es":"el pretexto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7049",
+  "fr":"le prétendant",
+  "en":"pretender",
+  "de":"der Thronanwärter",
+  "es":"el pretendiente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7050",
+  "fr":"prétentieux",
+  "en":"pretentious",
+  "de":"prätentiös",
+  "es":"pretencioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7051",
+  "fr":"le prétexte",
+  "en":"pretext",
+  "de":"der Vorwand",
+  "es":"el pretexto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7052",
+  "fr":"répandu",
+  "en":"prevalent",
+  "de":"vorherrschend",
+  "es":"predominante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7053",
+  "fr":"tergiverser",
+  "en":"to prevaricate",
+  "de":"ausweichen",
+  "es":"prevaricar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7054",
+  "fr":"la primauté",
+  "en":"primacy",
+  "de":"der Vorrang",
+  "es":"la primacía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7055",
+  "fr":"primitif",
+  "en":"primeval",
+  "de":"ursprünglich",
+  "es":"primigenio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7056",
+  "fr":"immaculé",
+  "en":"pristine",
+  "de":"makellos",
+  "es":"inmaculado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7057",
+  "fr":"la privation",
+  "en":"privation",
+  "de":"die Entbehrung",
+  "es":"la privación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7058",
+  "fr":"la probité",
+  "en":"probity",
+  "de":"die Rechtschaffenheit",
+  "es":"la probidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7059",
+  "fr":"la proclamation",
+  "en":"proclamation",
+  "de":"die Proklamation",
+  "es":"la proclamación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7060",
+  "fr":"la propension",
+  "en":"proclivity",
+  "de":"die Neigung",
+  "es":"la proclividad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7061",
+  "fr":"procrastiner",
+  "en":"to procrastinate",
+  "de":"aufschieben",
+  "es":"procrastinar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7062",
+  "fr":"procurer",
+  "en":"to procure",
+  "de":"beschaffen",
+  "es":"procurar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7063",
+  "fr":"l\u0027approvisionnement",
+  "en":"procurement",
+  "de":"die Beschaffung",
+  "es":"la adquisición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7064",
+  "fr":"prodigue",
+  "en":"prodigal",
+  "de":"verschwenderisch",
+  "es":"pródigo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7065",
+  "fr":"prodigieux",
+  "en":"prodigious",
+  "de":"erstaunlich",
+  "es":"prodigioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7066",
+  "fr":"le prodige",
+  "en":"prodigy",
+  "de":"das Wunderkind",
+  "es":"el prodigio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7067",
+  "fr":"profane",
+  "en":"profane",
+  "de":"profan",
+  "es":"profano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7068",
+  "fr":"le blasphème",
+  "en":"profanity",
+  "de":"die Obszönität",
+  "es":"la profanidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7069",
+  "fr":"professer",
+  "en":"to profess",
+  "de":"bekennen",
+  "es":"profesar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7070",
+  "fr":"offrir",
+  "en":"to proffer",
+  "de":"anbieten",
+  "es":"proferir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7071",
+  "fr":"la compétence",
+  "en":"proficiency",
+  "de":"das Können",
+  "es":"la competencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7072",
+  "fr":"dissolu",
+  "en":"profligate",
+  "de":"lasterhaft",
+  "es":"derrochador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7073",
+  "fr":"la profusion",
+  "en":"profusion",
+  "de":"die Fülle",
+  "es":"la profusión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7074",
+  "fr":"la progéniture",
+  "en":"progeny",
+  "de":"die Nachkommenschaft",
+  "es":"la progenie",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7075",
+  "fr":"le pronostic",
+  "en":"prognosis",
+  "de":"die Prognose",
+  "es":"el pronóstico",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7076",
+  "en":"prohibitive",
+  "fr":"prohibitif",
+  "de":"unerschwinglich",
+  "es":"prohibitivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7077",
+  "en":"proliferation",
+  "fr":"prolifération",
+  "de":"Verbreitung",
+  "es":"proliferación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7078",
+  "en":"prolific",
+  "fr":"prolifique",
+  "de":"produktiv",
+  "es":"prolífico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7079",
+  "en":"prologue",
+  "fr":"prologue",
+  "de":"Prolog",
+  "es":"prólogo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7080",
+  "en":"promiscuity",
+  "fr":"promiscuité",
+  "de":"Promiskuität",
+  "es":"promiscuidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7081",
+  "en":"propagandist",
+  "fr":"propagandiste",
+  "de":"Propagandist",
+  "es":"propagandista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7082",
+  "en":"propensity",
+  "fr":"propension",
+  "de":"Neigung",
+  "es":"propensión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7083",
+  "en":"prophecy",
+  "fr":"prophétie",
+  "de":"Prophezeiung",
+  "es":"profecía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7084",
+  "en":"propitious",
+  "fr":"propice",
+  "de":"günstig",
+  "es":"propicio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7085",
+  "en":"proponent",
+  "fr":"partisan",
+  "de":"Befürworter",
+  "es":"defensor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7086",
+  "en":"proprietor",
+  "fr":"propriétaire",
+  "de":"Eigentümer",
+  "es":"propietario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7087",
+  "en":"propriety",
+  "fr":"bienséance",
+  "de":"Anstand",
+  "es":"decoro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7088",
+  "en":"prosaic",
+  "fr":"prosaïque",
+  "de":"prosaisch",
+  "es":"prosaico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7089",
+  "en":"proscribe",
+  "fr":"proscrire",
+  "de":"ächten",
+  "es":"proscribir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7090",
+  "en":"protagonist",
+  "fr":"protagoniste",
+  "de":"Protagonist",
+  "es":"protagonista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7091",
+  "en":"prototype",
+  "fr":"prototype",
+  "de":"Prototyp",
+  "es":"prototipo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7092",
+  "en":"protract",
+  "fr":"prolonger",
+  "de":"in die Länge ziehen",
+  "es":"prolongar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7093",
+  "en":"protégé",
+  "fr":"protégé",
+  "de":"Schützling",
+  "es":"protegido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7094",
+  "en":"provenance",
+  "fr":"provenance",
+  "de":"Herkunft",
+  "es":"procedencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7095",
+  "en":"proverb",
+  "fr":"proverbe",
+  "de":"Sprichwort",
+  "es":"proverbio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7096",
+  "en":"providence",
+  "fr":"providence",
+  "de":"Vorsehung",
+  "es":"providencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7097",
+  "en":"proviso",
+  "fr":"condition",
+  "de":"Vorbehalt",
+  "es":"condición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7098",
+  "en":"prowess",
+  "fr":"prouesse",
+  "de":"Können",
+  "es":"destreza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7099",
+  "en":"proximity",
+  "fr":"proximité",
+  "de":"Nähe",
+  "es":"proximidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7100",
+  "en":"proxy",
+  "fr":"mandataire",
+  "de":"Stellvertreter",
+  "es":"apoderado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7101",
+  "en":"prudence",
+  "fr":"prudence",
+  "de":"Klugheit",
+  "es":"prudencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7102",
+  "en":"prudent",
+  "fr":"prudent",
+  "de":"umsichtig",
+  "es":"prudente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7103",
+  "en":"pseudonym",
+  "fr":"pseudonyme",
+  "de":"Pseudonym",
+  "es":"seudónimo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7104",
+  "en":"psyche",
+  "fr":"psyché",
+  "de":"Psyche",
+  "es":"psique",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7105",
+  "en":"puerile",
+  "fr":"puéril",
+  "de":"kindisch",
+  "es":"pueril",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7106",
+  "en":"pugnacious",
+  "fr":"pugnace",
+  "de":"streitsüchtig",
+  "es":"pugnaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7107",
+  "en":"pulpit",
+  "fr":"chaire",
+  "de":"Kanzel",
+  "es":"púlpito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7108",
+  "en":"punctilious",
+  "fr":"pointilleux",
+  "de":"peinlich genau",
+  "es":"puntilloso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7109",
+  "en":"pundit",
+  "fr":"expert",
+  "de":"Experte",
+  "es":"experto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7110",
+  "en":"pungency",
+  "fr":"piquant",
+  "de":"Schärfe",
+  "es":"picor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7111",
+  "en":"pungent",
+  "fr":"âcre",
+  "de":"stechend",
+  "es":"acre",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7112",
+  "en":"purge",
+  "fr":"purge",
+  "de":"Säuberung",
+  "es":"purga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7113",
+  "en":"purist",
+  "fr":"puriste",
+  "de":"Purist",
+  "es":"purista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7114",
+  "en":"purport",
+  "fr":"prétendre",
+  "de":"vorgeben",
+  "es":"pretender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7115",
+  "en":"purveyor",
+  "fr":"pourvoyeur",
+  "de":"Lieferant",
+  "es":"proveedor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7116",
+  "en":"pusillanimous",
+  "fr":"pusillanime",
+  "de":"kleinmütig",
+  "es":"pusilánime",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7117",
+  "en":"quack",
+  "fr":"charlatan",
+  "de":"Quacksalber",
+  "es":"charlatán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7118",
+  "en":"quadrant",
+  "fr":"quadrant",
+  "de":"Quadrant",
+  "es":"cuadrante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7119",
+  "en":"quagmire",
+  "fr":"bourbier",
+  "de":"Sumpf",
+  "es":"atolladero",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7120",
+  "en":"quaint",
+  "fr":"pittoresque",
+  "de":"malerisch",
+  "es":"pintoresco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7121",
+  "en":"qualm",
+  "fr":"scrupule",
+  "de":"Skrupel",
+  "es":"escrúpulo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7122",
+  "en":"quandary",
+  "fr":"dilemme",
+  "de":"Dilemma",
+  "es":"dilema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7123",
+  "en":"quarantine",
+  "fr":"quarantaine",
+  "de":"Quarantäne",
+  "es":"cuarentena",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7124",
+  "en":"quarry",
+  "fr":"carrière",
+  "de":"Steinbruch",
+  "es":"cantera",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7125",
+  "en":"quartet",
+  "fr":"quatuor",
+  "de":"Quartett",
+  "es":"cuarteto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7126",
+  "en":"quash",
+  "fr":"annuler",
+  "de":"aufheben",
+  "es":"anular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7127",
+  "en":"quaver",
+  "fr":"chevrotement",
+  "de":"Zittern",
+  "es":"temblor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7128",
+  "en":"quell",
+  "fr":"réprimer",
+  "de":"unterdrücken",
+  "es":"reprimir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7129",
+  "en":"querulous",
+  "fr":"querelleur",
+  "de":"mürrisch",
+  "es":"querelloso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7130",
+  "en":"quibble",
+  "fr":"argutie",
+  "de":"Wortklauberei",
+  "es":"quid",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7131",
+  "en":"quicksand",
+  "fr":"sables mouvants",
+  "de":"Treibsand",
+  "es":"arenas movedizas",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7132",
+  "en":"quiescent",
+  "fr":"quiescent",
+  "de":"ruhend",
+  "es":"quiescente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7133",
+  "en":"quintessence",
+  "fr":"quintessence",
+  "de":"Quintessenz",
+  "es":"quintaesencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7134",
+  "en":"quintessential",
+  "fr":"quintessentiel",
+  "de":"quintessenziell",
+  "es":"por excelencia",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7135",
+  "en":"quintet",
+  "fr":"quintette",
+  "de":"Quintett",
+  "es":"quinteto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7136",
+  "en":"quip",
+  "fr":"boutade",
+  "de":"Witz",
+  "es":"broma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7137",
+  "en":"quiver",
+  "fr":"carquois",
+  "de":"Köcher",
+  "es":"carcaj",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7138",
+  "en":"quixotic",
+  "fr":"chimérique",
+  "de":"donquichottisch",
+  "es":"quijotesco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7139",
+  "en":"quorum",
+  "fr":"quorum",
+  "de":"Quorum",
+  "es":"quórum",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7140",
+  "en":"rabble",
+  "fr":"populace",
+  "de":"Pöbel",
+  "es":"chusma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7141",
+  "en":"radiance",
+  "fr":"éclat",
+  "de":"Strahlen",
+  "es":"resplandor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7142",
+  "en":"radicalism",
+  "fr":"radicalisme",
+  "de":"Radikalismus",
+  "es":"radicalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7143",
+  "en":"rambunctious",
+  "fr":"turbulent",
+  "de":"ungebärdig",
+  "es":"bullicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7144",
+  "en":"ramification",
+  "fr":"ramification",
+  "de":"Auswirkung",
+  "es":"ramificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7145",
+  "en":"rancour",
+  "fr":"rancœur",
+  "de":"Groll",
+  "es":"rencor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7146",
+  "en":"ransom",
+  "fr":"rançon",
+  "de":"Lösegeld",
+  "es":"rescate",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7147",
+  "en":"rapacious",
+  "fr":"rapace",
+  "de":"habgierig",
+  "es":"rapaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7148",
+  "en":"rapacity",
+  "fr":"rapacité",
+  "de":"Habgier",
+  "es":"rapacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7149",
+  "en":"rapport",
+  "fr":"rapport",
+  "de":"Beziehung",
+  "es":"compenetración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7150",
+  "en":"rapture",
+  "fr":"ravissement",
+  "de":"Verzückung",
+  "es":"éxtasis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7151",
+  "en":"rascal",
+  "fr":"coquin",
+  "de":"Schlingel",
+  "es":"bribón",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7152",
+  "en":"rashness",
+  "fr":"témérité",
+  "de":"Leichtsinn",
+  "es":"temeridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7153",
+  "en":"ratification",
+  "fr":"ratification",
+  "de":"Ratifizierung",
+  "es":"ratificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7154",
+  "en":"ratify",
+  "fr":"ratifier",
+  "de":"ratifizieren",
+  "es":"ratificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7155",
+  "en":"rationale",
+  "fr":"logique",
+  "de":"Begründung",
+  "es":"lógica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7156",
+  "fr":"le rationalisme",
+  "en":"rationalism",
+  "de":"der Rationalismus",
+  "es":"el racionalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7157",
+  "fr":"bruyant",
+  "en":"raucous",
+  "de":"lärmend",
+  "es":"ruidoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7158",
+  "fr":"le ravage",
+  "en":"ravage",
+  "de":"die Verwüstung",
+  "es":"el estrago",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7159",
+  "fr":"le ravin",
+  "en":"ravine",
+  "de":"die Schlucht",
+  "es":"el barranco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7160",
+  "fr":"rejeter",
+  "en":"to rebuff",
+  "de":"zurückweisen",
+  "es":"rechazar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7161",
+  "fr":"réprimander",
+  "en":"to rebuke",
+  "de":"zurechtweisen",
+  "es":"reprender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7162",
+  "fr":"la réfutation",
+  "en":"rebuttal",
+  "de":"die Widerlegung",
+  "es":"la refutación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7163",
+  "fr":"la récalcitrance",
+  "en":"recalcitrance",
+  "de":"die Widerspenstigkeit",
+  "es":"la recalcitrancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7164",
+  "fr":"récalcitrant",
+  "en":"recalcitrant",
+  "de":"widerspenstig",
+  "es":"recalcitrante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7165",
+  "fr":"se rétracter",
+  "en":"to recant",
+  "de":"widerrufen",
+  "es":"retractarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7166",
+  "fr":"la récidive",
+  "en":"recidivism",
+  "de":"der Rückfall",
+  "es":"la reincidencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7167",
+  "fr":"réciproque",
+  "en":"reciprocal",
+  "de":"gegenseitig",
+  "es":"recíproco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7168",
+  "fr":"rendre la pareille",
+  "en":"to reciprocate",
+  "de":"erwidern",
+  "es":"corresponder",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7169",
+  "fr":"la réciprocité",
+  "en":"reciprocity",
+  "de":"die Gegenseitigkeit",
+  "es":"la reciprocidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7170",
+  "fr":"l\u0027imprudence",
+  "en":"recklessness",
+  "de":"die Rücksichtslosigkeit",
+  "es":"la imprudencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7171",
+  "fr":"la récupération",
+  "en":"reclamation",
+  "de":"die Rückgewinnung",
+  "es":"la recuperación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7172",
+  "fr":"le reclus",
+  "en":"recluse",
+  "de":"der Einsiedler",
+  "es":"el recluso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7173",
+  "fr":"solitaire",
+  "en":"reclusive",
+  "de":"zurückgezogen",
+  "es":"solitario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7174",
+  "fr":"réconcilier",
+  "en":"to reconcile",
+  "de":"versöhnen",
+  "es":"reconciliar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7175",
+  "fr":"abscons",
+  "en":"recondite",
+  "de":"abstrus",
+  "es":"recóndito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7176",
+  "fr":"la reconnaissance",
+  "en":"reconnaissance",
+  "de":"die Aufklärung",
+  "es":"el reconocimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7177",
+  "fr":"le recours",
+  "en":"recourse",
+  "de":"der Rückgriff",
+  "es":"el recurso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7178",
+  "fr":"la récrimination",
+  "en":"recrimination",
+  "de":"die gegenseitige Beschuldigung",
+  "es":"la recriminación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7179",
+  "fr":"la rectification",
+  "en":"rectification",
+  "de":"die Berichtigung",
+  "es":"la rectificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7180",
+  "fr":"rectifier",
+  "en":"to rectify",
+  "de":"berichtigen",
+  "es":"rectificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7181",
+  "fr":"la rectitude",
+  "en":"rectitude",
+  "de":"die Rechtschaffenheit",
+  "es":"la rectitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7182",
+  "fr":"racheter",
+  "en":"to redeem",
+  "de":"erlösen",
+  "es":"redimir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7183",
+  "fr":"la rédemption",
+  "en":"redemption",
+  "de":"die Erlösung",
+  "es":"la redención",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7184",
+  "fr":"la réparation",
+  "en":"redress",
+  "de":"die Wiedergutmachung",
+  "es":"la reparación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7185",
+  "fr":"la raffinerie",
+  "en":"refinery",
+  "de":"die Raffinerie",
+  "es":"la refinería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7186",
+  "fr":"la réformation",
+  "en":"reformation",
+  "de":"die Reformation",
+  "es":"la reformación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7187",
+  "fr":"réfractaire",
+  "en":"refractory",
+  "de":"widerspenstig",
+  "es":"refractario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7188",
+  "fr":"la réfutation",
+  "en":"refutation",
+  "de":"die Widerlegung",
+  "es":"la refutación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7189",
+  "fr":"réfuter",
+  "en":"to refute",
+  "de":"widerlegen",
+  "es":"refutar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7190",
+  "fr":"le régent",
+  "en":"regent",
+  "de":"der Regent",
+  "es":"el regente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7191",
+  "fr":"le registraire",
+  "en":"registrar",
+  "de":"der Standesbeamte",
+  "es":"el registrador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7192",
+  "fr":"la régression",
+  "en":"regression",
+  "de":"die Regression",
+  "es":"la regresión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7193",
+  "fr":"le remboursement",
+  "en":"reimbursement",
+  "de":"die Erstattung",
+  "es":"el reembolso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7194",
+  "fr":"la réincarnation",
+  "en":"reincarnation",
+  "de":"die Reinkarnation",
+  "es":"la reencarnación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7195",
+  "fr":"la réitération",
+  "en":"reiteration",
+  "de":"die Wiederholung",
+  "es":"la reiteración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7196",
+  "fr":"reléguer",
+  "en":"to relegate",
+  "de":"verbannen",
+  "es":"relegar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7197",
+  "fr":"la relégation",
+  "en":"relegation",
+  "de":"die Verbannung",
+  "es":"la relegación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7198",
+  "fr":"la relique",
+  "en":"relic",
+  "de":"das Relikt",
+  "es":"la reliquia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7199",
+  "fr":"abandonner",
+  "en":"to relinquish",
+  "de":"aufgeben",
+  "es":"renunciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7200",
+  "fr":"savourer",
+  "en":"to relish",
+  "de":"genießen",
+  "es":"disfrutar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7201",
+  "fr":"la réticence",
+  "en":"reluctance",
+  "de":"das Zögern",
+  "es":"la reticencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7202",
+  "fr":"le souvenir",
+  "en":"remembrance",
+  "de":"die Erinnerung",
+  "es":"el recuerdo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7203",
+  "fr":"évocateur",
+  "en":"reminiscent",
+  "de":"erinnernd",
+  "es":"evocador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7204",
+  "fr":"négligent",
+  "en":"remiss",
+  "de":"nachlässig",
+  "es":"negligente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7205",
+  "fr":"la rémission",
+  "en":"remission",
+  "de":"die Remission",
+  "es":"la remisión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7206",
+  "fr":"remettre",
+  "en":"to remit",
+  "de":"überweisen",
+  "es":"remitir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7207",
+  "fr":"le reste",
+  "en":"remnant",
+  "de":"der Überrest",
+  "es":"el remanente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7208",
+  "fr":"le remords",
+  "en":"remorse",
+  "de":"die Reue",
+  "es":"el remordimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7209",
+  "fr":"la rémunération",
+  "en":"remuneration",
+  "de":"die Vergütung",
+  "es":"la remuneración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7210",
+  "fr":"la renaissance",
+  "en":"renaissance",
+  "de":"die Renaissance",
+  "es":"el renacimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7211",
+  "fr":"l\u0027interprétation",
+  "en":"rendition",
+  "de":"die Interpretation",
+  "es":"la interpretación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7212",
+  "fr":"le renégat",
+  "en":"renegade",
+  "de":"der Abtrünnige",
+  "es":"el renegado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7213",
+  "fr":"revenir",
+  "en":"to renege",
+  "de":"wortbrüchig werden",
+  "es":"retractarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7214",
+  "fr":"renoncer",
+  "en":"to renounce",
+  "de":"verzichten",
+  "es":"renunciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7215",
+  "fr":"la renommée",
+  "en":"renown",
+  "de":"das Renommee",
+  "es":"el renombre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7216",
+  "fr":"la réparation",
+  "en":"reparation",
+  "de":"die Wiedergutmachung",
+  "es":"la reparación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7217",
+  "fr":"le rapatriement",
+  "en":"repatriation",
+  "de":"die Rückführung",
+  "es":"la repatriación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7218",
+  "fr":"abroger",
+  "en":"to repeal",
+  "de":"aufheben",
+  "es":"derogar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7219",
+  "fr":"la repentance",
+  "en":"repentance",
+  "de":"die Reue",
+  "es":"el arrepentimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7220",
+  "fr":"la répercussion",
+  "en":"repercussion",
+  "de":"die Auswirkung",
+  "es":"la repercusión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7221",
+  "fr":"le répertoire",
+  "en":"repertoire",
+  "de":"das Repertoire",
+  "es":"el repertorio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7222",
+  "fr":"réapprovisionner",
+  "en":"to replenish",
+  "de":"auffüllen",
+  "es":"reabastecer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7223",
+  "fr":"plein",
+  "en":"replete",
+  "de":"voll",
+  "es":"repleto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7224",
+  "fr":"le dépôt",
+  "en":"repository",
+  "de":"das Depot",
+  "es":"el repositorio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7225",
+  "fr":"répréhensible",
+  "en":"reprehensible",
+  "de":"verwerflich",
+  "es":"reprensible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7226",
+  "fr":"la répression",
+  "en":"repression",
+  "de":"die Unterdrückung",
+  "es":"la represión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7227",
+  "fr":"le sursis",
+  "en":"reprieve",
+  "de":"der Aufschub",
+  "es":"el indulto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7228",
+  "fr":"la réprimande / réprimander",
+  "en":"reprimand (n) / to reprimand (v)",
+  "de":"der Tadel / tadeln",
+  "es":"la reprimenda / reprender",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7229",
+  "fr":"les représailles",
+  "en":"reprisal",
+  "de":"die Vergeltung",
+  "es":"la represalia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7230",
+  "fr":"reprocher",
+  "en":"to reproach",
+  "de":"vorwerfen",
+  "es":"reprochar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7231",
+  "fr":"répudier",
+  "en":"to repudiate",
+  "de":"zurückweisen",
+  "es":"repudiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7232",
+  "fr":"la répudiation",
+  "en":"repudiation",
+  "de":"die Zurückweisung",
+  "es":"el repudio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7233",
+  "fr":"la répugnance",
+  "en":"repugnance",
+  "de":"der Widerwillen",
+  "es":"la repugnancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7234",
+  "fr":"répugnant",
+  "en":"repugnant",
+  "de":"widerlich",
+  "es":"repugnante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7235",
+  "fr":"la réputation",
+  "en":"repute",
+  "de":"der Ruf",
+  "es":"la reputación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7236",
+  "fr":"la condition requise",
+  "en":"the requisite",
+  "de":"die Voraussetzung",
+  "es":"el requisito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7237",
+  "fr":"la r�quisition",
+  "en":"the requisition",
+  "de":"die Anforderung",
+  "es":"la requisa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7238",
+  "fr":"rescinder",
+  "en":"to rescind",
+  "de":"aufheben",
+  "es":"rescindir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7239",
+  "fr":"r�siduel",
+  "en":"residual",
+  "de":"restlich",
+  "es":"residual",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7240",
+  "fr":"la r�silience",
+  "en":"the resilience",
+  "de":"die Widerstandsf�higkeit",
+  "es":"la resiliencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7241",
+  "fr":"r�silient",
+  "en":"resilient",
+  "de":"belastbar",
+  "es":"resiliente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7242",
+  "fr":"r�solu",
+  "en":"resolute",
+  "de":"entschlossen",
+  "es":"resoluto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7243",
+  "fr":"r�solument",
+  "en":"resolutely",
+  "de":"entschlossen",
+  "es":"resueltamente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7244",
+  "fr":"la r�sonance",
+  "en":"the resonance",
+  "de":"die Resonanz",
+  "es":"la resonancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7245",
+  "fr":"le r�pit",
+  "en":"the respite",
+  "de":"die Atempause",
+  "es":"el respiro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7246",
+  "fr":"resplendissant",
+  "en":"resplendent",
+  "de":"pr�chtig",
+  "es":"resplandeciente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7247",
+  "fr":"la restitution",
+  "en":"the restitution",
+  "de":"die R�ckerstattung",
+  "es":"la restituci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7248",
+  "fr":"r�tif",
+  "en":"restive",
+  "de":"unruhig",
+  "es":"rebelde",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7249",
+  "fr":"la r�surgence",
+  "en":"the resurgence",
+  "de":"das Wiederaufleben",
+  "es":"el resurgimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7250",
+  "fr":"la r�surrection",
+  "en":"the resurrection",
+  "de":"die Auferstehung",
+  "es":"la resurrecci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7251",
+  "fr":"riposter",
+  "en":"to retaliate",
+  "de":"sich r�chen",
+  "es":"tomar represalias",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7252",
+  "fr":"la r�ticence",
+  "en":"the reticence",
+  "de":"die Zur�ckhaltung",
+  "es":"la reticencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7253",
+  "fr":"r�ticent",
+  "en":"reticent",
+  "de":"zur�ckhaltend",
+  "es":"reticente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7254",
+  "fr":"la r�plique",
+  "en":"the retort",
+  "de":"die Erwiderung",
+  "es":"la r�plica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7255",
+  "fr":"se r�tracter",
+  "en":"to retract",
+  "de":"zur�ckziehen",
+  "es":"retractarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7256",
+  "fr":"la r�tractation",
+  "en":"the retraction",
+  "de":"der Widerruf",
+  "es":"la retractaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7257",
+  "fr":"le ch�timent",
+  "en":"the retribution",
+  "de":"die Vergeltung",
+  "es":"la retribuci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7258",
+  "fr":"la r�trospection",
+  "en":"the retrospection",
+  "de":"die R�ckschau",
+  "es":"la retrospecci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7259",
+  "fr":"les r�jouissances",
+  "en":"the revelry",
+  "de":"das Gelage",
+  "es":"el jolgorio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7260",
+  "fr":"la r�verb�ration",
+  "en":"the reverberation",
+  "de":"der Nachhall",
+  "es":"la reverberaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7261",
+  "fr":"v�n�rer",
+  "en":"to revere",
+  "de":"verehren",
+  "es":"venerar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7262",
+  "fr":"r�v�rencieux",
+  "en":"reverent",
+  "de":"ehrf�rchtig",
+  "es":"reverente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7263",
+  "fr":"r�v�rentiel",
+  "en":"reverential",
+  "de":"ehrf�rchtig",
+  "es":"reverencial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7264",
+  "fr":"la r�verie",
+  "en":"the reverie",
+  "de":"die Tr�umerei",
+  "es":"el ensue�o",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7265",
+  "fr":"le r�visionnisme",
+  "en":"the revisionism",
+  "de":"der Revisionismus",
+  "es":"el revisionismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7266",
+  "fr":"la r�vocation",
+  "en":"the revocation",
+  "de":"der Widerruf",
+  "es":"la revocaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7267",
+  "fr":"r�voquer",
+  "en":"to revoke",
+  "de":"widerrufen",
+  "es":"revocar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7268",
+  "fr":"la faille",
+  "en":"the rift",
+  "de":"der Riss",
+  "es":"la fisura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7269",
+  "fr":"la droiture",
+  "en":"the righteousness",
+  "de":"die Rechtschaffenheit",
+  "es":"la rectitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7270",
+  "fr":"les simagr�es",
+  "en":"the rigmarole",
+  "de":"der Zinnober",
+  "es":"el galimat�as",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7271",
+  "fr":"rigoureux",
+  "en":"rigorous",
+  "de":"streng",
+  "es":"riguroso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7272",
+  "fr":"la rigueur",
+  "en":"the rigour",
+  "de":"die Strenge",
+  "es":"el rigor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7273",
+  "fr":"le meneur",
+  "en":"the ringleader",
+  "de":"der R�delsf�hrer",
+  "es":"el cabecilla",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7274",
+  "fr":"le rite",
+  "en":"the rite",
+  "de":"der Ritus",
+  "es":"el rito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7275",
+  "fr":"le voyou",
+  "en":"the rogue",
+  "de":"der Schurke",
+  "es":"el p�caro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7276",
+  "fr":"la tribune",
+  "en":"the rostrum",
+  "de":"die Rednertrib�ne",
+  "es":"la tribuna",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7277",
+  "fr":"la d�route",
+  "en":"the rout",
+  "de":"die Flucht",
+  "es":"la derrota",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7278",
+  "fr":"la rubrique",
+  "en":"the rubric",
+  "de":"die Rubrik",
+  "es":"la r�brica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7279",
+  "fr":"le chahut",
+  "en":"the ruckus",
+  "de":"der Radau",
+  "es":"el alboroto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7280",
+  "fr":"le rudiment",
+  "en":"the rudiment",
+  "de":"der Ansatz",
+  "es":"el rudimento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7281",
+  "fr":"la ruine",
+  "en":"the ruination",
+  "de":"der Verfall",
+  "es":"la ruina",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7282",
+  "fr":"ruminer",
+  "en":"to ruminate",
+  "de":"gr�beln",
+  "es":"ruminar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7283",
+  "fr":"la rumination",
+  "en":"the rumination",
+  "de":"das Gr�beln",
+  "es":"la rumiaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7284",
+  "fr":"rompre",
+  "en":"to rupture",
+  "de":"rei�en",
+  "es":"romper",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7285",
+  "fr":"la ruse",
+  "en":"the ruse",
+  "de":"die List",
+  "es":"la treta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7286",
+  "fr":"le sabotage",
+  "en":"the sabotage",
+  "de":"die Sabotage",
+  "es":"el sabotaje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7287",
+  "fr":"le saboteur",
+  "en":"the saboteur",
+  "de":"der Saboteur",
+  "es":"el saboteador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7288",
+  "fr":"le sacril�ge",
+  "en":"the sacrilege",
+  "de":"das Sakrileg",
+  "es":"el sacrilegio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7289",
+  "fr":"sacrosaint",
+  "en":"sacrosanct",
+  "de":"unangetastet",
+  "es":"sacrosanto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7290",
+  "fr":"sauvegarder",
+  "en":"to safeguard",
+  "de":"sch�tzen",
+  "es":"salvaguardar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7291",
+  "fr":"la saga",
+  "en":"the saga",
+  "de":"die Saga",
+  "es":"la saga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7292",
+  "fr":"sagace",
+  "en":"sagacious",
+  "de":"scharfsinnig",
+  "es":"sagaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7293",
+  "fr":"le sage",
+  "en":"the sage",
+  "de":"der Weise",
+  "es":"el sabio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7294",
+  "fr":"la saintet�",
+  "en":"the sainthood",
+  "de":"die Heiligkeit",
+  "es":"la santidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7295",
+  "fr":"salace",
+  "en":"salacious",
+  "de":"schl�pfrig",
+  "es":"salaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7296",
+  "fr":"saillant",
+  "en":"salient",
+  "de":"hervorstechend",
+  "es":"destacado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7297",
+  "fr":"salubre",
+  "en":"salubrious",
+  "de":"heilbringend",
+  "es":"salubre",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7298",
+  "fr":"la salutation",
+  "en":"the salutation",
+  "de":"die Begr��ung",
+  "es":"el saludo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7299",
+  "fr":"le salut",
+  "en":"the salvation",
+  "de":"die Erl�sung",
+  "es":"la salvaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7300",
+  "fr":"moralisateur",
+  "en":"sanctimonious",
+  "de":"scheinheilig",
+  "es":"mojigato",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7301",
+  "fr":"la saintet�",
+  "en":"the sanctity",
+  "de":"die Heiligkeit",
+  "es":"la santidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7302",
+  "fr":"le sanctuaire",
+  "en":"the sanctuary",
+  "de":"das Heiligtum",
+  "es":"el santuario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7303",
+  "fr":"sanguin",
+  "en":"sanguine",
+  "de":"sanguinisch",
+  "es":"sangu�neo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7304",
+  "fr":"le sarcasme",
+  "en":"the sarcasm",
+  "de":"der Sarkasmus",
+  "es":"el sarcasmo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7305",
+  "fr":"sardonique",
+  "en":"sardonic",
+  "de":"sardonisch",
+  "es":"sard�nico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7306",
+  "fr":"rassasier",
+  "en":"to satiate",
+  "de":"s�ttigen",
+  "es":"saciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7307",
+  "fr":"la satire",
+  "en":"the satire",
+  "de":"die Satire",
+  "es":"la s�tira",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7308",
+  "fr":"le satiriste",
+  "en":"the satirist",
+  "de":"der Satiriker",
+  "es":"el satirista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7309",
+  "fr":"la sauvagerie",
+  "en":"the savagery",
+  "de":"die Wildheit",
+  "es":"el salvajismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7310",
+  "fr":"le savant",
+  "en":"the savant",
+  "de":"der Gelehrte",
+  "es":"el sabio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7311",
+  "fr":"l\u0027�chafaud",
+  "en":"the scaffold",
+  "de":"das Schafott",
+  "es":"el cadalso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7312",
+  "fr":"le bouc �missaire",
+  "en":"the scapegoat",
+  "de":"der S�ndenbock",
+  "es":"el chivo expiatorio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7313",
+  "fr":"la raret�",
+  "en":"the scarcity",
+  "de":"die Knappheit",
+  "es":"la escasez",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7314",
+  "fr":"cinglant",
+  "en":"scathing",
+  "de":"vernichtend",
+  "es":"mordaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7315",
+  "fr":"le schisme",
+  "en":"the schism",
+  "de":"das Schisma",
+  "es":"el cisma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7316",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7317",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7318",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7319",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7320",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7321",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7322",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7323",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7324",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7325",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7326",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7327",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7328",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7329",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7330",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7331",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7332",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7333",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7334",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7335",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7336",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7337",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7338",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7339",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7340",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7341",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7342",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7343",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7344",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7345",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7346",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7347",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7348",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7349",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7350",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7351",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7352",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7353",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7354",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7355",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7356",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7357",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7358",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7359",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7360",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7361",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7362",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7363",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7364",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7365",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7366",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7367",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7368",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7369",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7370",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7371",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7372",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7373",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7374",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7375",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7376",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7377",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7378",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7379",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7380",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7381",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7382",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7383",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7384",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7385",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7386",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7387",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7388",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7389",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7390",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7391",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7392",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7393",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7394",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7395",
+  "fr":"le mot",
+  "en":"the word",
+  "de":"das Wort",
+  "es":"la palabra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7396",
+  "en":"annihilation",
+  "fr":"annihilation",
+  "de":"Vernichtung",
+  "es":"aniquilación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7397",
+  "en":"annum",
+  "fr":"année",
+  "de":"Jahr",
+  "es":"año",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7398",
+  "en":"anomaly",
+  "fr":"anomalie",
+  "de":"Anomalie",
+  "es":"anomalía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7399",
+  "en":"antagonise",
+  "fr":"contrarier",
+  "de":"verärgern",
+  "es":"antagonizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7400",
+  "en":"antecedent",
+  "fr":"antécédent",
+  "de":"Vorläufer",
+  "es":"antecedente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7401",
+  "en":"antidote",
+  "fr":"antidote",
+  "de":"Gegengift",
+  "es":"antídoto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7402",
+  "en":"antipathy",
+  "fr":"antipathie",
+  "de":"Antipathie",
+  "es":"antipatía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7403",
+  "en":"antiquated",
+  "fr":"antiquaire",
+  "de":"veraltet",
+  "es":"anticuado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7404",
+  "en":"antiquity",
+  "fr":"antiquité",
+  "de":"Antike",
+  "es":"antigüedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7405",
+  "en":"antithesis",
+  "fr":"antithèse",
+  "de":"Antithese",
+  "es":"antítesis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7406",
+  "en":"apathetic",
+  "fr":"apathique",
+  "de":"apathisch",
+  "es":"apático",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7407",
+  "en":"aperture",
+  "fr":"ouverture",
+  "de":"Öffnung",
+  "es":"apertura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7408",
+  "en":"apex",
+  "fr":"sommet",
+  "de":"Spitze",
+  "es":"apogeo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7409",
+  "en":"aplomb",
+  "fr":"aplomb",
+  "de":"Souveränität",
+  "es":"aplomo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7410",
+  "en":"apostle",
+  "fr":"apôtre",
+  "de":"Apostel",
+  "es":"apóstol",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7411",
+  "en":"apparatus",
+  "fr":"appareil",
+  "de":"Apparat",
+  "es":"aparato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7412",
+  "en":"apparition",
+  "fr":"apparition",
+  "de":"Erscheinung",
+  "es":"aparición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7413",
+  "en":"appease",
+  "fr":"apaiser",
+  "de":"beschwichtigen",
+  "es":"apaciguar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7414",
+  "en":"appellation",
+  "fr":"appellation",
+  "de":"Bezeichnung",
+  "es":"apelación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7415",
+  "en":"apprehension",
+  "fr":"appréhension",
+  "de":"Besorgnis",
+  "es":"aprensión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7416",
+  "en":"apprehensive",
+  "fr":"appréhensif",
+  "de":"besorgt",
+  "es":"aprensivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7417",
+  "en":"aptitude",
+  "fr":"aptitude",
+  "de":"Begabung",
+  "es":"aptitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7418",
+  "en":"arbiter",
+  "fr":"arbitre",
+  "de":"Schiedsrichter",
+  "es":"árbitro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7419",
+  "en":"arcane",
+  "fr":"arcane",
+  "de":"geheimnisvoll",
+  "es":"arcano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7420",
+  "en":"archetype",
+  "fr":"archétype",
+  "de":"Archetyp",
+  "es":"arquetipo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7421",
+  "en":"archipelago",
+  "fr":"archipel",
+  "de":"Archipel",
+  "es":"archipiélago",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7422",
+  "en":"ardour",
+  "fr":"ardeur",
+  "de":"Inbrunst",
+  "es":"ardor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7423",
+  "en":"arduous",
+  "fr":"ardu",
+  "de":"mühsam",
+  "es":"arduo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7424",
+  "en":"arguably",
+  "fr":"discutablement",
+  "de":"wohl",
+  "es":"podría decirse",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7425",
+  "en":"armistice",
+  "fr":"armistice",
+  "de":"Waffenstillstand",
+  "es":"armisticio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7426",
+  "en":"arrogance",
+  "fr":"arrogance",
+  "de":"Arroganz",
+  "es":"arrogancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7427",
+  "en":"artifice",
+  "fr":"artifice",
+  "de":"Kunstgriff",
+  "es":"artificio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7428",
+  "en":"artisan",
+  "fr":"artisan",
+  "de":"Handwerker",
+  "es":"artesano",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7429",
+  "en":"ascendancy",
+  "fr":"ascendance",
+  "de":"Vormachtstellung",
+  "es":"ascendencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7430",
+  "en":"ascertain",
+  "fr":"constater",
+  "de":"feststellen",
+  "es":"cerciorarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7431",
+  "en":"aspersion",
+  "fr":"aspersion",
+  "de":"Verleumdung",
+  "es":"aspersión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7432",
+  "en":"assiduous",
+  "fr":"assidu",
+  "de":"fleißig",
+  "es":"asiduo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7433",
+  "en":"assuage",
+  "fr":"apaiser",
+  "de":"lindern",
+  "es":"mitigar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7434",
+  "en":"astute",
+  "fr":"astucieux",
+  "de":"scharfsinnig",
+  "es":"astuto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7435",
+  "en":"atone",
+  "fr":"expier",
+  "de":"sühnen",
+  "es":"expiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7436",
+  "en":"attrition",
+  "fr":"attrition",
+  "de":"Zermürbung",
+  "es":"desgaste",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7437",
+  "en":"audacity",
+  "fr":"audace",
+  "de":"Kühnheit",
+  "es":"audacia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7438",
+  "en":"augment",
+  "fr":"augmenter",
+  "de":"vermehren",
+  "es":"aumentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7439",
+  "en":"auspicious",
+  "fr":"favorable",
+  "de":"vielversprechend",
+  "es":"auspicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7440",
+  "en":"austere",
+  "fr":"austère",
+  "de":"streng",
+  "es":"austero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7441",
+  "en":"autocracy",
+  "fr":"autocratie",
+  "de":"Autokratie",
+  "es":"autocracia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7442",
+  "en":"autocrat",
+  "fr":"autocrate",
+  "de":"Autokrat",
+  "es":"autócrata",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7443",
+  "en":"avarice",
+  "fr":"avarice",
+  "de":"Habgier",
+  "es":"avaricia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7444",
+  "en":"aversion",
+  "fr":"aversion",
+  "de":"Abneigung",
+  "es":"aversión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7445",
+  "en":"axiom",
+  "fr":"axiome",
+  "de":"Axiom",
+  "es":"axioma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7446",
+  "en":"axiomatic",
+  "fr":"axiomatique",
+  "de":"axiomatisch",
+  "es":"axiomático",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7447",
+  "en":"backlash",
+  "fr":"retour de bâton",
+  "de":"Rückschlag",
+  "es":"reacción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7448",
+  "en":"baleful",
+  "fr":"funeste",
+  "de":"unheilvoll",
+  "es":"funesto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7449",
+  "en":"balk",
+  "fr":"rechigner",
+  "de":"zurückschrecken",
+  "es":"resistirse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7450",
+  "en":"ballast",
+  "fr":"ballast",
+  "de":"Ballast",
+  "es":"lastre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7451",
+  "en":"balm",
+  "fr":"baume",
+  "de":"Balsam",
+  "es":"bálsamo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7452",
+  "en":"banal",
+  "fr":"banal",
+  "de":"banal",
+  "es":"banal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7453",
+  "en":"bane",
+  "fr":"fléau",
+  "de":"Fluch",
+  "es":"ruina",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7454",
+  "en":"barrage",
+  "fr":"barrage",
+  "de":"Sperrfeuer",
+  "es":"bombardeo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7455",
+  "en":"bastion",
+  "fr":"bastion",
+  "de":"Bastion",
+  "es":"bastión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7456",
+  "en":"bear up",
+  "fr":"résister",
+  "de":"durchhalten",
+  "es":"soportar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7457",
+  "en":"bedlam",
+  "fr":"chahut",
+  "de":"Tollhaus",
+  "es":"caos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7458",
+  "en":"beguile",
+  "fr":"séduire",
+  "de":"betören",
+  "es":"engañar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7459",
+  "en":"behemoth",
+  "fr":"béhémoth",
+  "de":"Ungetüm",
+  "es":"gigante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7460",
+  "en":"beleaguer",
+  "fr":"assiéger",
+  "de":"belagern",
+  "es":"acosar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7461",
+  "en":"belie",
+  "fr":"démentir",
+  "de":"Lügen strafen",
+  "es":"desmentir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7462",
+  "en":"bellicose",
+  "fr":"belliqueux",
+  "de":"kriegerisch",
+  "es":"belicoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7463",
+  "en":"belligerent",
+  "fr":"belligérant",
+  "de":"streitlustig",
+  "es":"beligerante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7464",
+  "en":"bellwether",
+  "fr":"indicateur",
+  "de":"Leithammel",
+  "es":"indicador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7465",
+  "en":"bemoan",
+  "fr":"déplorer",
+  "de":"beklagen",
+  "es":"lamentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7466",
+  "en":"benefactor",
+  "fr":"bienfaiteur",
+  "de":"Wohltäter",
+  "es":"benefactor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7467",
+  "en":"benevolence",
+  "fr":"bienveillance",
+  "de":"Wohlwollen",
+  "es":"benevolencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7468",
+  "en":"benevolent",
+  "fr":"bienveillant",
+  "de":"gütig",
+  "es":"benevolente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7469",
+  "en":"bequeath",
+  "fr":"léguer",
+  "de":"vererben",
+  "es":"legar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7470",
+  "en":"bequest",
+  "fr":"legs",
+  "de":"Vermächtnis",
+  "es":"legado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7471",
+  "en":"berate",
+  "fr":"réprimander",
+  "de":"beschimpfen",
+  "es":"regañar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7472",
+  "en":"bereavement",
+  "fr":"deuil",
+  "de":"Trauerfall",
+  "es":"duelo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7473",
+  "en":"bereft",
+  "fr":"dépourvu",
+  "de":"beraubt",
+  "es":"desprovisto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7474",
+  "en":"beseech",
+  "fr":"implorer",
+  "de":"anflehen",
+  "es":"suplicar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7475",
+  "en":"beset",
+  "fr":"assaillir",
+  "de":"bedrängen",
+  "es":"acosar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7476",
+  "fr":"sp�cieux",
+  "en":"specious",
+  "de":"tr�gerisch",
+  "es":"especioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7477",
+  "fr":"le spectre",
+  "en":"the spectre",
+  "de":"das Gespenst",
+  "es":"el espectro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7478",
+  "fr":"le sp�culateur",
+  "en":"the speculator",
+  "de":"der Spekulant",
+  "es":"el especulador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7479",
+  "fr":"la vieille fille",
+  "en":"the spinster",
+  "de":"die alte Jungfer",
+  "es":"la solterona",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7480",
+  "fr":"la splendeur",
+  "en":"the splendour",
+  "de":"die Pracht",
+  "es":"el esplendor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7481",
+  "fr":"la spontan�it�",
+  "en":"the spontaneity",
+  "de":"die Spontanit�t",
+  "es":"la espontaneidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7482",
+  "fr":"l\u0027�talement",
+  "en":"the sprawl",
+  "de":"die Zersiedelung",
+  "es":"el desparrame",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7483",
+  "fr":"l\u0027�peron",
+  "en":"the spur",
+  "de":"der Sporn",
+  "es":"la espuela",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7484",
+  "fr":"fallacieux",
+  "en":"spurious",
+  "de":"fadenscheinig",
+  "es":"falso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7485",
+  "fr":"rejeter",
+  "en":"to spurn",
+  "de":"verschm�hen",
+  "es":"despreciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7486",
+  "fr":"l\u0027escadron",
+  "en":"the squadron",
+  "de":"das Geschwader",
+  "es":"el escuadr�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7487",
+  "fr":"sordide",
+  "en":"squalid",
+  "de":"schmutzig",
+  "es":"esqu�lido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7488",
+  "fr":"la mis�re",
+  "en":"the squalor",
+  "de":"der Schmutz",
+  "es":"la miseria",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7489",
+  "fr":"gaspiller",
+  "en":"to squander",
+  "de":"verschwenden",
+  "es":"despilfarrar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7490",
+  "fr":"stagnant",
+  "en":"stagnant",
+  "de":"stagnierend",
+  "es":"estancado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7491",
+  "fr":"pos�",
+  "en":"staid",
+  "de":"gesetzt",
+  "es":"serio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7492",
+  "fr":"l\u0027impasse",
+  "en":"the stalemate",
+  "de":"die Pattsituation",
+  "es":"el estancamiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7493",
+  "fr":"le pilier",
+  "en":"the stalwart",
+  "de":"der treue Anh�nger",
+  "es":"el partidario leal",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7494",
+  "fr":"l\u0027endurance",
+  "en":"the stamina",
+  "de":"die Ausdauer",
+  "es":"la resistencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7495",
+  "fr":"la d�bandade",
+  "en":"the stampede",
+  "de":"die Massenpanik",
+  "es":"la estampida",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7496",
+  "fr":"l\u0027impasse",
+  "en":"the standoff",
+  "de":"die Pattsituation",
+  "es":"el enfrentamiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7497",
+  "fr":"l\u0027arr�t",
+  "en":"the standstill",
+  "de":"der Stillstand",
+  "es":"la paralizaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7498",
+  "fr":"la strophe",
+  "en":"the stanza",
+  "de":"die Strophe",
+  "es":"la estrofa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7499",
+  "fr":"la stase",
+  "en":"the stasis",
+  "de":"der Stillstand",
+  "es":"la estasis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7500",
+  "fr":"majestueux",
+  "en":"stately",
+  "de":"stattlich",
+  "es":"majestuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7501",
+  "fr":"le talent politique",
+  "en":"the statesmanship",
+  "de":"die Staatskunst",
+  "es":"la habilidad pol�tica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7502",
+  "fr":"le statut",
+  "en":"the statute",
+  "de":"das Statut",
+  "es":"el estatuto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7503",
+  "fr":"fervent",
+  "en":"staunch",
+  "de":"entschieden",
+  "es":"firme",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7504",
+  "fr":"la fermet�",
+  "en":"the steadfastness",
+  "de":"die Standhaftigkeit",
+  "es":"la firmeza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7505",
+  "fr":"la furtivit�",
+  "en":"the stealth",
+  "de":"die Heimlichkeit",
+  "es":"el sigilo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7506",
+  "fr":"la puanteur",
+  "en":"the stench",
+  "de":"der Gestank",
+  "es":"el hedor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7507",
+  "fr":"l\u0027intendant",
+  "en":"the steward",
+  "de":"der Verwalter",
+  "es":"el administrador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7508",
+  "fr":"la gestion",
+  "en":"the stewardship",
+  "de":"die Verwaltung",
+  "es":"la gesti�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7509",
+  "fr":"le rigoriste",
+  "en":"the stickler",
+  "de":"der Pedant",
+  "es":"el perfeccionista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7510",
+  "fr":"�touffer",
+  "en":"to stifle",
+  "de":"ersticken",
+  "es":"sofocar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7511",
+  "fr":"le stigmate",
+  "en":"the stigma",
+  "de":"das Stigma",
+  "es":"el estigma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7512",
+  "fr":"la p�riode",
+  "en":"the stint",
+  "de":"die Zeit",
+  "es":"el per�odo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7513",
+  "fr":"stipuler",
+  "en":"to stipulate",
+  "de":"festlegen",
+  "es":"estipular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7514",
+  "fr":"sto�que",
+  "en":"stoic",
+  "de":"stoisch",
+  "es":"estoico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7515",
+  "fr":"le sto�cisme",
+  "en":"the stoicism",
+  "de":"der Stoizismus",
+  "es":"el estoicismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7516",
+  "fr":"impassible",
+  "en":"stolid",
+  "de":"leidenschaftslos",
+  "es":"impasible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7517",
+  "fr":"l\u0027exp�dient",
+  "en":"the stopgap",
+  "de":"die Notl�sung",
+  "es":"el parche",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7518",
+  "fr":"le passager clandestin",
+  "en":"the stowaway",
+  "de":"der blinde Passagier",
+  "es":"el poliz�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7519",
+  "fr":"le stratag�me",
+  "en":"the stratagem",
+  "de":"die List",
+  "es":"la estratagema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7520",
+  "fr":"le strat�ge",
+  "en":"the strategist",
+  "de":"der Stratege",
+  "es":"el estratega",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7521",
+  "fr":"la stratification",
+  "en":"the stratification",
+  "de":"die Schichtung",
+  "es":"la estratificaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7522",
+  "fr":"la strate",
+  "en":"the stratum",
+  "de":"die Schicht",
+  "es":"el estrato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7523",
+  "fr":"la restriction",
+  "en":"the stricture",
+  "de":"die Einschr�nkung",
+  "es":"la restricci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7524",
+  "fr":"strident",
+  "en":"strident",
+  "de":"schrill",
+  "es":"estridente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7525",
+  "fr":"le conflit",
+  "en":"the strife",
+  "de":"der Konflikt",
+  "es":"el conflicto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7526",
+  "fr":"la rigueur",
+  "en":"the stringency",
+  "de":"die Strenge",
+  "es":"la rigurosidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7527",
+  "fr":"strict",
+  "en":"stringent",
+  "de":"streng",
+  "es":"estricto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7528",
+  "fr":"le bastion",
+  "en":"the stronghold",
+  "de":"die Hochburg",
+  "es":"el basti�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7529",
+  "fr":"la stupeur",
+  "en":"the stupor",
+  "de":"der Stupor",
+  "es":"el estupor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7530",
+  "fr":"l\u0027inconscient",
+  "en":"the subconscious",
+  "de":"das Unterbewusstsein",
+  "es":"el subconsciente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7531",
+  "fr":"ma�triser",
+  "en":"to subdue",
+  "de":"unterwerfen",
+  "es":"someter",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7532",
+  "fr":"assujettir",
+  "en":"to subjugate",
+  "de":"unterjochen",
+  "es":"subyugar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7533",
+  "fr":"sublime",
+  "en":"sublime",
+  "de":"erhaben",
+  "es":"sublime",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7534",
+  "fr":"subordonn�",
+  "en":"subordinate",
+  "de":"untergeordnet",
+  "es":"subordinado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7535",
+  "fr":"la subordination",
+  "en":"the subordination",
+  "de":"die Unterordnung",
+  "es":"la subordinaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7536",
+  "fr":"l\u0027assignation � compara�tre",
+  "en":"the subpoena",
+  "de":"die Vorladung",
+  "es":"la citaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7537",
+  "fr":"la soumission",
+  "en":"the subservience",
+  "de":"die Unterw�rfigkeit",
+  "es":"la sumisi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7538",
+  "fr":"la subsistance",
+  "en":"the subsistence",
+  "de":"die Existenzgrundlage",
+  "es":"la subsistencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7539",
+  "fr":"corroborer",
+  "en":"to substantiate",
+  "de":"belegen",
+  "es":"sustanciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7540",
+  "fr":"la corroboration",
+  "en":"the substantiation",
+  "de":"die Best�tigung",
+  "es":"la corroboraci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7541",
+  "fr":"le subterfuge",
+  "en":"the subterfuge",
+  "de":"die Ausrede",
+  "es":"el subterfugio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7542",
+  "fr":"la subtilit�",
+  "en":"the subtlety",
+  "de":"die Feinheit",
+  "es":"la sutileza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7543",
+  "fr":"la subversion",
+  "en":"the subversion",
+  "de":"die Subversion",
+  "es":"la subversi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7544",
+  "fr":"subversif",
+  "en":"subversive",
+  "de":"subversiv",
+  "es":"subversivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7545",
+  "fr":"renverser",
+  "en":"to subvert",
+  "de":"untergraben",
+  "es":"subvertir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7546",
+  "fr":"succinct",
+  "en":"succinct",
+  "de":"pr�gnant",
+  "es":"sucinto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7547",
+  "fr":"succomber",
+  "en":"to succumb",
+  "de":"erliegen",
+  "es":"sucumbir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7548",
+  "fr":"la suffisance",
+  "en":"the sufficiency",
+  "de":"die Hinl�nglichkeit",
+  "es":"la suficiencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7549",
+  "fr":"le suffrage",
+  "en":"the suffrage",
+  "de":"das Wahlrecht",
+  "es":"el sufragio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7550",
+  "fr":"la suffragette",
+  "en":"the suffragette",
+  "de":"die Suffragette",
+  "es":"la sufragista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7551",
+  "fr":"maussade",
+  "en":"sullen",
+  "de":"m�rrisch",
+  "es":"hosco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7552",
+  "fr":"le r�sum�",
+  "en":"the summation",
+  "de":"die Zusammenfassung",
+  "es":"el resumen",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7553",
+  "fr":"la convocation",
+  "en":"the summons",
+  "de":"die Vorladung",
+  "es":"la citaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7554",
+  "fr":"somptueux",
+  "en":"sumptuous",
+  "de":"pr�chtig",
+  "es":"suntuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7555",
+  "fr":"superficiel",
+  "en":"superficial",
+  "de":"oberfl�chlich",
+  "es":"superficial",
+  "type":"adjectif",
+  "level":"B2"
+},
+  {
+  "id":"word_7556",
+  "fr":"superflu",
+  "en":"superfluous",
+  "de":"überflüssig",
+  "es":"superfluo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7557",
+  "fr":"remplacer",
+  "en":"to supersede",
+  "de":"ersetzen",
+  "es":"reemplazar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7558",
+  "fr":"superstition",
+  "en":"superstition",
+  "de":"Aberglaube",
+  "es":"superstición",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7559",
+  "fr":"couché sur le dos",
+  "en":"supine",
+  "de":"auf dem Rücken liegend",
+  "es":"supino",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7560",
+  "fr":"supplanter",
+  "en":"to supplant",
+  "de":"verdrängen",
+  "es":"suplantar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7561",
+  "fr":"souple",
+  "en":"supple",
+  "de":"geschmeidig",
+  "es":"flexible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7562",
+  "fr":"suprémaciste",
+  "en":"supremacist",
+  "de":"Rassist",
+  "es":"supremacista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7563",
+  "fr":"suprématie",
+  "en":"supremacy",
+  "de":"Vorherrschaft",
+  "es":"supremacía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7564",
+  "fr":"excès",
+  "en":"surfeit",
+  "de":"Übermaß",
+  "es":"exceso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7565",
+  "fr":"présumer",
+  "en":"to surmise",
+  "de":"vermuten",
+  "es":"suponer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7566",
+  "fr":"surmonter",
+  "en":"to surmount",
+  "de":"überwinden",
+  "es":"superar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7567",
+  "fr":"dépasser",
+  "en":"to surpass",
+  "de":"übertreffen",
+  "es":"superar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7568",
+  "fr":"subreptice",
+  "en":"surreptitious",
+  "de":"heimlich",
+  "es":"subrepticio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7569",
+  "fr":"substitut",
+  "en":"surrogate",
+  "de":"Ersatz",
+  "es":"sustituto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7570",
+  "fr":"sensibilité",
+  "en":"susceptibility",
+  "de":"Anfälligkeit",
+  "es":"susceptibilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7571",
+  "fr":"susceptible",
+  "en":"susceptible",
+  "de":"anfällig",
+  "es":"susceptible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7572",
+  "fr":"subsistance",
+  "en":"sustenance",
+  "de":"Nahrung",
+  "es":"sustento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7573",
+  "fr":"bande",
+  "en":"swathe",
+  "de":"Schwaden",
+  "es":"franja",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7574",
+  "fr":"escroquerie",
+  "en":"swindle",
+  "de":"Schwindel",
+  "es":"estafa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7575",
+  "fr":"sycophanterie",
+  "en":"sycophancy",
+  "de":"Kriecherei",
+  "es":"adulación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7576",
+  "fr":"sycophante",
+  "en":"sycophant",
+  "de":"Speichellecker",
+  "es":"adulador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7577",
+  "fr":"obséquieux",
+  "en":"sycophantic",
+  "de":"kriecherisch",
+  "es":"adulador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7578",
+  "fr":"programme",
+  "en":"syllabus",
+  "de":"Lehrplan",
+  "es":"plan de estudios",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7579",
+  "fr":"symbiose",
+  "en":"symbiosis",
+  "de":"Symbiose",
+  "es":"simbiosis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7580",
+  "fr":"symbolisme",
+  "en":"symbolism",
+  "de":"Symbolik",
+  "es":"simbolismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7581",
+  "fr":"symposium",
+  "en":"symposium",
+  "de":"Symposium",
+  "es":"simposio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7582",
+  "fr":"syndicat",
+  "en":"syndicate",
+  "de":"Syndikat",
+  "es":"sindicato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7583",
+  "fr":"synergie",
+  "en":"synergy",
+  "de":"Synergie",
+  "es":"sinergia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7584",
+  "fr":"synopsis",
+  "en":"synopsis",
+  "de":"Zusammenfassung",
+  "es":"sinopsis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7585",
+  "fr":"tableau",
+  "en":"tableau",
+  "de":"Tableau",
+  "es":"cuadro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7586",
+  "fr":"tabloïd",
+  "en":"tabloid",
+  "de":"Boulevardzeitung",
+  "es":"tabloide",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7587",
+  "fr":"tabou",
+  "en":"taboo",
+  "de":"Tabu",
+  "es":"tabú",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7588",
+  "fr":"tacite",
+  "en":"tacit",
+  "de":"stillschweigend",
+  "es":"tácito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7589",
+  "fr":"taciturne",
+  "en":"taciturn",
+  "de":"wortkarg",
+  "es":"taciturno",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7590",
+  "fr":"tact",
+  "en":"tact",
+  "de":"Taktgefühl",
+  "es":"tacto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7591",
+  "fr":"tacticien",
+  "en":"tactician",
+  "de":"Taktiker",
+  "es":"táctico",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7592",
+  "fr":"souillure",
+  "en":"taint",
+  "de":"Makel",
+  "es":"mancha",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7593",
+  "fr":"talisman",
+  "en":"talisman",
+  "de":"Talisman",
+  "es":"talismán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7594",
+  "fr":"tangentiel",
+  "en":"tangential",
+  "de":"tangential",
+  "es":"tangencial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7595",
+  "fr":"tangible",
+  "en":"tangible",
+  "de":"greifbar",
+  "es":"tangible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7596",
+  "fr":"équivalent",
+  "en":"tantamount",
+  "de":"gleichbedeutend",
+  "es":"equivalente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7597",
+  "fr":"crise de colère",
+  "en":"tantrum",
+  "de":"Wutanfall",
+  "es":"rabieta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7598",
+  "fr":"tarif",
+  "en":"tariff",
+  "de":"Tarif",
+  "es":"tarifa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7599",
+  "fr":"ternir",
+  "en":"to tarnish",
+  "de":"trüben",
+  "es":"manchar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7600",
+  "fr":"maître de corvée",
+  "en":"taskmaster",
+  "de":"Antreiber",
+  "es":"capataz",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7601",
+  "fr":"voyant",
+  "en":"tawdry",
+  "de":"geschmacklos",
+  "es":"llamativo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7602",
+  "fr":"fastidieux",
+  "en":"tedious",
+  "de":"mühsam",
+  "es":"tedioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7603",
+  "fr":"ennui",
+  "en":"tedium",
+  "de":"Langeweile",
+  "es":"tedio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7604",
+  "fr":"télépathie",
+  "en":"telepathy",
+  "de":"Telepathie",
+  "es":"telepatía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7605",
+  "fr":"témérité",
+  "en":"temerity",
+  "de":"Kühnheit",
+  "es":"temeridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7606",
+  "fr":"tempérament",
+  "en":"temperament",
+  "de":"Temperament",
+  "es":"temperamento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7607",
+  "fr":"tempérance",
+  "en":"temperance",
+  "de":"Mäßigung",
+  "es":"templanza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7608",
+  "fr":"tumultueux",
+  "en":"tempestuous",
+  "de":"stürmisch",
+  "es":"tempestuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7609",
+  "fr":"tempo",
+  "en":"tempo",
+  "de":"Tempo",
+  "es":"ritmo",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7610",
+  "fr":"temporel",
+  "en":"temporal",
+  "de":"zeitlich",
+  "es":"temporal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7611",
+  "fr":"tenace",
+  "en":"tenacious",
+  "de":"hartnäckig",
+  "es":"tenaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7612",
+  "fr":"ténacité",
+  "en":"tenacity",
+  "de":"Hartnäckigkeit",
+  "es":"tenacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7613",
+  "fr":"principe",
+  "en":"tenet",
+  "de":"Grundsatz",
+  "es":"dogma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7614",
+  "fr":"teneur",
+  "en":"tenor",
+  "de":"Tenor",
+  "es":"tenor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7615",
+  "fr":"provisoire",
+  "en":"tentative",
+  "de":"vorläufig",
+  "es":"tentativo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7616",
+  "fr":"ténu",
+  "en":"tenuous",
+  "de":"dürftig",
+  "es":"tenue",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7617",
+  "fr":"résiliation",
+  "en":"termination",
+  "de":"Beendigung",
+  "es":"terminación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7618",
+  "fr":"terminologie",
+  "en":"terminology",
+  "de":"Terminologie",
+  "es":"terminología",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7619",
+  "fr":"terminus",
+  "en":"terminus",
+  "de":"Endstation",
+  "es":"término",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7620",
+  "fr":"laconique",
+  "en":"terse",
+  "de":"knapp",
+  "es":"conciso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7621",
+  "fr":"témoignage",
+  "en":"testament",
+  "de":"Zeugnis",
+  "es":"testamento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7622",
+  "fr":"témoignage",
+  "en":"testimonial",
+  "de":"Empfehlungsschreiben",
+  "es":"testimonio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7623",
+  "fr":"attache",
+  "en":"tether",
+  "de":"Leine",
+  "es":"atadura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7624",
+  "fr":"théâtralité",
+  "en":"theatricality",
+  "de":"Theatralik",
+  "es":"teatralidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7625",
+  "fr":"théologien",
+  "en":"theologian",
+  "de":"Theologe",
+  "es":"teólogo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7626",
+  "fr":"théorème",
+  "en":"theorem",
+  "de":"Lehrsatz",
+  "es":"teorema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7627",
+  "fr":"dictionnaire des synonymes",
+  "en":"thesaurus",
+  "de":"Thesaurus",
+  "es":"tesauro",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7628",
+  "fr":"fourré",
+  "en":"thicket",
+  "de":"Dickicht",
+  "es":"matorral",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7629",
+  "fr":"artère",
+  "en":"thoroughfare",
+  "de":"Verkehrsader",
+  "es":"vía pública",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7630",
+  "fr":"emprise",
+  "en":"thrall",
+  "de":"Bann",
+  "es":"esclavitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7631",
+  "fr":"économie",
+  "en":"thrift",
+  "de":"Sparsamkeit",
+  "es":"frugalidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7632",
+  "fr":"retour en arrière",
+  "en":"throwback",
+  "de":"Rückfall",
+  "es":"retroceso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7633",
+  "fr":"contrecarrer",
+  "en":"to thwart",
+  "de":"vereiteln",
+  "es":"frustrar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7634",
+  "fr":"timbre",
+  "en":"timbre",
+  "de":"Klangfarbe",
+  "es":"timbre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7635",
+  "fr":"timidité",
+  "en":"timidity",
+  "de":"Schüchternheit",
+  "es":"timidez",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7636",
+  "fr":"timor�",
+  "en":"timorous",
+  "de":"�ngstlich",
+  "es":"timorato",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7637",
+  "fr":"indicateur",
+  "en":"tipster",
+  "de":"Tippgeber",
+  "es":"informante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7638",
+  "fr":"tirade",
+  "en":"tirade",
+  "de":"Tirade",
+  "es":"tirada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7639",
+  "fr":"titan",
+  "en":"titan",
+  "de":"Titan",
+  "es":"tit�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7640",
+  "fr":"d�me",
+  "en":"tithe",
+  "de":"Zehnte",
+  "es":"diezmo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7641",
+  "fr":"jeton",
+  "en":"token",
+  "de":"Zeichen",
+  "es":"ficha",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7642",
+  "fr":"symbolisme",
+  "en":"tokenism",
+  "de":"Alibifunktion",
+  "es":"tokenismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7643",
+  "fr":"pierre tombale",
+  "en":"tombstone",
+  "de":"Grabstein",
+  "es":"l�pida",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7644",
+  "fr":"tome",
+  "en":"tome",
+  "de":"W�lzer",
+  "es":"tomo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7645",
+  "fr":"tonnage",
+  "en":"tonnage",
+  "de":"Tonnage",
+  "es":"tonelaje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7646",
+  "fr":"topographie",
+  "en":"topography",
+  "de":"Topographie",
+  "es":"topograf�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7647",
+  "fr":"tourment",
+  "en":"torment",
+  "de":"Qual",
+  "es":"tormento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7648",
+  "fr":"tourmenter",
+  "en":"to torment",
+  "de":"qu�len",
+  "es":"atormentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7649",
+  "fr":"tornade",
+  "en":"tornado",
+  "de":"Tornado",
+  "es":"tornado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7650",
+  "fr":"torpide",
+  "en":"torpid",
+  "de":"tr�ge",
+  "es":"t�rpido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7651",
+  "fr":"torpeur",
+  "en":"torpor",
+  "de":"Lethargie",
+  "es":"letargo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7652",
+  "fr":"couple",
+  "en":"torque",
+  "de":"Drehmoment",
+  "es":"par",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7653",
+  "fr":"torrent",
+  "en":"torrent",
+  "de":"Sturzbach",
+  "es":"torrente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7654",
+  "fr":"torride",
+  "en":"torrid",
+  "de":"hei�",
+  "es":"t�rrido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7655",
+  "fr":"tortueux",
+  "en":"tortuous",
+  "de":"gewunden",
+  "es":"tortuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7656",
+  "fr":"totalitaire",
+  "en":"totalitarian",
+  "de":"totalit�r",
+  "es":"totalitario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7657",
+  "fr":"pierre de touche",
+  "en":"touchstone",
+  "de":"Pr�fstein",
+  "es":"piedra de toque",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7658",
+  "fr":"garrot",
+  "en":"tourniquet",
+  "de":"Tourniquet",
+  "es":"torniquete",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7659",
+  "fr":"toxicit�",
+  "en":"toxicity",
+  "de":"Toxizit�t",
+  "es":"toxicidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7660",
+  "fr":"tract",
+  "en":"tract",
+  "de":"Traktat",
+  "es":"tratado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7661",
+  "fr":"docile",
+  "en":"tractable",
+  "de":"f�gsam",
+  "es":"d�cil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7662",
+  "fr":"commer�ant",
+  "en":"tradesman",
+  "de":"H�ndler",
+  "es":"comerciante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7663",
+  "fr":"traditionalisme",
+  "en":"traditionalism",
+  "de":"Traditionalismus",
+  "es":"tradicionalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7664",
+  "fr":"trafiquant",
+  "en":"trafficker",
+  "de":"H�ndler",
+  "es":"traficante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7665",
+  "fr":"pionnier",
+  "en":"trailblazer",
+  "de":"Wegbereiter",
+  "es":"pionero",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7666",
+  "fr":"trajectoire",
+  "en":"trajectory",
+  "de":"Flugbahn",
+  "es":"trayectoria",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7667",
+  "fr":"transe",
+  "en":"trance",
+  "de":"Trance",
+  "es":"trance",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7668",
+  "fr":"tranquille",
+  "en":"tranquil",
+  "de":"ruhig",
+  "es":"tranquilo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7669",
+  "fr":"tranquillit�",
+  "en":"tranquillity",
+  "de":"Ruhe",
+  "es":"tranquilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7670",
+  "fr":"transcender",
+  "en":"to transcend",
+  "de":"transzendieren",
+  "es":"trascender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7671",
+  "fr":"transcendance",
+  "en":"transcendence",
+  "de":"Transzendenz",
+  "es":"trascendencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7672",
+  "fr":"transcrire",
+  "en":"to transcribe",
+  "de":"transkribieren",
+  "es":"transcribir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7673",
+  "fr":"transgresser",
+  "en":"to transgress",
+  "de":"�bertreten",
+  "es":"transgredir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7674",
+  "fr":"transgression",
+  "en":"transgression",
+  "de":"�bertretung",
+  "es":"transgresi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7675",
+  "fr":"transitoire",
+  "en":"transient",
+  "de":"vor�bergehend",
+  "es":"transitorio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7676",
+  "fr":"translucide",
+  "en":"translucent",
+  "de":"durchscheinend",
+  "es":"transl�cido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7677",
+  "fr":"parodie",
+  "en":"travesty",
+  "de":"Travestie",
+  "es":"parodia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7678",
+  "fr":"tra�tre",
+  "en":"treacherous",
+  "de":"verr�terisch",
+  "es":"traicionero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7679",
+  "fr":"trahison",
+  "en":"treachery",
+  "de":"Verrat",
+  "es":"traici�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7680",
+  "fr":"trahison",
+  "en":"treason",
+  "de":"Verrat",
+  "es":"traici�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7681",
+  "fr":"trait�",
+  "en":"treatise",
+  "de":"Abhandlung",
+  "es":"tratado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7682",
+  "fr":"tremblement",
+  "en":"tremor",
+  "de":"Zittern",
+  "es":"temblor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7683",
+  "fr":"tranchant",
+  "en":"trenchant",
+  "de":"scharf",
+  "es":"mordaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7684",
+  "fr":"tr�pidation",
+  "en":"trepidation",
+  "de":"Beklemmung",
+  "es":"trepidaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7685",
+  "fr":"tribalisme",
+  "en":"tribalism",
+  "de":"Tribalismus",
+  "es":"tribalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7686",
+  "fr":"tribulation",
+  "en":"tribulation",
+  "de":"Drangsal",
+  "es":"tribulaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7687",
+  "fr":"tribunal",
+  "en":"tribunal",
+  "de":"Tribunal",
+  "es":"tribunal",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7688",
+  "fr":"tribun",
+  "en":"tribune",
+  "de":"Tribun",
+  "es":"tribuno",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7689",
+  "fr":"affluent",
+  "en":"tributary",
+  "de":"Nebenfluss",
+  "es":"afluente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7690",
+  "fr":"tromperie",
+  "en":"trickery",
+  "de":"Trickbetrug",
+  "es":"enga�o",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7691",
+  "fr":"escroc",
+  "en":"trickster",
+  "de":"Betr�ger",
+  "es":"embaucador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7692",
+  "fr":"bagatelle",
+  "en":"trifle",
+  "de":"Kleinigkeit",
+  "es":"nimiedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7693",
+  "fr":"trilogie",
+  "en":"trilogy",
+  "de":"Trilogie",
+  "es":"trilog�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7694",
+  "fr":"bibelot",
+  "en":"trinket",
+  "de":"Schmuckst�ck",
+  "es":"baratija",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7695",
+  "fr":"banal",
+  "en":"trite",
+  "de":"banal",
+  "es":"trillado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7696",
+  "fr":"troupe",
+  "en":"troupe",
+  "de":"Truppe",
+  "es":"compa��a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7697",
+  "fr":"truculent",
+  "en":"truculent",
+  "de":"aufs�ssig",
+  "es":"truculento",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7698",
+  "fr":"marche p�nible",
+  "en":"trudge",
+  "de":"Stapfen",
+  "es":"caminata pesada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7699",
+  "fr":"truisme",
+  "en":"truism",
+  "de":"Binsenwahrheit",
+  "es":"perogrullada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7700",
+  "fr":"tronquer",
+  "en":"to truncate",
+  "de":"abschneiden",
+  "es":"truncar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7701",
+  "fr":"tutelle",
+  "en":"trusteeship",
+  "de":"Treuhandschaft",
+  "es":"fideicomiso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7702",
+  "fr":"tumulte",
+  "en":"tumult",
+  "de":"Tumult",
+  "es":"tumulto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7703",
+  "fr":"tumultueux",
+  "en":"tumultuous",
+  "de":"tumultartig",
+  "es":"tumultuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7704",
+  "fr":"toundra",
+  "en":"tundra",
+  "de":"Tundra",
+  "es":"tundra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7705",
+  "fr":"turbulence",
+  "en":"turbulence",
+  "de":"Turbulenz",
+  "es":"turbulencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7706",
+  "fr":"turbulent",
+  "en":"turbulent",
+  "de":"turbulent",
+  "es":"turbulento",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7707",
+  "fr":"tourmente",
+  "en":"turmoil",
+  "de":"Aufruhr",
+  "es":"confusi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7708",
+  "fr":"transfuge",
+  "en":"turncoat",
+  "de":"Abtr�nniger",
+  "es":"tr�nsfuga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7709",
+  "fr":"turpitude",
+  "en":"turpitude",
+  "de":"Verworfenheit",
+  "es":"turpitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7710",
+  "fr":"tutelle",
+  "en":"tutelage",
+  "de":"Vormundschaft",
+  "es":"tutela",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7711",
+  "fr":"cr�puscule",
+  "en":"twilight",
+  "de":"D�mmerung",
+  "es":"crep�sculo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7712",
+  "fr":"magnat",
+  "en":"tycoon",
+  "de":"Magnat",
+  "es":"magnate",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7713",
+  "fr":"typhon",
+  "en":"typhoon",
+  "de":"Taifun",
+  "es":"tif�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7714",
+  "fr":"tyrannie",
+  "en":"tyranny",
+  "de":"Tyrannei",
+  "es":"tiran�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7715",
+  "fr":"tyran",
+  "en":"tyrant",
+  "de":"Tyrann",
+  "es":"tirano",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7716",
+  "fr":"omnipr�sent",
+  "en":"ubiquitous",
+  "de":"allgegenw�rtig",
+  "es":"ubicuo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7717",
+  "fr":"l\u0027ubiquit�",
+  "en":"ubiquity",
+  "de":"die Allgegenwart",
+  "es":"la ubicuidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7718",
+  "fr":"l\u0027ultimatum",
+  "en":"ultimatum",
+  "de":"das Ultimatum",
+  "es":"el ultim�tum",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7719",
+  "fr":"l\u0027ombrage",
+  "en":"umbrage",
+  "de":"der Ansto�",
+  "es":"el resentimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7720",
+  "fr":"l\u0027arbitre",
+  "en":"umpire",
+  "de":"der Schiedsrichter",
+  "es":"el �rbitro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7721",
+  "fr":"l\u0027unanimit�",
+  "en":"unanimity",
+  "de":"die Einstimmigkeit",
+  "es":"la unanimidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7722",
+  "fr":"unanime",
+  "en":"unanimous",
+  "de":"einstimmig",
+  "es":"un�nime",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7723",
+  "fr":"onctueux",
+  "en":"unctuous",
+  "de":"salbungsvoll",
+  "es":"untuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7724",
+  "fr":"intr�pide",
+  "en":"undaunted",
+  "de":"unerschrocken",
+  "es":"impert�rrito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7725",
+  "fr":"le courant sous-jacent",
+  "en":"undercurrent",
+  "de":"die Unterstr�mung",
+  "es":"la corriente subterr�nea",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7726",
+  "fr":"l\u0027outsider",
+  "en":"underdog",
+  "de":"der Au�enseiter",
+  "es":"el desvalido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7727",
+  "fr":"le subalterne",
+  "en":"underling",
+  "de":"der Untergebene",
+  "es":"el subalterno",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7728",
+  "fr":"le fondement",
+  "en":"underpinning",
+  "de":"die Grundlage",
+  "es":"el pilar",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7729",
+  "fr":"la litote",
+  "en":"understatement",
+  "de":"die Untertreibung",
+  "es":"la subestimaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7730",
+  "fr":"la doublure",
+  "en":"understudy",
+  "de":"der Zweitbesetzung",
+  "es":"el suplente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7731",
+  "fr":"le croque-mort",
+  "en":"undertaker",
+  "de":"der Bestatter",
+  "es":"el enterrador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7732",
+  "fr":"l\u0027entreprise",
+  "en":"undertaking",
+  "de":"das Unternehmen",
+  "es":"la empresa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7733",
+  "fr":"le sous-entendu",
+  "en":"undertone",
+  "de":"der Unterton",
+  "es":"el trasfondo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7734",
+  "fr":"la p�gre",
+  "en":"underworld",
+  "de":"die Unterwelt",
+  "es":"el hampa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7735",
+  "fr":"l\u0027assureur",
+  "en":"underwriter",
+  "de":"der Versicherer",
+  "es":"el asegurador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7736",
+  "fr":"la perte",
+  "en":"undoing",
+  "de":"der Untergang",
+  "es":"la perdici�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7737",
+  "fr":"le malaise",
+  "en":"unease",
+  "de":"das Unbehagen",
+  "es":"el malestar",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7738",
+  "fr":"peu enviable",
+  "en":"unenviable",
+  "de":"unbeneidenswert",
+  "es":"poco envidiable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7739",
+  "fr":"sans �quivoque",
+  "en":"unequivocal",
+  "de":"eindeutig",
+  "es":"inequ�voco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7740",
+  "fr":"insondable",
+  "en":"unfathomable",
+  "de":"unergr�ndlich",
+  "es":"insondable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7741",
+  "fr":"l\u0027unification",
+  "en":"unification",
+  "de":"die Vereinigung",
+  "es":"la unificaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7742",
+  "fr":"l\u0027uniformit�",
+  "en":"uniformity",
+  "de":"die Einheitlichkeit",
+  "es":"la uniformidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7743",
+  "fr":"l\u0027unisson",
+  "en":"unison",
+  "de":"der Einklang",
+  "es":"el un�sono",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7744",
+  "fr":"l\u0027universalit�",
+  "en":"universality",
+  "de":"die Universalit�t",
+  "es":"la universalidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7745",
+  "fr":"d�sagr�able",
+  "en":"unpalatable",
+  "de":"unangenehm",
+  "es":"desagradable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7746",
+  "fr":"sans pr�tention",
+  "en":"unpretentious",
+  "de":"anspruchslos",
+  "es":"sin pretensiones",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7747",
+  "fr":"incessant",
+  "en":"unremitting",
+  "de":"unabl�ssig",
+  "es":"incesante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7748",
+  "fr":"sans �gal",
+  "en":"unrivalled",
+  "de":"un�bertroffen",
+  "es":"inigualable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7749",
+  "fr":"indisciplin�",
+  "en":"unruly",
+  "de":"widerspenstig",
+  "es":"rebelde",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7750",
+  "fr":"immacul�",
+  "en":"unsullied",
+  "de":"unbefleckt",
+  "es":"inmaculado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7751",
+  "fr":"intenable",
+  "en":"untenable",
+  "de":"unhaltbar",
+  "es":"insostenible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7752",
+  "fr":"impensable",
+  "en":"unthinkable",
+  "de":"undenkbar",
+  "es":"impensable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7753",
+  "fr":"inexplor�",
+  "en":"untrodden",
+  "de":"unbetreten",
+  "es":"inexplorado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7754",
+  "fr":"encombrant",
+  "en":"unwieldy",
+  "de":"unhandlich",
+  "es":"dif�cil de manejar",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7755",
+  "fr":"involontaire",
+  "en":"unwitting",
+  "de":"unwissentlich",
+  "es":"involuntario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7756",
+  "fr":"r�primander",
+  "en":"to upbraid",
+  "de":"schelten",
+  "es":"reprender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7757",
+  "fr":"le bouleversement",
+  "en":"upheaval",
+  "de":"der Umbruch",
+  "es":"la agitaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7758",
+  "fr":"l\u0027entretien",
+  "en":"upkeep",
+  "de":"die Instandhaltung",
+  "es":"el mantenimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7759",
+  "fr":"le soul�vement",
+  "en":"uprising",
+  "de":"der Aufstand",
+  "es":"el levantamiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7760",
+  "fr":"le tumulte",
+  "en":"uproar",
+  "de":"der Aufruhr",
+  "es":"el alboroto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7761",
+  "fr":"bruyant",
+  "en":"uproarious",
+  "de":"st�rmisch",
+  "es":"ruidoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7762",
+  "fr":"le r�sultat final",
+  "en":"upshot",
+  "de":"das Endresultat",
+  "es":"el resultado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7763",
+  "fr":"la recrudescence",
+  "en":"upsurge",
+  "de":"der Aufschwung",
+  "es":"el repunte",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7764",
+  "fr":"l\u0027am�lioration",
+  "en":"upturn",
+  "de":"der Aufschwung",
+  "es":"la mejora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7765",
+  "fr":"courtois",
+  "en":"urbane",
+  "de":"weltm�nnisch",
+  "es":"cort�s",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7766",
+  "fr":"l\u0027urgence",
+  "en":"urgency",
+  "de":"die Dringlichkeit",
+  "es":"la urgencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7767",
+  "fr":"l\u0027huissier",
+  "en":"usher",
+  "de":"der Platzanweiser",
+  "es":"el acomodador",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7768",
+  "fr":"usurper",
+  "en":"to usurp",
+  "de":"usurpieren",
+  "es":"usurpar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7769",
+  "fr":"l\u0027usurpation",
+  "en":"usurpation",
+  "de":"die Usurpation",
+  "es":"la usurpaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7770",
+  "fr":"l\u0027ustensile",
+  "en":"utensil",
+  "de":"das Utensil",
+  "es":"el utensilio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7771",
+  "fr":"l\u0027utilitarisme",
+  "en":"utilitarianism",
+  "de":"der Utilitarismus",
+  "es":"el utilitarismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7772",
+  "fr":"le plus grand",
+  "en":"utmost",
+  "de":"�u�erste",
+  "es":"m�ximo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7773",
+  "fr":"l\u0027utopie",
+  "en":"utopia",
+  "de":"die Utopie",
+  "es":"la utop�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7774",
+  "fr":"l\u0027utopisme",
+  "en":"utopianism",
+  "de":"der Utopismus",
+  "es":"el utopismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7775",
+  "fr":"l\u0027�nonciation",
+  "en":"utterance",
+  "de":"die �u�erung",
+  "es":"la declaraci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7776",
+  "fr":"le poste vacant",
+  "en":"vacancy",
+  "de":"die offene Stelle",
+  "es":"la vacante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7777",
+  "fr":"vaciller",
+  "en":"to vacillate",
+  "de":"schwanken",
+  "es":"vacilar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7778",
+  "fr":"la vacillation",
+  "en":"vacillation",
+  "de":"das Schwanken",
+  "es":"la vacilaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7779",
+  "fr":"vacuit�",
+  "en":"vacuous",
+  "de":"inhaltsleer",
+  "es":"vacuo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7780",
+  "fr":"le caprice",
+  "en":"vagary",
+  "de":"die Laune",
+  "es":"el capricho",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7781",
+  "fr":"le vagabond",
+  "en":"vagrant",
+  "de":"der Vagabund",
+  "es":"el vagabundo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7782",
+  "fr":"vain",
+  "en":"vain",
+  "de":"eitel",
+  "es":"vano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7783",
+  "fr":"valider",
+  "en":"to validate",
+  "de":"validieren",
+  "es":"validar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7784",
+  "fr":"la bravoure",
+  "en":"valour",
+  "de":"die Tapferkeit",
+  "es":"el valor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7785",
+  "fr":"l\u0027�valuation",
+  "en":"valuation",
+  "de":"die Bewertung",
+  "es":"la valoraci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7786",
+  "fr":"le vandale",
+  "en":"vandal",
+  "de":"der Vandale",
+  "es":"el v�ndalo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7787",
+  "fr":"le vandalisme",
+  "en":"vandalism",
+  "de":"der Vandalismus",
+  "es":"el vandalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7788",
+  "fr":"l\u0027avant-garde",
+  "en":"vanguard",
+  "de":"die Avantgarde",
+  "es":"la vanguardia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7789",
+  "fr":"la vanit�",
+  "en":"vanity",
+  "de":"die Eitelkeit",
+  "es":"la vanidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7790",
+  "fr":"vaincre",
+  "en":"to vanquish",
+  "de":"besiegen",
+  "es":"vencer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7791",
+  "fr":"vaincu",
+  "en":"vanquished",
+  "de":"besiegt",
+  "es":"vencido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7792",
+  "fr":"fade",
+  "en":"vapid",
+  "de":"fade",
+  "es":"ins�pido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7793",
+  "fr":"la variance",
+  "en":"variance",
+  "de":"die Abweichung",
+  "es":"la variaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7794",
+  "fr":"bigarr�",
+  "en":"variegated",
+  "de":"bunt",
+  "es":"abigarrado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7795",
+  "fr":"l\u0027immensit�",
+  "en":"vastness",
+  "de":"die Weite",
+  "es":"la inmensidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7796",
+  "fr":"la chambre forte",
+  "en":"vault",
+  "de":"der Tresorraum",
+  "es":"la b�veda",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7797",
+  "fr":"la véhémence",
+  "en":"vehemence",
+  "de":"die Heftigkeit",
+  "es":"la vehemencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7798",
+  "fr":"avec véhémence",
+  "en":"vehemently",
+  "de":"vehement",
+  "es":"vehementemente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7799",
+  "fr":"la vitesse",
+  "en":"velocity",
+  "de":"die Geschwindigkeit",
+  "es":"la velocidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7800",
+  "fr":"le velours",
+  "en":"velvet",
+  "de":"der Samt",
+  "es":"el terciopelo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7801",
+  "fr":"vénal",
+  "en":"venal",
+  "de":"bestechlich",
+  "es":"venal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7802",
+  "fr":"la vendetta",
+  "en":"vendetta",
+  "de":"die Blutrache",
+  "es":"la vendetta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7803",
+  "fr":"le placage",
+  "en":"veneer",
+  "de":"das Furnier",
+  "es":"la chapa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7804",
+  "fr":"vénérable",
+  "en":"venerable",
+  "de":"ehrwürdig",
+  "es":"venerable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7805",
+  "fr":"la vénération",
+  "en":"veneration",
+  "de":"die Verehrung",
+  "es":"la veneración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7806",
+  "fr":"la vengeance",
+  "en":"vengeance",
+  "de":"die Rache",
+  "es":"la venganza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7807",
+  "fr":"le venin",
+  "en":"venom",
+  "de":"das Gift",
+  "es":"el veneno",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7808",
+  "fr":"l\u0027aération",
+  "en":"vent",
+  "de":"die Entlüftung",
+  "es":"la ventilación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7809",
+  "fr":"la véracité",
+  "en":"veracity",
+  "de":"die Wahrhaftigkeit",
+  "es":"la veracidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7810",
+  "fr":"mot pour mot",
+  "en":"verbatim",
+  "de":"wörtlich",
+  "es":"literalmente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7811",
+  "fr":"verbeux",
+  "en":"verbose",
+  "de":"wortreich",
+  "es":"verboso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7812",
+  "fr":"verdoyant",
+  "en":"verdant",
+  "de":"grün",
+  "es":"verde",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7813",
+  "fr":"le bord",
+  "en":"verge",
+  "de":"der Rand",
+  "es":"el borde",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7814",
+  "fr":"la vérification",
+  "en":"verification",
+  "de":"die Überprüfung",
+  "es":"la verificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7815",
+  "fr":"la vraisemblance",
+  "en":"verisimilitude",
+  "de":"die Wahrscheinlichkeit",
+  "es":"la verosimilitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7816",
+  "fr":"la vermine",
+  "en":"vermin",
+  "de":"das Ungeziefer",
+  "es":"la alimaña",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7817",
+  "fr":"la langue vernaculaire",
+  "en":"vernacular",
+  "de":"die Volkssprache",
+  "es":"la lengua vernácula",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7818",
+  "fr":"la polyvalence",
+  "en":"versatility",
+  "de":"die Vielseitigkeit",
+  "es":"la versatilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7819",
+  "fr":"le sommet",
+  "en":"vertex",
+  "de":"der Scheitelpunkt",
+  "es":"el vértice",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7820",
+  "fr":"le vertige",
+  "en":"vertigo",
+  "de":"der Schwindel",
+  "es":"el vértigo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7821",
+  "fr":"la verve",
+  "en":"verve",
+  "de":"der Schwung",
+  "es":"el brío",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7822",
+  "fr":"le vestige",
+  "en":"vestige",
+  "de":"das Überbleibsel",
+  "es":"el vestigio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7823",
+  "fr":"le veto",
+  "en":"veto",
+  "de":"das Veto",
+  "es":"el veto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7824",
+  "fr":"la vexation",
+  "en":"vexation",
+  "de":"das Ärgernis",
+  "es":"la vejación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7825",
+  "fr":"vexatoire",
+  "en":"vexatious",
+  "de":"ärgerlich",
+  "es":"vejatorio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7826",
+  "fr":"la viabilité",
+  "en":"viability",
+  "de":"die Lebensfähigkeit",
+  "es":"la viabilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7827",
+  "fr":"par procuration",
+  "en":"vicarious",
+  "de":"stellvertretend",
+  "es":"vicario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7828",
+  "fr":"les environs",
+  "en":"vicinity",
+  "de":"die Umgebung",
+  "es":"la vecindad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7829",
+  "fr":"la vicissitude",
+  "en":"vicissitude",
+  "de":"die Wechselfall",
+  "es":"la vicisitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7830",
+  "fr":"le vainqueur",
+  "en":"victor",
+  "de":"der Sieger",
+  "es":"el vencedor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7831",
+  "fr":"la veillée",
+  "en":"vigil",
+  "de":"die Mahnwache",
+  "es":"la vigilia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7832",
+  "fr":"la vigilance",
+  "en":"vigilance",
+  "de":"die Wachsamkeit",
+  "es":"la vigilancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7833",
+  "fr":"le justicier",
+  "en":"vigilante",
+  "de":"der Bürgerwehr",
+  "es":"el justiciero",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7834",
+  "fr":"la vigueur",
+  "en":"vigour",
+  "de":"die Kraft",
+  "es":"el vigor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7835",
+  "fr":"vil",
+  "en":"vile",
+  "de":"abscheulich",
+  "es":"vil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7836",
+  "fr":"la diffamation",
+  "en":"vilification",
+  "de":"die Verunglimpfung",
+  "es":"la difamación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7837",
+  "fr":"vilipender",
+  "en":"vilify",
+  "de":"verunglimpfen",
+  "es":"vilipendiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7838",
+  "fr":"le méchant",
+  "en":"villain",
+  "de":"der Bösewicht",
+  "es":"el villano",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7839",
+  "fr":"la scélératesse",
+  "en":"villainy",
+  "de":"die Schurkerei",
+  "es":"la villanía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7840",
+  "fr":"disculper",
+  "en":"vindicate",
+  "de":"rechtfertigen",
+  "es":"reivindicar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7841",
+  "fr":"la disculpation",
+  "en":"vindication",
+  "de":"die Rechtfertigung",
+  "es":"la vindicación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7842",
+  "fr":"vindicatif",
+  "en":"vindictive",
+  "de":"rachsüchtig",
+  "es":"vengativo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7843",
+  "fr":"le caractère vindicatif",
+  "en":"vindictiveness",
+  "de":"die Rachsucht",
+  "es":"la venganza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7844",
+  "fr":"le millésime",
+  "en":"vintage",
+  "de":"der Jahrgang",
+  "es":"la cosecha",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7845",
+  "fr":"la vipère",
+  "en":"viper",
+  "de":"die Viper",
+  "es":"la víbora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7846",
+  "fr":"la virtuosité",
+  "en":"virtuosity",
+  "de":"die Virtuosität",
+  "es":"el virtuosismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7847",
+  "fr":"le virtuose",
+  "en":"virtuoso",
+  "de":"der Virtuose",
+  "es":"el virtuoso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7848",
+  "fr":"la virulence",
+  "en":"virulence",
+  "de":"die Virulenz",
+  "es":"la virulencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7849",
+  "fr":"virulent",
+  "en":"virulent",
+  "de":"virulent",
+  "es":"virulento",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7850",
+  "fr":"le visage",
+  "en":"visage",
+  "de":"das Gesicht",
+  "es":"el rostro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7851",
+  "fr":"viscéral",
+  "en":"visceral",
+  "de":"instinktiv",
+  "es":"visceral",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7852",
+  "fr":"le visionnaire",
+  "en":"visionary",
+  "de":"der Visionär",
+  "es":"el visionario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7853",
+  "fr":"la perspective",
+  "en":"vista",
+  "de":"die Aussicht",
+  "es":"la vista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7854",
+  "fr":"la vitalité",
+  "en":"vitality",
+  "de":"die Vitalität",
+  "es":"la vitalidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7855",
+  "fr":"vitriolique",
+  "en":"vitriolic",
+  "de":"ätzend",
+  "es":"vitriólico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7856",
+  "fr":"vitupérer",
+  "en":"vituperate",
+  "de":"schmähen",
+  "es":"vituperar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7857",
+  "fr":"plein d\u0027entrain",
+  "en":"vivacious",
+  "de":"lebhaft",
+  "es":"vivaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7858",
+  "fr":"la vivacité",
+  "en":"vivacity",
+  "de":"die Lebhaftigkeit",
+  "es":"la vivacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7859",
+  "fr":"la vocation",
+  "en":"vocation",
+  "de":"die Berufung",
+  "es":"la vocación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7860",
+  "fr":"vociférant",
+  "en":"vociferous",
+  "de":"lautstark",
+  "es":"vociferante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7861",
+  "fr":"la vogue",
+  "en":"vogue",
+  "de":"die Mode",
+  "es":"la moda",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7862",
+  "fr":"le vide",
+  "en":"void",
+  "de":"die Leere",
+  "es":"el vacío",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7863",
+  "fr":"volatil",
+  "en":"volatile",
+  "de":"flüchtig",
+  "es":"volátil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7864",
+  "fr":"la volatilité",
+  "en":"volatility",
+  "de":"die Flüchtigkeit",
+  "es":"la volatilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7865",
+  "fr":"la volonté",
+  "en":"volition",
+  "de":"der Wille",
+  "es":"la voluntad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7866",
+  "fr":"la volée",
+  "en":"volley",
+  "de":"die Salve",
+  "es":"la volea",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7867",
+  "fr":"vorace",
+  "en":"voracious",
+  "de":"gefräßig",
+  "es":"voraz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7868",
+  "fr":"le tourbillon",
+  "en":"vortex",
+  "de":"der Wirbel",
+  "es":"el vórtice",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7869",
+  "fr":"le bon",
+  "en":"voucher",
+  "de":"der Gutschein",
+  "es":"el vale",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7870",
+  "fr":"le voyeur",
+  "en":"voyeur",
+  "de":"der Voyeur",
+  "es":"el voyeur",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7871",
+  "fr":"la vulgarité",
+  "en":"vulgarity",
+  "de":"die Vulgarität",
+  "es":"la vulgaridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7872",
+  "fr":"parier",
+  "en":"wager",
+  "de":"wetten",
+  "es":"apostar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7873",
+  "fr":"la renonciation",
+  "en":"waiver",
+  "de":"der Verzicht",
+  "es":"la renuncia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7874",
+  "fr":"la grève",
+  "en":"walkout",
+  "de":"der Streik",
+  "es":"la huelga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7875",
+  "fr":"décliner",
+  "en":"wane",
+  "de":"schwinden",
+  "es":"menguar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7876",
+  "fr":"gratuit",
+  "en":"wanton",
+  "de":"mutwillig",
+  "es":"gratuito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7877",
+  "fr":"libertinage",
+  "en":"wantonness",
+  "de":"Zügellosigkeit",
+  "es":"desenfreno",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7878",
+  "fr":"directeur",
+  "en":"warden",
+  "de":"Aufseher",
+  "es":"alcaide",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7879",
+  "fr":"seigneur de la guerre",
+  "en":"warlord",
+  "de":"Kriegsherr",
+  "es":"señor de la guerra",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7880",
+  "fr":"garantie",
+  "en":"warranty",
+  "de":"Garantie",
+  "es":"garantía",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7881",
+  "fr":"désert",
+  "en":"wasteland",
+  "de":"Ödland",
+  "es":"páramo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7882",
+  "fr":"chien de garde",
+  "en":"watchdog",
+  "de":"Wachhund",
+  "es":"perro guardián",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7883",
+  "fr":"mot d\u0027ordre",
+  "en":"watchword",
+  "de":"Parole",
+  "es":"consigna",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7884",
+  "fr":"tournant",
+  "en":"watershed",
+  "de":"Wendepunkt",
+  "es":"punto de inflexión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7885",
+  "fr":"hésiter",
+  "en":"waver",
+  "de":"schwanken",
+  "es":"vacilar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7886",
+  "fr":"rebelle",
+  "en":"wayward",
+  "de":"eigensinnig",
+  "es":"caprichoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7887",
+  "fr":"caprice",
+  "en":"waywardness",
+  "de":"Eigensinn",
+  "es":"capricho",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7888",
+  "fr":"armement",
+  "en":"weaponry",
+  "de":"Waffen",
+  "es":"armamento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7889",
+  "fr":"lassitude",
+  "en":"weariness",
+  "de":"Müdigkeit",
+  "es":"cansancio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7890",
+  "fr":"mariage",
+  "en":"wedlock",
+  "de":"Ehe",
+  "es":"matrimonio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7891",
+  "fr":"quai",
+  "en":"wharf",
+  "de":"Kai",
+  "es":"muelle",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7892",
+  "fr":"enjôleur",
+  "en":"wheedling",
+  "de":"schmeichelnd",
+  "es":"adulador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7893",
+  "fr":"par lequel",
+  "en":"whereby",
+  "de":"wodurch",
+  "es":"por el cual",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7894",
+  "fr":"moyens",
+  "en":"wherewithal",
+  "de":"nötige Mittel",
+  "es":"medios",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7895",
+  "fr":"caprice",
+  "en":"whim",
+  "de":"Laune",
+  "es":"antojo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7896",
+  "fr":"fantasque",
+  "en":"whimsical",
+  "de":"skurril",
+  "es":"extravagante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7897",
+  "fr":"fantaisie",
+  "en":"whimsy",
+  "de":"Grille",
+  "es":"fantasía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7898",
+  "fr":"tourbillon",
+  "en":"whirlpool",
+  "de":"Strudel",
+  "es":"remolino",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7899",
+  "fr":"tourbillon",
+  "en":"whirlwind",
+  "de":"Wirbelsturm",
+  "es":"torbellino",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7900",
+  "fr":"lanceur d\u0027alerte",
+  "en":"whistleblower",
+  "de":"Whistleblower",
+  "es":"denunciante",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7901",
+  "fr":"blanchiment",
+  "en":"whitewash",
+  "de":"Schönfärberei",
+  "es":"encubrimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7902",
+  "fr":"méchanceté",
+  "en":"wickedness",
+  "de":"Bosheit",
+  "es":"maldad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7903",
+  "fr":"manier",
+  "en":"wield",
+  "de":"handhaben",
+  "es":"blandir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7904",
+  "fr":"terre sauvage",
+  "en":"wilderness",
+  "de":"Wildnis",
+  "es":"desierto",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7905",
+  "fr":"feu de forêt",
+  "en":"wildfire",
+  "de":"Lauffeuer",
+  "es":"incendio forestal",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7906",
+  "fr":"obstination",
+  "en":"willfulness",
+  "de":"Eigensinn",
+  "es":"obstinación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7907",
+  "fr":"aubaine",
+  "en":"windfall",
+  "de":"Glücksfall",
+  "es":"ganancia inesperada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7908",
+  "fr":"volute",
+  "en":"wisp",
+  "de":"Bündel",
+  "es":"mechón",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7909",
+  "fr":"mélancolique",
+  "en":"wistful",
+  "de":"wehmütig",
+  "es":"melancólico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7910",
+  "fr":"mélancolie",
+  "en":"wistfulness",
+  "de":"Wehmut",
+  "es":"melancolía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7911",
+  "fr":"sorcellerie",
+  "en":"witchcraft",
+  "de":"Hexerei",
+  "es":"brujería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7912",
+  "fr":"résister",
+  "en":"withstand",
+  "de":"widerstehen",
+  "es":"resistir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7913",
+  "fr":"trait d\u0027esprit",
+  "en":"witticism",
+  "de":"Witz",
+  "es":"broma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7914",
+  "fr":"sorcellerie",
+  "en":"wizardry",
+  "de":"Zauberei",
+  "es":"brujería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7915",
+  "fr":"ridé",
+  "en":"wizened",
+  "de":"verschrumpelt",
+  "es":"arrugado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7916",
+  "fr":"malheur",
+  "en":"woe",
+  "de":"Wehe",
+  "es":"aflicción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7917",
+  "fr":"verbosité",
+  "en":"wordiness",
+  "de":"Weitschweifigkeit",
+  "es":"verbosidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7918",
+  "fr":"finition",
+  "en":"workmanship",
+  "de":"Verarbeitung",
+  "es":"acabado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7919",
+  "fr":"colère",
+  "en":"wrath",
+  "de":"Zorn",
+  "es":"ira",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7920",
+  "fr":"débris",
+  "en":"wreckage",
+  "de":"Wrack",
+  "es":"restos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7921",
+  "fr":"misérable",
+  "en":"wretched",
+  "de":"elend",
+  "es":"miserable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7922",
+  "fr":"fautif",
+  "en":"wrongdoer",
+  "de":"Missetäter",
+  "es":"malhechor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7923",
+  "fr":"désabusé",
+  "en":"wry",
+  "de":"ironisch",
+  "es":"irónico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7924",
+  "fr":"xénophobe",
+  "en":"xenophobe",
+  "de":"Xenophob",
+  "es":"xenófobo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7925",
+  "fr":"xénophobie",
+  "en":"xenophobia",
+  "de":"Xenophobie",
+  "es":"xenofobia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7926",
+  "fr":"critère",
+  "en":"yardstick",
+  "de":"Maßstab",
+  "es":"criterio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7927",
+  "fr":"fil",
+  "en":"yarn",
+  "de":"Garn",
+  "es":"hilo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7928",
+  "fr":"désir ardent",
+  "en":"yearning",
+  "de":"Sehnsucht",
+  "es":"anhelo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7929",
+  "fr":"joug",
+  "en":"yoke",
+  "de":"Joch",
+  "es":"yugo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7930",
+  "fr":"plouc",
+  "en":"yokel",
+  "de":"Hinterwäldler",
+  "es":"paleto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7931",
+  "fr":"jeune",
+  "en":"youngster",
+  "de":"Jugendlicher",
+  "es":"joven",
+  "type":"nom",
+  "level":"B1"
+},
+  {
+  "id":"word_7932",
+  "fr":"zèle",
+  "en":"zeal",
+  "de":"Eifer",
+  "es":"celo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7933",
+  "fr":"fanatique",
+  "en":"zealot",
+  "de":"Fanatiker",
+  "es":"fanático",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7934",
+  "fr":"fanatisme",
+  "en":"zealotry",
+  "de":"Fanatismus",
+  "es":"fanatismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7935",
+  "fr":"zélé",
+  "en":"zealous",
+  "de":"eifrig",
+  "es":"entusiasta",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7936",
+  "fr":"l\u0027air du temps",
+  "en":"zeitgeist",
+  "de":"Zeitgeist",
+  "es":"espíritu de la época",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7937",
+  "fr":"zénith",
+  "en":"zenith",
+  "de":"Zenit",
+  "es":"cenit",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7938",
+  "fr":"zeste",
+  "en":"zest",
+  "de":"Begeisterung",
+  "es":"entusiasmo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7939",
+  "fr":"zigzag",
+  "en":"zigzag",
+  "de":"Zickzack",
+  "es":"zigzag",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7940",
+  "fr":"zodiaque",
+  "en":"zodiac",
+  "de":"Tierkreis",
+  "es":"zodíaco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7941",
+  "fr":"zoologie",
+  "en":"zoology",
+  "de":"Zoologie",
+  "es":"zoología",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_7942",
+  "fr":"épris",
+  "en":"besotted",
+  "de":"verknallt",
+  "es":"enamorado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7943",
+  "fr":"conférer",
+  "en":"bestow",
+  "de":"verleihen",
+  "es":"otorgar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7944",
+  "fr":"envoûtant",
+  "en":"bewitching",
+  "de":"bezaubernd",
+  "es":"fascinante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7945",
+  "fr":"sectarisme",
+  "en":"bigotry",
+  "de":"Bigotterie",
+  "es":"intolerancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7946",
+  "fr":"bilatéral",
+  "en":"bilateral",
+  "de":"bilateral",
+  "es":"bilateral",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7947",
+  "fr":"onduler",
+  "en":"billow",
+  "de":"wogen",
+  "es":"ondear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7948",
+  "fr":"serrer les dents",
+  "en":"bite the bullet",
+  "de":"in den sauren Apfel beißen",
+  "es":"hacer de tripas corazón",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7949",
+  "fr":"blasphème",
+  "en":"blasphemy",
+  "de":"Blasphemie",
+  "es":"blasfemia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7950",
+  "fr":"insouciant",
+  "en":"blithe",
+  "de":"unbekümmert",
+  "es":"despreocupado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7951",
+  "fr":"turbulent",
+  "en":"boisterous",
+  "de":"ungestüm",
+  "es":"bullicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7952",
+  "fr":"pompeux",
+  "en":"bombastic",
+  "de":"bombastisch",
+  "es":"rimbombante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7953",
+  "fr":"aubaine",
+  "en":"boon",
+  "de":"Segen",
+  "es":"bendición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7954",
+  "fr":"rustre",
+  "en":"boorish",
+  "de":"flegelhaft",
+  "es":"grosero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7955",
+  "fr":"prime",
+  "en":"bounty",
+  "de":"Kopfgeld",
+  "es":"recompensa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7956",
+  "fr":"bourgeoisie",
+  "en":"bourgeoisie",
+  "de":"Bourgeoisie",
+  "es":"burguesía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7957",
+  "fr":"brandir",
+  "en":"brandish",
+  "de":"schwingen",
+  "es":"blandir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7958",
+  "fr":"bravade",
+  "en":"bravado",
+  "de":"Bravour",
+  "es":"bravuconería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7959",
+  "fr":"bravoure",
+  "en":"bravura",
+  "de":"Bravour",
+  "es":"bravura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7960",
+  "fr":"brièveté",
+  "en":"brevity",
+  "de":"Kürze",
+  "es":"brevedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7961",
+  "fr":"politique du bord de l\u0027abîme",
+  "en":"brinkmanship",
+  "de":"Spiel mit dem Feuer",
+  "es":"política al borde del abismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7962",
+  "fr":"brusque",
+  "en":"brusque",
+  "de":"brüsk",
+  "es":"brusco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7963",
+  "fr":"rempart",
+  "en":"bulwark",
+  "de":"Bollwerk",
+  "es":"baluarte",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7964",
+  "fr":"bourgeonner",
+  "en":"burgeon",
+  "de":"aufkeimen",
+  "es":"florecer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7965",
+  "fr":"soutenir",
+  "en":"buttress",
+  "de":"stützen",
+  "es":"reforzar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7966",
+  "fr":"synonyme",
+  "en":"byword",
+  "de":"Inbegriff",
+  "es":"sinónimo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7967",
+  "fr":"cabale",
+  "en":"cabal",
+  "de":"Kabale",
+  "es":"cábala",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7968",
+  "fr":"cachette",
+  "en":"cache",
+  "de":"Versteck",
+  "es":"escondite",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7969",
+  "fr":"cacophonie",
+  "en":"cacophony",
+  "de":"Kakofonie",
+  "es":"cacofonía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7970",
+  "fr":"cadence",
+  "en":"cadence",
+  "de":"Kadenz",
+  "es":"cadencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7971",
+  "fr":"enjôler",
+  "en":"cajole",
+  "de":"schmeicheln",
+  "es":"engatusar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7972",
+  "fr":"calibre",
+  "en":"calibre",
+  "de":"Kaliber",
+  "es":"calibre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7973",
+  "fr":"insensible",
+  "en":"callous",
+  "de":"gefühllos",
+  "es":"insensible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7974",
+  "fr":"camaraderie",
+  "en":"camaraderie",
+  "de":"Kameradschaft",
+  "es":"camaradería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7975",
+  "fr":"franchise",
+  "en":"candour",
+  "de":"Offenheit",
+  "es":"franqueza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7976",
+  "fr":"acariâtre",
+  "en":"cantankerous",
+  "de":"streitsüchtig",
+  "es":"cascarrabias",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7977",
+  "fr":"capituler",
+  "en":"capitulate",
+  "de":"kapitulieren",
+  "es":"capitular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7978",
+  "fr":"capricieux",
+  "en":"capricious",
+  "de":"launisch",
+  "es":"caprichoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7979",
+  "fr":"cardinal",
+  "en":"cardinal",
+  "de":"kardinal",
+  "es":"cardinal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7980",
+  "fr":"cartographie",
+  "en":"cartography",
+  "de":"Kartographie",
+  "es":"cartografía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7981",
+  "fr":"caste",
+  "en":"caste",
+  "de":"Kaste",
+  "es":"casta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7982",
+  "fr":"fustiger",
+  "en":"castigate",
+  "de":"züchtigen",
+  "es":"castigar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7983",
+  "fr":"cataclysme",
+  "en":"cataclysm",
+  "de":"Kataklysmus",
+  "es":"cataclismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7984",
+  "fr":"catharsis",
+  "en":"catharsis",
+  "de":"Katharsis",
+  "es":"catarsis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7985",
+  "fr":"caustique",
+  "en":"caustic",
+  "de":"ätzend",
+  "es":"cáustico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7986",
+  "fr":"cavalcade",
+  "en":"cavalcade",
+  "de":"Kavalkade",
+  "es":"cabalgata",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7987",
+  "fr":"mise en garde",
+  "en":"caveat",
+  "de":"Vorbehalt",
+  "es":"advertencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7988",
+  "fr":"censure",
+  "en":"censure",
+  "de":"Zensur",
+  "es":"censura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7989",
+  "fr":"cessation",
+  "en":"cessation",
+  "de":"Einstellung",
+  "es":"cese",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7990",
+  "fr":"dépit",
+  "en":"chagrin",
+  "de":"Verdruss",
+  "es":"disgusto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7991",
+  "fr":"charlatan",
+  "en":"charlatan",
+  "de":"Scharlatan",
+  "es":"charlatán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7992",
+  "fr":"gouffre",
+  "en":"chasm",
+  "de":"Kluft",
+  "es":"abismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7993",
+  "fr":"châtier",
+  "en":"chastise",
+  "de":"züchtigen",
+  "es":"reprender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7994",
+  "fr":"bien meuble",
+  "en":"chattel",
+  "de":"Fahrnis",
+  "es":"bien mueble",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7995",
+  "fr":"chicane",
+  "en":"chicanery",
+  "de":"Schikane",
+  "es":"artimaña",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7996",
+  "fr":"réprimander",
+  "en":"chide",
+  "de":"tadeln",
+  "es":"regañar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_7997",
+  "fr":"chronologie",
+  "en":"chronology",
+  "de":"Chronologie",
+  "es":"cronología",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_7998",
+  "fr":"bourru",
+  "en":"churlish",
+  "de":"flegelhaft",
+  "es":"grosero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_7999",
+  "fr":"circonspect",
+  "en":"circumspect",
+  "de":"umsichtig",
+  "es":"circunspecto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8000",
+  "fr":"contourner",
+  "en":"circumvent",
+  "de":"umgehen",
+  "es":"eludir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8001",
+  "fr":"citadelle",
+  "en":"citadel",
+  "de":"Zitadelle",
+  "es":"ciudadela",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8002",
+  "fr":"clandestin",
+  "en":"clandestine",
+  "de":"heimlich",
+  "es":"clandestino",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8003",
+  "fr":"fendre",
+  "en":"cleave",
+  "de":"spalten",
+  "es":"hender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8004",
+  "fr":"clémence",
+  "en":"clemency",
+  "de":"Milde",
+  "es":"clemencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8005",
+  "fr":"clique",
+  "en":"clique",
+  "de":"Clique",
+  "es":"camarilla",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8006",
+  "fr":"cloître",
+  "en":"cloister",
+  "de":"Kloster",
+  "es":"claustro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8007",
+  "fr":"cloîtré",
+  "en":"cloistered",
+  "de":"klösterlich",
+  "es":"claustral",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8008",
+  "fr":"influence",
+  "en":"clout",
+  "de":"Schlagkraft",
+  "es":"influencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8009",
+  "fr":"se coaliser",
+  "en":"coalesce",
+  "de":"verschmelzen",
+  "es":"unirse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8010",
+  "fr":"contraindre",
+  "en":"coerce",
+  "de":"zwingen",
+  "es":"coaccionar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8011",
+  "fr":"coercition",
+  "en":"coercion",
+  "de":"Zwang",
+  "es":"coerción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8012",
+  "fr":"convaincant",
+  "en":"cogent",
+  "de":"überzeugend",
+  "es":"convincente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8013",
+  "fr":"cohésion",
+  "en":"cohesion",
+  "de":"Zusammenhalt",
+  "es":"cohesión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8014",
+  "fr":"conspirer",
+  "en":"collude",
+  "de":"kolludieren",
+  "es":"confabularse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8015",
+  "fr":"collusion",
+  "en":"collusion",
+  "de":"Absprache",
+  "es":"colusión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8016",
+  "fr":"colossal",
+  "en":"colossal",
+  "de":"kolossal",
+  "es":"colosal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8017",
+  "fr":"colosse",
+  "en":"colossus",
+  "de":"Koloss",
+  "es":"coloso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8018",
+  "fr":"proportionné",
+  "en":"commensurate",
+  "de":"angemessen",
+  "es":"conmensurable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8019",
+  "fr":"compatir",
+  "en":"commiserate",
+  "de":"bemitleiden",
+  "es":"compadecerse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8020",
+  "fr":"compatriote",
+  "en":"compatriot",
+  "de":"Landsmann",
+  "es":"compatriota",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8021",
+  "fr":"autosatisfaction",
+  "en":"complacency",
+  "de":"Selbstgefälligkeit",
+  "es":"complacencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8022",
+  "fr":"complaisant",
+  "en":"complacent",
+  "de":"selbstgefällig",
+  "es":"complaciente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8023",
+  "fr":"complémentaire",
+  "en":"complementary",
+  "de":"komplementär",
+  "es":"complementario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8024",
+  "fr":"complicité",
+  "en":"complicity",
+  "de":"Mitschuld",
+  "es":"complicidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8025",
+  "fr":"compulsion",
+  "en":"compulsion",
+  "de":"Zwang",
+  "es":"compulsión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8026",
+  "fr":"concaténation",
+  "en":"concatenation",
+  "de":"Verkettung",
+  "es":"concatenación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8027",
+  "fr":"conciliant",
+  "en":"conciliatory",
+  "de":"versöhnlich",
+  "es":"conciliador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8028",
+  "fr":"conclave",
+  "en":"conclave",
+  "de":"Konklave",
+  "es":"cónclave",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8029",
+  "fr":"concordance",
+  "en":"concordance",
+  "de":"Übereinstimmung",
+  "es":"concordancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8030",
+  "fr":"condescendance",
+  "en":"condescension",
+  "de":"Herablassung",
+  "es":"condescendencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8031",
+  "fr":"tolérer",
+  "en":"condone",
+  "de":"billigen",
+  "es":"consentir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8032",
+  "fr":"confisquer",
+  "en":"confiscate",
+  "de":"beschlagnahmen",
+  "es":"confiscar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8033",
+  "fr":"conflagration",
+  "en":"conflagration",
+  "de":"Flächenbrand",
+  "es":"conflagración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8034",
+  "fr":"confluent",
+  "en":"confluence",
+  "de":"Zusammenfluss",
+  "es":"confluencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8035",
+  "fr":"confondre",
+  "en":"confound",
+  "de":"verwirren",
+  "es":"confundir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8036",
+  "fr":"conjecture",
+  "en":"conjecture",
+  "de":"Vermutung",
+  "es":"conjetura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8037",
+  "fr":"conjurér",
+  "en":"conjure",
+  "de":"beschwören",
+  "es":"conjurar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8038",
+  "fr":"conspirer",
+  "en":"connive",
+  "de":"sich verschwören",
+  "es":"confabularse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8039",
+  "fr":"connaisseur",
+  "en":"connoisseur",
+  "de":"Kenner",
+  "es":"conocedor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8040",
+  "fr":"connotation",
+  "en":"connotation",
+  "de":"Konnotation",
+  "es":"connotación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8041",
+  "fr":"conquête",
+  "en":"conquest",
+  "de":"Eroberung",
+  "es":"conquista",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_8042",
+  "fr":"consécration",
+  "en":"consecration",
+  "de":"Weihe",
+  "es":"consagración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8043",
+  "fr":"consortium",
+  "en":"consortium",
+  "de":"Konsortium",
+  "es":"consorcio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8044",
+  "fr":"consternation",
+  "en":"consternation",
+  "de":"Bestürzung",
+  "es":"consternación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8045",
+  "fr":"interpréter",
+  "en":"construe",
+  "de":"auslegen",
+  "es":"interpretar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8046",
+  "fr":"consommation",
+  "en":"consummation",
+  "de":"Vollendung",
+  "es":"consumación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8047",
+  "fr":"contagion",
+  "en":"contagion",
+  "de":"Ansteckung",
+  "es":"contagio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8048",
+  "fr":"méprisable",
+  "en":"contemptible",
+  "de":"verächtlich",
+  "es":"despreciable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8049",
+  "fr":"contingence",
+  "en":"contingency",
+  "de":"Eventualität",
+  "es":"contingencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8050",
+  "fr":"continuum",
+  "en":"continuum",
+  "de":"Kontinuum",
+  "es":"continuo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8051",
+  "fr":"contrevenir",
+  "en":"contravene",
+  "de":"zuwiderhandeln",
+  "es":"contravenir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8052",
+  "fr":"contrition",
+  "en":"contrition",
+  "de":"Reue",
+  "es":"contrición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8053",
+  "fr":"énigme",
+  "en":"conundrum",
+  "de":"Rätsel",
+  "es":"acertijo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8054",
+  "fr":"convoquer",
+  "en":"convene",
+  "de":"einberufen",
+  "es":"convocar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8055",
+  "fr":"convergence",
+  "en":"convergence",
+  "de":"Konvergenz",
+  "es":"convergencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8056",
+  "fr":"convivial",
+  "en":"convivial",
+  "de":"gesellig",
+  "es":"convivial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8057",
+  "fr":"alambiqué",
+  "en":"convoluted",
+  "de":"gewunden",
+  "es":"enrevesado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8058",
+  "fr":"copieux",
+  "en":"copious",
+  "de":"ausgiebig",
+  "es":"copioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8059",
+  "fr":"coquet",
+  "en":"coquettish",
+  "de":"kokett",
+  "es":"coqueto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8060",
+  "fr":"cordial",
+  "en":"cordial",
+  "de":"herzlich",
+  "es":"cordial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8061",
+  "fr":"corne d\u0027abondance",
+  "en":"cornucopia",
+  "de":"Füllhorn",
+  "es":"cornucopia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8062",
+  "fr":"corollaire",
+  "en":"corollary",
+  "de":"Folgesatz",
+  "es":"corolario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8063",
+  "fr":"corroborer",
+  "en":"corroborate",
+  "de":"bekräftigen",
+  "es":"corroborar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8064",
+  "fr":"cortège",
+  "en":"cortege",
+  "de":"Gefolge",
+  "es":"cortejo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8065",
+  "fr":"cosmologie",
+  "en":"cosmology",
+  "de":"Kosmologie",
+  "es":"cosmología",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8066",
+  "fr":"cosmos",
+  "en":"cosmos",
+  "de":"Kosmos",
+  "es":"cosmos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8067",
+  "fr":"approuver",
+  "en":"countenance",
+  "de":"gutheißen",
+  "es":"aprobar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8068",
+  "fr":"convoiter",
+  "en":"covet",
+  "de":"begehren",
+  "es":"codiciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8069",
+  "fr":"lâche",
+  "en":"craven",
+  "de":"feige",
+  "es":"cobarde",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8070",
+  "fr":"crédule",
+  "en":"credulous",
+  "de":"leichtgläubig",
+  "es":"crédulo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8071",
+  "fr":"credo",
+  "en":"creed",
+  "de":"Glaubensbekenntnis",
+  "es":"credo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8072",
+  "fr":"crevasse",
+  "en":"crevasse",
+  "de":"Gletscherspalte",
+  "es":"grieta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8073",
+  "fr":"creuset",
+  "en":"crucible",
+  "de":"Tiegel",
+  "es":"crisol",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8074",
+  "fr":"cœur",
+  "en":"crux",
+  "de":"Kernpunkt",
+  "es":"quid",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8075",
+  "fr":"crypte",
+  "en":"crypt",
+  "de":"Krypta",
+  "es":"cripta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8076",
+  "fr":"culminer",
+  "en":"culminate",
+  "de":"kulminieren",
+  "es":"culminar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8077",
+  "fr":"coupable",
+  "en":"culpable",
+  "de":"schuldhaft",
+  "es":"culpable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8078",
+  "fr":"coupable",
+  "en":"culprit",
+  "de":"Schuldiger",
+  "es":"culpable",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8079",
+  "fr":"rusé",
+  "en":"cunning",
+  "de":"listig",
+  "es":"astuto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8080",
+  "fr":"cupidité",
+  "en":"cupidity",
+  "de":"Habgier",
+  "es":"codicia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8081",
+  "fr":"grincheux",
+  "en":"curmudgeon",
+  "de":"Griesgram",
+  "es":"cascarrabias",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8082",
+  "fr":"superficiel",
+  "en":"cursory",
+  "de":"flüchtig",
+  "es":"superficial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8083",
+  "fr":"écourter",
+  "en":"curtail",
+  "de":"kürzen",
+  "es":"reducir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8084",
+  "fr":"stupide",
+  "en":"daft",
+  "de":"bescheuert",
+  "es":"tonto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8085",
+  "fr":"badinage",
+  "en":"dalliance",
+  "de":"Tändelei",
+  "es":"coqueteo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8086",
+  "fr":"intimidant",
+  "en":"daunting",
+  "de":"entmutigend",
+  "es":"intimidante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8087",
+  "fr":"flâner",
+  "en":"dawdle",
+  "de":"trödeln",
+  "es":"entretenerse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8088",
+  "fr":"pénurie",
+  "en":"dearth",
+  "de":"Mangel",
+  "es":"escasez",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8089",
+  "fr":"débâcle",
+  "en":"debacle",
+  "de":"Debakel",
+  "es":"debacle",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8090",
+  "fr":"débiliter",
+  "en":"debilitate",
+  "de":"schwächen",
+  "es":"debilitar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8091",
+  "fr":"élégant",
+  "en":"debonair",
+  "de":"lässig",
+  "es":"elegante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8092",
+  "fr":"démystifier",
+  "en":"debunk",
+  "de":"entlarven",
+  "es":"desmentir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8093",
+  "fr":"décadence",
+  "en":"decadence",
+  "de":"Dekadenz",
+  "es":"decadencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8094",
+  "fr":"trompeur",
+  "en":"deceitful",
+  "de":"betrügerisch",
+  "es":"engañoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8095",
+  "fr":"décimer",
+  "en":"decimate",
+  "de":"dezimieren",
+  "es":"diezmar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8096",
+  "fr":"décent",
+  "en":"decorous",
+  "de":"anständig",
+  "es":"decoroso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8097",
+  "fr":"décorum",
+  "en":"decorum",
+  "de":"Anstand",
+  "es":"decoro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8098",
+  "fr":"décret",
+  "en":"decree",
+  "de":"Dekret",
+  "es":"decreto",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_8099",
+  "fr":"décrépit",
+  "en":"decrepit",
+  "de":"altersschwach",
+  "es":"decrépito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8100",
+  "fr":"décrier",
+  "en":"decry",
+  "de":"verurteilen",
+  "es":"condenar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8101",
+  "fr":"diffamation",
+  "en":"defamation",
+  "de":"Verleumdung",
+  "es":"difamación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8102",
+  "fr":"déférence",
+  "en":"deference",
+  "de":"Ehrerbietung",
+  "es":"deferencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8103",
+  "fr":"dégonfler",
+  "en":"to deflate",
+  "de":"ablassen",
+  "es":"desinflar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8104",
+  "fr":"défunt",
+  "en":"defunct",
+  "de":"verstorben",
+  "es":"difunto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8105",
+  "fr":"déconseiller",
+  "en":"to dehort",
+  "de":"abraten",
+  "es":"disuadir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8106",
+  "fr":"daigner",
+  "en":"to deign",
+  "de":"sich herablassen",
+  "es":"dignarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8107",
+  "fr":"déité",
+  "en":"deity",
+  "de":"Gottheit",
+  "es":"deidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8108",
+  "fr":"délétère",
+  "en":"deleterious",
+  "de":"schädlich",
+  "es":"deletéreo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8109",
+  "fr":"délibération",
+  "en":"deliberation",
+  "de":"Überlegung",
+  "es":"deliberación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8110",
+  "fr":"délimiter",
+  "en":"to delineate",
+  "de":"skizzieren",
+  "es":"delinear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8111",
+  "fr":"délimitation",
+  "en":"delineation",
+  "de":"Darstellung",
+  "es":"delineación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8112",
+  "fr":"délire",
+  "en":"delirium",
+  "de":"Delirium",
+  "es":"delirio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8113",
+  "fr":"délivrance",
+  "en":"deliverance",
+  "de":"Befreiung",
+  "es":"liberación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8114",
+  "fr":"déluge",
+  "en":"deluge",
+  "de":"Sintflut",
+  "es":"diluvio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8115",
+  "fr":"démagogue",
+  "en":"demagogue",
+  "de":"Demagoge",
+  "es":"demagogo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8116",
+  "fr":"démarcation",
+  "en":"demarcation",
+  "de":"Abgrenzung",
+  "es":"demarcación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8117",
+  "fr":"rabaisser",
+  "en":"to demean",
+  "de":"erniedrigen",
+  "es":"degradar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8118",
+  "fr":"comportement",
+  "en":"demeanour",
+  "de":"Verhalten",
+  "es":"comportamiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8119",
+  "fr":"décès",
+  "en":"demise",
+  "de":"Ableben",
+  "es":"fallecimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8120",
+  "fr":"objecter",
+  "en":"to demur",
+  "de":"einwenden",
+  "es":"objetar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8121",
+  "fr":"modeste",
+  "en":"demure",
+  "de":"zurückhaltend",
+  "es":"recatado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8122",
+  "fr":"dénigrer",
+  "en":"to denigrate",
+  "de":"verunglimpfen",
+  "es":"denigrar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8123",
+  "fr":"dénouement",
+  "en":"denouement",
+  "de":"Ausgang",
+  "es":"desenlace",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8124",
+  "fr":"épuiser",
+  "en":"to deplete",
+  "de":"erschöpfen",
+  "es":"agotar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8125",
+  "fr":"déplorable",
+  "en":"deplorable",
+  "de":"beklagenswert",
+  "es":"deplorable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8126",
+  "fr":"déplorer",
+  "en":"to deplore",
+  "de":"bedauern",
+  "es":"deplorar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8127",
+  "fr":"dépravation",
+  "en":"depravity",
+  "de":"Verdorbenheit",
+  "es":"depravación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8128",
+  "fr":"abandonné",
+  "en":"derelict",
+  "de":"verlassen",
+  "es":"abandonado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8129",
+  "fr":"tourner en dérision",
+  "en":"to deride",
+  "de":"verspotten",
+  "es":"burlarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8130",
+  "fr":"moqueur",
+  "en":"derisive",
+  "de":"spöttisch",
+  "es":"burlón",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8131",
+  "fr":"péjoratif",
+  "en":"derogatory",
+  "de":"abfällig",
+  "es":"despectivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8132",
+  "fr":"profaner",
+  "en":"to desecrate",
+  "de":"entweihen",
+  "es":"profanar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8133",
+  "fr":"désolation",
+  "en":"desolation",
+  "de":"Verwüstung",
+  "es":"desolación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8134",
+  "fr":"découragement",
+  "en":"despondency",
+  "de":"Verzagtheit",
+  "es":"abatimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8135",
+  "fr":"découragé",
+  "en":"despondent",
+  "de":"verzagt",
+  "es":"abatido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8136",
+  "fr":"indigent",
+  "en":"destitute",
+  "de":"mittellos",
+  "es":"indigente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8137",
+  "fr":"décousu",
+  "en":"desultory",
+  "de":"halbherzig",
+  "es":"inconexo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8138",
+  "fr":"détachement",
+  "en":"detachment",
+  "de":"Loslösung",
+  "es":"desapego",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8139",
+  "fr":"dissuader",
+  "en":"to deter",
+  "de":"abschrecken",
+  "es":"disuadir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8140",
+  "fr":"détestable",
+  "en":"detestable",
+  "de":"abscheulich",
+  "es":"detestable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8141",
+  "fr":"détriment",
+  "en":"detriment",
+  "de":"Nachteil",
+  "es":"detrimento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8142",
+  "fr":"nuisible",
+  "en":"detrimental",
+  "de":"schädlich",
+  "es":"perjudicial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8143",
+  "fr":"déviation",
+  "en":"deviation",
+  "de":"Abweichung",
+  "es":"desviación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8144",
+  "fr":"sournois",
+  "en":"devious",
+  "de":"hinterhältig",
+  "es":"retorcido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8145",
+  "fr":"dépourvu",
+  "en":"devoid",
+  "de":"frei",
+  "es":"desprovisto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8146",
+  "fr":"dextérité",
+  "en":"dexterity",
+  "de":"Geschicklichkeit",
+  "es":"destreza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8147",
+  "fr":"adroit",
+  "en":"dexterous",
+  "de":"geschickt",
+  "es":"diestro",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8148",
+  "fr":"dialectique",
+  "en":"dialectic",
+  "de":"Dialektik",
+  "es":"dialéctica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8149",
+  "fr":"diaphane",
+  "en":"diaphanous",
+  "de":"durchscheinend",
+  "es":"diáfano",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8150",
+  "fr":"diaspora",
+  "en":"diaspora",
+  "de":"Diaspora",
+  "es":"diáspora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8151",
+  "fr":"diatribe",
+  "en":"diatribe",
+  "de":"Diatribe",
+  "es":"diatriba",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8152",
+  "fr":"dichotomie",
+  "en":"dichotomy",
+  "de":"Dichotomie",
+  "es":"dicotomía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8153",
+  "fr":"didactique",
+  "en":"didactic",
+  "de":"didaktisch",
+  "es":"didáctico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8154",
+  "fr":"réservé",
+  "en":"diffident",
+  "de":"zurückhaltend",
+  "es":"tímido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8155",
+  "fr":"dilatoire",
+  "en":"dilatory",
+  "de":"verzögernd",
+  "es":"dilatorio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8156",
+  "fr":"diligence",
+  "en":"diligence",
+  "de":"Fleiß",
+  "es":"diligencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8157",
+  "fr":"diligemment",
+  "en":"diligently",
+  "de":"fleißig",
+  "es":"diligentemente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8158",
+  "fr":"diminution",
+  "en":"diminution",
+  "de":"Verminderung",
+  "es":"disminución",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8159",
+  "fr":"minable",
+  "en":"dingy",
+  "de":"schäbig",
+  "es":"lúgubre",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8160",
+  "fr":"chant funèbre",
+  "en":"dirge",
+  "de":"Klagelied",
+  "es":"canto fúnebre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8161",
+  "fr":"désaffection",
+  "en":"disaffection",
+  "de":"Entfremdung",
+  "es":"desafección",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8162",
+  "fr":"discerner",
+  "en":"to discern",
+  "de":"erkennen",
+  "es":"discernir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8163",
+  "fr":"discernement",
+  "en":"discernment",
+  "de":"Urteilsvermögen",
+  "es":"discernimiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8164",
+  "fr":"disciple",
+  "en":"disciple",
+  "de":"Jünger",
+  "es":"discípulo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8165",
+  "fr":"discorde",
+  "en":"discord",
+  "de":"Zwietracht",
+  "es":"discordia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8166",
+  "fr":"discordant",
+  "en":"discordant",
+  "de":"diskordant",
+  "es":"discordante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8167",
+  "fr":"divergence",
+  "en":"discrepancy",
+  "de":"Diskrepanz",
+  "es":"discrepancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8168",
+  "fr":"dédain",
+  "en":"disdain",
+  "de":"Verachtung",
+  "es":"desdén",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8169",
+  "fr":"ébouriffé",
+  "en":"dishevelled",
+  "de":"zerzaust",
+  "es":"desaliñado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8170",
+  "fr":"désillusion",
+  "en":"disillusionment",
+  "de":"Desillusionierung",
+  "es":"desilusión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8171",
+  "fr":"hypocrite",
+  "en":"disingenuous",
+  "de":"unaufrichtig",
+  "es":"falso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8172",
+  "fr":"désintéressé",
+  "en":"disinterested",
+  "de":"uninteressiert",
+  "es":"desinteresado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8173",
+  "fr":"incohérent",
+  "en":"disjointed",
+  "de":"zusammenhangslos",
+  "es":"inconexo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8174",
+  "fr":"désarroi",
+  "en":"dismay",
+  "de":"Bestürzung",
+  "es":"consternación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8175",
+  "fr":"dénigrer",
+  "en":"to disparage",
+  "de":"herabsetzen",
+  "es":"menospreciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8176",
+  "fr":"disparate",
+  "en":"disparate",
+  "de":"ungleich",
+  "es":"dispar",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8177",
+  "fr":"disparité",
+  "en":"disparity",
+  "de":"Ungleichheit",
+  "es":"disparidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8178",
+  "fr":"impartial",
+  "en":"dispassionate",
+  "de":"leidenschaftslos",
+  "es":"desapasionado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8179",
+  "fr":"dissiper",
+  "en":"to dispel",
+  "de":"zerstreuen",
+  "es":"disipar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8180",
+  "fr":"dispense",
+  "en":"dispensation",
+  "de":"Erlass",
+  "es":"dispensa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8181",
+  "fr":"distribuer",
+  "en":"to dispense",
+  "de":"ausgeben",
+  "es":"dispensar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8182",
+  "de":"die Disposition",
+  "level":"C2",
+  "type":"nom",
+  "en":"disposition",
+  "fr":"la disposition",
+  "es":"la disposición"
+},
+  {
+  "id":"word_8183",
+  "de":"der Verruf",
+  "level":"C2",
+  "type":"nom",
+  "en":"disrepute",
+  "fr":"le discrédit",
+  "es":"el descrédito"
+},
+  {
+  "id":"word_8184",
+  "de":"verbreiten",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to disseminate",
+  "fr":"disséminer",
+  "es":"diseminar"
+},
+  {
+  "id":"word_8185",
+  "de":"die Uneinigkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"dissension",
+  "fr":"la dissension",
+  "es":"la disensión"
+},
+  {
+  "id":"word_8186",
+  "de":"der Widerspruch",
+  "level":"C2",
+  "type":"nom",
+  "en":"dissent",
+  "fr":"la dissidence",
+  "es":"el disenso"
+},
+  {
+  "id":"word_8187",
+  "de":"die Dissertation",
+  "level":"C2",
+  "type":"nom",
+  "en":"dissertation",
+  "fr":"la dissertation",
+  "es":"la disertación"
+},
+  {
+  "id":"word_8188",
+  "de":"der Dissident",
+  "level":"C2",
+  "type":"nom",
+  "en":"dissident",
+  "fr":"le dissident",
+  "es":"el disidente"
+},
+  {
+  "id":"word_8189",
+  "de":"zerstreuen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to dissipate",
+  "fr":"dissiper",
+  "es":"disipar"
+},
+  {
+  "id":"word_8190",
+  "de":"die Auflösung",
+  "level":"C2",
+  "type":"nom",
+  "en":"dissolution",
+  "fr":"la dissolution",
+  "es":"la disolución"
+},
+  {
+  "id":"word_8191",
+  "de":"die Dissonanz",
+  "level":"C2",
+  "type":"nom",
+  "en":"dissonance",
+  "fr":"la dissonance",
+  "es":"la disonancia"
+},
+  {
+  "id":"word_8192",
+  "de":"die Wahrsagerei",
+  "level":"C2",
+  "type":"nom",
+  "en":"divination",
+  "fr":"la divination",
+  "es":"la adivinación"
+},
+  {
+  "id":"word_8193",
+  "de":"preisgeben",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to divulge",
+  "fr":"divulguer",
+  "es":"divulgar"
+},
+  {
+  "id":"word_8194",
+  "de":"hartnäckig",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"dogged",
+  "fr":"obstiné",
+  "es":"obstinado"
+},
+  {
+  "id":"word_8195",
+  "de":"das Dogma",
+  "level":"C2",
+  "type":"nom",
+  "en":"dogma",
+  "fr":"le dogme",
+  "es":"el dogma"
+},
+  {
+  "id":"word_8196",
+  "de":"dogmatisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"dogmatic",
+  "fr":"dogmatique",
+  "es":"dogmático"
+},
+  {
+  "id":"word_8197",
+  "de":"die Flaute",
+  "level":"C2",
+  "type":"nom",
+  "en":"doldrums",
+  "fr":"le marasme",
+  "es":"el estancamiento"
+},
+  {
+  "id":"word_8198",
+  "de":"der Wohnsitz",
+  "level":"C2",
+  "type":"nom",
+  "en":"domicile",
+  "fr":"le domicile",
+  "es":"el domicilio"
+},
+  {
+  "id":"word_8199",
+  "de":"die Herrschaft",
+  "level":"C2",
+  "type":"nom",
+  "en":"dominion",
+  "fr":"la domination",
+  "es":"el dominio"
+},
+  {
+  "id":"word_8200",
+  "de":"ruhend",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"dormant",
+  "fr":"dormant",
+  "es":"inactivo"
+},
+  {
+  "id":"word_8201",
+  "de":"die Akte",
+  "level":"C2",
+  "type":"nom",
+  "en":"dossier",
+  "fr":"le dossier",
+  "es":"el expediente"
+},
+  {
+  "id":"word_8202",
+  "de":"das Greisenalter",
+  "level":"C2",
+  "type":"nom",
+  "en":"dotage",
+  "fr":"le gâtisme",
+  "es":"la chochez"
+},
+  {
+  "id":"word_8203",
+  "de":"die Plackerei",
+  "level":"C2",
+  "type":"nom",
+  "en":"drudgery",
+  "fr":"la corvée",
+  "es":"el trabajo pesado"
+},
+  {
+  "id":"word_8204",
+  "de":"zweifelhaft",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"dubious",
+  "fr":"douteux",
+  "es":"dudoso"
+},
+  {
+  "id":"word_8205",
+  "de":"die Doppelzüngigkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"duplicity",
+  "fr":"la duplicité",
+  "es":"la duplicidad"
+},
+  {
+  "id":"word_8206",
+  "de":"der Zwang",
+  "level":"C2",
+  "type":"nom",
+  "en":"duress",
+  "fr":"la contrainte",
+  "es":"la coacción"
+},
+  {
+  "id":"word_8207",
+  "de":"schwinden",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to dwindle",
+  "fr":"diminuer",
+  "es":"disminuir"
+},
+  {
+  "id":"word_8208",
+  "de":"die Dynastie",
+  "level":"C2",
+  "type":"nom",
+  "en":"dynasty",
+  "fr":"la dynastie",
+  "es":"la dinastía"
+},
+  {
+  "id":"word_8209",
+  "de":"der Überschwang",
+  "level":"C2",
+  "type":"nom",
+  "en":"ebullience",
+  "fr":"l\u0027exubérance",
+  "es":"la ebullición"
+},
+  {
+  "id":"word_8210",
+  "de":"überschwänglich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"ebullient",
+  "fr":"exubérant",
+  "es":"exuberante"
+},
+  {
+  "id":"word_8211",
+  "de":"exzentrisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"eccentric",
+  "fr":"excentrique",
+  "es":"excéntrico"
+},
+  {
+  "id":"word_8212",
+  "de":"die Staffel",
+  "level":"C2",
+  "type":"nom",
+  "en":"echelon",
+  "fr":"l\u0027échelon",
+  "es":"el escalafón"
+},
+  {
+  "id":"word_8213",
+  "de":"eklektisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"eclectic",
+  "fr":"éclectique",
+  "es":"ecléctico"
+},
+  {
+  "id":"word_8214",
+  "de":"der Erlass",
+  "level":"C2",
+  "type":"nom",
+  "en":"edict",
+  "fr":"l\u0027édit",
+  "es":"el edicto"
+},
+  {
+  "id":"word_8215",
+  "de":"die Erbauung",
+  "level":"C2",
+  "type":"nom",
+  "en":"edification",
+  "fr":"l\u0027édification",
+  "es":"la edificación"
+},
+  {
+  "id":"word_8216",
+  "de":"das Gebäude",
+  "level":"C2",
+  "type":"nom",
+  "en":"edifice",
+  "fr":"l\u0027édifice",
+  "es":"el edificio"
+},
+  {
+  "id":"word_8217",
+  "de":"wirksam",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"efficacious",
+  "fr":"efficace",
+  "es":"eficaz"
+},
+  {
+  "id":"word_8218",
+  "de":"das Bildnis",
+  "level":"C2",
+  "type":"nom",
+  "en":"effigy",
+  "fr":"l\u0027effigie",
+  "es":"la efigie"
+},
+  {
+  "id":"word_8219",
+  "de":"die Unverschämtheit",
+  "level":"C2",
+  "type":"nom",
+  "en":"effrontery",
+  "fr":"l\u0027effronterie",
+  "es":"el descaro"
+},
+  {
+  "id":"word_8220",
+  "de":"der Erguss",
+  "level":"C2",
+  "type":"nom",
+  "en":"effusion",
+  "fr":"l\u0027effusion",
+  "es":"la efusión"
+},
+  {
+  "id":"word_8221",
+  "de":"überschwänglich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"effusive",
+  "fr":"effusif",
+  "es":"efusivo"
+},
+  {
+  "id":"word_8222",
+  "de":"ungeheuerlich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"egregious",
+  "fr":"scandaleux",
+  "es":"atroz"
+},
+  {
+  "id":"word_8223",
+  "de":"beschwingt",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"elated",
+  "fr":"exalté",
+  "es":"eufórico"
+},
+  {
+  "id":"word_8224",
+  "de":"die Hochstimmung",
+  "level":"C2",
+  "type":"nom",
+  "en":"elation",
+  "fr":"l\u0027exaltation",
+  "es":"el júbilo"
+},
+  {
+  "id":"word_8225",
+  "de":"hervorrufen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to elicit",
+  "fr":"susciter",
+  "es":"suscitar"
+},
+  {
+  "id":"word_8226",
+  "de":"eloquent",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"eloquent",
+  "fr":"éloquent",
+  "es":"elocuente"
+},
+  {
+  "id":"word_8227",
+  "de":"erläutern",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to elucidate",
+  "fr":"élucider",
+  "es":"dilucidar"
+},
+  {
+  "id":"word_8228",
+  "de":"schwer fassbar",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"elusive",
+  "fr":"insaisissable",
+  "es":"esquivo"
+},
+  {
+  "id":"word_8229",
+  "de":"abgemagert",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"emaciated",
+  "fr":"émacié",
+  "es":"demacrado"
+},
+  {
+  "id":"word_8230",
+  "de":"ausgehen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to emanate",
+  "fr":"émaner",
+  "es":"emanar"
+},
+  {
+  "id":"word_8231",
+  "de":"emanzipieren",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to emancipate",
+  "fr":"émanciper",
+  "es":"emancipar"
+},
+  {
+  "id":"word_8232",
+  "de":"die Emanzipation",
+  "level":"C2",
+  "type":"nom",
+  "en":"emancipation",
+  "fr":"l\u0027émancipation",
+  "es":"la emancipación"
+},
+  {
+  "id":"word_8233",
+  "de":"das Embargo",
+  "level":"C2",
+  "type":"nom",
+  "en":"embargo",
+  "fr":"l\u0027embargo",
+  "es":"el embargo"
+},
+  {
+  "id":"word_8234",
+  "de":"verschönern",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to embellish",
+  "fr":"embellir",
+  "es":"embellecer"
+},
+  {
+  "id":"word_8235",
+  "de":"veruntreuen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to embezzle",
+  "fr":"détourner",
+  "es":"desfalcar"
+},
+  {
+  "id":"word_8236",
+  "de":"das Emblem",
+  "level":"C2",
+  "type":"nom",
+  "en":"emblem",
+  "fr":"l\u0027emblème",
+  "es":"el emblema"
+},
+  {
+  "id":"word_8237",
+  "de":"verwickeln",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to embroil",
+  "fr":"impliquer",
+  "es":"involucrar"
+},
+  {
+  "id":"word_8238",
+  "de":"der Abgesandte",
+  "level":"C2",
+  "type":"nom",
+  "en":"emissary",
+  "fr":"l\u0027émissaire",
+  "es":"el emisario"
+},
+  {
+  "id":"word_8239",
+  "de":"nacheifern",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to emulate",
+  "fr":"imiter",
+  "es":"emular"
+},
+  {
+  "id":"word_8240",
+  "de":"die Enklave",
+  "level":"C2",
+  "type":"nom",
+  "en":"enclave",
+  "fr":"l\u0027enclave",
+  "es":"el enclave"
+},
+  {
+  "id":"word_8241",
+  "de":"übergreifen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to encroach",
+  "fr":"empiéter",
+  "es":"invadir"
+},
+  {
+  "id":"word_8242",
+  "de":"endemisch",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"endemic",
+  "fr":"endémique",
+  "es":"endémico"
+},
+  {
+  "id":"word_8243",
+  "de":"ausstatten",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to endow",
+  "fr":"doter",
+  "es":"dotar"
+},
+  {
+  "id":"word_8244",
+  "de":"entnerven",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to enervate",
+  "fr":"énerver",
+  "es":"enervar"
+},
+  {
+  "id":"word_8245",
+  "de":"erzeugen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to engender",
+  "fr":"engendrer",
+  "es":"engendrar"
+},
+  {
+  "id":"word_8246",
+  "de":"das Rätsel",
+  "level":"C2",
+  "type":"nom",
+  "en":"enigma",
+  "fr":"l\u0027énigme",
+  "es":"el enigma"
+},
+  {
+  "id":"word_8247",
+  "de":"rätselhaft",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"enigmatic",
+  "fr":"énigmatique",
+  "es":"enigmático"
+},
+  {
+  "id":"word_8248",
+  "de":"die Feindschaft",
+  "level":"C2",
+  "type":"nom",
+  "en":"enmity",
+  "fr":"l\u0027inimitié",
+  "es":"la enemistad"
+},
+  {
+  "id":"word_8249",
+  "de":"die Langeweile",
+  "level":"C2",
+  "type":"nom",
+  "en":"ennui",
+  "fr":"l\u0027ennui",
+  "es":"el tedio"
+},
+  {
+  "id":"word_8250",
+  "de":"die Ungeheuerlichkeit",
+  "level":"C2",
+  "type":"nom",
+  "en":"enormity",
+  "fr":"l\u0027énormité",
+  "es":"la enormidad"
+},
+  {
+  "id":"word_8251",
+  "de":"folgen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to ensue",
+  "fr":"s\u0027ensuivre",
+  "es":"sobrevenir"
+},
+  {
+  "id":"word_8252",
+  "de":"mit sich bringen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to entail",
+  "fr":"impliquer",
+  "es":"implicar"
+},
+  {
+  "id":"word_8253",
+  "de":"fesseln",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to enthrall",
+  "fr":"captiver",
+  "es":"cautivar"
+},
+  {
+  "id":"word_8254",
+  "de":"verlockend",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"enticing",
+  "fr":"séduisant",
+  "es":"tentador"
+},
+  {
+  "id":"word_8255",
+  "de":"das Gefolge",
+  "level":"C2",
+  "type":"nom",
+  "en":"entourage",
+  "fr":"l\u0027entourage",
+  "es":"el séquito"
+},
+  {
+  "id":"word_8256",
+  "de":"anflehen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to entreat",
+  "fr":"implorer",
+  "es":"suplicar"
+},
+  {
+  "id":"word_8257",
+  "de":"die Verschanzung",
+  "level":"C2",
+  "type":"nom",
+  "en":"entrenchment",
+  "fr":"le retranchement",
+  "es":"el atrincheramiento"
+},
+  {
+  "id":"word_8258",
+  "de":"die Entropie",
+  "level":"C2",
+  "type":"nom",
+  "en":"entropy",
+  "fr":"l\u0027entropie",
+  "es":"la entropía"
+},
+  {
+  "id":"word_8259",
+  "de":"aufzählen",
+  "level":"C2",
+  "type":"verbe",
+  "en":"to enumerate",
+  "fr":"énumérer",
+  "es":"enumerar"
+},
+  {
+  "id":"word_8260",
+  "de":"der Gesandte",
+  "level":"C2",
+  "type":"nom",
+  "en":"envoy",
+  "fr":"l\u0027envoyé",
+  "es":"el enviado"
+},
+  {
+  "id":"word_8261",
+  "de":"vergänglich",
+  "level":"C2",
+  "type":"adjectif",
+  "en":"ephemeral",
+  "fr":"éphémère",
+  "es":"efímero"
+},
+  {
+  "id":"word_8262",
+  "en":"epicentre",
+  "fr":"épicentre",
+  "de":"Epizentrum",
+  "es":"epicentro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8263",
+  "en":"epicure",
+  "fr":"épicurien",
+  "de":"Feinschmecker",
+  "es":"epicúreo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8264",
+  "en":"epigram",
+  "fr":"épigramme",
+  "de":"Epigramm",
+  "es":"epigrama",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8265",
+  "en":"epilogue",
+  "fr":"épilogue",
+  "de":"Epilog",
+  "es":"epílogo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8266",
+  "en":"epiphany",
+  "fr":"épiphanie",
+  "de":"Epiphanie",
+  "es":"epifanía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8267",
+  "en":"epitaph",
+  "fr":"épitaphe",
+  "de":"Epitaph",
+  "es":"epitafio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8268",
+  "en":"epitome",
+  "fr":"quintessence",
+  "de":"Inbegriff",
+  "es":"epítome",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8269",
+  "en":"to epitomise",
+  "fr":"incarner",
+  "de":"verkörpern",
+  "es":"epitomar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8270",
+  "en":"epoch",
+  "fr":"époque",
+  "de":"Epoche",
+  "es":"época",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8271",
+  "en":"equanimity",
+  "fr":"équanimité",
+  "de":"Gleichmut",
+  "es":"ecuanimidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8272",
+  "en":"equilibrium",
+  "fr":"équilibre",
+  "de":"Gleichgewicht",
+  "es":"equilibrio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8273",
+  "en":"equivocal",
+  "fr":"équivoque",
+  "de":"mehrdeutig",
+  "es":"equívoco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8274",
+  "en":"to eradicate",
+  "fr":"éradiquer",
+  "de":"ausrotten",
+  "es":"erradicar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8275",
+  "en":"erotic",
+  "fr":"érotique",
+  "de":"erotisch",
+  "es":"erótico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8276",
+  "en":"to err",
+  "fr":"se tromper",
+  "de":"irren",
+  "es":"errar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8277",
+  "en":"erstwhile",
+  "fr":"ancien",
+  "de":"ehemalig",
+  "es":"antaño",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8278",
+  "en":"erudite",
+  "fr":"érudit",
+  "de":"gelehrt",
+  "es":"erudito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8279",
+  "en":"erudition",
+  "fr":"érudition",
+  "de":"Gelehrsamkeit",
+  "es":"erudición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8280",
+  "en":"escapade",
+  "fr":"escapade",
+  "de":"Eskapade",
+  "es":"escapada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8281",
+  "en":"escarpment",
+  "fr":"escarpement",
+  "de":"Steilhang",
+  "es":"escarpadura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8282",
+  "en":"to eschew",
+  "fr":"éviter",
+  "de":"meiden",
+  "es":"evitar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8283",
+  "en":"esoteric",
+  "fr":"ésotérique",
+  "de":"esoterisch",
+  "es":"esotérico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8284",
+  "en":"to espouse",
+  "fr":"épouser",
+  "de":"unterstützen",
+  "es":"abrazar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8285",
+  "en":"esteem",
+  "fr":"estime",
+  "de":"Wertschätzung",
+  "es":"estima",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8286",
+  "en":"ethereal",
+  "fr":"éthéré",
+  "de":"ätherisch",
+  "es":"etéreo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8287",
+  "en":"ethos",
+  "fr":"éthos",
+  "de":"Ethos",
+  "es":"ethos",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8288",
+  "en":"etymology",
+  "fr":"étymologie",
+  "de":"Etymologie",
+  "es":"etimología",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8289",
+  "en":"eulogy",
+  "fr":"éloge",
+  "de":"Lobrede",
+  "es":"elogio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8290",
+  "en":"euphemism",
+  "fr":"euphémisme",
+  "de":"Euphemismus",
+  "es":"eufemismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8291",
+  "en":"euphoria",
+  "fr":"euphorie",
+  "de":"Euphorie",
+  "es":"euforia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8292",
+  "en":"evanescent",
+  "fr":"évanescent",
+  "de":"vergänglich",
+  "es":"evanescente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8293",
+  "en":"to exacerbate",
+  "fr":"exacerber",
+  "de":"verschlimmern",
+  "es":"exacerbar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8294",
+  "en":"exacting",
+  "fr":"exigeant",
+  "de":"anspruchsvoll",
+  "es":"exigente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8295",
+  "en":"to exalt",
+  "fr":"exalter",
+  "de":"verherrlichen",
+  "es":"exaltar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8296",
+  "en":"exaltation",
+  "fr":"exaltation",
+  "de":"Exaltation",
+  "es":"exaltación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8297",
+  "en":"exchequer",
+  "fr":"échiquier",
+  "de":"Schatzamt",
+  "es":"fisco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8298",
+  "en":"to excoriate",
+  "fr":"écorcher",
+  "de":"kritisieren",
+  "es":"escoriar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8299",
+  "en":"excruciating",
+  "fr":"atroce",
+  "de":"qualvoll",
+  "es":"insoportable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8300",
+  "en":"execrable",
+  "fr":"exécrable",
+  "de":"scheußlich",
+  "es":"execrable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8301",
+  "en":"to exemplify",
+  "fr":"illustrer",
+  "de":"veranschaulichen",
+  "es":"ejemplificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8302",
+  "en":"to exhort",
+  "fr":"exhorter",
+  "de":"ermahnen",
+  "es":"exhortar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8303",
+  "en":"exhortation",
+  "fr":"exhortation",
+  "de":"Ermahnung",
+  "es":"exhortación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8304",
+  "en":"exigency",
+  "fr":"exigence",
+  "de":"Dringlichkeit",
+  "es":"exigencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8305",
+  "en":"exigent",
+  "fr":"urgent",
+  "de":"dringend",
+  "es":"exigente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8306",
+  "en":"exodus",
+  "fr":"exode",
+  "de":"Exodus",
+  "es":"éxodo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8307",
+  "en":"to exonerate",
+  "fr":"disculper",
+  "de":"entlasten",
+  "es":"exonerar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8308",
+  "en":"exorbitant",
+  "fr":"exorbitant",
+  "de":"exorbitant",
+  "es":"exorbitante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8309",
+  "en":"expatriate",
+  "fr":"expatrié",
+  "de":"Auswanderer",
+  "es":"expatriado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8310",
+  "en":"expediency",
+  "fr":"opportunité",
+  "de":"Zweckmäßigkeit",
+  "es":"conveniencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8311",
+  "en":"expedient",
+  "fr":"opportun",
+  "de":"zweckmäßig",
+  "es":"conveniente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8312",
+  "en":"to expedite",
+  "fr":"accélérer",
+  "de":"beschleunigen",
+  "es":"acelerar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8313",
+  "en":"exponent",
+  "fr":"exposant",
+  "de":"Exponent",
+  "es":"exponente",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8314",
+  "en":"exposition",
+  "fr":"exposition",
+  "de":"Exposition",
+  "es":"exposición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8315",
+  "en":"to expound",
+  "fr":"exposer",
+  "de":"darlegen",
+  "es":"exponer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8316",
+  "en":"to expunge",
+  "fr":"effacer",
+  "de":"tilgen",
+  "es":"borrar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8317",
+  "en":"exquisite",
+  "fr":"exquis",
+  "de":"vorzüglich",
+  "es":"exquisito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8318",
+  "en":"to extol",
+  "fr":"louer",
+  "de":"preisen",
+  "es":"ensalzar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8319",
+  "en":"extraneous",
+  "fr":"étranger",
+  "de":"belanglos",
+  "es":"ajeno",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8320",
+  "en":"to extricate",
+  "fr":"extirper",
+  "de":"befreien",
+  "es":"desenredar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8321",
+  "en":"exuberant",
+  "fr":"exubérant",
+  "de":"überschwänglich",
+  "es":"exuberante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8322",
+  "en":"to exude",
+  "fr":"exsuder",
+  "de":"ausstrahlen",
+  "es":"exudar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8323",
+  "en":"exultation",
+  "fr":"exultation",
+  "de":"Jubel",
+  "es":"exultación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8324",
+  "en":"to fabricate",
+  "fr":"fabriquer",
+  "de":"fabrizieren",
+  "es":"fabricar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8325",
+  "en":"fabrication",
+  "fr":"fabrication",
+  "de":"Herstellung",
+  "es":"fabricación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8326",
+  "en":"facet",
+  "fr":"facette",
+  "de":"Facette",
+  "es":"faceta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8327",
+  "en":"facetious",
+  "fr":"facétieux",
+  "de":"scherzhaft",
+  "es":"jocoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8328",
+  "en":"facile",
+  "fr":"facile",
+  "de":"oberflächlich",
+  "es":"fácil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8329",
+  "en":"facsimile",
+  "fr":"télécopie",
+  "de":"Faksimile",
+  "es":"facsímil",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8330",
+  "en":"fallacious",
+  "fr":"fallacieux",
+  "de":"trügerisch",
+  "es":"falaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8331",
+  "en":"fallacy",
+  "fr":"erreur",
+  "de":"Irrtum",
+  "es":"falacia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8332",
+  "en":"fallibility",
+  "fr":"faillibilité",
+  "de":"Fehlbarkeit",
+  "es":"falibilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8333",
+  "en":"famine",
+  "fr":"famine",
+  "de":"Hungersnot",
+  "es":"hambruna",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8334",
+  "en":"fanaticism",
+  "fr":"fanatisme",
+  "de":"Fanatismus",
+  "es":"fanatismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8335",
+  "en":"farce",
+  "fr":"farce",
+  "de":"Farce",
+  "es":"farsa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8336",
+  "en":"farcical",
+  "fr":"farfelu",
+  "de":"lächerlich",
+  "es":"farsesco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8337",
+  "en":"fastidious",
+  "fr":"méticuleux",
+  "de":"anspruchsvoll",
+  "es":"meticuloso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8338",
+  "en":"fatalism",
+  "fr":"fatalisme",
+  "de":"Fatalismus",
+  "es":"fatalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8339",
+  "en":"to fathom",
+  "fr":"sonder",
+  "de":"ergründen",
+  "es":"sondear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8340",
+  "en":"fatuous",
+  "fr":"fatu",
+  "de":"albern",
+  "es":"fatuo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8341",
+  "en":"fauna",
+  "fr":"faune",
+  "de":"Fauna",
+  "es":"fauna",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8342",
+  "fr":"flatter servilement",
+  "en":"to fawn over",
+  "de":"scharwenzeln um",
+  "es":"adular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8343",
+  "fr":"façade",
+  "en":"façade",
+  "de":"Fassade",
+  "es":"fachada",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8344",
+  "fr":"incompétent",
+  "en":"feckless",
+  "de":"nutzlos",
+  "es":"irresponsable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8345",
+  "fr":"feindre",
+  "en":"to feign",
+  "de":"vortäuschen",
+  "es":"fingir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8346",
+  "fr":"fougueux",
+  "en":"feisty",
+  "de":"temperamentvoll",
+  "es":"enérgico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8347",
+  "fr":"fermentation",
+  "en":"fermentation",
+  "de":"Gärung",
+  "es":"fermentación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8348",
+  "fr":"féroce",
+  "en":"ferocious",
+  "de":"wild",
+  "es":"feroz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8349",
+  "fr":"débusquer",
+  "en":"to ferret out",
+  "de":"aufspüren",
+  "es":"descubrir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8350",
+  "fr":"fervent",
+  "en":"fervent",
+  "de":"inbrünstig",
+  "es":"ferviente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8351",
+  "fr":"ardent",
+  "en":"fervid",
+  "de":"leidenschaftlich",
+  "es":"apasionado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8352",
+  "fr":"ferveur",
+  "en":"fervour",
+  "de":"Inbrunst",
+  "es":"fervor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8353",
+  "fr":"fétiche",
+  "en":"fetish",
+  "de":"Fetisch",
+  "es":"fetiche",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8354",
+  "fr":"querelle",
+  "en":"feud",
+  "de":"Fehde",
+  "es":"enemistad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8355",
+  "fr":"fiasco",
+  "en":"fiasco",
+  "de":"Fiasko",
+  "es":"fiasco",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8356",
+  "fr":"inconstant",
+  "en":"fickle",
+  "de":"wankelmütig",
+  "es":"inconstante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8357",
+  "fr":"fidélité",
+  "en":"fidelity",
+  "de":"Treue",
+  "es":"fidelidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8358",
+  "fr":"invention",
+  "en":"figment",
+  "de":"Hirngespinst",
+  "es":"invención",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8359",
+  "fr":"figure de proue",
+  "en":"figurehead",
+  "de":"Aushängeschild",
+  "es":"mascarón de proa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8360",
+  "fr":"obstruction parlementaire",
+  "en":"filibuster",
+  "de":"Filibuster",
+  "es":"filibusterismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8361",
+  "fr":"finesse",
+  "en":"finesse",
+  "de":"Finesse",
+  "es":"delicadeza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8362",
+  "fr":"fissure",
+  "en":"fissure",
+  "de":"Riss",
+  "es":"fisura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8363",
+  "fr":"flagrant",
+  "en":"flagrant",
+  "de":"eklatant",
+  "es":"flagrante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8364",
+  "fr":"étaler",
+  "en":"to flaunt",
+  "de":"zur Schau stellen",
+  "es":"alardear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8365",
+  "fr":"fugace",
+  "en":"fleeting",
+  "de":"flüchtig",
+  "es":"fugaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8366",
+  "fr":"fragile",
+  "en":"flimsy",
+  "de":"fadenscheinig",
+  "es":"endeble",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8367",
+  "fr":"flore",
+  "en":"flora",
+  "de":"Flora",
+  "es":"flora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8368",
+  "fr":"épaves",
+  "en":"flotsam",
+  "de":"Treibgut",
+  "es":"restos flotantes",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8369",
+  "fr":"bafouer",
+  "en":"to flout",
+  "de":"missachten",
+  "es":"incumplir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8370",
+  "fr":"flux",
+  "en":"flux",
+  "de":"Wandel",
+  "es":"flujo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8371",
+  "fr":"fourrage",
+  "en":"fodder",
+  "de":"Futter",
+  "es":"forraje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8372",
+  "fr":"travers",
+  "en":"foible",
+  "de":"Schwäche",
+  "es":"debilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8373",
+  "fr":"folie",
+  "en":"folly",
+  "de":"Torheit",
+  "es":"locura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8374",
+  "fr":"fomenter",
+  "en":"to foment",
+  "de":"schüren",
+  "es":"fomentar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8375",
+  "fr":"témérité",
+  "en":"foolhardiness",
+  "de":"Tollkühnheit",
+  "es":"temeridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8376",
+  "fr":"incursion",
+  "en":"foray",
+  "de":"Streifzug",
+  "es":"incursión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8377",
+  "fr":"indulgence",
+  "en":"forbearance",
+  "de":"Nachsicht",
+  "es":"indulgencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8378",
+  "fr":"précurseur",
+  "en":"forerunner",
+  "de":"Vorläufer",
+  "es":"precursor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8379",
+  "fr":"prévenir",
+  "en":"to forestall",
+  "de":"zuvorkommen",
+  "es":"prevenir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8380",
+  "fr":"confiscation",
+  "en":"forfeiture",
+  "de":"Verfall",
+  "es":"confiscación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8381",
+  "fr":"renoncer à",
+  "en":"to forgo",
+  "de":"verzichten",
+  "es":"prescindir de",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8382",
+  "fr":"délaissé",
+  "en":"forlorn",
+  "de":"verlassen",
+  "es":"desolado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8383",
+  "fr":"redoutable",
+  "en":"formidable",
+  "de":"beeindruckend",
+  "es":"formidable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8384",
+  "fr":"abandonner",
+  "en":"to forsake",
+  "de":"im Stich lassen",
+  "es":"abandonar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8385",
+  "fr":"point fort",
+  "en":"forte",
+  "de":"Stärke",
+  "es":"punto fuerte",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8386",
+  "fr":"courage",
+  "en":"fortitude",
+  "de":"Tapferkeit",
+  "es":"fortaleza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8387",
+  "fr":"fortuit",
+  "en":"fortuitous",
+  "de":"zufällig",
+  "es":"fortuito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8388",
+  "fr":"sombrer",
+  "en":"to founder",
+  "de":"scheitern",
+  "es":"fracasar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8389",
+  "fr":"grincheux",
+  "en":"fractious",
+  "de":"widerspenstig",
+  "es":"rebelde",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8390",
+  "fr":"tendu",
+  "en":"fraught",
+  "de":"angespannt",
+  "es":"tenso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8391",
+  "fr":"mêlée",
+  "en":"fray",
+  "de":"Handgemenge",
+  "es":"refriega",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8392",
+  "fr":"frénétique",
+  "en":"frenetic",
+  "de":"hektisch",
+  "es":"frenético",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8393",
+  "fr":"frénésie",
+  "en":"frenzy",
+  "de":"Rausch",
+  "es":"frenesí",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8394",
+  "fr":"étudiant de première année",
+  "en":"freshman",
+  "de":"Studienanfänger",
+  "es":"estudiante de primer año",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8395",
+  "fr":"agité",
+  "en":"fretful",
+  "de":"unruhig",
+  "es":"inquieto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8396",
+  "fr":"frivole",
+  "en":"frivolous",
+  "de":"frivol",
+  "es":"frívolo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8397",
+  "fr":"frugal",
+  "en":"frugal",
+  "de":"sparsam",
+  "es":"frugal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8398",
+  "fr":"aboutissement",
+  "en":"fruition",
+  "de":"Verwirklichung",
+  "es":"realización",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8399",
+  "fr":"point d\u0027appui",
+  "en":"fulcrum",
+  "de":"Dreh- und Angelpunkt",
+  "es":"punto de apoyo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8400",
+  "fr":"excessif",
+  "en":"fulsome",
+  "de":"überschwänglich",
+  "es":"excesivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8401",
+  "fr":"fureur",
+  "en":"furor",
+  "de":"Aufruhr",
+  "es":"furor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8402",
+  "fr":"furtif",
+  "en":"furtive",
+  "de":"verstohlen",
+  "es":"furtivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8403",
+  "fr":"vain",
+  "en":"futile",
+  "de":"vergeblich",
+  "es":"inútil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8404",
+  "fr":"futilité",
+  "en":"futility",
+  "de":"Sinnlosigkeit",
+  "es":"inutilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8405",
+  "fr":"gaffe",
+  "en":"gaffe",
+  "de":"Patzer",
+  "es":"metedura de pata",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8406",
+  "fr":"galvaniser",
+  "en":"to galvanise",
+  "de":"wachrütteln",
+  "es":"galvanizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8407",
+  "fr":"stratagème",
+  "en":"gambit",
+  "de":"Schachzug",
+  "es":"táctica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8408",
+  "fr":"criard",
+  "en":"garish",
+  "de":"grell",
+  "es":"chillón",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8409",
+  "fr":"recueillir",
+  "en":"to garner",
+  "de":"sammeln",
+  "es":"reunir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8410",
+  "fr":"garnison",
+  "en":"garrison",
+  "de":"Garnison",
+  "es":"guarnición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8411",
+  "fr":"volubile",
+  "en":"garrulous",
+  "de":"gesprächig",
+  "es":"locuaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8412",
+  "fr":"maladroit",
+  "en":"gauche",
+  "de":"ungeschickt",
+  "es":"torpe",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8413",
+  "fr":"gant",
+  "en":"gauntlet",
+  "de":"Fehdehandschuh",
+  "es":"guantelete",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8414",
+  "fr":"généalogie",
+  "en":"genealogy",
+  "de":"Genealogie",
+  "es":"genealogía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8415",
+  "fr":"genèse",
+  "en":"genesis",
+  "de":"Entstehung",
+  "es":"génesis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8416",
+  "fr":"affable",
+  "en":"genial",
+  "de":"freundlich",
+  "es":"afable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8417",
+  "fr":"s\u0027agenouiller",
+  "en":"to genuflect",
+  "de":"knien",
+  "es":"arrodillarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8418",
+  "fr":"pertinent",
+  "en":"germane",
+  "de":"relevant",
+  "es":"pertinente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8419",
+  "fr":"gestation",
+  "en":"gestation",
+  "de":"Tragzeit",
+  "es":"gestación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8420",
+  "fr":"prudemment",
+  "en":"gingerly",
+  "de":"behutsam",
+  "es":"cautelosamente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8421",
+  "fr":"essentiel",
+  "en":"gist",
+  "de":"Wesentliche",
+  "es":"meollo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8422",
+  "fr":"glaner",
+  "en":"glean",
+  "de":"sammeln",
+  "es":"recoger",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8423",
+  "fr":"superficiel",
+  "en":"glib",
+  "de":"oberfl�chlich",
+  "es":"superficial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8424",
+  "fr":"glossaire",
+  "en":"glossary",
+  "de":"Glossar",
+  "es":"glosario",
+  "type":"nom",
+  "level":"B2"
+},
+  {
+  "id":"word_8425",
+  "fr":"gourmandise",
+  "en":"gluttony",
+  "de":"V�llerei",
+  "es":"gula",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8426",
+  "fr":"grandeur",
+  "en":"grandeur",
+  "de":"Gr��e",
+  "es":"grandeza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8427",
+  "fr":"gratification",
+  "en":"gratification",
+  "de":"Befriedigung",
+  "es":"gratificaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8428",
+  "fr":"gratuit",
+  "en":"gratuitous",
+  "de":"grundlos",
+  "es":"gratuito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8429",
+  "fr":"gravit�",
+  "en":"gravitas",
+  "de":"Ernsthaftigkeit",
+  "es":"gravedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8430",
+  "fr":"gr�gaire",
+  "en":"gregarious",
+  "de":"gesellig",
+  "es":"gregario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8431",
+  "fr":"grief",
+  "en":"grievance",
+  "de":"Beschwerde",
+  "es":"queja",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8432",
+  "fr":"ramper",
+  "en":"grovel",
+  "de":"kriechen",
+  "es":"arrastrarse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8433",
+  "fr":"�puisant",
+  "en":"gruelling",
+  "de":"zerm�rbend",
+  "es":"agotador",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8434",
+  "fr":"ruse",
+  "en":"guile",
+  "de":"List",
+  "es":"astucia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8435",
+  "fr":"cr�dule",
+  "en":"gullible",
+  "de":"leichtgl�ubig",
+  "es":"cr�dulo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8436",
+  "fr":"banal",
+  "en":"hackneyed",
+  "de":"abgedroschen",
+  "es":"trillado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8437",
+  "fr":"paisible",
+  "en":"halcyon",
+  "de":"friedvoll",
+  "es":"tranquilo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8438",
+  "fr":"marque de fabrique",
+  "en":"hallmark",
+  "de":"Markenzeichen",
+  "es":"sello",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8439",
+  "fr":"aur�ole",
+  "en":"halo",
+  "de":"Heiligenschein",
+  "es":"halo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8440",
+  "fr":"entraver",
+  "en":"hamper",
+  "de":"behindern",
+  "es":"obstaculizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8441",
+  "fr":"hasardeux",
+  "en":"haphazard",
+  "de":"willk�rlich",
+  "es":"al azar",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8442",
+  "fr":"infortun�",
+  "en":"hapless",
+  "de":"gl�cklos",
+  "es":"desventurado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8443",
+  "fr":"harangue",
+  "en":"harangue",
+  "de":"Strafpredigt",
+  "es":"arenga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8444",
+  "fr":"pr�sage",
+  "en":"harbinger",
+  "de":"Vorbote",
+  "es":"presagio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8445",
+  "fr":"exploiter",
+  "en":"harness",
+  "de":"nutzen",
+  "es":"aprovechar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8446",
+  "fr":"h�ter",
+  "en":"hasten",
+  "de":"beschleunigen",
+  "es":"apresurar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8447",
+  "fr":"hautain",
+  "en":"haughty",
+  "de":"hochm�tig",
+  "es":"altivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8448",
+  "fr":"ravage",
+  "en":"havoc",
+  "de":"Verw�stung",
+  "es":"estrago",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8449",
+  "fr":"ou�-dire",
+  "en":"hearsay",
+  "de":"H�rensagen",
+  "es":"rumor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8450",
+  "fr":"h�doniste",
+  "en":"hedonistic",
+  "de":"hedonistisch",
+  "es":"hedonista",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8451",
+  "fr":"tenir compte de",
+  "en":"heed",
+  "de":"beachten",
+  "es":"hacer caso",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8452",
+  "fr":"h�g�monie",
+  "en":"hegemony",
+  "de":"Hegemonie",
+  "es":"hegemon�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8453",
+  "fr":"odieux",
+  "en":"heinous",
+  "de":"abscheulich",
+  "es":"atroz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8454",
+  "fr":"objet de famille",
+  "en":"heirloom",
+  "de":"Erbst�ck",
+  "es":"reliquia de familia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8455",
+  "fr":"d�sormais",
+  "en":"henceforth",
+  "de":"k�nftig",
+  "es":"en adelante",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8456",
+  "fr":"homme de main",
+  "en":"henchman",
+  "de":"Handlanger",
+  "es":"secuaz",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8457",
+  "fr":"annoncer",
+  "en":"herald",
+  "de":"verk�nden",
+  "es":"anunciar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8458",
+  "fr":"herbivore",
+  "en":"herbivore",
+  "de":"Pflanzenfresser",
+  "es":"herb�voro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8459",
+  "fr":"h�r�sie",
+  "en":"heresy",
+  "de":"Ketzerei",
+  "es":"herej�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8460",
+  "fr":"h�r�tique",
+  "en":"heretical",
+  "de":"ketzerisch",
+  "es":"her�tico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8461",
+  "fr":"hiatus",
+  "en":"hiatus",
+  "de":"Unterbrechung",
+  "es":"pausa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8462",
+  "fr":"entrave",
+  "en":"hindrance",
+  "de":"Hindernis",
+  "es":"obst�culo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8463",
+  "fr":"arri�re-pays",
+  "en":"hinterland",
+  "de":"Hinterland",
+  "es":"interior",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8464",
+  "fr":"th��tral",
+  "en":"histrionic",
+  "de":"�bertrieben",
+  "es":"histri�nico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8465",
+  "fr":"jusqu\u0027ici",
+  "en":"hitherto",
+  "de":"bisher",
+  "es":"hasta ahora",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8466",
+  "fr":"amasser",
+  "en":"hoard",
+  "de":"horten",
+  "es":"atesorar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8467",
+  "fr":"holocauste",
+  "en":"holocaust",
+  "de":"Holocaust",
+  "es":"holocausto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8468",
+  "fr":"hommage",
+  "en":"homage",
+  "de":"Huldigung",
+  "es":"homenaje",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8469",
+  "fr":"homog�ne",
+  "en":"homogeneous",
+  "de":"homogen",
+  "es":"homog�neo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8470",
+  "fr":"perfectionner",
+  "en":"hone",
+  "de":"verfeinern",
+  "es":"perfeccionar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8471",
+  "fr":"horoscope",
+  "en":"horoscope",
+  "de":"Horoskop",
+  "es":"hor�scopo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8472",
+  "fr":"hospice",
+  "en":"hospice",
+  "de":"Hospiz",
+  "es":"hospicio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8473",
+  "fr":"d�mesure",
+  "en":"hubris",
+  "de":"Hybris",
+  "es":"arrogancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8474",
+  "fr":"hybride",
+  "en":"hybrid",
+  "de":"Hybride",
+  "es":"h�brido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8475",
+  "fr":"hyperbole",
+  "en":"hyperbole",
+  "de":"�bertreibung",
+  "es":"hip�rbole",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8476",
+  "fr":"hypocrisie",
+  "en":"hypocrisy",
+  "de":"Heuchelei",
+  "es":"hipocres�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8477",
+  "fr":"hypoth�tique",
+  "en":"hypothetical",
+  "de":"hypothetisch",
+  "es":"hipot�tico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8478",
+  "fr":"hyst�rie",
+  "en":"hysteria",
+  "de":"Hysterie",
+  "es":"histeria",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8479",
+  "fr":"iconoclasme",
+  "en":"iconoclasm",
+  "de":"Ikonoklasmus",
+  "es":"iconoclasmo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8480",
+  "fr":"iconoclaste",
+  "en":"iconoclast",
+  "de":"Ikonoklast",
+  "es":"iconoclasta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8481",
+  "fr":"id�ologue",
+  "en":"ideologue",
+  "de":"Ideologe",
+  "es":"ide�logo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8482",
+  "fr":"idiosyncrasie",
+  "en":"idiosyncrasy",
+  "de":"Eigenart",
+  "es":"idiosincrasia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8483",
+  "fr":"idiosyncrasique",
+  "en":"idiosyncratic",
+  "de":"idiosynkratisch",
+  "es":"idiosincr�sico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8484",
+  "fr":"idyllique",
+  "en":"idyllic",
+  "de":"idyllisch",
+  "es":"id�lico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8485",
+  "fr":"ignominieux",
+  "en":"ignominious",
+  "de":"schm�hlich",
+  "es":"ignominioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8486",
+  "fr":"ignominie",
+  "en":"ignominy",
+  "de":"Schmach",
+  "es":"ignominia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8487",
+  "fr":"imprudent",
+  "en":"ill-advised",
+  "de":"unbedacht",
+  "es":"imprudente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8488",
+  "fr":"illicite",
+  "en":"illicit",
+  "de":"unerlaubt",
+  "es":"il�cito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8489",
+  "fr":"impr�gner",
+  "en":"imbue",
+  "de":"durchdringen",
+  "es":"imbuir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8490",
+  "fr":"immacul�",
+  "en":"immaculate",
+  "de":"makellos",
+  "es":"inmaculado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8491",
+  "fr":"incommensurablement",
+  "en":"immeasurably",
+  "de":"unermesslich",
+  "es":"inmensurablemente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8492",
+  "fr":"immensit�",
+  "en":"immensity",
+  "de":"Unermesslichkeit",
+  "es":"inmensidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8493",
+  "fr":"immortel",
+  "en":"immortal",
+  "de":"unsterblich",
+  "es":"inmortal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8494",
+  "fr":"immuable",
+  "en":"immutable",
+  "de":"unver�nderlich",
+  "es":"inmutable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8495",
+  "fr":"alt�rer",
+  "en":"impair",
+  "de":"beeintr�chtigen",
+  "es":"perjudicar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8496",
+  "fr":"impartial",
+  "en":"impartial",
+  "de":"unparteiisch",
+  "es":"imparcial",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8497",
+  "fr":"impasse",
+  "en":"impasse",
+  "de":"Sackgasse",
+  "es":"callej�n sin salida",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8498",
+  "fr":"impassible",
+  "en":"impassive",
+  "de":"teilnahmslos",
+  "es":"impasible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8499",
+  "fr":"mise en accusation",
+  "en":"impeachment",
+  "de":"Amtsenthebungsverfahren",
+  "es":"destituci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8500",
+  "fr":"impeccable",
+  "en":"impeccable",
+  "de":"tadellos",
+  "es":"impecable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8501",
+  "fr":"entraver",
+  "en":"impede",
+  "de":"behindern",
+  "es":"impedir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8502",
+  "fr":"l\u0027obstacle",
+  "en":"the impediment",
+  "de":"das Hindernis",
+  "es":"el impedimento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8503",
+  "fr":"imp�ratif",
+  "en":"imperative",
+  "de":"zwingend",
+  "es":"imperativo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8504",
+  "fr":"imperceptiblement",
+  "en":"imperceptibly",
+  "de":"unmerklich",
+  "es":"imperceptiblemente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8505",
+  "fr":"l\u0027imp�rialisme",
+  "en":"imperialism",
+  "de":"der Imperialismus",
+  "es":"el imperialismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8506",
+  "fr":"mettre en p�ril",
+  "en":"to imperil",
+  "de":"gef�hrden",
+  "es":"poner en peligro",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8507",
+  "fr":"imp�rieux",
+  "en":"imperious",
+  "de":"gebieterisch",
+  "es":"imperioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8508",
+  "fr":"impertinent",
+  "en":"impertinent",
+  "de":"unversch�mt",
+  "es":"impertinente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8509",
+  "fr":"imperturbable",
+  "en":"imperturbable",
+  "de":"unersch�tterlich",
+  "es":"imperturbable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8510",
+  "fr":"imperm�able",
+  "en":"impervious",
+  "de":"undurchl�ssig",
+  "es":"impermeable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8511",
+  "fr":"imp�tueux",
+  "en":"impetuous",
+  "de":"ungest�m",
+  "es":"impetuoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8512",
+  "fr":"l\u0027�lan",
+  "en":"the impetus",
+  "de":"der Ansto�",
+  "es":"el impulso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8513",
+  "fr":"implacable",
+  "en":"implacable",
+  "de":"unerbittlich",
+  "es":"implacable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8514",
+  "fr":"invraisemblable",
+  "en":"implausible",
+  "de":"unwahrscheinlich",
+  "es":"inveros�mil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8515",
+  "fr":"impraticable",
+  "en":"impracticable",
+  "de":"undurchf�hrbar",
+  "es":"impracticable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8516",
+  "fr":"imprenable",
+  "en":"impregnable",
+  "de":"uneinnehmbar",
+  "es":"inexpugnable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8517",
+  "fr":"improvis�",
+  "en":"impromptu",
+  "de":"spontan",
+  "es":"improvisado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8518",
+  "fr":"l\u0027inconvenance",
+  "en":"the impropriety",
+  "de":"die Unangemessenheit",
+  "es":"la incorrecci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8519",
+  "fr":"l\u0027impudence",
+  "en":"impudence",
+  "de":"die Unversch�mtheit",
+  "es":"la impudencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8520",
+  "fr":"contester",
+  "en":"to impugn",
+  "de":"anfechten",
+  "es":"impugnar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8521",
+  "fr":"l\u0027impunit�",
+  "en":"impunity",
+  "de":"die Straflosigkeit",
+  "es":"la impunidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8522",
+  "fr":"l\u0027insuffisance",
+  "en":"inadequacy",
+  "de":"die Unzul�nglichkeit",
+  "es":"la insuficiencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8523",
+  "fr":"inadvertant",
+  "en":"inadvertent",
+  "de":"unbeabsichtigt",
+  "es":"inadvertido",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8524",
+  "fr":"inapte",
+  "en":"inane",
+  "de":"albern",
+  "es":"inane",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8525",
+  "fr":"inaugurer",
+  "en":"to inaugurate",
+  "de":"einweihen",
+  "es":"inaugurar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8526",
+  "fr":"l\u0027incarnation",
+  "en":"the incarnation",
+  "de":"die Inkarnation",
+  "es":"la encarnaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8527",
+  "fr":"incendiaire",
+  "en":"incendiary",
+  "de":"brandstiftend",
+  "es":"incendiario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8528",
+  "fr":"encenser",
+  "en":"to incense",
+  "de":"w�tend machen",
+  "es":"indignar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8529",
+  "fr":"le commencement",
+  "en":"the inception",
+  "de":"der Beginn",
+  "es":"el comienzo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8530",
+  "fr":"incessant",
+  "en":"incessant",
+  "de":"unaufh�rlich",
+  "es":"incesante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8531",
+  "fr":"incisif",
+  "en":"incisive",
+  "de":"scharfsinnig",
+  "es":"incisivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8532",
+  "fr":"inciter",
+  "en":"to incite",
+  "de":"anstiften",
+  "es":"incitar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8533",
+  "fr":"incl�ment",
+  "en":"inclement",
+  "de":"ungem�tlich",
+  "es":"inclemente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8534",
+  "fr":"l\u0027inclinaison",
+  "en":"the inclination",
+  "de":"die Neigung",
+  "es":"la inclinaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8535",
+  "fr":"inclusif",
+  "en":"inclusive",
+  "de":"inklusiv",
+  "es":"inclusivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8536",
+  "fr":"incompr�hensible",
+  "en":"incomprehensible",
+  "de":"unverst�ndlich",
+  "es":"incomprensible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8537",
+  "fr":"inconcevable",
+  "en":"inconceivable",
+  "de":"unvorstellbar",
+  "es":"inconcebible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8538",
+  "fr":"l\u0027incongruit�",
+  "en":"the incongruity",
+  "de":"die Unstimmigkeit",
+  "es":"la incongruencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8539",
+  "fr":"incongru",
+  "en":"incongruous",
+  "de":"unpassend",
+  "es":"incongruente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8540",
+  "fr":"incontestable",
+  "en":"incontrovertible",
+  "de":"unumst��lich",
+  "es":"incontrovertible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8541",
+  "fr":"incorrigible",
+  "en":"incorrigible",
+  "de":"unverbesserlich",
+  "es":"incorregible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8542",
+  "fr":"l\u0027incr�dulit�",
+  "en":"incredulity",
+  "de":"die Ungl�ubigkeit",
+  "es":"la incredulidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8543",
+  "fr":"incr�dule",
+  "en":"incredulous",
+  "de":"ungl�ubig",
+  "es":"incr�dulo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8544",
+  "fr":"le mandat",
+  "en":"the incumbency",
+  "de":"die Amtszeit",
+  "es":"el mandato",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8545",
+  "fr":"le titulaire",
+  "en":"the incumbent",
+  "de":"der Amtsinhaber",
+  "es":"el titular",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8546",
+  "fr":"l\u0027incursion",
+  "en":"the incursion",
+  "de":"der Einfall",
+  "es":"la incursi�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8547",
+  "fr":"infatigable",
+  "en":"indefatigable",
+  "de":"unerm�dlich",
+  "es":"infatigable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8548",
+  "fr":"ind�l�bile",
+  "en":"indelible",
+  "de":"unausl�schlich",
+  "es":"indeleble",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8549",
+  "fr":"indemniser",
+  "en":"to indemnify",
+  "de":"entsch�digen",
+  "es":"indemnizar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8550",
+  "fr":"l\u0027indiff�rence",
+  "en":"indifference",
+  "de":"die Gleichg�ltigkeit",
+  "es":"la indiferencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8551",
+  "fr":"indiff�rent",
+  "en":"indifferent",
+  "de":"gleichg�ltig",
+  "es":"indiferente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8552",
+  "fr":"indign�",
+  "en":"indignant",
+  "de":"emp�rt",
+  "es":"indignado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8553",
+  "fr":"l\u0027indignation",
+  "en":"indignation",
+  "de":"die Emp�rung",
+  "es":"la indignaci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8554",
+  "fr":"l\u0027indiscr�tion",
+  "en":"the indiscretion",
+  "de":"die Indiskretion",
+  "es":"la indiscreci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8555",
+  "fr":"l\u0027endoctrinement",
+  "en":"indoctrination",
+  "de":"die Indoktrination",
+  "es":"el adoctrinamiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8556",
+  "fr":"indolent",
+  "en":"indolent",
+  "de":"tr�ge",
+  "es":"indolente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8557",
+  "fr":"indomptable",
+  "en":"indomitable",
+  "de":"unz�hmbar",
+  "es":"indomable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8558",
+  "fr":"l\u0027incitation",
+  "en":"the inducement",
+  "de":"der Anreiz",
+  "es":"el incentivo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8559",
+  "fr":"l\u0027induction",
+  "en":"induction",
+  "de":"die Induktion",
+  "es":"la inducci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8560",
+  "fr":"indulgent",
+  "en":"indulgent",
+  "de":"nachsichtig",
+  "es":"indulgente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8561",
+  "fr":"industrieux",
+  "en":"industrious",
+  "de":"flei�ig",
+  "es":"industrioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8562",
+  "fr":"ineffable",
+  "en":"ineffable",
+  "de":"unaussprechlich",
+  "es":"inefable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8563",
+  "fr":"inepte",
+  "en":"inept",
+  "de":"unf�hig",
+  "es":"inepto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8564",
+  "fr":"l\u0027ineptie",
+  "en":"ineptitude",
+  "de":"die Unf�higkeit",
+  "es":"la ineptitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8565",
+  "fr":"l\u0027iniquit�",
+  "en":"the inequity",
+  "de":"die Ungerechtigkeit",
+  "es":"la iniquidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8566",
+  "fr":"l\u0027inertie",
+  "en":"inertia",
+  "de":"die Tr�gheit",
+  "es":"la inercia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8567",
+  "fr":"in�puisable",
+  "en":"inexhaustible",
+  "de":"unersch�pflich",
+  "es":"inagotable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8568",
+  "fr":"inexorable",
+  "en":"inexorable",
+  "de":"unaufhaltsam",
+  "es":"inexorable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8569",
+  "fr":"infaillible",
+  "en":"infallible",
+  "de":"unfehlbar",
+  "es":"infalible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8570",
+  "fr":"l\u0027infamie",
+  "en":"infamy",
+  "de":"die Schande",
+  "es":"la infamia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8571",
+  "fr":"l\u0027engouement",
+  "en":"infatuation",
+  "de":"die Schw�rmerei",
+  "es":"el encaprichamiento",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8572",
+  "fr":"le brasier",
+  "en":"the inferno",
+  "de":"das Inferno",
+  "es":"el infierno",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8573",
+  "fr":"l\u0027infirmerie",
+  "en":"the infirmary",
+  "de":"die Krankenstation",
+  "es":"la enfermer�a",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8574",
+  "fr":"inflammatoire",
+  "en":"inflammatory",
+  "de":"aufhetzerisch",
+  "es":"inflamatorio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8575",
+  "fr":"l\u0027afflux",
+  "en":"the influx",
+  "de":"der Zustrom",
+  "es":"la afluencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8576",
+  "fr":"l\u0027infraction",
+  "en":"the infraction",
+  "de":"der Versto�",
+  "es":"la infracci�n",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8577",
+  "fr":"ing�nieux",
+  "en":"ingenious",
+  "de":"genial",
+  "es":"ingenioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8578",
+  "fr":"l\u0027ing�niosit�",
+  "en":"ingenuity",
+  "de":"der Erfindungsreichtum",
+  "es":"el ingenio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8579",
+  "fr":"ing�nu",
+  "en":"ingenuous",
+  "de":"naiv",
+  "es":"ingenuo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8580",
+  "fr":"enracin�",
+  "en":"ingrained",
+  "de":"tief verwurzelt",
+  "es":"arraigado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8581",
+  "fr":"inhospitalier",
+  "en":"inhospitable",
+  "de":"ungastlich",
+  "es":"inh�spito",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8582",
+  "fr":"épris",
+  "en":"besotted",
+  "de":"verknallt",
+  "es":"enamorado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8583",
+  "fr":"conférer",
+  "en":"bestow",
+  "de":"verleihen",
+  "es":"otorgar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8584",
+  "fr":"envoûtant",
+  "en":"bewitching",
+  "de":"bezaubernd",
+  "es":"fascinante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8585",
+  "fr":"sectarisme",
+  "en":"bigotry",
+  "de":"Bigotterie",
+  "es":"intolerancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8586",
+  "fr":"bilatéral",
+  "en":"bilateral",
+  "de":"bilateral",
+  "es":"bilateral",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8587",
+  "fr":"onduler",
+  "en":"billow",
+  "de":"wogen",
+  "es":"ondear",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8588",
+  "fr":"serrer les dents",
+  "en":"bite the bullet",
+  "de":"in den sauren Apfel beißen",
+  "es":"hacer de tripas corazón",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8589",
+  "fr":"blasphème",
+  "en":"blasphemy",
+  "de":"Blasphemie",
+  "es":"blasfemia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8590",
+  "fr":"insouciant",
+  "en":"blithe",
+  "de":"unbekümmert",
+  "es":"despreocupado",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8591",
+  "fr":"turbulent",
+  "en":"boisterous",
+  "de":"ungestüm",
+  "es":"bullicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8592",
+  "fr":"pompeux",
+  "en":"bombastic",
+  "de":"bombastisch",
+  "es":"rimbombante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8593",
+  "fr":"aubaine",
+  "en":"boon",
+  "de":"Segen",
+  "es":"bendición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8594",
+  "fr":"rustre",
+  "en":"boorish",
+  "de":"flegelhaft",
+  "es":"grosero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8595",
+  "fr":"prime",
+  "en":"bounty",
+  "de":"Kopfgeld",
+  "es":"recompensa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8596",
+  "fr":"bourgeoisie",
+  "en":"bourgeoisie",
+  "de":"Bourgeoisie",
+  "es":"burguesía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8597",
+  "fr":"brandir",
+  "en":"brandish",
+  "de":"schwingen",
+  "es":"blandir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8598",
+  "fr":"bravade",
+  "en":"bravado",
+  "de":"Bravour",
+  "es":"bravuconería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8599",
+  "fr":"bravoure",
+  "en":"bravura",
+  "de":"Bravour",
+  "es":"bravura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8600",
+  "fr":"brièveté",
+  "en":"brevity",
+  "de":"Kürze",
+  "es":"brevedad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8601",
+  "fr":"politique du bord de l\u0027abîme",
+  "en":"brinkmanship",
+  "de":"Spiel mit dem Feuer",
+  "es":"política al borde del abismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8602",
+  "fr":"brusque",
+  "en":"brusque",
+  "de":"brüsk",
+  "es":"brusco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8603",
+  "fr":"rempart",
+  "en":"bulwark",
+  "de":"Bollwerk",
+  "es":"baluarte",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8604",
+  "fr":"bourgeonner",
+  "en":"burgeon",
+  "de":"aufkeimen",
+  "es":"florecer",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8605",
+  "fr":"soutenir",
+  "en":"buttress",
+  "de":"stützen",
+  "es":"reforzar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8606",
+  "fr":"synonyme",
+  "en":"byword",
+  "de":"Inbegriff",
+  "es":"sinónimo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8607",
+  "fr":"cabale",
+  "en":"cabal",
+  "de":"Kabale",
+  "es":"cábala",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8608",
+  "fr":"cachette",
+  "en":"cache",
+  "de":"Versteck",
+  "es":"escondite",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8609",
+  "fr":"cacophonie",
+  "en":"cacophony",
+  "de":"Kakofonie",
+  "es":"cacofonía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8610",
+  "fr":"cadence",
+  "en":"cadence",
+  "de":"Kadenz",
+  "es":"cadencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8611",
+  "fr":"enjôler",
+  "en":"cajole",
+  "de":"schmeicheln",
+  "es":"engatusar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8612",
+  "fr":"calibre",
+  "en":"calibre",
+  "de":"Kaliber",
+  "es":"calibre",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8613",
+  "fr":"insensible",
+  "en":"callous",
+  "de":"gefühllos",
+  "es":"insensible",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8614",
+  "fr":"camaraderie",
+  "en":"camaraderie",
+  "de":"Kameradschaft",
+  "es":"camaradería",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8615",
+  "fr":"franchise",
+  "en":"candour",
+  "de":"Offenheit",
+  "es":"franqueza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8616",
+  "fr":"acariâtre",
+  "en":"cantankerous",
+  "de":"streitsüchtig",
+  "es":"cascarrabias",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8617",
+  "fr":"capituler",
+  "en":"capitulate",
+  "de":"kapitulieren",
+  "es":"capitular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8618",
+  "fr":"capricieux",
+  "en":"capricious",
+  "de":"launisch",
+  "es":"caprichoso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8619",
+  "fr":"cardinal",
+  "en":"cardinal",
+  "de":"kardinal",
+  "es":"cardinal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8620",
+  "fr":"cartographie",
+  "en":"cartography",
+  "de":"Kartographie",
+  "es":"cartografía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8621",
+  "fr":"caste",
+  "en":"caste",
+  "de":"Kaste",
+  "es":"casta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8622",
+  "fr":"fustiger",
+  "en":"castigate",
+  "de":"züchtigen",
+  "es":"castigar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8623",
+  "fr":"cataclysme",
+  "en":"cataclysm",
+  "de":"Kataklysmus",
+  "es":"cataclismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8624",
+  "fr":"catharsis",
+  "en":"catharsis",
+  "de":"Katharsis",
+  "es":"catarsis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8625",
+  "fr":"caustique",
+  "en":"caustic",
+  "de":"ätzend",
+  "es":"cáustico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8626",
+  "fr":"cavalcade",
+  "en":"cavalcade",
+  "de":"Kavalkade",
+  "es":"cabalgata",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8627",
+  "fr":"mise en garde",
+  "en":"caveat",
+  "de":"Vorbehalt",
+  "es":"advertencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8628",
+  "fr":"censure",
+  "en":"censure",
+  "de":"Zensur",
+  "es":"censura",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8629",
+  "fr":"cessation",
+  "en":"cessation",
+  "de":"Einstellung",
+  "es":"cese",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8630",
+  "fr":"dépit",
+  "en":"chagrin",
+  "de":"Verdruss",
+  "es":"disgusto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8631",
+  "fr":"charlatan",
+  "en":"charlatan",
+  "de":"Scharlatan",
+  "es":"charlatán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8632",
+  "fr":"gouffre",
+  "en":"chasm",
+  "de":"Kluft",
+  "es":"abismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8633",
+  "fr":"châtier",
+  "en":"chastise",
+  "de":"züchtigen",
+  "es":"reprender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8634",
+  "fr":"bien meuble",
+  "en":"chattel",
+  "de":"Fahrnis",
+  "es":"bien mueble",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8635",
+  "fr":"chicane",
+  "en":"chicanery",
+  "de":"Schikane",
+  "es":"artimaña",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8636",
+  "fr":"réprimander",
+  "en":"chide",
+  "de":"tadeln",
+  "es":"regañar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8637",
+  "fr":"chronologie",
+  "en":"chronology",
+  "de":"Chronologie",
+  "es":"cronología",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8638",
+  "fr":"bourru",
+  "en":"churlish",
+  "de":"flegelhaft",
+  "es":"grosero",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8639",
+  "fr":"circonspect",
+  "en":"circumspect",
+  "de":"umsichtig",
+  "es":"circunspecto",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8640",
+  "fr":"contourner",
+  "en":"circumvent",
+  "de":"umgehen",
+  "es":"eludir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8641",
+  "fr":"citadelle",
+  "en":"citadel",
+  "de":"Zitadelle",
+  "es":"ciudadela",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8642",
+  "fr":"clandestin",
+  "en":"clandestine",
+  "de":"heimlich",
+  "es":"clandestino",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8643",
+  "fr":"fendre",
+  "en":"cleave",
+  "de":"spalten",
+  "es":"hender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8644",
+  "fr":"clémence",
+  "en":"clemency",
+  "de":"Milde",
+  "es":"clemencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8645",
+  "fr":"clique",
+  "en":"clique",
+  "de":"Clique",
+  "es":"camarilla",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8646",
+  "fr":"cloître",
+  "en":"cloister",
+  "de":"Kloster",
+  "es":"claustro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8647",
+  "fr":"cloîtré",
+  "en":"cloistered",
+  "de":"klösterlich",
+  "es":"claustral",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8648",
+  "fr":"influence",
+  "en":"clout",
+  "de":"Schlagkraft",
+  "es":"influencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8649",
+  "fr":"se coaliser",
+  "en":"coalesce",
+  "de":"verschmelzen",
+  "es":"unirse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8650",
+  "fr":"contraindre",
+  "en":"coerce",
+  "de":"zwingen",
+  "es":"coaccionar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8651",
+  "fr":"coercition",
+  "en":"coercion",
+  "de":"Zwang",
+  "es":"coerción",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8652",
+  "fr":"convaincant",
+  "en":"cogent",
+  "de":"überzeugend",
+  "es":"convincente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8653",
+  "fr":"cohésion",
+  "en":"cohesion",
+  "de":"Zusammenhalt",
+  "es":"cohesión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8654",
+  "fr":"conspirer",
+  "en":"collude",
+  "de":"kolludieren",
+  "es":"confabularse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8655",
+  "fr":"collusion",
+  "en":"collusion",
+  "de":"Absprache",
+  "es":"colusión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8656",
+  "fr":"colossal",
+  "en":"colossal",
+  "de":"kolossal",
+  "es":"colosal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8657",
+  "fr":"colosse",
+  "en":"colossus",
+  "de":"Koloss",
+  "es":"coloso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8658",
+  "fr":"proportionné",
+  "en":"commensurate",
+  "de":"angemessen",
+  "es":"conmensurable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8659",
+  "fr":"compatir",
+  "en":"commiserate",
+  "de":"bemitleiden",
+  "es":"compadecerse",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8660",
+  "fr":"compatriote",
+  "en":"compatriot",
+  "de":"Landsmann",
+  "es":"compatriota",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8661",
+  "fr":"autosatisfaction",
+  "en":"complacency",
+  "de":"Selbstgefälligkeit",
+  "es":"complacencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8662",
+  "en":"prohibitive",
+  "fr":"prohibitif",
+  "de":"unerschwinglich",
+  "es":"prohibitivo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8663",
+  "en":"proliferation",
+  "fr":"prolifération",
+  "de":"Verbreitung",
+  "es":"proliferación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8664",
+  "en":"prolific",
+  "fr":"prolifique",
+  "de":"produktiv",
+  "es":"prolífico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8665",
+  "en":"prologue",
+  "fr":"prologue",
+  "de":"Prolog",
+  "es":"prólogo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8666",
+  "en":"promiscuity",
+  "fr":"promiscuité",
+  "de":"Promiskuität",
+  "es":"promiscuidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8667",
+  "en":"propagandist",
+  "fr":"propagandiste",
+  "de":"Propagandist",
+  "es":"propagandista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8668",
+  "en":"propensity",
+  "fr":"propension",
+  "de":"Neigung",
+  "es":"propensión",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8669",
+  "en":"prophecy",
+  "fr":"prophétie",
+  "de":"Prophezeiung",
+  "es":"profecía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8670",
+  "en":"propitious",
+  "fr":"propice",
+  "de":"günstig",
+  "es":"propicio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8671",
+  "en":"proponent",
+  "fr":"partisan",
+  "de":"Befürworter",
+  "es":"defensor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8672",
+  "en":"proprietor",
+  "fr":"propriétaire",
+  "de":"Eigentümer",
+  "es":"propietario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8673",
+  "en":"propriety",
+  "fr":"bienséance",
+  "de":"Anstand",
+  "es":"decoro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8674",
+  "en":"prosaic",
+  "fr":"prosaïque",
+  "de":"prosaisch",
+  "es":"prosaico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8675",
+  "en":"proscribe",
+  "fr":"proscrire",
+  "de":"ächten",
+  "es":"proscribir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8676",
+  "en":"protagonist",
+  "fr":"protagoniste",
+  "de":"Protagonist",
+  "es":"protagonista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8677",
+  "en":"prototype",
+  "fr":"prototype",
+  "de":"Prototyp",
+  "es":"prototipo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8678",
+  "en":"protract",
+  "fr":"prolonger",
+  "de":"in die Länge ziehen",
+  "es":"prolongar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8679",
+  "en":"protégé",
+  "fr":"protégé",
+  "de":"Schützling",
+  "es":"protegido",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8680",
+  "en":"provenance",
+  "fr":"provenance",
+  "de":"Herkunft",
+  "es":"procedencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8681",
+  "en":"proverb",
+  "fr":"proverbe",
+  "de":"Sprichwort",
+  "es":"proverbio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8682",
+  "en":"providence",
+  "fr":"providence",
+  "de":"Vorsehung",
+  "es":"providencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8683",
+  "en":"proviso",
+  "fr":"condition",
+  "de":"Vorbehalt",
+  "es":"condición",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8684",
+  "en":"prowess",
+  "fr":"prouesse",
+  "de":"Können",
+  "es":"destreza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8685",
+  "en":"proximity",
+  "fr":"proximité",
+  "de":"Nähe",
+  "es":"proximidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8686",
+  "en":"proxy",
+  "fr":"mandataire",
+  "de":"Stellvertreter",
+  "es":"apoderado",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8687",
+  "en":"prudence",
+  "fr":"prudence",
+  "de":"Klugheit",
+  "es":"prudencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8688",
+  "en":"prudent",
+  "fr":"prudent",
+  "de":"umsichtig",
+  "es":"prudente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8689",
+  "en":"pseudonym",
+  "fr":"pseudonyme",
+  "de":"Pseudonym",
+  "es":"seudónimo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8690",
+  "en":"psyche",
+  "fr":"psyché",
+  "de":"Psyche",
+  "es":"psique",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8691",
+  "en":"puerile",
+  "fr":"puéril",
+  "de":"kindisch",
+  "es":"pueril",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8692",
+  "en":"pugnacious",
+  "fr":"pugnace",
+  "de":"streitsüchtig",
+  "es":"pugnaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8693",
+  "en":"pulpit",
+  "fr":"chaire",
+  "de":"Kanzel",
+  "es":"púlpito",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8694",
+  "en":"punctilious",
+  "fr":"pointilleux",
+  "de":"peinlich genau",
+  "es":"puntilloso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8695",
+  "en":"pundit",
+  "fr":"expert",
+  "de":"Experte",
+  "es":"experto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8696",
+  "en":"pungency",
+  "fr":"piquant",
+  "de":"Schärfe",
+  "es":"picor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8697",
+  "en":"pungent",
+  "fr":"âcre",
+  "de":"stechend",
+  "es":"acre",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8698",
+  "en":"purge",
+  "fr":"purge",
+  "de":"Säuberung",
+  "es":"purga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8699",
+  "en":"purist",
+  "fr":"puriste",
+  "de":"Purist",
+  "es":"purista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8700",
+  "en":"purport",
+  "fr":"prétendre",
+  "de":"vorgeben",
+  "es":"pretender",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8701",
+  "en":"purveyor",
+  "fr":"pourvoyeur",
+  "de":"Lieferant",
+  "es":"proveedor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8702",
+  "en":"pusillanimous",
+  "fr":"pusillanime",
+  "de":"kleinmütig",
+  "es":"pusilánime",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8703",
+  "en":"quack",
+  "fr":"charlatan",
+  "de":"Quacksalber",
+  "es":"charlatán",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8704",
+  "en":"quadrant",
+  "fr":"quadrant",
+  "de":"Quadrant",
+  "es":"cuadrante",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8705",
+  "en":"quagmire",
+  "fr":"bourbier",
+  "de":"Sumpf",
+  "es":"atolladero",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8706",
+  "en":"quaint",
+  "fr":"pittoresque",
+  "de":"malerisch",
+  "es":"pintoresco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8707",
+  "en":"qualm",
+  "fr":"scrupule",
+  "de":"Skrupel",
+  "es":"escrúpulo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8708",
+  "en":"quandary",
+  "fr":"dilemme",
+  "de":"Dilemma",
+  "es":"dilema",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8709",
+  "en":"quarantine",
+  "fr":"quarantaine",
+  "de":"Quarantäne",
+  "es":"cuarentena",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8710",
+  "en":"quarry",
+  "fr":"carrière",
+  "de":"Steinbruch",
+  "es":"cantera",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8711",
+  "en":"quartet",
+  "fr":"quatuor",
+  "de":"Quartett",
+  "es":"cuarteto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8712",
+  "en":"quash",
+  "fr":"annuler",
+  "de":"aufheben",
+  "es":"anular",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8713",
+  "en":"quaver",
+  "fr":"chevrotement",
+  "de":"Zittern",
+  "es":"temblor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8714",
+  "en":"quell",
+  "fr":"réprimer",
+  "de":"unterdrücken",
+  "es":"reprimir",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8715",
+  "en":"querulous",
+  "fr":"querelleur",
+  "de":"mürrisch",
+  "es":"querelloso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8716",
+  "en":"quibble",
+  "fr":"argutie",
+  "de":"Wortklauberei",
+  "es":"quid",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8717",
+  "en":"quicksand",
+  "fr":"sables mouvants",
+  "de":"Treibsand",
+  "es":"arenas movedizas",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8718",
+  "en":"quiescent",
+  "fr":"quiescent",
+  "de":"ruhend",
+  "es":"quiescente",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8719",
+  "en":"quintessence",
+  "fr":"quintessence",
+  "de":"Quintessenz",
+  "es":"quintaesencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8720",
+  "en":"quintessential",
+  "fr":"quintessentiel",
+  "de":"quintessenziell",
+  "es":"por excelencia",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8721",
+  "en":"quintet",
+  "fr":"quintette",
+  "de":"Quintett",
+  "es":"quinteto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8722",
+  "en":"quip",
+  "fr":"boutade",
+  "de":"Witz",
+  "es":"broma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8723",
+  "en":"quiver",
+  "fr":"carquois",
+  "de":"Köcher",
+  "es":"carcaj",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8724",
+  "en":"quixotic",
+  "fr":"chimérique",
+  "de":"donquichottisch",
+  "es":"quijotesco",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8725",
+  "en":"quorum",
+  "fr":"quorum",
+  "de":"Quorum",
+  "es":"quórum",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8726",
+  "en":"rabble",
+  "fr":"populace",
+  "de":"Pöbel",
+  "es":"chusma",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8727",
+  "en":"radiance",
+  "fr":"éclat",
+  "de":"Strahlen",
+  "es":"resplandor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8728",
+  "en":"radicalism",
+  "fr":"radicalisme",
+  "de":"Radikalismus",
+  "es":"radicalismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8729",
+  "en":"rambunctious",
+  "fr":"turbulent",
+  "de":"ungebärdig",
+  "es":"bullicioso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8730",
+  "en":"ramification",
+  "fr":"ramification",
+  "de":"Auswirkung",
+  "es":"ramificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8731",
+  "en":"rancour",
+  "fr":"rancœur",
+  "de":"Groll",
+  "es":"rencor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8732",
+  "en":"ransom",
+  "fr":"rançon",
+  "de":"Lösegeld",
+  "es":"rescate",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8733",
+  "en":"rapacious",
+  "fr":"rapace",
+  "de":"habgierig",
+  "es":"rapaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8734",
+  "en":"rapacity",
+  "fr":"rapacité",
+  "de":"Habgier",
+  "es":"rapacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8735",
+  "en":"rapport",
+  "fr":"rapport",
+  "de":"Beziehung",
+  "es":"compenetración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8736",
+  "en":"rapture",
+  "fr":"ravissement",
+  "de":"Verzückung",
+  "es":"éxtasis",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8737",
+  "en":"rascal",
+  "fr":"coquin",
+  "de":"Schlingel",
+  "es":"bribón",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8738",
+  "en":"rashness",
+  "fr":"témérité",
+  "de":"Leichtsinn",
+  "es":"temeridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8739",
+  "en":"ratification",
+  "fr":"ratification",
+  "de":"Ratifizierung",
+  "es":"ratificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8740",
+  "en":"ratify",
+  "fr":"ratifier",
+  "de":"ratifizieren",
+  "es":"ratificar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8741",
+  "en":"rationale",
+  "fr":"logique",
+  "de":"Begründung",
+  "es":"lógica",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8742",
+  "fr":"la véhémence",
+  "en":"vehemence",
+  "de":"die Heftigkeit",
+  "es":"la vehemencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8743",
+  "fr":"avec véhémence",
+  "en":"vehemently",
+  "de":"vehement",
+  "es":"vehementemente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8744",
+  "fr":"la vitesse",
+  "en":"velocity",
+  "de":"die Geschwindigkeit",
+  "es":"la velocidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8745",
+  "fr":"le velours",
+  "en":"velvet",
+  "de":"der Samt",
+  "es":"el terciopelo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8746",
+  "fr":"vénal",
+  "en":"venal",
+  "de":"bestechlich",
+  "es":"venal",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8747",
+  "fr":"la vendetta",
+  "en":"vendetta",
+  "de":"die Blutrache",
+  "es":"la vendetta",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8748",
+  "fr":"le placage",
+  "en":"veneer",
+  "de":"das Furnier",
+  "es":"la chapa",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8749",
+  "fr":"vénérable",
+  "en":"venerable",
+  "de":"ehrwürdig",
+  "es":"venerable",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8750",
+  "fr":"la vénération",
+  "en":"veneration",
+  "de":"die Verehrung",
+  "es":"la veneración",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8751",
+  "fr":"la vengeance",
+  "en":"vengeance",
+  "de":"die Rache",
+  "es":"la venganza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8752",
+  "fr":"le venin",
+  "en":"venom",
+  "de":"das Gift",
+  "es":"el veneno",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8753",
+  "fr":"l\u0027aération",
+  "en":"vent",
+  "de":"die Entlüftung",
+  "es":"la ventilación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8754",
+  "fr":"la véracité",
+  "en":"veracity",
+  "de":"die Wahrhaftigkeit",
+  "es":"la veracidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8755",
+  "fr":"mot pour mot",
+  "en":"verbatim",
+  "de":"wörtlich",
+  "es":"literalmente",
+  "type":"adverbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8756",
+  "fr":"verbeux",
+  "en":"verbose",
+  "de":"wortreich",
+  "es":"verboso",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8757",
+  "fr":"verdoyant",
+  "en":"verdant",
+  "de":"grün",
+  "es":"verde",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8758",
+  "fr":"le bord",
+  "en":"verge",
+  "de":"der Rand",
+  "es":"el borde",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8759",
+  "fr":"la vérification",
+  "en":"verification",
+  "de":"die Überprüfung",
+  "es":"la verificación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8760",
+  "fr":"la vraisemblance",
+  "en":"verisimilitude",
+  "de":"die Wahrscheinlichkeit",
+  "es":"la verosimilitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8761",
+  "fr":"la vermine",
+  "en":"vermin",
+  "de":"das Ungeziefer",
+  "es":"la alimaña",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8762",
+  "fr":"la langue vernaculaire",
+  "en":"vernacular",
+  "de":"die Volkssprache",
+  "es":"la lengua vernácula",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8763",
+  "fr":"la polyvalence",
+  "en":"versatility",
+  "de":"die Vielseitigkeit",
+  "es":"la versatilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8764",
+  "fr":"le sommet",
+  "en":"vertex",
+  "de":"der Scheitelpunkt",
+  "es":"el vértice",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8765",
+  "fr":"le vertige",
+  "en":"vertigo",
+  "de":"der Schwindel",
+  "es":"el vértigo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8766",
+  "fr":"la verve",
+  "en":"verve",
+  "de":"der Schwung",
+  "es":"el brío",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8767",
+  "fr":"le vestige",
+  "en":"vestige",
+  "de":"das Überbleibsel",
+  "es":"el vestigio",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8768",
+  "fr":"le veto",
+  "en":"veto",
+  "de":"das Veto",
+  "es":"el veto",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8769",
+  "fr":"la vexation",
+  "en":"vexation",
+  "de":"das Ärgernis",
+  "es":"la vejación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8770",
+  "fr":"vexatoire",
+  "en":"vexatious",
+  "de":"ärgerlich",
+  "es":"vejatorio",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8771",
+  "fr":"la viabilité",
+  "en":"viability",
+  "de":"die Lebensfähigkeit",
+  "es":"la viabilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8772",
+  "fr":"par procuration",
+  "en":"vicarious",
+  "de":"stellvertretend",
+  "es":"vicario",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8773",
+  "fr":"les environs",
+  "en":"vicinity",
+  "de":"die Umgebung",
+  "es":"la vecindad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8774",
+  "fr":"la vicissitude",
+  "en":"vicissitude",
+  "de":"die Wechselfall",
+  "es":"la vicisitud",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8775",
+  "fr":"le vainqueur",
+  "en":"victor",
+  "de":"der Sieger",
+  "es":"el vencedor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8776",
+  "fr":"la veillée",
+  "en":"vigil",
+  "de":"die Mahnwache",
+  "es":"la vigilia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8777",
+  "fr":"la vigilance",
+  "en":"vigilance",
+  "de":"die Wachsamkeit",
+  "es":"la vigilancia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8778",
+  "fr":"le justicier",
+  "en":"vigilante",
+  "de":"der Bürgerwehr",
+  "es":"el justiciero",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8779",
+  "fr":"la vigueur",
+  "en":"vigour",
+  "de":"die Kraft",
+  "es":"el vigor",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8780",
+  "fr":"vil",
+  "en":"vile",
+  "de":"abscheulich",
+  "es":"vil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8781",
+  "fr":"la diffamation",
+  "en":"vilification",
+  "de":"die Verunglimpfung",
+  "es":"la difamación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8782",
+  "fr":"vilipender",
+  "en":"vilify",
+  "de":"verunglimpfen",
+  "es":"vilipendiar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8783",
+  "fr":"le méchant",
+  "en":"villain",
+  "de":"der Bösewicht",
+  "es":"el villano",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8784",
+  "fr":"la scélératesse",
+  "en":"villainy",
+  "de":"die Schurkerei",
+  "es":"la villanía",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8785",
+  "fr":"disculper",
+  "en":"vindicate",
+  "de":"rechtfertigen",
+  "es":"reivindicar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8786",
+  "fr":"la disculpation",
+  "en":"vindication",
+  "de":"die Rechtfertigung",
+  "es":"la vindicación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8787",
+  "fr":"vindicatif",
+  "en":"vindictive",
+  "de":"rachsüchtig",
+  "es":"vengativo",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8788",
+  "fr":"le caractère vindicatif",
+  "en":"vindictiveness",
+  "de":"die Rachsucht",
+  "es":"la venganza",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8789",
+  "fr":"le millésime",
+  "en":"vintage",
+  "de":"der Jahrgang",
+  "es":"la cosecha",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8790",
+  "fr":"la vipère",
+  "en":"viper",
+  "de":"die Viper",
+  "es":"la víbora",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8791",
+  "fr":"la virtuosité",
+  "en":"virtuosity",
+  "de":"die Virtuosität",
+  "es":"el virtuosismo",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8792",
+  "fr":"le virtuose",
+  "en":"virtuoso",
+  "de":"der Virtuose",
+  "es":"el virtuoso",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8793",
+  "fr":"la virulence",
+  "en":"virulence",
+  "de":"die Virulenz",
+  "es":"la virulencia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8794",
+  "fr":"virulent",
+  "en":"virulent",
+  "de":"virulent",
+  "es":"virulento",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8795",
+  "fr":"le visage",
+  "en":"visage",
+  "de":"das Gesicht",
+  "es":"el rostro",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8796",
+  "fr":"viscéral",
+  "en":"visceral",
+  "de":"instinktiv",
+  "es":"visceral",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8797",
+  "fr":"le visionnaire",
+  "en":"visionary",
+  "de":"der Visionär",
+  "es":"el visionario",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8798",
+  "fr":"la perspective",
+  "en":"vista",
+  "de":"die Aussicht",
+  "es":"la vista",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8799",
+  "fr":"la vitalité",
+  "en":"vitality",
+  "de":"die Vitalität",
+  "es":"la vitalidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8800",
+  "fr":"vitriolique",
+  "en":"vitriolic",
+  "de":"ätzend",
+  "es":"vitriólico",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8801",
+  "fr":"vitupérer",
+  "en":"vituperate",
+  "de":"schmähen",
+  "es":"vituperar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8802",
+  "fr":"plein d\u0027entrain",
+  "en":"vivacious",
+  "de":"lebhaft",
+  "es":"vivaz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8803",
+  "fr":"la vivacité",
+  "en":"vivacity",
+  "de":"die Lebhaftigkeit",
+  "es":"la vivacidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8804",
+  "fr":"la vocation",
+  "en":"vocation",
+  "de":"die Berufung",
+  "es":"la vocación",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8805",
+  "fr":"vociférant",
+  "en":"vociferous",
+  "de":"lautstark",
+  "es":"vociferante",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8806",
+  "fr":"la vogue",
+  "en":"vogue",
+  "de":"die Mode",
+  "es":"la moda",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8807",
+  "fr":"le vide",
+  "en":"void",
+  "de":"die Leere",
+  "es":"el vacío",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8808",
+  "fr":"volatil",
+  "en":"volatile",
+  "de":"flüchtig",
+  "es":"volátil",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8809",
+  "fr":"la volatilité",
+  "en":"volatility",
+  "de":"die Flüchtigkeit",
+  "es":"la volatilidad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8810",
+  "fr":"la volonté",
+  "en":"volition",
+  "de":"der Wille",
+  "es":"la voluntad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8811",
+  "fr":"la volée",
+  "en":"volley",
+  "de":"die Salve",
+  "es":"la volea",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8812",
+  "fr":"vorace",
+  "en":"voracious",
+  "de":"gefräßig",
+  "es":"voraz",
+  "type":"adjectif",
+  "level":"C2"
+},
+  {
+  "id":"word_8813",
+  "fr":"le tourbillon",
+  "en":"vortex",
+  "de":"der Wirbel",
+  "es":"el vórtice",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8814",
+  "fr":"le bon",
+  "en":"voucher",
+  "de":"der Gutschein",
+  "es":"el vale",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8815",
+  "fr":"le voyeur",
+  "en":"voyeur",
+  "de":"der Voyeur",
+  "es":"el voyeur",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8816",
+  "fr":"la vulgarité",
+  "en":"vulgarity",
+  "de":"die Vulgarität",
+  "es":"la vulgaridad",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8817",
+  "fr":"parier",
+  "en":"wager",
+  "de":"wetten",
+  "es":"apostar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8818",
+  "fr":"la renonciation",
+  "en":"waiver",
+  "de":"der Verzicht",
+  "es":"la renuncia",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8819",
+  "fr":"la grève",
+  "en":"walkout",
+  "de":"der Streik",
+  "es":"la huelga",
+  "type":"nom",
+  "level":"C2"
+},
+  {
+  "id":"word_8820",
+  "fr":"décliner",
+  "en":"wane",
+  "de":"schwinden",
+  "es":"menguar",
+  "type":"verbe",
+  "level":"C2"
+},
+  {
+  "id":"word_8821",
+  "fr":"gratuit",
+  "en":"wanton",
+  "de":"mutwillig",
+  "es":"gratuito",
+  "type":"adjectif",
+  "level":"C2"
 }
 ];

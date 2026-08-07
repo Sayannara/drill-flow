@@ -31,7 +31,7 @@ function normalizeText(text) {
     return text.trim().toLowerCase().replace(/\s+/g, ' ');
 }
 
-export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1']) {
+export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
     sessionState.langSource = source;
     sessionState.langTarget = target;
     
@@ -158,6 +158,7 @@ function renderCurrentWord() {
             if (currentWord.level === 'B1') { badgeBg = 'rgba(245, 158, 11, 0.2)'; badgeColor = '#f59e0b'; }
             if (currentWord.level === 'B2') { badgeBg = 'rgba(239, 68, 68, 0.2)'; badgeColor = '#ef4444'; }
             if (currentWord.level === 'C1') { badgeBg = 'rgba(139, 92, 246, 0.2)'; badgeColor = '#8b5cf6'; }
+            if (currentWord.level === 'C2') { badgeBg = 'rgba(168, 85, 247, 0.2)'; badgeColor = '#a855f7'; }
             
             levelBadgeEl.style.background = badgeBg;
             levelBadgeEl.style.color = badgeColor;
