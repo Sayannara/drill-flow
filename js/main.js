@@ -568,9 +568,18 @@ function initStatsView() {
         const [src, tgt] = pair.split('-');
         const total = vocabulary.length;
         let validated = 0;
+        const validatedByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+        const totalByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+
         vocabulary.forEach(word => {
+            if (totalByLevel[word.level] !== undefined) {
+                totalByLevel[word.level]++;
+            }
             if (getWordStatus(src, tgt, word.id) === 'validé') {
                 validated++;
+                if (validatedByLevel[word.level] !== undefined) {
+                    validatedByLevel[word.level]++;
+                }
             }
         });
         const restant = total - validated;
@@ -585,13 +594,37 @@ function initStatsView() {
                 <span class="stat-percentage-badge">${percentage}%</span>
             </div>
             <div class="stat-body">
-                <div class="stat-row">
+                <div class="stat-row" style="margin-bottom: 0.5rem; font-weight: bold; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
                     <span class="stat-label">${translations[lang].stat_total}</span>
                     <span class="stat-value">${total}</span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_validated}</span>
                     <span class="stat-value">${validated}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">${translations[lang].stat_a1_validated}</span>
+                    <span class="stat-value">${validatedByLevel.A1} / ${totalByLevel.A1}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">${translations[lang].stat_a2_validated}</span>
+                    <span class="stat-value">${validatedByLevel.A2} / ${totalByLevel.A2}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">${translations[lang].stat_b1_validated}</span>
+                    <span class="stat-value">${validatedByLevel.B1} / ${totalByLevel.B1}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">${translations[lang].stat_b2_validated}</span>
+                    <span class="stat-value">${validatedByLevel.B2} / ${totalByLevel.B2}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">${translations[lang].stat_c1_validated}</span>
+                    <span class="stat-value">${validatedByLevel.C1} / ${totalByLevel.C1}</span>
+                </div>
+                <div class="stat-row" style="margin-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
+                    <span class="stat-label">${translations[lang].stat_c2_validated}</span>
+                    <span class="stat-value">${validatedByLevel.C2} / ${totalByLevel.C2}</span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_remaining}</span>

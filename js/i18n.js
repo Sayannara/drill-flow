@@ -62,6 +62,12 @@ export const translations = {
         empty_stats_sub: "Veuillez d'abord démarrer une session pour générer des données.",
         stat_total: "Total des mots :",
         stat_validated: "Mots validés :",
+        stat_a1_validated: "Mots A1 validés :",
+        stat_a2_validated: "Mots A2 validés :",
+        stat_b1_validated: "Mots B1 validés :",
+        stat_b2_validated: "Mots B2 validés :",
+        stat_c1_validated: "Mots C1 validés :",
+        stat_c2_validated: "Mots C2 validés :",
         stat_remaining: "Mots restants :",
         
         // Certs View
@@ -172,6 +178,12 @@ export const translations = {
         empty_stats_sub: "Please start a session first to generate data.",
         stat_total: "Total words:",
         stat_validated: "Validated words:",
+        stat_a1_validated: "A1 validated:",
+        stat_a2_validated: "A2 validated:",
+        stat_b1_validated: "B1 validated:",
+        stat_b2_validated: "B2 validated:",
+        stat_c1_validated: "C1 validated:",
+        stat_c2_validated: "C2 validated:",
         stat_remaining: "Remaining words:",
         
         // Certs View
@@ -282,6 +294,12 @@ export const translations = {
         empty_stats_sub: "Bitte starten Sie zuerst eine Sitzung, um Daten zu generieren.",
         stat_total: "Woerter insgesamt:",
         stat_validated: "Gelernte Woerter:",
+        stat_a1_validated: "A1 gelernt:",
+        stat_a2_validated: "A2 gelernt:",
+        stat_b1_validated: "B1 gelernt:",
+        stat_b2_validated: "B2 gelernt:",
+        stat_c1_validated: "C1 gelernt:",
+        stat_c2_validated: "C2 gelernt:",
         stat_remaining: "Verbleibende Woerter:",
         
         // Certs View
@@ -392,6 +410,12 @@ export const translations = {
         empty_stats_sub: "Por favor, inicie una sesión primero para generar datos.",
         stat_total: "Total de palabras:",
         stat_validated: "Palabras validadas:",
+        stat_a1_validated: "A1 validadas:",
+        stat_a2_validated: "A2 validadas:",
+        stat_b1_validated: "B1 validadas:",
+        stat_b2_validated: "B2 validadas:",
+        stat_c1_validated: "C1 validadas:",
+        stat_c2_validated: "C2 validadas:",
         stat_remaining: "Palabras restantes:",
         
         // Certs View
