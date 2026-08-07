@@ -227,6 +227,7 @@ function attachViewEvents(viewId) {
             if (document.getElementById('drill-level-b1')) document.getElementById('drill-level-b1').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-b2')) document.getElementById('drill-level-b2').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-c1')) document.getElementById('drill-level-c1').addEventListener('change', updateAvailableCount);
+            if (document.getElementById('drill-level-c2')) document.getElementById('drill-level-c2').addEventListener('change', updateAvailableCount);
             updateAvailableCount();
 
             // Empêcher les doublons d'écouteurs si la vue est rechargée
@@ -397,7 +398,7 @@ function initProgressView() {
     });
 
     // 2. Attach listeners for word level filters
-    ['a1', 'a2', 'b1', 'b2', 'c1'].forEach(level => {
+    ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach(level => {
         const checkbox = document.getElementById(`filter-level-${level}`);
         if (checkbox) {
             checkbox.checked = true;
