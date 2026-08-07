@@ -585,6 +585,13 @@ function initStatsView() {
         const restant = total - validated;
         const percentage = total > 0 ? Math.round((validated / total) * 100) : 0;
 
+        const pctA1 = totalByLevel.A1 > 0 ? Math.round((validatedByLevel.A1 / totalByLevel.A1) * 100) : 0;
+        const pctA2 = totalByLevel.A2 > 0 ? Math.round((validatedByLevel.A2 / totalByLevel.A2) * 100) : 0;
+        const pctB1 = totalByLevel.B1 > 0 ? Math.round((validatedByLevel.B1 / totalByLevel.B1) * 100) : 0;
+        const pctB2 = totalByLevel.B2 > 0 ? Math.round((validatedByLevel.B2 / totalByLevel.B2) * 100) : 0;
+        const pctC1 = totalByLevel.C1 > 0 ? Math.round((validatedByLevel.C1 / totalByLevel.C1) * 100) : 0;
+        const pctC2 = totalByLevel.C2 > 0 ? Math.round((validatedByLevel.C2 / totalByLevel.C2) * 100) : 0;
+
         const lang = getAppLanguage();
         const card = document.createElement('div');
         card.className = 'stat-card';
@@ -604,27 +611,27 @@ function initStatsView() {
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_a1_validated}</span>
-                    <span class="stat-value">${validatedByLevel.A1} / ${totalByLevel.A1}</span>
+                    <span class="stat-value">${validatedByLevel.A1} / ${totalByLevel.A1} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctA1}%)</span></span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_a2_validated}</span>
-                    <span class="stat-value">${validatedByLevel.A2} / ${totalByLevel.A2}</span>
+                    <span class="stat-value">${validatedByLevel.A2} / ${totalByLevel.A2} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctA2}%)</span></span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_b1_validated}</span>
-                    <span class="stat-value">${validatedByLevel.B1} / ${totalByLevel.B1}</span>
+                    <span class="stat-value">${validatedByLevel.B1} / ${totalByLevel.B1} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctB1}%)</span></span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_b2_validated}</span>
-                    <span class="stat-value">${validatedByLevel.B2} / ${totalByLevel.B2}</span>
+                    <span class="stat-value">${validatedByLevel.B2} / ${totalByLevel.B2} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctB2}%)</span></span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_c1_validated}</span>
-                    <span class="stat-value">${validatedByLevel.C1} / ${totalByLevel.C1}</span>
+                    <span class="stat-value">${validatedByLevel.C1} / ${totalByLevel.C1} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctC1}%)</span></span>
                 </div>
                 <div class="stat-row" style="margin-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
                     <span class="stat-label">${translations[lang].stat_c2_validated}</span>
-                    <span class="stat-value">${validatedByLevel.C2} / ${totalByLevel.C2}</span>
+                    <span class="stat-value">${validatedByLevel.C2} / ${totalByLevel.C2} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctC2}%)</span></span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">${translations[lang].stat_remaining}</span>
