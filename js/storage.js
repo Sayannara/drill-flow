@@ -1,54 +1,113 @@
-// Gestion de la persistance via localStorage
+// Gestion de la persistance via localStorage et Firebase Firestore
+import { db } from './firebase-config.js?v=47';
+import { getCurrentUser } from './auth.js?v=47';
+import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
-const LEGACY_KEY = 'voc_progress';
+let localCache = null;
 
+// Initialiser le cache en mémoire (session uniquement)
+function initCache() {
+    if (!localCache) {
+        localCache = {};
+    }
+}
+initCache();
+
+export async function fetchProgressFromCloud() {
+    const user = getCurrentUser();
+    if (!user) return;
+
+    try {
+        const docRef = doc(db, "users", user.uid);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            const cloudData = docSnap.data().progress || {};
+            // Fusionner avec le local
+            localCache = { ...localCache, ...cloudData };
+            return localCache;
+        }
+    } catch (e) {
+        console.error("Erreur récupération Firebase:", e);
+    }
+}
+
+export async function saveProgressLocalAndCloud() {
+    // Ne plus sauvegarder dans localStorage
+    
+    // Cloud sync si l'utilisateur est connecté
+    const user = getCurrentUser();
+    if (user) {
+        const docRef = doc(db, "users", user.uid);
+        setDoc(docRef, { progress: localCache }, { merge: true })
+            .catch(e => console.error("Erreur synchro Firebase:", e));
+    }
+}
+
+export async function migrateLocalDataToCloud(uid) {
+    if (Object.keys(localCache).length > 0) {
+        try {
+            const docRef = doc(db, "users", uid);
+            await setDoc(docRef, { progress: localCache }, { merge: true });
+        } catch (e) {
+            console.error("Erreur migration:", e);
+        }
+    }
+}
+
+// Renvoie tout le cache local
 export function loadProgress() {
-    try {
-        let data = localStorage.getItem(STORAGE_KEY);
-        if (!data) {
-            data = localStorage.getItem(LEGACY_KEY);
-            if (data) {
-                localStorage.setItem(STORAGE_KEY, data); // Migrate data
-            }
-        }
-        if (data) {
-            return JSON.parse(data);
-        }
-    } catch (e) {
-        console.error("Erreur de chargement de la progression", e);
-    }
-    return {};
+    return localCache;
 }
 
-export function saveProgress(progressData) {
-    try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(progressData));
-    } catch (e) {
-        console.error("Erreur de sauvegarde de la progression", e);
-    }
-}
-
-// Récupère l'état d'un mot pour une paire de langue donnée
+// Récupère l'état (status) d'un mot
 // Retourne 'actif', 'validé' ou par défaut 'actif'
 export function getWordStatus(langSource, langTarget, wordId) {
-    const progress = loadProgress();
     const pairKey = `${langSource}-${langTarget}`;
-    if (progress[pairKey] && progress[pairKey][wordId]) {
-        return progress[pairKey][wordId];
+    if (localCache[pairKey] && localCache[pairKey][wordId]) {
+        // La nouvelle structure est un objet { status, attempts }
+        if (typeof localCache[pairKey][wordId] === 'object') {
+            return localCache[pairKey][wordId].status || 'actif';
+        }
+        // Backward compatibility avec l'ancien format string
+        return localCache[pairKey][wordId];
     }
     return 'actif';
 }
 
-// Met à jour l'état d'un mot
-export function setWordStatus(langSource, langTarget, wordId, status) {
-    const progress = loadProgress();
+// Récupère toutes les stats d'un mot
+export function getWordStats(langSource, langTarget, wordId) {
+    const pairKey = `${langSource}-${langTarget}`;
+    if (localCache[pairKey] && localCache[pairKey][wordId] && typeof localCache[pairKey][wordId] === 'object') {
+        return localCache[pairKey][wordId];
+    }
+    return { status: 'actif', attempts: 0 };
+}
+
+// Met à jour l'état d'un mot et incrémente ses tentatives
+export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false) {
     const pairKey = `${langSource}-${langTarget}`;
     
-    if (!progress[pairKey]) {
-        progress[pairKey] = {};
+    if (!localCache[pairKey]) {
+        localCache[pairKey] = {};
     }
     
-    progress[pairKey][wordId] = status;
-    saveProgress(progress);
+    let currentData = localCache[pairKey][wordId];
+    
+    // Si c'était l'ancien format string, on le convertit en objet
+    if (typeof currentData === 'string') {
+        currentData = { status: currentData, attempts: 1, last_updated: new Date().toISOString() };
+    } else if (!currentData) {
+        currentData = { status: 'actif', attempts: 0, last_updated: new Date().toISOString() };
+    }
+    
+    currentData.status = status;
+    if (addAttempt) {
+        currentData.attempts += 1;
+    }
+    currentData.last_updated = new Date().toISOString();
+    
+    localCache[pairKey][wordId] = currentData;
+    saveProgressLocalAndCloud();
 }

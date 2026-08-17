@@ -1,7 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=29';
-import { getWordStatus, setWordStatus } from './storage.js?v=29';
-import { translations } from './i18n.js?v=34';
-import { examples } from './data/examples.js?v=2';
+import { vocabulary } from './data/vocabulary.js?v=47';
+import { getWordStatus, setWordStatus } from './storage.js?v=47';
+import { translations } from './i18n.js?v=47';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -59,14 +58,7 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     renderCurrentWord();
 }
 
-// Change la langue source et cible à la volée
-export function flipTranslation() {
-    const temp = sessionState.langSource;
-    sessionState.langSource = sessionState.langTarget;
-    sessionState.langTarget = temp;
-    renderCurrentWord();
-}
-
+// (Bouton switch de langue supprimé)
 function renderCurrentWord() {
     const wordSourceEl = document.getElementById('drill-word-source');
     const inputEl = document.getElementById('drill-input');
@@ -168,6 +160,28 @@ function renderCurrentWord() {
             levelBadgeEl.style.display = 'none';
         }
     }
+    
+    // Afficher la phrase d'exemple
+    const exampleSentenceEl = document.getElementById('drill-example-sentence');
+    if (exampleSentenceEl) {
+        const exampleKey = `ex_${sessionState.langSource}`;
+        const sentence = currentWord[exampleKey];
+        if (sentence) {
+            // Mettre en évidence le mot source dans la phrase
+            const sourceWord = currentWord[sessionState.langSource];
+            // Echapper le mot source pour la regex
+            const escapedWord = sourceWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            // Mettre en gras le mot source (insensible à la casse)
+            const regex = new RegExp(`(${escapedWord})`, 'gi');
+            const highlightedSentence = sentence.replace(regex, '<span style="font-weight: bold; color: var(--primary-color);">$1</span>');
+            
+            exampleSentenceEl.innerHTML = highlightedSentence;
+            exampleSentenceEl.style.display = 'block';
+        } else {
+            exampleSentenceEl.style.display = 'none';
+        }
+    }
+
     const suffix = translations[lang].words_remaining;
     counterEl.textContent = `${sessionState.words.length} ${suffix}`;
     
@@ -204,7 +218,16 @@ function handleValidation() {
         const currentWord = sessionState.words[sessionState.currentIndex];
         const expected = currentWord[sessionState.langTarget];
 
-        const isCorrect = normalizeText(userInput) === normalizeText(expected);
+        const normalizedInput = normalizeText(userInput);
+        const inputNoParens = normalizeText(userInput.replace(/\(.*?\)/g, ' '));
+        
+        const expectedOptions = [];
+        expected.split('/').forEach(s => {
+            expectedOptions.push(normalizeText(s));
+            expectedOptions.push(normalizeText(s.replace(/\(.*?\)/g, ' ')));
+        });
+
+        const isCorrect = expectedOptions.includes(normalizedInput) || expectedOptions.includes(inputNoParens);
 
         // Affichage des résultats
         const asked = currentWord[sessionState.langSource];
@@ -241,6 +264,10 @@ function handleValidation() {
         const wordWrapperEl = document.getElementById('drill-word-wrapper');
         if (wordWrapperEl) wordWrapperEl.style.display = 'none';
         
+        // Cacher l'exemple durant la saisie
+        const exampleSentenceEl = document.getElementById('drill-example-sentence');
+        if (exampleSentenceEl) exampleSentenceEl.style.display = 'none';
+
         const badgeEl = document.getElementById('drill-word-type-badge');
         if (badgeEl) {
             badgeEl.classList.add('hidden');
@@ -277,10 +304,13 @@ function handleValidation() {
             
             const exampleCorrectLine = document.getElementById('example-correct-line');
             const exampleCorrectText = document.getElementById('example-correct-text');
-            if (exampleCorrectLine && exampleCorrectText && currentWord && examples[currentWord.id]) {
-                const sentence = examples[currentWord.id][sessionState.langTarget];
+            if (exampleCorrectLine && exampleCorrectText && currentWord) {
+                const sentence = currentWord[`ex_${sessionState.langTarget}`];
                 if (sentence) {
-                    exampleCorrectText.innerHTML = sentence.replace(/\*([^*]+)\*/g, '<span class="example-highlight">$1</span>');
+                    const targetWord = currentWord[sessionState.langTarget];
+                    const escapedWord = targetWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    const regex = new RegExp(`(${escapedWord})`, 'gi');
+                    exampleCorrectText.innerHTML = sentence.replace(regex, '<span class="example-highlight">$1</span>');
                     exampleCorrectLine.style.display = 'flex';
                 } else {
                     exampleCorrectLine.style.display = 'none';
@@ -368,10 +398,13 @@ function handleValidation() {
             
             const exampleIncorrectLine = document.getElementById('example-incorrect-line');
             const exampleIncorrectText = document.getElementById('example-incorrect-text');
-            if (exampleIncorrectLine && exampleIncorrectText && currentWord && examples[currentWord.id]) {
-                const sentence = examples[currentWord.id][sessionState.langTarget];
+            if (exampleIncorrectLine && exampleIncorrectText && currentWord) {
+                const sentence = currentWord[`ex_${sessionState.langTarget}`];
                 if (sentence) {
-                    exampleIncorrectText.innerHTML = sentence.replace(/\*([^*]+)\*/g, '<span class="example-highlight">$1</span>');
+                    const targetWord = currentWord[sessionState.langTarget];
+                    const escapedWord = targetWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    const regex = new RegExp(`(${escapedWord})`, 'gi');
+                    exampleIncorrectText.innerHTML = sentence.replace(regex, '<span class="example-highlight">$1</span>');
                     exampleIncorrectLine.style.display = 'flex';
                 } else {
                     exampleIncorrectLine.style.display = 'none';
@@ -442,7 +475,7 @@ function proceedNextWord(action) {
         finalStatus = 'validé'; // Forcé à retirer de la session (on le marque validé)
     }
 
-    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus);
+    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, true);
 
     // Supprimer le mot de la session courante s'il est validé
     if (finalStatus === 'validé') {

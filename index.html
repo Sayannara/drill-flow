@@ -31,6 +31,7 @@
                 <option value="de">DE</option>
                 <option value="es">ES</option>
             </select>
+            <button id="auth-btn" class="btn-small btn-secondary-action" style="white-space: nowrap; font-size: 0.85rem; padding: 0.4rem 0.8rem; border-radius: 8px; margin-right: 0.5rem;">Connexion</button>
             <button id="theme-toggle" class="icon-btn" title="Changer de thème">
                 <span class="theme-icon">🌙</span>
             </button>
@@ -89,15 +90,15 @@
                             <input type="checkbox" id="drill-level-b1" value="B1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                             <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(245, 158, 11, 0.2); color: #f59e0b;">B1</span>
                         </label>
-                        <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
+                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-b2" value="B2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                             <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">B2</span>
                         </label>
-                        <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
+                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-c1" value="C1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                             <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(139, 92, 246, 0.2); color: #8b5cf6;">C1</span>
                         </label>
-                        <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
+                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-c2" value="C2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                             <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(168, 85, 247, 0.2); color: #a855f7;">C2</span>
                         </label>
@@ -123,7 +124,6 @@
             <div class="drill-header" id="drill-header-section">
                 <div class="lang-pair">
                     <span id="drill-lang-source" class="lang-badge">FR</span>
-                    <button id="btn-flip-lang" class="icon-btn" title="Inverser le sens">⇄</button>
                     <span id="drill-lang-target" class="lang-badge">EN</span>
                 </div>
                 <div class="drill-progress">
@@ -140,6 +140,9 @@
             <div class="flashcard">
                 <!-- Wrapper dynamique à hauteur minimale fixe pour empêcher les boutons de sauter -->
                 <div id="drill-dynamic-area" style="min-height: 380px; display: flex; flex-direction: column; justify-content: center;">
+                    <!-- Zone de la phrase d'exemple (ajoutée) -->
+                    <div id="drill-example-sentence" style="display: none; text-align: center; color: var(--text-color); opacity: 0.85; font-size: 0.95rem; margin-bottom: 1.5rem; font-style: italic;"></div>
+                    
                     <!-- Zone de résultat et comparaison en HAUT -->
                     <div class="result-section hidden" id="drill-result" style="margin-top: 0; margin-bottom: 1.5rem;">
                         <div id="result-status" class="status-banner">Correct !</div>
@@ -209,9 +212,16 @@
 
     <!-- Template Vue Progression -->
     <template id="view-progress">
-        <div class="view-content animate-fade-in">
+        <div class="view-content view-wide animate-fade-in">
             <h1 class="page-title" data-i18n="title_progress">Mes mots</h1>
             <p class="page-subtitle" data-i18n="subtitle_progress">Gérez les mots que vous maîtrisez ou que vous souhaitez réviser.</p>
+            
+            <div class="card progress-card" id="progress-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
+                <span style="font-size: 3rem;">🔒</span>
+                <p class="empty-text" style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary);">Contenu verrouillé</p>
+                <p class="empty-subtext" style="color: var(--text-secondary); max-width: 400px;">Créez un compte gratuit pour débloquer le suivi de votre progression.</p>
+                <button class="btn-primary btn-open-auth-modal" style="margin-top: 1rem; max-width: 250px;">S'inscrire / Se connecter</button>
+            </div>
             
             <div class="card progress-card" id="progress-empty-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
                 <p class="empty-text" style="font-weight: 600; font-size: 1.2rem; color: var(--text-secondary);" data-i18n="empty_progress">Aucun historique d'entraînement trouvé.</p>
@@ -286,11 +296,12 @@
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th style="width: 25%;" data-i18n="th_source">Mot Source</th>
-                                <th style="width: 25%;" data-i18n="th_translation">Traduction</th>
-                                <th style="width: 20%; white-space: nowrap;" data-i18n="th_type">Catégorie</th>
-                                <th style="width: 15%; text-align: center; white-space: nowrap;" data-i18n="th_level">Niveau</th>
-                                <th style="width: 15%; text-align: center; white-space: nowrap;" data-i18n="th_status">Statut</th>
+                                <th class="sortable" data-sort="source" style="width: 25%; cursor: pointer;" data-i18n="th_source">Mot Source <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="target" style="width: 25%; cursor: pointer;" data-i18n="th_translation">Traduction <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="type" style="width: 15%; cursor: pointer; white-space: nowrap;" data-i18n="th_type">Catégorie <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="level" style="width: 10%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_level">Niveau <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="attempts" style="width: 10%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_attempts">Tentatives <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="status" style="width: 15%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_status">Statut <span class="sort-icon"></span></th>
                             </tr>
                         </thead>
                         <tbody id="prog-table-body">
@@ -309,6 +320,13 @@
             <h1 class="page-title" data-i18n="title_stats">Statistiques</h1>
             <p class="page-subtitle" data-i18n="subtitle_stats">Suivez votre progression globale par paire de langues.</p>
             
+            <div class="card stats-card" id="stats-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
+                <span style="font-size: 3rem;">🔒</span>
+                <p class="empty-text" style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary);">Contenu verrouillé</p>
+                <p class="empty-subtext" style="color: var(--text-secondary); max-width: 400px;">Créez un compte gratuit pour débloquer vos statistiques de performance.</p>
+                <button class="btn-primary btn-open-auth-modal" style="margin-top: 1rem; max-width: 250px;">S'inscrire / Se connecter</button>
+            </div>
+            
             <div class="card stats-card" id="stats-empty-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem;">
                 <p class="empty-text" style="font-weight: 600; font-size: 1.2rem; color: var(--text-secondary);" data-i18n="empty_stats">Aucune statistique disponible.</p>
                 <p class="empty-subtext" style="color: var(--text-secondary); max-width: 400px;" data-i18n="empty_stats_sub">Veuillez d'abord démarrer une session pour générer des données.</p>
@@ -325,6 +343,13 @@
         <div class="view-content animate-fade-in">
             <h1 class="page-title" data-i18n="title_certs">Mes Certificats</h1>
             <p class="page-subtitle" data-i18n="subtitle_certs">Célébrez vos progrès et générez vos certificats drillFlow personnalisés pour couronner vos succès ! 🏆🎉</p>
+            
+            <div class="card stats-card" id="certs-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
+                <span style="font-size: 3rem;">🔒</span>
+                <p class="empty-text" style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary);">Contenu verrouillé</p>
+                <p class="empty-subtext" style="color: var(--text-secondary); max-width: 400px;">Créez un compte gratuit pour débloquer la génération de vos certificats.</p>
+                <button class="btn-primary btn-open-auth-modal" style="margin-top: 1rem; max-width: 250px;">S'inscrire / Se connecter</button>
+            </div>
             
             <div class="card cert-profile-card" style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; align-items: center; justify-content: flex-start; flex-wrap: wrap; padding: 1.25rem;">
                 <div class="form-group" style="margin-bottom: 0; flex: 1 1 200px; text-align: left; display: flex; flex-direction: column; gap: 0.35rem;">
@@ -442,7 +467,34 @@
         </div>
     </template>
 
+    <!-- Modal Auth -->
+    <div id="auth-modal" class="cert-modal-overlay hidden" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.85); display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 1rem; backdrop-filter: blur(4px);">
+        <div class="card cert-modal-card" style="max-width: 400px; width: 100%; display: flex; flex-direction: column; gap: 1rem; background: var(--surface-color); padding: 2rem; border-radius: 16px; box-shadow: var(--shadow);">
+            <h2 style="margin: 0 0 1rem 0; font-family: var(--font-heading);">Inscription / Connexion</h2>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: -1rem; margin-bottom: 1rem;">Sauvegardez votre progression pour ne pas la perdre.</p>
+            
+            <div class="form-group" style="margin-bottom: 1rem;">
+                <label>Email</label>
+                <input type="email" id="auth-email" placeholder="votre@email.com" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label>Mot de passe</label>
+                <input type="password" id="auth-password" placeholder="••••••••" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
+            </div>
+
+            <div style="display: flex; gap: 1rem; width: 100%; justify-content: space-between;">
+                <button id="btn-login" class="btn-primary btn-secondary-action" style="flex: 1;">Se connecter</button>
+                <button id="btn-signup" class="btn-primary" style="flex: 1;">S'inscrire</button>
+            </div>
+            <p id="auth-error" style="color: var(--error-color); font-size: 0.85rem; display: none; text-align: center; margin: 0;"></p>
+            <button id="btn-close-auth" class="icon-btn" style="position: absolute; top: 1rem; right: 1rem;">✕</button>
+        </div>
+    </div>
+
     <!-- Scripts -->
-    <script type="module" src="js/main.js?v=46"></script>
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/main.js?v=47"></script>
 </body>
 </html>

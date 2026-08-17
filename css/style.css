@@ -120,6 +120,10 @@ body {
     max-width: 600px;
 }
 
+.view-wide {
+    max-width: 1000px; /* Plus d'espace pour les tableaux */
+}
+
 /* Typography */
 .page-title {
     font-family: var(--font-heading);

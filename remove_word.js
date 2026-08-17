@@ -1,0 +1,1 @@
+const fs = require('fs'); const txt = fs.readFileSync('js/data/vocabulary.js', 'utf8'); const newTxt = txt.replace(/\{\s*"id": "word_1400"[\s\S]*?\},/, ''); fs.writeFileSync('js/data/vocabulary.js', newTxt, 'utf8'); console.log('Done');

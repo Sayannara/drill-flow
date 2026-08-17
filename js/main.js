@@ -1,7 +1,8 @@
-import { vocabulary } from './data/vocabulary.js?v=29';
-import { initDrillSession, handleDrillKeydown, flipTranslation } from './drill.js?v=29';
-import { loadProgress, setWordStatus, getWordStatus } from './storage.js?v=29';
-import { translations } from './i18n.js?v=34';
+import { vocabulary } from './data/vocabulary.js?v=47';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=47';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=47';
+import { translations } from './i18n.js?v=47';
+import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=47';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -299,7 +300,8 @@ function attachViewEvents(viewId) {
         }
         
         if (btnFlip) {
-            btnFlip.addEventListener('click', flipTranslation);
+            // Le bouton d'inversion a été supprimé à la demande de l'utilisateur
+            // btnFlip.addEventListener('click', flipTranslation);
         }
         
         if (btnQuit) {
@@ -323,19 +325,37 @@ const LANG_NAMES = {
 };
 
 let currentProgPair = '';
+let currentSortCol = 'source';
+let currentSortAsc = true;
 
 function initProgressView() {
+    const gatedState = document.getElementById('progress-gated-state');
+    const emptyState = document.getElementById('progress-empty-state');
+    const content = document.getElementById('progress-content');
+    
+    // Gating check
+    if (!getCurrentUser()) {
+        gatedState.style.display = 'flex';
+        emptyState.style.display = 'none';
+        content.style.display = 'none';
+        
+        // Wire auth buttons
+        document.querySelectorAll('.btn-open-auth-modal').forEach(btn => {
+            btn.onclick = () => document.getElementById('auth-modal')?.classList.remove('hidden');
+        });
+        return;
+    }
+    
+    gatedState.style.display = 'none';
+    content.style.display = 'block';
     const progress = loadProgress();
     const usedPairs = Object.keys(progress).filter(key => {
         return progress[key] && typeof progress[key] === 'object' && Object.keys(progress[key]).length > 0;
     });
 
-    const emptyState = document.getElementById('progress-empty-state');
-    const mainCard = document.getElementById('progress-content');
-
     if (usedPairs.length === 0) {
         if (emptyState) emptyState.style.display = 'flex';
-        if (mainCard) mainCard.style.display = 'none';
+        if (content) content.style.display = 'none';
         
         const btnGo = document.getElementById('btn-go-to-training');
         if (btnGo) {
@@ -345,7 +365,7 @@ function initProgressView() {
     }
 
     if (emptyState) emptyState.style.display = 'none';
-    if (mainCard) mainCard.style.display = 'block';
+    if (content) content.style.display = 'block';
 
     const pairSelect = document.getElementById('prog-lang-pair');
     if (pairSelect) {
@@ -354,6 +374,7 @@ function initProgressView() {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
+            const LANG_NAMES = { fr: 'Français', en: 'Anglais', es: 'Espagnol', it: 'Italien', de: 'Allemand' };
             opt.textContent = `${LANG_NAMES[src] || src.toUpperCase()} ➔ ${LANG_NAMES[tgt] || tgt.toUpperCase()}`;
             pairSelect.appendChild(opt);
         });
@@ -378,6 +399,21 @@ function initProgressView() {
             renderProgressTable();
         };
     }
+
+    // Attacher les events de tri
+    const sortHeaders = document.querySelectorAll('.sortable');
+    sortHeaders.forEach(th => {
+        th.onclick = () => {
+            const sortKey = th.dataset.sort;
+            if (currentSortCol === sortKey) {
+                currentSortAsc = !currentSortAsc;
+            } else {
+                currentSortCol = sortKey;
+                currentSortAsc = true;
+            }
+            renderProgressTable();
+        };
+    });
 
     const searchInput = document.getElementById('prog-search');
     if (searchInput) {
@@ -437,6 +473,10 @@ function renderProgressTable() {
     const filterC2 = document.getElementById('filter-level-c2') ? document.getElementById('filter-level-c2').checked : true;
 
     const filtered = vocabulary.filter(word => {
+        // Ne garder que les mots sur lesquels l'utilisateur s'est entraîné (attempts > 0)
+        const stats = getWordStats(src, tgt, word.id);
+        if (!stats || !stats.attempts || stats.attempts === 0) return false;
+
         if (word.type === 'nom' && !filterNom) return false;
         if (word.type === 'verbe' && !filterVerbe) return false;
         if (word.type === 'adjectif' && !filterAdjectif) return false;
@@ -453,6 +493,39 @@ function renderProgressTable() {
         const srcText = (word[src] || '').toLowerCase();
         const tgtText = (word[tgt] || '').toLowerCase();
         return srcText.includes(query) || tgtText.includes(query);
+    });
+
+    // Tri des données
+    filtered.sort((a, b) => {
+        let valA, valB;
+        if (currentSortCol === 'source') { valA = (a[src]||'').toLowerCase(); valB = (b[src]||'').toLowerCase(); }
+        else if (currentSortCol === 'target') { valA = (a[tgt]||'').toLowerCase(); valB = (b[tgt]||'').toLowerCase(); }
+        else if (currentSortCol === 'type') { valA = a.type || ''; valB = b.type || ''; }
+        else if (currentSortCol === 'level') { valA = a.level || ''; valB = b.level || ''; }
+        else if (currentSortCol === 'attempts') { 
+            valA = getWordStats(src, tgt, a.id).attempts || 0; 
+            valB = getWordStats(src, tgt, b.id).attempts || 0; 
+        }
+        else if (currentSortCol === 'status') { 
+            valA = getWordStatus(src, tgt, a.id); 
+            valB = getWordStatus(src, tgt, b.id); 
+        }
+        
+        if (valA < valB) return currentSortAsc ? -1 : 1;
+        if (valA > valB) return currentSortAsc ? 1 : -1;
+        return 0;
+    });
+
+    // Mise à jour des icônes de tri
+    document.querySelectorAll('.sortable').forEach(th => {
+        const icon = th.querySelector('.sort-icon');
+        if (icon) {
+            if (th.dataset.sort === currentSortCol) {
+                icon.textContent = currentSortAsc ? ' ▲' : ' ▼';
+            } else {
+                icon.textContent = '';
+            }
+        }
     });
 
     if (filtered.length === 0) {
@@ -477,7 +550,6 @@ function renderProgressTable() {
     }
 
     filtered.forEach(word => {
-        const status = getWordStatus(src, tgt, word.id);
         const tr = document.createElement('tr');
 
 
@@ -518,18 +590,22 @@ function renderProgressTable() {
         }
         tr.appendChild(tdLevel);
 
+        const tdAttempts = document.createElement('td');
+        tdAttempts.style.textAlign = 'center';
+        tdAttempts.style.fontWeight = '600';
+        tdAttempts.style.color = 'var(--text-secondary)';
+        const stats = getWordStats(src, tgt, word.id);
+        const attempts = stats.attempts || 0;
+        tdAttempts.textContent = attempts;
+        tr.appendChild(tdAttempts);
+
         const tdStatus = document.createElement('td');
+        const status = getWordStatus(src, tgt, word.id);
         tdStatus.className = `status-cell ${status === 'validé' ? 'valide' : 'actif'}`;
         tdStatus.textContent = status === 'validé' ? '✓' : '\u00A0';
         tr.appendChild(tdStatus);
 
-        tr.style.cursor = 'pointer';
-        tr.onclick = (e) => {
-            if (e.target.tagName.toLowerCase() === 'input') return; // Ne pas interférer avec la checkbox
-            const newStatus = status === 'validé' ? 'actif' : 'validé';
-            setWordStatus(src, tgt, word.id, newStatus);
-            renderProgressTable();
-        };
+
 
         tableBody.appendChild(tr);
     });
@@ -539,13 +615,29 @@ function renderProgressTable() {
 
 // --- Gestion de la vue Statistiques ---
 function initStatsView() {
+    const gatedState = document.getElementById('stats-gated-state');
+    const emptyState = document.getElementById('stats-empty-state');
+    const container = document.getElementById('stats-container');
+    
+    // Gating check
+    if (!getCurrentUser()) {
+        gatedState.style.display = 'flex';
+        emptyState.style.display = 'none';
+        container.style.display = 'none';
+        
+        // Wire auth buttons
+        document.querySelectorAll('.btn-open-auth-modal').forEach(btn => {
+            btn.onclick = () => document.getElementById('auth-modal')?.classList.remove('hidden');
+        });
+        return;
+    }
+    
+    gatedState.style.display = 'none';
+    container.style.display = 'grid';
     const progress = loadProgress();
     const usedPairs = Object.keys(progress).filter(key => {
         return progress[key] && typeof progress[key] === 'object' && Object.keys(progress[key]).length > 0;
     });
-
-    const emptyState = document.getElementById('stats-empty-state');
-    const container = document.getElementById('stats-container');
 
     if (usedPairs.length === 0) {
         if (emptyState) emptyState.style.display = 'flex';
@@ -695,6 +787,16 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Écouter les changements d'authentification pour rafraîchir la vue (ex: enlever les cadenas)
+    window.addEventListener('auth-changed', () => {
+        const currentActiveBtn = document.querySelector('.nav-btn.active');
+        if (currentActiveBtn) {
+            const viewId = currentActiveBtn.id.replace('nav-', '');
+            // On relance la vue courante pour vérifier les droits (gating)
+            renderView(viewId);
+        }
+    });
+
     // Appliquer la traduction initiale sur la page globale
     translatePage();
 
@@ -724,10 +826,86 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Modal Auth Logic
+    const authModal = document.getElementById('auth-modal');
+    
+    // Nouveaux boutons génériques pour ouvrir la modale
+    const openAuthBtns = document.querySelectorAll('.btn-open-auth-modal');
+    openAuthBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (authModal) authModal.classList.remove('hidden');
+        });
+    });
+
+    const btnCloseAuth = document.getElementById('btn-close-auth');
+    if (btnCloseAuth && authModal) {
+        btnCloseAuth.onclick = () => {
+            authModal.classList.add('hidden');
+        };
+    }
+
+    const btnLogin = document.getElementById('btn-login');
+    const btnSignup = document.getElementById('btn-signup');
+    const authError = document.getElementById('auth-error');
+    
+    if (btnLogin && btnSignup) {
+        btnLogin.onclick = async () => {
+            const email = document.getElementById('auth-email').value;
+            const pass = document.getElementById('auth-password').value;
+            authError.style.display = 'none';
+            const res = await loginUser(email, pass);
+            if (res.success) {
+                authModal.classList.add('hidden');
+            } else {
+                authError.style.color = 'var(--error-color)';
+                authError.textContent = res.error;
+                authError.style.display = 'block';
+            }
+        };
+
+        btnSignup.onclick = async () => {
+            const email = document.getElementById('auth-email').value;
+            const pass = document.getElementById('auth-password').value;
+            authError.style.display = 'none';
+            const res = await signUpUser(email, pass);
+            if (res.success) {
+                authError.textContent = "Inscription réussie ! Un lien de vérification vous a été envoyé. Veuillez consulter vos e-mails (et vos spams) avant de vous connecter.";
+                authError.style.color = 'var(--success-color)';
+                authError.style.display = 'block';
+            } else {
+                authError.style.color = 'var(--error-color)';
+                authError.textContent = res.error;
+                authError.style.display = 'block';
+            }
+        };
+    }
 });
 
 // --- Gestion de la vue Certificats ---
 function initCertsView() {
+    const gatedState = document.getElementById('certs-gated-state');
+    const emptyState = document.getElementById('certs-empty-state');
+    const container = document.getElementById('certs-container');
+    const profileCard = document.querySelector('.cert-profile-card');
+    
+    // Gating check
+    if (!getCurrentUser()) {
+        gatedState.style.display = 'flex';
+        emptyState.style.display = 'none';
+        container.style.display = 'none';
+        profileCard.style.display = 'none';
+        
+        // Wire auth buttons
+        document.querySelectorAll('.btn-open-auth-modal').forEach(btn => {
+            btn.onclick = () => document.getElementById('auth-modal')?.classList.remove('hidden');
+        });
+        return;
+    }
+    
+    gatedState.style.display = 'none';
+    profileCard.style.display = 'flex';
+    
     const inputFirstname = document.getElementById('cert-firstname');
     const inputLastname = document.getElementById('cert-lastname');
     
@@ -748,9 +926,6 @@ function initCertsView() {
     const usedPairs = Object.keys(progress).filter(key => {
         return progress[key] && typeof progress[key] === 'object' && Object.keys(progress[key]).length > 0;
     });
-
-    const emptyState = document.getElementById('certs-empty-state');
-    const container = document.getElementById('certs-container');
 
     if (usedPairs.length === 0) {
         if (emptyState) emptyState.style.display = 'flex';

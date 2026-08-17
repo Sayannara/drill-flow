@@ -1,0 +1,7796 @@
+[
+  {
+    "id": "word_3157",
+    "fr": "un / une",
+    "en": "a / an",
+    "de": "ein / eine",
+    "es": "un / una",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3158",
+    "fr": "au sujet de",
+    "en": "about",
+    "de": "über",
+    "es": "sobre",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3159",
+    "fr": "au-dessus",
+    "en": "above",
+    "de": "über",
+    "es": "encima",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3160",
+    "fr": "à travers",
+    "en": "across",
+    "de": "über",
+    "es": "a través de",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3161",
+    "fr": "l'action",
+    "en": "action",
+    "de": "die Aktion",
+    "es": "la acción",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3162",
+    "fr": "l'activité",
+    "en": "activity",
+    "de": "die Aktivität",
+    "es": "la actividad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3163",
+    "fr": "l'acteur",
+    "en": "actor",
+    "de": "der Schauspieler",
+    "es": "el actor",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3164",
+    "fr": "l'actrice",
+    "en": "actress",
+    "de": "die Schauspielerin",
+    "es": "la actriz",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3165",
+    "fr": "ajouter",
+    "en": "add",
+    "de": "hinzufügen",
+    "es": "añadir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3166",
+    "fr": "l'adresse",
+    "en": "address",
+    "de": "die Adresse",
+    "es": "la dirección",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3167",
+    "fr": "l'adulte",
+    "en": "adult",
+    "de": "der Erwachsene",
+    "es": "el adulto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3168",
+    "fr": "effrayé",
+    "en": "afraid",
+    "de": "verängstigt",
+    "es": "asustado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3169",
+    "fr": "après",
+    "en": "after",
+    "de": "nach",
+    "es": "después",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3170",
+    "fr": "l'après-midi",
+    "en": "afternoon",
+    "de": "der Nachmittag",
+    "es": "la tarde",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3171",
+    "fr": "encore",
+    "en": "again",
+    "de": "wieder",
+    "es": "otra vez",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3172",
+    "fr": "l'âge",
+    "en": "age",
+    "de": "das Alter",
+    "es": "la edad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3173",
+    "fr": "il y a (temps)",
+    "en": "ago",
+    "de": "vor",
+    "es": "hace",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3174",
+    "fr": "l'air",
+    "en": "air",
+    "de": "die Luft",
+    "es": "el aire",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3175",
+    "fr": "l'aéroport",
+    "en": "airport",
+    "de": "der Flughafen",
+    "es": "el aeropuerto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3176",
+    "fr": "tout",
+    "en": "all",
+    "de": "alles",
+    "es": "todo",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3177",
+    "fr": "d'accord",
+    "en": "all right",
+    "de": "in Ordnung",
+    "es": "de acuerdo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3178",
+    "fr": "aussi",
+    "en": "also",
+    "de": "auch",
+    "es": "también",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3179",
+    "fr": "toujours",
+    "en": "always",
+    "de": "immer",
+    "es": "siempre",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3180",
+    "fr": "incroyable",
+    "en": "amazing",
+    "de": "erstaunlich",
+    "es": "increíble",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3181",
+    "fr": "et",
+    "en": "and",
+    "de": "und",
+    "es": "y",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3182",
+    "fr": "en colère",
+    "en": "angry",
+    "de": "wütend",
+    "es": "enojado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3183",
+    "fr": "l'animal",
+    "en": "animal",
+    "de": "das Tier",
+    "es": "el animal",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3184",
+    "fr": "un autre",
+    "en": "another",
+    "de": "ein anderer",
+    "es": "otro",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3185",
+    "fr": "répondre",
+    "en": "answer",
+    "de": "antworten",
+    "es": "responder",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3186",
+    "fr": "la réponse",
+    "en": "answer",
+    "de": "die Antwort",
+    "es": "la respuesta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3187",
+    "fr": "n'importe quel",
+    "en": "any",
+    "de": "irgendein",
+    "es": "cualquier",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3188",
+    "fr": "n'importe qui",
+    "en": "anyone",
+    "de": "jemand",
+    "es": "alguien",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3189",
+    "fr": "n'importe quoi",
+    "en": "anything",
+    "de": "etwas",
+    "es": "algo",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3190",
+    "fr": "l'appartement",
+    "en": "apartment",
+    "de": "die Wohnung",
+    "es": "el apartamento",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3191",
+    "fr": "la pomme",
+    "en": "apple",
+    "de": "der Apfel",
+    "es": "la manzana",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3192",
+    "fr": "avril",
+    "en": "April",
+    "de": "April",
+    "es": "abril",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3193",
+    "fr": "la zone",
+    "en": "area",
+    "de": "das Gebiet",
+    "es": "el área",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3194",
+    "fr": "le bras",
+    "en": "arm",
+    "de": "der Arm",
+    "es": "el brazo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3195",
+    "fr": "autour",
+    "en": "around",
+    "de": "um",
+    "es": "alrededor",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3196",
+    "fr": "arriver",
+    "en": "arrive",
+    "de": "ankommen",
+    "es": "llegar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3197",
+    "fr": "l'art",
+    "en": "art",
+    "de": "die Kunst",
+    "es": "el arte",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3198",
+    "fr": "l'article",
+    "en": "article",
+    "de": "der Artikel",
+    "es": "el artículo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3199",
+    "fr": "l'artiste",
+    "en": "artist",
+    "de": "der Künstler",
+    "es": "el artista",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3200",
+    "fr": "comme",
+    "en": "as",
+    "de": "wie",
+    "es": "como",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3201",
+    "fr": "demander",
+    "en": "ask",
+    "de": "fragen",
+    "es": "preguntar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3202",
+    "fr": "à",
+    "en": "at",
+    "de": "an / um",
+    "es": "en",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3203",
+    "fr": "août",
+    "en": "August",
+    "de": "August",
+    "es": "agosto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3204",
+    "fr": "la tante",
+    "en": "aunt",
+    "de": "die Tante",
+    "es": "la tía",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3205",
+    "fr": "l'automne",
+    "en": "autumn",
+    "de": "der Herbst",
+    "es": "el otoño",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3206",
+    "fr": "loin",
+    "en": "away",
+    "de": "weg",
+    "es": "lejos",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3207",
+    "fr": "le bébé",
+    "en": "baby",
+    "de": "das Baby",
+    "es": "el bebé",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3208",
+    "fr": "en arrière",
+    "en": "back",
+    "de": "zurück",
+    "es": "atrás",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3209",
+    "fr": "mauvais",
+    "en": "bad",
+    "de": "schlecht",
+    "es": "malo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3210",
+    "fr": "le sac",
+    "en": "bag",
+    "de": "die Tasche",
+    "es": "la bolsa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3211",
+    "fr": "la balle",
+    "en": "ball",
+    "de": "der Ball",
+    "es": "la pelota",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3212",
+    "fr": "la banane",
+    "en": "banana",
+    "de": "die Banane",
+    "es": "el plátano",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3213",
+    "fr": "le groupe",
+    "en": "band",
+    "de": "die Band",
+    "es": "la banda",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3214",
+    "fr": "la banque",
+    "en": "bank",
+    "de": "die Bank",
+    "es": "el banco",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3215",
+    "fr": "le bar",
+    "en": "bar",
+    "de": "die Bar",
+    "es": "el bar",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3216",
+    "fr": "le bain",
+    "en": "bath",
+    "de": "das Bad",
+    "es": "el baño",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3217",
+    "fr": "la salle de bain",
+    "en": "bathroom",
+    "de": "das Badezimmer",
+    "es": "el baño",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3218",
+    "fr": "être",
+    "en": "be",
+    "de": "sein",
+    "es": "ser / estar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3219",
+    "fr": "la plage",
+    "en": "beach",
+    "de": "der Strand",
+    "es": "la playa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3220",
+    "fr": "beau",
+    "en": "beautiful",
+    "de": "schön",
+    "es": "hermoso",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3221",
+    "fr": "parce que",
+    "en": "because",
+    "de": "weil",
+    "es": "porque",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3222",
+    "fr": "devenir",
+    "en": "become",
+    "de": "werden",
+    "es": "convertirse",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3223",
+    "fr": "le lit",
+    "en": "bed",
+    "de": "das Bett",
+    "es": "la cama",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3224",
+    "fr": "la chambre",
+    "en": "bedroom",
+    "de": "das Schlafzimmer",
+    "es": "el dormitorio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3225",
+    "fr": "la bière",
+    "en": "beer",
+    "de": "das Bier",
+    "es": "la cerveza",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3226",
+    "fr": "avant",
+    "en": "before",
+    "de": "vor",
+    "es": "antes",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3227",
+    "fr": "commencer",
+    "en": "begin",
+    "de": "beginnen",
+    "es": "empezar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3228",
+    "fr": "le début",
+    "en": "beginning",
+    "de": "der Anfang",
+    "es": "el principio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3229",
+    "fr": "derrière",
+    "en": "behind",
+    "de": "hinter",
+    "es": "detrás",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3230",
+    "fr": "croire",
+    "en": "believe",
+    "de": "glauben",
+    "es": "creer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3231",
+    "fr": "en dessous",
+    "en": "below",
+    "de": "unter",
+    "es": "debajo",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3232",
+    "fr": "le meilleur",
+    "en": "best",
+    "de": "am besten",
+    "es": "mejor",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3233",
+    "fr": "mieux",
+    "en": "better",
+    "de": "besser",
+    "es": "mejor",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3234",
+    "fr": "entre",
+    "en": "between",
+    "de": "zwischen",
+    "es": "entre",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3235",
+    "fr": "le vélo",
+    "en": "bicycle",
+    "de": "das Fahrrad",
+    "es": "la bicicleta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3236",
+    "fr": "grand",
+    "en": "big",
+    "de": "groß",
+    "es": "grande",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3237",
+    "fr": "le vélo (familier)",
+    "en": "bike",
+    "de": "das Fahrrad",
+    "es": "la bici",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3238",
+    "fr": "l'addition",
+    "en": "bill",
+    "de": "die Rechnung",
+    "es": "la cuenta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3239",
+    "fr": "l'oiseau",
+    "en": "bird",
+    "de": "der Vogel",
+    "es": "el pájaro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3240",
+    "fr": "l'anniversaire",
+    "en": "birthday",
+    "de": "der Geburtstag",
+    "es": "el cumpleaños",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3241",
+    "fr": "noir",
+    "en": "black",
+    "de": "schwarz",
+    "es": "negro",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3242",
+    "fr": "le blog",
+    "en": "blog",
+    "de": "der Blog",
+    "es": "el blog",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3243",
+    "fr": "blond",
+    "en": "blonde",
+    "de": "blond",
+    "es": "rubio",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3244",
+    "fr": "bleu",
+    "en": "blue",
+    "de": "blau",
+    "es": "azul",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3245",
+    "fr": "le bateau",
+    "en": "boat",
+    "de": "das Boot",
+    "es": "el barco",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3246",
+    "fr": "le corps",
+    "en": "body",
+    "de": "der Körper",
+    "es": "el cuerpo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3247",
+    "fr": "le livre",
+    "en": "book",
+    "de": "das Buch",
+    "es": "el libro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3248",
+    "fr": "la botte",
+    "en": "boot",
+    "de": "der Stiefel",
+    "es": "la bota",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3249",
+    "fr": "ennuyé",
+    "en": "bored",
+    "de": "gelangweilt",
+    "es": "aburrido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3250",
+    "fr": "ennuyeux",
+    "en": "boring",
+    "de": "langweilig",
+    "es": "aburrido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3251",
+    "fr": "né",
+    "en": "born",
+    "de": "geboren",
+    "es": "nacido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3252",
+    "fr": "les deux",
+    "en": "both",
+    "de": "beide",
+    "es": "ambos",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3253",
+    "fr": "la bouteille",
+    "en": "bottle",
+    "de": "die Flasche",
+    "es": "la botella",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3254",
+    "fr": "le fond",
+    "en": "bottom",
+    "de": "der Boden",
+    "es": "el fondo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3255",
+    "fr": "la boîte",
+    "en": "box",
+    "de": "die Box",
+    "es": "la caja",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3256",
+    "fr": "le garçon",
+    "en": "boy",
+    "de": "der Junge",
+    "es": "el chico",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3257",
+    "fr": "le petit-ami",
+    "en": "boyfriend",
+    "de": "der Freund",
+    "es": "el novio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3258",
+    "fr": "le pain",
+    "en": "bread",
+    "de": "das Brot",
+    "es": "el pan",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3259",
+    "fr": "casser",
+    "en": "break",
+    "de": "brechen",
+    "es": "romper",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3260",
+    "fr": "le petit-déjeuner",
+    "en": "breakfast",
+    "de": "das Frühstück",
+    "es": "el desayuno",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3261",
+    "fr": "apporter",
+    "en": "bring",
+    "de": "bringen",
+    "es": "traer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3262",
+    "fr": "le frère",
+    "en": "brother",
+    "de": "der Bruder",
+    "es": "el hermano",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3263",
+    "fr": "marron",
+    "en": "brown",
+    "de": "braun",
+    "es": "marrón",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3264",
+    "fr": "construire",
+    "en": "build",
+    "de": "bauen",
+    "es": "construir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3265",
+    "fr": "le bâtiment",
+    "en": "building",
+    "de": "das Gebäude",
+    "es": "el edificio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3266",
+    "fr": "le bus",
+    "en": "bus",
+    "de": "der Bus",
+    "es": "el autobús",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3267",
+    "fr": "l'entreprise",
+    "en": "business",
+    "de": "das Geschäft",
+    "es": "el negocio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3268",
+    "fr": "occupé",
+    "en": "busy",
+    "de": "beschäftigt",
+    "es": "ocupado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3269",
+    "fr": "mais",
+    "en": "but",
+    "de": "aber",
+    "es": "pero",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3270",
+    "fr": "le beurre",
+    "en": "butter",
+    "de": "die Butter",
+    "es": "la mantequilla",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3271",
+    "fr": "acheter",
+    "en": "buy",
+    "de": "kaufen",
+    "es": "comprar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3272",
+    "fr": "par",
+    "en": "by",
+    "de": "von / durch",
+    "es": "por",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3273",
+    "fr": "au revoir",
+    "en": "bye",
+    "de": "tschüss",
+    "es": "adiós",
+    "type": "interj",
+    "level": "A1"
+  },
+  {
+    "id": "word_3274",
+    "fr": "le café (lieu)",
+    "en": "cafe",
+    "de": "das Café",
+    "es": "la cafetería",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3275",
+    "fr": "le gâteau",
+    "en": "cake",
+    "de": "der Kuchen",
+    "es": "el pastel",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3276",
+    "fr": "appeler",
+    "en": "call",
+    "de": "anrufen",
+    "es": "llamar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3277",
+    "fr": "l'appareil photo",
+    "en": "camera",
+    "de": "die Kamera",
+    "es": "la cámara",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3278",
+    "fr": "pouvoir",
+    "en": "can",
+    "de": "können",
+    "es": "poder",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3279",
+    "fr": "ne pas pouvoir",
+    "en": "cannot",
+    "de": "nicht können",
+    "es": "no poder",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3280",
+    "fr": "la capitale",
+    "en": "capital",
+    "de": "die Hauptstadt",
+    "es": "la capital",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3281",
+    "fr": "la voiture",
+    "en": "car",
+    "de": "das Auto",
+    "es": "el coche",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3282",
+    "fr": "la carte",
+    "en": "card",
+    "de": "die Karte",
+    "es": "la tarjeta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3283",
+    "fr": "la carotte",
+    "en": "carrot",
+    "de": "die Karotte",
+    "es": "la zanahoria",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3284",
+    "fr": "porter",
+    "en": "carry",
+    "de": "tragen",
+    "es": "llevar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3285",
+    "fr": "le chat",
+    "en": "cat",
+    "de": "die Katze",
+    "es": "el gato",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3286",
+    "fr": "le CD",
+    "en": "CD",
+    "de": "die CD",
+    "es": "el CD",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3287",
+    "fr": "le centime",
+    "en": "cent",
+    "de": "der Cent",
+    "es": "el céntimo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3288",
+    "fr": "le centre",
+    "en": "centre",
+    "de": "das Zentrum",
+    "es": "el centro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3289",
+    "fr": "la chaise",
+    "en": "chair",
+    "de": "der Stuhl",
+    "es": "la silla",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3290",
+    "fr": "changer",
+    "en": "change",
+    "de": "ändern",
+    "es": "cambiar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3291",
+    "fr": "le graphique",
+    "en": "chart",
+    "de": "das Diagramm",
+    "es": "el gráfico",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3292",
+    "fr": "bon marché",
+    "en": "cheap",
+    "de": "billig",
+    "es": "barato",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3293",
+    "fr": "vérifier",
+    "en": "check",
+    "de": "überprüfen",
+    "es": "comprobar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3294",
+    "fr": "le fromage",
+    "en": "cheese",
+    "de": "der Käse",
+    "es": "el queso",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3295",
+    "fr": "le poulet",
+    "en": "chicken",
+    "de": "das Hähnchen",
+    "es": "el pollo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3296",
+    "fr": "l'enfant",
+    "en": "child",
+    "de": "das Kind",
+    "es": "el niño",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3297",
+    "fr": "le chocolat",
+    "en": "chocolate",
+    "de": "die Schokolade",
+    "es": "el chocolate",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3298",
+    "fr": "choisir",
+    "en": "choose",
+    "de": "wählen",
+    "es": "elegir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3299",
+    "fr": "le cinéma",
+    "en": "cinema",
+    "de": "das Kino",
+    "es": "el cine",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3300",
+    "fr": "la ville",
+    "en": "city",
+    "de": "die Stadt",
+    "es": "la ciudad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3301",
+    "fr": "la classe",
+    "en": "class",
+    "de": "die Klasse",
+    "es": "la clase",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3302",
+    "fr": "la salle de classe",
+    "en": "classroom",
+    "de": "das Klassenzimmer",
+    "es": "el aula",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3303",
+    "fr": "nettoyer",
+    "en": "clean",
+    "de": "putzen",
+    "es": "limpiar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3304",
+    "fr": "propre",
+    "en": "clean",
+    "de": "sauber",
+    "es": "limpio",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3305",
+    "fr": "grimper",
+    "en": "climb",
+    "de": "klettern",
+    "es": "escalar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3306",
+    "fr": "l'horloge",
+    "en": "clock",
+    "de": "die Uhr",
+    "es": "el reloj",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3307",
+    "fr": "fermer",
+    "en": "close",
+    "de": "schließen",
+    "es": "cerrar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3308",
+    "fr": "les vêtements",
+    "en": "clothes",
+    "de": "die Kleidung",
+    "es": "la ropa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3309",
+    "fr": "le club",
+    "en": "club",
+    "de": "der Club",
+    "es": "el club",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3310",
+    "fr": "le manteau",
+    "en": "coat",
+    "de": "der Mantel",
+    "es": "el abrigo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3311",
+    "fr": "le café (boisson)",
+    "en": "coffee",
+    "de": "der Kaffee",
+    "es": "el café",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3312",
+    "fr": "froid",
+    "en": "cold",
+    "de": "kalt",
+    "es": "frío",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3313",
+    "fr": "le collège",
+    "en": "college",
+    "de": "das College",
+    "es": "la universidad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3314",
+    "fr": "la couleur",
+    "en": "colour",
+    "de": "die Farbe",
+    "es": "el color",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3315",
+    "fr": "venir",
+    "en": "come",
+    "de": "kommen",
+    "es": "venir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3316",
+    "fr": "l'entreprise (2)",
+    "en": "company",
+    "de": "das Unternehmen",
+    "es": "la empresa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3317",
+    "fr": "compléter",
+    "en": "complete",
+    "de": "vervollständigen",
+    "es": "completar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3318",
+    "fr": "l'ordinateur",
+    "en": "computer",
+    "de": "der Computer",
+    "es": "el ordenador",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3319",
+    "fr": "le concert",
+    "en": "concert",
+    "de": "das Konzert",
+    "es": "el concierto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3320",
+    "fr": "cuisiner",
+    "en": "cook",
+    "de": "kochen",
+    "es": "cocinar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3321",
+    "fr": "la cuisine (action)",
+    "en": "cooking",
+    "de": "das Kochen",
+    "es": "la cocina",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3322",
+    "fr": "génial / frais",
+    "en": "cool",
+    "de": "cool",
+    "es": "genial / fresco",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3323",
+    "fr": "correct",
+    "en": "correct",
+    "de": "richtig",
+    "es": "correcto",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3324",
+    "fr": "coûter",
+    "en": "cost",
+    "de": "kosten",
+    "es": "costar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3325",
+    "fr": "pourrait",
+    "en": "could",
+    "de": "könnte",
+    "es": "podría",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3326",
+    "fr": "le pays",
+    "en": "country",
+    "de": "das Land",
+    "es": "el país",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3327",
+    "fr": "le cours",
+    "en": "course",
+    "de": "der Kurs",
+    "es": "el curso",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3328",
+    "fr": "le cousin",
+    "en": "cousin",
+    "de": "der Cousin",
+    "es": "el primo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3329",
+    "fr": "la vache",
+    "en": "cow",
+    "de": "die Kuh",
+    "es": "la vaca",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3330",
+    "fr": "la crème",
+    "en": "cream",
+    "de": "die Sahne",
+    "es": "la crema",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3331",
+    "fr": "la tasse",
+    "en": "cup",
+    "de": "die Tasse",
+    "es": "la taza",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3332",
+    "fr": "le client",
+    "en": "customer",
+    "de": "der Kunde",
+    "es": "el cliente",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3333",
+    "fr": "couper",
+    "en": "cut",
+    "de": "schneiden",
+    "es": "cortar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3334",
+    "fr": "le papa",
+    "en": "dad",
+    "de": "der Papa",
+    "es": "el papá",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3335",
+    "fr": "quotidien",
+    "en": "daily",
+    "de": "täglich",
+    "es": "diario",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3336",
+    "fr": "danser",
+    "en": "dance",
+    "de": "tanzen",
+    "es": "bailar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3337",
+    "fr": "le danseur",
+    "en": "dancer",
+    "de": "der Tänzer",
+    "es": "el bailarín",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3338",
+    "fr": "la danse",
+    "en": "dancing",
+    "de": "das Tanzen",
+    "es": "el baile",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3339",
+    "fr": "dangereux",
+    "en": "dangerous",
+    "de": "gefährlich",
+    "es": "peligroso",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3340",
+    "fr": "sombre",
+    "en": "dark",
+    "de": "dunkel",
+    "es": "oscuro",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3341",
+    "fr": "la date",
+    "en": "date",
+    "de": "das Datum",
+    "es": "la fecha",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3342",
+    "fr": "la fille (enfant)",
+    "en": "daughter",
+    "de": "die Tochter",
+    "es": "la hija",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3343",
+    "fr": "le jour",
+    "en": "day",
+    "de": "der Tag",
+    "es": "el día",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3344",
+    "fr": "cher (affection)",
+    "en": "dear",
+    "de": "lieb",
+    "es": "querido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3345",
+    "fr": "décembre",
+    "en": "December",
+    "de": "Dezember",
+    "es": "diciembre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3346",
+    "fr": "décider",
+    "en": "decide",
+    "de": "entscheiden",
+    "es": "decidir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3347",
+    "fr": "délicieux",
+    "en": "delicious",
+    "de": "köstlich",
+    "es": "delicioso",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3348",
+    "fr": "le bureau",
+    "en": "desk",
+    "de": "der Schreibtisch",
+    "es": "el escritorio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3349",
+    "fr": "le détail",
+    "en": "detail",
+    "de": "das Detail",
+    "es": "el detalle",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3350",
+    "fr": "le dialogue",
+    "en": "dialogue",
+    "de": "der Dialog",
+    "es": "el diálogo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3351",
+    "fr": "le dictionnaire",
+    "en": "dictionary",
+    "de": "das Wörterbuch",
+    "es": "el diccionario",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3352",
+    "fr": "mourir",
+    "en": "die",
+    "de": "sterben",
+    "es": "morir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3353",
+    "fr": "le régime",
+    "en": "diet",
+    "de": "die Diät",
+    "es": "la dieta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3354",
+    "fr": "différent",
+    "en": "different",
+    "de": "anders",
+    "es": "diferente",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3355",
+    "fr": "difficile",
+    "en": "difficult",
+    "de": "schwierig",
+    "es": "difícil",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3356",
+    "fr": "le dîner",
+    "en": "dinner",
+    "de": "das Abendessen",
+    "es": "la cena",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3357",
+    "fr": "sale",
+    "en": "dirty",
+    "de": "schmutzig",
+    "es": "sucio",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3358",
+    "fr": "le plat",
+    "en": "dish",
+    "de": "das Gericht",
+    "es": "el plato",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3359",
+    "fr": "faire",
+    "en": "do",
+    "de": "tun / machen",
+    "es": "hacer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3360",
+    "fr": "le docteur",
+    "en": "doctor",
+    "de": "der Arzt",
+    "es": "el médico",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3361",
+    "fr": "le chien",
+    "en": "dog",
+    "de": "der Hund",
+    "es": "el perro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3362",
+    "fr": "le dollar",
+    "en": "dollar",
+    "de": "der Dollar",
+    "es": "el dólar",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3363",
+    "fr": "la porte",
+    "en": "door",
+    "de": "die Tür",
+    "es": "la puerta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3364",
+    "fr": "en bas",
+    "en": "down",
+    "de": "unten",
+    "es": "abajo",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3365",
+    "fr": "en bas (escaliers)",
+    "en": "downstairs",
+    "de": "unten",
+    "es": "abajo",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3366",
+    "fr": "dessiner",
+    "en": "draw",
+    "de": "zeichnen",
+    "es": "dibujar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3367",
+    "fr": "la robe",
+    "en": "dress",
+    "de": "das Kleid",
+    "es": "el vestido",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3368",
+    "fr": "boire",
+    "en": "drink",
+    "de": "trinken",
+    "es": "beber",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3369",
+    "fr": "conduire",
+    "en": "drive",
+    "de": "fahren",
+    "es": "conducir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3370",
+    "fr": "le chauffeur",
+    "en": "driver",
+    "de": "der Fahrer",
+    "es": "el conductor",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3371",
+    "fr": "la conduite",
+    "en": "driving",
+    "de": "das Fahren",
+    "es": "la conducción",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3372",
+    "fr": "sec",
+    "en": "dry",
+    "de": "trocken",
+    "es": "seco",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3373",
+    "fr": "pendant",
+    "en": "during",
+    "de": "während",
+    "es": "durante",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3374",
+    "fr": "le DVD",
+    "en": "DVD",
+    "de": "die DVD",
+    "es": "el DVD",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3375",
+    "fr": "chaque",
+    "en": "each",
+    "de": "jeder",
+    "es": "cada",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3376",
+    "fr": "l'oreille",
+    "en": "ear",
+    "de": "das Ohr",
+    "es": "la oreja",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3377",
+    "fr": "tôt",
+    "en": "early",
+    "de": "früh",
+    "es": "temprano",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3378",
+    "fr": "l'est (direction)",
+    "en": "east",
+    "de": "der Osten",
+    "es": "el este",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3379",
+    "fr": "facile",
+    "en": "easy",
+    "de": "einfach",
+    "es": "fácil",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3380",
+    "fr": "manger",
+    "en": "eat",
+    "de": "essen",
+    "es": "comer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3381",
+    "fr": "l'œuf",
+    "en": "egg",
+    "de": "das Ei",
+    "es": "el huevo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3382",
+    "fr": "huit",
+    "en": "eight",
+    "de": "acht",
+    "es": "ocho",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3383",
+    "fr": "dix-huit",
+    "en": "eighteen",
+    "de": "achtzehn",
+    "es": "dieciocho",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3384",
+    "fr": "quatre-vingts",
+    "en": "eighty",
+    "de": "achtzig",
+    "es": "ochenta",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3385",
+    "fr": "l'éléphant",
+    "en": "elephant",
+    "de": "der Elefant",
+    "es": "el elefante",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3386",
+    "fr": "onze",
+    "en": "eleven",
+    "de": "elf",
+    "es": "once",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3387",
+    "fr": "d'autre",
+    "en": "else",
+    "de": "sonst",
+    "es": "más",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3388",
+    "fr": "l'e-mail",
+    "en": "email",
+    "de": "die E-Mail",
+    "es": "el correo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3389",
+    "fr": "la fin",
+    "en": "end",
+    "de": "das Ende",
+    "es": "el fin",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3390",
+    "fr": "profiter",
+    "en": "enjoy",
+    "de": "genießen",
+    "es": "disfrutar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3391",
+    "fr": "assez",
+    "en": "enough",
+    "de": "genug",
+    "es": "suficiente",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3392",
+    "fr": "l'euro",
+    "en": "euro",
+    "de": "der Euro",
+    "es": "el euro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3393",
+    "fr": "même",
+    "en": "even",
+    "de": "sogar",
+    "es": "incluso",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3394",
+    "fr": "le soir",
+    "en": "evening",
+    "de": "der Abend",
+    "es": "la noche",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3395",
+    "fr": "jamais (déjà)",
+    "en": "ever",
+    "de": "jemals",
+    "es": "alguna vez",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3396",
+    "fr": "chaque (2)",
+    "en": "every",
+    "de": "jeder",
+    "es": "cada",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3397",
+    "fr": "tout le monde",
+    "en": "everybody",
+    "de": "jeder",
+    "es": "todos",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3398",
+    "fr": "chacun",
+    "en": "everyone",
+    "de": "jeder",
+    "es": "todos",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3399",
+    "fr": "tout",
+    "en": "everything",
+    "de": "alles",
+    "es": "todo",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3400",
+    "fr": "l'examen",
+    "en": "exam",
+    "de": "die Prüfung",
+    "es": "el examen",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3401",
+    "fr": "l'exemple",
+    "en": "example",
+    "de": "das Beispiel",
+    "es": "el ejemplo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3402",
+    "fr": "excité",
+    "en": "excited",
+    "de": "aufgeregt",
+    "es": "emocionado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3403",
+    "fr": "passionnant",
+    "en": "exciting",
+    "de": "aufregend",
+    "es": "emocionante",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3404",
+    "fr": "l'exercice",
+    "en": "exercise",
+    "de": "die Übung",
+    "es": "el ejercicio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3405",
+    "fr": "cher (prix)",
+    "en": "expensive",
+    "de": "teuer",
+    "es": "caro",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3406",
+    "fr": "expliquer",
+    "en": "explain",
+    "de": "erklären",
+    "es": "explicar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3407",
+    "fr": "supplémentaire",
+    "en": "extra",
+    "de": "zusätzlich",
+    "es": "extra",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3408",
+    "fr": "l'œil",
+    "en": "eye",
+    "de": "das Auge",
+    "es": "el ojo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3409",
+    "fr": "le visage",
+    "en": "face",
+    "de": "das Gesicht",
+    "es": "la cara",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3410",
+    "fr": "tomber",
+    "en": "fall",
+    "de": "fallen",
+    "es": "caer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3411",
+    "fr": "faux",
+    "en": "false",
+    "de": "falsch",
+    "es": "falso",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3412",
+    "fr": "la famille",
+    "en": "family",
+    "de": "die Familie",
+    "es": "la familia",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3413",
+    "fr": "célèbre",
+    "en": "famous",
+    "de": "berühmt",
+    "es": "famoso",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3414",
+    "fr": "fantastique",
+    "en": "fantastic",
+    "de": "fantastisch",
+    "es": "fantástico",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3415",
+    "fr": "loin",
+    "en": "far",
+    "de": "weit",
+    "es": "lejos",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3416",
+    "fr": "la ferme",
+    "en": "farm",
+    "de": "der Bauernhof",
+    "es": "la granja",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3417",
+    "fr": "le fermier",
+    "en": "farmer",
+    "de": "der Bauer",
+    "es": "el granjero",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3418",
+    "fr": "rapide",
+    "en": "fast",
+    "de": "schnell",
+    "es": "rápido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3419",
+    "fr": "gros",
+    "en": "fat",
+    "de": "dick",
+    "es": "gordo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3420",
+    "fr": "le père",
+    "en": "father",
+    "de": "der Vater",
+    "es": "el padre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3421",
+    "fr": "préféré",
+    "en": "favourite",
+    "de": "lieblings",
+    "es": "favorito",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3422",
+    "fr": "février",
+    "en": "February",
+    "de": "Februar",
+    "es": "febrero",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3423",
+    "fr": "ressentir",
+    "en": "feel",
+    "de": "fühlen",
+    "es": "sentir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3424",
+    "fr": "le festival",
+    "en": "festival",
+    "de": "das Festival",
+    "es": "el festival",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3425",
+    "fr": "peu",
+    "en": "few",
+    "de": "wenige",
+    "es": "pocos",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3426",
+    "fr": "quinze",
+    "en": "fifteen",
+    "de": "fünfzehn",
+    "es": "quince",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3427",
+    "fr": "cinquième",
+    "en": "fifth",
+    "de": "fünfte",
+    "es": "quinto",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3428",
+    "fr": "cinquante",
+    "en": "fifty",
+    "de": "fünfzig",
+    "es": "cincuenta",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3429",
+    "fr": "remplir",
+    "en": "fill",
+    "de": "füllen",
+    "es": "llenar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3430",
+    "fr": "le film",
+    "en": "film",
+    "de": "der Film",
+    "es": "el film",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3431",
+    "fr": "final",
+    "en": "final",
+    "de": "endgültig",
+    "es": "final",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3432",
+    "fr": "trouver",
+    "en": "find",
+    "de": "finden",
+    "es": "encontrar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3433",
+    "fr": "bien",
+    "en": "fine",
+    "de": "gut",
+    "es": "bien",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3434",
+    "fr": "finir",
+    "en": "finish",
+    "de": "beenden",
+    "es": "terminar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3435",
+    "fr": "le feu",
+    "en": "fire",
+    "de": "das Feuer",
+    "es": "el fuego",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3436",
+    "fr": "premier",
+    "en": "first",
+    "de": "erste",
+    "es": "primero",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3437",
+    "fr": "le poisson",
+    "en": "fish",
+    "de": "der Fisch",
+    "es": "el pescado",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3438",
+    "fr": "cinq",
+    "en": "five",
+    "de": "fünf",
+    "es": "cinco",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3439",
+    "fr": "réparer / fixer",
+    "en": "fix",
+    "de": "reparieren",
+    "es": "arreglar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3440",
+    "fr": "l'appartement",
+    "en": "flat",
+    "de": "die Wohnung",
+    "es": "el piso",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3441",
+    "fr": "le vol",
+    "en": "flight",
+    "de": "der Flug",
+    "es": "el vuelo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3442",
+    "fr": "le sol / l'étage",
+    "en": "floor",
+    "de": "der Boden",
+    "es": "el suelo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3443",
+    "fr": "la fleur",
+    "en": "flower",
+    "de": "die Blume",
+    "es": "la flor",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3444",
+    "fr": "voler (air)",
+    "en": "fly",
+    "de": "fliegen",
+    "es": "volar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3445",
+    "fr": "suivre",
+    "en": "follow",
+    "de": "folgen",
+    "es": "seguir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3446",
+    "fr": "la nourriture",
+    "en": "food",
+    "de": "das Essen",
+    "es": "la comida",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3447",
+    "fr": "le pied",
+    "en": "foot",
+    "de": "der Fuß",
+    "es": "el pie",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3448",
+    "fr": "le football",
+    "en": "football",
+    "de": "der Fußball",
+    "es": "el fútbol",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3449",
+    "fr": "pour",
+    "en": "for",
+    "de": "für",
+    "es": "para",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3450",
+    "fr": "oublier",
+    "en": "forget",
+    "de": "vergessen",
+    "es": "olvidar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3451",
+    "fr": "le formulaire",
+    "en": "form",
+    "de": "das Formular",
+    "es": "el formulario",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3452",
+    "fr": "quarante",
+    "en": "forty",
+    "de": "vierzig",
+    "es": "cuarenta",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3453",
+    "fr": "quatre",
+    "en": "four",
+    "de": "vier",
+    "es": "cuatro",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3454",
+    "fr": "quatorze",
+    "en": "fourteen",
+    "de": "vierzehn",
+    "es": "catorce",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3455",
+    "fr": "quatrième",
+    "en": "fourth",
+    "de": "vierte",
+    "es": "cuarto",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3456",
+    "fr": "libre / gratuit",
+    "en": "free",
+    "de": "frei",
+    "es": "libre",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3457",
+    "fr": "vendredi",
+    "en": "Friday",
+    "de": "Freitag",
+    "es": "viernes",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3458",
+    "fr": "l'ami",
+    "en": "friend",
+    "de": "der Freund",
+    "es": "el amigo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3459",
+    "fr": "amical",
+    "en": "friendly",
+    "de": "freundlich",
+    "es": "amigable",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3460",
+    "fr": "de (provenance)",
+    "en": "from",
+    "de": "von",
+    "es": "de",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3461",
+    "fr": "le devant",
+    "en": "front",
+    "de": "die Vorderseite",
+    "es": "el frente",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3462",
+    "fr": "le fruit",
+    "en": "fruit",
+    "de": "das Obst",
+    "es": "la fruta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3463",
+    "fr": "plein",
+    "en": "full",
+    "de": "voll",
+    "es": "lleno",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3464",
+    "fr": "l'amusement",
+    "en": "fun",
+    "de": "der Spaß",
+    "es": "la diversión",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3465",
+    "fr": "drôle",
+    "en": "funny",
+    "de": "lustig",
+    "es": "divertido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3466",
+    "fr": "le futur",
+    "en": "future",
+    "de": "die Zukunft",
+    "es": "el futuro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3467",
+    "fr": "le jeu",
+    "en": "game",
+    "de": "das Spiel",
+    "es": "el juego",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3468",
+    "fr": "le jardin",
+    "en": "garden",
+    "de": "der Garten",
+    "es": "el jardín",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3469",
+    "fr": "la géographie",
+    "en": "geography",
+    "de": "die Geografie",
+    "es": "la geografía",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3470",
+    "fr": "obtenir",
+    "en": "get",
+    "de": "bekommen",
+    "es": "conseguir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3471",
+    "fr": "la fille",
+    "en": "girl",
+    "de": "das Mädchen",
+    "es": "la chica",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3472",
+    "fr": "la petite-amie",
+    "en": "girlfriend",
+    "de": "die Freundin",
+    "es": "la novia",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3473",
+    "fr": "donner",
+    "en": "give",
+    "de": "geben",
+    "es": "dar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3474",
+    "fr": "le verre",
+    "en": "glass",
+    "de": "das Glas",
+    "es": "el vaso",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3475",
+    "fr": "aller",
+    "en": "go",
+    "de": "gehen",
+    "es": "ir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3476",
+    "fr": "bon",
+    "en": "good",
+    "de": "gut",
+    "es": "bueno",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3477",
+    "fr": "au revoir",
+    "en": "goodbye",
+    "de": "auf Wiedersehen",
+    "es": "adiós",
+    "type": "interj",
+    "level": "A1"
+  },
+  {
+    "id": "word_3478",
+    "fr": "le grand-père",
+    "en": "grandfather",
+    "de": "der Großvater",
+    "es": "el abuelo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3479",
+    "fr": "la grand-mère",
+    "en": "grandmother",
+    "de": "die Großmutter",
+    "es": "la abuela",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3480",
+    "fr": "le grand-parent",
+    "en": "grandparent",
+    "de": "das Großelternteil",
+    "es": "el abuelo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3481",
+    "fr": "super",
+    "en": "great",
+    "de": "großartig",
+    "es": "genial",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3482",
+    "fr": "vert",
+    "en": "green",
+    "de": "grün",
+    "es": "verde",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3483",
+    "fr": "gris",
+    "en": "grey",
+    "de": "grau",
+    "es": "gris",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3484",
+    "fr": "le groupe",
+    "en": "group",
+    "de": "die Gruppe",
+    "es": "el grupo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3485",
+    "fr": "grandir",
+    "en": "grow",
+    "de": "wachsen",
+    "es": "crecer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3486",
+    "fr": "deviner",
+    "en": "guess",
+    "de": "raten",
+    "es": "adivinar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3487",
+    "fr": "la guitare",
+    "en": "guitar",
+    "de": "die Gitarre",
+    "es": "la guitarra",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3488",
+    "fr": "la salle de sport",
+    "en": "gym",
+    "de": "das Fitnessstudio",
+    "es": "el gimnasio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3489",
+    "fr": "les cheveux",
+    "en": "hair",
+    "de": "die Haare",
+    "es": "el pelo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3490",
+    "fr": "la moitié",
+    "en": "half",
+    "de": "die Hälfte",
+    "es": "la mitad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3491",
+    "fr": "la main",
+    "en": "hand",
+    "de": "die Hand",
+    "es": "la mano",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3492",
+    "fr": "se passer",
+    "en": "happen",
+    "de": "passieren",
+    "es": "suceder",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3493",
+    "fr": "heureux",
+    "en": "happy",
+    "de": "glücklich",
+    "es": "feliz",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3494",
+    "fr": "dur",
+    "en": "hard",
+    "de": "hart",
+    "es": "duro",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3495",
+    "fr": "le chapeau",
+    "en": "hat",
+    "de": "der Hut",
+    "es": "el sombrero",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3496",
+    "fr": "détester",
+    "en": "hate",
+    "de": "hassen",
+    "es": "odiar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3497",
+    "fr": "avoir",
+    "en": "have",
+    "de": "haben",
+    "es": "tener",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3498",
+    "fr": "devoir",
+    "en": "have to",
+    "de": "müssen",
+    "es": "tener que",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3499",
+    "fr": "il",
+    "en": "he",
+    "de": "er",
+    "es": "él",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3500",
+    "fr": "la tête",
+    "en": "head",
+    "de": "der Kopf",
+    "es": "la cabeza",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3501",
+    "fr": "la santé",
+    "en": "health",
+    "de": "die Gesundheit",
+    "es": "la salud",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3502",
+    "fr": "en bonne santé",
+    "en": "healthy",
+    "de": "gesund",
+    "es": "saludable",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3503",
+    "fr": "entendre",
+    "en": "hear",
+    "de": "hören",
+    "es": "oír",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3504",
+    "fr": "bonjour",
+    "en": "hello",
+    "de": "hallo",
+    "es": "hola",
+    "type": "interj",
+    "level": "A1"
+  },
+  {
+    "id": "word_3505",
+    "fr": "aider",
+    "en": "help",
+    "de": "helfen",
+    "es": "ayudar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3506",
+    "fr": "elle / la sienne",
+    "en": "her",
+    "de": "ihr",
+    "es": "su / ella",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3507",
+    "fr": "ici",
+    "en": "here",
+    "de": "hier",
+    "es": "aquí",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3508",
+    "fr": "hé",
+    "en": "hey",
+    "de": "hey",
+    "es": "oye",
+    "type": "interj",
+    "level": "A1"
+  },
+  {
+    "id": "word_3509",
+    "fr": "salut",
+    "en": "hi",
+    "de": "hallo",
+    "es": "hola",
+    "type": "interj",
+    "level": "A1"
+  },
+  {
+    "id": "word_3510",
+    "fr": "haut",
+    "en": "high",
+    "de": "hoch",
+    "es": "alto",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3511",
+    "fr": "lui",
+    "en": "him",
+    "de": "ihn",
+    "es": "él",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3512",
+    "fr": "son / le sien",
+    "en": "his",
+    "de": "sein",
+    "es": "su",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3513",
+    "fr": "l'histoire",
+    "en": "history",
+    "de": "die Geschichte",
+    "es": "la historia",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3514",
+    "fr": "le passe-temps",
+    "en": "hobby",
+    "de": "das Hobby",
+    "es": "el pasatiempo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3515",
+    "fr": "les vacances",
+    "en": "holiday",
+    "de": "der Urlaub",
+    "es": "las vacaciones",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3516",
+    "fr": "la maison",
+    "en": "home",
+    "de": "das Zuhause",
+    "es": "el hogar",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3517",
+    "fr": "les devoirs",
+    "en": "homework",
+    "de": "die Hausaufgaben",
+    "es": "los deberes",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3518",
+    "fr": "espérer",
+    "en": "hope",
+    "de": "hoffen",
+    "es": "esperar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3519",
+    "fr": "le cheval",
+    "en": "horse",
+    "de": "das Pferd",
+    "es": "el caballo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3520",
+    "fr": "l'hôpital",
+    "en": "hospital",
+    "de": "das Krankenhaus",
+    "es": "el hospital",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3521",
+    "fr": "chaud",
+    "en": "hot",
+    "de": "heiß",
+    "es": "caliente",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3522",
+    "fr": "l'hôtel",
+    "en": "hotel",
+    "de": "das Hotel",
+    "es": "el hotel",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3523",
+    "fr": "l'heure",
+    "en": "hour",
+    "de": "die Stunde",
+    "es": "la hora",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3524",
+    "fr": "la maison (bâtiment)",
+    "en": "house",
+    "de": "das Haus",
+    "es": "la casa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3525",
+    "fr": "comment",
+    "en": "how",
+    "de": "wie",
+    "es": "cómo",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3526",
+    "fr": "cent",
+    "en": "hundred",
+    "de": "hundert",
+    "es": "cien",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3527",
+    "fr": "affamé",
+    "en": "hungry",
+    "de": "hungrig",
+    "es": "hambriento",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3528",
+    "fr": "le mari",
+    "en": "husband",
+    "de": "der Ehemann",
+    "es": "el marido",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3529",
+    "fr": "je",
+    "en": "I",
+    "de": "ich",
+    "es": "yo",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3530",
+    "fr": "la glace / le glaçon",
+    "en": "ice",
+    "de": "das Eis",
+    "es": "el hielo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3531",
+    "fr": "la crème glacée",
+    "en": "ice cream",
+    "de": "das Eis",
+    "es": "el helado",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3532",
+    "fr": "l'idée",
+    "en": "idea",
+    "de": "die Idee",
+    "es": "la idea",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3533",
+    "fr": "si",
+    "en": "if",
+    "de": "wenn",
+    "es": "si",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3534",
+    "fr": "imaginer",
+    "en": "imagine",
+    "de": "sich vorstellen",
+    "es": "imaginar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3535",
+    "fr": "important",
+    "en": "important",
+    "de": "wichtig",
+    "es": "importante",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3536",
+    "fr": "dans",
+    "en": "in",
+    "de": "in",
+    "es": "en",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3537",
+    "fr": "inclure",
+    "en": "include",
+    "de": "einschließen",
+    "es": "incluir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3538",
+    "fr": "l'information",
+    "en": "information",
+    "de": "die Information",
+    "es": "la información",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3539",
+    "fr": "intéressant",
+    "en": "interesting",
+    "de": "interessant",
+    "es": "interesante",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3540",
+    "fr": "Internet",
+    "en": "internet",
+    "de": "das Internet",
+    "es": "internet",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3541",
+    "fr": "l'interview",
+    "en": "interview",
+    "de": "das Interview",
+    "es": "la entrevista",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3542",
+    "fr": "dans / vers l'intérieur",
+    "en": "into",
+    "de": "in ... hinein",
+    "es": "hacia adentro",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3543",
+    "fr": "l'île",
+    "en": "island",
+    "de": "die Insel",
+    "es": "la isla",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3544",
+    "fr": "il / elle (chose)",
+    "en": "it",
+    "de": "es",
+    "es": "lo / la",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3545",
+    "fr": "son / sa (chose)",
+    "en": "its",
+    "de": "sein / ihr",
+    "es": "su",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3546",
+    "fr": "la veste",
+    "en": "jacket",
+    "de": "die Jacke",
+    "es": "la chaqueta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3547",
+    "fr": "janvier",
+    "en": "January",
+    "de": "Januar",
+    "es": "enero",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3548",
+    "fr": "le jean",
+    "en": "jeans",
+    "de": "die Jeans",
+    "es": "los vaqueros",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3549",
+    "fr": "le travail (emploi)",
+    "en": "job",
+    "de": "der Job",
+    "es": "el trabajo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3550",
+    "fr": "rejoindre",
+    "en": "join",
+    "de": "beitreten",
+    "es": "unirse",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3551",
+    "fr": "le voyage (trajet)",
+    "en": "journey",
+    "de": "die Reise",
+    "es": "el viaje",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3552",
+    "fr": "le jus",
+    "en": "juice",
+    "de": "der Saft",
+    "es": "el jugo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3553",
+    "fr": "juillet",
+    "en": "July",
+    "de": "Juli",
+    "es": "julio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3554",
+    "fr": "juin",
+    "en": "June",
+    "de": "Juni",
+    "es": "junio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3555",
+    "fr": "juste",
+    "en": "just",
+    "de": "nur / gerade",
+    "es": "justo / sólo",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3556",
+    "fr": "garder",
+    "en": "keep",
+    "de": "behalten",
+    "es": "mantener",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3557",
+    "fr": "la clé",
+    "en": "key",
+    "de": "der Schlüssel",
+    "es": "la llave",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3558",
+    "fr": "le kilomètre",
+    "en": "kilometre",
+    "de": "der Kilometer",
+    "es": "el kilómetro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3559",
+    "fr": "aimable / gentil",
+    "en": "kind",
+    "de": "freundlich",
+    "es": "amable",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3560",
+    "fr": "la cuisine (pièce)",
+    "en": "kitchen",
+    "de": "die Küche",
+    "es": "la cocina",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3561",
+    "fr": "savoir / connaître",
+    "en": "know",
+    "de": "wissen / kennen",
+    "es": "saber / conocer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3562",
+    "fr": "le lac",
+    "en": "lake",
+    "de": "der See",
+    "es": "el lago",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3563",
+    "fr": "la langue",
+    "en": "language",
+    "de": "die Sprache",
+    "es": "el idioma",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3564",
+    "fr": "grand (vaste)",
+    "en": "large",
+    "de": "groß",
+    "es": "grande",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3565",
+    "fr": "dernier",
+    "en": "last",
+    "de": "letzte",
+    "es": "último",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3566",
+    "fr": "tard",
+    "en": "late",
+    "de": "spät",
+    "es": "tarde",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3567",
+    "fr": "plus tard",
+    "en": "later",
+    "de": "später",
+    "es": "más tarde",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3568",
+    "fr": "rire",
+    "en": "laugh",
+    "de": "lachen",
+    "es": "reír",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3569",
+    "fr": "apprendre",
+    "en": "learn",
+    "de": "lernen",
+    "es": "aprender",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3570",
+    "fr": "quitter / laisser",
+    "en": "leave",
+    "de": "verlassen",
+    "es": "dejar / salir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3571",
+    "fr": "la gauche",
+    "en": "left",
+    "de": "links",
+    "es": "la izquierda",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3572",
+    "fr": "la jambe",
+    "en": "leg",
+    "de": "das Bein",
+    "es": "la pierna",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3573",
+    "fr": "la leçon",
+    "en": "lesson",
+    "de": "die Lektion",
+    "es": "la lección",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3574",
+    "fr": "laisser / louer",
+    "en": "let",
+    "de": "lassen",
+    "es": "dejar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3575",
+    "fr": "la lettre (alphabet/courrier)",
+    "en": "letter",
+    "de": "der Brief / der Buchstabe",
+    "es": "la carta / la letra",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3576",
+    "fr": "la bibliothèque",
+    "en": "library",
+    "de": "die Bibliothek",
+    "es": "la biblioteca",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3577",
+    "fr": "le mensonge",
+    "en": "lie",
+    "de": "die Lüge",
+    "es": "la mentira",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3578",
+    "fr": "la vie",
+    "en": "life",
+    "de": "das Leben",
+    "es": "la vida",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3579",
+    "fr": "la lumière",
+    "en": "light",
+    "de": "das Licht",
+    "es": "la luz",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3580",
+    "fr": "aimer",
+    "en": "like",
+    "de": "mögen",
+    "es": "gustar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3581",
+    "fr": "comme",
+    "en": "like",
+    "de": "wie",
+    "es": "como",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3582",
+    "fr": "la ligne",
+    "en": "line",
+    "de": "die Linie",
+    "es": "la línea",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3583",
+    "fr": "le lion",
+    "en": "lion",
+    "de": "der Löwe",
+    "es": "el león",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3584",
+    "fr": "la liste",
+    "en": "list",
+    "de": "die Liste",
+    "es": "la lista",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3585",
+    "fr": "écouter",
+    "en": "listen",
+    "de": "zuhören",
+    "es": "escuchar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3586",
+    "fr": "petit",
+    "en": "little",
+    "de": "klein / wenig",
+    "es": "pequeño / poco",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3587",
+    "fr": "vivre",
+    "en": "live",
+    "de": "leben",
+    "es": "vivir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3588",
+    "fr": "local",
+    "en": "local",
+    "de": "lokal",
+    "es": "local",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3589",
+    "fr": "long",
+    "en": "long",
+    "de": "lang",
+    "es": "largo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3590",
+    "fr": "regarder",
+    "en": "look",
+    "de": "schauen",
+    "es": "mirar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3591",
+    "fr": "perdre",
+    "en": "lose",
+    "de": "verlieren",
+    "es": "perder",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3592",
+    "fr": "beaucoup",
+    "en": "a lot",
+    "de": "viel",
+    "es": "mucho",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3593",
+    "fr": "aimer (amour)",
+    "en": "love",
+    "de": "lieben",
+    "es": "amar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3594",
+    "fr": "le déjeuner",
+    "en": "lunch",
+    "de": "das Mittagessen",
+    "es": "el almuerzo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3595",
+    "fr": "la machine",
+    "en": "machine",
+    "de": "die Maschine",
+    "es": "la máquina",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3596",
+    "fr": "le magazine",
+    "en": "magazine",
+    "de": "das Magazin",
+    "es": "la revista",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3597",
+    "fr": "principal",
+    "en": "main",
+    "de": "haupt-",
+    "es": "principal",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3598",
+    "fr": "faire / fabriquer",
+    "en": "make",
+    "de": "machen",
+    "es": "hacer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3599",
+    "fr": "l'homme",
+    "en": "man",
+    "de": "der Mann",
+    "es": "el hombre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3600",
+    "fr": "beaucoup (dénombrable)",
+    "en": "many",
+    "de": "viele",
+    "es": "muchos",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3601",
+    "fr": "la carte (géographique)",
+    "en": "map",
+    "de": "die Karte",
+    "es": "el mapa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3602",
+    "fr": "mars",
+    "en": "March",
+    "de": "März",
+    "es": "marzo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3603",
+    "fr": "le marché",
+    "en": "market",
+    "de": "der Markt",
+    "es": "el mercado",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3604",
+    "fr": "marié",
+    "en": "married",
+    "de": "verheiratet",
+    "es": "casado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3605",
+    "fr": "le match",
+    "en": "match",
+    "de": "das Spiel",
+    "es": "el partido",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3606",
+    "fr": "la matière / le problème",
+    "en": "matter",
+    "de": "die Angelegenheit",
+    "es": "el asunto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3607",
+    "fr": "mai",
+    "en": "May",
+    "de": "Mai",
+    "es": "mayo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3608",
+    "fr": "peut-être",
+    "en": "maybe",
+    "de": "vielleicht",
+    "es": "tal vez",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3609",
+    "fr": "moi",
+    "en": "me",
+    "de": "mich / mir",
+    "es": "mí",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3610",
+    "fr": "le repas",
+    "en": "meal",
+    "de": "die Mahlzeit",
+    "es": "la comida",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3611",
+    "fr": "signifier",
+    "en": "mean",
+    "de": "bedeuten",
+    "es": "significar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3612",
+    "fr": "la viande",
+    "en": "meat",
+    "de": "das Fleisch",
+    "es": "la carne",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3613",
+    "fr": "rencontrer",
+    "en": "meet",
+    "de": "treffen",
+    "es": "conocer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3614",
+    "fr": "la réunion",
+    "en": "meeting",
+    "de": "das Meeting",
+    "es": "la reunión",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3615",
+    "fr": "le membre",
+    "en": "member",
+    "de": "das Mitglied",
+    "es": "el miembro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3616",
+    "fr": "le menu",
+    "en": "menu",
+    "de": "die Speisekarte",
+    "es": "el menú",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3617",
+    "fr": "le message",
+    "en": "message",
+    "de": "die Nachricht",
+    "es": "el mensaje",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3618",
+    "fr": "le mètre",
+    "en": "metre",
+    "de": "der Meter",
+    "es": "el metro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3619",
+    "fr": "le minuit",
+    "en": "midnight",
+    "de": "die Mitternacht",
+    "es": "la medianoche",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3620",
+    "fr": "le mile",
+    "en": "mile",
+    "de": "die Meile",
+    "es": "la milla",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3621",
+    "fr": "le lait",
+    "en": "milk",
+    "de": "die Milch",
+    "es": "la leche",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3622",
+    "fr": "le million",
+    "en": "million",
+    "de": "die Million",
+    "es": "el millón",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3623",
+    "fr": "la minute",
+    "en": "minute",
+    "de": "die Minute",
+    "es": "el minuto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3624",
+    "fr": "manquer",
+    "en": "miss",
+    "de": "vermissen",
+    "es": "extrañar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3625",
+    "fr": "l'erreur",
+    "en": "mistake",
+    "de": "der Fehler",
+    "es": "el error",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3626",
+    "fr": "le modèle",
+    "en": "model",
+    "de": "das Modell",
+    "es": "el modelo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3627",
+    "fr": "moderne",
+    "en": "modern",
+    "de": "modern",
+    "es": "moderno",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3628",
+    "fr": "le moment",
+    "en": "moment",
+    "de": "der Moment",
+    "es": "el momento",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3629",
+    "fr": "lundi",
+    "en": "Monday",
+    "de": "Montag",
+    "es": "lunes",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3630",
+    "fr": "l'argent",
+    "en": "money",
+    "de": "das Geld",
+    "es": "el dinero",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3631",
+    "fr": "le mois",
+    "en": "month",
+    "de": "der Monat",
+    "es": "el mes",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3632",
+    "fr": "plus",
+    "en": "more",
+    "de": "mehr",
+    "es": "más",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3633",
+    "fr": "le matin",
+    "en": "morning",
+    "de": "der Morgen",
+    "es": "la mañana",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3634",
+    "fr": "la plupart",
+    "en": "most",
+    "de": "die meisten",
+    "es": "la mayoría",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3635",
+    "fr": "la mère",
+    "en": "mother",
+    "de": "die Mutter",
+    "es": "la madre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3636",
+    "fr": "la montagne",
+    "en": "mountain",
+    "de": "der Berg",
+    "es": "la montaña",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3637",
+    "fr": "la souris",
+    "en": "mouse",
+    "de": "die Maus",
+    "es": "el ratón",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3638",
+    "fr": "la bouche",
+    "en": "mouth",
+    "de": "der Mund",
+    "es": "la boca",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3639",
+    "fr": "bouger",
+    "en": "move",
+    "de": "bewegen",
+    "es": "mover",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3640",
+    "fr": "le film (US)",
+    "en": "movie",
+    "de": "der Film",
+    "es": "la película",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3641",
+    "fr": "beaucoup (indénombrable)",
+    "en": "much",
+    "de": "viel",
+    "es": "mucho",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3642",
+    "fr": "le musée",
+    "en": "museum",
+    "de": "das Museum",
+    "es": "el museo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3643",
+    "fr": "la musique",
+    "en": "music",
+    "de": "die Musik",
+    "es": "la música",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3644",
+    "fr": "devoir (obligation)",
+    "en": "must",
+    "de": "müssen",
+    "es": "deber",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3645",
+    "fr": "mon / ma / mes",
+    "en": "my",
+    "de": "mein",
+    "es": "mi",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3646",
+    "fr": "le nom",
+    "en": "name",
+    "de": "der Name",
+    "es": "el nombre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3647",
+    "fr": "naturel",
+    "en": "natural",
+    "de": "natürlich",
+    "es": "natural",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3648",
+    "fr": "la nature",
+    "en": "nature",
+    "de": "die Natur",
+    "es": "la naturaleza",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3649",
+    "fr": "près",
+    "en": "near",
+    "de": "in der Nähe",
+    "es": "cerca",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3650",
+    "fr": "le besoin",
+    "en": "need",
+    "de": "das Bedürfnis",
+    "es": "la necesidad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3651",
+    "fr": "avoir besoin",
+    "en": "need",
+    "de": "brauchen",
+    "es": "necesitar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3652",
+    "fr": "négatif",
+    "en": "negative",
+    "de": "negativ",
+    "es": "negativo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3653",
+    "fr": "jamais",
+    "en": "never",
+    "de": "nie",
+    "es": "nunca",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3654",
+    "fr": "nouveau",
+    "en": "new",
+    "de": "neu",
+    "es": "nuevo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3655",
+    "fr": "les informations / nouvelles",
+    "en": "news",
+    "de": "die Nachrichten",
+    "es": "las noticias",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3656",
+    "fr": "le journal",
+    "en": "newspaper",
+    "de": "die Zeitung",
+    "es": "el periódico",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3657",
+    "fr": "suivant",
+    "en": "next",
+    "de": "nächste",
+    "es": "siguiente",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3658",
+    "fr": "agréable",
+    "en": "nice",
+    "de": "nett",
+    "es": "agradable",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3659",
+    "fr": "la nuit",
+    "en": "night",
+    "de": "die Nacht",
+    "es": "la noche",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3660",
+    "fr": "neuf",
+    "en": "nine",
+    "de": "neun",
+    "es": "nueve",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3661",
+    "fr": "dix-neuf",
+    "en": "nineteen",
+    "de": "neunzehn",
+    "es": "diecinueve",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3662",
+    "fr": "quatre-vingt-dix",
+    "en": "ninety",
+    "de": "neunzig",
+    "es": "noventa",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3663",
+    "fr": "non",
+    "en": "no",
+    "de": "nein",
+    "es": "no",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3664",
+    "fr": "personne",
+    "en": "no one",
+    "de": "niemand",
+    "es": "nadie",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3665",
+    "fr": "personne",
+    "en": "nobody",
+    "de": "niemand",
+    "es": "nadie",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3666",
+    "fr": "le nord",
+    "en": "north",
+    "de": "der Norden",
+    "es": "el norte",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3667",
+    "fr": "le nez",
+    "en": "nose",
+    "de": "die Nase",
+    "es": "la nariz",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3668",
+    "fr": "pas",
+    "en": "not",
+    "de": "nicht",
+    "es": "no",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3669",
+    "fr": "la note",
+    "en": "note",
+    "de": "die Notiz",
+    "es": "la nota",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3670",
+    "fr": "rien",
+    "en": "nothing",
+    "de": "nichts",
+    "es": "nada",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3671",
+    "fr": "novembre",
+    "en": "November",
+    "de": "November",
+    "es": "noviembre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3672",
+    "fr": "maintenant",
+    "en": "now",
+    "de": "jetzt",
+    "es": "ahora",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3673",
+    "fr": "le nombre / le numéro",
+    "en": "number",
+    "de": "die Nummer",
+    "es": "el número",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3674",
+    "fr": "l'infirmière",
+    "en": "nurse",
+    "de": "die Krankenschwester",
+    "es": "la enfermera",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3675",
+    "fr": "l'objet",
+    "en": "object",
+    "de": "das Objekt",
+    "es": "el objeto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3676",
+    "fr": "octobre",
+    "en": "October",
+    "de": "Oktober",
+    "es": "octubre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3677",
+    "fr": "de",
+    "en": "of",
+    "de": "von",
+    "es": "de",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3678",
+    "fr": "éteint / détaché",
+    "en": "off",
+    "de": "aus",
+    "es": "apagado",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3679",
+    "fr": "le bureau (lieu)",
+    "en": "office",
+    "de": "das Büro",
+    "es": "la oficina",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3680",
+    "fr": "souvent",
+    "en": "often",
+    "de": "oft",
+    "es": "a menudo",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3681",
+    "fr": "d'accord",
+    "en": "ok",
+    "de": "okay",
+    "es": "vale",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3682",
+    "fr": "vieux",
+    "en": "old",
+    "de": "alt",
+    "es": "viejo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3683",
+    "fr": "sur",
+    "en": "on",
+    "de": "auf",
+    "es": "en",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3684",
+    "fr": "une fois",
+    "en": "once",
+    "de": "einmal",
+    "es": "una vez",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3685",
+    "fr": "un",
+    "en": "one",
+    "de": "eins",
+    "es": "uno",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3686",
+    "fr": "l'oignon",
+    "en": "onion",
+    "de": "die Zwiebel",
+    "es": "la cebolla",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3687",
+    "fr": "en ligne",
+    "en": "online",
+    "de": "online",
+    "es": "en línea",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3688",
+    "fr": "seulement",
+    "en": "only",
+    "de": "nur",
+    "es": "sólo",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3689",
+    "fr": "ouvert",
+    "en": "open",
+    "de": "offen",
+    "es": "abierto",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3690",
+    "fr": "l'opinion",
+    "en": "opinion",
+    "de": "die Meinung",
+    "es": "la opinión",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3691",
+    "fr": "ou",
+    "en": "or",
+    "de": "oder",
+    "es": "o",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3692",
+    "fr": "l'orange (fruit)",
+    "en": "orange",
+    "de": "die Orange",
+    "es": "la naranja",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3693",
+    "fr": "autre",
+    "en": "other",
+    "de": "andere",
+    "es": "otro",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3694",
+    "fr": "notre",
+    "en": "our",
+    "de": "unser",
+    "es": "nuestro",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3695",
+    "fr": "dehors",
+    "en": "out",
+    "de": "heraus",
+    "es": "fuera",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3696",
+    "fr": "à l'extérieur",
+    "en": "outside",
+    "de": "draußen",
+    "es": "afuera",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3697",
+    "fr": "au-dessus",
+    "en": "over",
+    "de": "über",
+    "es": "sobre",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3698",
+    "fr": "propre (à soi)",
+    "en": "own",
+    "de": "eigen",
+    "es": "propio",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3699",
+    "fr": "la page",
+    "en": "page",
+    "de": "die Seite",
+    "es": "la página",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3700",
+    "fr": "peindre",
+    "en": "paint",
+    "de": "malen",
+    "es": "pintar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3701",
+    "fr": "la peinture",
+    "en": "painting",
+    "de": "das Gemälde",
+    "es": "la pintura",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3702",
+    "fr": "la paire",
+    "en": "pair",
+    "de": "das Paar",
+    "es": "el par",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3703",
+    "fr": "le pantalon (US)",
+    "en": "pants",
+    "de": "die Hose",
+    "es": "los pantalones",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3704",
+    "fr": "le papier",
+    "en": "paper",
+    "de": "das Papier",
+    "es": "el papel",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3705",
+    "fr": "le parent",
+    "en": "parent",
+    "de": "das Elternteil",
+    "es": "el padre/madre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3706",
+    "fr": "le parc",
+    "en": "park",
+    "de": "der Park",
+    "es": "el parque",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3707",
+    "fr": "la partie",
+    "en": "part",
+    "de": "der Teil",
+    "es": "la parte",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3708",
+    "fr": "la fête",
+    "en": "party",
+    "de": "die Party",
+    "es": "la fiesta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3709",
+    "fr": "le pass",
+    "en": "pass",
+    "de": "der Pass",
+    "es": "el pase",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3710",
+    "fr": "passé",
+    "en": "past",
+    "de": "vergangen",
+    "es": "pasado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3711",
+    "fr": "payer",
+    "en": "pay",
+    "de": "bezahlen",
+    "es": "pagar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3712",
+    "fr": "le stylo",
+    "en": "pen",
+    "de": "der Stift",
+    "es": "el bolígrafo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3713",
+    "fr": "le crayon",
+    "en": "pencil",
+    "de": "der Bleistift",
+    "es": "el lápiz",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3714",
+    "fr": "les gens",
+    "en": "people",
+    "de": "die Leute",
+    "es": "la gente",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3715",
+    "fr": "le poivre",
+    "en": "pepper",
+    "de": "der Pfeffer",
+    "es": "la pimienta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3716",
+    "fr": "parfait",
+    "en": "perfect",
+    "de": "perfekt",
+    "es": "perfecto",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3717",
+    "fr": "la personne",
+    "en": "person",
+    "de": "die Person",
+    "es": "la persona",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3718",
+    "fr": "la photo",
+    "en": "photo",
+    "de": "das Foto",
+    "es": "la foto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3719",
+    "fr": "la photographie",
+    "en": "photograph",
+    "de": "die Fotografie",
+    "es": "la fotografía",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3720",
+    "fr": "le piano",
+    "en": "piano",
+    "de": "das Klavier",
+    "es": "el piano",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3721",
+    "fr": "la photo / image",
+    "en": "picture",
+    "de": "das Bild",
+    "es": "la imagen",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3722",
+    "fr": "le morceau / la pièce",
+    "en": "piece",
+    "de": "das Stück",
+    "es": "el pedazo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3723",
+    "fr": "le porc",
+    "en": "pig",
+    "de": "das Schwein",
+    "es": "el cerdo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3724",
+    "fr": "la pizza",
+    "en": "pizza",
+    "de": "die Pizza",
+    "es": "la pizza",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3725",
+    "fr": "l'endroit",
+    "en": "place",
+    "de": "der Ort",
+    "es": "el lugar",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3726",
+    "fr": "le plan",
+    "en": "plan",
+    "de": "der Plan",
+    "es": "el plan",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3727",
+    "fr": "l'avion",
+    "en": "plane",
+    "de": "das Flugzeug",
+    "es": "el avión",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3728",
+    "fr": "la plante",
+    "en": "plant",
+    "de": "die Pflanze",
+    "es": "la planta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3729",
+    "fr": "jouer",
+    "en": "play",
+    "de": "spielen",
+    "es": "jugar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3730",
+    "fr": "le joueur",
+    "en": "player",
+    "de": "der Spieler",
+    "es": "el jugador",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3731",
+    "fr": "s'il te plaît",
+    "en": "please",
+    "de": "bitte",
+    "es": "por favor",
+    "type": "interj",
+    "level": "A1"
+  },
+  {
+    "id": "word_3732",
+    "fr": "le point",
+    "en": "point",
+    "de": "der Punkt",
+    "es": "el punto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3733",
+    "fr": "la police",
+    "en": "police",
+    "de": "die Polizei",
+    "es": "la policía",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3734",
+    "fr": "l'officier de police",
+    "en": "policeman",
+    "de": "der Polizist",
+    "es": "el policía",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3735",
+    "fr": "la piscine",
+    "en": "pool",
+    "de": "der Pool",
+    "es": "la piscina",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3736",
+    "fr": "pauvre",
+    "en": "poor",
+    "de": "arm",
+    "es": "pobre",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3737",
+    "fr": "populaire",
+    "en": "popular",
+    "de": "beliebt",
+    "es": "popular",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3738",
+    "fr": "positif",
+    "en": "positive",
+    "de": "positiv",
+    "es": "positivo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3739",
+    "fr": "possible",
+    "en": "possible",
+    "de": "möglich",
+    "es": "posible",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3740",
+    "fr": "la pomme de terre",
+    "en": "potato",
+    "de": "die Kartoffel",
+    "es": "la patata",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3741",
+    "fr": "la livre (monnaie/poids)",
+    "en": "pound",
+    "de": "das Pfund",
+    "es": "la libra",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3742",
+    "fr": "la pratique",
+    "en": "practice",
+    "de": "die Übung",
+    "es": "la práctica",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3743",
+    "fr": "pratiquer",
+    "en": "practise",
+    "de": "üben",
+    "es": "practicar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3744",
+    "fr": "préférer",
+    "en": "prefer",
+    "de": "bevorzugen",
+    "es": "preferir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3745",
+    "fr": "préparer",
+    "en": "prepare",
+    "de": "vorbereiten",
+    "es": "preparar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3746",
+    "fr": "le cadeau",
+    "en": "present",
+    "de": "das Geschenk",
+    "es": "el regalo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3747",
+    "fr": "le prix",
+    "en": "price",
+    "de": "der Preis",
+    "es": "el precio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3748",
+    "fr": "le problème",
+    "en": "problem",
+    "de": "das Problem",
+    "es": "el problema",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3749",
+    "fr": "le produit",
+    "en": "product",
+    "de": "das Produkt",
+    "es": "el producto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3750",
+    "fr": "le projet",
+    "en": "project",
+    "de": "das Projekt",
+    "es": "el proyecto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3751",
+    "fr": "le pub",
+    "en": "pub",
+    "de": "die Kneipe",
+    "es": "el pub",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3752",
+    "fr": "mettre",
+    "en": "put",
+    "de": "legen / setzen",
+    "es": "poner",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3753",
+    "fr": "le quart",
+    "en": "quarter",
+    "de": "das Viertel",
+    "es": "el cuarto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3754",
+    "fr": "la question",
+    "en": "question",
+    "de": "die Frage",
+    "es": "la pregunta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3755",
+    "fr": "rapide",
+    "en": "quick",
+    "de": "schnell",
+    "es": "rápido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3756",
+    "fr": "rapidement",
+    "en": "quickly",
+    "de": "schnell",
+    "es": "rápidamente",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3757",
+    "fr": "calme",
+    "en": "quiet",
+    "de": "ruhig",
+    "es": "tranquilo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3758",
+    "fr": "assez / plutôt",
+    "en": "quite",
+    "de": "ziemlich",
+    "es": "bastante",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3759",
+    "fr": "la radio",
+    "en": "radio",
+    "de": "das Radio",
+    "es": "la radio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3760",
+    "fr": "la pluie",
+    "en": "rain",
+    "de": "der Regen",
+    "es": "la lluvia",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3761",
+    "fr": "lire",
+    "en": "read",
+    "de": "lesen",
+    "es": "leer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3762",
+    "fr": "le lecteur",
+    "en": "reader",
+    "de": "der Leser",
+    "es": "el lector",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3763",
+    "fr": "la lecture",
+    "en": "reading",
+    "de": "das Lesen",
+    "es": "la lectura",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3764",
+    "fr": "prêt",
+    "en": "ready",
+    "de": "bereit",
+    "es": "listo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3765",
+    "fr": "vraiment",
+    "en": "really",
+    "de": "wirklich",
+    "es": "realmente",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3766",
+    "fr": "la raison",
+    "en": "reason",
+    "de": "der Grund",
+    "es": "la razón",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3767",
+    "fr": "rouge",
+    "en": "red",
+    "de": "rot",
+    "es": "rojo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3768",
+    "fr": "se détendre",
+    "en": "relax",
+    "de": "sich entspannen",
+    "es": "relajarse",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3769",
+    "fr": "se souvenir",
+    "en": "remember",
+    "de": "sich erinnern",
+    "es": "recordar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3770",
+    "fr": "le restaurant",
+    "en": "restaurant",
+    "de": "das Restaurant",
+    "es": "el restaurante",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3771",
+    "fr": "le résultat",
+    "en": "result",
+    "de": "das Ergebnis",
+    "es": "el resultado",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3772",
+    "fr": "le retour",
+    "en": "return",
+    "de": "die Rückkehr",
+    "es": "el retorno",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3773",
+    "fr": "le riz",
+    "en": "rice",
+    "de": "der Reis",
+    "es": "el arroz",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3774",
+    "fr": "riche",
+    "en": "rich",
+    "de": "reich",
+    "es": "rico",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3775",
+    "fr": "monter (cheval/vélo)",
+    "en": "ride",
+    "de": "reiten / fahren",
+    "es": "montar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3776",
+    "fr": "la droite",
+    "en": "right",
+    "de": "rechts",
+    "es": "la derecha",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3777",
+    "fr": "la rivière",
+    "en": "river",
+    "de": "der Fluss",
+    "es": "el río",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3778",
+    "fr": "la route",
+    "en": "road",
+    "de": "die Straße",
+    "es": "la carretera",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3779",
+    "fr": "la chambre / la pièce",
+    "en": "room",
+    "de": "das Zimmer",
+    "es": "la habitación",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3780",
+    "fr": "la routine",
+    "en": "routine",
+    "de": "die Routine",
+    "es": "la rutina",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3781",
+    "fr": "la règle",
+    "en": "rule",
+    "de": "die Regel",
+    "es": "la regla",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3782",
+    "fr": "courir",
+    "en": "run",
+    "de": "rennen",
+    "es": "correr",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3783",
+    "fr": "triste",
+    "en": "sad",
+    "de": "traurig",
+    "es": "triste",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3784",
+    "fr": "la salade",
+    "en": "salad",
+    "de": "der Salat",
+    "es": "la ensalada",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3785",
+    "fr": "le sel",
+    "en": "salt",
+    "de": "das Salz",
+    "es": "la sal",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3786",
+    "fr": "le même",
+    "en": "same",
+    "de": "das gleiche",
+    "es": "el mismo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3787",
+    "fr": "le sandwich",
+    "en": "sandwich",
+    "de": "das Sandwich",
+    "es": "el sándwich",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3788",
+    "fr": "samedi",
+    "en": "Saturday",
+    "de": "Samstag",
+    "es": "sábado",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3789",
+    "fr": "dire",
+    "en": "say",
+    "de": "sagen",
+    "es": "decir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3790",
+    "fr": "l'école",
+    "en": "school",
+    "de": "die Schule",
+    "es": "la escuela",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3791",
+    "fr": "la science",
+    "en": "science",
+    "de": "die Wissenschaft",
+    "es": "la ciencia",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3792",
+    "fr": "le scientifique",
+    "en": "scientist",
+    "de": "der Wissenschaftler",
+    "es": "el científico",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3793",
+    "fr": "la mer",
+    "en": "sea",
+    "de": "das Meer",
+    "es": "el mar",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3794",
+    "fr": "la saison",
+    "en": "season",
+    "de": "die Jahreszeit",
+    "es": "la estación",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3795",
+    "fr": "deuxième",
+    "en": "second",
+    "de": "zweite",
+    "es": "segundo",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3796",
+    "fr": "la seconde (temps)",
+    "en": "second",
+    "de": "die Sekunde",
+    "es": "el segundo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3797",
+    "fr": "voir",
+    "en": "see",
+    "de": "sehen",
+    "es": "ver",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3798",
+    "fr": "envoyer",
+    "en": "send",
+    "de": "senden",
+    "es": "enviar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3799",
+    "fr": "la phrase",
+    "en": "sentence",
+    "de": "der Satz",
+    "es": "la oración",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3800",
+    "fr": "septembre",
+    "en": "September",
+    "de": "September",
+    "es": "septiembre",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3801",
+    "fr": "sept",
+    "en": "seven",
+    "de": "sieben",
+    "es": "siete",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3802",
+    "fr": "dix-sept",
+    "en": "seventeen",
+    "de": "siebzehn",
+    "es": "diecisiete",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3803",
+    "fr": "soixante-dix",
+    "en": "seventy",
+    "de": "siebzig",
+    "es": "setenta",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3804",
+    "fr": "partager",
+    "en": "share",
+    "de": "teilen",
+    "es": "compartir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3805",
+    "fr": "elle",
+    "en": "she",
+    "de": "sie",
+    "es": "ella",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3806",
+    "fr": "le mouton",
+    "en": "sheep",
+    "de": "das Schaf",
+    "es": "la oveja",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3807",
+    "fr": "la chemise",
+    "en": "shirt",
+    "de": "das Hemd",
+    "es": "la camisa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3808",
+    "fr": "la chaussure",
+    "en": "shoe",
+    "de": "der Schuh",
+    "es": "el zapato",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3809",
+    "fr": "le magasin",
+    "en": "shop",
+    "de": "der Laden",
+    "es": "la tienda",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3810",
+    "fr": "faire les courses",
+    "en": "shopping",
+    "de": "einkaufen",
+    "es": "las compras",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3811",
+    "fr": "court",
+    "en": "short",
+    "de": "kurz",
+    "es": "corto",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3812",
+    "fr": "devrait",
+    "en": "should",
+    "de": "sollte",
+    "es": "debería",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3813",
+    "fr": "montrer",
+    "en": "show",
+    "de": "zeigen",
+    "es": "mostrar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3814",
+    "fr": "le spectacle",
+    "en": "show",
+    "de": "die Show",
+    "es": "el espectáculo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3815",
+    "fr": "la douche",
+    "en": "shower",
+    "de": "die Dusche",
+    "es": "la ducha",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3816",
+    "fr": "malade",
+    "en": "sick",
+    "de": "krank",
+    "es": "enfermo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3817",
+    "fr": "similaire",
+    "en": "similar",
+    "de": "ähnlich",
+    "es": "similar",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3818",
+    "fr": "chanter",
+    "en": "sing",
+    "de": "singen",
+    "es": "cantar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3819",
+    "fr": "le chanteur",
+    "en": "singer",
+    "de": "der Sänger",
+    "es": "el cantante",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3820",
+    "fr": "la sœur",
+    "en": "sister",
+    "de": "die Schwester",
+    "es": "la hermana",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3821",
+    "fr": "s'asseoir",
+    "en": "sit",
+    "de": "sitzen",
+    "es": "sentarse",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3822",
+    "fr": "la situation",
+    "en": "situation",
+    "de": "die Situation",
+    "es": "la situación",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3823",
+    "fr": "six",
+    "en": "six",
+    "de": "sechs",
+    "es": "seis",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3824",
+    "fr": "seize",
+    "en": "sixteen",
+    "de": "sechzehn",
+    "es": "dieciséis",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3825",
+    "fr": "soixante",
+    "en": "sixty",
+    "de": "sechzig",
+    "es": "sesenta",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3826",
+    "fr": "la compétence",
+    "en": "skill",
+    "de": "die Fähigkeit",
+    "es": "la habilidad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3827",
+    "fr": "la jupe",
+    "en": "skirt",
+    "de": "der Rock",
+    "es": "la falda",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3828",
+    "fr": "dormir",
+    "en": "sleep",
+    "de": "schlafen",
+    "es": "dormir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3829",
+    "fr": "lent",
+    "en": "slow",
+    "de": "langsam",
+    "es": "lento",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3830",
+    "fr": "petit (taille)",
+    "en": "small",
+    "de": "klein",
+    "es": "pequeño",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3831",
+    "fr": "intelligent",
+    "en": "smart",
+    "de": "klug",
+    "es": "inteligente",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3832",
+    "fr": "fumer",
+    "en": "smoke",
+    "de": "rauchen",
+    "es": "fumar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3833",
+    "fr": "le serpent",
+    "en": "snake",
+    "de": "die Schlange",
+    "es": "la serpiente",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3834",
+    "fr": "la neige",
+    "en": "snow",
+    "de": "der Schnee",
+    "es": "la nieve",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3835",
+    "fr": "donc / alors",
+    "en": "so",
+    "de": "also",
+    "es": "así que",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3836",
+    "fr": "le canapé",
+    "en": "sofa",
+    "de": "das Sofa",
+    "es": "el sofá",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3837",
+    "fr": "quelques / du",
+    "en": "some",
+    "de": "einige / etwas",
+    "es": "algunos / algo de",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3838",
+    "fr": "quelqu'un (somebody)",
+    "en": "somebody",
+    "de": "jemand",
+    "es": "alguien",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3839",
+    "fr": "quelqu'un (someone)",
+    "en": "someone",
+    "de": "jemand",
+    "es": "alguien",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3840",
+    "fr": "quelque chose",
+    "en": "something",
+    "de": "etwas",
+    "es": "algo",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3841",
+    "fr": "parfois",
+    "en": "sometimes",
+    "de": "manchmal",
+    "es": "a veces",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3842",
+    "fr": "le fils",
+    "en": "son",
+    "de": "der Sohn",
+    "es": "el hijo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3843",
+    "fr": "la chanson",
+    "en": "song",
+    "de": "das Lied",
+    "es": "la canción",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3844",
+    "fr": "bientôt",
+    "en": "soon",
+    "de": "bald",
+    "es": "pronto",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3845",
+    "fr": "désolé",
+    "en": "sorry",
+    "de": "entschuldigung",
+    "es": "lo siento",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3846",
+    "fr": "le son / le bruit",
+    "en": "sound",
+    "de": "der Klang / das Geräusch",
+    "es": "el sonido",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3847",
+    "fr": "la soupe",
+    "en": "soup",
+    "de": "die Suppe",
+    "es": "la sopa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3848",
+    "fr": "le sud",
+    "en": "south",
+    "de": "der Süden",
+    "es": "el sur",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3849",
+    "fr": "l'espace",
+    "en": "space",
+    "de": "der Raum / der Platz",
+    "es": "el espacio",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3850",
+    "fr": "parler",
+    "en": "speak",
+    "de": "sprechen",
+    "es": "hablar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3851",
+    "fr": "spécial",
+    "en": "special",
+    "de": "speziell",
+    "es": "especial",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3852",
+    "fr": "épeler",
+    "en": "spell",
+    "de": "buchstabieren",
+    "es": "deletrear",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3853",
+    "fr": "l'orthographe",
+    "en": "spelling",
+    "de": "die Rechtschreibung",
+    "es": "la ortografía",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3854",
+    "fr": "dépenser / passer (temps)",
+    "en": "spend",
+    "de": "verbringen / ausgeben",
+    "es": "gastar / pasar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3855",
+    "fr": "le sport",
+    "en": "sport",
+    "de": "der Sport",
+    "es": "el deporte",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3856",
+    "fr": "le printemps",
+    "en": "spring",
+    "de": "der Frühling",
+    "es": "la primavera",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3857",
+    "fr": "se tenir debout",
+    "en": "stand",
+    "de": "stehen",
+    "es": "estar de pie",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3858",
+    "fr": "commencer",
+    "en": "start",
+    "de": "anfangen",
+    "es": "empezar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3859",
+    "fr": "la gare / la station",
+    "en": "station",
+    "de": "der Bahnhof / die Station",
+    "es": "la estación",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3860",
+    "fr": "arrêter",
+    "en": "stop",
+    "de": "stoppen",
+    "es": "parar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3861",
+    "fr": "l'histoire",
+    "en": "story",
+    "de": "die Geschichte",
+    "es": "la historia",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3862",
+    "fr": "la rue",
+    "en": "street",
+    "de": "die Straße",
+    "es": "la calle",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3863",
+    "fr": "fort",
+    "en": "strong",
+    "de": "stark",
+    "es": "fuerte",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3864",
+    "fr": "l'étudiant",
+    "en": "student",
+    "de": "der Student",
+    "es": "el estudiante",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3865",
+    "fr": "étudier",
+    "en": "study",
+    "de": "studieren / lernen",
+    "es": "estudiar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3866",
+    "fr": "le style",
+    "en": "style",
+    "de": "der Stil",
+    "es": "el estilo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3867",
+    "fr": "le sujet / la matière",
+    "en": "subject",
+    "de": "das Thema / das Fach",
+    "es": "el tema / la asignatura",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3868",
+    "fr": "le sucre",
+    "en": "sugar",
+    "de": "der Zucker",
+    "es": "el azúcar",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3869",
+    "fr": "l'été",
+    "en": "summer",
+    "de": "der Sommer",
+    "es": "el verano",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3870",
+    "fr": "le soleil",
+    "en": "sun",
+    "de": "die Sonne",
+    "es": "el sol",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3871",
+    "fr": "dimanche",
+    "en": "Sunday",
+    "de": "Sonntag",
+    "es": "domingo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3872",
+    "fr": "le supermarché",
+    "en": "supermarket",
+    "de": "der Supermarkt",
+    "es": "el supermercado",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3873",
+    "fr": "sûr",
+    "en": "sure",
+    "de": "sicher",
+    "es": "seguro",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3874",
+    "fr": "le pull",
+    "en": "sweater",
+    "de": "der Pullover",
+    "es": "el suéter",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3875",
+    "fr": "nager",
+    "en": "swim",
+    "de": "schwimmen",
+    "es": "nadar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3876",
+    "fr": "la natation",
+    "en": "swimming",
+    "de": "das Schwimmen",
+    "es": "la natación",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3877",
+    "fr": "la table",
+    "en": "table",
+    "de": "der Tisch",
+    "es": "la mesa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3878",
+    "fr": "prendre",
+    "en": "take",
+    "de": "nehmen",
+    "es": "tomar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3879",
+    "fr": "parler",
+    "en": "talk",
+    "de": "reden",
+    "es": "hablar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3880",
+    "fr": "grand (taille)",
+    "en": "tall",
+    "de": "groß",
+    "es": "alto",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3881",
+    "fr": "le taxi",
+    "en": "taxi",
+    "de": "das Taxi",
+    "es": "el taxi",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3882",
+    "fr": "le thé",
+    "en": "tea",
+    "de": "der Tee",
+    "es": "el té",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3883",
+    "fr": "enseigner",
+    "en": "teach",
+    "de": "unterrichten",
+    "es": "enseñar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3884",
+    "fr": "le professeur",
+    "en": "teacher",
+    "de": "der Lehrer",
+    "es": "el profesor",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3885",
+    "fr": "l'équipe",
+    "en": "team",
+    "de": "das Team",
+    "es": "el equipo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3886",
+    "fr": "l'adolescent",
+    "en": "teenager",
+    "de": "der Teenager",
+    "es": "el adolescente",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3887",
+    "fr": "le téléphone",
+    "en": "telephone",
+    "de": "das Telefon",
+    "es": "el teléfono",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3888",
+    "fr": "la télévision",
+    "en": "television",
+    "de": "das Fernsehen",
+    "es": "la televisión",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3889",
+    "fr": "raconter / dire",
+    "en": "tell",
+    "de": "erzählen",
+    "es": "contar / decir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3890",
+    "fr": "dix",
+    "en": "ten",
+    "de": "zehn",
+    "es": "diez",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3891",
+    "fr": "le tennis",
+    "en": "tennis",
+    "de": "das Tennis",
+    "es": "el tenis",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3892",
+    "fr": "terrible",
+    "en": "terrible",
+    "de": "schrecklich",
+    "es": "terrible",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3893",
+    "fr": "le test",
+    "en": "test",
+    "de": "der Test",
+    "es": "la prueba",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3894",
+    "fr": "le texte",
+    "en": "text",
+    "de": "der Text",
+    "es": "el texto",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3895",
+    "fr": "que (comparaison)",
+    "en": "than",
+    "de": "als",
+    "es": "que",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3896",
+    "fr": "remercier",
+    "en": "thank",
+    "de": "danken",
+    "es": "agradecer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3897",
+    "fr": "merci",
+    "en": "thanks",
+    "de": "danke",
+    "es": "gracias",
+    "type": "interj",
+    "level": "A1"
+  },
+  {
+    "id": "word_3898",
+    "fr": "que / cela",
+    "en": "that",
+    "de": "dass / das",
+    "es": "que / eso",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3899",
+    "fr": "le / la / les",
+    "en": "the",
+    "de": "der / die / das",
+    "es": "el / la / los / las",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3900",
+    "fr": "le théâtre",
+    "en": "theatre",
+    "de": "das Theater",
+    "es": "el teatro",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3901",
+    "fr": "leur",
+    "en": "their",
+    "de": "ihr",
+    "es": "su",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3902",
+    "fr": "eux / les",
+    "en": "them",
+    "de": "sie / ihnen",
+    "es": "ellos / los",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3903",
+    "fr": "ensuite / alors",
+    "en": "then",
+    "de": "dann",
+    "es": "luego / entonces",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3904",
+    "fr": "là-bas",
+    "en": "there",
+    "de": "dort",
+    "es": "allí",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3905",
+    "fr": "ils / elles",
+    "en": "they",
+    "de": "sie",
+    "es": "ellos",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3906",
+    "fr": "la chose",
+    "en": "thing",
+    "de": "das Ding",
+    "es": "la cosa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3907",
+    "fr": "penser",
+    "en": "think",
+    "de": "denken",
+    "es": "pensar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3908",
+    "fr": "troisième",
+    "en": "third",
+    "de": "dritte",
+    "es": "tercero",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3909",
+    "fr": "assoiffé",
+    "en": "thirsty",
+    "de": "durstig",
+    "es": "sediento",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3910",
+    "fr": "treize",
+    "en": "thirteen",
+    "de": "dreizehn",
+    "es": "trece",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3911",
+    "fr": "trente",
+    "en": "thirty",
+    "de": "dreißig",
+    "es": "treinta",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3912",
+    "fr": "ce / ceci",
+    "en": "this",
+    "de": "dies",
+    "es": "este / esto",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_3913",
+    "fr": "mille",
+    "en": "thousand",
+    "de": "tausend",
+    "es": "mil",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3914",
+    "fr": "trois",
+    "en": "three",
+    "de": "drei",
+    "es": "tres",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3915",
+    "fr": "à travers / par",
+    "en": "through",
+    "de": "durch",
+    "es": "a través de",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3916",
+    "fr": "jeudi",
+    "en": "Thursday",
+    "de": "Donnerstag",
+    "es": "jueves",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3917",
+    "fr": "le billet / ticket",
+    "en": "ticket",
+    "de": "das Ticket",
+    "es": "el billete",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3918",
+    "fr": "le temps / l'heure",
+    "en": "time",
+    "de": "die Zeit",
+    "es": "el tiempo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3919",
+    "fr": "fatigué",
+    "en": "tired",
+    "de": "müde",
+    "es": "cansado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3920",
+    "fr": "le titre",
+    "en": "title",
+    "de": "der Titel",
+    "es": "el título",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3921",
+    "fr": "à / vers",
+    "en": "to",
+    "de": "zu",
+    "es": "a / hacia",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3922",
+    "fr": "aujourd'hui",
+    "en": "today",
+    "de": "heute",
+    "es": "hoy",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3923",
+    "fr": "ensemble",
+    "en": "together",
+    "de": "zusammen",
+    "es": "juntos",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3924",
+    "fr": "les toilettes",
+    "en": "toilet",
+    "de": "die Toilette",
+    "es": "el baño",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3925",
+    "fr": "la tomate",
+    "en": "tomato",
+    "de": "die Tomate",
+    "es": "el tomate",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3926",
+    "fr": "demain",
+    "en": "tomorrow",
+    "de": "morgen",
+    "es": "mañana",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3927",
+    "fr": "ce soir",
+    "en": "tonight",
+    "de": "heute Abend",
+    "es": "esta noche",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3928",
+    "fr": "aussi / trop",
+    "en": "too",
+    "de": "auch / zu",
+    "es": "también / demasiado",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3929",
+    "fr": "le haut / sommet",
+    "en": "top",
+    "de": "oben",
+    "es": "arriba / cima",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3930",
+    "fr": "la dent",
+    "en": "tooth",
+    "de": "der Zahn",
+    "es": "el diente",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3931",
+    "fr": "le touriste",
+    "en": "tourist",
+    "de": "der Tourist",
+    "es": "el turista",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3932",
+    "fr": "la ville",
+    "en": "town",
+    "de": "die Stadt",
+    "es": "el pueblo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3933",
+    "fr": "le trafic / circulation",
+    "en": "traffic",
+    "de": "der Verkehr",
+    "es": "el tráfico",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3934",
+    "fr": "le train",
+    "en": "train",
+    "de": "der Zug",
+    "es": "el tren",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3935",
+    "fr": "voyager",
+    "en": "travel",
+    "de": "reisen",
+    "es": "viajar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3936",
+    "fr": "l'arbre",
+    "en": "tree",
+    "de": "der Baum",
+    "es": "el árbol",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3937",
+    "fr": "le voyage (court)",
+    "en": "trip",
+    "de": "die Reise",
+    "es": "el viaje",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3938",
+    "fr": "le pantalon",
+    "en": "trousers",
+    "de": "die Hose",
+    "es": "los pantalones",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3939",
+    "fr": "vrai",
+    "en": "true",
+    "de": "wahr",
+    "es": "verdadero",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3940",
+    "fr": "essayer",
+    "en": "try",
+    "de": "versuchen",
+    "es": "intentar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3941",
+    "fr": "le t-shirt",
+    "en": "T-shirt",
+    "de": "das T-Shirt",
+    "es": "la camiseta",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3942",
+    "fr": "mardi",
+    "en": "Tuesday",
+    "de": "Dienstag",
+    "es": "martes",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3943",
+    "fr": "tourner",
+    "en": "turn",
+    "de": "drehen",
+    "es": "girar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3944",
+    "fr": "la télé",
+    "en": "TV",
+    "de": "der Fernseher",
+    "es": "la tele",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3945",
+    "fr": "douze",
+    "en": "twelve",
+    "de": "zwölf",
+    "es": "doce",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3946",
+    "fr": "vingt",
+    "en": "twenty",
+    "de": "zwanzig",
+    "es": "veinte",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3947",
+    "fr": "deux fois",
+    "en": "twice",
+    "de": "zweimal",
+    "es": "dos veces",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3948",
+    "fr": "deux",
+    "en": "two",
+    "de": "zwei",
+    "es": "dos",
+    "type": "num",
+    "level": "A1"
+  },
+  {
+    "id": "word_3949",
+    "fr": "le type / genre",
+    "en": "type",
+    "de": "der Typ",
+    "es": "el tipo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3950",
+    "fr": "le parapluie",
+    "en": "umbrella",
+    "de": "der Regenschirm",
+    "es": "el paraguas",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3951",
+    "fr": "l'oncle",
+    "en": "uncle",
+    "de": "der Onkel",
+    "es": "el tío",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3952",
+    "fr": "sous",
+    "en": "under",
+    "de": "unter",
+    "es": "debajo",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_3953",
+    "fr": "comprendre",
+    "en": "understand",
+    "de": "verstehen",
+    "es": "entender",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3954",
+    "fr": "l'université",
+    "en": "university",
+    "de": "die Universität",
+    "es": "la universidad",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3955",
+    "fr": "jusqu'à",
+    "en": "until",
+    "de": "bis",
+    "es": "hasta",
+    "type": "conjonction",
+    "level": "A1"
+  },
+  {
+    "id": "word_3956",
+    "fr": "en haut",
+    "en": "up",
+    "de": "auf / hoch",
+    "es": "arriba",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3957",
+    "fr": "en haut (escaliers)",
+    "en": "upstairs",
+    "de": "oben",
+    "es": "arriba",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3958",
+    "fr": "nous",
+    "en": "us",
+    "de": "uns",
+    "es": "nos",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3959",
+    "fr": "utiliser",
+    "en": "use",
+    "de": "benutzen",
+    "es": "usar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3960",
+    "fr": "habituellement",
+    "en": "usually",
+    "de": "normalerweise",
+    "es": "usualmente",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3961",
+    "fr": "les vacances (US)",
+    "en": "vacation",
+    "de": "der Urlaub",
+    "es": "las vacaciones",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3962",
+    "fr": "le légume",
+    "en": "vegetable",
+    "de": "das Gemüse",
+    "es": "la verdura",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3963",
+    "fr": "très",
+    "en": "very",
+    "de": "sehr",
+    "es": "muy",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3964",
+    "fr": "la vidéo",
+    "en": "video",
+    "de": "das Video",
+    "es": "el vídeo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3965",
+    "fr": "le village",
+    "en": "village",
+    "de": "das Dorf",
+    "es": "la aldea",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3966",
+    "fr": "visiter",
+    "en": "visit",
+    "de": "besuchen",
+    "es": "visitar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3967",
+    "fr": "le visiteur",
+    "en": "visitor",
+    "de": "der Besucher",
+    "es": "el visitante",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3968",
+    "fr": "attendre",
+    "en": "wait",
+    "de": "warten",
+    "es": "esperar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3969",
+    "fr": "le serveur",
+    "en": "waiter",
+    "de": "der Kellner",
+    "es": "el camarero",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3970",
+    "fr": "se réveiller",
+    "en": "wake",
+    "de": "aufwachen",
+    "es": "despertar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3971",
+    "fr": "marcher",
+    "en": "walk",
+    "de": "gehen",
+    "es": "caminar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3972",
+    "fr": "le mur",
+    "en": "wall",
+    "de": "die Wand",
+    "es": "la pared",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3973",
+    "fr": "vouloir",
+    "en": "want",
+    "de": "wollen",
+    "es": "querer",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3974",
+    "fr": "chaud / chaleureux",
+    "en": "warm",
+    "de": "warm",
+    "es": "cálido",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3975",
+    "fr": "laver",
+    "en": "wash",
+    "de": "waschen",
+    "es": "lavar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3976",
+    "fr": "la montre",
+    "en": "watch",
+    "de": "die Uhr",
+    "es": "el reloj",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3977",
+    "fr": "regarder (TV)",
+    "en": "watch",
+    "de": "schauen",
+    "es": "mirar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3978",
+    "fr": "l'eau",
+    "en": "water",
+    "de": "das Wasser",
+    "es": "el agua",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3979",
+    "fr": "le chemin / la façon",
+    "en": "way",
+    "de": "der Weg / die Art",
+    "es": "el camino / la manera",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3980",
+    "fr": "nous",
+    "en": "we",
+    "de": "wir",
+    "es": "nosotros",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3981",
+    "fr": "porter (vêtements)",
+    "en": "wear",
+    "de": "tragen",
+    "es": "llevar puesto",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3982",
+    "fr": "le temps (météo)",
+    "en": "weather",
+    "de": "das Wetter",
+    "es": "el clima",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3983",
+    "fr": "le site web",
+    "en": "website",
+    "de": "die Website",
+    "es": "el sitio web",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3984",
+    "fr": "mercredi",
+    "en": "Wednesday",
+    "de": "Mittwoch",
+    "es": "miércoles",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3985",
+    "fr": "la semaine",
+    "en": "week",
+    "de": "die Woche",
+    "es": "la semana",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3986",
+    "fr": "le week-end",
+    "en": "weekend",
+    "de": "das Wochenende",
+    "es": "el fin de semana",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3987",
+    "fr": "bien",
+    "en": "well",
+    "de": "gut",
+    "es": "bien",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3988",
+    "fr": "l'ouest",
+    "en": "west",
+    "de": "der Westen",
+    "es": "el oeste",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3989",
+    "fr": "quoi",
+    "en": "what",
+    "de": "was",
+    "es": "qué",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3990",
+    "fr": "quand",
+    "en": "when",
+    "de": "wann",
+    "es": "cuándo",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3991",
+    "fr": "où",
+    "en": "where",
+    "de": "wo",
+    "es": "dónde",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3992",
+    "fr": "lequel",
+    "en": "which",
+    "de": "welcher",
+    "es": "cuál",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3993",
+    "fr": "blanc",
+    "en": "white",
+    "de": "weiß",
+    "es": "blanco",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_3994",
+    "fr": "qui",
+    "en": "who",
+    "de": "wer",
+    "es": "quién",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_3995",
+    "fr": "pourquoi",
+    "en": "why",
+    "de": "warum",
+    "es": "por qué",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3996",
+    "fr": "la femme (épouse)",
+    "en": "wife",
+    "de": "die Ehefrau",
+    "es": "la esposa",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3997",
+    "fr": "gagner",
+    "en": "win",
+    "de": "gewinnen",
+    "es": "ganar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_3998",
+    "fr": "la fenêtre",
+    "en": "window",
+    "de": "das Fenster",
+    "es": "la ventana",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_3999",
+    "fr": "le vin",
+    "en": "wine",
+    "de": "der Wein",
+    "es": "el vino",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4000",
+    "fr": "l'hiver",
+    "en": "winter",
+    "de": "der Winter",
+    "es": "el invierno",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4001",
+    "fr": "avec",
+    "en": "with",
+    "de": "mit",
+    "es": "con",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_4002",
+    "fr": "sans",
+    "en": "without",
+    "de": "ohne",
+    "es": "sin",
+    "type": "prep",
+    "level": "A1"
+  },
+  {
+    "id": "word_4003",
+    "fr": "la femme",
+    "en": "woman",
+    "de": "die Frau",
+    "es": "la mujer",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4004",
+    "fr": "merveilleux",
+    "en": "wonderful",
+    "de": "wunderbar",
+    "es": "maravilloso",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_4005",
+    "fr": "le mot",
+    "en": "word",
+    "de": "das Wort",
+    "es": "la palabra",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4006",
+    "fr": "le travail",
+    "en": "work",
+    "de": "die Arbeit",
+    "es": "el trabajo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4007",
+    "fr": "travailler",
+    "en": "work",
+    "de": "arbeiten",
+    "es": "trabajar",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_4008",
+    "fr": "le travailleur",
+    "en": "worker",
+    "de": "der Arbeiter",
+    "es": "el trabajador",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4009",
+    "fr": "le monde",
+    "en": "world",
+    "de": "die Welt",
+    "es": "el mundo",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4010",
+    "fr": "voudrait",
+    "en": "would",
+    "de": "würde",
+    "es": "haría (condicional)",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_4011",
+    "fr": "écrire",
+    "en": "write",
+    "de": "schreiben",
+    "es": "escribir",
+    "type": "verbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_4012",
+    "fr": "l'écrivain",
+    "en": "writer",
+    "de": "der Autor",
+    "es": "el escritor",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4013",
+    "fr": "l'écriture",
+    "en": "writing",
+    "de": "das Schreiben",
+    "es": "la escritura",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4014",
+    "fr": "faux (erreur)",
+    "en": "wrong",
+    "de": "falsch",
+    "es": "equivocado",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_4015",
+    "fr": "l'année",
+    "en": "year",
+    "de": "das Jahr",
+    "es": "el año",
+    "type": "nom",
+    "level": "A1"
+  },
+  {
+    "id": "word_4016",
+    "fr": "jaune",
+    "en": "yellow",
+    "de": "gelb",
+    "es": "amarillo",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_4017",
+    "fr": "oui",
+    "en": "yes",
+    "de": "ja",
+    "es": "sí",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_4018",
+    "fr": "hier",
+    "en": "yesterday",
+    "de": "gestern",
+    "es": "ayer",
+    "type": "adverbe",
+    "level": "A1"
+  },
+  {
+    "id": "word_4019",
+    "fr": "toi / vous",
+    "en": "you",
+    "de": "du / ihr / Sie",
+    "es": "tú / usted / vosotros",
+    "type": "pron",
+    "level": "A1"
+  },
+  {
+    "id": "word_4020",
+    "fr": "jeune",
+    "en": "young",
+    "de": "jung",
+    "es": "joven",
+    "type": "adjectif",
+    "level": "A1"
+  },
+  {
+    "id": "word_4021",
+    "fr": "ton / votre",
+    "en": "your",
+    "de": "dein / euer / Ihr",
+    "es": "tu / su / vuestro",
+    "type": "det",
+    "level": "A1"
+  },
+  {
+    "id": "word_4022",
+    "fr": "le zoo",
+    "en": "zoo",
+    "de": "der Zoo",
+    "es": "el zoológico",
+    "type": "nom",
+    "level": "A1"
+  }
+]
