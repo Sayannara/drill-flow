@@ -26,6 +26,29 @@ export async function fetchProgressFromCloud() {
             const cloudData = docSnap.data().progress || {};
             // Fusionner avec le local
             localCache = { ...localCache, ...cloudData };
+            
+            // Migration : Ajouter validation_date aux mots déjà validés
+            let modified = false;
+            const now = new Date().toISOString();
+            for (const pairKey in localCache) {
+                for (const wordId in localCache[pairKey]) {
+                    let wordData = localCache[pairKey][wordId];
+                    if (typeof wordData === 'string') {
+                        wordData = { status: wordData, attempts: 1, last_updated: now };
+                        localCache[pairKey][wordId] = wordData;
+                        modified = true;
+                    }
+                    if (wordData.status === 'validé' && !wordData.validation_date) {
+                        wordData.validation_date = now;
+                        modified = true;
+                    }
+                }
+            }
+            if (modified) {
+                // Sauvegarde silencieuse de la migration
+                setDoc(docRef, { progress: localCache }, { merge: true }).catch(e => console.error("Erreur migration validation_date:", e));
+            }
+            
             return localCache;
         }
     } catch (e) {
@@ -103,6 +126,9 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
     }
     
     currentData.status = status;
+    if (status === 'validé') {
+        currentData.validation_date = new Date().toISOString();
+    }
     if (addAttempt) {
         currentData.attempts += 1;
     }

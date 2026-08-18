@@ -25,10 +25,44 @@ function shuffle(array) {
     return array;
 }
 
-// Nettoyage simple (insensible à la casse et espaces en trop)
+// Nettoyage simple (insensible à la casse, espaces, et œ)
 function normalizeText(text) {
-    return text.trim().toLowerCase().replace(/\s+/g, ' ');
+    return text.trim().toLowerCase().replace(/\s+/g, ' ').replace(/œ/g, 'oe');
 }
+
+function getArticleAlternatives(text) {
+    let opts = [text];
+    if (text.startsWith('un ')) opts.push(text.replace(/^un /, 'le '), text.replace(/^un /, "l'"), text.replace(/^un /, 'el '));
+    if (text.startsWith('une ')) opts.push(text.replace(/^une /, 'la '), text.replace(/^une /, "l'"));
+    if (text.startsWith('le ')) opts.push(text.replace(/^le /, 'un '));
+    if (text.startsWith('la ')) opts.push(text.replace(/^la /, 'une '), text.replace(/^la /, 'una '));
+    if (text.startsWith("l'")) opts.push(text.replace(/^l'/, 'un '), text.replace(/^l'/, 'une '), text.replace(/^l'/, 'le '), text.replace(/^l'/, 'la '));
+    if (text.startsWith('el ')) opts.push(text.replace(/^el /, 'un '));
+    if (text.startsWith('una ')) opts.push(text.replace(/^una /, 'la '));
+    if (typeof sessionState !== 'undefined' && sessionState.langTarget === 'EN') {
+        opts.push(text.replace(/^(the |a |an |to )/, ''));
+    }
+    // Also, if the string has no article, and we add an article for finding in the sentence:
+    // This is useful if target is just 'house' and sentence has 'a house'.
+    // Actually, it's safer to just strip the article from the targetWord as a fallback.
+    return opts;
+}
+
+function buildTargetRegex(targetWord) {
+    let allOpts = [];
+    targetWord.split('/').forEach(s => {
+        let t = s.replace(/\(.*?\)/g, '').trim();
+        allOpts.push(...getArticleAlternatives(t));
+        // Add a completely article-stripped version just in case (for highlighting/matching)
+        allOpts.push(t.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer )/g, ''));
+    });
+    // Sort by length descending to match longest first (e.g. "une maison" before "maison")
+    allOpts = [...new Set(allOpts)].filter(x => x.length > 2).sort((a, b) => b.length - a.length);
+    if (allOpts.length === 0) allOpts = [targetWord];
+    const escapedOpts = allOpts.map(opt => opt.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    return new RegExp('(' + escapedOpts.join('|') + ')', 'gi');
+}
+
 
 export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
     sessionState.langSource = source;
@@ -41,9 +75,10 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
         return isNotValidated && matchesLevel;
     });
 
-    // Si on a moins de mots que le volume demandé, on prend tout ce qu'il reste
+    // Si on a moins de mots que le volume demandA©, on prend tout ce qu'il reste
     const shuffled = shuffle([...availableWords]);
     sessionState.words = shuffled.slice(0, volume);
+    sessionState.originalWords = [...sessionState.words]; // Keep for context drill
     sessionState.currentIndex = 0;
     sessionState.isWaitingAction = false;
 
@@ -146,11 +181,11 @@ function renderCurrentWord() {
             let badgeBg = 'rgba(255,255,255,0.1)';
             let badgeColor = 'inherit';
             if (currentWord.level === 'A1') { badgeBg = 'rgba(59, 130, 246, 0.2)'; badgeColor = '#3b82f6'; }
-            if (currentWord.level === 'A2') { badgeBg = 'rgba(16, 185, 129, 0.2)'; badgeColor = '#10b981'; }
-            if (currentWord.level === 'B1') { badgeBg = 'rgba(245, 158, 11, 0.2)'; badgeColor = '#f59e0b'; }
-            if (currentWord.level === 'B2') { badgeBg = 'rgba(239, 68, 68, 0.2)'; badgeColor = '#ef4444'; }
-            if (currentWord.level === 'C1') { badgeBg = 'rgba(139, 92, 246, 0.2)'; badgeColor = '#8b5cf6'; }
-            if (currentWord.level === 'C2') { badgeBg = 'rgba(168, 85, 247, 0.2)'; badgeColor = '#a855f7'; }
+            if (currentWord.level === 'A2') { badgeBg = 'rgba(6, 182, 212, 0.2)'; badgeColor = '#06b6d4'; }
+            if (currentWord.level === 'B1') { badgeBg = 'rgba(16, 185, 129, 0.2)'; badgeColor = '#10b981'; }
+            if (currentWord.level === 'B2') { badgeBg = 'rgba(234, 179, 8, 0.2)'; badgeColor = '#eab308'; }
+            if (currentWord.level === 'C1') { badgeBg = 'rgba(249, 115, 22, 0.2)'; badgeColor = '#f97316'; }
+            if (currentWord.level === 'C2') { badgeBg = 'rgba(239, 68, 68, 0.2)'; badgeColor = '#ef4444'; }
             
             levelBadgeEl.style.background = badgeBg;
             levelBadgeEl.style.color = badgeColor;
@@ -170,9 +205,7 @@ function renderCurrentWord() {
             // Mettre en évidence le mot source dans la phrase
             const sourceWord = currentWord[sessionState.langSource];
             // Echapper le mot source pour la regex
-            const escapedWord = sourceWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            // Mettre en gras le mot source (insensible à la casse)
-            const regex = new RegExp(`(${escapedWord})`, 'gi');
+            const regex = buildTargetRegex(sourceWord);
             const highlightedSentence = sentence.replace(regex, '<span style="font-weight: bold; color: var(--primary-color);">$1</span>');
             
             exampleSentenceEl.innerHTML = highlightedSentence;
@@ -227,7 +260,12 @@ function handleValidation() {
             expectedOptions.push(normalizeText(s.replace(/\(.*?\)/g, ' ')));
         });
 
-        const isCorrect = expectedOptions.includes(normalizedInput) || expectedOptions.includes(inputNoParens);
+        let allExpectedOpts = [];
+        expectedOptions.forEach(opt => allExpectedOpts.push(...getArticleAlternatives(opt)));
+        
+        let allInputOpts = [normalizedInput, inputNoParens, ...getArticleAlternatives(normalizedInput), ...getArticleAlternatives(inputNoParens)];
+
+        const isCorrect = allInputOpts.some(inputOpt => allExpectedOpts.includes(inputOpt));
 
         // Affichage des résultats
         const asked = currentWord[sessionState.langSource];
@@ -308,8 +346,7 @@ function handleValidation() {
                 const sentence = currentWord[`ex_${sessionState.langTarget}`];
                 if (sentence) {
                     const targetWord = currentWord[sessionState.langTarget];
-                    const escapedWord = targetWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                    const regex = new RegExp(`(${escapedWord})`, 'gi');
+                    const regex = buildTargetRegex(targetWord);
                     exampleCorrectText.innerHTML = sentence.replace(regex, '<span class="example-highlight">$1</span>');
                     exampleCorrectLine.style.display = 'flex';
                 } else {
@@ -380,8 +417,20 @@ function handleValidation() {
                 
                 rewriteInput.oninput = () => {
                     const normalizedInput = normalizeText(rewriteInput.value);
-                    const normalizedExpected = normalizeText(expected);
-                    if (normalizedInput === normalizedExpected) {
+                    let isRewriteCorrect = false;
+                    expected.split('/').forEach(s => {
+                        const normExp = normalizeText(s);
+                        const normExpNoParens = normalizeText(s.replace(/\(.*?\)/g, ' '));
+                        
+                        let expOpts = [...getArticleAlternatives(normExp), ...getArticleAlternatives(normExpNoParens)];
+                        let inOpts = [...getArticleAlternatives(normalizedInput)];
+                        
+                        if (inOpts.some(io => expOpts.includes(io))) {
+                            isRewriteCorrect = true;
+                        }
+                    });
+
+                    if (isRewriteCorrect) {
                         rewriteInput.classList.add('correct');
                     } else {
                         rewriteInput.classList.remove('correct');
@@ -402,8 +451,7 @@ function handleValidation() {
                 const sentence = currentWord[`ex_${sessionState.langTarget}`];
                 if (sentence) {
                     const targetWord = currentWord[sessionState.langTarget];
-                    const escapedWord = targetWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                    const regex = new RegExp(`(${escapedWord})`, 'gi');
+                    const regex = buildTargetRegex(targetWord);
                     exampleIncorrectText.innerHTML = sentence.replace(regex, '<span class="example-highlight">$1</span>');
                     exampleIncorrectLine.style.display = 'flex';
                 } else {
@@ -522,6 +570,25 @@ function showEndSession() {
     if (headerSection) headerSection.style.display = 'none';
     if (endContainer) {
         endContainer.style.display = 'flex';
+        
+        // Afficher la promo context-drill si des mots ont des exemples
+        const promo = document.getElementById('context-drill-promo');
+        const wordsWithExamples = sessionState.originalWords ? sessionState.originalWords.filter(w => w['ex_' + sessionState.langTarget]) : [];
+        if (promo) {
+            if (wordsWithExamples.length > 0) {
+                promo.style.display = 'block';
+            } else {
+                promo.style.display = 'none';
+            }
+        }
+        
+        const btnStartContext = document.getElementById('btn-start-context-drill');
+        if (btnStartContext) {
+            btnStartContext.onclick = () => {
+                if (window.startContextDrill) window.startContextDrill();
+            };
+        }
+
         const btnNewBatch = document.getElementById('btn-new-batch');
         if (btnNewBatch) {
             btnNewBatch.onclick = () => {
@@ -640,3 +707,188 @@ function speakWord(text, lang) {
         window.speechSynthesis.speak(utterance);
     }
 }
+
+
+
+// --- CONTEXT DRILL LOGIC ---
+let contextState = {
+    pairs: [],
+    matchesLeft: 0,
+    selectedWordId: null
+};
+
+function startContextDrill() {
+    const wordsWithExamples = sessionState.originalWords.filter(w => w['ex_' + sessionState.langTarget]);
+    if (wordsWithExamples.length === 0) {
+        document.getElementById('nav-home').click();
+        return;
+    }
+
+    const endContainer = document.getElementById('end-session-container');
+    if (endContainer) endContainer.style.display = 'none';
+
+    const contextContainer = document.getElementById('context-drill-container');
+    if (contextContainer) contextContainer.style.display = 'flex';
+
+    contextState.pairs = wordsWithExamples.map(w => {
+        const targetWord = w[sessionState.langTarget];
+        const sentence = w['ex_' + sessionState.langTarget];
+        const regex = buildTargetRegex(targetWord);
+        const sentenceHtml = sentence.replace(regex, '<span class="context-dropzone" data-id="' + w.id + '"></span>');
+        return {
+            id: w.id,
+            wordText: targetWord,
+            sentenceHtml: sentenceHtml
+        };
+    });
+
+    contextState.matchesLeft = contextState.pairs.length;
+    contextState.selectedWordId = null;
+
+    renderContextDrill();
+}
+
+function renderContextDrill() {
+    const poolEl = document.getElementById('context-word-pool');
+    const sentencesEl = document.getElementById('context-sentences-list');
+    
+    poolEl.innerHTML = '';
+    sentencesEl.innerHTML = '';
+
+    const shuffledWords = shuffle([...contextState.pairs]);
+    const shuffledSentences = shuffle([...contextState.pairs]);
+
+    shuffledWords.forEach(pair => {
+        const btn = document.createElement('div');
+        btn.className = 'context-word-btn';
+        btn.textContent = pair.wordText;
+        btn.dataset.id = pair.id;
+        btn.draggable = true;
+
+        btn.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData('text/plain', pair.id);
+            btn.classList.add('dragging');
+        });
+        btn.addEventListener('dragend', () => {
+            btn.classList.remove('dragging');
+        });
+
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.context-word-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            contextState.selectedWordId = pair.id;
+            
+            document.querySelectorAll('.context-dropzone').forEach(dz => {
+                if (!dz.classList.contains('success')) {
+                    dz.classList.add('selectable');
+                }
+            });
+        });
+
+        poolEl.appendChild(btn);
+    });
+
+    shuffledSentences.forEach(pair => {
+        const card = document.createElement('div');
+        card.className = 'context-sentence-card';
+        card.id = 'sentence-card-' + pair.id;
+        
+        const text = document.createElement('div');
+        text.className = 'context-sentence-text';
+        text.innerHTML = pair.sentenceHtml;
+
+        card.appendChild(text);
+        sentencesEl.appendChild(card);
+
+        const dzs = card.querySelectorAll('.context-dropzone');
+        dzs.forEach(dz => {
+            dz.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dz.classList.add('drag-over');
+            });
+            dz.addEventListener('dragleave', () => {
+                dz.classList.remove('drag-over');
+            });
+            dz.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dz.classList.remove('drag-over');
+                const draggedId = e.dataTransfer.getData('text/plain');
+                handleContextMatch(draggedId, dz.dataset.id, dz, card);
+            });
+
+            dz.addEventListener('click', () => {
+                if (contextState.selectedWordId && !dz.classList.contains('success')) {
+                    handleContextMatch(contextState.selectedWordId, dz.dataset.id, dz, card);
+                }
+            });
+        });
+    });
+}
+
+function handleContextMatch(draggedId, targetId, dzEl, cardEl) {
+    if (draggedId === targetId) {
+        if (window.appSettings && window.appSettings.soundEnabled !== false) {
+            const audio = new Audio('assets/sounds/correct.mp3');
+            audio.volume = 0.5;
+            audio.play().catch(e => console.log('Audio error:', e));
+        }
+
+        const btn = document.querySelector('.context-word-btn[data-id="' + draggedId + '"]');
+        if (btn) {
+            btn.classList.remove('selected');
+            btn.classList.add('success-match');
+            setTimeout(() => btn.style.display = 'none', 500);
+        }
+
+        dzEl.classList.remove('selectable');
+        dzEl.classList.add('success');
+        dzEl.textContent = btn ? btn.textContent : '...';
+
+        cardEl.classList.add('matched');
+        setTimeout(() => cardEl.style.display = 'none', 500);
+
+        contextState.selectedWordId = null;
+        document.querySelectorAll('.context-dropzone.selectable').forEach(d => d.classList.remove('selectable'));
+
+        contextState.matchesLeft--;
+        if (contextState.matchesLeft <= 0) {
+            setTimeout(showContextEndSession, 600);
+        }
+    } else {
+        if (window.appSettings && window.appSettings.soundEnabled !== false) {
+            const audio = new Audio('assets/sounds/incorrect.mp3');
+            audio.volume = 0.5;
+            audio.play().catch(e => console.log('Audio error:', e));
+        }
+        dzEl.classList.add('error-shake');
+        setTimeout(() => dzEl.classList.remove('error-shake'), 400);
+    }
+}
+
+function showContextEndSession() {
+    const contextContainer = document.getElementById('context-drill-container');
+    if (contextContainer) contextContainer.style.display = 'none';
+    
+    const endContainer = document.getElementById('end-session-container');
+    if (endContainer) {
+        endContainer.style.display = 'flex';
+        const promo = document.getElementById('context-drill-promo');
+        if (promo) promo.style.display = 'none';
+    }
+
+    if (typeof confetti === 'function') {
+        const duration = 2 * 1000;
+        const animationEnd = Date.now() + duration;
+        const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+        function randomInRange(min, max) { return Math.random() * (max - min) + min; }
+        const interval = setInterval(function() {
+            const timeLeft = animationEnd - Date.now();
+            if (timeLeft <= 0) return clearInterval(interval);
+            const particleCount = 50 * (timeLeft / duration);
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+        }, 250);
+    }
+}
+
+window.startContextDrill = startContextDrill;

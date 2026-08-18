@@ -11,8 +11,8 @@ export const translations = {
         title_home: "Nouvelle session",
         subtitle_home_intro: "{total} mots à apprendre gratuitement !",
         subtitle_home_remaining: "Il vous reste {remaining} mots à valider.",
-        label_source: "Langue de départ (Source)",
-        label_target: "Langue d'arrivée (Cible)",
+        label_source: "Traduire de :",
+        label_target: "Vers :",
         label_volume: "Nombre de mots",
         btn_start_drill: "Démarrer le Drill",
         
@@ -127,8 +127,8 @@ export const translations = {
         title_home: "New Session",
         subtitle_home_intro: "{total} words to learn for free!",
         subtitle_home_remaining: "You have {remaining} words remaining to validate.",
-        label_source: "Source Language",
-        label_target: "Target Language",
+        label_source: "Translate from:",
+        label_target: "To:",
         label_volume: "Number of words",
         btn_start_drill: "Start Drill",
         
@@ -243,8 +243,8 @@ export const translations = {
         title_home: "Neue Sitzung",
         subtitle_home_intro: "{total} Wörter kostenlos lernen!",
         subtitle_home_remaining: "Sie müssen noch {remaining} Wörter lernen.",
-        label_source: "Ausgangssprache",
-        label_target: "Zielsprache",
+        label_source: "Übersetzen von:",
+        label_target: "Nach:",
         label_volume: "Anzahl der Woerter",
         btn_start_drill: "Drill starten",
         
@@ -359,8 +359,8 @@ export const translations = {
         title_home: "Nueva sesión",
         subtitle_home_intro: "¡{total} palabras para aprender gratis!",
         subtitle_home_remaining: "Le quedan {remaining} palabras por validar.",
-        label_source: "Idioma de origen",
-        label_target: "Idioma de destino",
+        label_source: "Traducir de:",
+        label_target: "Hacia:",
         label_volume: "Número de palabras",
         btn_start_drill: "Iniciar el Drill",
         

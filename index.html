@@ -55,28 +55,48 @@
             </p>
             
             <div class="card config-card">
-                <div class="form-group">
-                    <label data-i18n="label_source">Langue de départ (Source)</label>
-                    <select id="select-lang-source">
-                        <option value="fr" selected>Français (FR)</option>
-                        <option value="en">Anglais (EN)</option>
-                        <option value="de">Allemand (DE)</option>
-                        <option value="es">Espagnol (ES)</option>
-                    </select>
+                <div style="display: flex; gap: 1rem; align-items: flex-end;">
+                    <div class="form-group" style="flex: 1; margin-bottom: 0;">
+                        <label data-i18n="label_source">Traduire de :</label>
+                        <select id="select-lang-source">
+                            <option value="fr" selected>Français (FR)</option>
+                            <option value="en">Anglais (EN)</option>
+                            <option value="de">Allemand (DE)</option>
+                            <option value="es">Espagnol (ES)</option>
+                        </select>
+                    </div>
+
+                    <div style="padding-bottom: 0.75rem; color: var(--text-secondary);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+
+                    <div class="form-group" style="flex: 1; margin-bottom: 0;">
+                        <label data-i18n="label_target">Vers :</label>
+                        <select id="select-lang-target">
+                            <option value="fr">Français (FR)</option>
+                            <option value="en" selected>Anglais (EN)</option>
+                            <option value="de">Allemand (DE)</option>
+                            <option value="es">Espagnol (ES)</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label data-i18n="label_target">Langue d'arrivée (Cible)</label>
-                    <select id="select-lang-target">
-                        <option value="fr">Français (FR)</option>
-                        <option value="en" selected>Anglais (EN)</option>
-                        <option value="de">Allemand (DE)</option>
-                        <option value="es">Espagnol (ES)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label data-i18n="label_level">Niveaux CECRL</label>
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <label style="display: flex; align-items: center; gap: 0.4rem; position: relative;">
+                        <span data-i18n="label_level">Niveaux CECRL</span>
+                        <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; this.querySelector('.tooltip-content').style.opacity='1'; this.querySelector('.tooltip-content').style.visibility='visible';" onmouseout="this.style.color='var(--text-secondary)'; this.querySelector('.tooltip-content').style.opacity='0'; this.querySelector('.tooltip-content').style.visibility='hidden';" onclick="const t=this.querySelector('.tooltip-content'); const isVis = t.style.opacity === '1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span class="tooltip-content" style="position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 8px; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.75rem; border-radius: 8px; font-size: 0.85rem; width: 250px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 10; font-weight: normal; line-height: 1.4; pointer-events: none;">
+                                <strong>Cadre Européen Commun de Référence pour les Langues</strong><br><br>
+                                A1 = Débutant<br>
+                                C2 = Bilingue
+                            </span>
+                        </span>
+                    </label>
                     <div class="level-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;" id="drill-level-checkboxes">
                         <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-a1" value="A1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
@@ -84,23 +104,23 @@
                         </label>
                         <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-a2" value="A2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">A2</span>
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
                         </label>
                         <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-b1" value="B1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(245, 158, 11, 0.2); color: #f59e0b;">B1</span>
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">B1</span>
                         </label>
                         <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-b2" value="B2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">B2</span>
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(234, 179, 8, 0.2); color: #eab308;">B2</span>
                         </label>
                         <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-c1" value="C1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(139, 92, 246, 0.2); color: #8b5cf6;">C1</span>
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(249, 115, 22, 0.2); color: #f97316;">C1</span>
                         </label>
                         <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-c2" value="C2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(168, 85, 247, 0.2); color: #a855f7;">C2</span>
+                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">C2</span>
                         </label>
                     </div>
                 </div>
@@ -122,8 +142,9 @@
     <template id="view-drill">
         <div class="view-content drill-container animate-slide-up">
             <div class="drill-header" id="drill-header-section">
-                <div class="lang-pair">
+                <div class="lang-pair" style="display: flex; align-items: center; gap: 0.5rem;">
                     <span id="drill-lang-source" class="lang-badge">FR</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary); opacity: 0.7;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     <span id="drill-lang-target" class="lang-badge">EN</span>
                 </div>
                 <div class="drill-progress">
@@ -134,7 +155,37 @@
             <div id="end-session-container" class="card" style="display: none; text-align: center; padding: 3rem 2rem; flex-direction: column; align-items: center; gap: 1.5rem;">
                 <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--success-color);" data-i18n="congrats">Félicitations ! 🎉</h2>
                 <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1rem;" data-i18n="congrats_sub">Vous avez terminé tous les mots de cette session.</p>
-                <button id="btn-new-batch" class="btn-primary" style="max-width: 250px;" data-i18n="btn_new_batch">Démarrer un nouveau lot</button>
+                
+                <div id="context-drill-promo" style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; width: 100%; max-width: 500px; margin-bottom: 0.5rem; text-align: left;">
+                    <h3 style="margin-bottom: 0.5rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        <span data-i18n="context_promo_title">Consolider la mémorisation</span>
+                    </h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="context_promo_desc">
+                        Associez les mots appris à leurs phrases de contexte pour les ancrer définitivement dans votre mémoire à long terme.
+                    </p>
+                    <button id="btn-start-context-drill" class="btn-primary" style="width: 100%; margin-bottom: 0.5rem;" data-i18n="btn_start_context">Lancer l'exercice de contexte</button>
+                </div>
+
+                <button id="btn-new-batch" class="btn-primary btn-secondary-action" style="max-width: 250px;" data-i18n="btn_new_batch">Démarrer un nouveau lot</button>
+            </div>
+
+            <!-- NOUVELLE ZONE CONTEXT DRILL -->
+            <div id="context-drill-container" class="card" style="display: none; padding: 2rem; flex-direction: column; gap: 2rem;">
+                <div style="text-align: center;">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="context_drill_title">Mise en contexte</h2>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;" data-i18n="context_drill_sub">Touchez (ou glissez) un mot puis complétez la phrase correspondante.</p>
+                </div>
+
+                <!-- Pool de mots -->
+                <div id="context-word-pool" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; min-height: 60px; padding: 1rem; background: var(--bg-color); border-radius: 12px; border: 1px dashed var(--border-color);">
+                    <!-- Mots générés dynamiquement ici -->
+                </div>
+
+                <!-- Liste des phrases -->
+                <div id="context-sentences-list" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                    <!-- Phrases générées dynamiquement ici -->
+                </div>
             </div>
 
             <div class="flashcard">
@@ -271,23 +322,23 @@
                             </label>
                             <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                                 <input type="checkbox" id="filter-level-a2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">A2</span>
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
                             </label>
                             <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                                 <input type="checkbox" id="filter-level-b1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(245, 158, 11, 0.2); color: #f59e0b;">B1</span>
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">B1</span>
                             </label>
                             <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
                                 <input type="checkbox" id="filter-level-b2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">B2</span>
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(234, 179, 8, 0.2); color: #eab308;">B2</span>
                             </label>
                             <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
                                 <input type="checkbox" id="filter-level-c1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(139, 92, 246, 0.2); color: #8b5cf6;">C1</span>
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(249, 115, 22, 0.2); color: #f97316;">C1</span>
                             </label>
                             <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
                                 <input type="checkbox" id="filter-level-c2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(168, 85, 247, 0.2); color: #a855f7;">C2</span>
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">C2</span>
                             </label>
                         </div>
                     </div>
@@ -296,11 +347,11 @@
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th class="sortable" data-sort="source" style="width: 25%; cursor: pointer;" data-i18n="th_source">Mot Source <span class="sort-icon"></span></th>
-                                <th class="sortable" data-sort="target" style="width: 25%; cursor: pointer;" data-i18n="th_translation">Traduction <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="source" style="width: 23%; cursor: pointer;" data-i18n="th_source">Mot Source <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="target" style="width: 23%; cursor: pointer;" data-i18n="th_translation">Traduction <span class="sort-icon"></span></th>
                                 <th class="sortable" data-sort="type" style="width: 15%; cursor: pointer; white-space: nowrap;" data-i18n="th_type">Catégorie <span class="sort-icon"></span></th>
-                                <th class="sortable" data-sort="level" style="width: 10%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_level">Niveau <span class="sort-icon"></span></th>
-                                <th class="sortable" data-sort="attempts" style="width: 10%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_attempts">Tentatives <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="level" style="width: 9%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_level">Niveau <span class="sort-icon"></span></th>
+                                <th class="sortable" data-sort="attempts" style="width: 15%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_attempts">Tentatives <span class="sort-icon"></span></th>
                                 <th class="sortable" data-sort="status" style="width: 15%; text-align: center; cursor: pointer; white-space: nowrap;" data-i18n="th_status">Statut <span class="sort-icon"></span></th>
                             </tr>
                         </thead>

@@ -865,3 +865,112 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     color: var(--primary-color);
 }
 
+
+/* --- Context Drill Styles --- */
+.context-word-btn {
+    padding: 0.5rem 1rem;
+    background: var(--surface-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: grab;
+    transition: all 0.2s;
+    user-select: none;
+    box-shadow: var(--shadow-sm);
+}
+
+.context-word-btn:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.context-word-btn:active, .context-word-btn.dragging {
+    cursor: grabbing;
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.context-word-btn.selected {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.context-word-btn.success-match {
+    background: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+    transform: scale(1.1);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.context-sentence-card {
+    background: var(--surface-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    transition: all 0.3s;
+}
+
+.context-sentence-card.matched {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: var(--success-color);
+    opacity: 0;
+    transform: translateX(20px);
+    pointer-events: none;
+}
+
+.context-sentence-text {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    flex: 1;
+}
+
+.context-dropzone {
+    display: inline-block;
+    min-width: 100px;
+    height: 34px;
+    border: 2px dashed var(--border-color);
+    border-radius: 6px;
+    vertical-align: middle;
+    margin: 0 0.4rem;
+    background: rgba(0,0,0,0.02);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.context-dropzone.drag-over {
+    border-color: var(--primary-color);
+    background: rgba(59, 130, 246, 0.1);
+    transform: scale(1.05);
+}
+
+.context-dropzone.selectable {
+    border-color: var(--primary-color);
+    border-style: solid;
+    background: rgba(59, 130, 246, 0.05);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.context-dropzone.success {
+    border-color: var(--success-color);
+    border-style: solid;
+    background: var(--success-color);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.05rem;
+}
+
