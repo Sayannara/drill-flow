@@ -508,12 +508,44 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 }
 
 .btn-drill-action.btn-secondary-action {
-    background-color: rgba(100, 116, 139, 0.1);
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.btn-drill-action.btn-secondary-action:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+[data-theme="dark"] .btn-drill-action.btn-secondary-action {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #475569;
+}
+
+[data-theme="dark"] .btn-drill-action.btn-secondary-action:hover {
+    background-color: rgba(248, 113, 113, 0.15);
+    color: #fca5a5;
+    border-color: rgba(248, 113, 113, 0.4);
+}
+
+[data-theme="dark"] .btn-drill-action.btn-secondary-action kbd {
+    background-color: #334155;
+    color: #f8fafc;
+    border-color: #64748b;
+}
+
+#btn-mobile-secondary {
+    background-color: var(--surface-color);
     color: var(--text-primary);
     border: 1px solid var(--border-color);
 }
-.btn-drill-action.btn-secondary-action:hover {
-    background-color: rgba(100, 116, 139, 0.2);
+[data-theme="dark"] #btn-mobile-secondary {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #475569;
 }
 
 .mobile-only-btn {
