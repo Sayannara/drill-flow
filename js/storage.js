@@ -1,6 +1,6 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
-import { db } from './firebase-config.js?v=53';
-import { getCurrentUser } from './auth.js?v=53';
+import { db } from './firebase-config.js?v=54';
+import { getCurrentUser } from './auth.js?v=54';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
@@ -85,11 +85,17 @@ export function loadProgress() {
 }
 
 // Récupère l'état (status) d'un mot
+// Un mot est 'validé' uniquement s'il est réussi du 1er coup (attempts === 1)
 export function getWordStatus(langSource, langTarget, wordId) {
     const pairKey = `${langSource}-${langTarget}`;
     if (localCache[pairKey] && localCache[pairKey][wordId]) {
         if (typeof localCache[pairKey][wordId] === 'object') {
-            return localCache[pairKey][wordId].status || 'actif';
+            const data = localCache[pairKey][wordId];
+            if (data.status === 'ignoré') return 'ignoré';
+            if (data.status === 'validé' && data.attempts === 1) {
+                return 'validé';
+            }
+            return 'actif';
         }
         return localCache[pairKey][wordId];
     }
@@ -128,6 +134,8 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
     currentData.status = status;
     if (status === 'validé') {
         currentData.validation_date = new Date().toISOString();
+    } else if (status === 'ignoré') {
+        currentData.attempts = 0;
     }
     
     if (addAttempt) {

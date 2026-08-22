@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=53';
-import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=53';
-import { translations } from './i18n.js?v=53';
+import { vocabulary } from './data/vocabulary.js?v=54';
+import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=54';
+import { translations } from './i18n.js?v=54';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -71,7 +71,8 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     
     // Filtrer les mots qui correspondent au niveau
     const activeWords = vocabulary.filter(w => {
-        return getWordStatus(source, target, w.id) !== 'validé' && levels.includes(w.level);
+        const status = getWordStatus(source, target, w.id);
+        return status !== 'validé' && status !== 'ignoré' && levels.includes(w.level);
     });
     
     const validatedWords = vocabulary.filter(w => {
@@ -388,43 +389,29 @@ function handleValidation() {
                 }
             }
             
-            const iconRotate = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>`;
             const iconCheck = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
-            
-            const labelReview = translations[lang].action_review;
-            const labelMastered = translations[lang].action_mastered;
+            const labelContinue = translations[lang].action_continue || "Continuer";
             
             dynamicHints.innerHTML = isMobile ? '' : `
                 <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
-                    <kbd class="desktop-only">Entrée</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>
-                </button>
-                <button id="btn-next-keep" class="btn-drill-action btn-secondary-action">
-                    <kbd class="desktop-only">G</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
+                    <kbd class="desktop-only">Entrée</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelContinue}</span>
                 </button>
             `;
             
             const btnAuto = document.getElementById('btn-next-auto');
             if (btnAuto) btnAuto.onclick = () => proceedNextWord('auto');
             
-            const btnKeep = document.getElementById('btn-next-keep');
-            if (btnKeep) btnKeep.onclick = () => proceedNextWord('keep');
-            
             if (isMobile) {
                 const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
                 const btnMobilePrimary = document.getElementById('btn-mobile-primary');
                 
                 if (btnMobileSecondary && btnMobilePrimary) {
-                    btnMobileSecondary.style.visibility = 'visible';
+                    btnMobileSecondary.style.visibility = 'hidden';
                     
-                    // Correct : Action par défaut (en bas) = Acquis. Action secondaire (en haut) = À revoir
-                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    // Correct : Action unique = Continuer
+                    btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconCheck} ${labelContinue}</span>`;
                     btnMobilePrimary.className = "btn-primary";
-                    
-                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
-                    btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
-                    
-                    btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
-                    btnMobileSecondary.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
+                    btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('auto'); };
                 }
             }
         } else {
@@ -494,25 +481,25 @@ function handleValidation() {
             }
             
             const iconRotate = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>`;
-            const iconCheck = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+            const iconBan = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>`;
             
             const labelReview = translations[lang].action_review;
-            const labelMastered = translations[lang].action_mastered;
+            const labelIgnore = translations[lang].action_ignore || "Ne plus me demander";
             
             dynamicHints.innerHTML = isMobile ? '' : `
                 <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
                     <kbd class="desktop-only">Entrée</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
                 </button>
-                <button id="btn-next-remove" class="btn-drill-action btn-secondary-action">
-                    <kbd class="desktop-only">Alt + R</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>
+                <button id="btn-next-ignore" class="btn-drill-action btn-secondary-action">
+                    <kbd class="desktop-only">Alt + R</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconBan} ${labelIgnore}</span>
                 </button>
             `;
             
             const btnAuto = document.getElementById('btn-next-auto');
             if (btnAuto) btnAuto.onclick = () => proceedNextWord('auto');
             
-            const btnRemove = document.getElementById('btn-next-remove');
-            if (btnRemove) btnRemove.onclick = () => proceedNextWord('remove');
+            const btnIgnore = document.getElementById('btn-next-ignore');
+            if (btnIgnore) btnIgnore.onclick = () => proceedNextWord('ignore');
             
             if (isMobile) {
                 const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
@@ -521,15 +508,15 @@ function handleValidation() {
                 if (btnMobileSecondary && btnMobilePrimary) {
                     btnMobileSecondary.style.visibility = 'visible';
                     
-                    // Incorrect : Action par défaut (en bas) = À revoir. Action secondaire (en haut) = Acquis
+                    // Incorrect : Action par défaut = À revoir. Action secondaire = Ne plus me demander
                     btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
                     btnMobilePrimary.className = "btn-primary";
                     
-                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>`;
+                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconBan} ${labelIgnore}</span>`;
                     btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
                     
                     btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
-                    btnMobileSecondary.onclick = (e) => { e.stopPropagation(); proceedNextWord('remove'); };
+                    btnMobileSecondary.onclick = (e) => { e.stopPropagation(); proceedNextWord('ignore'); };
                 }
             }
         }
@@ -539,7 +526,7 @@ function handleValidation() {
     }
 }
 
-// Action sur le mot (garder ou retirer)
+// Action sur le mot (garder, retirer ou ignorer)
 function proceedNextWord(action) {
     if (!sessionState.isWaitingAction || sessionState.words.length === 0) return;
 
@@ -548,14 +535,25 @@ function proceedNextWord(action) {
     const wasCorrect = statusBanner.dataset.correct === "true";
 
     const prevStats = getWordStats(sessionState.langSource, sessionState.langTarget, currentWord.id);
+    const prevAttempts = prevStats.attempts || 0;
 
     let finalStatus = 'actif'; // par défaut, on garde
     let removeFromSession = false;
+    let addAttempt = true;
 
-    if (action === 'auto') {
+    if (action === 'ignore') {
+        finalStatus = 'ignoré';
+        removeFromSession = true;
+        addAttempt = false;
+    } else if (action === 'auto') {
         if (wasCorrect) {
             removeFromSession = true;
-            finalStatus = 'validé';
+            // Un mot est validé uniquement s'il est réussi du 1er coup (ou s'il était déjà validé en révision)
+            if (prevAttempts === 0 || prevStats.status === 'validé') {
+                finalStatus = 'validé';
+            } else {
+                finalStatus = 'actif';
+            }
         } else {
             finalStatus = 'actif';
             removeFromSession = false;
@@ -565,10 +563,14 @@ function proceedNextWord(action) {
         removeFromSession = false;
     } else if (action === 'remove') {
         removeFromSession = true;
-        finalStatus = 'validé';
+        if (prevAttempts === 0 || prevStats.status === 'validé') {
+            finalStatus = 'validé';
+        } else {
+            finalStatus = 'actif';
+        }
     }
 
-    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, true);
+    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, addAttempt);
 
     // Supprimer le mot de la session courante s'il est retiré ou réussi
     if (removeFromSession) {
@@ -682,8 +684,7 @@ export function handleDrillKeydown(e) {
         const key = e.key.toLowerCase();
         
         if (isRewriteFocused) {
-            // Dans le champ de réécriture, on ignore les raccourcis direct G et R
-            // mais on autorise Échap pour sortir du focus (blur), et Alt+R / Alt+G pour forcer l'action
+            // Dans le champ de réécriture, on autorise Échap pour sortir du focus (blur), et Alt+R pour ignorer
             if (e.key === 'Escape') {
                 e.preventDefault();
                 e.stopPropagation();
@@ -694,14 +695,7 @@ export function handleDrillKeydown(e) {
             if (key === 'r' && e.altKey) {
                 e.preventDefault();
                 e.stopPropagation();
-                proceedNextWord('remove');
-                return;
-            }
-
-            if (key === 'g' && e.altKey) {
-                e.preventDefault();
-                e.stopPropagation();
-                proceedNextWord('keep');
+                proceedNextWord('ignore');
                 return;
             }
 
@@ -717,14 +711,10 @@ export function handleDrillKeydown(e) {
             e.preventDefault();
             e.stopPropagation();
             proceedNextWord('auto');
-        } else if (key === 'g') {
-            e.preventDefault();
-            e.stopPropagation();
-            proceedNextWord('keep');
         } else if (key === 'r') {
             e.preventDefault();
             e.stopPropagation();
-            proceedNextWord('remove');
+            proceedNextWord('ignore');
         } else if (key === 'p' || key === 's') {
             e.preventDefault();
             e.stopPropagation();
