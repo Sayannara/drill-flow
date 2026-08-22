@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=10">
+    <link rel="stylesheet" href="css/style.css?v=11">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -69,10 +69,10 @@
                     <div class="form-group" style="flex: 1; margin-bottom: 0;">
                         <label data-i18n="label_source">Traduire de :</label>
                         <select id="select-lang-source">
-                            <option value="fr" selected>Français (FR)</option>
-                            <option value="en">Anglais (EN)</option>
-                            <option value="de">Allemand (DE)</option>
-                            <option value="es">Espagnol (ES)</option>
+                            <option value="fr" selected>Français</option>
+                            <option value="en">Anglais</option>
+                            <option value="de">Allemand</option>
+                            <option value="es">Espagnol</option>
                         </select>
                     </div>
 
@@ -83,10 +83,10 @@
                     <div class="form-group" style="flex: 1; margin-bottom: 0;">
                         <label data-i18n="label_target">Vers :</label>
                         <select id="select-lang-target">
-                            <option value="fr">Français (FR)</option>
-                            <option value="en" selected>Anglais (EN)</option>
-                            <option value="de">Allemand (DE)</option>
-                            <option value="es">Espagnol (ES)</option>
+                            <option value="fr">Français</option>
+                            <option value="en" selected>Anglais</option>
+                            <option value="de">Allemand</option>
+                            <option value="es">Espagnol</option>
                         </select>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                             </span>
                         </span>
                     </label>
-                    <div class="level-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;" id="drill-level-checkboxes">
+                    <div class="level-filter-group" style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap;" id="drill-level-checkboxes">
                         <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
                             <input type="checkbox" id="drill-level-a1" value="A1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                             <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                <button id="btn-start-session" class="btn-primary" data-i18n="btn_start_drill" style="width: 100%; margin-top: 0.5rem;">Démarrer le Drill</button>
+                <button id="btn-start-session" class="btn-primary" data-i18n="btn_start_drill" style="width: 100%; margin-top: 0.5rem;">Drill</button>
             </div>
         </div>
     </template>
@@ -577,8 +577,8 @@
     </div>
 
     <!-- Scripts -->
-    <script type="module" src="js/firebase-config.js"></script>
-    <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=57"></script>
+    <script type="module" src="js/firebase-config.js?v=58"></script>
+    <script type="module" src="js/auth.js?v=58"></script>
+    <script type="module" src="js/main.js?v=58"></script>
 </body>
 </html>

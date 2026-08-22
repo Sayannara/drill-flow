@@ -1,4 +1,4 @@
-import { auth } from './firebase-config.js?v=57';
+import { auth } from './firebase-config.js?v=58';
 import { 
     onAuthStateChanged,
     createUserWithEmailAndPassword,
@@ -6,7 +6,7 @@ import {
     signOut,
     sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=57';
+import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=58';
 
 let currentUser = null;
 
@@ -88,7 +88,7 @@ function updateAuthUI(user) {
         authBtn.textContent = "Déconnexion";
         authBtn.onclick = logoutUser;
     } else {
-        authBtn.textContent = "Se connecter / S'inscrire";
+        authBtn.textContent = "Connexion";
         authBtn.onclick = openAuthModal;
     }
     window.dispatchEvent(new CustomEvent('auth-changed', { detail: { user } }));

@@ -21,7 +21,7 @@ export const translations = {
         mode_desc_discovery: "100% de nouveaux mots pour enrichir votre vocabulaire.",
         mode_desc_smart: "Mélange intelligent de nouveaux mots (80%) et de révisions espacées (20%).",
         mode_desc_review: "100% de mots déjà validés pour consolider votre mémoire à long terme.",
-        btn_start_drill: "Démarrer le Drill",
+        btn_start_drill: "Drill",
         
         // Drill View
         label_word: "Mot:",
@@ -145,7 +145,7 @@ export const translations = {
         mode_desc_discovery: "100% new words to expand your vocabulary.",
         mode_desc_smart: "Smart mix of new words (80%) and spaced repetitions (20%).",
         mode_desc_review: "100% previously mastered words to consolidate long-term memory.",
-        btn_start_drill: "Start Drill",
+        btn_start_drill: "Drill",
         
         // Drill View
         label_word: "Word:",
@@ -269,7 +269,7 @@ export const translations = {
         mode_desc_discovery: "100% neue Wörter, um Ihren Wortschatz zu erweitern.",
         mode_desc_smart: "Intelligente Mischung aus neuen Wörtern (80%) und Wiederholungen (20%).",
         mode_desc_review: "100% bereits gelernte Wörter, um das Langzeitgedächtnis zu festigen.",
-        btn_start_drill: "Drill starten",
+        btn_start_drill: "Drill",
         
         // Drill View
         label_word: "Wort:",
@@ -393,7 +393,7 @@ export const translations = {
         mode_desc_discovery: "100% de palabras nuevas para enriquecer su vocabulario.",
         mode_desc_smart: "Mezcla inteligente de palabras nuevas (80%) y repasos espaciados (20%).",
         mode_desc_review: "100% de palabras ya aprendidas para consolidar la memoria a largo plazo.",
-        btn_start_drill: "Iniciar el Drill",
+        btn_start_drill: "Drill",
         
         // Drill View
         label_word: "Palabra:",
