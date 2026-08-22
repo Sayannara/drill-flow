@@ -25,16 +25,26 @@
             <button id="nav-about" class="nav-btn" data-i18n="nav_about">Démarche Projet</button>
         </nav>
         <div class="header-actions">
-            <select id="app-lang-select" title="Changer la langue de l'application" style="width: auto; padding: 0.35rem 0.6rem; border-radius: 8px; font-weight: 600; font-size: 0.85rem; margin-right: 0.5rem; background: var(--surface-color); color: var(--text-primary); border: 1px solid var(--border-color); cursor: pointer; outline: none; font-family: var(--font-sans); transition: border-color 0.2s;">
-                <option value="fr">FR</option>
-                <option value="en">EN</option>
-                <option value="de">DE</option>
-                <option value="es">ES</option>
-            </select>
-            <button id="auth-btn" class="btn-small btn-secondary-action" style="white-space: nowrap; font-size: 0.85rem; padding: 0.4rem 0.8rem; border-radius: 8px; margin-right: 0.5rem;">Connexion</button>
+            <!-- Custom Language Dropdown -->
+            <div class="custom-lang-selector" style="position: relative; display: inline-block;">
+                <button id="lang-toggle-btn" title="Changer la langue de l'application" style="padding: 0.35rem 0.6rem; border-radius: 8px; font-weight: 600; font-size: 0.85rem; background: var(--surface-color); color: var(--text-primary); border: 1px solid var(--border-color); cursor: pointer; display: flex; align-items: center; gap: 0.25rem; font-family: var(--font-sans); transition: border-color 0.2s;">
+                    <span id="current-lang-text">FR</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div id="lang-dropdown-menu" style="position: absolute; top: 100%; right: 0; margin-top: 0.25rem; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 0.25rem; display: none; flex-direction: column; gap: 0.1rem; z-index: 50; min-width: 60px;">
+                    <button class="lang-option" data-val="fr" style="padding: 0.4rem 0.8rem; border: none; background: transparent; cursor: pointer; border-radius: 4px; color: var(--text-primary); font-weight: 500; font-family: var(--font-sans); transition: background 0.2s;">FR</button>
+                    <button class="lang-option" data-val="en" style="padding: 0.4rem 0.8rem; border: none; background: transparent; cursor: pointer; border-radius: 4px; color: var(--text-primary); font-weight: 500; font-family: var(--font-sans); transition: background 0.2s;">EN</button>
+                    <button class="lang-option" data-val="de" style="padding: 0.4rem 0.8rem; border: none; background: transparent; cursor: pointer; border-radius: 4px; color: var(--text-primary); font-weight: 500; font-family: var(--font-sans); transition: background 0.2s;">DE</button>
+                    <button class="lang-option" data-val="es" style="padding: 0.4rem 0.8rem; border: none; background: transparent; cursor: pointer; border-radius: 4px; color: var(--text-primary); font-weight: 500; font-family: var(--font-sans); transition: background 0.2s;">ES</button>
+                </div>
+            </div>
+
             <button id="theme-toggle" class="icon-btn" title="Changer de thème">
                 <span class="theme-icon">🌙</span>
             </button>
+            
+            <button id="auth-btn" class="btn-small btn-secondary-action" style="white-space: nowrap; font-size: 0.85rem; padding: 0.4rem 0.8rem; border-radius: 8px;">Connexion</button>
+            
             <button id="menu-toggle" class="icon-btn mobile-menu-btn" title="Menu">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
             </button>
@@ -81,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="form-group" style="margin-top: 1.5rem;">
+                <div class="form-group" style="margin-top: 2rem; margin-bottom: 2rem;">
                     <label style="display: flex; align-items: center; gap: 0.4rem; position: relative;">
                         <span data-i18n="label_level">Niveaux CECRL</span>
                         <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; this.querySelector('.tooltip-content').style.opacity='1'; this.querySelector('.tooltip-content').style.visibility='visible';" onmouseout="this.style.color='var(--text-secondary)'; this.querySelector('.tooltip-content').style.opacity='0'; this.querySelector('.tooltip-content').style.visibility='hidden';" onclick="const t=this.querySelector('.tooltip-content'); const isVis = t.style.opacity === '1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';">
@@ -125,15 +135,38 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label data-i18n="label_volume">Nombre de mots</label>
-                    <div class="range-container">
-                        <input type="range" id="input-volume" min="5" max="20" value="20" step="5">
-                        <span id="volume-display" class="badge">20 mots</span>
+                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                    <div class="form-group" style="flex: 1; min-width: 200px; margin-bottom: 0;">
+                        <label data-i18n="label_volume">Nombre de mots</label>
+                        <div class="range-container" style="display: flex; align-items: center; height: 42px; gap: 0.5rem;">
+                            <input type="range" id="input-volume" min="5" max="20" value="20" step="5" style="flex: 1; margin: 0;">
+                            <span id="volume-display" class="badge">20 mots</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="flex: 1.5; min-width: 250px; margin-bottom: 0;">
+                        <label data-i18n="label_mode">Mode d'entraînement</label>
+                        <div class="segmented-control" id="mode-segmented-control" style="display: flex; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; height: 42px;">
+                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative;">
+                                <input type="radio" name="drill-mode" value="discovery" checked style="opacity: 0; position: absolute; width: 0; height: 0;">
+                                <div class="segment-btn" style="padding: 0.6rem; font-size: 0.9rem; font-weight: 600; transition: all 0.2s;" data-i18n="mode_discovery">Découverte</div>
+                            </label>
+                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; border-left: 1px solid var(--border-color); border-right: 1px solid var(--border-color);">
+                                <input type="radio" name="drill-mode" value="smart" style="opacity: 0; position: absolute; width: 0; height: 0;">
+                                <div class="segment-btn" style="padding: 0.6rem; font-size: 0.9rem; font-weight: 600; transition: all 0.2s;" data-i18n="mode_smart">Smart Drill</div>
+                            </label>
+                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative;">
+                                <input type="radio" name="drill-mode" value="review" style="opacity: 0; position: absolute; width: 0; height: 0;">
+                                <div class="segment-btn" style="padding: 0.6rem; font-size: 0.9rem; font-weight: 600; transition: all 0.2s;" data-i18n="mode_review">Révision</div>
+                            </label>
+                        </div>
+                        <div id="mode-description" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem; min-height: 2.4rem; line-height: 1.4;">
+                            100% de nouveaux mots pour enrichir votre vocabulaire.
+                        </div>
                     </div>
                 </div>
 
-                <button id="btn-start-session" class="btn-primary" data-i18n="btn_start_drill">Démarrer le Drill</button>
+                <button id="btn-start-session" class="btn-primary" data-i18n="btn_start_drill" style="width: 100%; margin-top: 0.5rem;">Démarrer le Drill</button>
             </div>
         </div>
     </template>
@@ -265,7 +298,7 @@
     <template id="view-progress">
         <div class="view-content view-wide animate-fade-in">
             <h1 class="page-title" data-i18n="title_progress">Mes mots</h1>
-            <p class="page-subtitle" data-i18n="subtitle_progress">Gérez les mots que vous maîtrisez ou que vous souhaitez réviser.</p>
+            <p class="page-subtitle" data-i18n="subtitle_progress">Suivez l'état d'apprentissage de vos mots : vocabulaire validé et mots à retravailler.</p>
             
             <div class="card progress-card" id="progress-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
                 <span style="font-size: 3rem;">🔒</span>
@@ -367,9 +400,14 @@
 
     <!-- Template Vue Stats -->
     <template id="view-stats">
-        <div class="view-content animate-fade-in">
+        <div class="view-content view-wide animate-fade-in">
             <h1 class="page-title" data-i18n="title_stats">Statistiques</h1>
             <p class="page-subtitle" data-i18n="subtitle_stats">Suivez votre progression globale par paire de langues.</p>
+            
+            <div class="info-banner" style="margin: 0 auto 1.5rem auto; max-width: 720px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); padding: 0.75rem 1.25rem; border-radius: 10px; font-size: 0.9rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.75rem; text-align: left;">
+                <span style="font-size: 1.3rem; flex-shrink: 0;">💡</span>
+                <span data-i18n="stats_notice_attempt">Seuls les mots validés dès la 1ère tentative (Tentative = 1) sont comptabilisés dans les statistiques et pourcentages.</span>
+            </div>
             
             <div class="card stats-card" id="stats-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
                 <span style="font-size: 3rem;">🔒</span>
@@ -391,9 +429,14 @@
     </template>
     <!-- Template Vue Certificats -->
     <template id="view-certs">
-        <div class="view-content animate-fade-in">
+        <div class="view-content view-wide animate-fade-in">
             <h1 class="page-title" data-i18n="title_certs">Mes Certificats</h1>
             <p class="page-subtitle" data-i18n="subtitle_certs">Célébrez vos progrès et générez vos certificats drillFlow personnalisés pour couronner vos succès ! 🏆🎉</p>
+            
+            <div class="info-banner" style="margin: 0 auto 1.5rem auto; max-width: 720px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); padding: 0.75rem 1.25rem; border-radius: 10px; font-size: 0.9rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.75rem; text-align: left;">
+                <span style="font-size: 1.3rem; flex-shrink: 0;">🏆</span>
+                <span data-i18n="certs_notice_attempt">Seuls les mots validés dès la 1ère tentative (Tentative = 1) sont certifiés et pris en compte.</span>
+            </div>
             
             <div class="card stats-card" id="certs-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
                 <span style="font-size: 3rem;">🔒</span>
@@ -455,12 +498,12 @@
                     
                     <div class="pillar-grid">
                         <div class="pillar-box">
-                            <span class="pillar-icon">⚡</span>
+                            <span class="pillar-icon">⌨️</span>
                             <span class="pillar-title" data-i18n="pillar_speed_title">Vitesse</span>
                             <span class="pillar-desc" data-i18n="pillar_speed_desc">Entrée et transitions fluides</span>
                         </div>
                         <div class="pillar-box">
-                            <span class="pillar-icon">🎯</span>
+                            <span class="pillar-icon">📚</span>
                             <span class="pillar-title" data-i18n="pillar_friction_title">Zéro Friction</span>
                             <span class="pillar-desc" data-i18n="pillar_friction_desc">Entièrement pilotable au clavier</span>
                         </div>
@@ -470,26 +513,13 @@
                             <span class="pillar-desc" data-i18n="pillar_control_desc">L'utilisateur décide de son acquis</span>
                         </div>
                         <div class="pillar-box">
-                            <span class="pillar-icon">🔒</span>
+                            <span class="pillar-icon">📈</span>
                             <span class="pillar-title" data-i18n="pillar_privacy_title">Privé</span>
                             <span class="pillar-desc" data-i18n="pillar_privacy_desc">100% hors-ligne & local</span>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Card 2: Arbitrages Techniques -->
-                <div class="about-card">
-                    <h2>
-                        <span>🛠️</span>
-                        <span data-i18n="about_title_choices">Arbitrages & UX</span>
-                    </h2>
-                    <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 1rem; margin: 0;">
-                        <li data-i18n="about_li1"><strong>SPA Vanilla JS :</strong> L'interface est générée côté client sans rechargement de page, offrant une fluidité maximale comparable à une application native.</li>
-                        <li data-i18n="about_li2"><strong>Validation visuelle :</strong> La réponse saisie et la réponse attendue sont alignées pour permettre au cerveau de repérer immédiatement la faute d'orthographe (parallélisme visuel).</li>
-                        <li data-i18n="about_li3"><strong>Pas de contrainte algorithmique :</strong> Contrairement à la répétition espacée stricte, l'utilisateur a le dernier mot (via les actions <em>Acquis</em> et <em>À revoir</em>). L'outil reste au service de l'utilisateur.</li>
-                        <li data-i18n="about_li4"><strong>Stockage local :</strong> L'utilisation du <code>localStorage</code> garantit un respect de la vie privée total et aucune nécessité de créer un compte pour commencer à s'exercer. L'accès est immédiat.</li>
-                    </ul>
-                </div>
             </div>
             
             <!-- Credits Banner -->
@@ -506,6 +536,7 @@
                 </div>
                 
                 <div class="tags-container">
+                    <span class="tag-badge">#AIDemo</span>
                     <span class="tag-badge">#WeAllAreDev</span>
                     <span class="tag-badge">#BuildWithAI</span>
                     <span class="tag-badge">#PairProgramming</span>
@@ -524,21 +555,23 @@
             <h2 style="margin: 0 0 1rem 0; font-family: var(--font-heading);">Inscription / Connexion</h2>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: -1rem; margin-bottom: 1rem;">Sauvegardez votre progression pour ne pas la perdre.</p>
             
-            <div class="form-group" style="margin-bottom: 1rem;">
-                <label>Email</label>
-                <input type="email" id="auth-email" placeholder="votre@email.com" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-                <label>Mot de passe</label>
-                <input type="password" id="auth-password" placeholder="••••••••" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
-            </div>
+            <form onsubmit="return false;" style="width: 100%; margin: 0; padding: 0;">
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label>Email</label>
+                    <input type="email" id="auth-email" placeholder="votre@email.com" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label>Mot de passe</label>
+                    <input type="password" id="auth-password" placeholder="••••••••" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
+                </div>
 
-            <div style="display: flex; gap: 1rem; width: 100%; justify-content: space-between;">
-                <button id="btn-login" class="btn-primary btn-secondary-action" style="flex: 1;">Se connecter</button>
-                <button id="btn-signup" class="btn-primary" style="flex: 1;">S'inscrire</button>
-            </div>
-            <p id="auth-error" style="color: var(--error-color); font-size: 0.85rem; display: none; text-align: center; margin: 0;"></p>
+                <div style="display: flex; gap: 1rem; width: 100%; justify-content: space-between;">
+                    <button type="button" id="btn-login" class="btn-primary btn-secondary-action" style="flex: 1;">Se connecter</button>
+                    <button type="button" id="btn-signup" class="btn-primary" style="flex: 1;">S'inscrire</button>
+                </div>
+                <p id="auth-error" style="color: var(--error-color); font-size: 0.85rem; display: none; text-align: center; margin: 1rem 0 0 0;"></p>
+            </form>
             <button id="btn-close-auth" class="icon-btn" style="position: absolute; top: 1rem; right: 1rem;">✕</button>
         </div>
     </div>
@@ -546,6 +579,6 @@
     <!-- Scripts -->
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=47"></script>
+    <script type="module" src="js/main.js?v=52"></script>
 </body>
 </html>

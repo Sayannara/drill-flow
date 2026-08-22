@@ -1,4 +1,4 @@
-import { auth } from './firebase-config.js?v=47';
+import { auth } from './firebase-config.js?v=52';
 import { 
     onAuthStateChanged,
     createUserWithEmailAndPassword,
@@ -6,7 +6,7 @@ import {
     signOut,
     sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=47';
+import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=52';
 
 let currentUser = null;
 

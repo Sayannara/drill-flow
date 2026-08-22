@@ -368,6 +368,7 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 }
 .btn-secondary-action:hover:not(:disabled) {
     background-color: var(--text-primary);
+    color: var(--bg-color);
 }
 .btn-small:disabled {
     opacity: 0.4;
@@ -402,14 +403,10 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 /* Stats Layout */
 .stats-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 1rem;
-}
-@media (min-width: 640px) {
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 .stat-card {
     background-color: var(--surface-color);
@@ -456,6 +453,7 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 }
 .stat-label {
     color: var(--text-secondary);
+    white-space: nowrap;
 }
 .stat-value {
     font-weight: 600;
@@ -974,3 +972,18 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     font-size: 1.05rem;
 }
 
+
+/* Segmented Control for Drill Mode */
+.segmented-control .segment-btn {
+    color: var(--text-secondary);
+}
+.segmented-control input[type="radio"]:checked + .segment-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Highlight bold text in About page */
+.about-content strong {
+    font-weight: 700;
+    color: var(--primary-color);
+}

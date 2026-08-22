@@ -442,7 +442,7 @@
   },
   {
     "id": "word_3206",
-    "fr": "loin",
+    "fr": "loin (éloignement, absence)",
     "en": "away",
     "de": "weg",
     "es": "lejos",
@@ -1351,10 +1351,10 @@
   },
   {
     "id": "word_3307",
-    "fr": "fermer",
+    "fr": "fermer (général)",
     "en": "close",
-    "de": "schließen",
-    "es": "cerrar",
+    "de": "schließen (allgemein)",
+    "es": "cerrar (general)",
     "type": "verbe",
     "level": "A1"
   },
@@ -1963,7 +1963,7 @@
   },
   {
     "id": "word_3375",
-    "fr": "chaque",
+    "fr": "chaque (individuellement)",
     "en": "each",
     "de": "jeder",
     "es": "cada",
@@ -2152,7 +2152,7 @@
   },
   {
     "id": "word_3396",
-    "fr": "chaque (2)",
+    "fr": "chaque (tous, sans exception)",
     "en": "every",
     "de": "jeder",
     "es": "cada",
@@ -2323,7 +2323,7 @@
   },
   {
     "id": "word_3415",
-    "fr": "loin",
+    "fr": "loin (distance)",
     "en": "far",
     "de": "weit",
     "es": "lejos",
@@ -3232,7 +3232,7 @@
   },
   {
     "id": "word_3516",
-    "fr": "la maison",
+    "fr": "la maison (foyer / chez-soi)",
     "en": "home",
     "de": "das Zuhause",
     "es": "el hogar",

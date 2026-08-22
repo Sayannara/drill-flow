@@ -1,8 +1,8 @@
-import { vocabulary } from './data/vocabulary.js?v=47';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=47';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=47';
-import { translations } from './i18n.js?v=47';
-import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=47';
+import { vocabulary } from './data/vocabulary.js?v=52';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=52';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=52';
+import { translations } from './i18n.js?v=52';
+import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=52';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -43,17 +43,40 @@ const htmlEl = document.documentElement;
 const iconDark = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
 const iconLight = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
 
+// Détection automatique du thème ou récupération du choix utilisateur
+const savedTheme = localStorage.getItem('drillflow_theme');
+const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+let initialTheme = 'dark';
+if (savedTheme) {
+    initialTheme = savedTheme;
+} else if (!systemPrefersDark) {
+    initialTheme = 'light';
+}
+
+htmlEl.setAttribute('data-theme', initialTheme);
+
 themeToggle.addEventListener('click', () => {
     const currentTheme = htmlEl.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     htmlEl.setAttribute('data-theme', newTheme);
     themeToggle.innerHTML = newTheme === 'dark' ? iconDark : iconLight;
+    localStorage.setItem('drillflow_theme', newTheme);
+});
+
+// Écouter les changements du système (ex: passage au mode nuit automatique sur le téléphone)
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    if (!localStorage.getItem('drillflow_theme')) { // Seulement si l'utilisateur n'a pas forcé un thème
+        const newTheme = event.matches ? 'dark' : 'light';
+        htmlEl.setAttribute('data-theme', newTheme);
+        themeToggle.innerHTML = newTheme === 'dark' ? iconDark : iconLight;
+    }
 });
 
 // Set default icon
-themeToggle.innerHTML = htmlEl.getAttribute('data-theme') === 'dark' ? iconDark : iconLight;
+themeToggle.innerHTML = initialTheme === 'dark' ? iconDark : iconLight;
 
-// --- Routeur très simple (SPA) ---
+// --- Routeur SPA ---
 const appContainer = document.getElementById('app-container');
 const navButtons = document.querySelectorAll('.nav-btn');
 
@@ -107,6 +130,7 @@ function attachViewEvents(viewId) {
         const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
         const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
         const lastVol = localStorage.getItem('voc_last_vol') || '20';
+        const lastMode = localStorage.getItem('voc_last_mode') || 'discovery';
         
         const savedLevelsStr = localStorage.getItem('drill_levels');
         const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -171,13 +195,45 @@ function attachViewEvents(viewId) {
         
         if (inputVol && volDisp) {
             inputVol.value = lastVol;
-            volDisp.textContent = `${lastVol} mots`;
+            const updateVolText = (v) => {
+                const lang = getAppLanguage();
+                const suffix = lang === 'fr' ? 'mots' : (lang === 'es' ? 'palabras' : (lang === 'de' ? 'Wörter' : 'words'));
+                volDisp.textContent = `${v} ${suffix}`;
+            };
+            updateVolText(lastVol);
             
             inputVol.addEventListener('input', (e) => {
-                volDisp.textContent = `${e.target.value} mots`;
+                updateVolText(e.target.value);
             });
         }
-        
+
+        // Mode d'entraînement & Mise à jour dynamique de la description
+        const savedModeRadio = document.querySelector(`input[name="drill-mode"][value="${lastMode}"]`);
+        if (savedModeRadio) {
+            savedModeRadio.checked = true;
+        }
+
+        function updateModeDescription() {
+            const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
+            const modeDescEl = document.getElementById('mode-description');
+            if (!modeChecked || !modeDescEl) return;
+            const mode = modeChecked.value;
+            const lang = getAppLanguage();
+            const descKey = `mode_desc_${mode}`;
+            if (translations[lang] && translations[lang][descKey]) {
+                modeDescEl.textContent = translations[lang][descKey];
+            }
+        }
+
+        const modeRadios = document.querySelectorAll('input[name="drill-mode"]');
+        modeRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                updateModeDescription();
+                localStorage.setItem('voc_last_mode', radio.value);
+            });
+        });
+        updateModeDescription();
+
         if (btnStart) {
             function updateAvailableCount() {
                 const src = selectSrc ? selectSrc.value : 'fr';
@@ -188,7 +244,7 @@ function attachViewEvents(viewId) {
                 
                 const lang = getAppLanguage();
                 
-                // 1. Sentence with total count (500)
+                // 1. Sentence with total count
                 const totalText = translations[lang].subtitle_home_intro
                     .replace('{total}', `<span style="font-weight: bold; color: var(--primary-color);">${vocabulary.length}</span>`);
                 introEl.innerHTML = totalText;
@@ -239,6 +295,8 @@ function attachViewEvents(viewId) {
                 const src = document.getElementById('select-lang-source').value;
                 const tgt = document.getElementById('select-lang-target').value;
                 const vol = parseInt(document.getElementById('input-volume').value, 10);
+                const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
+                const mode = modeChecked ? modeChecked.value : 'discovery';
                 
                 const selectedLevels = [];
                 if (document.getElementById('drill-level-a1')?.checked) selectedLevels.push('A1');
@@ -258,10 +316,11 @@ function attachViewEvents(viewId) {
                 localStorage.setItem('voc_last_src', src);
                 localStorage.setItem('voc_last_tgt', tgt);
                 localStorage.setItem('voc_last_vol', vol);
+                localStorage.setItem('voc_last_mode', mode);
                 localStorage.setItem('drill_levels', JSON.stringify(selectedLevels));
 
                 renderView('drill');
-                initDrillSession(src, tgt, vol, selectedLevels);
+                initDrillSession(src, tgt, vol, selectedLevels, mode);
             });
         }
     } else if (viewId === 'drill') {
@@ -280,8 +339,7 @@ function attachViewEvents(viewId) {
         
         if (flashcard) {
             flashcard.onclick = (e) => {
-                // Sur PC, on ne fait rien au clic (on utilise Entrée).
-                // Sur mobile, le clic simule Entrée pour avancer à un doigt.
+                // Sur mobile, le clic simule Entrée pour avancer à un doigt
                 const isMobile = window.innerWidth <= 640;
                 if (!isMobile) return;
 
@@ -297,11 +355,6 @@ function attachViewEvents(viewId) {
                 };
                 handleDrillKeydown(fakeEvent);
             };
-        }
-        
-        if (btnFlip) {
-            // Le bouton d'inversion a été supprimé à la demande de l'utilisateur
-            // btnFlip.addEventListener('click', flipTranslation);
         }
         
         if (btnQuit) {
@@ -374,7 +427,6 @@ function initProgressView() {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            const LANG_NAMES = { fr: 'Français', en: 'Anglais', es: 'Espagnol', it: 'Italien', de: 'Allemand' };
             opt.textContent = `${LANG_NAMES[src] || src.toUpperCase()} ➔ ${LANG_NAMES[tgt] || tgt.toUpperCase()}`;
             pairSelect.appendChild(opt);
         });
@@ -433,7 +485,7 @@ function initProgressView() {
         }
     });
 
-    // 2. Attach listeners for word level filters
+    // Attach listeners for word level filters
     ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach(level => {
         const checkbox = document.getElementById(`filter-level-${level}`);
         if (checkbox) {
@@ -457,8 +509,6 @@ function renderProgressTable() {
 
     tableBody.innerHTML = '';
 
-
-
     const filterNom = document.getElementById('filter-type-nom') ? document.getElementById('filter-type-nom').checked : true;
     const filterVerbe = document.getElementById('filter-type-verbe') ? document.getElementById('filter-type-verbe').checked : true;
     const filterAdjectif = document.getElementById('filter-type-adjectif') ? document.getElementById('filter-type-adjectif').checked : true;
@@ -473,7 +523,6 @@ function renderProgressTable() {
     const filterC2 = document.getElementById('filter-level-c2') ? document.getElementById('filter-level-c2').checked : true;
 
     const filtered = vocabulary.filter(word => {
-        // Ne garder que les mots sur lesquels l'utilisateur s'est entraîné (attempts > 0)
         const stats = getWordStats(src, tgt, word.id);
         if (!stats || !stats.attempts || stats.attempts === 0) return false;
 
@@ -552,7 +601,6 @@ function renderProgressTable() {
     filtered.forEach(word => {
         const tr = document.createElement('tr');
 
-
         const tdSrc = document.createElement('td');
         tdSrc.textContent = word[src];
         tdSrc.style.fontWeight = '600';
@@ -595,23 +643,19 @@ function renderProgressTable() {
         tdAttempts.style.fontWeight = '600';
         tdAttempts.style.color = 'var(--text-secondary)';
         const stats = getWordStats(src, tgt, word.id);
+        const status = getWordStatus(src, tgt, word.id);
         const attempts = stats.attempts || 0;
-        tdAttempts.textContent = attempts;
+        tdAttempts.textContent = status === 'validé' ? attempts : '-';
         tr.appendChild(tdAttempts);
 
         const tdStatus = document.createElement('td');
-        const status = getWordStatus(src, tgt, word.id);
         tdStatus.className = `status-cell ${status === 'validé' ? 'valide' : 'actif'}`;
         tdStatus.textContent = status === 'validé' ? '✓' : '\u00A0';
         tr.appendChild(tdStatus);
 
-
-
         tableBody.appendChild(tr);
     });
 }
-
-
 
 // --- Gestion de la vue Statistiques ---
 function initStatsView() {
@@ -633,7 +677,6 @@ function initStatsView() {
     }
     
     gatedState.style.display = 'none';
-    container.style.display = 'grid';
     const progress = loadProgress();
     const usedPairs = Object.keys(progress).filter(key => {
         return progress[key] && typeof progress[key] === 'object' && Object.keys(progress[key]).length > 0;
@@ -656,6 +699,20 @@ function initStatsView() {
         container.innerHTML = '';
     }
 
+    // Trier les paires par nombre de mots validés (tentative = 1)
+    usedPairs.sort((a, b) => {
+        const getValidatedCount = (pair) => {
+            const [src, tgt] = pair.split('-');
+            let count = 0;
+            vocabulary.forEach(word => {
+                const stats = getWordStats(src, tgt, word.id);
+                if (stats && stats.status === 'validé' && stats.attempts === 1) count++;
+            });
+            return count;
+        };
+        return getValidatedCount(b) - getValidatedCount(a);
+    });
+
     usedPairs.forEach(pair => {
         const [src, tgt] = pair.split('-');
         const total = vocabulary.length;
@@ -667,7 +724,8 @@ function initStatsView() {
             if (totalByLevel[word.level] !== undefined) {
                 totalByLevel[word.level]++;
             }
-            if (getWordStatus(src, tgt, word.id) === 'validé') {
+            const stats = getWordStats(src, tgt, word.id);
+            if (stats && stats.status === 'validé' && stats.attempts === 1) {
                 validated++;
                 if (validatedByLevel[word.level] !== undefined) {
                     validatedByLevel[word.level]++;
@@ -747,52 +805,11 @@ renderView = function(viewId) {
 
 // Initialisation au chargement de la page
 window.addEventListener('DOMContentLoaded', () => {
-    // Initialiser le selecteur de langue de l'application
-    const langSelect = document.getElementById('app-lang-select');
-    if (langSelect) {
-        langSelect.value = getAppLanguage();
-        langSelect.addEventListener('change', (e) => {
-            const newLang = e.target.value;
-            setAppLanguage(newLang);
-            
-            // Traduire l'en-tete statique et la page courante
-            translatePage();
-            
-            // Si on est sur l'accueil, mettre a jour le compteur disponible
-            const viewHomeEl = document.getElementById('home-intro-text');
-            if (viewHomeEl) {
-                const selectSrc = document.getElementById('select-lang-source');
-                if (selectSrc) {
-                    selectSrc.dispatchEvent(new Event('change'));
-                }
-            }
-            
-            // Si on est sur la liste des mots, rafraichir le tableau
-            const progTable = document.getElementById('prog-table-body');
-            if (progTable) {
-                renderProgressTable();
-            }
-            
-            // Si on est sur les stats, rafraîchir les stats
-            const statsContainer = document.getElementById('stats-container');
-            if (statsContainer) {
-                initStatsView();
-            }
-            
-            // Si on est sur les certificats, rafraîchir les certificats
-            const certsContainer = document.getElementById('certs-container');
-            if (certsContainer) {
-                initCertsView();
-            }
-        });
-    }
-
     // Écouter les changements d'authentification pour rafraîchir la vue (ex: enlever les cadenas)
     window.addEventListener('auth-changed', () => {
         const currentActiveBtn = document.querySelector('.nav-btn.active');
         if (currentActiveBtn) {
             const viewId = currentActiveBtn.id.replace('nav-', '');
-            // On relance la vue courante pour vérifier les droits (gating)
             renderView(viewId);
         }
     });
@@ -827,10 +844,122 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Custom Dropdown Language
+    const langToggleBtn = document.getElementById('lang-toggle-btn');
+    const langMenu = document.getElementById('lang-dropdown-menu');
+    const currentLangText = document.getElementById('current-lang-text');
+    
+    if (langToggleBtn && langMenu) {
+        const currentLang = getAppLanguage();
+        if (currentLangText) currentLangText.textContent = currentLang.toUpperCase();
+        
+        // Mettre en évidence l'option active
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            if (opt.dataset.val === currentLang) {
+                opt.style.background = 'var(--primary-color)';
+                opt.style.color = 'white';
+            } else {
+                opt.style.background = 'transparent';
+                opt.style.color = 'var(--text-primary)';
+            }
+        });
+
+        // Toggle menu
+        langToggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isVisible = langMenu.style.display === 'flex';
+            langMenu.style.display = isVisible ? 'none' : 'flex';
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!langToggleBtn.contains(e.target) && !langMenu.contains(e.target)) {
+                langMenu.style.display = 'none';
+            }
+        });
+
+        // Handle selection
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const newLang = e.currentTarget.dataset.val;
+                setAppLanguage(newLang);
+                if (currentLangText) currentLangText.textContent = newLang.toUpperCase();
+                langMenu.style.display = 'none';
+                
+                // Mettre en évidence la nouvelle option active
+                document.querySelectorAll('.lang-option').forEach(opt => {
+                    if (opt.dataset.val === newLang) {
+                        opt.style.background = 'var(--primary-color)';
+                        opt.style.color = 'white';
+                    } else {
+                        opt.style.background = 'transparent';
+                        opt.style.color = 'var(--text-primary)';
+                    }
+                });
+
+                // Traduire l'en-tête statique et la page courante
+                translatePage();
+                
+                // Si on est sur l'accueil, mettre à jour le compteur disponible, le volume et la description du mode
+                const viewHomeEl = document.getElementById('home-intro-text');
+                if (viewHomeEl) {
+                    const selectSrc = document.getElementById('select-lang-source');
+                    if (selectSrc) {
+                        selectSrc.dispatchEvent(new Event('change'));
+                    }
+                    const inputVol = document.getElementById('input-volume');
+                    const volDisp = document.getElementById('volume-display');
+                    if (inputVol && volDisp) {
+                        const suffix = newLang === 'fr' ? 'mots' : (newLang === 'es' ? 'palabras' : (newLang === 'de' ? 'Wörter' : 'words'));
+                        volDisp.textContent = `${inputVol.value} ${suffix}`;
+                    }
+                    const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
+                    const modeDescEl = document.getElementById('mode-description');
+                    if (modeChecked && modeDescEl) {
+                        const descKey = `mode_desc_${modeChecked.value}`;
+                        if (translations[newLang] && translations[newLang][descKey]) {
+                            modeDescEl.textContent = translations[newLang][descKey];
+                        }
+                    }
+                }
+                
+                // Si on est sur la liste des mots, rafraîchir le tableau
+                const progTable = document.getElementById('prog-table-body');
+                if (progTable && typeof renderProgressTable === 'function') {
+                    renderProgressTable();
+                }
+
+                // Si on est sur les stats, rafraîchir les stats
+                const statsContainer = document.getElementById('stats-container');
+                if (statsContainer && typeof initStatsView === 'function') {
+                    initStatsView();
+                }
+
+                // Si on est sur les certificats, rafraîchir les certificats
+                const certsContainer = document.getElementById('certs-container');
+                if (certsContainer && typeof initCertsView === 'function') {
+                    initCertsView();
+                }
+            });
+            
+            // Hover effect
+            btn.addEventListener('mouseenter', (e) => {
+                if (e.currentTarget.dataset.val !== getAppLanguage()) {
+                    e.currentTarget.style.background = 'rgba(100, 116, 139, 0.1)';
+                }
+            });
+            btn.addEventListener('mouseleave', (e) => {
+                if (e.currentTarget.dataset.val !== getAppLanguage()) {
+                    e.currentTarget.style.background = 'transparent';
+                }
+            });
+        });
+    }
+
     // Modal Auth Logic
     const authModal = document.getElementById('auth-modal');
     
-    // Nouveaux boutons génériques pour ouvrir la modale
+    // Boutons génériques pour ouvrir la modale
     const openAuthBtns = document.querySelectorAll('.btn-open-auth-modal');
     openAuthBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -946,14 +1075,27 @@ function initCertsView() {
 
     const lang = getAppLanguage();
 
-    usedPairs.forEach(pair => {
+    const pairsData = usedPairs.map(pair => {
         const [src, tgt] = pair.split('-');
         let validated = 0;
+        const validatedByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
         vocabulary.forEach(word => {
-            if (getWordStatus(src, tgt, word.id) === 'validé') {
+            const stats = getWordStats(src, tgt, word.id);
+            if (stats && stats.status === 'validé' && stats.attempts === 1) {
                 validated++;
+                if (validatedByLevel[word.level] !== undefined) {
+                    validatedByLevel[word.level]++;
+                }
             }
         });
+        return { pair, src, tgt, validated, validatedByLevel };
+    });
+
+    // Trier par nombre de mots validés décroissant
+    pairsData.sort((a, b) => b.validated - a.validated);
+
+    pairsData.forEach(data => {
+        const { src, tgt, validated } = data;
 
         // Creer une carte de certificat
         const card = document.createElement('div');
@@ -979,14 +1121,28 @@ function initCertsView() {
 
         const btnGen = card.querySelector('.btn-generate-cert-action');
         btnGen.onclick = () => {
-            openCertificateModal(src, tgt, validated);
+            const fname = document.getElementById('cert-firstname')?.value.trim();
+            const lname = document.getElementById('cert-lastname')?.value.trim();
+            if (!fname || !lname) {
+                const inF = document.getElementById('cert-firstname');
+                const inL = document.getElementById('cert-lastname');
+                if (inF) inF.style.borderColor = 'var(--error-color)';
+                if (inL) inL.style.borderColor = 'var(--error-color)';
+                setTimeout(() => {
+                    if (inF) inF.style.borderColor = '';
+                    if (inL) inL.style.borderColor = '';
+                }, 2000);
+                alert("Veuillez renseigner votre prénom et votre nom pour générer le certificat.");
+                return;
+            }
+            openCertificateModal(src, tgt, validated, data.validatedByLevel);
         };
 
         if (container) container.appendChild(card);
     });
 }
 
-function openCertificateModal(src, tgt, validated) {
+function openCertificateModal(src, tgt, validated, validatedByLevel) {
     const modal = document.getElementById('cert-modal');
     const canvas = document.getElementById('cert-canvas');
     if (!modal || !canvas) return;
@@ -997,9 +1153,9 @@ function openCertificateModal(src, tgt, validated) {
     const lang = getAppLanguage();
 
     // Dessiner le certificat sur le canvas
-    drawCertificateOnCanvas(ctx, src, tgt, validated, lang);
+    drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, lang);
 
-    // Configurer le telechargement
+    // Configurer le téléchargement
     const btnDownload = document.getElementById('btn-download-cert');
     if (btnDownload) {
         btnDownload.onclick = () => {
@@ -1015,16 +1171,13 @@ function openCertificateModal(src, tgt, validated) {
     const btnLinkedin = document.getElementById('btn-linkedin-cert');
     if (btnLinkedin) {
         btnLinkedin.onclick = () => {
-            // Generer le message du post
             const langName = (LANG_NAMES[tgt] || tgt.toUpperCase());
             let postTemplate = translations[lang].linkedin_post_text;
             let postText = postTemplate.replace('{count}', validated).replace('{langName}', langName);
             
             // Copier dans le presse-papiers
             navigator.clipboard.writeText(postText).then(() => {
-                // Informer l'utilisateur avec des instructions de collage
                 alert(translations[lang].linkedin_instructions);
-                // Ouvrir la page de creation de post LinkedIn
                 window.open('https://www.linkedin.com/feed/?shareActive=true', '_blank');
             }).catch(err => {
                 console.error("Impossible de copier dans le presse-papiers : ", err);
@@ -1042,179 +1195,194 @@ function openCertificateModal(src, tgt, validated) {
     }
 }
 
-function drawCertificateOnCanvas(ctx, src, tgt, validated, lang) {
+function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, lang) {
     const w = 800;
     const h = 600;
 
-    // 1. Fond creme degrade radial
-    const grad = ctx.createRadialGradient(w/2, h/2, 50, w/2, h/2, 400);
-    grad.addColorStop(0, '#fefdfb');
-    grad.addColorStop(1, '#f6f1e5');
+    // Fond élégant
+    const grad = ctx.createLinearGradient(0, 0, w, h);
+    grad.addColorStop(0, '#ffffff');
+    grad.addColorStop(1, '#f8fafc');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, w, h);
 
-    // 2. Bordures Or
-    ctx.strokeStyle = '#c5a880';
-    ctx.lineWidth = 2;
+    // Bordures
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 1;
     ctx.strokeRect(20, 20, w - 40, h - 40);
 
-    ctx.lineWidth = 6;
-    ctx.strokeRect(28, 28, w - 56, h - 56);
+    ctx.strokeStyle = '#94a3b8';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(26, 26, w - 52, h - 52);
 
-    // Coins decoratifs
+    // Coins décoratifs
     const drawCorner = (x, y, rotation) => {
         ctx.save();
         ctx.translate(x, y);
         ctx.rotate(rotation);
-        ctx.fillStyle = '#c5a880';
+        ctx.strokeStyle = '#1e293b';
+        ctx.lineWidth = 2;
         ctx.beginPath();
-        ctx.moveTo(0, 0);
-        ctx.lineTo(20, 0);
-        ctx.lineTo(20, 4);
-        ctx.lineTo(4, 4);
-        ctx.lineTo(4, 20);
-        ctx.lineTo(0, 20);
-        ctx.closePath();
-        ctx.fill();
+        ctx.moveTo(0, 15);
+        ctx.lineTo(0, 0);
+        ctx.lineTo(15, 0);
+        ctx.stroke();
         ctx.restore();
     };
 
-    drawCorner(38, 38, 0);
-    drawCorner(w - 38, 38, Math.PI / 2);
-    drawCorner(w - 38, h - 38, Math.PI);
-    drawCorner(38, h - 38, -Math.PI / 2);
+    drawCorner(36, 36, 0);
+    drawCorner(w - 36, 36, Math.PI / 2);
+    drawCorner(w - 36, h - 36, Math.PI);
+    drawCorner(36, h - 36, -Math.PI / 2);
 
-    // 3. Textes
+    // Filigrane
+    ctx.fillStyle = 'rgba(148, 163, 184, 0.05)';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.font = 'bold 100px "Outfit", sans-serif';
+    ctx.fillText('drillFlow', w / 2, h / 2);
+
+    // Textes
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
 
-    // En-tete
-    ctx.fillStyle = '#1e293b';
-    ctx.font = 'bold 32px "Outfit", sans-serif';
-    ctx.fillText(translations[lang].cert_achievement, w / 2, 90);
+    // En-tête
+    ctx.fillStyle = '#0f172a';
+    ctx.font = 'bold 36px "Outfit", sans-serif';
+    ctx.fillText(translations[lang].cert_achievement, w / 2, 80);
 
     // Subtitle
     ctx.fillStyle = '#64748b';
-    ctx.font = 'italic 15px "Outfit", sans-serif';
-    ctx.fillText(translations[lang].cert_awarded_to, w / 2, 130);
+    ctx.font = 'italic 16px "Outfit", sans-serif';
+    ctx.fillText(translations[lang].cert_awarded_to, w / 2, 120);
 
-    // Nom de l'apprenant
+    // Nom
     const fname = localStorage.getItem('cert_firstname') || '';
     const lname = localStorage.getItem('cert_lastname') || '';
     const fullName = (fname || lname) ? `${fname} ${lname}`.trim() : translations[lang].cert_default_learner;
-    ctx.fillStyle = '#c5a880';
-    ctx.font = 'bold 28px "Outfit", sans-serif';
-    ctx.fillText(fullName, w / 2, 175);
+    ctx.fillStyle = '#0f172a';
+    ctx.font = 'bold 32px "Outfit", sans-serif';
+    ctx.fillText(fullName, w / 2, 160);
 
-    // Ligne doree
-    ctx.strokeStyle = '#d9c3a3';
-    ctx.lineWidth = 1;
+    // Ligne de séparation
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.moveTo(w / 2 - 180, 210);
-    ctx.lineTo(w / 2 + 180, 210);
+    ctx.moveTo(w / 2 - 200, 195);
+    ctx.lineTo(w / 2 + 200, 195);
     ctx.stroke();
 
     // Ligne explicative
     ctx.fillStyle = '#475569';
     ctx.font = '15px "Inter", sans-serif';
-    ctx.fillText(translations[lang].cert_for_mastering, w / 2, 250);
+    ctx.fillText(translations[lang].cert_for_mastering, w / 2, 230);
 
     // Langues
     const srcName = (LANG_NAMES[src] || src.toUpperCase()).toUpperCase();
     const tgtName = (LANG_NAMES[tgt] || tgt.toUpperCase()).toUpperCase();
     ctx.fillStyle = '#0f172a';
-    ctx.font = 'bold 36px "Outfit", sans-serif';
-    ctx.fillText(`${srcName}  ➔  ${tgtName}`, w / 2, 305);
+    ctx.font = '800 38px "Outfit", sans-serif';
+    ctx.fillText(`${srcName}  ➔  ${tgtName}`, w / 2, 275);
 
-    // Nombre de mots
+    // Nombre de mots (Total)
     ctx.fillStyle = '#1e293b';
-    ctx.font = '500 18px "Inter", sans-serif';
-    ctx.fillText(`${translations[lang].cert_total_words} ${validated}`, w / 2, 360);
+    ctx.font = '600 20px "Inter", sans-serif';
+    ctx.fillText(`${translations[lang].cert_total_words} ${validated}`, w / 2, 330);
 
-    // 4. Sceau de Cire
+    // Mots par niveau
+    if (validatedByLevel) {
+        ctx.fillStyle = '#475569';
+        ctx.font = '500 14px "Inter", sans-serif';
+        const cefrLabel = translations[lang].cert_levels_prefix || 'CEFR Levels :';
+        ctx.textAlign = 'center';
+        ctx.fillText(cefrLabel, w / 2, 370);
+        
+        ctx.fillStyle = '#1e293b';
+        ctx.font = 'bold 16px "Inter", sans-serif';
+        
+        const startY = 400;
+        const lineH = 26;
+        
+        const drawLevel = (lvl, xPivot, y) => {
+            const count = validatedByLevel[lvl] || 0;
+            ctx.textAlign = 'right';
+            ctx.fillText(`${lvl} :`, xPivot - 5, y);
+            ctx.textAlign = 'left';
+            ctx.fillText(`${count}`, xPivot + 5, y);
+        };
+        
+        // Row 1
+        drawLevel('A1', 350, startY);
+        drawLevel('A2', 450, startY);
+        // Row 2
+        drawLevel('B1', 350, startY + lineH);
+        drawLevel('B2', 450, startY + lineH);
+        // Row 3
+        drawLevel('C1', 350, startY + lineH * 2);
+        drawLevel('C2', 450, startY + lineH * 2);
+    }
+
+    // Sceau Discret
     const sealX = w / 2;
-    const sealY = 440;
+    const sealY = 515;
 
     // Rubans
-    ctx.fillStyle = '#b91c1c';
+    ctx.fillStyle = '#64748b';
     ctx.beginPath();
-    ctx.moveTo(sealX - 25, sealY);
-    ctx.lineTo(sealX - 45, sealY + 80);
-    ctx.lineTo(sealX - 25, sealY + 70);
-    ctx.lineTo(sealX - 5, sealY + 80);
+    ctx.moveTo(sealX - 20, sealY);
+    ctx.lineTo(sealX - 35, sealY + 45); 
+    ctx.lineTo(sealX - 20, sealY + 35);
+    ctx.lineTo(sealX, sealY + 45);
     ctx.lineTo(sealX - 10, sealY);
     ctx.fill();
 
     ctx.beginPath();
     ctx.moveTo(sealX + 10, sealY);
-    ctx.lineTo(sealX + 5, sealY + 80);
-    ctx.lineTo(sealX + 25, sealY + 70);
-    ctx.lineTo(sealX + 45, sealY + 80);
-    ctx.lineTo(sealX + 25, sealY);
+    ctx.lineTo(sealX, sealY + 45);
+    ctx.lineTo(sealX + 20, sealY + 35);
+    ctx.lineTo(sealX + 35, sealY + 45);
+    ctx.lineTo(sealX + 20, sealY);
     ctx.fill();
 
-    // Sceau exterieur festonne
-    ctx.fillStyle = '#d9a752';
-    ctx.strokeStyle = '#c59543';
-    ctx.lineWidth = 2;
-    
-    ctx.save();
-    ctx.translate(sealX, sealY);
+    // Sceau extérieur
+    ctx.fillStyle = '#334155';
     ctx.beginPath();
-    const numPoints = 40;
-    const innerRadius = 42;
-    const outerRadius = 48;
-    for (let i = 0; i < numPoints * 2; i++) {
-        const angle = (i * Math.PI) / numPoints;
-        const radius = i % 2 === 0 ? outerRadius : innerRadius;
-        const sx = radius * Math.cos(angle);
-        const sy = radius * Math.sin(angle);
-        if (i === 0) {
-            ctx.moveTo(sx, sy);
-        } else {
-            ctx.lineTo(sx, sy);
-        }
-    }
-    ctx.closePath();
+    ctx.arc(sealX, sealY, 35, 0, Math.PI * 2);
     ctx.fill();
-    ctx.stroke();
-    ctx.restore();
 
-    // Sceau interieur
-    ctx.fillStyle = '#e5b869';
+    // Sceau intérieur
+    ctx.strokeStyle = '#cbd5e1';
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([3, 3]);
     ctx.beginPath();
-    ctx.arc(sealX, sealY, 36, 0, Math.PI * 2);
-    ctx.fill();
+    ctx.arc(sealX, sealY, 30, 0, Math.PI * 2);
     ctx.stroke();
+    ctx.setLineDash([]);
 
     // Sceau texte
-    ctx.fillStyle = '#7f5919';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 11px "Outfit", sans-serif';
     ctx.fillText(translations[lang].cert_seal_text, sealX, sealY);
 
-    // 5. Date & Signature lines
+    // Date & Signature
     ctx.strokeStyle = '#cbd5e1';
     ctx.lineWidth = 1;
 
     ctx.beginPath();
-    ctx.moveTo(100, 500);
-    ctx.lineTo(250, 500);
+    ctx.moveTo(90, 545);
+    ctx.lineTo(240, 545);
     ctx.stroke();
     
-    ctx.fillStyle = '#64748b';
-    ctx.font = '13px "Inter", sans-serif';
+    ctx.fillStyle = '#475569';
+    ctx.font = '14px "Inter", sans-serif';
     const dateStr = new Date().toLocaleDateString(lang === 'en' ? 'en-US' : lang === 'fr' ? 'fr-FR' : lang);
-    ctx.fillText(`${translations[lang].cert_date} ${dateStr}`, 175, 520);
+    ctx.fillText(`${translations[lang].cert_date} ${dateStr}`, 165, 565);
 
     ctx.beginPath();
-    ctx.moveTo(w - 250, 500);
-    ctx.lineTo(w - 100, 500);
+    ctx.moveTo(w - 240, 545);
+    ctx.lineTo(w - 90, 545);
     ctx.stroke();
 
-    ctx.fillText(translations[lang].cert_signature, w - 175, 520);
-
-    // Filigrane
-    ctx.fillStyle = 'rgba(197, 168, 128, 0.15)';
-    ctx.font = 'bold 72px "Outfit", sans-serif';
-    ctx.fillText('drillFlow', w / 2, h / 2 - 20);
+    ctx.fillText(translations[lang].cert_signature, w - 165, 565);
 }

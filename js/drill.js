@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=47';
-import { getWordStatus, setWordStatus } from './storage.js?v=47';
-import { translations } from './i18n.js?v=47';
+import { vocabulary } from './data/vocabulary.js?v=52';
+import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=52';
+import { translations } from './i18n.js?v=52';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -64,20 +64,54 @@ function buildTargetRegex(targetWord) {
 }
 
 
-export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
+export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], mode = 'discovery') {
     sessionState.langSource = source;
     sessionState.langTarget = target;
+    sessionState.mode = mode; // Store the mode in session state
     
-    // Filtrer les mots qui sont encore "actifs" pour cette paire et qui correspondent au niveau
-    const availableWords = vocabulary.filter(w => {
-        const isNotValidated = getWordStatus(source, target, w.id) !== 'validé';
-        const matchesLevel = levels.includes(w.level);
-        return isNotValidated && matchesLevel;
+    // Filtrer les mots qui correspondent au niveau
+    const activeWords = vocabulary.filter(w => {
+        return getWordStatus(source, target, w.id) !== 'validé' && levels.includes(w.level);
+    });
+    
+    const validatedWords = vocabulary.filter(w => {
+        return getWordStatus(source, target, w.id) === 'validé' && levels.includes(w.level);
     });
 
-    // Si on a moins de mots que le volume demandA©, on prend tout ce qu'il reste
-    const shuffled = shuffle([...availableWords]);
-    sessionState.words = shuffled.slice(0, volume);
+    // Trier les mots validés : priorité aux tentatives > 1, sinon les plus anciennement validés
+    validatedWords.sort((a, b) => {
+        const statsA = getWordStats(source, target, a.id);
+        const statsB = getWordStats(source, target, b.id);
+        
+        const aNeedsReview = statsA.attempts > 1 ? 1 : 0;
+        const bNeedsReview = statsB.attempts > 1 ? 1 : 0;
+        if (aNeedsReview !== bNeedsReview) {
+            return bNeedsReview - aNeedsReview;
+        }
+        
+        const dateA = statsA.validation_date ? new Date(statsA.validation_date).getTime() : 0;
+        const dateB = statsB.validation_date ? new Date(statsB.validation_date).getTime() : 0;
+        return dateA - dateB;
+    });
+
+    let reviewCount = 0;
+    if (mode === 'smart') {
+        reviewCount = Math.floor(volume * 0.2); // 20%
+    } else if (mode === 'review') {
+        reviewCount = volume; // 100%
+    }
+
+    let selectedReviewWords = validatedWords.slice(0, reviewCount);
+    let selectedActiveWords = shuffle([...activeWords]).slice(0, volume - selectedReviewWords.length);
+
+    // Si on n'a pas assez de mots au total (ex: demande 20 révisions, on a 5 révisions et 10 actifs -> 15 au total)
+    // On prend tout ce qu'on peut.
+    if (selectedReviewWords.length < reviewCount) {
+        const remainingNeeded = volume - selectedReviewWords.length;
+        selectedActiveWords = shuffle([...activeWords]).slice(0, remainingNeeded);
+    }
+
+    sessionState.words = shuffle([...selectedReviewWords, ...selectedActiveWords]);
     sessionState.originalWords = [...sessionState.words]; // Keep for context drill
     sessionState.currentIndex = 0;
     sessionState.isWaitingAction = false;
@@ -362,7 +396,7 @@ function handleValidation() {
             
             dynamicHints.innerHTML = isMobile ? '' : `
                 <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
-                    <kbd class="desktop-only">Entree</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>
+                    <kbd class="desktop-only">Entrée</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>
                 </button>
                 <button id="btn-next-keep" class="btn-drill-action btn-secondary-action">
                     <kbd class="desktop-only">G</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
@@ -467,7 +501,7 @@ function handleValidation() {
             
             dynamicHints.innerHTML = isMobile ? '' : `
                 <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
-                    <kbd class="desktop-only">Entree</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
+                    <kbd class="desktop-only">Entrée</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
                 </button>
                 <button id="btn-next-remove" class="btn-drill-action btn-secondary-action">
                     <kbd class="desktop-only">Alt + R</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconCheck} ${labelMastered}</span>
@@ -513,20 +547,39 @@ function proceedNextWord(action) {
     const statusBanner = document.getElementById('result-status');
     const wasCorrect = statusBanner.dataset.correct === "true";
 
+    const prevStats = getWordStats(sessionState.langSource, sessionState.langTarget, currentWord.id);
+    const prevAttempts = prevStats.attempts || 0;
+
     let finalStatus = 'actif'; // par défaut, on garde
+    let removeFromSession = false;
 
     if (action === 'auto') {
-        finalStatus = wasCorrect ? 'validé' : 'actif';
+        if (wasCorrect) {
+            removeFromSession = true;
+            // Un mot est validé uniquement s'il est réussi du 1er coup (ou s'il était déjà validé en révision)
+            if (prevAttempts === 0 || prevStats.status === 'validé') {
+                finalStatus = 'validé';
+            } else {
+                finalStatus = 'actif';
+            }
+        } else {
+            finalStatus = 'actif';
+            removeFromSession = false;
+        }
     } else if (action === 'keep') {
-        finalStatus = 'actif'; // Forcé à garder
+        finalStatus = 'actif';
+        removeFromSession = false;
     } else if (action === 'remove') {
-        finalStatus = 'validé'; // Forcé à retirer de la session (on le marque validé)
+        removeFromSession = true;
+        finalStatus = (prevAttempts === 0 || prevStats.status === 'validé') ? 'validé' : 'actif';
     }
 
-    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, true);
+    const shouldReset = finalStatus === 'validé' && (sessionState.mode === 'smart' || sessionState.mode === 'review') && wasCorrect;
 
-    // Supprimer le mot de la session courante s'il est validé
-    if (finalStatus === 'validé') {
+    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, true, shouldReset);
+
+    // Supprimer le mot de la session courante s'il est retiré ou réussi
+    if (removeFromSession) {
         sessionState.words.splice(sessionState.currentIndex, 1);
         if (sessionState.currentIndex >= sessionState.words.length) {
             sessionState.currentIndex = 0; // Reboucler

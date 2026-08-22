@@ -1,6 +1,6 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
-import { db } from './firebase-config.js?v=47';
-import { getCurrentUser } from './auth.js?v=47';
+import { db } from './firebase-config.js?v=52';
+import { getCurrentUser } from './auth.js?v=52';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
@@ -85,15 +85,17 @@ export function loadProgress() {
 }
 
 // Récupère l'état (status) d'un mot
-// Retourne 'actif', 'validé' ou par défaut 'actif'
+// Retourne 'validé' uniquement si le mot est marqué validé ET réussi à la 1ère tentative (attempts === 1)
 export function getWordStatus(langSource, langTarget, wordId) {
     const pairKey = `${langSource}-${langTarget}`;
     if (localCache[pairKey] && localCache[pairKey][wordId]) {
-        // La nouvelle structure est un objet { status, attempts }
         if (typeof localCache[pairKey][wordId] === 'object') {
-            return localCache[pairKey][wordId].status || 'actif';
+            const data = localCache[pairKey][wordId];
+            if (data.status === 'validé' && data.attempts === 1) {
+                return 'validé';
+            }
+            return 'actif';
         }
-        // Backward compatibility avec l'ancien format string
         return localCache[pairKey][wordId];
     }
     return 'actif';
@@ -102,14 +104,17 @@ export function getWordStatus(langSource, langTarget, wordId) {
 // Récupère toutes les stats d'un mot
 export function getWordStats(langSource, langTarget, wordId) {
     const pairKey = `${langSource}-${langTarget}`;
-    if (localCache[pairKey] && localCache[pairKey][wordId] && typeof localCache[pairKey][wordId] === 'object') {
-        return localCache[pairKey][wordId];
+    if (localCache[pairKey] && localCache[pairKey][wordId]) {
+        if (typeof localCache[pairKey][wordId] === 'object') {
+            return localCache[pairKey][wordId];
+        }
+        return { status: localCache[pairKey][wordId], attempts: 1 };
     }
     return { status: 'actif', attempts: 0 };
 }
 
 // Met à jour l'état d'un mot et incrémente ses tentatives
-export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false) {
+export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false, resetAttempts = false) {
     const pairKey = `${langSource}-${langTarget}`;
     
     if (!localCache[pairKey]) {
@@ -129,7 +134,10 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
     if (status === 'validé') {
         currentData.validation_date = new Date().toISOString();
     }
-    if (addAttempt) {
+    
+    if (resetAttempts) {
+        currentData.attempts = 1;
+    } else if (addAttempt) {
         currentData.attempts += 1;
     }
     currentData.last_updated = new Date().toISOString();
