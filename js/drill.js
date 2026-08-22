@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=52';
-import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=52';
-import { translations } from './i18n.js?v=52';
+import { vocabulary } from './data/vocabulary.js?v=53';
+import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=53';
+import { translations } from './i18n.js?v=53';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -548,7 +548,6 @@ function proceedNextWord(action) {
     const wasCorrect = statusBanner.dataset.correct === "true";
 
     const prevStats = getWordStats(sessionState.langSource, sessionState.langTarget, currentWord.id);
-    const prevAttempts = prevStats.attempts || 0;
 
     let finalStatus = 'actif'; // par défaut, on garde
     let removeFromSession = false;
@@ -556,12 +555,7 @@ function proceedNextWord(action) {
     if (action === 'auto') {
         if (wasCorrect) {
             removeFromSession = true;
-            // Un mot est validé uniquement s'il est réussi du 1er coup (ou s'il était déjà validé en révision)
-            if (prevAttempts === 0 || prevStats.status === 'validé') {
-                finalStatus = 'validé';
-            } else {
-                finalStatus = 'actif';
-            }
+            finalStatus = 'validé';
         } else {
             finalStatus = 'actif';
             removeFromSession = false;
@@ -571,12 +565,10 @@ function proceedNextWord(action) {
         removeFromSession = false;
     } else if (action === 'remove') {
         removeFromSession = true;
-        finalStatus = (prevAttempts === 0 || prevStats.status === 'validé') ? 'validé' : 'actif';
+        finalStatus = 'validé';
     }
 
-    const shouldReset = finalStatus === 'validé' && (sessionState.mode === 'smart' || sessionState.mode === 'review') && wasCorrect;
-
-    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, true, shouldReset);
+    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, true);
 
     // Supprimer le mot de la session courante s'il est retiré ou réussi
     if (removeFromSession) {

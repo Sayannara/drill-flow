@@ -1,8 +1,8 @@
-import { vocabulary } from './data/vocabulary.js?v=52';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=52';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=52';
-import { translations } from './i18n.js?v=52';
-import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=52';
+import { vocabulary } from './data/vocabulary.js?v=53';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=53';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=53';
+import { translations } from './i18n.js?v=53';
+import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=53';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -645,7 +645,7 @@ function renderProgressTable() {
         const stats = getWordStats(src, tgt, word.id);
         const status = getWordStatus(src, tgt, word.id);
         const attempts = stats.attempts || 0;
-        tdAttempts.textContent = status === 'validé' ? attempts : '-';
+        tdAttempts.textContent = attempts > 0 ? attempts : '-';
         tr.appendChild(tdAttempts);
 
         const tdStatus = document.createElement('td');
@@ -699,14 +699,14 @@ function initStatsView() {
         container.innerHTML = '';
     }
 
-    // Trier les paires par nombre de mots validés (tentative = 1)
+    // Trier les paires par nombre de mots validés
     usedPairs.sort((a, b) => {
         const getValidatedCount = (pair) => {
             const [src, tgt] = pair.split('-');
             let count = 0;
             vocabulary.forEach(word => {
                 const stats = getWordStats(src, tgt, word.id);
-                if (stats && stats.status === 'validé' && stats.attempts === 1) count++;
+                if (stats && stats.status === 'validé') count++;
             });
             return count;
         };
@@ -725,7 +725,7 @@ function initStatsView() {
                 totalByLevel[word.level]++;
             }
             const stats = getWordStats(src, tgt, word.id);
-            if (stats && stats.status === 'validé' && stats.attempts === 1) {
+            if (stats && stats.status === 'validé') {
                 validated++;
                 if (validatedByLevel[word.level] !== undefined) {
                     validatedByLevel[word.level]++;
@@ -1081,7 +1081,7 @@ function initCertsView() {
         const validatedByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
         vocabulary.forEach(word => {
             const stats = getWordStats(src, tgt, word.id);
-            if (stats && stats.status === 'validé' && stats.attempts === 1) {
+            if (stats && stats.status === 'validé') {
                 validated++;
                 if (validatedByLevel[word.level] !== undefined) {
                     validatedByLevel[word.level]++;

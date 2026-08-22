@@ -1,6 +1,6 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
-import { db } from './firebase-config.js?v=52';
-import { getCurrentUser } from './auth.js?v=52';
+import { db } from './firebase-config.js?v=53';
+import { getCurrentUser } from './auth.js?v=53';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
@@ -85,16 +85,11 @@ export function loadProgress() {
 }
 
 // Récupère l'état (status) d'un mot
-// Retourne 'validé' uniquement si le mot est marqué validé ET réussi à la 1ère tentative (attempts === 1)
 export function getWordStatus(langSource, langTarget, wordId) {
     const pairKey = `${langSource}-${langTarget}`;
     if (localCache[pairKey] && localCache[pairKey][wordId]) {
         if (typeof localCache[pairKey][wordId] === 'object') {
-            const data = localCache[pairKey][wordId];
-            if (data.status === 'validé' && data.attempts === 1) {
-                return 'validé';
-            }
-            return 'actif';
+            return localCache[pairKey][wordId].status || 'actif';
         }
         return localCache[pairKey][wordId];
     }
@@ -114,7 +109,7 @@ export function getWordStats(langSource, langTarget, wordId) {
 }
 
 // Met à jour l'état d'un mot et incrémente ses tentatives
-export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false, resetAttempts = false) {
+export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false) {
     const pairKey = `${langSource}-${langTarget}`;
     
     if (!localCache[pairKey]) {
@@ -135,10 +130,8 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
         currentData.validation_date = new Date().toISOString();
     }
     
-    if (resetAttempts) {
-        currentData.attempts = 1;
-    } else if (addAttempt) {
-        currentData.attempts += 1;
+    if (addAttempt) {
+        currentData.attempts = (currentData.attempts || 0) + 1;
     }
     currentData.last_updated = new Date().toISOString();
     
