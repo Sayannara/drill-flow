@@ -582,7 +582,7 @@ function renderProgressTable() {
     if (filtered.length === 0) {
         const lang = getAppLanguage();
         const emptyMsg = translations[lang].search_no_results;
-        tableBody.innerHTML = `<tr><td colspan="4" style="text-align: center; color: var(--text-secondary); padding: 2rem;">${emptyMsg}</td></tr>`;
+        tableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--text-secondary); padding: 2rem;">${emptyMsg}</td></tr>`;
         return;
     }
 
