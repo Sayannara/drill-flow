@@ -1,15 +1,20 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
-import { db } from './firebase-config.js?v=68';
-import { getCurrentUser } from './auth.js?v=68';
+import { db } from './firebase-config.js?v=69';
+import { getCurrentUser } from './auth.js?v=69';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
 let localCache = null;
 
-// Initialiser le cache en mémoire (session uniquement)
+// Initialiser le cache depuis localStorage
 function initCache() {
     if (!localCache) {
-        localCache = {};
+        try {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            localCache = stored ? JSON.parse(stored) : {};
+        } catch (e) {
+            localCache = {};
+        }
     }
 }
 initCache();
@@ -24,8 +29,27 @@ export async function fetchProgressFromCloud() {
 
         if (docSnap.exists()) {
             const cloudData = docSnap.data().progress || {};
-            // Fusionner avec le local
-            localCache = { ...localCache, ...cloudData };
+            
+            // Fusion intelligente basée sur les dates de mise à jour
+            for (const pairKey in cloudData) {
+                if (!localCache[pairKey]) {
+                    localCache[pairKey] = cloudData[pairKey];
+                } else {
+                    for (const wordId in cloudData[pairKey]) {
+                        const localWord = localCache[pairKey][wordId];
+                        const cloudWord = cloudData[pairKey][wordId];
+                        if (!localWord) {
+                            localCache[pairKey][wordId] = cloudWord;
+                        } else {
+                            const localDate = localWord.last_updated ? new Date(localWord.last_updated).getTime() : 0;
+                            const cloudDate = cloudWord.last_updated ? new Date(cloudWord.last_updated).getTime() : 0;
+                            if (cloudDate > localDate) {
+                                localCache[pairKey][wordId] = cloudWord;
+                            }
+                        }
+                    }
+                }
+            }
             
             // Migration : Ajouter validation_date aux mots déjà validés
             let modified = false;
@@ -44,11 +68,8 @@ export async function fetchProgressFromCloud() {
                     }
                 }
             }
-            if (modified) {
-                // Sauvegarde silencieuse de la migration
-                setDoc(docRef, { progress: localCache }, { merge: true }).catch(e => console.error("Erreur migration validation_date:", e));
-            }
             
+            saveProgressLocalAndCloud();
             return localCache;
         }
     } catch (e) {
@@ -57,9 +78,14 @@ export async function fetchProgressFromCloud() {
 }
 
 export async function saveProgressLocalAndCloud() {
-    // Ne plus sauvegarder dans localStorage
+    // 1. Sauvegarder dans localStorage
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(localCache));
+    } catch (e) {
+        console.error("Erreur sauvegarde localStorage:", e);
+    }
     
-    // Cloud sync si l'utilisateur est connecté
+    // 2. Cloud sync si l'utilisateur est connecté
     const user = getCurrentUser();
     if (user) {
         const docRef = doc(db, "users", user.uid);

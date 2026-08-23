@@ -1,8 +1,8 @@
-import { vocabulary } from './data/vocabulary.js?v=68';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=68';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=68';
-import { translations } from './i18n.js?v=68';
-import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=68';
+import { vocabulary } from './data/vocabulary.js?v=69';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=69';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=69';
+import { translations } from './i18n.js?v=69';
+import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=69';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
