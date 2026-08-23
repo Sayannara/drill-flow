@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=66';
-import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=66';
-import { translations } from './i18n.js?v=66';
+import { vocabulary } from './data/vocabulary.js?v=67';
+import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=67';
+import { translations } from './i18n.js?v=67';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -185,11 +185,16 @@ function renderCurrentWord() {
 
     const rewriteLine = document.getElementById('rewrite-line');
     const rewriteInput = document.getElementById('rewrite-input');
+    const rewritePrefix = document.getElementById('rewrite-prefix');
     if (rewriteLine && rewriteInput) {
         rewriteLine.style.display = 'none';
         rewriteInput.value = '';
         rewriteInput.classList.remove('correct');
         rewriteInput.disabled = true;
+        if (rewritePrefix) {
+            rewritePrefix.textContent = '';
+            rewritePrefix.style.display = 'none';
+        }
     }
 
     const exampleCorrectLine = document.getElementById('example-correct-line');
@@ -389,24 +394,35 @@ function handleValidation() {
         const userContainer = document.getElementById('result-user-container');
         const userEl = document.getElementById('result-user');
         if (userEl) {
-            let displayUser = userInput || '(vide)';
-            if (sessionState.currentPrefix && userInput.trim()) {
-                const prefixClean = sessionState.currentPrefix.trim();
-                if (!displayUser.toLowerCase().startsWith(prefixClean.toLowerCase())) {
-                    displayUser = sessionState.currentPrefix + displayUser;
+            if (!userInput || !userInput.trim()) {
+                userEl.textContent = '(vide)';
+            } else {
+                let cleanUser = userInput.trim();
+                if (sessionState.currentPrefix) {
+                    const prefixClean = sessionState.currentPrefix.trim();
+                    if (cleanUser.toLowerCase().startsWith(prefixClean.toLowerCase())) {
+                        cleanUser = cleanUser.substring(prefixClean.length).trim();
+                    }
+                    userEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 500;">${sessionState.currentPrefix}</span>${cleanUser}`;
+                } else {
+                    userEl.textContent = cleanUser;
                 }
             }
-            userEl.textContent = displayUser;
         }
 
-        let displayExpected = expected;
-        if (sessionState.currentPrefix && expected) {
-            const prefixClean = sessionState.currentPrefix.trim();
-            if (!expected.toLowerCase().startsWith(prefixClean.toLowerCase())) {
-                displayExpected = sessionState.currentPrefix + expected;
+        const expectedEl = document.getElementById('result-expected');
+        if (expectedEl) {
+            if (sessionState.currentPrefix && expected) {
+                const prefixClean = sessionState.currentPrefix.trim();
+                let cleanExp = expected.trim();
+                if (cleanExp.toLowerCase().startsWith(prefixClean.toLowerCase())) {
+                    cleanExp = cleanExp.substring(prefixClean.length).trim();
+                }
+                expectedEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 500;">${sessionState.currentPrefix}</span>${cleanExp}`;
+            } else {
+                expectedEl.textContent = expected;
             }
         }
-        document.getElementById('result-expected').textContent = displayExpected;
         
         // Configuration du bouton de prononciation
         const btnSpeak = document.getElementById('btn-speak-expected');
@@ -534,11 +550,22 @@ function handleValidation() {
             
             const rewriteLine = document.getElementById('rewrite-line');
             const rewriteInput = document.getElementById('rewrite-input');
+            const rewritePrefix = document.getElementById('rewrite-prefix');
             if (rewriteLine && rewriteInput && !isMobile) {
                 rewriteLine.style.display = 'flex';
                 rewriteInput.value = '';
                 rewriteInput.classList.remove('correct');
                 rewriteInput.disabled = false;
+                
+                if (rewritePrefix) {
+                    if (sessionState.currentPrefix) {
+                        rewritePrefix.textContent = sessionState.currentPrefix;
+                        rewritePrefix.style.display = 'inline';
+                    } else {
+                        rewritePrefix.textContent = '';
+                        rewritePrefix.style.display = 'none';
+                    }
+                }
                 
                 rewriteInput.oninput = () => {
                     const normalizedInput = normalizeText(rewriteInput.value);
