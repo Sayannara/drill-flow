@@ -1254,7 +1254,7 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, lan
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.font = 'bold 100px "Outfit", sans-serif';
-    ctx.fillText('drillFlow', w / 2, h / 2);
+    ctx.fillText('drillFlow.', w / 2, h / 2);
 
     // Textes
     ctx.textAlign = 'center';
