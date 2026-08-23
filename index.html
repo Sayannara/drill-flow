@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=67">
+    <link rel="stylesheet" href="css/style.css?v=68">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -185,22 +185,21 @@
                 </div>
             </div>
 
-            <div id="end-session-container" class="card" style="display: none; text-align: center; padding: 3rem 2rem; flex-direction: column; align-items: center; gap: 1.5rem;">
-                <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--success-color);" data-i18n="congrats">Félicitations ! 🎉</h2>
-                <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1rem;" data-i18n="congrats_sub">Vous avez terminé tous les mots de cette session.</p>
+            <div id="end-session-container" class="card end-session-card" style="display: none;">
+                <h2 class="congrats-title" data-i18n="congrats">Félicitations ! 🎉</h2>
                 
-                <div id="context-drill-promo" style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; width: 100%; max-width: 500px; margin-bottom: 0.5rem; text-align: left;">
-                    <h3 style="margin-bottom: 0.5rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <div id="context-drill-promo" class="context-promo-box">
+                    <h3 style="margin-bottom: 0.4rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem; font-size: 1.15rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                         <span data-i18n="context_promo_title">Consolider la mémorisation</span>
                     </h3>
-                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="context_promo_desc">
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.4;" data-i18n="context_promo_desc">
                         Associez les mots appris à leurs phrases de contexte pour les ancrer définitivement dans votre mémoire à long terme.
                     </p>
-                    <button id="btn-start-context-drill" class="btn-primary" style="width: 100%; margin-bottom: 0.5rem;" data-i18n="btn_start_context">Lancer l'exercice de contexte</button>
+                    <button id="btn-start-context-drill" class="btn-primary" style="width: 100%; margin-bottom: 0;" data-i18n="btn_start_context">Lancer l'exercice de contexte</button>
                 </div>
 
-                <button id="btn-new-batch" class="btn-primary btn-secondary-action" style="max-width: 250px;" data-i18n="btn_new_batch">Démarrer un nouveau lot</button>
+                <button id="btn-new-batch" class="btn-primary btn-secondary-action" style="max-width: 250px; width: 100%;" data-i18n="btn_new_batch">Démarrer un nouveau lot</button>
             </div>
 
             <!-- NOUVELLE ZONE CONTEXT DRILL -->
@@ -590,8 +589,8 @@
     </div>
 
     <!-- Scripts -->
-    <script type="module" src="js/firebase-config.js?v=67"></script>
-    <script type="module" src="js/auth.js?v=67"></script>
-    <script type="module" src="js/main.js?v=67"></script>
+    <script type="module" src="js/firebase-config.js?v=68"></script>
+    <script type="module" src="js/auth.js?v=68"></script>
+    <script type="module" src="js/main.js?v=68"></script>
 </body>
 </html>
