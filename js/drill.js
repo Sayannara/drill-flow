@@ -261,12 +261,14 @@ function renderCurrentWord() {
         inputEl.focus();
     }
 
-    // Bouton d'action mobile (phase Saisie)
-    const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
+    // Boutons d'action mobile (phase Saisie)
+    const swipeIgnore = document.getElementById('mobile-swipe-ignore');
     const btnMobilePrimary = document.getElementById('btn-mobile-primary');
     
-    if (btnMobileSecondary && btnMobilePrimary) {
-        btnMobileSecondary.style.visibility = 'hidden';
+    if (swipeIgnore) {
+        swipeIgnore.style.display = 'none';
+    }
+    if (btnMobilePrimary) {
         btnMobilePrimary.innerHTML = translations[lang].btn_check;
         btnMobilePrimary.className = "btn-primary"; // reset du style de base
         btnMobilePrimary.onclick = (e) => {
@@ -402,12 +404,13 @@ function handleValidation() {
             if (btnAuto) btnAuto.onclick = () => proceedNextWord('auto');
             
             if (isMobile) {
-                const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
+                const swipeIgnore = document.getElementById('mobile-swipe-ignore');
                 const btnMobilePrimary = document.getElementById('btn-mobile-primary');
                 
-                if (btnMobileSecondary && btnMobilePrimary) {
-                    btnMobileSecondary.style.visibility = 'hidden';
-                    
+                if (swipeIgnore) {
+                    swipeIgnore.style.display = 'none';
+                }
+                if (btnMobilePrimary) {
                     // Correct : Action unique = Continuer
                     btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconCheck} ${labelContinue}</span>`;
                     btnMobilePrimary.className = "btn-primary";
@@ -502,21 +505,19 @@ function handleValidation() {
             if (btnIgnore) btnIgnore.onclick = () => proceedNextWord('ignore');
             
             if (isMobile) {
-                const btnMobileSecondary = document.getElementById('btn-mobile-secondary');
+                const swipeIgnore = document.getElementById('mobile-swipe-ignore');
                 const btnMobilePrimary = document.getElementById('btn-mobile-primary');
                 
-                if (btnMobileSecondary && btnMobilePrimary) {
-                    btnMobileSecondary.style.visibility = 'visible';
-                    
-                    // Incorrect : Action par défaut = À revoir. Action secondaire = Ne plus me demander
+                if (btnMobilePrimary) {
+                    // Incorrect : Action par défaut = À revoir (1-tap classique)
                     btnMobilePrimary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconRotate} ${labelReview}</span>`;
                     btnMobilePrimary.className = "btn-primary";
-                    
-                    btnMobileSecondary.innerHTML = `<span style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 0.4rem;">${iconBan} ${labelIgnore}</span>`;
-                    btnMobileSecondary.className = "btn-drill-action btn-secondary-action";
-                    
                     btnMobilePrimary.onclick = (e) => { e.stopPropagation(); proceedNextWord('keep'); };
-                    btnMobileSecondary.onclick = (e) => { e.stopPropagation(); proceedNextWord('ignore'); };
+                }
+                
+                if (swipeIgnore) {
+                    swipeIgnore.style.display = 'block';
+                    initSwipeToIgnore();
                 }
             }
         }
@@ -524,6 +525,125 @@ function handleValidation() {
         alert("Erreur JS: " + error.message + "\nLigne: " + error.lineNumber);
         console.error(error);
     }
+}
+
+// Initialisation du geste Glisser pour confirmer (Slide to ignore) sur mobile
+function initSwipeToIgnore() {
+    const track = document.getElementById('swipe-ignore-track');
+    const fill = document.getElementById('swipe-ignore-fill');
+    const label = document.getElementById('swipe-ignore-label');
+    const thumb = document.getElementById('swipe-ignore-thumb');
+    if (!track || !fill || !label || !thumb) return;
+
+    const lang = localStorage.getItem('drill_lang') || 'fr';
+    const labelText = translations[lang]?.slide_to_ignore || "Glisser pour ne plus demander";
+    label.innerHTML = `<span>${labelText}</span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>`;
+
+    // Réinitialisation de l'état visuel
+    thumb.style.transition = 'none';
+    fill.style.transition = 'none';
+    label.style.transition = 'none';
+    thumb.style.transform = 'translateX(0px)';
+    fill.style.width = '0px';
+    label.style.opacity = '1';
+
+    let isDragging = false;
+    let startX = 0;
+    let currentX = 0;
+    let maxDistance = 0;
+    let completed = false;
+
+    function handlePointerDown(e) {
+        if (completed) return;
+        isDragging = true;
+        startX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+        
+        const trackRect = track.getBoundingClientRect();
+        const thumbRect = thumb.getBoundingClientRect();
+        maxDistance = Math.max(0, trackRect.width - thumbRect.width - 6); // 3px padding de chaque côté
+
+        thumb.style.transition = 'none';
+        fill.style.transition = 'none';
+        label.style.transition = 'none';
+
+        if (thumb.setPointerCapture && e.pointerId !== undefined) {
+            try { thumb.setPointerCapture(e.pointerId); } catch (err) {}
+        }
+
+        window.addEventListener('pointermove', handlePointerMove, { passive: false });
+        window.addEventListener('pointerup', handlePointerUp);
+        window.addEventListener('pointercancel', handlePointerUp);
+        
+        // Support fallback pour anciens navigateurs touch
+        window.addEventListener('touchmove', handlePointerMove, { passive: false });
+        window.addEventListener('touchend', handlePointerUp);
+        window.addEventListener('touchcancel', handlePointerUp);
+    }
+
+    function handlePointerMove(e) {
+        if (!isDragging || completed) return;
+        currentX = e.clientX || (e.touches && e.touches[0].clientX) || currentX;
+        const deltaX = currentX - startX;
+        const clampedX = Math.max(0, Math.min(deltaX, maxDistance));
+
+        thumb.style.transform = `translateX(${clampedX}px)`;
+        fill.style.width = `${clampedX + 20}px`;
+
+        if (maxDistance > 0) {
+            const progress = clampedX / maxDistance;
+            label.style.opacity = `${Math.max(0, 1 - progress * 1.6)}`;
+        }
+
+        if (e.cancelable) e.preventDefault();
+    }
+
+    function handlePointerUp(e) {
+        if (!isDragging || completed) return;
+        isDragging = false;
+
+        window.removeEventListener('pointermove', handlePointerMove);
+        window.removeEventListener('pointerup', handlePointerUp);
+        window.removeEventListener('pointercancel', handlePointerUp);
+        window.removeEventListener('touchmove', handlePointerMove);
+        window.removeEventListener('touchend', handlePointerUp);
+        window.removeEventListener('touchcancel', handlePointerUp);
+
+        currentX = e.clientX || (e.changedTouches && e.changedTouches[0].clientX) || currentX;
+        const deltaX = currentX - startX;
+
+        if (maxDistance > 0 && deltaX >= maxDistance * 0.75) {
+            // Validation réussie du glissement !
+            completed = true;
+            thumb.style.transition = 'transform 0.15s ease-out';
+            fill.style.transition = 'width 0.15s ease-out';
+            thumb.style.transform = `translateX(${maxDistance}px)`;
+            fill.style.width = '100%';
+
+            const doneText = translations[lang]?.slide_ignored_done || "Ignoré !";
+            label.innerHTML = `<span>${doneText}</span>`;
+            label.style.opacity = '1';
+
+            if (navigator.vibrate) {
+                try { navigator.vibrate(40); } catch (err) {}
+            }
+
+            setTimeout(() => {
+                proceedNextWord('ignore');
+            }, 180);
+        } else {
+            // Retour élastique au début
+            thumb.style.transition = 'transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1)';
+            fill.style.transition = 'width 0.25s cubic-bezier(0.2, 0.9, 0.3, 1)';
+            label.style.transition = 'opacity 0.25s ease';
+
+            thumb.style.transform = 'translateX(0px)';
+            fill.style.width = '0px';
+            label.style.opacity = '1';
+        }
+    }
+
+    thumb.onpointerdown = handlePointerDown;
+    thumb.ontouchstart = handlePointerDown;
 }
 
 // Action sur le mot (garder, retirer ou ignorer)

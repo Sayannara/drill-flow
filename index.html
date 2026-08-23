@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=11">
+    <link rel="stylesheet" href="css/style.css?v=12">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -286,8 +286,19 @@
                 </div>
                 
                 <!-- Actions mobiles unifiées (Saisie & Résultat) -->
-                <div id="mobile-action-container" style="display: none; width: 100%; margin-top: auto; flex-direction: column; gap: 0.5rem;">
-                    <button id="btn-mobile-secondary" class="btn-drill-action btn-secondary-action" style="width: 100%; padding: 0.8rem; font-size: 1.1rem; justify-content: center; visibility: hidden; border-radius: 8px;">À revoir</button>
+                <div id="mobile-action-container" style="display: none; width: 100%; margin-top: auto; flex-direction: column; gap: 0.6rem;">
+                    <div id="mobile-swipe-ignore" class="swipe-to-confirm" style="display: none;">
+                        <div class="swipe-track" id="swipe-ignore-track">
+                            <div class="swipe-fill" id="swipe-ignore-fill"></div>
+                            <div class="swipe-label" id="swipe-ignore-label" data-i18n="slide_to_ignore">
+                                <span>Glisser pour ne plus demander</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                            <div class="swipe-thumb" id="swipe-ignore-thumb">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+                            </div>
+                        </div>
+                    </div>
                     <button id="btn-mobile-primary" class="btn-primary" style="width: 100%; padding: 0.8rem; font-size: 1.1rem; justify-content: center; border-radius: 8px; border: none; font-weight: 600;">Vérifier</button>
                 </div>
             </div>
@@ -577,8 +588,8 @@
     </div>
 
     <!-- Scripts -->
-    <script type="module" src="js/firebase-config.js?v=58"></script>
-    <script type="module" src="js/auth.js?v=58"></script>
-    <script type="module" src="js/main.js?v=58"></script>
+    <script type="module" src="js/firebase-config.js?v=59"></script>
+    <script type="module" src="js/auth.js?v=59"></script>
+    <script type="module" src="js/main.js?v=59"></script>
 </body>
 </html>
