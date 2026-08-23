@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=62';
-import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=62';
-import { translations } from './i18n.js?v=62';
+import { vocabulary } from './data/vocabulary.js?v=64';
+import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=64';
+import { translations } from './i18n.js?v=64';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -291,7 +291,6 @@ function renderCurrentWord() {
     
     // Déterminer et afficher le préfixe visuel fixe (ex: "to ", "the ", "a ", "an ")
     const prefixEl = document.getElementById('drill-input-prefix');
-    const inputWrapperEl = document.getElementById('drill-input-wrapper');
     sessionState.currentPrefix = getTargetPrefix(currentWord, sessionState.langTarget, sessionState.langSource);
     
     if (sessionState.currentPrefix) {
