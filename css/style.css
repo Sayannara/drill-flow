@@ -248,53 +248,58 @@ select:focus, input[type="text"]:focus {
 .input-section {
     margin-bottom: 1rem;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     position: relative;
-    max-width: 480px;
+    max-width: 360px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.35rem;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+    cursor: text;
+}
+.input-section:focus-within {
+    border-bottom-color: var(--primary-color);
 }
 .input-prefix {
     font-size: 1.5rem;
     font-family: var(--font-sans);
     color: var(--text-secondary);
-    opacity: 0.65;
+    opacity: 0.55;
     font-weight: 500;
     user-select: none;
     pointer-events: none;
     white-space: pre;
-    padding: 0.5rem 0 0.5rem 0.5rem;
-    border-bottom: 2px solid var(--border-color);
-    transition: border-color 0.2s ease, color 0.2s ease;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0.2rem 0 0;
+    line-height: 1.2;
 }
 .input-section.has-prefix .input-prefix {
     display: inline-block !important;
 }
-.input-section:focus-within .input-prefix {
-    border-color: var(--primary-color);
-}
 .input-section input {
     font-size: 1.5rem;
+    font-family: var(--font-sans);
     text-align: center;
-    border-width: 0 0 2px 0;
+    border: none;
+    outline: none;
     border-radius: 0;
-    padding: 0.5rem;
+    padding: 0;
+    margin: 0;
     background: transparent;
-    border-color: var(--border-color);
-    transition: border-color 0.2s ease;
+    color: var(--text-primary);
     width: 100%;
+    line-height: 1.2;
 }
 .input-section.has-prefix input {
     text-align: left;
-    padding-left: 0.25rem;
-    width: auto;
     flex: 1;
+    width: auto;
 }
 .input-section input:focus {
-    border-color: var(--primary-color);
     outline: none;
 }
 .hidden { display: none !important; }
