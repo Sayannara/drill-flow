@@ -39,13 +39,49 @@ function getArticleAlternatives(text) {
     if (text.startsWith("l'")) opts.push(text.replace(/^l'/, 'un '), text.replace(/^l'/, 'une '), text.replace(/^l'/, 'le '), text.replace(/^l'/, 'la '));
     if (text.startsWith('el ')) opts.push(text.replace(/^el /, 'un '));
     if (text.startsWith('una ')) opts.push(text.replace(/^una /, 'la '));
-    if (typeof sessionState !== 'undefined' && sessionState.langTarget === 'EN') {
-        opts.push(text.replace(/^(the |a |an |to )/, ''));
+    if (typeof sessionState !== 'undefined' && sessionState.langTarget?.toLowerCase() === 'en') {
+        opts.push(text.replace(/^(the |a |an |to )/i, ''));
     }
-    // Also, if the string has no article, and we add an article for finding in the sentence:
-    // This is useful if target is just 'house' and sentence has 'a house'.
-    // Actually, it's safer to just strip the article from the targetWord as a fallback.
     return opts;
+}
+
+function getTargetPrefix(word, langTarget, langSource) {
+    if (!word || !langTarget || langTarget.toLowerCase() !== 'en') {
+        return '';
+    }
+
+    const targetVal = (word.en || '').trim();
+    const sourceVal = (word[langSource] || '').trim();
+    const type = (word.type || '').toLowerCase();
+
+    // 1. Verbe anglais -> toujours "to "
+    if (type === 'verbe' || targetVal.toLowerCase().startsWith('to ')) {
+        return 'to ';
+    }
+
+    // 2. Nom anglais avec article explicite dans le mot cible
+    if (targetVal.toLowerCase().startsWith('the ')) return 'the ';
+    if (targetVal.toLowerCase().startsWith('a ')) return 'a ';
+    if (targetVal.toLowerCase().startsWith('an ')) return 'an ';
+
+    // 3. Nom anglais sans article explicite, mais le mot source en possède un
+    if (type === 'nom') {
+        const srcLower = sourceVal.toLowerCase();
+        // Déterminant défini (le, la, l', les, der, die, das, el, la, los, las)
+        if (/^(le |la |l'|les |der |die |das |el |la |los |las )/i.test(srcLower)) {
+            return 'the ';
+        }
+        // Déterminant indéfini (un, une, ein, eine, un, una)
+        if (/^(un |une |ein |eine |un |una )/i.test(srcLower)) {
+            const cleanedTarget = targetVal.replace(/^(the |a |an |to )/i, '').trim();
+            if (/^[aeiou]/i.test(cleanedTarget)) {
+                return 'an ';
+            }
+            return 'a ';
+        }
+    }
+
+    return '';
 }
 
 function buildTargetRegex(targetWord) {
@@ -253,6 +289,31 @@ function renderCurrentWord() {
     const suffix = translations[lang].words_remaining;
     counterEl.textContent = `${sessionState.words.length} ${suffix}`;
     
+    // Déterminer et afficher le préfixe visuel fixe (ex: "to ", "the ", "a ", "an ")
+    const prefixEl = document.getElementById('drill-input-prefix');
+    const inputWrapperEl = document.getElementById('drill-input-wrapper');
+    sessionState.currentPrefix = getTargetPrefix(currentWord, sessionState.langTarget, sessionState.langSource);
+    
+    if (sessionState.currentPrefix) {
+        if (prefixEl) {
+            prefixEl.textContent = sessionState.currentPrefix;
+            prefixEl.style.display = 'inline-block';
+        }
+        if (inputWrapperEl) {
+            inputWrapperEl.classList.add('has-prefix');
+            inputWrapperEl.style.display = 'flex';
+        }
+    } else {
+        if (prefixEl) {
+            prefixEl.textContent = '';
+            prefixEl.style.display = 'none';
+        }
+        if (inputWrapperEl) {
+            inputWrapperEl.classList.remove('has-prefix');
+            inputWrapperEl.style.display = 'flex';
+        }
+    }
+
     inputEl.style.display = 'block';
     
     // On ne donne le focus à l'input que sur ordinateur pour éviter de forcer le clavier sur mobile
@@ -298,9 +359,26 @@ function handleValidation() {
         });
 
         let allExpectedOpts = [];
-        expectedOptions.forEach(opt => allExpectedOpts.push(...getArticleAlternatives(opt)));
+        expectedOptions.forEach(opt => {
+            allExpectedOpts.push(...getArticleAlternatives(opt));
+            allExpectedOpts.push(opt.replace(/^(the |a |an |to )/i, '').trim());
+        });
         
-        let allInputOpts = [normalizedInput, inputNoParens, ...getArticleAlternatives(normalizedInput), ...getArticleAlternatives(inputNoParens)];
+        let allInputOpts = [
+            normalizedInput, 
+            inputNoParens, 
+            ...getArticleAlternatives(normalizedInput), 
+            ...getArticleAlternatives(inputNoParens)
+        ];
+
+        // Si un préfixe était affiché (ex: "to "), inclure la version complétée
+        if (sessionState.currentPrefix && userInput.trim()) {
+            const prefixClean = sessionState.currentPrefix.trim();
+            if (!normalizedInput.startsWith(prefixClean)) {
+                const combined = normalizeText(sessionState.currentPrefix + ' ' + userInput);
+                allInputOpts.push(combined, ...getArticleAlternatives(combined));
+            }
+        }
 
         const isCorrect = allInputOpts.some(inputOpt => allExpectedOpts.includes(inputOpt));
 
@@ -310,9 +388,25 @@ function handleValidation() {
         
         const userContainer = document.getElementById('result-user-container');
         const userEl = document.getElementById('result-user');
-        if (userEl) userEl.textContent = userInput || '(vide)';
+        if (userEl) {
+            let displayUser = userInput || '(vide)';
+            if (sessionState.currentPrefix && userInput.trim()) {
+                const prefixClean = sessionState.currentPrefix.trim();
+                if (!displayUser.toLowerCase().startsWith(prefixClean.toLowerCase())) {
+                    displayUser = sessionState.currentPrefix + displayUser;
+                }
+            }
+            userEl.textContent = displayUser;
+        }
 
-        document.getElementById('result-expected').textContent = expected;
+        let displayExpected = expected;
+        if (sessionState.currentPrefix && expected) {
+            const prefixClean = sessionState.currentPrefix.trim();
+            if (!expected.toLowerCase().startsWith(prefixClean.toLowerCase())) {
+                displayExpected = sessionState.currentPrefix + expected;
+            }
+        }
+        document.getElementById('result-expected').textContent = displayExpected;
         
         // Configuration du bouton de prononciation
         const btnSpeak = document.getElementById('btn-speak-expected');
@@ -330,7 +424,14 @@ function handleValidation() {
         resultSection.classList.remove('hidden');
         
         const inputWrapperEl = document.getElementById('drill-input-wrapper');
-        if (inputWrapperEl) inputWrapperEl.style.display = 'none';
+        if (inputWrapperEl) {
+            inputWrapperEl.style.display = 'none';
+            inputWrapperEl.classList.remove('has-prefix');
+        }
+        const prefixEl = document.getElementById('drill-input-prefix');
+        if (prefixEl) {
+            prefixEl.style.display = 'none';
+        }
         
         inputEl.disabled = true;
         inputEl.blur(); // Masque le clavier virtuel sur mobile
@@ -446,8 +547,23 @@ function handleValidation() {
                         const normExp = normalizeText(s);
                         const normExpNoParens = normalizeText(s.replace(/\(.*?\)/g, ' '));
                         
-                        let expOpts = [...getArticleAlternatives(normExp), ...getArticleAlternatives(normExpNoParens)];
-                        let inOpts = [...getArticleAlternatives(normalizedInput)];
+                        let expOpts = [
+                            ...getArticleAlternatives(normExp), 
+                            ...getArticleAlternatives(normExpNoParens),
+                            normExp.replace(/^(the |a |an |to )/i, '').trim()
+                        ];
+                        let inOpts = [
+                            normalizedInput, 
+                            ...getArticleAlternatives(normalizedInput)
+                        ];
+
+                        if (sessionState.currentPrefix && normalizedInput) {
+                            const prefixClean = sessionState.currentPrefix.trim();
+                            if (!normalizedInput.startsWith(prefixClean)) {
+                                const combined = normalizeText(sessionState.currentPrefix + ' ' + normalizedInput);
+                                inOpts.push(combined, ...getArticleAlternatives(combined));
+                            }
+                        }
                         
                         if (inOpts.some(io => expOpts.includes(io))) {
                             isRewriteCorrect = true;
