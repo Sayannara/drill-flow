@@ -146,10 +146,10 @@ function attachViewEvents(viewId) {
             selectTgt.innerHTML = '';
             
             const langs = [
-                { value: 'fr', text: 'Français (FR)' },
-                { value: 'en', text: 'Anglais (EN)' },
-                { value: 'de', text: 'Allemand (DE)' },
-                { value: 'es', text: 'Espagnol (ES)' }
+                { value: 'fr', text: 'Français' },
+                { value: 'en', text: 'Anglais' },
+                { value: 'de', text: 'Allemand' },
+                { value: 'es', text: 'Espagnol' }
             ];
             
             langs.forEach(lang => {

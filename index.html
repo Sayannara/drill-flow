@@ -135,8 +135,8 @@
                     </div>
                 </div>
 
-                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-                    <div class="form-group" style="flex: 1; min-width: 200px; margin-bottom: 0;">
+                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem; align-items: flex-start;">
+                    <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
                         <label data-i18n="label_volume">Nombre de mots</label>
                         <div class="range-container" style="display: flex; align-items: center; height: 42px; gap: 0.5rem;">
                             <input type="range" id="input-volume" min="5" max="20" value="20" step="5" style="flex: 1; margin: 0;">
@@ -144,20 +144,20 @@
                         </div>
                     </div>
 
-                    <div class="form-group" style="flex: 1.5; min-width: 250px; margin-bottom: 0;">
+                    <div class="form-group" style="flex: 1.6; min-width: 290px; margin-bottom: 0;">
                         <label data-i18n="label_mode">Mode d'entraînement</label>
-                        <div class="segmented-control" id="mode-segmented-control" style="display: flex; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; height: 42px;">
-                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative;">
+                        <div class="segmented-control" id="mode-segmented-control" style="display: flex; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; min-height: 42px;">
+                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex;">
                                 <input type="radio" name="drill-mode" value="discovery" checked style="opacity: 0; position: absolute; width: 0; height: 0;">
-                                <div class="segment-btn" style="padding: 0.6rem; font-size: 0.9rem; font-weight: 600; transition: all 0.2s;" data-i18n="mode_discovery">Découverte</div>
+                                <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_discovery">Découverte</div>
                             </label>
-                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; border-left: 1px solid var(--border-color); border-right: 1px solid var(--border-color);">
+                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex; border-left: 1px solid var(--border-color); border-right: 1px solid var(--border-color);">
                                 <input type="radio" name="drill-mode" value="smart" style="opacity: 0; position: absolute; width: 0; height: 0;">
-                                <div class="segment-btn" style="padding: 0.6rem; font-size: 0.9rem; font-weight: 600; transition: all 0.2s;" data-i18n="mode_smart">Smart Drill</div>
+                                <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_smart">Smart Drill</div>
                             </label>
-                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative;">
+                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex;">
                                 <input type="radio" name="drill-mode" value="review" style="opacity: 0; position: absolute; width: 0; height: 0;">
-                                <div class="segment-btn" style="padding: 0.6rem; font-size: 0.9rem; font-weight: 600; transition: all 0.2s;" data-i18n="mode_review">Révision</div>
+                                <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_review">Révision</div>
                             </label>
                         </div>
                         <div id="mode-description" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem; min-height: 2.4rem; line-height: 1.4;">
