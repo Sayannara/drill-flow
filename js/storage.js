@@ -1,6 +1,6 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
-import { db } from './firebase-config.js?v=65';
-import { getCurrentUser } from './auth.js?v=65';
+import { db } from './firebase-config.js?v=66';
+import { getCurrentUser } from './auth.js?v=66';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
@@ -114,8 +114,8 @@ export function getWordStats(langSource, langTarget, wordId) {
     return { status: 'actif', attempts: 0 };
 }
 
-// Met à jour l'état d'un mot et incrémente ses tentatives
-export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false) {
+// Met à jour l'état d'un mot et gère ses tentatives
+export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false, explicitAttempts = null) {
     const pairKey = `${langSource}-${langTarget}`;
     
     if (!localCache[pairKey]) {
@@ -138,7 +138,9 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
         currentData.attempts = 0;
     }
     
-    if (addAttempt) {
+    if (explicitAttempts !== null) {
+        currentData.attempts = explicitAttempts;
+    } else if (addAttempt) {
         currentData.attempts = (currentData.attempts || 0) + 1;
     }
     currentData.last_updated = new Date().toISOString();

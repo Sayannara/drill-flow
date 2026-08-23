@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=65';
-import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=65';
-import { translations } from './i18n.js?v=65';
+import { vocabulary } from './data/vocabulary.js?v=66';
+import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=66';
+import { translations } from './i18n.js?v=66';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -152,6 +152,7 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     sessionState.originalWords = [...sessionState.words]; // Keep for context drill
     sessionState.currentIndex = 0;
     sessionState.isWaitingAction = false;
+    sessionState.wordSessionAttempts = {};
 
     // Reset de l'UI si on vient d'une fin de session
     const flashcard = document.querySelector('.flashcard');
@@ -769,43 +770,47 @@ function proceedNextWord(action) {
     const statusBanner = document.getElementById('result-status');
     const wasCorrect = statusBanner.dataset.correct === "true";
 
-    const prevStats = getWordStats(sessionState.langSource, sessionState.langTarget, currentWord.id);
-    const prevAttempts = prevStats.attempts || 0;
+    if (!sessionState.wordSessionAttempts) {
+        sessionState.wordSessionAttempts = {};
+    }
+    const wordId = currentWord.id;
+    const sessionTries = sessionState.wordSessionAttempts[wordId] || 0;
 
-    let finalStatus = 'actif'; // par défaut, on garde
+    let finalStatus = 'actif';
     let removeFromSession = false;
-    let addAttempt = true;
+    let explicitAttempts = null;
 
     if (action === 'ignore') {
         finalStatus = 'ignoré';
         removeFromSession = true;
-        addAttempt = false;
-    } else if (action === 'auto') {
+        explicitAttempts = 0;
+    } else if (action === 'auto' || action === 'remove') {
         if (wasCorrect) {
             removeFromSession = true;
-            // Un mot est validé uniquement s'il est réussi du 1er coup (ou s'il était déjà validé en révision)
-            if (prevAttempts === 0 || prevStats.status === 'validé') {
+            if (sessionTries === 0) {
+                // Réussi du premier coup dans cette session -> Validé avec 1 seule tentative !
                 finalStatus = 'validé';
+                explicitAttempts = 1;
             } else {
+                // Réussi après une ou plusieurs erreurs dans ce même batch -> Reste actif (à consolider)
                 finalStatus = 'actif';
+                explicitAttempts = sessionTries + 1;
             }
         } else {
+            // Erreur -> Reste dans la session et est réinséré plus loin
+            sessionState.wordSessionAttempts[wordId] = sessionTries + 1;
             finalStatus = 'actif';
             removeFromSession = false;
+            explicitAttempts = sessionState.wordSessionAttempts[wordId] + 1;
         }
     } else if (action === 'keep') {
+        sessionState.wordSessionAttempts[wordId] = sessionTries + 1;
         finalStatus = 'actif';
         removeFromSession = false;
-    } else if (action === 'remove') {
-        removeFromSession = true;
-        if (prevAttempts === 0 || prevStats.status === 'validé') {
-            finalStatus = 'validé';
-        } else {
-            finalStatus = 'actif';
-        }
+        explicitAttempts = sessionState.wordSessionAttempts[wordId] + 1;
     }
 
-    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, addAttempt);
+    setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, false, explicitAttempts);
 
     // Supprimer le mot de la session courante s'il est retiré ou réussi
     if (removeFromSession) {
