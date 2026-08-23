@@ -1079,7 +1079,23 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     cursor: grab;
     transition: all 0.2s;
     user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
     box-shadow: var(--shadow-sm);
+}
+
+.touch-drag-clone {
+    background: var(--surface-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    color: var(--text-primary) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    font-size: 1.05rem !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+    padding: 0.5rem 1rem !important;
 }
 
 .context-word-btn:hover {

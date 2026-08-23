@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=69';
-import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=69';
-import { translations } from './i18n.js?v=69';
+import { vocabulary } from './data/vocabulary.js?v=70';
+import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=70';
+import { translations } from './i18n.js?v=70';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -1067,6 +1067,7 @@ function renderContextDrill() {
         btn.dataset.id = pair.id;
         btn.draggable = true;
 
+        // Desktop HTML5 Drag & Drop
         btn.addEventListener('dragstart', (e) => {
             e.dataTransfer.setData('text/plain', pair.id);
             btn.classList.add('dragging');
@@ -1075,16 +1076,105 @@ function renderContextDrill() {
             btn.classList.remove('dragging');
         });
 
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.context-word-btn').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
-            contextState.selectedWordId = pair.id;
+        // Mobile Touch Drag & Drop
+        let touchClone = null;
+        let activeDz = null;
+        let touchMoved = false;
+
+        btn.addEventListener('touchstart', (e) => {
+            touchMoved = false;
+            const touch = e.touches[0];
+            const rect = btn.getBoundingClientRect();
             
-            document.querySelectorAll('.context-dropzone').forEach(dz => {
-                if (!dz.classList.contains('success')) {
-                    dz.classList.add('selectable');
-                }
-            });
+            touchClone = btn.cloneNode(true);
+            touchClone.classList.add('touch-drag-clone');
+            touchClone.style.position = 'fixed';
+            touchClone.style.left = `${touch.clientX - rect.width / 2}px`;
+            touchClone.style.top = `${touch.clientY - rect.height / 2}px`;
+            touchClone.style.width = `${rect.width}px`;
+            touchClone.style.height = `${rect.height}px`;
+            touchClone.style.zIndex = '99999';
+            touchClone.style.pointerEvents = 'none';
+            touchClone.style.opacity = '0.92';
+            touchClone.style.transform = 'scale(1.08)';
+            touchClone.style.boxShadow = '0 12px 28px rgba(0,0,0,0.35)';
+            document.body.appendChild(touchClone);
+
+            btn.classList.add('dragging');
+        }, { passive: true });
+
+        btn.addEventListener('touchmove', (e) => {
+            if (!touchClone) return;
+            touchMoved = true;
+            const touch = e.touches[0];
+            const rect = btn.getBoundingClientRect();
+            
+            touchClone.style.left = `${touch.clientX - rect.width / 2}px`;
+            touchClone.style.top = `${touch.clientY - rect.height / 2}px`;
+
+            // Détection de la dropzone sous le doigt
+            const elemBelow = document.elementFromPoint(touch.clientX, touch.clientY);
+            const dzBelow = elemBelow ? elemBelow.closest('.context-dropzone:not(.success)') : null;
+
+            if (activeDz && activeDz !== dzBelow) {
+                activeDz.classList.remove('drag-over');
+            }
+            if (dzBelow) {
+                dzBelow.classList.add('drag-over');
+                activeDz = dzBelow;
+            } else {
+                activeDz = null;
+            }
+
+            if (e.cancelable) e.preventDefault();
+        }, { passive: false });
+
+        btn.addEventListener('touchend', () => {
+            btn.classList.remove('dragging');
+            if (touchClone) {
+                touchClone.remove();
+                touchClone = null;
+            }
+
+            if (activeDz) {
+                activeDz.classList.remove('drag-over');
+                const card = activeDz.closest('.context-sentence-card');
+                handleContextMatch(pair.id, activeDz.dataset.id, activeDz, card);
+                activeDz = null;
+            }
+        });
+
+        btn.addEventListener('touchcancel', () => {
+            btn.classList.remove('dragging');
+            if (touchClone) {
+                touchClone.remove();
+                touchClone = null;
+            }
+            if (activeDz) {
+                activeDz.classList.remove('drag-over');
+                activeDz = null;
+            }
+        });
+
+        // Tap to select (compatible Desktop et Mobile)
+        btn.addEventListener('click', (e) => {
+            if (touchMoved) return;
+            const isAlreadySelected = btn.classList.contains('selected');
+            document.querySelectorAll('.context-word-btn').forEach(b => b.classList.remove('selected'));
+            
+            if (isAlreadySelected) {
+                contextState.selectedWordId = null;
+                document.querySelectorAll('.context-dropzone.selectable').forEach(dz => dz.classList.remove('selectable'));
+            } else {
+                btn.classList.add('selected');
+                contextState.selectedWordId = pair.id;
+                
+                document.querySelectorAll('.context-dropzone').forEach(dz => {
+                    if (!dz.classList.contains('success')) {
+                        dz.classList.add('selectable');
+                    }
+                });
+            }
         });
 
         poolEl.appendChild(btn);
