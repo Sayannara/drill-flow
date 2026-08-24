@@ -252,11 +252,11 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     position: relative;
     width: fit-content;
     min-width: 220px;
-    max-width: 320px;
+    max-width: 340px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid var(--border-color);
-    padding-bottom: 0.35rem;
+    padding: 0 0.6rem 0.35rem 0.6rem;
     transition: border-color 0.2s ease;
     box-sizing: border-box;
     cursor: text;
@@ -274,9 +274,12 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     pointer-events: none;
     white-space: pre;
     padding: 0;
-    margin: 0 0.2rem 0 0;
+    margin: 0;
     line-height: 1.2;
     flex-shrink: 0;
+}
+.input-section.has-prefix {
+    justify-content: center;
 }
 .input-section.has-prefix .input-prefix {
     display: inline-block !important;
