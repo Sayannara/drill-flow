@@ -334,18 +334,21 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
 }
 
 input[type="text"].rewrite-field {
-    border: none;
+    border: none !important;
     background: transparent;
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
     width: 100%;
     max-width: 300px;
-    outline: none;
-    box-shadow: none;
-    font-family: monospace;
-    font-size: 1.75rem;
-    font-weight: 600;
+    outline: none !important;
+    box-shadow: none !important;
+    font-family: monospace !important;
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
     color: var(--text-primary);
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 [data-theme="light"] input[type="text"].rewrite-field {
