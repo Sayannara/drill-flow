@@ -251,8 +251,8 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     justify-content: center;
     position: relative;
     width: fit-content;
-    min-width: 220px;
-    max-width: 340px;
+    min-width: 140px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid var(--border-color);
@@ -296,13 +296,16 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     margin: 0;
     background: transparent;
     color: var(--text-primary);
-    width: 100%;
     line-height: 1.2;
+    field-sizing: content;
+    min-width: 100px;
+    max-width: 280px;
 }
 .input-section.has-prefix input {
     text-align: left;
-    flex: 1;
-    width: auto;
+    field-sizing: content;
+    min-width: 100px;
+    max-width: 280px;
 }
 .input-section input:focus {
     outline: none !important;

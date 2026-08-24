@@ -166,6 +166,13 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
 }
 
 // (Bouton switch de langue supprimé)
+function autoSizeInput(inputEl) {
+    if (!inputEl) return;
+    const txt = inputEl.value || inputEl.placeholder || 'Traduction...';
+    const len = Math.max(txt.length, 8);
+    inputEl.style.width = `${len + 1}ch`;
+}
+
 function renderCurrentWord() {
     const wordSourceEl = document.getElementById('drill-word-source');
     const inputEl = document.getElementById('drill-input');
@@ -176,12 +183,14 @@ function renderCurrentWord() {
 
     // Cacher le résultat, vider l'input
     const inputWrapperEl = document.getElementById('drill-input-wrapper');
-    if (inputWrapperEl) inputWrapperEl.style.display = 'block';
+    if (inputWrapperEl) inputWrapperEl.style.display = 'flex';
     
     resultSection.classList.add('hidden');
     inputEl.value = '';
     inputEl.disabled = false;
     sessionState.isWaitingAction = false;
+    autoSizeInput(inputEl);
+    inputEl.oninput = () => autoSizeInput(inputEl);
 
     const rewriteLine = document.getElementById('rewrite-line');
     const rewriteInput = document.getElementById('rewrite-input');
