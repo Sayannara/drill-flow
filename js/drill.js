@@ -514,7 +514,6 @@ function handleValidation() {
         const isMobile = window.innerWidth <= 640;
 
         // Rendu visuel correct / faux selon CDC
-        const lang = getAppLanguage();
         if (isCorrect) {
             statusBanner.textContent = translations[lang].status_correct;
             statusBanner.style.backgroundColor = 'var(--success-color)';
