@@ -344,7 +344,7 @@ input[type="text"].rewrite-field {
     box-shadow: none !important;
     font-family: monospace !important;
     font-size: 1.75rem !important;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     line-height: 1.2 !important;
     color: var(--text-primary);
     appearance: none;
@@ -1224,14 +1224,14 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 
 /* Report button & toast styles */
 .report-btn {
-    background: transparent;
-    border: none;
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.3);
     cursor: pointer;
-    font-size: 0.85rem;
-    opacity: 0.45;
-    padding: 0.15rem 0.35rem;
-    border-radius: 4px;
-    transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    padding: 0.25rem 0.55rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
     line-height: 1;
     display: inline-flex;
     align-items: center;
@@ -1240,17 +1240,20 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 }
 .report-btn:hover {
     opacity: 1;
-    transform: scale(1.15);
-    background: rgba(239, 68, 68, 0.15);
+    transform: scale(1.1);
+    background: rgba(239, 68, 68, 0.25);
+    border-color: rgba(239, 68, 68, 0.6);
 }
 .report-btn:active {
     transform: scale(0.95);
 }
 .report-btn.reported {
-    opacity: 0.3;
+    opacity: 0.35;
     cursor: default;
     pointer-events: none;
     filter: grayscale(1);
+    background: transparent;
+    border-color: transparent;
 }
 
 .report-toast {
