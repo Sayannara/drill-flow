@@ -285,7 +285,7 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
 .input-section input {
     font-size: 1.5rem;
     font-family: var(--font-sans);
-    text-align: center;
+    text-align: left;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
