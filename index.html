@@ -16,7 +16,7 @@
     <header class="app-header">
         <div class="logo" id="app-logo" style="display: flex; align-items: center; gap: 0.4rem;">
             <span class="logo-text">drillFlow.</span>
-            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v55</span>
+            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v56</span>
         </div>
         <nav class="nav-menu">
             <button id="nav-home" class="nav-btn active" data-i18n="nav_drill">Drill !</button>
@@ -262,8 +262,10 @@
                             </div>
                             <div class="comparison-line" id="rewrite-line" style="display: none;">
                                 <span class="comparison-label" data-i18n="label_rewrite">Récrire:</span>
-                                <span id="rewrite-prefix" class="input-prefix" style="display: none; font-family: monospace; font-size: 1.75rem; font-weight: 600; opacity: 0.55; margin-right: 0.2rem; line-height: 1.2; border: none; padding: 0;"></span>
-                                <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off">
+                                <div id="rewrite-wrapper" class="input-section has-prefix" style="display: inline-flex; align-items: baseline; min-width: 200px; max-width: 320px; border-bottom: 2px solid var(--border-color); padding-bottom: 0.25rem; margin-left: 0; margin-right: 0;">
+                                    <span id="rewrite-prefix" class="input-prefix" style="display: none; font-family: monospace; font-size: 1.75rem; font-weight: 600; opacity: 0.55; margin-right: 0.2rem; line-height: 1.2; border: none; padding: 0;"></span>
+                                    <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off" style="border: none; outline: none; background: transparent; flex: 1; font-family: monospace; font-size: 1.75rem; font-weight: 600; color: var(--text-primary); padding: 0; margin: 0;">
+                                </div>
                             </div>
                             <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
                                 <span class="comparison-label"></span>
@@ -595,7 +597,7 @@
 
     <!-- Footer avec version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.65; font-family: var(--font-sans);">
-        drillFlow <span class="app-version-num">v55</span> &bull; Déployé le 24/08/2026
+        drillFlow <span class="app-version-num">v56</span> &bull; Déployé le 24/08/2026
     </footer>
 
     <!-- Scripts -->
