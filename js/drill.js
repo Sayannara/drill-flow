@@ -390,6 +390,7 @@ function handleValidation() {
         // Affichage des résultats
         const asked = currentWord[sessionState.langSource];
         document.getElementById('result-asked').textContent = asked;
+        const lang = getAppLanguage();
         
         // Badges Type & Niveau dans l'écran de correction
         const resultTypeBadge = document.getElementById('result-asked-type-badge');
