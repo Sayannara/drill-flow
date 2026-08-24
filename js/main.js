@@ -497,6 +497,17 @@ function initProgressView() {
         }
     });
 
+    // Attach listeners for word status filters
+    ['valide', 'actif', 'ignore'].forEach(statusKey => {
+        const checkbox = document.getElementById(`filter-status-${statusKey}`);
+        if (checkbox) {
+            checkbox.checked = true;
+            checkbox.onchange = () => {
+                renderProgressTable();
+            };
+        }
+    });
+
     renderProgressTable();
 }
 
@@ -523,10 +534,19 @@ function renderProgressTable() {
     const filterC1 = document.getElementById('filter-level-c1') ? document.getElementById('filter-level-c1').checked : true;
     const filterC2 = document.getElementById('filter-level-c2') ? document.getElementById('filter-level-c2').checked : true;
 
+    const filterStatusValide = document.getElementById('filter-status-valide') ? document.getElementById('filter-status-valide').checked : true;
+    const filterStatusActif = document.getElementById('filter-status-actif') ? document.getElementById('filter-status-actif').checked : true;
+    const filterStatusIgnore = document.getElementById('filter-status-ignore') ? document.getElementById('filter-status-ignore').checked : true;
+
     const filtered = vocabulary.filter(word => {
         const stats = getWordStats(src, tgt, word.id);
         const status = getWordStatus(src, tgt, word.id);
         if ((!stats || !stats.attempts || stats.attempts === 0) && status !== 'ignoré') return false;
+
+        // Status filters
+        if (status === 'validé' && !filterStatusValide) return false;
+        if (status === 'actif' && !filterStatusActif) return false;
+        if (status === 'ignoré' && !filterStatusIgnore) return false;
 
         if (word.type === 'nom' && !filterNom) return false;
         if (word.type === 'verbe' && !filterVerbe) return false;

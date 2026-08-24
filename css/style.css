@@ -1224,11 +1224,11 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 
 /* Report button & toast styles */
 .report-btn {
-    background: rgba(239, 68, 68, 0.14);
-    border: 1px solid rgba(239, 68, 68, 0.35);
+    background: rgba(239, 68, 68, 0.18);
+    border: 1px solid #ef4444;
     cursor: pointer;
     opacity: 1;
-    padding: 0.25rem 0.65rem;
+    padding: 0.2rem 0.65rem;
     border-radius: 20px;
     transition: all 0.2s ease;
     line-height: 1;
@@ -1237,11 +1237,31 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     justify-content: center;
     user-select: none;
 }
+.report-btn .report-btn-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 0.35rem;
+    transition: color 0.2s ease;
+}
+[data-theme="light"] .report-btn .report-btn-text {
+    color: #dc2626;
+}
+.report-btn svg {
+    transition: fill 0.2s ease, stroke 0.2s ease;
+}
 .report-btn:hover {
     opacity: 1;
     transform: scale(1.05);
-    background: rgba(239, 68, 68, 0.25);
-    border-color: rgba(239, 68, 68, 0.7);
+    background: #ef4444;
+    border-color: #ef4444;
+}
+.report-btn:hover .report-btn-text {
+    color: #ffffff !important;
+}
+.report-btn:hover svg {
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
 }
 .report-btn:active {
     transform: scale(0.95);

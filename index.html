@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=81">
+    <link rel="stylesheet" href="css/style.css?v=82">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -16,7 +16,7 @@
     <header class="app-header">
         <div class="logo" id="app-logo" style="display: flex; align-items: center; gap: 0.4rem;">
             <span class="logo-text">drillFlow.</span>
-            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v68</span>
+            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v69</span>
         </div>
         <nav class="nav-menu">
             <button id="nav-home" class="nav-btn active" data-i18n="nav_drill">Drill !</button>
@@ -244,7 +244,7 @@
                                         <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
                                         <line x1="4" y1="22" x2="4" y2="15"></line>
                                     </svg>
-                                    <span style="font-size: 0.75rem; font-weight: 600; color: #ef4444; margin-left: 0.35rem;">Signaler</span>
+                                    <span class="report-btn-text">Signaler</span>
                                 </button>
                             </div>
                             <div class="comparison-line" id="result-user-container" style="display: none;">
@@ -270,8 +270,8 @@
                             <div class="comparison-line" id="rewrite-line" style="display: none;">
                                 <span class="comparison-label" data-i18n="label_rewrite">Récrire:</span>
                                 <div id="rewrite-wrapper" class="input-section has-prefix" style="display: inline-flex; align-items: baseline; width: 260px; border-bottom: 2px solid var(--border-color); padding: 0 0 0.2rem 0 !important; margin: 0 !important;">
-                                    <span id="rewrite-prefix" class="input-prefix" style="display: none; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 400 !important; opacity: 0.55; margin: 0 0.2rem 0 0 !important; line-height: 1.2 !important; border: none !important; padding: 0 !important;"></span>
-                                    <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off" style="border: none !important; outline: none !important; background: transparent; flex: 1; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 400 !important; color: var(--text-primary); padding: 0 !important; margin: 0 !important;">
+                                    <span id="rewrite-prefix" class="input-prefix" style="display: none; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; opacity: 0.55; margin: 0 0.2rem 0 0 !important; line-height: 1.2 !important; border: none !important; padding: 0 !important;"></span>
+                                    <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off" style="border: none !important; outline: none !important; background: transparent; flex: 1; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; color: var(--text-primary); padding: 0 !important; margin: 0 !important;">
                                 </div>
                             </div>
                             <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
@@ -398,6 +398,21 @@
                             <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
                                 <input type="checkbox" id="filter-level-c2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
                                 <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">C2</span>
+                            </label>
+                        </div>
+
+                        <div class="status-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap; border-left: 1px solid var(--border-color); padding-left: 1rem;">
+                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                                <input type="checkbox" id="filter-status-valide" checked style="accent-color: #10b981; width: 15px; height: 15px; cursor: pointer;">
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">Validé</span>
+                            </label>
+                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                                <input type="checkbox" id="filter-status-actif" checked style="accent-color: #3b82f6; width: 15px; height: 15px; cursor: pointer;">
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">Non validé</span>
+                            </label>
+                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
+                                <input type="checkbox" id="filter-status-ignore" checked style="accent-color: #9ca3af; width: 15px; height: 15px; cursor: pointer;">
+                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(156, 163, 175, 0.2); color: #9ca3af;">Ignoré</span>
                             </label>
                         </div>
                     </div>
@@ -622,7 +637,7 @@
 
     <!-- Footer avec version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.65; font-family: var(--font-sans);">
-        drillFlow <span class="app-version-num">v68</span> &bull; Déployé le 24/08/2026
+        drillFlow <span class="app-version-num">v69</span> &bull; Déployé le 24/08/2026
     </footer>
 
     <!-- Scripts -->
