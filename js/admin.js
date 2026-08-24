@@ -82,7 +82,20 @@ async function loadReports() {
         console.error('Erreur chargement admin:', err);
         if (loadingEl) {
             loadingEl.style.display = 'block';
-            loadingEl.innerHTML = `<div style="color: var(--error-color); font-weight: 600;">Erreur lors du chargement : ${escapeHtml(err.message)}</div>`;
+            if (err.code === 'permission-denied' || err.message.includes('permissions') || err.message.includes('Permission')) {
+                loadingEl.innerHTML = `
+                    <div style="background: rgba(239,68,68,0.1); border: 1px solid var(--error-color); padding: 1.5rem; border-radius: 12px; max-width: 620px; margin: 0 auto; text-align: left;">
+                        <h4 style="color: var(--error-color); margin: 0 0 0.5rem 0;">⚠️ Autorisations Firebase requises</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-primary); margin: 0 0 0.75rem 0;">Firebase Firestore bloque la lecture de la collection <code>word_reports</code> tant que la règle d'accès n'est pas ajoutée.</p>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0 0 0.5rem 0;">Rendez-vous dans la <strong>Console Firebase &gt; Firestore Database &gt; Règles</strong> et ajoutez :</p>
+                        <pre style="background: rgba(0,0,0,0.4); padding: 0.75rem; border-radius: 8px; font-size: 0.85rem; color: #10b981; margin: 0; overflow-x: auto; font-family: monospace;">match /word_reports/{reportId} {
+  allow read, write: if true;
+}</pre>
+                    </div>
+                `;
+            } else {
+                loadingEl.innerHTML = `<div style="color: var(--error-color); font-weight: 600;">Erreur lors du chargement : ${escapeHtml(err.message)}</div>`;
+            }
         }
     }
 }

@@ -1224,13 +1224,12 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 
 /* Report button & toast styles */
 .report-btn {
-    background: rgba(239, 68, 68, 0.12);
-    border: 1px solid rgba(239, 68, 68, 0.3);
+    background: rgba(239, 68, 68, 0.14);
+    border: 1px solid rgba(239, 68, 68, 0.35);
     cursor: pointer;
-    font-size: 0.95rem;
-    opacity: 0.9;
-    padding: 0.25rem 0.55rem;
-    border-radius: 6px;
+    opacity: 1;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
     transition: all 0.2s ease;
     line-height: 1;
     display: inline-flex;
@@ -1240,18 +1239,17 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 }
 .report-btn:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
     background: rgba(239, 68, 68, 0.25);
-    border-color: rgba(239, 68, 68, 0.6);
+    border-color: rgba(239, 68, 68, 0.7);
 }
 .report-btn:active {
     transform: scale(0.95);
 }
 .report-btn.reported {
-    opacity: 0.35;
+    opacity: 0.4;
     cursor: default;
     pointer-events: none;
-    filter: grayscale(1);
     background: transparent;
     border-color: transparent;
 }
