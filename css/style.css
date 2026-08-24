@@ -344,7 +344,7 @@ input[type="text"].rewrite-field {
     box-shadow: none !important;
     font-family: monospace !important;
     font-size: 1.75rem !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     line-height: 1.2 !important;
     color: var(--text-primary);
     appearance: none;
