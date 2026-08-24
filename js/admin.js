@@ -43,7 +43,7 @@ async function loadReports() {
             }) : '-';
 
             tr.innerHTML = `
-                <td><span class="count-badge">${item.count || 1} signalement(s)</span></td>
+                <td><strong style="font-size: 1.1rem; color: var(--text-primary);">${item.count || 1}</strong></td>
                 <td><strong>${escapeHtml(item.fr || '-')}</strong></td>
                 <td>${escapeHtml(item.en || '-')}</td>
                 <td>${escapeHtml(item.de || '-')}</td>
@@ -51,7 +51,7 @@ async function loadReports() {
                 <td><span class="type-badge" style="background: rgba(255,255,255,0.1); color: var(--text-primary); font-weight: 600;">${escapeHtml(item.level || '-')}</span></td>
                 <td><span class="type-badge ${escapeHtml(item.type || '')}">${escapeHtml(item.type || '-')}</span></td>
                 <td style="color: var(--text-secondary); font-size: 0.85rem;">${formattedDate}</td>
-                <td><button class="btn-resolve" data-id="${item.docId}">✓ Résolu</button></td>
+                <td><button class="btn-resolve" data-id="${item.docId}">Résolu</button></td>
             `;
 
             tbodyEl.appendChild(tr);
@@ -72,7 +72,7 @@ async function loadReports() {
                     } catch (err) {
                         alert(`Erreur lors de la suppression : ${err.message}`);
                         btn.disabled = false;
-                        btn.textContent = '✓ Résolu';
+                        btn.textContent = 'Résolu';
                     }
                 }
             };
