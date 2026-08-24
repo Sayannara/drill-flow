@@ -1,7 +1,7 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
 import { db } from './firebase-config.js?v=71';
 import { getCurrentUser } from './auth.js?v=71';
-import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { doc, getDoc, setDoc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
 let localCache = null;
@@ -173,4 +173,37 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
     
     localCache[pairKey][wordId] = currentData;
     saveProgressLocalAndCloud();
+}
+
+export async function reportWordTranslation(word) {
+    if (!word || !word.id) return { success: false, error: 'invalid_word' };
+    try {
+        const docRef = doc(db, "word_reports", String(word.id));
+        const docSnap = await getDoc(docRef);
+
+        const now = new Date().toISOString();
+        if (docSnap.exists()) {
+            await updateDoc(docRef, {
+                count: increment(1),
+                last_reported_at: now
+            });
+        } else {
+            await setDoc(docRef, {
+                word_id: word.id,
+                fr: word.fr || '',
+                en: word.en || '',
+                de: word.de || '',
+                es: word.es || '',
+                level: word.level || '',
+                type: word.type || '',
+                count: 1,
+                first_reported_at: now,
+                last_reported_at: now
+            });
+        }
+        return { success: true };
+    } catch (err) {
+        console.error('Erreur lors du signalement:', err);
+        return { success: false, error: err.message };
+    }
 }

@@ -1,5 +1,5 @@
 import { vocabulary } from './data/vocabulary.js?v=71';
-import { getWordStatus, setWordStatus, getWordStats } from './storage.js?v=71';
+import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js?v=71';
 import { translations } from './i18n.js?v=71';
 
 function getAppLanguage() {
@@ -271,6 +271,10 @@ function renderCurrentWord() {
             levelBadgeEl.style.display = 'none';
         }
     }
+
+    // Configurer le bouton de signalement d'erreur
+    setupReportButton('btn-report-word', currentWord);
+    setupReportButton('btn-report-word-result', currentWord);
     
     // Afficher la phrase d'exemple
     const exampleSentenceEl = document.getElementById('drill-example-sentence');
@@ -1322,3 +1326,63 @@ function showContextEndSession() {
 }
 
 window.startContextDrill = startContextDrill;
+
+function setupReportButton(btnId, currentWord) {
+    const btn = document.getElementById(btnId);
+    if (!btn) return;
+
+    if (sessionState.reportedWords && sessionState.reportedWords.has(currentWord.id)) {
+        btn.classList.add('reported');
+        btn.title = "Déjà signalé";
+    } else {
+        btn.classList.remove('reported');
+        btn.title = "Signaler une erreur sur ce mot";
+    }
+
+    btn.onclick = (e) => {
+        e.stopPropagation();
+        openReportModal(currentWord, btn);
+    };
+}
+
+function openReportModal(currentWord, btnEl) {
+    const modal = document.getElementById('report-modal');
+    const textEl = document.getElementById('report-modal-text');
+    const btnConfirm = document.getElementById('btn-report-confirm');
+    const btnCancel = document.getElementById('btn-report-cancel');
+    if (!modal) return;
+
+    const wordName = currentWord[sessionState.langSource] || currentWord.fr || 'ce mot';
+    textEl.innerHTML = `Signaler <strong>"${wordName}"</strong> comme mal traduit ou nécessitant une correction ?`;
+    modal.classList.remove('hidden');
+
+    const closeModal = () => {
+        modal.classList.add('hidden');
+    };
+
+    btnCancel.onclick = closeModal;
+
+    btnConfirm.onclick = async () => {
+        closeModal();
+        if (!sessionState.reportedWords) sessionState.reportedWords = new Set();
+        sessionState.reportedWords.add(currentWord.id);
+
+        const btnMain = document.getElementById('btn-report-word');
+        const btnResult = document.getElementById('btn-report-word-result');
+        if (btnMain) btnMain.classList.add('reported');
+        if (btnResult) btnResult.classList.add('reported');
+
+        showToast("✓ Signalement enregistré. Merci !");
+        await reportWordTranslation(currentWord);
+    };
+}
+
+function showToast(msg) {
+    const toast = document.getElementById('report-toast');
+    if (!toast) return;
+    toast.innerHTML = `<span>${msg}</span>`;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+        toast.classList.add('hidden');
+    }, 2500);
+}

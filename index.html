@@ -16,7 +16,7 @@
     <header class="app-header">
         <div class="logo" id="app-logo" style="display: flex; align-items: center; gap: 0.4rem;">
             <span class="logo-text">drillFlow.</span>
-            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v63</span>
+            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v64</span>
         </div>
         <nav class="nav-menu">
             <button id="nav-home" class="nav-btn active" data-i18n="nav_drill">Drill !</button>
@@ -238,6 +238,7 @@
                                     <span id="result-asked" class="comparison-text" style="color: var(--text-primary); font-weight: 500;">...</span>
                                     <span id="result-asked-type-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">nom</span>
                                     <span id="result-asked-level-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">A1</span>
+                                    <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur">🚩</button>
                                 </div>
                             </div>
                             <div class="comparison-line" id="result-user-container" style="display: none;">
@@ -281,9 +282,10 @@
                     <!-- Mot demandé et saisie en BAS -->
                     <div id="drill-word-wrapper" style="display: flex; align-items: flex-start; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
                         <div class="word-source" id="drill-word-source" style="margin-bottom: 0;">...</div>
-                        <div style="display: flex; gap: 0.35rem; margin-top: 0.35rem;">
+                        <div style="display: flex; gap: 0.35rem; margin-top: 0.35rem; align-items: center;">
                             <span id="drill-word-type-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">nom</span>
                             <span id="drill-word-level-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">A1</span>
+                            <button id="btn-report-word" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur">🚩</button>
                         </div>
                     </div>
                     
@@ -595,9 +597,27 @@
         </div>
     </div>
 
+    <!-- Modal Confirmation Signalement Erreur -->
+    <div id="report-modal" class="cert-modal-overlay hidden" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.85); display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 1rem; backdrop-filter: blur(4px);">
+        <div class="card cert-modal-card" style="max-width: 380px; width: 100%; display: flex; flex-direction: column; gap: 1rem; background: var(--surface-color); padding: 1.75rem; border-radius: 16px; box-shadow: var(--shadow); text-align: center;">
+            <div style="font-size: 2.2rem; margin-bottom: -0.5rem;">🚩</div>
+            <h3 style="margin: 0; font-family: var(--font-heading); color: var(--text-primary);">Signaler une erreur</h3>
+            <p id="report-modal-text" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Signaler ce mot comme mal traduit ou nécessitant une correction ?</p>
+            <div style="display: flex; gap: 0.75rem; width: 100%; margin-top: 0.5rem;">
+                <button type="button" id="btn-report-cancel" class="btn-primary btn-secondary-action" style="flex: 1; padding: 0.65rem;">Annuler</button>
+                <button type="button" id="btn-report-confirm" class="btn-primary" style="flex: 1; padding: 0.65rem; background: var(--error-color);">Signaler</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="report-toast" class="report-toast hidden">
+        <span>✓ Signalement enregistré. Merci !</span>
+    </div>
+
     <!-- Footer avec version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.65; font-family: var(--font-sans);">
-        drillFlow <span class="app-version-num">v63</span> &bull; Déployé le 24/08/2026
+        drillFlow <span class="app-version-num">v64</span> &bull; Déployé le 24/08/2026
     </footer>
 
     <!-- Scripts -->
