@@ -391,6 +391,45 @@ function handleValidation() {
         const asked = currentWord[sessionState.langSource];
         document.getElementById('result-asked').textContent = asked;
         
+        // Badges Type & Niveau dans l'écran de correction
+        const resultTypeBadge = document.getElementById('result-asked-type-badge');
+        if (resultTypeBadge) {
+            if (currentWord.type) {
+                resultTypeBadge.textContent = translations[lang][`type_${currentWord.type}`] || currentWord.type;
+                resultTypeBadge.className = `type-badge ${currentWord.type}`;
+                resultTypeBadge.classList.remove('hidden');
+                resultTypeBadge.style.display = 'inline-block';
+            } else {
+                resultTypeBadge.classList.add('hidden');
+                resultTypeBadge.style.display = 'none';
+            }
+        }
+
+        const resultLevelBadge = document.getElementById('result-asked-level-badge');
+        if (resultLevelBadge) {
+            if (currentWord.level) {
+                resultLevelBadge.textContent = currentWord.level;
+                resultLevelBadge.classList.remove('hidden');
+                resultLevelBadge.style.display = 'inline-block';
+                
+                let badgeBg = 'rgba(255,255,255,0.1)';
+                let badgeColor = 'inherit';
+                if (currentWord.level === 'A1') { badgeBg = 'rgba(59, 130, 246, 0.2)'; badgeColor = '#3b82f6'; }
+                if (currentWord.level === 'A2') { badgeBg = 'rgba(6, 182, 212, 0.2)'; badgeColor = '#06b6d4'; }
+                if (currentWord.level === 'B1') { badgeBg = 'rgba(16, 185, 129, 0.2)'; badgeColor = '#10b981'; }
+                if (currentWord.level === 'B2') { badgeBg = 'rgba(234, 179, 8, 0.2)'; badgeColor = '#eab308'; }
+                if (currentWord.level === 'C1') { badgeBg = 'rgba(249, 115, 22, 0.2)'; badgeColor = '#f97316'; }
+                if (currentWord.level === 'C2') { badgeBg = 'rgba(239, 68, 68, 0.2)'; badgeColor = '#ef4444'; }
+                
+                resultLevelBadge.style.background = badgeBg;
+                resultLevelBadge.style.color = badgeColor;
+                resultLevelBadge.style.fontWeight = '600';
+            } else {
+                resultLevelBadge.classList.add('hidden');
+                resultLevelBadge.style.display = 'none';
+            }
+        }
+        
         const userContainer = document.getElementById('result-user-container');
         const userEl = document.getElementById('result-user');
         if (userEl) {
