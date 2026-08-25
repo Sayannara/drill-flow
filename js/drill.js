@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=74';
-import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js?v=74';
-import { translations } from './i18n.js?v=74';
+import { vocabulary } from './data/vocabulary.js?v=75';
+import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js?v=75';
+import { translations } from './i18n.js?v=75';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -731,11 +731,11 @@ function handleValidation() {
             const labelIgnore = translations[lang].action_ignore || "Ne plus me demander";
             
             dynamicHints.innerHTML = isMobile ? '' : `
-                <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
-                    <kbd class="desktop-only">Entrée</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
-                </button>
                 <button id="btn-next-ignore" class="btn-drill-action btn-secondary-action">
                     <kbd class="desktop-only">Alt + R</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconBan} ${labelIgnore}</span>
+                </button>
+                <button id="btn-next-auto" class="btn-drill-action btn-primary-action">
+                    <kbd class="desktop-only">Entrée</kbd> <span style="display: flex; align-items: center; gap: 0.4rem;">${iconRotate} ${labelReview}</span>
                 </button>
             `;
             

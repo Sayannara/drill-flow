@@ -1,5 +1,5 @@
 // Dashboard Admin — Consultation des signalements de traduction
-import { db } from './firebase-config.js?v=74';
+import { db } from './firebase-config.js?v=75';
 import { collection, getDocs, doc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 async function loadReports() {
