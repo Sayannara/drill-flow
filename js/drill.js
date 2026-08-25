@@ -1348,21 +1348,40 @@ function setupReportButton(btnId, currentWord) {
 function openReportModal(currentWord, btnEl) {
     const modal = document.getElementById('report-modal');
     const textEl = document.getElementById('report-modal-text');
+    const commentInput = document.getElementById('report-comment');
+    const charCounter = document.getElementById('report-comment-counter');
     const btnConfirm = document.getElementById('btn-report-confirm');
     const btnCancel = document.getElementById('btn-report-cancel');
     if (!modal) return;
+
+    if (commentInput) {
+        commentInput.value = '';
+        if (charCounter) charCounter.textContent = '0 / 100';
+        commentInput.oninput = () => {
+            if (charCounter) {
+                charCounter.textContent = `${commentInput.value.length} / 100`;
+            }
+        };
+    }
 
     const wordName = currentWord[sessionState.langSource] || currentWord.fr || 'ce mot';
     textEl.innerHTML = `Signaler <strong>"${wordName}"</strong> comme mal traduit ou nécessitant une correction ?`;
     modal.classList.remove('hidden');
 
+    // Mettre le focus sur la zone de texte après ouverture
+    setTimeout(() => {
+        if (commentInput) commentInput.focus();
+    }, 50);
+
     const closeModal = () => {
         modal.classList.add('hidden');
+        if (commentInput) commentInput.value = '';
     };
 
     btnCancel.onclick = closeModal;
 
     btnConfirm.onclick = async () => {
+        const comment = commentInput ? commentInput.value.trim() : '';
         closeModal();
         if (!sessionState.reportedWords) sessionState.reportedWords = new Set();
         sessionState.reportedWords.add(currentWord.id);
@@ -1372,8 +1391,12 @@ function openReportModal(currentWord, btnEl) {
         if (btnMain) btnMain.classList.add('reported');
         if (btnResult) btnResult.classList.add('reported');
 
+        const langSource = (sessionState.langSource || 'fr').toUpperCase();
+        const langTarget = (sessionState.langTarget || 'en').toUpperCase();
+        const langPair = `${langSource} → ${langTarget}`;
+
         showToast("✓ Signalement enregistré. Merci !");
-        await reportWordTranslation(currentWord);
+        await reportWordTranslation(currentWord, comment, langPair);
     };
 }
 

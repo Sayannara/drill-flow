@@ -1,7 +1,7 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
 import { db } from './firebase-config.js?v=71';
 import { getCurrentUser } from './auth.js?v=71';
-import { doc, getDoc, setDoc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
 let localCache = null;
@@ -175,20 +175,36 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
     saveProgressLocalAndCloud();
 }
 
-export async function reportWordTranslation(word) {
+export async function reportWordTranslation(word, comment = '', langPair = '') {
     if (!word || !word.id) return { success: false, error: 'invalid_word' };
     try {
         const docRef = doc(db, "word_reports", String(word.id));
         const docSnap = await getDoc(docRef);
 
         const now = new Date().toISOString();
+        const trimmedComment = (comment || '').trim().slice(0, 100);
+        const currentPair = (langPair || '').trim().toUpperCase();
+
         if (docSnap.exists()) {
-            await updateDoc(docRef, {
+            const updatePayload = {
                 count: increment(1),
                 last_reported_at: now
-            });
+            };
+            if (currentPair) {
+                updatePayload.last_lang_pair = currentPair;
+                updatePayload.lang_pairs = arrayUnion(currentPair);
+            }
+            if (trimmedComment) {
+                updatePayload.comments = arrayUnion({
+                    text: trimmedComment,
+                    date: now,
+                    pair: currentPair
+                });
+                updatePayload.last_comment = trimmedComment;
+            }
+            await updateDoc(docRef, updatePayload);
         } else {
-            await setDoc(docRef, {
+            const initialDoc = {
                 word_id: word.id,
                 fr: word.fr || '',
                 en: word.en || '',
@@ -198,8 +214,13 @@ export async function reportWordTranslation(word) {
                 type: word.type || '',
                 count: 1,
                 first_reported_at: now,
-                last_reported_at: now
-            });
+                last_reported_at: now,
+                last_lang_pair: currentPair,
+                lang_pairs: currentPair ? [currentPair] : [],
+                comments: trimmedComment ? [{ text: trimmedComment, date: now, pair: currentPair }] : [],
+                last_comment: trimmedComment || ''
+            };
+            await setDoc(docRef, initialDoc);
         }
         return { success: true };
     } catch (err) {

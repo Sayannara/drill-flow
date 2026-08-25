@@ -42,15 +42,50 @@ async function loadReports() {
                 day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
             }) : '-';
 
+            // Formatage de la paire de langues
+            let pairHtml = '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
+            if (Array.isArray(item.lang_pairs) && item.lang_pairs.length > 0) {
+                pairHtml = item.lang_pairs.map(p => 
+                    `<span class="type-badge" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6; font-weight: 600; margin: 0.1rem 0.15rem; display: inline-block;">${escapeHtml(p)}</span>`
+                ).join(' ');
+            } else if (item.last_lang_pair) {
+                pairHtml = `<span class="type-badge" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6; font-weight: 600; display: inline-block;">${escapeHtml(item.last_lang_pair)}</span>`;
+            } else if (item.lang_pair) {
+                pairHtml = `<span class="type-badge" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6; font-weight: 600; display: inline-block;">${escapeHtml(item.lang_pair)}</span>`;
+            }
+
+            // Formatage des descriptions / remarques
+            let commentsHtml = '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
+            if (Array.isArray(item.comments) && item.comments.length > 0) {
+                const list = item.comments
+                    .map(c => {
+                        const text = typeof c === 'string' ? c : (c.text || '');
+                        if (!text) return '';
+                        const dateStr = (c && c.date) ? `<span style="color: var(--text-secondary); font-size: 0.75rem; margin-left: 4px;">(${new Date(c.date).toLocaleDateString('fr-FR')})</span>` : '';
+                        const pairBadge = (c && c.pair) ? `<span style="font-size: 0.7rem; color: #3b82f6; background: rgba(59, 130, 246, 0.12); padding: 0.1rem 0.35rem; border-radius: 4px; margin-right: 4px; font-weight: 600;">${escapeHtml(c.pair)}</span>` : '';
+                        return `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; margin-bottom: 0.35rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${pairBadge}${escapeHtml(text)}${dateStr}</div>`;
+                    })
+                    .filter(Boolean);
+                if (list.length > 0) {
+                    commentsHtml = list.join('');
+                }
+            } else if (item.last_comment) {
+                commentsHtml = `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.last_comment)}</div>`;
+            } else if (item.comment) {
+                commentsHtml = `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.comment)}</div>`;
+            }
+
             tr.innerHTML = `
                 <td><strong style="font-size: 1.1rem; color: var(--text-primary);">${item.count || 1}</strong></td>
+                <td style="white-space: nowrap;">${pairHtml}</td>
                 <td><strong>${escapeHtml(item.fr || '-')}</strong></td>
                 <td>${escapeHtml(item.en || '-')}</td>
                 <td>${escapeHtml(item.de || '-')}</td>
                 <td>${escapeHtml(item.es || '-')}</td>
                 <td><span class="type-badge" style="background: rgba(255,255,255,0.1); color: var(--text-primary); font-weight: 600;">${escapeHtml(item.level || '-')}</span></td>
                 <td><span class="type-badge ${escapeHtml(item.type || '')}">${escapeHtml(item.type || '-')}</span></td>
-                <td style="color: var(--text-secondary); font-size: 0.85rem;">${formattedDate}</td>
+                <td style="min-width: 180px; max-width: 280px; word-break: break-word;">${commentsHtml}</td>
+                <td style="color: var(--text-secondary); font-size: 0.85rem; white-space: nowrap;">${formattedDate}</td>
                 <td><button class="btn-resolve" data-id="${item.docId}">Résolu</button></td>
             `;
 

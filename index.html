@@ -16,7 +16,7 @@
     <header class="app-header">
         <div class="logo" id="app-logo" style="display: flex; align-items: center; gap: 0.4rem;">
             <span class="logo-text">drillFlow.</span>
-            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v69</span>
+            <span id="app-version-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 6px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.5px;">v70</span>
         </div>
         <nav class="nav-menu">
             <button id="nav-home" class="nav-btn active" data-i18n="nav_drill">Drill !</button>
@@ -77,8 +77,8 @@
                         </select>
                     </div>
 
-                    <div style="padding-bottom: 0.75rem; color: var(--text-secondary);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    <div style="display: flex; align-items: center; justify-content: center; height: 48px; color: var(--primary-color); padding: 0 0.25rem; flex-shrink: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg>
                     </div>
 
                     <div class="form-group" style="flex: 1; margin-bottom: 0;">
@@ -619,11 +619,17 @@
 
     <!-- Modal Confirmation Signalement Erreur -->
     <div id="report-modal" class="cert-modal-overlay hidden" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.85); display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 1rem; backdrop-filter: blur(4px);">
-        <div class="card cert-modal-card" style="max-width: 380px; width: 100%; display: flex; flex-direction: column; gap: 1rem; background: var(--surface-color); padding: 1.75rem; border-radius: 16px; box-shadow: var(--shadow); text-align: center;">
-            <div style="font-size: 2.2rem; margin-bottom: -0.5rem;">🚩</div>
+        <div class="card cert-modal-card" style="max-width: 400px; width: 100%; display: flex; flex-direction: column; gap: 0.9rem; background: var(--surface-color); padding: 1.75rem; border-radius: 16px; box-shadow: var(--shadow); text-align: center;">
+            <div style="font-size: 2.2rem; margin-bottom: -0.4rem;">🚩</div>
             <h3 style="margin: 0; font-family: var(--font-heading); color: var(--text-primary);">Signaler une erreur</h3>
             <p id="report-modal-text" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Signaler ce mot comme mal traduit ou nécessitant une correction ?</p>
-            <div style="display: flex; gap: 0.75rem; width: 100%; margin-top: 0.5rem;">
+            <div style="text-align: left; width: 100%;">
+                <textarea id="report-comment" class="report-modal-textarea" maxlength="100" placeholder="Précisez le problème (facultatif, max 100 car.)..."></textarea>
+                <div style="display: flex; justify-content: flex-end; margin-top: 0.25rem;">
+                    <span id="report-comment-counter" style="font-size: 0.75rem; color: var(--text-secondary); opacity: 0.8;">0 / 100</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 0.75rem; width: 100%; margin-top: 0.25rem;">
                 <button type="button" id="btn-report-cancel" class="btn-primary btn-secondary-action" style="flex: 1; padding: 0.65rem;">Annuler</button>
                 <button type="button" id="btn-report-confirm" class="btn-primary" style="flex: 1; padding: 0.65rem; background: var(--error-color);">Signaler</button>
             </div>
@@ -637,7 +643,7 @@
 
     <!-- Footer avec version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.65; font-family: var(--font-sans);">
-        drillFlow <span class="app-version-num">v69</span> &bull; Déployé le 24/08/2026
+        drillFlow <span class="app-version-num">v70</span> &bull; Déployé le 25/08/2026
     </footer>
 
     <!-- Scripts -->
