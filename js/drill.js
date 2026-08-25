@@ -89,7 +89,7 @@ function buildTargetRegex(targetWord) {
     targetWord.split('/').forEach(s => {
         let t = s.replace(/\(.*?\)/g, '').trim();
         allOpts.push(...getArticleAlternatives(t));
-        allOpts.push(t.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer )/gi, ''));
+        allOpts.push(t.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer |se |s'|me |te |sich )/gi, ''));
     });
     allOpts = [...new Set(allOpts)].filter(x => x.length >= 1).sort((a, b) => b.length - a.length);
     if (allOpts.length === 0) allOpts = [targetWord];
@@ -127,7 +127,7 @@ function highlightExampleSentence(sentence, targetWord, styleOrClass) {
     // 3. Fallback : Correspondance par radical / début de mot (ex: "parler" -> "parl", "sprechen" -> "sprech", "hablar" -> "habl")
     const cleanWords = targetWord.split('/')
         .map(w => w.replace(/\(.*?\)/g, '').trim())
-        .map(w => w.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer )/gi, '').trim())
+        .map(w => w.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer |se |s'|me |te |sich )/gi, '').trim())
         .filter(w => w.length >= 3);
 
     const stems = [];
@@ -346,27 +346,16 @@ function renderCurrentWord() {
     setupReportButton('btn-report-word', currentWord);
     setupReportButton('btn-report-word-result', currentWord);
     
-    // Afficher les phrases d'exemple (source + traduction)
+    // Afficher la phrase d'exemple dans la langue source (pour ne pas dévoiler la réponse dans la langue cible)
     const exampleSentenceEl = document.getElementById('drill-example-sentence');
     if (exampleSentenceEl) {
         const srcKey = `ex_${sessionState.langSource}`;
-        const tgtKey = `ex_${sessionState.langTarget}`;
         const srcSentence = currentWord[srcKey];
-        const tgtSentence = currentWord[tgtKey];
 
-        if (srcSentence || tgtSentence) {
-            let html = '';
-            if (srcSentence) {
-                const sourceWord = currentWord[sessionState.langSource];
-                const highlightedSrc = highlightExampleSentence(srcSentence, sourceWord, 'font-weight: bold; color: var(--primary-color);');
-                html += `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedSrc}</div>`;
-            }
-            if (tgtSentence) {
-                const targetWord = currentWord[sessionState.langTarget];
-                const highlightedTgt = highlightExampleSentence(tgtSentence, targetWord, 'font-weight: bold; color: var(--text-secondary);');
-                html += `<div style="font-style: italic; font-size: 0.95rem; color: var(--text-secondary); opacity: 0.8; margin-top: 0.25rem; line-height: 1.35;">${highlightedTgt}</div>`;
-            }
-            exampleSentenceEl.innerHTML = html;
+        if (srcSentence) {
+            const sourceWord = currentWord[sessionState.langSource];
+            const highlightedSrc = highlightExampleSentence(srcSentence, sourceWord, 'font-weight: bold; color: var(--primary-color);');
+            exampleSentenceEl.innerHTML = `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedSrc}</div>`;
             exampleSentenceEl.style.display = 'block';
         } else {
             exampleSentenceEl.style.display = 'none';
@@ -1037,14 +1026,15 @@ function showEndSession() {
 // Export pour brancher les events dans main.js
 export function handleDrillKeydown(e) {
     const activeEl = document.activeElement;
+    const drillInput = document.getElementById('drill-input');
     const rewriteInput = document.getElementById('rewrite-input');
-    const isRewriteFocused = rewriteInput && activeEl === rewriteInput;
+    const isDrillInputFocused = activeEl && (activeEl === drillInput || activeEl === rewriteInput);
     const isOtherInputFocused = activeEl && (
         activeEl.tagName === 'INPUT' || 
         activeEl.tagName === 'TEXTAREA' || 
         activeEl.tagName === 'SELECT' || 
         activeEl.isContentEditable
-    ) && !isRewriteFocused;
+    ) && !isDrillInputFocused;
 
     if (isOtherInputFocused) {
         return;
