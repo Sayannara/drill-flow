@@ -97,6 +97,78 @@ function buildTargetRegex(targetWord) {
     return new RegExp('(?:\\b|(?<=[\'\\s]))(' + escapedOpts.join('|') + ')(?:\\b|(?=[\'\\s.,!?;:]))', 'gi');
 }
 
+function highlightExampleSentence(sentence, targetWord, styleOrClass) {
+    if (!sentence || !targetWord) return sentence || '';
+    
+    const isStyle = !styleOrClass.startsWith('class=');
+    const tagOpen = isStyle ? `<span style="${styleOrClass}">` : `<span ${styleOrClass}>`;
+    const tagClose = `</span>`;
+
+    // 1. Si la phrase contient déjà des astérisques (ex: "Je *parle* français avec toi."), on remplace la partie entre astérisques
+    if (sentence.includes('*')) {
+        const hasAsteriskMatch = /\*([^*]+)\*/.test(sentence);
+        if (hasAsteriskMatch) {
+            return sentence.replace(/\*([^*]+)\*/g, `${tagOpen}$1${tagClose}`);
+        }
+    }
+
+    // 2. Tenter une correspondance exacte avec la regex basée sur les mots cibles (buildTargetRegex)
+    const regex = buildTargetRegex(targetWord);
+    let matched = false;
+    const resultExact = sentence.replace(regex, (match) => {
+        matched = true;
+        return `${tagOpen}${match}${tagClose}`;
+    });
+
+    if (matched) {
+        return resultExact;
+    }
+
+    // 3. Fallback : Correspondance par radical / début de mot (ex: "parler" -> "parl", "sprechen" -> "sprech", "hablar" -> "habl")
+    const cleanWords = targetWord.split('/')
+        .map(w => w.replace(/\(.*?\)/g, '').trim())
+        .map(w => w.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer )/gi, '').trim())
+        .filter(w => w.length >= 3);
+
+    const stems = [];
+    cleanWords.forEach(w => {
+        stems.push(w);
+        if (w.endsWith('er') || w.endsWith('ir') || w.endsWith('re')) {
+            stems.push(w.slice(0, -2));
+        }
+        if (w.endsWith('ar') || w.endsWith('er') || w.endsWith('ir')) {
+            stems.push(w.slice(0, -2));
+        }
+        if (w.endsWith('en')) {
+            stems.push(w.slice(0, -2));
+        } else if (w.endsWith('n')) {
+            stems.push(w.slice(0, -1));
+        }
+    });
+
+    const validStems = [...new Set(stems)].filter(s => s.length >= 3).sort((a, b) => b.length - a.length);
+
+    if (validStems.length > 0) {
+        const escapedStems = validStems.map(s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+        const stemRegex = new RegExp('(?:\\b|(?<=[\'\\s]))(' + escapedStems.join('|') + ')[a-zàâäéèêëîïôöùûüçñáéíóúß]*\\b', 'gi');
+        
+        let stemMatched = false;
+        const resultStem = sentence.replace(stemRegex, (match) => {
+            if (!stemMatched) {
+                stemMatched = true;
+                return `${tagOpen}${match}${tagClose}`;
+            }
+            return match;
+        });
+
+        if (stemMatched) {
+            return resultStem;
+        }
+    }
+
+    return sentence;
+}
+
 
 export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], mode = 'discovery') {
     sessionState.langSource = source;
@@ -286,14 +358,12 @@ function renderCurrentWord() {
             let html = '';
             if (srcSentence) {
                 const sourceWord = currentWord[sessionState.langSource];
-                const regexSrc = buildTargetRegex(sourceWord);
-                const highlightedSrc = srcSentence.replace(regexSrc, '<span style="font-weight: bold; color: var(--primary-color);">$1</span>');
+                const highlightedSrc = highlightExampleSentence(srcSentence, sourceWord, 'font-weight: bold; color: var(--primary-color);');
                 html += `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedSrc}</div>`;
             }
             if (tgtSentence) {
                 const targetWord = currentWord[sessionState.langTarget];
-                const regexTgt = buildTargetRegex(targetWord);
-                const highlightedTgt = tgtSentence.replace(regexTgt, '<span style="font-weight: bold; color: var(--text-secondary);">$1</span>');
+                const highlightedTgt = highlightExampleSentence(tgtSentence, targetWord, 'font-weight: bold; color: var(--text-secondary);');
                 html += `<div style="font-style: italic; font-size: 0.95rem; color: var(--text-secondary); opacity: 0.8; margin-top: 0.25rem; line-height: 1.35;">${highlightedTgt}</div>`;
             }
             exampleSentenceEl.innerHTML = html;
@@ -1087,15 +1157,23 @@ function startContextDrill() {
     contextState.pairs = wordsWithExamples.map(w => {
         const targetWord = w[sessionState.langTarget];
         const sentence = w['ex_' + sessionState.langTarget];
-        const regex = buildTargetRegex(targetWord);
-        let replaced = false;
-        const sentenceHtml = sentence.replace(regex, (match) => {
+        let sentenceHtml = sentence;
+        if (sentence.includes('*')) {
+            sentenceHtml = sentence.replace(/\*([^*]+)\*/g, '<span class="context-dropzone" data-id="' + w.id + '"></span>');
+        } else {
+            const regex = buildTargetRegex(targetWord);
+            let replaced = false;
+            sentenceHtml = sentence.replace(regex, (match) => {
+                if (!replaced) {
+                    replaced = true;
+                    return '<span class="context-dropzone" data-id="' + w.id + '"></span>';
+                }
+                return match;
+            });
             if (!replaced) {
-                replaced = true;
-                return '<span class="context-dropzone" data-id="' + w.id + '"></span>';
+                sentenceHtml = highlightExampleSentence(sentence, targetWord, 'class="context-dropzone" data-id="' + w.id + '"');
             }
-            return match;
-        });
+        }
         return {
             id: w.id,
             wordText: targetWord,
@@ -1480,14 +1558,12 @@ function renderComparisonExample(containerLine, textEl, currentWord) {
         let html = '';
         if (tgtSentence) {
             const targetWord = currentWord[sessionState.langTarget];
-            const regexTgt = buildTargetRegex(targetWord);
-            const highlightedTgt = tgtSentence.replace(regexTgt, '<span class="example-highlight">$1</span>');
+            const highlightedTgt = highlightExampleSentence(tgtSentence, targetWord, 'class="example-highlight"');
             html += `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;">${highlightedTgt}</div>`;
         }
         if (srcSentence) {
             const sourceWord = currentWord[sessionState.langSource];
-            const regexSrc = buildTargetRegex(sourceWord);
-            const highlightedSrc = srcSentence.replace(regexSrc, '<span style="font-weight: bold; color: var(--primary-color);">$1</span>');
+            const highlightedSrc = highlightExampleSentence(srcSentence, sourceWord, 'font-weight: bold; color: var(--primary-color);');
             html += `<div style="font-style: italic; font-size: 0.92rem; color: var(--text-secondary); opacity: 0.8; font-family: var(--font-sans); white-space: normal; line-height: 1.35; text-align: left; margin-top: 0.2rem;">${highlightedSrc}</div>`;
         }
         textEl.innerHTML = html;
