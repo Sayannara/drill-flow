@@ -7,6 +7,11 @@ import {
     sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=71';
+import { translations } from './i18n.js?v=71';
+
+function getLang() {
+    return localStorage.getItem('app_lang') || 'fr';
+}
 
 let currentUser = null;
 
@@ -80,15 +85,25 @@ export async function logoutUser() {
     }
 }
 
-function updateAuthUI(user) {
+export function updateAuthUI(user) {
     const authBtn = document.getElementById('auth-btn');
     if (!authBtn) return;
     
+    const lang = getLang();
+    const iconLogin = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>`;
+    const iconLogout = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>`;
+    
     if (user && !user.isAnonymous) {
-        authBtn.textContent = "Déconnexion";
+        const titleText = translations[lang]?.auth_logout || "Déconnexion";
+        authBtn.innerHTML = iconLogout;
+        authBtn.title = titleText;
+        authBtn.setAttribute('aria-label', titleText);
         authBtn.onclick = logoutUser;
     } else {
-        authBtn.textContent = "Connexion";
+        const titleText = translations[lang]?.auth_login || "Connexion";
+        authBtn.innerHTML = iconLogin;
+        authBtn.title = titleText;
+        authBtn.setAttribute('aria-label', titleText);
         authBtn.onclick = openAuthModal;
     }
     window.dispatchEvent(new CustomEvent('auth-changed', { detail: { user } }));

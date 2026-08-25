@@ -89,14 +89,12 @@ function buildTargetRegex(targetWord) {
     targetWord.split('/').forEach(s => {
         let t = s.replace(/\(.*?\)/g, '').trim();
         allOpts.push(...getArticleAlternatives(t));
-        // Add a completely article-stripped version just in case (for highlighting/matching)
-        allOpts.push(t.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer )/g, ''));
+        allOpts.push(t.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer )/gi, ''));
     });
-    // Sort by length descending to match longest first (e.g. "une maison" before "maison")
-    allOpts = [...new Set(allOpts)].filter(x => x.length > 2).sort((a, b) => b.length - a.length);
+    allOpts = [...new Set(allOpts)].filter(x => x.length >= 1).sort((a, b) => b.length - a.length);
     if (allOpts.length === 0) allOpts = [targetWord];
     const escapedOpts = allOpts.map(opt => opt.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-    return new RegExp('(' + escapedOpts.join('|') + ')', 'gi');
+    return new RegExp('(?:\\b|(?<=[\'\\s]))(' + escapedOpts.join('|') + ')(?:\\b|(?=[\'\\s.,!?;:]))', 'gi');
 }
 
 
@@ -276,19 +274,29 @@ function renderCurrentWord() {
     setupReportButton('btn-report-word', currentWord);
     setupReportButton('btn-report-word-result', currentWord);
     
-    // Afficher la phrase d'exemple
+    // Afficher les phrases d'exemple (source + traduction)
     const exampleSentenceEl = document.getElementById('drill-example-sentence');
     if (exampleSentenceEl) {
-        const exampleKey = `ex_${sessionState.langSource}`;
-        const sentence = currentWord[exampleKey];
-        if (sentence) {
-            // Mettre en évidence le mot source dans la phrase
-            const sourceWord = currentWord[sessionState.langSource];
-            // Echapper le mot source pour la regex
-            const regex = buildTargetRegex(sourceWord);
-            const highlightedSentence = sentence.replace(regex, '<span style="font-weight: bold; color: var(--primary-color);">$1</span>');
-            
-            exampleSentenceEl.innerHTML = highlightedSentence;
+        const srcKey = `ex_${sessionState.langSource}`;
+        const tgtKey = `ex_${sessionState.langTarget}`;
+        const srcSentence = currentWord[srcKey];
+        const tgtSentence = currentWord[tgtKey];
+
+        if (srcSentence || tgtSentence) {
+            let html = '';
+            if (srcSentence) {
+                const sourceWord = currentWord[sessionState.langSource];
+                const regexSrc = buildTargetRegex(sourceWord);
+                const highlightedSrc = srcSentence.replace(regexSrc, '<span style="font-weight: bold; color: var(--primary-color);">$1</span>');
+                html += `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedSrc}</div>`;
+            }
+            if (tgtSentence) {
+                const targetWord = currentWord[sessionState.langTarget];
+                const regexTgt = buildTargetRegex(targetWord);
+                const highlightedTgt = tgtSentence.replace(regexTgt, '<span style="font-weight: bold; color: var(--text-secondary);">$1</span>');
+                html += `<div style="font-style: italic; font-size: 0.95rem; color: var(--text-secondary); opacity: 0.8; margin-top: 0.25rem; line-height: 1.35;">${highlightedTgt}</div>`;
+            }
+            exampleSentenceEl.innerHTML = html;
             exampleSentenceEl.style.display = 'block';
         } else {
             exampleSentenceEl.style.display = 'none';
@@ -538,17 +546,7 @@ function handleValidation() {
             
             const exampleCorrectLine = document.getElementById('example-correct-line');
             const exampleCorrectText = document.getElementById('example-correct-text');
-            if (exampleCorrectLine && exampleCorrectText && currentWord) {
-                const sentence = currentWord[`ex_${sessionState.langTarget}`];
-                if (sentence) {
-                    const targetWord = currentWord[sessionState.langTarget];
-                    const regex = buildTargetRegex(targetWord);
-                    exampleCorrectText.innerHTML = sentence.replace(regex, '<span class="example-highlight">$1</span>');
-                    exampleCorrectLine.style.display = 'flex';
-                } else {
-                    exampleCorrectLine.style.display = 'none';
-                }
-            }
+            renderComparisonExample(exampleCorrectLine, exampleCorrectText, currentWord);
             
             const iconCheck = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
             const labelContinue = translations[lang].action_continue || "Continuer";
@@ -656,17 +654,7 @@ function handleValidation() {
             
             const exampleIncorrectLine = document.getElementById('example-incorrect-line');
             const exampleIncorrectText = document.getElementById('example-incorrect-text');
-            if (exampleIncorrectLine && exampleIncorrectText && currentWord) {
-                const sentence = currentWord[`ex_${sessionState.langTarget}`];
-                if (sentence) {
-                    const targetWord = currentWord[sessionState.langTarget];
-                    const regex = buildTargetRegex(targetWord);
-                    exampleIncorrectText.innerHTML = sentence.replace(regex, '<span class="example-highlight">$1</span>');
-                    exampleIncorrectLine.style.display = 'flex';
-                } else {
-                    exampleIncorrectLine.style.display = 'none';
-                }
-            }
+            renderComparisonExample(exampleIncorrectLine, exampleIncorrectText, currentWord);
             
             const iconRotate = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>`;
             const iconBan = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>`;
@@ -980,6 +968,23 @@ function showEndSession() {
 export function handleDrillKeydown(e) {
     const rewriteInput = document.getElementById('rewrite-input');
     const isRewriteFocused = rewriteInput && document.activeElement === rewriteInput;
+    const activeEl = document.activeElement;
+    const isOtherInputFocused = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'SELECT' || activeEl.isContentEditable) && !isRewriteFocused;
+
+    const reportModal = document.getElementById('report-modal');
+    const isReportModalOpen = reportModal && !reportModal.classList.contains('hidden');
+
+    if (isReportModalOpen) {
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            reportModal.classList.add('hidden');
+        }
+        return;
+    }
+
+    if (isOtherInputFocused) {
+        return;
+    }
 
     if (!sessionState.isWaitingAction) {
         // Mode saisie
@@ -1078,7 +1083,14 @@ function startContextDrill() {
         const targetWord = w[sessionState.langTarget];
         const sentence = w['ex_' + sessionState.langTarget];
         const regex = buildTargetRegex(targetWord);
-        const sentenceHtml = sentence.replace(regex, '<span class="context-dropzone" data-id="' + w.id + '"></span>');
+        let replaced = false;
+        const sentenceHtml = sentence.replace(regex, (match) => {
+            if (!replaced) {
+                replaced = true;
+                return '<span class="context-dropzone" data-id="' + w.id + '"></span>';
+            }
+            return match;
+        });
         return {
             id: w.id,
             wordText: targetWord,
@@ -1364,6 +1376,41 @@ function openReportModal(currentWord, btnEl) {
         };
     }
 
+    // Reset & handler pour les puces de motif
+    const chips = modal.querySelectorAll('.report-chip');
+    let selectedReason = 'Mauvaise traduction';
+    chips.forEach((chip, index) => {
+        if (index === 0) {
+            chip.classList.add('active');
+            chip.style.background = 'var(--primary-color)';
+            chip.style.color = 'white';
+            chip.style.borderColor = 'var(--primary-color)';
+            chip.style.fontWeight = '600';
+        } else {
+            chip.classList.remove('active');
+            chip.style.background = 'var(--bg-color)';
+            chip.style.color = 'var(--text-secondary)';
+            chip.style.borderColor = 'var(--border-color)';
+            chip.style.fontWeight = '500';
+        }
+        chip.onclick = (e) => {
+            e.stopPropagation();
+            chips.forEach(c => {
+                c.classList.remove('active');
+                c.style.background = 'var(--bg-color)';
+                c.style.color = 'var(--text-secondary)';
+                c.style.borderColor = 'var(--border-color)';
+                c.style.fontWeight = '500';
+            });
+            chip.classList.add('active');
+            chip.style.background = 'var(--primary-color)';
+            chip.style.color = 'white';
+            chip.style.borderColor = 'var(--primary-color)';
+            chip.style.fontWeight = '600';
+            selectedReason = chip.dataset.reason || 'Mauvaise traduction';
+        };
+    });
+
     const wordName = currentWord[sessionState.langSource] || currentWord.fr || 'ce mot';
     textEl.innerHTML = `Signaler <strong>"${wordName}"</strong> comme mal traduit ou nécessitant une correction ?`;
     modal.classList.remove('hidden');
@@ -1396,7 +1443,7 @@ function openReportModal(currentWord, btnEl) {
         const langPair = `${langSource} → ${langTarget}`;
 
         showToast("✓ Signalement enregistré. Merci !");
-        await reportWordTranslation(currentWord, comment, langPair);
+        await reportWordTranslation(currentWord, comment, langPair, selectedReason);
     };
 }
 
@@ -1408,4 +1455,32 @@ function showToast(msg) {
     setTimeout(() => {
         toast.classList.add('hidden');
     }, 2500);
+}
+
+function renderComparisonExample(containerLine, textEl, currentWord) {
+    if (!containerLine || !textEl || !currentWord) return;
+    const tgtKey = `ex_${sessionState.langTarget}`;
+    const srcKey = `ex_${sessionState.langSource}`;
+    const tgtSentence = currentWord[tgtKey];
+    const srcSentence = currentWord[srcKey];
+
+    if (tgtSentence || srcSentence) {
+        let html = '';
+        if (tgtSentence) {
+            const targetWord = currentWord[sessionState.langTarget];
+            const regexTgt = buildTargetRegex(targetWord);
+            const highlightedTgt = tgtSentence.replace(regexTgt, '<span class="example-highlight">$1</span>');
+            html += `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;">${highlightedTgt}</div>`;
+        }
+        if (srcSentence) {
+            const sourceWord = currentWord[sessionState.langSource];
+            const regexSrc = buildTargetRegex(sourceWord);
+            const highlightedSrc = srcSentence.replace(regexSrc, '<span style="font-weight: bold; color: var(--primary-color);">$1</span>');
+            html += `<div style="font-style: italic; font-size: 0.92rem; color: var(--text-secondary); opacity: 0.8; font-family: var(--font-sans); white-space: normal; line-height: 1.35; text-align: left; margin-top: 0.2rem;">${highlightedSrc}</div>`;
+        }
+        textEl.innerHTML = html;
+        containerLine.style.display = 'flex';
+    } else {
+        containerLine.style.display = 'none';
+    }
 }

@@ -39,6 +39,8 @@ export const translations = {
         slide_to_ignore: "Glisser pour ne plus demander",
         slide_ignored_done: "Ignoré !",
         action_continue: "Continuer",
+        status_valide: "Validé",
+        status_non_valide: "Non validé",
         status_ignored: "Ignoré",
         congrats: "Félicitations ! 🎉",
         congrats_sub: "Vous avez terminé tous les mots de cette session.",
@@ -46,11 +48,36 @@ export const translations = {
         words_remaining: "mot(s) restant(s)",
         btn_check: "Vérifier",
         btn_next: "Suivant",
+
+        // Context Drill
+        context_promo_title: "Consolider la mémorisation",
+        context_promo_desc: "Associez les mots appris à leurs phrases de contexte pour les ancrer définitivement dans votre mémoire à long terme.",
+        btn_start_context: "Lancer l'exercice de contexte",
+        context_drill_title: "Mise en contexte",
+        context_drill_sub: "Touchez (ou glissez) un mot puis complétez la phrase correspondante.",
+
+        // Types de mots
         type_nom: "Nom",
         type_verbe: "Verbe",
         type_adjectif: "Adjectif",
         type_adverbe: "Adverbe",
         type_conjonction: "Conjonction",
+        type_conj: "Conjonction",
+        type_prep: "Préposition",
+        type_interj: "Interjection",
+        type_pron: "Pronom",
+        type_num: "Nombre",
+        type_det: "Déterminant",
+        
+        // Noms des langues
+        lang_fr: "Français",
+        lang_en: "Anglais",
+        lang_de: "Allemand",
+        lang_es: "Espagnol",
+
+        // Auth
+        auth_login: "Connexion",
+        auth_logout: "Déconnexion",
         
         // Progress View
         title_progress: "Mes mots",
@@ -124,7 +151,27 @@ export const translations = {
         pillar_privacy_desc: "Créez un compte pour enregistrer votre avancement",
         credits_title: "Projet Piloté par Yann Greder",
         credits_text: "Ce site a été pensé, conçu et piloté par Yann Greder, puis développé et peaufiné en étroite collaboration (Pair Programming) avec une Intelligence Artificielle.",
-        last_modified: "Dernière modification : 20 août 2026"
+        author_linkedin: "Yann Greder - LinkedIn",
+
+        // Modals & Footer
+        auth_modal_title: "Inscription / Connexion",
+        auth_modal_sub: "Sauvegardez votre progression pour ne pas la perdre.",
+        auth_email_label: "Email",
+        auth_email_placeholder: "votre@email.com",
+        auth_password_label: "Mot de passe",
+        auth_password_placeholder: "••••••••",
+        auth_btn_login: "Se connecter",
+        auth_btn_signup: "S'inscrire",
+        report_modal_title: "Signaler une erreur",
+        report_modal_desc: "Signaler ce mot comme mal traduit ou nécessitant une correction ?",
+        report_reason_translation: "Mauvaise traduction",
+        report_reason_level: "Mauvais niveau",
+        report_reason_other: "Autre / Coquille",
+        report_placeholder: "Précisions complémentaires (facultatif, max 100 car.)...",
+        report_cancel: "Annuler",
+        report_confirm: "Signaler",
+        report_toast_success: "✓ Signalement enregistré. Merci !",
+        footer_deployed: "Déployé le 25/08/2026"
     },
     en: {
         // Nav
@@ -166,6 +213,8 @@ export const translations = {
         slide_to_ignore: "Slide to don't ask again",
         slide_ignored_done: "Ignored!",
         action_continue: "Continue",
+        status_valide: "Validated",
+        status_non_valide: "Not validated",
         status_ignored: "Ignored",
         congrats: "Congratulations! 🎉",
         congrats_sub: "You have completed all the words in this session.",
@@ -173,11 +222,36 @@ export const translations = {
         words_remaining: "word(s) remaining",
         btn_check: "Check",
         btn_next: "Next",
+
+        // Context Drill
+        context_promo_title: "Consolidate Memorization",
+        context_promo_desc: "Associate learned words with their context sentences to anchor them permanently in your long-term memory.",
+        btn_start_context: "Start Context Exercise",
+        context_drill_title: "Context Practice",
+        context_drill_sub: "Tap (or drag) a word then complete the corresponding sentence.",
+
+        // Types de mots
         type_nom: "Noun",
         type_verbe: "Verb",
         type_adjectif: "Adjective",
         type_adverbe: "Adverb",
         type_conjonction: "Conjunction",
+        type_conj: "Conjunction",
+        type_prep: "Preposition",
+        type_interj: "Interjection",
+        type_pron: "Pronoun",
+        type_num: "Numeral",
+        type_det: "Determiner",
+        
+        // Noms des langues
+        lang_fr: "French",
+        lang_en: "English",
+        lang_de: "German",
+        lang_es: "Spanish",
+
+        // Auth
+        auth_login: "Log In",
+        auth_logout: "Log Out",
         
         // Progress View
         title_progress: "My Words",
@@ -251,7 +325,27 @@ export const translations = {
         pillar_privacy_desc: "Create an account to save your progress",
         credits_title: "Project Directed by Yann Greder",
         credits_text: "This website was envisioned, designed, and directed by Yann Greder, then developed and polished in close collaboration (Pair Programming) with an Artificial Intelligence.",
-        last_modified: "Last modified: August 20, 2026"
+        author_linkedin: "Yann Greder - LinkedIn",
+
+        // Modals & Footer
+        auth_modal_title: "Sign Up / Log In",
+        auth_modal_sub: "Save your progress so you don't lose it.",
+        auth_email_label: "Email",
+        auth_email_placeholder: "your@email.com",
+        auth_password_label: "Password",
+        auth_password_placeholder: "••••••••",
+        auth_btn_login: "Log In",
+        auth_btn_signup: "Sign Up",
+        report_modal_title: "Report an Error",
+        report_modal_desc: "Report this word as mistranslated or requiring a fix?",
+        report_reason_translation: "Mistranslation",
+        report_reason_level: "Wrong level",
+        report_reason_other: "Other / Typo",
+        report_placeholder: "Additional details (optional, max 100 char.)...",
+        report_cancel: "Cancel",
+        report_confirm: "Report",
+        report_toast_success: "✓ Report submitted. Thank you!",
+        footer_deployed: "Deployed on 2026-08-25"
     },
     de: {
         // Nav
@@ -268,7 +362,7 @@ export const translations = {
         label_source: "Übersetzen von:",
         label_target: "Nach:",
         label_level: "GER-Stufen",
-        label_volume: "Anzahl der Woerter",
+        label_volume: "Anzahl der Wörter",
         label_mode: "Trainingsmodus",
         mode_discovery: "Entdeckung",
         mode_smart: "Smart Drill",
@@ -284,7 +378,7 @@ export const translations = {
         label_expected: "Erwartet:",
         label_rewrite: "Wiederholen:",
         label_example: "Beispiel:",
-        placeholder_translation: "Uebersetzung...",
+        placeholder_translation: "Übersetzung...",
         status_correct: "Richtig",
         status_incorrect: "Falsch",
         action_review: "Wiederholen",
@@ -293,42 +387,69 @@ export const translations = {
         slide_to_ignore: "Wischen zum Ignorieren",
         slide_ignored_done: "Ignoriert!",
         action_continue: "Weiter",
+        status_valide: "Validiert",
+        status_non_valide: "Nicht validiert",
         status_ignored: "Ignoriert",
-        congrats: "Herzlichen Glueckwunsch! 🎉",
-        congrats_sub: "Sie haben alle Woerter in dieser Sitzung abgeschlossen.",
+        congrats: "Herzlichen Glückwunsch! 🎉",
+        congrats_sub: "Sie haben alle Wörter in dieser Sitzung abgeschlossen.",
         btn_new_batch: "Neue Sitzung starten",
-        words_remaining: "Wort/Woerter uebrig",
+        words_remaining: "Wort/Wörter übrig",
         btn_check: "Prüfen",
         btn_next: "Weiter",
+
+        // Context Drill
+        context_promo_title: "Erinnerung festigen",
+        context_promo_desc: "Verknüpfen Sie die gelernten Wörter mit ihren Kontextsätzen, um sie dauerhaft im Langzeitgedächtnis zu verankern.",
+        btn_start_context: "Kontext-Übung starten",
+        context_drill_title: "Kontextübung",
+        context_drill_sub: "Tippen (oder ziehen) Sie ein Wort und vervollständigen Sie den entsprechenden Satz.",
+
+        // Types de mots
         type_nom: "Nomen",
         type_verbe: "Verb",
         type_adjectif: "Adjektiv",
         type_adverbe: "Adverb",
         type_conjonction: "Konjunktion",
+        type_conj: "Konjunktion",
+        type_prep: "Präposition",
+        type_interj: "Interjektion",
+        type_pron: "Pronomen",
+        type_num: "Numerale",
+        type_det: "Determinativ",
+        
+        // Noms des langues
+        lang_fr: "Französisch",
+        lang_en: "Englisch",
+        lang_de: "Deutsch",
+        lang_es: "Spanisch",
+
+        // Auth
+        auth_login: "Anmelden",
+        auth_logout: "Abmelden",
         
         // Progress View
-        title_progress: "Meine Woerter",
+        title_progress: "Meine Wörter",
         subtitle_progress: "Verfolgen Sie den Lernstatus Ihrer Wörter: gemeistertes Vokabular und zu wiederholende Wörter.",
         filter_types_label: "Nach Typ filtern:",
         empty_progress: "Kein Trainingsverlauf gefunden.",
         empty_progress_sub: "Bitte starten Sie zuerst eine Sitzung, um Ihren Fortschritt zu sehen.",
         btn_start_training: "Training starten",
         placeholder_search: "Wort suchen...",
-        btn_reset_all: "Alle zuruecksetzen",
+        btn_reset_all: "Alle zurücksetzen",
         confirm_reset_all: "Möchten Sie den Status aller angezeigten Wörter für dieses Sprachpaar wirklich zurücksetzen?",
         th_source: "Ausgangswort",
-        th_translation: "Uebersetzung",
+        th_translation: "Übersetzung",
         th_type: "Kategorie",
         th_status: "Status",
-        search_no_results: "Keine Woerter entsprechen Ihrer Suche.",
+        search_no_results: "Keine Wörter entsprechen Ihrer Suche.",
         
         // Stats View
         title_stats: "Statistiken",
         subtitle_stats: "Verfolgen Sie Ihren Gesamtfortschritt nach Sprachpaar.",
         stats_notice_attempt: "Nur beim 1. Versuch validierte Wörter (Versuch = 1) werden in Statistiken und Prozentwerten gezählt.",
-        empty_stats: "Keine Statistiken verfuegbar.",
+        empty_stats: "Keine Statistiken verfügbar.",
         empty_stats_sub: "Bitte starten Sie zuerst eine Sitzung, um Daten zu generieren.",
-        stat_total: "Woerter insgesamt:",
+        stat_total: "Wörter insgesamt:",
         stat_validated: "Validierte Wörter (1. Versuch):",
         stat_a1_validated: "A1 gelernt:",
         stat_a2_validated: "A2 gelernt:",
@@ -336,17 +457,17 @@ export const translations = {
         stat_b2_validated: "B2 gelernt:",
         stat_c1_validated: "C1 gelernt:",
         stat_c2_validated: "C2 gelernt:",
-        stat_remaining: "Verbleibende Woerter:",
+        stat_remaining: "Verbleibende Wörter:",
         
         // Certs View
         title_certs: "Meine Zertifikate",
-        subtitle_certs: "Feiern Sie Ihre Fortschritte und erstellen Sie Ihre personalisierten drillFlow.-Zertifikate, um Ihren Erfolg zu kroenen! 🏆🎉",
+        subtitle_certs: "Feiern Sie Ihre Fortschritte und erstellen Sie Ihre personalisierten drillFlow.-Zertifikate, um Ihren Erfolg zu krönen! 🏆🎉",
         certs_notice_attempt: "Nur beim 1. Versuch validierte Wörter (Versuch = 1) werden zertifiziert und berücksichtigt.",
-        empty_certs: "Keine Zertifikate verfuegbar.",
-        empty_certs_sub: "Sie muessen zuerst mindestens ein Wort ueben, um ein Zertifikat zu erhalten.",
+        empty_certs: "Keine Zertifikate verfügbar.",
+        empty_certs_sub: "Sie müssen zuerst mindestens ein Wort üben, um ein Zertifikat zu erhalten.",
         btn_generate_cert: "Erstellen",
         btn_download_png: "Als PNG herunterladen",
-        btn_close: "Schliessen",
+        btn_close: "Schließen",
         cert_achievement: "ZUR ERFOLGREICHEN TEILNAHME",
         cert_awarded_to: "verliehen an",
         cert_for_mastering: "für den Nachweis perfekten schriftlichen Wissens des Vokabulars beim 1. Versuch:",
@@ -367,9 +488,9 @@ export const translations = {
         // About View
         title_about: "Projektansatz",
         about_title_genesis: "Das drillFlow.-Konzept",
-        about_text_genesis: "<strong>drillFlow.</strong> ist eine Vokabeltrainings-App für <strong>reflexartiges Auswendiglernen</strong>. Das Prinzip ist einfach: Sie tippen die Übersetzung der Wörter in schneller Abfolge ein. Diese <strong>aktive Wiederholungsmethode</strong> (der 'Drill') verankert den Wortschatz ganz natürlich und ohne langes Nachdenken. Sie profitieren von <strong>strukturierten Inhalten</strong> mit über <strong>8000 Wörtern</strong> aller Niveaus (von A1 für Anfänger bis C2 für Fortgeschrittene).",
+        about_text_genesis: "<strong>drillFlow.</strong> ist eine Vokabeltrainings-App für <strong>reflexartiges Auswendiglernen</strong>. Das Prinzip ist einfach: Sie tippen die Übersetzung der Wörter in schneller Abfolge ein. Diese <strong>aktive Wiederholungsmethode</strong> (der 'Drill') verankert den Wortschatz ganz naturally und ohne langes Nachdenken. Sie profitieren von <strong>strukturierten Inhalten</strong> mit über <strong>8000 Wörtern</strong> aller Niveaus (von A1 für Anfänger bis C2 für Fortgeschrittene).",
         pillar_speed_title: "Der Drill",
-        pillar_speed_desc: "Eingabe und Uebergaenge",
+        pillar_speed_desc: "Eingabe und Übergänge",
         pillar_friction_title: "Reibungslos",
         pillar_friction_desc: "Per Tastatur steuerbar",
         pillar_control_title: "Aktives Lernen",
@@ -377,8 +498,28 @@ export const translations = {
         pillar_privacy_title: "Fortschrittskontrolle",
         pillar_privacy_desc: "Erstellen Sie ein Konto, um Ihren Fortschritt zu speichern",
         credits_title: "Projekt geleitet von Yann Greder",
-        credits_text: "Diese Website wurde von Yann Greder erdacht, entworfen und geleitet und anschließend in enger Zusammenarbeit (Pair Programming) mit einer kuenstlichen Intelligenz entwickelt und verfeinert.",
-        last_modified: "Letzte Änderung: 20. August 2026"
+        credits_text: "Diese Website wurde von Yann Greder erdacht, entworfen und geleitet und anschließend in enger Zusammenarbeit (Pair Programming) mit einer künstlichen Intelligenz entwickelt und verfeinert.",
+        author_linkedin: "Yann Greder - LinkedIn",
+
+        // Modals & Footer
+        auth_modal_title: "Registrieren / Anmelden",
+        auth_modal_sub: "Speichern Sie Ihren Fortschritt, um ihn nicht zu verlieren.",
+        auth_email_label: "E-Mail",
+        auth_email_placeholder: "ihre@email.com",
+        auth_password_label: "Passwort",
+        auth_password_placeholder: "••••••••",
+        auth_btn_login: "Anmelden",
+        auth_btn_signup: "Registrieren",
+        report_modal_title: "Fehler melden",
+        report_modal_desc: "Dieses Wort als falsch übersetzt oder korrekturbedürftig melden?",
+        report_reason_translation: "Falsche Übersetzung",
+        report_reason_level: "Falsche Stufe",
+        report_reason_other: "Sonstiges / Tippfehler",
+        report_placeholder: "Zusätzliche Details (optional, max. 100 Zeichen)...",
+        report_cancel: "Abbrechen",
+        report_confirm: "Melden",
+        report_toast_success: "✓ Meldung gesendet. Danke!",
+        footer_deployed: "Bereitgestellt am 25.08.2026"
     },
     es: {
         // Nav
@@ -420,6 +561,8 @@ export const translations = {
         slide_to_ignore: "Deslizar para no preguntar",
         slide_ignored_done: "¡Ignorado!",
         action_continue: "Continuar",
+        status_valide: "Validado",
+        status_non_valide: "No validado",
         status_ignored: "Ignorado",
         congrats: "¡Felicidades! 🎉",
         congrats_sub: "Ha completado todas las palabras de esta sesión.",
@@ -427,11 +570,36 @@ export const translations = {
         words_remaining: "palabra(s) restante(s)",
         btn_check: "Comprobar",
         btn_next: "Siguiente",
+
+        // Context Drill
+        context_promo_title: "Consolidar la memorización",
+        context_promo_desc: "Asocie las palabras aprendidas con sus frases de contexto para anclarlas definitivamente en su memoria a largo plazo.",
+        btn_start_context: "Iniciar ejercicio de contexto",
+        context_drill_title: "Puesta en contexto",
+        context_drill_sub: "Toque (o arrastre) una palabra y luego complete la frase correspondiente.",
+
+        // Types de mots
         type_nom: "Sustantivo",
         type_verbe: "Verbo",
         type_adjectif: "Adjetivo",
         type_adverbe: "Adverbio",
         type_conjonction: "Conjunción",
+        type_conj: "Conjunción",
+        type_prep: "Preposición",
+        type_interj: "Interjección",
+        type_pron: "Pronombre",
+        type_num: "Numeral",
+        type_det: "Determinante",
+        
+        // Noms des langues
+        lang_fr: "Francés",
+        lang_en: "Inglés",
+        lang_de: "Alemán",
+        lang_es: "Español",
+
+        // Auth
+        auth_login: "Iniciar sesión",
+        auth_logout: "Cerrar sesión",
         
         // Progress View
         title_progress: "Mis palabras",
@@ -484,7 +652,7 @@ export const translations = {
         cert_seal_text: "LOGRO",
         btn_share_linkedin: "Compartir en LinkedIn",
         linkedin_post_text: "¡Acabo de validar {count} palabras en el 1.er intento en {langName} en drillFlow.! 🎓🚀 Aquí está mi certificado de logro. ¡Únete a mí para mejorar tu vocabulario! #drillFlow #aprendizaje #vocabulario",
-        linkedin_instructions: "¡Texto de publication copiado en el portapapeles!\n\n1. LinkedIn se abrirá en una nueva pestaña.\n2. Pegue el texto (Ctrl+V o Clic derecho > Pegar).\n3. Adjunte el archivo de imagen del certificado que acaba de descargar.",
+        linkedin_instructions: "¡Texto de publicación copiado en el portapapeles!\n\n1. LinkedIn se abrirá en una nueva pestaña.\n2. Pegue el texto (Ctrl+V o Clic derecho > Pegar).\n3. Adjunte el archivo de imagen del certificado que acaba de descargar.",
         label_firstname: "Nombre",
         label_lastname: "Apellido",
         placeholder_firstname: "Ej: Juan",
@@ -503,8 +671,28 @@ export const translations = {
         pillar_control_desc: "Usuario decide el dominio",
         pillar_privacy_title: "Seguimiento",
         pillar_privacy_desc: "Crea una cuenta para guardar tu progreso",
-        credits_title: "Proyecto dirigido por Yann Greder",
+        credits_title: "Proyecto directed por Yann Greder",
         credits_text: "Este sitio web fue concebido, diseñado y dirigido por Yann Greder, y luego desarrollado y pulido en estrecha colaboración (Pair Programming) con una Inteligencia Artificial.",
-        last_modified: "Última modificación: 20 de agosto de 2026"
+        author_linkedin: "Yann Greder - LinkedIn",
+
+        // Modals & Footer
+        auth_modal_title: "Registro / Iniciar sesión",
+        auth_modal_sub: "Guarde su progreso para no perderlo.",
+        auth_email_label: "Correo electrónico",
+        auth_email_placeholder: "su@email.com",
+        auth_password_label: "Contraseña",
+        auth_password_placeholder: "••••••••",
+        auth_btn_login: "Iniciar sesión",
+        auth_btn_signup: "Registrarse",
+        report_modal_title: "Notificar un error",
+        report_modal_desc: "¿Notificar esta palabra como mal traducida o que requiere corrección?",
+        report_reason_translation: "Mala traducción",
+        report_reason_level: "Nivel incorrecto",
+        report_reason_other: "Otro / Errata",
+        report_placeholder: "Detalles adicionales (opcional, máx. 100 car.)...",
+        report_cancel: "Cancelar",
+        report_confirm: "Notificar",
+        report_toast_success: "✓ Notificación registrada. ¡Gracias!",
+        footer_deployed: "Desplegado el 25/08/2026"
     }
 };

@@ -175,7 +175,7 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
     saveProgressLocalAndCloud();
 }
 
-export async function reportWordTranslation(word, comment = '', langPair = '') {
+export async function reportWordTranslation(word, comment = '', langPair = '', reason = 'Mauvaise traduction') {
     if (!word || !word.id) return { success: false, error: 'invalid_word' };
     try {
         const docRef = doc(db, "word_reports", String(word.id));
@@ -184,11 +184,14 @@ export async function reportWordTranslation(word, comment = '', langPair = '') {
         const now = new Date().toISOString();
         const trimmedComment = (comment || '').trim().slice(0, 100);
         const currentPair = (langPair || '').trim().toUpperCase();
+        const reportReason = (reason || 'Mauvaise traduction').trim();
 
         if (docSnap.exists()) {
             const updatePayload = {
                 count: increment(1),
-                last_reported_at: now
+                last_reported_at: now,
+                last_reason: reportReason,
+                reasons: arrayUnion(reportReason)
             };
             if (currentPair) {
                 updatePayload.last_lang_pair = currentPair;
@@ -198,7 +201,8 @@ export async function reportWordTranslation(word, comment = '', langPair = '') {
                 updatePayload.comments = arrayUnion({
                     text: trimmedComment,
                     date: now,
-                    pair: currentPair
+                    pair: currentPair,
+                    reason: reportReason
                 });
                 updatePayload.last_comment = trimmedComment;
             }
@@ -215,9 +219,11 @@ export async function reportWordTranslation(word, comment = '', langPair = '') {
                 count: 1,
                 first_reported_at: now,
                 last_reported_at: now,
+                last_reason: reportReason,
+                reasons: [reportReason],
                 last_lang_pair: currentPair,
                 lang_pairs: currentPair ? [currentPair] : [],
-                comments: trimmedComment ? [{ text: trimmedComment, date: now, pair: currentPair }] : [],
+                comments: trimmedComment ? [{ text: trimmedComment, date: now, pair: currentPair, reason: reportReason }] : [],
                 last_comment: trimmedComment || ''
             };
             await setDoc(docRef, initialDoc);

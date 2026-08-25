@@ -2,7 +2,7 @@ import { vocabulary } from './data/vocabulary.js?v=71';
 import { initDrillSession, handleDrillKeydown } from './drill.js?v=71';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=71';
 import { translations } from './i18n.js?v=71';
-import { loginUser, signUpUser, getCurrentUser } from './auth.js?v=71';
+import { loginUser, signUpUser, getCurrentUser, updateAuthUI } from './auth.js?v=71';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -11,6 +11,12 @@ export function getAppLanguage() {
 
 export function setAppLanguage(lang) {
     localStorage.setItem('app_lang', lang);
+}
+
+export function getLangName(langCode) {
+    const appLang = getAppLanguage();
+    const key = `lang_${langCode}`;
+    return translations[appLang]?.[key] || translations['fr']?.[key] || langCode.toUpperCase();
 }
 
 export function translateElement(element, lang) {
@@ -29,11 +35,23 @@ export function translateElement(element, lang) {
             el.setAttribute('placeholder', translations[lang][key]);
         }
     });
+
+    const titles = element.querySelectorAll('[data-i18n-title]');
+    titles.forEach(el => {
+        const key = el.getAttribute('data-i18n-title');
+        if (translations[lang] && translations[lang][key] !== undefined) {
+            el.setAttribute('title', translations[lang][key]);
+            el.setAttribute('aria-label', translations[lang][key]);
+        }
+    });
 }
 
 export function translatePage() {
     const lang = getAppLanguage();
     translateElement(document.body, lang);
+    if (typeof updateAuthUI === 'function') {
+        updateAuthUI(getCurrentUser());
+    }
 }
 
 // --- Gestion du Thème (Clair / Sombre) ---
@@ -156,7 +174,7 @@ function attachViewEvents(viewId) {
                 if (lang.value !== srcVal) {
                     const opt = document.createElement('option');
                     opt.value = lang.value;
-                    opt.textContent = lang.text;
+                    opt.textContent = getLangName(lang.value);
                     selectTgt.appendChild(opt);
                 }
             });
@@ -371,13 +389,6 @@ function attachViewEvents(viewId) {
 }
 
 // --- Gestion de la vue Progression ---
-const LANG_NAMES = {
-    fr: 'Français',
-    en: 'Anglais',
-    de: 'Allemand',
-    es: 'Espagnol'
-};
-
 let currentProgPair = '';
 let currentSortCol = 'source';
 let currentSortAsc = true;
@@ -428,7 +439,7 @@ function initProgressView() {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            opt.textContent = `${LANG_NAMES[src] || src.toUpperCase()} ➔ ${LANG_NAMES[tgt] || tgt.toUpperCase()}`;
+            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
             pairSelect.appendChild(opt);
         });
 
@@ -782,7 +793,7 @@ function initStatsView() {
         card.className = 'stat-card';
         card.innerHTML = `
             <div class="stat-card-header">
-                <span class="stat-pair-name">${LANG_NAMES[src] || src.toUpperCase()} ➔ ${LANG_NAMES[tgt] || tgt.toUpperCase()}</span>
+                <span class="stat-pair-name">${getLangName(src)} ➔ ${getLangName(tgt)}</span>
                 <span class="stat-percentage-badge">${percentage}%</span>
             </div>
             <div class="stat-body">
@@ -1135,7 +1146,7 @@ function initCertsView() {
         const card = document.createElement('div');
         card.className = 'stat-card';
         
-        const pairText = `${LANG_NAMES[src] || src.toUpperCase()} ➔ ${LANG_NAMES[tgt] || tgt.toUpperCase()}`;
+        const pairText = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
         const textValidated = translations[lang].cert_total_words;
         const btnLabel = translations[lang].btn_generate_cert;
         
@@ -1205,7 +1216,7 @@ function openCertificateModal(src, tgt, validated, validatedByLevel) {
     const btnLinkedin = document.getElementById('btn-linkedin-cert');
     if (btnLinkedin) {
         btnLinkedin.onclick = () => {
-            const langName = (LANG_NAMES[tgt] || tgt.toUpperCase());
+            const langName = getLangName(tgt);
             let postTemplate = translations[lang].linkedin_post_text;
             let postText = postTemplate.replace('{count}', validated).replace('{langName}', langName);
             
@@ -1312,8 +1323,8 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, lan
     ctx.fillText(translations[lang].cert_for_mastering, w / 2, 230);
 
     // Langues
-    const srcName = (LANG_NAMES[src] || src.toUpperCase()).toUpperCase();
-    const tgtName = (LANG_NAMES[tgt] || tgt.toUpperCase()).toUpperCase();
+    const srcName = getLangName(src).toUpperCase();
+    const tgtName = getLangName(tgt).toUpperCase();
     ctx.fillStyle = '#0f172a';
     ctx.font = '800 38px "Outfit", sans-serif';
     ctx.fillText(`${srcName}  ➔  ${tgtName}`, w / 2, 275);

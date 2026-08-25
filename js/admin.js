@@ -54,8 +54,17 @@ async function loadReports() {
                 pairHtml = `<span class="type-badge" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6; font-weight: 600; display: inline-block;">${escapeHtml(item.lang_pair)}</span>`;
             }
 
+            // Formatage du motif de signalement (Mauvaise traduction, Mauvais niveau, Coquille/Autre)
+            let reasonBadge = '';
+            const lastReason = item.last_reason || (Array.isArray(item.reasons) && item.reasons.length > 0 ? item.reasons[item.reasons.length - 1] : '');
+            if (lastReason) {
+                const badgeBg = lastReason.includes('niveau') ? 'rgba(234, 179, 8, 0.15)' : 'rgba(239, 68, 68, 0.15)';
+                const badgeColor = lastReason.includes('niveau') ? '#eab308' : '#ef4444';
+                reasonBadge = `<div style="margin-bottom: 0.35rem;"><span class="type-badge" style="background: ${badgeBg}; color: ${badgeColor}; font-weight: 600; display: inline-block;">${escapeHtml(lastReason)}</span></div>`;
+            }
+
             // Formatage des descriptions / remarques
-            let commentsHtml = '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
+            let commentsHtml = reasonBadge || '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
             if (Array.isArray(item.comments) && item.comments.length > 0) {
                 const list = item.comments
                     .map(c => {
@@ -63,16 +72,17 @@ async function loadReports() {
                         if (!text) return '';
                         const dateStr = (c && c.date) ? `<span style="color: var(--text-secondary); font-size: 0.75rem; margin-left: 4px;">(${new Date(c.date).toLocaleDateString('fr-FR')})</span>` : '';
                         const pairBadge = (c && c.pair) ? `<span style="font-size: 0.7rem; color: #3b82f6; background: rgba(59, 130, 246, 0.12); padding: 0.1rem 0.35rem; border-radius: 4px; margin-right: 4px; font-weight: 600;">${escapeHtml(c.pair)}</span>` : '';
-                        return `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; margin-bottom: 0.35rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${pairBadge}${escapeHtml(text)}${dateStr}</div>`;
+                        const reasonText = (c && c.reason) ? `<span style="font-size: 0.7rem; color: #eab308; margin-right: 4px;">[${escapeHtml(c.reason)}]</span>` : '';
+                        return `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; margin-bottom: 0.35rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${pairBadge}${reasonText}${escapeHtml(text)}${dateStr}</div>`;
                     })
                     .filter(Boolean);
                 if (list.length > 0) {
-                    commentsHtml = list.join('');
+                    commentsHtml = reasonBadge + list.join('');
                 }
             } else if (item.last_comment) {
-                commentsHtml = `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.last_comment)}</div>`;
+                commentsHtml = reasonBadge + `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.last_comment)}</div>`;
             } else if (item.comment) {
-                commentsHtml = `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.comment)}</div>`;
+                commentsHtml = reasonBadge + `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.comment)}</div>`;
             }
 
             tr.innerHTML = `
