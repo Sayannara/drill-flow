@@ -346,16 +346,16 @@ function renderCurrentWord() {
     setupReportButton('btn-report-word', currentWord);
     setupReportButton('btn-report-word-result', currentWord);
     
-    // Afficher la phrase d'exemple dans la langue source (pour ne pas dévoiler la réponse dans la langue cible)
+    // Afficher la phrase d'exemple dans la langue cible
     const exampleSentenceEl = document.getElementById('drill-example-sentence');
     if (exampleSentenceEl) {
-        const srcKey = `ex_${sessionState.langSource}`;
-        const srcSentence = currentWord[srcKey];
+        const tgtKey = `ex_${sessionState.langTarget}`;
+        const tgtSentence = currentWord[tgtKey];
 
-        if (srcSentence) {
-            const sourceWord = currentWord[sessionState.langSource];
-            const highlightedSrc = highlightExampleSentence(srcSentence, sourceWord, 'font-weight: bold; color: var(--primary-color);');
-            exampleSentenceEl.innerHTML = `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedSrc}</div>`;
+        if (tgtSentence) {
+            const targetWord = currentWord[sessionState.langTarget];
+            const highlightedTgt = highlightExampleSentence(tgtSentence, targetWord, 'font-weight: bold; color: var(--primary-color);');
+            exampleSentenceEl.innerHTML = `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedTgt}</div>`;
             exampleSentenceEl.style.display = 'block';
         } else {
             exampleSentenceEl.style.display = 'none';
@@ -1028,6 +1028,7 @@ export function handleDrillKeydown(e) {
     const activeEl = document.activeElement;
     const drillInput = document.getElementById('drill-input');
     const rewriteInput = document.getElementById('rewrite-input');
+    const isRewriteFocused = rewriteInput && activeEl === rewriteInput;
     const isDrillInputFocused = activeEl && (activeEl === drillInput || activeEl === rewriteInput);
     const isOtherInputFocused = activeEl && (
         activeEl.tagName === 'INPUT' || 
@@ -1540,23 +1541,12 @@ function showToast(msg) {
 function renderComparisonExample(containerLine, textEl, currentWord) {
     if (!containerLine || !textEl || !currentWord) return;
     const tgtKey = `ex_${sessionState.langTarget}`;
-    const srcKey = `ex_${sessionState.langSource}`;
     const tgtSentence = currentWord[tgtKey];
-    const srcSentence = currentWord[srcKey];
 
-    if (tgtSentence || srcSentence) {
-        let html = '';
-        if (tgtSentence) {
-            const targetWord = currentWord[sessionState.langTarget];
-            const highlightedTgt = highlightExampleSentence(tgtSentence, targetWord, 'class="example-highlight"');
-            html += `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;">${highlightedTgt}</div>`;
-        }
-        if (srcSentence) {
-            const sourceWord = currentWord[sessionState.langSource];
-            const highlightedSrc = highlightExampleSentence(srcSentence, sourceWord, 'font-weight: bold; color: var(--primary-color);');
-            html += `<div style="font-style: italic; font-size: 0.92rem; color: var(--text-secondary); opacity: 0.8; font-family: var(--font-sans); white-space: normal; line-height: 1.35; text-align: left; margin-top: 0.2rem;">${highlightedSrc}</div>`;
-        }
-        textEl.innerHTML = html;
+    if (tgtSentence) {
+        const targetWord = currentWord[sessionState.langTarget];
+        const highlightedTgt = highlightExampleSentence(tgtSentence, targetWord, 'class="example-highlight"');
+        textEl.innerHTML = `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;">${highlightedTgt}</div>`;
         containerLine.style.display = 'flex';
     } else {
         containerLine.style.display = 'none';
