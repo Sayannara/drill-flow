@@ -346,16 +346,16 @@ function renderCurrentWord() {
     setupReportButton('btn-report-word', currentWord);
     setupReportButton('btn-report-word-result', currentWord);
     
-    // Afficher la phrase d'exemple dans la langue cible
+    // Afficher la phrase d'exemple dans la langue source (pour ne pas dévoiler la réponse dans la langue cible)
     const exampleSentenceEl = document.getElementById('drill-example-sentence');
     if (exampleSentenceEl) {
-        const tgtKey = `ex_${sessionState.langTarget}`;
-        const tgtSentence = currentWord[tgtKey];
+        const srcKey = `ex_${sessionState.langSource}`;
+        const srcSentence = currentWord[srcKey];
 
-        if (tgtSentence) {
-            const targetWord = currentWord[sessionState.langTarget];
-            const highlightedTgt = highlightExampleSentence(tgtSentence, targetWord, 'font-weight: bold; color: var(--primary-color);');
-            exampleSentenceEl.innerHTML = `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedTgt}</div>`;
+        if (srcSentence) {
+            const sourceWord = currentWord[sessionState.langSource];
+            const highlightedSrc = highlightExampleSentence(srcSentence, sourceWord, 'font-weight: bold; color: var(--primary-color);');
+            exampleSentenceEl.innerHTML = `<div style="font-style: italic; font-size: 1.05rem; color: var(--text-primary); line-height: 1.4;">${highlightedSrc}</div>`;
             exampleSentenceEl.style.display = 'block';
         } else {
             exampleSentenceEl.style.display = 'none';
