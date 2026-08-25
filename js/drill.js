@@ -966,10 +966,19 @@ function showEndSession() {
 
 // Export pour brancher les events dans main.js
 export function handleDrillKeydown(e) {
-    const rewriteInput = document.getElementById('rewrite-input');
-    const isRewriteFocused = rewriteInput && document.activeElement === rewriteInput;
     const activeEl = document.activeElement;
-    const isOtherInputFocused = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'SELECT' || activeEl.isContentEditable) && !isRewriteFocused;
+    const rewriteInput = document.getElementById('rewrite-input');
+    const isRewriteFocused = rewriteInput && activeEl === rewriteInput;
+    const isOtherInputFocused = activeEl && (
+        activeEl.tagName === 'INPUT' || 
+        activeEl.tagName === 'TEXTAREA' || 
+        activeEl.tagName === 'SELECT' || 
+        activeEl.isContentEditable
+    ) && !isRewriteFocused;
+
+    if (isOtherInputFocused) {
+        return;
+    }
 
     const reportModal = document.getElementById('report-modal');
     const isReportModalOpen = reportModal && !reportModal.classList.contains('hidden');
@@ -979,10 +988,6 @@ export function handleDrillKeydown(e) {
             e.preventDefault();
             reportModal.classList.add('hidden');
         }
-        return;
-    }
-
-    if (isOtherInputFocused) {
         return;
     }
 
@@ -1372,6 +1377,13 @@ function openReportModal(currentWord, btnEl) {
         commentInput.oninput = () => {
             if (charCounter) {
                 charCounter.textContent = `${commentInput.value.length} / 100`;
+            }
+        };
+        commentInput.onkeydown = (e) => {
+            e.stopPropagation();
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                modal.classList.add('hidden');
             }
         };
     }

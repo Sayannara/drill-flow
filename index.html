@@ -230,21 +230,21 @@
                     <div class="result-section hidden" id="drill-result" style="margin-top: 0; margin-bottom: 1.5rem;">
                         <div id="result-status" class="status-banner">Correct !</div>
                         
-                        <div class="result-comparison">
-                            <div class="comparison-line" style="display: flex; align-items: center; justify-content: space-between;">
-                                <div style="display: inline-flex; align-items: center; gap: 0.4rem; flex-wrap: wrap;">
-                                    <span class="comparison-label" data-i18n="label_word">Mot:</span>
+                        <div class="result-comparison" style="position: relative;">
+                            <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur" style="position: absolute; top: 0.85rem; right: 0.85rem; z-index: 5;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                    <line x1="4" y1="22" x2="4" y2="15"></line>
+                                </svg>
+                                <span class="report-btn-text">Signaler</span>
+                            </button>
+                            <div class="comparison-line">
+                                <span class="comparison-label" data-i18n="label_word">Mot:</span>
+                                <div style="display: inline-flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; padding-right: 5.5rem;">
                                     <span id="result-asked" class="comparison-text" style="color: var(--text-primary); font-weight: 500;">...</span>
                                     <span id="result-asked-type-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">nom</span>
                                     <span id="result-asked-level-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">A1</span>
                                 </div>
-                                <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur" style="margin-left: auto;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                                        <line x1="4" y1="22" x2="4" y2="15"></line>
-                                    </svg>
-                                    <span class="report-btn-text">Signaler</span>
-                                </button>
                             </div>
                             <div class="comparison-line" id="result-user-container" style="display: none;">
                                 <span class="comparison-label" data-i18n="label_user">Entré:</span>
