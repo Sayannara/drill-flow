@@ -656,6 +656,15 @@ function handleValidation() {
                 rewriteInput.classList.remove('correct');
                 rewriteInput.disabled = false;
                 
+                rewriteInput.onkeydown = (e) => {
+                    const key = e.key ? e.key.toLowerCase() : '';
+                    if (key === 'enter' || e.code === 'Enter' || e.code === 'NumpadEnter' || e.keyCode === 13) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        proceedNextWord('auto');
+                    }
+                };
+                
                 if (rewritePrefix) {
                     if (sessionState.currentPrefix) {
                         rewritePrefix.textContent = sessionState.currentPrefix;
@@ -1052,16 +1061,18 @@ export function handleDrillKeydown(e) {
         return;
     }
 
+    const isEnterKey = e.key === 'Enter' || e.code === 'Enter' || e.code === 'NumpadEnter' || e.keyCode === 13;
+
     if (!sessionState.isWaitingAction) {
         // Mode saisie
-        if (e.key === 'Enter') {
+        if (isEnterKey) {
             e.preventDefault();
             e.stopPropagation();
             handleValidation();
         }
     } else {
         // Mode résultat, attente d'action
-        const key = e.key.toLowerCase();
+        const key = e.key ? e.key.toLowerCase() : '';
         
         if (isRewriteFocused) {
             // Dans le champ de réécriture, on autorise Échap pour sortir du focus (blur), et Alt+R pour ignorer
@@ -1079,7 +1090,7 @@ export function handleDrillKeydown(e) {
                 return;
             }
 
-            if (key === 'enter') {
+            if (isEnterKey) {
                 e.preventDefault();
                 e.stopPropagation();
                 proceedNextWord('auto');
@@ -1087,7 +1098,7 @@ export function handleDrillKeydown(e) {
             return;
         }
 
-        if (key === 'enter') {
+        if (isEnterKey) {
             e.preventDefault();
             e.stopPropagation();
             proceedNextWord('auto');
