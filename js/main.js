@@ -273,7 +273,8 @@ function attachViewEvents(viewId) {
                     return;
                 }
                 
-                let count = 0;
+                let totalRemainingCount = 0;
+                let selectedRemainingCount = 0;
                 const getSelectedLevels = () => {
                     const levels = [];
                     if (document.getElementById('drill-level-a1')?.checked) levels.push('A1');
@@ -288,11 +289,23 @@ function attachViewEvents(viewId) {
                 
                 vocabulary.forEach(w => {
                     const status = getWordStatus(src, tgt, w.id);
-                    if (status !== 'validé' && status !== 'ignoré' && selectedLevels.includes(w.level)) count++;
+                    if (status !== 'validé' && status !== 'ignoré') {
+                        totalRemainingCount++;
+                        if (selectedLevels.includes(w.level)) {
+                            selectedRemainingCount++;
+                        }
+                    }
                 });
                 
-                const remainingText = translations[lang].subtitle_home_remaining
-                    .replace('{remaining}', `<span style="font-weight: bold; color: var(--primary-color);">${count}</span>`);
+                let template = translations[lang].subtitle_home_remaining;
+                if (selectedRemainingCount !== totalRemainingCount && translations[lang].subtitle_home_remaining_selection) {
+                    template = translations[lang].subtitle_home_remaining_selection;
+                }
+                
+                const remainingText = template
+                    .replace('{remaining}', `<span style="font-weight: bold; color: var(--primary-color);">${totalRemainingCount}</span>`)
+                    .replace('{selected}', `<span style="font-weight: bold; color: var(--primary-color);">${selectedRemainingCount}</span>`);
+                
                 remainingEl.innerHTML = remainingText;
             }
 
