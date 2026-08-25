@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=73';
-import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js?v=73';
-import { translations } from './i18n.js?v=73';
+import { vocabulary } from './data/vocabulary.js?v=74';
+import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js?v=74';
+import { translations } from './i18n.js?v=74';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';

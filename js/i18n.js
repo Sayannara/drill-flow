@@ -10,7 +10,7 @@ export const translations = {
         // Home View
         title_home: "Nouvelle session",
         subtitle_home_intro: "{total} mots à apprendre gratuitement !",
-        subtitle_home_remaining: "Il vous reste {remaining} mots à valider.",
+        subtitle_home_remaining: "{remaining} mots à valider avec les filtres sélectionnés",
         label_source: "Traduire de :",
         label_target: "Vers :",
         label_level: "Niveaux CECRL",
@@ -184,7 +184,7 @@ export const translations = {
         // Home View
         title_home: "New Session",
         subtitle_home_intro: "{total} words to learn for free!",
-        subtitle_home_remaining: "You have {remaining} words remaining to validate.",
+        subtitle_home_remaining: "{remaining} words to validate with selected filters",
         label_source: "Translate from:",
         label_target: "To:",
         label_level: "CEFR Levels",
@@ -358,7 +358,7 @@ export const translations = {
         // Home View
         title_home: "Neue Sitzung",
         subtitle_home_intro: "{total} Wörter kostenlos lernen!",
-        subtitle_home_remaining: "Sie müssen noch {remaining} Wörter lernen.",
+        subtitle_home_remaining: "{remaining} Wörter mit den ausgewählten Filtern zu lernen",
         label_source: "Übersetzen von:",
         label_target: "Nach:",
         label_level: "GER-Stufen",
@@ -532,7 +532,7 @@ export const translations = {
         // Home View
         title_home: "Nueva sesión",
         subtitle_home_intro: "¡{total} palabras para aprender gratis!",
-        subtitle_home_remaining: "Le quedan {remaining} palabras por validar.",
+        subtitle_home_remaining: "{remaining} palabras por validar con los filtros seleccionados",
         label_source: "Traducir de:",
         label_target: "Hacia:",
         label_level: "Niveles MCER",
