@@ -2,7 +2,7 @@ import { vocabulary } from './data/vocabulary.js?v=78';
 import { initDrillSession, handleDrillKeydown } from './drill.js?v=78';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=78';
 import { translations } from './i18n.js?v=78';
-import { loginUser, signUpUser, getCurrentUser, updateAuthUI } from './auth.js?v=78';
+import { loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js?v=78';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -1020,10 +1020,75 @@ window.addEventListener('DOMContentLoaded', () => {
         };
     }
 
+    // Fermeture par clic en dehors de la carte
+    if (authModal) {
+        authModal.addEventListener('click', (e) => {
+            if (e.target === authModal) {
+                authModal.classList.add('hidden');
+            }
+        });
+    }
+
+    // Fermeture avec la touche Échap
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && authModal && !authModal.classList.contains('hidden')) {
+            authModal.classList.add('hidden');
+        }
+    });
+
+    // Bascule Afficher / Masquer le mot de passe (Toggle Eye)
+    const btnTogglePassword = document.getElementById('btn-toggle-password');
+    const authPasswordInput = document.getElementById('auth-password');
+    if (btnTogglePassword && authPasswordInput) {
+        const eyeOpenSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+        const eyeClosedSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
+
+        btnTogglePassword.onclick = () => {
+            const isPassword = authPasswordInput.type === 'password';
+            authPasswordInput.type = isPassword ? 'text' : 'password';
+            btnTogglePassword.innerHTML = isPassword ? eyeClosedSvg : eyeOpenSvg;
+            btnTogglePassword.setAttribute('title', isPassword ? "Masquer le mot de passe" : "Afficher le mot de passe");
+            btnTogglePassword.setAttribute('aria-label', isPassword ? "Masquer le mot de passe" : "Afficher le mot de passe");
+        };
+    }
+
     const btnLogin = document.getElementById('btn-login');
     const btnSignup = document.getElementById('btn-signup');
+    const btnForgotPassword = document.getElementById('btn-forgot-password');
     const authError = document.getElementById('auth-error');
     
+    // Mot de passe oublié
+    if (btnForgotPassword) {
+        btnForgotPassword.onclick = async () => {
+            const email = document.getElementById('auth-email').value;
+            const lang = getAppLanguage();
+            if (!email || !email.trim()) {
+                authError.style.color = 'var(--error-color)';
+                authError.textContent = translations[lang]?.auth_enter_email_for_reset || "Veuillez renseigner votre adresse e-mail ci-dessus.";
+                authError.style.display = 'block';
+                document.getElementById('auth-email').focus();
+                return;
+            }
+            authError.style.display = 'none';
+            btnForgotPassword.disabled = true;
+            btnForgotPassword.style.opacity = '0.5';
+            
+            const res = await resetPassword(email);
+            btnForgotPassword.disabled = false;
+            btnForgotPassword.style.opacity = '1';
+
+            if (res.success) {
+                authError.style.color = 'var(--success-color)';
+                authError.textContent = translations[lang]?.auth_reset_sent || "Un e-mail de réinitialisation vous a été envoyé. Vérifiez vos spams.";
+                authError.style.display = 'block';
+            } else {
+                authError.style.color = 'var(--error-color)';
+                authError.textContent = res.error;
+                authError.style.display = 'block';
+            }
+        };
+    }
+
     if (btnLogin && btnSignup) {
         btnLogin.onclick = async () => {
             const email = document.getElementById('auth-email').value;

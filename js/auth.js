@@ -4,7 +4,8 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     signOut,
-    sendEmailVerification
+    sendEmailVerification,
+    sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=78';
 import { translations } from './i18n.js?v=78';
@@ -106,6 +107,25 @@ export async function loginUser(email, password) {
         return { success: false, error: error.message };
     } finally {
         isProcessingAuth = false;
+    }
+}
+
+export async function resetPassword(email) {
+    if (!email || !email.trim()) {
+        return { success: false, error: "Veuillez renseigner votre adresse e-mail." };
+    }
+    try {
+        await sendPasswordResetEmail(auth, email.trim());
+        return { success: true };
+    } catch (error) {
+        console.error("Erreur réinitialisation:", error);
+        let msg = error.message;
+        if (error.code === 'auth/user-not-found') {
+            msg = "Aucun compte n'est associé à cette adresse e-mail.";
+        } else if (error.code === 'auth/invalid-email') {
+            msg = "Adresse e-mail invalide.";
+        }
+        return { success: false, error: msg };
     }
 }
 
