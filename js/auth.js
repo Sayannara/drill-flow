@@ -48,66 +48,105 @@ export function getCurrentUser() {
     return currentUser;
 }
 
-export async function signUpUser(email, password) {
-    isProcessingAuth = true;
-    try {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        
-        // 1. Envoyer immédiatement l'email de vérification tant que la session est active
-        await sendEmailVerification(userCredential.user);
-        console.log("Email de vérification envoyé avec succès à", email);
+export async function authenticateUser(email, password) {
+    if (!email || !email.trim()) {
+        return { success: false, error: "Veuillez renseigner votre adresse e-mail." };
+    }
+    if (!password || password.length < 6) {
+        return { success: false, error: "Le mot de passe doit comporter au moins 6 caractères." };
+    }
 
-        // 2. Transférer les données locales vers le cloud
+    const cleanEmail = email.trim();
+    isProcessingAuth = true;
+
+    try {
+        // 1. Tenter la connexion
         try {
-            await migrateLocalDataToCloud(userCredential.user.uid);
-        } catch (migErr) {
-            console.warn("Migration des données locales ignorée/échouée:", migErr);
+            const userCredential = await signInWithEmailAndPassword(auth, cleanEmail, password);
+            
+            if (!userCredential.user.emailVerified) {
+                try {
+                    await sendEmailVerification(userCredential.user);
+                } catch (e) {
+                    console.warn("Impossible de renvoyer l'email:", e);
+                }
+                await signOut(auth);
+                currentUser = null;
+                updateAuthUI(null);
+                return { 
+                    success: false, 
+                    isUnverified: true,
+                    error: "Votre compte existe mais votre e-mail n'a pas encore été vérifié. Un lien de confirmation vient de vous être renvoyé (vérifiez vos spams)." 
+                };
+            }
+
+            currentUser = userCredential.user;
+            await fetchProgressFromCloud();
+            updateAuthUI(currentUser);
+            return { success: true, isNewUser: false };
+
+        } catch (signInErr) {
+            const code = signInErr.code;
+            
+            // Si le compte n'existe pas, on tente automatiquement la création
+            if (code === 'auth/user-not-found' || code === 'auth/invalid-credential') {
+                try {
+                    const newCred = await createUserWithEmailAndPassword(auth, cleanEmail, password);
+                    
+                    // Envoi immédiat de l'e-mail de confirmation
+                    await sendEmailVerification(newCred.user);
+                    
+                    // Déconnexion propre en attente de vérification
+                    await signOut(auth);
+                    currentUser = null;
+                    updateAuthUI(null);
+
+                    return { 
+                        success: true, 
+                        isNewUser: true,
+                        message: "Compte créé avec succès ! Un e-mail de confirmation vous a été envoyé. Veuillez cliquer sur le lien reçu pour activer votre compte." 
+                    };
+                } catch (signUpErr) {
+                    if (signUpErr.code === 'auth/email-already-in-use') {
+                        // Le compte existe mais le mot de passe entré lors du premier test était faux
+                        return { 
+                            success: false, 
+                            error: "Mot de passe incorrect pour ce compte. Utilisez 'Mot de passe oublié ?' si besoin." 
+                        };
+                    }
+                    if (signUpErr.code === 'auth/weak-password') {
+                        return { success: false, error: "Le mot de passe doit comporter au moins 6 caractères." };
+                    }
+                    return { success: false, error: signUpErr.message };
+                }
+            }
+
+            if (code === 'auth/wrong-password') {
+                return { 
+                    success: false, 
+                    error: "Mot de passe incorrect pour ce compte. Utilisez 'Mot de passe oublié ?' si besoin." 
+                };
+            }
+            if (code === 'auth/invalid-email') {
+                return { success: false, error: "Format d'adresse e-mail invalide." };
+            }
+            if (code === 'auth/too-many-requests') {
+                return { success: false, error: "Trop de tentatives infructueuses. Veuillez patienter ou réinitialiser votre mot de passe." };
+            }
+
+            return { success: false, error: signInErr.message };
         }
-        
-        // 3. Déconnecter proprement l'utilisateur en attendant la validation
-        await signOut(auth);
-        currentUser = null;
-        updateAuthUI(null);
-        
-        return { success: true };
-    } catch (error) {
-        console.error("Erreur lors de l'inscription:", error);
-        return { success: false, error: error.message };
     } finally {
         isProcessingAuth = false;
     }
 }
 
+export async function signUpUser(email, password) {
+    return authenticateUser(email, password);
+}
+
 export async function loginUser(email, password) {
-    isProcessingAuth = true;
-    try {
-        const userCredential = await signInWithEmailAndPassword(auth, email, password);
-        
-        if (!userCredential.user.emailVerified) {
-            // Renvoyer un email de vérification pour aider l'utilisateur
-            try {
-                await sendEmailVerification(userCredential.user);
-            } catch (e) {
-                console.warn("Impossible de renvoyer l'email:", e);
-            }
-            await signOut(auth);
-            currentUser = null;
-            updateAuthUI(null);
-            return { 
-                success: false, 
-                error: "Veuillez vérifier votre e-mail avant de vous connecter. Un nouvel e-mail de confirmation vient de vous être envoyé (vérifiez vos spams)." 
-            };
-        }
-        
-        currentUser = userCredential.user;
-        await fetchProgressFromCloud();
-        updateAuthUI(currentUser);
-        return { success: true };
-    } catch (error) {
-        return { success: false, error: error.message };
-    } finally {
-        isProcessingAuth = false;
-    }
+    return authenticateUser(email, password);
 }
 
 export async function resetPassword(email) {

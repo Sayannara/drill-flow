@@ -2,7 +2,7 @@ import { vocabulary } from './data/vocabulary.js?v=78';
 import { initDrillSession, handleDrillKeydown } from './drill.js?v=78';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=78';
 import { translations } from './i18n.js?v=78';
-import { loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js?v=78';
+import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js?v=78';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -1089,36 +1089,47 @@ window.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    if (btnLogin && btnSignup) {
-        btnLogin.onclick = async () => {
-            const email = document.getElementById('auth-email').value;
-            const pass = document.getElementById('auth-password').value;
-            authError.style.display = 'none';
-            const res = await loginUser(email, pass);
-            if (res.success) {
-                authModal.classList.add('hidden');
-            } else {
-                authError.style.color = 'var(--error-color)';
-                authError.textContent = res.error;
-                authError.style.display = 'block';
-            }
-        };
+    const btnAuthSubmit = document.getElementById('btn-auth-submit');
+    const authForm = authModal ? authModal.querySelector('form') : null;
 
-        btnSignup.onclick = async () => {
-            const email = document.getElementById('auth-email').value;
-            const pass = document.getElementById('auth-password').value;
-            authError.style.display = 'none';
-            const res = await signUpUser(email, pass);
-            if (res.success) {
-                authError.textContent = "Inscription réussie ! Un lien de vérification vous a été envoyé. Veuillez consulter vos e-mails (et vos spams) avant de vous connecter.";
+    const handleAuthSubmit = async (e) => {
+        if (e) e.preventDefault();
+        const email = document.getElementById('auth-email').value;
+        const pass = document.getElementById('auth-password').value;
+        authError.style.display = 'none';
+
+        if (btnAuthSubmit) {
+            btnAuthSubmit.disabled = true;
+            btnAuthSubmit.style.opacity = '0.7';
+        }
+
+        const res = await authenticateUser(email, pass);
+
+        if (btnAuthSubmit) {
+            btnAuthSubmit.disabled = false;
+            btnAuthSubmit.style.opacity = '1';
+        }
+
+        if (res.success) {
+            if (res.isNewUser) {
                 authError.style.color = 'var(--success-color)';
+                authError.textContent = res.message;
                 authError.style.display = 'block';
             } else {
-                authError.style.color = 'var(--error-color)';
-                authError.textContent = res.error;
-                authError.style.display = 'block';
+                authModal.classList.add('hidden');
             }
-        };
+        } else {
+            authError.style.color = res.isUnverified ? 'var(--primary-color)' : 'var(--error-color)';
+            authError.textContent = res.error;
+            authError.style.display = 'block';
+        }
+    };
+
+    if (btnAuthSubmit) {
+        btnAuthSubmit.onclick = handleAuthSubmit;
+    }
+    if (authForm) {
+        authForm.onsubmit = handleAuthSubmit;
     }
 });
 
