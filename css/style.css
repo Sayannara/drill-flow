@@ -61,32 +61,15 @@ body {
     user-select: none;
 }
 
-.logo-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    transition: transform 0.2s ease;
-}
-
-.logo-brand:hover {
-    transform: translateY(-1px);
-}
-
-.logo-symbol {
-    flex-shrink: 0;
-    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.35));
-    transition: filter 0.2s ease, transform 0.2s ease;
-}
-
-.logo-brand:hover .logo-symbol {
-    filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.6));
-    transform: scale(1.05);
-}
-
 .logo-wrapper {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover .logo-wrapper {
+    transform: translateY(-1px);
 }
 
 .logo-text {
