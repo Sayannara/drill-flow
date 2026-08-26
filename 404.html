@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirection...</title>
+    <script>
+        // Interception automatique de tous les liens d'action Firebase
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('mode') && params.has('oobCode')) {
+            window.location.replace('auth-action.html' + window.location.search);
+        } else {
+            window.location.replace('index.html');
+        }
+    </script>
+</head>
+<body style="background: #0b1120; color: #fff; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+    <p>Redirection vers drillFlow. en cours...</p>
+</body>
+</html>
