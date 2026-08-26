@@ -55,13 +55,91 @@ body {
 
 .logo {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
 }
 
 .logo-text {
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.55rem;
+    letter-spacing: -0.02em;
+    display: inline-flex;
+    align-items: baseline;
+    line-height: 1.1;
+}
+
+/* Thème Sombre : 'drill' en Blanc et 'Flow.' en Bleu lumineux */
+[data-theme="dark"] .logo-text .logo-white {
+    color: #ffffff;
+}
+[data-theme="dark"] .logo-text .logo-blue {
     color: var(--primary-color);
+    text-shadow: 0 0 16px rgba(96, 165, 250, 0.35);
+}
+
+/* Thème Clair : 'drill' en Slate très sombre et 'Flow.' en Bleu */
+[data-theme="light"] .logo-text .logo-white,
+:root:not([data-theme="dark"]) .logo-text .logo-white {
+    color: #0f172a;
+}
+[data-theme="light"] .logo-text .logo-blue,
+:root:not([data-theme="dark"]) .logo-text .logo-blue {
+    color: #2563eb;
+}
+
+/* Tagline / Citation */
+.logo-tagline {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+}
+
+.tagline-faster {
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+/* Pied de page (Footer) */
+.app-footer {
+    text-align: center;
+    padding: 1.75rem 1rem 1.5rem 1rem;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+    background-color: var(--surface-color);
+}
+
+.footer-quote {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 0.01em;
+}
+
+.footer-meta {
+    font-size: 0.75rem;
+    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
 }
 
 .nav-menu {
@@ -749,6 +827,10 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     .app-header {
         position: relative;
         padding: 0.75rem 1rem;
+    }
+
+    .logo-tagline {
+        display: none;
     }
 
     .nav-menu {

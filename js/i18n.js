@@ -171,7 +171,7 @@ export const translations = {
         report_cancel: "Annuler",
         report_confirm: "Signaler",
         report_toast_success: "✓ Signalement enregistré. Merci !",
-        footer_deployed: "Déployé le 25/08/2026"
+        footer_deployed: "Déployé le 26/08/2026"
     },
     en: {
         // Nav
@@ -345,7 +345,7 @@ export const translations = {
         report_cancel: "Cancel",
         report_confirm: "Report",
         report_toast_success: "✓ Report submitted. Thank you!",
-        footer_deployed: "Deployed on 2026-08-25"
+        footer_deployed: "Deployed on 2026-08-26"
     },
     de: {
         // Nav
@@ -519,7 +519,7 @@ export const translations = {
         report_cancel: "Abbrechen",
         report_confirm: "Melden",
         report_toast_success: "✓ Meldung gesendet. Danke!",
-        footer_deployed: "Bereitgestellt am 25.08.2026"
+        footer_deployed: "Bereitgestellt am 26.08.2026"
     },
     es: {
         // Nav
@@ -570,18 +570,18 @@ export const translations = {
         words_remaining: "palabra(s) restante(s)",
         btn_check: "Comprobar",
         btn_next: "Siguiente",
-
+ 
         // Context Drill
         context_promo_title: "Consolidar la memorización",
         context_promo_desc: "Asocie las palabras aprendidas con sus frases de contexto para anclarlas definitivamente en su memoria a largo plazo.",
         btn_start_context: "Iniciar ejercicio de contexto",
         context_drill_title: "Puesta en contexto",
         context_drill_sub: "Toque (o arrastre) una palabra y luego complete la frase correspondiente.",
-
+ 
         // Types de mots
         type_nom: "Sustantivo",
         type_verbe: "Verbo",
-        type_adjectif: "Adjetivo",
+        type_adjectif: "Adjectivo",
         type_adverbe: "Adverbio",
         type_conjonction: "Conjunción",
         type_conj: "Conjunción",
@@ -596,7 +596,7 @@ export const translations = {
         lang_en: "Inglés",
         lang_de: "Alemán",
         lang_es: "Español",
-
+ 
         // Auth
         auth_login: "Iniciar sesión",
         auth_logout: "Cerrar sesión",
@@ -674,7 +674,7 @@ export const translations = {
         credits_title: "Proyecto directed por Yann Greder",
         credits_text: "Este sitio web fue concebido, diseñado y dirigido por Yann Greder, y luego desarrollado y pulido en estrecha colaboración (Pair Programming) con una Inteligencia Artificial.",
         author_linkedin: "Yann Greder - LinkedIn",
-
+ 
         // Modals & Footer
         auth_modal_title: "Registro / Iniciar sesión",
         auth_modal_sub: "Guarde su progreso para no perderlo.",
@@ -693,6 +693,6 @@ export const translations = {
         report_cancel: "Cancelar",
         report_confirm: "Notificar",
         report_toast_success: "✓ Notificación registrada. ¡Gracias!",
-        footer_deployed: "Desplegado el 25/08/2026"
+        footer_deployed: "Desplegado el 26/08/2026"
     }
 };
