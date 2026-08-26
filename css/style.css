@@ -58,7 +58,6 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    user-select: none;
 }
 
 .logo-wrapper {
