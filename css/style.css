@@ -109,39 +109,6 @@ body {
     font-weight: 800;
 }
 
-/* Pied de page (Footer) */
-.app-footer {
-    text-align: center;
-    padding: 1.75rem 1rem 1.5rem 1rem;
-    color: var(--text-secondary);
-    font-size: 0.82rem;
-    font-family: var(--font-sans);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    border-top: 1px solid var(--border-color);
-    margin-top: auto;
-    background-color: var(--surface-color);
-}
-
-.footer-quote {
-    font-family: var(--font-heading);
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    letter-spacing: 0.01em;
-}
-
-.footer-meta {
-    font-size: 0.75rem;
-    opacity: 0.75;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-}
-
 .nav-menu {
     display: flex;
     gap: 1rem;
