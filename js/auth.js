@@ -48,6 +48,14 @@ export function getCurrentUser() {
     return currentUser;
 }
 
+function getActionCodeSettings() {
+    const isLocal = typeof window !== 'undefined' && (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1'));
+    return {
+        url: isLocal ? `${window.location.origin}/auth-action.html` : 'https://drill-flow.app/auth-action.html',
+        handleCodeInApp: false
+    };
+}
+
 export async function authenticateUser(email, password) {
     if (!email || !email.trim()) {
         return { success: false, error: "Veuillez renseigner votre adresse e-mail." };
@@ -66,7 +74,7 @@ export async function authenticateUser(email, password) {
             
             if (!userCredential.user.emailVerified) {
                 try {
-                    await sendEmailVerification(userCredential.user);
+                    await sendEmailVerification(userCredential.user, getActionCodeSettings());
                 } catch (e) {
                     console.warn("Impossible de renvoyer l'email:", e);
                 }
@@ -93,8 +101,8 @@ export async function authenticateUser(email, password) {
                 try {
                     const newCred = await createUserWithEmailAndPassword(auth, cleanEmail, password);
                     
-                    // Envoi immédiat de l'e-mail de confirmation
-                    await sendEmailVerification(newCred.user);
+                    // Envoi immédiat de l'e-mail de confirmation avec ActionCodeSettings
+                    await sendEmailVerification(newCred.user, getActionCodeSettings());
                     
                     // Déconnexion propre en attente de vérification
                     await signOut(auth);
@@ -154,7 +162,7 @@ export async function resetPassword(email) {
         return { success: false, error: "Veuillez renseigner votre adresse e-mail." };
     }
     try {
-        await sendPasswordResetEmail(auth, email.trim());
+        await sendPasswordResetEmail(auth, email.trim(), getActionCodeSettings());
         return { success: true };
     } catch (error) {
         console.error("Erreur réinitialisation:", error);
