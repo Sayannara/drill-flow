@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drillFlow. | Validation de votre compte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=86">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            padding: 1.5rem;
+            box-sizing: border-box;
+        }
+        .action-card {
+            max-width: 440px;
+            width: 100%;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+        }
+        .action-icon {
+            font-size: 3rem;
+            line-height: 1;
+        }
+        .action-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .action-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
+        }
+        .action-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(56, 189, 248, 0.2);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="action-card" id="action-container">
+        <!-- Logo -->
+        <div class="logo-wrapper" style="margin-bottom: 0.5rem;">
+            <span class="logo-text"><span class="logo-white">drill</span><span class="logo-blue">Flow.</span></span>
+            <span class="logo-tagline">Master language <span class="tagline-faster">faster.</span></span>
+        </div>
+
+        <!-- Loader initial -->
+        <div id="state-loading" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 1rem 0;">
+            <div class="spinner"></div>
+            <p class="action-desc">Traitement de votre demande en cours...</p>
+        </div>
+
+        <!-- État Succès Vérification Email -->
+        <div id="state-verify-success" style="display: none; flex-direction: column; align-items: center; gap: 1rem; width: 100%;">
+            <div class="action-icon">🎉</div>
+            <h2 class="action-title" style="color: var(--success-color);">E-mail validé avec succès !</h2>
+            <p class="action-desc">Votre compte est désormais actif et prêt à l'emploi. Vos progrès seront sauvegardés et synchronisés en toute sécurité.</p>
+            <a href="index.html" class="btn-primary" style="width: 100%; text-decoration: none; box-sizing: border-box; padding: 0.85rem; margin-top: 0.5rem; text-align: center; font-weight: 600;">Accéder à drillFlow.</a>
+        </div>
+
+        <!-- État Réinitialisation Mot de passe -->
+        <div id="state-reset-password" style="display: none; flex-direction: column; align-items: center; gap: 1rem; width: 100%;">
+            <div class="action-icon">🔑</div>
+            <h2 class="action-title">Nouveau mot de passe</h2>
+            <p class="action-desc" id="reset-email-info">Choisissez votre nouveau mot de passe sécurisé :</p>
+            
+            <form class="action-form" id="form-new-password" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="new-pass" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Nouveau mot de passe (min. 6 caractères)</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="new-pass" placeholder="••••••••" required minlength="6" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-pass" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Confirmer le mot de passe</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="confirm-pass" placeholder="••••••••" required minlength="6" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); outline: none;">
+                    </div>
+                </div>
+
+                <button type="submit" id="btn-submit-new-pass" class="btn-primary" style="width: 100%; padding: 0.85rem; font-weight: 600; margin-top: 0.5rem;">Enregistrer le nouveau mot de passe</button>
+                <p id="reset-error" style="color: var(--error-color); font-size: 0.85rem; display: none; text-align: center; margin: 0;"></p>
+            </form>
+        </div>
+
+        <!-- État Succès Mot de passe modifié -->
+        <div id="state-reset-success" style="display: none; flex-direction: column; align-items: center; gap: 1rem; width: 100%;">
+            <div class="action-icon">✅</div>
+            <h2 class="action-title" style="color: var(--success-color);">Mot de passe mis à jour !</h2>
+            <p class="action-desc">Votre mot de passe a été modifié avec succès. Vous pouvez maintenant vous connecter à votre compte.</p>
+            <a href="index.html" class="btn-primary" style="width: 100%; text-decoration: none; box-sizing: border-box; padding: 0.85rem; margin-top: 0.5rem; text-align: center; font-weight: 600;">Se connecter</a>
+        </div>
+
+        <!-- État Erreur (Code expiré / invalide) -->
+        <div id="state-error" style="display: none; flex-direction: column; align-items: center; gap: 1rem; width: 100%;">
+            <div class="action-icon">⚠️</div>
+            <h2 class="action-title" style="color: var(--error-color);">Lien expiré ou invalide</h2>
+            <p class="action-desc" id="error-message">Ce lien de confirmation n'est plus valide ou a déjà été utilisé.</p>
+            <a href="index.html" class="btn-primary btn-secondary-action" style="width: 100%; text-decoration: none; box-sizing: border-box; padding: 0.85rem; margin-top: 0.5rem; text-align: center; font-weight: 600;">Retourner à l'accueil</a>
+        </div>
+    </div>
+
+    <!-- Script de gestion Firebase Auth Action -->
+    <script type="module">
+        import { auth } from './js/firebase-config.js?v=78';
+        import { 
+            applyActionCode, 
+            verifyPasswordResetCode, 
+            confirmPasswordReset 
+        } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+        const stateLoading = document.getElementById('state-loading');
+        const stateVerifySuccess = document.getElementById('state-verify-success');
+        const stateResetPassword = document.getElementById('state-reset-password');
+        const stateResetSuccess = document.getElementById('state-reset-success');
+        const stateError = document.getElementById('state-error');
+        const errorMessage = document.getElementById('error-message');
+
+        function hideAllStates() {
+            stateLoading.style.display = 'none';
+            stateVerifySuccess.style.display = 'none';
+            stateResetPassword.style.display = 'none';
+            stateResetSuccess.style.display = 'none';
+            stateError.style.display = 'none';
+        }
+
+        function triggerConfetti() {
+            try {
+                if (typeof confetti === 'function') {
+                    confetti({
+                        particleCount: 80,
+                        spread: 70,
+                        origin: { y: 0.6 }
+                    });
+                }
+            } catch (e) {}
+        }
+
+        // Récupérer les paramètres de l'URL
+        const params = new URLSearchParams(window.location.search);
+        const mode = params.get('mode');
+        const oobCode = params.get('oobCode');
+
+        async function handleAction() {
+            if (!oobCode || !mode) {
+                hideAllStates();
+                stateError.style.display = 'flex';
+                errorMessage.textContent = "Aucun paramètre d'action valide n'a été trouvé dans le lien.";
+                return;
+            }
+
+            switch (mode) {
+                case 'verifyEmail':
+                    try {
+                        await applyActionCode(auth, oobCode);
+                        hideAllStates();
+                        stateVerifySuccess.style.display = 'flex';
+                        triggerConfetti();
+                    } catch (error) {
+                        console.error("Erreur validation email:", error);
+                        hideAllStates();
+                        stateError.style.display = 'flex';
+                        errorMessage.textContent = "Ce lien de vérification d'e-mail a expiré ou a déjà été utilisé.";
+                    }
+                    break;
+
+                case 'resetPassword':
+                    try {
+                        const email = await verifyPasswordResetCode(auth, oobCode);
+                        hideAllStates();
+                        stateResetPassword.style.display = 'flex';
+                        if (email) {
+                            document.getElementById('reset-email-info').textContent = `Réinitialisation pour l'adresse : ${email}`;
+                        }
+
+                        const formReset = document.getElementById('form-new-password');
+                        const resetError = document.getElementById('reset-error');
+
+                        formReset.onsubmit = async () => {
+                            const newPass = document.getElementById('new-pass').value;
+                            const confirmPass = document.getElementById('confirm-pass').value;
+                            resetError.style.display = 'none';
+
+                            if (newPass.length < 6) {
+                                resetError.textContent = "Le mot de passe doit comporter au moins 6 caractères.";
+                                resetError.style.display = 'block';
+                                return;
+                            }
+                            if (newPass !== confirmPass) {
+                                resetError.textContent = "Les deux mots de passe ne correspondent pas.";
+                                resetError.style.display = 'block';
+                                return;
+                            }
+
+                            const btnSubmit = document.getElementById('btn-submit-new-pass');
+                            btnSubmit.disabled = true;
+                            btnSubmit.textContent = "Enregistrement...";
+
+                            try {
+                                await confirmPasswordReset(auth, oobCode, newPass);
+                                hideAllStates();
+                                stateResetSuccess.style.display = 'flex';
+                                triggerConfetti();
+                            } catch (resetErr) {
+                                btnSubmit.disabled = false;
+                                btnSubmit.textContent = "Enregistrer le nouveau mot de passe";
+                                resetError.textContent = resetErr.message || "Impossible de mettre à jour le mot de passe.";
+                                resetError.style.display = 'block';
+                            }
+                        };
+
+                    } catch (error) {
+                        console.error("Erreur code réinitialisation:", error);
+                        hideAllStates();
+                        stateError.style.display = 'flex';
+                        errorMessage.textContent = "Ce lien de réinitialisation a expiré. Veuillez refaire une demande depuis l'application.";
+                    }
+                    break;
+
+                case 'recoverEmail':
+                    try {
+                        await applyActionCode(auth, oobCode);
+                        hideAllStates();
+                        stateVerifySuccess.style.display = 'flex';
+                    } catch (err) {
+                        hideAllStates();
+                        stateError.style.display = 'flex';
+                        errorMessage.textContent = err.message;
+                    }
+                    break;
+
+                default:
+                    hideAllStates();
+                    stateError.style.display = 'flex';
+                    errorMessage.textContent = "Action non reconnue.";
+            }
+        }
+
+        handleAction();
+    </script>
+</body>
+</html>

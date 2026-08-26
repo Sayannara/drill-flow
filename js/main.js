@@ -851,6 +851,13 @@ renderView = function(viewId) {
 
 // Initialisation au chargement de la page
 window.addEventListener('DOMContentLoaded', () => {
+    // Interception des actions d'authentification Firebase (Validation email / Réinitialisation mot de passe)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('mode') && urlParams.has('oobCode')) {
+        window.location.href = `auth-action.html${window.location.search}`;
+        return;
+    }
+
     // Écouter les changements d'authentification pour rafraîchir la vue (ex: enlever les cadenas)
     window.addEventListener('auth-changed', () => {
         const currentActiveBtn = document.querySelector('.nav-btn.active');
