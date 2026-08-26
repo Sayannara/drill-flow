@@ -58,6 +58,29 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    user-select: none;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    transition: transform 0.2s ease;
+}
+
+.logo-brand:hover {
+    transform: translateY(-1px);
+}
+
+.logo-symbol {
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.35));
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.logo-brand:hover .logo-symbol {
+    filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.6));
+    transform: scale(1.05);
 }
 
 .logo-wrapper {
@@ -69,30 +92,30 @@ body {
 .logo-text {
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: 1.55rem;
-    letter-spacing: -0.02em;
+    font-size: 1.6rem;
+    letter-spacing: 0.04em; /* Espacement aéré des lettres */
     display: inline-flex;
     align-items: baseline;
     line-height: 1.1;
 }
 
-/* Thème Sombre : 'drill' en Blanc et 'Flow.' en Bleu lumineux */
+/* Thème Sombre : 'drill' en Blanc et 'Flow.' en Cyan/Bleu lumineux */
 [data-theme="dark"] .logo-text .logo-white {
     color: #ffffff;
 }
 [data-theme="dark"] .logo-text .logo-blue {
-    color: var(--primary-color);
-    text-shadow: 0 0 16px rgba(96, 165, 250, 0.35);
+    color: #38bdf8;
+    text-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
 }
 
-/* Thème Clair : 'drill' en Slate très sombre et 'Flow.' en Bleu */
+/* Thème Clair : 'drill' en Slate sombre et 'Flow.' en Bleu */
 [data-theme="light"] .logo-text .logo-white,
 :root:not([data-theme="dark"]) .logo-text .logo-white {
     color: #0f172a;
 }
 [data-theme="light"] .logo-text .logo-blue,
 :root:not([data-theme="dark"]) .logo-text .logo-blue {
-    color: #2563eb;
+    color: #0284c7;
 }
 
 /* Tagline / Citation */
@@ -100,12 +123,12 @@ body {
     font-family: var(--font-sans);
     font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
     color: var(--text-secondary);
 }
 
 .tagline-faster {
-    color: var(--primary-color);
+    color: #38bdf8;
     font-weight: 800;
 }
 
