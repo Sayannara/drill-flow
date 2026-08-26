@@ -1,4 +1,4 @@
-import { auth } from './firebase-config.js?v=76';
+import { auth } from './firebase-config.js?v=78';
 import { 
     onAuthStateChanged,
     createUserWithEmailAndPassword,
@@ -6,22 +6,26 @@ import {
     signOut,
     sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=76';
-import { translations } from './i18n.js?v=76';
+import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=78';
+import { translations } from './i18n.js?v=78';
 
 function getLang() {
     return localStorage.getItem('app_lang') || 'fr';
 }
 
 let currentUser = null;
+let isProcessingAuth = false;
 
 // S'abonne aux changements d'état (connexion/déconnexion)
 onAuthStateChanged(auth, async (user) => {
+    if (isProcessingAuth) return; // Ne pas interférer avec signUpUser ou loginUser en cours
+
     if (user) {
         if (!user.emailVerified) {
-            // Bloquer l'accès strict
-            console.log("Utilisateur non vérifié, déconnexion forcée.");
-            signOut(auth);
+            console.log("Utilisateur non vérifié, déconnexion.");
+            currentUser = null;
+            updateAuthUI(null);
+            await signOut(auth);
             return;
         }
         currentUser = user;
@@ -34,7 +38,7 @@ onAuthStateChanged(auth, async (user) => {
         updateAuthUI(user);
     } else {
         currentUser = null;
-        console.log("Aucun utilisateur, accès anonyme (sans sauvegarde) en cours...");
+        console.log("Aucun utilisateur connecté.");
         updateAuthUI(null);
     }
 });
@@ -44,35 +48,64 @@ export function getCurrentUser() {
 }
 
 export async function signUpUser(email, password) {
+    isProcessingAuth = true;
     try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        // On transfère les données locales
-        await migrateLocalDataToCloud(userCredential.user.uid);
         
-        // Envoi de l'email de vérification
+        // 1. Envoyer immédiatement l'email de vérification tant que la session est active
         await sendEmailVerification(userCredential.user);
+        console.log("Email de vérification envoyé avec succès à", email);
+
+        // 2. Transférer les données locales vers le cloud
+        try {
+            await migrateLocalDataToCloud(userCredential.user.uid);
+        } catch (migErr) {
+            console.warn("Migration des données locales ignorée/échouée:", migErr);
+        }
         
-        // On déconnecte l'utilisateur tant qu'il n'a pas vérifié
+        // 3. Déconnecter proprement l'utilisateur en attendant la validation
         await signOut(auth);
+        currentUser = null;
+        updateAuthUI(null);
         
         return { success: true };
     } catch (error) {
+        console.error("Erreur lors de l'inscription:", error);
         return { success: false, error: error.message };
+    } finally {
+        isProcessingAuth = false;
     }
 }
 
 export async function loginUser(email, password) {
+    isProcessingAuth = true;
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         
         if (!userCredential.user.emailVerified) {
+            // Renvoyer un email de vérification pour aider l'utilisateur
+            try {
+                await sendEmailVerification(userCredential.user);
+            } catch (e) {
+                console.warn("Impossible de renvoyer l'email:", e);
+            }
             await signOut(auth);
-            return { success: false, error: "Veuillez vérifier votre e-mail avant de vous connecter. Vérifiez vos spams." };
+            currentUser = null;
+            updateAuthUI(null);
+            return { 
+                success: false, 
+                error: "Veuillez vérifier votre e-mail avant de vous connecter. Un nouvel e-mail de confirmation vient de vous être envoyé (vérifiez vos spams)." 
+            };
         }
         
+        currentUser = userCredential.user;
+        await fetchProgressFromCloud();
+        updateAuthUI(currentUser);
         return { success: true };
     } catch (error) {
         return { success: false, error: error.message };
+    } finally {
+        isProcessingAuth = false;
     }
 }
 
