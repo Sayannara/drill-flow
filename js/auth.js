@@ -1,4 +1,4 @@
-import { auth } from './firebase-config.js?v=78';
+import { auth } from './firebase-config.js?v=87';
 import { 
     onAuthStateChanged,
     createUserWithEmailAndPassword,
@@ -7,8 +7,8 @@ import {
     sendEmailVerification,
     sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=78';
-import { translations } from './i18n.js?v=78';
+import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js?v=87';
+import { translations } from './i18n.js?v=87';
 
 function getLang() {
     return localStorage.getItem('app_lang') || 'fr';
