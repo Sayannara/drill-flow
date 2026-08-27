@@ -169,10 +169,16 @@
                                 <line x1="12" y1="16" x2="12" y2="12"></line>
                                 <line x1="12" y1="8" x2="12.01" y2="8"></line>
                             </svg>
-                            <span class="tooltip-content" style="position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 8px; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.75rem; border-radius: 8px; font-size: 0.85rem; width: 250px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 10; font-weight: normal; line-height: 1.4; pointer-events: none;">
-                                <strong>Cadre Européen Commun de Référence pour les Langues</strong><br><br>
-                                A1 = Débutant<br>
-                                C2 = Bilingue
+                            <span class="tooltip-content" data-i18n="tooltip_cefr_levels" style="position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 8px; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.75rem 0.9rem; border-radius: 8px; font-size: 0.8rem; width: 280px; max-width: 90vw; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 10; font-weight: normal; line-height: 1.45; pointer-events: none;">
+                                <strong style="display: block; text-align: center; margin-bottom: 0.4rem;">Cadre Européen Commun de Référence (CECRL)</strong>
+                                <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                                    <div><strong>A1 :</strong> Débutant (Découverte)</div>
+                                    <div><strong>A2 :</strong> Élémentaire (Survie)</div>
+                                    <div><strong>B1 :</strong> Intermédiaire (Seuil)</div>
+                                    <div><strong>B2 :</strong> Intermédiaire supérieur (Indépendant)</div>
+                                    <div><strong>C1 :</strong> Avancé (Autonome)</div>
+                                    <div><strong>C2 :</strong> Maîtrise / Bilingue</div>
+                                </div>
                             </span>
                         </span>
                     </label>
@@ -726,12 +732,12 @@
 
     <!-- Footer avec version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.65; font-family: var(--font-sans);">
-        drillFlow. <span class="app-version-num">v76</span> &bull; <span data-i18n="footer_deployed">Déployé le 26/08/2026</span>
+        drillFlow. <span class="app-version-num">v77</span> &bull; <span data-i18n="footer_deployed">Déployé le 27/08/2026</span>
     </footer>
 
     <!-- Scripts -->
-    <script type="module" src="js/firebase-config.js?v=78"></script>
-    <script type="module" src="js/auth.js?v=78"></script>
-    <script type="module" src="js/main.js?v=78"></script>
+    <script type="module" src="js/firebase-config.js?v=79"></script>
+    <script type="module" src="js/auth.js?v=79"></script>
+    <script type="module" src="js/main.js?v=79"></script>
 </body>
 </html>

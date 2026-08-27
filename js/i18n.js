@@ -176,7 +176,7 @@ export const translations = {
         report_cancel: "Annuler",
         report_confirm: "Signaler",
         report_toast_success: "✓ Signalement enregistré. Merci !",
-        footer_deployed: "Déployé le 26/08/2026"
+        footer_deployed: "Déployé le 27/08/2026"
     },
     en: {
         // Nav
@@ -355,7 +355,7 @@ export const translations = {
         report_cancel: "Cancel",
         report_confirm: "Report",
         report_toast_success: "✓ Report submitted. Thank you!",
-        footer_deployed: "Deployed on 2026-08-26"
+        footer_deployed: "Deployed on 2026-08-27"
     },
     de: {
         // Nav
@@ -534,7 +534,7 @@ export const translations = {
         report_cancel: "Abbrechen",
         report_confirm: "Melden",
         report_toast_success: "✓ Meldung gesendet. Danke!",
-        footer_deployed: "Bereitgestellt am 26.08.2026"
+        footer_deployed: "Bereitgestellt am 27.08.2026"
     },
     es: {
         // Nav
@@ -713,6 +713,6 @@ export const translations = {
         report_cancel: "Cancelar",
         report_confirm: "Notificar",
         report_toast_success: "✓ Notificación registrada. ¡Gracias!",
-        footer_deployed: "Desplegado el 26/08/2026"
+        footer_deployed: "Desplegado el 27/08/2026"
     }
 };
