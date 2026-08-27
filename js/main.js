@@ -1208,15 +1208,22 @@ function initCertsView() {
         const [src, tgt] = pair.split('-');
         let validated = 0;
         const validatedByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+        const totalByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+
         vocabulary.forEach(word => {
-            if (getWordStatus(src, tgt, word.id) === 'validé') {
+            const status = getWordStatus(src, tgt, word.id);
+            if (status === 'ignoré') return;
+            if (totalByLevel[word.level] !== undefined) {
+                totalByLevel[word.level]++;
+            }
+            if (status === 'validé') {
                 validated++;
                 if (validatedByLevel[word.level] !== undefined) {
                     validatedByLevel[word.level]++;
                 }
             }
         });
-        return { pair, src, tgt, validated, validatedByLevel };
+        return { pair, src, tgt, validated, validatedByLevel, totalByLevel };
     });
 
     // Trier par nombre de mots validés décroissant
@@ -1225,7 +1232,7 @@ function initCertsView() {
     pairsData.forEach(data => {
         const { src, tgt, validated } = data;
 
-        // Creer une carte de certificat
+        // Creer une carte d'attestation
         const card = document.createElement('div');
         card.className = 'stat-card';
         
@@ -1260,17 +1267,17 @@ function initCertsView() {
                     if (inF) inF.style.borderColor = '';
                     if (inL) inL.style.borderColor = '';
                 }, 2000);
-                alert("Veuillez renseigner votre prénom et votre nom pour générer le certificat.");
+                alert(translations[lang].alert_fill_name || "Veuillez renseigner votre prénom et votre nom pour générer l'attestation.");
                 return;
             }
-            openCertificateModal(src, tgt, validated, data.validatedByLevel);
+            openCertificateModal(src, tgt, validated, data.validatedByLevel, data.totalByLevel);
         };
 
         if (container) container.appendChild(card);
     });
 }
 
-function openCertificateModal(src, tgt, validated, validatedByLevel) {
+function openCertificateModal(src, tgt, validated, validatedByLevel, totalByLevel) {
     const modal = document.getElementById('cert-modal');
     const canvas = document.getElementById('cert-canvas');
     if (!modal || !canvas) return;
@@ -1280,8 +1287,8 @@ function openCertificateModal(src, tgt, validated, validatedByLevel) {
     const ctx = canvas.getContext('2d');
     const lang = getAppLanguage();
 
-    // Dessiner le certificat sur le canvas
-    drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, lang);
+    // Dessiner l'attestation sur le canvas
+    drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, totalByLevel, lang);
 
     // Configurer le téléchargement
     const btnDownload = document.getElementById('btn-download-cert');
@@ -1289,7 +1296,7 @@ function openCertificateModal(src, tgt, validated, validatedByLevel) {
         btnDownload.onclick = () => {
             const dataUrl = canvas.toDataURL('image/png');
             const link = document.createElement('a');
-            link.download = `certificat_drillflow_${src}_${tgt}.png`;
+            link.download = `attestation_drillflow_${src}_${tgt}.png`;
             link.href = dataUrl;
             link.click();
         };
@@ -1323,194 +1330,317 @@ function openCertificateModal(src, tgt, validated, validatedByLevel) {
     }
 }
 
-function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, lang) {
+function drawRoundedRect(ctx, x, y, width, height, radius, fill, stroke) {
+    ctx.beginPath();
+    ctx.moveTo(x + radius, y);
+    ctx.lineTo(x + width - radius, y);
+    ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+    ctx.lineTo(x + width, y + height - radius);
+    ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+    ctx.lineTo(x + radius, y + height);
+    ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+    ctx.lineTo(x, y + radius);
+    ctx.quadraticCurveTo(x, y, x + radius, y);
+    ctx.closePath();
+    if (fill) ctx.fill();
+    if (stroke) ctx.stroke();
+}
+
+function computeGlobalCefrLevel(validatedByLevel, totalByLevel) {
+    const order = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    let highestMastered = 'A1';
+
+    for (let i = 0; i < order.length; i++) {
+        const lvl = order[i];
+        const val = (validatedByLevel && validatedByLevel[lvl]) || 0;
+        const tot = (totalByLevel && totalByLevel[lvl]) || 1;
+        const pct = Math.round((val / tot) * 100);
+
+        // Un niveau est considéré comme atteint dès lors qu'au moins 60% de ses mots sont validés
+        if (pct >= 60) {
+            highestMastered = lvl;
+        } else if (val >= 100 && i === 0) {
+            highestMastered = 'A1';
+        }
+    }
+    return highestMastered;
+}
+
+function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, totalByLevel, lang) {
     const w = 800;
     const h = 600;
 
-    // Fond élégant
-    const grad = ctx.createLinearGradient(0, 0, w, h);
-    grad.addColorStop(0, '#ffffff');
-    grad.addColorStop(1, '#f8fafc');
-    ctx.fillStyle = grad;
+    // Fond blanc avec dégradé subtil
+    ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, w, h);
 
-    // Bordures
-    ctx.strokeStyle = '#1e293b';
-    ctx.lineWidth = 1;
-    ctx.strokeRect(20, 20, w - 40, h - 40);
+    const bgGrad = ctx.createLinearGradient(0, 0, w, h);
+    bgGrad.addColorStop(0, '#ffffff');
+    bgGrad.addColorStop(0.5, '#f8fafc');
+    bgGrad.addColorStop(1, '#f1f5f9');
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, w, h);
 
-    ctx.strokeStyle = '#94a3b8';
-    ctx.lineWidth = 4;
-    ctx.strokeRect(26, 26, w - 52, h - 52);
+    // Bordure extérieure avec coins arrondis
+    ctx.strokeStyle = '#cbd5e1';
+    ctx.lineWidth = 1.5;
+    drawRoundedRect(ctx, 16, 16, w - 32, h - 32, 12, false, true);
 
-    // Coins décoratifs
-    const drawCorner = (x, y, rotation) => {
-        ctx.save();
-        ctx.translate(x, y);
-        ctx.rotate(rotation);
-        ctx.strokeStyle = '#1e293b';
-        ctx.lineWidth = 2;
-        ctx.beginPath();
-        ctx.moveTo(0, 15);
-        ctx.lineTo(0, 0);
-        ctx.lineTo(15, 0);
-        ctx.stroke();
-        ctx.restore();
-    };
+    // Liseré coloré en haut (dégradé signature drillFlow)
+    const barGrad = ctx.createLinearGradient(16, 16, w - 16, 16);
+    barGrad.addColorStop(0, '#4f46e5');
+    barGrad.addColorStop(0.5, '#6366f1');
+    barGrad.addColorStop(1, '#06b6d4');
+    ctx.fillStyle = barGrad;
+    drawRoundedRect(ctx, 17, 17, w - 34, 5, 2, true, false);
 
-    drawCorner(36, 36, 0);
-    drawCorner(w - 36, 36, Math.PI / 2);
-    drawCorner(w - 36, h - 36, Math.PI);
-    drawCorner(36, h - 36, -Math.PI / 2);
-
-    // Filigrane
-    ctx.fillStyle = 'rgba(148, 163, 184, 0.05)';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.font = 'bold 100px "Outfit", sans-serif';
-    ctx.fillText('drillFlow.', w / 2, h / 2);
-
-    // Textes
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-
-    // En-tête
+    // 1. HEADER (Logo + Tagline épuré)
+    // Logo "drillFlow."
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+    ctx.font = 'bold 22px "Outfit", sans-serif';
     ctx.fillStyle = '#0f172a';
-    ctx.font = 'bold 36px "Outfit", sans-serif';
-    ctx.fillText(translations[lang].cert_achievement, w / 2, 80);
+    ctx.fillText('drill', 40, 50);
+    const drillW = ctx.measureText('drill').width;
 
-    // Subtitle
+    ctx.fillStyle = '#4f46e5';
+    ctx.fillText('Flow.', 40 + drillW, 50);
+
+    // Tagline sous le logo: "Master language faster."
+    ctx.font = '500 11px "Inter", sans-serif';
     ctx.fillStyle = '#64748b';
-    ctx.font = 'italic 16px "Outfit", sans-serif';
-    ctx.fillText(translations[lang].cert_awarded_to, w / 2, 120);
+    ctx.fillText('Master language ', 40, 66);
+    const tagW = ctx.measureText('Master language ').width;
 
-    // Nom
+    ctx.fillStyle = '#4f46e5';
+    ctx.font = 'bold 11px "Inter", sans-serif';
+    ctx.fillText('faster.', 40 + tagW, 66);
+
+    // Badge discret application à droite
+    ctx.font = '600 11px "Inter", sans-serif';
+    ctx.fillStyle = '#6366f1';
+    ctx.textAlign = 'right';
+    ctx.fillText('drill-flow.app', 760, 52);
+
+    // Ligne de séparation
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(40, 78);
+    ctx.lineTo(760, 78);
+    ctx.stroke();
+
+    // 2. TITRE & APPRENANT
+    ctx.textAlign = 'center';
+
+    // Titre Document
+    ctx.fillStyle = '#1e293b';
+    ctx.font = 'bold 16px "Outfit", sans-serif';
+    ctx.fillText(translations[lang].cert_achievement, w / 2, 98);
+
+    // Subtitle "Délivrée à :"
+    ctx.fillStyle = '#64748b';
+    ctx.font = '500 12px "Inter", sans-serif';
+    ctx.fillText(translations[lang].cert_awarded_to, w / 2, 118);
+
+    // Nom complet
     const fname = localStorage.getItem('cert_firstname') || '';
     const lname = localStorage.getItem('cert_lastname') || '';
     const fullName = (fname || lname) ? `${fname} ${lname}`.trim() : translations[lang].cert_default_learner;
     ctx.fillStyle = '#0f172a';
-    ctx.font = 'bold 32px "Outfit", sans-serif';
-    ctx.fillText(fullName, w / 2, 160);
+    ctx.font = 'bold 24px "Outfit", sans-serif';
+    ctx.fillText(fullName, w / 2, 144);
 
-    // Ligne de séparation
-    ctx.strokeStyle = '#e2e8f0';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(w / 2 - 200, 195);
-    ctx.lineTo(w / 2 + 200, 195);
-    ctx.stroke();
-
-    // Ligne explicative
-    ctx.fillStyle = '#475569';
-    ctx.font = '15px "Inter", sans-serif';
-    ctx.fillText(translations[lang].cert_for_mastering, w / 2, 230);
-
-    // Langues
+    // Langues & Badge
     const srcName = getLangName(src).toUpperCase();
     const tgtName = getLangName(tgt).toUpperCase();
+    const pairSummary = `${srcName} ➔ ${tgtName} • VOCABULAIRE RÉFLEXE`;
+    ctx.font = 'bold 10px "Inter", sans-serif';
+    const pairW = ctx.measureText(pairSummary).width + 24;
+    const pairX = (w - pairW) / 2;
+
     ctx.fillStyle = '#0f172a';
-    ctx.font = '800 38px "Outfit", sans-serif';
-    ctx.fillText(`${srcName}  ➔  ${tgtName}`, w / 2, 275);
+    drawRoundedRect(ctx, pairX, 156, pairW, 22, 11, true, false);
 
-    // Nombre de mots (Total)
-    ctx.fillStyle = '#1e293b';
-    ctx.font = '600 20px "Inter", sans-serif';
-    ctx.fillText(`${translations[lang].cert_total_words} ${validated}`, w / 2, 330);
-
-    // Mots par niveau
-    if (validatedByLevel) {
-        ctx.fillStyle = '#475569';
-        ctx.font = '500 14px "Inter", sans-serif';
-        const cefrLabel = translations[lang].cert_levels_prefix || 'CEFR Levels :';
-        ctx.textAlign = 'center';
-        ctx.fillText(cefrLabel, w / 2, 370);
-        
-        ctx.fillStyle = '#1e293b';
-        ctx.font = 'bold 16px "Inter", sans-serif';
-        
-        const startY = 400;
-        const lineH = 26;
-        
-        const drawLevel = (lvl, xPivot, y) => {
-            const count = validatedByLevel[lvl] || 0;
-            ctx.textAlign = 'right';
-            ctx.fillText(`${lvl} :`, xPivot - 5, y);
-            ctx.textAlign = 'left';
-            ctx.fillText(`${count}`, xPivot + 5, y);
-        };
-        
-        // Row 1
-        drawLevel('A1', 350, startY);
-        drawLevel('A2', 450, startY);
-        // Row 2
-        drawLevel('B1', 350, startY + lineH);
-        drawLevel('B2', 450, startY + lineH);
-        // Row 3
-        drawLevel('C1', 350, startY + lineH * 2);
-        drawLevel('C2', 450, startY + lineH * 2);
-    }
-
-    // Sceau Discret
-    const sealX = w / 2;
-    const sealY = 515;
-
-    // Rubans
-    ctx.fillStyle = '#64748b';
-    ctx.beginPath();
-    ctx.moveTo(sealX - 20, sealY);
-    ctx.lineTo(sealX - 35, sealY + 45); 
-    ctx.lineTo(sealX - 20, sealY + 35);
-    ctx.lineTo(sealX, sealY + 45);
-    ctx.lineTo(sealX - 10, sealY);
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.moveTo(sealX + 10, sealY);
-    ctx.lineTo(sealX, sealY + 45);
-    ctx.lineTo(sealX + 20, sealY + 35);
-    ctx.lineTo(sealX + 35, sealY + 45);
-    ctx.lineTo(sealX + 20, sealY);
-    ctx.fill();
-
-    // Sceau extérieur
-    ctx.fillStyle = '#334155';
-    ctx.beginPath();
-    ctx.arc(sealX, sealY, 35, 0, Math.PI * 2);
-    ctx.fill();
-
-    // Sceau intérieur
-    ctx.strokeStyle = '#cbd5e1';
-    ctx.lineWidth = 1.5;
-    ctx.setLineDash([3, 3]);
-    ctx.beginPath();
-    ctx.arc(sealX, sealY, 30, 0, Math.PI * 2);
-    ctx.stroke();
-    ctx.setLineDash([]);
-
-    // Sceau texte
-    ctx.textAlign = 'center';
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 11px "Outfit", sans-serif';
-    ctx.fillText(translations[lang].cert_seal_text, sealX, sealY);
+    ctx.textAlign = 'center';
+    ctx.fillText(pairSummary, w / 2, 171);
 
-    // Date & Signature
+    // 3. NIVEAU CECRL GLOBAL ATTEINT (Calculé rigoureusement selon la progression réelle)
+    const globalLevel = computeGlobalCefrLevel(validatedByLevel, totalByLevel);
+    const levelDescKey = `cefr_desc_${globalLevel}`;
+    const levelDesc = (translations[lang] && translations[lang][levelDescKey]) || 'Utilisateur';
+
+    // Boîte niveau global
+    ctx.fillStyle = '#ffffff';
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.lineWidth = 1.5;
+    drawRoundedRect(ctx, 40, 186, 720, 62, 10, true, true);
+
+    // Badge Niveau à gauche
+    const lvlGrad = ctx.createLinearGradient(50, 192, 110, 242);
+    lvlGrad.addColorStop(0, '#4f46e5');
+    lvlGrad.addColorStop(1, '#3b82f6');
+    ctx.fillStyle = lvlGrad;
+    drawRoundedRect(ctx, 50, 192, 60, 50, 8, true, false);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.font = 'bold 22px "Outfit", sans-serif';
+    ctx.fillText(globalLevel, 80, 222);
+
+    ctx.font = 'bold 9px "Inter", sans-serif';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
+    ctx.fillText('CECRL', 80, 235);
+
+    // Texte descriptif au centre
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#0f172a';
+    ctx.font = 'bold 14px "Outfit", sans-serif';
+    const globalLabel = translations[lang].cert_global_level || 'Niveau global atteint :';
+    ctx.fillText(`${globalLabel} ${globalLevel} — ${levelDesc}`, 125, 212);
+
+    ctx.fillStyle = '#64748b';
+    ctx.font = '400 11px "Inter", sans-serif';
+    ctx.fillText(translations[lang].cert_cefr_framework, 125, 231);
+
+    // Metric à droite
+    ctx.fillStyle = 'rgba(99, 102, 241, 0.08)';
+    ctx.strokeStyle = 'rgba(99, 102, 241, 0.25)';
+    ctx.lineWidth = 1;
+    drawRoundedRect(ctx, 575, 193, 172, 48, 8, true, true);
+
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#4f46e5';
+    ctx.font = 'bold 16px "Outfit", sans-serif';
+    ctx.fillText(`${validated}`, 661, 215);
+
+    ctx.fillStyle = '#475569';
+    ctx.font = '500 10px "Inter", sans-serif';
+    ctx.fillText(translations[lang].cert_total_words || 'mots maîtrisés', 661, 230);
+
+    // 4. SCORECARD DÉTAIL PAR NIVEAU CECRL
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#334155';
+    ctx.font = 'bold 12px "Inter", sans-serif';
+    ctx.fillText(translations[lang].cert_levels_prefix, 40, 266);
+
+    const cefrColors = {
+        A1: { bg: '#dbeafe', text: '#1e40af', bar: '#2563eb' },
+        A2: { bg: '#e0e7ff', text: '#3730a3', bar: '#4f46e5' },
+        B1: { bg: '#fef3c7', text: '#92400e', bar: '#d97706' },
+        B2: { bg: '#ffedd5', text: '#9a3412', bar: '#ea580c' },
+        C1: { bg: '#fae8ff', text: '#86198f', bar: '#9333ea' },
+        C2: { bg: '#dcfce7', text: '#166534', bar: '#059669' }
+    };
+
+    const levelItems = [
+        { lvl: 'A1', col: 0, row: 0 },
+        { lvl: 'A2', col: 0, row: 1 },
+        { lvl: 'B1', col: 0, row: 2 },
+        { lvl: 'B2', col: 1, row: 0 },
+        { lvl: 'C1', col: 1, row: 1 },
+        { lvl: 'C2', col: 1, row: 2 }
+    ];
+
+    const colWidth = 345;
+    const colGap = 30;
+    const startX = 40;
+    const startY = 278;
+    const rowH = 46;
+
+    levelItems.forEach(item => {
+        const x = startX + item.col * (colWidth + colGap);
+        const y = startY + item.row * rowH;
+        const lvl = item.lvl;
+        const color = cefrColors[lvl];
+        const val = (validatedByLevel && validatedByLevel[lvl]) || 0;
+        const tot = (totalByLevel && totalByLevel[lvl]) || 0;
+        const pct = tot > 0 ? Math.round((val / tot) * 100) : 0;
+        const desc = (translations[lang] && translations[lang][`cefr_desc_${lvl}`]) || lvl;
+
+        // Badge niveau
+        ctx.fillStyle = color.bg;
+        drawRoundedRect(ctx, x, y, 28, 18, 4, true, false);
+
+        ctx.textAlign = 'center';
+        ctx.fillStyle = color.text;
+        ctx.font = 'bold 10px "Inter", sans-serif';
+        ctx.fillText(lvl, x + 14, y + 13);
+
+        // Intitulé niveau
+        ctx.textAlign = 'left';
+        ctx.fillStyle = '#1e293b';
+        ctx.font = 'bold 11px "Inter", sans-serif';
+        ctx.fillText(desc, x + 34, y + 13);
+
+        // Stats chiffres
+        ctx.textAlign = 'right';
+        ctx.fillStyle = '#475569';
+        ctx.font = 'bold 11px "Inter", sans-serif';
+        ctx.fillText(`${val} / ${tot} (${pct}%)`, x + colWidth, y + 13);
+
+        // Barre de progression (fond)
+        ctx.fillStyle = '#e2e8f0';
+        drawRoundedRect(ctx, x, y + 22, colWidth, 7, 3.5, true, false);
+
+        // Barre de progression (remplie)
+        if (pct > 0) {
+            const filledW = Math.max(7, Math.round((pct / 100) * colWidth));
+            ctx.fillStyle = color.bar;
+            drawRoundedRect(ctx, x, y + 22, filledW, 7, 3.5, true, false);
+        }
+    });
+
+    // 5. BAS DE PAGE / VALIDATION OFFICIELLE
+    const footY = 426;
+    ctx.fillStyle = '#f8fafc';
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.lineWidth = 1.2;
+    drawRoundedRect(ctx, 40, footY, 720, 140, 10, true, true);
+
+    const dateStr = new Date().toLocaleDateString(lang === 'en' ? 'en-US' : lang === 'fr' ? 'fr-FR' : lang === 'de' ? 'de-DE' : 'es-ES');
+
+    // Informations à gauche
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#334155';
+    ctx.font = 'bold 11px "Inter", sans-serif';
+    ctx.fillText(`📅 ${translations[lang].cert_date || 'Date :'} ${dateStr}`, 55, footY + 32);
+
+    ctx.fillStyle = '#64748b';
+    ctx.font = '400 11px "Inter", sans-serif';
+    ctx.fillText(`⚡ ${translations[lang].cert_for_mastering}`, 55, footY + 62);
+    ctx.fillText('🛡️ drillFlow : Entraînement actif au vocabulaire & répétition réflexe', 55, footY + 88);
+
+    ctx.fillStyle = '#4f46e5';
+    ctx.font = 'bold 11px "Inter", sans-serif';
+    ctx.fillText('🌐 drill-flow.app', 55, footY + 114);
+
+    // Tampon / Badge d'attestation à droite
+    const stampX = 595;
+    const stampY = footY + 20;
+    const stampW = 150;
+    const stampH = 100;
+
+    ctx.fillStyle = '#ffffff';
     ctx.strokeStyle = '#cbd5e1';
     ctx.lineWidth = 1;
+    drawRoundedRect(ctx, stampX, stampY, stampW, stampH, 8, true, true);
 
-    ctx.beginPath();
-    ctx.moveTo(90, 545);
-    ctx.lineTo(240, 545);
-    ctx.stroke();
-    
-    ctx.fillStyle = '#475569';
-    ctx.font = '14px "Inter", sans-serif';
-    const dateStr = new Date().toLocaleDateString(lang === 'en' ? 'en-US' : lang === 'fr' ? 'fr-FR' : lang);
-    ctx.fillText(`${translations[lang].cert_date} ${dateStr}`, 165, 565);
+    // Liseré vert discret
+    ctx.fillStyle = '#10b981';
+    drawRoundedRect(ctx, stampX + 1, stampY + 1, stampW - 2, 4, 2, true, false);
 
-    ctx.beginPath();
-    ctx.moveTo(w - 240, 545);
-    ctx.lineTo(w - 90, 545);
-    ctx.stroke();
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#059669';
+    ctx.font = 'bold 12px "Outfit", sans-serif';
+    ctx.fillText(translations[lang].cert_seal_text || '✓ ATTESTÉ', stampX + stampW / 2, stampY + 36);
 
-    ctx.fillText(translations[lang].cert_signature, w - 165, 565);
+    ctx.fillStyle = '#1e293b';
+    ctx.font = '600 10px "Inter", sans-serif';
+    ctx.fillText('drillFlow. Learning', stampX + stampW / 2, stampY + 58);
+
+    ctx.fillStyle = '#6366f1';
+    ctx.font = '500 9px "Inter", sans-serif';
+    ctx.fillText('drill-flow.app', stampX + stampW / 2, stampY + 78);
 }
