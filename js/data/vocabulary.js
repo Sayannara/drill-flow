@@ -46220,20 +46220,7 @@ export const vocabulary = [
     "ex_de": "Er ist sehr krank.",
     "ex_es": "Él está muy enfermo."
   },
-  {
-    "id": "word_3817",
-    "fr": "similaire",
-    "en": "similar",
-    "de": "ähnlich",
-    "es": "similar",
-    "type": "adjectif",
-    "level": "A1",
-    "ex_fr": "Ces livres sont similaires.",
-    "ex_en": "These books are similar.",
-    "ex_de": "Diese Bücher sind ähnlich.",
-    "ex_es": "Estos libros son similares."
-  },
-  {
+    {
     "id": "word_3818",
     "fr": "chanter",
     "en": "sing",

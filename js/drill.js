@@ -175,7 +175,7 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     sessionState.langTarget = target;
     sessionState.mode = mode; // Store the mode in session state
     
-    // Filtrer les mots qui correspondent au niveau
+    // Filtrer les mots qui correspondent au niveau (non validés et non ignorés)
     const activeWords = vocabulary.filter(w => {
         const status = getWordStatus(source, target, w.id);
         return status !== 'validé' && status !== 'ignoré' && levels.includes(w.level);
@@ -185,40 +185,86 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
         return getWordStatus(source, target, w.id) === 'validé' && levels.includes(w.level);
     });
 
-    // Trier les mots validés : priorité aux tentatives > 1, sinon les plus anciennement validés
-    validatedWords.sort((a, b) => {
-        const statsA = getWordStats(source, target, a.id);
-        const statsB = getWordStats(source, target, b.id);
-        
-        const aNeedsReview = statsA.attempts > 1 ? 1 : 0;
-        const bNeedsReview = statsB.attempts > 1 ? 1 : 0;
-        if (aNeedsReview !== bNeedsReview) {
-            return bNeedsReview - aNeedsReview;
-        }
-        
-        const dateA = statsA.validation_date ? new Date(statsA.validation_date).getTime() : 0;
-        const dateB = statsB.validation_date ? new Date(statsB.validation_date).getTime() : 0;
-        return dateA - dateB;
-    });
+    let selectedWords = [];
 
-    let reviewCount = 0;
     if (mode === 'smart') {
-        reviewCount = Math.floor(volume * 0.2); // 20%
+        // Smart Drill: 100% de mots NON validés
+        // 20% de mots déjà tentés (attempts > 0), triés par date de tentative la plus ancienne
+        // 80% de mots nouveaux (attempts === 0)
+        // Fallbacks automatiques : si manque de tentés -> compléter par des nouveaux, si manque de nouveaux -> compléter par des tentés
+        const attemptedWords = [];
+        const brandNewWords = [];
+
+        activeWords.forEach(w => {
+            const stats = getWordStats(source, target, w.id);
+            if (stats && stats.attempts > 0) {
+                attemptedWords.push(w);
+            } else {
+                brandNewWords.push(w);
+            }
+        });
+
+        // Trier les mots déjà tentés du plus ancien au plus récent
+        attemptedWords.sort((a, b) => {
+            const statsA = getWordStats(source, target, a.id);
+            const statsB = getWordStats(source, target, b.id);
+            const dateA = statsA.last_updated ? new Date(statsA.last_updated).getTime() : 0;
+            const dateB = statsB.last_updated ? new Date(statsB.last_updated).getTime() : 0;
+            return dateA - dateB;
+        });
+
+        const targetAttempted = Math.floor(volume * 0.2);
+        const targetNew = volume - targetAttempted;
+
+        let selectedAttempted = attemptedWords.slice(0, targetAttempted);
+        const shuffledNew = shuffle([...brandNewWords]);
+        let selectedNew = shuffledNew.slice(0, targetNew);
+
+        // Fallback 1 : Si pas assez de mots tentés -> compléter avec des mots nouveaux
+        if (selectedAttempted.length < targetAttempted) {
+            const neededNew = targetAttempted - selectedAttempted.length;
+            const extraNew = shuffledNew.slice(targetNew, targetNew + neededNew);
+            selectedNew = [...selectedNew, ...extraNew];
+        }
+
+        // Fallback 2 : Si pas assez de mots nouveaux (ou plus de nouveaux mots) -> compléter avec des mots tentés non validés restants
+        if (selectedNew.length < targetNew) {
+            const neededAttempted = targetNew - selectedNew.length;
+            const extraAttempted = attemptedWords.slice(targetAttempted, targetAttempted + neededAttempted);
+            selectedAttempted = [...selectedAttempted, ...extraAttempted];
+        }
+
+        selectedWords = shuffle([...selectedAttempted, ...selectedNew]);
     } else if (mode === 'review') {
-        reviewCount = volume; // 100%
+        // Mode Révision : Mots validés
+        validatedWords.sort((a, b) => {
+            const statsA = getWordStats(source, target, a.id);
+            const statsB = getWordStats(source, target, b.id);
+            
+            const aNeedsReview = statsA.attempts > 1 ? 1 : 0;
+            const bNeedsReview = statsB.attempts > 1 ? 1 : 0;
+            if (aNeedsReview !== bNeedsReview) {
+                return bNeedsReview - aNeedsReview;
+            }
+            
+            const dateA = statsA.validation_date ? new Date(statsA.validation_date).getTime() : 0;
+            const dateB = statsB.validation_date ? new Date(statsB.validation_date).getTime() : 0;
+            return dateA - dateB;
+        });
+
+        let selectedReviewWords = validatedWords.slice(0, volume);
+        let selectedActiveWords = [];
+        if (selectedReviewWords.length < volume) {
+            const remainingNeeded = volume - selectedReviewWords.length;
+            selectedActiveWords = shuffle([...activeWords]).slice(0, remainingNeeded);
+        }
+        selectedWords = shuffle([...selectedReviewWords, ...selectedActiveWords]);
+    } else {
+        // Mode Découverte (100% nouveaux / non validés)
+        selectedWords = shuffle([...activeWords]).slice(0, volume);
     }
 
-    let selectedReviewWords = validatedWords.slice(0, reviewCount);
-    let selectedActiveWords = shuffle([...activeWords]).slice(0, volume - selectedReviewWords.length);
-
-    // Si on n'a pas assez de mots au total (ex: demande 20 révisions, on a 5 révisions et 10 actifs -> 15 au total)
-    // On prend tout ce qu'on peut.
-    if (selectedReviewWords.length < reviewCount) {
-        const remainingNeeded = volume - selectedReviewWords.length;
-        selectedActiveWords = shuffle([...activeWords]).slice(0, remainingNeeded);
-    }
-
-    sessionState.words = shuffle([...selectedReviewWords, ...selectedActiveWords]);
+    sessionState.words = selectedWords;
     sessionState.originalWords = [...sessionState.words]; // Keep for context drill
     sessionState.currentIndex = 0;
     sessionState.isWaitingAction = false;
