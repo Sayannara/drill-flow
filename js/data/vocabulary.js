@@ -391,7 +391,7 @@ export const vocabulary = [
   },
   {
     "id": "word_31",
-    "fr": "la quantité",
+    "fr": "le montant / la quantité",
     "en": "amount",
     "de": "die Menge",
     "es": "la cantidad",
@@ -643,7 +643,7 @@ export const vocabulary = [
     "de": "die Vereinbarung",
     "es": "el acuerdo",
     "type": "nom",
-    "level": "A2",
+    "level": "B1",
     "ex_fr": "Nous avons trouvé un bon arrangement.",
     "ex_en": "We found a good arrangement.",
     "ex_de": "Wir haben eine gute Vereinbarung gefunden.",
@@ -1054,7 +1054,7 @@ export const vocabulary = [
   },
   {
     "id": "word_82",
-    "fr": "meilleur",
+    "fr": "meilleur (adjectif)",
     "en": "better",
     "de": "besser",
     "es": "mejor",
@@ -6657,7 +6657,7 @@ export const vocabulary = [
   },
   {
     "id": "word_514",
-    "fr": "principalement",
+    "fr": "principalement / surtout",
     "en": "mostly",
     "de": "meistens",
     "es": "principalmente",
@@ -7312,7 +7312,7 @@ export const vocabulary = [
     "de": "besonders",
     "es": "particular",
     "type": "adjectif",
-    "level": "A2",
+    "level": "B1",
     "ex_fr": "Ce livre a un style particulier.",
     "ex_en": "This book has a particular style.",
     "ex_de": "Dieses Buch hat einen besonderen Stil.",
@@ -9738,12 +9738,12 @@ export const vocabulary = [
   },
   {
     "id": "word_751",
-    "fr": "le tabagisme",
+    "fr": "le fait de fumer / le tabagisme",
     "en": "smoking",
     "de": "das Rauchen",
     "es": "fumar",
     "type": "nom",
-    "level": "A2",
+    "level": "B1",
     "ex_fr": "Le tabagisme est mauvais pour la santé.",
     "ex_en": "Smoking is bad for health.",
     "ex_de": "Das Rauchen ist schlecht für die Gesundheit.",
@@ -11864,7 +11864,7 @@ export const vocabulary = [
   },
   {
     "id": "word_917",
-    "fr": "l'annonce / la publicité",
+    "fr": "l'annonce / la publicité (ad)",
     "en": "ad",
     "de": "die Anzeige",
     "es": "el anuncio",
@@ -11936,7 +11936,7 @@ export const vocabulary = [
   },
   {
     "id": "word_925",
-    "fr": "l'agent",
+    "fr": "l'agent (immobilier, secret, etc.)",
     "en": "agent",
     "de": "der Agent",
     "es": "el agente",
@@ -12233,7 +12233,7 @@ export const vocabulary = [
   },
   {
     "id": "word_958",
-    "fr": "l'autorité",
+    "fr": "l'autorité / l'administration",
     "en": "authority",
     "de": "die Behörde",
     "es": "la autoridad",
@@ -12449,7 +12449,7 @@ export const vocabulary = [
   },
   {
     "id": "word_982",
-    "fr": "le bloc",
+    "fr": "le bloc / le pâté de maisons",
     "en": "block",
     "de": "der Block",
     "es": "el bloque",
@@ -13219,7 +13219,7 @@ export const vocabulary = [
     "de": "das Kupfer",
     "es": "el cobre",
     "type": "nom",
-    "level": "B1"
+    "level": "B2"
   },
   {
     "id": "word_1068",
@@ -14789,10 +14789,10 @@ export const vocabulary = [
   },
   {
     "id": "word_1242",
-    "fr": "garder",
+    "fr": "garder / protéger",
     "en": "guard",
-    "de": "bewachen",
-    "es": "vigilar",
+    "de": "bewachen / schützen",
+    "es": "vigilar / proteger",
     "type": "verbe",
     "level": "B1"
   },
@@ -16270,7 +16270,7 @@ export const vocabulary = [
     "de": "blass",
     "es": "pálido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B2"
   },
   {
     "id": "word_1408",
@@ -17683,7 +17683,7 @@ export const vocabulary = [
     "de": "die Skulptur",
     "es": "la escultura",
     "type": "nom",
-    "level": "B1"
+    "level": "B2"
   },
   {
     "id": "word_1565",
@@ -18651,7 +18651,7 @@ export const vocabulary = [
   {
     "id": "word_1673",
     "fr": "jusqu'à (temps)",
-    "en": "till",
+    "en": "till / until",
     "de": "bis",
     "es": "hasta",
     "type": "prep",
@@ -46495,7 +46495,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3838",
-    "fr": "quelqu'un",
+    "fr": "quelqu'un (somebody)",
     "en": "somebody",
     "de": "jemand",
     "es": "alguien",
