@@ -21,7 +21,7 @@ export const translations = {
         mode_smart: "Smart Drill",
         mode_review: "Révision",
         mode_desc_discovery: "100% de nouveaux mots pour enrichir votre vocabulaire.",
-        mode_desc_smart: "Mélange de nouveaux mots (80%) et de mots déjà tentés (20%).",
+        mode_desc_smart: "Mélange de nouveaux mots et de mots déjà tentés.",
         mode_desc_review: "100% de mots déjà validés pour consolider votre mémoire à long terme.",
         btn_start_drill: "Drill",
         
@@ -236,7 +236,7 @@ export const translations = {
         mode_smart: "Smart Drill",
         mode_review: "Review",
         mode_desc_discovery: "100% new words to expand your vocabulary.",
-        mode_desc_smart: "Mix of new words (80%) and previously attempted words (20%).",
+        mode_desc_smart: "Mix of new words and previously attempted words.",
         mode_desc_review: "100% previously mastered words to consolidate long-term memory.",
         btn_start_drill: "Drill",
         
@@ -451,7 +451,7 @@ export const translations = {
         mode_smart: "Smart Drill",
         mode_review: "Wiederholung",
         mode_desc_discovery: "100% neue Wörter, um Ihren Wortschatz zu erweitern.",
-        mode_desc_smart: "Mischung aus neuen Wörtern (80%) und bereits versuchten Wörtern (20%).",
+        mode_desc_smart: "Mischung aus neuen Wörtern und bereits versuchten Wörtern.",
         mode_desc_review: "100% bereits gelernte Wörter, um das Langzeitgedächtnis zu festigen.",
         btn_start_drill: "Drill",
         
@@ -666,7 +666,7 @@ export const translations = {
         mode_smart: "Smart Drill",
         mode_review: "Repaso",
         mode_desc_discovery: "100% de palabras nuevas para enriquecer su vocabulario.",
-        mode_desc_smart: "Mezcla de palabras nuevas (80%) y palabras ya intentadas (20%).",
+        mode_desc_smart: "Mezcla de palabras nuevas y palabras ya intentadas.",
         mode_desc_review: "100% de palabras ya aprendidas para consolidar la memoria a largo plazo.",
         btn_start_drill: "Drill",
         

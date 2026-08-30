@@ -290,11 +290,43 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     display: flex;
     flex-direction: column;
 }
+.drill-word-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.drill-word-badges {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.drill-word-badges .type-badge {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.45rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
 .word-source {
     font-size: 2.5rem;
     font-family: var(--font-heading);
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 100%;
+}
+.word-source-chunk {
+    display: inline;
+}
+.word-source-note {
+    font-size: 0.85em;
+    opacity: 0.85;
+    font-weight: 500;
 }
 .input-section {
     display: flex;
@@ -1068,9 +1100,28 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     .drill-header {
         margin-bottom: 1rem;
     }
+    .drill-word-wrapper {
+        gap: 0.4rem;
+        margin-bottom: 1.2rem;
+        padding: 0 0.25rem;
+        box-sizing: border-box;
+    }
     .word-source {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: clamp(1.4rem, 6vw, 1.85rem);
+        margin-bottom: 0;
+        line-height: 1.3;
+        text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+    .word-source-chunk.has-break {
+        display: block;
+    }
+    .word-source-chunk.word-source-note {
+        display: block;
+        margin-top: 0.2rem;
+        font-size: 0.82em;
     }
     .input-section {
         width: fit-content;

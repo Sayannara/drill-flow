@@ -189,8 +189,8 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
 
     if (mode === 'smart') {
         // Smart Drill: 100% de mots NON validés
-        // 20% de mots déjà tentés (attempts > 0), triés par date de tentative la plus ancienne
-        // 80% de mots nouveaux (attempts === 0)
+        // 40% de mots déjà tentés (attempts > 0), triés par date de tentative la plus ancienne
+        // 60% de mots nouveaux (attempts === 0)
         // Fallbacks automatiques : si manque de tentés -> compléter par des nouveaux, si manque de nouveaux -> compléter par des tentés
         const attemptedWords = [];
         const brandNewWords = [];
@@ -213,7 +213,7 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
             return dateA - dateB;
         });
 
-        const targetAttempted = Math.floor(volume * 0.2);
+        const targetAttempted = Math.round(volume * 0.4);
         const targetNew = volume - targetAttempted;
 
         let selectedAttempted = attemptedWords.slice(0, targetAttempted);
@@ -340,6 +340,67 @@ function escapeHtml(str) {
         .replace(/'/g, '&#039;');
 }
 
+export function formatWordForDisplay(raw) {
+    if (!raw) return '';
+    // Découpage par '/' en dehors des parenthèses
+    const chunks = [];
+    let current = '';
+    let parenDepth = 0;
+    for (let i = 0; i < raw.length; i++) {
+        const ch = raw[i];
+        if (ch === '(') {
+            parenDepth++;
+            current += ch;
+        } else if (ch === ')') {
+            if (parenDepth > 0) parenDepth--;
+            current += ch;
+        } else if (ch === '/' && parenDepth === 0) {
+            chunks.push(current.trim());
+            current = '';
+            while (i + 1 < raw.length && raw[i + 1] === ' ') {
+                i++;
+            }
+        } else {
+            current += ch;
+        }
+    }
+    if (current.trim()) {
+        chunks.push(current.trim());
+    }
+
+    const filteredChunks = chunks.filter(Boolean);
+    const items = [];
+
+    filteredChunks.forEach((c, idx) => {
+        const isLastChunk = (idx === filteredChunks.length - 1);
+        const slashSuffix = isLastChunk ? '' : ' /';
+
+        // Détection d'une note entre parenthèses à la fin du fragment : 'mot (note)'
+        const parenMatch = c.match(/^(.*?)\s*(\([^)]+\))\s*$/);
+        if (parenMatch && parenMatch[1].trim()) {
+            const mainText = parenMatch[1].trim();
+            const noteText = parenMatch[2].trim();
+            items.push({ text: mainText, isNote: false, hasBreak: true });
+            items.push({ text: noteText + slashSuffix, isNote: true, hasBreak: !isLastChunk });
+        } else {
+            items.push({ text: c + slashSuffix, isNote: false, hasBreak: !isLastChunk });
+        }
+    });
+
+    if (items.length === 1 && !items[0].isNote) {
+        return escapeHtml(items[0].text);
+    }
+
+    return items.map((item, idx) => {
+        const escaped = escapeHtml(item.text);
+        const classes = ['word-source-chunk'];
+        if (item.isNote) classes.push('word-source-note');
+        if (item.hasBreak) classes.push('has-break');
+        const space = (idx < items.length - 1) ? ' ' : '';
+        return `<span class="${classes.join(' ')}">${escaped}</span>${space}`;
+    }).join('');
+}
+
 function renderCurrentWord() {
     const wordSourceEl = document.getElementById('drill-word-source');
     const inputEl = document.getElementById('drill-input');
@@ -406,7 +467,7 @@ function renderCurrentWord() {
 
     // Afficher le mot courant
     const currentWord = sessionState.words[sessionState.currentIndex];
-    wordSourceEl.textContent = currentWord[sessionState.langSource];
+    wordSourceEl.innerHTML = formatWordForDisplay(currentWord[sessionState.langSource]);
     wordSourceEl.style.display = '';
     
     const wordWrapperEl = document.getElementById('drill-word-wrapper');
@@ -570,7 +631,7 @@ function handleValidation() {
 
         // Affichage des résultats
         const asked = currentWord[sessionState.langSource];
-        document.getElementById('result-asked').textContent = asked;
+        document.getElementById('result-asked').innerHTML = formatWordForDisplay(asked);
         const lang = getAppLanguage();
         
         // Badges Type & Niveau dans l'écran de correction
