@@ -1037,8 +1037,33 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     .context-promo-box {
         padding: 1rem 0.85rem;
     }
+}
 
 /* Multi-select Dropdown Filters */
+.progress-filters {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+.progress-filters input[type="text"]#prog-search {
+    height: 38px;
+    padding: 0 0.85rem;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    box-sizing: border-box;
+    margin: 0;
+    width: 220px;
+}
+.progress-filters input[type="text"]#prog-search:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
 .filter-dropdown-wrapper {
     position: relative;
     display: inline-block;
@@ -1047,8 +1072,9 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    padding: 0.6rem 0.85rem;
-    background: var(--surface-color);
+    height: 38px;
+    padding: 0 0.85rem;
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     color: var(--text-primary);
@@ -1058,16 +1084,17 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     transition: all 0.2s ease;
     user-select: none;
     font-family: var(--font-sans);
+    box-sizing: border-box;
 }
 .filter-dropdown-btn:hover,
 .filter-dropdown-btn.active {
     border-color: var(--primary-color);
-    background: rgba(99, 102, 241, 0.05);
+    background-color: rgba(99, 102, 241, 0.08);
 }
 .filter-count-badge {
-    background: rgba(99, 102, 241, 0.12);
+    background: rgba(99, 102, 241, 0.15);
     color: var(--primary-color);
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 700;
     padding: 0.1rem 0.45rem;
     border-radius: 10px;
@@ -1076,11 +1103,11 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     position: absolute;
     top: calc(100% + 6px);
     left: 0;
-    background: var(--surface-color);
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 0.75rem 0.9rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
     z-index: 50;
     min-width: 175px;
     display: flex;
