@@ -1,6 +1,6 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
-import { db } from './firebase-config.js?v=87';
-import { getCurrentUser } from './auth.js?v=87';
+import { db } from './firebase-config.js?v=89';
+import { getCurrentUser } from './auth.js?v=89';
 import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';

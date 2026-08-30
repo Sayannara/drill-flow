@@ -99,11 +99,11 @@ export const translations = {
         // Stats View
         title_stats: "Statistiques",
         subtitle_stats: "Suivez votre progression globale par paire de langues.",
-        stats_notice_attempt: "Seuls les mots validés dès la 1ère tentative (Tentative = 1) sont comptabilisés dans les statistiques et pourcentages.",
+        stats_notice_attempt: "Pour garantir une mémorisation réflexe, un mot est validé uniquement s'il est réussi du premier coup lors d'un Drill. En cas d'erreur, il passe en révision.",
         empty_stats: "Aucune statistique disponible.",
         empty_stats_sub: "Veuillez d'abord démarrer une session pour générer des données.",
         stat_total: "Total des mots :",
-        stat_validated: "Mots validés (1ère tentative) :",
+        stat_validated: "Mots validés :",
         stat_a1_validated: "Mots A1 validés :",
         stat_a2_validated: "Mots A2 validés :",
         stat_b1_validated: "Mots B1 validés :",
@@ -111,6 +111,16 @@ export const translations = {
         stat_c1_validated: "Mots C1 validés :",
         stat_c2_validated: "Mots C2 validés :",
         stat_remaining: "Mots restants :",
+        stat_filter_pair: "Paire de langues :",
+        stat_cefr_title: "Progression CECRL & Paliers",
+        stat_cefr_current: "Niveau atteint :",
+        stat_cefr_points: "Points de maîtrise",
+        stat_cefr_next: "Objectif palier suivant :",
+        stat_cefr_to_go: "{points} pts restants pour {level}",
+        stat_cefr_max: "Niveau maximal atteint ! Félicitations ! 🏆",
+        stat_cefr_multipliers_hint: "Pondération : A1 ×1.0 • A2 ×1.2 • B1 ×1.5 • B2 ×2.0 • C1 ×2.5 • C2 ×3.5",
+        stat_points_unit: "pts",
+        stat_pts_contrib: "points",
         
         // Certs / Attestations View
         title_certs: "Mes Attestations",
@@ -185,7 +195,8 @@ export const translations = {
         report_cancel: "Annuler",
         report_confirm: "Signaler",
         report_toast_success: "✓ Signalement enregistré. Merci !",
-        footer_deployed: "Déployé le 27/08/2026"
+        footer_rights: "Tous droits réservés.",
+        footer_deployed: "Déployé le 28/08/2026"
     },
     en: {
         // Nav
@@ -287,11 +298,11 @@ export const translations = {
         // Stats View
         title_stats: "Statistics",
         subtitle_stats: "Track your overall progress by language pair.",
-        stats_notice_attempt: "Only words validated on the 1st attempt (Attempt = 1) are counted in statistics and percentages.",
+        stats_notice_attempt: "To ensure reflex memorization, a word is validated only when answered correctly on the first attempt during a Drill. If an error is made, it moves to review.",
         empty_stats: "No statistics available.",
         empty_stats_sub: "Please start a session first to generate data.",
         stat_total: "Total words:",
-        stat_validated: "Validated words (1st attempt):",
+        stat_validated: "Validated words:",
         stat_a1_validated: "A1 validated:",
         stat_a2_validated: "A2 validated:",
         stat_b1_validated: "B1 validated:",
@@ -299,6 +310,16 @@ export const translations = {
         stat_c1_validated: "C1 validated:",
         stat_c2_validated: "C2 validated:",
         stat_remaining: "Remaining words:",
+        stat_filter_pair: "Language pair:",
+        stat_cefr_title: "CEFR Progression & Milestones",
+        stat_cefr_current: "Level reached:",
+        stat_cefr_points: "Mastery Points",
+        stat_cefr_next: "Next Milestone Goal:",
+        stat_cefr_to_go: "{points} pts remaining for {level}",
+        stat_cefr_max: "Maximum level reached! Congratulations! 🏆",
+        stat_cefr_multipliers_hint: "Multipliers: A1 ×1.0 • A2 ×1.2 • B1 ×1.5 • B2 ×2.0 • C1 ×2.5 • C2 ×3.5",
+        stat_points_unit: "pts",
+        stat_pts_contrib: "points",
         
         // Certs / Attestations View
         title_certs: "My Attestations",
@@ -373,7 +394,8 @@ export const translations = {
         report_cancel: "Cancel",
         report_confirm: "Report",
         report_toast_success: "✓ Report submitted. Thank you!",
-        footer_deployed: "Deployed on 2026-08-27"
+        footer_rights: "All rights reserved.",
+        footer_deployed: "Deployed on 2026-08-28"
     },
     de: {
         // Nav
@@ -475,11 +497,11 @@ export const translations = {
         // Stats View
         title_stats: "Statistiken",
         subtitle_stats: "Verfolgen Sie Ihren Gesamtfortschritt nach Sprachpaar.",
-        stats_notice_attempt: "Nur beim 1. Versuch validierte Wörter (Versuch = 1) werden in Statistiken und Prozentwerten gezählt.",
+        stats_notice_attempt: "Um ein reflexartiges Einprägen zu gewährleisten, gilt ein Wort nur dann als validiert, wenn es beim ersten Versuch im Drill richtig beantwortet wird. Bei einem Fehler kommt es zur Wiederholung.",
         empty_stats: "Keine Statistiken verfügbar.",
         empty_stats_sub: "Bitte starten Sie zuerst eine Sitzung, um Daten zu generieren.",
         stat_total: "Wörter insgesamt:",
-        stat_validated: "Validierte Wörter (1. Versuch):",
+        stat_validated: "Validierte Wörter:",
         stat_a1_validated: "A1 gelernt:",
         stat_a2_validated: "A2 gelernt:",
         stat_b1_validated: "B1 gelernt:",
@@ -487,6 +509,16 @@ export const translations = {
         stat_c1_validated: "C1 gelernt:",
         stat_c2_validated: "C2 gelernt:",
         stat_remaining: "Verbleibende Wörter:",
+        stat_filter_pair: "Sprachpaar:",
+        stat_cefr_title: "GER-Fortschritt & Meilensteine",
+        stat_cefr_current: "Erreichte Stufe:",
+        stat_cefr_points: "Meisterschaftspunkte",
+        stat_cefr_next: "Nächstes Etappenziel:",
+        stat_cefr_to_go: "Noch {points} Pkt. bis {level}",
+        stat_cefr_max: "Höchste Stufe erreicht! Herzlichen Glückwunsch! 🏆",
+        stat_cefr_multipliers_hint: "Multiplikatoren: A1 ×1.0 • A2 ×1.2 • B1 ×1.5 • B2 ×2.0 • C1 ×2.5 • C2 ×3.5",
+        stat_points_unit: "Pkt.",
+        stat_pts_contrib: "Punkte",
         
         // Certs / Attestations View
         title_certs: "Meine Bescheinigungen",
@@ -561,7 +593,8 @@ export const translations = {
         report_cancel: "Abbrechen",
         report_confirm: "Melden",
         report_toast_success: "✓ Meldung gesendet. Danke!",
-        footer_deployed: "Bereitgestellt am 27.08.2026"
+        footer_rights: "Alle Rechte vorbehalten.",
+        footer_deployed: "Bereitgestellt am 28.08.2026"
     },
     es: {
         // Nav
@@ -663,11 +696,11 @@ export const translations = {
         // Stats View
         title_stats: "Estadísticas",
         subtitle_stats: "Siga su progreso general por par de idiomas.",
-        stats_notice_attempt: "Solo las palabras validadas en el 1.er intento (Intento = 1) se contabilizan en las estadísticas y porcentajes.",
+        stats_notice_attempt: "Para garantizar una memorización refleja, una palabra se valida únicamente si se acierta al primer intento durante un Drill. En caso de error, pasa a revisión.",
         empty_stats: "No hay estadísticas disponibles.",
         empty_stats_sub: "Por favor, inicie una sesión primero para generar datos.",
         stat_total: "Total de palabras:",
-        stat_validated: "Palabras validadas (1.er intento):",
+        stat_validated: "Palabras validadas:",
         stat_a1_validated: "A1 validadas:",
         stat_a2_validated: "A2 validadas:",
         stat_b1_validated: "B1 validadas:",
@@ -675,6 +708,16 @@ export const translations = {
         stat_c1_validated: "C1 validadas:",
         stat_c2_validated: "C2 validadas:",
         stat_remaining: "Palabras restantes:",
+        stat_filter_pair: "Par de idiomas:",
+        stat_cefr_title: "Progresión MCER e Hitos",
+        stat_cefr_current: "Nivel alcanzado:",
+        stat_cefr_points: "Puntos de maestría",
+        stat_cefr_next: "Siguiente hito:",
+        stat_cefr_to_go: "{points} pts restantes para {level}",
+        stat_cefr_max: "¡Nivel máximo alcanzado! ¡Felicitaciones! 🏆",
+        stat_cefr_multipliers_hint: "Multiplicadores: A1 ×1.0 • A2 ×1.2 • B1 ×1.5 • B2 ×2.0 • C1 ×2.5 • C2 ×3.5",
+        stat_points_unit: "pts",
+        stat_pts_contrib: "puntos",
         
         // Certs / Attestations View
         title_certs: "Mis Atestaciones",
@@ -749,6 +792,7 @@ export const translations = {
         report_cancel: "Cancelar",
         report_confirm: "Notificar",
         report_toast_success: "✓ Notificación registrada. ¡Gracias!",
-        footer_deployed: "Desplegado el 27/08/2026"
+        footer_rights: "Todos los derechos reservados.",
+        footer_deployed: "Desplegado el 28/08/2026"
     }
 };

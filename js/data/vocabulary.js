@@ -11797,7 +11797,11 @@ export const vocabulary = [
     "de": "absolut",
     "es": "absolutamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je suis absolument d'accord avec votre proposition pour ce projet.",
+    "ex_en": "You are absolutely right about the importance of regular exercise.",
+    "ex_de": "Dieser neue Vorschlag ist absolut perfekt für unsere ganze Gruppe.",
+    "ex_es": "Estoy absolutamente seguro de que podemos resolver este problema juntos."
   },
   {
     "id": "word_910",
@@ -11806,7 +11810,11 @@ export const vocabulary = [
     "de": "akademisch",
     "es": "académico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Son parcours académique lui permet de trouver facilement un travail.",
+    "ex_en": "She achieved great academic success during her final school year.",
+    "ex_de": "Sein akademischer Abschluss eröffnet ihm viele interessante Möglichkeiten im Beruf.",
+    "ex_es": "El rendimiento académico de los estudiantes mejoró durante este semestre."
   },
   {
     "id": "word_911",
@@ -11815,7 +11823,11 @@ export const vocabulary = [
     "de": "der Zugang",
     "es": "el acceso",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'accès à la bibliothèque est gratuit pour tous les étudiants.",
+    "ex_en": "You need a special password to gain access to the files.",
+    "ex_de": "Der Zugang zum Gebäude ist nur mit einem Ausweis möglich.",
+    "ex_es": "El acceso a internet es indispensable para estudiar a distancia hoy."
   },
   {
     "id": "word_912",
@@ -11824,7 +11836,11 @@ export const vocabulary = [
     "de": "zugreifen",
     "es": "acceder",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous pouvez accéder facilement aux cours en ligne depuis votre ordinateur.",
+    "ex_en": "Students can access the online library from anywhere in the world.",
+    "ex_de": "Mit diesem Passwort können Sie auf Ihre privaten Daten zugreifen.",
+    "ex_es": "Los usuarios pueden acceder a la plataforma con su contraseña personal."
   },
   {
     "id": "word_913",
@@ -11833,7 +11849,11 @@ export const vocabulary = [
     "de": "die Unterkunft",
     "es": "el alojamiento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous cherchons un logement confortable près de la gare centrale.",
+    "ex_en": "We need to find cheap accommodation before our summer trip begins.",
+    "ex_de": "Die Unterkunft war sehr sauber und lag nahe am Bahnhof.",
+    "ex_es": "Buscamos un alojamiento barato para nuestras próximas vacaciones en Madrid."
   },
   {
     "id": "word_914",
@@ -11842,7 +11862,11 @@ export const vocabulary = [
     "de": "das Konto / der Bericht",
     "es": "la cuenta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai ouvert un compte bancaire dès mon arrivée en ville.",
+    "ex_en": "Please check your bank account before making this large purchase.",
+    "ex_de": "Ich habe gestern ein neues Konto bei der Bank eröffnet.",
+    "ex_es": "He abierto una nueva cuenta bancaria para ahorrar dinero este año."
   },
   {
     "id": "word_915",
@@ -11851,7 +11875,11 @@ export const vocabulary = [
     "de": "laut / nach",
     "es": "según",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Selon la météo, il pleuvra tout le week-end dans la région.",
+    "ex_en": "According to the teacher, the final exam will take two hours.",
+    "ex_de": "Laut dem Wetterbericht soll es am kommenden Wochenende stark regnen.",
+    "ex_es": "Según el informe oficial, los precios bajarán el próximo mes."
   },
   {
     "id": "word_916",
@@ -11860,7 +11888,11 @@ export const vocabulary = [
     "de": "die Leistung",
     "es": "el logro",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Obtenir ce diplôme difficile est un accomplissement personnel très important.",
+    "ex_en": "Graduating from university with honors was her greatest personal achievement.",
+    "ex_de": "Der Sieg bei diesem Turnier war eine bemerkenswerte sportliche Leistung.",
+    "ex_es": "Terminar este proyecto a tiempo fue un gran logro para todos."
   },
   {
     "id": "word_917",
@@ -11869,7 +11901,11 @@ export const vocabulary = [
     "de": "die Anzeige",
     "es": "el anuncio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai vu une annonce intéressante pour un appartement au centre-ville.",
+    "ex_en": "I saw an interesting ad for a new job online.",
+    "ex_de": "Er hat eine interessante Anzeige in der lokalen Zeitung gelesen.",
+    "ex_es": "Vi un anuncio en internet sobre un curso de idiomas barato."
   },
   {
     "id": "word_918",
@@ -11878,7 +11914,11 @@ export const vocabulary = [
     "de": "die Ergänzung / der Zusatz",
     "es": "la adición",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette nouvelle règle est une addition utile à notre règlement intérieur.",
+    "ex_en": "The swimming pool is a wonderful addition to the new hotel.",
+    "ex_de": "Dieses praktische Kapitel ist eine sinnvolle Ergänzung zum neuen Lehrbuch.",
+    "ex_es": "La adición de más ejemplos prácticos mejoró mucho la lección escolar."
   },
   {
     "id": "word_919",
@@ -11887,7 +11927,11 @@ export const vocabulary = [
     "de": "bewundern",
     "es": "admirar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous nous sommes arrêtés pour admirer le coucher de soleil magnifique.",
+    "ex_en": "Many tourists visit the old castle to admire its architecture.",
+    "ex_de": "Viele Touristen kommen hierher, um die alten Gemälde zu bewundern.",
+    "ex_es": "Nos detuvimos un momento para admirar la belleza del paisaje montañoso."
   },
   {
     "id": "word_920",
@@ -11896,7 +11940,11 @@ export const vocabulary = [
     "de": "zugeben",
     "es": "admitir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a fini par admettre son erreur devant toute l'équipe.",
+    "ex_en": "He had to admit that the task was more difficult than expected.",
+    "ex_de": "Sie musste schließlich zugeben, dass sie den Schlüssel vergessen hatte.",
+    "ex_es": "El empleado tuvo que admitir su error ante el director."
   },
   {
     "id": "word_921",
@@ -11905,7 +11953,11 @@ export const vocabulary = [
     "de": "fortgeschritten",
     "es": "avanzado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle suit un cours avancé pour améliorer son niveau d'espagnol.",
+    "ex_en": "This course is designed for advanced students who know the basics.",
+    "ex_de": "Dieser Sprachkurs ist besonders für fortgeschrittene Lerner im Institut geeignet.",
+    "ex_es": "Este libro contiene ejercicios para estudiantes con un nivel avanzado."
   },
   {
     "id": "word_922",
@@ -11914,7 +11966,11 @@ export const vocabulary = [
     "de": "raten",
     "es": "aconsejar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin m'a conseillé de boire plus d'eau chaque jour.",
+    "ex_en": "My parents always advise me when I face difficult choices.",
+    "ex_de": "Ich möchte dir raten, vor der Prüfung etwas mehr auszuruhen.",
+    "ex_es": "El médico me aconsejó caminar treinta minutos todos los días."
   },
   {
     "id": "word_923",
@@ -11923,7 +11979,11 @@ export const vocabulary = [
     "de": "sich leisten",
     "es": "permitirse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous n'avons pas les moyens d'acheter une nouvelle voiture.",
+    "ex_en": "They cannot afford to travel abroad during the winter holidays.",
+    "ex_de": "Wir können uns diese teure Wohnung im Moment leider nicht leisten.",
+    "ex_es": "No podemos permitirnos unas vacaciones caras este año por el presupuesto."
   },
   {
     "id": "word_924",
@@ -11932,7 +11992,11 @@ export const vocabulary = [
     "de": "gealtert",
     "es": "envejecido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet homme âgé habite seul dans une jolie maison ancienne.",
+    "ex_en": "The club offers special activities for people aged over sixty.",
+    "ex_de": "Der gealterte Schauspieler erzählte spannende Geschichten aus seinem früheren Leben.",
+    "ex_es": "El rostro envejecido del anciano mostraba toda su gran experiencia."
   },
   {
     "id": "word_925",
@@ -11941,7 +12005,11 @@ export const vocabulary = [
     "de": "der Agent",
     "es": "el agente",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'agent immobilier nous a fait visiter un bel appartement lumineux.",
+    "ex_en": "The travel agent helped us plan our trip to Italy.",
+    "ex_de": "Der Agent zeigte uns mehrere interessante Wohnungen im Stadtzentrum.",
+    "ex_es": "El agente de viajes nos recomendó un hotel muy céntrico."
   },
   {
     "id": "word_926",
@@ -11950,7 +12018,11 @@ export const vocabulary = [
     "de": "die Vereinbarung",
     "es": "el acuerdo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les deux directeurs ont enfin signé un accord de coopération.",
+    "ex_en": "Both companies finally signed an agreement to work together smoothly.",
+    "ex_de": "Wir haben eine wichtige Vereinbarung über die zukünftige Zusammenarbeit getroffen.",
+    "ex_es": "Las dos empresas firmaron un acuerdo para desarrollar nuevos proyectos."
   },
   {
     "id": "word_927",
@@ -11959,7 +12031,11 @@ export const vocabulary = [
     "de": "voraus",
     "es": "adelante",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Regardez droit devant vous lorsque vous marchez dans la nuit.",
+    "ex_en": "You should look straight ahead when walking on this slippery path.",
+    "ex_de": "Wir müssen immer nach voraus schauen und neue Pläne schmieden.",
+    "ex_es": "Debes mirar hacia adelante cuando camines por esta calle oscura."
   },
   {
     "id": "word_928",
@@ -11968,7 +12044,11 @@ export const vocabulary = [
     "de": "das Ziel",
     "es": "el objetivo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Son but principal est de réussir son examen de français.",
+    "ex_en": "Our main aim is to improve communication skills this semester.",
+    "ex_de": "Mein persönliches Ziel ist es, diese Prüfung erfolgreich zu bestehen.",
+    "ex_es": "Nuestro principal objetivo es terminar este proyecto antes de mayo."
   },
   {
     "id": "word_929",
@@ -11977,7 +12057,11 @@ export const vocabulary = [
     "de": "zielen",
     "es": "apuntar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette nouvelle campagne vise à sensibiliser les jeunes au recyclage.",
+    "ex_en": "We aim to finish all pending tasks before Friday afternoon.",
+    "ex_de": "Wir zielen darauf ab, die Qualität unserer Produkte deutlich zu verbessern.",
+    "ex_es": "Ellos quieren apuntar a los mejores resultados en el examen escolar."
   },
   {
     "id": "word_930",
@@ -11986,7 +12070,11 @@ export const vocabulary = [
     "de": "der Alarm",
     "es": "la alarma",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'alarme incendie a sonné pendant que nous travaillions au bureau.",
+    "ex_en": "The security alarm went off in the middle of the night.",
+    "ex_de": "Der Alarm ging mitten in der Nacht im Bürogebäude los.",
+    "ex_es": "La alarma sonó muy temprano y despertó a toda la familia."
   },
   {
     "id": "word_931",
@@ -11995,7 +12083,11 @@ export const vocabulary = [
     "de": "das Album",
     "es": "el álbum",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons regardé un vieil album de photos de famille.",
+    "ex_en": "She listened to her favorite music album during the long journey.",
+    "ex_de": "Wir haben uns gestern ein altes Album voller Familienfotos angesehen.",
+    "ex_es": "Mi abuela guarda las fotos familiares en un álbum antiguo."
   },
   {
     "id": "word_932",
@@ -12004,7 +12096,11 @@ export const vocabulary = [
     "de": "der Alkohol",
     "es": "el alcohol",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est strictement interdit de consommer de l'alcool au travail.",
+    "ex_en": "Drinking too much alcohol can be harmful to your health.",
+    "ex_de": "Es ist gefährlich, nach dem Konsum von Alkohol Auto zu fahren.",
+    "ex_es": "El consumo excesivo de alcohol puede provocar problemas de salud graves."
   },
   {
     "id": "word_933",
@@ -12013,7 +12109,11 @@ export const vocabulary = [
     "de": "alkoholisch",
     "es": "alcohólico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce restaurant propose plusieurs boissons non alcooliques très rafraîchissantes.",
+    "ex_en": "We ordered non-alcoholic drinks because we had to drive home.",
+    "ex_de": "Im Restaurant gibt es auch viele leckere nicht alkoholische Getränke.",
+    "ex_es": "Ellos prefieren no tomar ninguna bebida alcohólica durante la cena."
   },
   {
     "id": "word_934",
@@ -12022,7 +12122,11 @@ export const vocabulary = [
     "de": "die Alternative",
     "es": "la alternativa",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Prendre le train est une bonne alternative à la voiture.",
+    "ex_en": "Riding a bicycle is a great alternative to driving to work.",
+    "ex_de": "Öffentliche Verkehrsmittel sind eine umweltfreundliche Alternative zum eigenen Auto.",
+    "ex_es": "El tren es una excelente alternativa para viajar sin contaminación."
   },
   {
     "id": "word_935",
@@ -12031,7 +12135,11 @@ export const vocabulary = [
     "de": "erstaunt",
     "es": "asombrado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants étaient émerveillés devant le spectacle de magie hier.",
+    "ex_en": "We were amazed by the breathtaking view from the mountain top.",
+    "ex_de": "Die Zuschauer waren erstaunt über die großartige Leistung des Künstlers.",
+    "ex_es": "El público quedó asombrado por la magnífica actuación del músico."
   },
   {
     "id": "word_936",
@@ -12040,7 +12148,11 @@ export const vocabulary = [
     "de": "die Ambition",
     "es": "la ambición",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Son ambition est de diriger sa propre entreprise un jour.",
+    "ex_en": "His greatest ambition is to travel around the whole world.",
+    "ex_de": "Ihre größte Ambition ist es, eine berühmte Forscherin zu werden.",
+    "ex_es": "Su gran ambición es fundar su propia empresa tecnológica pronto."
   },
   {
     "id": "word_937",
@@ -12049,7 +12161,11 @@ export const vocabulary = [
     "de": "ehrgeizig",
     "es": "ambicioso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est un projet ambitieux mais réalisable avec notre équipe dévouée.",
+    "ex_en": "She is an ambitious student who always aims for the best.",
+    "ex_de": "Er ist ein ehrgeiziger Student, der immer die besten Noten will.",
+    "ex_es": "Ella es una estudiante muy ambiciosa con metas claras para el futuro."
   },
   {
     "id": "word_938",
@@ -12058,7 +12174,11 @@ export const vocabulary = [
     "de": "ankündigen",
     "es": "anunciar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le directeur va annoncer une importante nouvelle demain matin.",
+    "ex_en": "The company will announce the winner of the contest tomorrow.",
+    "ex_de": "Der Chef möchte morgen eine wichtige Änderung im Team ankündigen.",
+    "ex_es": "El profesor va a anunciar la fecha del examen mañana."
   },
   {
     "id": "word_939",
@@ -12067,7 +12187,11 @@ export const vocabulary = [
     "de": "die Ankündigung",
     "es": "el anuncio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous attendons l'annonce officielle des résultats du concours avec impatience.",
+    "ex_en": "Everyone listened carefully to the teacher's important announcement about exams.",
+    "ex_de": "Die Ankündigung des neuen Datums überraschte alle Mitarbeiter im Büro.",
+    "ex_es": "Escuchamos el anuncio importante por los altavoces de la estación."
   },
   {
     "id": "word_940",
@@ -12076,7 +12200,11 @@ export const vocabulary = [
     "de": "ärgern",
     "es": "molestar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce bruit constant finit par agacer tous les employés présents.",
+    "ex_en": "Loud noises while I am working really annoy me a lot.",
+    "ex_de": "Solche ständigen Unterbrechungen ärgern mich bei der täglichen Arbeit sehr.",
+    "ex_es": "Los ruidos continuos de la calle suelen molestar a los vecinos."
   },
   {
     "id": "word_941",
@@ -12085,7 +12213,11 @@ export const vocabulary = [
     "de": "verärgert",
     "es": "molesto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il était très agacé par le retard important du train.",
+    "ex_en": "She was visibly annoyed because her flight was delayed again.",
+    "ex_de": "Der Kunde war verärgert über die lange Wartezeit im Geschäft.",
+    "ex_es": "Estaba muy molesto por el retraso inesperado de su vuelo."
   },
   {
     "id": "word_942",
@@ -12094,7 +12226,11 @@ export const vocabulary = [
     "de": "ärgerlich",
     "es": "molesto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette coupure d'électricité imprévue est vraiment un problème agaçant.",
+    "ex_en": "It is really annoying when the internet stops working unexpectedly.",
+    "ex_de": "Dieser ständige Lärm ist eine wirklich ärgerliche Situation beim Lernen.",
+    "ex_es": "Es un problema muy molesto cuando se corta la conexión."
   },
   {
     "id": "word_943",
@@ -12103,7 +12239,11 @@ export const vocabulary = [
     "de": "auseinander",
     "es": "aparte",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les deux maisons sont construites à quelques mètres à part.",
+    "ex_en": "The two friends lived far apart for several years after graduation.",
+    "ex_de": "Die beiden Gebäude stehen etwa zwanzig Meter weit auseinander.",
+    "ex_es": "Colocamos las cajas rotas aparte para reciclarlas más tarde."
   },
   {
     "id": "word_944",
@@ -12112,7 +12252,11 @@ export const vocabulary = [
     "de": "sich entschuldigen",
     "es": "disculparse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a tenu à s'excuser auprès de ses collègues.",
+    "ex_en": "You should apologise to your friend for being so late today.",
+    "ex_de": "Er wollte sich höflich für seinen späten Anruf gestern entschuldigen.",
+    "ex_es": "Debes disculparse con tu compañero por haber llegado tan tarde."
   },
   {
     "id": "word_945",
@@ -12121,7 +12265,11 @@ export const vocabulary = [
     "de": "die Bewerbung",
     "es": "la solicitud",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai envoyé ma candidature pour le poste de graphiste hier.",
+    "ex_en": "She submitted her job application to the company last Friday.",
+    "ex_de": "Ich habe gestern meine Bewerbung an die neue Firma geschickt.",
+    "ex_es": "Presenté mi solicitud para la beca antes de la fecha límite."
   },
   {
     "id": "word_946",
@@ -12130,7 +12278,11 @@ export const vocabulary = [
     "de": "der Termin",
     "es": "la cita",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai un rendez-vous chez le dentiste demain après-midi à quatorze heures.",
+    "ex_en": "I made an appointment with the doctor for tomorrow morning.",
+    "ex_de": "Ich habe morgen einen wichtigen Termin beim Arzt im Stadtzentrum.",
+    "ex_es": "Tengo una cita con el médico mañana a primera hora."
   },
   {
     "id": "word_947",
@@ -12139,7 +12291,11 @@ export const vocabulary = [
     "de": "schätzen",
     "es": "apreciar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'apprécie vraiment toute l'aide que vous m'avez apportée récemment.",
+    "ex_en": "We really appreciate your generous help during this difficult time.",
+    "ex_de": "Wir schätzen Ihre wertvolle Unterstützung bei diesem neuen Projekt sehr.",
+    "ex_es": "Aprecio mucho tu ayuda con la preparación del examen final."
   },
   {
     "id": "word_948",
@@ -12148,7 +12304,11 @@ export const vocabulary = [
     "de": "ungefähr",
     "es": "aproximadamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le trajet en train dure approximativement deux heures et demie.",
+    "ex_en": "The meeting will last approximately forty-five minutes this afternoon.",
+    "ex_de": "Die Fahrt zum Flughafen dauert ungefähr fünfundvierzig Minuten mit dem Bus.",
+    "ex_es": "El viaje en autobús durará aproximadamente tres horas desde aquí."
   },
   {
     "id": "word_949",
@@ -12157,7 +12317,11 @@ export const vocabulary = [
     "de": "verhaften",
     "es": "arrestar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La police a décidé d'arrêter le suspect après une enquête approfondie.",
+    "ex_en": "The police had to arrest the criminal near the train station.",
+    "ex_de": "Die Polizei konnte den Dieb noch am selben Abend verhaften.",
+    "ex_es": "La policía logró arrestar al sospechoso cerca de la plaza central."
   },
   {
     "id": "word_950",
@@ -12166,7 +12330,11 @@ export const vocabulary = [
     "de": "die Ankunft",
     "es": "la llegada",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons attendu l'arrivée du train sur le quai numéro trois.",
+    "ex_en": "We awaited the arrival of our guests in the living room.",
+    "ex_de": "Ihre pünktliche Ankunft am Bahnhof erleichterte die gemeinsame Reise sehr.",
+    "ex_es": "Esperamos la llegada del avión en la sala del aeropuerto."
   },
   {
     "id": "word_951",
@@ -12175,7 +12343,11 @@ export const vocabulary = [
     "de": "die Aufgabe",
     "es": "la asignación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons rendre ce devoir de géographie avant lundi prochain.",
+    "ex_en": "The students completed their difficult homework assignment on time yesterday.",
+    "ex_de": "Die Schüler müssen diese schwierige Aufgabe bis nächste Woche abgeben.",
+    "ex_es": "Completamos la asignación escolar antes de que terminara la clase."
   },
   {
     "id": "word_952",
@@ -12184,7 +12356,11 @@ export const vocabulary = [
     "de": "helfen",
     "es": "asistir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un guide compétent est venu assister les visiteurs dans le musée.",
+    "ex_en": "The nurse came quickly to assist the patient with his medication.",
+    "ex_de": "Ich möchte Ihnen gerne bei dieser schweren Aufgabe persönlich helfen.",
+    "ex_es": "El enfermero vino a asistir al médico durante la consulta."
   },
   {
     "id": "word_953",
@@ -12193,7 +12369,11 @@ export const vocabulary = [
     "de": "die Atmosphäre",
     "es": "la atmósfera",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce petit restaurant traditionnel offre une atmosphère très chaleureuse et agréable.",
+    "ex_en": "The cafe has a cozy atmosphere that makes people feel comfortable.",
+    "ex_de": "In diesem gemütlichen Café herrscht eine sehr angenehme Atmosphäre.",
+    "ex_es": "El restaurante tiene una atmósfera acogedora ideal para cenar juntos."
   },
   {
     "id": "word_954",
@@ -12202,7 +12382,11 @@ export const vocabulary = [
     "de": "anhängen",
     "es": "adjuntar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "N'oubliez pas d'attacher le document à votre courriel avant l'envoi.",
+    "ex_en": "Please remember to attach your resume before sending the email.",
+    "ex_de": "Bitte vergessen Sie nicht, die Datei an die E-Mail anzuhängen.",
+    "ex_es": "No olvides adjuntar tu currículum al correo antes de enviarlo."
   },
   {
     "id": "word_955",
@@ -12211,7 +12395,11 @@ export const vocabulary = [
     "de": "die Einstellung",
     "es": "la actitud",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une attitude positive permet de surmonter facilement les petits problèmes.",
+    "ex_en": "Having a positive attitude helps to overcome daily challenges at work.",
+    "ex_de": "Eine positive Einstellung hilft oft dabei, schwierige Aufgaben zu lösen.",
+    "ex_es": "Tener una actitud positiva es esencial para superar las dificultades cotidianas."
   },
   {
     "id": "word_956",
@@ -12220,7 +12408,11 @@ export const vocabulary = [
     "de": "anziehen",
     "es": "atraer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce festival de musique moderne sait attirer des visiteurs du monde entier.",
+    "ex_en": "The historical museum manages to attract thousands of visitors every year.",
+    "ex_de": "Dieses moderne Festival kann viele junge Leute aus ganz Europa anziehen.",
+    "ex_es": "Este bonito museo logra atraer a muchos turistas cada temporada."
   },
   {
     "id": "word_957",
@@ -12229,7 +12421,11 @@ export const vocabulary = [
     "de": "die Attraktion",
     "es": "la atracción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le vieux château fort reste l'attraction la plus populaire de la région.",
+    "ex_en": "The tall tower is the main tourist attraction in the city.",
+    "ex_de": "Das historische Schloss ist eine berühmte Attraktion für Touristen hier.",
+    "ex_es": "El castillo medieval es la principal atracción turística de este pueblo."
   },
   {
     "id": "word_958",
@@ -12238,7 +12434,11 @@ export const vocabulary = [
     "de": "die Behörde",
     "es": "la autoridad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'autorité locale a publié de nouvelles règles pour la sécurité publique.",
+    "ex_en": "The local authority decided to build a new park in town.",
+    "ex_de": "Die zuständige Behörde hat die neuen Sicherheitsregeln für alle Bürger erlassen.",
+    "ex_es": "La autoridad local anunció nuevas medidas para mejorar el transporte público."
   },
   {
     "id": "word_959",
@@ -12247,7 +12447,11 @@ export const vocabulary = [
     "de": "der Durchschnitt",
     "es": "el promedio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Sa note est bien au-dessus de la moyenne de la classe.",
+    "ex_en": "His test score was well above the class average this term.",
+    "ex_de": "Die Temperatur liegt heute deutlich über dem normalen Durchschnitt für März.",
+    "ex_es": "La nota final del estudiante estuvo por encima del promedio escolar."
   },
   {
     "id": "word_960",
@@ -12256,7 +12460,11 @@ export const vocabulary = [
     "de": "verleihen",
     "es": "premiar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le jury a choisi de décerner un prix au jeune artiste.",
+    "ex_en": "The committee decided to award the prize to a young author.",
+    "ex_de": "Die Jury wird morgen den begehrten Preis an die Künstlerin verleihen.",
+    "ex_es": "El comité decidió premiar al mejor estudiante de la clase ayer."
   },
   {
     "id": "word_961",
@@ -12265,7 +12473,11 @@ export const vocabulary = [
     "de": "bewusst",
     "es": "consciente",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je suis pleinement conscient des difficultés liées à ce long travail.",
+    "ex_en": "Everyone should be aware of the safety rules in the laboratory.",
+    "ex_de": "Wir sind uns der großen Verantwortung für dieses Projekt voll bewusst.",
+    "ex_es": "El director es muy consciente de los problemas que existen hoy."
   },
   {
     "id": "word_962",
@@ -12274,7 +12486,11 @@ export const vocabulary = [
     "de": "rückwärts",
     "es": "hacia atrás",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le conducteur a dû rouler en arrière pour sortir du parking.",
+    "ex_en": "He took two steps backwards to see the painting more clearly.",
+    "ex_de": "Er fuhr vorsichtig rückwärts aus der engen Garage auf die Straße.",
+    "ex_es": "Dio unos pasos hacia atrás para poder observar mejor el cuadro."
   },
   {
     "id": "word_963",
@@ -12283,7 +12499,11 @@ export const vocabulary = [
     "de": "backen",
     "es": "hornear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle aime cuisiner au four de délicieux gâteaux le dimanche après-midi.",
+    "ex_en": "We decided to bake a fresh chocolate cake for his birthday.",
+    "ex_de": "Meine Großmutter möchte heute einen frischen Apfelkuchen für uns backen.",
+    "ex_es": "Mi madre decidió hornear un pastel delicioso para la fiesta familiar."
   },
   {
     "id": "word_964",
@@ -12292,7 +12512,11 @@ export const vocabulary = [
     "de": "das Gleichgewicht",
     "es": "el equilibrio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est important de trouver un bon équilibre entre vie et travail.",
+    "ex_en": "Yoga helps you maintain good physical balance and mental peace.",
+    "ex_de": "Sport hilft dabei, das körperliche Gleichgewicht und die Gesundheit zu fördern.",
+    "ex_es": "Es esencial mantener un buen equilibrio entre el trabajo y descanso."
   },
   {
     "id": "word_965",
@@ -12301,7 +12525,11 @@ export const vocabulary = [
     "de": "ausgleichen",
     "es": "equilibrar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons équilibrer nos dépenses pour ne pas dépasser le budget.",
+    "ex_en": "You must learn to balance your study time and leisure activities.",
+    "ex_de": "Wir müssen die monatlichen Kosten sorgfältig mit unseren Einnahmen ausgleichen.",
+    "ex_es": "Debemos equilibrar los gastos mensuales para poder ahorrar suficiente dinero."
   },
   {
     "id": "word_966",
@@ -12310,7 +12538,11 @@ export const vocabulary = [
     "de": "das Verbot",
     "es": "la prohibición",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La mairie a voté l'interdiction de fumer dans tous les parcs.",
+    "ex_en": "The government announced a temporary ban on plastic bags in shops.",
+    "ex_de": "Das Verbot von Plastiktüten soll die Umwelt in der Stadt schützen.",
+    "ex_es": "La nueva ley establece una prohibición total de fumar en parques."
   },
   {
     "id": "word_967",
@@ -12319,7 +12551,11 @@ export const vocabulary = [
     "de": "verbieten",
     "es": "prohibir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La loi va interdire l'utilisation des sacs plastiques dès le mois prochain.",
+    "ex_en": "The school will ban mobile phones during class hours next term.",
+    "ex_de": "Die Schulleitung möchte Handys während des Unterrichts ab Montag streng verbieten.",
+    "ex_es": "La escuela decidió prohibir el uso de teléfonos durante las clases."
   },
   {
     "id": "word_968",
@@ -12328,7 +12564,11 @@ export const vocabulary = [
     "de": "das Ufer",
     "es": "la orilla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous nous sommes promenés le long de la rive du fleuve.",
+    "ex_en": "We walked along the river bank during a warm spring afternoon.",
+    "ex_de": "Wir machten einen ruhigen Spaziergang am grünen Ufer des Flusses.",
+    "ex_es": "Paseamos tranquilamente por la orilla del río durante el bonito atardecer."
   },
   {
     "id": "word_969",
@@ -12337,7 +12577,11 @@ export const vocabulary = [
     "de": "die Basis",
     "es": "la base",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La confiance mutuelle est la base de toute relation durable et saine.",
+    "ex_en": "Good communication forms the solid base of a successful team project.",
+    "ex_de": "Gegenseitiges Vertrauen bildet die Basis für eine gute und erfolgreiche Zusammenarbeit.",
+    "ex_es": "El respeto mutuo es la base fundamental de una buena amistad."
   },
   {
     "id": "word_970",
@@ -12346,7 +12590,11 @@ export const vocabulary = [
     "de": "basieren",
     "es": "basar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous devez baser vos conclusions sur des faits scientifiques bien vérifiés.",
+    "ex_en": "You should base your arguments on real facts and clear evidence.",
+    "ex_de": "Wir müssen unsere neue Strategie auf aktuellen und verlässlichen Daten basieren.",
+    "ex_es": "Debes basar tu informe final en datos reales y comprobados siempre."
   },
   {
     "id": "word_971",
@@ -12355,7 +12603,11 @@ export const vocabulary = [
     "de": "grundlegend",
     "es": "básico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque élève doit apprendre les règles basiques de la grammaire française.",
+    "ex_en": "It is essential to understand the basic concepts before moving forward.",
+    "ex_de": "Für diesen Kurs sind nur grundlegende Kenntnisse der englischen Sprache erforderlich.",
+    "ex_es": "Es necesario conocer las reglas básicas antes de empezar a jugar."
   },
   {
     "id": "word_972",
@@ -12364,7 +12616,11 @@ export const vocabulary = [
     "de": "die Batterie",
     "es": "la batería",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La batterie de mon téléphone est presque déchargée ce soir.",
+    "ex_en": "My phone battery ran out while I was traveling on the train.",
+    "ex_de": "Die Batterie meines Smartphones hält leider nur noch einen halben Tag.",
+    "ex_es": "La batería de mi móvil se agotó antes de llegar a casa."
   },
   {
     "id": "word_973",
@@ -12373,7 +12629,11 @@ export const vocabulary = [
     "de": "die Schlacht",
     "es": "la batalla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les soldats ont remporté une bataille décisive près de la frontière.",
+    "ex_en": "The soldiers fought a difficult battle to defend their historic fortress.",
+    "ex_de": "In den Geschichtsbüchern wird die berühmte Schlacht genau und ausführlich beschrieben.",
+    "ex_es": "El ejército ganó una importante batalla durante la guerra histórica nacional."
   },
   {
     "id": "word_974",
@@ -12382,7 +12642,11 @@ export const vocabulary = [
     "de": "die Schönheit",
     "es": "la belleza",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tous les touristes admirent la beauté naturelle de cette île sauvage.",
+    "ex_en": "We were impressed by the natural beauty of the Swiss mountains.",
+    "ex_de": "Die natürliche Schönheit der Landschaft zieht jedes Jahr viele Touristen an.",
+    "ex_es": "Todos quedaron maravillados con la belleza del antiguo palacio real."
   },
   {
     "id": "word_975",
@@ -12391,7 +12655,11 @@ export const vocabulary = [
     "de": "die Biene",
     "es": "la abeja",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une petite abeille butinait les fleurs colorées dans notre grand jardin.",
+    "ex_en": "A busy bee was collecting pollen from flowers in the garden.",
+    "ex_de": "Eine kleine Biene flog emsig von einer bunten Blume zur nächsten.",
+    "ex_es": "Una abeja pequeña volaba de flor en flor en el jardín."
   },
   {
     "id": "word_976",
@@ -12400,7 +12668,11 @@ export const vocabulary = [
     "de": "das Verhalten",
     "es": "el comportamiento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Son comportement exemplaire a été salué par l'ensemble des professeurs.",
+    "ex_en": "Good behaviour in class is important for maintaining a quiet environment.",
+    "ex_de": "Sein freundliches Verhalten gegenüber den Kollegen wurde von allen sehr geschätzt.",
+    "ex_es": "Su buen comportamiento en el aula fue felicitado por los profesores."
   },
   {
     "id": "word_977",
@@ -12409,7 +12681,11 @@ export const vocabulary = [
     "de": "der Glaube",
     "es": "la creencia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette ancienne croyance populaire se transmet de génération en génération.",
+    "ex_en": "It is his strong belief that hard work leads to success.",
+    "ex_de": "Der feste Glaube an eine bessere Zukunft gibt den Menschen Hoffnung.",
+    "ex_es": "Existe una antigua creencia popular sobre la suerte en esta región."
   },
   {
     "id": "word_978",
@@ -12418,7 +12694,11 @@ export const vocabulary = [
     "de": "die Glocke",
     "es": "la campana",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La cloche de l'église sonne chaque heure dans le village.",
+    "ex_en": "The school bell rang loudly to announce the end of lessons.",
+    "ex_de": "Die alte Glocke der Kirche läutet jeden Sonntag um zehn Uhr.",
+    "ex_es": "La campana de la iglesia sonó para avisar a los vecinos."
   },
   {
     "id": "word_979",
@@ -12427,7 +12707,11 @@ export const vocabulary = [
     "de": "biegen",
     "es": "doblar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a dû se pencher pour ramasser son stylo tombé.",
+    "ex_en": "You should bend your knees carefully when lifting heavy wooden boxes.",
+    "ex_de": "Man muss das Metall vorsichtig biegen, ohne es ganz zu zerbrechen.",
+    "ex_es": "Debes doblar las rodillas al levantar cajas pesadas del suelo."
   },
   {
     "id": "word_980",
@@ -12436,7 +12720,11 @@ export const vocabulary = [
     "de": "profitieren",
     "es": "beneficiarse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les étudiants peuvent bénéficier d'une réduction spéciale sur les transports.",
+    "ex_en": "All regular customers can benefit from our exclusive seasonal sales discount.",
+    "ex_de": "Alle neuen Mitglieder können von vielen tollen Vorteilen im Verein profitieren.",
+    "ex_es": "Los socios pueden beneficiarse de descuentos especiales en todos los servicios."
   },
   {
     "id": "word_981",
@@ -12445,7 +12733,11 @@ export const vocabulary = [
     "de": "beißen",
     "es": "morder",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Attention, ce chien peut mordre si vous vous approchez trop.",
+    "ex_en": "Be careful because aggressive dogs might bite when they feel frightened.",
+    "ex_de": "Pass bitte auf, denn dieser ängstliche Hund könnte plötzlich zubeißen.",
+    "ex_es": "Ten cuidado porque el perro asustado podría morder si te acercas."
   },
   {
     "id": "word_982",
@@ -12454,7 +12746,11 @@ export const vocabulary = [
     "de": "der Block",
     "es": "el bloque",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons fait le tour du pâté de maisons ensemble.",
+    "ex_en": "Walk straight along this street for one block to find it.",
+    "ex_de": "Unser modernes Büro befindet sich im zweiten Block auf der rechten Seite.",
+    "ex_es": "El nuevo restaurante está ubicado en el siguiente bloque de edificios."
   },
   {
     "id": "word_983",
@@ -12463,7 +12759,11 @@ export const vocabulary = [
     "de": "blockieren",
     "es": "bloquear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un camion en panne est venu bloquer la circulation ce matin.",
+    "ex_en": "A fallen tree managed to block the narrow road after storm.",
+    "ex_de": "Mehrere parkende Autos blockieren oft die schmale Durchfahrt in der Straße.",
+    "ex_es": "Las obras en la calle van a bloquear el paso vehicular."
   },
   {
     "id": "word_984",
@@ -12472,7 +12772,11 @@ export const vocabulary = [
     "de": "einsteigen",
     "es": "abordar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les passagers doivent embarquer vingt minutes avant le décollage de l'avion.",
+    "ex_en": "Passengers are invited to board the plane through gate number four.",
+    "ex_de": "Die Passagiere können jetzt am Flugsteig drei in das Flugzeug einsteigen.",
+    "ex_es": "Los pasajeros comenzaron a abordar el avión con sus tarjetas preparadas."
   },
   {
     "id": "word_985",
@@ -12481,7 +12785,11 @@ export const vocabulary = [
     "de": "die Bombe",
     "es": "la bomba",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La police a désamorcé une vieille bombe découverte sur le chantier.",
+    "ex_en": "Specialists safely deactivated an unexploded bomb from the second world war.",
+    "ex_de": "Experten haben gestern eine alte Bombe aus dem Krieg sicher entschärft.",
+    "ex_es": "Los expertos desactivaron una bomba antigua encontrada en el parque público."
   },
   {
     "id": "word_986",
@@ -12490,7 +12798,11 @@ export const vocabulary = [
     "de": "bombardieren",
     "es": "bombardear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les avions ont commencé à bombarder les positions ennemies dans la nuit.",
+    "ex_en": "Military forces threatened to bomb strategic targets during the ongoing conflict.",
+    "ex_de": "Historische Berichte zeigen, wie feindliche Flugzeuge die Festung bombardieren sollten.",
+    "ex_es": "Los ejércitos planearon bombardear las bases militares enemigas durante la noche."
   },
   {
     "id": "word_987",
@@ -12499,7 +12811,11 @@ export const vocabulary = [
     "de": "die Buchung",
     "es": "la reserva",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai confirmé notre réservation d'hôtel pour le week-end à Paris.",
+    "ex_en": "Please verify your online booking details before arriving at the hotel.",
+    "ex_de": "Ich habe gestern die Buchung für unseren Sommerurlaub in Italien abgeschlossen.",
+    "ex_es": "Recibí un correo con la confirmación de mi reserva hotelera."
   },
   {
     "id": "word_988",
@@ -12508,7 +12824,11 @@ export const vocabulary = [
     "de": "die Grenze",
     "es": "la frontera",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons traversé la frontière entre les deux pays sans problème.",
+    "ex_en": "You must show your valid passport when crossing the national border.",
+    "ex_de": "An der Grenze mussten alle Reisenden ihre gültigen Reisepässe vorzeigen.",
+    "ex_es": "Tuvimos que mostrar los pasaportes al cruzar la frontera internacional."
   },
   {
     "id": "word_989",
@@ -12517,7 +12837,11 @@ export const vocabulary = [
     "de": "belästigen / stören",
     "es": "molestar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Excusez-moi de vous déranger pendant votre pause de midi aujourd'hui.",
+    "ex_en": "I am sorry to bother you with this small administrative question.",
+    "ex_de": "Entschuldigen Sie bitte, wenn ich Sie bei der Arbeit kurz stören muss.",
+    "ex_es": "Siento mucho molestar con esta pregunta en tu hora de descanso."
   },
   {
     "id": "word_990",
@@ -12526,7 +12850,11 @@ export const vocabulary = [
     "de": "der Zweig",
     "es": "la rama / sucursal",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'oiseau s'est posé sur une petite branche de l'arbre vert.",
+    "ex_en": "The bank decided to open a new branch in our neighborhood.",
+    "ex_de": "Ein bunter Vogel saß ruhig auf einem dicken Zweig des Baumes.",
+    "ex_es": "El banco decidió abrir una nueva sucursal cerca de aquí."
   },
   {
     "id": "word_991",
@@ -12535,7 +12863,11 @@ export const vocabulary = [
     "de": "die Marke",
     "es": "la marca",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette célèbre marque de vêtements fabrique des produits de bonne qualité.",
+    "ex_en": "She always chooses this brand because its products are very reliable.",
+    "ex_de": "Diese bekannte Marke steht seit vielen Jahren für hervorragende handwerkliche Qualität.",
+    "ex_es": "Esta marca famosa produce ropa deportiva de excelente calidad para todos."
   },
   {
     "id": "word_992",
@@ -12544,7 +12876,11 @@ export const vocabulary = [
     "de": "mutig",
     "es": "valiente",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le pompier courageux est entré dans le bâtiment en flammes immédiatement.",
+    "ex_en": "The brave firefighter saved three people from the burning residential building.",
+    "ex_de": "Der mutige Feuerwehrmann rettete ein kleines Kind aus dem brennenden Haus.",
+    "ex_es": "El valiente bombero rescató a varias personas atrapadas en el edificio."
   },
   {
     "id": "word_993",
@@ -12553,7 +12889,11 @@ export const vocabulary = [
     "de": "der Atem",
     "es": "la respiración",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Prenez une profonde respiration pour vous calmer avant cet entretien important.",
+    "ex_en": "Take a deep breath before you start speaking to the audience.",
+    "ex_de": "Nach dem langen Lauf ging ihm fast der Atem aus.",
+    "ex_es": "Respira hondo y controla la respiración para relajarte antes del discurso."
   },
   {
     "id": "word_994",
@@ -12562,7 +12902,11 @@ export const vocabulary = [
     "de": "atmen",
     "es": "respirar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est très agréable de respirer l'air pur de la montagne.",
+    "ex_en": "It feels wonderful to breathe fresh air in the dense forest.",
+    "ex_de": "Es tut gut, die frische Luft in den Bergen tief einzuatmen.",
+    "ex_es": "Es muy relajante respirar aire fresco mientras caminamos por el bosque."
   },
   {
     "id": "word_995",
@@ -12571,7 +12915,11 @@ export const vocabulary = [
     "de": "die Atmung",
     "es": "la respiración",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les exercices de respiration aident à réduire le stress au quotidien.",
+    "ex_en": "Controlled breathing helps reduce stress during tense and difficult moments.",
+    "ex_de": "Ruhige und tiefe Atmung hilft sehr gut gegen alltäglichen Stress.",
+    "ex_es": "Practicar ejercicios de respiración ayuda a mejorar la concentración mental."
   },
   {
     "id": "word_996",
@@ -12580,7 +12928,11 @@ export const vocabulary = [
     "de": "die Braut",
     "es": "la novia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La mariée portait une magnifique robe blanche pendant la belle cérémonie.",
+    "ex_en": "The beautiful bride walked down the aisle surrounded by happy friends.",
+    "ex_de": "Die glückliche Braut trug ein wunderschönes weißes Kleid bei der Hochzeit.",
+    "ex_es": "La novia lucía un vestido hermoso el día de su boda."
   },
   {
     "id": "word_997",
@@ -12589,7 +12941,11 @@ export const vocabulary = [
     "de": "die Blase",
     "es": "la burbuja",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'enfant souffle pour créer une grande bulle de savon brillante.",
+    "ex_en": "The child was blowing a huge soap bubble in the garden.",
+    "ex_de": "Das kleine Kind pustete eine riesige schillernde Blase in die Luft.",
+    "ex_es": "El niño sopló para hacer una gran burbuja de jabón."
   },
   {
     "id": "word_998",
@@ -12598,7 +12954,11 @@ export const vocabulary = [
     "de": "platzen",
     "es": "estallar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le ballon gonflable va éclater si vous le touchez trop fort.",
+    "ex_en": "The red balloon might burst if you touch it with pins.",
+    "ex_de": "Der bunte Luftballon drohte wegen der Hitze plötzlich zu platzen.",
+    "ex_es": "El globo de helio puede estallar si toca una rama afilada."
   },
   {
     "id": "word_999",
@@ -12607,7 +12967,11 @@ export const vocabulary = [
     "de": "begraben",
     "es": "enterrar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le pirate a décidé d'enterrer son trésor sur l'île déserte.",
+    "ex_en": "Pirates used to bury their stolen treasure on secret tropical islands.",
+    "ex_de": "Die Tiere wollen ihre Vorräte im weichen Boden für den Winter begraben.",
+    "ex_es": "El perro intentó enterrar su hueso debajo del gran árbol."
   },
   {
     "id": "word_1000",
@@ -12616,7 +12980,11 @@ export const vocabulary = [
     "de": "ruhig",
     "es": "tranquilo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La mer est très calme aujourd'hui malgré le léger vent d'est.",
+    "ex_en": "Try to stay calm even when you face an unexpected problem.",
+    "ex_de": "Am frühen Morgen ist es im Park noch wunderbar ruhig.",
+    "ex_es": "Debemos mantenernos en un lugar tranquilo durante la tormenta eléctrica."
   },
   {
     "id": "word_1001",
@@ -12625,7 +12993,11 @@ export const vocabulary = [
     "de": "die Kampagne",
     "es": "la campaña",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette entreprise lance une grande campagne publicitaire sur les réseaux sociaux.",
+    "ex_en": "They launched a successful advertising campaign to promote their new product.",
+    "ex_de": "Die neue Kampagne für den Umweltschutz fand viele engagierte Unterstützer.",
+    "ex_es": "La organización lanzó una campaña informativa sobre el cambio climático global."
   },
   {
     "id": "word_1002",
@@ -12634,7 +13006,11 @@ export const vocabulary = [
     "de": "der Campus",
     "es": "el campus",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre université possède un très beau campus avec de grands espaces verts.",
+    "ex_en": "The university campus has modern libraries and comfortable student housing buildings.",
+    "ex_de": "Der grüne Campus unserer Universität bietet viele gemütliche Plätze zum Lernen.",
+    "ex_es": "El campus universitario cuenta con modernas instalaciones para todos los estudiantes."
   },
   {
     "id": "word_1003",
@@ -12643,7 +13019,11 @@ export const vocabulary = [
     "de": "der Kandidat",
     "es": "el candidato",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque candidat doit présenter ses idées lors du débat télévisé officiel.",
+    "ex_en": "The best candidate for this job will be selected next Monday.",
+    "ex_de": "Der qualifizierte Kandidat überzeugte die Personalabteilung beim gestrigen Vorstellungsgespräch.",
+    "ex_es": "El candidato demostró tener una gran experiencia en el sector tecnológico."
   },
   {
     "id": "word_1004",
@@ -12652,7 +13032,11 @@ export const vocabulary = [
     "de": "die Mütze",
     "es": "la gorra",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il porte une casquette rouge pour se protéger du fort soleil.",
+    "ex_en": "He wore a black cap to protect his eyes from sunlight.",
+    "ex_de": "Im kalten Winter trage ich immer eine warme Mütze draußen.",
+    "ex_es": "Él siempre lleva una gorra cuando sale a correr por las mañanas."
   },
   {
     "id": "word_1005",
@@ -12661,7 +13045,11 @@ export const vocabulary = [
     "de": "der Kapitän",
     "es": "el capitán",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le capitaine a guidé le bateau vers le port en sécurité.",
+    "ex_en": "The team captain motivated all players before the crucial final match.",
+    "ex_de": "Der erfahrene Kapitän steuerte das Schiff sicher durch den dichten Nebel.",
+    "ex_es": "El capitán del equipo animó a sus compañeros antes de jugar."
   },
   {
     "id": "word_1006",
@@ -12670,7 +13058,11 @@ export const vocabulary = [
     "de": "die Karriere",
     "es": "la carrera",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle souhaite commencer une brillante carrière dans le domaine médical hospitalier.",
+    "ex_en": "He built a successful career in journalism over the last decade.",
+    "ex_de": "Sie möchte eine erfolgreiche Karriere im Bereich der internationalen Wirtschaft machen.",
+    "ex_es": "Ella inició su carrera profesional en una empresa de diseño gráfico."
   },
   {
     "id": "word_1007",
@@ -12679,7 +13071,11 @@ export const vocabulary = [
     "de": "unvorsichtig",
     "es": "descuidado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un conducteur imprudent a provoqué un léger accident sur le boulevard.",
+    "ex_en": "A careless mistake in the calculation changed all the final results.",
+    "ex_de": "Sein unvorsichtiges Verhalten führte leider zu einem kleinen Unfall im Labor.",
+    "ex_es": "Un error descuidado en la redacción cambió el sentido del documento."
   },
   {
     "id": "word_1008",
@@ -12688,7 +13084,11 @@ export const vocabulary = [
     "de": "die Kategorie",
     "es": "la categoría",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce film exceptionnel a gagné un trophée dans sa catégorie principale.",
+    "ex_en": "Please select the right category before submitting your online complaint form.",
+    "ex_de": "Dieses Buch gehört in die Kategorie der historischen und spannenden Romane.",
+    "ex_es": "El producto fue clasificado dentro de la categoría de alimentos saludables."
   },
   {
     "id": "word_1009",
@@ -12697,7 +13097,11 @@ export const vocabulary = [
     "de": "die Decke",
     "es": "el techo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons peint le plafond du salon en blanc très clair.",
+    "ex_en": "The old house has a very high ceiling with wooden beams.",
+    "ex_de": "Die weiße Decke im Wohnzimmer wurde gestern frisch und sauber gestrichen.",
+    "ex_es": "Pintamos el techo de la habitación para darle más luz natural."
   },
   {
     "id": "word_1010",
@@ -12706,7 +13110,11 @@ export const vocabulary = [
     "de": "die Feier",
     "es": "la celebración",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Toute la famille a participé à la célébration de son anniversaire.",
+    "ex_en": "The town organized a big celebration to mark its annual anniversary.",
+    "ex_de": "Die ganze Familie kam zur fröhlichen Feier des runden Geburtstags zusammen.",
+    "ex_es": "Organizamos una gran celebración para festejar el éxito del nuevo proyecto."
   },
   {
     "id": "word_1011",
@@ -12715,7 +13123,11 @@ export const vocabulary = [
     "de": "zentral",
     "es": "central",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre hôtel est situé dans un quartier central très bien desservi.",
+    "ex_en": "The central station is located only five minutes from our hotel.",
+    "ex_de": "Das neue Hotel hat eine sehr zentrale Lage nahe am Bahnhof.",
+    "ex_es": "La estación central de trenes se encuentra cerca de la plaza."
   },
   {
     "id": "word_1012",
@@ -12724,7 +13136,11 @@ export const vocabulary = [
     "de": "das Jahrhundert",
     "es": "el siglo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce château impressionnant a été construit au cours du dix-septième siècle.",
+    "ex_en": "This historic church was built during the fourteenth century in France.",
+    "ex_de": "Dieses berühmte Gebäude stammt aus dem frühen achtzehnten Jahrhundert in Berlin.",
+    "ex_es": "Esta hermosa catedral fue construida a finales del siglo dieciséis."
   },
   {
     "id": "word_1013",
@@ -12733,7 +13149,11 @@ export const vocabulary = [
     "de": "die Zeremonie",
     "es": "la ceremonia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La cérémonie de remise des diplômes commencera à quinze heures précises.",
+    "ex_en": "The wedding ceremony took place in an ancient and romantic chapel.",
+    "ex_de": "Die offizielle Zeremonie zur Preisverleihung beginnt heute pünktlich um siebzehn Uhr.",
+    "ex_es": "La ceremonia de graduación se celebró en el gran auditorio universitario."
   },
   {
     "id": "word_1014",
@@ -12742,7 +13162,11 @@ export const vocabulary = [
     "de": "die Kette",
     "es": "la cadena",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a sécurisé son vélo avec une solide chaîne en acier.",
+    "ex_en": "She bought a silver necklace chain during her holiday in Rome.",
+    "ex_de": "Er sicherte sein Fahrrad mit einer stabilen Kette am Zaun.",
+    "ex_es": "Aseguró su bicicleta con una fuerte cadena metálica al poste."
   },
   {
     "id": "word_1015",
@@ -12751,7 +13175,11 @@ export const vocabulary = [
     "de": "die Herausforderung",
     "es": "el desafío",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Apprendre une nouvelle langue étrangère représente toujours un beau défi intellectuel.",
+    "ex_en": "Climbing this high mountain was a great challenge for the hikers.",
+    "ex_de": "Das neue Projekt ist eine spannende Herausforderung für unser ganzes Team.",
+    "ex_es": "Aprender un nuevo idioma extranjero representa un gran desafío personal."
   },
   {
     "id": "word_1016",
@@ -12760,7 +13188,11 @@ export const vocabulary = [
     "de": "herausfordern",
     "es": "desafiar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a voulu défier son meilleur ami dans une partie d'échecs.",
+    "ex_en": "He wanted to challenge his best friend to a tennis match.",
+    "ex_de": "Er wollte seinen besten Freund zu einer Partie Schach herausfordern.",
+    "ex_es": "El joven quiso desafiar al campeón durante la final del torneo."
   },
   {
     "id": "word_1017",
@@ -12769,7 +13201,11 @@ export const vocabulary = [
     "de": "der Meister",
     "es": "el campeón",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le nouveau champion du monde de tennis a reçu son trophée.",
+    "ex_en": "The world tennis champion celebrated his victory with the loud crowd.",
+    "ex_de": "Der neue Meister im Schwimmen stellte einen fantastischen Rekord auf.",
+    "ex_es": "El joven campeón recibió una ovación de todo el público presente."
   },
   {
     "id": "word_1018",
@@ -12778,7 +13214,11 @@ export const vocabulary = [
     "de": "der Kanal",
     "es": "el canal",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons changé de chaîne de télévision pour regarder le journal.",
+    "ex_en": "Please change the television channel to watch the evening news report.",
+    "ex_de": "Wir haben den Kanal gewechselt, um die aktuellen Nachrichten anzusehen.",
+    "ex_es": "Cambié el canal de televisión para ver el partido de fútbol."
   },
   {
     "id": "word_1019",
@@ -12787,7 +13227,11 @@ export const vocabulary = [
     "de": "das Kapitel",
     "es": "el capítulo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai terminé de lire le troisième chapitre du livre hier soir.",
+    "ex_en": "You should read the next chapter before the upcoming literature class.",
+    "ex_de": "Ich habe gestern Abend das spannende dritte Kapitel des Buches gelesen.",
+    "ex_es": "Terminé de leer el último capítulo de la novela anoche."
   },
   {
     "id": "word_1020",
@@ -12796,7 +13240,11 @@ export const vocabulary = [
     "de": "die Ladung",
     "es": "la carga",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La charge de la batterie de cet appareil dure plusieurs jours.",
+    "ex_en": "The police dropped the serious charge against him due to evidence.",
+    "ex_de": "Die elektrische Ladung der Batterie reicht für den ganzen Tag aus.",
+    "ex_es": "La carga de la batería es suficiente para todo el viaje."
   },
   {
     "id": "word_1021",
@@ -12805,7 +13253,11 @@ export const vocabulary = [
     "de": "berechnen",
     "es": "cobrar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le restaurant ne va pas facturer de frais supplémentaires ce soir.",
+    "ex_en": "How much will the garage charge to repair my damaged car?",
+    "ex_de": "Die Werkstatt wird für die Reparatur keine zusätzlichen Kosten berechnen.",
+    "ex_es": "El taller no nos va a cobrar nada por la revisión."
   },
   {
     "id": "word_1022",
@@ -12814,7 +13266,11 @@ export const vocabulary = [
     "de": "betrügen",
     "es": "hacer trampa",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est strictement interdit de tricher pendant un examen universitaire important.",
+    "ex_en": "Students who try to cheat on tests will face strict punishment.",
+    "ex_de": "Es ist absolut verboten, bei einer Prüfung im Hörsaal zu betrügen.",
+    "ex_es": "No está permitido hacer trampa en ninguna prueba académica escolar."
   },
   {
     "id": "word_1023",
@@ -12823,7 +13279,11 @@ export const vocabulary = [
     "de": "fröhlich",
     "es": "alegre",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a toujours un sourire joyeux quand elle accueille ses clients.",
+    "ex_en": "His cheerful personality always brings a lot of joy to everyone.",
+    "ex_de": "Mit ihrer fröhlichen Art verbreitet sie immer gute Laune im Büro.",
+    "ex_es": "Su carácter alegre siempre crea un ambiente muy positivo en clase."
   },
   {
     "id": "word_1024",
@@ -12832,7 +13292,11 @@ export const vocabulary = [
     "de": "die Chemikalie",
     "es": "el producto químico",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce produit chimique doit être manipulé avec des gants de protection.",
+    "ex_en": "Store each hazardous chemical in a secure cabinet inside the laboratory.",
+    "ex_de": "Jede gefährliche Chemikalie muss im Labor sicher und verschlossen gelagert werden.",
+    "ex_es": "Este producto químico debe guardarse en un armario especial y seguro."
   },
   {
     "id": "word_1025",
@@ -12841,7 +13305,11 @@ export const vocabulary = [
     "de": "chemisch",
     "es": "químico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La réaction chimique a produit une fumée blanche dans le laboratoire.",
+    "ex_en": "The scientists carefully observed the chemical reaction inside the glass tube.",
+    "ex_de": "Die chemische Reaktion erzeugte einen interessanten Farbwechsel im Glas.",
+    "ex_es": "La reacción química en el tubo de ensayo cambió de color."
   },
   {
     "id": "word_1026",
@@ -12850,7 +13318,11 @@ export const vocabulary = [
     "de": "die Brust",
     "es": "el pecho",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin a examiné attentivement sa poitrine avec un stéthoscope moderne.",
+    "ex_en": "He felt a sharp pain in his chest while running yesterday.",
+    "ex_de": "Der Arzt untersuchte vorsichtig seine Brust während der medizinischen Kontrolle.",
+    "ex_es": "El paciente sintió un dolor leve en el pecho tras correr."
   },
   {
     "id": "word_1027",
@@ -12859,7 +13331,11 @@ export const vocabulary = [
     "de": "die Kindheit",
     "es": "la infancia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai passé une enfance très heureuse dans un petit village montagnard.",
+    "ex_en": "She spent her entire childhood living in a small coastal town.",
+    "ex_de": "Er erinnert sich gerne an seine glückliche Kindheit auf dem Land.",
+    "ex_es": "Pasé una infancia maravillosa jugando con mis primos en el campo."
   },
   {
     "id": "word_1028",
@@ -12868,7 +13344,11 @@ export const vocabulary = [
     "de": "behaupten",
     "es": "reclamar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il vient réclamer son argent après avoir accompli son travail quotidien.",
+    "ex_en": "They claim that their new method saves both time and energy.",
+    "ex_de": "Die Forscher behaupten, eine einfache Lösung für das Problem gefunden zu haben.",
+    "ex_es": "El cliente fue a reclamar el reembolso de su compra ayer."
   },
   {
     "id": "word_1029",
@@ -12877,7 +13357,11 @@ export const vocabulary = [
     "de": "der Anspruch",
     "es": "el reclamo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le client a déposé une réclamation concernant un produit défectueux.",
+    "ex_en": "She filed an insurance claim after the small car accident.",
+    "ex_de": "Sie haben einen rechtlichen Anspruch auf eine angemessene Entschädigung bei Verspätung.",
+    "ex_es": "El comprador presentó un reclamo formal por el retraso del envío."
   },
   {
     "id": "word_1030",
@@ -12886,7 +13370,11 @@ export const vocabulary = [
     "de": "der Klick",
     "es": "el clic",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un simple clic sur ce lien suffit pour ouvrir le fichier.",
+    "ex_en": "You can download the whole document with just one single click.",
+    "ex_de": "Ein einziger Klick genügt, um das Dokument herunterzuladen und zu speichern.",
+    "ex_es": "Con un simple clic puedes descargar todos los documentos del curso."
   },
   {
     "id": "word_1031",
@@ -12895,7 +13383,11 @@ export const vocabulary = [
     "de": "klicken",
     "es": "hacer clic",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Veuillez cliquer sur le bouton bleu pour confirmer votre inscription.",
+    "ex_en": "You must click on the submit button to finish your application.",
+    "ex_de": "Bitte klicken Sie auf den blauen Link, um das Formular abzusenden.",
+    "ex_es": "Debes hacer clic en el enlace para confirmar tu registro online."
   },
   {
     "id": "word_1032",
@@ -12904,7 +13396,11 @@ export const vocabulary = [
     "de": "der Kunde",
     "es": "el cliente",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'avocat a discuté pendant une heure avec son nouveau client.",
+    "ex_en": "The lawyer met with an important client in her private office.",
+    "ex_de": "Der freundliche Berater begrüßte den neuen Kunden am frühen Vormittag.",
+    "ex_es": "El abogado atendió a un cliente importante en su despacho privado."
   },
   {
     "id": "word_1033",
@@ -12913,7 +13409,11 @@ export const vocabulary = [
     "de": "nah",
     "es": "cercano",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle entretient une relation très proche avec tous ses collègues de bureau.",
+    "ex_en": "They have maintained a very close friendship since their high school years.",
+    "ex_de": "Sie stehen sich sehr nah und verbringen fast jedes Wochenende zusammen.",
+    "ex_es": "Él mantiene un vínculo muy cercano con todos sus amigos de infancia."
   },
   {
     "id": "word_1034",
@@ -12922,7 +13422,11 @@ export const vocabulary = [
     "de": "das Tuch",
     "es": "la tela",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nettoyez la table en verre avec un chiffon propre et doux.",
+    "ex_en": "Wipe the wooden table gently with a damp and soft cloth.",
+    "ex_de": "Sie wischte den Esstisch mit einem weichen und sauberen Tuch ab.",
+    "ex_es": "Limpia la superficie de madera con una tela suave y húmeda."
   },
   {
     "id": "word_1035",
@@ -12931,7 +13435,11 @@ export const vocabulary = [
     "de": "der Hinweis",
     "es": "la pista",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le détective a trouvé un indice précieux dans le jardin secret.",
+    "ex_en": "The police found an important clue near the main railway station.",
+    "ex_de": "Die Polizei fand einen wertvollen Hinweis am Tatort im alten Park.",
+    "ex_es": "El detective descubrió una pista clave para resolver el misterio oculto."
   },
   {
     "id": "word_1036",
@@ -12940,7 +13448,11 @@ export const vocabulary = [
     "de": "der Trainer",
     "es": "el entrenador",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre coach de football nous encourage avant chaque match de championnat.",
+    "ex_en": "The basketball coach gave clear tactical instructions to all the players.",
+    "ex_de": "Der erfahrene Trainer motivierte die Mannschaft vor dem entscheidenden Spiel sehr.",
+    "ex_es": "El nuevo entrenador preparó una rutina exigente para todos los futbolistas."
   },
   {
     "id": "word_1037",
@@ -12949,7 +13461,11 @@ export const vocabulary = [
     "de": "die Kohle",
     "es": "el carbón",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les trains à vapeur utilisaient autrefois du charbon pour fonctionner efficacement.",
+    "ex_en": "Many old factories used coal as their main source of power.",
+    "ex_de": "Früher wurde Kohle in großen Mengen zur Wärmegewinnung im Winter verbrannt.",
+    "ex_es": "La antigua locomotora funcionaba quemando carbón mineral durante los viajes largos."
   },
   {
     "id": "word_1038",
@@ -12958,7 +13474,11 @@ export const vocabulary = [
     "de": "die Sammlung",
     "es": "la colección",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce musée abrite une collection remarquable d'objets d'art anciens.",
+    "ex_en": "He has an impressive collection of rare stamps from different countries.",
+    "ex_de": "Das städtische Museum besitzt eine wertvolle Sammlung von alten Gemälden.",
+    "ex_es": "El museo posee una colección única de esculturas del siglo pasado."
   },
   {
     "id": "word_1039",
@@ -12967,7 +13487,11 @@ export const vocabulary = [
     "de": "farbig",
     "es": "coloreado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants ont dessiné un tableau très coloré avec des feutres.",
+    "ex_en": "She wore a beautifully coloured dress to the summer garden party.",
+    "ex_de": "Die bunten und farbigen Lichter schmückten die Straßen während des Stadtfestes.",
+    "ex_es": "El artista presentó un cuadro muy coloreado en la galería moderna."
   },
   {
     "id": "word_1040",
@@ -12976,7 +13500,11 @@ export const vocabulary = [
     "de": "kombinieren",
     "es": "combinar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il réussit à combiner ses études universitaires et sa passion sportive.",
+    "ex_en": "You can combine regular exercise with a balanced diet for health.",
+    "ex_de": "Man kann Theorie und praktische Arbeit in dieser Ausbildung optimal kombinieren.",
+    "ex_es": "Es posible combinar el estudio con un trabajo a tiempo parcial."
   },
   {
     "id": "word_1041",
@@ -12985,7 +13513,11 @@ export const vocabulary = [
     "de": "kommentieren",
     "es": "comentar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le journaliste a refusé de commenter les rumeurs politiques récentes.",
+    "ex_en": "The minister declined to comment on the ongoing economic investigation today.",
+    "ex_de": "Der Sprecher wollte den neuen Bericht vor der Presse nicht kommentieren.",
+    "ex_es": "El portavoz no quiso comentar las decisiones tomadas en la reunión."
   },
   {
     "id": "word_1042",
@@ -12994,7 +13526,11 @@ export const vocabulary = [
     "de": "kommerziell",
     "es": "comercial",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce grand centre commercial attire des milliers de clients chaque samedi.",
+    "ex_en": "The new commercial airport will open to international flights next spring.",
+    "ex_de": "Dieses historische Gebäude wird heute für rein kommerzielle Zwecke genutzt.",
+    "ex_es": "El centro comercial del barrio ofrece una gran variedad de tiendas."
   },
   {
     "id": "word_1043",
@@ -13003,7 +13539,11 @@ export const vocabulary = [
     "de": "der Werbespot",
     "es": "el anuncio comercial",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai vu une publicité amusante pour des voitures à la télévision.",
+    "ex_en": "I watched an entertaining commercial on television during the movie break.",
+    "ex_de": "Ein witziger Werbespot im Fernsehen brachte die ganze Familie zum Lachen.",
+    "ex_es": "Emitieron un anuncio comercial muy divertido durante el descanso del partido."
   },
   {
     "id": "word_1044",
@@ -13012,7 +13552,11 @@ export const vocabulary = [
     "de": "begehen",
     "es": "cometer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il refuse de commettre une faute professionnelle grave dans son travail.",
+    "ex_en": "He did not want to commit a serious error during presentation.",
+    "ex_de": "Niemand im Team möchte bei diesem wichtigen Projekt einen Fehler begehen.",
+    "ex_es": "Debes tener mucho cuidado para no cometer ningún error de cálculo."
   },
   {
     "id": "word_1045",
@@ -13021,7 +13565,11 @@ export const vocabulary = [
     "de": "die Kommunikation",
     "es": "la comunicación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une bonne communication est essentielle pour résoudre les conflits au travail.",
+    "ex_en": "Effective communication among team members helps to complete projects faster.",
+    "ex_de": "Offene Kommunikation zwischen den Kollegen verbessert die Stimmung am Arbeitsplatz deutlich.",
+    "ex_es": "La buena comunicación facilita el entendimiento mutuo entre los compañeros."
   },
   {
     "id": "word_1046",
@@ -13030,7 +13578,11 @@ export const vocabulary = [
     "de": "der Vergleich",
     "es": "la comparación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Faire une comparaison de prix permet d'économiser beaucoup d'argent chaque mois.",
+    "ex_en": "A quick price comparison shows that this local shop is cheaper.",
+    "ex_de": "Ein direkter Vergleich der beiden Angebote spart oft eine Menge Geld.",
+    "ex_es": "Hacer una comparación de precios ayuda a ahorrar dinero en compras."
   },
   {
     "id": "word_1047",
@@ -13039,7 +13591,11 @@ export const vocabulary = [
     "de": "der Konkurrent",
     "es": "el competidor",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre principal concurrent a lancé un nouveau produit sur le marché.",
+    "ex_en": "Every competitor trained very hard before the national swimming championship started.",
+    "ex_de": "Unser stärkster Konkurrent hat gestern ein neues Produkt auf den Markt gebracht.",
+    "ex_es": "Cada competidor dio lo mejor de sí en la carrera final."
   },
   {
     "id": "word_1048",
@@ -13048,7 +13604,11 @@ export const vocabulary = [
     "de": "wettbewerbsfähig",
     "es": "competitivo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette entreprise propose des tarifs très compétitifs pour attirer les clients.",
+    "ex_en": "They offer very competitive prices compared to other stores in town.",
+    "ex_de": "Unsere günstigen Preise machen das Unternehmen auf dem internationalen Markt wettbewerbsfähig.",
+    "ex_es": "La empresa ofrece precios muy competitivos para ganar más clientes nuevos."
   },
   {
     "id": "word_1049",
@@ -13057,7 +13617,11 @@ export const vocabulary = [
     "de": "die Beschwerde",
     "es": "la queja",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le client mécontent a déposé une plainte formelle auprès du service.",
+    "ex_en": "The customer filed an official complaint about the poor hotel service.",
+    "ex_de": "Der unzufriedene Gast reichte eine schriftliche Beschwerde bei der Rezeption ein.",
+    "ex_es": "El usuario presentó una queja formal por el mal servicio recibido."
   },
   {
     "id": "word_1050",
@@ -13066,7 +13630,11 @@ export const vocabulary = [
     "de": "komplex",
     "es": "complejo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce problème mathématique est trop complexe pour être résolu rapidement aujourd'hui.",
+    "ex_en": "The scientist explained a complex theory in very simple daily terms.",
+    "ex_de": "Diese wissenschaftliche Aufgabe ist viel zu komplex für eine schnelle Lösung.",
+    "ex_es": "Este problema técnico es demasiado complejo para solucionarlo en un día."
   },
   {
     "id": "word_1051",
@@ -13075,7 +13643,11 @@ export const vocabulary = [
     "de": "sich konzentrieren",
     "es": "concentrarse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai besoin de silence pour me concentrer sur mon travail universitaire.",
+    "ex_en": "Please turn down the music so I can concentrate on reading.",
+    "ex_de": "Ich brauche absolute Ruhe im Zimmer, um mich voll zu konzentrieren.",
+    "ex_es": "Necesito silencio absoluto para concentrarme bien en el estudio diario."
   },
   {
     "id": "word_1052",
@@ -13084,7 +13656,11 @@ export const vocabulary = [
     "de": "schließen",
     "es": "concluir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le président va conclure son discours par un message d'espoir chaleureux.",
+    "ex_en": "The professor decided to conclude the long lecture with a summary.",
+    "ex_de": "Aus diesen klaren Ergebnissen können wir auf eine positive Entwicklung schließen.",
+    "ex_es": "El profesor va a concluir la conferencia con un breve resumen."
   },
   {
     "id": "word_1053",
@@ -13093,7 +13669,11 @@ export const vocabulary = [
     "de": "selbstbewusst",
     "es": "seguro",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle reste très confiante quant à ses chances de réussite future.",
+    "ex_en": "He felt confident that he would pass his final driving test.",
+    "ex_de": "Sie trat bei der Präsentation vor den Kollegen sehr selbstbewusst auf.",
+    "ex_es": "El candidato se siente muy seguro de aprobar el examen final."
   },
   {
     "id": "word_1054",
@@ -13102,7 +13682,11 @@ export const vocabulary = [
     "de": "bestätigen",
     "es": "confirmar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Veuillez confirmer votre présence à la réunion avant ce soir dix-huit heures.",
+    "ex_en": "Please check your inbox to confirm your hotel reservation right away.",
+    "ex_de": "Bitte senden Sie eine E-Mail, um Ihre Teilnahme morgen zu bestätigen.",
+    "ex_es": "Debes confirmar tu reserva por correo electrónico antes de la fecha."
   },
   {
     "id": "word_1055",
@@ -13111,7 +13695,11 @@ export const vocabulary = [
     "de": "verwirren",
     "es": "confundir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il ne faut pas confondre ces deux mots de sens différent.",
+    "ex_en": "Too many complex instructions will only confuse the new team members.",
+    "ex_de": "Zu viele widersprüchliche Informationen können die jungen Lerner leicht verwirren.",
+    "ex_es": "Es fácil confundir estas dos palabras porque tienen una pronunciación parecida."
   },
   {
     "id": "word_1056",
@@ -13120,7 +13708,11 @@ export const vocabulary = [
     "de": "verwirrt",
     "es": "confundido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'étudiant paraissait confus après avoir écouté cette longue explication technique.",
+    "ex_en": "I felt confused because the road signs were not clear at all.",
+    "ex_de": "Der Tourist wirkte sichtlich verwirrt, als er nach dem Weg fragte.",
+    "ex_es": "El turista parecía confundido al buscar la dirección en el mapa."
   },
   {
     "id": "word_1057",
@@ -13129,7 +13721,11 @@ export const vocabulary = [
     "de": "die Verbindung",
     "es": "la conexión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La connexion internet est particulièrement rapide dans ce nouvel immeuble moderne.",
+    "ex_en": "A stable internet connection is required to attend online classes smoothly.",
+    "ex_de": "Eine stabile Verbindung zum Internet ist für das mobile Arbeiten unverzichtbar.",
+    "ex_es": "La conexión a internet en la oficina funciona de manera rápida."
   },
   {
     "id": "word_1058",
@@ -13138,7 +13734,11 @@ export const vocabulary = [
     "de": "kontaktieren",
     "es": "contactar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous pouvez contacter le service client en cas de problème urgent.",
+    "ex_en": "Please feel free to contact us if you need more information.",
+    "ex_de": "Sie können uns jederzeit per Telefon oder E-Mail direkt kontaktieren.",
+    "ex_es": "Puedes contactar con el servicio de atención para cualquier duda adicional."
   },
   {
     "id": "word_1059",
@@ -13147,7 +13747,11 @@ export const vocabulary = [
     "de": "der Kontakt",
     "es": "el contacto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous sommes restés en contact régulier après notre voyage en Espagne.",
+    "ex_en": "We stayed in close contact throughout the entire summer vacation period.",
+    "ex_de": "Wir stehen seit der Schulzeit in regelmäßigem Kontakt miteinander.",
+    "ex_es": "Mantuvimos el contacto por correo electrónico durante todo el viaje escolar."
   },
   {
     "id": "word_1060",
@@ -13156,7 +13760,11 @@ export const vocabulary = [
     "de": "der Behälter",
     "es": "el contenedor",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Placez les vieux papiers dans le grand conteneur de recyclage vert.",
+    "ex_en": "Pour the leftover soup into a clean plastic container for storage.",
+    "ex_de": "Gießen Sie die restliche Flüssigkeit vorsichtig in einen verschlossenen Behälter.",
+    "ex_es": "Tira los envases de plástico en el contenedor amarillo del patio."
   },
   {
     "id": "word_1061",
@@ -13165,7 +13773,11 @@ export const vocabulary = [
     "de": "der Inhalt",
     "es": "el contenido",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le contenu de ce livre est très enrichissant pour les lecteurs.",
+    "ex_en": "The educational content of this website is suitable for all ages.",
+    "ex_de": "Der interessante Inhalt dieses Buches hat mich von Anfang an begeistert.",
+    "ex_es": "El contenido formativo del curso resultó muy útil para los participantes."
   },
   {
     "id": "word_1062",
@@ -13174,7 +13786,11 @@ export const vocabulary = [
     "de": "kontinuierlich",
     "es": "continuo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un apprentissage continu permet de progresser rapidement dans une langue étrangère.",
+    "ex_en": "Continuous effort is always necessary to achieve great long-term results.",
+    "ex_de": "Ein kontinuierliches Training verbessert die sportliche Ausdauer über viele Monate.",
+    "ex_es": "El esfuerzo continuo es fundamental para alcanzar cualquier meta profesional importante."
   },
   {
     "id": "word_1063",
@@ -13183,7 +13799,11 @@ export const vocabulary = [
     "de": "der Kontrast",
     "es": "el contraste",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le contraste entre la ville moderne et la vieille cité est saisissant.",
+    "ex_en": "There is a sharp contrast between modern buildings and ancient ruins.",
+    "ex_de": "Der starke Kontrast zwischen den beiden Farben wirkt sehr lebendig.",
+    "ex_es": "El contraste entre el campo y la ciudad es muy notable."
   },
   {
     "id": "word_1064",
@@ -13192,7 +13812,11 @@ export const vocabulary = [
     "de": "kontrastieren",
     "es": "contrastar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ses actions courageuses semblent contraster fortement avec ses paroles calmes habituelles.",
+    "ex_en": "Her bright red shoes contrast nicely with her dark blue coat.",
+    "ex_de": "Die hellen Farben kontrastieren sehr schön mit dem dunklen Hintergrund.",
+    "ex_es": "Sus ideas innovadoras suelen contrastar con las normas tradicionales del grupo."
   },
   {
     "id": "word_1065",
@@ -13201,7 +13825,11 @@ export const vocabulary = [
     "de": "praktisch",
     "es": "conveniente",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce supermarché de quartier est très pratique pour faire des courses.",
+    "ex_en": "Living near a train station is very convenient for daily commuters.",
+    "ex_de": "Diese kleine Tasche ist besonders praktisch für den täglichen Einkauf unterwegs.",
+    "ex_es": "Es conveniente revisar el coche antes de emprender un viaje largo."
   },
   {
     "id": "word_1066",
@@ -13210,7 +13838,11 @@ export const vocabulary = [
     "de": "überzeugen",
     "es": "convencer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a réussi à convaincre son patron avec des arguments solides.",
+    "ex_en": "She managed to convince her family to travel to Spain together.",
+    "ex_de": "Er konnte seine Eltern mit guten Argumenten von seiner Idee überzeugen.",
+    "ex_es": "Logró convencer a sus amigos para participar en el proyecto comunitario."
   },
   {
     "id": "word_1067",
@@ -13219,7 +13851,11 @@ export const vocabulary = [
     "de": "das Kupfer",
     "es": "el cobre",
     "type": "nom",
-    "level": "B2"
+    "level": "B2",
+    "ex_fr": "Les vieux tuyaux de la maison sont entièrement fabriqués en cuivre.",
+    "ex_en": "Ancient tools were often made from copper before iron was discovered.",
+    "ex_de": "Viele alte Rohre im Keller des Hauses bestehen aus reinem Kupfer.",
+    "ex_es": "Las tuberías de la casa antigua están hechas de cobre resistente."
   },
   {
     "id": "word_1068",
@@ -13228,7 +13864,11 @@ export const vocabulary = [
     "de": "das Kostüm",
     "es": "el disfraz",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a porté un costume élégant pour assister au mariage hier.",
+    "ex_en": "She wore a colorful carnival costume to the annual school party.",
+    "ex_de": "Sie trug ein buntes Kostüm bei der großen Feier im Theater.",
+    "ex_es": "Él llevó un disfraz divertido para la fiesta de carnaval escolar."
   },
   {
     "id": "word_1069",
@@ -13237,7 +13877,11 @@ export const vocabulary = [
     "de": "das Ferienhaus",
     "es": "la cabaña",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons loué un joli chalet en bois dans les montagnes.",
+    "ex_en": "They spent the weekend in a peaceful cottage near the lake.",
+    "ex_de": "Wir haben ein gemütliches Ferienhaus für unseren Urlaub am See gemietet.",
+    "ex_es": "Alquilamos una hermosa cabaña de madera cerca del lago para descansar."
   },
   {
     "id": "word_1070",
@@ -13246,7 +13890,11 @@ export const vocabulary = [
     "de": "die Baumwolle",
     "es": "el algodón",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette chemise est fabriquée avec du coton naturel doux et confortable.",
+    "ex_en": "This light summer shirt is made of pure and breathable cotton.",
+    "ex_de": "Dieses bequeme T-Shirt besteht zu hundert Prozent aus reiner Baumwolle.",
+    "ex_es": "Esta camiseta suave está hecha totalmente de algodón de gran calidad."
   },
   {
     "id": "word_1071",
@@ -13255,7 +13903,11 @@ export const vocabulary = [
     "de": "die Landschaft",
     "es": "el campo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous aimons nous promener à la campagne pendant les beaux jours.",
+    "ex_en": "They enjoy walking through the peaceful countryside during the warm weekends.",
+    "ex_de": "Die grüne Landschaft rund um das Dorf lädt zu langen Wanderungen ein.",
+    "ex_es": "Pasamos el fin de semana paseando por el campo con tranquilidad."
   },
   {
     "id": "word_1072",
@@ -13264,7 +13916,11 @@ export const vocabulary = [
     "de": "das Gericht",
     "es": "la corte",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le témoin principal a parlé devant le tribunal avec beaucoup de calme.",
+    "ex_en": "The players met on the tennis court to begin the championship match.",
+    "ex_de": "Der Zeuge sagte heute vor dem zuständigen Gericht wahrheitsgemäß aus.",
+    "ex_es": "El juez escuchó a los testigos en la corte esta mañana."
   },
   {
     "id": "word_1073",
@@ -13273,7 +13929,11 @@ export const vocabulary = [
     "de": "die Abdeckung",
     "es": "la cubierta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a choisi un livre avec une très jolie couverture illustrée.",
+    "ex_en": "The colorful book cover immediately caught the attention of young readers.",
+    "ex_de": "Die Schutzhülle dient als feste Abdeckung gegen Schmutz und Regen.",
+    "ex_es": "El libro tiene una cubierta ilustrada muy llamativa para los lectores."
   },
   {
     "id": "word_1074",
@@ -13282,7 +13942,11 @@ export const vocabulary = [
     "de": "bedecken",
     "es": "cubrir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous devez couvrir la casserole pour faire bouillir l'eau plus vite.",
+    "ex_en": "Remember to cover the warm food with foil to keep it fresh.",
+    "ex_de": "Im Winter schneit es oft und dicke Schneemassen bedecken die Straßen.",
+    "ex_es": "Debes cubrir la comida con una tapa para mantenerla bien caliente."
   },
   {
     "id": "word_1075",
@@ -13291,7 +13955,11 @@ export const vocabulary = [
     "de": "bedeckt",
     "es": "cubierto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le ciel était entièrement couvert de nuages gris pendant la matinée.",
+    "ex_en": "The mountain peaks were completely covered with fresh white snow yesterday.",
+    "ex_de": "Der Himmel war den ganzen Nachmittag über mit grauen Wolken bedeckt.",
+    "ex_es": "El suelo del bosque estaba cubierto de hojas secas en otoño."
   },
   {
     "id": "word_1076",
@@ -13300,7 +13968,11 @@ export const vocabulary = [
     "de": "erstellen",
     "es": "crear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'artiste a voulu créer une œuvre originale pour cette grande exposition.",
+    "ex_en": "The software enables designers to create beautiful animations very quickly.",
+    "ex_de": "Wir möchten ein neues Programm für die digitale Verwaltung im Betrieb erstellen.",
+    "ex_es": "El diseñador quiso crear una imagen atractiva para el nuevo producto."
   },
   {
     "id": "word_1077",
@@ -13309,7 +13981,11 @@ export const vocabulary = [
     "de": "der Kredit",
     "es": "el crédito",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont demandé un crédit bancaire pour acheter leur première maison.",
+    "ex_en": "You can pay for this expensive item using your credit card.",
+    "ex_de": "Die Familie nahm einen Kredit für das neue Haus auf.",
+    "ex_es": "Solicitamos un crédito bancario para reformar nuestra cocina este verano."
   },
   {
     "id": "word_1078",
@@ -13318,7 +13994,11 @@ export const vocabulary = [
     "de": "grausam",
     "es": "cruel",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est très cruel d'abandonner un animal domestique dans la rue.",
+    "ex_en": "It is cruel to treat animals badly under any circumstances whatsoever.",
+    "ex_de": "Es ist grausam, Tiere ohne Nahrung und Wasser draußen zu lassen.",
+    "ex_es": "Es una actitud cruel abandonar a una mascota en la calle."
   },
   {
     "id": "word_1079",
@@ -13327,7 +14007,11 @@ export const vocabulary = [
     "de": "kulturell",
     "es": "cultural",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette ville historique offre un riche patrimoine culturel à ses visiteurs.",
+    "ex_en": "We attended an interesting cultural festival during our stay in Spain.",
+    "ex_de": "Die Stadt bietet ein reiches und vielfältiges kulturelles Programm für Besucher.",
+    "ex_es": "Asistimos a un evento cultural sobre las tradiciones de la región."
   },
   {
     "id": "word_1080",
@@ -13336,7 +14020,11 @@ export const vocabulary = [
     "de": "die Kultur",
     "es": "la cultura",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Voyager permet de découvrir la culture fascinante de peuples très différents.",
+    "ex_en": "Learning a foreign language helps you understand another rich culture deeply.",
+    "ex_de": "Das Kennenlernen einer neuen Kultur bereichert unser Leben auf vielfältige Weise.",
+    "ex_es": "Viajar al extranjero te permite conocer la cultura de otros pueblos."
   },
   {
     "id": "word_1081",
@@ -13345,7 +14033,11 @@ export const vocabulary = [
     "de": "die Währung",
     "es": "la moneda",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'euro est la monnaie officielle utilisée dans de nombreux pays européens.",
+    "ex_en": "You should exchange some local currency before traveling to that country.",
+    "ex_de": "Der Euro ist die offizielle Währung in vielen europäischen Ländern heute.",
+    "ex_es": "Es conveniente cambiar moneda extranjera antes de iniciar el viaje internacional."
   },
   {
     "id": "word_1082",
@@ -13354,7 +14046,11 @@ export const vocabulary = [
     "de": "aktuell",
     "es": "actual",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La situation économique actuelle exige des décisions rapides et très prudentes.",
+    "ex_en": "Under current regulations, all passengers must wear a seatbelt at all times.",
+    "ex_de": "Die aktuelle Lage auf dem Markt erfordert schnelle und kluge Entscheidungen.",
+    "ex_es": "La situación actual del mercado laboral ofrece buenas oportunidades para jóvenes."
   },
   {
     "id": "word_1083",
@@ -13363,7 +14059,11 @@ export const vocabulary = [
     "de": "derzeit",
     "es": "actualmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il travaille actuellement sur un nouveau roman qui paraîtra en automne.",
+    "ex_en": "We are currently living in a rented flat near the university.",
+    "ex_de": "Wir arbeiten derzeit an einem wichtigen Projekt für internationale Kunden zusammen.",
+    "ex_es": "Actualmente estamos preparando la nueva campaña para el próximo año escolar."
   },
   {
     "id": "word_1084",
@@ -13372,7 +14072,11 @@ export const vocabulary = [
     "de": "der Vorhang",
     "es": "la cortina",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a ouvert le rideau pour laisser entrer le soleil matinal.",
+    "ex_en": "Please draw the bedroom curtain to block out the bright sunlight.",
+    "ex_de": "Sie zog den Vorhang auf, um die Morgensonne ins Zimmer zu lassen.",
+    "ex_es": "Abrí la cortina de la habitación para que entrara más luz."
   },
   {
     "id": "word_1085",
@@ -13381,7 +14085,11 @@ export const vocabulary = [
     "de": "der Brauch",
     "es": "la costumbre",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est une ancienne coutume locale de partager ce repas traditionnel ensemble.",
+    "ex_en": "It is a local custom to exchange small gifts on New Year.",
+    "ex_de": "Es ist ein alter Brauch, zu Neujahr kleine Geschenke auszutauschen.",
+    "ex_es": "Es una costumbre tradicional reunirse con la familia los domingos al mediodía."
   },
   {
     "id": "word_1086",
@@ -13390,7 +14098,11 @@ export const vocabulary = [
     "de": "der Schaden",
     "es": "el daño",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La violente tempête a causé des dégâts importants dans toute la région.",
+    "ex_en": "The heavy storm caused severe damage to several houses along the coast.",
+    "ex_de": "Der schwere Sturm verursachte großen Schaden an den Dächern der Stadt.",
+    "ex_es": "El fuerte temporal causó un gran daño en las cosechas agrícolas."
   },
   {
     "id": "word_1087",
@@ -13399,7 +14111,11 @@ export const vocabulary = [
     "de": "beschädigen",
     "es": "dañar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'humidité excessive peut rapidement endommager les meubles anciens en bois massif.",
+    "ex_en": "Careless handling could damage the delicate parts of this expensive machine.",
+    "ex_de": "Starke Feuchtigkeit kann empfindliche Möbel aus Holz mit der Zeit beschädigen.",
+    "ex_es": "El agua de lluvia puede dañar los aparatos electrónicos mal protegidos."
   },
   {
     "id": "word_1088",
@@ -13408,7 +14124,11 @@ export const vocabulary = [
     "de": "handeln",
     "es": "tratar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons traiter ce problème avec beaucoup d'attention et de calme.",
+    "ex_en": "The company had to deal with several unexpected financial challenges recently.",
+    "ex_de": "Wir müssen in schwierigen Situationen immer schnell und überlegt handeln.",
+    "ex_es": "Debemos tratar este asunto delicado con mucho cuidado y respeto profesional."
   },
   {
     "id": "word_1089",
@@ -13417,7 +14137,11 @@ export const vocabulary = [
     "de": "das Jahrzehnt",
     "es": "la década",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette technologie a complètement changé notre quotidien au cours de la dernière décennie.",
+    "ex_en": "This technology has completely changed our daily lives over the last decade.",
+    "ex_de": "Diese Technologie hat unser tägliches Leben im letzten Jahrzehnt komplett verändert.",
+    "ex_es": "Esta tecnología ha cambiado completamente nuestra vida durante la última década."
   },
   {
     "id": "word_1090",
@@ -13426,7 +14150,11 @@ export const vocabulary = [
     "de": "dekorieren",
     "es": "decorar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous allons décorer le salon avec des guirlandes pour la fête d'anniversaire.",
+    "ex_en": "We are going to decorate the living room with garlands for the party.",
+    "ex_de": "Wir werden das Wohnzimmer mit bunten Girlanden für die große Geburtstagsparty dekorieren.",
+    "ex_es": "Vamos a decorar la sala con guirnaldas para la fiesta de cumpleaños."
   },
   {
     "id": "word_1091",
@@ -13435,7 +14163,11 @@ export const vocabulary = [
     "de": "der Hirsch",
     "es": "el ciervo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pendant notre promenade dans la forêt, nous avons aperçu un grand cerf.",
+    "ex_en": "During our morning walk in the forest, we saw a large deer.",
+    "ex_de": "Bei unserem Spaziergang im Wald haben wir einen großen Hirsch gesehen.",
+    "ex_es": "Durante nuestro paseo por el bosque, vimos un gran ciervo tranquilo."
   },
   {
     "id": "word_1092",
@@ -13444,7 +14176,11 @@ export const vocabulary = [
     "de": "definitiv",
     "es": "definitivo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le directeur n'a pas encore donné de réponse définitive à ma demande.",
+    "ex_en": "The manager has not yet given a definite answer to my request.",
+    "ex_de": "Der Chef hat noch keine definitive Antwort auf meine offizielle Anfrage gegeben.",
+    "ex_es": "El director todavía no ha dado una respuesta definitiva a mi solicitud."
   },
   {
     "id": "word_1093",
@@ -13453,7 +14189,11 @@ export const vocabulary = [
     "de": "liefern",
     "es": "entregar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le facteur doit livrer ce colis important avant la fin de l'après-midi.",
+    "ex_en": "The courier must deliver this important package before the end of afternoon.",
+    "ex_de": "Der Bote muss dieses wichtige Paket vor dem späten Nachmittag liefern.",
+    "ex_es": "El repartidor debe entregar este paquete importante antes de que termine la tarde."
   },
   {
     "id": "word_1094",
@@ -13462,7 +14202,11 @@ export const vocabulary = [
     "de": "die Abfahrt",
     "es": "la salida",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons arriver à la gare une heure avant le départ du train.",
+    "ex_en": "We need to arrive at the station before the departure of train.",
+    "ex_de": "Wir müssen eine Stunde vor der Abfahrt des Zuges am Bahnhof ankommen.",
+    "ex_es": "Debemos llegar a la estación una hora antes de la salida del tren."
   },
   {
     "id": "word_1095",
@@ -13471,7 +14215,11 @@ export const vocabulary = [
     "de": "der Desktop",
     "es": "el escritorio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai enregistré tous les nouveaux documents directement sur mon bureau d'ordinateur.",
+    "ex_en": "I saved all the new work documents directly onto my desktop.",
+    "ex_de": "Ich habe alle neuen Dokumente direkt auf meinem Desktop gespeichert.",
+    "ex_es": "He guardado todos los documentos nuevos directamente en mi escritorio del ordenador."
   },
   {
     "id": "word_1096",
@@ -13480,7 +14228,11 @@ export const vocabulary = [
     "de": "trotz",
     "es": "a pesar de",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont décidé de faire une randonnée malgré le mauvais temps annoncé.",
+    "ex_en": "They decided to go for a hike despite the bad weather forecast.",
+    "ex_de": "Trotz des schlechten Wetters haben sie beschlossen, eine lange Wanderung zu machen.",
+    "ex_es": "Decidieron hacer una larga caminata a pesar del mal tiempo previsto."
   },
   {
     "id": "word_1097",
@@ -13489,7 +14241,11 @@ export const vocabulary = [
     "de": "das Ziel",
     "es": "el destino",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'Italie reste une destination très populaire pour les vacances d'été en famille.",
+    "ex_en": "Italy remains a very popular holiday destination for many European families.",
+    "ex_de": "Italien bleibt ein sehr beliebtes Ziel für den Sommerurlaub mit der Familie.",
+    "ex_es": "Italia sigue siendo un destino muy popular para las vacaciones de verano."
   },
   {
     "id": "word_1098",
@@ -13498,7 +14254,11 @@ export const vocabulary = [
     "de": "entschlossen",
     "es": "determinado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est très déterminé à réussir son examen de français cette année.",
+    "ex_en": "He is very determined to pass his foreign language exam this year.",
+    "ex_de": "Er ist sehr entschlossen, seine schwere Sprachprüfung in diesem Jahr zu bestehen.",
+    "ex_es": "Él está muy determinado a aprobar su examen de idiomas este año."
   },
   {
     "id": "word_1099",
@@ -13507,7 +14267,11 @@ export const vocabulary = [
     "de": "die Entwicklung",
     "es": "el desarrollo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'entreprise investit beaucoup d'argent dans le développement de nouveaux logiciels informatiques.",
+    "ex_en": "The company invests a lot of money in the development of software.",
+    "ex_de": "Das Unternehmen investiert viel Geld in die Entwicklung neuer moderner Software.",
+    "ex_es": "La empresa invierte mucho dinero en el desarrollo de nuevos programas informáticos."
   },
   {
     "id": "word_1100",
@@ -13516,7 +14280,11 @@ export const vocabulary = [
     "de": "das Diagramm",
     "es": "el diagrama",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le professeur nous a montré un diagramme pour expliquer les résultats récents.",
+    "ex_en": "The teacher showed us a diagram to explain the survey results clearly.",
+    "ex_de": "Der Lehrer zeigte uns ein Diagramm, um die aktuellen Ergebnisse zu erklären.",
+    "ex_es": "El profesor nos mostró un diagrama para explicar los resultados del estudio."
   },
   {
     "id": "word_1101",
@@ -13525,7 +14293,11 @@ export const vocabulary = [
     "de": "der Diamant",
     "es": "el diamante",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle porte une magnifique bague ornée d'un petit diamant brillant.",
+    "ex_en": "She wears a beautiful gold ring decorated with a sparkling diamond.",
+    "ex_de": "Sie trägt einen wunderschönen Ring mit einem kleinen funkelnden Diamant darauf.",
+    "ex_es": "Ella lleva un hermoso anillo adornado con un pequeño diamante brillante."
   },
   {
     "id": "word_1102",
@@ -13534,7 +14306,11 @@ export const vocabulary = [
     "de": "die Schwierigkeit",
     "es": "la dificultad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons surmonté chaque difficulté grâce au travail sérieux de toute l'équipe.",
+    "ex_en": "We overcame every difficulty thanks to the hard work of our team.",
+    "ex_de": "Wir haben jede Schwierigkeit durch den engagierten Einsatz des Teams überwunden.",
+    "ex_es": "Superamos cada dificultad gracias al trabajo serio de todo el equipo."
   },
   {
     "id": "word_1103",
@@ -13543,7 +14319,11 @@ export const vocabulary = [
     "de": "direkt",
     "es": "directo",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le policier fait un geste de la main pour diriger la circulation.",
+    "ex_en": "The officer used hand signals to direct traffic at the intersection.",
+    "ex_de": "Der Polizist gab Handzeichen, um den Verkehr direkt nach rechts zu leiten.",
+    "ex_es": "El policía hace un gesto para dirigir el tráfico de manera segura."
   },
   {
     "id": "word_1104",
@@ -13552,7 +14332,11 @@ export const vocabulary = [
     "de": "direkt",
     "es": "directamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous pouvez vous adresser directement à l'accueil si vous avez une question.",
+    "ex_en": "You can speak directly to the reception if you need any assistance.",
+    "ex_de": "Sie können sich direkt an den Empfang wenden, wenn Sie Fragen haben.",
+    "ex_es": "Puede dirigirse directamente a la recepción si necesita alguna información adicional."
   },
   {
     "id": "word_1105",
@@ -13561,7 +14345,11 @@ export const vocabulary = [
     "de": "der Schmutz",
     "es": "la suciedad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Après avoir joué dehors, les enfants avaient beaucoup de saleté sur leurs vêtements.",
+    "ex_en": "After playing outside, the children had washed the dirt off their clothes.",
+    "ex_de": "Nach dem Spielen im Garten war viel Schmutz an den Schuhen sichtbar.",
+    "ex_es": "Después de jugar afuera, los niños tenían mucha suciedad en su ropa."
   },
   {
     "id": "word_1106",
@@ -13570,7 +14358,11 @@ export const vocabulary = [
     "de": "der Nachteil",
     "es": "la desventaja",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le principal désavantage de vivre en ville est le bruit de la circulation.",
+    "ex_en": "The main disadvantage of living in a big city is high rent.",
+    "ex_de": "Der größte Nachteil des Lebens in der Stadt ist der ständige Lärm.",
+    "ex_es": "La principal desventaja de vivir en el centro es el ruido diario."
   },
   {
     "id": "word_1107",
@@ -13579,7 +14371,11 @@ export const vocabulary = [
     "de": "enttäuscht",
     "es": "decepcionado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il était très déçu parce que son équipe favorite a perdu la finale.",
+    "ex_en": "He was very disappointed because his favorite football team lost the final.",
+    "ex_de": "Er war sehr enttäuscht, weil seine Mannschaft das wichtige Finale verloren hat.",
+    "ex_es": "Estaba muy decepcionado porque su equipo favorito perdió el partido final."
   },
   {
     "id": "word_1108",
@@ -13588,7 +14384,11 @@ export const vocabulary = [
     "de": "enttäuschend",
     "es": "decepcionante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La fin de ce film était vraiment décevante par rapport au roman.",
+    "ex_en": "The ending of the film was rather disappointing compared to the book.",
+    "ex_de": "Das Ende des Films war im Vergleich zum Buch wirklich sehr enttäuschend.",
+    "ex_es": "El final de esta película fue bastante decepcionante respecto a la novela."
   },
   {
     "id": "word_1109",
@@ -13597,7 +14397,11 @@ export const vocabulary = [
     "de": "der Rabatt",
     "es": "el descuento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le magasin propose une belle remise de dix pour cent aux étudiants.",
+    "ex_en": "The store offers a special discount of ten percent for university students.",
+    "ex_de": "Das Geschäft bietet allen Studenten einen Rabatt von zehn Prozent beim Einkauf.",
+    "ex_es": "La tienda ofrece un interesante descuento del diez por ciento a estudiantes."
   },
   {
     "id": "word_1110",
@@ -13606,7 +14410,11 @@ export const vocabulary = [
     "de": "diskutieren",
     "es": "discutir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons nous réunir demain afin de discuter de notre nouveau projet.",
+    "ex_en": "We should meet tomorrow morning to discuss the details of our project.",
+    "ex_de": "Wir müssen uns morgen treffen, um über das neue Projekt zu diskutieren.",
+    "ex_es": "Debemos reunirnos mañana por la mañana para discutir sobre el nuevo proyecto."
   },
   {
     "id": "word_1111",
@@ -13615,7 +14423,11 @@ export const vocabulary = [
     "de": "nicht mögen",
     "es": "no gustar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon jeune frère a toujours tendance à ne pas aimer les légumes.",
+    "ex_en": "I really dislike waking up very early when it is freezing outside.",
+    "ex_de": "Viele Kinder mögen es gar nicht, wenn sie früh schlafen gehen müssen.",
+    "ex_es": "A mi hermano suele no gustarle comer verduras cocidas en la cena."
   },
   {
     "id": "word_1112",
@@ -13624,7 +14436,11 @@ export const vocabulary = [
     "de": "teilen",
     "es": "dividir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous allons diviser le gâteau d'anniversaire en huit parts parfaitement égales.",
+    "ex_en": "We need to divide the cake into equal parts for our guests.",
+    "ex_de": "Wir werden den Kuchen in acht gleiche Teile für alle Gäste teilen.",
+    "ex_es": "Vamos a dividir la tarta en ocho porciones iguales para los invitados."
   },
   {
     "id": "word_1113",
@@ -13633,7 +14449,11 @@ export const vocabulary = [
     "de": "der Dokumentarfilm",
     "es": "el documental",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Hier soir, j'ai regardé un documentaire passionnant sur les animaux marins.",
+    "ex_en": "Last night, I watched an interesting documentary about ocean wildlife on television.",
+    "ex_de": "Gestern Abend sah ich einen interessanten Dokumentarfilm über Tiere im Meer.",
+    "ex_es": "Anoche vi un documental muy interesante sobre los animales marinos."
   },
   {
     "id": "word_1114",
@@ -13642,7 +14462,11 @@ export const vocabulary = [
     "de": "spenden",
     "es": "donar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque hiver, les habitants choisissent de faire un don aux associations caritatives.",
+    "ex_en": "Many people choose to donate warm clothes to charity during the winter.",
+    "ex_de": "Viele Bürger spenden jedes Jahr Geld an eine gemeinnützige Organisation vor Ort.",
+    "ex_es": "Muchas personas deciden donar ropa de abrigo a organizaciones benéficas locales."
   },
   {
     "id": "word_1115",
@@ -13651,7 +14475,11 @@ export const vocabulary = [
     "de": "der Zweifel",
     "es": "la duda",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il n'y a aucun doute sur les compétences professionnelles de cet ingénieur.",
+    "ex_en": "There is no doubt that she will pass the exam without problems.",
+    "ex_de": "Es gibt keinen Zweifel daran, dass er die Aufgaben erfolgreich meistert.",
+    "ex_es": "No cabe ninguna duda sobre la gran profesionalidad de este nuevo médico."
   },
   {
     "id": "word_1116",
@@ -13660,7 +14488,11 @@ export const vocabulary = [
     "de": "zweifeln",
     "es": "dudar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je commence à douter de la sincérité de ses explications récentes.",
+    "ex_en": "I doubt whether the train will arrive on schedule after the storm.",
+    "ex_de": "Ich beginne daran zu zweifeln, dass der Zug heute pünktlich ankommt.",
+    "ex_es": "Empiezo a dudar de que podamos terminar este informe antes del mediodía."
   },
   {
     "id": "word_1117",
@@ -13669,7 +14501,11 @@ export const vocabulary = [
     "de": "gekleidet",
     "es": "vestido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pour cette grande soirée de gala, tout le monde était élégamment habillé.",
+    "ex_en": "For this formal dinner party, everyone was very smartly dressed indeed.",
+    "ex_de": "Für dieses festliche Abendessen war jeder Gast im Restaurant elegant gekleidet.",
+    "ex_es": "Para esta cena de gala, todo el mundo estaba elegantemente vestido."
   },
   {
     "id": "word_1118",
@@ -13678,7 +14514,11 @@ export const vocabulary = [
     "de": "betrunken",
     "es": "borracho",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il ne doit pas conduire sa voiture parce qu'il est ivre ce soir.",
+    "ex_en": "He should not drive his car because he is clearly drunk tonight.",
+    "ex_de": "Er darf nicht mehr Auto fahren, weil er heute Abend betrunken ist.",
+    "ex_es": "Él no debe conducir su coche porque está claramente borracho esta noche."
   },
   {
     "id": "word_1119",
@@ -13687,7 +14527,11 @@ export const vocabulary = [
     "de": "fällig",
     "es": "debido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le paiement de notre facture d'électricité est dû à la fin du mois.",
+    "ex_en": "The final assignment for this course is due by next Friday afternoon.",
+    "ex_de": "Die Bezahlung der monatlichen Miete ist immer am Monatsende fällig.",
+    "ex_es": "El pago de las facturas pendientes es debido a finales de este mes."
   },
   {
     "id": "word_1120",
@@ -13696,7 +14540,11 @@ export const vocabulary = [
     "de": "der Staub",
     "es": "el polvo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il faut essuyer la poussière sur les meubles au moins une fois par semaine.",
+    "ex_en": "You should clean the dust off your bookshelves with a wet cloth.",
+    "ex_de": "Man muss den Staub von den Holzmöbeln regelmäßig mit einem Tuch abwischen.",
+    "ex_es": "Hay que limpiar el polvo acumulado en los muebles del salón regularmente."
   },
   {
     "id": "word_1121",
@@ -13705,7 +14553,11 @@ export const vocabulary = [
     "de": "die Pflicht",
     "es": "el deber",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est le devoir de chaque citoyen de voter aux élections municipales importantes.",
+    "ex_en": "It is the moral duty of every citizen to protect public parks.",
+    "ex_de": "Es ist die Pflicht jedes Bürgers, an den wichtigen Wahlen teilzunehmen.",
+    "ex_es": "Es el deber cívico de todo ciudadano participar activamente en las elecciones."
   },
   {
     "id": "word_1122",
@@ -13714,7 +14566,11 @@ export const vocabulary = [
     "de": "das Erdbeben",
     "es": "el terremoto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Heureusement, le violent tremblement de terre n'a causé aucune victime dans la région.",
+    "ex_en": "The sudden earthquake caused minor damage to several older buildings in town.",
+    "ex_de": "Glücklicherweise forderte das schwere Erdbeben in dieser Region keine menschlichen Opfer.",
+    "ex_es": "Afortunadamente, el fuerte terremoto no causó daños graves en los edificios residenciales."
   },
   {
     "id": "word_1123",
@@ -13723,7 +14579,11 @@ export const vocabulary = [
     "de": "östlich",
     "es": "oriental",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons visité plusieurs villes magnifiques dans la partie orientale du pays.",
+    "ex_en": "We travelled through several historic villages in the eastern region last summer.",
+    "ex_de": "Wir haben viele historische Städte im östlichen Teil des Landes besucht.",
+    "ex_es": "Visitamos varios pueblos con encanto en la parte oriental de la isla."
   },
   {
     "id": "word_1124",
@@ -13732,7 +14592,11 @@ export const vocabulary = [
     "de": "wirtschaftlich",
     "es": "económico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La crise mondiale a provoqué une situation économique compliquée pour les commerces.",
+    "ex_en": "The global crisis caused severe economic problems for small local businesses.",
+    "ex_de": "Die Krise führte zu einer schwierigen wirtschaftlichen Situation für viele kleine Unternehmen.",
+    "ex_es": "La crisis provocó una situación económica difícil para muchas pequeñas empresas locales."
   },
   {
     "id": "word_1125",
@@ -13741,7 +14605,11 @@ export const vocabulary = [
     "de": "die Wirtschaft",
     "es": "la economía",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le tourisme international joue un rôle essentiel dans l'économie de cette île.",
+    "ex_en": "Tourism plays a vital role in supporting the local economy all year.",
+    "ex_de": "Der Tourismus spielt eine sehr wichtige Rolle für die Wirtschaft dieser Region.",
+    "ex_es": "El sector turístico desempeña un papel clave en la economía del país."
   },
   {
     "id": "word_1126",
@@ -13750,7 +14618,11 @@ export const vocabulary = [
     "de": "der Rand",
     "es": "el borde",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ne pose pas ta tasse de café trop près du bord de la table.",
+    "ex_en": "Do not put your glass too close to the edge of table.",
+    "ex_de": "Stelle dein Glas nicht zu nah an den Rand des Tisches.",
+    "ex_es": "No dejes tu vaso de agua cerca del borde de la mesa."
   },
   {
     "id": "word_1127",
@@ -13759,7 +14631,11 @@ export const vocabulary = [
     "de": "der Redakteur",
     "es": "el editor",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'éditeur a corrigé les erreurs du manuscrit avant la publication du roman.",
+    "ex_en": "The chief editor checked the newspaper article before publishing it online.",
+    "ex_de": "Der erfahrene Redakteur korrigierte den Text sorgfältig vor der Veröffentlichung.",
+    "ex_es": "El editor corrigió los errores del texto antes de publicar el libro."
   },
   {
     "id": "word_1128",
@@ -13768,7 +14644,11 @@ export const vocabulary = [
     "de": "ausbilden",
     "es": "educar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les parents essaient d'éduquer leurs enfants avec beaucoup de patience et d'attention.",
+    "ex_en": "Schools should educate young students about environmental protection and healthy habits.",
+    "ex_de": "Die Berufsschule möchte junge Leute für ihren zukünftigen Beruf gründlich ausbilden.",
+    "ex_es": "Los padres deben educar a sus hijos con amor y límites claros."
   },
   {
     "id": "word_1129",
@@ -13777,7 +14657,11 @@ export const vocabulary = [
     "de": "gebildet",
     "es": "educado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est une femme très instruite et bien éduquée qui dirige cette institution.",
+    "ex_en": "She is a highly educated professional who manages several international projects.",
+    "ex_de": "Er ist ein sehr gebildeter Mann, der fließend drei Sprachen spricht.",
+    "ex_es": "Es un hombre muy educado y respetuoso con todos sus compañeros de trabajo."
   },
   {
     "id": "word_1130",
@@ -13786,7 +14670,11 @@ export const vocabulary = [
     "de": "lehrreich",
     "es": "educativo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce jeu de société est à la fois amusant et très éducatif pour les enfants.",
+    "ex_en": "This museum visit was an educational experience for all high school students.",
+    "ex_de": "Die Führung durch das Wissenschaftsmuseum war für alle Schüler sehr lehrreich.",
+    "ex_es": "Este programa de televisión es divertido y educativo para toda la familia."
   },
   {
     "id": "word_1131",
@@ -13795,7 +14683,11 @@ export const vocabulary = [
     "de": "die Auswirkung",
     "es": "el efecto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce nouveau traitement médical produit un effet très positif sur la santé du patient.",
+    "ex_en": "The new law will have a direct effect on public transport prices.",
+    "ex_de": "Der Klimawandel hat eine spürbare Auswirkung auf die Natur unserer Region.",
+    "ex_es": "Este medicamento suele producir un efecto calmante después de unos minutos."
   },
   {
     "id": "word_1132",
@@ -13804,7 +14696,11 @@ export const vocabulary = [
     "de": "effektiv",
     "es": "efectivo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette stratégie de travail est particulièrement efficace pour gagner du temps au bureau.",
+    "ex_en": "Using digital tools proved to be an effective way to organise work.",
+    "ex_de": "Diese Lernmethode ist sehr effektiv, um fremde Vokabeln schnell zu behalten.",
+    "ex_es": "Este método de estudio resulta muy efectivo para aprender vocabulario rápidamente."
   },
   {
     "id": "word_1133",
@@ -13813,7 +14709,11 @@ export const vocabulary = [
     "de": "effektiv",
     "es": "eficazmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'équipe a collaboré efficacement pour terminer le projet avant la date limite.",
+    "ex_en": "The team worked effectively together to meet the strict project deadline.",
+    "ex_de": "Die Mitarbeiter arbeiteten sehr effektiv zusammen, um die Aufgabe pünktlich abzuschließen.",
+    "ex_es": "El equipo colaboró eficazmente para resolver los problemas técnicos antes del mediodía."
   },
   {
     "id": "word_1134",
@@ -13822,7 +14722,11 @@ export const vocabulary = [
     "de": "die Anstrengung",
     "es": "el esfuerzo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a fallu un grand effort collectif pour organiser ce festival d'art.",
+    "ex_en": "Learning a new musical instrument requires continuous effort and strong patience.",
+    "ex_de": "Es erforderte viel Anstrengung, den steilen Berg im Regen zu besteigen.",
+    "ex_es": "Aprender un nuevo idioma requiere constancia y un gran esfuerzo diario."
   },
   {
     "id": "word_1135",
@@ -13831,7 +14735,11 @@ export const vocabulary = [
     "de": "die Wahl",
     "es": "la elección",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les citoyens vont voter dimanche prochain lors de la nouvelle élection municipale.",
+    "ex_en": "Many people participated in the general election to choose their representative.",
+    "ex_de": "Bei der nächsten Wahl des Bürgermeisters können alle Bürger ihre Stimme abgeben.",
+    "ex_es": "Muchos ciudadanos acudieron a votar durante la última elección presidencial del domingo."
   },
   {
     "id": "word_1136",
@@ -13840,7 +14748,11 @@ export const vocabulary = [
     "de": "verlegen",
     "es": "avergonzado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il s'est senti embarrassé quand il a oublié le nom de son client.",
+    "ex_en": "She felt quite embarrassed when she arrived late for the important meeting.",
+    "ex_de": "Er war sichtlich verlegen, als er den Namen seines neuen Nachbarn vergaß.",
+    "ex_es": "Se sintió avergonzado cuando llegó tarde a la reunión con el cliente."
   },
   {
     "id": "word_1137",
@@ -13849,7 +14761,11 @@ export const vocabulary = [
     "de": "peinlich",
     "es": "vergonzoso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Confondre ces deux personnes était une situation particulièrement embarrassante lors du dîner.",
+    "ex_en": "It was an embarrassing mistake that made everyone in the room laugh.",
+    "ex_de": "Das war eine wirklich peinliche Situation vor all den versammelten Gästen.",
+    "ex_es": "Cometer ese error gramatical en público fue un momento bastante vergonzoso."
   },
   {
     "id": "word_1138",
@@ -13858,7 +14774,11 @@ export const vocabulary = [
     "de": "der Notfall",
     "es": "la emergencia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "En cas d'urgence, vous devez composer le numéro de téléphone des secours.",
+    "ex_en": "In case of emergency, please leave the building by the nearest stairs.",
+    "ex_de": "Im Falle eines Notrufs oder bei einem Notfall wählen Sie diese Nummer.",
+    "ex_es": "En caso de emergencia, debe utilizar la salida de seguridad más cercana."
   },
   {
     "id": "word_1139",
@@ -13867,7 +14787,11 @@ export const vocabulary = [
     "de": "die Emotion",
     "es": "la emoción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle n'a pas pu cacher son émotion en recevant son diplôme universitaire.",
+    "ex_en": "He spoke with deep emotion about his childhood memories in the country.",
+    "ex_de": "Sie konnte ihre starke Emotion bei der Verleihung der Urkunde kaum verbergen.",
+    "ex_es": "Ella no pudo contener la emoción al recibir el premio en público."
   },
   {
     "id": "word_1140",
@@ -13876,7 +14800,11 @@ export const vocabulary = [
     "de": "die Beschäftigung",
     "es": "el empleo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Trouver un emploi stable reste l'objectif prioritaire pour ces jeunes diplômés.",
+    "ex_en": "The government created new policies to increase full-time employment for youth.",
+    "ex_de": "Eine sichere Beschäftigung im öffentlichen Dienst bietet viele Vorteile für Familien.",
+    "ex_es": "Conseguir un empleo a tiempo completo es la prioridad de muchos jóvenes."
   },
   {
     "id": "word_1141",
@@ -13885,7 +14813,11 @@ export const vocabulary = [
     "de": "ermutigen",
     "es": "animar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les professeurs aiment encourager les élèves à lire des livres chaque semaine.",
+    "ex_en": "Good teachers always encourage students to ask questions and share ideas.",
+    "ex_de": "Wir sollten junge Menschen dazu ermutigen, neue Dinge selbstbewusst auszuprobieren.",
+    "ex_es": "Los profesores deben animar a los alumnos a participar en las actividades."
   },
   {
     "id": "word_1142",
@@ -13894,7 +14826,11 @@ export const vocabulary = [
     "de": "der Feind",
     "es": "el enemigo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Dans ce roman historique, le chevalier combat un ennemi redoutable et cruel.",
+    "ex_en": "In the exciting fantasy novel, the hero defeats a dangerous enemy.",
+    "ex_de": "In diesem Roman kämpft die Hauptfigur tapfer gegen einen mächtigen Feind.",
+    "ex_es": "En la historia de aventuras, el caballero lucha contra un peligroso enemigo."
   },
   {
     "id": "word_1143",
@@ -13903,7 +14839,11 @@ export const vocabulary = [
     "de": "verlobt / besetzt",
     "es": "comprometido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont annoncé à leurs familles respectives qu'ils étaient fiancés depuis hier.",
+    "ex_en": "They announced that they got engaged after five years of dating.",
+    "ex_de": "Die beiden haben ihren Freunden erzählt, dass sie seit gestern verlobt sind.",
+    "ex_es": "Anunciaron a sus familiares que están felizmente comprometidos desde el mes pasado."
   },
   {
     "id": "word_1144",
@@ -13912,7 +14852,11 @@ export const vocabulary = [
     "de": "das Ingenieurwesen",
     "es": "la ingeniería",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon cousin étudie l'ingénierie mécanique dans une grande université à Paris.",
+    "ex_en": "She decided to study civil engineering at university to build bridges.",
+    "ex_de": "Er interessiert sich sehr für das Ingenieurwesen und möchte Brücken konstruieren.",
+    "ex_es": "Mi hermano menor estudia ingeniería industrial en una universidad muy reconocida."
   },
   {
     "id": "word_1145",
@@ -13921,7 +14865,11 @@ export const vocabulary = [
     "de": "unterhalten",
     "es": "entretener",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce magicien talentueux réussit toujours à divertir les petits comme les grands.",
+    "ex_en": "The clown knows how to entertain children with simple funny magic tricks.",
+    "ex_de": "Der Zauberer konnte das junge Publikum den ganzen Nachmittag lang unterhalten.",
+    "ex_es": "El animador sabe cómo entretener a los niños con divertidos juegos interactivos."
   },
   {
     "id": "word_1146",
@@ -13930,7 +14878,11 @@ export const vocabulary = [
     "de": "die Unterhaltung",
     "es": "el entretenimiento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le centre-ville propose de nombreuses options de divertissement pour les touristes.",
+    "ex_en": "The city center provides plenty of entertainment options for visitors and families.",
+    "ex_de": "Die Stadt bietet viel Unterhaltung mit Theatern, Kinos und gemütlichen Cafés.",
+    "ex_es": "Este parque temático ofrece diversas formas de entretenimiento para toda la familia."
   },
   {
     "id": "word_1147",
@@ -13939,7 +14891,11 @@ export const vocabulary = [
     "de": "der Eingang",
     "es": "la entrada",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous nous sommes donné rendez-vous devant l'entrée principale du musée d'art.",
+    "ex_en": "Please wait for me near the main entrance of the building.",
+    "ex_de": "Wir trafen uns pünktlich vor dem Eingang des großen Kunstmuseums in Berlin.",
+    "ex_es": "Nos encontramos puntualmente en la entrada principal del museo de arte contemporáneo."
   },
   {
     "id": "word_1148",
@@ -13948,7 +14904,11 @@ export const vocabulary = [
     "de": "der Eintritt",
     "es": "la entrada",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'entrée à ce concert de jazz est gratuite pour tous les étudiants.",
+    "ex_en": "Free entry is granted to all students with a valid university card.",
+    "ex_de": "Der Eintritt in die Galerie ist am ersten Sonntag im Monat frei.",
+    "ex_es": "La entrada a la exposición temporal es gratuita para los socios culturales."
   },
   {
     "id": "word_1149",
@@ -13957,7 +14917,11 @@ export const vocabulary = [
     "de": "die Umwelt",
     "es": "el medio ambiente",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons faire attention à l'environnement en réduisant nos déchets plastiques quotidiens.",
+    "ex_en": "Everyone can help protect the natural environment by using public transport regularly.",
+    "ex_de": "Wir müssen die Umwelt schützen, indem wir weniger Müll im Alltag produzieren.",
+    "ex_es": "Debemos cuidar el medio ambiente usando el transporte público con más frecuencia."
   },
   {
     "id": "word_1150",
@@ -13966,7 +14930,11 @@ export const vocabulary = [
     "de": "Umwelt-",
     "es": "ambiental",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La pollution de l'air constitue un problème environnemental majeur pour notre ville.",
+    "ex_en": "Climate change poses a serious environmental threat to coastal communities worldwide.",
+    "ex_de": "Die Luftverschmutzung ist ein ernstes Umweltproblem in vielen großen europäischen Städten.",
+    "ex_es": "La contaminación marina es un grave problema medioambiental que debemos solucionar pronto."
   },
   {
     "id": "word_1151",
@@ -13975,7 +14943,11 @@ export const vocabulary = [
     "de": "die Episode",
     "es": "el episodio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai regardé le dernier épisode de ma série télévisée préférée hier soir.",
+    "ex_en": "We watched an exciting new episode of that mystery series last night.",
+    "ex_de": "Gestern Abend habe ich die spannende neue Folge meiner Lieblingsserie angeschaut.",
+    "ex_es": "Anoche vi el último episodio de mi serie de televisión preferida."
   },
   {
     "id": "word_1152",
@@ -13984,7 +14956,11 @@ export const vocabulary = [
     "de": "gleich",
     "es": "igual",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tous les citoyens doivent bénéficier d'un traitement égal devant la loi.",
+    "ex_en": "Men and women should always receive equal pay for the same job.",
+    "ex_de": "Alle Menschen sollten die gleichen Chancen auf eine gute Ausbildung haben.",
+    "ex_es": "Todos los ciudadanos tienen derecho a un trato igual ante los tribunales."
   },
   {
     "id": "word_1153",
@@ -13993,7 +14969,11 @@ export const vocabulary = [
     "de": "gleichermaßen",
     "es": "igualmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ces deux langues étrangères sont également importantes pour trouver un bon poste.",
+    "ex_en": "Both options are equally attractive and offer great opportunities for young graduates.",
+    "ex_de": "Beide Kandidaten sind gleichermaßen qualifiziert für die offene Stelle im Büro.",
+    "ex_es": "Ambas propuestas son igualmente interesantes para mejorar el rendimiento del equipo."
   },
   {
     "id": "word_1154",
@@ -14002,7 +14982,11 @@ export const vocabulary = [
     "de": "entkommen",
     "es": "escapar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le petit chat a profité de la porte ouverte pour s'échapper dehors.",
+    "ex_en": "The two prisoners tried to escape during the heavy thunderstorm last night.",
+    "ex_de": "Der Dieb versuchte, der Polizei durch die dunkle Gasse zu entkommen.",
+    "ex_es": "El pequeño pájaro aprovechó la ventana abierta para escapar de la habitación."
   },
   {
     "id": "word_1155",
@@ -14011,7 +14995,11 @@ export const vocabulary = [
     "de": "essenziell",
     "es": "esencial",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Avoir une alimentation équilibrée est essentiel pour conserver une très bonne énergie.",
+    "ex_en": "Getting enough sleep every night is essential for your mental health.",
+    "ex_de": "Regelmäßiges Trinken von Wasser ist essenziell für die Gesundheit des Körpers.",
+    "ex_es": "Dormir ocho horas al día es esencial para mantener una buena concentración."
   },
   {
     "id": "word_1156",
@@ -14020,7 +15008,11 @@ export const vocabulary = [
     "de": "das Ereignis",
     "es": "el evento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le grand concert de bienfaisance est un événement marquant pour la commune.",
+    "ex_en": "The annual sports tournament is an important event for our whole school.",
+    "ex_de": "Die Eröffnung des neuen Theaters war ein großes Ereignis für die Stadt.",
+    "ex_es": "La feria anual de artesanía es un evento muy popular entre los turistas."
   },
   {
     "id": "word_1157",
@@ -14029,7 +15021,11 @@ export const vocabulary = [
     "de": "schließlich",
     "es": "finalmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Après deux heures de discussion animée, nous avons finalement trouvé un accord satisfaisant.",
+    "ex_en": "After many long hours of driving, we eventually arrived at our hotel.",
+    "ex_de": "Nach einer langen Suche haben wir schließlich das richtige Haus in der Straße gefunden.",
+    "ex_es": "Después de buscar durante varias horas, finalmente encontramos las llaves del coche."
   },
   {
     "id": "word_1158",
@@ -14038,7 +15034,11 @@ export const vocabulary = [
     "de": "untersuchen",
     "es": "examinar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin généraliste va examiner attentivement votre gorge avant de vous soigner.",
+    "ex_en": "The committee will examine the project proposals before choosing the best one.",
+    "ex_de": "Der Arzt möchte die Verletzung am Bein vor der Behandlung genau untersuchen.",
+    "ex_es": "El médico va a examinar la herida antes de poner un vendaje limpio."
   },
   {
     "id": "word_1159",
@@ -14047,7 +15047,11 @@ export const vocabulary = [
     "de": "der Austausch",
     "es": "el intercambio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet échange culturel entre lycées permet aux élèves d'améliorer leur niveau d'espagnol.",
+    "ex_en": "Our university organised a student exchange program with a college in Spain.",
+    "ex_de": "Der kulturelle Austausch zwischen beiden Schulen war eine bereichernde Erfahrung für alle.",
+    "ex_es": "El programa de intercambio escolar ayuda a los alumnos a aprender idiomas nuevos."
   },
   {
     "id": "word_1160",
@@ -14056,7 +15060,11 @@ export const vocabulary = [
     "de": "austauschen",
     "es": "intercambiar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pendant la pause café, les participants ont pu échanger leurs avis respectifs.",
+    "ex_en": "We can exchange our phone numbers so that we stay in touch.",
+    "ex_de": "Nach dem Seminar konnten wir Ideen und Telefonnummern mit den Kollegen austauschen.",
+    "ex_es": "Durante la conferencia pudimos intercambiar impresiones sobre las nuevas tecnologías actuales."
   },
   {
     "id": "word_1161",
@@ -14065,7 +15073,11 @@ export const vocabulary = [
     "de": "die Aufregung",
     "es": "la emoción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants sautaient de joie et ne cachaient pas leur excitation.",
+    "ex_en": "There was a feeling of pure excitement before the football match started.",
+    "ex_de": "Vor der Abreise ins Ferienlager war die Aufregung bei den Kindern groß.",
+    "ex_es": "Se notaba una gran emoción en el ambiente antes de comenzar el espectáculo."
   },
   {
     "id": "word_1162",
@@ -14074,7 +15086,11 @@ export const vocabulary = [
     "de": "die Ausstellung",
     "es": "la exposición",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je vous conseille de visiter la nouvelle exposition de sculptures modernes au musée.",
+    "ex_en": "We went to see an impressive photography exhibition at the city museum.",
+    "ex_de": "Am Wochenende besuchten wir eine interessante Ausstellung über zeitgenössische Kunst in München.",
+    "ex_es": "Fuimos al museo municipal para contemplar la nueva exposición de pintura realista."
   },
   {
     "id": "word_1163",
@@ -14083,7 +15099,11 @@ export const vocabulary = [
     "de": "erweitern",
     "es": "expandir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La société espère étendre son réseau de distribution dans plusieurs pays voisins.",
+    "ex_en": "The company wants to expand its business into several international markets next year.",
+    "ex_de": "Die Firma plant, ihr Angebot an Dienstleistungen im Ausland deutlich zu erweitern.",
+    "ex_es": "La empresa tiene previsto expandir sus servicios a otras ciudades del país."
   },
   {
     "id": "word_1164",
@@ -14092,7 +15112,11 @@ export const vocabulary = [
     "de": "erwartet",
     "es": "esperado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le paquet commandé en ligne est arrivé au jour et à l'heure attendus.",
+    "ex_en": "The flight arrived at the expected time without any major weather delays.",
+    "ex_de": "Der Zug aus Hamburg kam zur genau erwarteten Zeit am Bahnhof an.",
+    "ex_es": "El paquete llegó en el plazo esperado y en un estado impecable."
   },
   {
     "id": "word_1165",
@@ -14101,7 +15125,11 @@ export const vocabulary = [
     "de": "die Expedition",
     "es": "la expedición",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'expédition scientifique dans la jungle tropicale a duré près de six mois.",
+    "ex_en": "The brave explorers prepared their mountain expedition with high quality winter gear.",
+    "ex_de": "Die Forscher planten eine anstrengende Expedition in das ewige Eis der Arktis.",
+    "ex_es": "Los investigadores prepararon una expedición científica a la selva amazónica durante meses."
   },
   {
     "id": "word_1166",
@@ -14110,7 +15138,11 @@ export const vocabulary = [
     "de": "erfahren",
     "es": "experimentado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre entreprise recherche un mécanicien expérimenté capable de gérer l'atelier automobile.",
+    "ex_en": "She is an experienced teacher who knows how to motivate every student.",
+    "ex_de": "Das Krankenhaus suchte einen erfahrenen Arzt für die Leitung der chirurgischen Abteilung.",
+    "ex_es": "El hospital contrató a un médico experimentado para dirigir el nuevo equipo."
   },
   {
     "id": "word_1167",
@@ -14119,7 +15151,11 @@ export const vocabulary = [
     "de": "explodieren",
     "es": "explotar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une bouteille de gaz défectueuse risque d'exploser si la chaleur augmente trop.",
+    "ex_en": "The old fireworks could explode if you keep them near an open flame.",
+    "ex_de": "Ein alter Reifen kann plötzlich explodieren, wenn man zu viel Luft hineinpumpt.",
+    "ex_es": "La bombona de gas podría explotar si se expone directamente al fuego."
   },
   {
     "id": "word_1168",
@@ -14128,7 +15164,11 @@ export const vocabulary = [
     "de": "erkunden",
     "es": "explorar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons loué deux vélos afin d'explorer les sentiers de la côte.",
+    "ex_en": "We decided to explore the ancient ruins with an experienced local tour guide.",
+    "ex_de": "Im Urlaub möchten wir die historische Altstadt und die kleinen Gassen erkunden.",
+    "ex_es": "Alquilamos bicicletas para explorar los senderos naturales a lo largo de la costa."
   },
   {
     "id": "word_1169",
@@ -14137,7 +15177,11 @@ export const vocabulary = [
     "de": "die Explosion",
     "es": "la explosión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une forte explosion a retenti dans le quartier industriel tôt ce matin.",
+    "ex_en": "The loud explosion was heard across the entire town by frightened residents.",
+    "ex_de": "Die gewaltige Explosion in der Fabrik alarmierte sofort alle Rettungskräfte der Region.",
+    "ex_es": "Una fuerte explosión alertó a los vecinos de la zona industrial esta mañana."
   },
   {
     "id": "word_1170",
@@ -14146,7 +15190,11 @@ export const vocabulary = [
     "de": "der Export",
     "es": "la exportación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'exportation de produits agricoles locaux soutient grandement l'économie de notre région viticole.",
+    "ex_en": "The export of cars accounts for a large portion of national revenue.",
+    "ex_de": "Der Export von Maschinen ist ein sehr wichtiger Wirtschaftsfaktor in diesem Land.",
+    "ex_es": "La exportación de aceite de oliva genera importantes ingresos para nuestra región."
   },
   {
     "id": "word_1171",
@@ -14155,7 +15203,11 @@ export const vocabulary = [
     "de": "exportieren",
     "es": "exportar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette petite entreprise artisanale commence à exporter ses produits en Espagne et Italie.",
+    "ex_en": "Many domestic manufacturers export high quality goods to foreign European markets successfully.",
+    "ex_de": "Das Familienunternehmen möchte seine Produkte in viele Länder weltweit exportieren.",
+    "ex_es": "Esta cooperativa artesanal logra exportar sus quesos a varios países de Europa."
   },
   {
     "id": "word_1172",
@@ -14164,7 +15216,11 @@ export const vocabulary = [
     "de": "sich stellen",
     "es": "enfrentar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons garder notre calme pour faire face à ce problème imprévu.",
+    "ex_en": "The company had to face many financial difficulties during the winter months.",
+    "ex_de": "Wir müssen uns diesen schwierigen Aufgaben mutig und mit Zuversicht stellen.",
+    "ex_es": "Debemos mantener la calma para enfrentar este imprevisto con serenidad y eficacia."
   },
   {
     "id": "word_1173",
@@ -14173,7 +15229,11 @@ export const vocabulary = [
     "de": "die Tatsache",
     "es": "el hecho",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est un fait avéré que la pratique sportive améliore le bien-être quotidien.",
+    "ex_en": "It is an established fact that good nutrition helps prevent many illnesses.",
+    "ex_de": "Es ist eine bekannte Tatsache, dass regelmäßige Bewegung die Gesundheit stärkt.",
+    "ex_es": "Es un hecho demostrado que la práctica deportiva regular reduce el estrés."
   },
   {
     "id": "word_1174",
@@ -14182,7 +15242,11 @@ export const vocabulary = [
     "de": "ziemlich",
     "es": "bastante",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce devoir de grammaire était assez simple pour la majorité des élèves.",
+    "ex_en": "The final test was fairly easy for students who attended all lectures.",
+    "ex_de": "Die gestrige Matheprüfung war für die meisten Schüler in der Klasse ziemlich einfach.",
+    "ex_es": "El examen de matemáticas fue bastante sencillo para quienes estudiaron con antelación."
   },
   {
     "id": "word_1175",
@@ -14191,7 +15255,11 @@ export const vocabulary = [
     "de": "vertraut",
     "es": "familiar",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce paysage de campagne m'est très familier depuis ma tendre enfance.",
+    "ex_en": "Her pleasant voice sounded very familiar, but I could not remember why.",
+    "ex_de": "Diese alte Melodie aus dem Radio klingt mir immer noch sehr vertraut.",
+    "ex_es": "El rostro de esa actriz me resulta muy familiar desde hace años."
   },
   {
     "id": "word_1176",
@@ -14200,7 +15268,11 @@ export const vocabulary = [
     "de": "Lust haben auf",
     "es": "apetecer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Est-ce que tu as envie de manger au restaurant ce soir avec nous ?",
+    "ex_en": "Do you fancy going to the cinema with us this Friday evening?",
+    "ex_de": "Hast du heute Abend Lust auf ein leckeres italienisches Essen im Restaurant?",
+    "ex_es": "¿Te apetece tomar un café con leche en la terraza del parque?"
   },
   {
     "id": "word_1177",
@@ -14209,7 +15281,11 @@ export const vocabulary = [
     "de": "faszinierend",
     "es": "fascinante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le conférencier a raconté un voyage absolument fascinant à travers les pyramides d'Égypte.",
+    "ex_en": "The history of ancient civilizations is a truly fascinating subject to study.",
+    "ex_de": "Die Dokumentation über das Leben im Weltraum war ein absolut faszinierendes Erlebnis.",
+    "ex_es": "La historia del antiguo Egipto me parece un tema sumamente fascinante y misterioso."
   },
   {
     "id": "word_1178",
@@ -14218,7 +15294,11 @@ export const vocabulary = [
     "de": "modisch",
     "es": "de moda",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle porte toujours des tenues élégantes qui sont parfaitement à la mode.",
+    "ex_en": "Wearing vintage jackets has become very fashionable among young students in town.",
+    "ex_de": "Sie trägt gerne modische Schuhe, die gleichzeitig bequem für die Arbeit sind.",
+    "ex_es": "Llevar ropa de estilo retro está muy de moda entre los jóvenes actuales."
   },
   {
     "id": "word_1179",
@@ -14227,7 +15307,11 @@ export const vocabulary = [
     "de": "befestigen",
     "es": "abrochar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pensez à bien attacher votre ceinture dès que vous montez en voiture.",
+    "ex_en": "Please fasten your seat belt securely before the plane begins to move.",
+    "ex_de": "Bitte befestigen Sie das Sicherheitsseil sorgfältig an der dafür vorgesehenen Wand.",
+    "ex_es": "Por favor, recuerde abrochar el cinturón de seguridad antes de iniciar la marcha."
   },
   {
     "id": "word_1180",
@@ -14236,7 +15320,11 @@ export const vocabulary = [
     "de": "der Gefallen",
     "es": "el favor",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pourrais-tu me rendre une petite faveur et poster cette lettre pour moi ?",
+    "ex_en": "Could you do me a quick favour and lend me your dictionary?",
+    "ex_de": "Könntest du mir bitte einen großen Gefallen tun und mich kurz mitnehmen?",
+    "ex_es": "¿Podrías hacerme un pequeño favor y guardar estas llaves en tu bolso?"
   },
   {
     "id": "word_1181",
@@ -14245,7 +15333,11 @@ export const vocabulary = [
     "de": "die Angst",
     "es": "el miedo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'enfant a surmonté sa peur du noir grâce à une petite veilleuse.",
+    "ex_en": "She tried to hide her deep fear when speaking to the crowd.",
+    "ex_de": "Er versuchte, seine große Angst vor Hunden Schritt für Schritt zu überwinden.",
+    "ex_es": "El niño logró superar su miedo a la oscuridad gracias a su lamparita."
   },
   {
     "id": "word_1182",
@@ -14254,7 +15346,11 @@ export const vocabulary = [
     "de": "fürchten",
     "es": "temer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les agriculteurs craignent que la sécheresse prolongée ne détruise les prochaines récoltes.",
+    "ex_en": "Many people fear that the rising prices will make life more expensive.",
+    "ex_de": "Die Landwirte fürchten, dass die anhaltende Trockenheit die gesamte Ernte zerstören könnte.",
+    "ex_es": "Los agricultores temen que las heladas tardías perjudiquen los árboles frutales en flor."
   },
   {
     "id": "word_1183",
@@ -14263,7 +15359,11 @@ export const vocabulary = [
     "de": "das Merkmal",
     "es": "la característica",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La rapidité de recharge est la caractéristique la plus appréciée de cet appareil.",
+    "ex_en": "A waterproof design is the main feature of this new sports watch.",
+    "ex_de": "Ein sparsamer Verbrauch ist das wichtigste Merkmal dieses neuen modernen Automobils.",
+    "ex_es": "La resistencia al agua es la característica más destacada de este reloj inteligente."
   },
   {
     "id": "word_1184",
@@ -14272,7 +15372,11 @@ export const vocabulary = [
     "de": "in der Hauptrolle zeigen",
     "es": "presentar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le festival va présenter plusieurs films réalisés par de jeunes cinéastes talentueux.",
+    "ex_en": "The documentary will feature exclusive interviews with prominent climate change scientists.",
+    "ex_de": "Der neue Kinofilm soll zwei berühmte Schauspieler in der Hauptrolle zeigen.",
+    "ex_es": "El festival de cine va a presentar producciones de directores jóvenes y talentosos."
   },
   {
     "id": "word_1185",
@@ -14281,7 +15385,11 @@ export const vocabulary = [
     "de": "füttern",
     "es": "alimentar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque matin, mon grand-père aime nourrir les oiseaux dans le jardin public.",
+    "ex_en": "Please do not feed the wild animals in the national nature reserve.",
+    "ex_de": "Vergiss bitte nicht, die Katze vor dem Verlassen des Hauses zu füttern.",
+    "ex_es": "Cada mañana, mi abuelo suele alimentar a los pájaros en el jardín."
   },
   {
     "id": "word_1186",
@@ -14290,7 +15398,11 @@ export const vocabulary = [
     "de": "der Zaun",
     "es": "la valla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le voisin a réparé la clôture en bois qui entoure son grand potager.",
+    "ex_en": "We built a strong wooden fence to protect our garden from deer.",
+    "ex_de": "Der Nachbar hat einen weißen Zaun um sein gesamtes Grundstück errichtet.",
+    "ex_es": "El vecino instaló una valla metálica para proteger su huerto de los animales."
   },
   {
     "id": "word_1187",
@@ -14299,7 +15411,11 @@ export const vocabulary = [
     "de": "das Kämpfen",
     "es": "la pelea",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les soldats ont enfin cessé le combat après de longues négociations diplomatiques.",
+    "ex_en": "The heavy fighting in the border region stopped after the peace treaty.",
+    "ex_de": "Nach mehreren Stunden hörte das Kämpfen in den Straßen der Stadt auf.",
+    "ex_es": "Las autoridades lograron calmar la pelea que surgió cerca del estadio anoche."
   },
   {
     "id": "word_1188",
@@ -14308,7 +15424,11 @@ export const vocabulary = [
     "de": "die Figur / die Zahl",
     "es": "la figura / la cifra",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le rapport présente une figure détaillée pour illustrer la hausse des ventes.",
+    "ex_en": "The official sales figure showed a significant increase over the previous quarter.",
+    "ex_de": "Der Geschäftsbericht enthielt eine übersichtliche Figur zur Darstellung aller finanziellen Kennzahlen.",
+    "ex_es": "El informe muestra una cifra récord de ventas durante este último trimestre."
   },
   {
     "id": "word_1189",
@@ -14317,7 +15437,11 @@ export const vocabulary = [
     "de": "die Datei / die Akte",
     "es": "el archivo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "N'oublie pas d'enregistrer ton fichier avant d'éteindre ton ordinateur portable.",
+    "ex_en": "Please attach the requested file to your email before sending it today.",
+    "ex_de": "Ich habe die wichtige Datei auf einem externen Speicherstick für Sie gespeichert.",
+    "ex_es": "Por favor, adjunte el archivo solicitado antes de enviar el correo electrónico."
   },
   {
     "id": "word_1190",
@@ -14326,7 +15450,11 @@ export const vocabulary = [
     "de": "ablegen",
     "es": "archivar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'employé de bureau doit classer soigneusement les factures dans les dossiers adéquats.",
+    "ex_en": "The secretary will file all receipts in the cabinet after the meeting.",
+    "ex_de": "Sie müssen die Rechnungen nach Datum geordnet im entsprechenden Ordner ablegen.",
+    "ex_es": "El administrativo debe archivar todos los recibos firmados en la carpeta correspondiente."
   },
   {
     "id": "word_1191",
@@ -14335,7 +15463,11 @@ export const vocabulary = [
     "de": "finanziell",
     "es": "financiero",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre association a reçu un soutien financier important pour lancer cette action.",
+    "ex_en": "They sought professional financial advice before deciding to invest in new properties.",
+    "ex_de": "Das Unternehmen benötigt eine finanzielle Unterstützung durch die Bank für die Expansion.",
+    "ex_es": "La empresa solicitó asesoramiento financiero antes de realizar una inversión tan importante."
   },
   {
     "id": "word_1192",
@@ -14344,7 +15476,11 @@ export const vocabulary = [
     "de": "die Geldstrafe",
     "es": "la multa",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le conducteur a reçu une amende pour avoir stationné sur le trottoir.",
+    "ex_en": "He had to pay a heavy fine for exceeding the speed limit.",
+    "ex_de": "Der Fahrer erhielt eine empfindliche Geldstrafe wegen Falschparkens in der Fußgängerzone.",
+    "ex_es": "El conductor tuvo que pagar una multa por superar el límite permitido."
   },
   {
     "id": "word_1193",
@@ -14353,7 +15489,11 @@ export const vocabulary = [
     "de": "die Fitness",
     "es": "la aptitud física",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La natation et la marche sont excellentes pour entretenir sa forme au quotidien.",
+    "ex_en": "Regular exercise and swimming improve your general physical fitness and stamina.",
+    "ex_de": "Regelmäßiger Sport im Verein verbessert die persönliche Fitness und stärkt die Ausdauer.",
+    "ex_es": "Practicar natación semanalmente mejora la aptitud física y reduce los dolores de espalda."
   },
   {
     "id": "word_1194",
@@ -14362,7 +15502,11 @@ export const vocabulary = [
     "de": "fest",
     "es": "fijo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les employés apprécient d'avoir un horaire de travail fixe chaque semaine.",
+    "ex_en": "We agreed on a fixed budget before starting the home renovation project.",
+    "ex_de": "Wir haben einen festen Termin für das nächste Treffen im Kalender eingetragen.",
+    "ex_es": "Los trabajadores prefieren tener un horario fijo para conciliar con la familia."
   },
   {
     "id": "word_1195",
@@ -14371,7 +15515,11 @@ export const vocabulary = [
     "de": "der Blitz",
     "es": "el flash",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est strictement interdit d'utiliser le flash dans les salles du musée.",
+    "ex_en": "Remember to turn off your camera flash when taking photos inside.",
+    "ex_de": "Bitte schalten Sie den Blitz Ihrer Kamera in dieser Gemäldegalerie aus.",
+    "ex_es": "Está prohibido utilizar el flash de la cámara dentro de esta sala histórica."
   },
   {
     "id": "word_1196",
@@ -14380,7 +15528,11 @@ export const vocabulary = [
     "de": "die Überschwemmung",
     "es": "la inundación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les fortes pluies d'hier ont provoqué une inondation impressionnante au centre-ville.",
+    "ex_en": "The continuous rain resulted in a serious flood in the riverside valley.",
+    "ex_de": "Der starke Dauerregen führte zu einer Überschwemmung in den Straßen des Dorfes.",
+    "ex_es": "Las lluvias torrenciales provocaron una grave inundación en varias calles de la ciudad."
   },
   {
     "id": "word_1197",
@@ -14389,7 +15541,11 @@ export const vocabulary = [
     "de": "überschwemmen",
     "es": "inundar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La rivière en crue risque d'inonder les routes secondaires de la vallée.",
+    "ex_en": "Heavy autumn storms can flood low-lying fields and roads very quickly.",
+    "ex_de": "Das steigende Hochwasser droht die Keller vieler Wohnhäuser zu überschwemmen.",
+    "ex_es": "La crecida del río puede inundar los campos de cultivo durante el temporal."
   },
   {
     "id": "word_1198",
@@ -14398,7 +15554,11 @@ export const vocabulary = [
     "de": "das Mehl",
     "es": "la harina",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pour préparer des crêpes délicieuses, mélangez la farine avec du lait frais.",
+    "ex_en": "You need to mix the flour with milk to prepare the pancake batter.",
+    "ex_de": "Man benötigt frisches Mehl und Eier, um diesen traditionellen Kuchen zu backen.",
+    "ex_es": "Para preparar la masa del pan, debes mezclar la harina con agua tibia."
   },
   {
     "id": "word_1199",
@@ -14407,7 +15567,11 @@ export const vocabulary = [
     "de": "der Fluss",
     "es": "el flujo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les feux de circulation permettent de réguler le flux des voitures aux heures de pointe.",
+    "ex_en": "The modern traffic system maintains a steady flow of vehicles on main avenues.",
+    "ex_de": "Ein reibungsloser Fluss des Verkehrs ist für Pendler am Morgen sehr wichtig.",
+    "ex_es": "Los semáforos inteligentes ayudan a regular el flujo de vehículos en el centro."
   },
   {
     "id": "word_1200",
@@ -14416,7 +15580,11 @@ export const vocabulary = [
     "de": "fließen",
     "es": "fluir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'eau claire de la montagne continue de couler paisiblement vers la mer.",
+    "ex_en": "Clean water will flow through the new pipes into every village house.",
+    "ex_de": "Das klare Wasser der Bergquelle wird friedlich ins weite Tal fließen.",
+    "ex_es": "El agua cristalina del manantial suele fluir directamente hacia el valle verde."
   },
   {
     "id": "word_1201",
@@ -14425,7 +15593,11 @@ export const vocabulary = [
     "de": "der Nebel",
     "es": "la niebla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un épais brouillard matinal a ralenti la circulation sur toute l'autoroute.",
+    "ex_en": "Dense morning fog made driving along the coastal road quite dangerous today.",
+    "ex_de": "Wegen des dichten Nebels am Morgen fuhren die Autos auf der Landstraße langsam.",
+    "ex_es": "Una densa niebla cubrió la carretera y obligó a reducir la velocidad."
   },
   {
     "id": "word_1202",
@@ -14434,7 +15606,11 @@ export const vocabulary = [
     "de": "falten",
     "es": "doblar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Aide-moi à plier ces draps propres avant de les ranger dans l'armoire.",
+    "ex_en": "Please fold your clothes neatly before packing them into the travel suitcase.",
+    "ex_de": "Kannst du mir bitte helfen, die saubere Wäsche ordentlich zu falten?",
+    "ex_es": "¿Puedes ayudarme a doblar las sábanas limpias antes de guardarlas en el armario?"
   },
   {
     "id": "word_1203",
@@ -14443,7 +15619,11 @@ export const vocabulary = [
     "de": "die Leute / volkstümlich",
     "es": "la gente / popular",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pendant la fête de village, le groupe a joué de la musique folklorique entraînante.",
+    "ex_en": "Many local folk gathered on the square to celebrate the traditional festival.",
+    "ex_de": "Viele nette Leute aus dem Dorf kamen zum großen Sommerfest im Stadtpark.",
+    "ex_es": "La orquesta tocó piezas de música popular durante la fiesta mayor del pueblo."
   },
   {
     "id": "word_1204",
@@ -14452,7 +15632,11 @@ export const vocabulary = [
     "de": "folgend",
     "es": "siguiente",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le jour suivant notre arrivée, nous avons visité tous les musées de la ville.",
+    "ex_en": "The following morning, we woke up early to catch the mountain train.",
+    "ex_de": "Am folgenden Tag machten wir einen schönen Ausflug in die umliegenden Berge.",
+    "ex_es": "A la mañana siguiente salimos temprano para visitar los monumentos históricos de la ciudad."
   },
   {
     "id": "word_1205",
@@ -14461,7 +15645,11 @@ export const vocabulary = [
     "de": "die Kraft",
     "es": "la fuerza",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a déployé toute sa force physique pour soulever ce meuble en chêne.",
+    "ex_en": "He used all his physical force to push the heavy car forward.",
+    "ex_de": "Er brauchte viel Kraft, um das schwere Paket in den ersten Stock zu tragen.",
+    "ex_es": "Tuvo que aplicar toda su fuerza para empujar el coche averiado hasta la acera."
   },
   {
     "id": "word_1206",
@@ -14470,7 +15658,11 @@ export const vocabulary = [
     "de": "zwingen",
     "es": "forzar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "On ne doit jamais forcer un enfant à finir son assiette s'il est rassasié.",
+    "ex_en": "You cannot force someone to change their mind against their own will.",
+    "ex_de": "Niemand kann dich dazu zwingen, eine Entscheidung gegen deine Überzeugung zu treffen.",
+    "ex_es": "No se debe forzar a nadie a aceptar unas condiciones que no le convienen."
   },
   {
     "id": "word_1207",
@@ -14479,7 +15671,11 @@ export const vocabulary = [
     "de": "für immer",
     "es": "para siempre",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les beaux souvenirs de ces vacances en Italie resteront gravés pour toujours.",
+    "ex_en": "Those happy childhood memories in the countryside will stay with me forever.",
+    "ex_de": "Diese wunderbare Reise mit meinen besten Freunden wird für immer unvergesslich bleiben.",
+    "ex_es": "Los recuerdos de aquel verano inolvidable quedarán guardados en mi corazón para siempre."
   },
   {
     "id": "word_1208",
@@ -14488,7 +15684,11 @@ export const vocabulary = [
     "de": "der Rahmen",
     "es": "el marco",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a choisi un joli cadre en bois naturel pour sa photo de mariage.",
+    "ex_en": "He put the old family portrait into a stylish wooden frame yesterday.",
+    "ex_de": "Sie kaufte einen schönen Rahmen aus Holz für das alte Familienfoto an der Wand.",
+    "ex_es": "Compró un elegante marco de madera oscura para colgar su fotografía favorita."
   },
   {
     "id": "word_1209",
@@ -14497,7 +15697,11 @@ export const vocabulary = [
     "de": "frieren",
     "es": "congelar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Quand la température descend en dessous de zéro, l'eau du lac commence à geler.",
+    "ex_en": "When winter arrives, the lake will freeze and people can go ice skating.",
+    "ex_de": "Wenn die Temperatur unter null Grad sinkt, beginnt das Wasser zu gefrieren.",
+    "ex_es": "Cuando la temperatura baja de cero grados, el agua del lago suele congelar."
   },
   {
     "id": "word_1210",
@@ -14506,7 +15710,11 @@ export const vocabulary = [
     "de": "häufig",
     "es": "frecuentemente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mets la boîte de glaces dans le congélateur pour qu'elle ne fonde pas.",
+    "ex_en": "Please put the ice cream into the freezer before it starts melting.",
+    "ex_de": "Lege das Eis bitte sofort in das Gefrierfach, damit es kalt bleibt.",
+    "ex_es": "Guarda el helado en el congelador para que no se derrita con el calor."
   },
   {
     "id": "word_1211",
@@ -14515,7 +15723,11 @@ export const vocabulary = [
     "de": "die Freundschaft",
     "es": "la amistad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les retards de train sont devenus un problème fréquent sur cette ligne régionale.",
+    "ex_en": "Frequent power cuts caused many problems for the local residents last winter.",
+    "ex_de": "Staus auf der Autobahn sind ein häufiges Problem für Pendler am Morgen.",
+    "ex_es": "Los retrasos en el transporte público son un problema frecuente en esta línea."
   },
   {
     "id": "word_1212",
@@ -14524,7 +15736,11 @@ export const vocabulary = [
     "de": "erschrecken",
     "es": "asustar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous voyageons fréquemment en train pour rendre visite à nos grands-parents le week-end.",
+    "ex_en": "She frequently visits the public library to borrow interesting novel books.",
+    "ex_de": "Er reist beruflich sehr häufig mit dem Zug in verschiedene europäische Städte.",
+    "ex_es": "Visitamos frecuentemente a nuestros abuelos los fines de semana en su pueblo."
   },
   {
     "id": "word_1213",
@@ -14533,7 +15749,11 @@ export const vocabulary = [
     "de": "erschrocken",
     "es": "asustado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le petit chien semblait très effrayé par le bruit assourdissant de l'orage.",
+    "ex_en": "The frightened little child held her mother's hand tightly during the storm.",
+    "ex_de": "Das kleine Kind war sehr erschrocken über den lauten Knall des Donners.",
+    "ex_es": "El niño estaba muy asustado por el fuerte ruido de los truenos anoche."
   },
   {
     "id": "word_1214",
@@ -14542,7 +15762,11 @@ export const vocabulary = [
     "de": "beängstigend",
     "es": "aterrador",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Traverser cette forêt sombre la nuit était une expérience particulièrement effrayante.",
+    "ex_en": "Watching that horror movie alone in the dark was a frightening experience.",
+    "ex_de": "Der plötzliche Sturm auf dem See war eine wirklich beängstigende Situation für uns.",
+    "ex_es": "Ver esa película de suspense a solas fue una experiencia bastante aterradora."
   },
   {
     "id": "word_1215",
@@ -14551,7 +15775,11 @@ export const vocabulary = [
     "de": "gefroren",
     "es": "congelado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants adorent faire du patin sur le lac totalement gelé en hiver.",
+    "ex_en": "We walked carefully over the frozen ground during the cold January morning.",
+    "ex_de": "Der See im Stadtpark war im Januar komplett mit Eis gefroren.",
+    "ex_es": "Los niños patinaron sobre la superficie del lago totalmente congelado este invierno."
   },
   {
     "id": "word_1216",
@@ -14560,7 +15788,11 @@ export const vocabulary = [
     "de": "braten",
     "es": "freír",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Faites chauffer de l'huile dans la poêle pour frire les pommes de terre.",
+    "ex_en": "You should heat the oil well before you fry the fresh potatoes.",
+    "ex_de": "Er möchte das frische Gemüse mit Olivenöl in der heißen Pfanne braten.",
+    "ex_es": "Hay que calentar bien el aceite antes de freír las patatas frescas."
   },
   {
     "id": "word_1217",
@@ -14569,7 +15801,11 @@ export const vocabulary = [
     "de": "der Treibstoff",
     "es": "el combustible",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le prix du carburant a augmenté de façon significative ces derniers mois.",
+    "ex_en": "Cars that consume less fuel are much better for the natural environment.",
+    "ex_de": "Wegen der langen Fahrt müssen wir noch an der Tankstelle Treibstoff nachfüllen.",
+    "ex_es": "El precio del combustible subió bastante durante los primeros meses del año."
   },
   {
     "id": "word_1218",
@@ -14578,7 +15814,11 @@ export const vocabulary = [
     "de": "die Funktion",
     "es": "la función",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La principale fonction de cette application mobile est de traduire des textes instantanément.",
+    "ex_en": "The main function of this software is to protect your computer from viruses.",
+    "ex_de": "Die wichtigste Funktion dieser neuen Software ist die automatische Sicherung aller Daten.",
+    "ex_es": "La función principal de esta aplicación es organizar las tareas diarias del equipo."
   },
   {
     "id": "word_1219",
@@ -14587,7 +15827,11 @@ export const vocabulary = [
     "de": "funktionieren",
     "es": "funcionar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon vieil ordinateur portable commence à mal fonctionner depuis la dernière mise à jour.",
+    "ex_en": "The electronic device should function properly after you replace the old battery.",
+    "ex_de": "Das neue Gerät wird nach dem Aufladen des Akkus einwandfrei funktionieren.",
+    "ex_es": "La cafetera volvió a funcionar correctamente después de limpiarla a fondo ayer."
   },
   {
     "id": "word_1220",
@@ -14596,7 +15840,11 @@ export const vocabulary = [
     "de": "das Fell",
     "es": "la piel (de animal)",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet animal du grand Nord possède une fourrure épaisse pour résister au froid.",
+    "ex_en": "The polar bear has thick fur to protect itself from freezing arctic winds.",
+    "ex_de": "Der Hund hat ein weiches und dichtes Fell gegen die winterliche Kälte.",
+    "ex_es": "El oso polar tiene una piel gruesa adaptada para soportar el frío polar."
   },
   {
     "id": "word_1221",
@@ -14605,7 +15853,11 @@ export const vocabulary = [
     "de": "die Garage",
     "es": "el garaje",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon père range toujours sa voiture et ses outils dans le garage.",
+    "ex_en": "We parked the family car inside the garage to protect it from rain.",
+    "ex_de": "Er stellte sein Fahrrad und das Auto sicher in die eigene Garage.",
+    "ex_es": "Guardamos el coche en el garaje comunitario para protegerlo del frío nocturno."
   },
   {
     "id": "word_1222",
@@ -14614,7 +15866,11 @@ export const vocabulary = [
     "de": "sammeln",
     "es": "reunir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le guide nous a demandé de rassembler nos affaires avant le départ en bus.",
+    "ex_en": "The students gather in the school courtyard every morning before class starts.",
+    "ex_de": "Im Herbst gehen viele Familien in den Wald, um Pilze zu sammeln.",
+    "ex_es": "El profesor nos pidió reunir todos los materiales antes de empezar el examen."
   },
   {
     "id": "word_1223",
@@ -14623,7 +15879,11 @@ export const vocabulary = [
     "de": "allgemein",
     "es": "generalmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les magasins du centre-ville ferment généralement leurs portes vers dix-neuf heures.",
+    "ex_en": "We generally eat dinner together as a family around seven in the evening.",
+    "ex_de": "Das Wetter ist im Frühling allgemein sehr mild und angenehm in dieser Gegend.",
+    "ex_es": "Las tiendas del centro generalmente cierran sus puertas a las ocho de la tarde."
   },
   {
     "id": "word_1224",
@@ -14632,7 +15892,11 @@ export const vocabulary = [
     "de": "die Generation",
     "es": "la generación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque nouvelle génération utilise les technologies numériques avec une grande facilité naturelle.",
+    "ex_en": "The younger generation is very passionate about environmental conservation and climate issues.",
+    "ex_de": "Jede neue Generation wächst mit moderner digitaler Technologie ganz selbstverständlich auf.",
+    "ex_es": "La nueva generación utiliza los teléfonos inteligentes con mucha naturalidad y soltura."
   },
   {
     "id": "word_1225",
@@ -14641,7 +15905,11 @@ export const vocabulary = [
     "de": "großzügig",
     "es": "generoso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre voisin est très généreux et partage toujours les fruits de son jardin.",
+    "ex_en": "He gave a generous donation to help the local animal shelter rebuild.",
+    "ex_de": "Sie ist sehr großzügig und unterstützt hilfsbedürftige Menschen in ihrer Freizeit gerne.",
+    "ex_es": "Mi abuelo siempre ha sido un hombre generoso con todos sus nietos."
   },
   {
     "id": "word_1226",
@@ -14650,7 +15918,11 @@ export const vocabulary = [
     "de": "sanft",
     "es": "suave",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin a eu un geste doux pour rassurer le jeune enfant apeuré.",
+    "ex_en": "She spoke in a gentle voice to keep the baby calm and happy.",
+    "ex_de": "Eine sanfte Brise wehte am späten Nachmittag über den ruhigen Sandstrand.",
+    "ex_es": "Una brisa suave y agradable refrescó el ambiente durante la tarde calurosa."
   },
   {
     "id": "word_1227",
@@ -14659,7 +15931,11 @@ export const vocabulary = [
     "de": "der Herr",
     "es": "el caballero",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce vieux monsieur a gentiment tenu la porte ouverte pour la dame âgée.",
+    "ex_en": "The polite gentleman offered his seat on the bus to an elderly lady.",
+    "ex_de": "Der ältere Herr hielt der Dame freundlich die schwere Tür zum Geschäft auf.",
+    "ex_es": "Aquel educado caballero cedió amablemente su asiento a una señora en el autobús."
   },
   {
     "id": "word_1228",
@@ -14668,7 +15944,11 @@ export const vocabulary = [
     "de": "der Geist",
     "es": "el fantasma",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une vieille légende raconte qu'un fantôme habite dans ce château médiéval abandonné.",
+    "ex_en": "According to local legend, a friendly ghost lives in that ancient castle.",
+    "ex_de": "Der Sage nach soll ein Geist in dem alten Schloss im Wald spuken.",
+    "ex_es": "Cuenta la leyenda que un fantasma misterioso habita en el castillo medieval."
   },
   {
     "id": "word_1229",
@@ -14677,7 +15957,11 @@ export const vocabulary = [
     "de": "der Riese",
     "es": "el gigante",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Dans ce conte pour enfants, un géant sympathique aide les villageois en difficulté.",
+    "ex_en": "In the fairy tale, a kind giant lived on top of the mountain.",
+    "ex_de": "Im Märchen half ein gutmütiger Riese den kleinen Bewohnern des alten Dorfes.",
+    "ex_es": "En aquel cuento infantil, un gigante bondadoso vivía en lo alto de la montaña."
   },
   {
     "id": "word_1230",
@@ -14686,7 +15970,11 @@ export const vocabulary = [
     "de": "riesig",
     "es": "gigante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont installé un écran géant sur la place pour regarder la finale ensemble.",
+    "ex_en": "The city placed a giant screen in the park for the championship match.",
+    "ex_de": "Ein riesiger Baum spendete im Sommer viel Schatten auf der sonnigen Wiese.",
+    "ex_es": "Instalaron una pantalla gigante en la plaza para ver la final del mundial."
   },
   {
     "id": "word_1231",
@@ -14695,7 +15983,11 @@ export const vocabulary = [
     "de": "der Auftritt",
     "es": "el concierto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le groupe de rock local va donner un concert exceptionnel samedi soir prochain.",
+    "ex_en": "The rock band played an energetic gig at the downtown music club.",
+    "ex_de": "Die Band freute sich sehr über ihren gelungenen Auftritt vor vielen begeisterten Fans.",
+    "ex_es": "El grupo de música dio un concierto fantástico en la sala del centro."
   },
   {
     "id": "word_1232",
@@ -14704,7 +15996,11 @@ export const vocabulary = [
     "de": "froh",
     "es": "contento",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je suis vraiment très content de te revoir après toutes ces années passées.",
+    "ex_en": "I am so glad that you could join us for dinner tonight.",
+    "ex_de": "Ich bin wirklich sehr froh, dass du die schwere Prüfung bestanden hast.",
+    "ex_es": "Estoy muy contento de verte de nuevo después de tanto tiempo sin vernos."
   },
   {
     "id": "word_1233",
@@ -14713,7 +16009,11 @@ export const vocabulary = [
     "de": "global",
     "es": "global",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le réchauffement climatique est un enjeu mondial qui concerne tous les pays.",
+    "ex_en": "Economic inflation has become a major global challenge for international trade markets.",
+    "ex_de": "Der Klimawandel ist ein wichtiges globales Thema für alle Regierungen der Welt.",
+    "ex_es": "El cambio climático representa un desafío global que requiere soluciones conjuntas urgentes."
   },
   {
     "id": "word_1234",
@@ -14722,7 +16022,11 @@ export const vocabulary = [
     "de": "der Handschuh",
     "es": "el guante",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai perdu un gant en laine noire dans le bus ce matin.",
+    "ex_en": "She forgot her warm winter glove on the bench in the park.",
+    "ex_de": "Er hat seinen rechten Handschuh heute Morgen in der U-Bahn verloren.",
+    "ex_es": "Perdí un guante de lana negra en el autobús cuando iba al trabajo."
   },
   {
     "id": "word_1235",
@@ -14731,7 +16035,11 @@ export const vocabulary = [
     "de": "die Waren",
     "es": "los bienes",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le camion de livraison transporte des marchandises alimentaires vers les supermarchés locaux.",
+    "ex_en": "The cargo ship transports manufactured goods across the ocean to European ports.",
+    "ex_de": "Der Lastwagen transportiert frische Waren direkt zu den Geschäften in der Innenstadt.",
+    "ex_es": "El camión transporta bienes de consumo directamente a las tiendas de la zona."
   },
   {
     "id": "word_1236",
@@ -14740,7 +16048,11 @@ export const vocabulary = [
     "de": "die Note / die Klasse",
     "es": "el grado",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a obtenu une excellente note à son examen d'histoire hier matin.",
+    "ex_en": "He worked hard all semester and achieved a top grade in chemistry.",
+    "ex_de": "Sie bekam eine sehr gute Note für ihren Aufsatz im Deutschunterricht.",
+    "ex_es": "Ella obtuvo un alto grado de satisfacción tras completar el curso universitario."
   },
   {
     "id": "word_1237",
@@ -14749,7 +16061,11 @@ export const vocabulary = [
     "de": "einen Abschluss machen",
     "es": "graduarse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon cousin espère obtenir un diplôme en sciences politiques à la fin de l'année.",
+    "ex_en": "Students will graduate from university next month during a formal ceremony.",
+    "ex_de": "Viele Studenten möchten ihren Abschluss an einer angesehenen Universität in Deutschland machen.",
+    "ex_es": "Mi hermana espera graduarse en arquitectura el próximo año con excelentes notas."
   },
   {
     "id": "word_1238",
@@ -14758,7 +16074,11 @@ export const vocabulary = [
     "de": "das Korn",
     "es": "el grano",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les meuniers utilisent ce grain de blé pour fabriquer de la farine bio.",
+    "ex_en": "Farmers store harvest grain in large dry silos during the autumn season.",
+    "ex_de": "Die Mühle verarbeitet das gesunde Korn zu feinem Mehl für frisches Brot.",
+    "ex_es": "Los agricultores recogen el grano de trigo seco durante los meses de verano."
   },
   {
     "id": "word_1239",
@@ -14767,7 +16087,11 @@ export const vocabulary = [
     "de": "dankbar",
     "es": "agradecido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je suis très reconnaissant pour toute l'aide précieuse que tu m'as apportée.",
+    "ex_en": "We are extremely grateful for all your valuable help and kind support.",
+    "ex_de": "Ich bin dir sehr dankbar für deine großartige Unterstützung beim Umzug gestern.",
+    "ex_es": "Estoy muy agradecido por toda la ayuda y consejos que me has brindado."
   },
   {
     "id": "word_1240",
@@ -14776,7 +16100,11 @@ export const vocabulary = [
     "de": "das Wachstum",
     "es": "el crecimiento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette région a connu une forte croissance économique grâce au secteur touristique.",
+    "ex_en": "The company reported steady economic growth despite the challenging international market.",
+    "ex_de": "Das wirtschaftliche Wachstum der Region wird durch neue innovative Technologien stark gefördert.",
+    "ex_es": "La empresa experimentó un notable crecimiento en ventas a lo largo de este año."
   },
   {
     "id": "word_1241",
@@ -14785,7 +16113,11 @@ export const vocabulary = [
     "de": "der Wächter",
     "es": "el guardia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le garde de sécurité vérifie les badges des visiteurs à l'entrée du bâtiment.",
+    "ex_en": "The security guard checked all visitor passes before opening the main gate.",
+    "ex_de": "Der aufmerksame Wächter kontrollierte die Ausweise aller Besucher am Eingang des Gebäudes.",
+    "ex_es": "El guardia de seguridad comprueba las tarjetas de acceso en la entrada principal."
   },
   {
     "id": "word_1242",
@@ -14794,7 +16126,11 @@ export const vocabulary = [
     "de": "bewachen / schützen",
     "es": "vigilar / proteger",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Deux chiens fidèles restent près de la maison pour garder la propriété la nuit.",
+    "ex_en": "Two trained dogs guard the large property throughout the dark night.",
+    "ex_de": "Die beiden Hunde bewachen das große Grundstück zuverlässig während der gesamten Nacht.",
+    "ex_es": "Los agentes deben vigilar el perímetro del edificio durante la visita oficial."
   },
   {
     "id": "word_1243",
@@ -14803,7 +16139,11 @@ export const vocabulary = [
     "de": "schuldig",
     "es": "culpable",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le juge a déclaré l'accusé coupable après avoir examiné toutes les preuves.",
+    "ex_en": "The court found the suspect guilty of committing the serious crime.",
+    "ex_de": "Das Gericht sprach den Angeklagten nach der langen Verhandlung für schuldig.",
+    "ex_es": "El juez declaró al acusado culpable tras evaluar todas las pruebas presentadas."
   },
   {
     "id": "word_1244",
@@ -14812,7 +16152,11 @@ export const vocabulary = [
     "de": "hängen",
     "es": "colgar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu peux accrocher ton manteau d'hiver au porte-manteau dans le couloir d'entrée.",
+    "ex_en": "Please hang your wet coat on the hook near the front door.",
+    "ex_de": "Du kannst deine warme Jacke an den Haken im Flur hängen.",
+    "ex_es": "Puedes colgar tu abrigo de invierno en la percha junto a la puerta."
   },
   {
     "id": "word_1245",
@@ -14821,7 +16165,11 @@ export const vocabulary = [
     "de": "das Glück",
     "es": "la felicidad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Passer du temps en famille apporte un grand bonheur dans la vie quotidienne.",
+    "ex_en": "Spending quality time with good friends brings genuine happiness to our lives.",
+    "ex_de": "Zeit mit guten Freunden zu verbringen bringt viel Freude und Glück ins Leben.",
+    "ex_es": "Compartir buenos momentos con los amigos produce una gran felicidad y bienestar."
   },
   {
     "id": "word_1246",
@@ -14830,7 +16178,11 @@ export const vocabulary = [
     "de": "kaum",
     "es": "apenas",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il y avait tellement de bruit que je pouvais à peine entendre sa voix.",
+    "ex_en": "I could hardly hear what the speaker said because of the noise.",
+    "ex_de": "Wegen des lauten Verkehrs konnte man sein eigenes Wort kaum noch verstehen.",
+    "ex_es": "Había tanto ruido en la sala que apenas se podía escuchar al profesor."
   },
   {
     "id": "word_1247",
@@ -14839,7 +16191,11 @@ export const vocabulary = [
     "de": "die Schlagzeile",
     "es": "el titular",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le gros titre du journal de ce matin annonce une nouvelle victoire sportive.",
+    "ex_en": "The newspaper headline attracted immediate attention from thousands of curious daily readers.",
+    "ex_de": "Die sensationelle Schlagzeile in der Morgenzeitung überraschte heute viele aufmerksame Leser.",
+    "ex_es": "El llamativo titular del periódico matutino anunció el gran acuerdo de paz alcanzado."
   },
   {
     "id": "word_1248",
@@ -14848,7 +16204,11 @@ export const vocabulary = [
     "de": "die Heizung",
     "es": "la calefacción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons allumé le chauffage central car la maison devenait trop fraîche hier soir.",
+    "ex_en": "We turned on the central heating because the apartment felt very chilly.",
+    "ex_de": "Wir schalteten die Heizung ein, weil es in der Wohnung ziemlich kalt wurde.",
+    "ex_es": "Encendimos la calefacción central porque la temperatura dentro de casa bajó mucho anoche."
   },
   {
     "id": "word_1249",
@@ -14857,7 +16217,11 @@ export const vocabulary = [
     "de": "schwer",
     "es": "pesadamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il s'est laissé tomber lourdement sur le canapé après une longue journée fatigante.",
+    "ex_en": "It was raining heavily when we walked back home from the station.",
+    "ex_de": "Er ließ sich nach der langen und anstrengenden Arbeit schwer in den Sessel fallen.",
+    "ex_es": "Se dejó caer pesadamente sobre el sofá tras una larga jornada de trabajo."
   },
   {
     "id": "word_1250",
@@ -14866,7 +16230,11 @@ export const vocabulary = [
     "de": "der Hubschrauber",
     "es": "el helicóptero",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'hélicoptère de secours a rapidement transporté le blessé vers l'hôpital le plus proche.",
+    "ex_en": "The rescue helicopter landed safely on the roof of the regional hospital.",
+    "ex_de": "Der Hubschrauber der Bergrettung brachte den verletzten Wanderer schnell ins Krankenhaus.",
+    "ex_es": "El helicóptero de rescate trasladó rápidamente al excursionista herido hacia el hospital."
   },
   {
     "id": "word_1251",
@@ -14875,7 +16243,11 @@ export const vocabulary = [
     "de": "hervorheben",
     "es": "resaltar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous devez surligner les mots de vocabulaire importants avec un feutre jaune.",
+    "ex_en": "You can highlight key sentences with a yellow pen to remember them.",
+    "ex_de": "Der Lehrer wollte die wichtigsten Grammatikregeln an der Tafel farbig hervorheben.",
+    "ex_es": "Conviene resaltar las ideas principales del texto con un rotulador fluorescente amarillo."
   },
   {
     "id": "word_1252",
@@ -14884,7 +16256,11 @@ export const vocabulary = [
     "de": "höchst",
     "es": "altamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce médecin spécialiste est hautement qualifié pour effectuer cette opération chirurgicale délicate.",
+    "ex_en": "This restaurant is highly recommended by food critics for its delicious seafood.",
+    "ex_de": "Diese Methode ist höchst effektiv, um schnell neue Fremdsprachen zu erlernen.",
+    "ex_es": "Este curso universitario está altamente valorado por los profesionales del sector tecnológico."
   },
   {
     "id": "word_1253",
@@ -14893,7 +16269,11 @@ export const vocabulary = [
     "de": "einstellen / mieten",
     "es": "contratar / alquilar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre entreprise envisage d'embaucher deux nouveaux informaticiens le mois prochain.",
+    "ex_en": "They decided to hire a car to travel around the scenic island.",
+    "ex_de": "Das Unternehmen plant, im kommenden Frühjahr neue qualifizierte Mitarbeiter einzustellen.",
+    "ex_es": "La empresa ha decidido contratar a dos nuevos diseñadores para el departamento gráfico."
   },
   {
     "id": "word_1254",
@@ -14902,7 +16282,11 @@ export const vocabulary = [
     "de": "der Hinweis",
     "es": "la pista",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le professeur a donné un indice utile pour aider les élèves à résoudre l'énigme.",
+    "ex_en": "She gave me a helpful hint to solve the tricky crossword puzzle.",
+    "ex_de": "Der Lehrer gab den Schülern einen nützlichen Hinweis zur Lösung der Aufgabe.",
+    "ex_es": "El profesor nos dio una pista muy útil para resolver el problema matemático."
   },
   {
     "id": "word_1255",
@@ -14911,7 +16295,11 @@ export const vocabulary = [
     "de": "andeuten",
     "es": "insinuar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Qu'est-ce que tu cherches à insinuer avec ces remarques étranges sur mon travail ?",
+    "ex_en": "Did he hint that he might leave the company next summer season?",
+    "ex_de": "Er wollte mit seinen Worten nur andeuten, dass Änderungen bevorstehen könnten.",
+    "ex_es": "¿Qué pretendes insinuar con esas palabras sobre mi trabajo en este proyecto?"
   },
   {
     "id": "word_1256",
@@ -14920,7 +16308,11 @@ export const vocabulary = [
     "de": "historisch",
     "es": "histórico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La signature de ce traité de paix représente un moment historique inoubliable.",
+    "ex_en": "Visiting the historic castle was the highlight of our vacation in Scotland.",
+    "ex_de": "Der Fall der Berliner Mauer war ein historisches Ereignis für ganz Europa.",
+    "ex_es": "La firma de aquel acuerdo de paz fue un acontecimiento histórico trascendental."
   },
   {
     "id": "word_1257",
@@ -14929,7 +16321,11 @@ export const vocabulary = [
     "de": "historisch",
     "es": "histórico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce film raconte des faits historiques avec une remarquable précision documentaire.",
+    "ex_en": "She enjoys reading historical novels set during the eighteenth century in Europe.",
+    "ex_de": "Dieses Buch beschreibt historische Tatsachen mit großer wissenschaftlicher Genauigkeit und vielen Quellen.",
+    "ex_es": "Este libro describe hechos históricos reales con gran rigor y detalle documental."
   },
   {
     "id": "word_1258",
@@ -14938,7 +16334,11 @@ export const vocabulary = [
     "de": "ehrlich",
     "es": "honesto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'apprécie beaucoup ses conseils car il est toujours très franc et honnête.",
+    "ex_en": "To be completely honest with you, I do not like this painting.",
+    "ex_de": "Ich schätze seine ehrliche Meinung immer sehr, wenn wir über Probleme sprechen.",
+    "ex_es": "Aprecio su consejo sincero porque siempre es una persona honesta y transparente."
   },
   {
     "id": "word_1259",
@@ -14947,7 +16347,11 @@ export const vocabulary = [
     "de": "der Honig",
     "es": "la miel",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ajoute une cuillère de miel dans ma tasse de tisane bien chaude.",
+    "ex_en": "Adding a spoonful of honey to hot tea soothes a sore throat.",
+    "ex_de": "Ich gebe gerne einen Löffel frischen Honig in meinen heißen Kräutertee.",
+    "ex_es": "Añado una cucharada de miel a mi infusión caliente antes de dormir."
   },
   {
     "id": "word_1260",
@@ -14956,7 +16360,11 @@ export const vocabulary = [
     "de": "schrecklich",
     "es": "horrible",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le temps pluvieux et venteux d'hier était absolument horrible pour une promenade.",
+    "ex_en": "We experienced horrible traffic on the motorway on our way back home.",
+    "ex_de": "Das schlechte Wetter am Wochenende war einfach schrecklich für unseren geplanten Ausflug.",
+    "ex_es": "El tráfico en la autopista durante la tarde lluviosa fue realmente horrible."
   },
   {
     "id": "word_1261",
@@ -14965,7 +16373,11 @@ export const vocabulary = [
     "de": "der Horror",
     "es": "el horror",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a regardé la scène avec un sentiment de profonde horreur et d'incompréhension.",
+    "ex_en": "She does not enjoy watching horror movies because they give her nightmares.",
+    "ex_de": "Er empfand tiefen Horror, als er das Ausmaß der Zerstörung sah.",
+    "ex_es": "No le gusta ver películas de horror porque luego no puede dormir."
   },
   {
     "id": "word_1262",
@@ -14974,7 +16386,11 @@ export const vocabulary = [
     "de": "der Gastgeber",
     "es": "el anfitrión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre hôte nous a accueillis chaleureusement avec des spécialités de sa région.",
+    "ex_en": "Our gracious host welcomed all guests with delicious drinks and warm snacks.",
+    "ex_de": "Unser freundlicher Gastgeber begrüßte alle Gäste persönlich an der Tür des Hauses.",
+    "ex_es": "Nuestro amable anfitrión nos dio una cálida bienvenida con bebidas y aperitivos."
   },
   {
     "id": "word_1263",
@@ -14983,7 +16399,11 @@ export const vocabulary = [
     "de": "veranstalten",
     "es": "albergar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La capitale va héberger le prochain grand sommet international sur l'environnement.",
+    "ex_en": "Our city was selected to host the international sports games next year.",
+    "ex_de": "Die Schule wird im Sommer ein großes Musikfest für alle Schüler veranstalten.",
+    "ex_es": "Nuestra ciudad ha sido elegida para albergar el próximo congreso internacional sobre medicina."
   },
   {
     "id": "word_1264",
@@ -14992,7 +16412,11 @@ export const vocabulary = [
     "de": "jedoch",
     "es": "sin embargo",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il pleuvait beaucoup ce matin, cependant les enfants ont voulu sortir jouer dehors.",
+    "ex_en": "The weather was very cold, however we enjoyed our walk outside immensely.",
+    "ex_de": "Er war sehr müde, jedoch arbeitete er bis spät in die Nacht.",
+    "ex_es": "El examen era difícil, sin embargo la mayoría de estudiantes lograron aprobarlo."
   },
   {
     "id": "word_1265",
@@ -15001,7 +16425,11 @@ export const vocabulary = [
     "de": "jagen",
     "es": "cazar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les lions ont besoin de chasser en groupe pour nourrir leurs petits dans la savane.",
+    "ex_en": "Wild animals often hunt during the night when it is cooler outside.",
+    "ex_de": "Wölfe müssen im Rudel jagen, um im kalten Winter überleben zu können.",
+    "ex_es": "Los animales salvajes suelen cazar durante la noche para conseguir comida fresca."
   },
   {
     "id": "word_1266",
@@ -15010,7 +16438,11 @@ export const vocabulary = [
     "de": "der Hurrikan",
     "es": "el huracán",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le puissant ouragan a causé des dégâts matériels importants le long des côtes.",
+    "ex_en": "The powerful hurricane destroyed many coastal houses during the violent stormy night.",
+    "ex_de": "Der zerstörerische Hurrikan richtete schwere Schäden an vielen Gebäuden an der Küste an.",
+    "ex_es": "El potente huracán causó graves daños materiales a lo largo de toda la costa."
   },
   {
     "id": "word_1267",
@@ -15019,7 +16451,11 @@ export const vocabulary = [
     "de": "unwissend",
     "es": "ignorante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il n'est pas méchant mais simplement ignorant des règles de politesse locales.",
+    "ex_en": "Many people remain ignorant of the basic rules regarding waste recycling practices.",
+    "ex_de": "Er war völlig unwissend über die strengen Sicherheitsvorschriften in diesem großen Betrieb.",
+    "ex_es": "No pretendía ofender a nadie, simplemente era ignorante de las costumbres locales tradicionales."
   },
   {
     "id": "word_1268",
@@ -15028,7 +16464,11 @@ export const vocabulary = [
     "de": "ignorieren",
     "es": "ignorar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous ne devriez jamais ignorer les conseils de sécurité donnés par les experts.",
+    "ex_en": "It is unwise to ignore the early warning signs of physical fatigue.",
+    "ex_de": "Man sollte die wichtigen Ratschläge des Arztes keinesfalls leichtfertig ignorieren.",
+    "ex_es": "No es prudente ignorar las señales de advertencia cuando se conduce por montaña."
   },
   {
     "id": "word_1269",
@@ -15037,7 +16477,11 @@ export const vocabulary = [
     "de": "illegal",
     "es": "ilegal",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est illégal de stationner sa voiture devant cette sortie de secours.",
+    "ex_en": "It is illegal to park your car in front of this exit.",
+    "ex_de": "Es ist illegal, sein Auto vor diesem Notausgang zu parken.",
+    "ex_es": "Es ilegal estacionar el coche delante de esta salida de emergencia."
   },
   {
     "id": "word_1270",
@@ -15046,7 +16490,11 @@ export const vocabulary = [
     "de": "imaginär",
     "es": "imaginario",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Quand il était petit, il jouait souvent avec un ami imaginaire.",
+    "ex_en": "When he was little, he often played with an imaginary friend.",
+    "ex_de": "Als er klein war, spielte er oft mit einem imaginären Freund.",
+    "ex_es": "Cuando era pequeño, a menudo jugaba con un amigo imaginario."
   },
   {
     "id": "word_1271",
@@ -15055,7 +16503,11 @@ export const vocabulary = [
     "de": "sofortig",
     "es": "inmediato",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette situation dangereuse nécessite une réponse et un changement immédiat de plan.",
+    "ex_en": "This dangerous situation requires an immediate response and a new plan.",
+    "ex_de": "Diese gefährliche Situation erfordert eine sofortige Antwort und einen neuen Plan.",
+    "ex_es": "Esta situación peligrosa requiere una respuesta y un cambio inmediato de plan."
   },
   {
     "id": "word_1272",
@@ -15064,7 +16516,11 @@ export const vocabulary = [
     "de": "der Einwanderer",
     "es": "el inmigrante",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet immigrant travaille dur pour offrir un bel avenir à sa famille.",
+    "ex_en": "This immigrant works hard to provide a good future for his family.",
+    "ex_de": "Dieser Einwanderer arbeitet hart, um seiner Familie eine gute Zukunft zu bieten.",
+    "ex_es": "Este inmigrante trabaja duro para ofrecer un buen futuro a su familia."
   },
   {
     "id": "word_1273",
@@ -15073,7 +16529,11 @@ export const vocabulary = [
     "de": "die Auswirkung",
     "es": "el impacto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La pollution de l'air a un impact direct sur la santé humaine.",
+    "ex_en": "Air pollution has a direct impact on the health of human beings.",
+    "ex_de": "Die Luftverschmutzung hat eine direkte Auswirkung auf die menschliche Gesundheit.",
+    "ex_es": "La contaminación del aire tiene un impacto directo en la salud humana."
   },
   {
     "id": "word_1274",
@@ -15082,7 +16542,11 @@ export const vocabulary = [
     "de": "der Import",
     "es": "la importación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'importation de ces fruits exotiques coûte cher à cause des taxes élevées.",
+    "ex_en": "The import of these exotic fruits is expensive because of high taxes.",
+    "ex_de": "Der Import dieser exotischen Früchte ist wegen der hohen Steuern teuer.",
+    "ex_es": "La importación de estas frutas exóticas es cara debido a los impuestos."
   },
   {
     "id": "word_1275",
@@ -15091,7 +16555,11 @@ export const vocabulary = [
     "de": "importieren",
     "es": "importar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce pays doit importer du blé parce que sa production locale est insuffisante.",
+    "ex_en": "This country must import wheat because its local production is not sufficient.",
+    "ex_de": "Dieses Land muss Weizen importieren, weil die lokale Produktion nicht ausreicht.",
+    "ex_es": "Este país debe importar trigo porque su producción local no es suficiente."
   },
   {
     "id": "word_1276",
@@ -15100,7 +16568,11 @@ export const vocabulary = [
     "de": "die Wichtigkeit",
     "es": "la importancia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le professeur rappelle souvent l'importance de faire ses devoirs chaque jour.",
+    "ex_en": "The teacher often reminds us of the importance of daily homework.",
+    "ex_de": "Der Lehrer erinnert oft an die Wichtigkeit der täglichen Hausaufgaben.",
+    "ex_es": "El profesor recuerda a menudo la importancia de hacer los deberes diarios."
   },
   {
     "id": "word_1277",
@@ -15109,7 +16581,11 @@ export const vocabulary = [
     "de": "der Eindruck",
     "es": "la impresión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai la forte impression que nous avons déjà visité ce vieux musée.",
+    "ex_en": "I have the strong impression that we have already visited this museum.",
+    "ex_de": "Ich habe den starken Eindruck, dass wir dieses Museum schon besucht haben.",
+    "ex_es": "Tengo la fuerte impresión de que ya hemos visitado este museo."
   },
   {
     "id": "word_1278",
@@ -15118,7 +16594,11 @@ export const vocabulary = [
     "de": "beeindruckend",
     "es": "impresionante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce grand monument historique est vraiment impressionnant sous les lumières du soir.",
+    "ex_en": "This historic monument is truly impressive under the bright evening lights.",
+    "ex_de": "Dieses historische Denkmal ist unter den Abendlichtern wirklich sehr beeindruckend.",
+    "ex_es": "Este monumento histórico es realmente impresionante bajo las luces de la noche."
   },
   {
     "id": "word_1279",
@@ -15127,7 +16607,11 @@ export const vocabulary = [
     "de": "verbessern",
     "es": "mejorar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu peux facilement améliorer tes compétences en lisant des livres chaque soir.",
+    "ex_en": "You can easily improve your skills by reading books every evening.",
+    "ex_de": "Du kannst deine Fähigkeiten verbessern, indem du jeden Abend Bücher liest.",
+    "ex_es": "Puedes mejorar tus habilidades fácilmente leyendo libros todas las tardes."
   },
   {
     "id": "word_1280",
@@ -15136,7 +16620,11 @@ export const vocabulary = [
     "de": "die Verbesserung",
     "es": "la mejora",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons constaté une nette amélioration dans ses résultats scolaires ce mois-ci.",
+    "ex_en": "We noticed a clear improvement in his school results this month.",
+    "ex_de": "Wir haben diesen Monat eine deutliche Verbesserung seiner Schulnoten festgestellt.",
+    "ex_es": "Hemos notado una clara mejora en sus notas escolares este mes."
   },
   {
     "id": "word_1281",
@@ -15145,7 +16633,11 @@ export const vocabulary = [
     "de": "unglaublich",
     "es": "increíblemente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce jeune pianiste joue incroyablement bien malgré son manque d'expérience musicale.",
+    "ex_en": "This young pianist plays incredibly well despite his lack of experience.",
+    "ex_de": "Dieser junge Pianist spielt unglaublich gut trotz seiner wenigen musikalischen Erfahrung.",
+    "ex_es": "Este joven pianista toca increíblemente bien a pesar de su poca experiencia."
   },
   {
     "id": "word_1282",
@@ -15154,7 +16646,11 @@ export const vocabulary = [
     "de": "tatsächlich",
     "es": "de hecho",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "En effet, nous avons choisi cette option pour réduire nos dépenses mensuelles.",
+    "ex_en": "Indeed, we chose this option to reduce our monthly living expenses.",
+    "ex_de": "Tatsächlich haben wir diese Option gewählt, um unsere monatlichen Ausgaben zu senken.",
+    "ex_es": "De hecho, elegimos esta opción para reducir nuestros gastos mensuales actuales."
   },
   {
     "id": "word_1283",
@@ -15163,7 +16659,11 @@ export const vocabulary = [
     "de": "anzeigen",
     "es": "indicar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ces panneaux routiers servent à indiquer la bonne direction aux automobilistes.",
+    "ex_en": "These road signs help to indicate the correct direction to drivers.",
+    "ex_de": "Diese Straßenschilder dienen dazu, den Autofahrern die richtige Richtung anzuzeigen.",
+    "ex_es": "Estas señales de tráfico sirven para indicar la dirección correcta a conductores."
   },
   {
     "id": "word_1284",
@@ -15172,7 +16672,11 @@ export const vocabulary = [
     "de": "indirekt",
     "es": "indirecto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a fait une remarque indirecte pour exprimer son désaccord hier.",
+    "ex_en": "He made an indirect remark yesterday to show his clear disagreement.",
+    "ex_de": "Er machte gestern eine indirekte Bemerkung, um seine Uneinigkeit zu zeigen.",
+    "ex_es": "Él hizo una observación indirecta para expresar su desacuerdo con todos."
   },
   {
     "id": "word_1285",
@@ -15181,7 +16685,11 @@ export const vocabulary = [
     "de": "Innen-",
     "es": "interior",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants profitent de cette belle piscine intérieure pendant les jours pluvieux.",
+    "ex_en": "The children enjoy this indoor swimming pool during rainy weekend days.",
+    "ex_de": "Sie spielen gerne auf diesem Innen-Spielplatz, wenn es draußen regnet.",
+    "ex_es": "Los niños disfrutan de esta piscina interior durante los días lluviosos."
   },
   {
     "id": "word_1286",
@@ -15190,7 +16698,11 @@ export const vocabulary = [
     "de": "drinnen",
     "es": "adentro",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Comme il pleut fort dehors, nous préférons rester tranquillement à l'intérieur.",
+    "ex_en": "Since it is raining heavily outside, we prefer to stay indoors.",
+    "ex_de": "Weil es draußen stark regnet, bleiben wir lieber gemütlich drinnen.",
+    "ex_es": "Como llueve mucho afuera, preferimos quedarnos tranquilamente adentro hoy."
   },
   {
     "id": "word_1287",
@@ -15199,7 +16711,11 @@ export const vocabulary = [
     "de": "der Säugling",
     "es": "el infante",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin examine attentivement le nourrisson pour vérifier sa bonne santé.",
+    "ex_en": "The doctor examines the infant carefully to check its healthy growth.",
+    "ex_de": "Die Ärztin untersucht den Säugling sorgfältig, um seine Gesundheit zu prüfen.",
+    "ex_es": "El médico examina al infante con atención para comprobar su salud."
   },
   {
     "id": "word_1288",
@@ -15208,7 +16724,11 @@ export const vocabulary = [
     "de": "der Einfluss",
     "es": "la influencia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La musique classique a une grande influence positive sur ma concentration quotidienne.",
+    "ex_en": "Classical music has a great positive influence on my daily concentration.",
+    "ex_de": "Klassische Musik hat einen großen positiven Einfluss auf meine tägliche Konzentration.",
+    "ex_es": "La música clásica tiene una gran influencia positiva en mi concentración."
   },
   {
     "id": "word_1289",
@@ -15217,7 +16737,11 @@ export const vocabulary = [
     "de": "beeinflussen",
     "es": "influir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les avis de ses amis peuvent influencer sa décision pour ses études.",
+    "ex_en": "The opinions of her friends can influence her decision about university.",
+    "ex_de": "Die Meinungen ihrer Freunde können ihre Entscheidung für das Studium beeinflussen.",
+    "ex_es": "Las opiniones de sus amigos pueden influir en su decisión profesional."
   },
   {
     "id": "word_1290",
@@ -15226,7 +16750,11 @@ export const vocabulary = [
     "de": "die Zutat",
     "es": "el ingrediente",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'huile d'olive est un ingrédient essentiel pour préparer cette sauce italienne.",
+    "ex_en": "Olive oil is an essential ingredient to prepare this Italian sauce.",
+    "ex_de": "Olivenöl ist eine wichtige Zutat für die Zubereitung dieser italienischen Soße.",
+    "ex_es": "El aceite de oliva es un ingrediente esencial para esta salsa."
   },
   {
     "id": "word_1291",
@@ -15235,7 +16763,11 @@ export const vocabulary = [
     "de": "verletzen",
     "es": "herir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Fais bien attention pendant l'entraînement pour ne pas te blesser inutilement.",
+    "ex_en": "Be very careful during sports training so you do not injure yourself.",
+    "ex_de": "Sei beim Training vorsichtig, um dich nicht versehentlich selbst zu verletzen.",
+    "ex_es": "Ten mucho cuidado durante el entrenamiento para no herirte el brazo."
   },
   {
     "id": "word_1292",
@@ -15244,7 +16776,11 @@ export const vocabulary = [
     "de": "verletzt",
     "es": "herido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le joueur blessé doit quitter immédiatement le terrain avec l'aide médicale.",
+    "ex_en": "The injured player must leave the field immediately with medical help.",
+    "ex_de": "Der verletzte Spieler muss das Spielfeld sofort mit medizinischer Hilfe verlassen.",
+    "ex_es": "El jugador herido debe abandonar el campo inmediatamente con asistencia médica."
   },
   {
     "id": "word_1293",
@@ -15253,7 +16789,11 @@ export const vocabulary = [
     "de": "unschuldig",
     "es": "inocente",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'avocat affirme devant les juges que son client est totalement innocent.",
+    "ex_en": "The lawyer argues before the judge that his client is innocent.",
+    "ex_de": "Der Anwalt betont vor dem Richter, dass sein Mandant unschuldig ist.",
+    "ex_es": "El abogado afirma ante el tribunal que su cliente es inocente."
   },
   {
     "id": "word_1294",
@@ -15262,7 +16802,11 @@ export const vocabulary = [
     "de": "die Intelligenz",
     "es": "la inteligencia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle utilise toute son intelligence pour résoudre rapidement ce problème complexe.",
+    "ex_en": "She uses all her intelligence to solve this complex problem quickly.",
+    "ex_de": "Sie nutzt ihre ganze Intelligenz, um dieses schwierige Problem schnell zu lösen.",
+    "ex_es": "Ella usa toda su inteligencia para resolver este problema complejo rápidamente."
   },
   {
     "id": "word_1295",
@@ -15271,7 +16815,11 @@ export const vocabulary = [
     "de": "beabsichtigen",
     "es": "tener la intención",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons l'intention de voyager en Italie dès le mois prochain.",
+    "ex_en": "We intend to travel around Italy starting from next sunny month.",
+    "ex_de": "Wir beabsichtigen, ab nächstem Monat eine schöne Reise durch Italien zu machen.",
+    "ex_es": "Tenemos la intención de viajar a Italia durante el próximo mes."
   },
   {
     "id": "word_1296",
@@ -15280,7 +16828,11 @@ export const vocabulary = [
     "de": "die Absicht",
     "es": "la intención",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon frère a la ferme intention de réussir son examen médical.",
+    "ex_en": "My brother has the clear intention to pass his medical examination.",
+    "ex_de": "Mein Bruder hat die feste Absicht, seine schwere medizinische Prüfung zu bestehen.",
+    "ex_es": "Mi hermano tiene la firme intención de aprobar su examen médico."
   },
   {
     "id": "word_1297",
@@ -15289,7 +16841,11 @@ export const vocabulary = [
     "de": "investieren",
     "es": "invertir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette entreprise moderne décide d'investir des fonds dans les énergies vertes.",
+    "ex_en": "This modern company decides to invest money in clean green energy.",
+    "ex_de": "Dieses moderne Unternehmen beschließt, viel Geld in erneuerbare Energien zu investieren.",
+    "ex_es": "Esta empresa decide invertir una gran suma en energías limpias renovables."
   },
   {
     "id": "word_1298",
@@ -15298,7 +16854,11 @@ export const vocabulary = [
     "de": "untersuchen",
     "es": "investigar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La police commence à enquêter sur les causes de cet incendie mystérieux.",
+    "ex_en": "The local police begin to investigate the causes of this mysterious fire.",
+    "ex_de": "Die örtliche Polizei beginnt, die Ursachen dieses rätselhaften Feuers gründlich zu untersuchen.",
+    "ex_es": "La policía local empieza a investigar las causas de este misterioso incendio."
   },
   {
     "id": "word_1299",
@@ -15307,7 +16867,11 @@ export const vocabulary = [
     "de": "beteiligt",
     "es": "involucrado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est activement impliqué dans plusieurs associations pour protéger la nature.",
+    "ex_en": "He is actively involved in several local groups protecting wild nature.",
+    "ex_de": "Er ist aktiv an mehreren Projekten zum Schutz der Natur beteiligt.",
+    "ex_es": "Él está muy involucrado en varios proyectos para proteger la naturaleza."
   },
   {
     "id": "word_1300",
@@ -15316,7 +16880,11 @@ export const vocabulary = [
     "de": "das Eisen / das Bügeleisen",
     "es": "el hierro",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette grille solide a été fabriquée avec du fer forgé noir.",
+    "ex_en": "This heavy gate was crafted using strong and durable black iron.",
+    "ex_de": "Dieses schwere Gartentor wurde aus einem sehr stabilen Eisen geschmiedet.",
+    "ex_es": "Esta puerta pesada del jardín está fabricada con hierro resistente."
   },
   {
     "id": "word_1301",
@@ -15325,7 +16893,11 @@ export const vocabulary = [
     "de": "bügeln",
     "es": "planchar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je dois repasser ma chemise blanche avant de partir au travail.",
+    "ex_en": "I must iron my white shirt before going to my office.",
+    "ex_de": "Ich muss mein weißes Hemd bügeln, bevor ich ins Büro gehe.",
+    "ex_es": "Tengo que planchar mi camisa blanca antes de ir al trabajo."
   },
   {
     "id": "word_1302",
@@ -15334,7 +16906,11 @@ export const vocabulary = [
     "de": "das Problem / die Ausgabe",
     "es": "el asunto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons trouver une solution à ce problème lors de la réunion.",
+    "ex_en": "We need to address this important issue during our morning meeting.",
+    "ex_de": "Wir müssen dieses schwierige Problem während unserer gemeinsamen Besprechung heute lösen.",
+    "ex_es": "Debemos tratar este asunto delicado durante la reunión del equipo hoy."
   },
   {
     "id": "word_1303",
@@ -15343,7 +16919,11 @@ export const vocabulary = [
     "de": "die Informatik",
     "es": "la informática",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle poursuit des études universitaires en informatique pour devenir développeuse web.",
+    "ex_en": "She works in the IT department of a famous international company.",
+    "ex_de": "Sie arbeitet in der Informatik-Abteilung eines großen internationalen Unternehmens in Berlin.",
+    "ex_es": "Ella estudia una carrera en informática para convertirse en desarrolladora web."
   },
   {
     "id": "word_1304",
@@ -15352,7 +16932,11 @@ export const vocabulary = [
     "de": "das Journal",
     "es": "la revista / el diario",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce scientifique renommé a publié un article dans un journal médical.",
+    "ex_en": "This scientist published an interesting article in an international medical journal.",
+    "ex_de": "Dieser Wissenschaftler veröffentlichte einen interessanten Artikel in einem renommierten Journal.",
+    "ex_es": "Este científico publicó un artículo destacado en una revista científica internacional."
   },
   {
     "id": "word_1305",
@@ -15361,7 +16945,11 @@ export const vocabulary = [
     "de": "der Richter",
     "es": "el juez",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le juge écoute attentivement les arguments des deux avocats au tribunal.",
+    "ex_en": "The judge listens carefully to both lawyers during the courtroom trial.",
+    "ex_de": "Der Richter hört beiden Anwälten während des Prozesses im Gerichtssaal aufmerksam zu.",
+    "ex_es": "El juez escucha con atención a los dos abogados en el tribunal."
   },
   {
     "id": "word_1306",
@@ -15370,7 +16958,11 @@ export const vocabulary = [
     "de": "urteilen",
     "es": "juzgar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il ne faut jamais juger une personne sans la connaître vraiment.",
+    "ex_en": "You should never judge someone without knowing their full personal story.",
+    "ex_de": "Man sollte nicht voreilig über andere Menschen urteilen, ohne sie zu kennen.",
+    "ex_es": "No se debe juzgar a las personas sin conocer su verdadera historia."
   },
   {
     "id": "word_1307",
@@ -15379,7 +16971,11 @@ export const vocabulary = [
     "de": "eifrig",
     "es": "entusiasta",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est très passionné par la photographie et le cinéma moderne.",
+    "ex_en": "She is a keen reader who buys new books every week.",
+    "ex_de": "Er ist ein sehr eifriger Lerner, der jeden Tag neue Vokabeln übt.",
+    "ex_es": "Ella es una lectora muy entusiasta que compra libros todas las semanas."
   },
   {
     "id": "word_1308",
@@ -15388,7 +16984,11 @@ export const vocabulary = [
     "de": "Haupt-",
     "es": "clave",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La communication régulière est un facteur clé pour réussir ce projet.",
+    "ex_en": "Effective team communication is a key element for completing this project.",
+    "ex_de": "Gute Kommunikation ist das Haupt-Kriterium für den großen Erfolg dieses Projekts.",
+    "ex_es": "La buena comunicación es un factor clave para el éxito del proyecto."
   },
   {
     "id": "word_1309",
@@ -15397,7 +16997,11 @@ export const vocabulary = [
     "de": "die Tastatur",
     "es": "el teclado",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'utilise un nouveau clavier mécanique pour taper mes longs textes rapidement.",
+    "ex_en": "I use an ergonomic keyboard to type my work reports faster.",
+    "ex_de": "Ich benutze eine ergonomische Tastatur, um meine Berichte viel schneller zu schreiben.",
+    "ex_es": "Uso un teclado moderno para escribir mis informes de trabajo rápidamente."
   },
   {
     "id": "word_1310",
@@ -15406,7 +17010,11 @@ export const vocabulary = [
     "de": "die Tötung",
     "es": "el asesinato",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'inspecteur tente d'élucider ce meurtre étrange survenu au milieu de la nuit.",
+    "ex_en": "The detective investigates the suspicious killing that happened late last night.",
+    "ex_de": "Die Polizei untersucht die vorsätzliche Tötung des Mannes in diesem ruhigen Dorf.",
+    "ex_es": "El inspector investiga este terrible asesinato ocurrido en el centro urbano."
   },
   {
     "id": "word_1311",
@@ -15415,7 +17023,11 @@ export const vocabulary = [
     "de": "freundlich",
     "es": "amable",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon voisin est toujours très gentil quand j'ai besoin d'aide.",
+    "ex_en": "My neighbor is always very kind when I ask for assistance.",
+    "ex_de": "Mein Nachbar ist immer sehr freundlich, wenn ich um Hilfe bitte.",
+    "ex_es": "Mi vecino es siempre muy amable cuando necesito su valiosa ayuda."
   },
   {
     "id": "word_1312",
@@ -15424,7 +17036,11 @@ export const vocabulary = [
     "de": "das Königreich",
     "es": "el reino",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le roi gouverne avec sagesse sur tout son grand royaume médiéval.",
+    "ex_en": "The wise ruler governed over a wealthy and peaceful medieval kingdom.",
+    "ex_de": "Der weise Herrscher regierte viele Jahre über ein wohlhabendes, friedliches Königreich.",
+    "ex_es": "El rey gobernó durante muchos años sobre un reino próspero y pacífico."
   },
   {
     "id": "word_1313",
@@ -15433,7 +17049,11 @@ export const vocabulary = [
     "de": "das Etikett",
     "es": "la etiqueta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Regarde attentivement l'étiquette pour savoir comment laver ce pull délicat.",
+    "ex_en": "Check the fabric label carefully to know how to wash clothes.",
+    "ex_de": "Lies das Etikett sorgfältig, um zu wissen, wie man diesen Pullover wäscht.",
+    "ex_es": "Lee bien la etiqueta antes de lavar este jersey de lana delicada."
   },
   {
     "id": "word_1314",
@@ -15442,7 +17062,11 @@ export const vocabulary = [
     "de": "beschriften",
     "es": "etiquetar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons étiqueter tous les cartons avant le déménagement de demain.",
+    "ex_en": "We need to label each cardboard box clearly before moving house.",
+    "ex_de": "Wir müssen alle Umzugskartons deutlich beschriften, damit wir alles leicht finden.",
+    "ex_es": "Debemos etiquetar todas las cajas con claridad antes de la mudanza."
   },
   {
     "id": "word_1315",
@@ -15451,7 +17075,11 @@ export const vocabulary = [
     "de": "das Labor",
     "es": "el laboratorio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les scientifiques travaillent dans un laboratoire moderne pour développer ce vaccin.",
+    "ex_en": "The scientists work in a modern laboratory to test new medicines.",
+    "ex_de": "Die Wissenschaftler forschen in einem modernen Labor nach neuen wirksamen Medikamenten.",
+    "ex_es": "Los científicos investigan en un laboratorio moderno para crear nuevos medicamentos."
   },
   {
     "id": "word_1316",
@@ -15460,7 +17088,11 @@ export const vocabulary = [
     "de": "der Mangel",
     "es": "la falta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Son projet a échoué principalement à cause d'un manque de budget.",
+    "ex_en": "Their business plan failed mainly due to a lack of money.",
+    "ex_de": "Das Projekt scheiterte vor allem an einem akuten Mangel an Geld.",
+    "ex_es": "El plan fracasó principalmente debido a una falta notable de presupuesto."
   },
   {
     "id": "word_1317",
@@ -15469,7 +17101,11 @@ export const vocabulary = [
     "de": "mangeln",
     "es": "carecer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ces jeunes sportifs ont du talent mais ils manquent d'expérience.",
+    "ex_en": "These young players show potential but still lack sufficient game experience.",
+    "ex_de": "Diesen jungen Sportlern mangelt es noch an der nötigen internationalen Erfahrung.",
+    "ex_es": "Estos atletas son talentosos pero todavía suelen carecer de suficiente experiencia."
   },
   {
     "id": "word_1318",
@@ -15478,7 +17114,11 @@ export const vocabulary = [
     "de": "neueste",
     "es": "último",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai téléchargé la version la plus récente de ce logiciel aujourd'hui.",
+    "ex_en": "She always reads the latest news online before starting work everyday.",
+    "ex_de": "Er hat sich das neueste Smartphone-Modell im örtlichen Geschäft gekauft.",
+    "ex_es": "Descargué la versión más reciente de la aplicación en mi móvil."
   },
   {
     "id": "word_1319",
@@ -15487,7 +17127,11 @@ export const vocabulary = [
     "de": "legen",
     "es": "poner / colocar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu peux poser tes affaires lourdes sur cette grande table basse.",
+    "ex_en": "Please lay the clean blankets neatly on the guest bed upstairs.",
+    "ex_de": "Du kannst deine schweren Bücher auf den großen Tisch im Wohnzimmer legen.",
+    "ex_es": "Puedes poner tus bolsas pesadas sobre la mesa de la cocina."
   },
   {
     "id": "word_1320",
@@ -15496,7 +17140,11 @@ export const vocabulary = [
     "de": "die Schicht",
     "es": "la capa",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une épaisse couche de neige recouvre tout le jardin ce matin.",
+    "ex_en": "A thick layer of white snow covers the garden this morning.",
+    "ex_de": "Eine dicke Schicht Neuschnee bedeckt heute Morgen den gesamten grünen Garten.",
+    "ex_es": "Una gruesa capa de nieve cubre todo el jardín esta mañana."
   },
   {
     "id": "word_1321",
@@ -15505,7 +17153,11 @@ export const vocabulary = [
     "de": "das Blei",
     "es": "el plomo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce tuyau ancien était autrefois fabriqué avec du plomb très toxique.",
+    "ex_en": "Old water pipes were often manufactured using heavy and toxic lead.",
+    "ex_de": "Alte Wasserrohre wurden früher oft aus giftigem und schwerem Blei hergestellt.",
+    "ex_es": "Las tuberías antiguas estaban fabricadas a menudo con plomo muy tóxico."
   },
   {
     "id": "word_1322",
@@ -15514,7 +17166,11 @@ export const vocabulary = [
     "de": "führend",
     "es": "principal",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette entreprise est devenue le principal exportateur de voitures en Europe.",
+    "ex_en": "He is recognized as the leading expert in modern solar technology.",
+    "ex_de": "Sie ist eine führende Expertin auf dem Gebiet der künstlichen Intelligenz.",
+    "ex_es": "Esta empresa es la principal distribuidora de energía en la región."
   },
   {
     "id": "word_1323",
@@ -15523,7 +17179,11 @@ export const vocabulary = [
     "de": "das Blatt",
     "es": "la hoja",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque feuille jaune tombe lentement de l'arbre pendant la saison d'automne.",
+    "ex_en": "Every green leaf turns bright orange when autumn arrives each year.",
+    "ex_de": "Jedes bunte Blatt fällt im Herbst langsam von den alten Bäumen.",
+    "ex_es": "Cada hoja amarilla cae suavemente del árbol durante el otoño fresco."
   },
   {
     "id": "word_1324",
@@ -15532,7 +17192,11 @@ export const vocabulary = [
     "de": "das Leder",
     "es": "el cuero",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon grand-père porte toujours une veste en cuir marron très élégante.",
+    "ex_en": "He bought a durable jacket made of genuine brown leather yesterday.",
+    "ex_de": "Er kaufte gestern eine elegante Jacke aus hochwertigem braunem Leder.",
+    "ex_es": "Mi abuelo compró una chaqueta bonita de cuero marrón muy elegante."
   },
   {
     "id": "word_1325",
@@ -15541,7 +17205,11 @@ export const vocabulary = [
     "de": "legal",
     "es": "legal",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons obtenir un avis légal avant de signer ce contrat.",
+    "ex_en": "We must seek professional legal advice before signing this business contract.",
+    "ex_de": "Wir müssen prüfen, ob dieser Schritt aus juristischer Sicht legal ist.",
+    "ex_es": "Es totalmente legal firmar este contrato con la ayuda del abogado."
   },
   {
     "id": "word_1326",
@@ -15550,7 +17218,11 @@ export const vocabulary = [
     "de": "die Freizeit",
     "es": "el ocio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il consacre son temps de loisir à la peinture et au jardinage.",
+    "ex_en": "She spends most of her leisure time reading books and cooking.",
+    "ex_de": "In seiner Freizeit treibt er regelmäßig Sport und kocht sehr gern.",
+    "ex_es": "Él dedica su tiempo de ocio a la lectura y jardinería."
   },
   {
     "id": "word_1327",
@@ -15559,7 +17231,11 @@ export const vocabulary = [
     "de": "die Länge",
     "es": "la longitud",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'architecte mesure la longueur totale de cette pièce avec un mètre.",
+    "ex_en": "The worker measured the exact length of the new wooden fence.",
+    "ex_de": "Der Handwerker misst die genaue Länge dieses langen Holztisches im Flur.",
+    "ex_es": "El carpintero mide la longitud exacta de la mesa del comedor."
   },
   {
     "id": "word_1328",
@@ -15568,7 +17244,11 @@ export const vocabulary = [
     "de": "ebnen",
     "es": "nivelar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les ouvriers doivent niveler le sol avant de couler le béton.",
+    "ex_en": "The workers must level the ground before constructing the new house.",
+    "ex_de": "Die Bauarbeiter müssen den sandigen Boden gründlich ebnen, bevor sie bauen.",
+    "ex_es": "Los albañiles deben nivelar el terreno antes de construir la casa."
   },
   {
     "id": "word_1329",
@@ -15577,7 +17257,11 @@ export const vocabulary = [
     "de": "lügen",
     "es": "mentir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il vaut mieux dire la vérité plutôt que de mentir constamment.",
+    "ex_en": "It is always better to tell truth rather than to lie.",
+    "ex_de": "Es ist viel besser, ehrlich zu sein, als ständig zu lügen.",
+    "ex_es": "Es mucho mejor decir la verdad que mentir a tus amigos."
   },
   {
     "id": "word_1330",
@@ -15586,7 +17270,11 @@ export const vocabulary = [
     "de": "das Limit",
     "es": "el límite",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous avez dépassé la limite de vitesse autorisée sur cette autoroute.",
+    "ex_en": "You have exceeded the official speed limit on this wide highway.",
+    "ex_de": "Sie haben das empfohlene Limit für diese Autobahnstrecke heute leider überschritten.",
+    "ex_es": "Has superado el límite de velocidad permitido en esta amplia autopista."
   },
   {
     "id": "word_1331",
@@ -15595,7 +17283,11 @@ export const vocabulary = [
     "de": "begrenzen",
     "es": "limitar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin conseille de limiter la consommation de sucre chaque jour.",
+    "ex_en": "The doctor advises us to limit our daily sugar intake strictly.",
+    "ex_de": "Der Arzt rät, den Konsum von ungesundem Zucker deutlich zu begrenzen.",
+    "ex_es": "El médico aconseja limitar el consumo de azúcar para estar sano."
   },
   {
     "id": "word_1332",
@@ -15604,7 +17296,11 @@ export const vocabulary = [
     "de": "die Lippe",
     "es": "el labio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle applique un baume doux sur sa lèvre sèche en hiver.",
+    "ex_en": "She applies moisturizing balm to her dry lip during cold winters.",
+    "ex_de": "Sie trägt eine Creme auf die trockene Lippe im Winter auf.",
+    "ex_es": "Ella se aplica un bálsamo hidratante en el labio agrietado hoy."
   },
   {
     "id": "word_1333",
@@ -15613,7 +17309,11 @@ export const vocabulary = [
     "de": "die Flüssigkeit",
     "es": "el líquido",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Fais attention à ne pas renverser ce liquide chaud par terre.",
+    "ex_en": "Be careful not to spill this hot liquid on the carpet.",
+    "ex_de": "Sei vorsichtig, damit du diese heiße Flüssigkeit nicht versehentlich verschüttest.",
+    "ex_es": "Ten cuidado para no derramar este líquido caliente en la mesa."
   },
   {
     "id": "word_1334",
@@ -15622,7 +17322,11 @@ export const vocabulary = [
     "de": "die Literatur",
     "es": "la literatura",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet étudiant passionné lit beaucoup d'œuvres classiques de la littérature française.",
+    "ex_en": "This student enjoys studying modern European literature at the local university.",
+    "ex_de": "Dieser Student interessiert sich sehr für klassische deutsche Literatur des Jahrhunderts.",
+    "ex_es": "Este estudiante lee muchas obras clásicas de la literatura española actual."
   },
   {
     "id": "word_1335",
@@ -15631,7 +17335,11 @@ export const vocabulary = [
     "de": "der Lebensunterhalt",
     "es": "el modo de vida",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Son mode de vie sain lui permet de rester en pleine forme.",
+    "ex_en": "He earns an honest living as a skilled carpenter in town.",
+    "ex_de": "Er verdient seinen Lebensunterhalt mit harter Arbeit in einer kleinen Werkstatt.",
+    "ex_es": "Él mantiene un modo de vida saludable comiendo frutas y verduras."
   },
   {
     "id": "word_1336",
@@ -15640,7 +17348,11 @@ export const vocabulary = [
     "de": "lebendig",
     "es": "vivo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Toutes les créatures vivantes ont besoin d'eau potable pour survivre durablement.",
+    "ex_en": "Every living creature needs clean fresh water to survive and thrive.",
+    "ex_de": "Jedes lebendige Wesen benötigt sauberes Wasser, um in der Natur zu überleben.",
+    "ex_es": "Todo ser vivo necesita agua limpia y alimentos para poder sobrevivir."
   },
   {
     "id": "word_1337",
@@ -15649,7 +17361,11 @@ export const vocabulary = [
     "de": "lokalisieren",
     "es": "ubicar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Grâce au système GPS, nous pouvons rapidement localiser notre position exacte.",
+    "ex_en": "Using the GPS application, we can easily locate our lost vehicle.",
+    "ex_de": "Mithilfe der neuen Karte konnten wir das abgelegene Hotel schnell lokalisieren.",
+    "ex_es": "Con el sistema GPS podemos ubicar el hotel en el mapa."
   },
   {
     "id": "word_1338",
@@ -15658,7 +17374,11 @@ export const vocabulary = [
     "de": "gelegen",
     "es": "ubicado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre nouvel appartement est idéalement situé près de la gare centrale.",
+    "ex_en": "Our new apartment is centrally located near the main train station.",
+    "ex_de": "Unsere neue Wohnung ist sehr ruhig im Zentrum der Stadt gelegen.",
+    "ex_es": "Nuestro nuevo piso está cómodamente ubicado cerca de la estación central."
   },
   {
     "id": "word_1339",
@@ -15667,7 +17387,11 @@ export const vocabulary = [
     "de": "der Standort",
     "es": "la ubicación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce restaurant bénéficie d'un très bon emplacement au bord de mer.",
+    "ex_en": "This cozy café is in a perfect location near the park.",
+    "ex_de": "Dieses Restaurant hat einen idealen Standort direkt an der schönen Strandpromenade.",
+    "ex_es": "Este restaurante tiene una excelente ubicación en el paseo marítimo céntrico."
   },
   {
     "id": "word_1340",
@@ -15676,7 +17400,11 @@ export const vocabulary = [
     "de": "das Protokoll",
     "es": "el registro",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le capitaine note chaque événement important dans son journal de bord.",
+    "ex_en": "The security guard keeps a daily log of all visiting guests.",
+    "ex_de": "Der Wachmann führt ein genaues Protokoll über alle täglichen Besucher hier.",
+    "ex_es": "El recepcionista mantiene un registro detallado de todas las visitas diarias."
   },
   {
     "id": "word_1341",
@@ -15685,7 +17413,11 @@ export const vocabulary = [
     "de": "einsam",
     "es": "solitario",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le vieux marin habite dans une cabane solitaire sur la colline.",
+    "ex_en": "She felt quite lonely after moving into a new big city.",
+    "ex_de": "Er fühlte sich anfangs einsam in dieser fremden und großen Stadt.",
+    "ex_es": "El viejo marinero vive en una casa solitaria cerca del mar."
   },
   {
     "id": "word_1342",
@@ -15694,7 +17426,11 @@ export const vocabulary = [
     "de": "der Verlust",
     "es": "la pérdida",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'entreprise a enregistré une perte financière importante durant le trimestre.",
+    "ex_en": "The small firm suffered a heavy financial loss during this quarter.",
+    "ex_de": "Das kleine Unternehmen erlitt einen schweren finanziellen Verlust in diesem Quartal.",
+    "ex_es": "La empresa sufrió una gran pérdida económica durante este último trimestre."
   },
   {
     "id": "word_1343",
@@ -15703,7 +17439,11 @@ export const vocabulary = [
     "de": "der Luxus",
     "es": "el lujo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont passé leurs vacances d'été dans un hôtel de luxe.",
+    "ex_en": "They enjoyed their summer holidays staying in a luxury seaside hotel.",
+    "ex_de": "Sie verbrachten ihren Sommerurlaub in einem Hotel mit viel purem Luxus.",
+    "ex_es": "Ellos pasaron sus vacaciones de verano en un hotel de gran lujo."
   },
   {
     "id": "word_1344",
@@ -15712,7 +17452,11 @@ export const vocabulary = [
     "de": "verrückt",
     "es": "loco",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon frère adore faire des sports extrêmes et a un comportement fou.",
+    "ex_en": "He became mad with anger when he heard the unexpected news.",
+    "ex_de": "Er wurde vor Wut fast verrückt, als er die Nachricht hörte.",
+    "ex_es": "Él se volvió casi loco de alegría al ganar el partido."
   },
   {
     "id": "word_1345",
@@ -15721,7 +17465,11 @@ export const vocabulary = [
     "de": "die Magie",
     "es": "la magia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants étaient émerveillés par la magie du spectacle de cirque.",
+    "ex_en": "The young children were amazed by the magic of the circus.",
+    "ex_de": "Die Kinder staunten über die zauberhafte Magie dieser bunten Zirkusshow gestern.",
+    "ex_es": "Los niños estaban fascinados por la magia del espectáculo de circo."
   },
   {
     "id": "word_1346",
@@ -15730,7 +17478,11 @@ export const vocabulary = [
     "de": "hauptsächlich",
     "es": "principalmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette région touristique vit principalement de l'agriculture et du vin local.",
+    "ex_en": "This beautiful region lives mainly from tourism and rich local agriculture.",
+    "ex_de": "Diese Region lebt hauptsächlich von der Landwirtschaft und dem jährlichen Tourismus.",
+    "ex_es": "Esta región rural vive principalmente de la agricultura y el turismo."
   },
   {
     "id": "word_1347",
@@ -15739,7 +17491,11 @@ export const vocabulary = [
     "de": "das Einkaufszentrum",
     "es": "el centro comercial",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous allons souvent au grand centre commercial pour faire nos courses.",
+    "ex_en": "We often walk to the large shopping mall to buy groceries.",
+    "ex_de": "Wir fahren gerne in das große Einkaufszentrum, um neue Kleidung einzukaufen.",
+    "ex_es": "Vamos a menudo al centro comercial para comprar ropa y comida."
   },
   {
     "id": "word_1348",
@@ -15748,7 +17504,11 @@ export const vocabulary = [
     "de": "das Management",
     "es": "la gestión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une bonne gestion du temps permet d'accomplir ses tâches sans stress.",
+    "ex_en": "Good time management helps students finish their homework without feeling stressed.",
+    "ex_de": "Das Management der Firma plant neue Strategien für das nächste Geschäftsjahr.",
+    "ex_es": "Una buena gestión del tiempo ayuda a completar todas las tareas."
   },
   {
     "id": "word_1349",
@@ -15757,7 +17517,11 @@ export const vocabulary = [
     "de": "das Marketing",
     "es": "el marketing",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il travaille dans le département marketing d'une grande entreprise de jeux.",
+    "ex_en": "She has been working in digital marketing for over five years.",
+    "ex_de": "Er arbeitet seit mehreren Jahren im Bereich Marketing für innovative Start-ups.",
+    "ex_es": "Ella trabaja como especialista en marketing para una marca de ropa."
   },
   {
     "id": "word_1350",
@@ -15766,7 +17530,11 @@ export const vocabulary = [
     "de": "die Ehe",
     "es": "el matrimonio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils fêtent aujourd'hui vingt ans d'un mariage heureux et harmonieux.",
+    "ex_en": "They celebrate twenty happy years of marriage with their close friends.",
+    "ex_de": "Sie blicken auf zwanzig glückliche Jahre einer harmonischen Ehe gemeinsam zurück.",
+    "ex_es": "Ellos celebran veinte años de matrimonio feliz junto a su familia."
   },
   {
     "id": "word_1351",
@@ -15775,7 +17543,11 @@ export const vocabulary = [
     "de": "das Material",
     "es": "el material",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le bois est un matériau naturel idéal pour fabriquer des meubles.",
+    "ex_en": "Wood is an excellent natural material used to make sustainable furniture.",
+    "ex_de": "Holz ist ein natürliches Material, das sich hervorragend für Möbel eignet.",
+    "ex_es": "La madera es un material natural ideal para fabricar muebles duraderos."
   },
   {
     "id": "word_1352",
@@ -15784,7 +17556,11 @@ export const vocabulary = [
     "de": "in der Zwischenzeit",
     "es": "mientras tanto",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je prépare le dîner, pendant ce temps tu peux mettre la table.",
+    "ex_en": "I am cooking dinner, meanwhile you can set the dining table.",
+    "ex_de": "Ich koche das Essen, in der Zwischenzeit kannst du den Tisch decken.",
+    "ex_es": "Yo preparo la cena, mientras tanto tú puedes poner la mesa."
   },
   {
     "id": "word_1353",
@@ -15793,7 +17569,11 @@ export const vocabulary = [
     "de": "die Maßnahme",
     "es": "la medida",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le gouvernement prend une mesure stricte pour réduire la pollution urbaine.",
+    "ex_en": "The government introduced a new measure to improve public road safety.",
+    "ex_de": "Die Regierung ergreift eine wichtige Maßnahme zum Schutz der heimischen Umwelt.",
+    "ex_es": "El gobierno aprobó una nueva medida para reducir la contaminación urbana."
   },
   {
     "id": "word_1354",
@@ -15802,7 +17582,11 @@ export const vocabulary = [
     "de": "messen",
     "es": "medir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le menuisier doit mesurer soigneusement la porte avant de la découper.",
+    "ex_en": "The carpenter needs to measure the wooden door before cutting it.",
+    "ex_de": "Der Handwerker muss das Zimmer genau messen, bevor er den Boden verlegt.",
+    "ex_es": "El carpintero debe medir bien la madera antes de cortarla cuidadosamente."
   },
   {
     "id": "word_1355",
@@ -15811,7 +17595,11 @@ export const vocabulary = [
     "de": "mittel",
     "es": "medio",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce restaurant propose des portions de taille moyenne à prix raisonnable.",
+    "ex_en": "She ordered a medium coffee with milk at the local café.",
+    "ex_de": "Sie bestellte einen Kaffee von mittlerer Größe in dem gemütlichen Café.",
+    "ex_es": "Ella pidió un café de tamaño medio en la cafetería cercana."
   },
   {
     "id": "word_1356",
@@ -15820,7 +17608,11 @@ export const vocabulary = [
     "de": "geistig",
     "es": "mental",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La pratique régulière du sport contribue grandement à la santé mentale.",
+    "ex_en": "Regular physical exercise is very beneficial for maintaining good mental health.",
+    "ex_de": "Regelmäßige Bewegung im Freien stärkt die körperliche und geistige Gesundheit.",
+    "ex_es": "El ejercicio físico regular es muy beneficioso para la salud mental."
   },
   {
     "id": "word_1357",
@@ -15829,7 +17621,11 @@ export const vocabulary = [
     "de": "die Unordnung",
     "es": "el desorden",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Range ta chambre rapidement car il y a un désordre incroyable.",
+    "ex_en": "Please clean up your room because there is a huge mess.",
+    "ex_de": "Räume dein Zimmer bitte auf, denn hier herrscht große Unordnung.",
+    "ex_es": "Ordena tu habitación ahora mismo porque hay un gran desorden aquí."
   },
   {
     "id": "word_1358",
@@ -15838,7 +17634,11 @@ export const vocabulary = [
     "de": "mild",
     "es": "suave",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'hiver est généralement très doux dans cette région du sud côtier.",
+    "ex_en": "The climate in this coastal region is very mild during winter.",
+    "ex_de": "Der Winter in diesem Teil des Landes ist meist sehr mild.",
+    "ex_es": "El clima en esta región costera es muy suave durante el invierno."
   },
   {
     "id": "word_1359",
@@ -15847,7 +17647,11 @@ export const vocabulary = [
     "de": "die Mühle",
     "es": "el molino",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons aperçu un vieux moulin à vent près de la rivière.",
+    "ex_en": "We saw a traditional water mill standing beside the quiet river.",
+    "ex_de": "Wir sahen eine traditionelle alte Mühle neben dem ruhigen Fluss stehen.",
+    "ex_es": "Vimos un antiguo molino de viento junto al camino del campo."
   },
   {
     "id": "word_1360",
@@ -15856,7 +17660,11 @@ export const vocabulary = [
     "de": "die Mine",
     "es": "la mina",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "De nombreux ouvriers descendent chaque matin dans cette mine de charbon.",
+    "ex_en": "Many miners worked hard inside this deep dark gold mine everyday.",
+    "ex_de": "Viele mutige Bergleute arbeiteten früher in dieser tiefen Mine nach Kohle.",
+    "ex_es": "Muchos mineros trabajaban duro en esta profunda mina de carbón antigua."
   },
   {
     "id": "word_1361",
@@ -15865,7 +17673,11 @@ export const vocabulary = [
     "de": "mischen",
     "es": "mezclar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il faut bien mélanger la farine et le sucre dans ce bol.",
+    "ex_en": "You should mix the flour and eggs thoroughly in this bowl.",
+    "ex_de": "Du solltest Mehl und Eier in dieser Schüssel gründlich mischen.",
+    "ex_es": "Debes mezclar bien la harina y el azúcar en este recipiente."
   },
   {
     "id": "word_1362",
@@ -15874,7 +17686,11 @@ export const vocabulary = [
     "de": "die Mischung",
     "es": "la mezcla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette salade colorée contient un délicieux mélange d'épices et d'herbes aromatiques.",
+    "ex_en": "This soup has a delicious mixture of fresh spices and vegetables.",
+    "ex_de": "Diese schmackhafte Suppe enthält eine feine Mischung aus frischen Kräutern.",
+    "ex_es": "Esta salsa tiene una deliciosa mezcla de hierbas aromáticas y especias."
   },
   {
     "id": "word_1363",
@@ -15883,7 +17699,11 @@ export const vocabulary = [
     "de": "das Modell",
     "es": "el modelo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'ingénieur a présenté un nouveau modèle écologique de voiture électrique compacte.",
+    "ex_en": "The company launched an innovative model of eco-friendly electric family car.",
+    "ex_de": "Die Firma präsentierte ein neues Modell eines umweltfreundlichen kleinen Elektroautos.",
+    "ex_es": "La empresa presentó un nuevo modelo de coche eléctrico muy eficiente."
   },
   {
     "id": "word_1364",
@@ -15892,7 +17712,11 @@ export const vocabulary = [
     "de": "die Stimmung",
     "es": "el estado de ánimo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le soleil du matin met toujours mon père de bonne humeur.",
+    "ex_en": "Good morning sunshine always puts everybody in a very happy mood.",
+    "ex_de": "Gutes Wetter am Morgen sorgt immer für eine heitere Stimmung.",
+    "ex_es": "El buen tiempo mejora siempre mi estado de ánimo por la mañana."
   },
   {
     "id": "word_1365",
@@ -15901,7 +17725,11 @@ export const vocabulary = [
     "de": "der Schlamm",
     "es": "el barro",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ses bottes de marche étaient couvertes de boue après la randonnée.",
+    "ex_en": "His heavy boots were covered with wet mud after the hike.",
+    "ex_de": "Seine Schuhe waren nach dem langen Waldspaziergang voller feuchtem Schlamm.",
+    "ex_es": "Sus botas estaban completamente cubiertas de barro tras la larga caminata."
   },
   {
     "id": "word_1366",
@@ -15910,7 +17738,11 @@ export const vocabulary = [
     "de": "der Mord",
     "es": "el asesinato",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les policiers ont résolu l'affaire du meurtre après des semaines d'enquête.",
+    "ex_en": "The police solved the brutal murder case after two long weeks.",
+    "ex_de": "Die Ermittler konnten den ungeklärten Mord nach wochenlanger Arbeit endlich aufklären.",
+    "ex_es": "La policía logró resolver el caso de asesinato tras semanas intensas."
   },
   {
     "id": "word_1367",
@@ -15919,7 +17751,11 @@ export const vocabulary = [
     "de": "ermorden",
     "es": "asesinar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le criminel dangereux a tenté d'assassiner le témoin clé du procès.",
+    "ex_en": "The dangerous criminal attempted to murder the key witness in secret.",
+    "ex_de": "Der Täter versuchte damals vergeblich, den wichtigen Kronzeugen heimlich zu ermorden.",
+    "ex_es": "El peligroso criminal intentó asesinar al testigo principal del juicio importante."
   },
   {
     "id": "word_1368",
@@ -15928,7 +17764,11 @@ export const vocabulary = [
     "de": "der Muskel",
     "es": "el músculo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'athlète s'est étiré pour ne pas froisser son muscle pendant l'effort.",
+    "ex_en": "The runner exercised carefully to avoid pulling a leg muscle today.",
+    "ex_de": "Der Läufer dehnte jeden Muskel sorgfältig vor dem schnellen Sprint.",
+    "ex_es": "El atleta estiró bien cada músculo antes de empezar la carrera."
   },
   {
     "id": "word_1369",
@@ -15937,7 +17777,11 @@ export const vocabulary = [
     "de": "das Mysterium",
     "es": "el misterio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La disparition de ce tableau ancien reste un mystère pour tous.",
+    "ex_en": "The sudden disappearance of the valuable painting remains an unsolved mystery.",
+    "ex_de": "Das plötzliche Verschwinden des Bildes bleibt bis heute ein großes Mysterium.",
+    "ex_es": "La repentina desaparición del cuadro sigue siendo un gran misterio hoy."
   },
   {
     "id": "word_1370",
@@ -15946,7 +17790,11 @@ export const vocabulary = [
     "de": "der Nagel",
     "es": "la uña / el clavo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il utilise un marteau pour planter ce clou dans le mur.",
+    "ex_en": "He used a hammer to drive a metal nail into wood.",
+    "ex_de": "Er schlug einen langen Nagel mit dem Hammer in die Wand.",
+    "ex_es": "Él usó un martillo para clavar este clavo en la pared."
   },
   {
     "id": "word_1371",
@@ -15955,7 +17803,11 @@ export const vocabulary = [
     "de": "die Erzählung",
     "es": "la narrativa",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce roman historique propose un récit captivant sur les grands explorateurs.",
+    "ex_en": "This book provides a compelling narrative about brave nineteenth-century polar explorers.",
+    "ex_de": "Das Buch bietet eine packende Erzählung über das Leben mutiger Seefahrer.",
+    "ex_es": "Esta novela ofrece una narrativa fascinante sobre la vida de los exploradores."
   },
   {
     "id": "word_1372",
@@ -15964,7 +17816,11 @@ export const vocabulary = [
     "de": "die Nation",
     "es": "la nación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le président s'est adressé à toute la nation lors d'un discours.",
+    "ex_en": "The prime minister addressed the entire nation during a special broadcast.",
+    "ex_de": "Der Präsident sprach gestern in einer Fernsehansprache zu der gesamten Nation.",
+    "ex_es": "El presidente se dirigió anoche a toda la nación por televisión."
   },
   {
     "id": "word_1373",
@@ -15973,7 +17829,11 @@ export const vocabulary = [
     "de": "einheimisch",
     "es": "nativo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce guide natif de la région connaît tous les sentiers cachés.",
+    "ex_en": "Our friendly native guide knows every hidden trail in the mountains.",
+    "ex_de": "Die einheimische Reiseleiterin kennt alle versteckten Wege in den schönen Bergen.",
+    "ex_es": "Este guía nativo de la región conoce todos los senderos montañosos."
   },
   {
     "id": "word_1374",
@@ -15982,7 +17842,11 @@ export const vocabulary = [
     "de": "natürlich",
     "es": "naturalmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants curieux apprennent naturellement les langues étrangères en jouant ensemble.",
+    "ex_en": "Young children naturally pick up foreign languages while playing with friends.",
+    "ex_de": "Kinder lernen neue Sprachen ganz natürlich durch das tägliche gemeinsame Spielen.",
+    "ex_es": "Los niños pequeños aprenden idiomas naturalmente cuando juegan con sus amigos."
   },
   {
     "id": "word_1375",
@@ -15991,7 +17855,11 @@ export const vocabulary = [
     "de": "notwendigerweise",
     "es": "necesariamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un produit cher n'est pas nécessairement de meilleure qualité qu'un autre.",
+    "ex_en": "A high price does not necessarily mean that quality is superior.",
+    "ex_de": "Ein teures Produkt ist nicht notwendigerweise von viel besserer Qualität als andere.",
+    "ex_es": "Un precio alto no significa necesariamente que el producto sea mejor."
   },
   {
     "id": "word_1376",
@@ -16000,7 +17868,11 @@ export const vocabulary = [
     "de": "die Nadel",
     "es": "la aguja",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle utilise une fine aiguille pour recoudre son pantalon en coton.",
+    "ex_en": "She used a sharp needle and thread to fix the shirt.",
+    "ex_de": "Sie benutzte eine feine Nadel, um das zerrissene Hemd zu reparieren.",
+    "ex_es": "Ella usó una aguja pequeña y un hilo para coser."
   },
   {
     "id": "word_1377",
@@ -16009,7 +17881,11 @@ export const vocabulary = [
     "de": "negativ",
     "es": "negativo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce changement de planning a eu un impact négatif sur l'équipe.",
+    "ex_en": "The unexpected project delay had a negative effect on team morale.",
+    "ex_de": "Die plötzliche Verspätung hatte einen negativen Einfluss auf die allgemeine Stimmung.",
+    "ex_es": "Este retraso imprevisto tuvo un efecto negativo en la motivación general."
   },
   {
     "id": "word_1378",
@@ -16018,7 +17894,11 @@ export const vocabulary = [
     "de": "die Nachbarschaft",
     "es": "el barrio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous habitons dans un quartier très calme et agréable à vivre.",
+    "ex_en": "We live in a quiet and friendly neighbourhood near the park.",
+    "ex_de": "Wir wohnen in einer sehr ruhigen und freundlichen Nachbarschaft am Stadtrand.",
+    "ex_es": "Nosotros vivimos en un barrio tranquilo con muchos parques y tiendas."
   },
   {
     "id": "word_1379",
@@ -16027,7 +17907,11 @@ export const vocabulary = [
     "de": "weder",
     "es": "tampoco",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je n'aime ni l'un ni l'autre de ces deux manteaux d'hiver.",
+    "ex_en": "Neither candidate had sufficient experience to manage the large international department.",
+    "ex_de": "Weder der rote noch der blaue Pullover passte ihm gestern richtig.",
+    "ex_es": "A mí no me gusta el té y a mi hermano tampoco."
   },
   {
     "id": "word_1380",
@@ -16036,7 +17920,11 @@ export const vocabulary = [
     "de": "noch",
     "es": "ni",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il ne boit ni thé ni café quand il est fatigué.",
+    "ex_en": "He drinks neither sweet tea nor bitter coffee in the evening.",
+    "ex_de": "Er trinkt am späten Abend weder starken Tee noch heißen Kaffee.",
+    "ex_es": "Él no bebe café ni té caliente durante la tarde."
   },
   {
     "id": "word_1381",
@@ -16045,7 +17933,11 @@ export const vocabulary = [
     "de": "normal",
     "es": "normal",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est tout à fait normal de faire des erreurs au début.",
+    "ex_en": "It is completely normal to make mistakes when learning something new.",
+    "ex_de": "Es ist völlig normal, am Anfang beim Lernen kleine Fehler zu machen.",
+    "ex_es": "Es totalmente normal cometer errores cuando aprendes un nuevo idioma extranjero."
   },
   {
     "id": "word_1382",
@@ -16054,7 +17946,11 @@ export const vocabulary = [
     "de": "nördlich",
     "es": "del norte",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ces oiseaux migrateurs s'envolent vers les régions du nord au printemps.",
+    "ex_en": "These migratory birds travel towards the northern regions during early spring.",
+    "ex_de": "Diese Zugvögel fliegen im Frühjahr in die kälteren nördlichen Regionen zurück.",
+    "ex_es": "Estas aves vuelan hacia los países del norte en primavera fresca."
   },
   {
     "id": "word_1383",
@@ -16063,7 +17959,11 @@ export const vocabulary = [
     "de": "notieren",
     "es": "anotar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pense à noter la date du prochain rendez-vous dans ton calendrier.",
+    "ex_en": "Please note down the time of our meeting in your calendar.",
+    "ex_de": "Vergiss nicht, den Termin im Kalender genau zu notieren für morgen.",
+    "ex_es": "Acuérdate de anotar la cita médica en tu agenda personal hoy."
   },
   {
     "id": "word_1384",
@@ -16072,7 +17972,11 @@ export const vocabulary = [
     "de": "nuklear",
     "es": "nuclear",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le débat autour de l'énergie nucléaire reste très animé dans ce pays.",
+    "ex_en": "The political debate about nuclear power remains very intense in Europe.",
+    "ex_de": "Die Debatte über nukleare Energie wird im Parlament sehr intensiv geführt.",
+    "ex_es": "El debate sobre la energía nuclear sigue siendo muy importante aquí."
   },
   {
     "id": "word_1385",
@@ -16081,7 +17985,11 @@ export const vocabulary = [
     "de": "offensichtlich",
     "es": "obvio",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La réponse à cette question complexe n'était pas du tout évidente.",
+    "ex_en": "The simple solution to this problem was not obvious at first.",
+    "ex_de": "Der Fehler im Text war für alle Leser sofort offensichtlich erkennbar.",
+    "ex_es": "La solución a este problema no era en absoluto nada obvia."
   },
   {
     "id": "word_1386",
@@ -16090,7 +17998,11 @@ export const vocabulary = [
     "de": "offensichtlich",
     "es": "obviamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Évidemment, nous serons ravis de vous accompagner à cette fête d'anniversaire.",
+    "ex_en": "Obviously, we will be happy to join you at the party.",
+    "ex_de": "Offensichtlich haben sie viel Zeit in dieses erfolgreiche neue Projekt investiert.",
+    "ex_es": "Obviamente, estaremos encantados de asistir a tu fiesta de cumpleaños mañana."
   },
   {
     "id": "word_1387",
@@ -16099,7 +18011,11 @@ export const vocabulary = [
     "de": "die Gelegenheit",
     "es": "la ocasión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce voyage scolaire est une belle occasion d'apprendre une langue étrangère.",
+    "ex_en": "This trip was a wonderful occasion to celebrate her university graduation.",
+    "ex_de": "Diese Reise bot eine wunderbare Gelegenheit, eine fremde Sprache zu üben.",
+    "ex_es": "Este viaje representa una magnífica ocasión para practicar un idioma extranjero."
   },
   {
     "id": "word_1388",
@@ -16108,7 +18024,11 @@ export const vocabulary = [
     "de": "auftreten",
     "es": "ocurrir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Des pannes imprévues peuvent se produire si nous n'entretenons pas la machine.",
+    "ex_en": "Unexpected technical errors can occur if you do not update software.",
+    "ex_de": "Unerwartete Probleme können jederzeit auftreten, wenn man nicht gut aufpasst.",
+    "ex_es": "Incidentes imprevistos pueden ocurrir si no se siguen las normas establecidas."
   },
   {
     "id": "word_1389",
@@ -16117,7 +18037,11 @@ export const vocabulary = [
     "de": "seltsam / ungerade",
     "es": "extraño / impar",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai entendu un bruit étrange venant du grenier hier soir.",
+    "ex_en": "I noticed an odd sound coming from the engine this morning.",
+    "ex_de": "Drei und fünf sind ungerade Zahlen in der mathematischen Reihe.",
+    "ex_es": "Escuché un ruido extraño que venía del piso de arriba."
   },
   {
     "id": "word_1390",
@@ -16126,7 +18050,11 @@ export const vocabulary = [
     "de": "offiziell",
     "es": "oficial",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le ministre a fait une déclaration officielle devant la presse nationale.",
+    "ex_en": "The minister made an official statement to the national press today.",
+    "ex_de": "Der Minister gab heute eine offizielle Erklärung vor der Presse ab.",
+    "ex_es": "El ministro hizo una declaración oficial ante todos los medios informativos."
   },
   {
     "id": "word_1391",
@@ -16135,7 +18063,11 @@ export const vocabulary = [
     "de": "altmodisch",
     "es": "anticuado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Certains pensent que cette vieille coutume est aujourd'hui devenue démodée.",
+    "ex_en": "Some people think that wearing this heavy wool suit is old-fashioned.",
+    "ex_de": "Manche Leute halten diese traditionelle Kleidung heutzutage für ziemlich altmodisch.",
+    "ex_es": "Mucha gente considera que esta costumbre tradicional ya es bastante anticuada."
   },
   {
     "id": "word_1392",
@@ -16144,7 +18076,11 @@ export const vocabulary = [
     "de": "sobald",
     "es": "una vez que",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une fois que tu auras terminé tes devoirs, nous pourrons sortir.",
+    "ex_en": "Once you have finished your homework, we can go out together.",
+    "ex_de": "Sobald du deine Aufgaben erledigt hast, können wir gemeinsam spazieren gehen.",
+    "ex_es": "Una vez que termines tus tareas escolares, podremos salir al parque."
   },
   {
     "id": "word_1393",
@@ -16153,7 +18089,11 @@ export const vocabulary = [
     "de": "die Meinung",
     "es": "la opinión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chacun a le droit d'exprimer son opinion lors du débat.",
+    "ex_en": "Everyone has the right to express their personal opinion during discussions.",
+    "ex_de": "Jeder Bürger hat das Recht, seine eigene Meinung frei zu äußern.",
+    "ex_es": "Cada persona tiene derecho a expresar su opinión en el debate."
   },
   {
     "id": "word_1394",
@@ -16162,7 +18102,11 @@ export const vocabulary = [
     "de": "der Betrieb / die Operation",
     "es": "la operación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le chirurgien a réussi cette opération délicate avec beaucoup de sang-froid.",
+    "ex_en": "The hospital surgeons completed the difficult heart operation with great success.",
+    "ex_de": "Die Ärzte führten die schwierige Operation im Krankenhaus sehr erfolgreich durch.",
+    "ex_es": "El cirujano completó la compleja operación médica con mucho éxito ayer."
   },
   {
     "id": "word_1395",
@@ -16171,7 +18115,11 @@ export const vocabulary = [
     "de": "die Gelegenheit",
     "es": "la oportunidad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce nouveau poste est une opportunité formidable pour faire progresser sa carrière.",
+    "ex_en": "Studying abroad offers a great opportunity to learn foreign cultures easily.",
+    "ex_de": "Dieses Praktikum bietet eine wunderbare Gelegenheit, wertvolle berufliche Erfahrungen zu sammeln.",
+    "ex_es": "Este empleo representa una magnífica oportunidad para avanzar en su carrera."
   },
   {
     "id": "word_1396",
@@ -16180,7 +18128,11 @@ export const vocabulary = [
     "de": "organisiert",
     "es": "organizado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est très organisé et prépare toujours son travail en avance.",
+    "ex_en": "She is very organised and plans her daily tasks well in advance.",
+    "ex_de": "Sie ist sehr gut organisiert und plant alle Termine im Voraus.",
+    "ex_es": "Él es muy organizado y prepara siempre su trabajo con antelación."
   },
   {
     "id": "word_1397",
@@ -16189,7 +18141,11 @@ export const vocabulary = [
     "de": "der Organisator",
     "es": "el organizador",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'organisateur de l'événement a remercié tous les participants et bénévoles.",
+    "ex_en": "The event organiser thanked all the volunteers for their hard work.",
+    "ex_de": "Der Organisator der Konferenz bedankte sich herzlich bei allen fleißigen Helfern.",
+    "ex_es": "El organizador del festival agradeció a todos los voluntarios su dedicación."
   },
   {
     "id": "word_1398",
@@ -16198,7 +18154,11 @@ export const vocabulary = [
     "de": "originell",
     "es": "original",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Son projet artistique est très original et séduit tout le public.",
+    "ex_en": "Her creative art project is very original and impresses everyone here.",
+    "ex_de": "Seine neue Geschäftsidee ist wirklich originell und begeistert das ganze Team.",
+    "ex_es": "Su nuevo diseño artístico es muy original y gusta a todos."
   },
   {
     "id": "word_1399",
@@ -16207,7 +18167,11 @@ export const vocabulary = [
     "de": "ursprünglich",
     "es": "originalmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "À l'origine, cette vieille maison servait de grange pour les fermiers.",
+    "ex_en": "Originally, this historical building was designed to serve as a library.",
+    "ex_de": "Ursprünglich war dieses alte Gebäude als kleine Dorfschule für Kinder geplant.",
+    "ex_es": "Originalmente, este edificio histórico fue construido como un hospital para soldados."
   },
   {
     "id": "word_1401",
@@ -16216,7 +18180,11 @@ export const vocabulary = [
     "de": "unsere",
     "es": "nuestro",
     "type": "pron",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Leur jardin est joli, mais le nôtre est beaucoup plus spacieux.",
+    "ex_en": "Their car is fast, but ours is much more comfortable inside.",
+    "ex_de": "Ihr Garten ist schön, aber unsere Terrasse ist viel größer gestaltet.",
+    "ex_es": "Su piso es moderno, pero nuestro hogar es más acogedor."
   },
   {
     "id": "word_1402",
@@ -16225,7 +18193,11 @@ export const vocabulary = [
     "de": "im Freien",
     "es": "al aire libre",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous aimons pratiquer des activités en plein air durant les beaux jours.",
+    "ex_en": "They enjoy exciting outdoor activities like hiking in the green mountains.",
+    "ex_de": "Sie lieben sportliche Aktivitäten im Freien an warmen und sonnigen Tagen.",
+    "ex_es": "Nos gusta realizar actividades al aire libre durante los días soleados."
   },
   {
     "id": "word_1403",
@@ -16234,7 +18206,11 @@ export const vocabulary = [
     "de": "draußen",
     "es": "afuera",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Puisqu'il fait chaud, les enfants jouent en plein air tout l'après-midi.",
+    "ex_en": "Since the weather is warm, children prefer to play outdoors together.",
+    "ex_de": "Weil die Sonne scheint, verbringen wir den ganzen Nachmittag draußen.",
+    "ex_es": "Como hace buen tiempo, los niños juegan contentos afuera en el parque."
   },
   {
     "id": "word_1404",
@@ -16243,7 +18219,11 @@ export const vocabulary = [
     "de": "das Paket",
     "es": "el paquete",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le facteur a déposé ce colis encombrant devant notre porte d'entrée.",
+    "ex_en": "The delivery courier left a heavy package at our front door.",
+    "ex_de": "Der Postbote hat das schwere Paket vor unsere Haustür gelegt heute.",
+    "ex_es": "El cartero entregó un paquete pesado en nuestra puerta esta mañana."
   },
   {
     "id": "word_1405",
@@ -16252,7 +18232,11 @@ export const vocabulary = [
     "de": "der Block",
     "es": "la almohadilla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'écris mes idées importantes sur un bloc-notes posé sur mon bureau.",
+    "ex_en": "She always writes notes on a small pad during the meeting.",
+    "ex_de": "Er notierte die Adressen auf einem kleinen Block auf dem Tisch.",
+    "ex_es": "Ella limpió el sello con una almohadilla especial de tinta azul."
   },
   {
     "id": "word_1406",
@@ -16261,7 +18245,11 @@ export const vocabulary = [
     "de": "schmerzhaft",
     "es": "doloroso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il s'est blessé à la cheville et ce mouvement est douloureux.",
+    "ex_en": "His shoulder injury made every physical movement very difficult and painful.",
+    "ex_de": "Diese Knieverletzung war für den Sportler während des Trainings sehr schmerzhaft.",
+    "ex_es": "Ese golpe en la pierna fue un impacto realmente muy doloroso."
   },
   {
     "id": "word_1407",
@@ -16270,7 +18258,11 @@ export const vocabulary = [
     "de": "blass",
     "es": "pálido",
     "type": "adjectif",
-    "level": "B2"
+    "level": "B2",
+    "ex_fr": "Tu as l'air pâle ce matin, es-tu sûr d'aller bien ?",
+    "ex_en": "You look quite pale today, are you feeling sick or tired?",
+    "ex_de": "Du siehst heute sehr blass aus, hast du schlecht geschlafen gestern?",
+    "ex_es": "Te ves muy pálido hoy, ¿estás seguro de que estás bien?"
   },
   {
     "id": "word_1408",
@@ -16279,7 +18271,11 @@ export const vocabulary = [
     "de": "die Pfanne",
     "es": "la sartén",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il fait chauffer de l'eau dans une casserole sur la cuisinière.",
+    "ex_en": "She heated delicious soup in a stainless steel pan on stove.",
+    "ex_de": "Er erhitzt das leckere Gemüse in einer heißen Pfanne mit Öl.",
+    "ex_es": "Ella calienta el aceite de oliva en la sartén para cocinar."
   },
   {
     "id": "word_1409",
@@ -16288,7 +18284,11 @@ export const vocabulary = [
     "de": "teilnehmen",
     "es": "participar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tous les étudiants sont invités à participer au tournoi sportif annuel.",
+    "ex_en": "All students are encouraged to participate in the annual sports tournament.",
+    "ex_de": "Viele Schüler möchten gerne an dem diesjährigen internationalen Schachturnier teilnehmen.",
+    "ex_es": "Todos los alumnos quieren participar en el torneo deportivo del colegio."
   },
   {
     "id": "word_1410",
@@ -16297,7 +18297,11 @@ export const vocabulary = [
     "de": "besonders",
     "es": "particularmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce film documentaire est particulièrement intéressant pour comprendre l'histoire de l'art.",
+    "ex_en": "This historical documentary was particularly interesting for students who love art.",
+    "ex_de": "Dieses Thema ist für junge Leute in unserer Zeit besonders wichtig.",
+    "ex_es": "Este libro de historia es particularmente interesante para los estudiantes jóvenes."
   },
   {
     "id": "word_1411",
@@ -16306,7 +18310,11 @@ export const vocabulary = [
     "de": "die Leidenschaft",
     "es": "la pasión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le jeune chef cuisine chaque plat avec une immense passion artistique.",
+    "ex_en": "She teaches classical music with great passion to all her students.",
+    "ex_de": "Er widmet sich der Malerei mit großer Leidenschaft und viel Geduld.",
+    "ex_es": "Ella toca el piano con una gran pasión desde su infancia."
   },
   {
     "id": "word_1412",
@@ -16315,7 +18323,11 @@ export const vocabulary = [
     "de": "der Weg",
     "es": "el camino",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons suivi un chemin de terre à travers la forêt.",
+    "ex_en": "We followed a narrow stone path leading through the thick forest.",
+    "ex_de": "Wir folgten einem schmalen Weg, der direkt durch den dichten Wald führte.",
+    "ex_es": "Seguimos un camino de piedras que cruzaba el hermoso bosque verde."
   },
   {
     "id": "word_1413",
@@ -16324,7 +18336,11 @@ export const vocabulary = [
     "de": "die Zahlung",
     "es": "el pago",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous pouvez effectuer votre paiement par carte bancaire en toute sécurité.",
+    "ex_en": "You can make your online payment securely using a credit card.",
+    "ex_de": "Sie können die Zahlung bequem per Überweisung oder Kreditkarte online durchführen.",
+    "ex_es": "Puedes realizar el pago del curso por internet con tarjeta bancaria."
   },
   {
     "id": "word_1414",
@@ -16333,7 +18349,11 @@ export const vocabulary = [
     "de": "friedlich",
     "es": "pacífico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce petit village de montagne offre un cadre de vie paisible.",
+    "ex_en": "This remote mountain village offers a very peaceful environment for relaxing.",
+    "ex_de": "Dieses ruhige Bergdorf bietet eine friedliche Umgebung für einen erholsamen Urlaub.",
+    "ex_es": "Este pequeño pueblo ofrece un ambiente muy pacífico para descansar tranquilamente."
   },
   {
     "id": "word_1415",
@@ -16342,7 +18362,11 @@ export const vocabulary = [
     "de": "der Prozentsatz",
     "es": "el porcentaje",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un grand pourcentage des employés préfère travailler à domicile le vendredi.",
+    "ex_en": "A high percentage of workers prefer working from home on Fridays.",
+    "ex_de": "Ein hoher Prozentsatz der Mitarbeiter arbeitet freitags gerne von zu Hause.",
+    "ex_es": "Un alto porcentaje de empleados prefiere trabajar desde casa los viernes."
   },
   {
     "id": "word_1416",
@@ -16351,7 +18375,11 @@ export const vocabulary = [
     "de": "perfekt",
     "es": "perfectamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette robe élégante te va parfaitement pour la fête de ce soir.",
+    "ex_en": "This new dark coat fits you perfectly for tonight's elegant party.",
+    "ex_de": "Dieses schöne Hemd passt dir perfekt für die heutige feierliche Veranstaltung.",
+    "ex_es": "Este traje elegante te queda perfectamente para la celebración de hoy."
   },
   {
     "id": "word_1417",
@@ -16360,7 +18388,11 @@ export const vocabulary = [
     "de": "die Leistung",
     "es": "el rendimiento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les spectateurs ont applaudi la brillante performance des acteurs sur scène.",
+    "ex_en": "The whole audience applauded the wonderful musical performance on the stage.",
+    "ex_de": "Das Publikum lobte die herausragende Leistung der jungen Schauspieler auf der Bühne.",
+    "ex_es": "El público aplaudió el gran rendimiento de los deportistas en competición."
   },
   {
     "id": "word_1418",
@@ -16369,7 +18401,11 @@ export const vocabulary = [
     "de": "persönlich",
     "es": "personalmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Personnellement, je pense que nous devrions reporter cette réunion à demain.",
+    "ex_en": "Personally, I think we should postpone our project meeting until tomorrow.",
+    "ex_de": "Ich persönlich denke, dass wir diese Besprechung auf morgen verschieben sollten.",
+    "ex_es": "Personalmente, creo que deberíamos posponer la reunión de equipo para mañana."
   },
   {
     "id": "word_1419",
@@ -16378,7 +18414,11 @@ export const vocabulary = [
     "de": "pessimistisch",
     "es": "pesimista",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il ne faut pas être pessimiste face aux petites difficultés passagères.",
+    "ex_en": "Do not be pessimistic about the future when facing temporary challenges.",
+    "ex_de": "Man sollte nicht zu pessimistisch sein, wenn kleine unerwartete Probleme auftreten.",
+    "ex_es": "No seas tan pesimista ante los pequeños problemas de la vida cotidiana."
   },
   {
     "id": "word_1420",
@@ -16387,7 +18427,11 @@ export const vocabulary = [
     "de": "überreden",
     "es": "persuadir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai réussi à persuader mon collègue de participer à notre projet.",
+    "ex_en": "I managed to persuade my close friend to join the club.",
+    "ex_de": "Ich konnte meinen Kollegen überreden, an unserem neuen Projekt aktiv mitzuwirken.",
+    "ex_es": "Logré persuadir a mi hermano para que viniera al viaje conmigo."
   },
   {
     "id": "word_1421",
@@ -16396,7 +18440,11 @@ export const vocabulary = [
     "de": "der Fotograf",
     "es": "el fotógrafo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le photographe professionnel prend de magnifiques clichés de la nature sauvage.",
+    "ex_en": "The professional photographer took stunning pictures of the mountains at sunset.",
+    "ex_de": "Der professionelle Fotograf machte wunderschöne Bilder von den verschneiten Bergen gestern.",
+    "ex_es": "El fotógrafo profesional tomó fotos impresionantes de la naturaleza al atardecer."
   },
   {
     "id": "word_1422",
@@ -16405,7 +18453,11 @@ export const vocabulary = [
     "de": "die Fotografie",
     "es": "la fotografía",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle prend des cours du soir pour apprendre la photographie numérique.",
+    "ex_en": "She attends evening classes to study digital photography and visual arts.",
+    "ex_de": "Sie belegt einen Kurs, um mehr über Fotografie zu lernen.",
+    "ex_es": "Ella asiste a clases semanales para estudiar fotografía digital y arte."
   },
   {
     "id": "word_1423",
@@ -16414,7 +18466,11 @@ export const vocabulary = [
     "de": "die Nadel",
     "es": "el alfiler",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La couturière fixe le tissu avec une petite épingle en métal.",
+    "ex_en": "She used a metal pin to hold the silk fabric together.",
+    "ex_de": "Die Schneiderin befestigte den Stoff mit einer spitzen Nadel am Kleid.",
+    "ex_es": "La modista sujetó la tela fina con un alfiler de metal."
   },
   {
     "id": "word_1424",
@@ -16423,7 +18479,11 @@ export const vocabulary = [
     "de": "anstecken",
     "es": "fijar (con alfiler)",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu peux épingler cette note importante sur le tableau d'affichage collectif.",
+    "ex_en": "You can pin this reminder note onto the office cork board.",
+    "ex_de": "Du kannst diesen Zettel an die Informationstafel im Büro anstecken.",
+    "ex_es": "Puedes fijar con alfiler este aviso importante en el panel informativo."
   },
   {
     "id": "word_1425",
@@ -16432,7 +18492,11 @@ export const vocabulary = [
     "de": "das Rohr",
     "es": "la tubería",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le plombier répare un tuyau qui fuit dans la salle de bain.",
+    "ex_en": "The plumber fixed the leaking water pipe under the kitchen sink.",
+    "ex_de": "Der Klempner repariert das beschädigte Rohr unter dem Waschbecken im Bad.",
+    "ex_es": "El fontanero reparó la tubería rota debajo del fregadero de cocina."
   },
   {
     "id": "word_1426",
@@ -16441,7 +18505,11 @@ export const vocabulary = [
     "de": "die Planung",
     "es": "la planificación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une bonne planification évite les retards dans la livraison du projet.",
+    "ex_en": "Careful project planning prevents unexpected delays during the building construction phase.",
+    "ex_de": "Gute Planung ist der Schlüssel für den reibungslosen Ablauf des Projekts.",
+    "ex_es": "Una buena planificación evita retrasos graves en la entrega del proyecto."
   },
   {
     "id": "word_1427",
@@ -16450,7 +18518,11 @@ export const vocabulary = [
     "de": "angenehm",
     "es": "agradable",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons passé une soirée très agréable en compagnie de nos amis.",
+    "ex_en": "We spent a very pleasant evening having dinner with close friends.",
+    "ex_de": "Wir verbrachten einen sehr angenehmen Abend zusammen im Restaurant mit Freunden.",
+    "ex_es": "Pasamos una velada muy agradable cenando con nuestros amigos de infancia."
   },
   {
     "id": "word_1428",
@@ -16459,7 +18531,11 @@ export const vocabulary = [
     "de": "das Vergnügen",
     "es": "el placer",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est toujours un vrai plaisir de discuter avec des gens passionnés.",
+    "ex_en": "It is always a genuine pleasure to meet motivated creative people.",
+    "ex_de": "Es war ein großes Vergnügen, mit Ihnen gemeinsam zu arbeiten.",
+    "ex_es": "Es siempre un gran placer conversar con personas amables e interesantes."
   },
   {
     "id": "word_1429",
@@ -16468,7 +18544,11 @@ export const vocabulary = [
     "de": "viel",
     "es": "mucho",
     "type": "pron",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Prends ton temps, car nous avons encore plein de temps devant nous.",
+    "ex_en": "Take your time, there is plenty of food for every guest.",
+    "ex_de": "Nimm dir Zeit, denn wir haben noch viel Zeit vor der Abfahrt.",
+    "ex_es": "Tómate tu tiempo, todavía tenemos mucho tiempo antes de que empiece."
   },
   {
     "id": "word_1430",
@@ -16477,7 +18557,11 @@ export const vocabulary = [
     "de": "die Handlung",
     "es": "la trama",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'intrigue de ce roman policier est pleine de rebondissements inattendus.",
+    "ex_en": "The plot of this crime novel is filled with unexpected surprises.",
+    "ex_de": "Die Handlung dieses spannenden Krimis ist voller überraschender Wendungen für Leser.",
+    "ex_es": "La trama de esta novela policíaca contiene muchos giros inesperados y emocionantes."
   },
   {
     "id": "word_1431",
@@ -16486,7 +18570,11 @@ export const vocabulary = [
     "de": "plus",
     "es": "más",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Deux plus deux font quatre dans tous les cours de mathématiques.",
+    "ex_en": "Five plus three equals eight according to basic math rules today.",
+    "ex_de": "Zwei plus zwei ergibt vier in der grundlegenden mathematischen Rechnung.",
+    "ex_es": "Dos más dos son cuatro en las clases básicas de matemáticas."
   },
   {
     "id": "word_1432",
@@ -16495,7 +18583,11 @@ export const vocabulary = [
     "de": "das Gedicht",
     "es": "el poema",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'écolier a récité un très beau poème devant toute sa classe.",
+    "ex_en": "The young student recited an emotional poem before the whole class.",
+    "ex_de": "Die Schülerin trug ein sehr schönes Gedicht vor der ganzen Klasse vor.",
+    "ex_es": "El alumno recitó un emotivo poema delante de toda su clase escolar."
   },
   {
     "id": "word_1433",
@@ -16504,7 +18596,11 @@ export const vocabulary = [
     "de": "der Dichter",
     "es": "el poeta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce célèbre poète écrivait souvent la nuit sous la lumière tamisée.",
+    "ex_en": "This famous romantic poet wrote inspiring verses about natural outdoor landscapes.",
+    "ex_de": "Der berühmte Dichter schrieb viele wunderschöne Verse über die friedliche Natur.",
+    "ex_es": "El famoso poeta escribió versos inspiradores sobre el amor y la naturaleza."
   },
   {
     "id": "word_1434",
@@ -16513,7 +18609,11 @@ export const vocabulary = [
     "de": "die Poesie",
     "es": "la poesía",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle trouve beaucoup d'inspiration et de calme dans la poésie classique.",
+    "ex_en": "She finds great inspiration and joy in reading modern English poetry.",
+    "ex_de": "Sie findet viel Inspiration und Freude in der klassischen deutschen Poesie.",
+    "ex_es": "Ella encuentra mucha inspiración y consuelo leyendo poesía clásica cada noche."
   },
   {
     "id": "word_1435",
@@ -16522,7 +18622,11 @@ export const vocabulary = [
     "de": "zeigen",
     "es": "señalar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le professeur utilise une règle pour pointer un endroit sur la carte.",
+    "ex_en": "He raised his hand to point at the map on blackboard.",
+    "ex_de": "Der Lehrer nutzt einen Zeigestock, um auf die Landkarte zu zeigen.",
+    "ex_es": "El profesor levantó la mano para señalar un país en el mapa."
   },
   {
     "id": "word_1436",
@@ -16531,7 +18635,11 @@ export const vocabulary = [
     "de": "das Gift",
     "es": "el veneno",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Certaines grenouilles tropicales produisent un poison mortel pour se défendre efficacement.",
+    "ex_en": "Certain tropical frogs produce a dangerous poison to protect themselves naturally.",
+    "ex_de": "Bestimmte Frösche im Regenwald sondern ein starkes Gift zur Selbstverteidigung ab.",
+    "ex_es": "Algunas ranas tropicales secretan un veneno peligroso para protegerse de depredadores."
   },
   {
     "id": "word_1437",
@@ -16540,7 +18648,11 @@ export const vocabulary = [
     "de": "vergiften",
     "es": "envenenar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les déchets industriels risquent d'empoisonner l'eau de la rivière locale.",
+    "ex_en": "Toxic industrial chemicals can poison water supplies if not treated safely.",
+    "ex_de": "Chemische Abfälle aus der Fabrik können das Grundwasser in der Umgebung vergiften.",
+    "ex_es": "Los residuos químicos de las fábricas pueden envenenar el agua del río."
   },
   {
     "id": "word_1438",
@@ -16549,7 +18661,11 @@ export const vocabulary = [
     "de": "giftig",
     "es": "venenoso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ne mange pas ce champignon rouge car il est très vénéneux.",
+    "ex_en": "Do not touch this strange mushroom because it is extremely poisonous.",
+    "ex_de": "Iss diese Beeren nicht im Wald, weil sie sehr giftig sind.",
+    "ex_es": "No toques esa planta silvestre porque contiene una savia muy venenosa."
   },
   {
     "id": "word_1439",
@@ -16558,7 +18674,11 @@ export const vocabulary = [
     "de": "die Richtlinie",
     "es": "la política",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre entreprise applique une politique stricte concernant la protection des données.",
+    "ex_en": "Our company introduced a strict policy regarding customer data privacy protection.",
+    "ex_de": "Unser Unternehmen folgt einer klaren Richtlinie bezüglich des Schutzes vertraulicher Daten.",
+    "ex_es": "Nuestra empresa aplica una política estricta de protección de datos personales."
   },
   {
     "id": "word_1440",
@@ -16567,7 +18687,11 @@ export const vocabulary = [
     "de": "politisch",
     "es": "político",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les citoyens participent activement au débat politique avant les élections nationales.",
+    "ex_en": "Citizens participate actively in the political debate before the national election.",
+    "ex_de": "Bürger beteiligen sich intensiv an der politischen Debatte vor den Wahlen.",
+    "ex_es": "Los ciudadanos participan activamente en el debate político antes de votar."
   },
   {
     "id": "word_1441",
@@ -16576,7 +18700,11 @@ export const vocabulary = [
     "de": "der Politiker",
     "es": "el político",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce politicien expérimenté répond aux questions des journalistes avec beaucoup d'assurance.",
+    "ex_en": "The experienced politician answered questions from curious journalists during the conference.",
+    "ex_de": "Der erfahrene Politiker beantwortete die kritischen Fragen der Journalisten sehr ruhig.",
+    "ex_es": "El político experimentado respondió a las preguntas de los periodistas con calma."
   },
   {
     "id": "word_1442",
@@ -16585,7 +18713,11 @@ export const vocabulary = [
     "de": "die Politik",
     "es": "la política",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon frère aîné s'intéresse beaucoup à la politique internationale contemporaine.",
+    "ex_en": "My older brother is deeply interested in global international politics today.",
+    "ex_de": "Mein älterer Bruder interessiert sich sehr für die internationale Politik heutzutage.",
+    "ex_es": "Mi hermano mayor se interesa mucho por la política internacional actual."
   },
   {
     "id": "word_1443",
@@ -16594,7 +18726,11 @@ export const vocabulary = [
     "de": "der Hafen",
     "es": "el puerto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les grands bateaux de pêche rentrent au port au coucher du soleil.",
+    "ex_en": "Large fishing boats return safely to port at sunset every evening.",
+    "ex_de": "Die großen Fischerboote kehren bei Sonnenuntergang sicher in den Hafen zurück.",
+    "ex_es": "Los barcos de pesca regresan al puerto al atardecer todos los días."
   },
   {
     "id": "word_1444",
@@ -16603,7 +18739,11 @@ export const vocabulary = [
     "de": "das Porträt",
     "es": "el retrato",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le peintre a réalisé un magnifique portrait à l'huile de sa grand-mère.",
+    "ex_en": "The talented artist painted a stunning oil portrait of his sister.",
+    "ex_de": "Der Maler schuf ein wunderschönes Porträt seiner geliebten Großmutter auf Leinwand.",
+    "ex_es": "El artista pintó un hermoso retrato al óleo de su abuela querida."
   },
   {
     "id": "word_1445",
@@ -16612,7 +18752,11 @@ export const vocabulary = [
     "de": "die Position",
     "es": "la posición",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a obtenu une excellente position de manager dans cette start-up.",
+    "ex_en": "She accepted an important management position in a growing tech company.",
+    "ex_de": "Er hat eine verantwortungsvolle Position im Management dieser Firma übernommen.",
+    "ex_es": "Ella aceptó una posición de responsabilidad en una importante empresa tecnológica."
   },
   {
     "id": "word_1446",
@@ -16621,7 +18765,11 @@ export const vocabulary = [
     "de": "positiv",
     "es": "positivo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Garder un esprit positif aide à surmonter les moments les plus difficiles.",
+    "ex_en": "Maintaining a positive attitude helps overcome challenges in daily working life.",
+    "ex_de": "Eine positive Einstellung hilft sehr, schwierige Zeiten im Alltag zu meistern.",
+    "ex_es": "Mantener una actitud positiva ayuda a superar los retos de la vida."
   },
   {
     "id": "word_1447",
@@ -16630,7 +18778,11 @@ export const vocabulary = [
     "de": "möglicherweise",
     "es": "posiblemente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous pourrons probablement partir en vacances ensemble à la fin du mois.",
+    "ex_en": "We could possibly travel together to Italy at the end of month.",
+    "ex_de": "Wir könnten möglicherweise Ende des Monats gemeinsam in den Urlaub fahren.",
+    "ex_es": "Podríamos posiblemente hacer un viaje juntos a finales de este mes."
   },
   {
     "id": "word_1448",
@@ -16639,7 +18791,11 @@ export const vocabulary = [
     "de": "der Topf",
     "es": "la olla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a planté des fleurs dans un pot sur son balcon.",
+    "ex_en": "She placed colorful fresh flowers in a ceramic pot on balcony.",
+    "ex_de": "Sie stellte schöne Blumen in einen großen Topf auf den Balkon.",
+    "ex_es": "Ella plantó flores bonitas en una olla decorativa en el balcón."
   },
   {
     "id": "word_1449",
@@ -16648,7 +18804,11 @@ export const vocabulary = [
     "de": "gießen",
     "es": "verter",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Peux-tu verser de l'eau fraîche dans mon verre s'il te plaît ?",
+    "ex_en": "Could you please pour some cold water into my drinking glass?",
+    "ex_de": "Kannst du bitte etwas frisches Wasser in mein Glas gießen?",
+    "ex_es": "Por favor, ¿puedes verter un poco de agua fresca en mi vaso?"
   },
   {
     "id": "word_1450",
@@ -16657,7 +18817,11 @@ export const vocabulary = [
     "de": "die Armut",
     "es": "la pobreza",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette association lutte chaque jour pour réduire la pauvreté dans la région.",
+    "ex_en": "Many international organizations work hard to reduce poverty around the world.",
+    "ex_de": "Die Regierung plant neue Maßnahmen, um die Armut im Land zu bekämpfen.",
+    "ex_es": "Esta organización trabaja intensamente para reducir la pobreza en la región."
   },
   {
     "id": "word_1451",
@@ -16666,7 +18830,11 @@ export const vocabulary = [
     "de": "das Pulver",
     "es": "el polvo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il faut mélanger cette poudre blanche avec un peu d'eau tiède.",
+    "ex_en": "You should mix this white powder with a glass of warm water.",
+    "ex_de": "Man muss dieses weiße Pulver mit etwas warmem Wasser gründlich vermischen.",
+    "ex_es": "Tienes que mezclar este polvo blanco con un vaso de agua tibia."
   },
   {
     "id": "word_1452",
@@ -16675,7 +18843,11 @@ export const vocabulary = [
     "de": "die Macht / der Strom",
     "es": "el poder",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le nouveau président utilise son pouvoir pour moderniser tout le système scolaire.",
+    "ex_en": "The storm caused a major power cut throughout the whole city yesterday.",
+    "ex_de": "Der neue Minister nutzt seine Macht, um wichtige soziale Reformen umzusetzen.",
+    "ex_es": "El nuevo presidente utiliza su poder para modernizar todo el sistema educativo."
   },
   {
     "id": "word_1453",
@@ -16684,7 +18856,11 @@ export const vocabulary = [
     "de": "mächtig",
     "es": "poderoso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet ordinateur est très puissant et permet de traiter des vidéos rapidement.",
+    "ex_en": "She gave a powerful speech that inspired everyone in the large audience.",
+    "ex_de": "Der neue Computer ist sehr mächtig und verarbeitet Daten besonders schnell.",
+    "ex_es": "El nuevo motor es muy poderoso y permite viajar a gran velocidad."
   },
   {
     "id": "word_1454",
@@ -16693,7 +18869,11 @@ export const vocabulary = [
     "de": "praktisch",
     "es": "práctico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce petit sac à dos est vraiment pratique pour voyager en train.",
+    "ex_en": "This small folding table is very practical for our small apartment kitchen.",
+    "ex_de": "Dieser kleine Rucksack ist wirklich praktisch für eine lange Reise mit dem Zug.",
+    "ex_es": "Esta mochila pequeña es muy práctica para viajar en tren los fines de semana."
   },
   {
     "id": "word_1455",
@@ -16702,7 +18882,11 @@ export const vocabulary = [
     "de": "beten",
     "es": "rezar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque dimanche matin, ils vont à l'église pour prier ensemble en famille.",
+    "ex_en": "Many people gather at the church to pray together for peace.",
+    "ex_de": "Jeden Sonntag gehen die Gläubigen in die Kirche, um gemeinsam zu beten.",
+    "ex_es": "Muchas personas van a la iglesia los domingos para rezar juntos en paz."
   },
   {
     "id": "word_1456",
@@ -16711,7 +18895,11 @@ export const vocabulary = [
     "de": "das Gebet",
     "es": "la oración",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Après une courte prière, le prêtre a béni tous les fidèles rassemblés.",
+    "ex_en": "They held a silent prayer before starting their important community meeting.",
+    "ex_de": "Nach einem kurzen Gebet begann der Pfarrer mit der feierlichen Zeremonie.",
+    "ex_es": "Después de una breve oración, el sacerdote bendijo a todos los presentes."
   },
   {
     "id": "word_1457",
@@ -16720,7 +18908,11 @@ export const vocabulary = [
     "de": "die Vorhersage",
     "es": "la predicción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Sa prédiction sur les résultats économiques s'est révélée tout à fait exacte.",
+    "ex_en": "His weather prediction was completely correct despite the sudden temperature changes.",
+    "ex_de": "Seine Vorhersage über das Wetter am Wochenende war überraschend genau.",
+    "ex_es": "Su predicción sobre el resultado del partido fue totalmente acertada."
   },
   {
     "id": "word_1458",
@@ -16729,7 +18921,11 @@ export const vocabulary = [
     "de": "vorbereitet",
     "es": "preparado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les étudiants sont bien préparés pour passer leur examen final demain matin.",
+    "ex_en": "We are well prepared to present our project to the board tomorrow.",
+    "ex_de": "Die Studenten sind gut auf die schwere Prüfung am Montag vorbereitet.",
+    "ex_es": "Los alumnos están muy bien preparados para el examen final de mañana."
   },
   {
     "id": "word_1459",
@@ -16738,7 +18934,11 @@ export const vocabulary = [
     "de": "die Präsentation",
     "es": "la presentación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre collègue a fait une excellente présentation sur les nouvelles technologies.",
+    "ex_en": "She prepared a clear presentation to explain the new marketing strategy.",
+    "ex_de": "Er hat eine interessante Präsentation über die neuen Produkte gehalten.",
+    "ex_es": "Ella hizo una presentación excelente sobre las nuevas herramientas digitales."
   },
   {
     "id": "word_1460",
@@ -16747,7 +18947,11 @@ export const vocabulary = [
     "de": "die Presse",
     "es": "la prensa",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le ministre a invité la presse nationale pour annoncer sa démission.",
+    "ex_en": "The journalist works for the local press and covers political events.",
+    "ex_de": "Der Politiker lud die Presse ein, um seine Reformen genau zu erklären.",
+    "ex_es": "El alcalde convocó a la prensa para anunciar el nuevo plan urbano."
   },
   {
     "id": "word_1461",
@@ -16756,7 +18960,11 @@ export const vocabulary = [
     "de": "der Druck",
     "es": "la presión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il ressent une forte pression au travail avant la fin du projet.",
+    "ex_en": "She feels a lot of pressure before taking her university entrance exams.",
+    "ex_de": "Viele Angestellte spüren einen großen Druck vor der wichtigen Frist.",
+    "ex_es": "El equipo siente mucha presión antes del partido decisivo del campeonato."
   },
   {
     "id": "word_1462",
@@ -16765,7 +18973,11 @@ export const vocabulary = [
     "de": "so tun als ob",
     "es": "fingir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il aime faire semblant d'être malade pour éviter d'aller en cours.",
+    "ex_en": "The children like to pretend that they are pirates on an island.",
+    "ex_de": "Er mag es, so zu tun als ob er alles schon wüsste.",
+    "ex_es": "A veces es mejor no fingir y decir la verdad con calma."
   },
   {
     "id": "word_1463",
@@ -16774,7 +18986,11 @@ export const vocabulary = [
     "de": "vorherig",
     "es": "anterior",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Dans le chapitre précédent, l'auteur décrivait l'enfance du héros principal.",
+    "ex_en": "In the previous lesson, we learned how to conjugate irregular verbs.",
+    "ex_de": "Im vorherigen Kapitel hat der Autor die schwierige Situation genau beschrieben.",
+    "ex_es": "En el capítulo anterior, el autor explicaba el origen de la crisis."
   },
   {
     "id": "word_1464",
@@ -16783,7 +18999,11 @@ export const vocabulary = [
     "de": "zuvor",
     "es": "previamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Comme nous l'avons mentionné précédemment, la réunion commencera à neuf heures.",
+    "ex_en": "As mentioned previously, the office will remain closed during the weekend.",
+    "ex_de": "Wie zuvor besprochen, treffen wir uns morgen um acht Uhr im Büro.",
+    "ex_es": "Como mencionamos previamente, la oficina permanecerá cerrada durante todo el fin de semana."
   },
   {
     "id": "word_1465",
@@ -16792,7 +19012,11 @@ export const vocabulary = [
     "de": "der Priester",
     "es": "el sacerdote",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le prêtre du village organise des activités pour aider les familles démunies.",
+    "ex_en": "The local priest organized a warm welcome for the new residents.",
+    "ex_de": "Der Priester begrüßte die Gemeinde herzlich vor dem Beginn der Messe.",
+    "ex_es": "El sacerdote de la parroquia organiza actividades para ayudar a los vecinos."
   },
   {
     "id": "word_1466",
@@ -16801,7 +19025,11 @@ export const vocabulary = [
     "de": "primär",
     "es": "primario",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre objectif principal est de terminer la construction avant la fin du mois.",
+    "ex_en": "Her primary concern is finding a safe apartment near her new job.",
+    "ex_de": "Das primäre Ziel des Projekts ist die Steigerung der Energieeffizienz.",
+    "ex_es": "El objetivo primario de la empresa es mejorar la calidad del servicio."
   },
   {
     "id": "word_1467",
@@ -16810,7 +19038,11 @@ export const vocabulary = [
     "de": "der Prinz",
     "es": "el príncipe",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le prince héritier a visité plusieurs hôpitaux au cours de son voyage.",
+    "ex_en": "The young prince attended the formal ceremony alongside his royal parents.",
+    "ex_de": "Der junge Prinz begleitete den König auf seiner offiziellen Auslandsreise.",
+    "ex_es": "El príncipe visitó varios hospitales infantiles durante su viaje oficial."
   },
   {
     "id": "word_1468",
@@ -16819,7 +19051,11 @@ export const vocabulary = [
     "de": "die Prinzessin",
     "es": "la princesa",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Dans ce conte ancien, la princesse délivre elle-même son royaume menacé.",
+    "ex_en": "The princess devoted much of her time to supporting charitable causes.",
+    "ex_de": "Die Prinzessin engagiert sich aktiv für soziale Projekte im ganzen Land.",
+    "ex_es": "La princesa dedicó gran parte de su tiempo a proyectos solidarios."
   },
   {
     "id": "word_1469",
@@ -16828,7 +19064,11 @@ export const vocabulary = [
     "de": "das Drucken",
     "es": "la impresión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'impression du rapport complet prendra environ une dizaine de minutes.",
+    "ex_en": "The printing of the annual brochures will finish by late afternoon.",
+    "ex_de": "Das Drucken dieser umfangreichen Dokumente dauert noch ein paar Minuten.",
+    "ex_es": "La impresión del informe anual estará lista antes de la reunión general."
   },
   {
     "id": "word_1470",
@@ -16837,7 +19077,11 @@ export const vocabulary = [
     "de": "der Gefangene",
     "es": "el prisionero",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le prisonnier a demandé à voir son avocat avant l'audience publique.",
+    "ex_en": "The prisoner requested permission to speak with his defense lawyer today.",
+    "ex_de": "Der Gefangene sprach vor der Verhandlung ausführlich mit seinem Anwalt.",
+    "ex_es": "El prisionero solicitó hablar con su abogado defensor antes del juicio."
   },
   {
     "id": "word_1471",
@@ -16846,7 +19090,11 @@ export const vocabulary = [
     "de": "privat",
     "es": "privado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce parc est privé et réservé uniquement aux résidents de l'immeuble.",
+    "ex_en": "They held a private meeting to discuss confidential financial matters.",
+    "ex_de": "Dieses Grundstück ist privat und darf ohne Erlaubnis nicht betreten werden.",
+    "ex_es": "Esta calle es privada y solo pueden entrar los vecinos autorizados."
   },
   {
     "id": "word_1472",
@@ -16855,7 +19103,11 @@ export const vocabulary = [
     "de": "wahrscheinlich",
     "es": "probablemente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous arriverons probablement en retard à cause des gros embouteillages.",
+    "ex_en": "We will probably arrive late because of the heavy morning traffic.",
+    "ex_de": "Wir werden wahrscheinlich etwas später ankommen, da der Zug Verspätung hat.",
+    "ex_es": "Llegaremos probablemente tarde debido al intenso tráfico de la mañana."
   },
   {
     "id": "word_1473",
@@ -16864,7 +19116,11 @@ export const vocabulary = [
     "de": "der Prozess",
     "es": "el proceso",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le processus de sélection des candidats prendra plusieurs semaines supplémentaires.",
+    "ex_en": "The application process was quite simple and took only twenty minutes.",
+    "ex_de": "Der Prozess der Modernisierung erfordert viel Geduld von allen Mitarbeitern.",
+    "ex_es": "El proceso de selección de personal tardará dos semanas en concluir."
   },
   {
     "id": "word_1474",
@@ -16873,7 +19129,11 @@ export const vocabulary = [
     "de": "produzieren",
     "es": "producir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette usine peut produire des milliers de pièces détachées chaque jour.",
+    "ex_en": "This local farm can produce organic vegetables throughout the whole year.",
+    "ex_de": "Diese moderne Fabrik kann täglich Tausende von Fahrzeugteilen effizient produzieren.",
+    "ex_es": "Esta fábrica puede producir miles de componentes electrónicos cada semana."
   },
   {
     "id": "word_1475",
@@ -16882,7 +19142,11 @@ export const vocabulary = [
     "de": "der Produzent",
     "es": "el productor",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le producteur du film a remercié toute l'équipe pour leur dévouement.",
+    "ex_en": "The film producer thanked the entire crew for their creative dedication.",
+    "ex_de": "Der Produzent des Films dankte dem gesamten Team für die Arbeit.",
+    "ex_es": "El productor de la película agradeció el esfuerzo de todo el equipo."
   },
   {
     "id": "word_1476",
@@ -16891,7 +19155,11 @@ export const vocabulary = [
     "de": "das Produkt",
     "es": "el producto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce nouveau produit écologique a rencontré un grand succès commercial.",
+    "ex_en": "This new organic product became very popular among health-conscious customers.",
+    "ex_de": "Dieses innovative Produkt hat sofort großes Interesse bei den Kunden geweckt.",
+    "ex_es": "Este nuevo producto natural ha tenido un gran éxito en el mercado."
   },
   {
     "id": "word_1477",
@@ -16900,7 +19168,11 @@ export const vocabulary = [
     "de": "die Produktion",
     "es": "la producción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La production industrielle a augmenté de cinq pour cent ce trimestre.",
+    "ex_en": "Car production increased significantly after the opening of the new factory.",
+    "ex_de": "Die Produktion in der neuen Fabrik läuft seit letztem Monat reibungslos.",
+    "ex_es": "La producción de automóviles aumentó notablemente durante el último trimestre del año."
   },
   {
     "id": "word_1478",
@@ -16909,7 +19181,11 @@ export const vocabulary = [
     "de": "der Beruf",
     "es": "la profesión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle exerce la profession d'avocate depuis plus de dix ans maintenant.",
+    "ex_en": "He chose the medical profession because he genuinely wanted to help people.",
+    "ex_de": "Sie übt ihren Beruf als Ärztin mit großer Leidenschaft und Hingabe aus.",
+    "ex_es": "Él eligió la profesión de periodista para informar al público con veracidad."
   },
   {
     "id": "word_1479",
@@ -16918,7 +19194,11 @@ export const vocabulary = [
     "de": "der Gewinn",
     "es": "el beneficio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'entreprise a réalisé un profit important grâce à ses ventes internationales.",
+    "ex_en": "The company reported a substantial profit after expanding into European markets.",
+    "ex_de": "Das Unternehmen verzeichnete einen hohen Gewinn im vergangenen Geschäftsjahr.",
+    "ex_es": "La empresa obtuvo un gran beneficio gracias a las ventas internacionales."
   },
   {
     "id": "word_1480",
@@ -16927,7 +19207,11 @@ export const vocabulary = [
     "de": "das Projekt",
     "es": "el proyecto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre équipe travaille dur pour terminer ce projet avant les vacances.",
+    "ex_en": "We need more time and budget to complete this ambitious project.",
+    "ex_de": "Unser Team arbeitet intensiv daran, dieses Projekt pünktlich abzuschließen.",
+    "ex_es": "Nuestro equipo trabaja con entusiasmo para terminar este proyecto a tiempo."
   },
   {
     "id": "word_1481",
@@ -16936,7 +19220,11 @@ export const vocabulary = [
     "de": "fördern",
     "es": "promover",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La campagne vise à promouvoir les transports en commun dans la ville.",
+    "ex_en": "The campaign aims to promote public transport and reduce urban pollution.",
+    "ex_de": "Die Stadt möchte den öffentlichen Nahverkehr mit neuen Angeboten aktiv fördern.",
+    "ex_es": "La campaña municipal busca promover el uso del transporte público en la ciudad."
   },
   {
     "id": "word_1482",
@@ -16945,7 +19233,11 @@ export const vocabulary = [
     "de": "angemessen",
     "es": "adecuado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est important de porter un équipement approprié pour faire de l'escalade.",
+    "ex_en": "You need to find a proper place to store these sensitive chemicals.",
+    "ex_de": "Es ist wichtig, eine angemessene Kleidung für das Vorstellungsgespräch zu wählen.",
+    "ex_es": "Es fundamental llevar un calzado adecuado para caminar por la montaña."
   },
   {
     "id": "word_1483",
@@ -16954,7 +19246,11 @@ export const vocabulary = [
     "de": "richtig",
     "es": "correctamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Assurez-vous de fermer correctement la porte à clé avant de partir.",
+    "ex_en": "Please make sure that the machine is functioning properly before starting.",
+    "ex_de": "Stellen Sie sicher, dass Sie alle Türen vor der Abreise richtig schließen.",
+    "ex_es": "Asegúrate de cerrar correctamente la puerta con llave antes de salir."
   },
   {
     "id": "word_1484",
@@ -16963,7 +19259,11 @@ export const vocabulary = [
     "de": "das Eigentum",
     "es": "la propiedad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont acheté une belle propriété à la campagne avec un grand jardin.",
+    "ex_en": "Private property signs were placed all along the boundary of the farm.",
+    "ex_de": "Dieses historische Gebäude ist seit Generationen im privaten Eigentum der Familie.",
+    "ex_es": "Compraron una hermosa propiedad en el campo con un jardín muy amplio."
   },
   {
     "id": "word_1485",
@@ -16972,7 +19272,11 @@ export const vocabulary = [
     "de": "der Protest",
     "es": "la protesta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Une grande protestation pacifique a eu lieu dans les rues du centre-ville.",
+    "ex_en": "Thousands of citizens joined the peaceful protest against the new tax policy.",
+    "ex_de": "Ein friedlicher Protest fand am Samstagnachmittag vor dem Rathaus statt.",
+    "ex_es": "Una multitudinaria protesta pacífica tuvo lugar en las calles del centro."
   },
   {
     "id": "word_1486",
@@ -16981,7 +19285,11 @@ export const vocabulary = [
     "de": "protestieren",
     "es": "protestar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les étudiants ont décidé de protester contre l'augmentation des frais d'inscription.",
+    "ex_en": "The workers decided to protest against unfair working conditions at the plant.",
+    "ex_de": "Viele Bürger protestieren lautstark gegen den geplanten Bau einer Autobahn.",
+    "ex_es": "Los vecinos decidieron protestar contra el cierre del centro de salud local."
   },
   {
     "id": "word_1487",
@@ -16990,7 +19298,11 @@ export const vocabulary = [
     "de": "stolz",
     "es": "orgulloso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ses parents étaient très fiers de sa réussite à l'examen médical.",
+    "ex_en": "She was proud of her daughter for winning the national math competition.",
+    "ex_de": "Die Eltern waren sehr stolz auf den akademischen Erfolg ihres Sohnes.",
+    "ex_es": "Sus padres estaban muy orgullosos de sus excelentes notas en la universidad."
   },
   {
     "id": "word_1488",
@@ -16999,7 +19311,11 @@ export const vocabulary = [
     "de": "beweisen",
     "es": "probar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'avocat a présenté des documents officiels pour prouver l'innocence de son client.",
+    "ex_en": "You must provide clear evidence to prove your theory to the committee.",
+    "ex_de": "Der Wissenschaftler konnte seine Theorie durch mehrere Experimente eindeutig beweisen.",
+    "ex_es": "El abogado presentó varios documentos para probar la inocencia de su cliente."
   },
   {
     "id": "word_1489",
@@ -17008,7 +19324,11 @@ export const vocabulary = [
     "de": "pumpen",
     "es": "bombear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les pompiers ont dû pomper l'eau qui inondait le sous-sol de l'immeuble.",
+    "ex_en": "The emergency team had to pump water out of the flooded basement.",
+    "ex_de": "Die Feuerwehr musste stundenlang Wasser aus dem überfluteten Keller pumpen.",
+    "ex_es": "Los bomberos tuvieron que bombear el agua acumulada en el sótano inundado."
   },
   {
     "id": "word_1490",
@@ -17017,7 +19337,11 @@ export const vocabulary = [
     "de": "schlagen",
     "es": "golpear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a menacé de donner un coup de poing si on ne l'écoutait pas.",
+    "ex_en": "The boxer managed to punch his opponent right before the bell rang.",
+    "ex_de": "Der Boxer versuchte, seinen Gegner mit schnellen Bewegungen gezielt zu schlagen.",
+    "ex_es": "El boxeador logró golpear a su oponente con rapidez durante el combate."
   },
   {
     "id": "word_1491",
@@ -17026,7 +19350,11 @@ export const vocabulary = [
     "de": "bestrafen",
     "es": "castigar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le professeur a décidé de punir les élèves qui trichaient pendant l'évaluation.",
+    "ex_en": "The school principal decided to punish students who broke the safety rules.",
+    "ex_de": "Der Lehrer wollte die unruhigen Schüler für ihr Verhalten nicht bestrafen.",
+    "ex_es": "El profesor decidió castigar a los alumnos que no entregaron los deberes."
   },
   {
     "id": "word_1492",
@@ -17035,7 +19363,11 @@ export const vocabulary = [
     "de": "die Bestrafung",
     "es": "el castigo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La punition imposée par le directeur semblait un peu trop sévère aux parents.",
+    "ex_en": "The strict punishment prevented other students from breaking the classroom rules.",
+    "ex_de": "Die Bestrafung für das Vergehen schien den Schülern jedoch zu streng zu sein.",
+    "ex_es": "El castigo impuesto por el director le pareció excesivo a los padres."
   },
   {
     "id": "word_1493",
@@ -17044,7 +19376,11 @@ export const vocabulary = [
     "de": "die Qualifikation",
     "es": "la cualificación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il possède la qualification requise pour postuler à ce poste de gestionnaire.",
+    "ex_en": "She has the right qualification to apply for this senior engineering position.",
+    "ex_de": "Er besitzt die notwendige Qualifikation für diese verantwortungsvolle Position im Unternehmen.",
+    "ex_es": "Ella cuenta con la cualificación necesaria para liderar el departamento de proyectos."
   },
   {
     "id": "word_1494",
@@ -17053,7 +19389,11 @@ export const vocabulary = [
     "de": "qualifiziert",
     "es": "cualificado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette entreprise recherche un technicien hautement qualifié pour réparer les machines.",
+    "ex_en": "We are currently hiring qualified teachers for our international language school.",
+    "ex_de": "Das Institut sucht qualifiziertes Personal für die Betreuung der internationalen Gäste.",
+    "ex_es": "La empresa necesita un técnico cualificado para supervisar las instalaciones industriales."
   },
   {
     "id": "word_1495",
@@ -17062,7 +19402,11 @@ export const vocabulary = [
     "de": "sich qualifizieren",
     "es": "clasificarse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre équipe espère se qualifier pour la finale du tournoi régional.",
+    "ex_en": "The young athlete worked extremely hard to qualify for the Olympic Games.",
+    "ex_de": "Die Mannschaft möchte sich unbedingt für die nächste Runde des Pokals qualifizieren.",
+    "ex_es": "El equipo nacional espera clasificarse para la fase final del torneo mundial."
   },
   {
     "id": "word_1496",
@@ -17071,7 +19415,11 @@ export const vocabulary = [
     "de": "die Schlange",
     "es": "la cola",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il y avait une longue file d'attente devant le guichet du musée.",
+    "ex_en": "We stood in a long queue for an hour to buy tickets.",
+    "ex_de": "Vor dem Eingang zum Museum bildete sich eine sehr lange Schlange.",
+    "ex_es": "Había una larga cola de personas esperando para comprar las entradas."
   },
   {
     "id": "word_1497",
@@ -17080,7 +19428,11 @@ export const vocabulary = [
     "de": "Schlange stehen",
     "es": "hacer cola",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les touristes doivent faire la queue sous la pluie pour entrer au monument.",
+    "ex_en": "Passengers had to queue patiently before boarding the international flight this morning.",
+    "ex_de": "Viele Reisende mussten am Flughafen geduldig Schlange stehen, um einzuchecken.",
+    "ex_es": "Los pasajeros tuvieron que hacer cola pacientemente para subir al avión."
   },
   {
     "id": "word_1498",
@@ -17089,7 +19441,11 @@ export const vocabulary = [
     "de": "aufgeben / verlassen",
     "es": "renunciar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a décidé de quitter son travail pour voyager autour du monde.",
+    "ex_en": "She decided to quit her demanding job to spend time with family.",
+    "ex_de": "Er möchte seinen stressigen Beruf aufgeben und ein ruhiges Leben führen.",
+    "ex_es": "Ella decidió renunciar a su puesto actual para buscar mejores oportunidades profesionales."
   },
   {
     "id": "word_1499",
@@ -17098,7 +19454,11 @@ export const vocabulary = [
     "de": "das Zitat / das Angebot",
     "es": "la cita / el presupuesto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'artisan nous a envoyé un devis détaillé pour rénover la toiture.",
+    "ex_en": "We requested a formal price quotation from several local construction companies.",
+    "ex_de": "Die Baufirma schickte uns ein schriftliches Angebot für die Renovierung des Hauses.",
+    "ex_es": "El arquitecto preparó un presupuesto completo para la reforma de la vivienda."
   },
   {
     "id": "word_1500",
@@ -17107,7 +19467,11 @@ export const vocabulary = [
     "de": "das Zitat",
     "es": "la cita",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'orateur a commencé son discours par une célèbre citation de Victor Hugo.",
+    "ex_en": "The speaker opened his lecture with an inspiring quote from Nelson Mandela.",
+    "ex_de": "Sie begann ihren Vortrag mit einem bekannten Zitat eines berühmten Philosophen.",
+    "ex_es": "El profesor inició su conferencia con una célebre cita de Cervantes."
   },
   {
     "id": "word_1501",
@@ -17116,7 +19480,11 @@ export const vocabulary = [
     "de": "zitieren",
     "es": "citar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous devez citer vos sources fiables à la fin de votre exposé.",
+    "ex_en": "The student remembered to quote the original author in her research paper.",
+    "ex_de": "Man sollte in wissenschaftlichen Arbeiten alle Quellen immer korrekt und vollständig zitieren.",
+    "ex_es": "Debes citar las fuentes bibliográficas al final de tu trabajo universitario."
   },
   {
     "id": "word_1502",
@@ -17125,7 +19493,11 @@ export const vocabulary = [
     "de": "die Rasse",
     "es": "la raza",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La Déclaration universelle affirme l'égalité de tous sans distinction de race.",
+    "ex_en": "Discrimination based on race or religion is strictly prohibited by federal law.",
+    "ex_de": "Diskriminierung aufgrund von sozialer Herkunft oder Rasse ist gesetzlich streng verboten.",
+    "ex_es": "La ley prohíbe toda forma de discriminación por motivos de raza."
   },
   {
     "id": "word_1503",
@@ -17134,7 +19506,11 @@ export const vocabulary = [
     "de": "das Rennen",
     "es": "las carreras",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce passionné de vitesse assiste à chaque course automobile du championnat régional.",
+    "ex_en": "He has a strong passion for car racing and visits racetracks often.",
+    "ex_de": "Er interessiert sich sehr für das Rennen und schaut jeden Sonntag Formel 1.",
+    "ex_es": "A él le apasionan las carreras de coches y viaja para verlas."
   },
   {
     "id": "word_1504",
@@ -17143,7 +19519,11 @@ export const vocabulary = [
     "de": "das Sortiment / die Reichweite",
     "es": "la gama / el alcance",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce magasin propose une large gamme de produits bio à des prix abordables.",
+    "ex_en": "The store offers a wide range of organic products at affordable prices.",
+    "ex_de": "Das Geschäft bietet ein breites Sortiment an gesunden Lebensmitteln zu fairen Preisen.",
+    "ex_es": "La tienda ofrece una amplia gama de productos ecológicos a buen precio."
   },
   {
     "id": "word_1505",
@@ -17152,7 +19532,11 @@ export const vocabulary = [
     "de": "selten",
     "es": "raro",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est un oiseau très rare qu'on n'observe que dans cette réserve naturelle.",
+    "ex_en": "It is quite rare to find such well-preserved ancient manuscripts today.",
+    "ex_de": "Es ist ein seltenes Phänomen, das Wissenschaftler nur im Winter beobachten können.",
+    "ex_es": "Es una especie muy rara que solo habita en este bosque protegido."
   },
   {
     "id": "word_1506",
@@ -17161,7 +19545,11 @@ export const vocabulary = [
     "de": "selten",
     "es": "raramente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous allons rarement au cinéma parce que nous préférons regarder des séries.",
+    "ex_en": "She rarely eats fast food because she prefers cooking healthy meals at home.",
+    "ex_de": "Wir gehen selten ins Kino, da wir lieber Filme zu Hause schauen.",
+    "ex_es": "Ellos van raramente al restaurante porque disfrutan cocinando platos caseros juntos."
   },
   {
     "id": "word_1507",
@@ -17170,7 +19558,11 @@ export const vocabulary = [
     "de": "die Reaktion",
     "es": "la reacción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Sa réaction positive a immédiatement rassuré tous les membres de l'équipe.",
+    "ex_en": "His calm reaction helped defuse the tense situation during the meeting.",
+    "ex_de": "Ihre schnelle Reaktion verhinderte einen gefährlichen Unfall auf der nassen Straße.",
+    "ex_es": "Su rápida reacción evitó un accidente peligroso en la carretera mojada."
   },
   {
     "id": "word_1508",
@@ -17179,7 +19571,11 @@ export const vocabulary = [
     "de": "die Realität",
     "es": "la realidad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La réalité du monde professionnel est parfois différente des attentes des étudiants.",
+    "ex_en": "She had to face the reality that moving abroad takes careful planning.",
+    "ex_de": "Die Realität des Alltags sieht oft ganz anders aus als im Traum.",
+    "ex_es": "La realidad económica obligó a la familia a cambiar todos sus planes."
   },
   {
     "id": "word_1509",
@@ -17188,7 +19584,11 @@ export const vocabulary = [
     "de": "die Quittung",
     "es": "el recibo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Gardez bien le reçu si vous souhaitez échanger ce vêtement plus tard.",
+    "ex_en": "Please keep your payment receipt if you want a full refund later.",
+    "ex_de": "Bewahren Sie bitte die Quittung auf, falls Sie den Artikel umtauschen möchten.",
+    "ex_es": "Guarde el recibo de compra por si necesita cambiar el producto después."
   },
   {
     "id": "word_1510",
@@ -17197,7 +19597,11 @@ export const vocabulary = [
     "de": "die Empfehlung",
     "es": "la recomendación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai suivi la recommandation de mon médecin pour améliorer mon sommeil.",
+    "ex_en": "She followed her doctor's recommendation to exercise regularly every week.",
+    "ex_de": "Ich habe die Empfehlung meines Arztes befolgt, um mich besser zu fühlen.",
+    "ex_es": "Seguí la recomendación de mi médico para mejorar mi salud física."
   },
   {
     "id": "word_1511",
@@ -17206,7 +19610,11 @@ export const vocabulary = [
     "de": "die Referenz",
     "es": "la referencia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon ancien directeur m'a écrit une excellente lettre de référence professionnelle.",
+    "ex_en": "You should include a reliable reference on your job application form.",
+    "ex_de": "Mein ehemaliger Arbeitgeber schrieb eine ausgezeichnete Referenz für meine Bewerbung.",
+    "ex_es": "Mi antiguo jefe escribió una excelente referencia para mi nuevo trabajo."
   },
   {
     "id": "word_1512",
@@ -17215,7 +19623,11 @@ export const vocabulary = [
     "de": "widerspiegeln",
     "es": "reflejar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ces résultats positifs doivent refléter le travail acharné de toute l'équipe.",
+    "ex_en": "The calm lake can reflect the surrounding mountains on sunny days.",
+    "ex_de": "Diese guten Ergebnisse widerspiegeln die harte Arbeit unseres gesamten Teams.",
+    "ex_es": "Las aguas del lago suelen reflejar las altas montañas nevadas."
   },
   {
     "id": "word_1513",
@@ -17224,7 +19636,11 @@ export const vocabulary = [
     "de": "regelmäßig",
     "es": "regularmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il pratique du sport régulièrement pour rester en très bonne santé.",
+    "ex_en": "She visits the public library regularly to borrow new French novels.",
+    "ex_de": "Er treibt regelmäßig Sport, um gesund und fit im Alltag zu bleiben.",
+    "ex_es": "Ella practica deporte regularmente para mantenerse en forma y relajarse."
   },
   {
     "id": "word_1514",
@@ -17233,7 +19649,11 @@ export const vocabulary = [
     "de": "ablehnen",
     "es": "rechazar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le comité a décidé de rejeter cette proposition jugée trop coûteuse.",
+    "ex_en": "The university decided to reject applications submitted after the official deadline.",
+    "ex_de": "Der Ausschuss musste den Vorschlag ablehnen, weil das Budget nicht reichte.",
+    "ex_es": "El comité decidió rechazar la propuesta porque el coste era excesivo."
   },
   {
     "id": "word_1515",
@@ -17242,7 +19662,11 @@ export const vocabulary = [
     "de": "erzählen / verbinden",
     "es": "relatar / relacionar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le grand-père aime raconter des histoires passionnantes sur sa jeunesse.",
+    "ex_en": "The witness began to relate what happened during the car accident.",
+    "ex_de": "Der Großvater liebt es, spannende Geschichten aus seiner Kindheit zu erzählen.",
+    "ex_es": "El abuelo suele relatar historias fascinantes sobre sus viajes por el mundo."
   },
   {
     "id": "word_1516",
@@ -17251,7 +19675,11 @@ export const vocabulary = [
     "de": "verwandt / verbunden",
     "es": "relacionado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ces deux problèmes techniques sont étroitement liés à la panne électrique.",
+    "ex_en": "These two issues are closely related to the recent software update.",
+    "ex_de": "Diese beiden Probleme sind eng mit dem gestrigen Stromausfall verbunden.",
+    "ex_es": "Estos dos problemas están muy relacionados con el fallo del sistema."
   },
   {
     "id": "word_1517",
@@ -17260,7 +19688,11 @@ export const vocabulary = [
     "de": "die Beziehung",
     "es": "la relación",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils entretiennent une très bonne relation professionnelle depuis plusieurs années.",
+    "ex_en": "Good communication is essential to maintain a healthy relation at work.",
+    "ex_de": "Sie pflegen seit vielen Jahren eine ausgezeichnete berufliche Beziehung zueinander.",
+    "ex_es": "Mantienen una excelente relación laboral desde que abrieron la nueva oficina."
   },
   {
     "id": "word_1518",
@@ -17269,7 +19701,11 @@ export const vocabulary = [
     "de": "der Verwandte",
     "es": "el pariente",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons rendu visite à un parent qui habite à Marseille.",
+    "ex_en": "She stayed with an elderly relative during her weekend trip abroad.",
+    "ex_de": "Wir haben einen entfernten Verwandten im Süden von Deutschland besucht.",
+    "ex_es": "Durante el viaje, visitamos a un pariente que vive en Madrid."
   },
   {
     "id": "word_1519",
@@ -17278,7 +19714,11 @@ export const vocabulary = [
     "de": "entspannt",
     "es": "relajado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Après une semaine de vacances au bord de la mer, il est très détendu.",
+    "ex_en": "He felt completely relaxed after spending an hour at the spa.",
+    "ex_de": "Nach dem kurzen Urlaub am See fühlte sie sich endlich wieder entspannt.",
+    "ex_es": "Él se siente muy relajado después de pasar un fin de semana en la playa."
   },
   {
     "id": "word_1520",
@@ -17287,7 +19727,11 @@ export const vocabulary = [
     "de": "entspannend",
     "es": "relajante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Écouter de la musique classique est une activité vraiment relaxante le soir.",
+    "ex_en": "Taking a warm bath in the evening is very relaxing after work.",
+    "ex_de": "Ein Spaziergang im grünen Wald ist besonders entspannend nach einem langen Arbeitstag.",
+    "ex_es": "Escuchar música suave por la noche es una experiencia muy relajante."
   },
   {
     "id": "word_1521",
@@ -17296,7 +19740,11 @@ export const vocabulary = [
     "de": "freilassen / veröffentlichen",
     "es": "liberar / lanzar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le groupe de musique va sortir son nouvel album le mois prochain.",
+    "ex_en": "The studio will release the new animated movie next Friday morning.",
+    "ex_de": "Der Verlag plant, das neue Buch der Autorin bald zu veröffentlichen.",
+    "ex_es": "La compañía discográfica va a lanzar el nuevo disco la próxima semana."
   },
   {
     "id": "word_1522",
@@ -17305,7 +19753,11 @@ export const vocabulary = [
     "de": "zuverlässig",
     "es": "fiable",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon collègue Thomas est une personne très fiable dans tous les projets.",
+    "ex_en": "This Japanese car is well known for being extremely reliable on long trips.",
+    "ex_de": "Mein neuer Kollege ist sehr zuverlässig und erledigt alle Aufgaben pünktlich.",
+    "ex_es": "Este coche es muy fiable y consume poco combustible en carretera."
   },
   {
     "id": "word_1523",
@@ -17314,7 +19766,11 @@ export const vocabulary = [
     "de": "die Religion",
     "es": "la religión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce musée expose l'histoire et la diversité de chaque grande religion.",
+    "ex_en": "The university course explores how religion shapes different cultures and traditions.",
+    "ex_de": "In der Schule lernen die Kinder über die Geschichte jeder Religion.",
+    "ex_es": "El curso escolar analiza la influencia de la religión en el arte europeo."
   },
   {
     "id": "word_1524",
@@ -17323,7 +19779,11 @@ export const vocabulary = [
     "de": "religiös",
     "es": "religioso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le village célèbre chaque année un festival religieux très populaire et ancien.",
+    "ex_en": "Many families follow religious customs during major holidays around the world.",
+    "ex_de": "Die Familie feiert jedes Jahr ein traditionelles religiöses Fest im Dorf.",
+    "ex_es": "El pueblo organiza una ceremonia religiosa para conmemorar su fiesta patronal."
   },
   {
     "id": "word_1525",
@@ -17332,7 +19792,11 @@ export const vocabulary = [
     "de": "bleiben",
     "es": "permanecer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les voyageurs doivent rester calmes en attendant les instructions du personnel.",
+    "ex_en": "Passengers should remain seated until the airplane comes to a complete stop.",
+    "ex_de": "Die Gäste sollten ruhig auf ihren Plätzen bleiben, bis das Konzert beginnt.",
+    "ex_es": "Los pasajeros deben permanecer sentados hasta que el avión se detenga."
   },
   {
     "id": "word_1526",
@@ -17341,7 +19805,11 @@ export const vocabulary = [
     "de": "erinnern",
     "es": "recordar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Peux-tu me rappeler d'acheter du pain en rentrant ce soir ?",
+    "ex_en": "Please remind me to call the dentist before five o'clock today.",
+    "ex_de": "Kannst du mich bitte daran erinnern, Milch im Supermarkt zu kaufen?",
+    "ex_es": "¿Me puedes recordar que llame al médico antes de las cinco?"
   },
   {
     "id": "word_1527",
@@ -17350,7 +19818,11 @@ export const vocabulary = [
     "de": "abgelegen",
     "es": "remoto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont passé leurs vacances dans un village très éloigné de la ville.",
+    "ex_en": "They lived in a remote mountain cabin without any internet access.",
+    "ex_de": "Die Familie verbrachte ihren Urlaub in einem abgelegenen Dorf in den Bergen.",
+    "ex_es": "Pasaron sus vacaciones en una cabaña situada en un lugar remoto."
   },
   {
     "id": "word_1528",
@@ -17359,7 +19831,11 @@ export const vocabulary = [
     "de": "die Miete",
     "es": "el alquiler",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le loyer de cet appartement en centre-ville est devenu trop élevé.",
+    "ex_en": "The monthly rent for this modern flat includes all utility bills.",
+    "ex_de": "Die Miete für diese Wohnung im Stadtzentrum ist leider ziemlich teuer.",
+    "ex_es": "El alquiler de este piso céntrico incluye los gastos de comunidad."
   },
   {
     "id": "word_1529",
@@ -17368,7 +19844,11 @@ export const vocabulary = [
     "de": "mieten",
     "es": "alquilar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous prévoyons de louer une voiture pour explorer l'île en été.",
+    "ex_en": "We decided to rent a small car to travel along the coast.",
+    "ex_de": "Wir möchten für das Wochenende ein praktisches Auto am Flughafen mieten.",
+    "ex_es": "Hemos decidido alquilar un coche para recorrer toda la costa mediterránea."
   },
   {
     "id": "word_1530",
@@ -17377,7 +19857,11 @@ export const vocabulary = [
     "de": "wiederholt",
     "es": "repetido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Malgré ses avertissements répétés, l'employé est encore arrivé en retard ce matin.",
+    "ex_en": "Despite repeated warnings from the manager, he failed to submit the report.",
+    "ex_de": "Trotz wiederholter Hinweise machte der neue Schüler denselben grammatikalischen Fehler.",
+    "ex_es": "A pesar de los avisos repetidos, el alumno olvidó traer su cuaderno escolar."
   },
   {
     "id": "word_1531",
@@ -17386,7 +19870,11 @@ export const vocabulary = [
     "de": "vertreten",
     "es": "representar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet avocat compétent va représenter les victimes lors du procès public.",
+    "ex_en": "She was chosen to represent our company at the European conference.",
+    "ex_de": "Der erfahrene Anwalt wird die Interessen der Bürger vor Gericht vertreten.",
+    "ex_es": "Ella fue elegida para representar a su país en la conferencia internacional."
   },
   {
     "id": "word_1532",
@@ -17395,7 +19883,11 @@ export const vocabulary = [
     "de": "erfordern",
     "es": "requerir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette formation professionnelle peut nécessiter un travail personnel important chaque soir.",
+    "ex_en": "These complex tasks require a high level of concentration and skill.",
+    "ex_de": "Dieser anspruchsvolle Beruf wird viel Geduld und langjährige Erfahrung erfordern.",
+    "ex_es": "Este puesto de trabajo suele requerir un dominio fluido del inglés."
   },
   {
     "id": "word_1533",
@@ -17404,7 +19896,11 @@ export const vocabulary = [
     "de": "die Reservierung",
     "es": "la reserva",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai confirmé notre réservation d'hôtel pour le week-end à Lyon.",
+    "ex_en": "I made a dinner reservation at the Italian restaurant for eight o'clock.",
+    "ex_de": "Ich habe die Reservierung für unser Hotelzimmer in München bereits bestätigt.",
+    "ex_es": "Hice una reserva de mesa en el restaurante italiano para esta noche."
   },
   {
     "id": "word_1534",
@@ -17413,7 +19909,11 @@ export const vocabulary = [
     "de": "die Ressource",
     "es": "el recurso",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'eau potable est une ressource naturelle précieuse qu'il faut protéger.",
+    "ex_en": "Clean drinking water is a vital natural resource that we must protect.",
+    "ex_de": "Sauberes Wasser ist eine wertvolle Ressource, mit der wir sparsam umgehen sollten.",
+    "ex_es": "El agua potable es un recurso natural imprescindible para la vida humana."
   },
   {
     "id": "word_1535",
@@ -17422,7 +19922,11 @@ export const vocabulary = [
     "de": "der Respekt",
     "es": "el respeto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le respect mutuel entre collègues est indispensable dans une bonne entreprise.",
+    "ex_en": "Mutual respect among team members leads to a positive work environment.",
+    "ex_de": "Der gegenseitige Respekt im Team ist entscheidend für einen guten Arbeitsalltag.",
+    "ex_es": "El respeto mutuo entre compañeros de trabajo crea un ambiente muy agradable."
   },
   {
     "id": "word_1536",
@@ -17431,7 +19935,11 @@ export const vocabulary = [
     "de": "respektieren",
     "es": "respetar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tous les conducteurs doivent respecter les limitations de vitesse en ville.",
+    "ex_en": "Drivers must respect the speed limits to ensure road safety for everyone.",
+    "ex_de": "Alle Autofahrer müssen die Verkehrsregeln und Tempolimits in der Stadt respektieren.",
+    "ex_es": "Todos los conductores deben respetar los límites de velocidad en las calles."
   },
   {
     "id": "word_1537",
@@ -17440,7 +19948,11 @@ export const vocabulary = [
     "de": "die Antwort",
     "es": "la respuesta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous attendons une réponse claire de la direction d'ici demain matin.",
+    "ex_en": "We received a quick and positive response from the customer service department.",
+    "ex_de": "Wir warten noch auf eine schriftliche Antwort von der zuständigen Behörde.",
+    "ex_es": "Esperamos recibir una respuesta oficial de la empresa en los próximos días."
   },
   {
     "id": "word_1538",
@@ -17449,7 +19961,11 @@ export const vocabulary = [
     "de": "die Verantwortung",
     "es": "la responsabilidad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Gérer ce grand projet est une lourde responsabilité pour notre responsable.",
+    "ex_en": "Taking care of young children is a major responsibility for parents.",
+    "ex_de": "Die Leitung der neuen Abteilung bringt eine große Verantwortung mit sich.",
+    "ex_es": "Dirigir este equipo de investigación representa una gran responsabilidad para ella."
   },
   {
     "id": "word_1539",
@@ -17458,7 +19974,11 @@ export const vocabulary = [
     "de": "verantwortlich",
     "es": "responsable",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque citoyen est responsable du tri des déchets dans son quartier.",
+    "ex_en": "He is responsible for organizing the international conference in November.",
+    "ex_de": "Sie ist für die gesamte Organisation des Seminars am Freitag verantwortlich.",
+    "ex_es": "Ella es responsable de coordinar todas las actividades culturales del centro."
   },
   {
     "id": "word_1540",
@@ -17467,7 +19987,11 @@ export const vocabulary = [
     "de": "das Ergebnis",
     "es": "el resultado",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le résultat de l'examen médical a beaucoup rassuré toute la famille.",
+    "ex_en": "The result of the blood test was completely normal and positive.",
+    "ex_de": "Das Ergebnis der gestrigen Prüfung war für alle Studenten sehr erfreulich.",
+    "ex_es": "El resultado del análisis médico trajo mucha tranquilidad a la familia."
   },
   {
     "id": "word_1541",
@@ -17476,7 +20000,11 @@ export const vocabulary = [
     "de": "in Rente gehen",
     "es": "jubilarse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon professeur préféré a l'intention de prendre sa retraite l'année prochaine.",
+    "ex_en": "He plans to retire at sixty-five and move to Spain.",
+    "ex_de": "Mein Vater plant, im nächsten Jahr nach langer Arbeit in Rente gehen zu können.",
+    "ex_es": "Mi profesor de historia planea jubilarse a finales del próximo curso escolar."
   },
   {
     "id": "word_1542",
@@ -17485,7 +20013,11 @@ export const vocabulary = [
     "de": "im Ruhestand",
     "es": "jubilado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce couple retraité passe désormais ses hivers dans le sud de l'Espagne.",
+    "ex_en": "My retired grandparents enjoy spending time gardening and traveling across Europe.",
+    "ex_de": "Der alte Arzt ist seit zwei Jahren im Ruhestand und reist viel.",
+    "ex_es": "Este matrimonio jubilado disfruta viajando y cuidando las flores del jardín."
   },
   {
     "id": "word_1543",
@@ -17494,7 +20026,11 @@ export const vocabulary = [
     "de": "überarbeiten",
     "es": "revisar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les étudiants doivent réviser leurs leçons de grammaire avant le test.",
+    "ex_en": "You should revise your essay carefully before submitting it to teacher.",
+    "ex_de": "Der Autor muss den Text noch einmal gründlich überarbeiten vor dem Druck.",
+    "ex_es": "Debes revisar el informe con atención antes de enviarlo al cliente."
   },
   {
     "id": "word_1544",
@@ -17503,7 +20039,11 @@ export const vocabulary = [
     "de": "das Gewehr",
     "es": "el rifle",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le chasseur a nettoyé son vieux fusil avant de partir en forêt.",
+    "ex_en": "The hunter carried his hunting rifle safely while walking through woods.",
+    "ex_de": "Der Jäger trug sein Gewehr vorsichtig während der Wanderung durch Wald.",
+    "ex_es": "El cazador limpió su rifle antes de salir temprano por la mañana."
   },
   {
     "id": "word_1545",
@@ -17512,7 +20052,11 @@ export const vocabulary = [
     "de": "steigen",
     "es": "subir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les prix du carburant continuent d'augmenter de manière inquiétante ce mois-ci.",
+    "ex_en": "Temperatures are expected to rise significantly during the upcoming summer weekend.",
+    "ex_de": "Die Preise für Benzin werden im kommenden Monat vermutlich weiter steigen.",
+    "ex_es": "Las temperaturas van a subir considerablemente durante los próximos días festivos."
   },
   {
     "id": "word_1546",
@@ -17521,7 +20065,11 @@ export const vocabulary = [
     "de": "das Risiko",
     "es": "el riesgo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Prendre le volant sous la pluie comporte un risque d'accident élevé.",
+    "ex_en": "Starting a new business always involves a certain level of financial risk.",
+    "ex_de": "Das finanzielle Risiko bei dieser neuen Investition ist leider ziemlich hoch.",
+    "ex_es": "Iniciar un nuevo negocio siempre implica asumir un cierto riesgo económico."
   },
   {
     "id": "word_1547",
@@ -17530,7 +20078,11 @@ export const vocabulary = [
     "de": "riskieren",
     "es": "arriesgar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Si vous partez trop tard, vous allez risquer de rater le train.",
+    "ex_en": "You should not risk your health by working too many long hours.",
+    "ex_de": "Niemand sollte seine Gesundheit durch zu viel anstrengende Arbeit unnötig riskieren.",
+    "ex_es": "No deberías arriesgar tus ahorros en proyectos que no conoces bien."
   },
   {
     "id": "word_1548",
@@ -17539,7 +20091,11 @@ export const vocabulary = [
     "de": "der Roboter",
     "es": "el robot",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce nouveau robot nettoie automatiquement les sols de toute la maison.",
+    "ex_en": "The intelligent robot can assemble complex car parts with great precision.",
+    "ex_de": "Der moderne Roboter hilft den Ingenieuren bei der täglichen Arbeit im Werk.",
+    "ex_es": "Este nuevo robot limpia el suelo de la casa de forma automática."
   },
   {
     "id": "word_1549",
@@ -17548,7 +20104,11 @@ export const vocabulary = [
     "de": "rollen",
     "es": "rodar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le ballon de football a commencé à rouler vers la rue principale.",
+    "ex_en": "The small wooden ball started to roll down the steep garden hill.",
+    "ex_de": "Der rote Ball begann plötzlich den steilen Hang hinunter zu rollen.",
+    "ex_es": "El balón empezó a rodar por la cuesta hasta llegar a la acera."
   },
   {
     "id": "word_1550",
@@ -17557,7 +20117,11 @@ export const vocabulary = [
     "de": "romantisch",
     "es": "romántico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ils ont partagé un dîner très romantique dans un restaurant parisien.",
+    "ex_en": "They enjoyed a romantic walk along the beach under the bright moon.",
+    "ex_de": "Sie verbrachten ein sehr romantisches Wochenende in einem kleinen Hotel in Venedig.",
+    "ex_es": "Disfrutaron de una cena muy romántica en una terraza junto al mar."
   },
   {
     "id": "word_1551",
@@ -17566,7 +20130,11 @@ export const vocabulary = [
     "de": "das Seil",
     "es": "la cuerda",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'alpiniste a attaché solidement la corde avant de commencer l'ascension difficile.",
+    "ex_en": "He used a thick rope to tie the heavy boxes securely.",
+    "ex_de": "Der Bergsteiger befestigte das Seil fest am Felsen vor dem Aufstieg.",
+    "ex_es": "El escalador sujetó bien la cuerda antes de iniciar la difícil ascensión."
   },
   {
     "id": "word_1552",
@@ -17575,7 +20143,11 @@ export const vocabulary = [
     "de": "rau",
     "es": "áspero / duro",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La surface de cette vieille table en bois est encore très rugueuse.",
+    "ex_en": "The sea was very rough because of the strong northern wind.",
+    "ex_de": "Die Oberfläche des alten Steins fühlte sich ziemlich rau und uneben an.",
+    "ex_es": "La superficie de esta piedra antigua es muy áspera al tacto."
   },
   {
     "id": "word_1553",
@@ -17584,7 +20156,11 @@ export const vocabulary = [
     "de": "die Reihe",
     "es": "la fila",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous étions assis au cinéma dans la première rangée de la salle.",
+    "ex_en": "Our seats were located in the third row of the concert hall.",
+    "ex_de": "Wir saßen im Kino in der ersten Reihe ganz nah an der Leinwand.",
+    "ex_es": "Nuestros asientos estaban situados en la primera fila de la sala de cine."
   },
   {
     "id": "word_1554",
@@ -17593,7 +20169,11 @@ export const vocabulary = [
     "de": "königlich",
     "es": "real",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Des milliers de touristes visitent le palais royal de Madrid chaque jour.",
+    "ex_en": "The royal palace in London attracts thousands of curious visitors every year.",
+    "ex_de": "Der königliche Palast in Madrid ist ein sehr beliebtes Ziel für Touristen.",
+    "ex_es": "Muchos turistas visitan el palacio real de Madrid durante todo el año."
   },
   {
     "id": "word_1555",
@@ -17602,7 +20182,11 @@ export const vocabulary = [
     "de": "das Rugby",
     "es": "el rugby",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon frère s'entraîne trois fois par semaine pour jouer au rugby.",
+    "ex_en": "Rugby is an extremely popular contact sport in several European countries.",
+    "ex_de": "Mein jüngerer Bruder spielt jeden Samstag mit seinen Schulfreunden begeistert Rugby.",
+    "ex_es": "El rugby es un deporte muy popular que requiere fuerza y trabajo colectivo."
   },
   {
     "id": "word_1556",
@@ -17611,7 +20195,11 @@ export const vocabulary = [
     "de": "regieren",
     "es": "gobernar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le nouveau président a promis de gouverner le pays avec grande sagesse.",
+    "ex_en": "The young king was prepared to rule his kingdom with great justice.",
+    "ex_de": "Die gewählte Regierung möchte das Land mit klaren und gerechten Reformen regieren.",
+    "ex_es": "El nuevo mandatario prometió gobernar con transparencia y escuchar a la ciudadanía."
   },
   {
     "id": "word_1557",
@@ -17620,7 +20208,11 @@ export const vocabulary = [
     "de": "die Sicherheit",
     "es": "la seguridad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le port du casque est essentiel pour la sécurité de tous les cyclistes.",
+    "ex_en": "Wearing a helmet is mandatory for your personal safety while cycling.",
+    "ex_de": "Das Tragen eines Helms dient der persönlichen Sicherheit auf dem Fahrrad.",
+    "ex_es": "Llevar el casco puesto es obligatorio para garantizar la seguridad del ciclista."
   },
   {
     "id": "word_1558",
@@ -17629,7 +20221,11 @@ export const vocabulary = [
     "de": "der Matrose",
     "es": "el marinero",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce vieux marin a navigué sur toutes les mers du monde entier.",
+    "ex_en": "The brave sailor managed to steer the ship safely into the harbor.",
+    "ex_de": "Der erfahrene Matrose steuerte das große Schiff sicher durch den stürmischen Wind.",
+    "ex_es": "El viejo marinero navegó por todos los océanos durante su larga vida."
   },
   {
     "id": "word_1559",
@@ -17638,7 +20234,11 @@ export const vocabulary = [
     "de": "das Muster",
     "es": "la muestra",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le laboratoire analyse un échantillon de sang pour confirmer le bon diagnostic.",
+    "ex_en": "The doctor sent a blood sample to the laboratory for urgent testing.",
+    "ex_de": "Das Labor untersuchte ein kleines Muster, um die genaue Ursache herauszufinden.",
+    "ex_es": "El médico envió una muestra de sangre al laboratorio para su análisis."
   },
   {
     "id": "word_1560",
@@ -17647,7 +20247,11 @@ export const vocabulary = [
     "de": "der Sand",
     "es": "la arena",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants construisent un beau château de sable sur la plage dorée.",
+    "ex_en": "Children love building sand castles on the sunny beach during summer vacations.",
+    "ex_de": "Die Kinder bauten eine große Burg aus Sand am sonnigen Strand.",
+    "ex_es": "Los niños construyeron un castillo de arena dorada en la orilla del mar."
   },
   {
     "id": "word_1561",
@@ -17656,7 +20260,11 @@ export const vocabulary = [
     "de": "scannen",
     "es": "escanear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pouvez-vous scanner ces documents administratifs et me les envoyer par courriel ?",
+    "ex_en": "Please scan the signed contract and email it to our legal department.",
+    "ex_de": "Können Sie bitte den unterschriebenen Vertrag schnell für mich im Büro scannen?",
+    "ex_es": "Por favor, puedes escanear el documento firmado y enviármelo por correo electrónico."
   },
   {
     "id": "word_1562",
@@ -17665,7 +20273,11 @@ export const vocabulary = [
     "de": "wissenschaftlich",
     "es": "científico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette découverte scientifique majeure pourrait révolutionner le traitement de nombreuses maladies.",
+    "ex_en": "The journal published a scientific article about climate change in the Arctic.",
+    "ex_de": "Sie veröffentlichte einen wissenschaftlichen Artikel über die Ergebnisse ihrer biologischen Forschung.",
+    "ex_es": "La revista publicó un artículo científico sobre las energías renovables del futuro."
   },
   {
     "id": "word_1563",
@@ -17674,7 +20286,11 @@ export const vocabulary = [
     "de": "das Skript",
     "es": "el guion",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le réalisateur a modifié le scénario pour rendre la fin plus surprenante.",
+    "ex_en": "The actors read through the script together before starting the film shoot.",
+    "ex_de": "Die Schauspieler lasen das Skript gemeinsam vor dem Beginn der Dreharbeiten.",
+    "ex_es": "El director modificó varias escenas del guion original antes de rodar."
   },
   {
     "id": "word_1564",
@@ -17683,7 +20299,11 @@ export const vocabulary = [
     "de": "die Skulptur",
     "es": "la escultura",
     "type": "nom",
-    "level": "B2"
+    "level": "B2",
+    "ex_fr": "Cette magnifique sculpture en marbre blanc attire de nombreux amateurs d'art.",
+    "ex_en": "The modern sculpture in the museum garden attracted many curious local visitors.",
+    "ex_de": "Diese beeindruckende Skulptur aus Marmor steht im Zentrum des neuen Museums.",
+    "ex_es": "Esta hermosa escultura de mármol blanco decora el patio del museo histórico."
   },
   {
     "id": "word_1565",
@@ -17692,7 +20312,11 @@ export const vocabulary = [
     "de": "sekundär",
     "es": "secundario",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ces petits détails administratifs ont une importance secondaire pour le moment.",
+    "ex_en": "Safety is our primary concern, while cost is a secondary factor.",
+    "ex_de": "Diese finanziellen Fragen spielen vorerst nur eine rein sekundäre Rolle.",
+    "ex_es": "Esos detalles organizativos tienen una importancia secundaria para el proyecto final."
   },
   {
     "id": "word_1566",
@@ -17701,7 +20325,11 @@ export const vocabulary = [
     "de": "die Sicherheit",
     "es": "la seguridad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'aéroport a renforcé les contrôles de sécurité avant les départs internationaux.",
+    "ex_en": "Airport security checks have become much stricter over the past few years.",
+    "ex_de": "Der Flughafen hat die Maßnahmen für die Sicherheit aller Passagiere verschärft.",
+    "ex_es": "El aeropuerto reforzó las medidas de seguridad en todas las terminales internacionales."
   },
   {
     "id": "word_1567",
@@ -17710,7 +20338,11 @@ export const vocabulary = [
     "de": "der Samen",
     "es": "la semilla",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a planté une petite graine de tomate dans son potager ensoleillé.",
+    "ex_en": "She planted a flower seed in a small pot on her balcony.",
+    "ex_de": "Der Gärtner pflanzte den Samen in die feuchte Erde des Gartens.",
+    "ex_es": "El jardinero plantó una semilla de tomate en la maceta de la terraza."
   },
   {
     "id": "word_1568",
@@ -17719,7 +20351,11 @@ export const vocabulary = [
     "de": "vernünftig",
     "es": "sensato",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est raisonnable de prendre un parapluie quand le ciel devient gris.",
+    "ex_en": "It is a sensible idea to save some money for unexpected expenses.",
+    "ex_de": "Es ist ein vernünftiger Plan, vor dem Urlaub noch Geld zu sparen.",
+    "ex_es": "Es una decisión muy sensata ahorrar dinero para los imprevistos del futuro."
   },
   {
     "id": "word_1569",
@@ -17728,7 +20364,11 @@ export const vocabulary = [
     "de": "trennen",
     "es": "separar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un large fleuve vient séparer la vieille ville du quartier moderne.",
+    "ex_en": "A tall fence was built to separate the two private residential properties.",
+    "ex_de": "Ein breiter Fluss kann die alte Stadt von den modernen Vororten trennen.",
+    "ex_es": "Una valla de madera sirve para separar los dos jardines vecinos."
   },
   {
     "id": "word_1570",
@@ -17737,7 +20377,11 @@ export const vocabulary = [
     "de": "ernsthaft",
     "es": "seriamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu devrais penser sérieusement à ton avenir professionnel après l'université.",
+    "ex_en": "You should seriously consider applying for that interesting new job offer.",
+    "ex_de": "Wir müssen uns ernsthaft mit den Ursachen des Problems im Betrieb beschäftigen.",
+    "ex_es": "Deberías pensar seriamente en aprender un segundo idioma extranjero este año."
   },
   {
     "id": "word_1571",
@@ -17746,7 +20390,11 @@ export const vocabulary = [
     "de": "der Diener",
     "es": "el sirviente",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Dans les châteaux anciens, le serviteur s'occupait de préparer les repas royaux.",
+    "ex_en": "The loyal servant worked in the grand country house for decades.",
+    "ex_de": "Der treue Diener half dem Schlossherrn bei all seinen täglichen Aufgaben.",
+    "ex_es": "El fiel sirviente atendía a los invitados durante la elegante cena de gala."
   },
   {
     "id": "word_1572",
@@ -17755,7 +20403,11 @@ export const vocabulary = [
     "de": "setzen",
     "es": "colocar / establecer",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons fixer une date précise pour notre prochaine réunion d'équipe.",
+    "ex_en": "They decided to set clear goals for the new marketing project.",
+    "ex_de": "Wir müssen klare Prioritäten für die kommenden Monate im Team setzen.",
+    "ex_es": "Tenemos que establecer metas claras para el nuevo proyecto de la empresa."
   },
   {
     "id": "word_1573",
@@ -17764,7 +20416,11 @@ export const vocabulary = [
     "de": "das Set",
     "es": "el conjunto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai acheté un ensemble complet d'outils pour réparer mon vélo.",
+    "ex_en": "He bought a new set of kitchen knives for his apartment.",
+    "ex_de": "Sie kaufte ein praktisches Set mit Pinseln für ihren Malkurs.",
+    "ex_es": "Compró un conjunto completo de herramientas para arreglar la bicicleta en casa."
   },
   {
     "id": "word_1574",
@@ -17773,7 +20429,11 @@ export const vocabulary = [
     "de": "die Einstellung",
     "es": "el entorno",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet hôtel historique offre un cadre magnifique au bord du lac.",
+    "ex_en": "The historic village provides a charming setting for the romantic novel.",
+    "ex_de": "Du kannst die Helligkeit des Bildschirms in der Menü Einstellung ändern.",
+    "ex_es": "El hotel rural ofrece un entorno natural ideal para descansar en familia."
   },
   {
     "id": "word_1575",
@@ -17782,7 +20442,11 @@ export const vocabulary = [
     "de": "das Geschlecht",
     "es": "el sexo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous devez indiquer votre sexe sur ce formulaire officiel d'inscription.",
+    "ex_en": "The medical form asks you to state your age and sex.",
+    "ex_de": "Auf dem Anmeldeformular muss man sein Geburtsdatum und sein Geschlecht angeben.",
+    "ex_es": "En la solicitud oficial debes indicar tu edad y tu sexo."
   },
   {
     "id": "word_1576",
@@ -17791,7 +20455,11 @@ export const vocabulary = [
     "de": "sexuell",
     "es": "sexual",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le collège organise des cours sur l'éducation et la santé sexuelle.",
+    "ex_en": "Schools provide workshops to improve sexual education and health awareness among students.",
+    "ex_de": "Die Schule bietet umfassende Aufklärung über biologische und sexuelle Gesundheit an.",
+    "ex_es": "El instituto imparte talleres sobre educación sexual y salud para jóvenes."
   },
   {
     "id": "word_1577",
@@ -17800,7 +20468,11 @@ export const vocabulary = [
     "de": "scharf",
     "es": "afilado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Faites très attention car la lame de ce couteau est extrêmement tranchante.",
+    "ex_en": "Be careful when cooking because this kitchen knife is very sharp.",
+    "ex_de": "Sei vorsichtig beim Schneiden, denn dieses Messer ist wirklich sehr scharf.",
+    "ex_es": "Ten mucho cuidado al cocinar porque este cuchillo está muy afilado."
   },
   {
     "id": "word_1578",
@@ -17809,7 +20481,11 @@ export const vocabulary = [
     "de": "das Regal",
     "es": "el estante",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a rangé tous ses livres d'histoire sur l'étagère du salon.",
+    "ex_en": "She placed the heavy ceramic vase on the top wooden shelf.",
+    "ex_de": "Er stellte die vielen Bücher ordentlich in das hölzerne Regal.",
+    "ex_es": "Colocó todos los libros de historia en el estante de madera."
   },
   {
     "id": "word_1579",
@@ -17818,7 +20494,11 @@ export const vocabulary = [
     "de": "die Schale",
     "es": "la concha",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'escargot rentre prudemment dans sa coquille dès qu'il sent un danger.",
+    "ex_en": "The child found a beautiful white shell along the sandy beach.",
+    "ex_de": "Die Schildkröte schützt sich vor Feinden mit ihrer harten Schale.",
+    "ex_es": "El niño encontró una bonita concha marina en la orilla de la playa."
   },
   {
     "id": "word_1580",
@@ -17827,7 +20507,11 @@ export const vocabulary = [
     "de": "die Verschiebung / die Schicht",
     "es": "el turno",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'infirmière termine son quart de travail à huit heures demain matin.",
+    "ex_en": "The nurse just completed an exhausting eight-hour night shift at hospital.",
+    "ex_de": "Der Polizist beendet seine anstrengende Schicht pünktlich um sechs Uhr morgens.",
+    "ex_es": "La enfermera terminó su turno de noche muy cansada pero satisfecha."
   },
   {
     "id": "word_1581",
@@ -17836,7 +20520,11 @@ export const vocabulary = [
     "de": "verschieben",
     "es": "desplazar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons dû décaler notre réunion en raison d'un problème technique.",
+    "ex_en": "They had to shift their focus towards digital sales this quarter.",
+    "ex_de": "Wir müssen den Termin für das Meeting leider auf nächste Woche verschieben.",
+    "ex_es": "Tuvieron que desplazar los muebles del salón para pintar las paredes."
   },
   {
     "id": "word_1582",
@@ -17845,7 +20533,11 @@ export const vocabulary = [
     "de": "scheinen",
     "es": "brillar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les étoiles commencent à briller intensément dans le ciel de nuit.",
+    "ex_en": "The sun will shine brightly all afternoon over the coastal town.",
+    "ex_de": "Die Frühlingssonne wird den ganzen Tag über der Stadt warm scheinen.",
+    "ex_es": "Las estrellas empezaron a brillar en el cielo oscuro de la noche."
   },
   {
     "id": "word_1583",
@@ -17854,7 +20546,11 @@ export const vocabulary = [
     "de": "glänzend",
     "es": "brillante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle portait une robe argentée très brillante pour la soirée d'anniversaire.",
+    "ex_en": "He polished his leather shoes until they looked completely shiny and clean.",
+    "ex_de": "Er polierte seine schwarzen Schuhe, bis sie wieder glänzend aussahen.",
+    "ex_es": "Llevaba una chaqueta brillante que llamaba la atención de todo el mundo."
   },
   {
     "id": "word_1584",
@@ -17863,7 +20559,11 @@ export const vocabulary = [
     "de": "schießen / filmen",
     "es": "disparar / filmar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'équipe de cinéma est venue en France pour filmer plusieurs scènes.",
+    "ex_en": "The director plans to shoot the final outdoor scene in Paris.",
+    "ex_de": "Der junge Regisseur möchte den gesamten Kurzfilm im sonnigen Spanien filmen.",
+    "ex_es": "El equipo de producción va a filmar varias escenas en el centro histórico."
   },
   {
     "id": "word_1585",
@@ -17872,7 +20572,11 @@ export const vocabulary = [
     "de": "der Schock",
     "es": "el choque",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'annonce de cette mauvaise nouvelle a causé un choc à tous.",
+    "ex_en": "The sudden resignation of the company CEO came as a major shock.",
+    "ex_de": "Die unerwartete Nachricht war für die gesamte Familie ein großer Schock.",
+    "ex_es": "La inesperada dimisión del director causó un gran choque entre los trabajadores."
   },
   {
     "id": "word_1586",
@@ -17881,7 +20585,11 @@ export const vocabulary = [
     "de": "schockieren",
     "es": "conmocionar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ses remarques agressives ont fini par choquer plusieurs personnes dans la salle.",
+    "ex_en": "His rude comments will shock anyone who values polite professional behavior.",
+    "ex_de": "Sein unhöfliches Benehmen bei Tisch konnte alle anwesenden Gäste zutiefst schockieren.",
+    "ex_es": "La impactante noticia logró conmocionar a toda la comunidad educativa del colegio."
   },
   {
     "id": "word_1587",
@@ -17890,7 +20598,11 @@ export const vocabulary = [
     "de": "der Schuss",
     "es": "el tiro",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'attaquant a tenté un tir puissant vers le but adverse.",
+    "ex_en": "The football player scored a wonderful goal with a powerful shot.",
+    "ex_de": "Der Fußballer erzielte mit einem präzisen Schuss das entscheidende Siegtor.",
+    "ex_es": "El delantero marcó un gol espectacular con un tiro muy potente."
   },
   {
     "id": "word_1588",
@@ -17899,7 +20611,11 @@ export const vocabulary = [
     "de": "schüchtern",
     "es": "tímido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cet enfant est un peu timide quand il rencontre de nouvelles personnes.",
+    "ex_en": "She was too shy to speak in front of the large audience.",
+    "ex_de": "Das kleine Mädchen war zu schüchtern, um fremde Leute direkt anzusprechen.",
+    "ex_es": "El niño es un poco tímido cuando conoce a gente nueva."
   },
   {
     "id": "word_1589",
@@ -17908,7 +20624,11 @@ export const vocabulary = [
     "de": "die Sicht",
     "es": "la vista",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Depuis le balcon de l'hôtel, nous avions une vue magnifique sur la mer.",
+    "ex_en": "The sunset over the ocean was truly a breathtaking sight to behold.",
+    "ex_de": "Wegen des dichten Nebels war die Sicht auf der Autobahn sehr schlecht.",
+    "ex_es": "Desde la terraza del hotel teníamos una vista maravillosa de las montañas."
   },
   {
     "id": "word_1590",
@@ -17917,7 +20637,11 @@ export const vocabulary = [
     "de": "das Signal",
     "es": "la señal",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le signal du téléphone portable est très faible dans cette zone montagneuse.",
+    "ex_en": "We lost the Wi-Fi signal while traveling through the long tunnel.",
+    "ex_de": "Der Lokführer wartete geduldig auf das grüne Signal an der Bahnstrecke.",
+    "ex_es": "La señal del teléfono móvil es muy débil dentro de este edificio antiguo."
   },
   {
     "id": "word_1591",
@@ -17926,7 +20650,11 @@ export const vocabulary = [
     "de": "still",
     "es": "silencioso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La bibliothèque municipale est un endroit calme et très silencieux pour étudier.",
+    "ex_en": "The library is a completely silent place where students can focus well.",
+    "ex_de": "In der Bibliothek muss man immer still sein und leise sprechen.",
+    "ex_es": "La sala de lectura era un lugar muy silencioso y agradable para estudiar."
   },
   {
     "id": "word_1592",
@@ -17935,7 +20663,11 @@ export const vocabulary = [
     "de": "albern",
     "es": "tonto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "C'est une erreur bête que nous aurions facilement pu éviter hier.",
+    "ex_en": "Don't worry about making a silly mistake during your first practice lesson.",
+    "ex_de": "Es war ein alberner Witz, aber trotzdem mussten alle herzlich lachen.",
+    "ex_es": "Fue un error tonto que podríamos haber evitado prestando un poco de atención."
   },
   {
     "id": "word_1593",
@@ -17944,7 +20676,11 @@ export const vocabulary = [
     "de": "die Ähnlichkeit",
     "es": "la similitud",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "On remarque une grande similarité entre les traditions de ces deux pays.",
+    "ex_en": "There is a striking similarity between the design of both mobile applications.",
+    "ex_de": "Es gibt eine verblüffende Ähnlichkeit zwischen den beiden historischen Bauwerken.",
+    "ex_es": "Existe una gran similitud entre las dos canciones compuestas por el artista."
   },
   {
     "id": "word_1594",
@@ -17953,7 +20689,11 @@ export const vocabulary = [
     "de": "ebenso",
     "es": "de manera similar",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon frère réagit de la même manière quand on lui pose cette question.",
+    "ex_en": "Both universities have similarly high academic standards for new international applicants.",
+    "ex_de": "Mein Kollege hat die schwierige Situation ebenso professionell und ruhig gelöst.",
+    "ex_es": "Ambos departamentos gestionan sus proyectos de manera similar en la empresa."
   },
   {
     "id": "word_1595",
@@ -17962,7 +20702,11 @@ export const vocabulary = [
     "de": "einfach",
     "es": "simplemente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il voulait simplement vous remercier pour votre aide précieuse lors du déménagement.",
+    "ex_en": "I simply wanted to ask if you are free tomorrow afternoon.",
+    "ex_de": "Ich wollte dir einfach nur kurz für deine tolle Hilfe danken.",
+    "ex_es": "Ella quería simplemente agradecer tu ayuda con las tareas del nuevo curso."
   },
   {
     "id": "word_1596",
@@ -17971,7 +20715,11 @@ export const vocabulary = [
     "de": "da",
     "es": "ya que",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Puisque vous êtes tous d'accord, nous pouvons commencer le travail ensemble.",
+    "ex_en": "Since it is raining outside, we should stay inside and watch movies.",
+    "ex_de": "Da es heute draußen regnet, bleiben wir gemütlich zu Hause im Wohnzimmer.",
+    "ex_es": "Ya que tenemos tiempo libre, podemos dar un paseo por el parque central."
   },
   {
     "id": "word_1597",
@@ -17980,7 +20728,11 @@ export const vocabulary = [
     "de": "sinken",
     "es": "hundirse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le vieux bateau de pêche a commencé à couler près du port.",
+    "ex_en": "The heavy metal anchor caused the small wooden boat to sink.",
+    "ex_de": "Das schwere Schiff begann nach dem heftigen Sturm langsam zu sinken.",
+    "ex_es": "El viejo barco pesquero empezó a hundirse cerca de la orilla rocosa."
   },
   {
     "id": "word_1599",
@@ -17989,7 +20741,11 @@ export const vocabulary = [
     "de": "überspringen",
     "es": "saltar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous pouvez sauter ce chapitre si vous connaissez déjà les règles grammaticales.",
+    "ex_en": "You should not skip breakfast before going to school in the morning.",
+    "ex_de": "Du kannst die Einleitung einfach überspringen und direkt mit Kapitel eins beginnen.",
+    "ex_es": "No es recomendable saltar el desayuno antes de hacer ejercicio físico intenso."
   },
   {
     "id": "word_1600",
@@ -17998,7 +20754,11 @@ export const vocabulary = [
     "de": "zuschlagen",
     "es": "dar un portazo",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le vent violent a fait claquer la porte de la chambre bruyamment.",
+    "ex_en": "The angry customer decided to slam the door on his way out.",
+    "ex_de": "Der starke Wind brachte die Haustür plötzlich mit lautem Knall zum Zuschlagen.",
+    "ex_es": "El viento sopló tan fuerte que hizo dar un portazo en el pasillo."
   },
   {
     "id": "word_1601",
@@ -18007,7 +20767,11 @@ export const vocabulary = [
     "de": "ohrfeigen",
     "es": "abofetear",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Dans le film dramatique, l'actrice a dû gifler son partenaire de jeu.",
+    "ex_en": "In the movie scene, the main character was about to slap him.",
+    "ex_de": "In dem Theaterstück musste die wütende Darstellerin ihren Partner unerwartet ohrfeigen.",
+    "ex_es": "En esa escena de la obra teatral, ella tuvo que abofetear al villano."
   },
   {
     "id": "word_1602",
@@ -18016,7 +20780,11 @@ export const vocabulary = [
     "de": "die Scheibe",
     "es": "la rebanada",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a coupé une épaisse tranche de pain frais pour le petit-déjeuner.",
+    "ex_en": "Would you like a fresh slice of delicious homemade chocolate cake?",
+    "ex_de": "Er legte eine dünne Scheibe Käse auf sein frisches Brot zum Frühstück.",
+    "ex_es": "Ella cortó una generosa rebanada de pan para acompañar el queso fresco."
   },
   {
     "id": "word_1603",
@@ -18025,7 +20793,11 @@ export const vocabulary = [
     "de": "in Scheiben schneiden",
     "es": "rebanar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le chef utilise un couteau aiguisé pour trancher le rôti de bœuf.",
+    "ex_en": "You need to slice the red onions into thin pieces for salad.",
+    "ex_de": "Der Koch möchte das frische Gemüse schnell in feine Scheiben schneiden.",
+    "ex_es": "Tienes que rebanar el tomate en trozos finos para preparar la ensalada."
   },
   {
     "id": "word_1604",
@@ -18034,7 +20806,11 @@ export const vocabulary = [
     "de": "leicht",
     "es": "ligeramente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La température d'aujourd'hui est légèrement plus élevée que celle d'hier après-midi.",
+    "ex_en": "The second exam was slightly more difficult than the first practice test.",
+    "ex_de": "Die Temperatur heute ist leicht höher als in den letzten Tagen der Woche.",
+    "ex_es": "El precio de este modelo es ligeramente más alto que el anterior."
   },
   {
     "id": "word_1605",
@@ -18043,7 +20819,11 @@ export const vocabulary = [
     "de": "schick / schlau",
     "es": "elegante / inteligente",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il portait un costume très élégant pour assister au mariage de son ami.",
+    "ex_en": "She found a smart solution to resolve the complicated financial issue.",
+    "ex_de": "Sie trug ein sehr schickes Kleid für das festliche Abendessen im Restaurant.",
+    "ex_es": "Llevaba un traje muy elegante para la fiesta de graduación de la facultad."
   },
   {
     "id": "word_1606",
@@ -18052,7 +20832,11 @@ export const vocabulary = [
     "de": "glatt",
     "es": "suave / liso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Après le ponçage, la table en bois est devenue parfaitement lisse au toucher.",
+    "ex_en": "The surface of the marble floor was completely smooth and clean.",
+    "ex_de": "Nach dem Schleifen fühlte sich das Holz vollkommen glatt und sauber an.",
+    "ex_es": "La superficie de la mesa de madera quedó completamente lisa y suave."
   },
   {
     "id": "word_1607",
@@ -18061,7 +20845,11 @@ export const vocabulary = [
     "de": "die Gesellschaft",
     "es": "la sociedad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'éducation joue un rôle fondamental dans le développement d'une société juste.",
+    "ex_en": "Modern technology has transformed many fundamental aspects of our contemporary society.",
+    "ex_de": "Bildung ist einer der wichtigsten Grundpfeiler für eine moderne und gerechte Gesellschaft.",
+    "ex_es": "La educación desempeña un papel clave en el progreso de la sociedad."
   },
   {
     "id": "word_1608",
@@ -18070,7 +20858,11 @@ export const vocabulary = [
     "de": "die Software",
     "es": "el software",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons installer ce nouveau logiciel pour gérer les commandes des clients.",
+    "ex_en": "The company updated its accounting software to enhance cybersecurity and efficiency.",
+    "ex_de": "Das IT-Team installierte eine neue Software auf allen Computern im Büro.",
+    "ex_es": "La empresa instaló un nuevo software para optimizar la atención a los clientes."
   },
   {
     "id": "word_1609",
@@ -18079,7 +20871,11 @@ export const vocabulary = [
     "de": "der Boden",
     "es": "el suelo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce sol fertile est parfait pour cultiver des légumes et des fruits.",
+    "ex_en": "The rich soil in this valley is ideal for growing organic vegetables.",
+    "ex_de": "Der feuchte Boden im Garten eignet sich hervorragend für den Anbau von Gemüse.",
+    "ex_es": "Este suelo fértil es muy adecuado para el cultivo de hortalizas ecológicas."
   },
   {
     "id": "word_1610",
@@ -18088,7 +20884,11 @@ export const vocabulary = [
     "de": "fest",
     "es": "sólido",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce pont en pierre est suffisamment solide pour supporter des camions lourds.",
+    "ex_en": "The old wooden table is made of solid oak and lasts long.",
+    "ex_de": "Das Fundament des neuen Hauses steht auf festem und sicherem Untergrund.",
+    "ex_es": "Esta mesa antigua está fabricada con madera sólida de roble de calidad."
   },
   {
     "id": "word_1611",
@@ -18097,7 +20897,11 @@ export const vocabulary = [
     "de": "lösen",
     "es": "resolver",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les ingénieurs ont travaillé ensemble pour résoudre cette panne technique rapidement.",
+    "ex_en": "Working together allowed the team to solve the complex mathematical problem.",
+    "ex_de": "Die beiden Experten konnten das schwierige Problem innerhalb weniger Stunden lösen.",
+    "ex_es": "El equipo trabajó conjuntamente para resolver la avería técnica del sistema eléctrico."
   },
   {
     "id": "word_1612",
@@ -18106,7 +20910,11 @@ export const vocabulary = [
     "de": "sortieren",
     "es": "ordenar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il faut trier les déchets recyclables avant de les jeter aux poubelles.",
+    "ex_en": "Please sort the incoming emails by date and level of urgency.",
+    "ex_de": "Die Mitarbeiter müssen die Briefe nach Postleitzahlen sorgfältig im Büro sortieren.",
+    "ex_es": "Tienes que ordenar todos los documentos por fecha antes de archivarlos hoy."
   },
   {
     "id": "word_1613",
@@ -18115,7 +20923,11 @@ export const vocabulary = [
     "de": "südlich",
     "es": "del sur",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le climat est beaucoup plus chaud dans les régions du sud du pays.",
+    "ex_en": "They spent their summer vacation exploring the sunny southern coast of Italy.",
+    "ex_de": "Im südlichen Teil des Landes ist das Wetter im Sommer meist sonnig.",
+    "ex_es": "En las regiones del sur el clima suele ser muy caluroso en verano."
   },
   {
     "id": "word_1614",
@@ -18124,7 +20936,11 @@ export const vocabulary = [
     "de": "der Spam",
     "es": "el correo no deseado",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Mon filtre de messagerie bloque automatiquement chaque message considéré comme du spam.",
+    "ex_en": "Check your spam folder if you cannot find our verification email today.",
+    "ex_de": "Der E-Mail-Filter leitet verdächtige Nachrichten direkt in den Spam Ordner weiter.",
+    "ex_es": "Revisa la carpeta de correo no deseado por si el mensaje está allí."
   },
   {
     "id": "word_1615",
@@ -18133,7 +20949,11 @@ export const vocabulary = [
     "de": "spezifisch",
     "es": "específicamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce programme a été conçu spécifiquement pour aider les étudiants débutants.",
+    "ex_en": "This training course was specifically designed to improve intermediate speaking skills.",
+    "ex_de": "Dieser Kurs wurde spezifisch für die Bedürfnisse von berufstätigen Erwachsenen entwickelt.",
+    "ex_es": "Este curso fue diseñado específicamente para estudiantes de nivel intermedio de idiomas."
   },
   {
     "id": "word_1616",
@@ -18142,7 +20962,11 @@ export const vocabulary = [
     "de": "die Geschwindigkeit",
     "es": "la velocidad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le train à grande vitesse relie les deux villes en deux heures.",
+    "ex_en": "You should reduce your driving speed when the roads are covered in ice.",
+    "ex_de": "Auf dieser engen Landstraße muss man die Geschwindigkeit deutlich verringern.",
+    "ex_es": "Debes reducir la velocidad del coche cuando la carretera esté mojada por lluvia."
   },
   {
     "id": "word_1617",
@@ -18151,7 +20975,11 @@ export const vocabulary = [
     "de": "die Ausgaben",
     "es": "los gastos",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La famille a réduit ses dépenses mensuelles pour économiser de l'argent.",
+    "ex_en": "Government spending on healthcare increased significantly over the past five years.",
+    "ex_de": "Die Familie versucht, ihre monatlichen Ausgaben für Lebensmittel etwas zu reduzieren.",
+    "ex_es": "Tuvimos que recortar los gastos mensuales para poder ahorrar estas vacaciones."
   },
   {
     "id": "word_1618",
@@ -18160,7 +20988,11 @@ export const vocabulary = [
     "de": "würzig",
     "es": "picante",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce plat traditionnel mexicain est délicieux mais un peu trop épicé.",
+    "ex_en": "Indian food can be very spicy for people who are not used to it.",
+    "ex_de": "Die indische Suppe schmeckte herrlich würzig und wärmte uns im kalten Winter.",
+    "ex_es": "Esta comida tradicional mexicana es muy sabrosa pero resulta bastante picante."
   },
   {
     "id": "word_1619",
@@ -18169,7 +21001,11 @@ export const vocabulary = [
     "de": "der Geist",
     "es": "el espíritu",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Garder un esprit positif aide à surmonter les difficultés du quotidien.",
+    "ex_en": "The team showed great team spirit during the tough championship final match.",
+    "ex_de": "Ein starker Geist hilft dabei, schwierige Herausforderungen im Leben erfolgreich zu meistern.",
+    "ex_es": "Mantener un espíritu optimista es fundamental para superar los momentos difíciles."
   },
   {
     "id": "word_1620",
@@ -18178,7 +21014,11 @@ export const vocabulary = [
     "de": "gesprochen",
     "es": "hablado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'examen évalue à la fois l'expression écrite et le français parlé.",
+    "ex_en": "Her spoken English has improved tremendously after living in London for one year.",
+    "ex_de": "Das gesprochene Deutsch unterscheidet sich oft von der geschriebenen Sprache in Büchern.",
+    "ex_es": "Su nivel de inglés hablado mejoró mucho durante su estancia en Irlanda."
   },
   {
     "id": "word_1621",
@@ -18187,7 +21027,11 @@ export const vocabulary = [
     "de": "der Fleck / der Ort",
     "es": "la mancha / el lugar",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce parc tranquille est un endroit merveilleux pour organiser un pique-nique.",
+    "ex_en": "We found a quiet shady spot by the lake to have lunch.",
+    "ex_de": "Dieser ruhige Ort am See eignet sich hervorragend für ein Picknick im Sommer.",
+    "ex_es": "Encontramos un lugar tranquilo junto al río para comer al aire libre."
   },
   {
     "id": "word_1622",
@@ -18196,7 +21040,11 @@ export const vocabulary = [
     "de": "entdecken",
     "es": "detectar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le guide a réussi à repérer plusieurs animaux sauvages dans la forêt.",
+    "ex_en": "It was easy to spot our friends in the crowded train station.",
+    "ex_de": "Der Vogelbeobachter konnte seltene Vögel am Ufer des Sees schnell entdecken.",
+    "ex_es": "El guía logró detectar varios pájaros exóticos entre las ramas de los árboles."
   },
   {
     "id": "word_1623",
@@ -18205,7 +21053,11 @@ export const vocabulary = [
     "de": "verbreiten",
     "es": "extender / propagar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les fausses nouvelles peuvent se répandre très rapidement sur les réseaux sociaux.",
+    "ex_en": "The news began to spread rapidly through the small coastal community yesterday.",
+    "ex_de": "Falsche Nachrichten können sich über soziale Medien extrem schnell im Land verbreiten.",
+    "ex_es": "Las noticias se pueden propagar con gran rapidez a través de las redes sociales."
   },
   {
     "id": "word_1624",
@@ -18214,7 +21066,11 @@ export const vocabulary = [
     "de": "die Quelle",
     "es": "el manantial",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les randonneurs ont bu de l'eau pure à la source de montagne.",
+    "ex_en": "They found a fresh natural spring with cold clear water while hiking.",
+    "ex_de": "Die Wanderer tranken klares und frisches Wasser direkt aus der natürlichen Quelle.",
+    "ex_es": "Los excursionistas bebieron agua fresca y cristalina directamente del manantial natural."
   },
   {
     "id": "word_1625",
@@ -18223,7 +21079,11 @@ export const vocabulary = [
     "de": "der Spion",
     "es": "el espía",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le héros de ce film d'aventure est un espion international très secret.",
+    "ex_en": "The secret spy gathered vital confidential intelligence during his dangerous foreign mission.",
+    "ex_de": "Der geheime Spion sammelte wichtige Informationen über die Pläne der feindlichen Gruppe.",
+    "ex_es": "El famoso espía recopiló información confidencial durante su arriesgada misión en el extranjero."
   },
   {
     "id": "word_1626",
@@ -18232,7 +21092,11 @@ export const vocabulary = [
     "de": "spionieren",
     "es": "espiar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le détective privé a été engagé pour espionner discrètement un suspect.",
+    "ex_en": "He used binoculars to spy on the birds nesting in his garden.",
+    "ex_de": "Der Detektiv sollte die Verdächtigen unauffällig im Auftrag des Unternehmens spionieren.",
+    "ex_es": "El detective privado fue contratado para espiar discretamente los movimientos del sospechoso."
   },
   {
     "id": "word_1627",
@@ -18241,7 +21105,11 @@ export const vocabulary = [
     "de": "das Stadion",
     "es": "el estadio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Des milliers de supporters sont venus au stade pour encourager leur équipe.",
+    "ex_en": "The large sports stadium can hold over fifty thousand enthusiastic spectators safely.",
+    "ex_de": "Tausende Fans strömten am Samstagabend begeistert in das voll besetzte Stadion.",
+    "ex_es": "Miles de aficionados acudieron al estadio para animar a su equipo favorito."
   },
   {
     "id": "word_1628",
@@ -18250,7 +21118,11 @@ export const vocabulary = [
     "de": "das Personal",
     "es": "el personal",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le personnel de l'hôtel était très attentif et toujours prêt à aider.",
+    "ex_en": "The hotel staff provided friendly and excellent service during our weekend stay.",
+    "ex_de": "Das freundliche Personal im Hotel sorgte für einen sehr angenehmen Aufenthalt.",
+    "ex_es": "El personal del hotel fue sumamente amable y servicial durante nuestra estancia."
   },
   {
     "id": "word_1629",
@@ -18259,7 +21131,11 @@ export const vocabulary = [
     "de": "der Standard",
     "es": "el estándar",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette entreprise veille à maintenir un haut standard de qualité pour ses produits.",
+    "ex_en": "The hotel strives to maintain a high standard of cleanliness and service.",
+    "ex_de": "Unser Unternehmen legt großen Wert auf einen hohen Standard bei allen Produkten.",
+    "ex_es": "La clínica médica cumple con el más alto estándar de calidad sanitaria."
   },
   {
     "id": "word_1630",
@@ -18268,7 +21144,11 @@ export const vocabulary = [
     "de": "aussagen",
     "es": "declarar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le témoin doit déclarer toute la vérité devant le juge au tribunal.",
+    "ex_en": "The official report will state clearly all reasons behind the project cancellation.",
+    "ex_de": "Der Zeuge musste vor Gericht die volle Wahrheit über den Vorfall aussagen.",
+    "ex_es": "El testigo tuvo que declarar ante el juez todos los detalles ocurridos."
   },
   {
     "id": "word_1631",
@@ -18277,7 +21157,11 @@ export const vocabulary = [
     "de": "die Statue",
     "es": "la estatua",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les touristes prennent des photos devant la grande statue sur la place.",
+    "ex_en": "Tourists take many pictures in front of the ancient statue today.",
+    "ex_de": "Viele Touristen fotografieren die berühmte Statue auf dem großen Marktplatz.",
+    "ex_es": "Los turistas sacan fotos delante de la hermosa estatua del parque."
   },
   {
     "id": "word_1632",
@@ -18286,7 +21170,11 @@ export const vocabulary = [
     "de": "kleben",
     "es": "pegar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "N'oublie pas de coller le timbre avant d'envoyer cette lettre importante.",
+    "ex_en": "Please stick the return label on the front of the package.",
+    "ex_de": "Du musst die Briefmarke fest auf den Umschlag kleben.",
+    "ex_es": "Debes pegar la etiqueta en el paquete antes de enviarlo hoy."
   },
   {
     "id": "word_1633",
@@ -18295,7 +21183,11 @@ export const vocabulary = [
     "de": "der Stock",
     "es": "el palo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le chien court rapidement dans le jardin avec un bâton en bois.",
+    "ex_en": "My dog happily runs in the park with a wooden stick.",
+    "ex_de": "Der alte Mann geht im Wald mit einem hölzernen Stock spazieren.",
+    "ex_es": "El perro corre alegremente por el jardín con un palo largo."
   },
   {
     "id": "word_1634",
@@ -18304,7 +21196,11 @@ export const vocabulary = [
     "de": "lagern",
     "es": "almacenar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous devons stocker tous les dossiers confidentiels sur ce disque dur externe.",
+    "ex_en": "You can store your old winter clothes in these large boxes.",
+    "ex_de": "Wir müssen die alten Kisten sicher im kühlen Keller lagern.",
+    "ex_es": "Podemos almacenar estos archivos importantes en una carpeta digital segura."
   },
   {
     "id": "word_1635",
@@ -18313,7 +21209,11 @@ export const vocabulary = [
     "de": "der Fremde",
     "es": "el extraño",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il ne faut jamais accepter de bonbons venant d'un étranger inconnu.",
+    "ex_en": "She felt nervous because a stranger asked her for some money.",
+    "ex_de": "Ein freundlicher Fremder half mir, den richtigen Weg zum Bahnhof zu finden.",
+    "ex_es": "Un extraño se acercó en la calle para pedir indicaciones claras."
   },
   {
     "id": "word_1636",
@@ -18322,7 +21222,11 @@ export const vocabulary = [
     "de": "die Stärke",
     "es": "la fuerza",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il n'a plus assez de force pour soulever cette lourde valise.",
+    "ex_en": "Regular exercise gives you the physical strength to stay very healthy.",
+    "ex_de": "Er hat nicht mehr genug Stärke, um diesen schweren Koffer zu heben.",
+    "ex_es": "El entrenamiento diario te da la fuerza necesaria para estar sano."
   },
   {
     "id": "word_1637",
@@ -18331,7 +21235,11 @@ export const vocabulary = [
     "de": "die Schnur",
     "es": "la cuerda",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Attache ce paquet solidement avec un morceau de ficelle solide.",
+    "ex_en": "Tie the carton carefully using a strong piece of thin string.",
+    "ex_de": "Er bindet das schwere Paket mit einer festen Schnur zusammen.",
+    "ex_es": "Ata la caja de cartón con una cuerda resistente y larga."
   },
   {
     "id": "word_1638",
@@ -18340,7 +21248,11 @@ export const vocabulary = [
     "de": "stark",
     "es": "fuertemente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin m'a fortement conseillé de boire beaucoup d'eau chaque jour.",
+    "ex_en": "I strongly recommend that you visit this historic museum this weekend.",
+    "ex_de": "Der Lehrer hat den fleißigen Studenten stark für seine Arbeit gelobt.",
+    "ex_es": "El director recomendó fuertemente revisar todos los detalles del nuevo informe."
   },
   {
     "id": "word_1639",
@@ -18349,7 +21261,11 @@ export const vocabulary = [
     "de": "das Studio",
     "es": "el estudio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle loue un petit studio lumineux au centre de la ville.",
+    "ex_en": "He works all day in his small music studio downtown.",
+    "ex_de": "Sie mietet ein schönes Studio im Stadtzentrum für ihr Studium.",
+    "ex_es": "Alquilé un pequeño estudio moderno cerca de la universidad central."
   },
   {
     "id": "word_1640",
@@ -18358,7 +21274,11 @@ export const vocabulary = [
     "de": "das Zeug",
     "es": "las cosas",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Range toutes tes affaires dans l'armoire avant de partir ce soir.",
+    "ex_en": "Please put your personal stuff into the blue bag right now.",
+    "ex_de": "Räum bitte dein ganzes Zeug vom Tisch in den Schrank.",
+    "ex_es": "Guarda todas tus cosas en la mochila antes de salir hoy."
   },
   {
     "id": "word_1641",
@@ -18367,7 +21287,11 @@ export const vocabulary = [
     "de": "erfolgreich",
     "es": "exitosamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a terminé son projet professionnel avec succès après plusieurs mois d'efforts.",
+    "ex_en": "They successfully completed the difficult project before the official deadline yesterday.",
+    "ex_de": "Er hat die schwere Prüfung an der Universität erfolgreich bestanden.",
+    "ex_es": "El equipo completó exitosamente la tarea antes de la fecha límite."
   },
   {
     "id": "word_1642",
@@ -18376,7 +21300,11 @@ export const vocabulary = [
     "de": "plötzlich",
     "es": "repentino",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un bruit soudain a réveillé toute la famille pendant la nuit.",
+    "ex_en": "A sudden noise in the garden scared all the sleeping neighbors.",
+    "ex_de": "Ein plötzlicher lauter Schrei weckte die ganze Familie mitten in der Nacht.",
+    "ex_es": "Un ruido repentino en la calle asustó a todos los vecinos."
   },
   {
     "id": "word_1643",
@@ -18385,7 +21313,11 @@ export const vocabulary = [
     "de": "leiden",
     "es": "sufrir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il continue de souffrir du dos malgré les médicaments prescrits hier.",
+    "ex_en": "Many patients suffer from terrible allergies during the warm spring months.",
+    "ex_de": "Viele Menschen leiden im Frühling unter starken und unangenehmen Allergien.",
+    "ex_es": "Ella no quiere sufrir más dolor y toma su medicina diaria."
   },
   {
     "id": "word_1644",
@@ -18394,7 +21326,11 @@ export const vocabulary = [
     "de": "passen",
     "es": "convenir / adaptar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette date ne semble pas convenir à tous les membres de l'équipe.",
+    "ex_en": "Does this meeting time suit your busy work schedule this week?",
+    "ex_de": "Dieser Termin um zehn Uhr würde mir sehr gut passen.",
+    "ex_es": "Esta propuesta podría convenir a ambas partes durante la reunión importante."
   },
   {
     "id": "word_1645",
@@ -18403,7 +21339,11 @@ export const vocabulary = [
     "de": "geeignet",
     "es": "adecuado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu dois porter une tenue appropriée pour cet entretien d'embauche important.",
+    "ex_en": "You must choose a suitable outfit for this formal job interview.",
+    "ex_de": "Dieser Raum ist sehr gut für unser nächstes Meeting geeignet.",
+    "ex_es": "Debes buscar un lugar adecuado para estudiar con total tranquilidad."
   },
   {
     "id": "word_1646",
@@ -18412,7 +21352,11 @@ export const vocabulary = [
     "de": "der Erfolg",
     "es": "el éxito",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le nouveau film a rencontré un grand succès auprès du public.",
+    "ex_en": "Hard work and dedication are essential for long-term career success.",
+    "ex_de": "Seine neue Ausstellung im Museum war ein wirklich großer Erfolg.",
+    "ex_es": "Su nueva novela fue un gran éxito entre los jóvenes lectores."
   },
   {
     "id": "word_1647",
@@ -18421,7 +21365,11 @@ export const vocabulary = [
     "de": "zusammenfassen",
     "es": "resumir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pouvez-vous résumer les points principaux de ce long article scientifique ?",
+    "ex_en": "The student was asked to summarise the long text in five sentences.",
+    "ex_de": "Können Sie die wichtigsten Punkte des langen Berichts kurz zusammenfassen?",
+    "ex_es": "Puedes resumir las ideas principales del libro en pocas líneas."
   },
   {
     "id": "word_1648",
@@ -18430,7 +21378,11 @@ export const vocabulary = [
     "de": "die Zusammenfassung",
     "es": "el resumen",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai préparé un court résumé de notre réunion d'hier matin.",
+    "ex_en": "Please read this short summary before attending the project meeting.",
+    "ex_de": "Sie schrieb eine klare Zusammenfassung für das gesamte Projektteam.",
+    "ex_es": "El profesor nos pidió un resumen detallado del primer capítulo."
   },
   {
     "id": "word_1649",
@@ -18439,7 +21391,11 @@ export const vocabulary = [
     "de": "die Versorgung",
     "es": "el suministro",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'approvisionnement en eau potable a été interrompu pendant les travaux urbains.",
+    "ex_en": "The city improved the fresh water supply for all local residents.",
+    "ex_de": "Die Versorgung mit frischen Lebensmitteln funktioniert in unserer Region sehr gut.",
+    "ex_es": "El suministro de electricidad volvió a la normalidad después de la tormenta."
   },
   {
     "id": "word_1650",
@@ -18448,7 +21404,11 @@ export const vocabulary = [
     "de": "liefern",
     "es": "suministrar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette entreprise locale peut fournir des produits frais tous les matins.",
+    "ex_en": "Local farmers supply fresh vegetables to our school cafeteria every week.",
+    "ex_de": "Die Firma kann die bestellten Waren bis nächsten Montag liefern.",
+    "ex_es": "Ellos prometieron suministrar toda la información necesaria para el nuevo proyecto."
   },
   {
     "id": "word_1651",
@@ -18457,7 +21417,11 @@ export const vocabulary = [
     "de": "der Anhänger",
     "es": "el partidario",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque supporter encourageait son équipe favorite avec beaucoup de passion.",
+    "ex_en": "He is an active supporter of environmental protection in our community.",
+    "ex_de": "Jeder treue Anhänger jubelte laut im Stadion für seine Mannschaft.",
+    "ex_es": "El joven es un firme partidario del cuidado del medio ambiente."
   },
   {
     "id": "word_1652",
@@ -18466,7 +21430,11 @@ export const vocabulary = [
     "de": "sicherlich",
     "es": "seguramente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous arriverons sûrement avant la nuit si la route reste dégagée.",
+    "ex_en": "You will surely pass the final exam if you study hard.",
+    "ex_de": "Wir werden sicherlich pünktlich ankommen, wenn der Zug keine Verspätung hat.",
+    "ex_es": "Seguramente llegaremos a tiempo si salimos temprano por la mañana."
   },
   {
     "id": "word_1653",
@@ -18475,7 +21443,11 @@ export const vocabulary = [
     "de": "die Oberfläche",
     "es": "la superficie",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nettoie bien la surface de la table avant de poser les verres.",
+    "ex_en": "The calm surface of the lake reflected the tall green trees.",
+    "ex_de": "Die glatte Oberfläche des Spiegels muss gründlich gereinigt werden.",
+    "ex_es": "La superficie de la mesa de madera estaba limpia y brillante."
   },
   {
     "id": "word_1654",
@@ -18484,7 +21456,11 @@ export const vocabulary = [
     "de": "überleben",
     "es": "sobrevivir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Certaines plantes peuvent survivre dans le désert sans beaucoup d'eau.",
+    "ex_en": "Wild animals must adapt quickly to survive during harsh winter conditions.",
+    "ex_de": "Viele seltene Tiere können in dieser extrem kalten Region überleben.",
+    "ex_es": "Estas pequeñas plantas pueden sobrevivir con muy poca agua durante meses."
   },
   {
     "id": "word_1655",
@@ -18493,7 +21469,11 @@ export const vocabulary = [
     "de": "die Umfrage",
     "es": "la encuesta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les résultats du récent sondage montrent une hausse de la satisfaction.",
+    "ex_en": "The company conducted a short survey to evaluate customer satisfaction today.",
+    "ex_de": "Eine neue Umfrage zeigt interessante Meinungen über die öffentliche Verkehrssituation.",
+    "ex_es": "Completamos una breve encuesta en línea sobre la calidad del servicio."
   },
   {
     "id": "word_1656",
@@ -18502,7 +21482,11 @@ export const vocabulary = [
     "de": "der Schalter",
     "es": "el interruptor",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Appuie sur l'interrupteur près de la porte pour allumer la lumière.",
+    "ex_en": "Please press the light switch on the wall next to the door.",
+    "ex_de": "Drücke auf den Schalter neben der Tür, um das Licht einzuschalten.",
+    "ex_es": "Presiona el interruptor de la pared para encender la luz del pasillo."
   },
   {
     "id": "word_1657",
@@ -18511,7 +21495,11 @@ export const vocabulary = [
     "de": "wechseln",
     "es": "cambiar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'aimerais changer de place pour être plus près de la fenêtre.",
+    "ex_en": "We decided to switch channels because the television show was boring.",
+    "ex_de": "Ich möchte meinen alten Telefontarif zu einem günstigeren Anbieter wechseln.",
+    "ex_es": "Podemos cambiar nuestros planes de viaje si el clima empeora mañana."
   },
   {
     "id": "word_1658",
@@ -18520,7 +21508,11 @@ export const vocabulary = [
     "de": "das Schwert",
     "es": "la espada",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le chevalier portait une longue épée en argent pendant le combat.",
+    "ex_en": "The brave knight carried a sharp iron sword into the battle.",
+    "ex_de": "Der alte Ritter trug ein schweres Schwert aus glänzendem Stahl.",
+    "ex_es": "El caballero levantó su espada brillante para defender el antiguo castillo."
   },
   {
     "id": "word_1659",
@@ -18529,7 +21521,11 @@ export const vocabulary = [
     "de": "das Symptom",
     "es": "el síntoma",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La fièvre élevée est souvent le premier symptôme de cette infection.",
+    "ex_en": "A persistent cough is a common symptom of a seasonal cold.",
+    "ex_de": "Starkes Fieber ist oft das erste Symptom einer Erkältung.",
+    "ex_es": "El dolor de cabeza constante es un síntoma común del estrés."
   },
   {
     "id": "word_1660",
@@ -18538,7 +21534,11 @@ export const vocabulary = [
     "de": "der Schwanz",
     "es": "la cola",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le chien remue joyeusement la queue quand son maître rentre enfin.",
+    "ex_en": "The happy puppy wagged its tail when seeing its friendly owner.",
+    "ex_de": "Die kleine Katze bewegt aufgeregt ihren Schwanz im warmen Wohnzimmer.",
+    "ex_es": "El perro mueve alegremente la cola cuando escucha llegar a su dueño."
   },
   {
     "id": "word_1661",
@@ -18547,7 +21547,11 @@ export const vocabulary = [
     "de": "das Talent",
     "es": "el talento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle a un talent naturel pour la peinture et la musique.",
+    "ex_en": "This young artist has an extraordinary talent for playing the piano.",
+    "ex_de": "Er besitzt ein bemerkenswertes Talent für das Erlernen fremder Sprachen.",
+    "ex_es": "La joven música demostró un talento increíble en su primer concierto."
   },
   {
     "id": "word_1662",
@@ -18556,7 +21560,11 @@ export const vocabulary = [
     "de": "talentiert",
     "es": "talentoso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce musicien talentueux a séduit le public dès le premier morceau.",
+    "ex_en": "She is a talented designer who creates modern and stylish clothes.",
+    "ex_de": "Dieser talentierte Musiker gibt heute Abend ein fantastisches Konzert in Wien.",
+    "ex_es": "Es un pintor muy talentoso que expone sus obras en Madrid."
   },
   {
     "id": "word_1663",
@@ -18565,7 +21573,11 @@ export const vocabulary = [
     "de": "das Klebeband / die Kassette",
     "es": "la cinta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Utilise du ruban adhésif pour bien fermer ce grand carton lourd.",
+    "ex_en": "Use some strong adhesive tape to seal the cardboard package properly.",
+    "ex_de": "Ich brauche ein breites Klebeband, um die Pakete sicher zu verschließen.",
+    "ex_es": "Pega la caja de cartón con cinta adhesiva antes del envío."
   },
   {
     "id": "word_1664",
@@ -18574,7 +21586,11 @@ export const vocabulary = [
     "de": "die Steuer",
     "es": "el impuesto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque citoyen doit payer son impôt sur le revenu à temps.",
+    "ex_en": "All citizens must pay income tax according to the national law.",
+    "ex_de": "Jeder Bürger muss seine jährliche Steuer an den Staat zahlen.",
+    "ex_es": "Debemos pagar este impuesto antes del final del próximo mes fiscal."
   },
   {
     "id": "word_1665",
@@ -18583,7 +21599,11 @@ export const vocabulary = [
     "de": "technisch",
     "es": "técnico",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Notre équipe a résolu un problème technique difficile sur le serveur.",
+    "ex_en": "The engineer provided clear technical advice to fix the broken computer.",
+    "ex_de": "Der Support konnte das schwierige technische Problem schnell und zuverlässig lösen.",
+    "ex_es": "El especialista resolvió un problema técnico complejo en la red informática."
   },
   {
     "id": "word_1666",
@@ -18592,7 +21612,11 @@ export const vocabulary = [
     "de": "die Technik",
     "es": "la técnica",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le chef applique une nouvelle technique pour cuisiner ce poisson frais.",
+    "ex_en": "She learned a modern painting technique during her art class yesterday.",
+    "ex_de": "Er benutzt eine spezielle Technik, um schnelle Ergebnisse zu erzielen.",
+    "ex_es": "El pintor domina una técnica especial para mezclar los colores al óleo."
   },
   {
     "id": "word_1667",
@@ -18601,7 +21625,11 @@ export const vocabulary = [
     "de": "neigen zu",
     "es": "tender",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les prix ont tendance à augmenter fortement pendant la saison estivale.",
+    "ex_en": "Students tend to feel nervous before starting their final written exams.",
+    "ex_de": "Manche Menschen neigen zu Fehlern, wenn sie unter großem Stress stehen.",
+    "ex_es": "Los precios suelen tender al alza durante las fiestas navideñas."
   },
   {
     "id": "word_1668",
@@ -18610,7 +21638,11 @@ export const vocabulary = [
     "de": "das Thema",
     "es": "el tema",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'écologie est le thème principal de cette conférence internationale importante.",
+    "ex_en": "Friendship is the central theme of this wonderful romantic novel.",
+    "ex_de": "Das Thema Umweltschutz steht im Mittelpunkt der heutigen Diskussion.",
+    "ex_es": "La amistad sincera es el tema central de esta hermosa película."
   },
   {
     "id": "word_1669",
@@ -18619,7 +21651,11 @@ export const vocabulary = [
     "de": "obwohl",
     "es": "aunque",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle est venue à la réunion bien que fatiguée par le voyage.",
+    "ex_en": "He went for a walk outside even though it was raining heavily.",
+    "ex_de": "Wir gingen im Park spazieren, obwohl das Wetter ziemlich kalt war.",
+    "ex_es": "Fuimos al concierto aunque estaba lloviendo intensamente en la ciudad."
   },
   {
     "id": "word_1670",
@@ -18628,7 +21664,11 @@ export const vocabulary = [
     "de": "die Kehle",
     "es": "la garganta",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a très mal à la gorge à cause du froid hivernal.",
+    "ex_en": "She drank warm tea with honey because her throat hurt badly.",
+    "ex_de": "Er trinkt heißen Kräutertee, weil seine Kehle trocken und entzündet ist.",
+    "ex_es": "Tomó miel caliente porque le dolía mucho la garganta anoche."
   },
   {
     "id": "word_1671",
@@ -18637,7 +21677,11 @@ export const vocabulary = [
     "de": "durchgehend / überall",
     "es": "a lo largo de",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a plu sans arrêt tout au long de la journée d'hier.",
+    "ex_en": "Music was playing softly throughout the house during the family dinner.",
+    "ex_de": "Es regnete durchgehend während unseres gesamten Urlaubs an der Nordsee.",
+    "ex_es": "Trabajaron arduamente a lo largo de todo el año escolar."
   },
   {
     "id": "word_1672",
@@ -18646,7 +21690,11 @@ export const vocabulary = [
     "de": "eng",
     "es": "apretado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce jean neuf est un peu trop serré à la taille.",
+    "ex_en": "These black leather shoes are too tight for walking long distances.",
+    "ex_de": "Diese neuen Schuhe sind mir leider viel zu eng beim Laufen.",
+    "ex_es": "Este pantalón nuevo está demasiado apretado en la cintura para mí."
   },
   {
     "id": "word_1673",
@@ -18655,7 +21703,11 @@ export const vocabulary = [
     "de": "bis",
     "es": "hasta",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons attendu patiemment son retour jusqu'à minuit dans le salon.",
+    "ex_en": "Please stay at the library until your homework is completely finished.",
+    "ex_de": "Wir müssen im Büro bleiben, bis die wichtige Besprechung endlich endet.",
+    "ex_es": "Esperamos en la estación hasta que llegó el tren de la tarde."
   },
   {
     "id": "word_1674",
@@ -18664,7 +21716,11 @@ export const vocabulary = [
     "de": "die Dose",
     "es": "la lata / el estaño",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ouvre une boîte de conserve de tomates pour préparer la sauce.",
+    "ex_en": "He opened a tin of tuna to make a quick salad.",
+    "ex_de": "Sie öffnete eine Dose Erbsen für das schnelle Abendessen heute.",
+    "ex_es": "Abrí una lata de atún para preparar una ensalada rápida."
   },
   {
     "id": "word_1675",
@@ -18673,7 +21729,11 @@ export const vocabulary = [
     "de": "winzig",
     "es": "diminuto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette minuscule île au milieu de l'océan est un véritable paradis.",
+    "ex_en": "We saw a tiny bird building its nest in the garden.",
+    "ex_de": "Ein winziges Insekt saß auf dem grünen Blatt im Garten.",
+    "ex_es": "Vimos un pájaro diminuto en la rama alta de aquel árbol."
   },
   {
     "id": "word_1676",
@@ -18682,7 +21742,11 @@ export const vocabulary = [
     "de": "die Zunge",
     "es": "la lengua",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin m'a demandé de tirer la langue pendant la consultation.",
+    "ex_en": "He accidentally burned his tongue while drinking hot coffee this morning.",
+    "ex_de": "Der Arzt bat das kranke Kind, die Zunge zu zeigen.",
+    "ex_es": "El médico me pidió sacar la lengua durante la revisión general."
   },
   {
     "id": "word_1677",
@@ -18691,7 +21755,11 @@ export const vocabulary = [
     "de": "das Thema",
     "es": "el tema",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce sujet d'actualité passionne tous les journalistes réunis ce matin.",
+    "ex_en": "Climate change is an important topic in modern international news today.",
+    "ex_de": "Das Thema des Seminars war äußerst interessant für alle Studenten.",
+    "ex_es": "Elegimos un tema muy interesante para nuestro debate en la clase."
   },
   {
     "id": "word_1678",
@@ -18700,7 +21768,11 @@ export const vocabulary = [
     "de": "insgesamt / total",
     "es": "el total / total",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le total de la facture d'électricité était plus élevé que prévu.",
+    "ex_en": "The total cost of the hotel room was surprisingly very affordable.",
+    "ex_de": "Der Betrag war insgesamt viel günstiger als wir anfangs gedacht hatten.",
+    "ex_es": "El total de los gastos mensuales superó el presupuesto previsto inicialmente."
   },
   {
     "id": "word_1679",
@@ -18709,7 +21781,11 @@ export const vocabulary = [
     "de": "völlig",
     "es": "totalmente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je suis totalement d'accord avec votre proposition pour ce nouveau projet.",
+    "ex_en": "I totally agree with your helpful suggestions for the upcoming project.",
+    "ex_de": "Ich bin mit deiner neuen Idee für das Projekt völlig einverstanden.",
+    "ex_es": "Estoy totalmente de acuerdo con las decisiones tomadas en la reunión."
   },
   {
     "id": "word_1680",
@@ -18718,7 +21794,11 @@ export const vocabulary = [
     "de": "der Handel",
     "es": "el comercio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le commerce international favorise les échanges économiques entre les pays voisins.",
+    "ex_en": "International trade creates many jobs and supports the global economy today.",
+    "ex_de": "Der Handel mit regionalen Waren wächst in unserer Region sehr schnell.",
+    "ex_es": "El comercio marítimo es fundamental para la economía de este país."
   },
   {
     "id": "word_1681",
@@ -18727,7 +21807,11 @@ export const vocabulary = [
     "de": "handeln",
     "es": "comerciar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les marchands aiment échanger des produits artisanaux sur le grand marché.",
+    "ex_en": "Local shops trade various goods with neighboring cities every single week.",
+    "ex_de": "Kaufleute handeln mit wertvollen Gewürzen auf dem historischen Marktplatz der Stadt.",
+    "ex_es": "Los países vecinos decidieron comerciar libremente sin pagar tarifas aduaneras adicionales."
   },
   {
     "id": "word_1682",
@@ -18736,7 +21820,11 @@ export const vocabulary = [
     "de": "der Anhänger / der Trailer",
     "es": "el remolque / el tráiler",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La bande-annonce de ce film d'action donne vraiment envie d'aller au cinéma.",
+    "ex_en": "I watched the movie trailer online and found it very exciting.",
+    "ex_de": "Wir haben den neuen Trailer für den Kinofilm gestern Abend gesehen.",
+    "ex_es": "El tráiler de la nueva película causó gran expectación entre todos."
   },
   {
     "id": "word_1683",
@@ -18745,7 +21833,11 @@ export const vocabulary = [
     "de": "übersetzen",
     "es": "traducir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Pouvez-vous traduire ce texte espagnol en français pour mes collègues ?",
+    "ex_en": "She can easily translate complex articles from German into fluent English.",
+    "ex_de": "Er kann diesen schwierigen Text ohne Wörterbuch ins Deutsche übersetzen.",
+    "ex_es": "Debes traducir estas frases sencillas al inglés antes de la clase."
   },
   {
     "id": "word_1684",
@@ -18754,7 +21846,11 @@ export const vocabulary = [
     "de": "die Übersetzung",
     "es": "la traducción",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette traduction fidèle du poème italien respecte parfaitement le sens original.",
+    "ex_en": "The English translation of this Japanese novel is very well written.",
+    "ex_de": "Die Übersetzung des Vertrags ins Englische dauerte zwei volle Tage.",
+    "ex_es": "La traducción del documento oficial fue aprobada por el consulado general."
   },
   {
     "id": "word_1685",
@@ -18763,7 +21859,11 @@ export const vocabulary = [
     "de": "behandeln",
     "es": "tratar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les médecins savent comment soigner et traiter cette maladie avec succès.",
+    "ex_en": "We must always treat our colleagues with kindness and mutual respect.",
+    "ex_de": "Die Ärzte behandeln kranke Patienten mit großer Sorgfalt und Geduld.",
+    "ex_es": "Siempre debemos tratar a todas las personas con respeto y amabilidad."
   },
   {
     "id": "word_1686",
@@ -18772,7 +21872,11 @@ export const vocabulary = [
     "de": "die Behandlung",
     "es": "el tratamiento",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le médecin a recommandé un nouveau traitement efficace contre cette toux.",
+    "ex_en": "The doctor prescribed a new medical treatment for his painful back.",
+    "ex_de": "Die medizinische Behandlung im Krankenhaus war zum Glück sehr erfolgreich.",
+    "ex_es": "El paciente respondió muy bien al nuevo tratamiento contra la infección."
   },
   {
     "id": "word_1687",
@@ -18781,7 +21885,11 @@ export const vocabulary = [
     "de": "der Trend",
     "es": "la tendencia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette nouvelle tendance de mode séduit beaucoup de jeunes cette saison.",
+    "ex_en": "Remote working is becoming a popular trend among modern tech companies.",
+    "ex_de": "Dieser Trend zu gesunder Ernährung wird bei jungen Menschen immer beliebter.",
+    "ex_es": "Comprar ropa ecológica es una tendencia creciente entre los jóvenes consumidores."
   },
   {
     "id": "word_1688",
@@ -18790,7 +21898,11 @@ export const vocabulary = [
     "de": "der Trick",
     "es": "el truco",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le magicien a réussi un tour spectaculaire devant les enfants.",
+    "ex_en": "The clever magician showed us a fascinating card trick at dinner.",
+    "ex_de": "Der erfahrene Koch verriet einen praktischen Trick für die Sauce.",
+    "ex_es": "El mago realizó un truco impresionante con las cartas de juego."
   },
   {
     "id": "word_1689",
@@ -18799,7 +21911,11 @@ export const vocabulary = [
     "de": "austricksen",
     "es": "engañar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'escroc a essayé de tromper les clients avec de fausses promesses.",
+    "ex_en": "You cannot easily trick me with such an obvious fake story.",
+    "ex_de": "Niemand kann den erfahrenen Spieler mit dieser einfachen Taktik austricksen.",
+    "ex_es": "El vendedor intentó engañar al cliente con un precio demasiado alto."
   },
   {
     "id": "word_1690",
@@ -18808,7 +21924,11 @@ export const vocabulary = [
     "de": "die Wahrheit",
     "es": "la verdad",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il vaut toujours mieux dire la vérité même dans les moments difficiles.",
+    "ex_en": "It is always better to tell the truth to your friends.",
+    "ex_de": "Du solltest immer die reine Wahrheit sagen, wenn man dich fragt.",
+    "ex_es": "Siempre es importante decir la verdad para mantener la confianza mutua."
   },
   {
     "id": "word_1691",
@@ -18817,7 +21937,11 @@ export const vocabulary = [
     "de": "das Rohr / die U-Bahn",
     "es": "el tubo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "À Londres, nous prenons souvent le tube pour visiter les musées célèbres.",
+    "ex_en": "We took the underground tube to travel across London quickly yesterday.",
+    "ex_de": "In London fuhren wir jeden Morgen bequem mit der U-Bahn zur Arbeit.",
+    "ex_es": "El fontanero cambió el tubo de plástico que goteaba en el baño."
   },
   {
     "id": "word_1692",
@@ -18826,7 +21950,11 @@ export const vocabulary = [
     "de": "die Schildkröte",
     "es": "la tortuga",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons observé une grande tortue nager paisiblement dans la mer.",
+    "ex_en": "We saw a green sea turtle swimming slowly near the coral reef.",
+    "ex_de": "Eine kleine grüne Schildkröte schwamm langsam durch das klare warme Wasser.",
+    "ex_es": "Vimos una hermosa tortuga marina nadando cerca de la orilla arenosa."
   },
   {
     "id": "word_1693",
@@ -18835,7 +21963,11 @@ export const vocabulary = [
     "de": "tippen",
     "es": "escribir a máquina",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle sait taper très vite sur son clavier d'ordinateur sans regarder.",
+    "ex_en": "He can type sixty words per minute without looking at keyboard.",
+    "ex_de": "Die Sekretärin kann sehr schnell und fehlerfrei auf der Tastatur tippen.",
+    "ex_es": "Mi abuelo aprendió a escribir a máquina cuando era un estudiante joven."
   },
   {
     "id": "word_1694",
@@ -18844,7 +21976,11 @@ export const vocabulary = [
     "de": "typischerweise",
     "es": "típicamente",
     "type": "adverbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les réunions d'équipe durent typiquement une heure chaque lundi matin.",
+    "ex_en": "Students typically spend two hours doing homework every single evening.",
+    "ex_de": "Typischerweise beginnt unser Arbeitstag im Büro pünktlich um acht Uhr morgens.",
+    "ex_es": "El desayuno típicamente incluye café caliente con tostadas y fruta fresca."
   },
   {
     "id": "word_1695",
@@ -18853,7 +21989,11 @@ export const vocabulary = [
     "de": "der Reifen",
     "es": "el neumático",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le garagiste a changé le pneu crevé de ma voiture rapidement.",
+    "ex_en": "You should check your car tyre pressure before starting a long trip.",
+    "ex_de": "Der Mechaniker wechselte schnell den kaputten Reifen an unserem roten Auto.",
+    "ex_es": "Debes revisar la presión de cada neumático antes de viajar lejos."
   },
   {
     "id": "word_1696",
@@ -18862,7 +22002,11 @@ export const vocabulary = [
     "de": "hässlich",
     "es": "feo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce vieux bâtiment abandonné est devenu particulièrement laid avec le temps.",
+    "ex_en": "That old abandoned building looked very ugly in the cold rain.",
+    "ex_de": "Dieses alte verlassene Gebäude sieht bei Regen wirklich hässlich aus.",
+    "ex_es": "El viejo edificio abandonado parecía muy feo bajo la lluvia gris."
   },
   {
     "id": "word_1697",
@@ -18871,7 +22015,11 @@ export const vocabulary = [
     "de": "unfähig",
     "es": "incapaz",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il était incapable de répondre à cette question difficile sans aide.",
+    "ex_en": "She was unable to attend the conference because of severe illness.",
+    "ex_de": "Er war unfähig, die schwierige Aufgabe ohne fremde Hilfe zu lösen.",
+    "ex_es": "El alumno fue incapaz de resolver el problema matemático sin ayuda."
   },
   {
     "id": "word_1698",
@@ -18880,7 +22028,11 @@ export const vocabulary = [
     "de": "unbequem",
     "es": "incómodo",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette chaise en bois est trop inconfortable pour travailler toute la journée.",
+    "ex_en": "This hard wooden chair feels very uncomfortable after sitting two hours.",
+    "ex_de": "Das alte Sofa im Hotelzimmer war leider extrem unbequem zum Schlafen.",
+    "ex_es": "Este asiento del tren resultó muy incómodo durante el largo viaje."
   },
   {
     "id": "word_1699",
@@ -18889,7 +22041,11 @@ export const vocabulary = [
     "de": "die Unterwäsche",
     "es": "la ropa interior",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Emporte des sous-vêtements propres dans ta valise pour ce long voyage.",
+    "ex_en": "Pack clean underwear and extra socks in your small travel suitcase.",
+    "ex_de": "Sie kaufte neue bequeme Unterwäsche aus reiner Baumwolle im Modegeschäft.",
+    "ex_es": "Guarda la ropa interior limpia en el cajón superior del armario."
   },
   {
     "id": "word_1700",
@@ -18898,7 +22054,11 @@ export const vocabulary = [
     "de": "arbeitslos",
     "es": "desempleado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est au chômage depuis quelques mois et cherche un nouvel emploi.",
+    "ex_en": "Many young graduates are currently unemployed and looking for good opportunities.",
+    "ex_de": "Er war mehrere Monate arbeitslos, fand aber bald eine neue Stelle.",
+    "ex_es": "Muchos graduados están desempleados mientras buscan su primera oportunidad laboral estable."
   },
   {
     "id": "word_1701",
@@ -18907,7 +22067,11 @@ export const vocabulary = [
     "de": "die Arbeitslosigkeit",
     "es": "el desempleo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le taux de chômage a diminué grâce aux nouvelles mesures économiques.",
+    "ex_en": "Youth unemployment remains a serious economic challenge in many European countries.",
+    "ex_de": "Die Regierung will die hohe Arbeitslosigkeit durch neue Programme deutlich senken.",
+    "ex_es": "El alto desempleo juvenil preocupa a los ministros de economía europeos."
   },
   {
     "id": "word_1702",
@@ -18916,7 +22080,11 @@ export const vocabulary = [
     "de": "ungerecht",
     "es": "injusto",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je trouve cette punition injuste car ce n'était pas sa faute.",
+    "ex_en": "It is unfair to blame one person for the entire mistake.",
+    "ex_de": "Die strenge Entscheidung des Schiedsrichters war für beide Teams völlig ungerecht.",
+    "ex_es": "Considero muy injusto castigar a todos por el error de uno."
   },
   {
     "id": "word_1703",
@@ -18925,7 +22093,11 @@ export const vocabulary = [
     "de": "die Gewerkschaft",
     "es": "la unión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les travailleurs ont rejoint le syndicat pour défendre leurs droits sociaux.",
+    "ex_en": "The trade union negotiated better working conditions for all factory workers.",
+    "ex_de": "Die Gewerkschaft fordert faire Löhne und bessere Arbeitsbedingungen für alle Mitarbeiter.",
+    "ex_es": "La unión de los trabajadores logró mejorar las condiciones laborales generales."
   },
   {
     "id": "word_1704",
@@ -18934,7 +22106,11 @@ export const vocabulary = [
     "de": "es sei denn",
     "es": "a menos que",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous irons à la plage à moins qu'il ne pleuve demain.",
+    "ex_en": "We will go hiking tomorrow unless the weather turns stormy outside.",
+    "ex_de": "Wir treffen uns morgen im Park, es sei denn es regnet stark.",
+    "ex_es": "Iremos de excursión al campo a menos que empiece a llover."
   },
   {
     "id": "word_1705",
@@ -18943,7 +22119,11 @@ export const vocabulary = [
     "de": "im Gegensatz zu",
     "es": "a diferencia de",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Contrairement à son frère, elle préfère les sports collectifs en plein air.",
+    "ex_en": "Unlike his brother, Paul prefers studying foreign languages and ancient history.",
+    "ex_de": "Im Gegensatz zu seinem Bruder lernt Paul sehr gerne fremde Sprachen.",
+    "ex_es": "A diferencia de su hermana, María disfruta mucho estudiando ciencias naturales."
   },
   {
     "id": "word_1706",
@@ -18952,7 +22132,11 @@ export const vocabulary = [
     "de": "unwahrscheinlich",
     "es": "improbable",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est peu probable qu'il vienne à la fête ce soir.",
+    "ex_en": "It is unlikely that the train will arrive on time today.",
+    "ex_de": "Es ist sehr unwahrscheinlich, dass der verspätete Zug noch pünktlich ankommt.",
+    "ex_es": "Es muy improbable que el tren llegue a tiempo con esta nieve."
   },
   {
     "id": "word_1707",
@@ -18961,7 +22145,11 @@ export const vocabulary = [
     "de": "unnötig",
     "es": "innecesario",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il est inutile d'acheter un nouveau manteau pour deux jours seulement.",
+    "ex_en": "Taking a taxi is unnecessary because the station is very close.",
+    "ex_de": "Es ist völlig unnötig, für diese kurze Fahrt ein Taxi zu rufen.",
+    "ex_es": "Comprar otro paraguas es innecesario porque ya tenemos varios en casa."
   },
   {
     "id": "word_1708",
@@ -18970,7 +22158,11 @@ export const vocabulary = [
     "de": "unangenehm",
     "es": "desagradable",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette odeur désagréable dans la cuisine provient des poubelles non vidées.",
+    "ex_en": "An unpleasant cold wind was blowing across the empty streets tonight.",
+    "ex_de": "Der kalte Wind machte den Spaziergang am Abend leider sehr unangenehm.",
+    "ex_es": "Ese olor desagradable provenía de los recipientes de basura sin vaciar."
   },
   {
     "id": "word_1709",
@@ -18979,7 +22171,11 @@ export const vocabulary = [
     "de": "aktualisieren",
     "es": "actualizar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Vous devez mettre à jour votre profil sur le site web professionnel.",
+    "ex_en": "You should regularly update your computer software for better security reasons.",
+    "ex_de": "Ich muss meine Kontaktdaten auf der Webseite der Firma dringend aktualisieren.",
+    "ex_es": "Es recomendable actualizar el sistema operativo para evitar problemas de seguridad."
   },
   {
     "id": "word_1710",
@@ -18988,7 +22184,11 @@ export const vocabulary = [
     "de": "auf",
     "es": "sobre",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Dès son arrivée sur les lieux, la police a interrogé les témoins.",
+    "ex_en": "Upon his arrival at the airport, my brother called our parents.",
+    "ex_de": "Das Buch lag direkt auf dem großen hölzernen Tisch im Wohnzimmer.",
+    "ex_es": "Al llegar, dejó su maleta pesada sobre la mesa del recibidor."
   },
   {
     "id": "word_1711",
@@ -18997,7 +22197,11 @@ export const vocabulary = [
     "de": "aufregen",
     "es": "molestar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette mauvaise nouvelle risque de contrarier profondément toute la famille réunie.",
+    "ex_en": "Bad news like that will upset everyone in the office today.",
+    "ex_de": "Du solltest dich wegen dieser kleinen Verspätung nicht so sehr aufregen.",
+    "ex_es": "Esa noticia inesperada podría molestar a las personas presentes en la sala."
   },
   {
     "id": "word_1712",
@@ -19006,7 +22210,11 @@ export const vocabulary = [
     "de": "gebraucht",
     "es": "usado",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'ai acheté une voiture d'occasion en très bon état mécanique hier.",
+    "ex_en": "He bought a used guitar at the local music shop yesterday.",
+    "ex_de": "Sie kauft oft gebrauchte Bücher auf dem sonntäglichen Flohmarkt der Stadt.",
+    "ex_es": "Compré un teléfono usado pero en excelente estado a buen precio."
   },
   {
     "id": "word_1713",
@@ -19015,7 +22223,11 @@ export const vocabulary = [
     "de": "wertvoll",
     "es": "valioso",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce vieux tableau hérité de ma grand-mère est très précieux sentimentalement.",
+    "ex_en": "She gave me some valuable advice about finding a good job.",
+    "ex_de": "Diese historischen Münzen sind für Sammler auf der ganzen Welt wertvoll.",
+    "ex_es": "El profesor me dio un valioso consejo sobre mi futura carrera profesional."
   },
   {
     "id": "word_1714",
@@ -19024,7 +22236,11 @@ export const vocabulary = [
     "de": "der Wert",
     "es": "el valor",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La valeur de cet appartement a beaucoup augmenté ces dernières années.",
+    "ex_en": "The market value of real estate increased significantly in this city.",
+    "ex_de": "Der materielle Wert dieses alten Hauses ist in den letzten Jahren gestiegen.",
+    "ex_es": "El valor de las viviendas subió considerablemente en este barrio céntrico."
   },
   {
     "id": "word_1715",
@@ -19033,7 +22249,11 @@ export const vocabulary = [
     "de": "verschieden",
     "es": "varios",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons discuté de divers sujets intéressants pendant la pause déjeuner.",
+    "ex_en": "We discussed various interesting topics during our team lunch break today.",
+    "ex_de": "Im Museum sahen wir verschiedene interessante Kunstwerke aus dem letzten Jahrhundert.",
+    "ex_es": "Tratamos varios temas importantes durante la conferencia internacional sobre educación."
   },
   {
     "id": "word_1716",
@@ -19042,7 +22262,11 @@ export const vocabulary = [
     "de": "das Fahrzeug",
     "es": "el vehículo",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce nouveau véhicule électrique consomme très peu d'énergie en ville.",
+    "ex_en": "Electric vehicle sales have increased rapidly across European markets this year.",
+    "ex_de": "Dieses moderne Fahrzeug verbraucht sehr wenig Benzin auf langen Strecken.",
+    "ex_es": "Aparcó su nuevo vehículo en el aparcamiento subterráneo del centro comercial."
   },
   {
     "id": "word_1717",
@@ -19051,7 +22275,11 @@ export const vocabulary = [
     "de": "die Version",
     "es": "la versión",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Téléchargez la dernière version de l'application pour éviter les bugs techniques.",
+    "ex_en": "You can download the newest software version from our official website.",
+    "ex_de": "Die neueste Version des Programms enthält viele praktische neue Funktionen.",
+    "ex_es": "Descargué la última versión del programa para corregir los errores anteriores."
   },
   {
     "id": "word_1718",
@@ -19060,7 +22288,11 @@ export const vocabulary = [
     "de": "das Opfer",
     "es": "la víctima",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les secours ont pris en charge la victime de l'accident rapidement.",
+    "ex_en": "Emergency services quickly helped the victim of the minor car accident.",
+    "ex_de": "Die Sanitäter versorgten das verletzte Opfer sofort nach dem schweren Unfall.",
+    "ex_es": "Los médicos atendieron a la víctima del accidente con gran rapidez."
   },
   {
     "id": "word_1719",
@@ -19069,7 +22301,11 @@ export const vocabulary = [
     "de": "der Zuschauer",
     "es": "el espectador",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque spectateur attendait la suite de cette série télévisée passionnante.",
+    "ex_en": "Every viewer enjoyed the exciting final episode of this television show.",
+    "ex_de": "Jeder aufmerksame Zuschauer verfolgte das spannende Finale der Fernsehserie im Wohnzimmer.",
+    "ex_es": "Cada espectador siguió con gran emoción el capítulo final del programa."
   },
   {
     "id": "word_1720",
@@ -19078,7 +22314,11 @@ export const vocabulary = [
     "de": "gewalttätig",
     "es": "violento",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Un orage violent a provoqué des inondations dans tout le village.",
+    "ex_en": "A violent storm caused heavy damage in several coastal towns yesterday.",
+    "ex_de": "Ein gewalttätiger Sturm beschädigte gestern viele alte Dächer im ganzen Dorf.",
+    "ex_es": "Un viento violento derribó varios árboles grandes en el parque municipal."
   },
   {
     "id": "word_1721",
@@ -19087,7 +22327,11 @@ export const vocabulary = [
     "de": "der Freiwillige",
     "es": "el voluntario",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce bénévole généreux aide les personnes âgées du quartier chaque semaine.",
+    "ex_en": "Every volunteer at the community center helps distribute food to families.",
+    "ex_de": "Der engagierte Freiwillige hilft älteren Menschen in unserer Nachbarschaft jede Woche.",
+    "ex_es": "Un voluntario entregó alimentos frescos a las familias necesitadas del barrio."
   },
   {
     "id": "word_1722",
@@ -19096,7 +22340,11 @@ export const vocabulary = [
     "de": "sich freiwillig melden",
     "es": "ofrecerse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il a décidé de se porter volontaire pour nettoyer la plage.",
+    "ex_en": "She decided to volunteer at the animal shelter every Saturday morning.",
+    "ex_de": "Viele hilfsbereite Studenten wollten sich freiwillig für das Projekt melden.",
+    "ex_es": "Ella decidió ofrecerse para organizar la fiesta benéfica de la escuela."
   },
   {
     "id": "word_1723",
@@ -19105,7 +22353,11 @@ export const vocabulary = [
     "de": "die Abstimmung",
     "es": "el voto",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le résultat du vote sera annoncé officiellement à la télévision ce soir.",
+    "ex_en": "The citizen casting a vote participates actively in the democratic process.",
+    "ex_de": "Das endgültige Ergebnis der Abstimmung wird heute Abend im Fernsehen bekanntgegeben.",
+    "ex_es": "El resultado del voto ciudadano determinó el futuro del nuevo parque."
   },
   {
     "id": "word_1724",
@@ -19114,7 +22366,11 @@ export const vocabulary = [
     "de": "wählen",
     "es": "votar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tous les citoyens majeurs doivent aller voter pour cette élection importante.",
+    "ex_en": "Millions of registered citizens will vote in the upcoming national election.",
+    "ex_de": "Alle wahlberechtigten Bürger sollten bei der nächsten Wahl ihre Stimme abgeben.",
+    "ex_es": "Todos los ciudadanos mayores de edad tienen derecho a votar libremente."
   },
   {
     "id": "word_1725",
@@ -19123,7 +22379,11 @@ export const vocabulary = [
     "de": "warnen",
     "es": "advertir",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le guide a voulu nous avertir des dangers de la montagne.",
+    "ex_en": "The weather forecast did warn travelers about incoming heavy winter snow.",
+    "ex_de": "Die Behörden warnen die Autofahrer vor gefährlichem Glatteis auf den Straßen.",
+    "ex_es": "El guardabosques nos quiso advertir sobre las bajas temperaturas nocturnas."
   },
   {
     "id": "word_1726",
@@ -19132,7 +22392,11 @@ export const vocabulary = [
     "de": "die Warnung",
     "es": "la advertencia",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il n'a pas écouté l'avertissement du panneau concernant les courants forts.",
+    "ex_en": "The government issued a severe weather warning before the storm arrived.",
+    "ex_de": "Er ignorierte die offizielle Warnung der Polizei vor dem Sturm leider.",
+    "ex_es": "Ignoró la advertencia sobre el peligro en la carretera de montaña."
   },
   {
     "id": "word_1727",
@@ -19141,7 +22405,11 @@ export const vocabulary = [
     "de": "der Abfall",
     "es": "el desperdicio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Réduire le gaspillage alimentaire est une priorité pour notre planète aujourd'hui.",
+    "ex_en": "Throwing edible food away is a terrible waste of natural resources.",
+    "ex_de": "Wir müssen den Plastikmüll und den Abfall im Haushalt deutlich reduzieren.",
+    "ex_es": "Evitar el desperdicio de agua potable es fundamental para nuestro futuro."
   },
   {
     "id": "word_1728",
@@ -19150,7 +22418,11 @@ export const vocabulary = [
     "de": "verschwenden",
     "es": "desperdiciar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu ne devrais pas gaspiller ton argent dans des achats inutiles.",
+    "ex_en": "Do not waste your precious time playing video games all day.",
+    "ex_de": "Du solltest dein hart verdientes Geld nicht für unnötige Dinge verschwenden.",
+    "ex_es": "No debes desperdiciar tu tiempo libre navegando en internet sin parar."
   },
   {
     "id": "word_1729",
@@ -19159,7 +22431,11 @@ export const vocabulary = [
     "de": "die Waffe",
     "es": "el arma",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La police a retrouvé une arme cachée derrière le vieux garage.",
+    "ex_en": "The police discovered a concealed weapon during their routine security inspection.",
+    "ex_de": "Die Polizisten fanden eine gefährliche Waffe im Kofferraum des verdächtigen Autos.",
+    "ex_es": "Los agentes confiscaron un arma ilegal encontrada en el vehículo registrado."
   },
   {
     "id": "word_1730",
@@ -19168,7 +22444,11 @@ export const vocabulary = [
     "de": "wiegen",
     "es": "pesar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "N'oublie pas de peser les bagages avant de partir pour l'aéroport.",
+    "ex_en": "You must weigh your luggage carefully before flying on the plane.",
+    "ex_de": "Wir müssen den schweren Koffer vor der Flugreise genau wiegen.",
+    "ex_es": "Debes pesar la maleta grande antes de llegar al mostrador del aeropuerto."
   },
   {
     "id": "word_1731",
@@ -19177,7 +22457,11 @@ export const vocabulary = [
     "de": "westlich",
     "es": "occidental",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette ville est située dans la partie occidentale de notre pays.",
+    "ex_en": "We traveled across the western regions of the country last summer.",
+    "ex_de": "Diese historische Stadt liegt im westlichen Teil von ganz Deutschland.",
+    "ex_es": "La cultura occidental tiene muchas influencias de la antigua Grecia clásica."
   },
   {
     "id": "word_1732",
@@ -19186,7 +22470,11 @@ export const vocabulary = [
     "de": "der Wal",
     "es": "la ballena",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "La baleine bleue est le plus grand mammifère vivant sur Terre.",
+    "ex_en": "A blue whale can swim across vast oceans with great ease.",
+    "ex_de": "Der riesige Wal schwamm ruhig neben unserem Boot im tiefen Ozean.",
+    "ex_es": "Una enorme ballena jorobada apareció de repente cerca de nuestro barco."
   },
   {
     "id": "word_1733",
@@ -19195,7 +22483,11 @@ export const vocabulary = [
     "de": "was auch immer",
     "es": "lo que sea",
     "type": "pron",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu peux choisir quoi que ce soit sur le menu du restaurant.",
+    "ex_en": "You can choose whatever dessert you like from the sweet menu.",
+    "ex_de": "Du kannst essen, was auch immer du auf der Speisekarte möchtest.",
+    "ex_es": "Puedes pedir lo que sea en la carta de este restaurante."
   },
   {
     "id": "word_1734",
@@ -19204,7 +22496,11 @@ export const vocabulary = [
     "de": "wann auch immer",
     "es": "siempre que",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Il m'appelle à chaque fois que son train arrive en retard.",
+    "ex_en": "Call me whenever you arrive at the central train station tonight.",
+    "ex_de": "Rufe mich an, wann auch immer du am Bahnhof in Berlin ankommst.",
+    "ex_es": "Avísame siempre que necesites ayuda con tus deberes de la escuela."
   },
   {
     "id": "word_1735",
@@ -19213,7 +22509,11 @@ export const vocabulary = [
     "de": "ob",
     "es": "si",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Je me demande si nous aurons assez de temps pour visiter.",
+    "ex_en": "I do not know whether we can join your party tonight.",
+    "ex_de": "Ich weiß noch nicht sicher, ob ich morgen mitkommen kann.",
+    "ex_es": "No sé si ellos vendrán a cenar a nuestra casa hoy."
   },
   {
     "id": "word_1736",
@@ -19222,7 +22522,11 @@ export const vocabulary = [
     "de": "während",
     "es": "mientras",
     "type": "conjonction",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "J'écoute de la musique douce pendant que je prépare le dîner.",
+    "ex_en": "She likes to listen to podcasts while cooking dinner in evening.",
+    "ex_de": "Er hört gerne ruhige Musik, während er für seine Prüfungen lernt.",
+    "ex_es": "Ella lee una novela mientras espera la llegada del autobús escolar."
   },
   {
     "id": "word_1737",
@@ -19231,7 +22535,11 @@ export const vocabulary = [
     "de": "der Flügel",
     "es": "el ala",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'oiseau blessé ne pouvait plus bouger son aile gauche après l'accident.",
+    "ex_en": "The bird could not fly because its left wing was hurt.",
+    "ex_de": "Der Vogel konnte nicht fliegen, weil sein linker Flügel verletzt war.",
+    "ex_es": "El pájaro herido no podía volar debido a un ala lastimada."
   },
   {
     "id": "word_1738",
@@ -19240,7 +22548,11 @@ export const vocabulary = [
     "de": "innerhalb",
     "es": "dentro de",
     "type": "prep",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Le colis arrivera à l'intérieur de deux jours ouvrables chez vous.",
+    "ex_en": "The package will be delivered within two business days to you.",
+    "ex_de": "Die bestellte Lieferung wird innerhalb von zwei Werktagen bei Ihnen eintreffen.",
+    "ex_es": "El paquete llegará dentro de dos días laborables a su domicilio."
   },
   {
     "id": "word_1739",
@@ -19249,7 +22561,11 @@ export const vocabulary = [
     "de": "sich wundern",
     "es": "preguntarse",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Elle commence à se demander si cette offre d'emploi est sérieuse.",
+    "ex_en": "I wonder if the weather will stay sunny during our vacation.",
+    "ex_de": "Wir müssen uns nicht wundern, warum dieses Projekt so erfolgreich war.",
+    "ex_es": "Ella empezó a preguntarse cuál era el motivo de su repentina ausencia."
   },
   {
     "id": "word_1740",
@@ -19258,7 +22574,11 @@ export const vocabulary = [
     "de": "die Wolle",
     "es": "la lana",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce pull chaud en pure laine me protège du grand froid.",
+    "ex_en": "This cozy sweater made of pure wool keeps me very warm.",
+    "ex_de": "Dieser warme Pullover aus reiner Wolle schützt gut vor Kälte.",
+    "ex_es": "Este jersey de lana suave abriga mucho en las tardes frías."
   },
   {
     "id": "word_1741",
@@ -19267,7 +22587,11 @@ export const vocabulary = [
     "de": "weltweit",
     "es": "a nivel mundial",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce chanteur célèbre donne des concerts dans le monde entier cette année.",
+    "ex_en": "The popular video game has millions of active players worldwide today.",
+    "ex_de": "Dieses spannende Computerspiel hat Millionen von begeisterten Spielern weltweit.",
+    "ex_es": "La película obtuvo un gran éxito a nivel mundial entre el público."
   },
   {
     "id": "word_1742",
@@ -19276,7 +22600,11 @@ export const vocabulary = [
     "de": "der Wert / wert",
     "es": "el valor / vale la pena",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce musée historique vaut vraiment la peine d'être visité en famille.",
+    "ex_en": "This historic castle is definitely worth visiting during your holiday trip.",
+    "ex_de": "Dieser historische alte Palast ist einen Besuch mit der Familie wert.",
+    "ex_es": "Este museo de arte antiguo vale la pena por sus cuadros."
   },
   {
     "id": "word_1743",
@@ -19285,7 +22613,11 @@ export const vocabulary = [
     "de": "die Falte",
     "es": "la arruga",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Cette crème hydratante aide à atténuer chaque petite ride du visage.",
+    "ex_en": "She noticed a small wrinkle around her eye in the mirror.",
+    "ex_de": "Er bemerkte eine kleine Falte auf seiner frisch gebügelten weißen Hose.",
+    "ex_es": "Esta crema especial ayuda a suavizar cada arruga en la piel."
   },
   {
     "id": "word_1744",
@@ -19294,7 +22626,11 @@ export const vocabulary = [
     "de": "geschrieben",
     "es": "escrito",
     "type": "adjectif",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les étudiants doivent rendre un rapport écrit avant la fin du mois.",
+    "ex_en": "We must submit a written report before the end of week.",
+    "ex_de": "Sie hat einen ausführlichen schriftlichen Bericht über das Projekt geschrieben.",
+    "ex_es": "Debemos entregar un informe escrito antes del final de esta semana."
   },
   {
     "id": "word_1745",
@@ -19303,7 +22639,11 @@ export const vocabulary = [
     "de": "der Hof",
     "es": "el patio",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Les enfants jouent au ballon dans la cour de l'école primaire.",
+    "ex_en": "The children played happily in the front yard behind our house.",
+    "ex_de": "Die Kinder spielen nach der Schule im großen Hof des Wohnhauses.",
+    "ex_es": "Los niños juegan alegremente en el patio después de las clases."
   },
   {
     "id": "word_1746",
@@ -19312,7 +22652,11 @@ export const vocabulary = [
     "de": "schreien",
     "es": "gritar",
     "type": "verbe",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Tu n'as pas besoin de hurler pour te faire entendre clairement.",
+    "ex_en": "Please do not yell in the library while students are studying.",
+    "ex_de": "Du musst nicht laut schreien, denn wir hören dich ganz genau.",
+    "ex_es": "No hace falta gritar para explicar tu opinión en esta reunión."
   },
   {
     "id": "word_1747",
@@ -19321,7 +22665,11 @@ export const vocabulary = [
     "de": "die Jugend",
     "es": "la juventud",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce centre culturel organise des activités sportives pour la jeunesse locale.",
+    "ex_en": "The community sports club encourages healthy lifestyle choices among local youth.",
+    "ex_de": "Dieses Jugendzentrum bietet viele sportliche Aktivitäten für die lokale Jugend an.",
+    "ex_es": "El polideportivo municipal ofrece muchas actividades interesantes para la juventud local."
   },
   {
     "id": "word_1748",
@@ -46220,7 +49568,7 @@ export const vocabulary = [
     "ex_de": "Er ist sehr krank.",
     "ex_es": "Él está muy enfermo."
   },
-    {
+  {
     "id": "word_3818",
     "fr": "chanter",
     "en": "sing",
@@ -64869,7 +68217,11 @@ export const vocabulary = [
     "de": "Vieh",
     "es": "ganado",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "L'agriculteur nourrit son troupeau de bétail tôt chaque matin au pré.",
+    "ex_en": "The farmer raises cattle on his large green ranch every year.",
+    "ex_de": "Der Bauer füttert das hungrige Vieh jeden Morgen auf der Wiese.",
+    "ex_es": "El granjero cuida su rebaño de ganado en los pastos verdes."
   },
   {
     "id": "word_5253",
@@ -65216,7 +68568,11 @@ export const vocabulary = [
     "de": "Cocktail",
     "es": "cóctel",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Nous avons bu un délicieux cocktail de fruits frais en terrasse.",
+    "ex_en": "They ordered a refreshing tropical fruit cocktail at the beach bar.",
+    "ex_de": "Wir tranken einen leckeren fruchtigen Cocktail an der sonnigen Bar am Strand.",
+    "ex_es": "Pedimos un cóctel de frutas tropicales en la terraza del bar."
   },
   {
     "id": "word_5280",
@@ -76582,7 +79938,11 @@ export const vocabulary = [
     "de": "Jugendlicher",
     "es": "joven",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Ce jeune apprenti apprend rapidement les techniques du métier de cuisinier.",
+    "ex_en": "The energetic youngster won first place in the school running race.",
+    "ex_de": "Ein fleißiger Jugendlicher half der älteren Dame beim Tragen der Einkäufe.",
+    "ex_es": "Un joven entusiasta ganó el primer premio del concurso de dibujo."
   },
   {
     "id": "word_6266",
@@ -91655,7 +95015,11 @@ export const vocabulary = [
     "de": "Jugendlicher",
     "es": "joven",
     "type": "nom",
-    "level": "B1"
+    "level": "B1",
+    "ex_fr": "Chaque jeune du quartier peut participer aux ateliers artistiques du centre.",
+    "ex_en": "Every youngster in the neighborhood can join our summer sports camp.",
+    "ex_de": "Jeder Jugendliche kann an den kostenlosen Kursen im Gemeindezentrum teilnehmen.",
+    "ex_es": "Cada joven del barrio puede inscribirse en las actividades deportivas gratuitas."
   },
   {
     "id": "word_7932",

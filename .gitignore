@@ -10,4 +10,5 @@ desktop.ini
 *.log
 .DS_Store
 
-# (Ajouter d'autres dossiers ou fichiers g\u00e9n\u00e9r\u00e9s dynamiquement ici si besoin)
+# Dossier temporaire / archives de scripts
+tmp/

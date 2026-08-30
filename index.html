@@ -74,7 +74,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=87">
+    <link rel="stylesheet" href="css/style.css?v=89">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -422,72 +422,96 @@
                 </div>
 
                 <div class="card progress-card" id="progress-main-card">
-                    <div class="progress-filters" style="display: flex; gap: 1.25rem; align-items: center; justify-content: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; background: transparent; padding: 0; border: none;">
-                        <input type="text" id="prog-search" data-i18n-placeholder="placeholder_search" placeholder="Rechercher un mot..." style="width: 250px; max-width: 100%; margin-bottom: 0;">
+                    <div class="progress-filters" style="display: flex; gap: 0.6rem; align-items: center; justify-content: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap; background: transparent; padding: 0; border: none;">
+                        <input type="text" id="prog-search" data-i18n-placeholder="placeholder_search" placeholder="Rechercher un mot..." style="width: 210px; max-width: 100%; margin-bottom: 0;">
                         
-                        <div class="type-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;">
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-type-nom" checked style="accent-color: #60a5fa; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge nom" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_nom">Nom</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-type-verbe" checked style="accent-color: #fb7185; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge verbe" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_verbe">Verbe</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-type-adjectif" checked style="accent-color: #34d399; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge adjectif" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_adjectif">Adjectif</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-type-adverbe" checked style="accent-color: #fbbf24; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge adverbe" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_adverbe">Adverbe</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-type-conjonction" checked style="accent-color: #22d3ee; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge conjonction" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_conjonction">Conjonction</span>
-                            </label>
-                        </div>
-                        
-                        <div class="level-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;">
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-level-a1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-level-a2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-level-b1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">B1</span>
-                            </label>
-                            <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
-                                <input type="checkbox" id="filter-level-b2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(234, 179, 8, 0.2); color: #eab308;">B2</span>
-                            </label>
-                            <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
-                                <input type="checkbox" id="filter-level-c1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(249, 115, 22, 0.2); color: #f97316;">C1</span>
-                            </label>
-                            <label style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer;">
-                                <input type="checkbox" id="filter-level-c2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">C2</span>
-                            </label>
+                        <!-- Dropdown Types -->
+                        <div class="filter-dropdown-wrapper" id="dropdown-wrapper-types">
+                            <button type="button" class="filter-dropdown-btn" id="btn-filter-types">
+                                <span data-i18n="th_type">Catégorie</span>
+                                <span class="filter-count-badge" id="count-filter-types">5</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                            <div class="filter-dropdown-popover hidden" id="popover-filter-types">
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-type-nom" checked style="accent-color: #60a5fa; width: 15px; height: 15px;">
+                                    <span class="type-badge nom" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_nom">Nom</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-type-verbe" checked style="accent-color: #fb7185; width: 15px; height: 15px;">
+                                    <span class="type-badge verbe" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_verbe">Verbe</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-type-adjectif" checked style="accent-color: #34d399; width: 15px; height: 15px;">
+                                    <span class="type-badge adjectif" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_adjectif">Adjectif</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-type-adverbe" checked style="accent-color: #fbbf24; width: 15px; height: 15px;">
+                                    <span class="type-badge adverbe" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_adverbe">Adverbe</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-type-conjonction" checked style="accent-color: #22d3ee; width: 15px; height: 15px;">
+                                    <span class="type-badge conjonction" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_conjonction">Conjonction</span>
+                                </label>
+                            </div>
                         </div>
 
-                        <div class="status-filter-group" style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap; border-left: 1px solid var(--border-color); padding-left: 1rem;">
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-status-valide" checked style="accent-color: #10b981; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;" data-i18n="status_valide">Validé</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-status-actif" checked style="accent-color: #3b82f6; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;" data-i18n="status_non_valide">Non validé</span>
-                            </label>
-                            <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                                <input type="checkbox" id="filter-status-ignore" checked style="accent-color: #9ca3af; width: 15px; height: 15px; cursor: pointer;">
-                                <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(156, 163, 175, 0.2); color: #9ca3af;" data-i18n="status_ignored">Ignoré</span>
-                            </label>
+                        <!-- Dropdown Niveaux -->
+                        <div class="filter-dropdown-wrapper" id="dropdown-wrapper-levels">
+                            <button type="button" class="filter-dropdown-btn" id="btn-filter-levels">
+                                <span data-i18n="th_level">Niveau</span>
+                                <span class="filter-count-badge" id="count-filter-levels">6</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                            <div class="filter-dropdown-popover hidden" id="popover-filter-levels">
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-level-a1" checked style="accent-color: #3b82f6; width: 15px; height: 15px;">
+                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-level-a2" checked style="accent-color: #06b6d4; width: 15px; height: 15px;">
+                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-level-b1" checked style="accent-color: #10b981; width: 15px; height: 15px;">
+                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">B1</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-level-b2" checked style="accent-color: #eab308; width: 15px; height: 15px;">
+                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(234, 179, 8, 0.2); color: #eab308;">B2</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-level-c1" checked style="accent-color: #f97316; width: 15px; height: 15px;">
+                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(249, 115, 22, 0.2); color: #f97316;">C1</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-level-c2" checked style="accent-color: #a855f7; width: 15px; height: 15px;">
+                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(168, 85, 247, 0.2); color: #a855f7;">C2</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown Statuts (NEUTRES) -->
+                        <div class="filter-dropdown-wrapper" id="dropdown-wrapper-statuses">
+                            <button type="button" class="filter-dropdown-btn" id="btn-filter-statuses">
+                                <span data-i18n="th_status">Statut</span>
+                                <span class="filter-count-badge" id="count-filter-statuses">3</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                            <div class="filter-dropdown-popover hidden" id="popover-filter-statuses">
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-status-valide" checked style="accent-color: var(--text-secondary); width: 15px; height: 15px;">
+                                    <span class="type-badge filter-badge-neutral" data-i18n="status_valide">Validé</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-status-actif" checked style="accent-color: var(--text-secondary); width: 15px; height: 15px;">
+                                    <span class="type-badge filter-badge-neutral" data-i18n="status_non_valide">Non validé</span>
+                                </label>
+                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="filter-status-ignore" checked style="accent-color: var(--text-secondary); width: 15px; height: 15px;">
+                                    <span class="type-badge filter-badge-neutral" data-i18n="status_ignored">Ignoré</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
 
@@ -521,7 +545,7 @@
             
             <div class="info-banner" style="margin: 0 auto 1.5rem auto; max-width: 720px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); padding: 0.75rem 1.25rem; border-radius: 10px; font-size: 0.9rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.75rem; text-align: left;">
                 <span style="font-size: 1.3rem; flex-shrink: 0;">💡</span>
-                <span data-i18n="stats_notice_attempt">Seuls les mots validés dès la 1ère tentative (Tentative = 1) sont comptabilisés dans les statistiques et pourcentages.</span>
+                <span data-i18n="stats_notice_attempt">Pour garantir une mémorisation réflexe, un mot est validé uniquement s'il est réussi du premier coup lors d'un Drill. En cas d'erreur, il passe en révision.</span>
             </div>
             
             <div class="card stats-card" id="stats-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
@@ -537,8 +561,16 @@
                 <button id="btn-stats-go-to-training" class="btn-primary" style="margin-top: 1rem; max-width: 250px;" data-i18n="btn_start_training">Démarrer un entraînement</button>
             </div>
 
-            <div class="stats-grid" id="stats-container">
-                <!-- Rempli dynamiquement -->
+            <div id="stats-content" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                    <select id="stats-lang-pair" style="width: auto; min-width: 250px; max-width: 400px; padding: 0.8rem 1rem; border-radius: 8px; font-weight: 600; margin: 0;" data-i18n-title="stat_filter_pair" aria-label="Paire de langues">
+                        <!-- Rempli dynamiquement -->
+                    </select>
+                </div>
+
+                <div id="stats-container" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <!-- Rempli dynamiquement : Carte de Gamification CECRL + Statistiques détaillées -->
+                </div>
             </div>
         </div>
     </template>
@@ -730,14 +762,15 @@
         <span data-i18n="report_toast_success">✓ Signalement enregistré. Merci !</span>
     </div>
 
-    <!-- Footer avec version -->
-    <footer id="app-footer-version" style="text-align: center; padding: 1rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.65; font-family: var(--font-sans);">
-        drillFlow. <span class="app-version-num">v87</span> &bull; <span data-i18n="footer_deployed">Déployé le 27/08/2026</span>
+    <!-- Footer avec copyright et version -->
+    <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.75; font-family: var(--font-sans); line-height: 1.6;">
+        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span></div>
+        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v89</span> &bull; <span data-i18n="footer_deployed">Déployé le 30/08/2026</span></div>
     </footer>
 
     <!-- Scripts -->
-    <script type="module" src="js/firebase-config.js?v=87"></script>
-    <script type="module" src="js/auth.js?v=87"></script>
-    <script type="module" src="js/main.js?v=87"></script>
+    <script type="module" src="js/firebase-config.js?v=89"></script>
+    <script type="module" src="js/auth.js?v=89"></script>
+    <script type="module" src="js/main.js?v=89"></script>
 </body>
 </html>

@@ -1,8 +1,9 @@
-import { vocabulary } from './data/vocabulary.js?v=87';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=87';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=87';
-import { translations } from './i18n.js?v=87';
-import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js?v=87';
+import { vocabulary } from './data/vocabulary.js?v=89';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=89';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=89';
+import { translations } from './i18n.js?v=89';
+import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js?v=89';
+import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js?v=89';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -390,6 +391,7 @@ function attachViewEvents(viewId) {
 
 // --- Gestion de la vue Progression ---
 let currentProgPair = '';
+let currentStatsPair = '';
 let currentSortCol = 'source';
 let currentSortAsc = true;
 
@@ -487,11 +489,68 @@ function initProgressView() {
         };
     }
 
+    // Gestion des popovers multi-select
+    const filterDropdowns = [
+        { btnId: 'btn-filter-types', popId: 'popover-filter-types' },
+        { btnId: 'btn-filter-levels', popId: 'popover-filter-levels' },
+        { btnId: 'btn-filter-statuses', popId: 'popover-filter-statuses' }
+    ];
+
+    filterDropdowns.forEach(({ btnId, popId }) => {
+        const btnEl = document.getElementById(btnId);
+        const popEl = document.getElementById(popId);
+        if (btnEl && popEl) {
+            btnEl.onclick = (e) => {
+                e.stopPropagation();
+                const willOpen = popEl.classList.contains('hidden');
+                // Fermer les autres popovers
+                filterDropdowns.forEach(d => {
+                    document.getElementById(d.popId)?.classList.add('hidden');
+                    document.getElementById(d.btnId)?.classList.remove('active');
+                });
+                if (willOpen) {
+                    popEl.classList.remove('hidden');
+                    btnEl.classList.add('active');
+                }
+            };
+            popEl.onclick = (e) => {
+                e.stopPropagation(); // Éviter la fermeture au clic dans la boîte
+            };
+        }
+    });
+
+    // Fermer les dropdowns lors d'un clic en dehors
+    document.addEventListener('click', () => {
+        filterDropdowns.forEach(d => {
+            document.getElementById(d.popId)?.classList.add('hidden');
+            document.getElementById(d.btnId)?.classList.remove('active');
+        });
+    });
+
+    function updateFilterCounts() {
+        const types = ['nom', 'verbe', 'adjectif', 'adverbe', 'conjonction'];
+        const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+        const statuses = ['valide', 'actif', 'ignore'];
+
+        const checkedTypes = types.filter(t => document.getElementById(`filter-type-${t}`)?.checked).length;
+        const checkedLevels = levels.filter(l => document.getElementById(`filter-level-${l}`)?.checked).length;
+        const checkedStatuses = statuses.filter(s => document.getElementById(`filter-status-${s}`)?.checked).length;
+
+        const countTypesEl = document.getElementById('count-filter-types');
+        const countLevelsEl = document.getElementById('count-filter-levels');
+        const countStatusesEl = document.getElementById('count-filter-statuses');
+
+        if (countTypesEl) countTypesEl.textContent = checkedTypes === types.length ? `${types.length}` : `${checkedTypes}/${types.length}`;
+        if (countLevelsEl) countLevelsEl.textContent = checkedLevels === levels.length ? `${levels.length}` : `${checkedLevels}/${levels.length}`;
+        if (countStatusesEl) countStatusesEl.textContent = checkedStatuses === statuses.length ? `${statuses.length}` : `${checkedStatuses}/${statuses.length}`;
+    }
+
     ['nom', 'verbe', 'adjectif', 'adverbe', 'conjonction'].forEach(type => {
         const cb = document.getElementById(`filter-type-${type}`);
         if (cb) {
             cb.checked = true;
             cb.onchange = () => {
+                updateFilterCounts();
                 renderProgressTable();
             };
         }
@@ -503,6 +562,7 @@ function initProgressView() {
         if (checkbox) {
             checkbox.checked = true;
             checkbox.onchange = () => {
+                updateFilterCounts();
                 renderProgressTable();
             };
         }
@@ -514,11 +574,13 @@ function initProgressView() {
         if (checkbox) {
             checkbox.checked = true;
             checkbox.onchange = () => {
+                updateFilterCounts();
                 renderProgressTable();
             };
         }
     });
 
+    updateFilterCounts();
     renderProgressTable();
 }
 
@@ -633,20 +695,38 @@ function renderProgressTable() {
 
     filtered.forEach(word => {
         const tr = document.createElement('tr');
+        const lang = getAppLanguage();
+        const stats = getWordStats(src, tgt, word.id);
+        const status = getWordStatus(src, tgt, word.id);
+        const attempts = stats.attempts || 0;
+        const attemptsText = status === 'ignoré' ? '-' : (attempts > 0 ? attempts : '-');
+        const typeLabel = word.type ? (translations[lang][`type_${word.type}`] || word.type) : '-';
+        const ignoreLabel = translations[lang].status_ignored || 'Ignoré';
 
+        let badgeBg = 'rgba(255,255,255,0.1)';
+        let badgeColor = 'inherit';
+        if (word.level === 'A1') { badgeBg = 'rgba(59, 130, 246, 0.2)'; badgeColor = '#3b82f6'; }
+        if (word.level === 'A2') { badgeBg = 'rgba(6, 182, 212, 0.2)'; badgeColor = '#06b6d4'; }
+        if (word.level === 'B1') { badgeBg = 'rgba(16, 185, 129, 0.2)'; badgeColor = '#10b981'; }
+        if (word.level === 'B2') { badgeBg = 'rgba(234, 179, 8, 0.2)'; badgeColor = '#eab308'; }
+        if (word.level === 'C1') { badgeBg = 'rgba(249, 115, 22, 0.2)'; badgeColor = '#f97316'; }
+        if (word.level === 'C2') { badgeBg = 'rgba(168, 85, 247, 0.2)'; badgeColor = '#a855f7'; }
+
+        // --- 1. Cellules Desktop (Tableau standard 6 colonnes pour écrans larges) ---
         const tdSrc = document.createElement('td');
+        tdSrc.className = 'col-desktop col-source';
         tdSrc.textContent = word[src];
         tdSrc.style.fontWeight = '600';
         tr.appendChild(tdSrc);
 
         const tdTgt = document.createElement('td');
+        tdTgt.className = 'col-desktop col-target';
         tdTgt.textContent = word[tgt];
         tr.appendChild(tdTgt);
 
         const tdType = document.createElement('td');
-        const lang = getAppLanguage();
+        tdType.className = 'col-desktop col-type';
         if (word.type) {
-            const typeLabel = translations[lang][`type_${word.type}`] || word.type;
             tdType.innerHTML = `<span class="type-badge ${word.type}" style="font-size: 0.65rem; padding: 0.15rem 0.5rem; text-transform: uppercase;">${typeLabel}</span>`;
         } else {
             tdType.textContent = '-';
@@ -654,17 +734,9 @@ function renderProgressTable() {
         tr.appendChild(tdType);
 
         const tdLevel = document.createElement('td');
+        tdLevel.className = 'col-desktop col-level';
         tdLevel.style.textAlign = 'center';
         if (word.level) {
-            let badgeBg = 'rgba(255,255,255,0.1)';
-            let badgeColor = 'inherit';
-            if (word.level === 'A1') { badgeBg = 'rgba(59, 130, 246, 0.2)'; badgeColor = '#3b82f6'; }
-            if (word.level === 'A2') { badgeBg = 'rgba(6, 182, 212, 0.2)'; badgeColor = '#06b6d4'; }
-            if (word.level === 'B1') { badgeBg = 'rgba(16, 185, 129, 0.2)'; badgeColor = '#10b981'; }
-            if (word.level === 'B2') { badgeBg = 'rgba(234, 179, 8, 0.2)'; badgeColor = '#eab308'; }
-            if (word.level === 'C1') { badgeBg = 'rgba(249, 115, 22, 0.2)'; badgeColor = '#f97316'; }
-            if (word.level === 'C2') { badgeBg = 'rgba(239, 68, 68, 0.2)'; badgeColor = '#ef4444'; }
-            
             tdLevel.innerHTML = `<span class="type-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; background: ${badgeBg}; color: ${badgeColor}; font-weight: 600;">${word.level}</span>`;
         } else {
             tdLevel.textContent = '-';
@@ -672,32 +744,53 @@ function renderProgressTable() {
         tr.appendChild(tdLevel);
 
         const tdAttempts = document.createElement('td');
+        tdAttempts.className = 'col-desktop col-attempts';
         tdAttempts.style.textAlign = 'center';
         tdAttempts.style.fontWeight = '600';
         tdAttempts.style.color = 'var(--text-secondary)';
-        const stats = getWordStats(src, tgt, word.id);
-        const status = getWordStatus(src, tgt, word.id);
-        const attempts = stats.attempts || 0;
-        if (status === 'ignoré') {
-            tdAttempts.textContent = '-';
-        } else {
-            tdAttempts.textContent = attempts > 0 ? attempts : '-';
-        }
+        tdAttempts.textContent = attemptsText;
         tr.appendChild(tdAttempts);
 
         const tdStatus = document.createElement('td');
+        tdStatus.className = `col-desktop status-cell ${status === 'validé' ? 'valide' : (status === 'actif' ? 'actif' : '')}`;
         if (status === 'validé') {
-            tdStatus.className = 'status-cell valide';
             tdStatus.textContent = '✓';
         } else if (status === 'ignoré') {
-            tdStatus.className = 'status-cell';
-            const ignoreLabel = translations[lang].status_ignored || 'Ignoré';
             tdStatus.innerHTML = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500;">${ignoreLabel}</span>`;
         } else {
-            tdStatus.className = 'status-cell actif';
             tdStatus.textContent = '\u00A0';
         }
         tr.appendChild(tdStatus);
+
+        // --- 2. Cellule Mobile (Approche A : Format Carte à 2 étages, zéro troncature) ---
+        const tdMobile = document.createElement('td');
+        tdMobile.className = 'col-mobile';
+        tdMobile.setAttribute('colspan', '6');
+
+        let statusMobileBadge = '';
+        if (status === 'validé') {
+            statusMobileBadge = `<span style="color: var(--success-color); font-weight: 800; font-size: 1.25rem; line-height: 1;">✓</span>`;
+        } else if (status === 'ignoré') {
+            statusMobileBadge = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500;">${ignoreLabel}</span>`;
+        }
+
+        const attemptsLabel = attempts > 0 ? `${attempts} ${translations[lang].th_attempts ? translations[lang].th_attempts.toLowerCase() : 'tentatives'}` : '';
+
+        tdMobile.innerHTML = `
+            <div class="mobile-card-top">
+                <div class="mobile-card-words">
+                    <div class="mobile-word-source">${word[src]}</div>
+                    <div class="mobile-word-target">${word[tgt]}</div>
+                </div>
+                <div class="mobile-card-status">${statusMobileBadge}</div>
+            </div>
+            <div class="mobile-card-bottom">
+                ${word.type ? `<span class="type-badge ${word.type}" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; text-transform: uppercase;">${typeLabel}</span>` : ''}
+                ${word.level ? `<span class="type-badge" style="font-size: 0.65rem; padding: 0.15rem 0.45rem; background: ${badgeBg}; color: ${badgeColor}; font-weight: 600;">${word.level}</span>` : ''}
+                ${attemptsLabel ? `<span class="mobile-attempts">${attemptsLabel}</span>` : ''}
+            </div>
+        `;
+        tr.appendChild(tdMobile);
 
         tableBody.appendChild(tr);
     });
@@ -707,13 +800,14 @@ function renderProgressTable() {
 function initStatsView() {
     const gatedState = document.getElementById('stats-gated-state');
     const emptyState = document.getElementById('stats-empty-state');
-    const container = document.getElementById('stats-container');
+    const content = document.getElementById('stats-content');
+    const pairSelect = document.getElementById('stats-lang-pair');
     
     // Gating check
     if (!getCurrentUser()) {
-        gatedState.style.display = 'flex';
-        emptyState.style.display = 'none';
-        container.style.display = 'none';
+        if (gatedState) gatedState.style.display = 'flex';
+        if (emptyState) emptyState.style.display = 'none';
+        if (content) content.style.display = 'none';
         
         // Wire auth buttons
         document.querySelectorAll('.btn-open-auth-modal').forEach(btn => {
@@ -722,7 +816,7 @@ function initStatsView() {
         return;
     }
     
-    gatedState.style.display = 'none';
+    if (gatedState) gatedState.style.display = 'none';
     const progress = loadProgress();
     const usedPairs = Object.keys(progress).filter(key => {
         return progress[key] && typeof progress[key] === 'object' && Object.keys(progress[key]).length > 0;
@@ -730,7 +824,7 @@ function initStatsView() {
 
     if (usedPairs.length === 0) {
         if (emptyState) emptyState.style.display = 'flex';
-        if (container) container.style.display = 'none';
+        if (content) content.style.display = 'none';
 
         const btnGo = document.getElementById('btn-stats-go-to-training');
         if (btnGo) {
@@ -740,113 +834,248 @@ function initStatsView() {
     }
 
     if (emptyState) emptyState.style.display = 'none';
-    if (container) {
-        container.style.display = 'grid';
-        container.innerHTML = '';
+    if (content) content.style.display = 'block';
+
+    // Remplir le sélecteur de paire de langues
+    if (pairSelect) {
+        pairSelect.innerHTML = '';
+        usedPairs.forEach(pair => {
+            const [src, tgt] = pair.split('-');
+            const opt = document.createElement('option');
+            opt.value = pair;
+            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
+            pairSelect.appendChild(opt);
+        });
+
+        // Définir la paire sélectionnée par défaut
+        const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
+        const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
+        const defaultPair = `${lastSrc}-${lastTgt}`;
+
+        if (usedPairs.includes(currentStatsPair)) {
+            pairSelect.value = currentStatsPair;
+        } else if (currentProgPair && usedPairs.includes(currentProgPair)) {
+            currentStatsPair = currentProgPair;
+            pairSelect.value = currentStatsPair;
+        } else if (usedPairs.includes(defaultPair)) {
+            currentStatsPair = defaultPair;
+            pairSelect.value = currentStatsPair;
+        } else {
+            currentStatsPair = usedPairs[0];
+            pairSelect.value = currentStatsPair;
+        }
+
+        pairSelect.onchange = (e) => {
+            currentStatsPair = e.target.value;
+            renderSelectedPairStats(currentStatsPair);
+        };
     }
 
-    // Trier les paires par nombre de mots validés
-    usedPairs.sort((a, b) => {
-        const getValidatedCount = (pair) => {
-            const [src, tgt] = pair.split('-');
-            let count = 0;
-            vocabulary.forEach(word => {
-                if (getWordStatus(src, tgt, word.id) === 'validé') count++;
-            });
-            return count;
-        };
-        return getValidatedCount(b) - getValidatedCount(a);
+    renderSelectedPairStats(currentStatsPair);
+}
+
+function renderSelectedPairStats(pair) {
+    const container = document.getElementById('stats-container');
+    if (!container || !pair) return;
+
+    const [src, tgt] = pair.split('-');
+    let validated = 0;
+    const validatedByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+    const totalByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+
+    vocabulary.forEach(word => {
+        const status = getWordStatus(src, tgt, word.id);
+        if (status === 'ignoré') return;
+        if (totalByLevel[word.level] !== undefined) {
+            totalByLevel[word.level]++;
+        }
+        if (status === 'validé') {
+            validated++;
+            if (validatedByLevel[word.level] !== undefined) {
+                validatedByLevel[word.level]++;
+            }
+        }
     });
 
-    usedPairs.forEach(pair => {
-        const [src, tgt] = pair.split('-');
-        let validated = 0;
-        const validatedByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
-        const totalByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+    const total = Object.values(totalByLevel).reduce((a, b) => a + b, 0);
+    const restant = total - validated;
+    const percentage = total > 0 ? Math.round((validated / total) * 100) : 0;
 
-        vocabulary.forEach(word => {
-            const status = getWordStatus(src, tgt, word.id);
-            if (status === 'ignoré') return;
-            if (totalByLevel[word.level] !== undefined) {
-                totalByLevel[word.level]++;
+    const lang = getAppLanguage();
+    const points = calculateCefrPoints(validatedByLevel);
+    const progDetails = getCefrProgressDetails(points);
+    const pointsBreakdown = getPointsBreakdownByLevel(validatedByLevel);
+
+    const levelColors = CEFR_CONFIG.colors;
+    const currentLvl = progDetails.currentLevel;
+    const currentLvlColor = levelColors[currentLvl] || { bg: 'rgba(99,102,241,0.15)', text: '#6366f1', border: '#6366f1' };
+    const levelDescKey = `cefr_desc_${currentLvl}`;
+    const levelDesc = (translations[lang] && translations[lang][levelDescKey]) || '';
+
+    // Calcul du pourcentage de remplissage continu pour le stepper
+    const levels = CEFR_CONFIG.levels;
+    const thresholds = CEFR_CONFIG.thresholds;
+    let trackFillPct = 0;
+    if (points >= thresholds.C2) {
+        trackFillPct = 100;
+    } else if (points < thresholds.A1) {
+        trackFillPct = (points / thresholds.A1) * 20;
+    } else {
+        for (let i = 0; i < levels.length - 1; i++) {
+            const currentT = thresholds[levels[i]];
+            const nextT = thresholds[levels[i + 1]];
+            if (points >= currentT && points < nextT) {
+                const fraction = (points - currentT) / (nextT - currentT);
+                trackFillPct = (i * 20) + (fraction * 20);
+                break;
             }
-            if (status === 'validé') {
-                validated++;
-                if (validatedByLevel[word.level] !== undefined) {
-                    validatedByLevel[word.level]++;
-                }
-            }
-        });
-        const total = Object.values(totalByLevel).reduce((a, b) => a + b, 0);
-        const restant = total - validated;
-        const percentage = total > 0 ? Math.round((validated / total) * 100) : 0;
+        }
+    }
+    trackFillPct = Math.min(100, Math.max(0, Math.round(trackFillPct)));
 
-        const pctA1 = totalByLevel.A1 > 0 ? Math.round((validatedByLevel.A1 / totalByLevel.A1) * 100) : 0;
-        const pctA2 = totalByLevel.A2 > 0 ? Math.round((validatedByLevel.A2 / totalByLevel.A2) * 100) : 0;
-        const pctB1 = totalByLevel.B1 > 0 ? Math.round((validatedByLevel.B1 / totalByLevel.B1) * 100) : 0;
-        const pctB2 = totalByLevel.B2 > 0 ? Math.round((validatedByLevel.B2 / totalByLevel.B2) * 100) : 0;
-        const pctC1 = totalByLevel.C1 > 0 ? Math.round((validatedByLevel.C1 / totalByLevel.C1) * 100) : 0;
-        const pctC2 = totalByLevel.C2 > 0 ? Math.round((validatedByLevel.C2 / totalByLevel.C2) * 100) : 0;
+    // Texte d'objectif prochain palier
+    let nextMilestoneHtml = '';
+    if (progDetails.isMax) {
+        nextMilestoneHtml = `<span style="color: var(--success-color); font-weight: 700;">${translations[lang].stat_cefr_max}</span>`;
+    } else {
+        const toGoText = (translations[lang].stat_cefr_to_go || '{points} pts restants pour {level}')
+            .replace('{points}', `<strong>${progDetails.pointsNeeded}</strong>`)
+            .replace('{level}', `<strong>${progDetails.nextLevel}</strong>`);
+        nextMilestoneHtml = `<span style="color: var(--text-secondary);">${translations[lang].stat_cefr_next || 'Objectif :'} <span style="color: var(--text-primary); font-weight: 600;">${progDetails.nextLevel} (${progDetails.nextThreshold} pts)</span> &bull; ${toGoText}</span>`;
+    }
 
-        const lang = getAppLanguage();
-        const card = document.createElement('div');
-        card.className = 'stat-card';
-        card.innerHTML = `
-            <div class="stat-card-header">
-                <span class="stat-pair-name">${getLangName(src)} ➔ ${getLangName(tgt)}</span>
-                <span class="stat-percentage-badge">${percentage}%</span>
+    // Bulles des paliers
+    const stepsHtml = levels.map((lvl) => {
+        const thresh = thresholds[lvl];
+        const isCompleted = points >= thresh;
+        const isActive = !isCompleted && (progDetails.nextLevel === lvl);
+        const stateClass = isCompleted ? 'completed' : (isActive ? 'active' : '');
+        const badgeContent = isCompleted ? `${lvl} ✓` : lvl;
+
+        return `
+            <div class="cefr-step-item ${stateClass}">
+                <div class="cefr-step-bubble">${badgeContent}</div>
+                <span class="cefr-step-label">${lvl}</span>
+                <span class="cefr-step-threshold">${thresh} pts</span>
             </div>
-            <div class="stat-body">
-                <div class="stat-row" style="margin-bottom: 0.5rem; font-weight: bold; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
-                    <span class="stat-label">${translations[lang].stat_total}</span>
-                    <span class="stat-value">${total}</span>
+        `;
+    }).join('');
+
+    // Lignes détaillées par niveau CECRL
+    const levelRowsHtml = levels.map(lvl => {
+        const valLvl = validatedByLevel[lvl];
+        const totLvl = totalByLevel[lvl];
+        const pctLvl = totLvl > 0 ? Math.round((valLvl / totLvl) * 100) : 0;
+        const ptsLvl = pointsBreakdown[lvl];
+        const mult = CEFR_CONFIG.multipliers[lvl];
+        const color = levelColors[lvl];
+
+        return `
+            <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; padding: 0.9rem 1.1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 0.6rem;">
+                        <span class="type-badge" style="background: ${color.bg}; color: ${color.text}; font-weight: 800; font-size: 0.85rem; padding: 0.2rem 0.6rem; border-radius: 6px;">${lvl}</span>
+                        <span style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary);">${translations[lang][`cefr_desc_${lvl}`] || lvl}</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-color); background: rgba(99, 102, 241, 0.08); padding: 0.2rem 0.55rem; border-radius: 6px;">
+                            +${ptsLvl} ${translations[lang].stat_points_unit || 'pts'}
+                        </span>
+                        <span style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary);">${valLvl} / ${totLvl}</span>
+                        <span style="color: var(--success-color); font-weight: 700; font-size: 0.85rem; min-width: 40px; text-align: right;">${pctLvl}%</span>
+                    </div>
                 </div>
-                <div class="stat-row">
-                    <span class="stat-label">${translations[lang].stat_validated}</span>
-                    <span class="stat-value">${validated}</span>
+                <div class="stat-progress-container" style="margin-top: 0.1rem; height: 6px;">
+                    <div class="stat-progress-bar" style="width: ${pctLvl}%; background: ${color.solid};"></div>
                 </div>
-                <div class="stat-row">
-                    <span class="stat-label">${translations[lang].stat_a1_validated}</span>
-                    <span class="stat-value">${validatedByLevel.A1} / ${totalByLevel.A1} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctA1}%)</span></span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">${translations[lang].stat_a2_validated}</span>
-                    <span class="stat-value">${validatedByLevel.A2} / ${totalByLevel.A2} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctA2}%)</span></span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">${translations[lang].stat_b1_validated}</span>
-                    <span class="stat-value">${validatedByLevel.B1} / ${totalByLevel.B1} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctB1}%)</span></span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">${translations[lang].stat_b2_validated}</span>
-                    <span class="stat-value">${validatedByLevel.B2} / ${totalByLevel.B2} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctB2}%)</span></span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">${translations[lang].stat_c1_validated}</span>
-                    <span class="stat-value">${validatedByLevel.C1} / ${totalByLevel.C1} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctC1}%)</span></span>
-                </div>
-                <div class="stat-row" style="margin-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
-                    <span class="stat-label">${translations[lang].stat_c2_validated}</span>
-                    <span class="stat-value">${validatedByLevel.C2} / ${totalByLevel.C2} <span style="color: var(--success-color); font-size: 0.8rem; margin-left: 0.3rem;">(${pctC2}%)</span></span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">${translations[lang].stat_remaining}</span>
-                    <span class="stat-value">${restant}</span>
-                </div>
-                <div class="stat-progress-container">
-                    <div class="stat-progress-bar" style="width: ${percentage}%"></div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary); display: flex; justify-content: space-between;">
+                    <span>${valLvl} mots &times; ${mult} pts/mot</span>
+                    <span>${totLvl - valLvl} mots restants</span>
                 </div>
             </div>
         `;
-        if (container) container.appendChild(card);
-    });
+    }).join('');
+
+    container.innerHTML = `
+        <!-- 1. CARTE DE PROGRESSION CECRL (GAMIFIÉE) -->
+        <div class="cefr-card">
+            <div class="cefr-header">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.25rem;">
+                        <span class="cefr-level-badge-large" style="background: ${currentLvlColor.bg}; color: ${currentLvlColor.text}; border: 1px solid ${currentLvlColor.border};">
+                            ${currentLvl}
+                        </span>
+                        <div>
+                            <h2 style="margin: 0; font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading); color: var(--text-primary);">
+                                ${levelDesc || currentLvl}
+                            </h2>
+                            <div style="font-size: 0.82rem; color: var(--text-secondary);">
+                                ${translations[lang].stat_cefr_current || 'Niveau atteint :'} <strong style="color: var(--text-primary);">${currentLvl}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 1.85rem; font-weight: 800; font-family: var(--font-heading); color: var(--primary-color); line-height: 1.1;">
+                        ${points} <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">${translations[lang].stat_points_unit || 'pts'}</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 500;">
+                        ${translations[lang].stat_cefr_points || 'Points de maîtrise'}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stepper Paliers A1 à C2 -->
+            <div class="cefr-stepper-container">
+                <div class="cefr-stepper-track-bg"></div>
+                <div class="cefr-stepper-track-fill" style="width: ${trackFillPct}%;"></div>
+                <div class="cefr-stepper-steps">
+                    ${stepsHtml}
+                </div>
+            </div>
+
+            <!-- Objectif & Multiplicateurs info -->
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color); font-size: 0.85rem;">
+                <div>${nextMilestoneHtml}</div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(0,0,0,0.03); padding: 0.35rem 0.65rem; border-radius: 6px;">
+                    ${translations[lang].stat_cefr_multipliers_hint}
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. CARTE DÉTAILLÉE DU VOCABULAIRE POUR LA PAIRE -->
+        <div class="stat-card">
+            <div class="stat-card-header">
+                <div>
+                    <span class="stat-pair-name">${getLangName(src)} ➔ ${getLangName(tgt)}</span>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.2rem;">
+                        ${validated} / ${total} mots validés (${percentage}%) &bull; ${restant} restants
+                    </div>
+                </div>
+                <span class="stat-percentage-badge">${percentage}%</span>
+            </div>
+            
+            <div class="stat-body" style="gap: 0.75rem; margin-top: 0.5rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem;">
+                    ${levelRowsHtml}
+                </div>
+            </div>
+        </div>
+    `;
 }
 
-// Override renderView pour attacher les events
+// Override renderView pour attacher les events et synchroniser le hash d'URL
 const originalRenderView = renderView;
-renderView = function(viewId) {
+const VALID_VIEWS = ['home', 'progress', 'stats', 'certs', 'about'];
+
+renderView = function(viewId, updateHash = true) {
     originalRenderView(viewId);
     attachViewEvents(viewId);
+    if (updateHash && VALID_VIEWS.includes(viewId)) {
+        if (window.location.hash !== `#${viewId}`) {
+            history.pushState(null, '', `#${viewId}`);
+        }
+    }
 };
 
 // Initialisation au chargement de la page
@@ -863,16 +1092,31 @@ window.addEventListener('DOMContentLoaded', () => {
         const currentActiveBtn = document.querySelector('.nav-btn.active');
         if (currentActiveBtn) {
             const viewId = currentActiveBtn.id.replace('nav-', '');
-            renderView(viewId);
+            renderView(viewId, false);
         }
     });
 
     // Appliquer la traduction initiale sur la page globale
     translatePage();
 
-    // Afficher la page d'accueil par défaut
-    renderView('home');
-    console.log(`Dictionnaire chargé avec ${vocabulary.length} mots.`);
+    // Déterminer la vue initiale depuis le hash de l'URL (permet de rester sur la page active après un F5)
+    const currentHash = window.location.hash.replace('#', '').trim();
+    const initialView = VALID_VIEWS.includes(currentHash) ? currentHash : 'home';
+
+    // Afficher la vue initiale
+    renderView(initialView, false);
+    console.log(`Dictionnaire chargé avec ${vocabulary.length} mots. Vue initiale: ${initialView}`);
+
+    // Support de la navigation par l'historique (boutons Précédent / Suivant du navigateur)
+    window.addEventListener('popstate', () => {
+        const hash = window.location.hash.replace('#', '').trim();
+        const targetView = VALID_VIEWS.includes(hash) ? hash : 'home';
+        const currentActiveBtn = document.querySelector('.nav-btn.active');
+        const currentView = currentActiveBtn ? currentActiveBtn.id.replace('nav-', '') : '';
+        if (currentView !== targetView) {
+            renderView(targetView, false);
+        }
+    });
 
     // Menu mobile flottant (Dropdown)
     const menuToggle = document.getElementById('menu-toggle');
@@ -1347,23 +1591,8 @@ function drawRoundedRect(ctx, x, y, width, height, radius, fill, stroke) {
 }
 
 function computeGlobalCefrLevel(validatedByLevel, totalByLevel) {
-    const order = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-    let highestMastered = 'A1';
-
-    for (let i = 0; i < order.length; i++) {
-        const lvl = order[i];
-        const val = (validatedByLevel && validatedByLevel[lvl]) || 0;
-        const tot = (totalByLevel && totalByLevel[lvl]) || 1;
-        const pct = Math.round((val / tot) * 100);
-
-        // Un niveau est considéré comme atteint dès lors qu'au moins 60% de ses mots sont validés
-        if (pct >= 60) {
-            highestMastered = lvl;
-        } else if (val >= 100 && i === 0) {
-            highestMastered = 'A1';
-        }
-    }
-    return highestMastered;
+    const points = calculateCefrPoints(validatedByLevel);
+    return getCefrLevelFromPoints(points);
 }
 
 function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, totalByLevel, lang) {
@@ -1467,6 +1696,7 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, tot
     ctx.fillText(pairSummary, w / 2, 171);
 
     // 3. NIVEAU CECRL GLOBAL ATTEINT (Calculé rigoureusement selon la progression réelle)
+    const points = calculateCefrPoints(validatedByLevel);
     const globalLevel = computeGlobalCefrLevel(validatedByLevel, totalByLevel);
     const levelDescKey = `cefr_desc_${globalLevel}`;
     const levelDesc = (translations[lang] && translations[lang][levelDescKey]) || 'Utilisateur';
@@ -1512,12 +1742,12 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, tot
 
     ctx.textAlign = 'center';
     ctx.fillStyle = '#4f46e5';
-    ctx.font = 'bold 16px "Outfit", sans-serif';
-    ctx.fillText(`${validated}`, 661, 215);
+    ctx.font = 'bold 15px "Outfit", sans-serif';
+    ctx.fillText(`${validated} (${Math.round(points)} pts)`, 661, 215);
 
     ctx.fillStyle = '#475569';
     ctx.font = '500 10px "Inter", sans-serif';
-    ctx.fillText(translations[lang].cert_total_words || 'mots maîtrisés', 661, 230);
+    ctx.fillText(translations[lang].stat_cefr_points || 'Points de maîtrise', 661, 230);
 
     // 4. SCORECARD DÉTAIL PAR NIVEAU CECRL
     ctx.textAlign = 'left';
