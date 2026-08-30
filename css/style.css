@@ -679,7 +679,7 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     background: linear-gradient(90deg, #3b82f6, #10b981, #eab308, #f97316, #a855f7);
     border-radius: 3px;
     z-index: 2;
-    transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .cefr-stepper-steps {
     display: flex;
@@ -724,9 +724,70 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     box-shadow: 0 0 14px rgba(245, 158, 11, 0.4);
     animation: cefrPulse 2s infinite;
 }
+.cefr-step-item.newly-completed .cefr-step-bubble {
+    animation: bubbleUnlock 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes bubbleUnlock {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.35); box-shadow: 0 0 22px rgba(16, 185, 129, 0.85); background: #10b981; border-color: #10b981; }
+    100% { transform: scale(1); }
+}
 @keyframes cefrPulse {
     0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.5); }
     50% { box-shadow: 0 0 0 7px rgba(245, 158, 11, 0); }
+}
+
+/* Animations d'augmentation de points sur la page Statistique */
+.points-gain-badge {
+    position: absolute;
+    top: -12px;
+    right: -6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #ffffff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.08rem 0.4rem;
+    border-radius: 9999px;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
+    animation: pointsBadgePop 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    letter-spacing: -0.01em;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+@keyframes pointsBadgePop {
+    0% {
+        opacity: 0;
+        transform: translateY(6px) scale(0.6);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-2px) scale(1.12);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.points-counter-animating {
+    color: #10b981 !important;
+    text-shadow: 0 0 16px rgba(16, 185, 129, 0.65);
+    display: inline-block;
+    animation: pointsCounterPulse 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes pointsCounterPulse {
+    0% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1.12);
+    }
 }
 .cefr-step-label {
     font-size: 0.75rem;
@@ -1786,5 +1847,23 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 .forgot-password-btn:hover {
     text-decoration: underline;
     opacity: 0.85;
+}
+
+/* Modale Options */
+.btn-theme-choice.active {
+    border-color: var(--primary-color) !important;
+    background: rgba(59, 130, 246, 0.14) !important;
+    color: var(--primary-color) !important;
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+.btn-theme-choice:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.08) !important;
+}
+[data-theme="dark"] .btn-theme-choice:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+.btn-danger:hover {
+    background: #dc2626 !important;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
 }
 

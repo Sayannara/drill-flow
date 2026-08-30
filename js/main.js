@@ -1,9 +1,9 @@
-import { vocabulary } from './data/vocabulary.js?v=89';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=89';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats } from './storage.js?v=89';
-import { translations } from './i18n.js?v=89';
-import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js?v=89';
-import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js?v=89';
+import { vocabulary } from './data/vocabulary.js';
+import { initDrillSession, handleDrillKeydown } from './drill.js';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress } from './storage.js';
+import { translations } from './i18n.js';
+import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
+import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -56,11 +56,27 @@ export function translatePage() {
 }
 
 // --- Gestion du Thème (Clair / Sombre) ---
-const themeToggle = document.getElementById('theme-toggle');
 const htmlEl = document.documentElement;
 
-const iconDark = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
-const iconLight = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+export function applyTheme(theme) {
+    htmlEl.setAttribute('data-theme', theme);
+    localStorage.setItem('drillflow_theme', theme);
+    updateThemeButtonsUI(theme);
+}
+
+function updateThemeButtonsUI(theme) {
+    const btnDark = document.getElementById('theme-opt-dark');
+    const btnLight = document.getElementById('theme-opt-light');
+    if (btnDark && btnLight) {
+        if (theme === 'dark') {
+            btnDark.classList.add('active');
+            btnLight.classList.remove('active');
+        } else {
+            btnLight.classList.add('active');
+            btnDark.classList.remove('active');
+        }
+    }
+}
 
 // Détection automatique du thème ou récupération du choix utilisateur
 const savedTheme = localStorage.getItem('drillflow_theme');
@@ -75,25 +91,141 @@ if (savedTheme) {
 
 htmlEl.setAttribute('data-theme', initialTheme);
 
-themeToggle.addEventListener('click', () => {
-    const currentTheme = htmlEl.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    htmlEl.setAttribute('data-theme', newTheme);
-    themeToggle.innerHTML = newTheme === 'dark' ? iconDark : iconLight;
-    localStorage.setItem('drillflow_theme', newTheme);
-});
-
 // Écouter les changements du système (ex: passage au mode nuit automatique sur le téléphone)
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (!localStorage.getItem('drillflow_theme')) { // Seulement si l'utilisateur n'a pas forcé un thème
         const newTheme = event.matches ? 'dark' : 'light';
-        htmlEl.setAttribute('data-theme', newTheme);
-        themeToggle.innerHTML = newTheme === 'dark' ? iconDark : iconLight;
+        applyTheme(newTheme);
     }
 });
 
-// Set default icon
-themeToggle.innerHTML = initialTheme === 'dark' ? iconDark : iconLight;
+// Initialisation de la modale Options
+function initOptionsModal() {
+    const optionsBtn = document.getElementById('options-btn');
+    const optionsModal = document.getElementById('options-modal');
+    const closeBtn = document.getElementById('btn-close-options');
+    const btnDark = document.getElementById('theme-opt-dark');
+    const btnLight = document.getElementById('theme-opt-light');
+    const pairSelect = document.getElementById('options-reset-pair');
+    const btnReset = document.getElementById('btn-reset-pair');
+
+    if (!optionsModal) return;
+
+    function openOptions() {
+        const currentTheme = htmlEl.getAttribute('data-theme') || 'dark';
+        updateThemeButtonsUI(currentTheme);
+        populateOptionsPairSelect();
+        optionsModal.classList.remove('hidden');
+    }
+
+    function closeOptions() {
+        optionsModal.classList.add('hidden');
+    }
+
+    function populateOptionsPairSelect() {
+        if (!pairSelect) return;
+        pairSelect.innerHTML = '';
+        const progress = loadProgress();
+        const lang = getAppLanguage();
+
+        // Récupérer UNIQUEMENT les paires de langues qui contiennent des mots enregistrés
+        const usedPairs = Object.keys(progress).filter(key => {
+            return progress[key] && typeof progress[key] === 'object' && Object.keys(progress[key]).length > 0;
+        });
+
+        if (usedPairs.length === 0) {
+            const opt = document.createElement('option');
+            opt.value = '';
+            opt.textContent = translations[lang]?.options_no_progress || translations['fr'].options_no_progress || 'Aucune progression enregistrée';
+            opt.disabled = true;
+            opt.selected = true;
+            pairSelect.appendChild(opt);
+            pairSelect.disabled = true;
+            if (btnReset) {
+                btnReset.disabled = true;
+                btnReset.style.opacity = '0.5';
+                btnReset.style.cursor = 'not-allowed';
+            }
+            return;
+        }
+
+        pairSelect.disabled = false;
+        if (btnReset) {
+            btnReset.disabled = false;
+            btnReset.style.opacity = '1';
+            btnReset.style.cursor = 'pointer';
+        }
+
+        const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
+        const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
+        const currentPair = `${lastSrc}-${lastTgt}`;
+
+        usedPairs.forEach(pair => {
+            const [src, tgt] = pair.split('-');
+            const opt = document.createElement('option');
+            opt.value = pair;
+            const count = Object.keys(progress[pair]).length;
+            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${count} mot${count > 1 ? 's' : ''})`;
+            pairSelect.appendChild(opt);
+        });
+
+        if (usedPairs.includes(currentPair)) {
+            pairSelect.value = currentPair;
+        } else {
+            pairSelect.value = usedPairs[0];
+        }
+    }
+
+    if (optionsBtn) {
+        optionsBtn.onclick = openOptions;
+    }
+    if (closeBtn) {
+        closeBtn.onclick = closeOptions;
+    }
+    optionsModal.onclick = (e) => {
+        if (e.target === optionsModal) closeOptions();
+    };
+
+    if (btnDark) {
+        btnDark.onclick = () => applyTheme('dark');
+    }
+    if (btnLight) {
+        btnLight.onclick = () => applyTheme('light');
+    }
+
+    if (btnReset && pairSelect) {
+        btnReset.onclick = async () => {
+            const pair = pairSelect.value;
+            if (!pair) return;
+            const [src, tgt] = pair.split('-');
+            const lang = getAppLanguage();
+            const pairName = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
+            const confirmTemplate = translations[lang]?.options_reset_confirm || translations['fr'].options_reset_confirm;
+            const confirmMsg = confirmTemplate.replace('{pair}', pairName);
+
+            if (confirm(confirmMsg)) {
+                btnReset.disabled = true;
+                btnReset.style.opacity = '0.5';
+                await resetPairProgress(src, tgt);
+                btnReset.disabled = false;
+                btnReset.style.opacity = '1';
+
+                const successTemplate = translations[lang]?.options_reset_success || translations['fr'].options_reset_success;
+                alert(successTemplate.replace('{pair}', pairName));
+                closeOptions();
+
+                // Rafraîchir la vue active si c'est "progress" ou "stats"
+                const activeBtn = document.querySelector('.nav-btn.active');
+                if (activeBtn) {
+                    const viewId = activeBtn.id.replace('nav-', '');
+                    if (viewId === 'progress' || viewId === 'stats') {
+                        renderView(viewId, false);
+                    }
+                }
+            }
+        };
+    }
+}
 
 // --- Routeur SPA ---
 const appContainer = document.getElementById('app-container');
@@ -852,13 +984,13 @@ function initStatsView() {
         const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
         const defaultPair = `${lastSrc}-${lastTgt}`;
 
-        if (usedPairs.includes(currentStatsPair)) {
+        if (usedPairs.includes(defaultPair)) {
+            currentStatsPair = defaultPair;
+            pairSelect.value = currentStatsPair;
+        } else if (currentStatsPair && usedPairs.includes(currentStatsPair)) {
             pairSelect.value = currentStatsPair;
         } else if (currentProgPair && usedPairs.includes(currentProgPair)) {
             currentStatsPair = currentProgPair;
-            pairSelect.value = currentStatsPair;
-        } else if (usedPairs.includes(defaultPair)) {
-            currentStatsPair = defaultPair;
             pairSelect.value = currentStatsPair;
         } else {
             currentStatsPair = usedPairs[0];
@@ -872,6 +1004,50 @@ function initStatsView() {
     }
 
     renderSelectedPairStats(currentStatsPair);
+}
+
+function getCefrTrackFillPct(pts) {
+    const levels = CEFR_CONFIG.levels;
+    const thresholds = CEFR_CONFIG.thresholds;
+    if (pts >= thresholds.C2) return 100;
+    if (pts <= 0) return 0;
+    if (pts < thresholds.A1) {
+        return (pts / thresholds.A1) * 20;
+    }
+    for (let i = 0; i < levels.length - 1; i++) {
+        const currentT = thresholds[levels[i]];
+        const nextT = thresholds[levels[i + 1]];
+        if (pts >= currentT && pts < nextT) {
+            const fraction = (pts - currentT) / (nextT - currentT);
+            return (i * 20) + (fraction * 20);
+        }
+    }
+    return 100;
+}
+
+function animatePointsCounter(elem, startVal, endVal, duration = 2000, onProgress = null, onComplete = null) {
+    if (!elem) return;
+    const startTime = performance.now();
+    elem.classList.add('points-counter-animating');
+
+    function step(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(1, elapsed / duration);
+        // Easing fluide et progressif permettant d'apprécier chaque incrément
+        const ease = 1 - Math.pow(1 - progress, 2);
+        const currentVal = Math.round(startVal + (endVal - startVal) * ease);
+        elem.textContent = currentVal.toLocaleString();
+        if (onProgress) onProgress(currentVal);
+
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        } else {
+            elem.textContent = endVal.toLocaleString();
+            elem.classList.remove('points-counter-animating');
+            if (onComplete) onComplete();
+        }
+    }
+    requestAnimationFrame(step);
 }
 
 function renderSelectedPairStats(pair) {
@@ -906,6 +1082,23 @@ function renderSelectedPairStats(pair) {
     const progDetails = getCefrProgressDetails(points);
     const pointsBreakdown = getPointsBreakdownByLevel(validatedByLevel);
 
+    // Détection de l'augmentation du score depuis la dernière consultation
+    const storageKey = `drillflow_prev_cefr_points_${pair}`;
+    const prevPointsRaw = localStorage.getItem(storageKey);
+    let hasIncreased = false;
+    let startPoints = points;
+
+    if (prevPointsRaw !== null) {
+        const prevPoints = parseInt(prevPointsRaw, 10);
+        if (!isNaN(prevPoints) && points > prevPoints) {
+            hasIncreased = true;
+            startPoints = prevPoints;
+        }
+    } else {
+        // Première visite : on enregistre le score actuel comme point de référence
+        localStorage.setItem(storageKey, points.toString());
+    }
+
     const levelColors = CEFR_CONFIG.colors;
     const currentLvl = progDetails.currentLevel;
     const currentLvlColor = levelColors[currentLvl] || { bg: 'rgba(99,102,241,0.15)', text: '#6366f1', border: '#6366f1' };
@@ -915,31 +1108,17 @@ function renderSelectedPairStats(pair) {
     // Calcul du pourcentage de remplissage continu pour le stepper
     const levels = CEFR_CONFIG.levels;
     const thresholds = CEFR_CONFIG.thresholds;
-    let trackFillPct = 0;
-    if (points >= thresholds.C2) {
-        trackFillPct = 100;
-    } else if (points < thresholds.A1) {
-        trackFillPct = (points / thresholds.A1) * 20;
-    } else {
-        for (let i = 0; i < levels.length - 1; i++) {
-            const currentT = thresholds[levels[i]];
-            const nextT = thresholds[levels[i + 1]];
-            if (points >= currentT && points < nextT) {
-                const fraction = (points - currentT) / (nextT - currentT);
-                trackFillPct = (i * 20) + (fraction * 20);
-                break;
-            }
-        }
-    }
-    trackFillPct = Math.min(100, Math.max(0, Math.round(trackFillPct)));
+    const trackFillPct = Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(points))));
+    const startTrackFillPct = hasIncreased ? Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(startPoints)))) : 0;
 
     // Texte d'objectif prochain palier
     let nextMilestoneHtml = '';
     if (progDetails.isMax) {
         nextMilestoneHtml = `<span style="color: var(--success-color); font-weight: 700;">${translations[lang].stat_cefr_max}</span>`;
     } else {
+        const startNeeded = hasIncreased ? Math.max(0, progDetails.nextThreshold - startPoints) : progDetails.pointsNeeded;
         const toGoText = (translations[lang].stat_cefr_to_go || '{points} pts restants pour {level}')
-            .replace('{points}', `<strong>${progDetails.pointsNeeded}</strong>`)
+            .replace('{points}', `<strong id="cefr-points-needed">${startNeeded}</strong>`)
             .replace('{level}', `<strong>${progDetails.nextLevel}</strong>`);
         nextMilestoneHtml = `<span style="color: var(--text-secondary);">${translations[lang].stat_cefr_next || 'Objectif :'} <span style="color: var(--text-primary); font-weight: 600;">${progDetails.nextLevel} (${progDetails.nextThreshold} pts)</span> &bull; ${toGoText}</span>`;
     }
@@ -948,8 +1127,10 @@ function renderSelectedPairStats(pair) {
     const stepsHtml = levels.map((lvl) => {
         const thresh = thresholds[lvl];
         const isCompleted = points >= thresh;
+        const wasCompleted = startPoints >= thresh;
+        const isNewlyCompleted = hasIncreased && isCompleted && !wasCompleted;
         const isActive = !isCompleted && (progDetails.nextLevel === lvl);
-        const stateClass = isCompleted ? 'completed' : (isActive ? 'active' : '');
+        const stateClass = isCompleted ? (isNewlyCompleted ? 'completed newly-completed' : 'completed') : (isActive ? 'active' : '');
         const badgeContent = isCompleted ? `${lvl} ✓` : lvl;
 
         return `
@@ -1015,11 +1196,19 @@ function renderSelectedPairStats(pair) {
                         </div>
                     </div>
                 </div>
-                <div style="text-align: right;">
-                    <div style="font-size: 1.85rem; font-weight: 800; font-family: var(--font-heading); color: var(--primary-color); line-height: 1.1;">
-                        ${points} <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">${translations[lang].stat_points_unit || 'pts'}</span>
+                <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
+                    <div style="display: inline-flex; align-items: baseline; justify-content: flex-end; gap: 0.35rem; position: relative;">
+                        <div id="cefr-total-points" style="font-size: 1.85rem; font-weight: 800; font-family: var(--font-heading); color: var(--primary-color); line-height: 1.1;">
+                            ${startPoints}
+                        </div>
+                        <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">${translations[lang].stat_points_unit || 'pts'}</span>
+                        ${hasIncreased ? `
+                            <span class="points-gain-badge" id="cefr-points-gain-badge">
+                                +${points - startPoints}
+                            </span>
+                        ` : ''}
                     </div>
-                    <div style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 500;">
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 500; margin-top: 0.15rem;">
                         ${translations[lang].stat_cefr_points || 'Points de maîtrise'}
                     </div>
                 </div>
@@ -1028,7 +1217,7 @@ function renderSelectedPairStats(pair) {
             <!-- Stepper Paliers A1 à C2 -->
             <div class="cefr-stepper-container">
                 <div class="cefr-stepper-track-bg"></div>
-                <div class="cefr-stepper-track-fill" style="width: ${trackFillPct}%;"></div>
+                <div class="cefr-stepper-track-fill" style="width: ${startTrackFillPct}%;"></div>
                 <div class="cefr-stepper-steps">
                     ${stepsHtml}
                 </div>
@@ -1062,6 +1251,48 @@ function renderSelectedPairStats(pair) {
             </div>
         </div>
     `;
+
+    // Déclencher les animations UNIQUEMENT si le score a augmenté
+    if (hasIncreased) {
+        const pointsDiff = Math.abs(points - startPoints);
+        // Rythme plus lent et posé (1.8s à 3.0s) pour bien apprécier chaque incrémentation
+        const animDuration = Math.max(1800, Math.min(3000, 1600 + pointsDiff * 150));
+
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                const fillElem = container.querySelector('.cefr-stepper-track-fill');
+                if (fillElem) {
+                    fillElem.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
+                    fillElem.style.width = `${trackFillPct}%`;
+                }
+            }, 80);
+        });
+
+        const pointsElem = container.querySelector('#cefr-total-points');
+        const neededElem = container.querySelector('#cefr-points-needed');
+        if (pointsElem) {
+            animatePointsCounter(pointsElem, startPoints, points, animDuration, (currentVal) => {
+                if (neededElem && !progDetails.isMax) {
+                    neededElem.textContent = Math.max(0, progDetails.nextThreshold - currentVal);
+                }
+            }, () => {
+                // Mémoriser le nouveau score de référence une fois l'animation terminée
+                localStorage.setItem(storageKey, points.toString());
+
+                const prevLvl = getCefrLevelFromPoints(startPoints);
+                const newLvl = getCefrLevelFromPoints(points);
+                if (prevLvl !== newLvl && typeof confetti === 'function') {
+                    confetti({
+                        particleCount: 50,
+                        spread: 70,
+                        origin: { y: 0.35 }
+                    });
+                }
+            });
+        }
+    } else {
+        localStorage.setItem(storageKey, points.toString());
+    }
 }
 
 // Override renderView pour attacher les events et synchroniser le hash d'URL
@@ -1106,6 +1337,9 @@ window.addEventListener('DOMContentLoaded', () => {
     // Afficher la vue initiale
     renderView(initialView, false);
     console.log(`Dictionnaire chargé avec ${vocabulary.length} mots. Vue initiale: ${initialView}`);
+
+    // Initialiser les options
+    initOptionsModal();
 
     // Support de la navigation par l'historique (boutons Précédent / Suivant du navigateur)
     window.addEventListener('popstate', () => {

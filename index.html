@@ -11,6 +11,9 @@
     <meta name="author" content="Yann Greder">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#0b1120">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     
     <!-- URL Canonique et Multilingue -->
     <link rel="canonical" href="https://drill-flow.app/">
@@ -74,7 +77,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=89">
+    <link rel="stylesheet" href="css/style.css?v=94">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -108,8 +111,8 @@
                 </div>
             </div>
 
-            <button id="theme-toggle" class="icon-btn" title="Changer de thème">
-                <span class="theme-icon">🌙</span>
+            <button id="options-btn" class="icon-btn" title="Options" data-i18n-title="nav_options" aria-label="Options">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
             </button>
             
             <button id="auth-btn" class="icon-btn" title="Connexion" aria-label="Connexion"></button>
@@ -418,7 +421,6 @@
                     <select id="prog-lang-pair" style="width: auto; min-width: 250px; max-width: 400px; padding: 0.8rem 1rem; border-radius: 8px; font-weight: 600; margin: 0;">
                         <!-- Rempli dynamiquement -->
                     </select>
-                    <button id="btn-toggle-all-visible" class="btn-small btn-secondary-action" style="white-space: nowrap; height: 48px; font-size: 0.95rem; padding: 0 1.25rem; margin: 0;" data-i18n="btn_reset_all">Tout Réinitialiser</button>
                 </div>
 
                 <div class="card progress-card" id="progress-main-card">
@@ -757,6 +759,54 @@
         </div>
     </div>
 
+    <!-- Modal Options -->
+    <div id="options-modal" class="cert-modal-overlay hidden" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.85); display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 1rem; backdrop-filter: blur(4px);">
+        <div class="card cert-modal-card options-modal-card" style="max-width: 420px; width: 100%; display: flex; flex-direction: column; gap: 1.35rem; background: var(--surface-color); padding: 1.75rem; border-radius: 16px; box-shadow: var(--shadow); position: relative; box-sizing: border-box;">
+            <button id="btn-close-options" class="modal-close-btn" aria-label="Fermer" title="Fermer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            
+            <div style="padding-right: 2rem;">
+                <h2 style="margin: 0; font-family: var(--font-heading); font-size: 1.35rem;" data-i18n="options_modal_title">Options</h2>
+            </div>
+
+            <!-- Section 1 : Thème visuel (Clair / Sombre) -->
+            <div class="options-section">
+                <label style="font-weight: 700; font-size: 0.9rem; display: block; margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="options_theme_title">Thème d'affichage</label>
+                <div class="theme-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                    <button type="button" id="theme-opt-dark" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_theme_dark">Sombre</span>
+                    </button>
+                    <button type="button" id="theme-opt-light" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_theme_light">Clair</span>
+                    </button>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 0;">
+
+            <!-- Section 2 : Zone de danger (Réinitialisation par langue) -->
+            <div class="options-section options-danger-zone" style="background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.22); border-radius: 12px; padding: 1.15rem;">
+                <h3 style="margin: 0 0 0.35rem 0; font-size: 0.92rem; font-weight: 700; color: #ef4444;" data-i18n="options_danger_title">Réinitialisation</h3>
+                <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0 0 0.85rem 0; line-height: 1.4;" data-i18n="options_danger_desc">
+                    Effacer la progression d'une langue.
+                </p>
+
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div>
+                        <label for="options-reset-pair" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.3rem;" data-i18n="options_select_pair">Paire de langues :</label>
+                        <select id="options-reset-pair" style="width: 100%; box-sizing: border-box; padding: 0.65rem 0.85rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600;">
+                        </select>
+                    </div>
+
+                    <button type="button" id="btn-reset-pair" class="btn-danger" style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: none; background: #ef4444; color: #ffffff; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
+                        <span data-i18n="options_btn_reset_pair">Réinitialiser cette langue</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Notification Toast -->
     <div id="report-toast" class="report-toast hidden">
         <span data-i18n="report_toast_success">✓ Signalement enregistré. Merci !</span>
@@ -765,12 +815,12 @@
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.75; font-family: var(--font-sans); line-height: 1.6;">
         <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span></div>
-        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v89</span> &bull; <span data-i18n="footer_deployed">Déployé le 30/08/2026</span></div>
+        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v90</span> &bull; <span data-i18n="footer_deployed">Déployé le 30/08/2026</span></div>
     </footer>
 
     <!-- Scripts -->
-    <script type="module" src="js/firebase-config.js?v=89"></script>
-    <script type="module" src="js/auth.js?v=89"></script>
-    <script type="module" src="js/main.js?v=89"></script>
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

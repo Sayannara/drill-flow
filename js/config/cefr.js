@@ -40,21 +40,16 @@ export const CEFR_CONFIG = {
 /**
  * Calcule le total de points pondérés à partir des mots validés par niveau.
  * @param {Object} validatedByLevel Exemple : { A1: 388, A2: 196, B1: 133, B2: 3, C1: 2, C2: 3 }
- * @returns {number} Points totaux pondérés (arrondis à 1 décimale)
+ * @returns {number} Points totaux pondérés (nombres entiers)
  */
 export function calculateCefrPoints(validatedByLevel) {
     if (!validatedByLevel) return 0;
-    let total = 0;
-    for (const lvl of CEFR_CONFIG.levels) {
-        const count = validatedByLevel[lvl] || 0;
-        const mult = CEFR_CONFIG.multipliers[lvl] || 1.0;
-        total += count * mult;
-    }
-    return Math.round(total * 10) / 10;
+    const breakdown = getPointsBreakdownByLevel(validatedByLevel);
+    return Object.values(breakdown).reduce((sum, pts) => sum + pts, 0);
 }
 
 /**
- * Calcule les points apportés individuellement par chaque niveau.
+ * Calcule les points apportés individuellement par chaque niveau (nombres entiers).
  * @param {Object} validatedByLevel
  * @returns {Object} { A1: points, A2: points, ... }
  */
@@ -63,7 +58,7 @@ export function getPointsBreakdownByLevel(validatedByLevel) {
     for (const lvl of CEFR_CONFIG.levels) {
         const count = (validatedByLevel && validatedByLevel[lvl]) || 0;
         const mult = CEFR_CONFIG.multipliers[lvl] || 1.0;
-        breakdown[lvl] = Math.round(count * mult * 10) / 10;
+        breakdown[lvl] = Math.round(count * mult);
     }
     return breakdown;
 }
@@ -132,7 +127,7 @@ export function getCefrProgressDetails(points) {
     const progressInTier = points - prevThreshold;
     const pctInTier = nextLevel === 'MAX' ? 100 : Math.min(100, Math.max(0, Math.round((progressInTier / range) * 100)));
     const overallPct = Math.min(100, Math.max(0, Math.round((points / maxThreshold) * 100)));
-    const pointsNeeded = nextLevel === 'MAX' ? 0 : Math.max(0, Math.ceil((nextThreshold - points) * 10) / 10);
+    const pointsNeeded = nextLevel === 'MAX' ? 0 : Math.max(0, Math.round(nextThreshold - points));
 
     return {
         points,

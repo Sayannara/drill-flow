@@ -1,6 +1,6 @@
 // Gestion de la persistance via localStorage et Firebase Firestore
-import { db } from './firebase-config.js?v=89';
-import { getCurrentUser } from './auth.js?v=89';
+import { db } from './firebase-config.js';
+import { getCurrentUser } from './auth.js';
 import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const STORAGE_KEY = 'drillflow_progress';
@@ -233,4 +233,18 @@ export async function reportWordTranslation(word, comment = '', langPair = '', r
         console.error('Erreur lors du signalement:', err);
         return { success: false, error: err.message };
     }
+}
+
+// Réinitialise totalement la progression d'une paire de langues donnée
+export async function resetPairProgress(langSource, langTarget) {
+    const pairKey = `${langSource}-${langTarget}`;
+    if (localCache && localCache[pairKey]) {
+        delete localCache[pairKey];
+    }
+    // Supprimer également les points mémorisés pour cette paire
+    localStorage.removeItem(`drillflow_prev_cefr_points_${pairKey}`);
+    
+    // Sauvegarder dans localStorage et Firestore
+    await saveProgressLocalAndCloud();
+    return true;
 }
