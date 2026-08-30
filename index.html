@@ -346,9 +346,12 @@
                             </div>
                             <div class="comparison-line" id="rewrite-line" style="display: none;">
                                 <span class="comparison-label" data-i18n="label_rewrite">Récrire:</span>
-                                <div id="rewrite-wrapper" class="input-section has-prefix" style="display: inline-flex; align-items: baseline; width: 260px; border-bottom: 2px solid var(--border-color); padding: 0 0 0.2rem 0 !important; margin: 0 !important;">
+                                <div id="rewrite-wrapper" class="input-section has-prefix" style="display: inline-flex; align-items: baseline; min-width: 260px; max-width: 500px; border-bottom: 2px solid var(--border-color); padding: 0 0 0.2rem 0 !important; margin: 0 !important; position: relative; transition: border-color 0.2s;">
                                     <span id="rewrite-prefix" class="input-prefix" style="display: none; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; opacity: 0.55; margin: 0 0.2rem 0 0 !important; line-height: 1.2 !important; border: none !important; padding: 0 !important;"></span>
-                                    <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off" style="border: none !important; outline: none !important; background: transparent; flex: 1; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; color: var(--text-primary); padding: 0 !important; margin: 0 !important;">
+                                    <div style="position: relative; display: inline-flex; align-items: baseline; flex: 1; min-width: 0;">
+                                        <div id="rewrite-mirror" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; line-height: 1.2 !important; white-space: pre; display: flex; align-items: baseline; overflow: hidden; padding: 0 !important; margin: 0 !important; letter-spacing: normal;"></div>
+                                        <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off" style="border: none !important; outline: none !important; background: transparent; width: 100%; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; line-height: 1.2 !important; color: var(--text-primary); padding: 0 !important; margin: 0 !important; letter-spacing: normal;">
+                                    </div>
                                 </div>
                             </div>
                             <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
@@ -783,6 +786,31 @@
                 </div>
             </div>
 
+            <!-- Section 2 : Prononciation -->
+            <div class="options-section">
+                <div style="display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem;">
+                    <label style="font-weight: 700; font-size: 0.9rem; margin: 0; color: var(--text-primary);" data-i18n="options_audio_title">Prononciation</label>
+                    <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='1'; t.style.visibility='visible';}" onmouseout="this.style.color='var(--text-secondary)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='0'; t.style.visibility='hidden';}" onclick="const t=this.querySelector('.tooltip-content'); if(t){const isVis=t.style.opacity==='1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <span class="tooltip-content" data-i18n="options_audio_desc" style="position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.55rem 0.75rem; border-radius: 8px; font-size: 0.78rem; width: 220px; max-width: 80vw; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 100; font-weight: 500; line-height: 1.4; pointer-events: none;">
+                            Entendre automatiquement la prononciation durant un drill.
+                        </span>
+                    </span>
+                </div>
+                <div class="audio-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                    <button type="button" id="audio-opt-off" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_audio_off">Désactivée</span>
+                    </button>
+                    <button type="button" id="audio-opt-on" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_audio_on">Activée</span>
+                    </button>
+                </div>
+            </div>
+
             <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 0;">
 
             <!-- Section 2 : Zone de danger (Réinitialisation par langue) -->
@@ -815,7 +843,7 @@
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.75; font-family: var(--font-sans); line-height: 1.6;">
         <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span></div>
-        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v90</span> &bull; <span data-i18n="footer_deployed">Déployé le 30/08/2026</span></div>
+        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v91</span> &bull; <span data-i18n="footer_deployed">Déployé le 30/08/2026</span></div>
     </footer>
 
     <!-- Scripts -->

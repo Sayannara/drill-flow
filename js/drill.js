@@ -281,6 +281,65 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     renderCurrentWord();
 }
 
+function getRewriteCandidates(expectedTarget) {
+    const candidates = [];
+    if (!expectedTarget) return candidates;
+
+    expectedTarget.split('/').forEach(part => {
+        let clean = part.trim();
+        if (sessionState.currentPrefix) {
+            const prefixClean = sessionState.currentPrefix.trim();
+            if (clean.toLowerCase().startsWith(prefixClean.toLowerCase())) {
+                clean = clean.substring(prefixClean.length).trim();
+            }
+        }
+        if (clean) candidates.push(clean);
+
+        const noParens = clean.replace(/\(.*?\)/g, '').trim();
+        if (noParens && noParens !== clean) {
+            candidates.push(noParens);
+        }
+
+        const noArticle = clean.replace(/^(the |a |an |to |le |la |les |l'|un |une |des |el |los |las |der |die |das |ein |eine )/i, '').trim();
+        if (noArticle && noArticle !== clean) {
+            candidates.push(noArticle);
+        }
+    });
+
+    return Array.from(new Set(candidates));
+}
+
+function getRewriteMatchLength(inputValue, expectedTarget) {
+    if (!inputValue || !expectedTarget) return 0;
+    const candidates = getRewriteCandidates(expectedTarget);
+    let bestMatch = 0;
+
+    for (const candidate of candidates) {
+        let m = 0;
+        while (m < inputValue.length && m < candidate.length) {
+            if (inputValue[m].toLowerCase() === candidate[m].toLowerCase()) {
+                m++;
+            } else {
+                break;
+            }
+        }
+        if (m > bestMatch) {
+            bestMatch = m;
+        }
+    }
+    return bestMatch;
+}
+
+function escapeHtml(str) {
+    if (!str) return '';
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 function renderCurrentWord() {
     const wordSourceEl = document.getElementById('drill-word-source');
     const inputEl = document.getElementById('drill-input');
@@ -300,12 +359,18 @@ function renderCurrentWord() {
 
     const rewriteLine = document.getElementById('rewrite-line');
     const rewriteInput = document.getElementById('rewrite-input');
+    const rewriteMirror = document.getElementById('rewrite-mirror');
     const rewritePrefix = document.getElementById('rewrite-prefix');
+    const rewriteWrapper = document.getElementById('rewrite-wrapper');
     if (rewriteLine && rewriteInput) {
         rewriteLine.style.display = 'none';
         rewriteInput.value = '';
+        rewriteInput.style.color = '';
+        rewriteInput.style.caretColor = '';
         rewriteInput.classList.remove('correct');
         rewriteInput.disabled = true;
+        if (rewriteMirror) rewriteMirror.innerHTML = '';
+        if (rewriteWrapper) rewriteWrapper.style.borderBottomColor = '';
         if (rewritePrefix) {
             rewritePrefix.textContent = '';
             rewritePrefix.style.display = 'none';
@@ -594,6 +659,11 @@ function handleValidation() {
         const dynamicHints = document.getElementById('dynamic-hints');
 
         resultSection.classList.remove('hidden');
+
+        // Prononciation automatique si l'option est activée
+        if (localStorage.getItem('drillflow_auto_speak') === 'on') {
+            speakWord(expected, sessionState.langTarget);
+        }
         
         const inputWrapperEl = document.getElementById('drill-input-wrapper');
         if (inputWrapperEl) {
@@ -695,12 +765,19 @@ function handleValidation() {
             
             const rewriteLine = document.getElementById('rewrite-line');
             const rewriteInput = document.getElementById('rewrite-input');
+            const rewriteMirror = document.getElementById('rewrite-mirror');
             const rewritePrefix = document.getElementById('rewrite-prefix');
+            const rewriteWrapper = document.getElementById('rewrite-wrapper');
+
             if (rewriteLine && rewriteInput && !isMobile) {
                 rewriteLine.style.display = 'flex';
                 rewriteInput.value = '';
+                rewriteInput.style.color = '';
+                rewriteInput.style.caretColor = '#10b981';
                 rewriteInput.classList.remove('correct');
                 rewriteInput.disabled = false;
+                if (rewriteMirror) rewriteMirror.innerHTML = '';
+                if (rewriteWrapper) rewriteWrapper.style.borderBottomColor = '';
                 
                 rewriteInput.onkeydown = (e) => {
                     const key = e.key ? e.key.toLowerCase() : '';
@@ -721,8 +798,39 @@ function handleValidation() {
                     }
                 }
                 
+                rewriteInput.onscroll = () => {
+                    if (rewriteMirror) rewriteMirror.scrollLeft = rewriteInput.scrollLeft;
+                };
+
                 rewriteInput.oninput = () => {
-                    const normalizedInput = normalizeText(rewriteInput.value);
+                    if (rewriteMirror) rewriteMirror.scrollLeft = rewriteInput.scrollLeft;
+                    const val = rewriteInput.value;
+                    if (!val) {
+                        if (rewriteMirror) rewriteMirror.innerHTML = '';
+                        rewriteInput.style.color = '';
+                        rewriteInput.style.caretColor = '#10b981';
+                        rewriteInput.classList.remove('correct');
+                        if (rewriteWrapper) rewriteWrapper.style.borderBottomColor = '';
+                        return;
+                    }
+
+                    // Calcul de la longueur de correspondance avec les options attendues
+                    const matchLen = getRewriteMatchLength(val, expected);
+                    const hasError = matchLen < val.length;
+
+                    // Masquer le texte natif pour laisser transparaître le rendu bicolore
+                    rewriteInput.style.color = 'transparent';
+                    rewriteInput.style.caretColor = hasError ? 'var(--text-primary)' : '#10b981';
+
+                    const matchedStr = escapeHtml(val.substring(0, matchLen));
+                    const unmatchedStr = escapeHtml(val.substring(matchLen));
+
+                    if (rewriteMirror) {
+                        rewriteMirror.innerHTML = `<span style="color: #10b981;">${matchedStr}</span><span style="color: var(--text-primary);">${unmatchedStr}</span>`;
+                    }
+
+                    // Vérifier si la saisie est entièrement et exactement correcte
+                    const normalizedInput = normalizeText(val);
                     let isRewriteCorrect = false;
                     expected.split('/').forEach(s => {
                         const normExp = normalizeText(s);
@@ -753,8 +861,10 @@ function handleValidation() {
 
                     if (isRewriteCorrect) {
                         rewriteInput.classList.add('correct');
+                        if (rewriteWrapper) rewriteWrapper.style.borderBottomColor = '#10b981';
                     } else {
                         rewriteInput.classList.remove('correct');
+                        if (rewriteWrapper) rewriteWrapper.style.borderBottomColor = hasError ? 'var(--border-color)' : '#10b981';
                     }
                 };
                 

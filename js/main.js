@@ -106,14 +106,30 @@ function initOptionsModal() {
     const closeBtn = document.getElementById('btn-close-options');
     const btnDark = document.getElementById('theme-opt-dark');
     const btnLight = document.getElementById('theme-opt-light');
+    const btnAudioOff = document.getElementById('audio-opt-off');
+    const btnAudioOn = document.getElementById('audio-opt-on');
     const pairSelect = document.getElementById('options-reset-pair');
     const btnReset = document.getElementById('btn-reset-pair');
 
     if (!optionsModal) return;
 
+    function updateAudioButtonsUI(enabled) {
+        if (btnAudioOff && btnAudioOn) {
+            if (enabled) {
+                btnAudioOn.classList.add('active');
+                btnAudioOff.classList.remove('active');
+            } else {
+                btnAudioOff.classList.add('active');
+                btnAudioOn.classList.remove('active');
+            }
+        }
+    }
+
     function openOptions() {
         const currentTheme = htmlEl.getAttribute('data-theme') || 'dark';
         updateThemeButtonsUI(currentTheme);
+        const isAutoSpeak = localStorage.getItem('drillflow_auto_speak') === 'on';
+        updateAudioButtonsUI(isAutoSpeak);
         populateOptionsPairSelect();
         optionsModal.classList.remove('hidden');
     }
@@ -191,6 +207,19 @@ function initOptionsModal() {
     }
     if (btnLight) {
         btnLight.onclick = () => applyTheme('light');
+    }
+
+    if (btnAudioOff) {
+        btnAudioOff.onclick = () => {
+            localStorage.setItem('drillflow_auto_speak', 'off');
+            updateAudioButtonsUI(false);
+        };
+    }
+    if (btnAudioOn) {
+        btnAudioOn.onclick = () => {
+            localStorage.setItem('drillflow_auto_speak', 'on');
+            updateAudioButtonsUI(true);
+        };
     }
 
     if (btnReset && pairSelect) {
@@ -1010,9 +1039,9 @@ function getCefrTrackFillPct(pts) {
     const levels = CEFR_CONFIG.levels;
     const thresholds = CEFR_CONFIG.thresholds;
     if (pts >= thresholds.C2) return 100;
-    if (pts <= 0) return 0;
-    if (pts < thresholds.A1) {
-        return (pts / thresholds.A1) * 20;
+    if (pts <= thresholds.A1) {
+        // Avant ou à A1, la barre commence à la bulle A1 (0%)
+        return 0;
     }
     for (let i = 0; i < levels.length - 1; i++) {
         const currentT = thresholds[levels[i]];
@@ -1109,7 +1138,14 @@ function renderSelectedPairStats(pair) {
     const levels = CEFR_CONFIG.levels;
     const thresholds = CEFR_CONFIG.thresholds;
     const trackFillPct = Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(points))));
-    const startTrackFillPct = hasIncreased ? Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(startPoints)))) : 0;
+    const startTrackFillPct = hasIncreased ? Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(startPoints)))) : trackFillPct;
+
+    // Calcul du pourcentage du palier en cours
+    const prevTierPoints = startPoints - progDetails.prevThreshold;
+    const tierRange = Math.max(1, progDetails.nextThreshold - progDetails.prevThreshold);
+    const startTierPct = hasIncreased
+        ? (progDetails.isMax ? 100 : Math.min(100, Math.max(0, Math.round((prevTierPoints / tierRange) * 100))))
+        : progDetails.pctInTier;
 
     // Texte d'objectif prochain palier
     let nextMilestoneHtml = '';
@@ -1216,16 +1252,29 @@ function renderSelectedPairStats(pair) {
 
             <!-- Stepper Paliers A1 à C2 -->
             <div class="cefr-stepper-container">
-                <div class="cefr-stepper-track-bg"></div>
-                <div class="cefr-stepper-track-fill" style="width: ${startTrackFillPct}%;"></div>
+                <div class="cefr-stepper-track-bg">
+                    <div class="cefr-stepper-track-fill" style="width: ${startTrackFillPct}%;"></div>
+                </div>
                 <div class="cefr-stepper-steps">
                     ${stepsHtml}
                 </div>
             </div>
 
-            <!-- Objectif & Multiplicateurs info -->
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color); font-size: 0.85rem;">
-                <div>${nextMilestoneHtml}</div>
+            <!-- Jauge de progression du palier en cours -->
+            <div style="margin-top: 0.85rem; padding: 0.85rem 1.1rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; display: flex; flex-direction: column; gap: 0.45rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; flex-wrap: wrap; gap: 0.4rem;">
+                    <div>${nextMilestoneHtml}</div>
+                    <div style="font-weight: 800; font-size: 0.9rem; color: ${currentLvlColor.text};">
+                        ${progDetails.pctInTier}%
+                    </div>
+                </div>
+                <div style="width: 100%; height: 9px; background: rgba(100, 116, 139, 0.18); border-radius: 999px; overflow: hidden;">
+                    <div class="tier-progress-fill" style="width: ${startTierPct}%; height: 100%; background: linear-gradient(90deg, #3b82f6, #10b981); border-radius: 999px; transition: width 1.8s cubic-bezier(0.25, 1, 0.5, 1);"></div>
+                </div>
+            </div>
+
+            <!-- Multiplicateurs info -->
+            <div style="display: flex; justify-content: flex-end; align-items: center; padding-top: 0.5rem; border-top: 1px solid var(--border-color); font-size: 0.85rem;">
                 <div style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(0,0,0,0.03); padding: 0.35rem 0.65rem; border-radius: 6px;">
                     ${translations[lang].stat_cefr_multipliers_hint}
                 </div>
@@ -1264,6 +1313,11 @@ function renderSelectedPairStats(pair) {
                 if (fillElem) {
                     fillElem.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
                     fillElem.style.width = `${trackFillPct}%`;
+                }
+                const tierFill = container.querySelector('.tier-progress-fill');
+                if (tierFill) {
+                    tierFill.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
+                    tierFill.style.width = `${progDetails.pctInTier}%`;
                 }
             }, 80);
         });
