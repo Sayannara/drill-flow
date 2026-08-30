@@ -254,6 +254,10 @@ function initOptionsModal() {
             }
         };
     }
+
+    window.addEventListener('auth-changed', () => {
+        populateOptionsPairSelect();
+    });
 }
 
 // --- Routeur SPA ---

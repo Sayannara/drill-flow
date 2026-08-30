@@ -7,7 +7,7 @@ import {
     sendEmailVerification,
     sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { migrateLocalDataToCloud, fetchProgressFromCloud } from './storage.js';
+import { migrateLocalDataToCloud, fetchProgressFromCloud, clearAllLocalProgress } from './storage.js';
 import { translations } from './i18n.js';
 
 function getLang() {
@@ -30,6 +30,7 @@ onAuthStateChanged(auth, async (user) => {
             return;
         }
         currentUser = user;
+        localStorage.setItem('drillflow_auth_uid', user.uid);
         console.log("Utilisateur connecté:", user.uid, "(Inscrit et Vérifié)");
         
         // On charge la sauvegarde du cloud vers la RAM
@@ -40,6 +41,15 @@ onAuthStateChanged(auth, async (user) => {
     } else {
         currentUser = null;
         console.log("Aucun utilisateur connecté.");
+        
+        // Si un compte était connecté ou si des données d'un compte précédent sont encore présentes en local sans être connecté
+        const hadAuthSession = localStorage.getItem('drillflow_auth_uid');
+        const storedProgress = localStorage.getItem('drillflow_progress');
+        if (hadAuthSession || (storedProgress && storedProgress.length > 500)) {
+            console.log("Nettoyage de la progression locale suite à la déconnexion.");
+            clearAllLocalProgress();
+            localStorage.removeItem('drillflow_auth_uid');
+        }
         updateAuthUI(null);
     }
 });
@@ -178,7 +188,10 @@ export async function resetPassword(email) {
 
 export async function logoutUser() {
     try {
+        clearAllLocalProgress();
+        localStorage.removeItem('drillflow_auth_uid');
         await signOut(auth);
+        updateAuthUI(null);
         return { success: true };
     } catch (error) {
         return { success: false, error: error.message };

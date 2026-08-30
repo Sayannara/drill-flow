@@ -70,9 +70,8 @@ async function loadReports() {
                         const text = typeof c === 'string' ? c : (c.text || '');
                         if (!text) return '';
                         const dateStr = (c && c.date) ? `<span style="color: var(--text-secondary); font-size: 0.75rem; margin-left: 4px;">(${new Date(c.date).toLocaleDateString('fr-FR')})</span>` : '';
-                        const pairBadge = (c && c.pair) ? `<span style="font-size: 0.7rem; color: #3b82f6; background: rgba(59, 130, 246, 0.12); padding: 0.1rem 0.35rem; border-radius: 4px; margin-right: 4px; font-weight: 600;">${escapeHtml(c.pair)}</span>` : '';
                         const reasonText = (c && c.reason) ? `<span style="font-size: 0.7rem; color: #eab308; margin-right: 4px;">[${escapeHtml(c.reason)}]</span>` : '';
-                        return `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; margin-bottom: 0.35rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${pairBadge}${reasonText}${escapeHtml(text)}${dateStr}</div>`;
+                        return `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; margin-bottom: 0.35rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${reasonText}${escapeHtml(text)}${dateStr}</div>`;
                     })
                     .filter(Boolean);
                 if (list.length > 0) {

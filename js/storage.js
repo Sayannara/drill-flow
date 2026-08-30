@@ -19,6 +19,24 @@ function initCache() {
 }
 initCache();
 
+// Réinitialise tout le cache local (déconnexion ou changement d'utilisateur)
+export function clearAllLocalProgress() {
+    localCache = {};
+    try {
+        localStorage.removeItem(STORAGE_KEY);
+        const keysToRemove = [];
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && (key.startsWith('drillflow_prev_cefr_points_') || key.startsWith('voc_last_'))) {
+                keysToRemove.push(key);
+            }
+        }
+        keysToRemove.forEach(k => localStorage.removeItem(k));
+    } catch (e) {
+        console.error("Erreur nettoyage local:", e);
+    }
+}
+
 export async function fetchProgressFromCloud() {
     const user = getCurrentUser();
     if (!user) return;
