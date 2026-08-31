@@ -30,6 +30,74 @@ function normalizeText(text) {
     return text.trim().toLowerCase().replace(/\s+/g, ' ').replace(/œ/g, 'oe');
 }
 
+const SPECIAL_KEYS_BY_LANG = {
+    de: ['ä', 'ö', 'ü', 'ß'],
+    es: ['á', 'é', 'í', 'ó', 'ú', 'ñ'],
+    fr: ['é', 'è', 'ê', 'ë', 'à', 'â', 'î', 'ï', 'ô', 'ù', 'û', 'ç', 'œ']
+};
+
+function isAccentToleranceEnabled() {
+    return localStorage.getItem('drillflow_tolerate_accents') !== 'off';
+}
+
+function normalizeTolerant(text, lang = '') {
+    if (!text) return '';
+    let s = text.trim().toLowerCase().replace(/\s+/g, ' ');
+    s = s.replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/ß/g, 'ss');
+    s = s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (lang === 'de') {
+        s = s.replace(/ae/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u');
+    }
+    return s;
+}
+
+function renderSpecialKeysBar(containerId, targetInputId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const targetLang = (sessionState.langTarget || '').toLowerCase();
+    const keys = SPECIAL_KEYS_BY_LANG[targetLang];
+
+    if (!keys || keys.length === 0) {
+        container.style.display = 'none';
+        container.innerHTML = '';
+        return;
+    }
+
+    container.innerHTML = '';
+    keys.forEach(char => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'special-key-btn';
+        btn.textContent = char;
+        btn.tabIndex = -1;
+
+        btn.addEventListener('pointerdown', (e) => {
+            e.preventDefault();
+        });
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const input = document.getElementById(targetInputId);
+            if (!input) return;
+
+            const start = input.selectionStart ?? input.value.length;
+            const end = input.selectionEnd ?? input.value.length;
+            const val = input.value;
+            input.value = val.substring(0, start) + char + val.substring(end);
+            const newPos = start + char.length;
+            input.setSelectionRange(newPos, newPos);
+            input.focus();
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+        });
+
+        container.appendChild(btn);
+    });
+
+    container.style.display = 'flex';
+}
+
 function getArticleAlternatives(text) {
     let opts = [text];
     if (text.startsWith('un ')) opts.push(text.replace(/^un /, 'le '), text.replace(/^un /, "l'"), text.replace(/^un /, 'el '));
@@ -312,12 +380,18 @@ function getRewriteCandidates(expectedTarget) {
 function getRewriteMatchLength(inputValue, expectedTarget) {
     if (!inputValue || !expectedTarget) return 0;
     const candidates = getRewriteCandidates(expectedTarget);
+    const tolerate = isAccentToleranceEnabled();
+    const lang = typeof sessionState !== 'undefined' ? (sessionState.langTarget || '') : '';
     let bestMatch = 0;
 
     for (const candidate of candidates) {
         let m = 0;
         while (m < inputValue.length && m < candidate.length) {
-            if (inputValue[m].toLowerCase() === candidate[m].toLowerCase()) {
+            const charIn = inputValue[m].toLowerCase();
+            const charCand = candidate[m].toLowerCase();
+            if (charIn === charCand) {
+                m++;
+            } else if (tolerate && normalizeTolerant(charIn, lang) === normalizeTolerant(charCand, lang)) {
                 m++;
             } else {
                 break;
@@ -563,6 +637,13 @@ function renderCurrentWord() {
 
     inputEl.style.display = 'block';
     
+    // Quick-keys : touches de caractères spéciaux contextuelles
+    renderSpecialKeysBar('drill-special-keys', 'drill-input');
+    const rewriteKeysEl = document.getElementById('rewrite-special-keys');
+    if (rewriteKeysEl) rewriteKeysEl.style.display = 'none';
+    const spellingHintEl = document.getElementById('result-spelling-hint');
+    if (spellingHintEl) spellingHintEl.style.display = 'none';
+
     // On ne donne le focus à l'input que sur ordinateur pour éviter de forcer le clavier sur mobile
     const isMobile = window.innerWidth <= 640;
     if (!isMobile) {
@@ -627,7 +708,19 @@ function handleValidation() {
             }
         }
 
-        const isCorrect = allInputOpts.some(inputOpt => allExpectedOpts.includes(inputOpt));
+        const isStrictCorrect = allInputOpts.some(inputOpt => allExpectedOpts.includes(inputOpt));
+        let isCorrect = isStrictCorrect;
+        let isTolerantMatch = false;
+
+        if (!isCorrect && isAccentToleranceEnabled() && userInput.trim()) {
+            const tgtLang = (sessionState.langTarget || '').toLowerCase();
+            const tolerantInputOpts = allInputOpts.map(opt => normalizeTolerant(opt, tgtLang));
+            const tolerantExpectedOpts = allExpectedOpts.map(opt => normalizeTolerant(opt, tgtLang));
+            if (tolerantInputOpts.some(inputOpt => tolerantExpectedOpts.includes(inputOpt))) {
+                isCorrect = true;
+                isTolerantMatch = true;
+            }
+        }
 
         // Affichage des résultats
         const asked = currentWord[sessionState.langSource];
@@ -766,6 +859,23 @@ function handleValidation() {
             statusBanner.style.backgroundColor = 'var(--success-color)';
             statusBanner.style.color = '#fff';
             statusBanner.dataset.correct = "true";
+
+            const spellingHintEl = document.getElementById('result-spelling-hint');
+            if (spellingHintEl) {
+                if (isTolerantMatch) {
+                    const primaryExpected = expected.split('/')[0].trim();
+                    const template = translations[lang]?.spelling_hint || translations['fr']?.spelling_hint || "Orthographe exacte : {word}";
+                    spellingHintEl.innerHTML = `💡 ${template.replace('{word}', `<strong>${escapeHtml(primaryExpected)}</strong>`)}`;
+                    spellingHintEl.style.display = 'inline-flex';
+                } else {
+                    spellingHintEl.style.display = 'none';
+                }
+            }
+
+            const drillKeysEl = document.getElementById('drill-special-keys');
+            if (drillKeysEl) drillKeysEl.style.display = 'none';
+            const rewriteKeysEl = document.getElementById('rewrite-special-keys');
+            if (rewriteKeysEl) rewriteKeysEl.style.display = 'none';
             
             const expectedContainer = document.getElementById('result-expected-container');
             if (expectedContainer) {
@@ -815,6 +925,12 @@ function handleValidation() {
             statusBanner.style.backgroundColor = 'var(--error-color)';
             statusBanner.style.color = '#fff';
             statusBanner.dataset.correct = "false";
+
+            const spellingHintEl = document.getElementById('result-spelling-hint');
+            if (spellingHintEl) spellingHintEl.style.display = 'none';
+
+            const drillKeysEl = document.getElementById('drill-special-keys');
+            if (drillKeysEl) drillKeysEl.style.display = 'none';
             
             const expectedContainer = document.getElementById('result-expected-container');
             if (expectedContainer) {
@@ -832,6 +948,7 @@ function handleValidation() {
 
             if (rewriteLine && rewriteInput && !isMobile) {
                 rewriteLine.style.display = 'flex';
+                renderSpecialKeysBar('rewrite-special-keys', 'rewrite-input');
                 rewriteInput.value = '';
                 rewriteInput.style.color = '';
                 rewriteInput.style.caretColor = '#10b981';
@@ -919,6 +1036,29 @@ function handleValidation() {
                             isRewriteCorrect = true;
                         }
                     });
+
+                    // Si pas encore validé, vérifier avec tolérance si activée
+                    if (!isRewriteCorrect && isAccentToleranceEnabled() && val.trim()) {
+                        const tgtLang = (sessionState.langTarget || '').toLowerCase();
+                        const tolerantInput = normalizeTolerant(val, tgtLang);
+                        let tolerantInOpts = [tolerantInput, ...getArticleAlternatives(tolerantInput)];
+                        if (sessionState.currentPrefix && tolerantInput) {
+                            const combined = normalizeTolerant(sessionState.currentPrefix + ' ' + tolerantInput, tgtLang);
+                            tolerantInOpts.push(combined, ...getArticleAlternatives(combined));
+                        }
+                        expected.split('/').forEach(s => {
+                            const normExp = normalizeTolerant(s, tgtLang);
+                            const normExpNoParens = normalizeTolerant(s.replace(/\(.*?\)/g, ' '), tgtLang);
+                            let expOpts = [
+                                ...getArticleAlternatives(normExp), 
+                                ...getArticleAlternatives(normExpNoParens),
+                                normExp.replace(/^(the |a |an |to )/i, '').trim()
+                            ];
+                            if (tolerantInOpts.some(io => expOpts.includes(io))) {
+                                isRewriteCorrect = true;
+                            }
+                        });
+                    }
 
                     if (isRewriteCorrect) {
                         rewriteInput.classList.add('correct');
@@ -1197,6 +1337,12 @@ function showEndSession() {
     
     if (flashcard) flashcard.style.display = 'none';
     if (headerSection) headerSection.style.display = 'none';
+    const drillKeysEl = document.getElementById('drill-special-keys');
+    if (drillKeysEl) drillKeysEl.style.display = 'none';
+    const rewriteKeysEl = document.getElementById('rewrite-special-keys');
+    if (rewriteKeysEl) rewriteKeysEl.style.display = 'none';
+    const spellingHintEl = document.getElementById('result-spelling-hint');
+    if (spellingHintEl) spellingHintEl.style.display = 'none';
     if (endContainer) {
         endContainer.style.display = 'flex';
         
