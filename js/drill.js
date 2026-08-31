@@ -1582,23 +1582,36 @@ function renderContextDrill() {
         let touchClone = null;
         let activeDz = null;
         let touchMoved = false;
+        let cachedDzRects = [];
+        let cloneOffsetX = 0;
+        let cloneOffsetY = 0;
 
         btn.addEventListener('touchstart', (e) => {
             touchMoved = false;
             const touch = e.touches[0];
             const rect = btn.getBoundingClientRect();
             
+            cloneOffsetX = rect.width / 2;
+            cloneOffsetY = rect.height / 2;
+
+            // Pré-calculer les zones de dépôt pour éviter getBoundingClientRect et elementFromPoint en boucle
+            cachedDzRects = Array.from(document.querySelectorAll('.context-dropzone:not(.success)')).map(dz => ({
+                el: dz,
+                rect: dz.getBoundingClientRect()
+            }));
+
             touchClone = btn.cloneNode(true);
             touchClone.classList.add('touch-drag-clone');
             touchClone.style.position = 'fixed';
-            touchClone.style.left = `${touch.clientX - rect.width / 2}px`;
-            touchClone.style.top = `${touch.clientY - rect.height / 2}px`;
+            touchClone.style.left = '0px';
+            touchClone.style.top = '0px';
             touchClone.style.width = `${rect.width}px`;
             touchClone.style.height = `${rect.height}px`;
             touchClone.style.zIndex = '99999';
             touchClone.style.pointerEvents = 'none';
             touchClone.style.opacity = '0.92';
-            touchClone.style.transform = 'scale(1.08)';
+            touchClone.style.transform = `translate3d(${touch.clientX - cloneOffsetX}px, ${touch.clientY - cloneOffsetY}px, 0) scale(1.08)`;
+            touchClone.style.willChange = 'transform';
             touchClone.style.boxShadow = '0 12px 28px rgba(0,0,0,0.35)';
             document.body.appendChild(touchClone);
 
@@ -1609,14 +1622,20 @@ function renderContextDrill() {
             if (!touchClone) return;
             touchMoved = true;
             const touch = e.touches[0];
-            const rect = btn.getBoundingClientRect();
             
-            touchClone.style.left = `${touch.clientX - rect.width / 2}px`;
-            touchClone.style.top = `${touch.clientY - rect.height / 2}px`;
+            // Accélération matérielle (GPU) pour un mouvement ultra-fluide
+            touchClone.style.transform = `translate3d(${touch.clientX - cloneOffsetX}px, ${touch.clientY - cloneOffsetY}px, 0) scale(1.08)`;
 
-            // Détection de la dropzone sous le doigt
-            const elemBelow = document.elementFromPoint(touch.clientX, touch.clientY);
-            const dzBelow = elemBelow ? elemBelow.closest('.context-dropzone:not(.success)') : null;
+            // Détection de la dropzone via mathématiques rapides (évite les calculs DOM coûteux)
+            let dzBelow = null;
+            for (let i = 0; i < cachedDzRects.length; i++) {
+                const dz = cachedDzRects[i];
+                if (touch.clientX >= dz.rect.left && touch.clientX <= dz.rect.right &&
+                    touch.clientY >= dz.rect.top && touch.clientY <= dz.rect.bottom) {
+                    dzBelow = dz.el;
+                    break;
+                }
+            }
 
             if (activeDz && activeDz !== dzBelow) {
                 activeDz.classList.remove('drag-over');
@@ -1637,6 +1656,7 @@ function renderContextDrill() {
                 touchClone.remove();
                 touchClone = null;
             }
+            cachedDzRects = []; // Vider le cache
 
             if (activeDz) {
                 activeDz.classList.remove('drag-over');
@@ -1652,6 +1672,7 @@ function renderContextDrill() {
                 touchClone.remove();
                 touchClone = null;
             }
+            cachedDzRects = []; // Vider le cache
             if (activeDz) {
                 activeDz.classList.remove('drag-over');
                 activeDz = null;
