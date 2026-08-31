@@ -92,7 +92,7 @@
         <nav class="nav-menu">
             <button id="nav-home" class="nav-btn active" data-i18n="nav_drill">Drill !</button>
             <button id="nav-progress" class="nav-btn" data-i18n="nav_progress">Mes mots</button>
-            <button id="nav-stats" class="nav-btn" data-i18n="nav_stats">Statistiques</button>
+            <button id="nav-stats" class="nav-btn" data-i18n="nav_stats">Progression</button>
             <button id="nav-certs" class="nav-btn" data-i18n="nav_certs">Attestations</button>
             <button id="nav-about" class="nav-btn" data-i18n="nav_about">Démarche Projet</button>
         </nav>
@@ -307,6 +307,7 @@
                     <!-- Zone de résultat et comparaison en HAUT -->
                     <div class="result-section hidden" id="drill-result" style="margin-top: 0; margin-bottom: 1.5rem;">
                         <div id="result-status" class="status-banner">Correct !</div>
+                        <div id="result-spelling-hint" class="spelling-hint-banner" style="display: none;"></div>
                         
                         <div class="result-comparison" style="position: relative;">
                             <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur" style="position: absolute; top: 0.85rem; right: 0.85rem; z-index: 5;">
@@ -353,6 +354,7 @@
                                         <input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off" style="border: none !important; outline: none !important; background: transparent; width: 100%; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; line-height: 1.2 !important; color: var(--text-primary); padding: 0 !important; margin: 0 !important; letter-spacing: normal;">
                                     </div>
                                 </div>
+                                <div id="rewrite-special-keys" class="drill-special-keys" style="display: none; margin-top: 0.5rem; justify-content: flex-start;"></div>
                             </div>
                             <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
                                 <span class="comparison-label"></span>
@@ -378,6 +380,7 @@
                         <span id="drill-input-prefix" class="input-prefix" style="display: none;"></span>
                         <input type="text" id="drill-input" data-i18n-placeholder="placeholder_translation" placeholder="Traduction..." autocomplete="off">
                     </div>
+                    <div id="drill-special-keys" class="drill-special-keys" style="display: none;"></div>
                 </div>
                 
                 <!-- Actions mobiles unifiées (Saisie & Résultat) -->
@@ -545,7 +548,7 @@
     <!-- Template Vue Stats -->
     <template id="view-stats">
         <div class="view-content view-wide animate-fade-in">
-            <h1 class="page-title" data-i18n="title_stats">Statistiques</h1>
+            <h1 class="page-title" data-i18n="title_stats">Progression</h1>
             <p class="page-subtitle" data-i18n="subtitle_stats">Suivez votre progression globale par paire de langues.</p>
             
             <div class="info-banner" style="margin: 0 auto 1.5rem auto; max-width: 720px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); padding: 0.75rem 1.25rem; border-radius: 10px; font-size: 0.9rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.75rem; text-align: left;">
@@ -832,6 +835,31 @@
                 </div>
             </div>
 
+            <!-- Section 3 : Accents & Caractères spéciaux -->
+            <div class="options-section">
+                <div style="display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem;">
+                    <label style="font-weight: 700; font-size: 0.9rem; margin: 0; color: var(--text-primary);" data-i18n="options_accents_title">Accents & Caractères spéciaux</label>
+                    <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='1'; t.style.visibility='visible';}" onmouseout="this.style.color='var(--text-secondary)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='0'; t.style.visibility='hidden';}" onclick="const t=this.querySelector('.tooltip-content'); if(t){const isVis=t.style.opacity==='1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <span class="tooltip-content" data-i18n="options_accents_desc" style="position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.55rem 0.75rem; border-radius: 8px; font-size: 0.78rem; width: 240px; max-width: 80vw; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 100; font-weight: 500; line-height: 1.4; pointer-events: none;">
+                            Tolérer les réponses saisies sans accents ou sans caractères spéciaux (ex: 'ss' pour 'ß', 'n' pour 'ñ').
+                        </span>
+                    </span>
+                </div>
+                <div class="accents-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                    <button type="button" id="accents-opt-on" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_accents_on">Tolérance active</span>
+                    </button>
+                    <button type="button" id="accents-opt-off" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_accents_off">Stricte</span>
+                    </button>
+                </div>
+            </div>
+
             <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 0;">
 
             <!-- Section 2 : Zone de danger (Réinitialisation par langue) -->
@@ -864,12 +892,12 @@
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.75; font-family: var(--font-sans); line-height: 1.6;">
         <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span></div>
-        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v93</span> &bull; <span data-i18n="footer_deployed">Déployé le 30/08/2026</span></div>
+        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v94</span> &bull; <span data-i18n="footer_deployed">Déployé le 30/08/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js?v=94"></script>
 </body>
 </html>
