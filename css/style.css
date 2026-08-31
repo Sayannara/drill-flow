@@ -712,8 +712,8 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 .cefr-stepper-track-bg {
     position: absolute;
     top: 35px;
-    left: 24px;
-    right: 24px;
+    left: 30px;
+    right: 30px;
     height: 7px;
     background: var(--border-color);
     border-radius: 4px;
@@ -853,10 +853,10 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
         font-size: 0.72rem;
         border-width: 2px;
     }
-    .cefr-stepper-track-bg, .cefr-stepper-track-fill {
+    .cefr-stepper-track-bg {
         top: 29px;
-        left: 18px;
-        right: 18px;
+        left: 30px;
+        right: 30px;
     }
     .cefr-step-label {
         font-size: 0.65rem;
@@ -1974,4 +1974,69 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     background: #dc2626 !important;
     box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
 }
+
+/* Quick-keys : Touches de caractères spéciaux */
+.drill-special-keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.45rem;
+    margin-top: 0.85rem;
+    margin-bottom: 0.25rem;
+    user-select: none;
+}
+
+.special-key-btn {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 8px;
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    font-weight: 600;
+    min-width: 38px;
+    height: 38px;
+    padding: 0 0.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.special-key-btn:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(59, 130, 246, 0.3);
+}
+
+.special-key-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+/* Rappel d'orthographe exacte sous validation tolérante */
+.spelling-hint-banner {
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    color: #f59e0b;
+    padding: 0.45rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-top: -0.85rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    animation: fadeIn 0.25s ease-out;
+}
+
 

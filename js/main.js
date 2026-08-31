@@ -108,6 +108,8 @@ function initOptionsModal() {
     const btnLight = document.getElementById('theme-opt-light');
     const btnAudioOff = document.getElementById('audio-opt-off');
     const btnAudioOn = document.getElementById('audio-opt-on');
+    const btnAccentsOn = document.getElementById('accents-opt-on');
+    const btnAccentsOff = document.getElementById('accents-opt-off');
     const pairSelect = document.getElementById('options-reset-pair');
     const btnReset = document.getElementById('btn-reset-pair');
 
@@ -125,11 +127,25 @@ function initOptionsModal() {
         }
     }
 
+    function updateAccentsButtonsUI(enabled) {
+        if (btnAccentsOff && btnAccentsOn) {
+            if (enabled) {
+                btnAccentsOn.classList.add('active');
+                btnAccentsOff.classList.remove('active');
+            } else {
+                btnAccentsOff.classList.add('active');
+                btnAccentsOn.classList.remove('active');
+            }
+        }
+    }
+
     function openOptions() {
         const currentTheme = htmlEl.getAttribute('data-theme') || 'dark';
         updateThemeButtonsUI(currentTheme);
         const isAutoSpeak = localStorage.getItem('drillflow_auto_speak') === 'on';
         updateAudioButtonsUI(isAutoSpeak);
+        const isAccentsTolerant = localStorage.getItem('drillflow_tolerate_accents') !== 'off';
+        updateAccentsButtonsUI(isAccentsTolerant);
         populateOptionsPairSelect();
         optionsModal.classList.remove('hidden');
     }
@@ -219,6 +235,19 @@ function initOptionsModal() {
         btnAudioOn.onclick = () => {
             localStorage.setItem('drillflow_auto_speak', 'on');
             updateAudioButtonsUI(true);
+        };
+    }
+
+    if (btnAccentsOn) {
+        btnAccentsOn.onclick = () => {
+            localStorage.setItem('drillflow_tolerate_accents', 'on');
+            updateAccentsButtonsUI(true);
+        };
+    }
+    if (btnAccentsOff) {
+        btnAccentsOff.onclick = () => {
+            localStorage.setItem('drillflow_tolerate_accents', 'off');
+            updateAccentsButtonsUI(false);
         };
     }
 
@@ -1143,6 +1172,7 @@ function renderSelectedPairStats(pair) {
     const thresholds = CEFR_CONFIG.thresholds;
     const trackFillPct = Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(points))));
     const startTrackFillPct = hasIncreased ? Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(startPoints)))) : trackFillPct;
+    const fillStyleWidth = startTrackFillPct > 0 ? `calc(${startTrackFillPct}% + 18px)` : '0%';
 
     // Calcul du pourcentage du palier en cours
     const prevTierPoints = startPoints - progDetails.prevThreshold;
@@ -1257,7 +1287,7 @@ function renderSelectedPairStats(pair) {
             <!-- Stepper Paliers A1 à C2 -->
             <div class="cefr-stepper-container">
                 <div class="cefr-stepper-track-bg">
-                    <div class="cefr-stepper-track-fill" style="width: ${startTrackFillPct}%;"></div>
+                    <div class="cefr-stepper-track-fill" style="width: ${fillStyleWidth};"></div>
                 </div>
                 <div class="cefr-stepper-steps">
                     ${stepsHtml}
