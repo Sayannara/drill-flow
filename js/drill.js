@@ -238,7 +238,7 @@ function highlightExampleSentence(sentence, targetWord, styleOrClass) {
 }
 
 
-export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], mode = 'discovery') {
+export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], mode = 'smart') {
     sessionState.langSource = source;
     sessionState.langTarget = target;
     sessionState.mode = mode; // Store the mode in session state

@@ -79,7 +79,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=98">
+    <link rel="stylesheet" href="css/style.css?v=99">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -227,12 +227,8 @@
                     <div class="form-group" style="flex: 1.6; min-width: 290px; margin-bottom: 0;">
                         <label data-i18n="label_mode">Mode d'entraînement</label>
                         <div class="segmented-control" id="mode-segmented-control" style="display: flex; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; min-height: 42px;">
-                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex;">
-                                <input type="radio" name="drill-mode" value="discovery" checked style="opacity: 0; position: absolute; width: 0; height: 0;">
-                                <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_discovery">Découverte</div>
-                            </label>
-                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex; border-left: 1px solid var(--border-color); border-right: 1px solid var(--border-color);">
-                                <input type="radio" name="drill-mode" value="smart" style="opacity: 0; position: absolute; width: 0; height: 0;">
+                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex; border-right: 1px solid var(--border-color);">
+                                <input type="radio" name="drill-mode" value="smart" checked style="opacity: 0; position: absolute; width: 0; height: 0;">
                                 <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_smart">Smart Drill</div>
                             </label>
                             <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex;">
@@ -240,9 +236,7 @@
                                 <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_review">Révision</div>
                             </label>
                         </div>
-                        <div id="mode-description" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem; min-height: 2.4rem; line-height: 1.4;">
-                            100% de nouveaux mots pour enrichir votre vocabulaire.
-                        </div>
+                        <div id="mode-description" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem; min-height: 2.4rem; line-height: 1.4;">Apprentissage optimisé via une réserve active limitant la surcharge mentale.</div>
                     </div>
                 </div>
 
@@ -902,13 +896,13 @@
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.75; font-family: var(--font-sans); line-height: 1.6;">
         <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span></div>
-        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v98</span> &bull; <span data-i18n="footer_deployed">Déployé le 31/08/2026</span></div>
+        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v99</span> &bull; <span data-i18n="footer_deployed">Déployé le 31/08/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=98"></script>
+    <script type="module" src="js/main.js?v=99"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
