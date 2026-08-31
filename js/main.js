@@ -343,7 +343,7 @@ function attachViewEvents(viewId) {
         const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
         const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
         const lastVol = localStorage.getItem('voc_last_vol') || '20';
-        const lastMode = localStorage.getItem('voc_last_mode') || 'discovery';
+        const lastMode = localStorage.getItem('voc_last_mode') || 'smart';
         
         const savedLevelsStr = localStorage.getItem('drill_levels');
         const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -510,7 +510,7 @@ function attachViewEvents(viewId) {
                 const tgt = document.getElementById('select-lang-target').value;
                 const vol = parseInt(document.getElementById('input-volume').value, 10);
                 const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
-                const mode = modeChecked ? modeChecked.value : 'discovery';
+                const mode = modeChecked ? modeChecked.value : 'smart';
                 
                 const selectedLevels = [];
                 if (document.getElementById('drill-level-a1')?.checked) selectedLevels.push('A1');
