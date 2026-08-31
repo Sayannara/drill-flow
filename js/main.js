@@ -183,14 +183,18 @@ function initOptionsModal() {
 
         pairSelect.disabled = false;
         if (btnReset) {
-            btnReset.disabled = false;
-            btnReset.style.opacity = '1';
-            btnReset.style.cursor = 'pointer';
+            btnReset.disabled = true;
+            btnReset.style.opacity = '0.5';
+            btnReset.style.cursor = 'not-allowed';
         }
 
-        const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
-        const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
-        const currentPair = `${lastSrc}-${lastTgt}`;
+        // Option vide par défaut (aucune pré-sélection)
+        const placeholderOpt = document.createElement('option');
+        placeholderOpt.value = '';
+        placeholderOpt.textContent = translations[lang]?.options_select_placeholder || '-- Choisir une paire --';
+        placeholderOpt.selected = true;
+        placeholderOpt.disabled = true;
+        pairSelect.appendChild(placeholderOpt);
 
         usedPairs.forEach(pair => {
             const [src, tgt] = pair.split('-');
@@ -201,11 +205,23 @@ function initOptionsModal() {
             pairSelect.appendChild(opt);
         });
 
-        if (usedPairs.includes(currentPair)) {
-            pairSelect.value = currentPair;
-        } else {
-            pairSelect.value = usedPairs[0];
-        }
+        pairSelect.value = '';
+    }
+
+    if (pairSelect) {
+        pairSelect.onchange = () => {
+            if (btnReset) {
+                if (pairSelect.value) {
+                    btnReset.disabled = false;
+                    btnReset.style.opacity = '1';
+                    btnReset.style.cursor = 'pointer';
+                } else {
+                    btnReset.disabled = true;
+                    btnReset.style.opacity = '0.5';
+                    btnReset.style.cursor = 'not-allowed';
+                }
+            }
+        };
     }
 
     if (optionsBtn) {
