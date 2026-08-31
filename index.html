@@ -79,7 +79,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=100">
+    <link rel="stylesheet" href="css/style.css?v=101">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -596,14 +596,14 @@
                 <button class="btn-primary btn-open-auth-modal" style="margin-top: 1rem; max-width: 250px;">S'inscrire / Se connecter</button>
             </div>
             
-            <div class="card cert-profile-card" style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; align-items: center; justify-content: flex-start; flex-wrap: wrap; padding: 1.25rem;">
-                <div class="form-group" style="margin-bottom: 0; flex: 1 1 200px; text-align: left; display: flex; flex-direction: column; gap: 0.35rem;">
-                    <label data-i18n="label_firstname" style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Prénom</label>
-                    <input type="text" id="cert-firstname" data-i18n-placeholder="placeholder_firstname" placeholder="Ex: Jean" style="padding: 0.55rem 0.75rem; border-radius: 8px; font-size: 0.95rem; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: border-color 0.2s;">
+            <div class="card cert-profile-card" style="margin: 0 auto 1.5rem auto; max-width: 720px; width: 100%; box-sizing: border-box; display: flex; gap: 1.25rem; align-items: center; justify-content: center; flex-wrap: wrap; padding: 0.85rem 1.25rem; border-radius: 12px;">
+                <div class="form-group" style="margin-bottom: 0; flex: 1 1 200px; max-width: 320px; text-align: left; display: flex; flex-direction: column; gap: 0.25rem;">
+                    <label data-i18n="label_firstname" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Prénom</label>
+                    <input type="text" id="cert-firstname" data-i18n-placeholder="placeholder_firstname" placeholder="Ex: Jean" style="padding: 0.42rem 0.65rem; border-radius: 8px; font-size: 0.85rem; height: 34px; box-sizing: border-box; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: border-color 0.2s;">
                 </div>
-                <div class="form-group" style="margin-bottom: 0; flex: 1 1 200px; text-align: left; display: flex; flex-direction: column; gap: 0.35rem;">
-                    <label data-i18n="label_lastname" style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Nom</label>
-                    <input type="text" id="cert-lastname" data-i18n-placeholder="placeholder_lastname" placeholder="Ex: Dupont" style="padding: 0.55rem 0.75rem; border-radius: 8px; font-size: 0.95rem; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: border-color 0.2s;">
+                <div class="form-group" style="margin-bottom: 0; flex: 1 1 200px; max-width: 320px; text-align: left; display: flex; flex-direction: column; gap: 0.25rem;">
+                    <label data-i18n="label_lastname" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Nom</label>
+                    <input type="text" id="cert-lastname" data-i18n-placeholder="placeholder_lastname" placeholder="Ex: Dupont" style="padding: 0.42rem 0.65rem; border-radius: 8px; font-size: 0.85rem; height: 34px; box-sizing: border-box; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: border-color 0.2s;">
                 </div>
             </div>
 
@@ -791,24 +791,25 @@
     </div>
 
     <!-- Modal Options -->
-    <div id="options-modal" class="cert-modal-overlay hidden" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.85); display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 1rem; backdrop-filter: blur(4px);">
-        <div class="card cert-modal-card options-modal-card" style="max-width: 420px; width: 100%; display: flex; flex-direction: column; gap: 1.35rem; background: var(--surface-color); padding: 1.75rem; border-radius: 16px; box-shadow: var(--shadow); position: relative; box-sizing: border-box;">
-            <button id="btn-close-options" class="modal-close-btn" aria-label="Fermer" title="Fermer">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-            </button>
+    <div id="options-modal" class="cert-modal-overlay hidden" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; height: 100dvh; background: rgba(15, 23, 42, 0.85); display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 1.25rem 1rem; backdrop-filter: blur(4px); overflow-y: auto; overflow-x: hidden; box-sizing: border-box;">
+        <div class="card cert-modal-card options-modal-card" style="max-width: 420px; width: 100%; max-height: calc(100vh - 2.5rem); max-height: calc(100dvh - 2.5rem); overflow-y: auto; overflow-x: hidden; display: flex; flex-direction: column; gap: 1rem; background: var(--surface-color); padding: 1.25rem 1.4rem; border-radius: 16px; box-shadow: var(--shadow); position: relative; box-sizing: border-box; margin: auto;">
             
-            <div style="padding-right: 2rem;">
-                <h2 style="margin: 0; font-family: var(--font-heading); font-size: 1.35rem;" data-i18n="options_modal_title">Options</h2>
+            <!-- En-tête Options fixe au défilement -->
+            <div style="display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: var(--surface-color); z-index: 20; padding-bottom: 0.25rem;">
+                <h2 style="margin: 0; font-family: var(--font-heading); font-size: 1.25rem;" data-i18n="options_modal_title">Options</h2>
+                <button id="btn-close-options" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Fermer" title="Fermer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
             </div>
 
             <!-- Section 1 : Thème visuel (Clair / Sombre) -->
             <div class="options-section">
-                <label style="font-weight: 700; font-size: 0.9rem; display: block; margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="options_theme_title">Thème d'affichage</label>
-                <div class="theme-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-                    <button type="button" id="theme-opt-dark" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                <label style="font-weight: 700; font-size: 0.88rem; display: block; margin-bottom: 0.4rem; color: var(--text-primary);" data-i18n="options_theme_title">Thème d'affichage</label>
+                <div class="theme-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem;">
+                    <button type="button" id="theme-opt-dark" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.8rem; border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
                         <span data-i18n="options_theme_dark">Sombre</span>
                     </button>
-                    <button type="button" id="theme-opt-light" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                    <button type="button" id="theme-opt-light" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.8rem; border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
                         <span data-i18n="options_theme_light">Clair</span>
                     </button>
                 </div>
@@ -816,10 +817,10 @@
 
             <!-- Section 2 : Prononciation -->
             <div class="options-section">
-                <div style="display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem;">
-                    <label style="font-weight: 700; font-size: 0.9rem; margin: 0; color: var(--text-primary);" data-i18n="options_audio_title">Prononciation</label>
+                <div style="display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.4rem;">
+                    <label style="font-weight: 700; font-size: 0.88rem; margin: 0; color: var(--text-primary);" data-i18n="options_audio_title">Prononciation</label>
                     <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='1'; t.style.visibility='visible';}" onmouseout="this.style.color='var(--text-secondary)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='0'; t.style.visibility='hidden';}" onclick="const t=this.querySelector('.tooltip-content'); if(t){const isVis=t.style.opacity==='1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';}">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="12" y1="16" x2="12" y2="12"></line>
                             <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -829,11 +830,11 @@
                         </span>
                     </span>
                 </div>
-                <div class="audio-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-                    <button type="button" id="audio-opt-off" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                <div class="audio-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem;">
+                    <button type="button" id="audio-opt-off" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.8rem; border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
                         <span data-i18n="options_audio_off">Désactivée</span>
                     </button>
-                    <button type="button" id="audio-opt-on" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                    <button type="button" id="audio-opt-on" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.8rem; border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
                         <span data-i18n="options_audio_on">Activée</span>
                     </button>
                 </div>
@@ -841,10 +842,10 @@
 
             <!-- Section 3 : Accents & Caractères spéciaux -->
             <div class="options-section">
-                <div style="display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem;">
-                    <label style="font-weight: 700; font-size: 0.9rem; margin: 0; color: var(--text-primary);" data-i18n="options_accents_title">Accents & Caractères spéciaux</label>
+                <div style="display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.4rem;">
+                    <label style="font-weight: 700; font-size: 0.88rem; margin: 0; color: var(--text-primary);" data-i18n="options_accents_title">Accents & Caractères spéciaux</label>
                     <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='1'; t.style.visibility='visible';}" onmouseout="this.style.color='var(--text-secondary)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='0'; t.style.visibility='hidden';}" onclick="const t=this.querySelector('.tooltip-content'); if(t){const isVis=t.style.opacity==='1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';}">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="12" y1="16" x2="12" y2="12"></line>
                             <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -854,11 +855,11 @@
                         </span>
                     </span>
                 </div>
-                <div class="accents-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-                    <button type="button" id="accents-opt-on" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                <div class="accents-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem;">
+                    <button type="button" id="accents-opt-on" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.8rem; border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
                         <span data-i18n="options_accents_on">Tolérance active</span>
                     </button>
-                    <button type="button" id="accents-opt-off" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                    <button type="button" id="accents-opt-off" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.8rem; border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
                         <span data-i18n="options_accents_off">Stricte</span>
                     </button>
                 </div>
@@ -866,28 +867,28 @@
 
             <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 0;">
 
-            <!-- Section 2 : Zone de danger (Réinitialisation par langue) -->
-            <div class="options-section options-danger-zone" style="position: relative; background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.22); border-radius: 12px; padding: 1.15rem;">
-                <div style="position: absolute; top: 1.1rem; right: 1.1rem; color: #ef4444; display: flex; align-items: center; justify-content: center;" title="Attention">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Section 4 : Zone de danger (Réinitialisation par langue) -->
+            <div class="options-section options-danger-zone" style="position: relative; background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.22); border-radius: 12px; padding: 0.95rem;">
+                <div style="position: absolute; top: 0.9rem; right: 0.9rem; color: #ef4444; display: flex; align-items: center; justify-content: center;" title="Attention">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
                         <line x1="12" y1="9" x2="12" y2="13"></line>
                         <line x1="12" y1="17" x2="12.01" y2="17"></line>
                     </svg>
                 </div>
-                <h3 style="margin: 0 0 0.35rem 0; font-size: 0.92rem; font-weight: 700; color: #ef4444;" data-i18n="options_danger_title">Réinitialisation</h3>
-                <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0 0 0.85rem 0; line-height: 1.4;" data-i18n="options_danger_desc">
+                <h3 style="margin: 0 0 0.25rem 0; font-size: 0.88rem; font-weight: 700; color: #ef4444;" data-i18n="options_danger_title">Réinitialisation</h3>
+                <p style="font-size: 0.78rem; color: var(--text-secondary); margin: 0 0 0.65rem 0; line-height: 1.35;" data-i18n="options_danger_desc">
                     Effacer la progression d'une langue.
                 </p>
 
-                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <div style="display: flex; flex-direction: column; gap: 0.65rem;">
                     <div>
-                        <label for="options-reset-pair" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.3rem;" data-i18n="options_select_pair">Paire de langues :</label>
-                        <select id="options-reset-pair" style="width: 100%; box-sizing: border-box; padding: 0.65rem 0.85rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600;">
+                        <label for="options-reset-pair" style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.25rem;" data-i18n="options_select_pair">Paire de langues :</label>
+                        <select id="options-reset-pair" style="width: 100%; box-sizing: border-box; padding: 0.55rem 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600;">
                         </select>
                     </div>
 
-                    <button type="button" id="btn-reset-pair" class="btn-danger" style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: none; background: #ef4444; color: #ffffff; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
+                    <button type="button" id="btn-reset-pair" class="btn-danger" style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 8px; border: none; background: #ef4444; color: #ffffff; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
                         <span data-i18n="options_btn_reset_pair">Réinitialiser cette langue</span>
                     </button>
                 </div>
@@ -903,13 +904,13 @@
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.75; font-family: var(--font-sans); line-height: 1.6;">
         <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span></div>
-        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v100</span> &bull; <span data-i18n="footer_deployed">Déployé le 31/08/2026</span></div>
+        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v101</span> &bull; <span data-i18n="footer_deployed">Déployé le 31/08/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=100"></script>
+    <script type="module" src="js/main.js?v=101"></script>
     <script>
         if ('serviceWorker' in navigator) {
             let refreshing = false;

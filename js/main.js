@@ -20,6 +20,21 @@ export function getLangName(langCode) {
     return translations[appLang]?.[key] || translations['fr']?.[key] || langCode.toUpperCase();
 }
 
+export function formatValidatedCount(count, lang = getAppLanguage()) {
+    const isPlural = count > 1;
+    switch (lang) {
+        case 'en':
+            return `${count} validated word${isPlural ? 's' : ''}`;
+        case 'de':
+            return `${count} validierte${count === 1 ? 's' : ''} Wort${isPlural ? 'er' : ''}`;
+        case 'es':
+            return `${count} palabra${isPlural ? 's' : ''} validada${isPlural ? 's' : ''}`;
+        case 'fr':
+        default:
+            return `${count} mot${isPlural ? 's' : ''} validé${isPlural ? 's' : ''}`;
+    }
+}
+
 export function translateElement(element, lang) {
     const keys = element.querySelectorAll('[data-i18n]');
     keys.forEach(el => {
@@ -200,8 +215,9 @@ function initOptionsModal() {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            const count = Object.keys(progress[pair]).length;
-            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${count} mot${count > 1 ? 's' : ''})`;
+            const pairData = progress[pair] || {};
+            const validatedCount = Object.keys(pairData).filter(wordId => getWordStatus(src, tgt, wordId) === 'validé').length;
+            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
             pairSelect.appendChild(opt);
         });
 
@@ -647,11 +663,14 @@ function initProgressView() {
     const pairSelect = document.getElementById('prog-lang-pair');
     if (pairSelect) {
         pairSelect.innerHTML = '';
+        const lang = getAppLanguage();
         usedPairs.forEach(pair => {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
+            const pairData = progress[pair] || {};
+            const validatedCount = Object.keys(pairData).filter(wordId => getWordStatus(src, tgt, wordId) === 'validé').length;
+            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
             pairSelect.appendChild(opt);
         });
 
@@ -1049,11 +1068,14 @@ function initStatsView() {
     // Remplir le sélecteur de paire de langues
     if (pairSelect) {
         pairSelect.innerHTML = '';
+        const lang = getAppLanguage();
         usedPairs.forEach(pair => {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
+            const pairData = progress[pair] || {};
+            const validatedCount = Object.keys(pairData).filter(wordId => getWordStatus(src, tgt, wordId) === 'validé').length;
+            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
             pairSelect.appendChild(opt);
         });
 
@@ -1187,15 +1209,17 @@ function renderSelectedPairStats(pair) {
     const levels = CEFR_CONFIG.levels;
     const thresholds = CEFR_CONFIG.thresholds;
     const trackFillPct = Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(points))));
-    const startTrackFillPct = hasIncreased ? Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(startPoints)))) : trackFillPct;
-    const fillStyleWidth = startTrackFillPct > 0 ? `calc(${startTrackFillPct}% + 18px)` : '0%';
+    const targetFillStyleWidth = trackFillPct > 0 ? `calc(${trackFillPct}% + 18px)` : '0%';
+
+    const startTrackFillPct = hasIncreased ? Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(startPoints)))) : 0;
+    const startFillStyleWidth = startTrackFillPct > 0 ? `calc(${startTrackFillPct}% + 18px)` : '0%';
 
     // Calcul du pourcentage du palier en cours
     const prevTierPoints = startPoints - progDetails.prevThreshold;
     const tierRange = Math.max(1, progDetails.nextThreshold - progDetails.prevThreshold);
     const startTierPct = hasIncreased
         ? (progDetails.isMax ? 100 : Math.min(100, Math.max(0, Math.round((prevTierPoints / tierRange) * 100))))
-        : progDetails.pctInTier;
+        : 0;
 
     // Texte d'objectif prochain palier
     let nextMilestoneHtml = '';
@@ -1253,7 +1277,7 @@ function renderSelectedPairStats(pair) {
                     </div>
                 </div>
                 <div class="stat-progress-container" style="margin-top: 0.1rem; height: 6px;">
-                    <div class="stat-progress-bar" style="width: ${pctLvl}%; background: ${color.solid};"></div>
+                    <div class="stat-progress-bar" data-target-width="${pctLvl}%" style="width: 0%; background: ${color.solid};"></div>
                 </div>
                 <div style="font-size: 0.75rem; color: var(--text-secondary); display: flex; justify-content: space-between;">
                     <span>${valLvl} mots &times; ${mult} pts/mot</span>
@@ -1285,7 +1309,7 @@ function renderSelectedPairStats(pair) {
                 <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
                     <div style="display: inline-flex; align-items: baseline; justify-content: flex-end; gap: 0.35rem; position: relative;">
                         <div id="cefr-total-points" style="font-size: 1.85rem; font-weight: 800; font-family: var(--font-heading); color: var(--primary-color); line-height: 1.1;">
-                            ${startPoints}
+                            ${hasIncreased ? startPoints : 0}
                         </div>
                         <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">${translations[lang].stat_points_unit || 'pts'}</span>
                         ${hasIncreased ? `
@@ -1303,7 +1327,7 @@ function renderSelectedPairStats(pair) {
             <!-- Stepper Paliers A1 à C2 -->
             <div class="cefr-stepper-container">
                 <div class="cefr-stepper-track-bg">
-                    <div class="cefr-stepper-track-fill" style="width: ${fillStyleWidth};"></div>
+                    <div class="cefr-stepper-track-fill" style="width: ${startFillStyleWidth};"></div>
                 </div>
                 <div class="cefr-stepper-steps">
                     ${stepsHtml}
@@ -1319,7 +1343,7 @@ function renderSelectedPairStats(pair) {
                     </div>
                 </div>
                 <div style="width: 100%; height: 9px; background: rgba(100, 116, 139, 0.18); border-radius: 999px; overflow: hidden;">
-                    <div class="tier-progress-fill" style="width: ${startTierPct}%; height: 100%; background: linear-gradient(90deg, #3b82f6, #10b981); border-radius: 999px; transition: width 1.8s cubic-bezier(0.25, 1, 0.5, 1);"></div>
+                    <div class="tier-progress-fill" style="width: ${startTierPct}%; height: 100%; background: linear-gradient(90deg, #3b82f6, #10b981); border-radius: 999px;"></div>
                 </div>
             </div>
 
@@ -1351,51 +1375,61 @@ function renderSelectedPairStats(pair) {
         </div>
     `;
 
-    // Déclencher les animations UNIQUEMENT si le score a augmenté
-    if (hasIncreased) {
-        const pointsDiff = Math.abs(points - startPoints);
-        // Rythme plus lent et posé (1.8s à 3.0s) pour bien apprécier chaque incrémentation
-        const animDuration = Math.max(1800, Math.min(3000, 1600 + pointsDiff * 150));
+    // Déclencher les animations des jauges et compteurs
+    const animStartVal = hasIncreased ? startPoints : 0;
+    const animEndVal = points;
+    const pointsDiff = Math.abs(animEndVal - animStartVal);
+    const animDuration = hasIncreased
+        ? Math.max(1800, Math.min(3000, 1600 + pointsDiff * 150))
+        : 1400;
 
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-                const fillElem = container.querySelector('.cefr-stepper-track-fill');
-                if (fillElem) {
-                    fillElem.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
-                    fillElem.style.width = `${trackFillPct}%`;
-                }
-                const tierFill = container.querySelector('.tier-progress-fill');
-                if (tierFill) {
-                    tierFill.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
-                    tierFill.style.width = `${progDetails.pctInTier}%`;
-                }
-            }, 80);
-        });
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            const fillElem = container.querySelector('.cefr-stepper-track-fill');
+            if (fillElem) {
+                fillElem.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
+                fillElem.style.width = targetFillStyleWidth;
+            }
+            const tierFill = container.querySelector('.tier-progress-fill');
+            if (tierFill) {
+                tierFill.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
+                tierFill.style.width = `${progDetails.pctInTier}%`;
+            }
+            const levelBars = container.querySelectorAll('.stat-progress-bar[data-target-width]');
+            levelBars.forEach(bar => {
+                bar.style.transition = `width ${animDuration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
+                bar.style.width = bar.getAttribute('data-target-width');
+            });
+        }, 60);
+    });
 
-        const pointsElem = container.querySelector('#cefr-total-points');
-        const neededElem = container.querySelector('#cefr-points-needed');
-        if (pointsElem) {
-            animatePointsCounter(pointsElem, startPoints, points, animDuration, (currentVal) => {
+    const pointsElem = container.querySelector('#cefr-total-points');
+    const neededElem = container.querySelector('#cefr-points-needed');
+    if (pointsElem) {
+        if (animEndVal > 0) {
+            animatePointsCounter(pointsElem, animStartVal, animEndVal, animDuration, (currentVal) => {
                 if (neededElem && !progDetails.isMax) {
                     neededElem.textContent = Math.max(0, progDetails.nextThreshold - currentVal);
                 }
             }, () => {
-                // Mémoriser le nouveau score de référence une fois l'animation terminée
                 localStorage.setItem(storageKey, points.toString());
 
-                const prevLvl = getCefrLevelFromPoints(startPoints);
-                const newLvl = getCefrLevelFromPoints(points);
-                if (prevLvl !== newLvl && typeof confetti === 'function') {
-                    confetti({
-                        particleCount: 50,
-                        spread: 70,
-                        origin: { y: 0.35 }
-                    });
+                if (hasIncreased) {
+                    const prevLvl = getCefrLevelFromPoints(startPoints);
+                    const newLvl = getCefrLevelFromPoints(points);
+                    if (prevLvl !== newLvl && typeof confetti === 'function') {
+                        confetti({
+                            particleCount: 50,
+                            spread: 70,
+                            origin: { y: 0.35 }
+                        });
+                    }
                 }
             });
+        } else {
+            pointsElem.textContent = '0';
+            localStorage.setItem(storageKey, '0');
         }
-    } else {
-        localStorage.setItem(storageKey, points.toString());
     }
 }
 

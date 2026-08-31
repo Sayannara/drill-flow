@@ -238,6 +238,18 @@ function highlightExampleSentence(sentence, targetWord, styleOrClass) {
 }
 
 
+// Variable configurable de la taille maximale du pool actif (100 par défaut, gérée par admin)
+export function getActivePoolMaxSize() {
+    const custom = localStorage.getItem('drillflow_active_pool_size');
+    return custom ? parseInt(custom, 10) : 100;
+}
+
+export function setActivePoolMaxSize(size) {
+    if (typeof size === 'number' && size > 0) {
+        localStorage.setItem('drillflow_active_pool_size', size.toString());
+    }
+}
+
 export function initDrillSession(source, target, volume, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], mode = 'smart') {
     sessionState.langSource = source;
     sessionState.langTarget = target;
@@ -256,10 +268,8 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     let selectedWords = [];
 
     if (mode === 'smart') {
-        // Smart Drill: 100% de mots NON validés
-        // 40% de mots déjà tentés (attempts > 0), triés par date de tentative la plus ancienne
-        // 60% de mots nouveaux (attempts === 0)
-        // Fallbacks automatiques : si manque de tentés -> compléter par des nouveaux, si manque de nouveaux -> compléter par des tentés
+        // Smart Drill: Gestion du pool actif (cible : 100 mots par défaut, paramétrable admin)
+        // Les mots du pool actif sont les mots tentés et non validés (attempts > 0, status !== 'validé', status !== 'ignoré')
         const attemptedWords = [];
         const brandNewWords = [];
 
@@ -272,7 +282,7 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
             }
         });
 
-        // Trier les mots déjà tentés du plus ancien au plus récent
+        // Trier le pool actif du plus ancien au plus récent (rotation intelligente)
         attemptedWords.sort((a, b) => {
             const statsA = getWordStats(source, target, a.id);
             const statsB = getWordStats(source, target, b.id);
@@ -281,25 +291,40 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
             return dateA - dateB;
         });
 
-        const targetAttempted = Math.round(volume * 0.4);
-        const targetNew = volume - targetAttempted;
+        const maxPoolSize = getActivePoolMaxSize();
+        // Places disponibles dans le pool pour de nouveaux mots
+        const availableSlotsInPool = Math.max(0, maxPoolSize - attemptedWords.length);
 
-        let selectedAttempted = attemptedWords.slice(0, targetAttempted);
-        const shuffledNew = shuffle([...brandNewWords]);
-        let selectedNew = shuffledNew.slice(0, targetNew);
+        // Nombre de nouveaux mots pouvant être injectés dans cette session :
+        // Ne peut jamais dépasser les places disponibles dans le pool
+        let allowedNew = Math.min(volume, availableSlotsInPool);
 
-        // Fallback 1 : Si pas assez de mots tentés -> compléter avec des mots nouveaux
-        if (selectedAttempted.length < targetAttempted) {
-            const neededNew = targetAttempted - selectedAttempted.length;
-            const extraNew = shuffledNew.slice(targetNew, targetNew + neededNew);
-            selectedNew = [...selectedNew, ...extraNew];
+        // Nombre de mots du pool actif à prendre dans la session
+        let neededAttempted = volume - allowedNew;
+
+        // Si le pool actif ne contient pas assez de mots (ex: démarrage de l'appli ou pool presque vide)
+        if (attemptedWords.length < neededAttempted) {
+            neededAttempted = attemptedWords.length;
+            allowedNew = Math.min(volume - neededAttempted, availableSlotsInPool);
+            if (attemptedWords.length === 0) {
+                allowedNew = Math.min(volume, maxPoolSize);
+            }
         }
 
-        // Fallback 2 : Si pas assez de mots nouveaux (ou plus de nouveaux mots) -> compléter avec des mots tentés non validés restants
-        if (selectedNew.length < targetNew) {
-            const neededAttempted = targetNew - selectedNew.length;
-            const extraAttempted = attemptedWords.slice(targetAttempted, targetAttempted + neededAttempted);
+        let selectedAttempted = attemptedWords.slice(0, neededAttempted);
+        const shuffledNew = shuffle([...brandNewWords]);
+        let selectedNew = shuffledNew.slice(0, allowedNew);
+
+        // Fallbacks de sécurité si la session n'est pas encore complète
+        if (selectedAttempted.length + selectedNew.length < volume) {
+            const remaining = volume - (selectedAttempted.length + selectedNew.length);
+            const extraAttempted = attemptedWords.slice(selectedAttempted.length, selectedAttempted.length + remaining);
             selectedAttempted = [...selectedAttempted, ...extraAttempted];
+        }
+        if (selectedAttempted.length + selectedNew.length < volume && availableSlotsInPool > 0) {
+            const remaining = volume - (selectedAttempted.length + selectedNew.length);
+            const extraNew = shuffledNew.slice(selectedNew.length, selectedNew.length + Math.min(remaining, availableSlotsInPool));
+            selectedNew = [...selectedNew, ...extraNew];
         }
 
         selectedWords = shuffle([...selectedAttempted, ...selectedNew]);

@@ -2039,4 +2039,29 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     animation: fadeIn 0.25s ease-out;
 }
 
+/* Options Modal Scrolling & Laptop Screen Optimization */
+.options-modal-card {
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+}
 
+.options-modal-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.options-modal-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.options-modal-card::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 4px;
+}
+
+@media (max-height: 720px) {
+    .options-modal-card {
+        padding: 1rem 1.25rem !important;
+        gap: 0.75rem !important;
+    }
+}
