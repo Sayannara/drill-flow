@@ -905,9 +905,20 @@
     <script type="module" src="js/main.js?v=99"></script>
     <script>
         if ('serviceWorker' in navigator) {
+            let refreshing = false;
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (!refreshing) {
+                    refreshing = true;
+                    window.location.reload();
+                }
+            });
+
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/service-worker.js')
-                    .then(registration => console.log('ServiceWorker registration successful with scope: ', registration.scope))
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        registration.update();
+                    })
                     .catch(err => console.log('ServiceWorker registration failed: ', err));
             });
         }
