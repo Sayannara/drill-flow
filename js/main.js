@@ -1,9 +1,10 @@
 import { vocabulary } from './data/vocabulary.js';
 import { initDrillSession, handleDrillKeydown } from './drill.js';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress } from './storage.js';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
+import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -33,6 +34,37 @@ export function formatValidatedCount(count, lang = getAppLanguage()) {
         default:
             return `${count} mot${isPlural ? 's' : ''} validé${isPlural ? 's' : ''}`;
     }
+}
+
+export function formatFilteredCount(count, lang = getAppLanguage()) {
+    const isPlural = count > 1;
+    const formattedNum = count.toLocaleString(lang === 'fr' ? 'fr-FR' : (lang === 'de' ? 'de-DE' : (lang === 'es' ? 'es-ES' : 'en-US')));
+    let suffix = 'mots';
+    switch (lang) {
+        case 'en':
+            suffix = `word${isPlural ? 's' : ''}`;
+            break;
+        case 'de':
+            suffix = isPlural ? 'Wörter' : 'Wort';
+            break;
+        case 'es':
+            suffix = `palabra${isPlural ? 's' : ''}`;
+            break;
+        case 'fr':
+        default:
+            suffix = `mot${isPlural ? 's' : ''}`;
+            break;
+    }
+    return `<strong style="color: var(--text-primary); font-weight: 700;">${formattedNum}</strong> ${suffix}`;
+}
+
+export function getPossibleVolumes() {
+    const raw = localStorage.getItem('drillflow_possible_volumes');
+    if (!raw) return [5, 10, 15, 20];
+    const parsed = raw.split(',')
+        .map(v => parseInt(v.trim(), 10))
+        .filter(n => !isNaN(n) && n > 0);
+    return parsed.length > 0 ? Array.from(new Set(parsed)).sort((a, b) => a - b) : [5, 10, 15, 20];
 }
 
 export function getValidatedCount(src, tgt) {
@@ -448,16 +480,48 @@ function attachViewEvents(viewId) {
         if (cbC2) cbC2.checked = savedLevels.includes('C2');
         
         if (inputVol && volDisp) {
-            inputVol.value = lastVol;
+            const possibleVolumes = getPossibleVolumes();
+            const minVol = possibleVolumes[0];
+            const maxVol = possibleVolumes[possibleVolumes.length - 1];
+            
+            let isUniformStep = true;
+            const firstDiff = possibleVolumes.length > 1 ? possibleVolumes[1] - possibleVolumes[0] : 1;
+            for (let i = 1; i < possibleVolumes.length; i++) {
+                if (possibleVolumes[i] - possibleVolumes[i - 1] !== firstDiff) {
+                    isUniformStep = false;
+                    break;
+                }
+            }
+
+            inputVol.min = minVol;
+            inputVol.max = maxVol;
+            inputVol.step = isUniformStep ? firstDiff : 1;
+
+            let targetVol = parseInt(lastVol, 10);
+            if (isNaN(targetVol) || !possibleVolumes.includes(targetVol)) {
+                targetVol = possibleVolumes.includes(20) ? 20 : maxVol;
+            }
+            inputVol.value = targetVol;
+            inputVol.dataset.val = targetVol;
+
             const updateVolText = (v) => {
                 const lang = getAppLanguage();
                 const suffix = lang === 'fr' ? 'mots' : (lang === 'es' ? 'palabras' : (lang === 'de' ? 'Wörter' : 'words'));
                 volDisp.textContent = `${v} ${suffix}`;
             };
-            updateVolText(lastVol);
+            updateVolText(targetVol);
             
             inputVol.addEventListener('input', (e) => {
-                updateVolText(e.target.value);
+                let chosen = parseInt(e.target.value, 10);
+                if (!isUniformStep) {
+                    chosen = possibleVolumes.reduce((prev, curr) => 
+                        Math.abs(curr - chosen) < Math.abs(prev - chosen) ? curr : prev
+                    );
+                    inputVol.value = chosen;
+                }
+                inputVol.dataset.val = chosen;
+                updateVolText(chosen);
+                localStorage.setItem('voc_last_vol', chosen.toString());
             });
         }
 
@@ -549,7 +613,7 @@ function attachViewEvents(viewId) {
             newBtn.addEventListener('click', () => {
                 const src = document.getElementById('select-lang-source').value;
                 const tgt = document.getElementById('select-lang-target').value;
-                const vol = parseInt(document.getElementById('input-volume').value, 10);
+                const vol = parseInt(document.getElementById('input-volume').dataset.val || document.getElementById('input-volume').value, 10);
                 const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
                 const mode = modeChecked ? modeChecked.value : 'smart';
                 
@@ -908,6 +972,13 @@ function renderProgressTable() {
             }
         }
     });
+
+    // Mise à jour du compteur de mots selon filtres
+    const countEl = document.getElementById('prog-filtered-count');
+    if (countEl) {
+        const lang = getAppLanguage();
+        countEl.innerHTML = formatFilteredCount(filtered.length, lang);
+    }
 
     if (filtered.length === 0) {
         const lang = getAppLanguage();
@@ -1586,8 +1657,9 @@ window.addEventListener('DOMContentLoaded', () => {
                     const inputVol = document.getElementById('input-volume');
                     const volDisp = document.getElementById('volume-display');
                     if (inputVol && volDisp) {
+                        const currentVal = inputVol.dataset.val || inputVol.value;
                         const suffix = newLang === 'fr' ? 'mots' : (newLang === 'es' ? 'palabras' : (newLang === 'de' ? 'Wörter' : 'words'));
-                        volDisp.textContent = `${inputVol.value} ${suffix}`;
+                        volDisp.textContent = `${currentVal} ${suffix}`;
                     }
                     const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
                     const modeDescEl = document.getElementById('mode-description');
@@ -1787,21 +1859,103 @@ function initCertsView() {
     gatedState.style.display = 'none';
     profileCard.style.display = 'flex';
     
-    const inputFirstname = document.getElementById('cert-firstname');
-    const inputLastname = document.getElementById('cert-lastname');
-    
-    if (inputFirstname && inputLastname) {
-        inputFirstname.value = localStorage.getItem('cert_firstname') || '';
-        inputLastname.value = localStorage.getItem('cert_lastname') || '';
-        
-        const saveName = () => {
-            localStorage.setItem('cert_firstname', inputFirstname.value.trim());
-            localStorage.setItem('cert_lastname', inputLastname.value.trim());
-        };
-        
-        inputFirstname.oninput = saveName;
-        inputLastname.oninput = saveName;
+    function initCertNameControl() {
+        const inputFirstname = document.getElementById('cert-firstname');
+        const inputLastname = document.getElementById('cert-lastname');
+        const btnSave = document.getElementById('btn-cert-name-save');
+        const lockInfoEl = document.getElementById('cert-name-lock-info');
+
+        if (!inputFirstname || !inputLastname) return;
+
+        const savedFirst = localStorage.getItem('cert_firstname') || '';
+        const savedLast = localStorage.getItem('cert_lastname') || '';
+        const updatedAt = localStorage.getItem('cert_name_updated_at');
+        const lang = getAppLanguage();
+
+        inputFirstname.value = savedFirst;
+        inputLastname.value = savedLast;
+
+        const lockDays = getCertNameLockDays();
+        const LOCK_MS = lockDays * 24 * 60 * 60 * 1000;
+        const now = Date.now();
+        let isLocked = false;
+        let daysRemaining = 0;
+        let nextAvailableDate = null;
+
+        if (updatedAt && savedFirst && savedLast) {
+            const timeDiff = now - parseInt(updatedAt, 10);
+            if (timeDiff < LOCK_MS) {
+                isLocked = true;
+                daysRemaining = Math.max(1, Math.ceil((LOCK_MS - timeDiff) / (24 * 60 * 60 * 1000)));
+                nextAvailableDate = new Date(parseInt(updatedAt, 10) + LOCK_MS);
+            }
+        }
+
+        if (isLocked) {
+            inputFirstname.disabled = true;
+            inputLastname.disabled = true;
+            inputFirstname.style.opacity = '0.7';
+            inputLastname.style.cursor = 'not-allowed';
+            inputLastname.style.opacity = '0.7';
+            inputLastname.style.cursor = 'not-allowed';
+
+            if (btnSave) {
+                btnSave.disabled = true;
+                btnSave.style.display = 'none';
+            }
+            const btnContainer = document.getElementById('cert-name-btn-container');
+            if (btnContainer) btnContainer.style.display = 'none';
+
+            if (lockInfoEl) {
+                const dateStr = nextAvailableDate.toLocaleDateString(lang === 'fr' ? 'fr-FR' : (lang === 'de' ? 'de-DE' : (lang === 'es' ? 'es-ES' : 'en-US')));
+                const lockMsg = (translations[lang]?.cert_name_locked || "🔒 Verrouillé jusqu'au {date} ({days}j restants)")
+                    .replace('{date}', dateStr)
+                    .replace('{days}', daysRemaining);
+                lockInfoEl.innerHTML = `<span style="color: #f59e0b; font-weight: 500;">${lockMsg}</span>`;
+            }
+        } else {
+            inputFirstname.disabled = false;
+            inputLastname.disabled = false;
+            inputFirstname.style.opacity = '1';
+            inputFirstname.style.cursor = 'text';
+            inputLastname.style.opacity = '1';
+            inputLastname.style.cursor = 'text';
+
+            if (btnSave) {
+                btnSave.disabled = false;
+                btnSave.style.display = 'inline-flex';
+            }
+            const btnContainer = document.getElementById('cert-name-btn-container');
+            if (btnContainer) btnContainer.style.display = 'flex';
+
+            if (lockInfoEl) {
+                const infoMsg = (translations[lang]?.cert_name_info || "ℹ️ Le prénom et le nom ne sont modifiables qu'une fois tous les {days} jours.")
+                    .replace('{days}', lockDays);
+                lockInfoEl.innerHTML = `<span style="color: var(--text-secondary);">${infoMsg}</span>`;
+            }
+
+            if (btnSave) {
+                btnSave.onclick = async () => {
+                    const f = inputFirstname.value.trim();
+                    const l = inputLastname.value.trim();
+                    if (!f || !l) {
+                        alert(translations[lang]?.alert_fill_name || "Veuillez renseigner votre prénom et votre nom pour générer l'attestation.");
+                        return;
+                    }
+
+                    const confirmTemplate = translations[lang]?.cert_name_confirm || "Attention : vos prénom et nom seront verrouillés pendant {days} jours pour vos attestations. Confirmez-vous : {name} ?";
+                    const confirmMsg = confirmTemplate.replace('{days}', lockDays).replace('{name}', `${f} ${l}`);
+                    if (!confirm(confirmMsg)) return;
+
+                    const updateTime = Date.now();
+                    await saveUserProfile(f, l, updateTime);
+                    initCertNameControl();
+                };
+            }
+        }
     }
+
+    initCertNameControl();
 
     const progress = loadProgress();
     const usedPairs = Object.keys(progress).filter(key => {

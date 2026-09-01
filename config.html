@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+    <title>drillFlow — Configuration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=105">
+    <style>
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            padding: 2rem 2.5rem;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .config-container {
+            width: 100%;
+            max-width: 860px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.25rem;
+            width: 100%;
+        }
+        .admin-title {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .admin-badge {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.65rem;
+            border-radius: 6px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .config-card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            padding: 1.75rem 2rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .config-card-header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+        .config-card-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            margin: 0;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .config-card-desc {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin: 0.35rem 0 0 0;
+            line-height: 1.4;
+        }
+        .config-form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .config-label {
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--text-primary);
+        }
+        .config-hint {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+        .config-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+        }
+        .switch-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        .switch-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.6rem 0.8rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            background: var(--bg-color);
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+        .switch-btn.active {
+            border-color: var(--primary-color);
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--text-primary);
+        }
+        .config-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .config-toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            opacity: 0;
+            background: #10b981;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0.85rem 1.75rem;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            z-index: 9999;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            pointer-events: none;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 1.25rem 1rem;
+            }
+            .config-card {
+                padding: 1.25rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="config-container">
+        <div class="admin-header">
+            <div>
+                <h1 class="admin-title">
+                    drillFlow. <span class="admin-badge">CONFIGURATION</span>
+                </h1>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem;">Panneau d'administration des paramètres, de l'algorithme et de l'affichage</p>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+                <a href="/index.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; width: auto;">Accéder au site</a>
+            </div>
+        </div>
+
+        <!-- 1. Algorithme Smart Drill -->
+        <div class="config-card">
+            <div class="config-card-header">
+                <h2 class="config-card-title">🧠 Algorithme & Smart Drill</h2>
+                <p class="config-card-desc">Contrôlez le comportement du moteur de sélection et de répétition espacée.</p>
+            </div>
+
+            <!-- Taille maximale du pool actif (Champ numérique custom) -->
+            <div class="config-form-group">
+                <label for="cfg-pool-size" class="config-label">Taille maximale du pool actif (mots)</label>
+                <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                    <input type="number" id="cfg-pool-size" min="10" max="1000" step="5" style="width: 140px; padding: 0.65rem 0.85rem; font-weight: 600; font-size: 1.05rem;">
+                    <span class="config-hint" style="flex: 1; min-width: 240px;">
+                        Nombre maximal de mots non encore validés conservés en rotation active. Dès que le pool atteint ce seuil, aucun nouveau mot n'est injecté afin d'éviter la surcharge mentale. (Valeur standard recommandée : <strong>100</strong>).
+                    </span>
+                </div>
+            </div>
+
+            <!-- Paliers de mots possibles par session (Curseur d'accueil) -->
+            <div class="config-form-group" style="margin-top: 0.5rem;">
+                <label for="cfg-possible-volumes" class="config-label">Nombre de mots possibles durant un drill (curseur d'accueil)</label>
+                <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                    <input type="text" id="cfg-possible-volumes" value="5, 10, 15, 20" placeholder="ex: 5, 10, 15, 20" style="width: 240px; padding: 0.65rem 0.85rem; font-weight: 600; font-size: 1.05rem;">
+                    <span class="config-hint" style="flex: 1; min-width: 240px;">
+                        Paliers proposés sur le curseur de la page d'accueil, séparés par des virgules (actuellement par défaut : <strong>5, 10, 15, 20</strong>). Exemples personnalisables : <em>5, 10, 15, 20, 25, 30</em> ou <em>10, 20, 30, 50</em>.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Réinsertion après erreur -->
+            <div class="config-form-group" style="margin-top: 0.5rem;">
+                <label class="config-label">Intervalle de réinsertion aléatoire après erreur (cartes)</label>
+                <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+                    <span style="font-size: 0.85rem; color: var(--text-secondary);">Entre</span>
+                    <input type="number" id="cfg-reinsert-min" min="1" max="20" style="width: 80px; padding: 0.5rem 0.65rem; font-weight: 600; text-align: center;">
+                    <span style="font-size: 0.85rem; color: var(--text-secondary);">et</span>
+                    <input type="number" id="cfg-reinsert-max" min="2" max="30" style="width: 80px; padding: 0.5rem 0.65rem; font-weight: 600; text-align: center;">
+                    <span style="font-size: 0.85rem; color: var(--text-secondary);">cartes plus tard</span>
+                </div>
+                <span class="config-hint">Écart aléatoire auquel un mot échoué ou gardé réapparaît pour consolider la mémorisation réflexe sans blocage immédiat. (Défaut : 6 à 9).</span>
+            </div>
+
+            <!-- Mode & Volume par défaut -->
+            <div class="config-grid" style="margin-top: 0.5rem;">
+                <div class="config-form-group">
+                    <label for="cfg-default-mode" class="config-label">Mode d'entraînement par défaut</label>
+                    <select id="cfg-default-mode" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                        <option value="smart">Smart Drill (Optimisé avec réserve active)</option>
+                        <option value="review">Révision (100% mots déjà validés)</option>
+                    </select>
+                </div>
+
+                <div class="config-form-group">
+                    <label for="cfg-default-volume" class="config-label">Volume de session par défaut (mots)</label>
+                    <input type="number" id="cfg-default-volume" min="1" max="100" step="5" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                </div>
+            </div>
+
+            <!-- Langues par défaut -->
+            <div class="config-grid">
+                <div class="config-form-group">
+                    <label for="cfg-default-src" class="config-label">Langue source par défaut</label>
+                    <select id="cfg-default-src" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                        <option value="fr">Français</option>
+                        <option value="en">Anglais</option>
+                        <option value="de">Allemand</option>
+                        <option value="es">Espagnol</option>
+                    </select>
+                </div>
+
+                <div class="config-form-group">
+                    <label for="cfg-default-tgt" class="config-label">Langue cible par défaut</label>
+                    <select id="cfg-default-tgt" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                        <option value="fr">Français</option>
+                        <option value="en">Anglais</option>
+                        <option value="de">Allemand</option>
+                        <option value="es">Espagnol</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Ergonomie, Saisie & Audio -->
+        <div class="config-card">
+            <div class="config-card-header">
+                <h2 class="config-card-title">🔊 Saisie, Prononciation & Profil</h2>
+                <p class="config-card-desc">Préférences de confort de frappe, audio et délai de verrouillage du nom.</p>
+            </div>
+
+            <div class="config-grid">
+                <div class="config-form-group">
+                    <label class="config-label">Prononciation automatique (Audio)</label>
+                    <div class="switch-group">
+                        <button type="button" id="cfg-audio-off" class="switch-btn">Désactivée</button>
+                        <button type="button" id="cfg-audio-on" class="switch-btn">Activée</button>
+                    </div>
+                    <span class="config-hint">Écouter automatiquement la voix lors de la validation d'un mot attendu.</span>
+                </div>
+
+                <div class="config-form-group">
+                    <label class="config-label">Tolérance accents & diacritiques</label>
+                    <div class="switch-group">
+                        <button type="button" id="cfg-accents-on" class="switch-btn">Tolérance active</button>
+                        <button type="button" id="cfg-accents-off" class="switch-btn">Stricte</button>
+                    </div>
+                    <span class="config-hint">Tolère les fautes d'accents ('e' au lieu de 'é', 'ss' pour 'ß', 'n' pour 'ñ').</span>
+                </div>
+            </div>
+
+            <!-- Délai de verrouillage du nom/prénom pour attestations -->
+            <div class="config-form-group" style="margin-top: 0.5rem;">
+                <label for="cfg-cert-lock-days" class="config-label">Délai de verrouillage nom & prénom (attestations)</label>
+                <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                    <input type="number" id="cfg-cert-lock-days" min="1" max="365" value="30" style="width: 110px; padding: 0.65rem 0.85rem; font-weight: 600; font-size: 1.05rem;">
+                    <span class="config-hint" style="flex: 1; min-width: 240px;">
+                        Durée pendant laquelle le nom et le prénom de l'apprenant sont verrouillés après enregistrement (variable : <code>CERT_NAME_LOCK_DAYS = 30</code> jours).
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Apparence & Langue -->
+        <div class="config-card">
+            <div class="config-card-header">
+                <h2 class="config-card-title">🎨 Interface & Langue</h2>
+                <p class="config-card-desc">Personnalisez le rendu visuel et la langue globale de l'interface.</p>
+            </div>
+
+            <div class="config-grid">
+                <div class="config-form-group">
+                    <label class="config-label">Thème d'affichage</label>
+                    <div class="switch-group">
+                        <button type="button" id="cfg-theme-dark" class="switch-btn">Sombre</button>
+                        <button type="button" id="cfg-theme-light" class="switch-btn">Clair</button>
+                    </div>
+                </div>
+
+                <div class="config-form-group">
+                    <label for="cfg-app-lang" class="config-label">Langue de l'interface</label>
+                    <select id="cfg-app-lang" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Barre d'actions -->
+        <div class="config-actions">
+            <button type="button" id="btn-reset-config" class="btn-primary btn-secondary-action" style="width: auto; padding: 0.75rem 1.5rem; font-size: 0.95rem;">↺ Valeurs par défaut</button>
+            <button type="button" id="btn-save-config" class="btn-primary" style="width: auto; padding: 0.75rem 2rem; font-size: 0.95rem;">💾 Enregistrer les modifications</button>
+        </div>
+    </div>
+
+    <!-- Toast de confirmation -->
+    <div id="config-toast" class="config-toast hidden"></div>
+
+    <script type="module" src="/js/config.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/service-worker.js");
+            });
+        }
+    </script>
+</body>
+</html>

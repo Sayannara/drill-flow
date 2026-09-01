@@ -1331,9 +1331,9 @@ function proceedNextWord(action) {
         // pour qu'il réapparaisse après d'autres mots et éviter l'effet de boucle bloquée.
         if (sessionState.words.length > 1) {
             const [wordToMove] = sessionState.words.splice(sessionState.currentIndex, 1);
-            const minDistance = 6;
-            const maxDistance = 9;
-            const offset = Math.floor(Math.random() * (maxDistance - minDistance + 1)) + minDistance;
+            const minDistance = parseInt(localStorage.getItem('drillflow_reinsert_min') || '6', 10);
+            const maxDistance = parseInt(localStorage.getItem('drillflow_reinsert_max') || '9', 10);
+            const offset = Math.floor(Math.random() * (Math.max(minDistance, maxDistance) - minDistance + 1)) + minDistance;
             const insertIndex = Math.min(sessionState.currentIndex + offset, sessionState.words.length);
             sessionState.words.splice(insertIndex, 0, wordToMove);
             

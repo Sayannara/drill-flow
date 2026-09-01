@@ -79,7 +79,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=103">
+    <link rel="stylesheet" href="css/style.css?v=105">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -306,19 +306,21 @@
                         <div id="result-spelling-hint" class="spelling-hint-banner" style="display: none;"></div>
                         
                         <div class="result-comparison" style="position: relative;">
-                            <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur" style="position: absolute; top: 0.85rem; right: 0.85rem; z-index: 5;">
+                            <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur" style="position: absolute; top: 1rem; right: 1rem; z-index: 5;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
                                     <line x1="4" y1="22" x2="4" y2="15"></line>
                                 </svg>
                                 <span class="report-btn-text">Signaler</span>
                             </button>
-                            <div class="comparison-line" style="flex-wrap: nowrap;">
+                            <div class="comparison-line">
                                 <span class="comparison-label" data-i18n="label_word">Mot:</span>
-                                <div style="display: inline-flex; align-items: center; gap: 0.45rem; flex-wrap: wrap;">
+                                <div style="display: inline-flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; flex: 1; min-width: 0;">
                                     <span id="result-asked" class="comparison-text" style="color: var(--text-primary); font-weight: 500;">...</span>
-                                    <span id="result-asked-type-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem; flex-shrink: 0; white-space: nowrap;">nom</span>
-                                    <span id="result-asked-level-badge" class="type-badge hidden" style="font-size: 0.6rem; padding: 0.15rem 0.45rem; flex-shrink: 0; white-space: nowrap;">A1</span>
+                                    <div class="drill-word-badges" style="display: inline-flex; align-items: center; gap: 0.35rem; flex-shrink: 0; white-space: nowrap;">
+                                        <span id="result-asked-type-badge" class="type-badge hidden" style="font-size: 0.65rem; padding: 0.15rem 0.5rem; flex-shrink: 0; white-space: nowrap;">nom</span>
+                                        <span id="result-asked-level-badge" class="type-badge hidden" style="font-size: 0.65rem; padding: 0.15rem 0.5rem; flex-shrink: 0; white-space: nowrap;">A1</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="comparison-line" id="result-user-container" style="display: none;">
@@ -517,6 +519,9 @@
                                 </label>
                             </div>
                         </div>
+
+                        <!-- Compteur de mots selon filtres -->
+                        <div id="prog-filtered-count" class="filter-results-count"></div>
                     </div>
 
                 <div class="table-container">
@@ -596,15 +601,21 @@
                 <button class="btn-primary btn-open-auth-modal" style="margin-top: 1rem; max-width: 250px;">S'inscrire / Se connecter</button>
             </div>
             
-            <div class="card cert-profile-card" style="margin: 0 auto 1.5rem auto; max-width: 720px; width: 100%; box-sizing: border-box; display: flex; gap: 1.25rem; align-items: center; justify-content: center; flex-wrap: wrap; padding: 0.85rem 1.25rem; border-radius: 12px;">
-                <div class="form-group" style="margin-bottom: 0; flex: 1 1 200px; max-width: 320px; text-align: left; display: flex; flex-direction: column; gap: 0.25rem;">
-                    <label data-i18n="label_firstname" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Prénom</label>
-                    <input type="text" id="cert-firstname" data-i18n-placeholder="placeholder_firstname" placeholder="Ex: Jean" style="padding: 0.42rem 0.65rem; border-radius: 8px; font-size: 0.85rem; height: 34px; box-sizing: border-box; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: border-color 0.2s;">
+            <div class="card cert-profile-card" style="margin: 0 auto 1.5rem auto; max-width: 720px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 1.25rem 1.5rem; border-radius: 12px; text-align: center;">
+                <div style="display: flex; gap: 1.25rem; width: 100%; justify-content: space-between; flex-wrap: wrap;">
+                    <div class="form-group" style="margin-bottom: 0; flex: 1 1 240px; text-align: left; display: flex; flex-direction: column; gap: 0.35rem;">
+                        <label data-i18n="label_firstname" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Prénom</label>
+                        <input type="text" id="cert-firstname" data-i18n-placeholder="placeholder_firstname" placeholder="Ex: Jean" style="padding: 0.5rem 0.85rem; border-radius: 8px; font-size: 0.9rem; height: 40px; box-sizing: border-box; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: all 0.2s; width: 100%;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0; flex: 1 1 240px; text-align: left; display: flex; flex-direction: column; gap: 0.35rem;">
+                        <label data-i18n="label_lastname" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Nom</label>
+                        <input type="text" id="cert-lastname" data-i18n-placeholder="placeholder_lastname" placeholder="Ex: Dupont" style="padding: 0.5rem 0.85rem; border-radius: 8px; font-size: 0.9rem; height: 40px; box-sizing: border-box; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: all 0.2s; width: 100%;">
+                    </div>
                 </div>
-                <div class="form-group" style="margin-bottom: 0; flex: 1 1 200px; max-width: 320px; text-align: left; display: flex; flex-direction: column; gap: 0.25rem;">
-                    <label data-i18n="label_lastname" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Nom</label>
-                    <input type="text" id="cert-lastname" data-i18n-placeholder="placeholder_lastname" placeholder="Ex: Dupont" style="padding: 0.42rem 0.65rem; border-radius: 8px; font-size: 0.85rem; height: 34px; box-sizing: border-box; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-sans); outline: none; transition: border-color 0.2s;">
+                <div id="cert-name-btn-container" style="display: flex; justify-content: center; width: 100%; margin-top: 0.25rem;">
+                    <button type="button" id="btn-cert-name-save" class="btn-primary" style="height: 38px; min-width: 140px; padding: 0 1.75rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; width: auto; display: inline-flex; align-items: center; justify-content: center; text-align: center; line-height: 1;" data-i18n="btn_save_name">Enregistrer</button>
                 </div>
+                <div id="cert-name-lock-info" style="width: 100%; font-size: 0.8rem; text-align: center; line-height: 1.45; display: flex; align-items: center; justify-content: center;"></div>
             </div>
 
             <div class="card stats-card" id="certs-empty-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem;">
@@ -908,13 +919,13 @@
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.75; font-family: var(--font-sans); line-height: 1.6;">
         <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span></div>
-        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v103</span> &bull; <span data-i18n="footer_deployed">Déployé le 01/09/2026</span></div>
+        <div style="font-size: 0.7rem; opacity: 0.85;">drillFlow <span class="app-version-num">v105</span> &bull; <span data-i18n="footer_deployed">Déployé le 01/09/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=103"></script>
+    <script type="module" src="js/main.js?v=105"></script>
     <script>
         if ('serviceWorker' in navigator) {
             let refreshing = false;

@@ -46,7 +46,13 @@ export async function fetchProgressFromCloud() {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-            const cloudData = docSnap.data().progress || {};
+            const data = docSnap.data();
+            if (data && data.profile) {
+                if (data.profile.firstname) localStorage.setItem('cert_firstname', data.profile.firstname);
+                if (data.profile.lastname) localStorage.setItem('cert_lastname', data.profile.lastname);
+                if (data.profile.name_updated_at) localStorage.setItem('cert_name_updated_at', data.profile.name_updated_at);
+            }
+            const cloudData = data.progress || {};
             
             // Fusion intelligente basée sur les dates de mise à jour
             for (const pairKey in cloudData) {
@@ -265,4 +271,27 @@ export async function resetPairProgress(langSource, langTarget) {
     // Sauvegarder dans localStorage et Firestore
     await saveProgressLocalAndCloud();
     return true;
+}
+
+// Enregistre le profil (nom, prénom, date de dernière mise à jour) localement et dans Firestore
+export async function saveUserProfile(firstname, lastname, nameUpdatedAt) {
+    localStorage.setItem('cert_firstname', firstname);
+    localStorage.setItem('cert_lastname', lastname);
+    localStorage.setItem('cert_name_updated_at', nameUpdatedAt.toString());
+    
+    const user = getCurrentUser();
+    if (user) {
+        try {
+            const docRef = doc(db, "users", user.uid);
+            await setDoc(docRef, {
+                profile: {
+                    firstname,
+                    lastname,
+                    name_updated_at: nameUpdatedAt.toString()
+                }
+            }, { merge: true });
+        } catch (e) {
+            console.error("Erreur sauvegarde profil Firebase:", e);
+        }
+    }
 }
