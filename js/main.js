@@ -35,6 +35,16 @@ export function formatValidatedCount(count, lang = getAppLanguage()) {
     }
 }
 
+export function getValidatedCount(src, tgt) {
+    let count = 0;
+    for (let i = 0; i < vocabulary.length; i++) {
+        if (getWordStatus(src, tgt, vocabulary[i].id) === 'validé') {
+            count++;
+        }
+    }
+    return count;
+}
+
 export function translateElement(element, lang) {
     const keys = element.querySelectorAll('[data-i18n]');
     keys.forEach(el => {
@@ -215,8 +225,7 @@ function initOptionsModal() {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            const pairData = progress[pair] || {};
-            const validatedCount = Object.keys(pairData).filter(wordId => getWordStatus(src, tgt, wordId) === 'validé').length;
+            const validatedCount = getValidatedCount(src, tgt);
             opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
             pairSelect.appendChild(opt);
         });
@@ -668,8 +677,7 @@ function initProgressView() {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            const pairData = progress[pair] || {};
-            const validatedCount = Object.keys(pairData).filter(wordId => getWordStatus(src, tgt, wordId) === 'validé').length;
+            const validatedCount = getValidatedCount(src, tgt);
             opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
             pairSelect.appendChild(opt);
         });
@@ -1073,8 +1081,7 @@ function initStatsView() {
             const [src, tgt] = pair.split('-');
             const opt = document.createElement('option');
             opt.value = pair;
-            const pairData = progress[pair] || {};
-            const validatedCount = Object.keys(pairData).filter(wordId => getWordStatus(src, tgt, wordId) === 'validé').length;
+            const validatedCount = getValidatedCount(src, tgt);
             opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
             pairSelect.appendChild(opt);
         });

@@ -169,6 +169,7 @@ export const translations = {
         pillar_privacy_desc: "Créez un compte pour enregistrer votre avancement",
         about_title_notes: "Notes",
         about_note_level: "Prenez en compte le niveau de difficulté d'un mot pour sa traduction.",
+        about_note_examples: "Les phrases d'exemple facilitent la mémorisation en contexte et vous aident à choisir la bonne traduction.",
         about_note_community: "Ce projet est communautaire, vous pouvez signaler des améliorations durant le Drill.",
         about_note_points: "Valider des mots d'un niveau supérieur vous donne plus de points.",
         about_note_time: "Apprendre avec drillFlow., c'est investir intelligemment votre temps pour des résultats durables.",
@@ -222,7 +223,7 @@ export const translations = {
         options_reset_confirm: "Réinitialiser toute la progression pour {pair} ? Cette action est irréversible.",
         options_reset_success: "Progression réinitialisée pour {pair}.",
         footer_rights: "Tous droits réservés.",
-        footer_deployed: "Déployé le 30/08/2026"
+        footer_deployed: "Déployé le 01/09/2026"
     },
     en: {
         // Nav
@@ -394,6 +395,7 @@ export const translations = {
         pillar_privacy_desc: "Create an account to save your progress",
         about_title_notes: "Notes",
         about_note_level: "Take into account the difficulty level of a word for its translation.",
+        about_note_examples: "Example sentences facilitate memorization in context and help you choose the right translation.",
         about_note_community: "This project is community-driven, you can report improvements during the Drill.",
         about_note_points: "Validating words of a higher level gives you more points.",
         about_note_time: "Learning with drillFlow. is a smart investment of your time for lasting results.",
@@ -447,7 +449,7 @@ export const translations = {
         options_reset_confirm: "Reset all progress for {pair}? This action cannot be undone.",
         options_reset_success: "Progress reset for {pair}.",
         footer_rights: "All rights reserved.",
-        footer_deployed: "Deployed on 2026-08-30"
+        footer_deployed: "Deployed on 2026-09-01"
     },
     de: {
         // Nav
@@ -619,6 +621,7 @@ export const translations = {
         pillar_privacy_desc: "Erstellen Sie ein Konto, um Ihren Fortschritt zu speichern",
         about_title_notes: "Hinweise",
         about_note_level: "Berücksichtigen Sie den Schwierigkeitsgrad eines Wortes bei der Übersetzung.",
+        about_note_examples: "Beispielsätze erleichtern das Einprägen im Kontext und helfen Ihnen, die passende Übersetzung zu wählen.",
         about_note_community: "Dieses Projekt ist gemeinschaftlich, Sie können während des Drills Verbesserungen melden.",
         about_note_points: "Das Validieren von Wörtern eines höheren Niveaus bringt Ihnen mehr Punkte.",
         about_note_time: "Mit drillFlow. zu lernen, ist eine kluge Investition Ihrer Zeit für dauerhafte Ergebnisse.",
@@ -672,7 +675,7 @@ export const translations = {
         options_reset_confirm: "Gesamten Fortschritt für {pair} zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.",
         options_reset_success: "Fortschritt für {pair} zurückgesetzt.",
         footer_rights: "Alle Rechte vorbehalten.",
-        footer_deployed: "Bereitgestellt am 30.08.2026"
+        footer_deployed: "Bereitgestellt am 01.09.2026"
     },
     es: {
         // Nav
@@ -844,6 +847,7 @@ export const translations = {
         pillar_privacy_desc: "Crea una cuenta para guardar tu progreso",
         about_title_notes: "Notas",
         about_note_level: "Tenga en cuenta el nivel de dificultad de una palabra para su traducción.",
+        about_note_examples: "Las frases de ejemplo facilitan la memorización en contexto y le ayudan a elegir la traducción adecuada.",
         about_note_community: "Este proyecto es comunitario, puede señalar mejoras durante el Drill.",
         about_note_points: "Validar palabras de un nivel superior le otorga más puntos.",
         about_note_time: "Aprender con drillFlow. es invertir inteligentemente su tiempo para resultados duraderos.",
@@ -897,6 +901,6 @@ export const translations = {
         options_reset_confirm: "¿Restablecer todo el progreso de {pair}? Esta acción es irreversible.",
         options_reset_success: "Progreso restablecido para {pair}.",
         footer_rights: "Todos los derechos reservados.",
-        footer_deployed: "Desplegado el 30/08/2026"
+        footer_deployed: "Desplegado el 01/09/2026"
     }
 };
