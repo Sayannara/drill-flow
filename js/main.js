@@ -5,7 +5,7 @@ import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-import { startPlacementTest } from './placement-test.js';
+// import { startPlacementTest } from './placement-test.js';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -651,6 +651,7 @@ function attachViewEvents(viewId) {
             });
         }
 
+        /*
         const btnPlacementTest = document.getElementById('btn-open-placement-test');
         if (btnPlacementTest) {
             btnPlacementTest.onclick = () => {
@@ -663,6 +664,7 @@ function attachViewEvents(viewId) {
                 startPlacementTest(src, tgt);
             };
         }
+        */
     } else if (viewId === 'drill') {
         const inputEl = document.getElementById('drill-input');
         const btnFlip = document.getElementById('btn-flip-lang');
