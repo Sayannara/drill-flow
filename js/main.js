@@ -5,6 +5,7 @@ import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
+import { startPlacementTest } from './placement-test.js';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -457,13 +458,20 @@ function attachViewEvents(viewId) {
 
         if (selectSrc) {
             selectSrc.value = lastSrc;
-            selectSrc.addEventListener('change', updateTargetOptions);
+            selectSrc.addEventListener('change', () => {
+                updateTargetOptions();
+                localStorage.setItem('voc_last_src', selectSrc.value);
+                if (selectTgt) localStorage.setItem('voc_last_tgt', selectTgt.value);
+            });
         }
         updateTargetOptions();
         if (selectTgt) {
             if (lastTgt !== lastSrc) {
                 selectTgt.value = lastTgt;
             }
+            selectTgt.addEventListener('change', () => {
+                localStorage.setItem('voc_last_tgt', selectTgt.value);
+            });
         }
         
         const cbA1 = document.getElementById('drill-level-a1');
@@ -641,6 +649,19 @@ function attachViewEvents(viewId) {
                 renderView('drill');
                 initDrillSession(src, tgt, vol, selectedLevels, mode);
             });
+        }
+
+        const btnPlacementTest = document.getElementById('btn-open-placement-test');
+        if (btnPlacementTest) {
+            btnPlacementTest.onclick = () => {
+                const selectSrc = document.getElementById('select-lang-source');
+                const selectTgt = document.getElementById('select-lang-target');
+                const src = selectSrc ? selectSrc.value : (localStorage.getItem('voc_last_src') || 'fr');
+                const tgt = selectTgt ? selectTgt.value : (localStorage.getItem('voc_last_tgt') || 'en');
+                localStorage.setItem('voc_last_src', src);
+                localStorage.setItem('voc_last_tgt', tgt);
+                startPlacementTest(src, tgt);
+            };
         }
     } else if (viewId === 'drill') {
         const inputEl = document.getElementById('drill-input');

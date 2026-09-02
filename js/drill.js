@@ -1548,9 +1548,12 @@ function startContextDrill() {
         const targetWord = w[sessionState.langTarget];
         const sentence = w['ex_' + sessionState.langTarget];
         let sentenceHtml = sentence;
+
         if (sentence.includes('*')) {
+            // Explicit asterisk markers → use them directly
             sentenceHtml = sentence.replace(/\*([^*]+)\*/g, '<span class="context-dropzone" data-id="' + w.id + '"></span>');
         } else {
+            // Try exact / article-stripped regex first
             const regex = buildTargetRegex(targetWord);
             let replaced = false;
             sentenceHtml = sentence.replace(regex, (match) => {
@@ -1560,8 +1563,43 @@ function startContextDrill() {
                 }
                 return match;
             });
+
+            // Fallback: stem-based match — still replace with empty dropzone (not highlight)
             if (!replaced) {
-                sentenceHtml = highlightExampleSentence(sentence, targetWord, 'class="context-dropzone" data-id="' + w.id + '"');
+                const cleanWords = targetWord.split('/')
+                    .map(s => s.replace(/\(.*?\)/g, '').trim())
+                    .map(s => s.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer |se |s'|me |te |sich )/gi, '').trim())
+                    .filter(s => s.length >= 3);
+
+                const stems = [];
+                cleanWords.forEach(s => {
+                    stems.push(s);
+                    if (s.endsWith('er') || s.endsWith('ir') || s.endsWith('re')) stems.push(s.slice(0, -2));
+                    if (s.endsWith('ar')) stems.push(s.slice(0, -2));
+                    if (s.endsWith('en')) stems.push(s.slice(0, -2));
+                    else if (s.endsWith('n')) stems.push(s.slice(0, -1));
+                });
+
+                const validStems = [...new Set(stems)].filter(s => s.length >= 3).sort((a, b) => b.length - a.length);
+
+                if (validStems.length > 0) {
+                    const escapedStems = validStems.map(s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+                    const stemRegex = new RegExp('(?:\\b|(?<=[\'\\s]))(' + escapedStems.join('|') + ')[a-zàâäéèêëîïôöùûüçñáéíóúß]*\\b', 'gi');
+                    let stemReplaced = false;
+                    sentenceHtml = sentence.replace(stemRegex, (match) => {
+                        if (!stemReplaced) {
+                            stemReplaced = true;
+                            return '<span class="context-dropzone" data-id="' + w.id + '"></span>';
+                        }
+                        return match;
+                    });
+                    replaced = stemReplaced;
+                }
+
+                // Last resort: append dropzone after sentence
+                if (!replaced) {
+                    sentenceHtml = sentence + ' <span class="context-dropzone" data-id="' + w.id + '"></span>';
+                }
             }
         }
         return {

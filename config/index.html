@@ -173,9 +173,10 @@
                 <h1 class="admin-title">
                     drillFlow. <span class="admin-badge">CONFIGURATION</span>
                 </h1>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem;">Panneau d'administration des paramètres, de l'algorithme et de l'affichage</p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem;">Panneau d'administration des paramètres, de l'algorithme et de l'affichage &bull; <span style="color: #10b981; font-weight: 600;">⚡ Sauvegarde automatique</span></p>
             </div>
             <div style="display: flex; gap: 0.75rem; align-items: center;">
+                <a href="../admin.html" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; width: auto;">🚨 Signalements</a>
                 <a href="../index.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; width: auto;">Accéder au site</a>
             </div>
         </div>
@@ -262,7 +263,43 @@
             </div>
         </div>
 
-        <!-- 2. Ergonomie, Saisie & Audio -->
+        <!-- 2. Test de Niveau Adaptatif -->
+        <div class="config-card">
+            <div class="config-card-header">
+                <h2 class="config-card-title">🎯 Test de Niveau Adaptatif (A1 à C2)</h2>
+                <p class="config-card-desc">Paramètres d'évaluation, chronomètre par mot et seuil de passage de palier.</p>
+            </div>
+
+            <div class="config-grid">
+                <div class="config-form-group">
+                    <label for="cfg-test-words-per-level" class="config-label">Nombre de mots par palier</label>
+                    <input type="number" id="cfg-test-words-per-level" min="3" max="50" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                    <span class="config-hint">Mots non-transparents échantillonnés par niveau CEFR (défaut : <strong>12</strong>).</span>
+                </div>
+
+                <div class="config-form-group">
+                    <label for="cfg-test-pass-threshold" class="config-label">Seuil de validation de palier (%)</label>
+                    <input type="number" id="cfg-test-pass-threshold" min="10" max="100" step="5" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                    <span class="config-hint">Pourcentage minimum de réussite pour passer au palier suivant (défaut : <strong>50%</strong>).</span>
+                </div>
+            </div>
+
+            <div class="config-grid" style="margin-top: 0.5rem;">
+                <div class="config-form-group">
+                    <label for="cfg-test-timer-desktop" class="config-label">Temps par mot sur PC (secondes)</label>
+                    <input type="number" id="cfg-test-timer-desktop" min="3" max="60" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                    <span class="config-hint">Délai accordé sur clavier physique (défaut : <strong>20s</strong>).</span>
+                </div>
+
+                <div class="config-form-group">
+                    <label for="cfg-test-timer-mobile" class="config-label">Temps par mot sur Mobile (secondes)</label>
+                    <input type="number" id="cfg-test-timer-mobile" min="3" max="60" style="padding: 0.65rem 0.85rem; font-weight: 600;">
+                    <span class="config-hint">Délai accordé sur clavier tactile (défaut : <strong>25s</strong>).</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Ergonomie, Saisie & Audio -->
         <div class="config-card">
             <div class="config-card-header">
                 <h2 class="config-card-title">🔊 Saisie, Prononciation & Profil</h2>
@@ -330,9 +367,8 @@
         </div>
 
         <!-- 4. Barre d'actions -->
-        <div class="config-actions">
-            <button type="button" id="btn-reset-config" class="btn-primary btn-secondary-action" style="width: auto; padding: 0.75rem 1.5rem; font-size: 0.95rem;">↺ Valeurs par défaut</button>
-            <button type="button" id="btn-save-config" class="btn-primary" style="width: auto; padding: 0.75rem 2rem; font-size: 0.95rem;">💾 Enregistrer les modifications</button>
+        <div class="config-actions" style="justify-content: center;">
+            <button type="button" id="btn-reset-config" class="btn-primary btn-secondary-action" style="width: auto; padding: 0.75rem 1.75rem; font-size: 0.95rem;">↺ Rétablir les valeurs par défaut</button>
         </div>
     </div>
 

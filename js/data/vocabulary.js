@@ -41068,7 +41068,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3163",
-    "fr": "l'acteur",
+    "fr": "l'acteur / l'actrice",
     "en": "actor",
     "de": "der Schauspieler",
     "es": "el actor",
@@ -41809,7 +41809,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3220",
-    "fr": "beau",
+    "fr": "magnifique / beau",
     "en": "beautiful",
     "de": "schön",
     "es": "hermoso",
@@ -42004,8 +42004,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3235",
-    "fr": "le vélo",
-    "en": "bicycle",
+    "fr": "le vélo / la bicyclette",
+    "en": "bicycle / bike",
     "de": "das Fahrrad",
     "es": "la bicicleta",
     "type": "nom",
@@ -42602,7 +42602,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3281",
-    "fr": "la voiture",
+    "fr": "la voiture / l'auto",
     "en": "car",
     "de": "das Auto",
     "es": "el coche",
@@ -42745,7 +42745,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3292",
-    "fr": "bon marché",
+    "fr": "bon marché / pas cher / économique",
     "en": "cheap",
     "de": "billig",
     "es": "barato",
@@ -42836,7 +42836,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3299",
-    "fr": "le cinéma",
+    "fr": "le cinéma / le ciné",
     "en": "cinema",
     "de": "das Kino",
     "es": "el cine",
@@ -42940,7 +42940,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3307",
-    "fr": "fermer (général)",
+    "fr": "fermer",
     "en": "close",
     "de": "schließen (allgemein)",
     "es": "cerrar (general)",
@@ -42953,7 +42953,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3308",
-    "fr": "les vêtements",
+    "fr": "les vêtements / les habits",
     "en": "clothes",
     "de": "die Kleidung",
     "es": "la ropa",
@@ -43057,7 +43057,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3316",
-    "fr": "l'entreprise (2)",
+    "fr": "l'entreprise",
     "en": "company",
     "de": "das Unternehmen",
     "es": "la empresa",
@@ -43109,7 +43109,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3320",
-    "fr": "cuisiner",
+    "fr": "cuisiner / faire la cuisine",
     "en": "cook",
     "de": "kochen",
     "es": "cocinar",
@@ -43135,8 +43135,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3322",
-    "fr": "génial / frais",
-    "en": "cool",
+    "fr": "cool / génial",
+    "en": "cool / great",
     "de": "cool",
     "es": "genial / fresco",
     "type": "adjectif",
@@ -43148,8 +43148,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3323",
-    "fr": "correct",
-    "en": "correct",
+    "fr": "correct / juste",
+    "en": "correct / right",
     "de": "richtig",
     "es": "correcto",
     "type": "adjectif",
@@ -43161,7 +43161,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3324",
-    "fr": "coûter",
+    "fr": "coûter / valoir",
     "en": "cost",
     "de": "kosten",
     "es": "costar",
@@ -43408,7 +43408,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3343",
-    "fr": "le jour",
+    "fr": "le jour / la journée",
     "en": "day",
     "de": "der Tag",
     "es": "el día",
@@ -43629,7 +43629,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3360",
-    "fr": "le docteur",
+    "fr": "le docteur / le médecin",
     "en": "doctor",
     "de": "der Arzt",
     "es": "el médico",
@@ -44916,7 +44916,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3459",
-    "fr": "amical",
+    "fr": "amical / sympa",
     "en": "friendly",
     "de": "freundlich",
     "es": "amigable",
@@ -44994,7 +44994,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3465",
-    "fr": "drôle",
+    "fr": "drôle / amusant",
     "en": "funny",
     "de": "lustig",
     "es": "divertido",
@@ -45163,7 +45163,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3478",
-    "fr": "le grand-père",
+    "fr": "le grand-père / papy",
     "en": "grandfather",
     "de": "der Großvater",
     "es": "el abuelo",
@@ -45176,7 +45176,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3479",
-    "fr": "la grand-mère",
+    "fr": "la grand-mère / mamie",
     "en": "grandmother",
     "de": "die Großmutter",
     "es": "la abuela",
@@ -45202,7 +45202,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3481",
-    "fr": "super",
+    "fr": "super / génial",
     "en": "great",
     "de": "großartig",
     "es": "genial",
@@ -45254,14 +45254,14 @@ export const vocabulary = [
   },
   {
     "id": "word_3485",
-    "fr": "grandir",
+    "fr": "grandir / pousser",
     "en": "grow",
     "de": "wachsen",
     "es": "crecer",
     "type": "verbe",
     "level": "A1",
-    "ex_fr": "Les plantes grandissent vite.",
-    "ex_en": "Plants grow fast here.",
+    "ex_fr": "Les enfants grandissent vite.",
+    "ex_en": "Children grow up very quickly.",
     "ex_de": "Pflanzen wachsen sehr schnell.",
     "ex_es": "Las plantas crecen rápido."
   },
@@ -45293,7 +45293,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3488",
-    "fr": "la salle de sport",
+    "fr": "la salle de sport / le gym",
     "en": "gym",
     "de": "das Fitnessstudio",
     "es": "el gimnasio",
@@ -45345,7 +45345,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3492",
-    "fr": "se passer",
+    "fr": "se passer / arriver (se produire)",
     "en": "happen",
     "de": "passieren",
     "es": "suceder",
@@ -45358,7 +45358,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3493",
-    "fr": "heureux",
+    "fr": "heureux / content",
     "en": "happy",
     "de": "glücklich",
     "es": "feliz",
@@ -45501,7 +45501,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3504",
-    "fr": "bonjour",
+    "fr": "bonjour / salut",
     "en": "hello",
     "de": "hallo",
     "es": "hola",
@@ -45566,7 +45566,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3509",
-    "fr": "salut",
+    "fr": "salut / coucou",
     "en": "hi",
     "de": "hallo",
     "es": "hola",
@@ -45657,7 +45657,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3516",
-    "fr": "la maison (foyer / chez-soi)",
+    "fr": "la maison / le foyer",
     "en": "home",
     "de": "das Zuhause",
     "es": "el hogar",
@@ -45683,7 +45683,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3518",
-    "fr": "espérer",
+    "fr": "espérer / souhaiter",
     "en": "hope",
     "de": "hoffen",
     "es": "esperar",
@@ -45800,7 +45800,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3527",
-    "fr": "affamé",
+    "fr": "avoir faim / affamé",
     "en": "hungry",
     "de": "hungrig",
     "es": "hambriento",
@@ -45852,7 +45852,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3531",
-    "fr": "la crème glacée",
+    "fr": "la crème glacée / la glace",
     "en": "ice cream",
     "de": "das Eis",
     "es": "el helado",
@@ -46047,7 +46047,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3546",
-    "fr": "la veste",
+    "fr": "la veste / le blouson",
     "en": "jacket",
     "de": "die Jacke",
     "es": "la chaqueta",
@@ -46112,7 +46112,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3551",
-    "fr": "le voyage (trajet)",
+    "fr": "le voyage / le trajet",
     "en": "journey",
     "de": "die Reise",
     "es": "el viaje",
@@ -46125,7 +46125,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3552",
-    "fr": "le jus",
+    "fr": "le jus (de fruit)",
     "en": "juice",
     "de": "der Saft",
     "es": "el jugo",
@@ -46736,7 +46736,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3599",
-    "fr": "l'homme",
+    "fr": "l'homme / le monsieur",
     "en": "man",
     "de": "der Mann",
     "es": "el hombre",
@@ -47178,7 +47178,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3633",
-    "fr": "le matin",
+    "fr": "le matin / la matinée",
     "en": "morning",
     "de": "der Morgen",
     "es": "la mañana",
@@ -47204,7 +47204,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3635",
-    "fr": "la mère",
+    "fr": "la mère / maman",
     "en": "mother",
     "de": "die Mutter",
     "es": "la madre",
@@ -47815,7 +47815,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3682",
-    "fr": "vieux",
+    "fr": "vieux / âgé",
     "en": "old",
     "de": "alt",
     "es": "viejo",
@@ -47997,7 +47997,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3696",
-    "fr": "à l'extérieur",
+    "fr": "dehors / à l'extérieur",
     "en": "outside",
     "de": "draußen",
     "es": "afuera",
@@ -48452,7 +48452,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3731",
-    "fr": "s'il te plaît",
+    "fr": "s'il vous plaît / s'il te plaît",
     "en": "please",
     "de": "bitte",
     "es": "por favor",
@@ -48777,7 +48777,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3756",
-    "fr": "rapidement",
+    "fr": "rapidement / vite",
     "en": "quickly",
     "de": "schnell",
     "es": "rápidamente",
@@ -52118,7 +52118,7 @@ export const vocabulary = [
   },
   {
     "id": "word_4014",
-    "fr": "faux (erreur)",
+    "fr": "faux / mauvais",
     "en": "wrong",
     "de": "falsch",
     "es": "equivocado",
@@ -53276,7 +53276,7 @@ export const vocabulary = [
   {
     "id": "word_4103",
     "fr": "république",
-    "en": "republic (n)",
+    "en": "republic",
     "de": "Republik",
     "es": "república",
     "type": "nom",
@@ -53289,7 +53289,7 @@ export const vocabulary = [
   {
     "id": "word_4104",
     "fr": "ressembler",
-    "en": "to resemble (v)",
+    "en": "resemble",
     "de": "ähneln",
     "es": "parecerse",
     "type": "verbe",
@@ -53302,7 +53302,7 @@ export const vocabulary = [
   {
     "id": "word_4105",
     "fr": "résider",
-    "en": "to reside (v)",
+    "en": "reside",
     "de": "wohnen",
     "es": "residir",
     "type": "verbe",
@@ -53315,7 +53315,7 @@ export const vocabulary = [
   {
     "id": "word_4106",
     "fr": "résidence",
-    "en": "residence (n)",
+    "en": "residence",
     "de": "Wohnsitz",
     "es": "residencia",
     "type": "nom",
@@ -53328,7 +53328,7 @@ export const vocabulary = [
   {
     "id": "word_4107",
     "fr": "résidentiel",
-    "en": "residential (adj)",
+    "en": "residential",
     "de": "Wohn-",
     "es": "residencial",
     "type": "adjectif",
@@ -53341,7 +53341,7 @@ export const vocabulary = [
   {
     "id": "word_4108",
     "fr": "résidu",
-    "en": "residue (n)",
+    "en": "residue",
     "de": "Rückstand",
     "es": "residuo",
     "type": "nom",
@@ -53354,7 +53354,7 @@ export const vocabulary = [
   {
     "id": "word_4109",
     "fr": "démission",
-    "en": "resignation (n)",
+    "en": "resignation",
     "de": "Rücktritt",
     "es": "dimisión",
     "type": "nom",
@@ -53367,7 +53367,7 @@ export const vocabulary = [
   {
     "id": "word_4110",
     "fr": "résistance",
-    "en": "resistance (n)",
+    "en": "resistance",
     "de": "Widerstand",
     "es": "resistencia",
     "type": "nom",
@@ -53380,7 +53380,7 @@ export const vocabulary = [
   {
     "id": "word_4111",
     "fr": "respectif",
-    "en": "respective (adj)",
+    "en": "respective",
     "de": "jeweilig",
     "es": "respectivo",
     "type": "adjectif",
@@ -53393,7 +53393,7 @@ export const vocabulary = [
   {
     "id": "word_4112",
     "fr": "respectivement",
-    "en": "respectively (adv)",
+    "en": "respectively",
     "de": "respektive",
     "es": "respectivamente",
     "type": "adverbe",
@@ -53406,7 +53406,7 @@ export const vocabulary = [
   {
     "id": "word_4113",
     "fr": "restauration",
-    "en": "restoration (n)",
+    "en": "restoration",
     "de": "Restaurierung",
     "es": "restauración",
     "type": "nom",
@@ -53419,7 +53419,7 @@ export const vocabulary = [
   {
     "id": "word_4114",
     "fr": "retenue",
-    "en": "restraint (n)",
+    "en": "restraint",
     "de": "Zurückhaltung",
     "es": "restricción",
     "type": "nom",
@@ -53432,7 +53432,7 @@ export const vocabulary = [
   {
     "id": "word_4115",
     "fr": "reprendre",
-    "en": "to resume (v)",
+    "en": "resume",
     "de": "wiederaufnehmen",
     "es": "reanudar",
     "type": "verbe",
@@ -53445,7 +53445,7 @@ export const vocabulary = [
   {
     "id": "word_4116",
     "fr": "retraite",
-    "en": "retreat (n) / to retreat (v)",
+    "en": "retreat",
     "de": "Rückzug",
     "es": "retirada",
     "type": "nom",
@@ -53458,7 +53458,7 @@ export const vocabulary = [
   {
     "id": "word_4117",
     "fr": "récupérer",
-    "en": "to retrieve (v)",
+    "en": "retrieve",
     "de": "zurückholen",
     "es": "recuperar",
     "type": "verbe",
@@ -53471,7 +53471,7 @@ export const vocabulary = [
   {
     "id": "word_4118",
     "fr": "révélation",
-    "en": "revelation (n)",
+    "en": "revelation",
     "de": "Enthüllung",
     "es": "revelación",
     "type": "nom",
@@ -53484,7 +53484,7 @@ export const vocabulary = [
   {
     "id": "word_4119",
     "fr": "vengeance",
-    "en": "revenge (n)",
+    "en": "revenge",
     "de": "Rache",
     "es": "venganza",
     "type": "nom",
@@ -53497,7 +53497,7 @@ export const vocabulary = [
   {
     "id": "word_4120",
     "fr": "inverser",
-    "en": "to reverse (v)",
+    "en": "reverse",
     "de": "umkehren",
     "es": "invertir",
     "type": "verbe",
@@ -53510,7 +53510,7 @@ export const vocabulary = [
   {
     "id": "word_4121",
     "fr": "renouveau",
-    "en": "revival (n)",
+    "en": "revival",
     "de": "Wiederbelebung",
     "es": "renacimiento",
     "type": "nom",
@@ -53523,7 +53523,7 @@ export const vocabulary = [
   {
     "id": "word_4122",
     "fr": "ranimer",
-    "en": "to revive (v)",
+    "en": "revive",
     "de": "wiederbeleben",
     "es": "revivir",
     "type": "verbe",
@@ -53549,7 +53549,7 @@ export const vocabulary = [
   {
     "id": "word_4124",
     "fr": "rhétorique",
-    "en": "rhetoric (n)",
+    "en": "rhetoric",
     "de": "Rhetorik",
     "es": "retórica",
     "type": "nom",
@@ -53562,7 +53562,7 @@ export const vocabulary = [
   {
     "id": "word_4125",
     "fr": "émeute",
-    "en": "riot (n)",
+    "en": "riot",
     "de": "Aufstand",
     "es": "disturbio",
     "type": "nom",
@@ -53575,7 +53575,7 @@ export const vocabulary = [
   {
     "id": "word_4126",
     "fr": "déchirer",
-    "en": "to rip (v)",
+    "en": "rip",
     "de": "zerreißen",
     "es": "rasgar",
     "type": "verbe",
@@ -53588,7 +53588,7 @@ export const vocabulary = [
   {
     "id": "word_4127",
     "fr": "rituel",
-    "en": "ritual (n)",
+    "en": "ritual",
     "de": "Ritual",
     "es": "ritual",
     "type": "nom",
@@ -53601,7 +53601,7 @@ export const vocabulary = [
   {
     "id": "word_4128",
     "fr": "robuste",
-    "en": "robust (adj)",
+    "en": "robust",
     "de": "robust",
     "es": "robusto",
     "type": "adjectif",
@@ -53614,7 +53614,7 @@ export const vocabulary = [
   {
     "id": "word_4129",
     "fr": "tige",
-    "en": "rod (n)",
+    "en": "rod",
     "de": "Stange",
     "es": "vara",
     "type": "nom",
@@ -53627,7 +53627,7 @@ export const vocabulary = [
   {
     "id": "word_4130",
     "fr": "débutant",
-    "en": "rookie (n)",
+    "en": "rookie",
     "de": "Anfänger",
     "es": "novato",
     "type": "nom",
@@ -53640,7 +53640,7 @@ export const vocabulary = [
   {
     "id": "word_4131",
     "fr": "liste",
-    "en": "roster (n)",
+    "en": "roster",
     "de": "Dienstplan",
     "es": "lista",
     "type": "nom",
@@ -53653,7 +53653,7 @@ export const vocabulary = [
   {
     "id": "word_4132",
     "fr": "tourner",
-    "en": "to rotate (v)",
+    "en": "rotate",
     "de": "drehen",
     "es": "rotar",
     "type": "verbe",
@@ -53666,7 +53666,7 @@ export const vocabulary = [
   {
     "id": "word_4133",
     "fr": "rotation",
-    "en": "rotation (n)",
+    "en": "rotation",
     "de": "Rotation",
     "es": "rotación",
     "type": "nom",
@@ -53692,7 +53692,7 @@ export const vocabulary = [
   {
     "id": "word_4135",
     "fr": "rumeur",
-    "en": "rumour (n)",
+    "en": "rumour",
     "de": "Gerücht",
     "es": "rumor",
     "type": "nom",
@@ -53705,7 +53705,7 @@ export const vocabulary = [
   {
     "id": "word_4136",
     "fr": "sacré",
-    "en": "sacred (adj)",
+    "en": "sacred",
     "de": "heilig",
     "es": "sagrado",
     "type": "adjectif",
@@ -53718,7 +53718,7 @@ export const vocabulary = [
   {
     "id": "word_4137",
     "fr": "sacrifice",
-    "en": "sacrifice (n) / to sacrifice (v)",
+    "en": "sacrifice",
     "de": "Opfer",
     "es": "sacrificio",
     "type": "nom",
@@ -53731,7 +53731,7 @@ export const vocabulary = [
   {
     "id": "word_4138",
     "fr": "saint",
-    "en": "saint (n)",
+    "en": "saint",
     "de": "Heiliger",
     "es": "santo",
     "type": "nom",
@@ -53744,7 +53744,7 @@ export const vocabulary = [
   {
     "id": "word_4139",
     "fr": "bien",
-    "en": "sake (n)",
+    "en": "sake",
     "de": "Wohl",
     "es": "bien",
     "type": "nom",
@@ -53757,7 +53757,7 @@ export const vocabulary = [
   {
     "id": "word_4140",
     "fr": "sanction",
-    "en": "sanction (n)",
+    "en": "sanction",
     "de": "Sanktion",
     "es": "sanción",
     "type": "nom",
@@ -53770,7 +53770,7 @@ export const vocabulary = [
   {
     "id": "word_4141",
     "fr": "sauveur",
-    "en": "saviour (n)",
+    "en": "saviour",
     "de": "Retter",
     "es": "salvador",
     "type": "nom",
@@ -53783,7 +53783,7 @@ export const vocabulary = [
   {
     "id": "word_4142",
     "fr": "scénario",
-    "en": "scenario (n)",
+    "en": "scenario",
     "de": "Szenario",
     "es": "escenario",
     "type": "nom",
@@ -53796,7 +53796,7 @@ export const vocabulary = [
   {
     "id": "word_4143",
     "fr": "éparpillé",
-    "en": "scattered (adj)",
+    "en": "scattered",
     "de": "verstreut",
     "es": "disperso",
     "type": "adjectif",
@@ -53809,7 +53809,7 @@ export const vocabulary = [
   {
     "id": "word_4144",
     "fr": "portée",
-    "en": "scope (n)",
+    "en": "scope",
     "de": "Umfang",
     "es": "alcance",
     "type": "nom",
@@ -53822,7 +53822,7 @@ export const vocabulary = [
   {
     "id": "word_4145",
     "fr": "vis",
-    "en": "screw (n) / to screw (v)",
+    "en": "screw",
     "de": "Schraube",
     "es": "tornillo",
     "type": "nom",
@@ -53835,7 +53835,7 @@ export const vocabulary = [
   {
     "id": "word_4146",
     "fr": "examen minutieux",
-    "en": "scrutiny (n)",
+    "en": "scrutiny",
     "de": "Überprüfung",
     "es": "escrutinio",
     "type": "nom",
@@ -53848,7 +53848,7 @@ export const vocabulary = [
   {
     "id": "word_4147",
     "fr": "sceau",
-    "en": "seal (n) / to seal (v)",
+    "en": "seal",
     "de": "Siegel",
     "es": "sello",
     "type": "nom",
@@ -53861,7 +53861,7 @@ export const vocabulary = [
   {
     "id": "word_4148",
     "fr": "deuxièmement",
-    "en": "secondly (adv)",
+    "en": "secondly",
     "de": "zweitens",
     "es": "en segundo lugar",
     "type": "adverbe",
@@ -53874,7 +53874,7 @@ export const vocabulary = [
   {
     "id": "word_4149",
     "fr": "laïc",
-    "en": "secular (adj)",
+    "en": "secular",
     "de": "säkular",
     "es": "secular",
     "type": "adjectif",
@@ -53887,7 +53887,7 @@ export const vocabulary = [
   {
     "id": "word_4150",
     "fr": "apparemment",
-    "en": "seemingly (adv)",
+    "en": "seemingly",
     "de": "scheinbar",
     "es": "aparentemente",
     "type": "adverbe",
@@ -53900,7 +53900,7 @@ export const vocabulary = [
   {
     "id": "word_4151",
     "fr": "segment",
-    "en": "segment (n)",
+    "en": "segment",
     "de": "Segment",
     "es": "segmento",
     "type": "nom",
@@ -53913,7 +53913,7 @@ export const vocabulary = [
   {
     "id": "word_4152",
     "fr": "saisir",
-    "en": "to seize (v)",
+    "en": "seize",
     "de": "ergreifen",
     "es": "agarrar",
     "type": "verbe",
@@ -53926,7 +53926,7 @@ export const vocabulary = [
   {
     "id": "word_4153",
     "fr": "rarement",
-    "en": "seldom (adv)",
+    "en": "seldom",
     "de": "selten",
     "es": "rara vez",
     "type": "adverbe",
@@ -53939,7 +53939,7 @@ export const vocabulary = [
   {
     "id": "word_4154",
     "fr": "sélectif",
-    "en": "selective (adj)",
+    "en": "selective",
     "de": "selektiv",
     "es": "selectivo",
     "type": "adjectif",
@@ -53952,7 +53952,7 @@ export const vocabulary = [
   {
     "id": "word_4155",
     "fr": "sensation",
-    "en": "sensation (n)",
+    "en": "sensation",
     "de": "Sensation",
     "es": "sensación",
     "type": "nom",
@@ -53965,7 +53965,7 @@ export const vocabulary = [
   {
     "id": "word_4156",
     "fr": "sensibilité",
-    "en": "sensitivity (n)",
+    "en": "sensitivity",
     "de": "Sensibilität",
     "es": "sensibilidad",
     "type": "nom",
@@ -53978,7 +53978,7 @@ export const vocabulary = [
   {
     "id": "word_4157",
     "fr": "sentiment",
-    "en": "sentiment (n)",
+    "en": "sentiment",
     "de": "Stimmung",
     "es": "sentimiento",
     "type": "nom",
@@ -53991,7 +53991,7 @@ export const vocabulary = [
   {
     "id": "word_4158",
     "fr": "séparation",
-    "en": "separation (n)",
+    "en": "separation",
     "de": "Trennung",
     "es": "separación",
     "type": "nom",
@@ -54004,7 +54004,7 @@ export const vocabulary = [
   {
     "id": "word_4159",
     "fr": "en série",
-    "en": "serial (adj)",
+    "en": "serial",
     "de": "Serien-",
     "es": "en serie",
     "type": "adjectif",
@@ -54017,7 +54017,7 @@ export const vocabulary = [
   {
     "id": "word_4160",
     "fr": "accord",
-    "en": "settlement (n)",
+    "en": "settlement",
     "de": "Vereinbarung",
     "es": "acuerdo",
     "type": "nom",
@@ -54030,7 +54030,7 @@ export const vocabulary = [
   {
     "id": "word_4161",
     "fr": "configuration",
-    "en": "setup (n)",
+    "en": "setup",
     "de": "Aufbau",
     "es": "configuración",
     "type": "nom",
@@ -54043,7 +54043,7 @@ export const vocabulary = [
   {
     "id": "word_4162",
     "fr": "sexualité",
-    "en": "sexuality (n)",
+    "en": "sexuality",
     "de": "Sexualität",
     "es": "sexualidad",
     "type": "nom",
@@ -54056,7 +54056,7 @@ export const vocabulary = [
   {
     "id": "word_4163",
     "fr": "actionnaire",
-    "en": "shareholder (n)",
+    "en": "shareholder",
     "de": "Aktionär",
     "es": "accionista",
     "type": "nom",
@@ -54069,7 +54069,7 @@ export const vocabulary = [
   {
     "id": "word_4164",
     "fr": "briser",
-    "en": "to shatter (v)",
+    "en": "shatter",
     "de": "zerbrechen",
     "es": "destrozar",
     "type": "verbe",
@@ -54082,7 +54082,7 @@ export const vocabulary = [
   {
     "id": "word_4165",
     "fr": "perdre",
-    "en": "to shed (v)",
+    "en": "shed",
     "de": "verlieren",
     "es": "mudar",
     "type": "verbe",
@@ -54095,7 +54095,7 @@ export const vocabulary = [
   {
     "id": "word_4166",
     "fr": "pur",
-    "en": "sheer (adj)",
+    "en": "sheer",
     "de": "pur",
     "es": "puro",
     "type": "adjectif",
@@ -54108,7 +54108,7 @@ export const vocabulary = [
   {
     "id": "word_4167",
     "fr": "expédition",
-    "en": "shipping (n)",
+    "en": "shipping",
     "de": "Versand",
     "es": "envío",
     "type": "nom",
@@ -54121,7 +54121,7 @@ export const vocabulary = [
   {
     "id": "word_4168",
     "fr": "rétrécir",
-    "en": "to shrink (v)",
+    "en": "shrink",
     "de": "schrumpfen",
     "es": "encoger",
     "type": "verbe",
@@ -54134,7 +54134,7 @@ export const vocabulary = [
   {
     "id": "word_4169",
     "fr": "hausser les épaules",
-    "en": "to shrug (v)",
+    "en": "shrug",
     "de": "mit den Schultern zucken",
     "es": "encogerse de hombros",
     "type": "verbe",
@@ -54147,7 +54147,7 @@ export const vocabulary = [
   {
     "id": "word_4170",
     "fr": "soupirer",
-    "en": "to sigh (v)",
+    "en": "sigh",
     "de": "seufzen",
     "es": "suspirar",
     "type": "verbe",
@@ -54160,7 +54160,7 @@ export const vocabulary = [
   {
     "id": "word_4171",
     "fr": "simuler",
-    "en": "to simulate (v)",
+    "en": "simulate",
     "de": "simulieren",
     "es": "simular",
     "type": "verbe",
@@ -54173,7 +54173,7 @@ export const vocabulary = [
   {
     "id": "word_4172",
     "fr": "simulation",
-    "en": "simulation (n)",
+    "en": "simulation",
     "de": "Simulation",
     "es": "simulación",
     "type": "nom",
@@ -54186,7 +54186,7 @@ export const vocabulary = [
   {
     "id": "word_4173",
     "fr": "simultanément",
-    "en": "simultaneously (adv)",
+    "en": "simultaneously",
     "de": "gleichzeitig",
     "es": "simultáneamente",
     "type": "adverbe",
@@ -54199,7 +54199,7 @@ export const vocabulary = [
   {
     "id": "word_4174",
     "fr": "péché",
-    "en": "sin (n)",
+    "en": "sin",
     "de": "Sünde",
     "es": "pecado",
     "type": "nom",
@@ -54212,7 +54212,7 @@ export const vocabulary = [
   {
     "id": "word_4175",
     "fr": "situé",
-    "en": "situated (adj)",
+    "en": "situated",
     "de": "gelegen",
     "es": "situado",
     "type": "adjectif",
@@ -54225,7 +54225,7 @@ export const vocabulary = [
   {
     "id": "word_4176",
     "fr": "sceptique",
-    "en": "sceptical (adj)",
+    "en": "sceptical",
     "de": "skeptisch",
     "es": "escéptico",
     "type": "adjectif",
@@ -54238,7 +54238,7 @@ export const vocabulary = [
   {
     "id": "word_4177",
     "fr": "croquis",
-    "en": "sketch (n)",
+    "en": "sketch",
     "de": "Skizze",
     "es": "boceto",
     "type": "nom",
@@ -54251,7 +54251,7 @@ export const vocabulary = [
   {
     "id": "word_4178",
     "fr": "réduire",
-    "en": "slash (n) / to slash (v)",
+    "en": "slash",
     "de": "kürzen",
     "es": "reducir",
     "type": "verbe",
@@ -54264,7 +54264,7 @@ export const vocabulary = [
   {
     "id": "word_4179",
     "fr": "esclavage",
-    "en": "slavery (n)",
+    "en": "slavery",
     "de": "Sklaverei",
     "es": "esclavitud",
     "type": "nom",
@@ -54277,7 +54277,7 @@ export const vocabulary = [
   {
     "id": "word_4180",
     "fr": "fente",
-    "en": "slot (n)",
+    "en": "slot",
     "de": "Schlitz",
     "es": "ranura",
     "type": "nom",
@@ -54290,7 +54290,7 @@ export const vocabulary = [
   {
     "id": "word_4181",
     "fr": "fracasser",
-    "en": "to smash (v)",
+    "en": "smash",
     "de": "zerschmettern",
     "es": "romper",
     "type": "verbe",
@@ -54303,7 +54303,7 @@ export const vocabulary = [
   {
     "id": "word_4182",
     "fr": "claquer",
-    "en": "to snap (v)",
+    "en": "snap",
     "de": "schnappen",
     "es": "chasquear",
     "type": "verbe",
@@ -63338,7 +63338,7 @@ export const vocabulary = [
   {
     "id": "word_4877",
     "fr": "république",
-    "en": "republic (n)",
+    "en": "republic",
     "de": "Republik",
     "es": "república",
     "type": "nom",
@@ -63351,7 +63351,7 @@ export const vocabulary = [
   {
     "id": "word_4878",
     "fr": "ressembler",
-    "en": "to resemble (v)",
+    "en": "resemble",
     "de": "ähneln",
     "es": "parecerse",
     "type": "verbe",
@@ -63364,7 +63364,7 @@ export const vocabulary = [
   {
     "id": "word_4879",
     "fr": "résider",
-    "en": "to reside (v)",
+    "en": "reside",
     "de": "wohnen",
     "es": "residir",
     "type": "verbe",
@@ -63377,7 +63377,7 @@ export const vocabulary = [
   {
     "id": "word_4880",
     "fr": "résidence",
-    "en": "residence (n)",
+    "en": "residence",
     "de": "Wohnsitz",
     "es": "residencia",
     "type": "nom",
@@ -63390,7 +63390,7 @@ export const vocabulary = [
   {
     "id": "word_4881",
     "fr": "résidentiel",
-    "en": "residential (adj)",
+    "en": "residential",
     "de": "Wohn-",
     "es": "residencial",
     "type": "adjectif",
@@ -63403,7 +63403,7 @@ export const vocabulary = [
   {
     "id": "word_4882",
     "fr": "résidu",
-    "en": "residue (n)",
+    "en": "residue",
     "de": "Rückstand",
     "es": "residuo",
     "type": "nom",
@@ -63416,7 +63416,7 @@ export const vocabulary = [
   {
     "id": "word_4883",
     "fr": "démission",
-    "en": "resignation (n)",
+    "en": "resignation",
     "de": "Rücktritt",
     "es": "dimisión",
     "type": "nom",
@@ -63429,7 +63429,7 @@ export const vocabulary = [
   {
     "id": "word_4884",
     "fr": "résistance",
-    "en": "resistance (n)",
+    "en": "resistance",
     "de": "Widerstand",
     "es": "resistencia",
     "type": "nom",
@@ -63442,7 +63442,7 @@ export const vocabulary = [
   {
     "id": "word_4885",
     "fr": "respectif",
-    "en": "respective (adj)",
+    "en": "respective",
     "de": "jeweilig",
     "es": "respectivo",
     "type": "adjectif",
@@ -63455,7 +63455,7 @@ export const vocabulary = [
   {
     "id": "word_4886",
     "fr": "respectivement",
-    "en": "respectively (adv)",
+    "en": "respectively",
     "de": "respektive",
     "es": "respectivamente",
     "type": "adverbe",
@@ -63468,7 +63468,7 @@ export const vocabulary = [
   {
     "id": "word_4887",
     "fr": "restauration",
-    "en": "restoration (n)",
+    "en": "restoration",
     "de": "Restaurierung",
     "es": "restauración",
     "type": "nom",
@@ -63481,7 +63481,7 @@ export const vocabulary = [
   {
     "id": "word_4888",
     "fr": "retenue",
-    "en": "restraint (n)",
+    "en": "restraint",
     "de": "Zurückhaltung",
     "es": "restricción",
     "type": "nom",
@@ -63494,7 +63494,7 @@ export const vocabulary = [
   {
     "id": "word_4889",
     "fr": "reprendre",
-    "en": "to resume (v)",
+    "en": "resume",
     "de": "wiederaufnehmen",
     "es": "reanudar",
     "type": "verbe",
@@ -63507,7 +63507,7 @@ export const vocabulary = [
   {
     "id": "word_4890",
     "fr": "retraite",
-    "en": "retreat (n) / to retreat (v)",
+    "en": "retreat",
     "de": "Rückzug",
     "es": "retirada",
     "type": "nom",
@@ -63520,7 +63520,7 @@ export const vocabulary = [
   {
     "id": "word_4891",
     "fr": "récupérer",
-    "en": "to retrieve (v)",
+    "en": "retrieve",
     "de": "zurückholen",
     "es": "recuperar",
     "type": "verbe",
@@ -63533,7 +63533,7 @@ export const vocabulary = [
   {
     "id": "word_4892",
     "fr": "révélation",
-    "en": "revelation (n)",
+    "en": "revelation",
     "de": "Enthüllung",
     "es": "revelación",
     "type": "nom",
@@ -63546,7 +63546,7 @@ export const vocabulary = [
   {
     "id": "word_4893",
     "fr": "vengeance",
-    "en": "revenge (n)",
+    "en": "revenge",
     "de": "Rache",
     "es": "venganza",
     "type": "nom",
@@ -63559,7 +63559,7 @@ export const vocabulary = [
   {
     "id": "word_4894",
     "fr": "inverser",
-    "en": "to reverse (v)",
+    "en": "reverse",
     "de": "umkehren",
     "es": "invertir",
     "type": "verbe",
@@ -63572,7 +63572,7 @@ export const vocabulary = [
   {
     "id": "word_4895",
     "fr": "renouveau",
-    "en": "revival (n)",
+    "en": "revival",
     "de": "Wiederbelebung",
     "es": "renacimiento",
     "type": "nom",
@@ -63585,7 +63585,7 @@ export const vocabulary = [
   {
     "id": "word_4896",
     "fr": "ranimer",
-    "en": "to revive (v)",
+    "en": "revive",
     "de": "wiederbeleben",
     "es": "revivir",
     "type": "verbe",
@@ -63611,7 +63611,7 @@ export const vocabulary = [
   {
     "id": "word_4898",
     "fr": "rhétorique",
-    "en": "rhetoric (n)",
+    "en": "rhetoric",
     "de": "Rhetorik",
     "es": "retórica",
     "type": "nom",
@@ -63624,7 +63624,7 @@ export const vocabulary = [
   {
     "id": "word_4899",
     "fr": "émeute",
-    "en": "riot (n)",
+    "en": "riot",
     "de": "Aufstand",
     "es": "disturbio",
     "type": "nom",
@@ -63637,7 +63637,7 @@ export const vocabulary = [
   {
     "id": "word_4900",
     "fr": "déchirer",
-    "en": "to rip (v)",
+    "en": "rip",
     "de": "zerreißen",
     "es": "rasgar",
     "type": "verbe",
@@ -63650,7 +63650,7 @@ export const vocabulary = [
   {
     "id": "word_4901",
     "fr": "rituel",
-    "en": "ritual (n)",
+    "en": "ritual",
     "de": "Ritual",
     "es": "ritual",
     "type": "nom",
@@ -63663,7 +63663,7 @@ export const vocabulary = [
   {
     "id": "word_4902",
     "fr": "robuste",
-    "en": "robust (adj)",
+    "en": "robust",
     "de": "robust",
     "es": "robusto",
     "type": "adjectif",
@@ -63676,7 +63676,7 @@ export const vocabulary = [
   {
     "id": "word_4903",
     "fr": "tige",
-    "en": "rod (n)",
+    "en": "rod",
     "de": "Stange",
     "es": "vara",
     "type": "nom",
@@ -63689,7 +63689,7 @@ export const vocabulary = [
   {
     "id": "word_4904",
     "fr": "débutant",
-    "en": "rookie (n)",
+    "en": "rookie",
     "de": "Anfänger",
     "es": "novato",
     "type": "nom",
@@ -63702,7 +63702,7 @@ export const vocabulary = [
   {
     "id": "word_4905",
     "fr": "liste",
-    "en": "roster (n)",
+    "en": "roster",
     "de": "Dienstplan",
     "es": "lista",
     "type": "nom",
@@ -63715,7 +63715,7 @@ export const vocabulary = [
   {
     "id": "word_4906",
     "fr": "tourner",
-    "en": "to rotate (v)",
+    "en": "rotate",
     "de": "drehen",
     "es": "rotar",
     "type": "verbe",
@@ -63728,7 +63728,7 @@ export const vocabulary = [
   {
     "id": "word_4907",
     "fr": "rotation",
-    "en": "rotation (n)",
+    "en": "rotation",
     "de": "Rotation",
     "es": "rotación",
     "type": "nom",
@@ -63754,7 +63754,7 @@ export const vocabulary = [
   {
     "id": "word_4909",
     "fr": "rumeur",
-    "en": "rumour (n)",
+    "en": "rumour",
     "de": "Gerücht",
     "es": "rumor",
     "type": "nom",
@@ -63767,7 +63767,7 @@ export const vocabulary = [
   {
     "id": "word_4910",
     "fr": "sacré",
-    "en": "sacred (adj)",
+    "en": "sacred",
     "de": "heilig",
     "es": "sagrado",
     "type": "adjectif",
@@ -63780,7 +63780,7 @@ export const vocabulary = [
   {
     "id": "word_4911",
     "fr": "sacrifice",
-    "en": "sacrifice (n) / to sacrifice (v)",
+    "en": "sacrifice",
     "de": "Opfer",
     "es": "sacrificio",
     "type": "nom",
@@ -63793,7 +63793,7 @@ export const vocabulary = [
   {
     "id": "word_4912",
     "fr": "saint",
-    "en": "saint (n)",
+    "en": "saint",
     "de": "Heiliger",
     "es": "santo",
     "type": "nom",
@@ -63806,7 +63806,7 @@ export const vocabulary = [
   {
     "id": "word_4913",
     "fr": "bien",
-    "en": "sake (n)",
+    "en": "sake",
     "de": "Wohl",
     "es": "bien",
     "type": "nom",
@@ -63819,7 +63819,7 @@ export const vocabulary = [
   {
     "id": "word_4914",
     "fr": "sanction",
-    "en": "sanction (n)",
+    "en": "sanction",
     "de": "Sanktion",
     "es": "sanción",
     "type": "nom",
@@ -63832,7 +63832,7 @@ export const vocabulary = [
   {
     "id": "word_4915",
     "fr": "sauveur",
-    "en": "saviour (n)",
+    "en": "saviour",
     "de": "Retter",
     "es": "salvador",
     "type": "nom",
@@ -63845,7 +63845,7 @@ export const vocabulary = [
   {
     "id": "word_4916",
     "fr": "scénario",
-    "en": "scenario (n)",
+    "en": "scenario",
     "de": "Szenario",
     "es": "escenario",
     "type": "nom",
@@ -63858,7 +63858,7 @@ export const vocabulary = [
   {
     "id": "word_4917",
     "fr": "éparpillé",
-    "en": "scattered (adj)",
+    "en": "scattered",
     "de": "verstreut",
     "es": "disperso",
     "type": "adjectif",
@@ -63871,7 +63871,7 @@ export const vocabulary = [
   {
     "id": "word_4918",
     "fr": "portée",
-    "en": "scope (n)",
+    "en": "scope",
     "de": "Umfang",
     "es": "alcance",
     "type": "nom",
@@ -63884,7 +63884,7 @@ export const vocabulary = [
   {
     "id": "word_4919",
     "fr": "vis",
-    "en": "screw (n) / to screw (v)",
+    "en": "screw",
     "de": "Schraube",
     "es": "tornillo",
     "type": "nom",
@@ -63897,7 +63897,7 @@ export const vocabulary = [
   {
     "id": "word_4920",
     "fr": "examen minutieux",
-    "en": "scrutiny (n)",
+    "en": "scrutiny",
     "de": "Überprüfung",
     "es": "escrutinio",
     "type": "nom",
@@ -63910,7 +63910,7 @@ export const vocabulary = [
   {
     "id": "word_4921",
     "fr": "sceau",
-    "en": "seal (n) / to seal (v)",
+    "en": "seal",
     "de": "Siegel",
     "es": "sello",
     "type": "nom",
@@ -63923,7 +63923,7 @@ export const vocabulary = [
   {
     "id": "word_4922",
     "fr": "deuxièmement",
-    "en": "secondly (adv)",
+    "en": "secondly",
     "de": "zweitens",
     "es": "en segundo lugar",
     "type": "adverbe",
@@ -63936,7 +63936,7 @@ export const vocabulary = [
   {
     "id": "word_4923",
     "fr": "laïc",
-    "en": "secular (adj)",
+    "en": "secular",
     "de": "säkular",
     "es": "secular",
     "type": "adjectif",
@@ -63949,7 +63949,7 @@ export const vocabulary = [
   {
     "id": "word_4924",
     "fr": "apparemment",
-    "en": "seemingly (adv)",
+    "en": "seemingly",
     "de": "scheinbar",
     "es": "aparentemente",
     "type": "adverbe",
@@ -63962,7 +63962,7 @@ export const vocabulary = [
   {
     "id": "word_4925",
     "fr": "segment",
-    "en": "segment (n)",
+    "en": "segment",
     "de": "Segment",
     "es": "segmento",
     "type": "nom",
@@ -63975,7 +63975,7 @@ export const vocabulary = [
   {
     "id": "word_4926",
     "fr": "saisir",
-    "en": "to seize (v)",
+    "en": "seize",
     "de": "ergreifen",
     "es": "agarrar",
     "type": "verbe",
@@ -63988,7 +63988,7 @@ export const vocabulary = [
   {
     "id": "word_4927",
     "fr": "rarement",
-    "en": "seldom (adv)",
+    "en": "seldom",
     "de": "selten",
     "es": "rara vez",
     "type": "adverbe",
@@ -64001,7 +64001,7 @@ export const vocabulary = [
   {
     "id": "word_4928",
     "fr": "sélectif",
-    "en": "selective (adj)",
+    "en": "selective",
     "de": "selektiv",
     "es": "selectivo",
     "type": "adjectif",
@@ -64014,7 +64014,7 @@ export const vocabulary = [
   {
     "id": "word_4929",
     "fr": "sensation",
-    "en": "sensation (n)",
+    "en": "sensation",
     "de": "Sensation",
     "es": "sensación",
     "type": "nom",
@@ -64027,7 +64027,7 @@ export const vocabulary = [
   {
     "id": "word_4930",
     "fr": "sensibilité",
-    "en": "sensitivity (n)",
+    "en": "sensitivity",
     "de": "Sensibilität",
     "es": "sensibilidad",
     "type": "nom",
@@ -64040,7 +64040,7 @@ export const vocabulary = [
   {
     "id": "word_4931",
     "fr": "sentiment",
-    "en": "sentiment (n)",
+    "en": "sentiment",
     "de": "Stimmung",
     "es": "sentimiento",
     "type": "nom",
@@ -64053,7 +64053,7 @@ export const vocabulary = [
   {
     "id": "word_4932",
     "fr": "séparation",
-    "en": "separation (n)",
+    "en": "separation",
     "de": "Trennung",
     "es": "separación",
     "type": "nom",
@@ -64066,7 +64066,7 @@ export const vocabulary = [
   {
     "id": "word_4933",
     "fr": "en série",
-    "en": "serial (adj)",
+    "en": "serial",
     "de": "Serien-",
     "es": "en serie",
     "type": "adjectif",
@@ -64079,7 +64079,7 @@ export const vocabulary = [
   {
     "id": "word_4934",
     "fr": "accord",
-    "en": "settlement (n)",
+    "en": "settlement",
     "de": "Vereinbarung",
     "es": "acuerdo",
     "type": "nom",
@@ -64092,7 +64092,7 @@ export const vocabulary = [
   {
     "id": "word_4935",
     "fr": "configuration",
-    "en": "setup (n)",
+    "en": "setup",
     "de": "Aufbau",
     "es": "configuración",
     "type": "nom",
@@ -64105,7 +64105,7 @@ export const vocabulary = [
   {
     "id": "word_4936",
     "fr": "sexualité",
-    "en": "sexuality (n)",
+    "en": "sexuality",
     "de": "Sexualität",
     "es": "sexualidad",
     "type": "nom",
@@ -64118,7 +64118,7 @@ export const vocabulary = [
   {
     "id": "word_4937",
     "fr": "actionnaire",
-    "en": "shareholder (n)",
+    "en": "shareholder",
     "de": "Aktionär",
     "es": "accionista",
     "type": "nom",
@@ -64131,7 +64131,7 @@ export const vocabulary = [
   {
     "id": "word_4938",
     "fr": "briser",
-    "en": "to shatter (v)",
+    "en": "shatter",
     "de": "zerbrechen",
     "es": "destrozar",
     "type": "verbe",
@@ -64144,7 +64144,7 @@ export const vocabulary = [
   {
     "id": "word_4939",
     "fr": "perdre",
-    "en": "to shed (v)",
+    "en": "shed",
     "de": "verlieren",
     "es": "mudar",
     "type": "verbe",
@@ -64157,7 +64157,7 @@ export const vocabulary = [
   {
     "id": "word_4940",
     "fr": "pur",
-    "en": "sheer (adj)",
+    "en": "sheer",
     "de": "pur",
     "es": "puro",
     "type": "adjectif",
@@ -64170,7 +64170,7 @@ export const vocabulary = [
   {
     "id": "word_4941",
     "fr": "expédition",
-    "en": "shipping (n)",
+    "en": "shipping",
     "de": "Versand",
     "es": "envío",
     "type": "nom",
@@ -64183,7 +64183,7 @@ export const vocabulary = [
   {
     "id": "word_4942",
     "fr": "rétrécir",
-    "en": "to shrink (v)",
+    "en": "shrink",
     "de": "schrumpfen",
     "es": "encoger",
     "type": "verbe",
@@ -64196,7 +64196,7 @@ export const vocabulary = [
   {
     "id": "word_4943",
     "fr": "hausser les épaules",
-    "en": "to shrug (v)",
+    "en": "shrug",
     "de": "mit den Schultern zucken",
     "es": "encogerse de hombros",
     "type": "verbe",
@@ -64209,7 +64209,7 @@ export const vocabulary = [
   {
     "id": "word_4944",
     "fr": "soupirer",
-    "en": "to sigh (v)",
+    "en": "sigh",
     "de": "seufzen",
     "es": "suspirar",
     "type": "verbe",
@@ -64222,7 +64222,7 @@ export const vocabulary = [
   {
     "id": "word_4945",
     "fr": "simuler",
-    "en": "to simulate (v)",
+    "en": "simulate",
     "de": "simulieren",
     "es": "simular",
     "type": "verbe",
@@ -64235,7 +64235,7 @@ export const vocabulary = [
   {
     "id": "word_4946",
     "fr": "simulation",
-    "en": "simulation (n)",
+    "en": "simulation",
     "de": "Simulation",
     "es": "simulación",
     "type": "nom",
@@ -64248,7 +64248,7 @@ export const vocabulary = [
   {
     "id": "word_4947",
     "fr": "simultanément",
-    "en": "simultaneously (adv)",
+    "en": "simultaneously",
     "de": "gleichzeitig",
     "es": "simultáneamente",
     "type": "adverbe",
@@ -64261,7 +64261,7 @@ export const vocabulary = [
   {
     "id": "word_4948",
     "fr": "péché",
-    "en": "sin (n)",
+    "en": "sin",
     "de": "Sünde",
     "es": "pecado",
     "type": "nom",
@@ -64274,7 +64274,7 @@ export const vocabulary = [
   {
     "id": "word_4949",
     "fr": "situé",
-    "en": "situated (adj)",
+    "en": "situated",
     "de": "gelegen",
     "es": "situado",
     "type": "adjectif",
@@ -64287,7 +64287,7 @@ export const vocabulary = [
   {
     "id": "word_4950",
     "fr": "sceptique",
-    "en": "sceptical (adj)",
+    "en": "sceptical",
     "de": "skeptisch",
     "es": "escéptico",
     "type": "adjectif",
@@ -64300,7 +64300,7 @@ export const vocabulary = [
   {
     "id": "word_4951",
     "fr": "croquis",
-    "en": "sketch (n)",
+    "en": "sketch",
     "de": "Skizze",
     "es": "boceto",
     "type": "nom",
@@ -64313,7 +64313,7 @@ export const vocabulary = [
   {
     "id": "word_4952",
     "fr": "réduire",
-    "en": "slash (n) / to slash (v)",
+    "en": "slash",
     "de": "kürzen",
     "es": "reducir",
     "type": "verbe",
@@ -64326,7 +64326,7 @@ export const vocabulary = [
   {
     "id": "word_4953",
     "fr": "esclavage",
-    "en": "slavery (n)",
+    "en": "slavery",
     "de": "Sklaverei",
     "es": "esclavitud",
     "type": "nom",
@@ -64339,7 +64339,7 @@ export const vocabulary = [
   {
     "id": "word_4954",
     "fr": "fente",
-    "en": "slot (n)",
+    "en": "slot",
     "de": "Schlitz",
     "es": "ranura",
     "type": "nom",
@@ -64352,7 +64352,7 @@ export const vocabulary = [
   {
     "id": "word_4955",
     "fr": "fracasser",
-    "en": "to smash (v)",
+    "en": "smash",
     "de": "zerschmettern",
     "es": "romper",
     "type": "verbe",
@@ -64365,7 +64365,7 @@ export const vocabulary = [
   {
     "id": "word_4956",
     "fr": "claquer",
-    "en": "to snap (v)",
+    "en": "snap",
     "de": "schnappen",
     "es": "chasquear",
     "type": "verbe",
@@ -77916,7 +77916,7 @@ export const vocabulary = [
   {
     "id": "word_6043",
     "fr": "la réprimande / réprimander",
-    "en": "reprimand (n) / to reprimand (v)",
+    "en": "reprimand",
     "de": "der Tadel / tadeln",
     "es": "la reprimenda / reprender",
     "type": "nom",
@@ -88636,7 +88636,7 @@ export const vocabulary = [
   {
     "id": "word_7228",
     "fr": "la réprimande / réprimander",
-    "en": "reprimand (n) / to reprimand (v)",
+    "en": "reprimand",
     "de": "der Tadel / tadeln",
     "es": "la reprimenda / reprender",
     "type": "nom",
