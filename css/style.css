@@ -171,6 +171,10 @@ body {
     padding: 2rem;
 }
 
+#app-container.in-drill-mode {
+    padding: 1rem 1.5rem;
+}
+
 .view-content {
     width: 100%;
     max-width: 680px;
@@ -287,21 +291,43 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     height: 100%; 
     width: 100%;
     max-width: 880px; /* Plus d'espace sur PC pour les expressions longues et la correction */
+    box-sizing: border-box;
 }
-.drill-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+.drill-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 1rem; 
+    flex-shrink: 0;
+}
 .lang-pair { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; }
 .lang-badge { background: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem; }
 .drill-progress { font-weight: bold; color: var(--text-secondary); }
 
 .flashcard {
     text-align: center;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
+    padding: 1rem;
+    margin-bottom: 0;
     border: none;
     border-radius: 12px;
     flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.drill-dynamic-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
+    margin: auto;
+    transform: translateY(20px); /* Centrage ancré sur le mot à traduire */
+    box-sizing: border-box;
 }
 .drill-word-wrapper {
     display: flex;
@@ -405,7 +431,13 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
 }
 .hidden { display: none !important; }
 
-.result-section { margin-top: 2rem; animation: slideUp 0.3s ease; }
+.result-section { 
+    margin-top: 2rem; 
+    animation: slideUp 0.3s ease; 
+    width: 100%; 
+    max-width: 680px; 
+    box-sizing: border-box; 
+}
 .result-comparison { 
     position: relative;
     display: flex; 
@@ -1169,6 +1201,10 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
         margin-bottom: 0;
         cursor: pointer;
         transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .drill-dynamic-area {
+        min-height: 190px;
+        transform: none;
     }
     .flashcard:hover {
         background-color: rgba(100, 116, 139, 0.03);

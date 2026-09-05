@@ -1,11 +1,11 @@
-import { vocabulary } from './data/vocabulary.js?v=127';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=127';
+import { vocabulary } from './data/vocabulary.js?v=128';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=128';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-import { startPlacementTest } from './placement-test.js?v=127';
+import { startPlacementTest } from './placement-test.js?v=128';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -390,6 +390,15 @@ function renderView(viewId) {
     navButtons.forEach(btn => btn.classList.remove('active'));
     const activeBtn = document.getElementById(`nav-${viewId}`);
     if (activeBtn) activeBtn.classList.add('active');
+
+    // Masquer le footer durant le drill et ajuster le padding du conteneur
+    const appFooter = document.getElementById('app-footer-version');
+    if (appFooter) {
+        appFooter.style.display = (viewId === 'drill') ? 'none' : '';
+    }
+    if (appContainer) {
+        appContainer.classList.toggle('in-drill-mode', viewId === 'drill');
+    }
 }
 
 // Écouteurs pour la navigation
