@@ -1,4 +1,4 @@
-import { vocabulary } from './data/vocabulary.js?v=129';
+import { vocabulary } from './data/vocabulary.js?v=130';
 import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js';
 import { translations } from './i18n.js';
 import { getCurrentUser } from './auth.js';
@@ -388,8 +388,8 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
             const statsA = getWordStats(source, target, a.id);
             const statsB = getWordStats(source, target, b.id);
             
-            const aNeedsReview = statsA.attempts > 1 ? 1 : 0;
-            const bNeedsReview = statsB.attempts > 1 ? 1 : 0;
+            const aNeedsReview = ((statsA.max_attempts || statsA.attempts) > 1) ? 1 : 0;
+            const bNeedsReview = ((statsB.max_attempts || statsB.attempts) > 1) ? 1 : 0;
             if (aNeedsReview !== bNeedsReview) {
                 return bNeedsReview - aNeedsReview;
             }
@@ -2059,7 +2059,9 @@ function openReportModal(currentWord, btnEl) {
         const langTarget = (sessionState.langTarget || 'en').toUpperCase();
         const langPair = `${langSource} → ${langTarget}`;
 
-        showToast("✓ Signalement enregistré. Merci !");
+        const appLang = getAppLanguage();
+        const toastMsg = translations[appLang]?.report_toast_success || "Signalement enregistré. Merci !";
+        showToast(toastMsg);
         await reportWordTranslation(currentWord, comment, langPair, selectedReason);
     };
 }

@@ -1,11 +1,11 @@
-import { vocabulary } from './data/vocabulary.js?v=129';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=129';
+import { vocabulary } from './data/vocabulary.js?v=130';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=130';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-import { startPlacementTest } from './placement-test.js?v=129';
+import { startPlacementTest } from './placement-test.js?v=130';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -686,26 +686,6 @@ function attachViewEvents(viewId) {
             };
         }
         
-        if (flashcard) {
-            flashcard.onclick = (e) => {
-                // Sur mobile, le clic simule Entrée pour avancer à un doigt
-                const isMobile = window.innerWidth <= 640;
-                if (!isMobile) return;
-
-                // Ne pas intercepter les clics sur les inputs ou boutons d'actions
-                if (e.target.closest('input') || e.target.closest('button') || e.target.closest('.btn-drill-action')) {
-                    return;
-                }
-                
-                const fakeEvent = {
-                    key: 'Enter',
-                    preventDefault: () => {},
-                    stopPropagation: () => {}
-                };
-                handleDrillKeydown(fakeEvent);
-            };
-        }
-        
         if (btnQuit) {
             btnQuit.addEventListener('click', () => renderView('home'));
         }
@@ -857,9 +837,33 @@ function initProgressView() {
     });
 
     const searchInput = document.getElementById('prog-search');
+    const clearSearchBtn = document.getElementById('btn-clear-prog-search');
+
+    function updateSearchClearBtn() {
+        if (!clearSearchBtn || !searchInput) return;
+        if (searchInput.value.trim().length > 0) {
+            clearSearchBtn.classList.remove('hidden');
+        } else {
+            clearSearchBtn.classList.add('hidden');
+        }
+    }
+
     if (searchInput) {
         searchInput.value = '';
+        updateSearchClearBtn();
         searchInput.oninput = () => {
+            updateSearchClearBtn();
+            renderProgressTable();
+        };
+    }
+
+    if (clearSearchBtn) {
+        clearSearchBtn.onclick = () => {
+            if (searchInput) {
+                searchInput.value = '';
+                searchInput.focus();
+            }
+            updateSearchClearBtn();
             renderProgressTable();
         };
     }
@@ -972,6 +976,37 @@ function initProgressView() {
         }
     });
 
+    // Boutons d'action rapide "Tous / Aucun" dans les popovers
+    document.querySelectorAll('.filter-quick-btn').forEach(btn => {
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            const group = btn.dataset.filterGroup;
+            const action = btn.dataset.filterAction;
+            const shouldCheck = (action === 'all');
+
+            if (group === 'types') {
+                ['nom', 'verbe', 'adjectif', 'adverbe', 'conjonction'].forEach(t => {
+                    const el = document.getElementById(`filter-type-${t}`);
+                    if (el) el.checked = shouldCheck;
+                });
+            } else if (group === 'levels') {
+                ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach(l => {
+                    const el = document.getElementById(`filter-level-${l}`);
+                    if (el) el.checked = shouldCheck;
+                });
+            } else if (group === 'statuses') {
+                ['valide', 'actif', 'ignore'].forEach(s => {
+                    const el = document.getElementById(`filter-status-${s}`);
+                    if (el) el.checked = shouldCheck;
+                });
+            }
+
+            saveProgressFilters();
+            updateFilterCounts();
+            renderProgressTable();
+        };
+    });
+
     updateFilterCounts();
     renderProgressTable();
 }
@@ -1006,7 +1041,7 @@ function renderProgressTable() {
     const filtered = vocabulary.filter(word => {
         const stats = getWordStats(src, tgt, word.id);
         const status = getWordStatus(src, tgt, word.id);
-        if ((!stats || !stats.attempts || stats.attempts === 0) && status !== 'ignoré') return false;
+        if ((!stats || (!stats.attempts && !stats.max_attempts)) && status !== 'ignoré') return false;
 
         // Status filters
         if (status === 'validé' && !filterStatusValide) return false;
@@ -1039,8 +1074,10 @@ function renderProgressTable() {
         else if (currentSortCol === 'type') { valA = a.type || ''; valB = b.type || ''; }
         else if (currentSortCol === 'level') { valA = a.level || ''; valB = b.level || ''; }
         else if (currentSortCol === 'attempts') { 
-            valA = getWordStats(src, tgt, a.id).attempts || 0; 
-            valB = getWordStats(src, tgt, b.id).attempts || 0; 
+            const statsA = getWordStats(src, tgt, a.id);
+            const statsB = getWordStats(src, tgt, b.id);
+            valA = statsA.max_attempts || statsA.attempts || 0; 
+            valB = statsB.max_attempts || statsB.attempts || 0; 
         }
         else if (currentSortCol === 'status') { 
             valA = getWordStatus(src, tgt, a.id); 
@@ -1097,7 +1134,7 @@ function renderProgressTable() {
         const lang = getAppLanguage();
         const stats = getWordStats(src, tgt, word.id);
         const status = getWordStatus(src, tgt, word.id);
-        const attempts = stats.attempts || 0;
+        const attempts = stats.max_attempts || stats.attempts || 0;
         const attemptsText = status === 'ignoré' ? '-' : (attempts > 0 ? attempts : '-');
         const typeLabel = word.type ? (translations[lang][`type_${word.type}`] || word.type) : '-';
         const ignoreLabel = translations[lang].status_ignored || 'Ignoré';

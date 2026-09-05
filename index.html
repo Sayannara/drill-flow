@@ -79,7 +79,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=129">
+    <link rel="stylesheet" href="css/style.css?v=130">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -453,7 +453,12 @@
 
                 <div class="card progress-card" id="progress-main-card">
                     <div class="progress-filters" style="display: flex; gap: 0.6rem; align-items: center; justify-content: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap; background: transparent; padding: 0; border: none;">
-                        <input type="text" id="prog-search" data-i18n-placeholder="placeholder_search" placeholder="Rechercher un mot..." style="width: 210px; max-width: 100%; margin-bottom: 0;">
+                        <div class="search-input-wrapper" style="position: relative; display: inline-flex; align-items: center; width: 210px; max-width: 100%;">
+                            <input type="text" id="prog-search" data-i18n-placeholder="placeholder_search" placeholder="Rechercher un mot..." style="width: 100%; padding-right: 1.85rem; margin-bottom: 0;">
+                            <button type="button" id="btn-clear-prog-search" class="search-clear-btn hidden" aria-label="Effacer la recherche">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
+                        </div>
                         
                         <!-- Dropdown Types -->
                         <div class="filter-dropdown-wrapper" id="dropdown-wrapper-types">
@@ -463,10 +468,17 @@
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </button>
                             <div class="filter-dropdown-popover hidden" id="popover-filter-types">
-                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                                    <input type="checkbox" id="filter-type-nom" checked style="accent-color: #60a5fa; width: 15px; height: 15px;">
-                                    <span class="type-badge nom" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_nom">Nom</span>
-                                </label>
+                                <div class="filter-popover-top">
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                        <input type="checkbox" id="filter-type-nom" checked style="accent-color: #60a5fa; width: 15px; height: 15px;">
+                                        <span class="type-badge nom" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_nom">Nom</span>
+                                    </label>
+                                    <div class="filter-quick-actions">
+                                        <button type="button" class="filter-quick-btn" data-filter-group="types" data-filter-action="all" data-i18n="filter_all">Tous</button>
+                                        <span class="filter-quick-sep">/</span>
+                                        <button type="button" class="filter-quick-btn" data-filter-group="types" data-filter-action="none" data-i18n="filter_none">Aucun</button>
+                                    </div>
+                                </div>
                                 <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
                                     <input type="checkbox" id="filter-type-verbe" checked style="accent-color: #fb7185; width: 15px; height: 15px;">
                                     <span class="type-badge verbe" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; text-transform: uppercase;" data-i18n="type_verbe">Verbe</span>
@@ -494,10 +506,17 @@
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </button>
                             <div class="filter-dropdown-popover hidden" id="popover-filter-levels">
-                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                                    <input type="checkbox" id="filter-level-a1" checked style="accent-color: #3b82f6; width: 15px; height: 15px;">
-                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
-                                </label>
+                                <div class="filter-popover-top">
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                        <input type="checkbox" id="filter-level-a1" checked style="accent-color: #3b82f6; width: 15px; height: 15px;">
+                                        <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
+                                    </label>
+                                    <div class="filter-quick-actions">
+                                        <button type="button" class="filter-quick-btn" data-filter-group="levels" data-filter-action="all" data-i18n="filter_all">Tous</button>
+                                        <span class="filter-quick-sep">/</span>
+                                        <button type="button" class="filter-quick-btn" data-filter-group="levels" data-filter-action="none" data-i18n="filter_none">Aucun</button>
+                                    </div>
+                                </div>
                                 <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
                                     <input type="checkbox" id="filter-level-a2" checked style="accent-color: #06b6d4; width: 15px; height: 15px;">
                                     <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
@@ -529,10 +548,17 @@
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </button>
                             <div class="filter-dropdown-popover hidden" id="popover-filter-statuses">
-                                <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                                    <input type="checkbox" id="filter-status-valide" checked style="accent-color: #10b981; width: 15px; height: 15px;">
-                                    <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;" data-i18n="status_valide">Validé</span>
-                                </label>
+                                <div class="filter-popover-top">
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                        <input type="checkbox" id="filter-status-valide" checked style="accent-color: #10b981; width: 15px; height: 15px;">
+                                        <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;" data-i18n="status_valide">Validé</span>
+                                    </label>
+                                    <div class="filter-quick-actions">
+                                        <button type="button" class="filter-quick-btn" data-filter-group="statuses" data-filter-action="all" data-i18n="filter_all">Tous</button>
+                                        <span class="filter-quick-sep">/</span>
+                                        <button type="button" class="filter-quick-btn" data-filter-group="statuses" data-filter-action="none" data-i18n="filter_none">Aucun</button>
+                                    </div>
+                                </div>
                                 <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
                                     <input type="checkbox" id="filter-status-actif" checked style="accent-color: #3b82f6; width: 15px; height: 15px;">
                                     <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;" data-i18n="status_non_valide">Non validé</span>
@@ -983,19 +1009,19 @@
 
     <!-- Notification Toast -->
     <div id="report-toast" class="report-toast hidden">
-        <span data-i18n="report_toast_success">✓ Signalement enregistré. Merci !</span>
+        <span data-i18n="report_toast_success">Signalement enregistré. Merci !</span>
     </div>
 
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.8; font-family: var(--font-sans); line-height: 1.6;">
-        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v129</span> &bull; <span data-i18n="footer_deployed">Déployé le 05/09/2026</span></div>
+        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v130</span> &bull; <span data-i18n="footer_deployed">Déployé le 05/09/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/jspdf.umd.min.js"></script>
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=129"></script>
+    <script type="module" src="js/main.js?v=130"></script>
     <script>
         if ('serviceWorker' in navigator) {
             let refreshing = false;

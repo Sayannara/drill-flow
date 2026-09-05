@@ -1200,8 +1200,6 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     .flashcard {
         padding: 1rem 0.5rem;
         margin-bottom: 0;
-        cursor: pointer;
-        transition: background-color 0.2s ease, transform 0.1s ease;
     }
     .drill-dynamic-area {
         min-height: 380px;
@@ -1210,12 +1208,6 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-    .flashcard:hover {
-        background-color: rgba(100, 116, 139, 0.03);
-    }
-    .flashcard:active {
-        transform: scale(0.99);
     }
     .status-banner {
         padding: 0.75rem;
@@ -1308,13 +1300,51 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     padding: 0.75rem 0.9rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
     z-index: 50;
-    min-width: 175px;
+    min-width: 190px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 .filter-dropdown-popover.hidden {
     display: none !important;
+}
+.filter-popover-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+.filter-quick-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    user-select: none;
+    line-height: 1;
+}
+.filter-quick-btn {
+    background: transparent;
+    border: none;
+    padding: 0.15rem 0.25rem;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 1;
+    font-family: inherit;
+    transition: all 0.15s ease;
+    opacity: 0.75;
+}
+.filter-quick-btn:hover {
+    opacity: 1;
+    color: var(--primary-color);
+    background: rgba(99, 102, 241, 0.12);
+}
+.filter-quick-sep {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    opacity: 0.4;
+    user-select: none;
 }
 .filter-badge-neutral {
     font-size: 0.72rem;
@@ -1324,6 +1354,38 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-weight: 500;
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.search-clear-btn {
+    position: absolute;
+    right: 0.55rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.55;
+    line-height: 1;
+    transition: opacity 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.search-clear-btn:hover {
+    opacity: 1;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+}
+.search-clear-btn.hidden {
+    display: none !important;
 }
 
 .filter-results-count {

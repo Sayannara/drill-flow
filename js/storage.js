@@ -75,27 +75,39 @@ export async function fetchProgressFromCloud() {
                         } else {
                             const localDate = localWord.last_updated ? new Date(localWord.last_updated).getTime() : 0;
                             const cloudDate = cloudWord.last_updated ? new Date(cloudWord.last_updated).getTime() : 0;
+                            const maxAttempts = Math.max(
+                                (typeof localWord === 'object' ? (localWord.max_attempts || localWord.attempts) : 0) || 0,
+                                (typeof cloudWord === 'object' ? (cloudWord.max_attempts || cloudWord.attempts) : 0) || 0
+                            );
                             if (cloudDate > localDate) {
-                                localCache[pairKey][wordId] = cloudWord;
+                                localCache[pairKey][wordId] = typeof cloudWord === 'object'
+                                    ? { ...cloudWord, max_attempts: maxAttempts }
+                                    : cloudWord;
+                            } else if (typeof localCache[pairKey][wordId] === 'object') {
+                                localCache[pairKey][wordId].max_attempts = maxAttempts;
                             }
                         }
                     }
                 }
             }
             
-            // Migration : Ajouter validation_date aux mots déjà validés
+            // Migration : Ajouter validation_date aux mots déjà validés et initialiser max_attempts
             let modified = false;
             const now = new Date().toISOString();
             for (const pairKey in localCache) {
                 for (const wordId in localCache[pairKey]) {
                     let wordData = localCache[pairKey][wordId];
                     if (typeof wordData === 'string') {
-                        wordData = { status: wordData, attempts: 1, last_updated: now };
+                        wordData = { status: wordData, attempts: 1, max_attempts: 1, last_updated: now };
                         localCache[pairKey][wordId] = wordData;
                         modified = true;
                     }
                     if (wordData.status === 'validé' && !wordData.validation_date) {
                         wordData.validation_date = now;
+                        modified = true;
+                    }
+                    if (wordData && typeof wordData === 'object' && !wordData.max_attempts && (wordData.attempts || wordData.status === 'validé')) {
+                        wordData.max_attempts = wordData.attempts || 1;
                         modified = true;
                     }
                 }
@@ -160,19 +172,23 @@ export function getWordStatus(langSource, langTarget, wordId) {
     return 'actif';
 }
 
-// Récupère toutes les stats d'un mot
+// Récupère toutes les stats d'un mot (incluant attempts et max_attempts)
 export function getWordStats(langSource, langTarget, wordId) {
     const pairKey = `${langSource}-${langTarget}`;
     if (localCache[pairKey] && localCache[pairKey][wordId]) {
         if (typeof localCache[pairKey][wordId] === 'object') {
-            return localCache[pairKey][wordId];
+            const data = localCache[pairKey][wordId];
+            return {
+                ...data,
+                max_attempts: (data.max_attempts !== undefined) ? data.max_attempts : (data.attempts || 0)
+            };
         }
-        return { status: localCache[pairKey][wordId], attempts: 1 };
+        return { status: localCache[pairKey][wordId], attempts: 1, max_attempts: 1 };
     }
-    return { status: 'actif', attempts: 0 };
+    return { status: 'actif', attempts: 0, max_attempts: 0 };
 }
 
-// Met à jour l'état d'un mot et gère ses tentatives
+// Met à jour l'état d'un mot et gère ses tentatives (compteur strict attempts + pic max_attempts)
 export function setWordStatus(langSource, langTarget, wordId, status, addAttempt = false, explicitAttempts = null) {
     const pairKey = `${langSource}-${langTarget}`;
     
@@ -184,9 +200,9 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
     
     // Si c'était l'ancien format string, on le convertit en objet
     if (typeof currentData === 'string') {
-        currentData = { status: currentData, attempts: 1, last_updated: new Date().toISOString() };
+        currentData = { status: currentData, attempts: 1, max_attempts: 1, last_updated: new Date().toISOString() };
     } else if (!currentData) {
-        currentData = { status: 'actif', attempts: 0, last_updated: new Date().toISOString() };
+        currentData = { status: 'actif', attempts: 0, max_attempts: 0, last_updated: new Date().toISOString() };
     }
     
     currentData.status = status;
@@ -196,11 +212,19 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
         currentData.attempts = 0;
     }
     
+    // 1. Compteur courant 'attempts' (règle stricte: repasse à 1 lors d'une validation)
     if (explicitAttempts !== null) {
         currentData.attempts = explicitAttempts;
     } else if (addAttempt) {
         currentData.attempts = (currentData.attempts || 0) + 1;
     }
+    
+    // 2. Nouveau champ 'max_attempts' : maintient le pic d'essais maximal jamais atteint
+    const prevMax = currentData.max_attempts || 0;
+    const currAttempts = currentData.attempts || 0;
+    const explicitVal = explicitAttempts !== null ? explicitAttempts : 0;
+    currentData.max_attempts = Math.max(prevMax, currAttempts, explicitVal);
+    
     currentData.last_updated = new Date().toISOString();
     
     localCache[pairKey][wordId] = currentData;

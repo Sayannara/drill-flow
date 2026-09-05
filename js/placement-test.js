@@ -7,7 +7,7 @@
  * et délai allongé en cas d'erreur avec option de passage immédiat (Entrée / Continuer).
  */
 
-import { vocabulary } from './data/vocabulary.js?v=129';
+import { vocabulary } from './data/vocabulary.js?v=130';
 import { translations } from './i18n.js';
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
