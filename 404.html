@@ -10,7 +10,7 @@
         if (path === '/config') {
             window.location.replace('/config/' + window.location.search);
         } else if (path === '/admin') {
-            window.location.replace('/admin.html' + window.location.search);
+            window.location.replace('/admin/' + window.location.search);
         } else if (params.has('mode') && params.has('oobCode')) {
             window.location.replace('auth-action.html' + window.location.search);
         } else {

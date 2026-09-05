@@ -421,10 +421,14 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     box-sizing: border-box;
 }
 .comparison-line { display: flex; align-items: center; font-size: 1.5rem; }
-.comparison-label { min-width: 140px; text-align: right; margin-right: 1.5rem; font-size: 1rem; color: var(--text-secondary); white-space: nowrap; }
-.comparison-text { font-family: monospace; font-size: 1.75rem; font-weight: 600; text-align: left; }
+.comparison-label { width: 140px; min-width: 140px; flex-shrink: 0; text-align: right; margin-right: 1.5rem; font-size: 1rem; color: var(--text-secondary); white-space: nowrap; box-sizing: border-box; }
+.comparison-text { font-family: monospace; font-size: 1.75rem; font-weight: 600; text-align: left; line-height: 1.2; padding: 0; margin: 0; }
 .user-saisie { color: var(--error-color); }
 .expected-saisie { color: var(--success-color); }
+
+#rewrite-wrapper:focus-within {
+    border-bottom-color: var(--primary-color) !important;
+}
 
 .speak-btn {
     color: #ffffff;
@@ -1463,7 +1467,7 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     }
 }
 
-/* --- Styles de la page Démarche Projet --- */
+/* --- Styles de la page Le Projet --- */
 .about-grid {
     display: flex;
     flex-direction: column;
@@ -1519,8 +1523,16 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 }
 .pillar-icon {
     font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-    display: block;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10b981;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.pillar-box:hover .pillar-icon {
+    transform: translateY(-2px);
+    color: #34d399;
 }
 .pillar-title {
     font-weight: 700;
@@ -2031,14 +2043,82 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
 }
 
-/* Quick-keys : Touches de caractères spéciaux */
+/* Quick-keys : Touches de caractères spéciaux avec composant toggle sur la gauche */
+.drill-special-keys-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    margin: 0.65rem auto 0.25rem;
+    user-select: none;
+}
+
+.special-keys-bar-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.45rem;
+    padding-left: 0.15rem;
+    box-sizing: border-box;
+}
+
+.special-keys-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0 0.6rem;
+    height: 30px;
+    border-radius: 8px;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.special-keys-toggle-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--primary-color);
+    background: var(--bg-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.special-keys-toggle-btn.is-active {
+    color: var(--primary-color);
+    border-color: rgba(59, 130, 246, 0.35);
+    background: rgba(59, 130, 246, 0.08);
+}
+
+.special-keys-toggle-btn .toggle-chevron {
+    transition: transform 0.2s ease;
+}
+
+.special-keys-toggle-btn:not(.is-active) .toggle-chevron {
+    transform: rotate(-90deg);
+}
+
+.special-keys-toggle-btn .toggle-text-chars {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+}
+
 .drill-special-keys {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.45rem;
-    margin-top: 0.85rem;
-    margin-bottom: 0.25rem;
+    margin: 0;
     user-select: none;
 }
 
@@ -2121,3 +2201,15 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
         gap: 0.75rem !important;
     }
 }
+
+@media (max-width: 580px) {
+    .placement-question-row {
+        grid-template-columns: 1fr auto !important;
+        gap: 0.35rem 0.6rem !important;
+    }
+    .placement-question-row .col-expected,
+    .placement-question-row .col-user {
+        grid-column: span 2;
+    }
+}
+

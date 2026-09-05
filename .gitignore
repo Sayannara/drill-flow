@@ -13,3 +13,7 @@ desktop.ini
 
 # Dossier temporaire / archives de scripts
 tmp/
+
+# Conflits de synchronisation OneDrive
+*-L4TVD-PC*
+Claude outputs/

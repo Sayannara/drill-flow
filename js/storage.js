@@ -52,6 +52,14 @@ export async function fetchProgressFromCloud() {
                 if (data.profile.lastname) localStorage.setItem('cert_lastname', data.profile.lastname);
                 if (data.profile.name_updated_at) localStorage.setItem('cert_name_updated_at', data.profile.name_updated_at);
             }
+            if (data && data.certificates) {
+                for (const pairKey in data.certificates) {
+                    const certInfo = data.certificates[pairKey];
+                    if (certInfo && certInfo.cert_id) {
+                        localStorage.setItem(`cert_id_${pairKey}`, certInfo.cert_id);
+                    }
+                }
+            }
             const cloudData = data.progress || {};
             
             // Fusion intelligente basée sur les dates de mise à jour
@@ -295,3 +303,43 @@ export async function saveUserProfile(firstname, lastname, nameUpdatedAt) {
         }
     }
 }
+
+// Récupère ou génère un numéro de certificat unique et persistant pour une paire de langues, et le lie au compte utilisateur dans Firestore
+export async function getOrGenerateCertificateId(src, tgt, level, validated, points) {
+    const pairKey = `${src}_${tgt}`;
+    let certId = localStorage.getItem(`cert_id_${pairKey}`);
+    
+    // Si aucun ID n'existe encore pour cette paire, on en génère un unique et pérenne
+    if (!certId) {
+        const randomPart = Math.random().toString(36).substring(2, 6).toUpperCase();
+        const timePart = Math.floor(Date.now() / 1000).toString(36).toUpperCase();
+        certId = `DF-${src.toUpperCase()}${tgt.toUpperCase()}-${timePart}${randomPart}`;
+        localStorage.setItem(`cert_id_${pairKey}`, certId);
+    }
+
+    // Sauvegarde / liaison directe dans la DB Firebase Firestore du compte utilisateur
+    const user = getCurrentUser();
+    if (user) {
+        try {
+            const docRef = doc(db, "users", user.uid);
+            await setDoc(docRef, {
+                certificates: {
+                    [pairKey]: {
+                        cert_id: certId,
+                        src,
+                        tgt,
+                        level: level || 'A1',
+                        validated_words: validated || 0,
+                        points: Math.round(points || 0),
+                        last_updated: new Date().toISOString()
+                    }
+                }
+            }, { merge: true });
+        } catch (e) {
+            console.error("Erreur liaison certificat Firestore:", e);
+        }
+    }
+
+    return certId;
+}
+

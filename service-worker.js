@@ -1,8 +1,9 @@
-const CACHE_NAME = "drillflow-cache-v7";
+const CACHE_NAME = "drillflow-cache-v27";
 const urlsToCache = [
   "/",
   "/index.html",
   "/css/style.css",
+  "/js/jspdf.umd.min.js",
   "/js/main.js",
   "/js/i18n.js",
   "/js/data/vocabulary.js",

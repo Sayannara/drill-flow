@@ -1,11 +1,11 @@
-import { vocabulary } from './data/vocabulary.js';
-import { initDrillSession, handleDrillKeydown } from './drill.js';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile } from './storage.js';
+import { vocabulary } from './data/vocabulary.js?v=127';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=127';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-// import { startPlacementTest } from './placement-test.js';
+import { startPlacementTest } from './placement-test.js?v=127';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -651,7 +651,6 @@ function attachViewEvents(viewId) {
             });
         }
 
-        /*
         const btnPlacementTest = document.getElementById('btn-open-placement-test');
         if (btnPlacementTest) {
             btnPlacementTest.onclick = () => {
@@ -664,7 +663,6 @@ function attachViewEvents(viewId) {
                 startPlacementTest(src, tgt);
             };
         }
-        */
     } else if (viewId === 'drill') {
         const inputEl = document.getElementById('drill-input');
         const btnFlip = document.getElementById('btn-flip-lang');
@@ -716,6 +714,45 @@ let currentProgPair = '';
 let currentStatsPair = '';
 let currentSortCol = 'source';
 let currentSortAsc = true;
+
+const PROG_FILTERS_KEY = 'drillflow_prog_filters';
+
+function getSavedProgressFilters() {
+    try {
+        const raw = localStorage.getItem(PROG_FILTERS_KEY);
+        if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    return null;
+}
+
+function saveProgressFilters() {
+    const types = ['nom', 'verbe', 'adjectif', 'adverbe', 'conjonction'];
+    const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+    const statuses = ['valide', 'actif', 'ignore'];
+
+    const data = {
+        types: {},
+        levels: {},
+        statuses: {}
+    };
+
+    types.forEach(t => {
+        const el = document.getElementById(`filter-type-${t}`);
+        if (el) data.types[t] = el.checked;
+    });
+    levels.forEach(l => {
+        const el = document.getElementById(`filter-level-${l}`);
+        if (el) data.levels[l] = el.checked;
+    });
+    statuses.forEach(s => {
+        const el = document.getElementById(`filter-status-${s}`);
+        if (el) data.statuses[s] = el.checked;
+    });
+
+    try {
+        localStorage.setItem(PROG_FILTERS_KEY, JSON.stringify(data));
+    } catch (e) {}
+}
 
 function initProgressView() {
     const gatedState = document.getElementById('progress-gated-state');
@@ -769,12 +806,16 @@ function initProgressView() {
             pairSelect.appendChild(opt);
         });
 
-        // Définir la paire sélectionnée par défaut sur la dernière session ou fr-en
+        // Définir la paire sélectionnée par défaut sur la dernière paire enregistrée ou dernière session ou fr-en
+        const savedProgPair = localStorage.getItem('prog_last_pair');
         const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
         const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
         const defaultPair = `${lastSrc}-${lastTgt}`;
 
-        if (usedPairs.includes(currentProgPair)) {
+        if (savedProgPair && usedPairs.includes(savedProgPair)) {
+            currentProgPair = savedProgPair;
+            pairSelect.value = currentProgPair;
+        } else if (usedPairs.includes(currentProgPair)) {
             pairSelect.value = currentProgPair;
         } else if (usedPairs.includes(defaultPair)) {
             currentProgPair = defaultPair;
@@ -786,6 +827,7 @@ function initProgressView() {
 
         pairSelect.onchange = (e) => {
             currentProgPair = e.target.value;
+            localStorage.setItem('prog_last_pair', currentProgPair);
             renderProgressTable();
         };
     }
@@ -869,11 +911,18 @@ function initProgressView() {
         if (countStatusesEl) countStatusesEl.textContent = checkedStatuses === statuses.length ? `${statuses.length}` : `${checkedStatuses}/${statuses.length}`;
     }
 
+    const savedFilters = getSavedProgressFilters();
+
     ['nom', 'verbe', 'adjectif', 'adverbe', 'conjonction'].forEach(type => {
         const cb = document.getElementById(`filter-type-${type}`);
         if (cb) {
-            cb.checked = true;
+            if (savedFilters?.types && savedFilters.types[type] !== undefined) {
+                cb.checked = !!savedFilters.types[type];
+            } else {
+                cb.checked = true;
+            }
             cb.onchange = () => {
+                saveProgressFilters();
                 updateFilterCounts();
                 renderProgressTable();
             };
@@ -884,8 +933,13 @@ function initProgressView() {
     ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach(level => {
         const checkbox = document.getElementById(`filter-level-${level}`);
         if (checkbox) {
-            checkbox.checked = true;
+            if (savedFilters?.levels && savedFilters.levels[level] !== undefined) {
+                checkbox.checked = !!savedFilters.levels[level];
+            } else {
+                checkbox.checked = true;
+            }
             checkbox.onchange = () => {
+                saveProgressFilters();
                 updateFilterCounts();
                 renderProgressTable();
             };
@@ -896,8 +950,13 @@ function initProgressView() {
     ['valide', 'actif', 'ignore'].forEach(statusKey => {
         const checkbox = document.getElementById(`filter-status-${statusKey}`);
         if (checkbox) {
-            checkbox.checked = true;
+            if (savedFilters?.statuses && savedFilters.statuses[statusKey] !== undefined) {
+                checkbox.checked = !!savedFilters.statuses[statusKey];
+            } else {
+                checkbox.checked = true;
+            }
             checkbox.onchange = () => {
+                saveProgressFilters();
                 updateFilterCounts();
                 renderProgressTable();
             };
@@ -1931,10 +1990,11 @@ function initCertsView() {
 
             if (lockInfoEl) {
                 const dateStr = nextAvailableDate.toLocaleDateString(lang === 'fr' ? 'fr-FR' : (lang === 'de' ? 'de-DE' : (lang === 'es' ? 'es-ES' : 'en-US')));
-                const lockMsg = (translations[lang]?.cert_name_locked || "🔒 Verrouillé jusqu'au {date} ({days}j restants)")
+                const lockSvg = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>`;
+                const lockMsg = (translations[lang]?.cert_name_locked || "Verrouillé jusqu'au {date} ({days}j restants)")
                     .replace('{date}', dateStr)
                     .replace('{days}', daysRemaining);
-                lockInfoEl.innerHTML = `<span style="color: #f59e0b; font-weight: 500;">${lockMsg}</span>`;
+                lockInfoEl.innerHTML = `<span style="color: #f59e0b; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;">${lockSvg}<span>${lockMsg}</span></span>`;
             }
         } else {
             inputFirstname.disabled = false;
@@ -1952,9 +2012,10 @@ function initCertsView() {
             if (btnContainer) btnContainer.style.display = 'flex';
 
             if (lockInfoEl) {
-                const infoMsg = (translations[lang]?.cert_name_info || "ℹ️ Le prénom et le nom ne sont modifiables qu'une fois tous les {days} jours.")
+                const infoSvg = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>`;
+                const infoMsg = (translations[lang]?.cert_name_info || "Le prénom et le nom ne sont modifiables qu'une fois tous les {days} jours.")
                     .replace('{days}', lockDays);
-                lockInfoEl.innerHTML = `<span style="color: var(--text-secondary);">${infoMsg}</span>`;
+                lockInfoEl.innerHTML = `<span style="color: var(--text-secondary); display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;">${infoSvg}<span>${infoMsg}</span></span>`;
             }
 
             if (btnSave) {
@@ -2077,7 +2138,51 @@ function initCertsView() {
     });
 }
 
-function openCertificateModal(src, tgt, validated, validatedByLevel, totalByLevel) {
+function downloadCertificateAsPDF(canvas, filename) {
+    try {
+        if (window.jspdf && window.jspdf.jsPDF) {
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF({
+                orientation: 'portrait',
+                unit: 'mm',
+                format: 'a4',
+                compress: true
+            });
+            const imgData = canvas.toDataURL('image/jpeg', 0.95);
+            // Page A4 portrait : 210mm x 297mm
+            pdf.addImage(imgData, 'JPEG', 0, 0, 210, 297, undefined, 'FAST');
+            pdf.save(filename);
+            return;
+        }
+    } catch (e) {
+        console.error("Erreur lors de l'export PDF jsPDF :", e);
+    }
+
+    // Fallback d'impression directe au format A4 si la librairie n'est pas encore disponible
+    const printWin = window.open('', '_blank');
+    if (printWin) {
+        const imgData = canvas.toDataURL('image/png');
+        printWin.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>${filename}</title>
+                <style>
+                    @page { size: A4 portrait; margin: 0; }
+                    body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #fff; }
+                    img { width: 100vw; height: auto; max-height: 100vh; object-fit: contain; }
+                </style>
+            </head>
+            <body>
+                <img src="${imgData}" onload="window.print();" />
+            </body>
+            </html>
+        `);
+        printWin.document.close();
+    }
+}
+
+async function openCertificateModal(src, tgt, validated, validatedByLevel, totalByLevel) {
     const modal = document.getElementById('cert-modal');
     const canvas = document.getElementById('cert-canvas');
     if (!modal || !canvas) return;
@@ -2087,10 +2192,16 @@ function openCertificateModal(src, tgt, validated, validatedByLevel, totalByLeve
     const ctx = canvas.getContext('2d');
     const lang = getAppLanguage();
 
-    // Dessiner l'attestation sur le canvas
-    drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, totalByLevel, lang);
+    const points = calculateCefrPoints(validatedByLevel);
+    const globalLevel = computeGlobalCefrLevel(validatedByLevel, totalByLevel);
 
-    // Configurer le téléchargement
+    // Récupérer / générer et lier le certificat unique dans la DB du compte utilisateur
+    const certId = await getOrGenerateCertificateId(src, tgt, globalLevel, validated, points);
+
+    // Dessiner l'attestation sur le canvas en format portrait
+    drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, totalByLevel, lang, certId);
+
+    // Configurer le téléchargement PNG
     const btnDownload = document.getElementById('btn-download-cert');
     if (btnDownload) {
         btnDownload.onclick = () => {
@@ -2102,22 +2213,12 @@ function openCertificateModal(src, tgt, validated, validatedByLevel, totalByLeve
         };
     }
 
-    // Configurer le partage LinkedIn
-    const btnLinkedin = document.getElementById('btn-linkedin-cert');
-    if (btnLinkedin) {
-        btnLinkedin.onclick = () => {
-            const langName = getLangName(tgt);
-            let postTemplate = translations[lang].linkedin_post_text;
-            let postText = postTemplate.replace('{count}', validated).replace('{langName}', langName);
-            
-            // Copier dans le presse-papiers
-            navigator.clipboard.writeText(postText).then(() => {
-                alert(translations[lang].linkedin_instructions);
-                window.open('https://www.linkedin.com/feed/?shareActive=true', '_blank');
-            }).catch(err => {
-                console.error("Impossible de copier dans le presse-papiers : ", err);
-                window.open('https://www.linkedin.com/feed/?shareActive=true', '_blank');
-            });
+    // Configurer le téléchargement PDF
+    const btnDownloadPdf = document.getElementById('btn-download-pdf-cert');
+    if (btnDownloadPdf) {
+        btnDownloadPdf.onclick = () => {
+            const pdfFilename = `attestation_drillflow_${src}_${tgt}.pdf`;
+            downloadCertificateAsPDF(canvas, pdfFilename);
         };
     }
 
@@ -2151,17 +2252,18 @@ function computeGlobalCefrLevel(validatedByLevel, totalByLevel) {
     return getCefrLevelFromPoints(points);
 }
 
-function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, totalByLevel, lang) {
+function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, totalByLevel, lang, certId) {
     const w = 800;
-    const h = 600;
+    const h = 1132;
 
     // Fond blanc avec dégradé subtil
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, w, h);
 
-    const bgGrad = ctx.createLinearGradient(0, 0, w, h);
+    const bgGrad = ctx.createLinearGradient(0, 0, 0, h);
     bgGrad.addColorStop(0, '#ffffff');
-    bgGrad.addColorStop(0.5, '#f8fafc');
+    bgGrad.addColorStop(0.15, '#fafbfc');
+    bgGrad.addColorStop(0.85, '#f8fafc');
     bgGrad.addColorStop(1, '#f1f5f9');
     ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, w, h);
@@ -2169,147 +2271,172 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, tot
     // Bordure extérieure avec coins arrondis
     ctx.strokeStyle = '#cbd5e1';
     ctx.lineWidth = 1.5;
-    drawRoundedRect(ctx, 16, 16, w - 32, h - 32, 12, false, true);
+    drawRoundedRect(ctx, 20, 20, w - 40, h - 40, 14, false, true);
 
-    // Liseré coloré en haut (dégradé signature drillFlow)
-    const barGrad = ctx.createLinearGradient(16, 16, w - 16, 16);
+    // Cadre intérieur décoratif fin
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.lineWidth = 1;
+    drawRoundedRect(ctx, 28, 28, w - 56, h - 56, 10, false, true);
+
+    // Liseré supérieur aux couleurs de drillFlow
+    const barGrad = ctx.createLinearGradient(20, 20, w - 20, 20);
     barGrad.addColorStop(0, '#4f46e5');
     barGrad.addColorStop(0.5, '#6366f1');
     barGrad.addColorStop(1, '#06b6d4');
     ctx.fillStyle = barGrad;
-    drawRoundedRect(ctx, 17, 17, w - 34, 5, 2, true, false);
+    drawRoundedRect(ctx, 21, 21, w - 42, 5, 2.5, true, false);
 
-    // 1. HEADER (Logo + Tagline épuré)
-    // Logo "drillFlow."
+    // 1. EN-TÊTE (Logo + Devise)
     ctx.textAlign = 'left';
     ctx.textBaseline = 'alphabetic';
-    ctx.font = 'bold 22px "Outfit", sans-serif';
+    ctx.font = 'bold 24px "Outfit", sans-serif';
     ctx.fillStyle = '#0f172a';
-    ctx.fillText('drill', 40, 50);
+    ctx.fillText('drill', 50, 66);
     const drillW = ctx.measureText('drill').width;
 
     ctx.fillStyle = '#4f46e5';
-    ctx.fillText('Flow.', 40 + drillW, 50);
+    ctx.fillText('Flow.', 50 + drillW, 66);
 
-    // Tagline sous le logo: "Master language faster."
+    // Tagline sous le logo
     ctx.font = '500 11px "Inter", sans-serif';
     ctx.fillStyle = '#64748b';
-    ctx.fillText('Master language ', 40, 66);
+    ctx.fillText('Master language ', 50, 82);
     const tagW = ctx.measureText('Master language ').width;
 
     ctx.fillStyle = '#4f46e5';
     ctx.font = 'bold 11px "Inter", sans-serif';
-    ctx.fillText('faster.', 40 + tagW, 66);
+    ctx.fillText('faster.', 50 + tagW, 82);
 
-    // Badge discret application à droite
+    // Badge application en haut à droite
     ctx.font = '600 11px "Inter", sans-serif';
     ctx.fillStyle = '#6366f1';
     ctx.textAlign = 'right';
-    ctx.fillText('drill-flow.app', 760, 52);
+    ctx.fillText('drill-flow.app', 750, 66);
 
-    // Ligne de séparation
+    ctx.font = '500 10px "Inter", sans-serif';
+    ctx.fillStyle = '#94a3b8';
+    ctx.fillText('Plateforme d\'entraînement actif', 750, 82);
+
+    // Ligne de séparation sous l'en-tête
     ctx.strokeStyle = '#e2e8f0';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(40, 78);
-    ctx.lineTo(760, 78);
+    ctx.moveTo(50, 96);
+    ctx.lineTo(750, 96);
     ctx.stroke();
 
     // 2. TITRE & APPRENANT
     ctx.textAlign = 'center';
 
-    // Titre Document
+    // Titre de l'attestation
     ctx.fillStyle = '#1e293b';
-    ctx.font = 'bold 16px "Outfit", sans-serif';
-    ctx.fillText(translations[lang].cert_achievement, w / 2, 98);
+    ctx.font = 'bold 17px "Outfit", sans-serif';
+    ctx.fillText(translations[lang].cert_achievement || 'ATTESTATION DE COMPÉTENCES LINGUISTIQUES', w / 2, 130);
 
-    // Subtitle "Délivrée à :"
+    // "Délivrée à :"
     ctx.fillStyle = '#64748b';
     ctx.font = '500 12px "Inter", sans-serif';
-    ctx.fillText(translations[lang].cert_awarded_to, w / 2, 118);
+    ctx.fillText(translations[lang].cert_awarded_to || 'Délivrée à :', w / 2, 154);
 
     // Nom complet
     const fname = localStorage.getItem('cert_firstname') || '';
     const lname = localStorage.getItem('cert_lastname') || '';
-    const fullName = (fname || lname) ? `${fname} ${lname}`.trim() : translations[lang].cert_default_learner;
+    const fullName = (fname || lname) ? `${fname} ${lname}`.trim() : (translations[lang].cert_default_learner || 'Apprenant drillFlow.');
     ctx.fillStyle = '#0f172a';
-    ctx.font = 'bold 24px "Outfit", sans-serif';
-    ctx.fillText(fullName, w / 2, 144);
+    ctx.font = 'bold 26px "Outfit", sans-serif';
+    ctx.fillText(fullName, w / 2, 186);
 
-    // Langues & Badge
+    // Badge Paire linguistique & méthode
     const srcName = getLangName(src).toUpperCase();
     const tgtName = getLangName(tgt).toUpperCase();
     const pairSummary = `${srcName} ➔ ${tgtName} • VOCABULAIRE RÉFLEXE`;
     ctx.font = 'bold 10px "Inter", sans-serif';
-    const pairW = ctx.measureText(pairSummary).width + 24;
+    const pairW = ctx.measureText(pairSummary).width + 26;
     const pairX = (w - pairW) / 2;
 
     ctx.fillStyle = '#0f172a';
-    drawRoundedRect(ctx, pairX, 156, pairW, 22, 11, true, false);
+    drawRoundedRect(ctx, pairX, 202, pairW, 24, 12, true, false);
 
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
-    ctx.fillText(pairSummary, w / 2, 171);
+    ctx.fillText(pairSummary, w / 2, 218);
 
-    // 3. NIVEAU CECRL GLOBAL ATTEINT (Calculé rigoureusement selon la progression réelle)
+    // 3. NIVEAU CECRL GLOBAL ATTEINT & STATS TOTALES (Disposition spacieuse en 2 rangées : ZÉRO chevauchement)
     const points = calculateCefrPoints(validatedByLevel);
     const globalLevel = computeGlobalCefrLevel(validatedByLevel, totalByLevel);
     const levelDescKey = `cefr_desc_${globalLevel}`;
     const levelDesc = (translations[lang] && translations[lang][levelDescKey]) || 'Utilisateur';
 
-    // Boîte niveau global
+    const globalBoxY = 244;
+    const globalBoxH = 104;
     ctx.fillStyle = '#ffffff';
     ctx.strokeStyle = '#e2e8f0';
     ctx.lineWidth = 1.5;
-    drawRoundedRect(ctx, 40, 186, 720, 62, 10, true, true);
+    drawRoundedRect(ctx, 50, globalBoxY, 700, globalBoxH, 12, true, true);
 
-    // Badge Niveau à gauche
-    const lvlGrad = ctx.createLinearGradient(50, 192, 110, 242);
+    // Rangée 1 : Badge Niveau + Libellé complet du Niveau + Référentiel CECRL
+    const lvlGrad = ctx.createLinearGradient(64, globalBoxY + 12, 118, globalBoxY + 56);
     lvlGrad.addColorStop(0, '#4f46e5');
     lvlGrad.addColorStop(1, '#3b82f6');
     ctx.fillStyle = lvlGrad;
-    drawRoundedRect(ctx, 50, 192, 60, 50, 8, true, false);
+    drawRoundedRect(ctx, 64, globalBoxY + 12, 54, 44, 8, true, false);
 
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
-    ctx.font = 'bold 22px "Outfit", sans-serif';
-    ctx.fillText(globalLevel, 80, 222);
+    ctx.font = 'bold 20px "Outfit", sans-serif';
+    ctx.fillText(globalLevel, 91, globalBoxY + 39);
 
-    ctx.font = 'bold 9px "Inter", sans-serif';
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
-    ctx.fillText('CECRL', 80, 235);
+    ctx.font = 'bold 8px "Inter", sans-serif';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+    ctx.fillText('CECRL', 91, globalBoxY + 50);
 
-    // Texte descriptif au centre
+    // Texte descriptif du niveau global (utilise toute la largeur disponible, aucun croisement)
     ctx.textAlign = 'left';
     ctx.fillStyle = '#0f172a';
-    ctx.font = 'bold 14px "Outfit", sans-serif';
+    ctx.font = 'bold 15px "Outfit", sans-serif';
     const globalLabel = translations[lang].cert_global_level || 'Niveau global atteint :';
-    ctx.fillText(`${globalLabel} ${globalLevel} — ${levelDesc}`, 125, 212);
+    ctx.fillText(`${globalLabel} ${globalLevel} — ${levelDesc}`, 130, globalBoxY + 31);
 
     ctx.fillStyle = '#64748b';
     ctx.font = '400 11px "Inter", sans-serif';
-    ctx.fillText(translations[lang].cert_cefr_framework, 125, 231);
+    ctx.fillText(translations[lang].cert_cefr_framework || 'Cadre Européen Commun de Référence pour les Langues (CECRL)', 130, globalBoxY + 48);
 
-    // Metric à droite
+    // Rangée 2 : Deux pilules métriques distinctes et spacieuses (Total mots validés & Total points)
+    const pillsY = globalBoxY + 64;
+    const pill1X = 64;
+    const pill1W = 325;
+    const pill2X = 401;
+    const pill2W = 335;
+    const pillH = 30;
+
+    // Pilule 1 : Total mots validés
     ctx.fillStyle = 'rgba(99, 102, 241, 0.08)';
     ctx.strokeStyle = 'rgba(99, 102, 241, 0.25)';
     ctx.lineWidth = 1;
-    drawRoundedRect(ctx, 575, 193, 172, 48, 8, true, true);
+    drawRoundedRect(ctx, pill1X, pillsY, pill1W, pillH, 6, true, true);
 
     ctx.textAlign = 'center';
     ctx.fillStyle = '#4f46e5';
-    ctx.font = 'bold 15px "Outfit", sans-serif';
-    ctx.fillText(`${validated} (${Math.round(points)} pts)`, 661, 215);
+    ctx.font = 'bold 13px "Outfit", sans-serif';
+    const labelWords = translations[lang].cert_learned_words || 'Total mots validés';
+    ctx.fillText(`${labelWords} : ${validated}`, pill1X + pill1W / 2, pillsY + 20);
 
-    ctx.fillStyle = '#475569';
-    ctx.font = '500 10px "Inter", sans-serif';
-    ctx.fillText(translations[lang].stat_cefr_points || 'Points de maîtrise', 661, 230);
+    // Pilule 2 : Total points
+    ctx.fillStyle = 'rgba(16, 185, 129, 0.08)';
+    ctx.strokeStyle = 'rgba(16, 185, 129, 0.25)';
+    ctx.lineWidth = 1;
+    drawRoundedRect(ctx, pill2X, pillsY, pill2W, pillH, 6, true, true);
 
-    // 4. SCORECARD DÉTAIL PAR NIVEAU CECRL
+    ctx.fillStyle = '#059669';
+    ctx.font = 'bold 13px "Outfit", sans-serif';
+    const labelPoints = translations[lang].cert_total_points || 'Total points';
+    ctx.fillText(`${labelPoints} : ${Math.round(points)}`, pill2X + pill2W / 2, pillsY + 20);
+
+    // 4. SCORECARD DÉTAIL PAR NIVEAU CECRL (Disposition en 6 lignes portrait)
     ctx.textAlign = 'left';
     ctx.fillStyle = '#334155';
     ctx.font = 'bold 12px "Inter", sans-serif';
-    ctx.fillText(translations[lang].cert_levels_prefix, 40, 266);
+    ctx.fillText(translations[lang].cert_levels_prefix || 'Détail du vocabulaire par niveau CECRL :', 50, 368);
 
     const cefrColors = {
         A1: { bg: '#dbeafe', text: '#1e40af', bar: '#2563eb' },
@@ -2320,113 +2447,187 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, tot
         C2: { bg: '#dcfce7', text: '#166534', bar: '#059669' }
     };
 
-    const levelItems = [
-        { lvl: 'A1', col: 0, row: 0 },
-        { lvl: 'A2', col: 0, row: 1 },
-        { lvl: 'B1', col: 0, row: 2 },
-        { lvl: 'B2', col: 1, row: 0 },
-        { lvl: 'C1', col: 1, row: 1 },
-        { lvl: 'C2', col: 1, row: 2 }
-    ];
+    const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    const startY = 382;
+    const rowH = 55;
 
-    const colWidth = 345;
-    const colGap = 30;
-    const startX = 40;
-    const startY = 278;
-    const rowH = 46;
-
-    levelItems.forEach(item => {
-        const x = startX + item.col * (colWidth + colGap);
-        const y = startY + item.row * rowH;
-        const lvl = item.lvl;
+    levels.forEach((lvl, index) => {
+        const y = startY + index * rowH;
         const color = cefrColors[lvl];
         const val = (validatedByLevel && validatedByLevel[lvl]) || 0;
         const tot = (totalByLevel && totalByLevel[lvl]) || 0;
         const pct = tot > 0 ? Math.round((val / tot) * 100) : 0;
         const desc = (translations[lang] && translations[lang][`cefr_desc_${lvl}`]) || lvl;
 
+        // Ligne de fond avec léger contour
+        ctx.fillStyle = '#ffffff';
+        ctx.strokeStyle = '#f1f5f9';
+        ctx.lineWidth = 1;
+        drawRoundedRect(ctx, 50, y, 700, 46, 8, true, true);
+
         // Badge niveau
         ctx.fillStyle = color.bg;
-        drawRoundedRect(ctx, x, y, 28, 18, 4, true, false);
+        drawRoundedRect(ctx, 60, y + 8, 36, 30, 6, true, false);
 
         ctx.textAlign = 'center';
         ctx.fillStyle = color.text;
-        ctx.font = 'bold 10px "Inter", sans-serif';
-        ctx.fillText(lvl, x + 14, y + 13);
+        ctx.font = 'bold 12px "Outfit", sans-serif';
+        ctx.fillText(lvl, 78, y + 28);
 
-        // Intitulé niveau
+        // Intitulé niveau CECRL
         ctx.textAlign = 'left';
         ctx.fillStyle = '#1e293b';
-        ctx.font = 'bold 11px "Inter", sans-serif';
-        ctx.fillText(desc, x + 34, y + 13);
+        ctx.font = 'bold 12px "Inter", sans-serif';
+        ctx.fillText(desc, 108, y + 28);
+
+        // Barre de progression
+        const barX = 330;
+        const barY = y + 19;
+        const barW = 240;
+        const barH = 8;
+        ctx.fillStyle = '#e2e8f0';
+        drawRoundedRect(ctx, barX, barY, barW, barH, 4, true, false);
+
+        if (pct > 0) {
+            const filledW = Math.max(8, Math.round((pct / 100) * barW));
+            ctx.fillStyle = color.bar;
+            drawRoundedRect(ctx, barX, barY, filledW, barH, 4, true, false);
+        }
 
         // Stats chiffres
         ctx.textAlign = 'right';
         ctx.fillStyle = '#475569';
-        ctx.font = 'bold 11px "Inter", sans-serif';
-        ctx.fillText(`${val} / ${tot} (${pct}%)`, x + colWidth, y + 13);
-
-        // Barre de progression (fond)
-        ctx.fillStyle = '#e2e8f0';
-        drawRoundedRect(ctx, x, y + 22, colWidth, 7, 3.5, true, false);
-
-        // Barre de progression (remplie)
-        if (pct > 0) {
-            const filledW = Math.max(7, Math.round((pct / 100) * colWidth));
-            ctx.fillStyle = color.bar;
-            drawRoundedRect(ctx, x, y + 22, filledW, 7, 3.5, true, false);
-        }
+        ctx.font = 'bold 12px "Inter", sans-serif';
+        ctx.fillText(`${val} / ${tot} (${pct}%)`, 736, y + 28);
     });
 
-    // 5. BAS DE PAGE / VALIDATION OFFICIELLE
-    const footY = 426;
+    // 5. BAS DE PAGE / VALIDATION OFFICIELLE & SCEAU
+    const footY = 724;
+    const footH = 360;
     ctx.fillStyle = '#f8fafc';
     ctx.strokeStyle = '#e2e8f0';
     ctx.lineWidth = 1.2;
-    drawRoundedRect(ctx, 40, footY, 720, 140, 10, true, true);
+    drawRoundedRect(ctx, 50, footY, 700, footH, 12, true, true);
 
-    const dateStr = new Date().toLocaleDateString(lang === 'en' ? 'en-US' : lang === 'fr' ? 'fr-FR' : lang === 'de' ? 'de-DE' : 'es-ES');
+    const dateStr = new Date().toLocaleDateString(lang === 'en' ? 'en-US' : (lang === 'de' ? 'de-DE' : (lang === 'es' ? 'es-ES' : 'fr-FR')));
 
-    // Informations à gauche
+    // Informations et pédagogie à gauche (AUCUNE URL DU SITE EN BAS À GAUCHE)
     ctx.textAlign = 'left';
+    ctx.fillStyle = '#1e293b';
+    ctx.font = 'bold 13px "Inter", sans-serif';
+    ctx.fillText(`${translations[lang].cert_date || "Date d'émission :"} ${dateStr}`, 70, footY + 38);
+
     ctx.fillStyle = '#334155';
-    ctx.font = 'bold 11px "Inter", sans-serif';
-    ctx.fillText(`📅 ${translations[lang].cert_date || 'Date :'} ${dateStr}`, 55, footY + 32);
+    ctx.font = '600 12px "Inter", sans-serif';
+    ctx.fillText(translations[lang].cert_for_mastering || "Méthode d'entraînement par répétition active et mémorisation réflexe", 70, footY + 68);
 
     ctx.fillStyle = '#64748b';
     ctx.font = '400 11px "Inter", sans-serif';
-    ctx.fillText(`⚡ ${translations[lang].cert_for_mastering}`, 55, footY + 62);
-    ctx.fillText('🛡️ drillFlow : Entraînement actif au vocabulaire & répétition réflexe', 55, footY + 88);
+    ctx.fillText("• Validation stricte : chaque mot est validé au premier essai lors du Drill.", 70, footY + 95);
+    ctx.fillText("• Répétition active : restitution orthographique directe sans proposition passive.", 70, footY + 117);
+    ctx.fillText("• Mobilisation réflexe : consolidation en mémoire à long terme.", 70, footY + 139);
 
-    ctx.fillStyle = '#4f46e5';
+    // Bilan certifié explicite avec mots validés
+    ctx.fillStyle = '#0f172a';
     ctx.font = 'bold 11px "Inter", sans-serif';
-    ctx.fillText('🌐 drill-flow.app', 55, footY + 114);
+    const volumeTemplate = translations[lang].cert_attested_volume || "• Bilan certifié : total de {words} mots validés ({points} points au total).";
+    const volumeText = volumeTemplate.replace('{words}', validated).replace('{points}', Math.round(points));
+    ctx.fillText(volumeText, 70, footY + 164);
 
-    // Tampon / Badge d'attestation à droite
-    const stampX = 595;
-    const stampY = footY + 20;
-    const stampW = 150;
-    const stampH = 100;
+    // Ligne fine décorative
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(70, footY + 185);
+    ctx.lineTo(480, footY + 185);
+    ctx.stroke();
+
+    ctx.fillStyle = '#475569';
+    ctx.font = '500 11px "Inter", sans-serif';
+    ctx.fillText("Référentiel européen : CECRL (Cadre Européen Commun de Référence)", 70, footY + 208);
+    ctx.fillText("Plateforme d'évaluation : drillFlow Learning System", 70, footY + 230);
+
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = 'italic 10px "Inter", sans-serif';
+    ctx.fillText("Attestation numérique individuelle certifiant du volume lexical actif validé.", 70, footY + 260);
+    ctx.fillText("Document officiel généré automatiquement d'après les résultats réels d'entraînement.", 70, footY + 280);
+
+    // Tampon / Sceau d'attestation officiel à droite (avec graphisme vectoriel canvas pur, pas d'émoji)
+    const stampX = 510;
+    const stampY = footY + 30;
+    const stampW = 220;
+    const stampH = 300;
 
     ctx.fillStyle = '#ffffff';
     ctx.strokeStyle = '#cbd5e1';
-    ctx.lineWidth = 1;
-    drawRoundedRect(ctx, stampX, stampY, stampW, stampH, 8, true, true);
+    ctx.lineWidth = 1.2;
+    drawRoundedRect(ctx, stampX, stampY, stampW, stampH, 10, true, true);
 
-    // Liseré vert discret
+    // Liseré vert discret en haut du tampon
     ctx.fillStyle = '#10b981';
     drawRoundedRect(ctx, stampX + 1, stampY + 1, stampW - 2, 4, 2, true, false);
 
+    const sealCenterX = stampX + stampW / 2;
+    const sealCenterY = stampY + 68;
+
+    // Double cercle du sceau
+    ctx.beginPath();
+    ctx.arc(sealCenterX, sealCenterY, 32, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(16, 185, 129, 0.08)';
+    ctx.fill();
+    ctx.strokeStyle = '#10b981';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(sealCenterX, sealCenterY, 26, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(16, 185, 129, 0.35)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Coche vectorielle nette au centre du sceau
+    ctx.strokeStyle = '#059669';
+    ctx.lineWidth = 3;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.beginPath();
+    ctx.moveTo(sealCenterX - 11, sealCenterY);
+    ctx.lineTo(sealCenterX - 2, sealCenterY + 9);
+    ctx.lineTo(sealCenterX + 12, sealCenterY - 7);
+    ctx.stroke();
+
+    // Textes du sceau officiel
     ctx.textAlign = 'center';
     ctx.fillStyle = '#059669';
-    ctx.font = 'bold 12px "Outfit", sans-serif';
-    ctx.fillText(translations[lang].cert_seal_text || '✓ ATTESTÉ', stampX + stampW / 2, stampY + 36);
+    ctx.font = 'bold 14px "Outfit", sans-serif';
+    ctx.fillText(translations[lang].cert_seal_text || 'ATTESTÉ', sealCenterX, stampY + 130);
 
     ctx.fillStyle = '#1e293b';
-    ctx.font = '600 10px "Inter", sans-serif';
-    ctx.fillText('drillFlow. Learning', stampX + stampW / 2, stampY + 58);
+    ctx.font = 'bold 12px "Inter", sans-serif';
+    ctx.fillText('drillFlow. Learning', sealCenterX, stampY + 154);
 
-    ctx.fillStyle = '#6366f1';
+    ctx.fillStyle = '#64748b';
+    ctx.font = '500 10px "Inter", sans-serif';
+    ctx.fillText('Protocole CECRL Conforme', sealCenterX, stampY + 172);
+
+    // Ligne de séparation dans le sceau
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(stampX + 24, stampY + 192);
+    ctx.lineTo(stampX + stampW - 24, stampY + 192);
+    ctx.stroke();
+
+    const persistentId = certId || `DF-${src.toUpperCase()}${tgt.toUpperCase()}-${Math.floor(Date.now() / 1000).toString(36).toUpperCase()}`;
+    ctx.font = 'bold 10px "Inter", monospace';
+    ctx.fillStyle = '#4f46e5';
+    ctx.fillText(persistentId, sealCenterX, stampY + 218);
+
     ctx.font = '500 9px "Inter", sans-serif';
-    ctx.fillText('drill-flow.app', stampX + stampW / 2, stampY + 78);
+    ctx.fillStyle = '#94a3b8';
+    ctx.fillText('Certificat numérique vérifié', sealCenterX, stampY + 238);
+
+    ctx.font = '600 10px "Inter", sans-serif';
+    ctx.fillStyle = '#6366f1';
+    ctx.fillText('drill-flow.app', sealCenterX, stampY + 268);
 }

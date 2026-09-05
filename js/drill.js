@@ -1,6 +1,7 @@
-import { vocabulary } from './data/vocabulary.js';
+import { vocabulary } from './data/vocabulary.js?v=127';
 import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js';
 import { translations } from './i18n.js';
+import { getCurrentUser } from './auth.js';
 
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -51,6 +52,94 @@ function normalizeTolerant(text, lang = '') {
     return s;
 }
 
+export function getSpecialKeysStorageKey() {
+    let uid = 'guest';
+    try {
+        const user = (typeof getCurrentUser === 'function') ? getCurrentUser() : null;
+        if (user && user.uid) {
+            uid = user.uid;
+        } else {
+            const storedUid = localStorage.getItem('drillflow_auth_uid');
+            if (storedUid) uid = storedUid;
+        }
+    } catch (e) {
+        // Fallback
+    }
+    return `drillflow_show_special_keys_${uid}`;
+}
+
+export function isSpecialKeysVisible() {
+    const key = getSpecialKeysStorageKey();
+    const val = localStorage.getItem(key);
+    if (val !== null) return val === 'true';
+    return true; // Visible par défaut
+}
+
+export function setSpecialKeysVisible(visible) {
+    const key = getSpecialKeysStorageKey();
+    localStorage.setItem(key, visible ? 'true' : 'false');
+    localStorage.setItem('drillflow_show_special_keys', visible ? 'true' : 'false');
+}
+
+export function updateSpecialKeysVisibilityUI(isVisible) {
+    const container = document.getElementById('drill-special-keys');
+    const toggleBtn = document.getElementById('drill-special-keys-toggle');
+    const rewriteKeysEl = document.getElementById('rewrite-special-keys');
+
+    const appLang = getAppLanguage();
+    const trans = translations[appLang] || translations['fr'];
+
+    if (container) {
+        container.style.display = isVisible ? 'flex' : 'none';
+    }
+
+    if (rewriteKeysEl) {
+        const rewriteLine = document.getElementById('rewrite-line');
+        if (rewriteLine && rewriteLine.style.display !== 'none') {
+            rewriteKeysEl.style.display = isVisible ? 'flex' : 'none';
+        }
+    }
+
+    if (toggleBtn) {
+        if (isVisible) {
+            toggleBtn.classList.add('is-active');
+            const tip = trans.keys_toggle_hide || "Masquer les caractères spéciaux";
+            toggleBtn.setAttribute('title', tip);
+            toggleBtn.setAttribute('aria-label', tip);
+        } else {
+            toggleBtn.classList.remove('is-active');
+            const tip = trans.keys_toggle_show || "Afficher les caractères spéciaux";
+            toggleBtn.setAttribute('title', tip);
+            toggleBtn.setAttribute('aria-label', tip);
+        }
+    }
+}
+
+function initSpecialKeysToggle() {
+    const toggleBtn = document.getElementById('drill-special-keys-toggle');
+    if (!toggleBtn || toggleBtn.dataset.bound) return;
+    toggleBtn.dataset.bound = 'true';
+
+    toggleBtn.addEventListener('pointerdown', (e) => {
+        // Empêche le champ de saisie de perdre le focus
+        e.preventDefault();
+    });
+
+    toggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const nextState = !isSpecialKeysVisible();
+        setSpecialKeysVisible(nextState);
+        updateSpecialKeysVisibilityUI(nextState);
+
+        // Maintient le focus sur le champ de saisie
+        const input = document.getElementById('drill-input') || document.getElementById('rewrite-input');
+        if (input && window.innerWidth > 640) {
+            input.focus();
+        }
+    });
+}
+
 function renderSpecialKeysBar(containerId, targetInputId) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -58,10 +147,22 @@ function renderSpecialKeysBar(containerId, targetInputId) {
     const targetLang = (sessionState.langTarget || '').toLowerCase();
     const keys = SPECIAL_KEYS_BY_LANG[targetLang];
 
+    const areaEl = document.getElementById('drill-special-keys-area');
+    const previewEl = document.getElementById('drill-special-keys-preview');
+
     if (!keys || keys.length === 0) {
         container.style.display = 'none';
         container.innerHTML = '';
+        if (areaEl) areaEl.style.display = 'none';
         return;
+    }
+
+    // Prévisualisation pour le bouton toggle
+    if (previewEl) {
+        if (targetLang === 'es') previewEl.textContent = 'áñ';
+        else if (targetLang === 'de') previewEl.textContent = 'äö';
+        else if (targetLang === 'fr') previewEl.textContent = 'éà';
+        else previewEl.textContent = 'Aa';
     }
 
     container.innerHTML = '';
@@ -95,7 +196,14 @@ function renderSpecialKeysBar(containerId, targetInputId) {
         container.appendChild(btn);
     });
 
-    container.style.display = 'flex';
+    initSpecialKeysToggle();
+
+    if (containerId === 'drill-special-keys') {
+        if (areaEl) areaEl.style.display = 'flex';
+        updateSpecialKeysVisibilityUI(isSpecialKeysVisible());
+    } else {
+        container.style.display = isSpecialKeysVisible() ? 'flex' : 'none';
+    }
 }
 
 function getArticleAlternatives(text) {
@@ -166,71 +274,17 @@ function buildTargetRegex(targetWord) {
 }
 
 function highlightExampleSentence(sentence, targetWord, styleOrClass) {
-    if (!sentence || !targetWord) return sentence || '';
+    if (!sentence) return sentence || '';
     
-    const isStyle = !styleOrClass.startsWith('class=');
+    const isStyle = !styleOrClass || !styleOrClass.startsWith('class=');
     const tagOpen = isStyle ? `<span style="${styleOrClass}">` : `<span ${styleOrClass}>`;
     const tagClose = `</span>`;
 
-    // 1. Si la phrase contient déjà des astérisques (ex: "Je *parle* français avec toi."), on remplace la partie entre astérisques
+    // Si la phrase contient des astérisques (ex: "Je *parle* français avec toi."), on remplace la partie entre astérisques
     if (sentence.includes('*')) {
         const hasAsteriskMatch = /\*([^*]+)\*/.test(sentence);
         if (hasAsteriskMatch) {
             return sentence.replace(/\*([^*]+)\*/g, `${tagOpen}$1${tagClose}`);
-        }
-    }
-
-    // 2. Tenter une correspondance exacte avec la regex basée sur les mots cibles (buildTargetRegex)
-    const regex = buildTargetRegex(targetWord);
-    let matched = false;
-    const resultExact = sentence.replace(regex, (match) => {
-        matched = true;
-        return `${tagOpen}${match}${tagClose}`;
-    });
-
-    if (matched) {
-        return resultExact;
-    }
-
-    // 3. Fallback : Correspondance par radical / début de mot (ex: "parler" -> "parl", "sprechen" -> "sprech", "hablar" -> "habl")
-    const cleanWords = targetWord.split('/')
-        .map(w => w.replace(/\(.*?\)/g, '').trim())
-        .map(w => w.replace(/^(le |la |les |l'|un |une |des |the |a |an |to |el |los |las |una |unos |unas |der |die |das |ein |eine |einen |einem |einer |se |s'|me |te |sich )/gi, '').trim())
-        .filter(w => w.length >= 3);
-
-    const stems = [];
-    cleanWords.forEach(w => {
-        stems.push(w);
-        if (w.endsWith('er') || w.endsWith('ir') || w.endsWith('re')) {
-            stems.push(w.slice(0, -2));
-        }
-        if (w.endsWith('ar') || w.endsWith('er') || w.endsWith('ir')) {
-            stems.push(w.slice(0, -2));
-        }
-        if (w.endsWith('en')) {
-            stems.push(w.slice(0, -2));
-        } else if (w.endsWith('n')) {
-            stems.push(w.slice(0, -1));
-        }
-    });
-
-    const validStems = [...new Set(stems)].filter(s => s.length >= 3).sort((a, b) => b.length - a.length);
-
-    if (validStems.length > 0) {
-        const escapedStems = validStems.map(s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-        const stemRegex = new RegExp('(?:\\b|(?<=[\'\\s]))(' + escapedStems.join('|') + ')[a-zàâäéèêëîïôöùûüçñáéíóúß]*\\b', 'gi');
-        
-        let stemMatched = false;
-        const resultStem = sentence.replace(stemRegex, (match) => {
-            if (!stemMatched) {
-                stemMatched = true;
-                return `${tagOpen}${match}${tagClose}`;
-            }
-            return match;
-        });
-
-        if (stemMatched) {
-            return resultStem;
         }
     }
 
@@ -709,6 +763,9 @@ function handleValidation() {
         expected.split('/').forEach(s => {
             expectedOptions.push(normalizeText(s));
             expectedOptions.push(normalizeText(s.replace(/\(.*?\)/g, ' ')));
+            if (s.includes('.')) {
+                expectedOptions.push(normalizeText(s.replace(/\.{2,}/g, ' ')));
+            }
         });
 
         let allExpectedOpts = [];
@@ -723,6 +780,10 @@ function handleValidation() {
             ...getArticleAlternatives(normalizedInput), 
             ...getArticleAlternatives(inputNoParens)
         ];
+        if (userInput.includes('.')) {
+            const inputNoDots = normalizeText(userInput.replace(/\.{2,}/g, ' '));
+            allInputOpts.push(inputNoDots, ...getArticleAlternatives(inputNoDots));
+        }
 
         // Si un préfixe était affiché (ex: "to "), inclure la version complétée
         if (sessionState.currentPrefix && userInput.trim()) {
@@ -897,6 +958,8 @@ function handleValidation() {
                 }
             }
 
+            const drillAreaEl = document.getElementById('drill-special-keys-area');
+            if (drillAreaEl) drillAreaEl.style.display = 'none';
             const drillKeysEl = document.getElementById('drill-special-keys');
             if (drillKeysEl) drillKeysEl.style.display = 'none';
             const rewriteKeysEl = document.getElementById('rewrite-special-keys');
@@ -954,6 +1017,8 @@ function handleValidation() {
             const spellingHintEl = document.getElementById('result-spelling-hint');
             if (spellingHintEl) spellingHintEl.style.display = 'none';
 
+            const drillAreaEl = document.getElementById('drill-special-keys-area');
+            if (drillAreaEl) drillAreaEl.style.display = 'none';
             const drillKeysEl = document.getElementById('drill-special-keys');
             if (drillKeysEl) drillKeysEl.style.display = 'none';
             
@@ -994,7 +1059,7 @@ function handleValidation() {
                 if (rewritePrefix) {
                     if (sessionState.currentPrefix) {
                         rewritePrefix.textContent = sessionState.currentPrefix;
-                        rewritePrefix.style.display = 'inline';
+                        rewritePrefix.style.display = 'inline-block';
                     } else {
                         rewritePrefix.textContent = '';
                         rewritePrefix.style.display = 'none';
@@ -1044,10 +1109,19 @@ function handleValidation() {
                             ...getArticleAlternatives(normExpNoParens),
                             normExp.replace(/^(the |a |an |to )/i, '').trim()
                         ];
+                        if (s.includes('.')) {
+                            const noDots = normalizeText(s.replace(/\.{2,}/g, ' '));
+                            expOpts.push(noDots, ...getArticleAlternatives(noDots));
+                        }
+
                         let inOpts = [
                             normalizedInput, 
                             ...getArticleAlternatives(normalizedInput)
                         ];
+                        if (val.includes('.')) {
+                            const valNoDots = normalizeText(val.replace(/\.{2,}/g, ' '));
+                            inOpts.push(valNoDots, ...getArticleAlternatives(valNoDots));
+                        }
 
                         if (sessionState.currentPrefix && normalizedInput) {
                             const prefixClean = sessionState.currentPrefix.trim();
@@ -1362,6 +1436,8 @@ function showEndSession() {
     
     if (flashcard) flashcard.style.display = 'none';
     if (headerSection) headerSection.style.display = 'none';
+    const drillAreaEl = document.getElementById('drill-special-keys-area');
+    if (drillAreaEl) drillAreaEl.style.display = 'none';
     const drillKeysEl = document.getElementById('drill-special-keys');
     if (drillKeysEl) drillKeysEl.style.display = 'none';
     const rewriteKeysEl = document.getElementById('rewrite-special-keys');
@@ -1622,10 +1698,12 @@ function renderContextDrill() {
     poolEl.innerHTML = '';
     sentencesEl.innerHTML = '';
 
-    const shuffledWords = shuffle([...contextState.pairs]);
+    const sortedWords = [...contextState.pairs].sort((a, b) => 
+        a.wordText.localeCompare(b.wordText, undefined, { sensitivity: 'base' })
+    );
     const shuffledSentences = shuffle([...contextState.pairs]);
 
-    shuffledWords.forEach(pair => {
+    sortedWords.forEach(pair => {
         const btn = document.createElement('div');
         btn.className = 'context-word-btn';
         btn.textContent = pair.wordText;
