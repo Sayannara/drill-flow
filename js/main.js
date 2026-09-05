@@ -1,11 +1,11 @@
-import { vocabulary } from './data/vocabulary.js?v=128';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=128';
+import { vocabulary } from './data/vocabulary.js?v=129';
+import { initDrillSession, handleDrillKeydown } from './drill.js?v=129';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-import { startPlacementTest } from './placement-test.js?v=128';
+import { startPlacementTest } from './placement-test.js?v=129';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {

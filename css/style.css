@@ -1145,7 +1145,8 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     }
 
     /* Main Container & Cards padding reduction */
-    #app-container {
+    #app-container,
+    #app-container.in-drill-mode {
         padding: 1rem 0.5rem;
     }
     .view-content,
@@ -1203,8 +1204,12 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
         transition: background-color 0.2s ease, transform 0.1s ease;
     }
     .drill-dynamic-area {
-        min-height: 190px;
+        min-height: 380px;
         transform: none;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .flashcard:hover {
         background-color: rgba(100, 116, 139, 0.03);
