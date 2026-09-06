@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css?v=149">
+    <link rel="stylesheet" href="../css/style.css?v=150">
     <style>
         body {
             background-color: var(--bg-color);
@@ -381,12 +381,12 @@
                 </div>
 
                 <div class="config-form-group">
-                    <label class="config-label">Tolérance accents & diacritiques</label>
+                    <label class="config-label">Tolérance orthographique (accents & majuscules)</label>
                     <div class="switch-group">
                         <button type="button" id="cfg-accents-on" class="switch-btn">Tolérance active</button>
                         <button type="button" id="cfg-accents-off" class="switch-btn">Stricte</button>
                     </div>
-                    <span class="config-hint">Tolère les fautes d'accents ('e' au lieu de 'é', 'ss' pour 'ß', 'n' pour 'ñ').</span>
+                    <span class="config-hint">Tolère les réponses sans accents ni majuscules ('january' pour 'January', 'e' pour 'é'). En mode strict, la casse exacte et les accents sont obligatoires.</span>
                 </div>
             </div>
 
@@ -439,7 +439,7 @@
     <!-- Toast de confirmation -->
     <div id="config-toast" class="config-toast hidden"></div>
 
-    <script type="module" src="../js/config.js?v=149"></script>
+    <script type="module" src="../js/config.js?v=150"></script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {

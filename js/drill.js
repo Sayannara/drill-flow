@@ -26,8 +26,15 @@ function shuffle(array) {
     return array;
 }
 
+// Nettoyage préservant la casse et les accents (pour le mode strict)
+function normalizeStrict(text) {
+    if (!text) return '';
+    return text.trim().replace(/\s+/g, ' ').replace(/œ/g, 'oe').replace(/Œ/g, 'OE');
+}
+
 // Nettoyage simple (insensible à la casse, espaces, et œ)
 function normalizeText(text) {
+    if (!text) return '';
     return text.trim().toLowerCase().replace(/\s+/g, ' ').replace(/œ/g, 'oe');
 }
 
@@ -207,16 +214,21 @@ function renderSpecialKeysBar(containerId, targetInputId) {
 }
 
 function getArticleAlternatives(text) {
+    if (!text) return [text];
     let opts = [text];
-    if (text.startsWith('un ')) opts.push(text.replace(/^un /, 'le '), text.replace(/^un /, "l'"), text.replace(/^un /, 'el '));
-    if (text.startsWith('une ')) opts.push(text.replace(/^une /, 'la '), text.replace(/^une /, "l'"));
-    if (text.startsWith('le ')) opts.push(text.replace(/^le /, 'un '));
-    if (text.startsWith('la ')) opts.push(text.replace(/^la /, 'une '), text.replace(/^la /, 'una '));
-    if (text.startsWith("l'")) opts.push(text.replace(/^l'/, 'un '), text.replace(/^l'/, 'une '), text.replace(/^l'/, 'le '), text.replace(/^l'/, 'la '));
-    if (text.startsWith('el ')) opts.push(text.replace(/^el /, 'un '));
-    if (text.startsWith('una ')) opts.push(text.replace(/^una /, 'la '));
+    const lower = text.toLowerCase();
+    if (lower.startsWith('un ')) opts.push(text.slice(3).trim(), text.replace(/^[Uu]n\s+/, text.startsWith('U') ? 'Le ' : 'le '), text.replace(/^[Uu]n\s+/, text.startsWith('U') ? "L'" : "l'"), text.replace(/^[Uu]n\s+/, text.startsWith('U') ? 'El ' : 'el '));
+    if (lower.startsWith('une ')) opts.push(text.slice(4).trim(), text.replace(/^[Uu]ne\s+/, text.startsWith('U') ? 'La ' : 'la '), text.replace(/^[Uu]ne\s+/, text.startsWith('U') ? "L'" : "l'"));
+    if (lower.startsWith('le ')) opts.push(text.slice(3).trim(), text.replace(/^[Ll]e\s+/, text.startsWith('L') ? 'Un ' : 'un '));
+    if (lower.startsWith('la ')) opts.push(text.slice(3).trim(), text.replace(/^[Ll]a\s+/, text.startsWith('L') ? 'Une ' : 'une '), text.replace(/^[Ll]a\s+/, text.startsWith('L') ? 'Una ' : 'una '));
+    if (lower.startsWith("l'")) opts.push(text.slice(2).trim(), text.replace(/^[Ll]'/i, text.startsWith('L') ? 'Un ' : 'un '), text.replace(/^[Ll]'/i, text.startsWith('L') ? 'Une ' : 'une '), text.replace(/^[Ll]'/i, text.startsWith('L') ? 'Le ' : 'le '), text.replace(/^[Ll]'/i, text.startsWith('L') ? 'La ' : 'la '));
+    if (lower.startsWith('el ')) opts.push(text.slice(3).trim(), text.replace(/^[Ee]l\s+/, text.startsWith('E') ? 'Un ' : 'un '));
+    if (lower.startsWith('una ')) opts.push(text.slice(4).trim(), text.replace(/^[Uu]na\s+/, text.startsWith('U') ? 'La ' : 'la '));
     if (typeof sessionState !== 'undefined' && sessionState.langTarget?.toLowerCase() === 'en') {
-        opts.push(text.replace(/^(the |a |an |to )/i, ''));
+        opts.push(text.replace(/^(the |a |an |to )/i, '').trim());
+    }
+    if (typeof sessionState !== 'undefined' && sessionState.langTarget?.toLowerCase() === 'de') {
+        opts.push(text.replace(/^(der |die |das |ein |eine )/i, '').trim());
     }
     return opts;
 }
@@ -494,14 +506,26 @@ function getRewriteMatchLength(inputValue, expectedTarget) {
     for (const candidate of candidates) {
         let m = 0;
         while (m < inputValue.length && m < candidate.length) {
-            const charIn = inputValue[m].toLowerCase();
-            const charCand = candidate[m].toLowerCase();
-            if (charIn === charCand) {
-                m++;
-            } else if (tolerate && normalizeTolerant(charIn, lang) === normalizeTolerant(charCand, lang)) {
-                m++;
+            const charIn = inputValue[m];
+            const charCand = candidate[m];
+            if (!tolerate) {
+                // Mode strict : correspondance exacte du caractère (casse et accents)
+                if (charIn === charCand) {
+                    m++;
+                } else {
+                    break;
+                }
             } else {
-                break;
+                // Mode tolérant : casse ignorée et tolérance des accents
+                const lowerIn = charIn.toLowerCase();
+                const lowerCand = charCand.toLowerCase();
+                if (lowerIn === lowerCand) {
+                    m++;
+                } else if (normalizeTolerant(lowerIn, lang) === normalizeTolerant(lowerCand, lang)) {
+                    m++;
+                } else {
+                    break;
+                }
             }
         }
         if (m > bestMatch) {
@@ -783,7 +807,50 @@ function handleValidation() {
         
         const currentWord = sessionState.words[sessionState.currentIndex];
         const expected = currentWord[sessionState.langTarget];
+        const tgtLang = (sessionState.langTarget || '').toLowerCase();
+        const isToleranceActive = isAccentToleranceEnabled();
 
+        // 1. Nettoyage strict (respect de la casse et des accents)
+        const strictInput = normalizeStrict(userInput);
+        const strictInputNoParens = normalizeStrict(userInput.replace(/\(.*?\)/g, ' '));
+        
+        const strictExpectedOptions = [];
+        expected.split('/').forEach(s => {
+            strictExpectedOptions.push(normalizeStrict(s));
+            strictExpectedOptions.push(normalizeStrict(s.replace(/\(.*?\)/g, ' ')));
+            if (s.includes('.')) {
+                strictExpectedOptions.push(normalizeStrict(s.replace(/\.{2,}/g, ' ')));
+            }
+        });
+
+        let allStrictExpectedOpts = [];
+        strictExpectedOptions.forEach(opt => {
+            allStrictExpectedOpts.push(...getArticleAlternatives(opt));
+            allStrictExpectedOpts.push(opt.replace(/^(the |a |an |to |der |die |das |ein |eine )/i, '').trim());
+        });
+
+        let allStrictInputOpts = [
+            strictInput, 
+            strictInputNoParens, 
+            ...getArticleAlternatives(strictInput), 
+            ...getArticleAlternatives(strictInputNoParens)
+        ];
+        if (userInput.includes('.')) {
+            const strictInputNoDots = normalizeStrict(userInput.replace(/\.{2,}/g, ' '));
+            allStrictInputOpts.push(strictInputNoDots, ...getArticleAlternatives(strictInputNoDots));
+        }
+
+        if (sessionState.currentPrefix && userInput.trim()) {
+            const pRegex = getPrefixRegex(sessionState.currentPrefix);
+            if (pRegex && !pRegex.test(strictInput)) {
+                const combined = normalizeStrict(formatWithPrefix(sessionState.currentPrefix, userInput));
+                allStrictInputOpts.push(combined, ...getArticleAlternatives(combined));
+            }
+        }
+
+        const isStrictExactMatch = allStrictInputOpts.some(inputOpt => allStrictExpectedOpts.includes(inputOpt));
+
+        // 2. Nettoyage standard (insensible à la casse, accents stricts)
         const normalizedInput = normalizeText(userInput);
         const inputNoParens = normalizeText(userInput.replace(/\(.*?\)/g, ' '));
         
@@ -799,7 +866,7 @@ function handleValidation() {
         let allExpectedOpts = [];
         expectedOptions.forEach(opt => {
             allExpectedOpts.push(...getArticleAlternatives(opt));
-            allExpectedOpts.push(opt.replace(/^(the |a |an |to )/i, '').trim());
+            allExpectedOpts.push(opt.replace(/^(the |a |an |to |der |die |das |ein |eine )/i, '').trim());
         });
         
         let allInputOpts = [
@@ -813,7 +880,6 @@ function handleValidation() {
             allInputOpts.push(inputNoDots, ...getArticleAlternatives(inputNoDots));
         }
 
-        // Si un préfixe était affiché (ex: "to "), inclure la version complétée
         if (sessionState.currentPrefix && userInput.trim()) {
             const pRegex = getPrefixRegex(sessionState.currentPrefix);
             if (pRegex && !pRegex.test(normalizedInput)) {
@@ -822,17 +888,45 @@ function handleValidation() {
             }
         }
 
-        const isStrictCorrect = allInputOpts.some(inputOpt => allExpectedOpts.includes(inputOpt));
-        let isCorrect = isStrictCorrect;
-        let isTolerantMatch = false;
+        const isCaseInsensitiveMatch = allInputOpts.some(inputOpt => allExpectedOpts.includes(inputOpt));
 
-        if (!isCorrect && isAccentToleranceEnabled() && userInput.trim()) {
-            const tgtLang = (sessionState.langTarget || '').toLowerCase();
+        // 3. Match tolérant pour les accents
+        let isAccentTolerantMatch = false;
+        if (userInput.trim()) {
             const tolerantInputOpts = allInputOpts.map(opt => normalizeTolerant(opt, tgtLang));
             const tolerantExpectedOpts = allExpectedOpts.map(opt => normalizeTolerant(opt, tgtLang));
             if (tolerantInputOpts.some(inputOpt => tolerantExpectedOpts.includes(inputOpt))) {
+                isAccentTolerantMatch = true;
+            }
+        }
+
+        // 4. Évaluation finale selon le mode
+        let isCorrect = false;
+        let isTolerantMatch = false;
+
+        if (!isToleranceActive) {
+            // Mode Strict : casse et accents doivent être rigoureusement respectés
+            isCorrect = isStrictExactMatch;
+            isTolerantMatch = false;
+        } else {
+            // Mode Tolérant (défaut)
+            if (isStrictExactMatch) {
+                isCorrect = true;
+                isTolerantMatch = false;
+            } else if (isCaseInsensitiveMatch) {
+                isCorrect = true;
+                // En allemand, on ne spamme pas de warning pour la casse des 5 000 noms communs
+                if (tgtLang !== 'de') {
+                    isTolerantMatch = true;
+                } else {
+                    isTolerantMatch = false;
+                }
+            } else if (isAccentTolerantMatch) {
                 isCorrect = true;
                 isTolerantMatch = true;
+            } else {
+                isCorrect = false;
+                isTolerantMatch = false;
             }
         }
 
@@ -1126,68 +1220,97 @@ function handleValidation() {
                     }
 
                     // Vérifier si la saisie est entièrement et exactement correcte
-                    const normalizedInput = normalizeText(val);
+                    const isStrictRewrite = !isAccentToleranceEnabled();
                     let isRewriteCorrect = false;
-                    expected.split('/').forEach(s => {
-                        const normExp = normalizeText(s);
-                        const normExpNoParens = normalizeText(s.replace(/\(.*?\)/g, ' '));
-                        
-                        let expOpts = [
-                            ...getArticleAlternatives(normExp), 
-                            ...getArticleAlternatives(normExpNoParens),
-                            normExp.replace(/^(the |a |an |to )/i, '').trim()
-                        ];
-                        if (s.includes('.')) {
-                            const noDots = normalizeText(s.replace(/\.{2,}/g, ' '));
-                            expOpts.push(noDots, ...getArticleAlternatives(noDots));
-                        }
 
-                        let inOpts = [
-                            normalizedInput, 
-                            ...getArticleAlternatives(normalizedInput)
-                        ];
-                        if (val.includes('.')) {
-                            const valNoDots = normalizeText(val.replace(/\.{2,}/g, ' '));
-                            inOpts.push(valNoDots, ...getArticleAlternatives(valNoDots));
-                        }
-
-                        if (sessionState.currentPrefix && normalizedInput) {
-                            const pRegex = getPrefixRegex(sessionState.currentPrefix);
-                            if (pRegex && !pRegex.test(normalizedInput)) {
-                                const combined = normalizeText(formatWithPrefix(sessionState.currentPrefix, normalizedInput));
-                                inOpts.push(combined, ...getArticleAlternatives(combined));
-                            }
-                        }
-                        
-                        if (inOpts.some(io => expOpts.includes(io))) {
-                            isRewriteCorrect = true;
-                        }
-                    });
-
-                    // Si pas encore validé, vérifier avec tolérance si activée
-                    if (!isRewriteCorrect && isAccentToleranceEnabled() && val.trim()) {
-                        const tgtLang = (sessionState.langTarget || '').toLowerCase();
-                        const tolerantInput = normalizeTolerant(val, tgtLang);
-                        let tolerantInOpts = [tolerantInput, ...getArticleAlternatives(tolerantInput)];
-                        if (sessionState.currentPrefix && tolerantInput) {
-                            const pRegex = getPrefixRegex(sessionState.currentPrefix);
-                            if (pRegex && !pRegex.test(tolerantInput)) {
-                                const combined = normalizeTolerant(formatWithPrefix(sessionState.currentPrefix, tolerantInput), tgtLang);
-                                tolerantInOpts.push(combined, ...getArticleAlternatives(combined));
-                            }
-                        }
+                    if (isStrictRewrite) {
+                        const strictVal = normalizeStrict(val);
                         expected.split('/').forEach(s => {
-                            const normExp = normalizeTolerant(s, tgtLang);
-                            const normExpNoParens = normalizeTolerant(s.replace(/\(.*?\)/g, ' '), tgtLang);
+                            const normExp = normalizeStrict(s);
+                            const normExpNoParens = normalizeStrict(s.replace(/\(.*?\)/g, ' '));
                             let expOpts = [
-                                ...getArticleAlternatives(normExp), 
+                                ...getArticleAlternatives(normExp),
                                 ...getArticleAlternatives(normExpNoParens),
-                                normExp.replace(/^(the |a |an |to )/i, '').trim()
+                                normExp.replace(/^(the |a |an |to |der |die |das |ein |eine )/i, '').trim()
                             ];
-                            if (tolerantInOpts.some(io => expOpts.includes(io))) {
+                            let inOpts = [
+                                strictVal,
+                                ...getArticleAlternatives(strictVal)
+                            ];
+                            if (sessionState.currentPrefix && strictVal) {
+                                const pRegex = getPrefixRegex(sessionState.currentPrefix);
+                                if (pRegex && !pRegex.test(strictVal)) {
+                                    const combined = normalizeStrict(formatWithPrefix(sessionState.currentPrefix, strictVal));
+                                    inOpts.push(combined, ...getArticleAlternatives(combined));
+                                }
+                            }
+                            if (inOpts.some(io => expOpts.includes(io))) {
                                 isRewriteCorrect = true;
                             }
                         });
+                    } else {
+                        const normalizedInput = normalizeText(val);
+                        expected.split('/').forEach(s => {
+                            const normExp = normalizeText(s);
+                            const normExpNoParens = normalizeText(s.replace(/\(.*?\)/g, ' '));
+                            
+                            let expOpts = [
+                                ...getArticleAlternatives(normExp), 
+                                ...getArticleAlternatives(normExpNoParens),
+                                normExp.replace(/^(the |a |an |to |der |die |das |ein |eine )/i, '').trim()
+                            ];
+                            if (s.includes('.')) {
+                                const noDots = normalizeText(s.replace(/\.{2,}/g, ' '));
+                                expOpts.push(noDots, ...getArticleAlternatives(noDots));
+                            }
+
+                            let inOpts = [
+                                normalizedInput, 
+                                ...getArticleAlternatives(normalizedInput)
+                            ];
+                            if (val.includes('.')) {
+                                const valNoDots = normalizeText(val.replace(/\.{2,}/g, ' '));
+                                inOpts.push(valNoDots, ...getArticleAlternatives(valNoDots));
+                            }
+
+                            if (sessionState.currentPrefix && normalizedInput) {
+                                const pRegex = getPrefixRegex(sessionState.currentPrefix);
+                                if (pRegex && !pRegex.test(normalizedInput)) {
+                                    const combined = normalizeText(formatWithPrefix(sessionState.currentPrefix, normalizedInput));
+                                    inOpts.push(combined, ...getArticleAlternatives(combined));
+                                }
+                            }
+                            
+                            if (inOpts.some(io => expOpts.includes(io))) {
+                                isRewriteCorrect = true;
+                            }
+                        });
+
+                        // Si pas encore validé, vérifier avec tolérance si activée
+                        if (!isRewriteCorrect && val.trim()) {
+                            const tgtLang = (sessionState.langTarget || '').toLowerCase();
+                            const tolerantInput = normalizeTolerant(val, tgtLang);
+                            let tolerantInOpts = [tolerantInput, ...getArticleAlternatives(tolerantInput)];
+                            if (sessionState.currentPrefix && tolerantInput) {
+                                const pRegex = getPrefixRegex(sessionState.currentPrefix);
+                                if (pRegex && !pRegex.test(tolerantInput)) {
+                                    const combined = normalizeTolerant(formatWithPrefix(sessionState.currentPrefix, tolerantInput), tgtLang);
+                                    tolerantInOpts.push(combined, ...getArticleAlternatives(combined));
+                                }
+                            }
+                            expected.split('/').forEach(s => {
+                                const normExp = normalizeTolerant(s, tgtLang);
+                                const normExpNoParens = normalizeTolerant(s.replace(/\(.*?\)/g, ' '), tgtLang);
+                                let expOpts = [
+                                    ...getArticleAlternatives(normExp), 
+                                    ...getArticleAlternatives(normExpNoParens),
+                                    normExp.replace(/^(the |a |an |to |der |die |das |ein |eine )/i, '').trim()
+                                ];
+                                if (tolerantInOpts.some(io => expOpts.includes(io))) {
+                                    isRewriteCorrect = true;
+                                }
+                            });
+                        }
                     }
 
                     if (isRewriteCorrect) {
