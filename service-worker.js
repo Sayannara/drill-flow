@@ -1,4 +1,4 @@
-const CACHE_NAME = "drillflow-cache-v30";
+const CACHE_NAME = "drillflow-cache-v49";
 const urlsToCache = [
   "/",
   "/index.html",

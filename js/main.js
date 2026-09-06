@@ -1,11 +1,11 @@
-import { vocabulary } from './data/vocabulary.js?v=130';
-import { initDrillSession, handleDrillKeydown } from './drill.js?v=130';
+import { vocabulary } from './data/vocabulary.js?v=149';
+import { initDrillSession, handleDrillKeydown, startAudioKeepAlive } from './drill.js?v=149';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-import { startPlacementTest } from './placement-test.js?v=130';
+import { startPlacementTest } from './placement-test.js?v=149';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -166,6 +166,9 @@ function initOptionsModal() {
     const btnLight = document.getElementById('theme-opt-light');
     const btnAudioOff = document.getElementById('audio-opt-off');
     const btnAudioOn = document.getElementById('audio-opt-on');
+    const btnVoiceAuto = document.getElementById('voice-gender-opt-auto');
+    const btnVoiceFemale = document.getElementById('voice-gender-opt-female');
+    const btnVoiceMale = document.getElementById('voice-gender-opt-male');
     const btnAccentsOn = document.getElementById('accents-opt-on');
     const btnAccentsOff = document.getElementById('accents-opt-off');
     const pairSelect = document.getElementById('options-reset-pair');
@@ -185,6 +188,13 @@ function initOptionsModal() {
         }
     }
 
+    function updateVoiceGenderButtonsUI(gender) {
+        const val = gender || 'auto';
+        if (btnVoiceAuto) btnVoiceAuto.classList.toggle('active', val === 'auto');
+        if (btnVoiceFemale) btnVoiceFemale.classList.toggle('active', val === 'female');
+        if (btnVoiceMale) btnVoiceMale.classList.toggle('active', val === 'male');
+    }
+
     function updateAccentsButtonsUI(enabled) {
         if (btnAccentsOff && btnAccentsOn) {
             if (enabled) {
@@ -202,6 +212,8 @@ function initOptionsModal() {
         updateThemeButtonsUI(currentTheme);
         const isAutoSpeak = localStorage.getItem('drillflow_auto_speak') === 'on';
         updateAudioButtonsUI(isAutoSpeak);
+        const voiceGender = localStorage.getItem('drillflow_voice_gender') || 'auto';
+        updateVoiceGenderButtonsUI(voiceGender);
         const isAccentsTolerant = localStorage.getItem('drillflow_tolerate_accents') !== 'off';
         updateAccentsButtonsUI(isAccentsTolerant);
         populateOptionsPairSelect();
@@ -309,6 +321,25 @@ function initOptionsModal() {
         btnAudioOn.onclick = () => {
             localStorage.setItem('drillflow_auto_speak', 'on');
             updateAudioButtonsUI(true);
+        };
+    }
+
+    if (btnVoiceAuto) {
+        btnVoiceAuto.onclick = () => {
+            localStorage.setItem('drillflow_voice_gender', 'auto');
+            updateVoiceGenderButtonsUI('auto');
+        };
+    }
+    if (btnVoiceFemale) {
+        btnVoiceFemale.onclick = () => {
+            localStorage.setItem('drillflow_voice_gender', 'female');
+            updateVoiceGenderButtonsUI('female');
+        };
+    }
+    if (btnVoiceMale) {
+        btnVoiceMale.onclick = () => {
+            localStorage.setItem('drillflow_voice_gender', 'male');
+            updateVoiceGenderButtonsUI('male');
         };
     }
 
@@ -1190,11 +1221,11 @@ function renderProgressTable() {
         const tdStatus = document.createElement('td');
         tdStatus.className = `col-desktop status-cell ${status === 'validé' ? 'valide' : (status === 'actif' ? 'actif' : '')}`;
         if (status === 'validé') {
-            tdStatus.textContent = '✓';
+            tdStatus.innerHTML = `<span class="type-badge" style="font-size: 0.7rem; padding: 0.2rem 0.5rem; background: rgba(16, 185, 129, 0.2); color: #10b981; font-weight: 600;">✓ Validé</span>`;
         } else if (status === 'ignoré') {
             tdStatus.innerHTML = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500;">${ignoreLabel}</span>`;
         } else {
-            tdStatus.textContent = '\u00A0';
+            tdStatus.innerHTML = `<span class="type-badge" style="font-size: 0.7rem; padding: 0.2rem 0.5rem; background: rgba(59, 130, 246, 0.15); color: #60a5fa; font-weight: 500;">À consolider</span>`;
         }
         tr.appendChild(tdStatus);
 
@@ -1208,6 +1239,8 @@ function renderProgressTable() {
             statusMobileBadge = `<span style="color: var(--success-color); font-weight: 800; font-size: 1.25rem; line-height: 1;">✓</span>`;
         } else if (status === 'ignoré') {
             statusMobileBadge = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500;">${ignoreLabel}</span>`;
+        } else {
+            statusMobileBadge = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(59, 130, 246, 0.15); color: #60a5fa; font-weight: 500;">À consolider</span>`;
         }
 
         const attemptsLabel = attempts > 0 ? `${attempts} ${translations[lang].th_attempts ? translations[lang].th_attempts.toLowerCase() : 'tentatives'}` : '';
@@ -1673,6 +1706,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Appliquer la traduction initiale sur la page globale
     translatePage();
+
+    // Pré-activation de l'audio dès la première interaction utilisateur pour éviter toute coupure Bluetooth/DAC
+    const primeAudio = () => {
+        startAudioKeepAlive();
+        window.removeEventListener('click', primeAudio);
+        window.removeEventListener('keydown', primeAudio);
+        window.removeEventListener('touchstart', primeAudio);
+    };
+    window.addEventListener('click', primeAudio, { passive: true });
+    window.addEventListener('keydown', primeAudio, { passive: true });
+    window.addEventListener('touchstart', primeAudio, { passive: true });
 
     // Déterminer la vue initiale depuis le hash de l'URL (permet de rester sur la page active après un F5)
     const currentHash = window.location.hash.replace('#', '').trim();

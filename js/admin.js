@@ -64,6 +64,62 @@ function getReasonList(item) {
     return Array.from(set);
 }
 
+function getUserEmails(item) {
+    const set = new Set();
+    if (item.user_email && item.user_email.trim()) set.add(item.user_email.trim());
+    if (item.last_user_email && item.last_user_email.trim()) set.add(item.last_user_email.trim());
+    if (Array.isArray(item.user_emails)) {
+        item.user_emails.forEach(e => e && e.trim() && set.add(e.trim()));
+    }
+    if (Array.isArray(item.comments)) {
+        item.comments.forEach(c => {
+            if (c && c.user_email && c.user_email.trim()) set.add(c.user_email.trim());
+            if (c && c.email && c.email.trim()) set.add(c.email.trim());
+        });
+    }
+    return Array.from(set);
+}
+
+function getExerciseWords(item) {
+    const pairs = getPairList(item);
+    if (pairs.length === 0) {
+        return {
+            srcHtml: `<span style="font-weight: 500;">${escapeHtml(item.fr || '-')}</span>`,
+            tgtHtml: `<span>${escapeHtml(item.en || item.es || item.de || '-')}</span>`,
+            srcSort: (item.fr || ''),
+            tgtSort: (item.en || item.es || item.de || '')
+        };
+    }
+    
+    const srcList = [];
+    const tgtList = [];
+    pairs.forEach(p => {
+        const parts = p.split(/→|➔|->/).map(s => s.trim().toUpperCase());
+        const srcCode = parts[0] ? parts[0].toLowerCase() : 'fr';
+        const tgtCode = parts[1] ? parts[1].toLowerCase() : 'en';
+        
+        const sVal = item[srcCode] || item.fr || '-';
+        const tVal = item[tgtCode] || (srcCode === 'fr' ? (item.en || item.es || item.de) : item.fr) || '-';
+
+        if (!srcList.some(x => x.text === sVal)) {
+            srcList.push({ text: sVal, lang: srcCode.toUpperCase() });
+        }
+        if (!tgtList.some(x => x.text === tVal)) {
+            tgtList.push({ text: tVal, lang: tgtCode.toUpperCase() });
+        }
+    });
+
+    const srcHtml = srcList.map(s => `<span style="font-weight: 500;">${escapeHtml(s.text)}</span>`).join('<br>');
+    const tgtHtml = tgtList.map(t => `<span>${escapeHtml(t.text)}</span>`).join('<br>');
+
+    return {
+        srcHtml,
+        tgtHtml,
+        srcSort: srcList.map(s => s.text).join(' '),
+        tgtSort: tgtList.map(t => t.text).join(' ')
+    };
+}
+
 function populateFilterDropdowns() {
     const pairSelect = document.getElementById('filter-pair');
     const reasonSelect = document.getElementById('filter-reason');
@@ -140,7 +196,9 @@ function renderTable() {
                 inComments = normalizeStr(item.comment).includes(q);
             }
 
-            if (!inFr && !inEn && !inDe && !inEs && !inType && !inLevel && !inReason && !inPairs && !inComments) {
+            const inUser = getUserEmails(item).some(u => normalizeStr(u).includes(q));
+
+            if (!inFr && !inEn && !inDe && !inEs && !inType && !inLevel && !inReason && !inPairs && !inComments && !inUser) {
                 return false;
             }
         }
@@ -153,10 +211,16 @@ function renderTable() {
         let comp = 0;
         switch (currentSortCol) {
             case 'count':
-                comp = (a.count || 1) - (b.count || 1);
+                comp = (Number(a.count) || 1) - (Number(b.count) || 1);
                 break;
             case 'pair':
-                comp = getPrimaryPair(a).localeCompare(getPrimaryPair(b));
+                comp = getPrimaryPair(a).localeCompare(getPrimaryPair(b), 'fr');
+                break;
+            case 'source':
+                comp = getExerciseWords(a).srcSort.localeCompare(getExerciseWords(b).srcSort, 'fr');
+                break;
+            case 'target':
+                comp = getExerciseWords(a).tgtSort.localeCompare(getExerciseWords(b).tgtSort, 'fr');
                 break;
             case 'fr':
                 comp = (a.fr || '').localeCompare(b.fr || '', 'fr');
@@ -176,13 +240,32 @@ function renderTable() {
             case 'type':
                 comp = (a.type || '').localeCompare(b.type || '', 'fr');
                 break;
-            case 'date':
+            case 'reason': {
+                const rA = getReasonList(a).join(', ');
+                const rB = getReasonList(b).join(', ');
+                comp = rA.localeCompare(rB, 'fr');
+                break;
+            }
+            case 'desc': {
+                const descA = (a.last_comment || a.comment || '').toLowerCase();
+                const descB = (b.last_comment || b.comment || '').toLowerCase();
+                comp = descA.localeCompare(descB, 'fr');
+                break;
+            }
+            case 'user': {
+                const uA = getUserEmails(a).join(', ').toLowerCase();
+                const uB = getUserEmails(b).join(', ').toLowerCase();
+                comp = uA.localeCompare(uB, 'fr');
+                break;
+            }
+            case 'date': {
                 const dateA = a.last_reported_at ? new Date(a.last_reported_at).getTime() : 0;
                 const dateB = b.last_reported_at ? new Date(b.last_reported_at).getTime() : 0;
                 comp = dateA - dateB;
                 break;
+            }
             default:
-                comp = (a.count || 1) - (b.count || 1);
+                comp = (Number(a.count) || 1) - (Number(b.count) || 1);
         }
         return currentSortAsc ? comp : -comp;
     });
@@ -201,8 +284,13 @@ function renderTable() {
 
     // 4. Compteur de signalements
     if (countInfoEl) {
+        const totalSignals = allReports.reduce((sum, r) => sum + (Number(r.count) || 1), 0);
         if (filtered.length === allReports.length) {
-            countInfoEl.textContent = `${allReports.length} signalement(s)`;
+            if (totalSignals > allReports.length) {
+                countInfoEl.textContent = `${allReports.length} mots (${totalSignals} signalements)`;
+            } else {
+                countInfoEl.textContent = `${allReports.length} signalement${allReports.length > 1 ? 's' : ''}`;
+            }
         } else {
             countInfoEl.textContent = `${filtered.length} affiché(s) sur ${allReports.length}`;
         }
@@ -230,56 +318,93 @@ function renderTable() {
             day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
         }) : '-';
 
-        // Formatage de la paire de langues
+        // Formatage de la paire de langues (compact)
         let pairHtml = '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
         const pairs = getPairList(item);
         if (pairs.length > 0) {
             pairHtml = pairs.map(p => 
-                `<span class="type-badge" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6; font-weight: 600; margin: 0.1rem 0.15rem; display: inline-block;">${escapeHtml(p)}</span>`
+                `<span style="background: rgba(59, 130, 246, 0.15); color: #3b82f6; font-weight: 600; font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; white-space: nowrap; display: inline-block;">${escapeHtml(p)}</span>`
             ).join(' ');
         }
 
-        // Formatage du motif de signalement
-        let reasonBadge = '';
-        const lastReason = item.last_reason || (Array.isArray(item.reasons) && item.reasons.length > 0 ? item.reasons[item.reasons.length - 1] : '');
-        if (lastReason) {
-            const badgeBg = lastReason.includes('niveau') ? 'rgba(234, 179, 8, 0.15)' : 'rgba(239, 68, 68, 0.15)';
-            const badgeColor = lastReason.includes('niveau') ? '#eab308' : '#ef4444';
-            reasonBadge = `<div style="margin-bottom: 0.35rem;"><span class="type-badge" style="background: ${badgeBg}; color: ${badgeColor}; font-weight: 600; display: inline-block;">${escapeHtml(lastReason)}</span></div>`;
+        // Formatage des deux langues de l'exercice
+        const exerciseWords = getExerciseWords(item);
+
+        // Formatage des motifs
+        const reasons = getReasonList(item);
+        let reasonHtml = '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
+        if (reasons.length > 0) {
+            reasonHtml = reasons.map(r => {
+                const isLevel = r.toLowerCase().includes('niveau');
+                const bg = isLevel ? 'rgba(234, 179, 8, 0.15)' : 'rgba(239, 68, 68, 0.15)';
+                const color = isLevel ? '#facc15' : '#f87171';
+                return `<span style="background: ${bg}; color: ${color}; font-weight: 600; font-size: 0.72rem; padding: 0.15rem 0.45rem; border-radius: 4px; white-space: nowrap; display: inline-block; margin: 0.1rem 0;">${escapeHtml(r)}</span>`;
+            }).join(' ');
         }
 
-        // Formatage des descriptions / remarques
-        let commentsHtml = reasonBadge || '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
+        // Extraction de toutes les remarques (quand il y a plusieurs signalements)
+        const commentsList = [];
         if (Array.isArray(item.comments) && item.comments.length > 0) {
-            const list = item.comments
-                .map(c => {
-                    const text = typeof c === 'string' ? c : (c.text || '');
-                    if (!text) return '';
-                    const dateStr = (c && c.date) ? `<span style="color: var(--text-secondary); font-size: 0.75rem; margin-left: 4px;">(${new Date(c.date).toLocaleDateString('fr-FR')})</span>` : '';
-                    const reasonText = (c && c.reason) ? `<span style="font-size: 0.7rem; color: #eab308; margin-right: 4px;">[${escapeHtml(c.reason)}]</span>` : '';
-                    return `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; margin-bottom: 0.35rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${reasonText}${escapeHtml(text)}${dateStr}</div>`;
-                })
-                .filter(Boolean);
-            if (list.length > 0) {
-                commentsHtml = reasonBadge + list.join('');
-            }
-        } else if (item.last_comment) {
-            commentsHtml = reasonBadge + `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.last_comment)}</div>`;
-        } else if (item.comment) {
-            commentsHtml = reasonBadge + `<div style="background: rgba(255,255,255,0.04); border-left: 2px solid var(--primary-color); padding: 0.3rem 0.5rem; border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.35;">${escapeHtml(item.comment)}</div>`;
+            item.comments.forEach(c => {
+                const text = typeof c === 'string' ? c.trim() : ((c && c.text) ? c.text.trim() : '');
+                const pair = (c && c.pair) ? c.pair : '';
+                if (text) {
+                    commentsList.push({ text, pair });
+                }
+            });
         }
+        if (commentsList.length === 0) {
+            if (item.last_comment && item.last_comment.trim()) {
+                commentsList.push({ text: item.last_comment.trim(), pair: item.last_lang_pair || '' });
+            } else if (item.comment && item.comment.trim()) {
+                commentsList.push({ text: item.comment.trim(), pair: item.lang_pair || '' });
+            }
+        }
+
+        const reportCount = Number(item.count) || 1;
+        let commentsHtml = '';
+        if (commentsList.length > 0) {
+            commentsHtml = commentsList.map((c, idx) => {
+                const prefix = (commentsList.length > 1 || reportCount > 1) ? `<span style="color: var(--primary-color); font-weight: bold; margin-right: 0.3rem;">•</span>` : '';
+                const pairTag = (commentsList.length > 1 && c.pair) ? `<span style="font-size: 0.72rem; color: #3b82f6; font-weight: 600; margin-right: 0.3rem;">[${escapeHtml(c.pair)}]</span>` : '';
+                return `<div style="margin-bottom: ${idx === commentsList.length - 1 ? '0' : '0.4rem'}; line-height: 1.35; font-size: 0.84rem;">${prefix}${pairTag}${escapeHtml(c.text)}</div>`;
+            }).join('');
+            
+            if (reportCount > commentsList.length) {
+                const missing = reportCount - commentsList.length;
+                commentsHtml += `<div style="font-size: 0.75rem; color: var(--text-secondary); opacity: 0.7; margin-top: 0.35rem;">
+                    <span style="color: var(--text-secondary); margin-right: 0.3rem;">•</span><em>+ ${missing} signalement(s) sans texte</em>
+                </div>`;
+            }
+        } else if (reportCount > 1) {
+            commentsHtml = `<span style="color: var(--text-secondary); font-size: 0.8rem; font-style: italic;">${reportCount} signalements sans remarques</span>`;
+        } else {
+            commentsHtml = `<span style="color: var(--text-secondary); opacity: 0.4;">-</span>`;
+        }
+
+        // Extraction des emails utilisateurs
+        const userEmails = getUserEmails(item);
+        let userHtml = '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
+        if (userEmails.length > 0) {
+            userHtml = userEmails.map(email => 
+                `<span style="font-size: 0.78rem; color: var(--text-secondary); word-break: break-all;">${escapeHtml(email)}</span>`
+            ).join('<br>');
+        }
+
+        const levelBadge = item.level ? `<span style="background: rgba(255,255,255,0.08); color: var(--text-primary); font-weight: 600; padding: 0.15rem 0.35rem; font-size: 0.72rem; border-radius: 4px;">${escapeHtml(item.level)}</span>` : '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
+        const typeBadge = item.type ? `<span class="type-badge ${escapeHtml(item.type)}" style="padding: 0.15rem 0.35rem; font-size: 0.7rem; border-radius: 4px; text-transform: uppercase;">${escapeHtml(item.type)}</span>` : '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
 
         tr.innerHTML = `
-            <td><strong style="font-size: 1.1rem; color: var(--text-primary);">${item.count || 1}</strong></td>
+            <td style="text-align: center; font-size: 0.9rem;">${reportCount}</td>
             <td style="white-space: nowrap;">${pairHtml}</td>
-            <td><strong>${escapeHtml(item.fr || '-')}</strong></td>
-            <td>${escapeHtml(item.en || '-')}</td>
-            <td>${escapeHtml(item.de || '-')}</td>
-            <td>${escapeHtml(item.es || '-')}</td>
-            <td><span class="type-badge" style="background: rgba(255,255,255,0.1); color: var(--text-primary); font-weight: 600;">${escapeHtml(item.level || '-')}</span></td>
-            <td><span class="type-badge ${escapeHtml(item.type || '')}">${escapeHtml(item.type || '-')}</span></td>
-            <td style="min-width: 180px; max-width: 280px; word-break: break-word;">${commentsHtml}</td>
-            <td style="color: var(--text-secondary); font-size: 0.85rem; white-space: nowrap;">${formattedDate}</td>
+            <td style="max-width: 140px;">${exerciseWords.srcHtml}</td>
+            <td style="max-width: 140px;">${exerciseWords.tgtHtml}</td>
+            <td style="text-align: center;">${levelBadge}</td>
+            <td style="text-align: center;">${typeBadge}</td>
+            <td>${reasonHtml}</td>
+            <td style="max-width: 250px;">${commentsHtml}</td>
+            <td style="max-width: 160px;">${userHtml}</td>
+            <td style="white-space: nowrap; font-size: 0.78rem; color: var(--text-secondary);">${formattedDate}</td>
             <td style="text-align: center;"><button class="btn-resolve" data-id="${item.docId}">Résolu</button></td>
         `;
 

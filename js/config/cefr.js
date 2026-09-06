@@ -2,15 +2,44 @@
  * Configuration et moteur de calcul des niveaux CECRL pour drillFlow.
  * Tous les paliers de points et coefficients de pondération sont centralisés ici.
  */
+export const DEFAULT_CEFR_THRESHOLDS = {
+    A1: 800,
+    A2: 1600,
+    B1: 2400,
+    B2: 4000,
+    C1: 5500,
+    C2: 7000
+};
+
+/**
+ * Récupère les seuils de points CECRL (personnalisés ou par défaut)
+ */
+export function getCefrThresholds() {
+    try {
+        const custom = localStorage.getItem('drillflow_cefr_thresholds');
+        if (custom) {
+            const parsed = JSON.parse(custom);
+            if (parsed && typeof parsed === 'object') {
+                return {
+                    A1: Number(parsed.A1) || DEFAULT_CEFR_THRESHOLDS.A1,
+                    A2: Number(parsed.A2) || DEFAULT_CEFR_THRESHOLDS.A2,
+                    B1: Number(parsed.B1) || DEFAULT_CEFR_THRESHOLDS.B1,
+                    B2: Number(parsed.B2) || DEFAULT_CEFR_THRESHOLDS.B2,
+                    C1: Number(parsed.C1) || DEFAULT_CEFR_THRESHOLDS.C1,
+                    C2: Number(parsed.C2) || DEFAULT_CEFR_THRESHOLDS.C2
+                };
+            }
+        }
+    } catch (e) {
+        console.warn('Erreur lecture drillflow_cefr_thresholds:', e);
+    }
+    return { ...DEFAULT_CEFR_THRESHOLDS };
+}
+
 export const CEFR_CONFIG = {
     // Paliers de points cumulés nécessaires pour valider chaque niveau CECRL
-    thresholds: {
-        A1: 800,
-        A2: 1600,
-        B1: 2400,
-        B2: 4000,
-        C1: 5500,
-        C2: 7000
+    get thresholds() {
+        return getCefrThresholds();
     },
 
     // Multiplicateurs de difficulté par niveau

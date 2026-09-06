@@ -482,15 +482,15 @@ export const vocabulary = [
   },
   {
     "id": "word_38",
-    "fr": "n'importe où / partout",
-    "en": "anywhere / everywhere",
-    "de": "irgendwo / überall",
+    "fr": "n'importe où",
+    "en": "anywhere",
+    "de": "irgendwo",
     "es": "en cualquier lugar / en cualquier parte",
     "type": "adverbe",
     "level": "A2",
     "ex_fr": "Tu peux m'appeler depuis *n'importe où*.",
     "ex_en": "You can call me from *anywhere*.",
-    "ex_de": "Du kannst mich von *überall* anrufen.",
+    "ex_de": "Du kannst mich von *irgendwo* anrufen.",
     "ex_es": "Puedes llamarme desde *cualquier lugar*."
   },
   {
@@ -1042,7 +1042,7 @@ export const vocabulary = [
   {
     "id": "word_81",
     "fr": "le meilleur",
-    "en": "best",
+    "en": "the best",
     "de": "beste",
     "es": "mejor",
     "type": "adjectif",
@@ -1603,7 +1603,7 @@ export const vocabulary = [
     "fr": "l'argent liquide",
     "en": "cash",
     "de": "das Bargeld",
-    "es": "el dinero en efectivo",
+    "es": "el dinero en efectivo / efectivo",
     "type": "nom",
     "level": "A2",
     "ex_fr": "Il paye avec de l'*argent liquide*.",
@@ -3706,7 +3706,7 @@ export const vocabulary = [
   },
   {
     "id": "word_286",
-    "fr": "quotidien",
+    "fr": "quotidien / de tous les jours",
     "en": "everyday",
     "de": "alltäglich",
     "es": "cotidiano",
@@ -5935,10 +5935,10 @@ export const vocabulary = [
     "es": "el menos",
     "type": "adverbe",
     "level": "A2",
-    "ex_fr": "C'est l'option la *moins* chère.",
-    "ex_en": "This is the *least* expensive option.",
+    "ex_fr": "C'est l'option *la moins* chère.",
+    "ex_en": "This is *the least* expensive option.",
     "ex_de": "Das ist die *am wenigsten* teure Option.",
-    "ex_es": "Esta es la opción *menos* cara."
+    "ex_es": "Esta es la opción *la menos* cara."
   },
   {
     "id": "word_459",
@@ -6436,13 +6436,13 @@ export const vocabulary = [
   },
   {
     "id": "word_497",
-    "fr": "pourrait",
+    "fr": "pouvoir (permission)",
     "en": "may",
     "de": "darf",
-    "es": "podría",
+    "es": "puede",
     "type": "verbe",
     "level": "A2",
-    "ex_fr": "Il *pourrait* venir ce soir.",
+    "ex_fr": "Il *peut* venir ce soir (il a l'autorisation).",
     "ex_en": "He *may* come tonight.",
     "ex_de": "Er *darf* heute Abend kommen.",
     "ex_es": "Él *podría* venir esta noche."
@@ -6671,9 +6671,9 @@ export const vocabulary = [
   {
     "id": "word_515",
     "fr": "la moto",
-    "en": "motorcycle",
+    "en": "motorcycle / motorbike",
     "de": "das Motorrad",
-    "es": "la motocicleta",
+    "es": "la motocicleta / la moto",
     "type": "nom",
     "level": "A2",
     "ex_fr": "Il conduit une *moto* noire.",
@@ -7567,16 +7567,16 @@ export const vocabulary = [
   },
   {
     "id": "word_584",
-    "fr": "choisir / cueillir / ramasser",
-    "en": "pick / choose / select",
-    "de": "pflücken / auswählen / wählen",
-    "es": "recoger / elegir / escoger",
+    "fr": "cueillir / ramasser",
+    "en": "pick",
+    "de": "pflücken / auflesen",
+    "es": "recoger",
     "type": "verbe",
     "level": "A2",
-    "ex_fr": "Je *choisis* un livre intéressant.",
-    "ex_en": "I *pick* an interesting book.",
-    "ex_de": "Ich *wähle* ein interessantes Buch *aus*.",
-    "ex_es": "*Elijo* un libro interesante."
+    "ex_fr": "Je *cueille* des pommes dans le verger.",
+    "ex_en": "I *pick* apples in the orchard.",
+    "ex_de": "Ich *pflücke* Äpfel im Garten.",
+    "ex_es": "*Recojo* manzanas en el jardín."
   },
   {
     "id": "word_585",
@@ -7827,10 +7827,10 @@ export const vocabulary = [
   },
   {
     "id": "word_604",
-    "fr": "le pouvoir / l'énergie / la puissance",
-    "en": "power / authority / strength",
-    "de": "die Macht / die Kraft / der Strom",
-    "es": "el poder / la energía / la fuerza",
+    "fr": "le pouvoir / la puissance",
+    "en": "power",
+    "de": "die Macht / die Kraft",
+    "es": "el poder / la fuerza",
     "type": "nom",
     "level": "A2",
     "ex_fr": "La ville utilise cette *énergie*.",
@@ -10492,7 +10492,7 @@ export const vocabulary = [
   },
   {
     "id": "word_809",
-    "fr": "la tâche",
+    "fr": "la tâche (travail / devoir)",
     "en": "task",
     "de": "die Aufgabe",
     "es": "la tarea",
@@ -11728,7 +11728,7 @@ export const vocabulary = [
   {
     "id": "word_904",
     "fr": "le pire",
-    "en": "worst",
+    "en": "the worst",
     "de": "schlechteste",
     "es": "el peor",
     "type": "adjectif",
@@ -13925,7 +13925,7 @@ export const vocabulary = [
   {
     "id": "word_1073",
     "fr": "la couverture / la housse",
-    "en": "cover",
+    "en": "cover / blanket",
     "de": "die Abdeckung",
     "es": "la cubierta / la portada / la tapa",
     "type": "nom",
@@ -17006,7 +17006,7 @@ export const vocabulary = [
   {
     "id": "word_1310",
     "fr": "le meurtre",
-    "en": "murder",
+    "en": "killing / murder",
     "de": "der Mord",
     "es": "el asesinato",
     "type": "nom",
@@ -41159,7 +41159,7 @@ export const vocabulary = [
   },
   {
     "id": "word_3171",
-    "fr": "encore / encore une fois / à nouveau / de nouveau / une fois de plus / une autre fois",
+    "fr": "encore / de nouveau / à nouveau",
     "en": "again / once more",
     "de": "wieder / nochmal",
     "es": "otra vez / de nuevo",
@@ -41331,7 +41331,7 @@ export const vocabulary = [
     "fr": "un autre",
     "en": "another",
     "de": "ein anderer",
-    "es": "otro",
+    "es": "otro / otra",
     "type": "det",
     "level": "A1",
     "ex_fr": "Je veux un *autre* café.",
@@ -41381,7 +41381,7 @@ export const vocabulary = [
   {
     "id": "word_3188",
     "fr": "n'importe qui",
-    "en": "anyone",
+    "en": "anyone / anybody",
     "de": "jemand",
     "es": "alguien",
     "type": "pron",
@@ -42653,19 +42653,6 @@ export const vocabulary = [
     "ex_es": "Es un *gato* bonito."
   },
   {
-    "id": "word_3286",
-    "fr": "le CD",
-    "en": "CD",
-    "de": "die CD",
-    "es": "el CD",
-    "type": "nom",
-    "level": "A1",
-    "ex_fr": "J'écoute ce bon *CD*.",
-    "ex_en": "I listen to this *CD*.",
-    "ex_de": "Ich höre diese *CD*.",
-    "ex_es": "Escucho este nuevo *CD*."
-  },
-  {
     "id": "word_3287",
     "fr": "le centime",
     "en": "cent",
@@ -43045,7 +43032,7 @@ export const vocabulary = [
   {
     "id": "word_3316",
     "fr": "l'entreprise / la société / la compagnie",
-    "en": "company / firm / business",
+    "en": "company / business / firm",
     "de": "das Unternehmen / die Firma / die Gesellschaft",
     "es": "la empresa / la compañía / la sociedad",
     "type": "nom",
@@ -44064,7 +44051,7 @@ export const vocabulary = [
     "es": "alguna vez",
     "type": "adverbe",
     "level": "A1",
-    "ex_fr": "Est-ce que tu regardes *jamais* ce film ?",
+    "ex_fr": "Regardes-tu *jamais* ce film ?",
     "ex_en": "Do you *ever* watch this film?",
     "ex_de": "Siehst du *jemals* diesen Film?",
     "ex_es": "¿Ves *alguna vez* esta película?"
@@ -46178,7 +46165,7 @@ export const vocabulary = [
   {
     "id": "word_3558",
     "fr": "le kilomètre",
-    "en": "kilometre",
+    "en": "kilometre / kilometer",
     "de": "der Kilometer",
     "es": "el kilómetro",
     "type": "nom",
@@ -46958,7 +46945,7 @@ export const vocabulary = [
   {
     "id": "word_3618",
     "fr": "le mètre",
-    "en": "metre",
+    "en": "metre / meter",
     "de": "der Meter",
     "es": "el metro",
     "type": "nom",
@@ -47049,7 +47036,7 @@ export const vocabulary = [
   {
     "id": "word_3625",
     "fr": "l'erreur",
-    "en": "mistake",
+    "en": "mistake / error",
     "de": "der Fehler",
     "es": "el error",
     "type": "nom",
@@ -47077,7 +47064,7 @@ export const vocabulary = [
     "fr": "moderne",
     "en": "modern",
     "de": "modern",
-    "es": "moderno",
+    "es": "moderno / moderna",
     "type": "adjectif",
     "level": "A1",
     "ex_fr": "Cette maison est très *moderne*.",
@@ -47646,10 +47633,10 @@ export const vocabulary = [
   },
   {
     "id": "word_3672",
-    "fr": "maintenant / à présent / actuellement",
-    "en": "now / currently",
+    "fr": "maintenant / à présent",
+    "en": "now",
     "de": "jetzt / nun",
-    "es": "ahora / actualmente",
+    "es": "ahora",
     "type": "adverbe",
     "level": "A1",
     "ex_fr": "Je mange une pomme *maintenant*.",
@@ -48169,7 +48156,7 @@ export const vocabulary = [
     "fr": "le stylo",
     "en": "pen",
     "de": "der Stift",
-    "es": "el bolígrafo",
+    "es": "el lápiz",
     "type": "nom",
     "level": "A1",
     "ex_fr": "Voici mon *stylo* bleu.",
@@ -50311,16 +50298,16 @@ export const vocabulary = [
   },
   {
     "id": "word_3879",
-    "fr": "parler / discuter",
-    "en": "talk / speak",
-    "de": "reden / sprechen",
-    "es": "hablar / charlar",
+    "fr": "discuter",
+    "en": "talk",
+    "de": "reden",
+    "es": "charlar / platicar",
     "type": "verbe",
     "level": "A1",
-    "ex_fr": "Nous *parlons* de tout.",
+    "ex_fr": "Nous *discutons* de tout.",
     "ex_en": "We *talk* about everything.",
     "ex_de": "Wir *reden* über alles.",
-    "ex_es": "*Hablamos* de todo hoy."
+    "ex_es": "*Charlamos* de todo hoy."
   },
   {
     "id": "word_3880",
@@ -50480,10 +50467,10 @@ export const vocabulary = [
   },
   {
     "id": "word_3892",
-    "fr": "terrible / affreux / horrible",
-    "en": "terrible / awful / horrible",
-    "de": "schrecklich / furchtbar / schaurig",
-    "es": "terrible / horrible / espantoso",
+    "fr": "terrible / horrible",
+    "en": "terrible / horrible",
+    "de": "schrecklich",
+    "es": "terrible / horrible",
     "type": "adjectif",
     "level": "A1",
     "ex_fr": "Le bruit est *terrible*.",
@@ -50585,7 +50572,7 @@ export const vocabulary = [
   {
     "id": "word_3900",
     "fr": "le théâtre",
-    "en": "theatre",
+    "en": "theatre / theater",
     "de": "das Theater",
     "es": "el teatro",
     "type": "nom",
@@ -50636,16 +50623,16 @@ export const vocabulary = [
   },
   {
     "id": "word_3904",
-    "fr": "là / là-bas / y",
-    "en": "there / over there",
+    "fr": "là / là-bas",
+    "en": "there",
     "de": "dort / da",
-    "es": "allí / allá / ahi",
+    "es": "allí / ahí",
     "type": "adverbe",
     "level": "A1",
-    "ex_fr": "Mon ami habite *là-bas*.",
-    "ex_en": "My friend lives *over there*.",
-    "ex_de": "Mein Freund wohnt *dort*.",
-    "ex_es": "Mi amigo vive *allá*."
+    "ex_fr": "Mon ami est *là*.",
+    "ex_en": "My friend is *there*.",
+    "ex_de": "Mein Freund ist *dort*.",
+    "ex_es": "Mi amigo está *allí*."
   },
   {
     "id": "word_3905",
@@ -50949,8 +50936,8 @@ export const vocabulary = [
   {
     "id": "word_3928",
     "fr": "trop",
-    "en": "too / overly",
-    "de": "zu / allzu",
+    "en": "too",
+    "de": "zu",
     "es": "demasiado",
     "type": "adverbe",
     "level": "A1",
@@ -52017,7 +52004,7 @@ export const vocabulary = [
     "fr": "voudrait",
     "en": "would",
     "de": "würde",
-    "es": "haría",
+    "es": "le gustaría / querría",
     "type": "verbe",
     "level": "A1",
     "ex_fr": "Il *voudrait* un café.",
@@ -102998,5 +102985,18 @@ export const vocabulary = [
     "es": "gratuito",
     "type": "adjectif",
     "level": "C2"
+  },
+  {
+    "id": "word_8822",
+    "fr": "là-bas",
+    "en": "over there",
+    "de": "da drüben",
+    "es": "allá",
+    "type": "adverbe",
+    "level": "A1",
+    "ex_fr": "Mon ami habite *là-bas*.",
+    "ex_en": "My friend lives *over there*.",
+    "ex_de": "Mein Freund wohnt *da drüben*.",
+    "ex_es": "Mi amigo vive *allá*."
   }
 ];

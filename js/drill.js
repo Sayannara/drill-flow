@@ -1,4 +1,4 @@
-import { vocabulary } from './data/vocabulary.js?v=130';
+import { vocabulary } from './data/vocabulary.js?v=146';
 import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js';
 import { translations } from './i18n.js';
 import { getCurrentUser } from './auth.js';
@@ -230,18 +230,25 @@ function getTargetPrefix(word, langTarget, langSource) {
     const sourceVal = (word[langSource] || '').trim();
     const type = (word.type || '').toLowerCase();
 
+    // Verbes modaux anglais -> pas de "to "
+    const MODAL_VERBS = ['would', 'could', 'should', 'may', 'might', 'must', 'can', 'will', 'shall'];
+    const firstWord = targetVal.split(/[\s/]+/)[0].toLowerCase();
+    if (MODAL_VERBS.includes(firstWord)) {
+        return '';
+    }
+
     // 1. Verbe anglais -> toujours "to "
     if (type === 'verbe' || targetVal.toLowerCase().startsWith('to ')) {
         return 'to ';
     }
 
     // 2. Nom anglais avec article explicite dans le mot cible
-    if (targetVal.toLowerCase().startsWith('the ')) return 'the ';
-    if (targetVal.toLowerCase().startsWith('a ')) return 'a ';
-    if (targetVal.toLowerCase().startsWith('an ')) return 'an ';
-
-    // 3. Nom anglais sans article explicite, mais le mot source en possède un
     if (type === 'nom') {
+        if (targetVal.toLowerCase().startsWith('the ')) return 'the ';
+        if (targetVal.toLowerCase().startsWith('a ')) return 'a ';
+        if (targetVal.toLowerCase().startsWith('an ')) return 'an ';
+
+        // 3. Nom anglais sans article explicite, mais le mot source en possède un
         const srcLower = sourceVal.toLowerCase();
         // Déterminant défini (le, la, l', les, der, die, das, el, la, los, las)
         if (/^(le |la |l'|les |der |die |das |el |la |los |las )/i.test(srcLower)) {
@@ -258,6 +265,27 @@ function getTargetPrefix(word, langTarget, langSource) {
     }
 
     return '';
+}
+
+function getPrefixRegex(prefix) {
+    if (!prefix) return null;
+    const clean = prefix.trim();
+    if (!clean) return null;
+    const escaped = clean.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    if (escaped.endsWith("'")) {
+        return new RegExp(`^${escaped}`, 'i');
+    }
+    return new RegExp(`^${escaped}\\s+`, 'i');
+}
+
+function formatWithPrefix(prefix, text) {
+    if (!prefix) return text;
+    const clean = prefix.trim();
+    const cleanText = (text || '').trim();
+    if (clean.endsWith("'")) {
+        return `${clean}${cleanText}`;
+    }
+    return `${clean} ${cleanText}`;
 }
 
 function buildTargetRegex(targetWord) {
@@ -435,9 +463,9 @@ function getRewriteCandidates(expectedTarget) {
     expectedTarget.split('/').forEach(part => {
         let clean = part.trim();
         if (sessionState.currentPrefix) {
-            const prefixClean = sessionState.currentPrefix.trim();
-            if (clean.toLowerCase().startsWith(prefixClean.toLowerCase())) {
-                clean = clean.substring(prefixClean.length).trim();
+            const pRegex = getPrefixRegex(sessionState.currentPrefix);
+            if (pRegex && pRegex.test(clean)) {
+                clean = clean.replace(pRegex, '').trim();
             }
         }
         if (clean) candidates.push(clean);
@@ -787,9 +815,9 @@ function handleValidation() {
 
         // Si un préfixe était affiché (ex: "to "), inclure la version complétée
         if (sessionState.currentPrefix && userInput.trim()) {
-            const prefixClean = sessionState.currentPrefix.trim();
-            if (!normalizedInput.startsWith(prefixClean)) {
-                const combined = normalizeText(sessionState.currentPrefix + ' ' + userInput);
+            const pRegex = getPrefixRegex(sessionState.currentPrefix);
+            if (pRegex && !pRegex.test(normalizedInput)) {
+                const combined = normalizeText(formatWithPrefix(sessionState.currentPrefix, userInput));
                 allInputOpts.push(combined, ...getArticleAlternatives(combined));
             }
         }
@@ -860,11 +888,11 @@ function handleValidation() {
             } else {
                 let cleanUser = userInput.trim();
                 if (sessionState.currentPrefix) {
-                    const prefixClean = sessionState.currentPrefix.trim();
-                    if (cleanUser.toLowerCase().startsWith(prefixClean.toLowerCase())) {
-                        cleanUser = cleanUser.substring(prefixClean.length).trim();
+                    const pRegex = getPrefixRegex(sessionState.currentPrefix);
+                    if (pRegex && pRegex.test(cleanUser)) {
+                        cleanUser = cleanUser.replace(pRegex, '').trim();
                     }
-                    userEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 500;">${sessionState.currentPrefix}</span>${cleanUser}`;
+                    userEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 600;">${sessionState.currentPrefix}</span>${cleanUser}`;
                 } else {
                     userEl.textContent = cleanUser;
                 }
@@ -874,12 +902,12 @@ function handleValidation() {
         const expectedEl = document.getElementById('result-expected');
         if (expectedEl) {
             if (sessionState.currentPrefix && expected) {
-                const prefixClean = sessionState.currentPrefix.trim();
+                const pRegex = getPrefixRegex(sessionState.currentPrefix);
                 let cleanExp = expected.trim();
-                if (cleanExp.toLowerCase().startsWith(prefixClean.toLowerCase())) {
-                    cleanExp = cleanExp.substring(prefixClean.length).trim();
+                if (pRegex && pRegex.test(cleanExp)) {
+                    cleanExp = cleanExp.replace(pRegex, '').trim();
                 }
-                expectedEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 500;">${sessionState.currentPrefix}</span>${cleanExp}`;
+                expectedEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 600;">${sessionState.currentPrefix}</span>${cleanExp}`;
             } else {
                 expectedEl.textContent = expected;
             }
@@ -890,7 +918,7 @@ function handleValidation() {
         if (btnSpeak) {
             btnSpeak.onclick = (e) => {
                 e.stopPropagation();
-                speakWord(expected, sessionState.langTarget);
+                speakExpectedWord();
             };
         }
         
@@ -902,7 +930,7 @@ function handleValidation() {
 
         // Prononciation automatique si l'option est activée
         if (localStorage.getItem('drillflow_auto_speak') === 'on') {
-            speakWord(expected, sessionState.langTarget);
+            speakExpectedWord();
         }
         
         const inputWrapperEl = document.getElementById('drill-input-wrapper');
@@ -1124,9 +1152,9 @@ function handleValidation() {
                         }
 
                         if (sessionState.currentPrefix && normalizedInput) {
-                            const prefixClean = sessionState.currentPrefix.trim();
-                            if (!normalizedInput.startsWith(prefixClean)) {
-                                const combined = normalizeText(sessionState.currentPrefix + ' ' + normalizedInput);
+                            const pRegex = getPrefixRegex(sessionState.currentPrefix);
+                            if (pRegex && !pRegex.test(normalizedInput)) {
+                                const combined = normalizeText(formatWithPrefix(sessionState.currentPrefix, normalizedInput));
                                 inOpts.push(combined, ...getArticleAlternatives(combined));
                             }
                         }
@@ -1142,8 +1170,11 @@ function handleValidation() {
                         const tolerantInput = normalizeTolerant(val, tgtLang);
                         let tolerantInOpts = [tolerantInput, ...getArticleAlternatives(tolerantInput)];
                         if (sessionState.currentPrefix && tolerantInput) {
-                            const combined = normalizeTolerant(sessionState.currentPrefix + ' ' + tolerantInput, tgtLang);
-                            tolerantInOpts.push(combined, ...getArticleAlternatives(combined));
+                            const pRegex = getPrefixRegex(sessionState.currentPrefix);
+                            if (pRegex && !pRegex.test(tolerantInput)) {
+                                const combined = normalizeTolerant(formatWithPrefix(sessionState.currentPrefix, tolerantInput), tgtLang);
+                                tolerantInOpts.push(combined, ...getArticleAlternatives(combined));
+                            }
                         }
                         expected.split('/').forEach(s => {
                             const normExp = normalizeTolerant(s, tgtLang);
@@ -1573,29 +1604,191 @@ export function handleDrillKeydown(e) {
         } else if (key === 'p' || key === 's') {
             e.preventDefault();
             e.stopPropagation();
-            const currentWord = sessionState.words[sessionState.currentIndex];
-            const expectedWord = currentWord[sessionState.langTarget];
-            speakWord(expectedWord, sessionState.langTarget);
+            speakExpectedWord();
         }
     }
 }
 
-// Fonction de prononciation utilisant la synthese vocale du navigateur
+let keepAliveAudioCtx = null;
+let keepAliveOsc = null;
+let speakTimeoutId = null;
+let cachedVoices = [];
+
+if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    cachedVoices = window.speechSynthesis.getVoices();
+    window.speechSynthesis.onvoiceschanged = () => {
+        cachedVoices = window.speechSynthesis.getVoices();
+    };
+}
+
+// Détermine si une voix correspond au genre souhaité (female ou male) selon son nom et métadonnées
+function isVoiceMatchingGender(voice, targetGender) {
+    if (!voice || !targetGender || targetGender === 'auto') return true;
+    const name = (voice.name || '').toLowerCase();
+    const isFemale = targetGender === 'female';
+
+    const femaleKeywords = [
+        'female', 'femme', 'woman', 'girl', 'weiblich', 'femenina',
+        'julie', 'hortense', 'audrey', 'aurelie', 'amelie', 'chantal', 'denise', 'celine',
+        'zira', 'hazel', 'susan', 'catherine', 'samantha', 'victoria', 'eva', 'jenny', 'aria', 'karen', 'serena',
+        'helena', 'laura', 'sabina', 'monica', 'paulina', 'lucia', 'paloma', 'hilda', 'soledad',
+        'hedda', 'katja', 'marlene', 'anna', 'petra', 'sabine', 'vicki'
+    ];
+
+    const maleKeywords = [
+        'male', 'homme', 'man', 'boy', 'männlich', 'masculina',
+        'paul', 'henri', 'thomas', 'antoine', 'nicolas', 'alain', 'claude', 'bernard', 'mathieu',
+        'david', 'mark', 'george', 'daniel', 'oliver', 'arthur', 'guy', 'richard', 'james', 'alex',
+        'pablo', 'jorge', 'raul', 'alvaro', 'diego', 'enrique', 'carlos', 'manuel',
+        'stefan', 'hans', 'martin', 'markus', 'florian', 'bernd'
+    ];
+
+    const hasFemale = femaleKeywords.some(kw => name.includes(kw));
+    const hasMale = maleKeywords.some(kw => name.includes(kw));
+
+    if (isFemale) {
+        if (hasFemale && !hasMale) return true;
+        // Voix Google standard sans mot-clé explicite (Google français, español, US English sont féminines)
+        if (name.includes('google') && !name.includes('male') && !hasMale) return true;
+        return false;
+    } else {
+        if (hasMale && !hasFemale) return true;
+        return false;
+    }
+}
+
+// Sélectionne la meilleure voix disponible pour la langue cible selon le genre configuré (localStorage)
+function getBestVoice(targetLangCode) {
+    const voices = cachedVoices && cachedVoices.length > 0 ? cachedVoices : window.speechSynthesis.getVoices();
+    if (!voices || voices.length === 0) return null;
+
+    const langPrefix = targetLangCode.split('-')[0].toLowerCase();
+    const matching = voices.filter(v => v.lang && (v.lang.toLowerCase() === targetLangCode.toLowerCase() || v.lang.toLowerCase().startsWith(langPrefix)));
+    if (matching.length === 0) return null;
+
+    const preferredGender = (typeof localStorage !== 'undefined' && localStorage.getItem('drillflow_voice_gender')) || 'auto';
+
+    if (preferredGender !== 'auto') {
+        const genderMatching = matching.filter(v => isVoiceMatchingGender(v, preferredGender));
+        if (genderMatching.length > 0) {
+            const googleVoice = genderMatching.find(v => v.name && v.name.toLowerCase().includes('google'));
+            if (googleVoice) return googleVoice;
+            const naturalVoice = genderMatching.find(v => v.name && v.name.toLowerCase().includes('natural'));
+            if (naturalVoice) return naturalVoice;
+            const exactLang = genderMatching.find(v => v.lang.toLowerCase() === targetLangCode.toLowerCase());
+            if (exactLang) return exactLang;
+            return genderMatching[0];
+        }
+    }
+
+    // Mode Auto ou repli si aucun profil de genre spécifique n'a été trouvé
+    const googleVoice = matching.find(v => v.name && v.name.toLowerCase().includes('google'));
+    if (googleVoice) return googleVoice;
+
+    const naturalVoice = matching.find(v => v.name && v.name.toLowerCase().includes('natural'));
+    if (naturalVoice) return naturalVoice;
+
+    const exactVoice = matching.find(v => v.lang.toLowerCase() === targetLangCode.toLowerCase());
+    if (exactVoice) return exactVoice;
+
+    return matching[0];
+}
+
+// Maintient la liaison audio active en tâche de fond avec une onde sub-audible inaudible (30Hz)
+export function startAudioKeepAlive() {
+    try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        if (!keepAliveAudioCtx) {
+            keepAliveAudioCtx = new AudioCtx();
+        }
+        if (keepAliveAudioCtx.state === 'suspended') {
+            keepAliveAudioCtx.resume();
+        }
+        if (!keepAliveOsc) {
+            keepAliveOsc = keepAliveAudioCtx.createOscillator();
+            const gain = keepAliveAudioCtx.createGain();
+            keepAliveOsc.frequency.value = 30;
+            gain.gain.value = 0.0005;
+            keepAliveOsc.connect(gain);
+            gain.connect(keepAliveAudioCtx.destination);
+            keepAliveOsc.start();
+        }
+    } catch (e) {
+        // Ignorer silencieusement si bloqué avant interaction
+    }
+}
+
+// Fonction de prononciation utilisant la synthèse vocale du navigateur
 function speakWord(text, lang) {
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel(); // Annule toute prononciation en cours
-        // Nettoyage simple : on ignore ce qui est entre parentheses (ex: notes de contexte)
-        const cleanText = text.split('(')[0].trim();
-        const utterance = new SpeechSynthesisUtterance(cleanText);
+    if (!('speechSynthesis' in window) || !text) return;
+
+    if (speakTimeoutId) {
+        clearTimeout(speakTimeoutId);
+        speakTimeoutId = null;
+    }
+
+    startAudioKeepAlive();
+
+    // N'annuler que si une voix est effectivement en train de parler
+    const wasSpeaking = window.speechSynthesis.speaking;
+    if (wasSpeaking) {
+        window.speechSynthesis.cancel();
+    }
+
+    const delay = wasSpeaking ? 80 : 0;
+
+    speakTimeoutId = setTimeout(() => {
+        // Remplacer les '/' par des virgules pour que la voix enchaîne TOUTES les variantes (ex: "l'acteur, l'actrice")
+        let speechText = text.replace(/\s*\/\s*/g, ', ').replace(/\(.*?\)/g, '').trim();
+        if (!speechText) return;
+
         const langMap = {
             'fr': 'fr-FR',
             'en': 'en-US',
             'de': 'de-DE',
             'es': 'es-ES'
         };
-        utterance.lang = langMap[lang] || lang;
+        const targetLangCode = langMap[lang] || lang;
+        const voice = getBestVoice(targetLangCode);
+
+        // Warm-up dummy pour réveiller immédiatement le buffer audio SAPI sans latence
+        try {
+            const warmUp = new SpeechSynthesisUtterance(' ');
+            warmUp.volume = 0.01;
+            if (voice) warmUp.voice = voice;
+            window.speechSynthesis.speak(warmUp);
+        } catch (e) {}
+
+        const utterance = new SpeechSynthesisUtterance(speechText);
+        utterance.lang = targetLangCode;
+        utterance.rate = 0.95;
+        if (voice) {
+            utterance.voice = voice;
+        }
+
         window.speechSynthesis.speak(utterance);
+    }, delay);
+}
+
+// Prononce le mot attendu sur la page de résultat en incluant toutes les variantes et le déterminant / préfixe
+function speakExpectedWord() {
+    if (!sessionState.words || sessionState.currentIndex >= sessionState.words.length) return;
+    const currentWord = sessionState.words[sessionState.currentIndex];
+    if (!currentWord) return;
+
+    const targetVal = (currentWord[sessionState.langTarget] || '').trim();
+    // Nettoyer uniquement les parenthèses de contexte, mais CONSERVER toutes les variantes séparées par '/'
+    let textToSpeak = targetVal.replace(/\(.*?\)/g, '').trim();
+
+    if (sessionState.currentPrefix) {
+        const pRegex = getPrefixRegex(sessionState.currentPrefix);
+        if (pRegex && !pRegex.test(textToSpeak)) {
+            textToSpeak = formatWithPrefix(sessionState.currentPrefix, textToSpeak);
+        }
     }
+
+    speakWord(textToSpeak, sessionState.langTarget);
 }
 
 
@@ -1953,12 +2146,30 @@ function setupReportButton(btnId, currentWord) {
     const btn = document.getElementById(btnId);
     if (!btn) return;
 
+    const user = (typeof getCurrentUser === 'function') ? getCurrentUser() : null;
+    if (!user || user.isAnonymous) {
+        btn.style.display = 'none';
+        return;
+    }
+
+    btn.style.display = 'inline-flex';
+    const lang = getAppLanguage();
+
     if (sessionState.reportedWords && sessionState.reportedWords.has(currentWord.id)) {
         btn.classList.add('reported');
-        btn.title = "Déjà signalé";
+        const alreadyTitle = translations[lang]?.report_already_reported || "Déjà signalé";
+        btn.title = alreadyTitle;
+        btn.setAttribute('aria-label', alreadyTitle);
     } else {
         btn.classList.remove('reported');
-        btn.title = "Signaler une erreur sur ce mot";
+        const defaultTitle = translations[lang]?.report_tooltip || "Signaler une erreur / coquille sur ce mot";
+        btn.title = defaultTitle;
+        btn.setAttribute('aria-label', defaultTitle);
+    }
+
+    const textSpan = btn.querySelector('.report-btn-text');
+    if (textSpan) {
+        textSpan.textContent = translations[lang]?.report_btn || "Signaler";
     }
 
     btn.onclick = (e) => {
@@ -1967,7 +2178,19 @@ function setupReportButton(btnId, currentWord) {
     };
 }
 
+// Réagir aux changements de connexion en direct
+window.addEventListener('auth-changed', () => {
+    if (sessionState && sessionState.sessionWords && sessionState.sessionWords[sessionState.currentIndex]) {
+        const curWord = sessionState.sessionWords[sessionState.currentIndex];
+        setupReportButton('btn-report-word', curWord);
+        setupReportButton('btn-report-word-result', curWord);
+    }
+});
+
 function openReportModal(currentWord, btnEl) {
+    const user = (typeof getCurrentUser === 'function') ? getCurrentUser() : null;
+    if (!user || user.isAnonymous) return;
+
     const modal = document.getElementById('report-modal');
     const textEl = document.getElementById('report-modal-text');
     const commentInput = document.getElementById('report-comment');
@@ -2028,8 +2251,10 @@ function openReportModal(currentWord, btnEl) {
         };
     });
 
+    const lang = getAppLanguage();
     const wordName = currentWord[sessionState.langSource] || currentWord.fr || 'ce mot';
-    textEl.innerHTML = `Signaler <strong>"${wordName}"</strong> comme mal traduit ou nécessitant une correction ?`;
+    const tplDesc = translations[lang]?.report_modal_desc_word || 'Signaler {word} comme mal traduit ou nécessitant une correction ?';
+    textEl.innerHTML = tplDesc.replace('{word}', `<strong>"${escapeHtml(wordName)}"</strong>`);
     modal.classList.remove('hidden');
 
     // Mettre le focus sur la zone de texte après ouverture

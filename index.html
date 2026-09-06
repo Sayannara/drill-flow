@@ -79,7 +79,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=130">
+    <link rel="stylesheet" href="css/style.css?v=149">
     <link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -313,33 +313,34 @@
                         <div id="result-status" class="status-banner">Correct !</div>
                         <div id="result-spelling-hint" class="spelling-hint-banner" style="display: none;"></div>
                         
-                        <div class="result-comparison" style="position: relative;">
-                            <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur" style="position: absolute; top: 1rem; right: 1rem; z-index: 5;">
+                        <!-- Barre d'action entre le bandeau Juste/Faux et le bloc du mot -->
+                        <div class="result-actions-bar" id="result-actions-bar">
+                            <button id="btn-report-word-result" class="report-btn" title="Signaler une erreur / coquille sur ce mot" aria-label="Signaler une erreur" data-i18n-title="report_tooltip" style="display: none;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
                                     <line x1="4" y1="22" x2="4" y2="15"></line>
                                 </svg>
-                                <span class="report-btn-text">Signaler</span>
+                                <span class="report-btn-text" data-i18n="report_btn">Signaler</span>
                             </button>
+                        </div>
+                        
+                        <div class="result-comparison">
                             <div class="comparison-line">
                                 <span class="comparison-label" data-i18n="label_word">Mot:</span>
-                                <div style="display: inline-flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; flex: 1; min-width: 0;">
-                                    <span id="result-asked" class="comparison-text" style="color: var(--text-primary); font-weight: 500;">...</span>
-                                    <div class="drill-word-badges" style="display: inline-flex; align-items: center; gap: 0.35rem; flex-shrink: 0; white-space: nowrap;">
-                                        <span id="result-asked-type-badge" class="type-badge hidden" style="font-size: 0.65rem; padding: 0.15rem 0.5rem; flex-shrink: 0; white-space: nowrap;">nom</span>
-                                        <span id="result-asked-level-badge" class="type-badge hidden" style="font-size: 0.65rem; padding: 0.15rem 0.5rem; flex-shrink: 0; white-space: nowrap;">A1</span>
-                                    </div>
+                                <div class="comparison-content-wrapper">
+                                    <span id="result-asked" class="comparison-text" style="color: var(--text-primary); font-weight: 500; display: inline;">...</span><span id="result-asked-badges" class="drill-word-badges"><span id="result-asked-type-badge" class="type-badge hidden">nom</span><span id="result-asked-level-badge" class="type-badge hidden">A1</span></span>
                                 </div>
                             </div>
                             <div class="comparison-line" id="result-user-container" style="display: none;">
                                 <span class="comparison-label" data-i18n="label_user">Entré:</span>
-                                <span id="result-user" class="comparison-text user-saisie">...</span>
+                                <div class="comparison-content-wrapper">
+                                    <span id="result-user" class="comparison-text user-saisie">...</span>
+                                </div>
                             </div>
                             <div class="comparison-line" id="result-expected-container">
                                 <span class="comparison-label" data-i18n="label_expected">Attendu:</span>
-                                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                                    <span id="result-expected" class="comparison-text expected-saisie">...</span>
-                                    <button id="btn-speak-expected" class="icon-btn speak-btn" title="Entendre la prononciation" style="margin-left: 0; display: inline-flex; align-items: center; justify-content: center; padding: 0.35rem; flex-shrink: 0;">
+                                <div class="comparison-content-wrapper">
+                                    <span id="result-expected" class="comparison-text expected-saisie" style="display: inline;">...</span><button id="btn-speak-expected" class="icon-btn speak-btn" title="Entendre la prononciation" aria-label="Entendre la prononciation">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                             <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                                             <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
@@ -347,18 +348,22 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="comparison-line" id="example-correct-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
+                            <div class="comparison-line" id="example-correct-line" style="display: none; margin-top: 1rem; margin-bottom: 0.5rem;">
                                 <span class="comparison-label"></span>
-                                <span id="example-correct-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
+                                <div class="comparison-content-wrapper">
+                                    <span id="example-correct-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
+                                </div>
                             </div>
                             <div class="comparison-line" id="rewrite-line" style="display: none;">
                                 <span class="comparison-label" data-i18n="label_rewrite">Récrire:</span>
                                 <div id="rewrite-wrapper" style="display: inline-flex; align-items: baseline; min-width: 260px; max-width: 500px; border-bottom: 2px solid var(--border-color); padding: 0 0 0.2rem 0 !important; margin: 0 !important; position: relative; transition: border-color 0.2s; box-sizing: border-box;"><span id="rewrite-prefix" class="input-prefix" style="display: none; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; opacity: 0.55; margin: 0 !important; padding: 0 !important; line-height: 1.2 !important; border: none !important; white-space: pre !important;"></span><div style="position: relative; display: inline-flex; align-items: baseline; flex: 1; min-width: 0;"><div id="rewrite-mirror" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; line-height: 1.2 !important; white-space: pre; display: flex; align-items: baseline; overflow: hidden; padding: 0 !important; margin: 0 !important; letter-spacing: normal;"></div><input type="text" id="rewrite-input" class="comparison-text rewrite-field" placeholder="..." autocomplete="off" style="border: none !important; outline: none !important; background: transparent; width: 100%; font-family: monospace !important; font-size: 1.75rem !important; font-weight: 600 !important; line-height: 1.2 !important; color: var(--text-primary); padding: 0 !important; margin: 0 !important; letter-spacing: normal;"></div></div>
                                 <div id="rewrite-special-keys" class="drill-special-keys" style="display: none; margin-top: 0.5rem; justify-content: flex-start;"></div>
                             </div>
-                            <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1.25rem; margin-bottom: 0.9rem;">
+                            <div class="comparison-line" id="example-incorrect-line" style="display: none; margin-top: 1rem; margin-bottom: 0.5rem;">
                                 <span class="comparison-label"></span>
-                                <span id="example-incorrect-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
+                                <div class="comparison-content-wrapper">
+                                    <span id="example-incorrect-text" style="font-style: italic; font-size: 1.05rem; color: var(--text-secondary); font-family: var(--font-sans); white-space: normal; line-height: 1.4; text-align: left;"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -793,6 +798,10 @@
                             <p class="about-note-text" data-i18n="about_note_level">Prenez en compte le niveau de difficulté d'un mot pour sa traduction.</p>
                         </div>
                         <div class="about-note-item">
+                            <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span>
+                            <p class="about-note-text" data-i18n="about_note_cefr_words">Le nombre de mots requis pour valider un niveau est relatif : il n'existe aucun quota officiel fixé par le CECRL. Nos paliers constituent des repères progressifs et pragmatiques pour structurer votre apprentissage.</p>
+                        </div>
+                        <div class="about-note-item">
                             <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></span>
                             <p class="about-note-text" data-i18n="about_note_batch_size">Privilégiez des listes courtes (max. 10 mots) si vous êtes dans un niveau que vous ne maîtrisez pas.</p>
                         </div>
@@ -948,6 +957,22 @@
                 </div>
             </div>
 
+            <!-- Section 2b : Type de voix (Genre) -->
+            <div class="options-section">
+                <label style="font-weight: 700; font-size: 0.88rem; display: block; margin-bottom: 0.4rem; color: var(--text-primary);" data-i18n="options_voice_gender_title">Type de voix</label>
+                <div class="voice-gender-switcher-group" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.65rem;">
+                    <button type="button" id="voice-gender-opt-auto" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.5rem; border-radius: 10px; font-weight: 600; font-size: 0.85rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_voice_gender_auto">Auto</span>
+                    </button>
+                    <button type="button" id="voice-gender-opt-female" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.5rem; border-radius: 10px; font-weight: 600; font-size: 0.85rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_voice_gender_female">Femme</span>
+                    </button>
+                    <button type="button" id="voice-gender-opt-male" class="btn-theme-choice" style="display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.5rem; border-radius: 10px; font-weight: 600; font-size: 0.85rem; cursor: pointer; border: 2px solid transparent; background: var(--bg-color); color: var(--text-primary); transition: all 0.2s;">
+                        <span data-i18n="options_voice_gender_male">Homme</span>
+                    </button>
+                </div>
+            </div>
+
             <!-- Section 3 : Accents & Caractères spéciaux -->
             <div class="options-section">
                 <div style="display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.4rem;">
@@ -1005,7 +1030,7 @@
     </div>
 
     <!-- Modal Test de Niveau (Placement Test) -->
-    <div id="placement-test-modal" class="modal-overlay" style="display: none; z-index: 10000; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(5px);"></div>
+    <div id="placement-test-modal" class="modal-overlay" style="display: none; z-index: 10000; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; height: 100dvh; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(5px); padding: 1.25rem 1rem; box-sizing: border-box; overflow-y: auto; overflow-x: hidden;"></div>
 
     <!-- Notification Toast -->
     <div id="report-toast" class="report-toast hidden">
@@ -1014,14 +1039,14 @@
 
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.8; font-family: var(--font-sans); line-height: 1.6;">
-        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v130</span> &bull; <span data-i18n="footer_deployed">Déployé le 05/09/2026</span></div>
+        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v149</span> &bull; <span data-i18n="footer_deployed">Déployé le 06/09/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/jspdf.umd.min.js"></script>
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=130"></script>
+    <script type="module" src="js/main.js?v=149"></script>
     <script>
         if ('serviceWorker' in navigator) {
             let refreshing = false;

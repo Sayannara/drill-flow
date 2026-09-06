@@ -1,5 +1,6 @@
 // Configuration Panel JS - drillFlow.
 import { APP_CONFIG, getCertNameLockDays, getTestWordsPerLevel, getTestPassThreshold } from './config/app-config.js';
+import { getCefrThresholds, DEFAULT_CEFR_THRESHOLDS } from './config/cefr.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Éléments du formulaire
@@ -18,6 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputTestTimerDesktop = document.getElementById('cfg-test-timer-desktop');
     const inputTestTimerMobile = document.getElementById('cfg-test-timer-mobile');
     const inputTestPassThreshold = document.getElementById('cfg-test-pass-threshold');
+    
+    // Paliers de Points CECRL
+    const inputCefrA1 = document.getElementById('cfg-cefr-a1');
+    const inputCefrA2 = document.getElementById('cfg-cefr-a2');
+    const inputCefrB1 = document.getElementById('cfg-cefr-b1');
+    const inputCefrB2 = document.getElementById('cfg-cefr-b2');
+    const inputCefrC1 = document.getElementById('cfg-cefr-c1');
+    const inputCefrC2 = document.getElementById('cfg-cefr-c2');
     
     const btnAudioOn = document.getElementById('cfg-audio-on');
     const btnAudioOff = document.getElementById('cfg-audio-off');
@@ -82,6 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (inputTestPassThreshold) {
             inputTestPassThreshold.value = getTestPassThreshold().toString();
         }
+
+        // Paliers de points CECRL
+        const cefrThresholds = getCefrThresholds();
+        if (inputCefrA1) inputCefrA1.value = cefrThresholds.A1.toString();
+        if (inputCefrA2) inputCefrA2.value = cefrThresholds.A2.toString();
+        if (inputCefrB1) inputCefrB1.value = cefrThresholds.B1.toString();
+        if (inputCefrB2) inputCefrB2.value = cefrThresholds.B2.toString();
+        if (inputCefrC1) inputCefrC1.value = cefrThresholds.C1.toString();
+        if (inputCefrC2) inputCefrC2.value = cefrThresholds.C2.toString();
 
         if (selectAppLang) {
             selectAppLang.value = localStorage.getItem('app_lang') || 'fr';
@@ -163,7 +181,13 @@ document.addEventListener('DOMContentLoaded', () => {
         inputTestWords,
         inputTestTimerDesktop,
         inputTestTimerMobile,
-        inputTestPassThreshold
+        inputTestPassThreshold,
+        inputCefrA1,
+        inputCefrA2,
+        inputCefrB1,
+        inputCefrB2,
+        inputCefrC1,
+        inputCefrC2
     ];
 
     let debounceTimer = null;
@@ -248,6 +272,20 @@ document.addEventListener('DOMContentLoaded', () => {
             return false;
         }
 
+        // Paliers de points CECRL
+        const cefrA1 = inputCefrA1 ? parseInt(inputCefrA1.value, 10) : DEFAULT_CEFR_THRESHOLDS.A1;
+        const cefrA2 = inputCefrA2 ? parseInt(inputCefrA2.value, 10) : DEFAULT_CEFR_THRESHOLDS.A2;
+        const cefrB1 = inputCefrB1 ? parseInt(inputCefrB1.value, 10) : DEFAULT_CEFR_THRESHOLDS.B1;
+        const cefrB2 = inputCefrB2 ? parseInt(inputCefrB2.value, 10) : DEFAULT_CEFR_THRESHOLDS.B2;
+        const cefrC1 = inputCefrC1 ? parseInt(inputCefrC1.value, 10) : DEFAULT_CEFR_THRESHOLDS.C1;
+        const cefrC2 = inputCefrC2 ? parseInt(inputCefrC2.value, 10) : DEFAULT_CEFR_THRESHOLDS.C2;
+
+        if (isNaN(cefrA1) || isNaN(cefrA2) || isNaN(cefrB1) || isNaN(cefrB2) || isNaN(cefrC1) || isNaN(cefrC2) ||
+            cefrA1 <= 0 || cefrA2 <= cefrA1 || cefrB1 <= cefrA2 || cefrB2 <= cefrB1 || cefrC1 <= cefrB2 || cefrC2 <= cefrC1) {
+            if (!silent) showToast('⚠️ Les paliers CECRL doivent être strictement croissants (0 < A1 < A2 < B1 < B2 < C1 < C2).', true);
+            return false;
+        }
+
         localStorage.setItem('drillflow_active_pool_size', poolSize.toString());
         localStorage.setItem('drillflow_possible_volumes', cleanVols.join(', '));
         localStorage.setItem('drillflow_reinsert_min', rMin.toString());
@@ -263,6 +301,16 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('drillflow_test_timer_desktop', testTimerDesk.toString());
         localStorage.setItem('drillflow_test_timer_mobile', testTimerMob.toString());
         localStorage.setItem('drillflow_test_pass_threshold', testThreshold.toString());
+
+        // Paliers CECRL
+        localStorage.setItem('drillflow_cefr_thresholds', JSON.stringify({
+            A1: cefrA1,
+            A2: cefrA2,
+            B1: cefrB1,
+            B2: cefrB2,
+            C1: cefrC1,
+            C2: cefrC2
+        }));
 
         localStorage.setItem('drillflow_auto_speak', currentAudio);
         localStorage.setItem('drillflow_tolerate_accents', currentAccents);
@@ -292,6 +340,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (inputTestTimerDesktop) inputTestTimerDesktop.value = APP_CONFIG.DEFAULT_TEST_TIMER_DESKTOP.toString();
         if (inputTestTimerMobile) inputTestTimerMobile.value = APP_CONFIG.DEFAULT_TEST_TIMER_MOBILE.toString();
         if (inputTestPassThreshold) inputTestPassThreshold.value = APP_CONFIG.DEFAULT_TEST_PASS_THRESHOLD.toString();
+
+        // Paliers CECRL
+        if (inputCefrA1) inputCefrA1.value = DEFAULT_CEFR_THRESHOLDS.A1.toString();
+        if (inputCefrA2) inputCefrA2.value = DEFAULT_CEFR_THRESHOLDS.A2.toString();
+        if (inputCefrB1) inputCefrB1.value = DEFAULT_CEFR_THRESHOLDS.B1.toString();
+        if (inputCefrB2) inputCefrB2.value = DEFAULT_CEFR_THRESHOLDS.B2.toString();
+        if (inputCefrC1) inputCefrC1.value = DEFAULT_CEFR_THRESHOLDS.C1.toString();
+        if (inputCefrC2) inputCefrC2.value = DEFAULT_CEFR_THRESHOLDS.C2.toString();
+        localStorage.removeItem('drillflow_cefr_thresholds');
 
         selectAppLang.value = 'fr';
 

@@ -7,7 +7,7 @@
  * et délai allongé en cas d'erreur avec option de passage immédiat (Entrée / Continuer).
  */
 
-import { vocabulary } from './data/vocabulary.js?v=130';
+import { vocabulary } from './data/vocabulary.js?v=146';
 import { translations } from './i18n.js';
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -54,7 +54,9 @@ let testState = {
     timeRemainingMs: 0,
     isWaitingNext: false,
     isAwaitingSkipConfirm: false,
-    currentLevelQuestions: []
+    currentLevelQuestions: [],
+    questionStartTime: 0,
+    levelResponseTimes: []
 };
 
 function escapeHtml(str) {
@@ -440,7 +442,7 @@ function renderIntroScreen() {
     testState.wordsPerLevel = wordsCount;
 
     modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 600px; width: 92%; padding: 2rem 2.25rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.4rem; background: var(--surface-color); border: 1px solid var(--border-color); text-align: left;">
+        <div class="card placement-test-card" style="max-width: 600px; width: 92%; padding: 2rem 2.25rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.4rem; background: var(--surface-color); border: 1px solid var(--border-color); text-align: left; box-sizing: border-box; margin: auto;">
             
             <!-- En-tête -->
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.85rem;">
@@ -455,14 +457,13 @@ function renderIntroScreen() {
                         <span style="display: inline-flex; align-items: center; background: rgba(59, 130, 246, 0.12); color: var(--primary-color); padding: 0.15rem 0.55rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
                             ${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}
                         </span>
-                        </div>
-                        <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem; display: block;">
-                            ${getTranslation('test_intro_subtitle', 'Niveaux A1 à C2 • {words} mots / palier • Objectif : {threshold}% • ~{minutes} min max')
-                                .replace('{words}', wordsCount)
-                                .replace('{threshold}', threshold)
-                                .replace('{minutes}', maxMinutes)}
-                        </span>
                     </div>
+                    <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem; display: block;">
+                        ${getTranslation('test_intro_subtitle', 'Niveaux A1 à C2 • {words} mots / palier • Objectif : {threshold}% • ~{minutes} min max')
+                            .replace('{words}', wordsCount)
+                            .replace('{threshold}', threshold)
+                            .replace('{minutes}', maxMinutes)}
+                    </span>
                 </div>
                 <button type="button" id="btn-close-placement-test" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
             </div>
@@ -527,6 +528,7 @@ function loadLevel(levelIdx) {
     testState.currentWordIdx = 0;
     testState.levelCorrectCount = 0;
     testState.currentLevelQuestions = [];
+    testState.levelResponseTimes = [];
     testState.isWaitingNext = false;
     testState.isAwaitingSkipConfirm = false;
 
@@ -625,7 +627,7 @@ function renderWordScreen() {
     testState.isAwaitingSkipConfirm = false;
 
     modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 620px; width: 92%; padding: 1.75rem 2rem; position: relative; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.25rem; background: var(--surface-color); border: 1px solid var(--border-color);">
+        <div class="card placement-test-card" style="max-width: 620px; width: 92%; padding: 1.75rem 2rem; position: relative; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.25rem; background: var(--surface-color); border: 1px solid var(--border-color); box-sizing: border-box; margin: auto;">
             
             <!-- En-tête : Titre & Bouton fermer -->
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.85rem;">
@@ -797,6 +799,10 @@ function executeSkip() {
     const wordItem = testState.levelWords[testState.currentWordIdx];
     const expectedStr = wordItem[testState.tgtLang] || '';
 
+    const elapsedSec = Math.min(testState.timerSeconds, Math.max(0.1, (Date.now() - (testState.questionStartTime || Date.now())) / 1000));
+    if (!testState.levelResponseTimes) testState.levelResponseTimes = [];
+    testState.levelResponseTimes.push(elapsedSec);
+
     if (!testState.currentLevelQuestions) testState.currentLevelQuestions = [];
     testState.currentLevelQuestions.push({
         wordId: wordItem.id,
@@ -805,7 +811,8 @@ function executeSkip() {
         userAnswer: '',
         score: 0.0,
         status: 'skipped',
-        type: wordItem.type || ''
+        type: wordItem.type || '',
+        timeSec: Math.round(elapsedSec * 10) / 10
     });
 
     if (testState.timerInterval) {
@@ -842,6 +849,7 @@ function startWordTimer() {
     const totalMs = testState.timerSeconds * 1000;
     let remainingMs = totalMs;
     const stepMs = 100;
+    testState.questionStartTime = Date.now();
 
     const timerBar = document.getElementById('test-timer-bar');
     const timerDigital = document.getElementById('test-timer-digital');
@@ -999,6 +1007,10 @@ function handleWordSubmit() {
     const expectedStr = wordItem[testState.tgtLang] || '';
     const evalResult = evaluateAnswer(userVal, expectedStr, testState.tgtLang);
 
+    const elapsedSec = Math.min(testState.timerSeconds, Math.max(0.1, (Date.now() - (testState.questionStartTime || Date.now())) / 1000));
+    if (!testState.levelResponseTimes) testState.levelResponseTimes = [];
+    testState.levelResponseTimes.push(elapsedSec);
+
     if (!testState.currentLevelQuestions) testState.currentLevelQuestions = [];
     testState.currentLevelQuestions.push({
         wordId: wordItem.id,
@@ -1007,7 +1019,8 @@ function handleWordSubmit() {
         userAnswer: userVal,
         score: evalResult.score,
         status: evalResult.score === 1.0 ? 'correct' : (evalResult.score === 0.5 ? 'near' : 'incorrect'),
-        type: wordItem.type || ''
+        type: wordItem.type || '',
+        timeSec: Math.round(elapsedSec * 10) / 10
     });
 
     const feedbackZone = document.getElementById('test-feedback-zone');
@@ -1066,6 +1079,10 @@ function handleWordTimeout() {
     const wordItem = testState.levelWords[testState.currentWordIdx];
     const expectedStr = wordItem[testState.tgtLang] || '';
 
+    const elapsedSec = testState.timerSeconds;
+    if (!testState.levelResponseTimes) testState.levelResponseTimes = [];
+    testState.levelResponseTimes.push(elapsedSec);
+
     if (!testState.currentLevelQuestions) testState.currentLevelQuestions = [];
     testState.currentLevelQuestions.push({
         wordId: wordItem.id,
@@ -1074,7 +1091,8 @@ function handleWordTimeout() {
         userAnswer: '',
         score: 0.0,
         status: 'timeout',
-        type: wordItem.type || ''
+        type: wordItem.type || '',
+        timeSec: elapsedSec
     });
 
     const feedbackZone = document.getElementById('test-feedback-zone');
@@ -1124,11 +1142,17 @@ function onLevelCompleted() {
     const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
     const passed = pct >= testState.passThreshold;
 
+    const times = testState.levelResponseTimes || [];
+    const avgTime = times.length > 0
+        ? Math.round((times.reduce((a, b) => a + b, 0) / times.length) * 10) / 10
+        : 0;
+
     testState.history[currentLevel] = {
         total,
         correct,
         pct,
         passed,
+        avgTime,
         questions: [...(testState.currentLevelQuestions || [])]
     };
 
@@ -1150,7 +1174,7 @@ function renderLevelPassedScreen(level, correct, total, pct) {
     const threshold = getTestPassThreshold();
 
     modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 540px; width: 92%; padding: 2.25rem 2rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; background: var(--surface-color); border: 1px solid var(--border-color);">
+        <div class="card placement-test-card" style="max-width: 540px; width: 92%; padding: 2.25rem 2rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; background: var(--surface-color); border: 1px solid var(--border-color); box-sizing: border-box; margin: auto;">
             <div style="display: inline-flex; align-items: center; justify-content: center; width: 68px; height: 68px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); color: #10b981; margin-bottom: 0.25rem;">
                 ${ICONS.award}
             </div>
@@ -1272,7 +1296,7 @@ function openLevelDetailModal(level, res) {
                             ${getTranslation('test_detail_modal_title', 'Détail du Palier')} ${level}
                         </h3>
                         <div style="font-size: 0.82rem; color: var(--text-secondary); text-align: left; margin-top: 0.15rem;">
-                            Score : <strong>${formatScore(res.correct)} / ${res.total}</strong> (${res.pct}%)
+                            Score : <strong>${formatScore(res.correct)} / ${res.total}</strong> (${res.pct}%)${res.avgTime !== undefined ? ` &bull; ${getTranslation('test_summary_header_time', 'Temps moy.')} : <strong>${res.avgTime}s</strong>` : ''}
                         </div>
                     </div>
                 </div>
@@ -1368,6 +1392,9 @@ function finishTest() {
                 <td style="padding: 0.45rem 0.85rem; text-align: center; font-weight: 600; font-size: 0.88rem;">
                     ${formatScore(res.correct)} / ${res.total} <span style="font-size: 0.78rem; color: var(--text-secondary); font-weight: normal;">(${res.pct}%)</span>
                 </td>
+                <td style="padding: 0.45rem 0.85rem; text-align: center; font-weight: 600; font-size: 0.88rem; color: var(--text-secondary);">
+                    ${res.avgTime !== undefined ? `${res.avgTime}s` : '-'}
+                </td>
                 <td style="padding: 0.45rem 0.85rem; text-align: right; font-size: 0.85rem;">
                     ${statusText}
                 </td>
@@ -1376,7 +1403,7 @@ function finishTest() {
     }
 
     modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.3rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box;">
+        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.3rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
             <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
             
             <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">
@@ -1400,6 +1427,7 @@ function finishTest() {
                         <tr style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.75rem; text-transform: uppercase;">
                             <th style="padding: 0.45rem 0.85rem; text-align: left;">${getTranslation('test_summary_header_level', 'Niveau')}</th>
                             <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_score', 'Score')}</th>
+                            <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_time', 'Temps moy.')}</th>
                             <th style="padding: 0.45rem 0.85rem; text-align: right;">${getTranslation('test_summary_header_status', 'Statut')}</th>
                         </tr>
                     </thead>
@@ -1410,7 +1438,7 @@ function finishTest() {
             </div>
 
             <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.35; margin: 0;">
-                ${getTranslation('test_summary_threshold_info', 'Seuil de passage configuré : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.').replace('{threshold}', getTestPassThreshold())}
+                ${getTranslation('test_summary_threshold_info', 'Seuil de passage : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.').replace('{threshold}', getTestPassThreshold())}
             </p>
 
             <!-- Actions -->

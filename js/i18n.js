@@ -199,11 +199,12 @@ export const translations = {
         test_level_below_a1: "Débutant (Inférieur à A1)",
         test_summary_header_level: "Niveau",
         test_summary_header_score: "Score",
+        test_summary_header_time: "Temps moy.",
         test_summary_header_status: "Statut",
         test_status_passed: "Validé",
         test_status_failed: "Non atteint",
         test_level_success_threshold: "Félicitations ! Vous dépassez le seuil requis de <strong>{threshold}%</strong>. Passons aux questions du niveau supérieur <strong>{nextLevel}</strong>.",
-        test_summary_threshold_info: "Seuil de passage configuré : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.",
+        test_summary_threshold_info: "Seuil de passage : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.",
         test_btn_close: "Terminer",
         test_btn_retry: "Refaire le test",
         test_confirm_quit: "Voulez-vous vraiment quitter le test de niveau en cours ?",
@@ -232,6 +233,7 @@ export const translations = {
         about_title_notes: "Notes",
         about_note_pragmatic: "Notre approche est pragmatique : l'objectif est d'entraîner et de vérifier votre compréhension globale, plutôt que d'exiger une conformité stricte aux définitions exactes.",
         about_note_level: "Prenez en compte le niveau de difficulté d'un mot pour sa traduction.",
+        about_note_cefr_words: "Le nombre de mots requis pour valider un niveau est relatif : il n'existe aucun quota officiel fixé par le CECRL. Nos paliers constituent des repères progressifs et pragmatiques pour structurer votre apprentissage.",
         about_note_batch_size: "Privilégiez des listes courtes (max. 10 mots) si vous êtes dans un niveau que vous ne maîtrisez pas.",
         about_note_conversations: "Dans la mesure du possible, utilisez les mots appris dans des conversations pour les valider à tout jamais.",
         about_note_examples: "Les phrases d'exemple facilitent la mémorisation en contexte et vous aident à choisir la bonne traduction.",
@@ -258,6 +260,10 @@ export const translations = {
         auth_forgot_password: "Mot de passe oublié ?",
         auth_reset_sent: "Un e-mail de réinitialisation vous a été envoyé. Vérifiez vos spams.",
         auth_enter_email_for_reset: "Veuillez renseigner votre adresse e-mail ci-dessus.",
+        report_btn: "Signaler",
+        report_tooltip: "Signaler une erreur / coquille sur ce mot",
+        report_already_reported: "Déjà signalé",
+        report_modal_desc_word: "Signaler {word} comme mal traduit ou nécessitant une correction ?",
         report_modal_title: "Signaler une erreur",
         report_modal_desc: "Signaler ce mot comme mal traduit ou nécessitant une correction ?",
         report_reason_translation: "Mauvaise traduction",
@@ -276,6 +282,10 @@ export const translations = {
         options_audio_desc: "Entendre automatiquement la prononciation durant un drill!",
         options_audio_on: "Activée",
         options_audio_off: "Désactivée",
+        options_voice_gender_title: "Type de voix",
+        options_voice_gender_auto: "Auto",
+        options_voice_gender_female: "Femme",
+        options_voice_gender_male: "Homme",
         options_accents_title: "Accents & Caractères spéciaux",
         options_accents_desc: "Tolérer les réponses saisies sans accents ou sans caractères spéciaux (ex: 'ss' pour 'ß', 'n' pour 'ñ').",
         options_accents_on: "Tolérance active",
@@ -292,7 +302,7 @@ export const translations = {
         options_reset_confirm: "Réinitialiser toute la progression pour {pair} ? Cette action est irréversible.",
         options_reset_success: "Progression réinitialisée pour {pair}.",
         footer_rights: "Tous droits réservés.",
-        footer_deployed: "Déployé le 05/09/2026"
+        footer_deployed: "Déployé le 06/09/2026"
     },
     en: {
         // Nav
@@ -480,6 +490,7 @@ export const translations = {
         about_title_notes: "Notes",
         about_note_pragmatic: "Our approach is pragmatic: the goal is to train and verify your overall understanding, rather than demanding strict conformity to exact definitions.",
         about_note_level: "Take into account the difficulty level of a word for its translation.",
+        about_note_cefr_words: "The number of words required per level is relative: the CEFR defines no official vocabulary quota. Our milestones provide progressive, pragmatic benchmarks to guide your learning.",
         about_note_batch_size: "Prefer short lists (max. 10 words) if you are practicing a level you haven't mastered yet.",
         about_note_conversations: "Whenever possible, use newly learned words in conversations to validate and retain them forever.",
         about_note_examples: "Example sentences facilitate memorization in context and help you choose the right translation.",
@@ -506,6 +517,10 @@ export const translations = {
         auth_forgot_password: "Forgot password?",
         auth_reset_sent: "A password reset email has been sent. Check your spam folder.",
         auth_enter_email_for_reset: "Please enter your email address above.",
+        report_btn: "Report",
+        report_tooltip: "Report an error / typo on this word",
+        report_already_reported: "Already reported",
+        report_modal_desc_word: "Report {word} as mistranslated or requiring a fix?",
         report_modal_title: "Report an Error",
         report_modal_desc: "Report this word as mistranslated or requiring a fix?",
         report_reason_translation: "Mistranslation",
@@ -524,6 +539,10 @@ export const translations = {
         options_audio_desc: "Hear pronunciation automatically during a drill!",
         options_audio_on: "Enabled",
         options_audio_off: "Disabled",
+        options_voice_gender_title: "Voice Type",
+        options_voice_gender_auto: "Auto",
+        options_voice_gender_female: "Female",
+        options_voice_gender_male: "Male",
         options_accents_title: "Accents & Special Characters",
         options_accents_desc: "Accept answers without accents or special characters (e.g. 'ss' for 'ß', 'n' for 'ñ').",
         options_accents_on: "Tolerant",
@@ -540,7 +559,7 @@ export const translations = {
         options_reset_confirm: "Reset all progress for {pair}? This action cannot be undone.",
         options_reset_success: "Progress reset for {pair}.",
         footer_rights: "All rights reserved.",
-        footer_deployed: "Deployed on 2026-09-05"
+        footer_deployed: "Deployed on 2026-09-06"
     },
     de: {
         // Nav
@@ -728,6 +747,7 @@ export const translations = {
         about_title_notes: "Hinweise",
         about_note_pragmatic: "Unser Ansatz ist pragmatisch: Das Ziel ist es, Ihr allgemeines Verständnis zu trainieren und zu überprüfen, anstatt strikte Einhaltung genauer Definitionen zu fordern.",
         about_note_level: "Berücksichtigen Sie den Schwierigkeitsgrad eines Wortes bei der Übersetzung.",
+        about_note_cefr_words: "Die Anzahl der pro Niveau zu erlernenden Wörter ist relativ: Der GER legt keine offiziellen Wortschatzquoten fest. Unsere Stufen bieten pragmatische und progressive Richtwerte für Ihren Lernfortschritt.",
         about_note_batch_size: "Bevorzugen Sie kurze Listen (max. 10 Wörter), wenn Sie auf einem Niveau üben, das Sie noch nicht beherrschen.",
         about_note_conversations: "Verwenden Sie gelernte Wörter nach Möglichkeit in Gesprächen, um sie dauerhaft zu verankern.",
         about_note_examples: "Beispielsätze erleichtern das Einprägen im Kontext und helfen Ihnen, die passende Übersetzung zu wählen.",
@@ -754,6 +774,10 @@ export const translations = {
         auth_forgot_password: "Passwort vergessen?",
         auth_reset_sent: "Eine E-Mail zum Zurücksetzen des Passworts wurde gesendet. Überprüfen Sie Ihren Spam-Ordner.",
         auth_enter_email_for_reset: "Bitte geben Sie oben Ihre E-Mail-Adresse ein.",
+        report_btn: "Melden",
+        report_tooltip: "Einen Fehler / Tippfehler bei diesem Wort melden",
+        report_already_reported: "Bereits gemeldet",
+        report_modal_desc_word: "Dieses Wort {word} als falsch übersetzt oder korrekturbedürftig melden?",
         report_modal_title: "Fehler melden",
         report_modal_desc: "Dieses Wort als falsch übersetzt oder korrekturbedürftig melden?",
         report_reason_translation: "Falsche Übersetzung",
@@ -772,6 +796,10 @@ export const translations = {
         options_audio_desc: "Aussprache während eines Drills automatisch anhören.",
         options_audio_on: "Aktiviert",
         options_audio_off: "Deaktiviert",
+        options_voice_gender_title: "Stimmtyp",
+        options_voice_gender_auto: "Auto",
+        options_voice_gender_female: "Weiblich",
+        options_voice_gender_male: "Männlich",
         options_accents_title: "Akzente & Sonderzeichen",
         options_accents_desc: "Antworten ohne Akzente oder Sonderzeichen akzeptieren (z. B. 'ss' für 'ß').",
         options_accents_on: "Tolerant",
@@ -788,7 +816,7 @@ export const translations = {
         options_reset_confirm: "Gesamten Fortschritt für {pair} zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.",
         options_reset_success: "Fortschritt für {pair} zurückgesetzt.",
         footer_rights: "Alle Rechte vorbehalten.",
-        footer_deployed: "Bereitgestellt am 05.09.2026"
+        footer_deployed: "Bereitgestellt am 06.09.2026"
     },
     es: {
         // Nav
@@ -976,6 +1004,7 @@ export const translations = {
         about_title_notes: "Notas",
         about_note_pragmatic: "Nuestro enfoque es pragmático: el objetivo es entrenar y verificar su comprensión global, en lugar de exigir una estricta conformidad con las definiciones exactas.",
         about_note_level: "Tenga en cuenta el nivel de dificultad de una palabra para su traducción.",
+        about_note_cefr_words: "El número de palabras necesarias para superar un nivel es relativo: no existe una cuota oficial establecida por el MCER. Nuestros niveles ofrecen referencias pragmáticas y progresivas para guiar su aprendizaje.",
         about_note_batch_size: "Priorice listas cortas (máx. 10 palabras) si se encuentra en un nivel que aún no domina.",
         about_note_conversations: "En la medida de lo posible, use las palabras aprendidas en conversaciones para afianzarlas para siempre.",
         about_note_examples: "Las frases de ejemplo facilitan la memorización en contexto y le ayudan a elegir la traducción adecuada.",
@@ -1002,6 +1031,10 @@ export const translations = {
         auth_forgot_password: "¿Olvidó su contraseña?",
         auth_reset_sent: "Se ha enviado un correo de restablecimiento. Revise su bandeja de entrada (y spam).",
         auth_enter_email_for_reset: "Por favor, introduzca su dirección de correo electrónico arriba.",
+        report_btn: "Notificar",
+        report_tooltip: "Notificar un error / errata en esta palabra",
+        report_already_reported: "Ya notificado",
+        report_modal_desc_word: "¿Notificar {word} como mal traducida o que requiere corrección?",
         report_modal_title: "Notificar un error",
         report_modal_desc: "¿Notificar esta palabra como mal traducida o que requiere corrección?",
         report_reason_translation: "Mala traducción",
@@ -1020,6 +1053,10 @@ export const translations = {
         options_audio_desc: "Escuchar la pronunciación automáticamente durante un drill!",
         options_audio_on: "Activada",
         options_audio_off: "Desactivada",
+        options_voice_gender_title: "Tipo de voz",
+        options_voice_gender_auto: "Auto",
+        options_voice_gender_female: "Femenina",
+        options_voice_gender_male: "Masculina",
         options_accents_title: "Acentos y Caracteres especiales",
         options_accents_desc: "Aceptar respuestas sin acentos o caracteres especiales (ej: 'n' por 'ñ').",
         options_accents_on: "Tolerante",
@@ -1036,6 +1073,6 @@ export const translations = {
         options_reset_confirm: "¿Restablecer todo el progreso de {pair}? Esta acción es irreversible.",
         options_reset_success: "Progreso restablecido para {pair}.",
         footer_rights: "Todos los derechos reservados.",
-        footer_deployed: "Desplegado el 05/09/2026"
+        footer_deployed: "Desplegado el 06/09/2026"
     }
 };

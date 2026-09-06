@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css?v=130">
+    <link rel="stylesheet" href="../css/style.css?v=149">
     <style>
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
             font-family: var(--font-sans);
-            padding: 2rem 2.5rem;
+            padding: 1.25rem 1.5rem;
             width: 100%;
             max-width: 100%;
             margin: 0;
@@ -25,11 +25,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             flex-wrap: wrap;
             gap: 1rem;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1rem;
+            padding-bottom: 0.85rem;
         }
         .admin-title {
             font-family: var(--font-heading);
@@ -58,10 +58,10 @@
             width: 100%;
             border-collapse: collapse;
             text-align: left;
-            font-size: 0.95rem;
+            font-size: 0.86rem;
         }
         table.admin-table th, table.admin-table td {
-            padding: 1rem 1.25rem;
+            padding: 0.6rem 0.65rem;
             border-bottom: 1px solid var(--border-color);
         }
         table.admin-table th {
@@ -69,8 +69,24 @@
             font-weight: 600;
             color: var(--text-secondary);
             text-transform: uppercase;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        table.admin-table th.sortable {
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.15s ease, background 0.15s ease;
+        }
+        table.admin-table th.sortable:hover {
+            color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .sort-icon {
+            display: inline-block;
+            margin-left: 0.25rem;
+            font-size: 0.65rem;
+            color: var(--primary-color);
         }
         table.admin-table tr:last-child td {
             border-bottom: none;
@@ -79,21 +95,22 @@
             background: var(--error-color);
             color: white;
             font-weight: bold;
-            padding: 0.25rem 0.65rem;
+            padding: 0.2rem 0.5rem;
             border-radius: 20px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             display: inline-block;
         }
         .btn-resolve {
             background: rgba(16, 185, 129, 0.15);
             color: var(--success-color);
             border: 1px solid var(--success-color);
-            padding: 0.35rem 0.75rem;
+            padding: 0.3rem 0.65rem;
             border-radius: 6px;
             cursor: pointer;
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             transition: all 0.2s ease;
+            white-space: nowrap;
         }
         .btn-resolve:hover {
             background: var(--success-color);
@@ -109,15 +126,17 @@
 <body>
     <div class="admin-header">
         <div>
-            <h1 class="admin-title">
-                drillFlow. <span class="admin-badge">ADMINISTRATION</span>
+            <h1 class="admin-title" style="display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap;">
+                <span class="logo-text"><span class="logo-white">drill</span><span class="logo-blue">Flow.</span></span>
+                <span class="admin-badge">ADMINISTRATION</span>
+                <span id="admin-count-info" style="font-size: 0.9rem; font-weight: normal; color: var(--text-secondary);">Chargement...</span>
             </h1>
             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem;">Mots signalés comme mal traduits par les utilisateurs</p>
         </div>
         <div style="display: flex; gap: 0.75rem; align-items: center;">
             <button id="btn-refresh-admin" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box;">Rafraîchir</button>
-            <a href="../config/" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">⚙️ Configuration</a>
-            <a href="../index.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Accéder au site</a>
+            <a href="../config/" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Configuration</a>
+            <a href="../index.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Site</a>
         </div>
     </div>
 
@@ -128,17 +147,17 @@
         <table id="reports-table" class="admin-table" style="display: none;">
             <thead>
                 <tr>
-                    <th>Signalements</th>
-                    <th>Paire</th>
-                    <th>Mot (FR)</th>
-                    <th>Anglais (EN)</th>
-                    <th>Allemand (DE)</th>
-                    <th>Espagnol (ES)</th>
-                    <th>Niveau</th>
-                    <th>Type</th>
-                    <th>Description / Remarques</th>
-                    <th>Dernier signalement</th>
-                    <th>Action</th>
+                    <th class="sortable" data-sort="count" style="text-align: center; width: 45px;" title="Nombre de signalements">Sign. <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="pair" style="white-space: nowrap;">Paire <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="source" title="Mot source de l'exercice">Source <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="target" title="Traduction cible de l'exercice">Cible <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="level" style="text-align: center; width: 45px;" title="Niveau CECRL">Niv. <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="type" style="text-align: center; width: 65px;">Type <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="reason">Motif <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="desc">Remarques <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="user">Utilisateur <span class="sort-icon"></span></th>
+                    <th class="sortable" data-sort="date" style="white-space: nowrap;">Date <span class="sort-icon"></span></th>
+                    <th style="text-align: center; width: 75px;">Action</th>
                 </tr>
             </thead>
             <tbody id="reports-tbody">
@@ -147,7 +166,7 @@
         </table>
     </div>
 
-    <script type="module" src="../js/admin.js?v=130"></script>
+    <script type="module" src="../js/admin.js?v=149"></script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {

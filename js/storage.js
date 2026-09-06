@@ -232,6 +232,8 @@ export function setWordStatus(langSource, langTarget, wordId, status, addAttempt
 }
 
 export async function reportWordTranslation(word, comment = '', langPair = '', reason = 'Mauvaise traduction') {
+    const user = getCurrentUser();
+    if (!user || user.isAnonymous) return { success: false, error: 'auth_required' };
     if (!word || !word.id) return { success: false, error: 'invalid_word' };
     try {
         const docRef = doc(db, "word_reports", String(word.id));
@@ -241,25 +243,32 @@ export async function reportWordTranslation(word, comment = '', langPair = '', r
         const trimmedComment = (comment || '').trim().slice(0, 100);
         const currentPair = (langPair || '').trim().toUpperCase();
         const reportReason = (reason || 'Mauvaise traduction').trim();
+        const userEmail = user.email || '';
 
         if (docSnap.exists()) {
             const updatePayload = {
                 count: increment(1),
                 last_reported_at: now,
                 last_reason: reportReason,
-                reasons: arrayUnion(reportReason)
+                reasons: arrayUnion(reportReason),
+                last_user_email: userEmail
             };
+            if (userEmail) {
+                updatePayload.user_email = userEmail;
+                updatePayload.user_emails = arrayUnion(userEmail);
+            }
             if (currentPair) {
                 updatePayload.last_lang_pair = currentPair;
                 updatePayload.lang_pairs = arrayUnion(currentPair);
             }
+            updatePayload.comments = arrayUnion({
+                text: trimmedComment,
+                date: now,
+                pair: currentPair,
+                reason: reportReason,
+                user_email: userEmail
+            });
             if (trimmedComment) {
-                updatePayload.comments = arrayUnion({
-                    text: trimmedComment,
-                    date: now,
-                    pair: currentPair,
-                    reason: reportReason
-                });
                 updatePayload.last_comment = trimmedComment;
             }
             await updateDoc(docRef, updatePayload);
@@ -279,8 +288,10 @@ export async function reportWordTranslation(word, comment = '', langPair = '', r
                 reasons: [reportReason],
                 last_lang_pair: currentPair,
                 lang_pairs: currentPair ? [currentPair] : [],
-                comments: trimmedComment ? [{ text: trimmedComment, date: now, pair: currentPair, reason: reportReason }] : [],
-                last_comment: trimmedComment || ''
+                comments: [{ text: trimmedComment, date: now, pair: currentPair, reason: reportReason, user_email: userEmail }],
+                last_comment: trimmedComment || '',
+                user_email: userEmail,
+                user_emails: userEmail ? [userEmail] : []
             };
             await setDoc(docRef, initialDoc);
         }
