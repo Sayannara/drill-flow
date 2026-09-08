@@ -1,11 +1,11 @@
-import { vocabulary } from './data/vocabulary.js?v=150';
-import { initDrillSession, handleDrillKeydown, startAudioKeepAlive } from './drill.js?v=150';
+import { vocabulary } from './data/vocabulary.js?v=180';
+import { initDrillSession, handleDrillKeydown, startAudioKeepAlive } from './drill.js?v=180';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-import { startPlacementTest } from './placement-test.js?v=150';
+import { startPlacementTest } from './placement-test.js?v=180';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -693,6 +693,14 @@ function attachViewEvents(viewId) {
 
         const btnPlacementTest = document.getElementById('btn-open-placement-test');
         if (btnPlacementTest) {
+            import('./storage.js').then(module => {
+                module.getPlacementTestData().then(ptData => {
+                    if (ptData && ptData.attempts_used >= 3) {
+                        const span = btnPlacementTest.querySelector('span');
+                        if (span) span.innerHTML = "Voir les résultats du test de niveau";
+                    }
+                });
+            }).catch(() => {});
             btnPlacementTest.onclick = () => {
                 const selectSrc = document.getElementById('select-lang-source');
                 const selectTgt = document.getElementById('select-lang-target');

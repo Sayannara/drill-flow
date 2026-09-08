@@ -7,13 +7,14 @@
  * et délai allongé en cas d'erreur avec option de passage immédiat (Entrée / Continuer).
  */
 
-import { vocabulary } from './data/vocabulary.js?v=146';
+import { vocabulary } from './data/vocabulary.js?v=180';
 import { translations } from './i18n.js';
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
 }
 import { getTestWordsPerLevel, getTestTimerSeconds, getTestPassThreshold } from './config/app-config.js';
 import { CEFR_CONFIG } from './config/cefr.js';
+import { savePlacementTestResult, getPlacementTestData } from './storage.js';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
@@ -367,7 +368,7 @@ function scheduleAdvance(delayMs, allowEarlyAdvance = false) {
 /**
  * Prépare et démarre le test de niveau
  */
-export function startPlacementTest(srcLang, tgtLang) {
+export function startPlacementTest(srcLang, tgtLang, forceStart = false) {
     clearScheduledAdvance();
     const selectSrc = document.getElementById('select-lang-source');
     const selectTgt = document.getElementById('select-lang-target');
@@ -392,7 +393,18 @@ export function startPlacementTest(srcLang, tgtLang) {
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 
-    renderIntroScreen();
+    import('./storage.js').then(async (module) => {
+        console.log("Storage loaded in startPlacementTest!");
+        if (!forceStart) {
+            const ptData = await module.getPlacementTestData();
+            console.log("ptData:", ptData);
+            if (ptData && ptData.attempts_used >= 3) {
+                showPastResults(ptData);
+                return;
+            }
+        }
+        renderIntroScreen(ptData ? (ptData.attempts_used + 1) : 1);
+    }).catch((err) => { console.error('Error loading storage:', err); renderIntroScreen(1); });
 }
 
 /**
@@ -428,8 +440,172 @@ export function closePlacementTest(force = false) {
 /**
  * Écran d'accueil et consignes du test de niveau
  */
-function renderIntroScreen() {
+
+export function showPastResults(savedData) {
+    testState.isFinished = true;
+    testState.active = true;
+    clearScheduledAdvance();
     const modal = document.getElementById('placement-test-modal');
+    if (!modal) return;
+
+    let certifiedLevel = null;
+    if (savedData && savedData.history && savedData.history.length > 0) {
+        const lastHist = savedData.history[savedData.history.length - 1];
+        if (lastHist && lastHist.certified_level) {
+            certifiedLevel = lastHist.certified_level;
+        }
+    }
+
+    const certifiedLabel = certifiedLevel 
+        ? `Niveau ${certifiedLevel}` 
+        : getTranslation('test_level_below_a1', 'Débutant (Inférieur à A1)');
+
+    const certifiedColor = certifiedLevel && CEFR_CONFIG.colors[certifiedLevel] 
+        ? CEFR_CONFIG.colors[certifiedLevel].solid 
+        : '#64748b';
+
+    let prevalidationHtml = '';
+    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
+        prevalidationHtml = `
+            <div style="width: 100%; border: 1.5px dashed rgba(59, 130, 246, 0.4); border-radius: 10px; padding: 1.1rem; background: rgba(59, 130, 246, 0.03); box-sizing: border-box;">
+                <div style="font-size: 0.9rem; font-weight: bold; color: var(--text-primary); margin-bottom: 1rem; text-align: left; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg> 
+                    <span>Phase de pré-validation (Essai ${savedData.attempts_used}/3)</span>
+                </div>
+                <div id="preval-tabs-container" style="display: flex; align-items: flex-start; justify-content: space-between; max-width: 360px; margin: 0 auto; position: relative; user-select: none;">
+                </div>
+                <div id="preval-content-container" style="margin-top: 1.25rem; text-align: left; background: var(--surface-color); padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); min-height: 80px;">
+                </div>
+            </div>
+        `;
+    }
+
+    modal.innerHTML = `
+        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.3rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
+            <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
+            <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">${getTranslation('test_results_title', 'Résultats du test de niveau')}</h2>
+            <div style="background: rgba(59, 130, 246, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.55rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
+                <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Validation du niveau</div>
+                <div style="font-size: 1.5rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">${certifiedLabel}</div>
+            </div>
+            ${prevalidationHtml}
+            <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.35; margin: 0;">${getTranslation('test_summary_threshold_info', 'Seuil de passage : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.').replace('{threshold}', getTestPassThreshold())}</p>
+            <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; margin-top: 0.2rem;">
+                <button type="button" id="btn-test-retry" class="btn-primary btn-secondary-action" style="padding: 0.55rem 1.25rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.retry} <span>${getTranslation('test_btn_retry', 'Refaire le test')}</span></button>
+                <button type="button" id="btn-test-finish" class="btn-primary" style="padding: 0.55rem 1.8rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.check} <span>${getTranslation('test_btn_close', 'Terminer')}</span></button>
+            </div>
+        </div>
+    `;
+
+    const btnRetry = document.getElementById('btn-test-retry');
+    if (btnRetry) {
+        btnRetry.onclick = (e) => {
+            e.preventDefault();
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                const selectSrc = document.getElementById('select-lang-source');
+                const selectTgt = document.getElementById('select-lang-target');
+                startPlacementTest(selectSrc ? selectSrc.value : null, selectTgt ? selectTgt.value : null, true);
+            }, 300);
+        };
+    }
+
+    const handleClose = (e) => {
+        e.preventDefault();
+        closePlacementTest(true);
+    };
+    
+    document.getElementById('btn-test-finish')?.addEventListener('click', handleClose);
+    document.getElementById('btn-close-results-x')?.addEventListener('click', handleClose);
+
+    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
+        const tabsContainer = document.getElementById('preval-tabs-container');
+        const contentContainer = document.getElementById('preval-content-container');
+        if (tabsContainer && contentContainer) {
+            const historyData = savedData.history || [];
+            const averagesData = savedData.averages || {};
+            let currentTab = savedData.attempts_used === 3 ? 3 : (savedData.attempts_used - 1);
+            const renderTabsAndContent = () => {
+                let tabsHtml = '';
+                const attempt = savedData.attempts_used;
+                for (let i = 0; i <= 3; i++) {
+                    const isDone = i < 3 ? (i < attempt) : (attempt === 3);
+                    const isClickable = isDone;
+                    const isActive = i === currentTab;
+                    const bg = isActive ? 'var(--primary-color)' : (isDone ? 'rgba(59, 130, 246, 0.12)' : 'var(--bg-color)');
+                    const color = isActive ? '#fff' : (isDone ? 'var(--primary-color)' : 'var(--text-secondary)');
+                    const border = isActive ? 'none' : (isDone ? '1px solid var(--primary-color)' : '1px dashed var(--border-color)');
+                    const cursor = isClickable ? 'pointer' : 'default';
+                    const label = i < 3 ? `Essai ${i + 1}` : 'Moyenne';
+                    const icon = i < 3 
+                        ? (isDone ? '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' : (i+1)) 
+                        : '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>';
+                    tabsHtml += `
+                        <div class="preval-tab" data-index="${i}" style="display: flex; flex-direction: column; align-items: center; gap: 0.35rem; z-index: 1; cursor: ${cursor}; opacity: ${isClickable ? 1 : 0.4};">
+                            <div style="width: 28px; height: 28px; border-radius: 50%; background: ${bg}; color: ${color}; border: ${border}; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold; transition: all 0.2s; box-shadow: ${isActive ? '0 0 0 3px rgba(59, 130, 246, 0.2)' : 'none'};">
+                                ${icon}
+                            </div>
+                            <span style="font-size: 0.72rem; color: ${isActive ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: ${isActive ? 'bold' : 'normal'}; transition: all 0.2s;">${label}</span>
+                        </div>
+                    `;
+                    if (i < 3) tabsHtml += `<div style="flex: 1; height: 2px; background: ${isDone ? 'var(--primary-color)' : 'var(--border-color)'}; margin-top: 14px; opacity: ${isClickable ? 1 : 0.4}; transition: all 0.2s;"></div>`;
+                }
+                tabsContainer.innerHTML = tabsHtml;
+
+                let rowsHtml = '';
+                let titleText = '';
+                if (currentTab === 3) {
+                    titleText = 'Moyennes finales des 3 essais :';
+                    for (const lvl of LEVELS) {
+                        if (averagesData[lvl]) {
+                            const avg = averagesData[lvl];
+                            rowsHtml += `
+                                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
+                                    <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${avg.passed_count > 0 ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: 600; margin-left: 0.4rem; background: ${avg.passed_count > 0 ? 'rgba(59, 130, 246, 0.1)' : 'transparent'}; padding: 0.15rem 0.35rem; border-radius: 4px;">(Atteint ${avg.passed_count || 0}/${avg.attempts_count || 0})</span></div>
+                                    <span style="font-weight: 600; color: var(--text-primary);">Score : ${avg.avg_score_percent}% <span style="color: var(--text-secondary); font-weight: normal;">| ${avg.avg_time_sec}s</span></span>
+                                </div>
+                            `;
+                        }
+                    }
+                } else {
+                    titleText = `Résultats de l'Essai ${currentTab + 1} :`;
+                    const hist = historyData[currentTab];
+                    if (hist && hist.levels) {
+                        for (const lvl of LEVELS) {
+                            if (hist.levels[lvl]) {
+                                const lData = hist.levels[lvl];
+                                const scorePct = Math.round((lData.score / lData.total) * 100);
+                                const passed = lData.passed;
+                                rowsHtml += `
+                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
+                                        <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${passed ? 'var(--primary-color)' : '#ef4444'}; font-weight: 600; margin-left: 0.4rem; background: ${passed ? 'rgba(59, 130, 246, 0.1)' : 'rgba(239, 68, 68, 0.1)'}; padding: 0.15rem 0.35rem; border-radius: 4px;">${passed ? 'Atteint <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.15rem; vertical-align: middle; margin-bottom: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>' : 'Non atteint'}</span></div>
+                                        <span style="font-weight: 600; color: var(--text-primary);">Score : ${scorePct}% <span style="color: var(--text-secondary); font-weight: normal;">| ${lData.avg_time_sec}s</span></span>
+                                    </div>
+                                `;
+                            }
+                        }
+                    } else rowsHtml = `<div style="font-size: 0.8rem; color: var(--text-secondary); text-align: center; padding: 1rem 0;">Données indisponibles</div>`;
+                }
+                contentContainer.innerHTML = `<div style="font-size: 0.85rem; font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">${titleText}</div>${rowsHtml}`;
+
+                tabsContainer.querySelectorAll('.preval-tab').forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const idx = parseInt(tab.getAttribute('data-index'), 10);
+                        const isDone = idx < 3 ? (idx < attempt) : (attempt === 3);
+                        if (isDone && idx !== currentTab) {
+                            currentTab = idx;
+                            renderTabsAndContent();
+                        }
+                    });
+                });
+            };
+            renderTabsAndContent();
+        }
+    }
+}
+function renderIntroScreen(attemptNum = 1) {
+const modal = document.getElementById('placement-test-modal');
     if (!modal) return;
 
     const timerSec = getTestTimerSeconds();
@@ -451,6 +627,7 @@ function renderIntroScreen() {
                         <h2 style="font-size: 1.25rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">
                             ${getTranslation('test_intro_title', 'Test de Niveau Adaptatif')}
                         </h2>
+                        
                         <span style="display: inline-flex; align-items: center; background: rgba(245, 158, 11, 0.15); color: #f59e0b; padding: 0.15rem 0.45rem; border-radius: 6px; font-weight: 700; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid rgba(245, 158, 11, 0.35); line-height: 1;">
                             Bêta
                         </span>
@@ -458,44 +635,58 @@ function renderIntroScreen() {
                             ${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}
                         </span>
                     </div>
-                    <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem; display: block;">
-                        ${getTranslation('test_intro_subtitle', 'Niveaux A1 à C2 • {words} mots / palier • Objectif : {threshold}% • ~{minutes} min max')
-                            .replace('{words}', wordsCount)
-                            .replace('{threshold}', threshold)
-                            .replace('{minutes}', maxMinutes)}
-                    </span>
+                    
                 </div>
                 <button type="button" id="btn-close-placement-test" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
             </div>
 
-            <!-- Description -->
-            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; margin: 0;">
-                ${getTranslation('test_intro_desc', 'Ce test évalue votre vocabulaire réel par paliers successifs de A1 à C2.')}
-            </p>
+            
 
-            <!-- Boîte de conseils & consignes -->
-            <div style="display: flex; flex-direction: column; gap: 0.85rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.15rem 1.25rem;">
+            <!-- Boîte de conseils & consignes animée -->
+            <div style="position: relative; display: flex; flex-direction: column; gap: 1.25rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem 1.25rem 1.25rem 3rem;">
+                <!-- Process Line -->
+                <div style="position: absolute; left: 1.35rem; top: 1.75rem; bottom: 1.75rem; width: 2px; background: var(--border-color); border-radius: 2px;"></div>
                 
-                <div style="display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
-                    <span style="color: #f59e0b; display: inline-flex; margin-top: 2px; flex-shrink: 0;">${ICONS.bulb}</span>
-                    <span>${getTranslation('test_intro_hint_context', 'Indice précieux : La phrase de contexte ainsi que la nature du mot (verbe, nom, adjectif...) vous aiguillent sur le sens exact à traduire.')}</span>
+                <div class="anim-hint" style="position: relative; animation-delay: 0.1s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
+                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #3b82f6; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
+                    <span><strong>${LEVELS.length} niveaux</strong> de ${LEVELS[0]} à ${LEVELS[LEVELS.length-1]}</span>
                 </div>
 
-                <div style="display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.88rem; color: var(--text-secondary); border-top: 1px solid var(--border-color); padding-top: 0.65rem;">
-                    <span style="color: #eab308; display: inline-flex; margin-top: 2px; flex-shrink: 0;">${ICONS.star}</span>
-                    <span>${getTranslation('test_intro_hint_half_point', 'Une seule lettre fausse vous accorde tout de même <strong>1/2 point</strong>.')}</span>
+                <div class="anim-hint" style="position: relative; animation-delay: 0.2s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
+                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #3b82f6; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.targetSmall.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
+                    <span><strong>${wordsCount} questions</strong> par palier</span>
                 </div>
 
-                <div style="display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.88rem; color: var(--text-secondary); border-top: 1px solid var(--border-color); padding-top: 0.65rem;">
-                    <span style="color: var(--primary-color); display: inline-flex; margin-top: 2px; flex-shrink: 0;">${ICONS.clock}</span>
-                    <span>${getTranslation('test_intro_hint_timer', 'Vous disposez de <strong>{seconds}s</strong> par mot pour saisir la réponse.').replace('{seconds}', timerSec)}</span>
+                <div class="anim-hint" style="position: relative; animation-delay: 0.3s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
+                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #3b82f6; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.clock.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
+                    <span><strong>${timerSec} secondes</strong> pour y répondre</span>
                 </div>
 
-                <div style="display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.88rem; color: var(--text-secondary); border-top: 1px solid var(--border-color); padding-top: 0.65rem;">
-                    <span style="color: #10b981; display: inline-flex; margin-top: 2px; flex-shrink: 0;">${ICONS.targetSmall}</span>
-                    <span>${getTranslation('test_intro_hint_threshold', 'Atteignez au moins <strong>{threshold}%</strong> de bonnes réponses pour valider un palier et passer au suivant.').replace('{threshold}', threshold)}</span>
+                <div class="anim-hint" style="position: relative; animation-delay: 0.4s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
+                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #10b981; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.check.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
+                    <span><strong>${threshold}%</strong> pour accéder au suivant</span>
                 </div>
+
+                <div class="anim-hint" style="position: relative; animation-delay: 0.5s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
+                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #f59e0b; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.bulb.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
+                    <span>Le contexte vous aiguille sur la traduction</span>
+                </div>
+
             </div>
+            
+            <style>
+                .anim-hint {
+                    opacity: 0;
+                    transform: translateX(-10px);
+                    animation: slideInHint 0.4s ease forwards;
+                }
+                @keyframes slideInHint {
+                    to {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            </style>
 
             <!-- Bouton Démarrer -->
             <div style="display: flex; justify-content: center; width: 100%; margin-top: 0.25rem;">
@@ -550,17 +741,37 @@ function loadLevel(levelIdx) {
     // 2. Exclure les mots trop similaires (cognats / mots transparents comme restaurant, information)
     const nonSimilar = available.filter(w => !areWordsTooSimilar(w[src], w[tgt]));
 
-    // 3. Échantillonner : privilégier les mots non similaires, avec fallback si le vivier était insuffisant
+    // 3. Lire l'historique des mots déjà demandés récemment
+    let askedIds = [];
+    try {
+        const stored = localStorage.getItem('drill_placement_asked_ids');
+        if (stored) askedIds = JSON.parse(stored);
+    } catch(e) {}
+    if (!Array.isArray(askedIds)) askedIds = [];
+
+    const neverAskedNonSimilar = nonSimilar.filter(w => !askedIds.includes(w.id));
+    const askedNonSimilar = nonSimilar.filter(w => askedIds.includes(w.id));
+
+    // 4. Échantillonner : privilégier les mots non similaires ET jamais vus
     const count = Math.min(testState.wordsPerLevel, available.length);
     let selected = [];
 
-    if (nonSimilar.length >= count) {
-        selected = shuffleArray(nonSimilar).slice(0, count);
+    if (neverAskedNonSimilar.length >= count) {
+        selected = shuffleArray(neverAskedNonSimilar).slice(0, count);
     } else {
-        const shuffledNonSimilar = shuffleArray(nonSimilar);
-        const remainder = available.filter(w => !nonSimilar.includes(w));
-        selected = shuffledNonSimilar.concat(shuffleArray(remainder)).slice(0, count);
+        const pool = shuffleArray(neverAskedNonSimilar).concat(shuffleArray(askedNonSimilar));
+        if (pool.length >= count) {
+            selected = pool.slice(0, count);
+        } else {
+            const remainder = available.filter(w => !nonSimilar.includes(w));
+            selected = pool.concat(shuffleArray(remainder)).slice(0, count);
+        }
     }
+
+    // 5. Enregistrer
+    const updatedIds = [...new Set([...askedIds, ...selected.map(w => w.id)])];
+    if (updatedIds.length > 500) updatedIds.splice(0, updatedIds.length - 500);
+    localStorage.setItem('drill_placement_asked_ids', JSON.stringify(updatedIds));
 
     testState.levelWords = selected;
 
@@ -950,30 +1161,32 @@ function evaluateAnswer(userInput, expectedStr, tgtLang) {
         }
     }
 
-    // 2. Une seule lettre fausse (0.5 point)
-    let minDistance = 999;
+    // 2. Erreur mineure ou forme proche (0.5 point)
     for (const exp of expectedVariants) {
         const expCandidates = getAnswerCandidates(exp);
-
         for (const uCand of userCandidates) {
             for (const eCand of expCandidates) {
-                // Distance stricte
-                const d = editDistance(uCand, eCand);
-                if (d < minDistance) minDistance = d;
-
-                // Distance avec tolérance des accents
+                let tu = uCand, te = eCand;
                 if (tolerate) {
-                    const tu = normalizeTolerant(uCand, tgtLang);
-                    const te = normalizeTolerant(eCand, tgtLang);
-                    const dTol = editDistance(tu, te);
-                    if (dTol < minDistance) minDistance = dTol;
+                    tu = normalizeTolerant(uCand, tgtLang);
+                    te = normalizeTolerant(eCand, tgtLang);
+                }
+                const d = editDistance(tu, te);
+                const maxLen = Math.max(tu.length, te.length);
+                
+                // 1 faute si >= 2 chars, 2 fautes si >= 5 chars
+                if ((d === 1 && maxLen >= 2) || (d === 2 && maxLen >= 5)) {
+                    return { score: 0.5, reason: 'near' };
+                }
+                
+                // Prefix/Suffix match like record/recording or fight/fighting
+                if (maxLen >= 5 && Math.abs(tu.length - te.length) <= 4) {
+                    if (te.startsWith(tu) || tu.startsWith(te)) {
+                        return { score: 0.5, reason: 'near_prefix' };
+                    }
                 }
             }
         }
-    }
-
-    if (minDistance === 1 && cleanUser.length >= 2) {
-        return { score: 0.5, reason: 'near' };
     }
 
     return { score: 0.0, reason: 'incorrect' };
@@ -1343,41 +1556,46 @@ function openLevelDetailModal(level, res) {
 /**
  * Écran final des résultats
  */
-function finishTest() {
+async function finishTest() {
     testState.isFinished = true;
     clearScheduledAdvance();
     const modal = document.getElementById('placement-test-modal');
     if (!modal) return;
-
-    // Déterminer le niveau validé le plus élevé
     let certifiedLevel = null;
     for (const lvl of LEVELS) {
-        if (testState.history[lvl] && testState.history[lvl].passed) {
-            certifiedLevel = lvl;
-        } else {
-            break;
-        }
+        if (testState.history[lvl] && testState.history[lvl].passed) certifiedLevel = lvl;
+        else break;
     }
+    const certifiedLabel = certifiedLevel ? `Niveau ${certifiedLevel}` : getTranslation('test_level_below_a1', 'Débutant (Inférieur à A1)');
+    const certifiedColor = certifiedLevel && CEFR_CONFIG.colors[certifiedLevel] ? CEFR_CONFIG.colors[certifiedLevel].solid : '#64748b';
+    const levelStats = {};
+    for (const lvl of LEVELS) {
+        const res = testState.history[lvl];
+        if (res) levelStats[lvl] = { score: res.correct, total: res.total, avg_time_sec: res.avgTime, passed: res.passed };
+    }
+    const savedData = await savePlacementTestResult(certifiedLevel, levelStats);
 
-    const certifiedLabel = certifiedLevel 
-        ? `Niveau ${certifiedLevel}` 
-        : getTranslation('test_level_below_a1', 'Débutant (Inférieur à A1)');
-
-    const certifiedColor = certifiedLevel && CEFR_CONFIG.colors[certifiedLevel] 
-        ? CEFR_CONFIG.colors[certifiedLevel].solid 
-        : '#64748b';
-
-    // Générer les lignes du tableau récapitulatif
+    let prevalidationHtml = '';
+    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
+        prevalidationHtml = `
+            <div style="width: 100%; border: 1.5px dashed rgba(59, 130, 246, 0.4); border-radius: 10px; padding: 1.1rem; background: rgba(59, 130, 246, 0.03); box-sizing: border-box;">
+                <div style="font-size: 0.9rem; font-weight: bold; color: var(--text-primary); margin-bottom: 1rem; text-align: left; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg> 
+                    <span>Phase de pré-validation (Essai ${savedData.attempts_used}/3)</span>
+                </div>
+                <div id="preval-tabs-container" style="display: flex; align-items: flex-start; justify-content: space-between; max-width: 360px; margin: 0 auto; position: relative; user-select: none;">
+                </div>
+                <div id="preval-content-container" style="margin-top: 1.25rem; text-align: left; background: var(--surface-color); padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); min-height: 80px;">
+                </div>
+            </div>
+        `;
+    }
     let tableRowsHtml = '';
     for (const lvl of LEVELS) {
         const res = testState.history[lvl];
         if (!res) continue;
-
         const badgeColor = CEFR_CONFIG.colors[lvl] || { solid: '#3b82f6' };
-        const statusText = res.passed 
-            ? `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #10b981; font-weight: 600;">${ICONS.check} ${getTranslation('test_status_passed', 'Validé')}</span>` 
-            : `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #ef4444; font-weight: 600;">${ICONS.close} ${getTranslation('test_status_failed', 'Non atteint')}</span>`;
-
+        const statusText = res.passed ? `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #10b981; font-weight: 600;">${ICONS.check} ${getTranslation('test_status_passed', 'Validé')}</span>` : `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #ef4444; font-weight: 600;">${ICONS.close} ${getTranslation('test_status_failed', 'Non atteint')}</span>`;
         tableRowsHtml += `
             <tr class="placement-level-row" data-level="${lvl}" style="border-bottom: 1px solid var(--border-color); cursor: pointer; user-select: none; transition: background 0.15s ease;" title="${getTranslation('test_row_click_hint', 'Cliquer pour voir le détail des mots de ce niveau')}">
                 <td style="padding: 0.45rem 0.85rem; text-align: left;">
@@ -1401,26 +1619,15 @@ function finishTest() {
             </tr>
         `;
     }
-
+    
     modal.innerHTML = `
         <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.3rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
             <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
-            
-            <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">
-                ${getTranslation('test_results_title', 'Résultats du test de niveau')}
-            </h2>
-
-            <!-- Badge compact du niveau estimé -->
+            <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">${getTranslation('test_results_title', 'Résultats du test de niveau')}</h2>
             <div style="background: rgba(59, 130, 246, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.55rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
-                <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">
-                    Niveau estimé (${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)})
-                </div>
-                <div style="font-size: 1.5rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">
-                    ${certifiedLabel}
-                </div>
+                <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Validation du niveau</div>
+                <div style="font-size: 1.5rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">${certifiedLabel}</div>
             </div>
-
-            <!-- Tableau récapitulatif par palier -->
             <div style="width: 100%; overflow-x: auto; background: var(--bg-color); border-radius: 10px; border: 1px solid var(--border-color);">
                 <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
                     <thead>
@@ -1431,59 +1638,125 @@ function finishTest() {
                             <th style="padding: 0.45rem 0.85rem; text-align: right;">${getTranslation('test_summary_header_status', 'Statut')}</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        ${tableRowsHtml}
-                    </tbody>
+                    <tbody>${tableRowsHtml}</tbody>
                 </table>
             </div>
-
-            <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.35; margin: 0;">
-                ${getTranslation('test_summary_threshold_info', 'Seuil de passage : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.').replace('{threshold}', getTestPassThreshold())}
-            </p>
-
-            <!-- Actions -->
+            ${prevalidationHtml}
+            <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.35; margin: 0;">${getTranslation('test_summary_threshold_info', 'Seuil de passage : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.').replace('{threshold}', getTestPassThreshold())}</p>
             <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; margin-top: 0.2rem;">
-                <button type="button" id="btn-test-retry" class="btn-primary btn-secondary-action" style="padding: 0.55rem 1.25rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">
-                    ${ICONS.retry}
-                    <span>${getTranslation('test_btn_retry', 'Refaire le test')}</span>
-                </button>
-                <button type="button" id="btn-test-finish" class="btn-primary" style="padding: 0.55rem 1.8rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">
-                    ${ICONS.check}
-                    <span>${getTranslation('test_btn_close', 'Terminer')}</span>
-                </button>
+                <button type="button" id="btn-test-retry" class="btn-primary btn-secondary-action" style="padding: 0.55rem 1.25rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.retry} <span>${getTranslation('test_btn_retry', 'Refaire le test')}</span></button>
+                <button type="button" id="btn-test-finish" class="btn-primary" style="padding: 0.55rem 1.8rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.check} <span>${getTranslation('test_btn_close', 'Terminer')}</span></button>
             </div>
         </div>
     `;
 
-    // Brancher le clic d'ouverture de la pop-up dédiée pour chaque niveau
-    modal.querySelectorAll('.placement-level-row').forEach(row => {
-        const lvl = row.getAttribute('data-level');
-        const res = testState.history[lvl];
-        if (res) {
-            row.addEventListener('click', () => {
-                openLevelDetailModal(lvl, res);
-            });
-        }
-        row.addEventListener('mouseenter', () => {
-            row.style.background = 'rgba(59, 130, 246, 0.06)';
-        });
-        row.addEventListener('mouseleave', () => {
-            row.style.background = '';
-        });
-    });
-
     const btnRetry = document.getElementById('btn-test-retry');
     if (btnRetry) {
-        btnRetry.onclick = () => startPlacementTest();
+        btnRetry.onclick = (e) => {
+            e.preventDefault();
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                testState.isFinished = false;
+                testState.history = {};
+                const selectSrc = document.getElementById('select-lang-source');
+                const selectTgt = document.getElementById('select-lang-target');
+                startPlacementTest(selectSrc ? selectSrc.value : null, selectTgt ? selectTgt.value : null, true);
+            }, 300);
+        };
     }
-
+    const handleClose = (e) => {
+        e.preventDefault();
+        closePlacementTest(true);
+        if (typeof onPlacementTestFinished === 'function') onPlacementTestFinished(testState.srcLang, testState.tgtLang, certifiedLevel);
+    };
     const btnFinish = document.getElementById('btn-test-finish');
-    if (btnFinish) {
-        btnFinish.onclick = () => closePlacementTest(true);
-    }
-
+    if (btnFinish) btnFinish.onclick = handleClose;
     const btnCloseResults = document.getElementById('btn-close-results-x');
-    if (btnCloseResults) {
-        btnCloseResults.onclick = () => closePlacementTest(true);
+    if (btnCloseResults) btnCloseResults.onclick = handleClose;
+
+    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
+        const tabsContainer = document.getElementById('preval-tabs-container');
+        const contentContainer = document.getElementById('preval-content-container');
+        if (tabsContainer && contentContainer) {
+            const historyData = savedData.history || [];
+            const averagesData = savedData.averages || {};
+            let currentTab = savedData.attempts_used === 3 ? 3 : (savedData.attempts_used - 1);
+            const renderTabsAndContent = () => {
+                let tabsHtml = '';
+                const attempt = savedData.attempts_used;
+                for (let i = 0; i <= 3; i++) {
+                    const isDone = i < 3 ? (i < attempt) : (attempt === 3);
+                    const isClickable = isDone;
+                    const isActive = i === currentTab;
+                    const bg = isActive ? 'var(--primary-color)' : (isDone ? 'rgba(59, 130, 246, 0.12)' : 'var(--bg-color)');
+                    const color = isActive ? '#fff' : (isDone ? 'var(--primary-color)' : 'var(--text-secondary)');
+                    const border = isActive ? 'none' : (isDone ? '1px solid var(--primary-color)' : '1px dashed var(--border-color)');
+                    const cursor = isClickable ? 'pointer' : 'default';
+                    const label = i < 3 ? `Essai ${i + 1}` : 'Moyenne';
+                    const icon = i < 3 
+                        ? (isDone ? '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' : (i+1)) 
+                        : '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>';
+                    tabsHtml += `
+                        <div class="preval-tab" data-index="${i}" style="display: flex; flex-direction: column; align-items: center; gap: 0.35rem; z-index: 1; cursor: ${cursor}; opacity: ${isClickable ? 1 : 0.4};">
+                            <div style="width: 28px; height: 28px; border-radius: 50%; background: ${bg}; color: ${color}; border: ${border}; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold; transition: all 0.2s; box-shadow: ${isActive ? '0 0 0 3px rgba(59, 130, 246, 0.2)' : 'none'};">
+                                ${icon}
+                            </div>
+                            <span style="font-size: 0.72rem; color: ${isActive ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: ${isActive ? 'bold' : 'normal'}; transition: all 0.2s;">${label}</span>
+                        </div>
+                    `;
+                    if (i < 3) tabsHtml += `<div style="flex: 1; height: 2px; background: ${isDone ? 'var(--primary-color)' : 'var(--border-color)'}; margin-top: 14px; opacity: ${isClickable ? 1 : 0.4}; transition: all 0.2s;"></div>`;
+                }
+                tabsContainer.innerHTML = tabsHtml;
+
+                let rowsHtml = '';
+                let titleText = '';
+                if (currentTab === 3) {
+                    titleText = 'Moyennes finales des 3 essais :';
+                    for (const lvl of LEVELS) {
+                        if (averagesData[lvl]) {
+                            const avg = averagesData[lvl];
+                            rowsHtml += `
+                                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
+                                    <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${avg.passed_count > 0 ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: 600; margin-left: 0.4rem; background: ${avg.passed_count > 0 ? 'rgba(59, 130, 246, 0.1)' : 'transparent'}; padding: 0.15rem 0.35rem; border-radius: 4px;">(Atteint ${avg.passed_count || 0}/${avg.attempts_count || 0})</span></div>
+                                    <span style="font-weight: 600; color: var(--text-primary);">Score : ${avg.avg_score_percent}% <span style="color: var(--text-secondary); font-weight: normal;">| ${avg.avg_time_sec}s</span></span>
+                                </div>
+                            `;
+                        }
+                    }
+                } else {
+                    titleText = `Résultats de l'Essai ${currentTab + 1} :`;
+                    const hist = historyData[currentTab];
+                    if (hist && hist.levels) {
+                        for (const lvl of LEVELS) {
+                            if (hist.levels[lvl]) {
+                                const lData = hist.levels[lvl];
+                                const scorePct = Math.round((lData.score / lData.total) * 100);
+                                const passed = lData.passed;
+                                rowsHtml += `
+                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
+                                        <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${passed ? 'var(--primary-color)' : '#ef4444'}; font-weight: 600; margin-left: 0.4rem; background: ${passed ? 'rgba(59, 130, 246, 0.1)' : 'rgba(239, 68, 68, 0.1)'}; padding: 0.15rem 0.35rem; border-radius: 4px;">${passed ? 'Atteint <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.15rem; vertical-align: middle; margin-bottom: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>' : 'Non atteint'}</span></div>
+                                        <span style="font-weight: 600; color: var(--text-primary);">Score : ${scorePct}% <span style="color: var(--text-secondary); font-weight: normal;">| ${lData.avg_time_sec}s</span></span>
+                                    </div>
+                                `;
+                            }
+                        }
+                    } else rowsHtml = `<div style="font-size: 0.8rem; color: var(--text-secondary); text-align: center; padding: 1rem 0;">Données indisponibles</div>`;
+                }
+                contentContainer.innerHTML = `<div style="font-size: 0.85rem; font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">${titleText}</div>${rowsHtml}`;
+
+                tabsContainer.querySelectorAll('.preval-tab').forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const idx = parseInt(tab.getAttribute('data-index'), 10);
+                        const isDone = idx < 3 ? (idx < attempt) : (attempt === 3);
+                        if (isDone && idx !== currentTab) {
+                            currentTab = idx;
+                            renderTabsAndContent();
+                        }
+                    });
+                });
+            };
+            renderTabsAndContent();
+        }
     }
 }

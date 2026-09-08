@@ -378,3 +378,94 @@ export async function getOrGenerateCertificateId(src, tgt, level, validated, poi
     return certId;
 }
 
+
+export async function getPlacementTestData() {
+    const user = getCurrentUser();
+    if (!user) return null;
+    try {
+        const docRef = doc(db, 'users', user.uid);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists() && docSnap.data().placement_test) {
+            return docSnap.data().placement_test;
+        }
+    } catch(e) {}
+    return null;
+}
+export async function savePlacementTestResult(certifiedLevel, levelStats) {
+    const user = getCurrentUser();
+    
+    // Increment local attempts immediately
+    const currentAttempts = parseInt(localStorage.getItem('drill_placement_attempts') || '0', 10);
+    const newAttempts = currentAttempts + 1;
+    localStorage.setItem('drill_placement_attempts', newAttempts.toString());
+    
+    if (!user) {
+        // Return dummy data for non-logged in testing if needed
+        return { attempts_used: newAttempts, history: [{ levels: levelStats }], averages: {} };
+    }
+    
+    try {
+        const docRef = doc(db, "users", user.uid);
+        const docSnap = await getDoc(docRef);
+        
+        let placementTest = { attempts_used: 0, history: [] };
+        if (docSnap.exists() && docSnap.data().placement_test) {
+            placementTest = docSnap.data().placement_test;
+        }
+
+        placementTest.attempts_used = newAttempts;
+        placementTest.history = placementTest.history || [];
+        placementTest.history.push({
+            date: new Date().toISOString(),
+            certified_level: certifiedLevel,
+            levels: levelStats
+        });
+
+        const levelTotals = {};
+        placementTest.history.forEach(h => {
+            for (const lvl in h.levels) {
+                if (!levelTotals[lvl]) levelTotals[lvl] = { scoreSum: 0, totalSum: 0, timeSum: 0, count: 0, passedCount: 0 };
+                levelTotals[lvl].scoreSum += h.levels[lvl].score;
+                levelTotals[lvl].totalSum += h.levels[lvl].total;
+                levelTotals[lvl].timeSum += h.levels[lvl].avg_time_sec || 0;
+                levelTotals[lvl].count += 1;
+                if (h.levels[lvl].passed) levelTotals[lvl].passedCount += 1;
+            }
+        });
+
+        const averages = {};
+        for (const lvl in levelTotals) {
+            averages[lvl] = {
+                avg_score_percent: Math.round((levelTotals[lvl].scoreSum / levelTotals[lvl].totalSum) * 100),
+                avg_time_sec: Math.round((levelTotals[lvl].timeSum / levelTotals[lvl].count) * 10) / 10,
+                passed_count: levelTotals[lvl].passedCount,
+                attempts_count: levelTotals[lvl].count
+            };
+        }
+        placementTest.averages = averages;
+
+        await setDoc(docRef, { placement_test: placementTest }, { merge: true });
+
+        return placementTest;
+
+    } catch (e) {
+        console.error("Erreur savePlacementTestResult:", e);
+        return null;
+    }
+}
+
+window.resetPlacementTest = async function() {
+    const user = getCurrentUser();
+    localStorage.removeItem('drill_placement_attempts');
+    console.log("Tentatives locales réinitialisées.");
+    
+    if (user) {
+        try {
+            const docRef = doc(db, "users", user.uid);
+            await setDoc(docRef, { placement_test: { attempts_used: 0, history: [], averages: {} } }, { merge: true });
+            console.log("Données de test de niveau réinitialisées dans Firebase.");
+        } catch (e) {
+            console.error("Erreur reset:", e);
+        }
+    }
+};

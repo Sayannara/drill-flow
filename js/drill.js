@@ -1,4 +1,4 @@
-import { vocabulary } from './data/vocabulary.js?v=146';
+import { vocabulary } from './data/vocabulary.js?v=180';
 import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js';
 import { translations } from './i18n.js';
 import { getCurrentUser } from './auth.js';
