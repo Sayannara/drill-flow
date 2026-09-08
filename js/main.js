@@ -786,7 +786,7 @@ function initProgressView() {
     const gatedState = document.getElementById('progress-gated-state');
     const emptyState = document.getElementById('progress-empty-state');
     const content = document.getElementById('progress-content');
-    
+
     // Gating check
     if (!getCurrentUser()) {
         gatedState.style.display = 'flex';
@@ -1147,25 +1147,38 @@ function renderProgressTable() {
         countEl.innerHTML = formatFilteredCount(filtered.length, lang);
     }
 
+    // Réactivation groupée des mots ignorés actuellement affichés
+    const ignoredVisible = filtered.filter(word => getWordStatus(src, tgt, word.id) === 'ignoré');
+    const btnReactivateIgnored = document.getElementById('btn-reactivate-ignored');
+    const countReactivateIgnored = document.getElementById('count-reactivate-ignored');
+    const rowBreakReactivate = document.getElementById('row-break-reactivate');
+    if (btnReactivateIgnored) {
+        if (ignoredVisible.length > 0) {
+            btnReactivateIgnored.style.display = 'inline-flex';
+            if (rowBreakReactivate) rowBreakReactivate.style.display = 'block';
+            if (countReactivateIgnored) countReactivateIgnored.textContent = ignoredVisible.length;
+            btnReactivateIgnored.onclick = () => {
+                const lang = getAppLanguage();
+                const template = translations[lang].confirm_reactivate_ignored || '';
+                const confirmMsg = template.replace('{count}', ignoredVisible.length);
+                if (confirm(confirmMsg)) {
+                    ignoredVisible.forEach(word => {
+                        setWordStatus(src, tgt, word.id, 'actif');
+                    });
+                    renderProgressTable();
+                }
+            };
+        } else {
+            btnReactivateIgnored.style.display = 'none';
+            if (rowBreakReactivate) rowBreakReactivate.style.display = 'none';
+        }
+    }
+
     if (filtered.length === 0) {
         const lang = getAppLanguage();
         const emptyMsg = translations[lang].search_no_results;
         tableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--text-secondary); padding: 2rem;">${emptyMsg}</td></tr>`;
         return;
-    }
-
-    const btnToggleAll = document.getElementById('btn-toggle-all-visible');
-    if (btnToggleAll) {
-        btnToggleAll.onclick = () => {
-            const lang = getAppLanguage();
-            const confirmMsg = translations[lang].confirm_reset_all;
-            if (confirm(confirmMsg)) {
-                filtered.forEach(word => {
-                    setWordStatus(src, tgt, word.id, 'actif');
-                });
-                renderProgressTable();
-            }
-        };
     }
 
     filtered.forEach(word => {
@@ -1231,7 +1244,15 @@ function renderProgressTable() {
         if (status === 'validé') {
             tdStatus.innerHTML = `<span class="type-badge" style="font-size: 0.7rem; padding: 0.2rem 0.5rem; background: rgba(16, 185, 129, 0.2); color: #10b981; font-weight: 600;">✓ Validé</span>`;
         } else if (status === 'ignoré') {
-            tdStatus.innerHTML = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500;">${ignoreLabel}</span>`;
+            tdStatus.innerHTML = `<span class="status-ignored-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500; cursor: pointer;" title="${translations[lang].tooltip_reactivate_word || ''}">${ignoreLabel}</span>`;
+            const ignoredBadge = tdStatus.querySelector('.status-ignored-badge');
+            if (ignoredBadge) {
+                ignoredBadge.onclick = (e) => {
+                    e.stopPropagation();
+                    setWordStatus(src, tgt, word.id, 'actif');
+                    renderProgressTable();
+                };
+            }
         } else {
             tdStatus.innerHTML = `<span class="type-badge" style="font-size: 0.7rem; padding: 0.2rem 0.5rem; background: rgba(59, 130, 246, 0.15); color: #60a5fa; font-weight: 500;">À consolider</span>`;
         }
@@ -1246,7 +1267,7 @@ function renderProgressTable() {
         if (status === 'validé') {
             statusMobileBadge = `<span style="color: var(--success-color); font-weight: 800; font-size: 1.25rem; line-height: 1;">✓</span>`;
         } else if (status === 'ignoré') {
-            statusMobileBadge = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500;">${ignoreLabel}</span>`;
+            statusMobileBadge = `<span class="status-ignored-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-secondary); font-weight: 500; cursor: pointer;" title="${translations[lang].tooltip_reactivate_word || ''}">${ignoreLabel}</span>`;
         } else {
             statusMobileBadge = `<span style="font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; background: rgba(59, 130, 246, 0.15); color: #60a5fa; font-weight: 500;">À consolider</span>`;
         }
@@ -1267,6 +1288,16 @@ function renderProgressTable() {
                 ${attemptsLabel ? `<span class="mobile-attempts">${attemptsLabel}</span>` : ''}
             </div>
         `;
+        if (status === 'ignoré') {
+            const ignoredBadgeMobile = tdMobile.querySelector('.status-ignored-badge');
+            if (ignoredBadgeMobile) {
+                ignoredBadgeMobile.onclick = (e) => {
+                    e.stopPropagation();
+                    setWordStatus(src, tgt, word.id, 'actif');
+                    renderProgressTable();
+                };
+            }
+        }
         tr.appendChild(tdMobile);
 
         tableBody.appendChild(tr);

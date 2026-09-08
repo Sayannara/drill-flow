@@ -461,7 +461,7 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     const flashcard = document.querySelector('.flashcard');
     const headerSection = document.getElementById('drill-header-section');
     const endContainer = document.getElementById('end-session-container');
-    if (flashcard) flashcard.style.display = 'block';
+    if (flashcard) flashcard.style.display = '';
     if (headerSection) headerSection.style.display = 'flex';
     if (endContainer) endContainer.style.display = 'none';
 
@@ -986,9 +986,26 @@ function handleValidation() {
                     if (pRegex && pRegex.test(cleanUser)) {
                         cleanUser = cleanUser.replace(pRegex, '').trim();
                     }
-                    userEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 600;">${sessionState.currentPrefix}</span>${cleanUser}`;
+                }
+
+                let cleanUserHtml;
+                if (!isCorrect) {
+                    const matchLen = Math.min(getRewriteMatchLength(cleanUser, expected), cleanUser.length);
+                    if (matchLen > 0 && matchLen < cleanUser.length) {
+                        const matchedStr = escapeHtml(cleanUser.substring(0, matchLen));
+                        const restStr = escapeHtml(cleanUser.substring(matchLen));
+                        cleanUserHtml = `${matchedStr}<span style="text-decoration: underline; text-decoration-color: var(--error-color); text-decoration-thickness: 2px; text-underline-offset: 3px;">${restStr}</span>`;
+                    } else {
+                        cleanUserHtml = escapeHtml(cleanUser);
+                    }
                 } else {
-                    userEl.textContent = cleanUser;
+                    cleanUserHtml = escapeHtml(cleanUser);
+                }
+
+                if (sessionState.currentPrefix) {
+                    userEl.innerHTML = `<span style="color: var(--text-secondary); opacity: 0.55; font-weight: 600;">${sessionState.currentPrefix}</span>${cleanUserHtml}`;
+                } else {
+                    userEl.innerHTML = cleanUserHtml;
                 }
             }
         }

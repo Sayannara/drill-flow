@@ -11,8 +11,13 @@ desktop.ini
 *.log
 .DS_Store
 
+
 # Dossier temporaire / archives de scripts
 tmp/
+local server/
+prompt/
+ressources/
+poc-synonyms/
 
 # Conflits de synchronisation OneDrive
 *-L4TVD-PC*

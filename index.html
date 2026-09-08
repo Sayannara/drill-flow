@@ -577,6 +577,14 @@
 
                         <!-- Compteur de mots selon filtres -->
                         <div id="prog-filtered-count" class="filter-results-count"></div>
+
+                        <!-- Force le retour à la ligne dans la barre de filtres (flex-wrap) -->
+                        <div id="row-break-reactivate" style="display: none; flex-basis: 100%; height: 0;"></div>
+
+                        <!-- Réactivation groupée des mots ignorés -->
+                        <button type="button" id="btn-reactivate-ignored" class="filter-quick-btn" style="display: none; width: 210px; max-width: 100%; box-sizing: border-box; text-align: left; font-size: 0.72rem; padding: 0.25rem 0.4rem;">
+                            ↺ <span data-i18n="btn_reactivate_ignored">Réactiver les ignorés</span> (<span id="count-reactivate-ignored">0</span>)
+                        </button>
                     </div>
 
                 <div class="table-container">
