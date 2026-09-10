@@ -7,7 +7,7 @@
  * et délai allongé en cas d'erreur avec option de passage immédiat (Entrée / Continuer).
  */
 
-import { vocabulary } from './data/vocabulary.js?v=186';
+import { vocabulary } from './data/vocabulary.js?v=188';
 import { translations } from './i18n.js';
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
@@ -480,6 +480,7 @@ export function showPastResults(savedData) {
         ? CEFR_CONFIG.colors[certifiedLevel].solid 
         : '#64748b';
 
+    // Bloc prévalidation
     let prevalidationHtml = '';
     const prevalidatedCount = savedData ? (savedData.prevalidated_count || 0) : 0;
     if (prevalidatedCount > 0) {
@@ -495,8 +496,57 @@ export function showPastResults(savedData) {
         `;
     }
 
+    // Tableau des scores par niveau (depuis savedData.levels)
+    let tableHtml = '';
+    const savedLevels = savedData && savedData.levels ? savedData.levels : null;
+    if (savedLevels && Object.keys(savedLevels).length > 0) {
+        let tableRowsHtml = '';
+        for (const lvl of LEVELS) {
+            const res = savedLevels[lvl];
+            if (!res) continue;
+            const badgeColor = CEFR_CONFIG.colors[lvl] || { solid: '#3b82f6' };
+            const pct = res.total > 0 ? Math.round((res.score / res.total) * 100) : (res.passed ? 100 : 0);
+            const statusText = res.passed
+                ? `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #10b981; font-weight: 600;">${ICONS.check} ${getTranslation('test_status_passed', 'Validé')}</span>`
+                : `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #ef4444; font-weight: 600;">${ICONS.close} ${getTranslation('test_status_failed', 'Non atteint')}</span>`;
+
+            tableRowsHtml += `
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 0.45rem 0.85rem; text-align: left;">
+                        <span style="background: ${badgeColor.solid}; color: #ffffff; padding: 0.15rem 0.55rem; border-radius: 4px; font-weight: 700; font-size: 0.82rem;">${lvl}</span>
+                    </td>
+                    <td style="padding: 0.45rem 0.85rem; text-align: center; font-weight: 600; font-size: 0.88rem;">
+                        ${res.score !== undefined ? `${formatScore(res.score)} / ${res.total}` : '—'} <span style="font-size: 0.78rem; color: var(--text-secondary); font-weight: normal;">(${pct}%)</span>
+                    </td>
+                    <td style="padding: 0.45rem 0.85rem; text-align: center; font-size: 0.88rem; color: var(--text-secondary);">
+                        ${res.avg_time_sec !== undefined && res.avg_time_sec !== null ? `${res.avg_time_sec}s` : '—'}
+                    </td>
+                    <td style="padding: 0.45rem 0.85rem; text-align: right; font-size: 0.85rem;">
+                        ${statusText}
+                    </td>
+                </tr>
+            `;
+        }
+
+        tableHtml = `
+            <div style="width: 100%; overflow-x: auto; background: var(--bg-color); border-radius: 10px; border: 1px solid var(--border-color);">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.75rem; text-transform: uppercase;">
+                            <th style="padding: 0.45rem 0.85rem; text-align: left;">${getTranslation('test_summary_header_level', 'Niveau')}</th>
+                            <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_score', 'Score')}</th>
+                            <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_time', 'Temps moy.')}</th>
+                            <th style="padding: 0.45rem 0.85rem; text-align: right;">${getTranslation('test_summary_header_status', 'Statut')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>${tableRowsHtml}</tbody>
+                </table>
+            </div>
+        `;
+    }
+
     modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.5rem 1.75rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
+        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.4rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.85rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
             <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
             <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">${getTranslation('test_results_title', 'Résultats du test de niveau')}</h2>
             
@@ -1681,10 +1731,19 @@ async function finishTest() {
     let prevalidatedByLevel = {};
     if (!testState.isPractice) {
         // Enregistrement officiel et pré-validation des mots de base
-        const prevalidResult = await prevalidateBasicWords(passedLevels, testState.srcLang, testState.tgtLang);
-        prevalidatedCount = prevalidResult.total;
-        prevalidatedByLevel = prevalidResult.byLevel || {};
-        await savePlacementTestResult(certifiedLevel, levelStats, passedLevels, prevalidatedCount);
+        try {
+            const prevalidResult = await prevalidateBasicWords(passedLevels, testState.srcLang, testState.tgtLang);
+            // Compatibilité : prevalidResult peut être un number (ancienne version) ou { total, byLevel }
+            if (typeof prevalidResult === 'object' && prevalidResult !== null) {
+                prevalidatedCount = prevalidResult.total || 0;
+                prevalidatedByLevel = prevalidResult.byLevel || {};
+            } else {
+                prevalidatedCount = Number(prevalidResult) || 0;
+            }
+            await savePlacementTestResult(certifiedLevel, levelStats, passedLevels, prevalidatedCount);
+        } catch (err) {
+            console.error('Erreur lors de la pré-validation ou sauvegarde du test:', err);
+        }
     }
 
     let tableRowsHtml = '';
