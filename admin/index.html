@@ -5,31 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="../manifest.json">
     <link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
-    <title>drillFlow — Administration des signalements</title>
+    <title>drillFlow — Statistiques</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css?v=150">
+    <link rel="stylesheet" href="../css/style.css?v=181">
     <style>
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
             font-family: var(--font-sans);
-            padding: 1.25rem 1.5rem;
+            padding: 2rem 2.5rem;
             width: 100%;
             max-width: 100%;
             margin: 0;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .stats-container {
+            width: 100%;
+            max-width: 640px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
         }
         .admin-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1.5rem;
             flex-wrap: wrap;
             gap: 1rem;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.85rem;
+            padding-bottom: 1.25rem;
+            width: 100%;
         }
         .admin-title {
             font-family: var(--font-heading);
@@ -40,133 +50,84 @@
             gap: 0.75rem;
         }
         .admin-badge {
-            background: rgba(239, 68, 68, 0.2);
-            color: var(--error-color);
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
             font-size: 0.8rem;
-            padding: 0.2rem 0.6rem;
+            padding: 0.2rem 0.65rem;
             border-radius: 6px;
-            font-weight: 600;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
-        .report-table-container {
-            background: var(--surface-color);
+        .stats-card {
+            background-color: var(--surface-color);
             border-radius: 12px;
             border: 1px solid var(--border-color);
-            overflow-x: auto;
+            padding: 2rem;
             box-shadow: var(--shadow);
-        }
-        table.admin-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 0.86rem;
-        }
-        table.admin-table th, table.admin-table td {
-            padding: 0.6rem 0.65rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-        table.admin-table th {
-            background: rgba(255, 255, 255, 0.03);
-            font-weight: 600;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            font-size: 0.72rem;
-            letter-spacing: 0.5px;
-            white-space: nowrap;
-        }
-        table.admin-table th.sortable {
-            cursor: pointer;
-            user-select: none;
-            transition: color 0.15s ease, background 0.15s ease;
-        }
-        table.admin-table th.sortable:hover {
-            color: var(--primary-color);
-            background: rgba(255, 255, 255, 0.06);
-        }
-        .sort-icon {
-            display: inline-block;
-            margin-left: 0.25rem;
-            font-size: 0.65rem;
-            color: var(--primary-color);
-        }
-        table.admin-table tr:last-child td {
-            border-bottom: none;
-        }
-        .count-badge {
-            background: var(--error-color);
-            color: white;
-            font-weight: bold;
-            padding: 0.2rem 0.5rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            display: inline-block;
-        }
-        .btn-resolve {
-            background: rgba(16, 185, 129, 0.15);
-            color: var(--success-color);
-            border: 1px solid var(--success-color);
-            padding: 0.3rem 0.65rem;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 0.8rem;
-            transition: all 0.2s ease;
-            white-space: nowrap;
-        }
-        .btn-resolve:hover {
-            background: var(--success-color);
-            color: white;
-        }
-        .empty-state {
-            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+            gap: 1rem;
+        }
+        .stats-icon {
+            width: 40px;
+            height: 40px;
+            color: var(--primary-color);
+        }
+        .stats-card-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            margin: 0;
+            color: var(--text-primary);
+        }
+        .stats-card-desc {
             color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0;
+            max-width: 440px;
+        }
+        @media (max-width: 640px) {
+            body { padding: 1.25rem 1rem; }
+            .stats-card { padding: 1.5rem 1.25rem; }
         }
     </style>
 </head>
 <body>
-    <div class="admin-header">
-        <div>
-            <h1 class="admin-title" style="display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap;">
-                <span class="logo-text"><span class="logo-white">drill</span><span class="logo-blue">Flow.</span></span>
-                <span class="admin-badge">ADMINISTRATION</span>
-                <span id="admin-count-info" style="font-size: 0.9rem; font-weight: normal; color: var(--text-secondary);">Chargement...</span>
-            </h1>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem;">Mots signalés comme mal traduits par les utilisateurs</p>
+    <div class="stats-container">
+        <div class="admin-header">
+            <div>
+                <h1 class="admin-title">
+                    <span class="logo-text"><span class="logo-white">drill</span><span class="logo-blue">Flow.</span></span>
+                    <span class="admin-badge">STATISTIQUES</span>
+                </h1>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem;">Suivi des utilisateurs et des signalements</p>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+                <a href="words.html" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Words Manager</a>
+                <a href="../report.html" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Signalements</a>
+                <a href="../config.html" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Configuration</a>
+                <a href="../index.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Site</a>
+            </div>
         </div>
-        <div style="display: flex; gap: 0.75rem; align-items: center;">
-            <button id="btn-refresh-admin" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box;">Rafraîchir</button>
-            <a href="../config/" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Configuration</a>
-            <a href="../index.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box;">Site</a>
+
+        <div class="stats-card">
+            <svg class="stats-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <h2 class="stats-card-title">Nombre d'utilisateurs inscrits</h2>
+            <p class="stats-card-desc">Le décompte des comptes créés est disponible dans la console Firebase, section Authentication — il n'est pas recalculé ici pour éviter d'exposer les données de progression de tous les utilisateurs au navigateur.</p>
+            <a href="https://console.firebase.google.com/project/drill-flow/authentication/users" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.7rem 1.5rem; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                Ouvrir Firebase Console
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
         </div>
     </div>
 
-    <div class="report-table-container">
-        <div id="loading-state" style="padding: 3rem; text-align: center; color: var(--text-secondary);">
-            Chargement des signalements depuis Firebase...
-        </div>
-        <table id="reports-table" class="admin-table" style="display: none;">
-            <thead>
-                <tr>
-                    <th class="sortable" data-sort="count" style="text-align: center; width: 45px;" title="Nombre de signalements">Sign. <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="pair" style="white-space: nowrap;">Paire <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="source" title="Mot source de l'exercice">Source <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="target" title="Traduction cible de l'exercice">Cible <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="level" style="text-align: center; width: 45px;" title="Niveau CECRL">Niv. <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="type" style="text-align: center; width: 65px;">Type <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="reason">Motif <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="desc">Remarques <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="user">Utilisateur <span class="sort-icon"></span></th>
-                    <th class="sortable" data-sort="date" style="white-space: nowrap;">Date <span class="sort-icon"></span></th>
-                    <th style="text-align: center; width: 75px;">Action</th>
-                </tr>
-            </thead>
-            <tbody id="reports-tbody">
-                <!-- Rempli en JS -->
-            </tbody>
-        </table>
-    </div>
-
-    <script type="module" src="../js/admin.js?v=150"></script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {

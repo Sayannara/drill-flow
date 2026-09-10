@@ -2,6 +2,7 @@
 import { db } from './firebase-config.js';
 import { getCurrentUser } from './auth.js';
 import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { vocabulary } from './data/vocabulary.js?v=186';
 
 const STORAGE_KEY = 'drillflow_progress';
 let localCache = null;
@@ -379,90 +380,123 @@ export async function getOrGenerateCertificateId(src, tgt, level, validated, poi
 }
 
 
+/**
+ * Récupère le résultat du test officiel s'il a déjà été passé
+ */
+export function getOfficialPlacementTestResult() {
+    try {
+        const stored = localStorage.getItem('drillflow_placement_official');
+        if (stored) return JSON.parse(stored);
+    } catch (e) {}
+    return null;
+}
+
 export async function getPlacementTestData() {
+    const local = getOfficialPlacementTestResult();
     const user = getCurrentUser();
-    if (!user) return null;
+    if (!user) return local;
     try {
         const docRef = doc(db, 'users', user.uid);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists() && docSnap.data().placement_test) {
-            return docSnap.data().placement_test;
+            const cloudData = docSnap.data().placement_test;
+            if (cloudData && cloudData.official_completed) {
+                localStorage.setItem('drillflow_placement_official', JSON.stringify(cloudData));
+            }
+            return cloudData;
         }
-    } catch(e) {}
-    return null;
+    } catch (e) {}
+    return local;
 }
-export async function savePlacementTestResult(certifiedLevel, levelStats) {
-    const user = getCurrentUser();
-    
-    // Increment local attempts immediately
-    const currentAttempts = parseInt(localStorage.getItem('drill_placement_attempts') || '0', 10);
-    const newAttempts = currentAttempts + 1;
-    localStorage.setItem('drill_placement_attempts', newAttempts.toString());
-    
-    if (!user) {
-        // Return dummy data for non-logged in testing if needed
-        return { attempts_used: newAttempts, history: [{ levels: levelStats }], averages: {} };
+
+/**
+ * Prévalide automatiquement tous les mots fondamentaux (level_step: 1) pour les niveaux validés.
+ * Retourne { total: number, byLevel: { A1: n, A2: n, ... } }
+ */
+export async function prevalidateBasicWords(passedLevels, langSource = 'fr', langTarget = 'en') {
+    if (!passedLevels || passedLevels.length === 0) return { total: 0, byLevel: {} };
+    const pairKey = `${langSource}-${langTarget}`;
+    if (!localCache[pairKey]) localCache[pairKey] = {};
+
+    const now = new Date().toISOString();
+    let prevalidatedCount = 0;
+    const byLevel = {};
+
+    // Mots basiques (level_step === 1) pour les paliers validés
+    const basicWords = vocabulary.filter(w => {
+        return w[langSource] && w[langTarget] &&
+               passedLevels.includes((w.level || '').toUpperCase()) &&
+               w.level_step === 1;
+    });
+
+    basicWords.forEach(w => {
+        const existing = localCache[pairKey][w.id];
+        // Ne pas écraser si déjà validé ou ignoré
+        if (!existing || (existing.status !== 'validé' && existing.status !== 'ignoré')) {
+            localCache[pairKey][w.id] = {
+                status: 'validé',
+                attempts: 1,
+                max_attempts: 1,
+                validation_date: now,
+                last_updated: now,
+                prevalidated: true
+            };
+            const lvl = (w.level || '').toUpperCase();
+            byLevel[lvl] = (byLevel[lvl] || 0) + 1;
+            prevalidatedCount++;
+        }
+    });
+
+    if (prevalidatedCount > 0) {
+        await saveProgressLocalAndCloud();
     }
+    return { total: prevalidatedCount, byLevel };
+}
+
+/**
+ * Sauvegarde le résultat définitif du test officiel unique
+ */
+export async function savePlacementTestResult(certifiedLevel, levelStats, passedLevels = [], prevalidatedCount = 0) {
+    const user = getCurrentUser();
+    const now = new Date().toISOString();
+    
+    const officialResult = {
+        official_completed: true,
+        date: now,
+        certified_level: certifiedLevel,
+        levels: levelStats,
+        passed_levels: passedLevels,
+        prevalidated_count: prevalidatedCount
+    };
     
     try {
-        const docRef = doc(db, "users", user.uid);
-        const docSnap = await getDoc(docRef);
-        
-        let placementTest = { attempts_used: 0, history: [] };
-        if (docSnap.exists() && docSnap.data().placement_test) {
-            placementTest = docSnap.data().placement_test;
+        localStorage.setItem('drillflow_placement_official', JSON.stringify(officialResult));
+    } catch (e) {}
+
+    if (user) {
+        try {
+            const docRef = doc(db, "users", user.uid);
+            await setDoc(docRef, { 
+                placement_test: officialResult 
+            }, { merge: true });
+        } catch (e) {
+            console.error("Erreur savePlacementTestResult Firebase:", e);
         }
-
-        placementTest.attempts_used = newAttempts;
-        placementTest.history = placementTest.history || [];
-        placementTest.history.push({
-            date: new Date().toISOString(),
-            certified_level: certifiedLevel,
-            levels: levelStats
-        });
-
-        const levelTotals = {};
-        placementTest.history.forEach(h => {
-            for (const lvl in h.levels) {
-                if (!levelTotals[lvl]) levelTotals[lvl] = { scoreSum: 0, totalSum: 0, timeSum: 0, count: 0, passedCount: 0 };
-                levelTotals[lvl].scoreSum += h.levels[lvl].score;
-                levelTotals[lvl].totalSum += h.levels[lvl].total;
-                levelTotals[lvl].timeSum += h.levels[lvl].avg_time_sec || 0;
-                levelTotals[lvl].count += 1;
-                if (h.levels[lvl].passed) levelTotals[lvl].passedCount += 1;
-            }
-        });
-
-        const averages = {};
-        for (const lvl in levelTotals) {
-            averages[lvl] = {
-                avg_score_percent: Math.round((levelTotals[lvl].scoreSum / levelTotals[lvl].totalSum) * 100),
-                avg_time_sec: Math.round((levelTotals[lvl].timeSum / levelTotals[lvl].count) * 10) / 10,
-                passed_count: levelTotals[lvl].passedCount,
-                attempts_count: levelTotals[lvl].count
-            };
-        }
-        placementTest.averages = averages;
-
-        await setDoc(docRef, { placement_test: placementTest }, { merge: true });
-
-        return placementTest;
-
-    } catch (e) {
-        console.error("Erreur savePlacementTestResult:", e);
-        return null;
     }
+    
+    return officialResult;
 }
 
 window.resetPlacementTest = async function() {
     const user = getCurrentUser();
+    localStorage.removeItem('drillflow_placement_official');
     localStorage.removeItem('drill_placement_attempts');
-    console.log("Tentatives locales réinitialisées.");
+    console.log("Test officiel réinitialisé en local.");
     
     if (user) {
         try {
             const docRef = doc(db, "users", user.uid);
-            await setDoc(docRef, { placement_test: { attempts_used: 0, history: [], averages: {} } }, { merge: true });
+            await setDoc(docRef, { placement_test: null }, { merge: true });
             console.log("Données de test de niveau réinitialisées dans Firebase.");
         } catch (e) {
             console.error("Erreur reset:", e);

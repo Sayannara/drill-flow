@@ -1,0 +1,657 @@
+/* ==========================================================================
+   drillFlow — Words Manager (Spreadsheet / Excel-like) Stylesheet
+   ========================================================================== */
+
+:root {
+  --row-height: 42px;
+  --cell-padding: 0.4rem 0.65rem;
+  --grid-border: rgba(255, 255, 255, 0.08);
+  --cell-active-border: #3b82f6;
+  --cell-modified-bg: rgba(234, 179, 8, 0.12);
+  --cell-modified-border: #eab308;
+}
+
+[data-theme="light"] {
+  --grid-border: rgba(0, 0, 0, 0.08);
+  --cell-modified-bg: rgba(234, 179, 8, 0.15);
+}
+
+/* Structure Pleine Largeur */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+.wm-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Barre de navigation supérieure */
+.wm-header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wm-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.wm-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wm-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.wm-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.wm-nav-btn {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0 0.85rem;
+  height: 38px;
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.wm-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.wm-nav-btn.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.wm-nav-btn.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+/* Barre d'outils et de filtres épurée sans contours lourds */
+.wm-toolbar {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 1.25rem;
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.wm-tools-left {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.wm-search-wrapper {
+  position: relative;
+  min-width: 180px;
+  max-width: 300px;
+  flex: 1;
+}
+
+.wm-search-input {
+  width: 100%;
+  height: 38px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  padding: 0 0.85rem 0 2.25rem !important;
+  color: var(--text-primary) !important;
+  font-size: 0.88rem;
+  outline: none !important;
+  transition: all 0.15s ease;
+}
+
+.wm-search-input:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.wm-search-input:focus {
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25) !important;
+}
+
+.wm-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+  width: 15px;
+  height: 15px;
+}
+
+.wm-select {
+  height: 38px;
+  width: auto !important;
+  min-width: 125px;
+  max-width: 220px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  padding: 0 1.8rem 0 0.75rem !important;
+  color: var(--text-primary) !important;
+  font-size: 0.85rem;
+  font-weight: 500;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.wm-select:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.wm-select:focus {
+  background-color: rgba(255, 255, 255, 0.09) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Lisibilité des options de sélection (fond sombre contrasté) */
+.wm-select option {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  padding: 0.5rem;
+}
+
+[data-theme="light"] .wm-select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.wm-tools-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.wm-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding: 0 0.7rem;
+  height: 38px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+.wm-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.wm-status-dot.saving {
+  background: #eab308;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+.wm-count-info {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Sélecteur de colonnes (Dropdown) */
+.wm-dropdown {
+  position: relative;
+}
+
+.wm-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: auto;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  padding: 0.75rem;
+  min-width: 220px;
+  max-width: calc(100vw - 32px);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.wm-dropdown-menu.hidden {
+  display: none;
+}
+
+.wm-dropdown-header {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.4rem 0.4rem 0.4rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wm-dropdown-action {
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+}
+
+.wm-dropdown-action:hover {
+  text-decoration: underline;
+}
+
+.wm-col-option {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.86rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  user-select: none;
+  transition: background 0.1s ease;
+}
+
+.wm-col-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.wm-col-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Zone du tableau virtualisé avec marges alignées sur la barre d'outils */
+.wm-grid-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg-color);
+  padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+  box-sizing: border-box;
+}
+
+.wm-grid-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+}
+
+/* En-tête fixe du tableau */
+.wm-table-header {
+  display: flex;
+  background: var(--surface-color);
+  border-bottom: 2px solid var(--border-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  user-select: none;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.wm-th {
+  position: relative;
+  padding: 0.55rem 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+  border-right: 1px solid var(--border-color);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  white-space: nowrap;
+}
+
+/* Poignée de redimensionnement manuel des colonnes façon Excel */
+.wm-col-resizer {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  width: 7px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 10;
+  user-select: none;
+  transition: background-color 0.15s ease;
+}
+
+.wm-col-resizer:hover,
+.wm-col-resizer.is-resizing {
+  background-color: var(--primary-color);
+}
+
+.wm-th:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.wm-sort-arrow {
+  opacity: 0.35;
+  font-size: 0.75rem;
+}
+
+.wm-th.sorted-asc .wm-sort-arrow,
+.wm-th.sorted-desc .wm-sort-arrow {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+/* Corps scrollable virtualisé */
+.wm-viewport {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wm-virtual-canvas {
+  position: relative;
+  width: 100%;
+  /* La hauteur totale est injectée en JS (ex: 8832 * 42px) */
+}
+
+/* Lignes du tableau virtualisé */
+.wm-row {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--row-height);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grid-border);
+  box-sizing: border-box;
+  background: var(--bg-color);
+  transition: background 0.1s ease;
+}
+
+.wm-row:nth-child(even) {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.wm-row:hover {
+  background: rgba(59, 130, 246, 0.07) !important;
+}
+
+.wm-row.is-modified {
+  border-left: 3px solid var(--cell-modified-border);
+}
+
+/* Cellules façon Excel */
+.wm-cell {
+  height: 100%;
+  padding: var(--cell-padding);
+  border-right: 1px solid var(--grid-border);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+
+.wm-cell.is-read-only {
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.02);
+  user-select: none;
+}
+
+/* Éditeur inline direct ultra-épuré façon Excel / Notion */
+.wm-cell input[type="text"].wm-cell-input,
+.wm-cell .wm-cell-input {
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  background: transparent !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: 0.86rem !important;
+  padding: 0 0.35rem !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: background 0.1s ease;
+}
+
+.wm-cell input[type="text"].wm-cell-input:hover {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.wm-cell input[type="text"].wm-cell-input:focus {
+  background: rgba(59, 130, 246, 0.1) !important;
+  box-shadow: inset 0 0 0 1.5px var(--cell-active-border) !important;
+}
+
+.wm-cell.is-modified,
+.wm-cell.is-modified input[type="text"].wm-cell-input {
+  background: var(--cell-modified-bg) !important;
+}
+
+/* Badges de niveau CEFR */
+.wm-level-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.wm-level-badge.A1 { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
+.wm-level-badge.A2 { background: rgba(6, 182, 212, 0.2); color: #06b6d4; }
+.wm-level-badge.B1 { background: rgba(16, 185, 129, 0.2); color: #10b981; }
+.wm-level-badge.B2 { background: rgba(234, 179, 8, 0.2); color: #eab308; }
+.wm-level-badge.C1 { background: rgba(249, 115, 22, 0.2); color: #f97316; }
+.wm-level-badge.C2 { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+
+/* Largeurs par défaut des colonnes (sans étirement flex artificiel) */
+.col-id { width: 80px; min-width: 80px; flex-shrink: 0; }
+.col-level { width: 75px; min-width: 75px; flex-shrink: 0; text-align: center; justify-content: center; }
+.col-level_step { width: 65px; min-width: 50px; flex-shrink: 0; text-align: center; justify-content: center; }
+.col-type { width: 95px; min-width: 95px; flex-shrink: 0; }
+.col-fr { width: 190px; min-width: 90px; flex-shrink: 0; }
+.col-en { width: 190px; min-width: 90px; flex-shrink: 0; }
+.col-de { width: 170px; min-width: 90px; flex-shrink: 0; }
+.col-es { width: 170px; min-width: 90px; flex-shrink: 0; }
+.col-ex_fr { width: 260px; min-width: 120px; flex-shrink: 0; font-style: italic; color: var(--text-secondary); }
+.col-ex_en { width: 260px; min-width: 120px; flex-shrink: 0; font-style: italic; color: var(--text-secondary); }
+.col-ex_de { width: 240px; min-width: 120px; flex-shrink: 0; font-style: italic; color: var(--text-secondary); }
+.col-ex_es { width: 240px; min-width: 120px; flex-shrink: 0; font-style: italic; color: var(--text-secondary); }
+
+.col-level_step input {
+  text-align: center !important;
+  font-weight: 700 !important;
+}
+
+/* Écran de verrouillage / Gate Admin */
+.wm-auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 25, 0.88);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.5rem;
+}
+
+.wm-auth-overlay.hidden {
+  display: none;
+}
+
+.wm-auth-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.25rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.wm-auth-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+  color: var(--primary-color);
+  background: rgba(59, 130, 246, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wm-auth-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.wm-auth-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.wm-auth-input {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  text-align: center;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+.wm-auth-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+
+.wm-auth-btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.wm-auth-btn:hover {
+  background: var(--primary-hover);
+}
+
+.wm-auth-error {
+  color: var(--error-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+}

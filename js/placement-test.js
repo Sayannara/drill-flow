@@ -7,14 +7,14 @@
  * et délai allongé en cas d'erreur avec option de passage immédiat (Entrée / Continuer).
  */
 
-import { vocabulary } from './data/vocabulary.js?v=180';
+import { vocabulary } from './data/vocabulary.js?v=186';
 import { translations } from './i18n.js';
 function getAppLanguage() {
     return localStorage.getItem('app_lang') || 'fr';
 }
 import { getTestWordsPerLevel, getTestTimerSeconds, getTestPassThreshold } from './config/app-config.js';
 import { CEFR_CONFIG } from './config/cefr.js';
-import { savePlacementTestResult, getPlacementTestData } from './storage.js';
+import { savePlacementTestResult, getPlacementTestData, getOfficialPlacementTestResult, prevalidateBasicWords } from './storage.js';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
@@ -32,23 +32,29 @@ const ICONS = {
     skip: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>`,
     award: `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>`,
     retry: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>`,
-    click: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 9 5 12 1.8-5.2L21 14Z"></path><path d="M7.2 2.2 8 5.1"></path><path d="m5.1 8-2.9-.8"></path><path d="M14 4.1 12 6"></path><path d="m6 12-1.9 2"></path></svg>`
+    click: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 9 5 12 1.8-5.2L21 14Z"></path><path d="M7.2 2.2 8 5.1"></path><path d="m5.1 8-2.9-.8"></path><path d="M14 4.1 12 6"></path><path d="m6 12-1.9 2"></path></svg>`,
+    fileText: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>`,
+    shieldCheck: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>`,
+    zap: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>`,
+    rocket: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>`,
+    info: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>`
 };
 
 let testState = {
     active: false,
     hasStarted: false,
     isFinished: false,
+    isPractice: false,
     srcLang: 'fr',
     tgtLang: 'en',
     currentLevelIdx: 0,
-    wordsPerLevel: 12,
+    wordsPerLevel: 20,
     timerSeconds: 20,
-    passThreshold: 50,
+    passThreshold: 70,
     levelWords: [],
     currentWordIdx: 0,
     levelCorrectCount: 0,
-    history: {}, // { A1: { total: 12, correct: 10, pct: 83, passed: true }, ... }
+    history: {}, // { A1: { total: 20, correct: 18, pct: 90, passed: true }, ... }
     timerInterval: null,
     advanceTimeout: null,
     cleanAdvanceListener: null,
@@ -368,6 +374,9 @@ function scheduleAdvance(delayMs, allowEarlyAdvance = false) {
 /**
  * Prépare et démarre le test de niveau
  */
+/**
+ * Prépare et démarre le test de niveau
+ */
 export function startPlacementTest(srcLang, tgtLang, forceStart = false) {
     clearScheduledAdvance();
     const selectSrc = document.getElementById('select-lang-source');
@@ -385,6 +394,7 @@ export function startPlacementTest(srcLang, tgtLang, forceStart = false) {
     testState.active = true;
     testState.hasStarted = false;
     testState.isFinished = false;
+    testState.isPractice = false;
     testState.isAwaitingSkipConfirm = false;
 
     const modal = document.getElementById('placement-test-modal');
@@ -394,17 +404,22 @@ export function startPlacementTest(srcLang, tgtLang, forceStart = false) {
     document.body.style.overflow = 'hidden';
 
     import('./storage.js').then(async (module) => {
-        console.log("Storage loaded in startPlacementTest!");
-        if (!forceStart) {
-            const ptData = await module.getPlacementTestData();
-            console.log("ptData:", ptData);
-            if (ptData && ptData.attempts_used >= 3) {
-                showPastResults(ptData);
-                return;
-            }
+        const officialResult = module.getOfficialPlacementTestResult();
+        const ptData = await module.getPlacementTestData();
+        const isOfficialDone = Boolean(officialResult || (ptData && ptData.official_completed));
+
+        if (forceStart === 'practice' || forceStart === true) {
+            testState.isPractice = true;
+            testState.hasStarted = true;
+            loadLevel(0);
+            return;
         }
-        renderIntroScreen(ptData ? (ptData.attempts_used + 1) : 1);
-    }).catch((err) => { console.error('Error loading storage:', err); renderIntroScreen(1); });
+
+        renderIntroScreen(isOfficialDone, officialResult || ptData);
+    }).catch((err) => {
+        console.error('Error loading storage in startPlacementTest:', err);
+        renderIntroScreen(false, null);
+    });
 }
 
 /**
@@ -438,9 +453,8 @@ export function closePlacementTest(force = false) {
 }
 
 /**
- * Écran d'accueil et consignes du test de niveau
+ * Affiche les résultats historiques du test officiel déjà complété
  */
-
 export function showPastResults(savedData) {
     testState.isFinished = true;
     testState.active = true;
@@ -449,10 +463,12 @@ export function showPastResults(savedData) {
     if (!modal) return;
 
     let certifiedLevel = null;
-    if (savedData && savedData.history && savedData.history.length > 0) {
-        const lastHist = savedData.history[savedData.history.length - 1];
-        if (lastHist && lastHist.certified_level) {
-            certifiedLevel = lastHist.certified_level;
+    if (savedData) {
+        if (savedData.certified_level) {
+            certifiedLevel = savedData.certified_level;
+        } else if (savedData.history && savedData.history.length > 0) {
+            const lastHist = savedData.history[savedData.history.length - 1];
+            if (lastHist && lastHist.certified_level) certifiedLevel = lastHist.certified_level;
         }
     }
 
@@ -465,49 +481,51 @@ export function showPastResults(savedData) {
         : '#64748b';
 
     let prevalidationHtml = '';
-    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
+    const prevalidatedCount = savedData ? (savedData.prevalidated_count || 0) : 0;
+    if (prevalidatedCount > 0) {
         prevalidationHtml = `
-            <div style="width: 100%; border: 1.5px dashed rgba(59, 130, 246, 0.4); border-radius: 10px; padding: 1.1rem; background: rgba(59, 130, 246, 0.03); box-sizing: border-box;">
-                <div style="font-size: 0.9rem; font-weight: bold; color: var(--text-primary); margin-bottom: 1rem; text-align: left; display: flex; align-items: center; gap: 0.5rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg> 
-                    <span>Phase de pré-validation (Essai ${savedData.attempts_used}/3)</span>
+            <div style="width: 100%; border: 1.5px dashed rgba(16, 185, 129, 0.4); border-radius: 10px; padding: 0.9rem 1.1rem; background: rgba(16, 185, 129, 0.05); box-sizing: border-box; text-align: left; display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(16, 185, 129, 0.15); color: #10b981; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    ${ICONS.zap}
                 </div>
-                <div id="preval-tabs-container" style="display: flex; align-items: flex-start; justify-content: space-between; max-width: 360px; margin: 0 auto; position: relative; user-select: none;">
-                </div>
-                <div id="preval-content-container" style="margin-top: 1.25rem; text-align: left; background: var(--surface-color); padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); min-height: 80px;">
+                <div style="font-size: 0.85rem; color: var(--text-primary); line-height: 1.4;">
+                    <strong>${prevalidatedCount} mots fondamentaux</strong> ont été automatiquement pré-validés lors de votre évaluation.
                 </div>
             </div>
         `;
     }
 
     modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.3rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
+        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.5rem 1.75rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
             <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
             <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">${getTranslation('test_results_title', 'Résultats du test de niveau')}</h2>
-            <div style="background: rgba(59, 130, 246, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.55rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
+            
+            <div style="background: rgba(59, 130, 246, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.65rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
                 <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Validation du niveau</div>
                 <div style="font-size: 1.5rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">${certifiedLabel}</div>
             </div>
+            
             ${prevalidationHtml}
-            <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.35; margin: 0;">${getTranslation('test_summary_threshold_info', 'Seuil de passage : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.').replace('{threshold}', getTestPassThreshold())}</p>
-            <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; margin-top: 0.2rem;">
-                <button type="button" id="btn-test-retry" class="btn-primary btn-secondary-action" style="padding: 0.55rem 1.25rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.retry} <span>${getTranslation('test_btn_retry', 'Refaire le test')}</span></button>
-                <button type="button" id="btn-test-finish" class="btn-primary" style="padding: 0.55rem 1.8rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.check} <span>${getTranslation('test_btn_close', 'Terminer')}</span></button>
+            
+            <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">
+                Votre test officiel est validé. Vous pouvez vous entraîner sans impact en lançant un test en blanc.
+            </p>
+            
+            <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; margin-top: 0.4rem;">
+                <button type="button" id="btn-past-practice" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.3rem; font-size: 0.9rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.fileText} <span>Faire un test en blanc</span></button>
+                <button type="button" id="btn-test-finish" class="btn-primary" style="padding: 0.6rem 1.8rem; font-size: 0.9rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.check} <span>${getTranslation('test_btn_close', 'Terminer')}</span></button>
             </div>
         </div>
     `;
 
-    const btnRetry = document.getElementById('btn-test-retry');
-    if (btnRetry) {
-        btnRetry.onclick = (e) => {
+    const btnPastPractice = document.getElementById('btn-past-practice');
+    if (btnPastPractice) {
+        btnPastPractice.onclick = (e) => {
             e.preventDefault();
-            modal.style.display = 'none';
-            document.body.style.overflow = '';
-            setTimeout(() => {
-                const selectSrc = document.getElementById('select-lang-source');
-                const selectTgt = document.getElementById('select-lang-target');
-                startPlacementTest(selectSrc ? selectSrc.value : null, selectTgt ? selectTgt.value : null, true);
-            }, 300);
+            testState.isPractice = true;
+            testState.hasStarted = true;
+            testState.isFinished = false;
+            loadLevel(0);
         };
     }
 
@@ -518,107 +536,144 @@ export function showPastResults(savedData) {
     
     document.getElementById('btn-test-finish')?.addEventListener('click', handleClose);
     document.getElementById('btn-close-results-x')?.addEventListener('click', handleClose);
-
-    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
-        const tabsContainer = document.getElementById('preval-tabs-container');
-        const contentContainer = document.getElementById('preval-content-container');
-        if (tabsContainer && contentContainer) {
-            const historyData = savedData.history || [];
-            const averagesData = savedData.averages || {};
-            let currentTab = savedData.attempts_used === 3 ? 3 : (savedData.attempts_used - 1);
-            const renderTabsAndContent = () => {
-                let tabsHtml = '';
-                const attempt = savedData.attempts_used;
-                for (let i = 0; i <= 3; i++) {
-                    const isDone = i < 3 ? (i < attempt) : (attempt === 3);
-                    const isClickable = isDone;
-                    const isActive = i === currentTab;
-                    const bg = isActive ? 'var(--primary-color)' : (isDone ? 'rgba(59, 130, 246, 0.12)' : 'var(--bg-color)');
-                    const color = isActive ? '#fff' : (isDone ? 'var(--primary-color)' : 'var(--text-secondary)');
-                    const border = isActive ? 'none' : (isDone ? '1px solid var(--primary-color)' : '1px dashed var(--border-color)');
-                    const cursor = isClickable ? 'pointer' : 'default';
-                    const label = i < 3 ? `Essai ${i + 1}` : 'Moyenne';
-                    const icon = i < 3 
-                        ? (isDone ? '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' : (i+1)) 
-                        : '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>';
-                    tabsHtml += `
-                        <div class="preval-tab" data-index="${i}" style="display: flex; flex-direction: column; align-items: center; gap: 0.35rem; z-index: 1; cursor: ${cursor}; opacity: ${isClickable ? 1 : 0.4};">
-                            <div style="width: 28px; height: 28px; border-radius: 50%; background: ${bg}; color: ${color}; border: ${border}; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold; transition: all 0.2s; box-shadow: ${isActive ? '0 0 0 3px rgba(59, 130, 246, 0.2)' : 'none'};">
-                                ${icon}
-                            </div>
-                            <span style="font-size: 0.72rem; color: ${isActive ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: ${isActive ? 'bold' : 'normal'}; transition: all 0.2s;">${label}</span>
-                        </div>
-                    `;
-                    if (i < 3) tabsHtml += `<div style="flex: 1; height: 2px; background: ${isDone ? 'var(--primary-color)' : 'var(--border-color)'}; margin-top: 14px; opacity: ${isClickable ? 1 : 0.4}; transition: all 0.2s;"></div>`;
-                }
-                tabsContainer.innerHTML = tabsHtml;
-
-                let rowsHtml = '';
-                let titleText = '';
-                if (currentTab === 3) {
-                    titleText = 'Moyennes finales des 3 essais :';
-                    for (const lvl of LEVELS) {
-                        if (averagesData[lvl]) {
-                            const avg = averagesData[lvl];
-                            rowsHtml += `
-                                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
-                                    <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${avg.passed_count > 0 ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: 600; margin-left: 0.4rem; background: ${avg.passed_count > 0 ? 'rgba(59, 130, 246, 0.1)' : 'transparent'}; padding: 0.15rem 0.35rem; border-radius: 4px;">(Atteint ${avg.passed_count || 0}/${avg.attempts_count || 0})</span></div>
-                                    <span style="font-weight: 600; color: var(--text-primary);">Score : ${avg.avg_score_percent}% <span style="color: var(--text-secondary); font-weight: normal;">| ${avg.avg_time_sec}s</span></span>
-                                </div>
-                            `;
-                        }
-                    }
-                } else {
-                    titleText = `Résultats de l'Essai ${currentTab + 1} :`;
-                    const hist = historyData[currentTab];
-                    if (hist && hist.levels) {
-                        for (const lvl of LEVELS) {
-                            if (hist.levels[lvl]) {
-                                const lData = hist.levels[lvl];
-                                const scorePct = Math.round((lData.score / lData.total) * 100);
-                                const passed = lData.passed;
-                                rowsHtml += `
-                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
-                                        <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${passed ? 'var(--primary-color)' : '#ef4444'}; font-weight: 600; margin-left: 0.4rem; background: ${passed ? 'rgba(59, 130, 246, 0.1)' : 'rgba(239, 68, 68, 0.1)'}; padding: 0.15rem 0.35rem; border-radius: 4px;">${passed ? 'Atteint <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.15rem; vertical-align: middle; margin-bottom: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>' : 'Non atteint'}</span></div>
-                                        <span style="font-weight: 600; color: var(--text-primary);">Score : ${scorePct}% <span style="color: var(--text-secondary); font-weight: normal;">| ${lData.avg_time_sec}s</span></span>
-                                    </div>
-                                `;
-                            }
-                        }
-                    } else rowsHtml = `<div style="font-size: 0.8rem; color: var(--text-secondary); text-align: center; padding: 1rem 0;">Données indisponibles</div>`;
-                }
-                contentContainer.innerHTML = `<div style="font-size: 0.85rem; font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">${titleText}</div>${rowsHtml}`;
-
-                tabsContainer.querySelectorAll('.preval-tab').forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        const idx = parseInt(tab.getAttribute('data-index'), 10);
-                        const isDone = idx < 3 ? (idx < attempt) : (attempt === 3);
-                        if (isDone && idx !== currentTab) {
-                            currentTab = idx;
-                            renderTabsAndContent();
-                        }
-                    });
-                });
-            };
-            renderTabsAndContent();
-        }
-    }
 }
-function renderIntroScreen(attemptNum = 1) {
-const modal = document.getElementById('placement-test-modal');
+
+/**
+ * Boîte de dialogue de confirmation avant lancement du test officiel
+ */
+function renderOfficialConfirmModal() {
+    const modal = document.getElementById('placement-test-modal');
+    if (!modal) return;
+
+    modal.innerHTML = `
+        <div class="card placement-test-card" style="max-width: 540px; width: 92%; padding: 2rem 2.25rem; border-radius: 16px; box-shadow: 0 25px 50px rgba(0,0,0,0.6); display: flex; flex-direction: column; gap: 1.3rem; background: var(--surface-color); border: 1.5px solid rgba(245, 158, 11, 0.4); text-align: left; box-sizing: border-box; margin: auto;">
+            
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 0.6rem;">
+                    <div style="width: 38px; height: 38px; border-radius: 8px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        ${ICONS.alert}
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.15rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">Lancer le test officiel ?</h3>
+                        <span style="font-size: 0.78rem; color: var(--text-secondary);">Attention : tentative unique et définitive</span>
+                    </div>
+                </div>
+                <button type="button" id="btn-cancel-confirm" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
+            </div>
+
+            <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; padding: 1rem 1.15rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                <div>
+                    <strong style="color: var(--text-primary);">Test unique :</strong> Vous ne pourrez passer ce test de certification <strong>qu'une seule fois</strong> pour la paire <strong>${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}</strong>.
+                </div>
+                <div>
+                    <strong style="color: var(--text-primary);">Pré-validation :</strong> Tous les mots fondamentaux (niveau 1) des paliers validés avec au moins 70% seront automatiquement pré-validés.
+                </div>
+                <div style="color: #f59e0b; background: rgba(245, 158, 11, 0.08); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.2);">
+                    💡 Si vous souhaitez d'abord vous familiariser avec le chronomètre de 20s et le clavier, effectuez un test en blanc.
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: 0.25rem;">
+                <button type="button" id="btn-confirm-go-official" class="btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem; font-weight: 700; width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    ${ICONS.rocket} <span>Je confirme, lancer le test officiel</span>
+                </button>
+                <button type="button" id="btn-confirm-switch-practice" class="btn-primary btn-secondary-action" style="padding: 0.65rem 1.5rem; font-size: 0.9rem; font-weight: 600; width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    ${ICONS.fileText} <span>Je préfère m'entraîner d'abord (Test en blanc)</span>
+                </button>
+            </div>
+        </div>
+    `;
+
+    document.getElementById('btn-cancel-confirm')?.addEventListener('click', () => {
+        renderIntroScreen(false, null);
+    });
+
+    document.getElementById('btn-confirm-switch-practice')?.addEventListener('click', () => {
+        testState.isPractice = true;
+        testState.hasStarted = true;
+        loadLevel(0);
+    });
+
+    document.getElementById('btn-confirm-go-official')?.addEventListener('click', () => {
+        testState.isPractice = false;
+        testState.hasStarted = true;
+        loadLevel(0);
+    });
+}
+
+/**
+ * Écran d'accueil et consignes du test de niveau
+ */
+function renderIntroScreen(isOfficialDone = false, pastData = null) {
+    const modal = document.getElementById('placement-test-modal');
     if (!modal) return;
 
     const timerSec = getTestTimerSeconds();
     const threshold = getTestPassThreshold();
     const wordsCount = getTestWordsPerLevel();
-    const maxMinutes = Math.round((LEVELS.length * wordsCount * timerSec) / 60);
 
     testState.timerSeconds = timerSec;
     testState.passThreshold = threshold;
     testState.wordsPerLevel = wordsCount;
 
+    // Si le test officiel est déjà passé
+    if (isOfficialDone) {
+        const certifiedLevel = pastData?.certified_level || 'A1';
+        const certifiedColor = CEFR_CONFIG.colors[certifiedLevel]?.solid || '#3b82f6';
+        modal.innerHTML = `
+            <div class="card placement-test-card" style="max-width: 600px; width: 92%; padding: 2rem 2.25rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.35rem; background: var(--surface-color); border: 1px solid var(--border-color); text-align: left; box-sizing: border-box; margin: auto;">
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.85rem;">
+                    <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                        <h2 style="font-size: 1.25rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">
+                            ${getTranslation('test_intro_title', 'Test de Niveau Adaptatif')}
+                        </h2>
+                        <span style="display: inline-flex; align-items: center; background: rgba(59, 130, 246, 0.12); color: var(--primary-color); padding: 0.15rem 0.55rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
+                            ${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}
+                        </span>
+                    </div>
+                    <button type="button" id="btn-close-placement-test" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
+                </div>
+
+                <div style="background: rgba(16, 185, 129, 0.08); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 12px; padding: 1.15rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+                    <div>
+                        <div style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: #10b981; letter-spacing: 0.5px; margin-bottom: 0.2rem;">Test officiel validé</div>
+                        <div style="font-size: 1.4rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1.2;">Niveau ${certifiedLevel}</div>
+                        <div style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.35rem;">Vos mots fondamentaux ont été pré-validés.</div>
+                    </div>
+                    <div style="width: 46px; height: 46px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); color: #10b981; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        ${ICONS.shieldCheck}
+                    </div>
+                </div>
+
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; margin: 0;">
+                    Le test officiel ne peut être passé qu'une seule fois. Vous pouvez toutefois lancer un <strong>test en blanc</strong> sans engagement à tout moment pour continuer à mesurer vos progrès.
+                </p>
+
+                <div style="display: flex; gap: 0.75rem; justify-content: flex-end; flex-wrap: wrap; margin-top: 0.5rem;">
+                    <button type="button" id="btn-view-past-results" class="btn-primary btn-secondary-action" style="padding: 0.65rem 1.25rem; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        ${ICONS.fileText} <span>Voir les résultats détaillés</span>
+                    </button>
+                    <button type="button" id="btn-start-practice-only" class="btn-primary" style="padding: 0.65rem 1.5rem; font-size: 0.9rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        ${ICONS.retry} <span>Faire un test en blanc</span>
+                    </button>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('btn-close-placement-test')?.addEventListener('click', () => closePlacementTest(true));
+        document.getElementById('btn-view-past-results')?.addEventListener('click', () => showPastResults(pastData));
+        document.getElementById('btn-start-practice-only')?.addEventListener('click', () => {
+            testState.isPractice = true;
+            testState.hasStarted = true;
+            loadLevel(0);
+        });
+        return;
+    }
+
+    // Si le test officiel n'a pas encore été passé
     modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 600px; width: 92%; padding: 2rem 2.25rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.4rem; background: var(--surface-color); border: 1px solid var(--border-color); text-align: left; box-sizing: border-box; margin: auto;">
+        <div class="card placement-test-card" style="max-width: 620px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.8rem 2.2rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.25rem; background: var(--surface-color); border: 1px solid var(--border-color); text-align: left; box-sizing: border-box; margin: auto;">
             
             <!-- En-tête -->
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.85rem;">
@@ -627,86 +682,102 @@ const modal = document.getElementById('placement-test-modal');
                         <h2 style="font-size: 1.25rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">
                             ${getTranslation('test_intro_title', 'Test de Niveau Adaptatif')}
                         </h2>
-                        
-                        <span style="display: inline-flex; align-items: center; background: rgba(245, 158, 11, 0.15); color: #f59e0b; padding: 0.15rem 0.45rem; border-radius: 6px; font-weight: 700; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid rgba(245, 158, 11, 0.35); line-height: 1;">
-                            Bêta
-                        </span>
                         <span style="display: inline-flex; align-items: center; background: rgba(59, 130, 246, 0.12); color: var(--primary-color); padding: 0.15rem 0.55rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
                             ${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}
                         </span>
                     </div>
-                    
                 </div>
                 <button type="button" id="btn-close-placement-test" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
             </div>
 
-            
+            <!-- Explication pédagogique sur la pré-validation -->
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1.5px solid rgba(59, 130, 246, 0.25); border-radius: 12px; padding: 1rem 1.15rem; display: flex; gap: 0.85rem; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 8px; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                    ${ICONS.zap}
+                </div>
+                <div style="font-size: 0.86rem; color: var(--text-primary); line-height: 1.45;">
+                    <div style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.2rem;">Optimisez vos révisions grâce à la pré-validation</div>
+                    En réussissant les paliers du test officiel (seuil de <strong>${threshold}%</strong>), <strong>les mots les plus basiques</strong> de chaque niveau validé seront automatiquement pré-validés. Vous débuterez vos entraînements directement sur les mots à plus forte valeur pédagogique !
+                </div>
+            </div>
 
-            <!-- Boîte de conseils & consignes animée -->
-            <div style="position: relative; display: flex; flex-direction: column; gap: 1.25rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem 1.25rem 1.25rem 3rem;">
-                <!-- Process Line -->
-                <div style="position: absolute; left: 1.35rem; top: 1.75rem; bottom: 1.75rem; width: 2px; background: var(--border-color); border-radius: 2px;"></div>
+            <!-- Paramètres & Consignes en liste compacte -->
+            <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
+                    <span style="color: var(--primary-color); display: inline-flex;">${ICONS.targetSmall}</span>
+                    <span><strong>${LEVELS.length} paliers (A1 à C2)</strong> • S'arrête dès qu'un niveau n'est pas franchi</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
+                    <span style="color: var(--primary-color); display: inline-flex;">${ICONS.clock}</span>
+                    <span><strong>${wordsCount} questions par niveau</strong> • <strong>${timerSec} secondes</strong> par mot</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
+                    <span style="color: #10b981; display: inline-flex;">${ICONS.check}</span>
+                    <span><strong>${threshold}% de réussite requis</strong> (au moins 14/20) pour accéder au niveau supérieur</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
+                    <span style="color: #f59e0b; display: inline-flex;">${ICONS.bulb}</span>
+                    <span>Une phrase de contexte vous aiguille sur le sens exact à traduire</span>
+                </div>
+            </div>
+
+            <!-- Choix du mode : Test en blanc ou Test officiel -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: 0.25rem;">
                 
-                <div class="anim-hint" style="position: relative; animation-delay: 0.1s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
-                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #3b82f6; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
-                    <span><strong>${LEVELS.length} niveaux</strong> de ${LEVELS[0]} à ${LEVELS[LEVELS.length-1]}</span>
+                <!-- Option 1 : Test en blanc -->
+                <div style="border: 1px solid var(--border-color); background: var(--bg-color); border-radius: 12px; padding: 1rem; display: flex; flex-direction: column; justify-content: space-between; gap: 0.85rem;">
+                    <div>
+                        <div style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.4rem;">
+                            <span style="color: var(--text-secondary);">${ICONS.fileText}</span>
+                            <span>Test en blanc</span>
+                        </div>
+                        <p style="font-size: 0.78rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">
+                            Entraînez-vous sans pression. Aucun résultat n'est enregistré. Rejouable à volonté pour vous tester.
+                        </p>
+                    </div>
+                    <button type="button" id="btn-start-practice" class="btn-primary btn-secondary-action" style="width: 100%; height: 42px; font-size: 0.88rem; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;">
+                        ${ICONS.fileText} <span>Faire un test en blanc</span>
+                    </button>
                 </div>
 
-                <div class="anim-hint" style="position: relative; animation-delay: 0.2s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
-                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #3b82f6; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.targetSmall.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
-                    <span><strong>${wordsCount} questions</strong> par palier</span>
-                </div>
-
-                <div class="anim-hint" style="position: relative; animation-delay: 0.3s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
-                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #3b82f6; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.clock.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
-                    <span><strong>${timerSec} secondes</strong> pour y répondre</span>
-                </div>
-
-                <div class="anim-hint" style="position: relative; animation-delay: 0.4s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
-                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #10b981; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.check.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
-                    <span><strong>${threshold}%</strong> pour accéder au suivant</span>
-                </div>
-
-                <div class="anim-hint" style="position: relative; animation-delay: 0.5s; display: flex; align-items: center; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; font-weight: 400;">
-                    <span style="position: absolute; left: -2.3rem; top: 50%; transform: translateY(-50%); color: #f59e0b; background: var(--bg-color); padding: 4px; display: inline-flex; z-index: 1;">${ICONS.bulb.replace('width="16"', 'width="18"').replace('height="16"', 'height="18"')}</span>
-                    <span>Le contexte vous aiguille sur la traduction</span>
+                <!-- Option 2 : Test officiel -->
+                <div style="border: 1.5px solid rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.04); border-radius: 12px; padding: 1rem; display: flex; flex-direction: column; justify-content: space-between; gap: 0.85rem;">
+                    <div>
+                        <div style="font-size: 0.92rem; font-weight: 700; color: var(--primary-color); display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.4rem;">
+                            <span>${ICONS.shieldCheck}</span>
+                            <span>Test officiel</span>
+                        </div>
+                        <p style="font-size: 0.78rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">
+                            Évaluation unique et définitive. Certifie votre niveau CEFR et pré-valide vos mots de base.
+                        </p>
+                    </div>
+                    <button type="button" id="btn-start-official" class="btn-primary" style="width: 100%; height: 42px; font-size: 0.88rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;">
+                        ${ICONS.rocket} <span>Passer le test officiel</span>
+                    </button>
                 </div>
 
             </div>
-            
-            <style>
-                .anim-hint {
-                    opacity: 0;
-                    transform: translateX(-10px);
-                    animation: slideInHint 0.4s ease forwards;
-                }
-                @keyframes slideInHint {
-                    to {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-            </style>
 
-            <!-- Bouton Démarrer -->
-            <div style="display: flex; justify-content: center; width: 100%; margin-top: 0.25rem;">
-                <button type="button" id="btn-start-test-go" class="btn-primary" style="padding: 0.75rem 2.5rem; font-size: 1.05rem; font-weight: 700; width: 100%; max-width: 320px; height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                    ${getTranslation('test_intro_btn_start', 'Commencer le test')}
-                </button>
-            </div>
         </div>
     `;
 
     const closeBtn = document.getElementById('btn-close-placement-test');
     if (closeBtn) closeBtn.onclick = () => closePlacementTest(true);
 
-    const startBtn = document.getElementById('btn-start-test-go');
-    if (startBtn) {
-        startBtn.onclick = () => {
+    const btnPractice = document.getElementById('btn-start-practice');
+    if (btnPractice) {
+        btnPractice.onclick = () => {
+            testState.isPractice = true;
             testState.hasStarted = true;
             loadLevel(0);
         };
-        startBtn.focus();
+    }
+
+    const btnOfficial = document.getElementById('btn-start-official');
+    if (btnOfficial) {
+        btnOfficial.onclick = () => {
+            renderOfficialConfirmModal();
+        };
     }
 }
 
@@ -847,6 +918,15 @@ function renderWordScreen() {
                     <span style="font-size: 0.78rem; background: rgba(59, 130, 246, 0.1); color: var(--primary-color); border: 1px solid var(--border-color); padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600;">
                         ${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}
                     </span>
+                    ${testState.isPractice ? `
+                        <span style="font-size: 0.75rem; background: rgba(100, 116, 139, 0.12); color: var(--text-secondary); border: 1px solid var(--border-color); padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 0.3rem;">
+                            ${ICONS.fileText} <span>Test en blanc</span>
+                        </span>
+                    ` : `
+                        <span style="font-size: 0.75rem; background: rgba(59, 130, 246, 0.12); color: var(--primary-color); border: 1px solid rgba(59, 130, 246, 0.3); padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; display: inline-flex; align-items: center; gap: 0.3rem;">
+                            ${ICONS.shieldCheck} <span>Test officiel</span>
+                        </span>
+                    `}
                 </div>
                 <button type="button" id="btn-close-placement-test" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
             </div>
@@ -1556,46 +1636,66 @@ function openLevelDetailModal(level, res) {
 /**
  * Écran final des résultats
  */
+/**
+ * Écran final des résultats
+ */
 async function finishTest() {
     testState.isFinished = true;
     clearScheduledAdvance();
     const modal = document.getElementById('placement-test-modal');
     if (!modal) return;
+
     let certifiedLevel = null;
+    const passedLevels = [];
     for (const lvl of LEVELS) {
-        if (testState.history[lvl] && testState.history[lvl].passed) certifiedLevel = lvl;
-        else break;
+        if (testState.history[lvl] && testState.history[lvl].passed) {
+            certifiedLevel = lvl;
+            passedLevels.push(lvl);
+        } else {
+            break;
+        }
     }
-    const certifiedLabel = certifiedLevel ? `Niveau ${certifiedLevel}` : getTranslation('test_level_below_a1', 'Débutant (Inférieur à A1)');
-    const certifiedColor = certifiedLevel && CEFR_CONFIG.colors[certifiedLevel] ? CEFR_CONFIG.colors[certifiedLevel].solid : '#64748b';
+
+    const certifiedLabel = certifiedLevel 
+        ? `Niveau ${certifiedLevel}` 
+        : getTranslation('test_level_below_a1', 'Débutant (Inférieur à A1)');
+
+    const certifiedColor = certifiedLevel && CEFR_CONFIG.colors[certifiedLevel] 
+        ? CEFR_CONFIG.colors[certifiedLevel].solid 
+        : '#64748b';
+
     const levelStats = {};
     for (const lvl of LEVELS) {
         const res = testState.history[lvl];
-        if (res) levelStats[lvl] = { score: res.correct, total: res.total, avg_time_sec: res.avgTime, passed: res.passed };
+        if (res) {
+            levelStats[lvl] = {
+                score: res.correct,
+                total: res.total,
+                avg_time_sec: res.avgTime,
+                passed: res.passed
+            };
+        }
     }
-    const savedData = await savePlacementTestResult(certifiedLevel, levelStats);
 
-    let prevalidationHtml = '';
-    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
-        prevalidationHtml = `
-            <div style="width: 100%; border: 1.5px dashed rgba(59, 130, 246, 0.4); border-radius: 10px; padding: 1.1rem; background: rgba(59, 130, 246, 0.03); box-sizing: border-box;">
-                <div style="font-size: 0.9rem; font-weight: bold; color: var(--text-primary); margin-bottom: 1rem; text-align: left; display: flex; align-items: center; gap: 0.5rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg> 
-                    <span>Phase de pré-validation (Essai ${savedData.attempts_used}/3)</span>
-                </div>
-                <div id="preval-tabs-container" style="display: flex; align-items: flex-start; justify-content: space-between; max-width: 360px; margin: 0 auto; position: relative; user-select: none;">
-                </div>
-                <div id="preval-content-container" style="margin-top: 1.25rem; text-align: left; background: var(--surface-color); padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); min-height: 80px;">
-                </div>
-            </div>
-        `;
+    let prevalidatedCount = 0;
+    let prevalidatedByLevel = {};
+    if (!testState.isPractice) {
+        // Enregistrement officiel et pré-validation des mots de base
+        const prevalidResult = await prevalidateBasicWords(passedLevels, testState.srcLang, testState.tgtLang);
+        prevalidatedCount = prevalidResult.total;
+        prevalidatedByLevel = prevalidResult.byLevel || {};
+        await savePlacementTestResult(certifiedLevel, levelStats, passedLevels, prevalidatedCount);
     }
+
     let tableRowsHtml = '';
     for (const lvl of LEVELS) {
         const res = testState.history[lvl];
         if (!res) continue;
         const badgeColor = CEFR_CONFIG.colors[lvl] || { solid: '#3b82f6' };
-        const statusText = res.passed ? `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #10b981; font-weight: 600;">${ICONS.check} ${getTranslation('test_status_passed', 'Validé')}</span>` : `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #ef4444; font-weight: 600;">${ICONS.close} ${getTranslation('test_status_failed', 'Non atteint')}</span>`;
+        const statusText = res.passed 
+            ? `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #10b981; font-weight: 600;">${ICONS.check} ${getTranslation('test_status_passed', 'Validé')}</span>` 
+            : `<span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #ef4444; font-weight: 600;">${ICONS.close} ${getTranslation('test_status_failed', 'Non atteint')}</span>`;
+
         tableRowsHtml += `
             <tr class="placement-level-row" data-level="${lvl}" style="border-bottom: 1px solid var(--border-color); cursor: pointer; user-select: none; transition: background 0.15s ease;" title="${getTranslation('test_row_click_hint', 'Cliquer pour voir le détail des mots de ce niveau')}">
                 <td style="padding: 0.45rem 0.85rem; text-align: left;">
@@ -1619,144 +1719,170 @@ async function finishTest() {
             </tr>
         `;
     }
-    
-    modal.innerHTML = `
-        <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.3rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
-            <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
-            <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">${getTranslation('test_results_title', 'Résultats du test de niveau')}</h2>
-            <div style="background: rgba(59, 130, 246, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.55rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
-                <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Validation du niveau</div>
-                <div style="font-size: 1.5rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">${certifiedLabel}</div>
-            </div>
-            <div style="width: 100%; overflow-x: auto; background: var(--bg-color); border-radius: 10px; border: 1px solid var(--border-color);">
-                <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
-                    <thead>
-                        <tr style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.75rem; text-transform: uppercase;">
-                            <th style="padding: 0.45rem 0.85rem; text-align: left;">${getTranslation('test_summary_header_level', 'Niveau')}</th>
-                            <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_score', 'Score')}</th>
-                            <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_time', 'Temps moy.')}</th>
-                            <th style="padding: 0.45rem 0.85rem; text-align: right;">${getTranslation('test_summary_header_status', 'Statut')}</th>
-                        </tr>
-                    </thead>
-                    <tbody>${tableRowsHtml}</tbody>
-                </table>
-            </div>
-            ${prevalidationHtml}
-            <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.35; margin: 0;">${getTranslation('test_summary_threshold_info', 'Seuil de passage : <strong>{threshold}%</strong>. Vous pouvez relancer cette évaluation diagnostique à tout moment.').replace('{threshold}', getTestPassThreshold())}</p>
-            <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; margin-top: 0.2rem;">
-                <button type="button" id="btn-test-retry" class="btn-primary btn-secondary-action" style="padding: 0.55rem 1.25rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.retry} <span>${getTranslation('test_btn_retry', 'Refaire le test')}</span></button>
-                <button type="button" id="btn-test-finish" class="btn-primary" style="padding: 0.55rem 1.8rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">${ICONS.check} <span>${getTranslation('test_btn_close', 'Terminer')}</span></button>
-            </div>
-        </div>
-    `;
 
-    const btnRetry = document.getElementById('btn-test-retry');
-    if (btnRetry) {
-        btnRetry.onclick = (e) => {
+    if (testState.isPractice) {
+        // Résultats du test en blanc (non enregistré, rejouable ou bascule officiel)
+        modal.innerHTML = `
+            <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.4rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.85rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
+                <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
+                
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="display: inline-flex; align-items: center; background: rgba(100, 116, 139, 0.15); color: var(--text-secondary); padding: 0.2rem 0.6rem; border-radius: 6px; font-weight: 700; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; gap: 0.35rem;">
+                        ${ICONS.fileText} <span>Test en blanc</span>
+                    </span>
+                    <h2 style="font-size: 1.3rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">Résultats d'entraînement</h2>
+                </div>
+
+                <div style="background: rgba(100, 116, 139, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.55rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Niveau indicatif</div>
+                    <div style="font-size: 1.45rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">${certifiedLabel}</div>
+                </div>
+
+                <div style="width: 100%; border: 1px dashed var(--border-color); border-radius: 10px; padding: 0.75rem 1rem; background: var(--bg-color); box-sizing: border-box; text-align: left; display: flex; align-items: center; gap: 0.65rem;">
+                    <div style="color: var(--primary-color); display: flex; align-items: center; flex-shrink: 0;">
+                        ${ICONS.info}
+                    </div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">
+                        Ce test était un entraînement en blanc : vos résultats n'ont pas été enregistrés et aucun mot n'a été pré-validé. Prêt(e) à certifier votre niveau ?
+                    </div>
+                </div>
+
+                <div style="width: 100%; overflow-x: auto; background: var(--bg-color); border-radius: 10px; border: 1px solid var(--border-color);">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
+                        <thead>
+                            <tr style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.75rem; text-transform: uppercase;">
+                                <th style="padding: 0.45rem 0.85rem; text-align: left;">${getTranslation('test_summary_header_level', 'Niveau')}</th>
+                                <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_score', 'Score')}</th>
+                                <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_time', 'Temps moy.')}</th>
+                                <th style="padding: 0.45rem 0.85rem; text-align: right;">${getTranslation('test_summary_header_status', 'Statut')}</th>
+                            </tr>
+                        </thead>
+                        <tbody>${tableRowsHtml}</tbody>
+                    </table>
+                </div>
+
+                <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; margin-top: 0.25rem;">
+                    <button type="button" id="btn-practice-retry" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.88rem; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        ${ICONS.retry} <span>Refaire un test en blanc</span>
+                    </button>
+                    <button type="button" id="btn-practice-go-official" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.88rem; font-weight: 700; width: auto; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        ${ICONS.rocket} <span>Passer le test officiel</span>
+                    </button>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('btn-practice-retry')?.addEventListener('click', (e) => {
             e.preventDefault();
-            modal.style.display = 'none';
-            document.body.style.overflow = '';
-            setTimeout(() => {
-                testState.isFinished = false;
-                testState.history = {};
-                const selectSrc = document.getElementById('select-lang-source');
-                const selectTgt = document.getElementById('select-lang-target');
-                startPlacementTest(selectSrc ? selectSrc.value : null, selectTgt ? selectTgt.value : null, true);
-            }, 300);
+            testState.isFinished = false;
+            testState.history = {};
+            testState.isPractice = true;
+            testState.hasStarted = true;
+            loadLevel(0);
+        });
+
+        document.getElementById('btn-practice-go-official')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            renderOfficialConfirmModal();
+        });
+
+        const handleClosePractice = (e) => {
+            e.preventDefault();
+            closePlacementTest(true);
         };
-    }
-    const handleClose = (e) => {
-        e.preventDefault();
-        closePlacementTest(true);
-        if (typeof onPlacementTestFinished === 'function') onPlacementTestFinished(testState.srcLang, testState.tgtLang, certifiedLevel);
-    };
-    const btnFinish = document.getElementById('btn-test-finish');
-    if (btnFinish) btnFinish.onclick = handleClose;
-    const btnCloseResults = document.getElementById('btn-close-results-x');
-    if (btnCloseResults) btnCloseResults.onclick = handleClose;
+        document.getElementById('btn-close-results-x')?.addEventListener('click', handleClosePractice);
 
-    if (savedData && savedData.attempts_used <= 3 && savedData.attempts_used > 0) {
-        const tabsContainer = document.getElementById('preval-tabs-container');
-        const contentContainer = document.getElementById('preval-content-container');
-        if (tabsContainer && contentContainer) {
-            const historyData = savedData.history || [];
-            const averagesData = savedData.averages || {};
-            let currentTab = savedData.attempts_used === 3 ? 3 : (savedData.attempts_used - 1);
-            const renderTabsAndContent = () => {
-                let tabsHtml = '';
-                const attempt = savedData.attempts_used;
-                for (let i = 0; i <= 3; i++) {
-                    const isDone = i < 3 ? (i < attempt) : (attempt === 3);
-                    const isClickable = isDone;
-                    const isActive = i === currentTab;
-                    const bg = isActive ? 'var(--primary-color)' : (isDone ? 'rgba(59, 130, 246, 0.12)' : 'var(--bg-color)');
-                    const color = isActive ? '#fff' : (isDone ? 'var(--primary-color)' : 'var(--text-secondary)');
-                    const border = isActive ? 'none' : (isDone ? '1px solid var(--primary-color)' : '1px dashed var(--border-color)');
-                    const cursor = isClickable ? 'pointer' : 'default';
-                    const label = i < 3 ? `Essai ${i + 1}` : 'Moyenne';
-                    const icon = i < 3 
-                        ? (isDone ? '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' : (i+1)) 
-                        : '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>';
-                    tabsHtml += `
-                        <div class="preval-tab" data-index="${i}" style="display: flex; flex-direction: column; align-items: center; gap: 0.35rem; z-index: 1; cursor: ${cursor}; opacity: ${isClickable ? 1 : 0.4};">
-                            <div style="width: 28px; height: 28px; border-radius: 50%; background: ${bg}; color: ${color}; border: ${border}; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold; transition: all 0.2s; box-shadow: ${isActive ? '0 0 0 3px rgba(59, 130, 246, 0.2)' : 'none'};">
-                                ${icon}
-                            </div>
-                            <span style="font-size: 0.72rem; color: ${isActive ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: ${isActive ? 'bold' : 'normal'}; transition: all 0.2s;">${label}</span>
+    } else {
+        // Résultats du TEST OFFICIEL (Unique et définitif, PAS de bouton "Refaire le test")
+        let prevalHtml = '';
+        if (prevalidatedCount > 0) {
+            // Détail par niveau
+            const byLevelItems = passedLevels
+                .filter(lvl => prevalidatedByLevel[lvl] > 0)
+                .map(lvl => {
+                    const badgeColor = CEFR_CONFIG.colors[lvl] ? CEFR_CONFIG.colors[lvl].solid : '#3b82f6';
+                    return `<span style="display: inline-flex; align-items: center; gap: 0.3rem; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 6px; padding: 0.2rem 0.55rem; font-size: 0.82rem;"><span style="font-weight: 800; color: ${badgeColor};">${lvl}</span> <span style="color: var(--text-secondary);">→</span> <strong style="color: #10b981;">${prevalidatedByLevel[lvl]} mots</strong></span>`;
+                }).join(' ');
+
+            prevalHtml = `
+                <div style="width: 100%; border: 1.5px dashed rgba(16, 185, 129, 0.4); border-radius: 10px; padding: 0.9rem 1.1rem; background: rgba(16, 185, 129, 0.05); box-sizing: border-box; text-align: left;">
+                    <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(16, 185, 129, 0.15); color: #10b981; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                            ${ICONS.zap}
                         </div>
-                    `;
-                    if (i < 3) tabsHtml += `<div style="flex: 1; height: 2px; background: ${isDone ? 'var(--primary-color)' : 'var(--border-color)'}; margin-top: 14px; opacity: ${isClickable ? 1 : 0.4}; transition: all 0.2s;"></div>`;
-                }
-                tabsContainer.innerHTML = tabsHtml;
-
-                let rowsHtml = '';
-                let titleText = '';
-                if (currentTab === 3) {
-                    titleText = 'Moyennes finales des 3 essais :';
-                    for (const lvl of LEVELS) {
-                        if (averagesData[lvl]) {
-                            const avg = averagesData[lvl];
-                            rowsHtml += `
-                                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
-                                    <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${avg.passed_count > 0 ? 'var(--primary-color)' : 'var(--text-secondary)'}; font-weight: 600; margin-left: 0.4rem; background: ${avg.passed_count > 0 ? 'rgba(59, 130, 246, 0.1)' : 'transparent'}; padding: 0.15rem 0.35rem; border-radius: 4px;">(Atteint ${avg.passed_count || 0}/${avg.attempts_count || 0})</span></div>
-                                    <span style="font-weight: 600; color: var(--text-primary);">Score : ${avg.avg_score_percent}% <span style="color: var(--text-secondary); font-weight: normal;">| ${avg.avg_time_sec}s</span></span>
-                                </div>
-                            `;
-                        }
-                    }
-                } else {
-                    titleText = `Résultats de l'Essai ${currentTab + 1} :`;
-                    const hist = historyData[currentTab];
-                    if (hist && hist.levels) {
-                        for (const lvl of LEVELS) {
-                            if (hist.levels[lvl]) {
-                                const lData = hist.levels[lvl];
-                                const scorePct = Math.round((lData.score / lData.total) * 100);
-                                const passed = lData.passed;
-                                rowsHtml += `
-                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; border-bottom: 1px dashed var(--border-color); padding: 0.4rem 0;">
-                                        <div><strong>${lvl}</strong><span style="font-size: 0.72rem; color: ${passed ? 'var(--primary-color)' : '#ef4444'}; font-weight: 600; margin-left: 0.4rem; background: ${passed ? 'rgba(59, 130, 246, 0.1)' : 'rgba(239, 68, 68, 0.1)'}; padding: 0.15rem 0.35rem; border-radius: 4px;">${passed ? 'Atteint <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.15rem; vertical-align: middle; margin-bottom: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>' : 'Non atteint'}</span></div>
-                                        <span style="font-weight: 600; color: var(--text-primary);">Score : ${scorePct}% <span style="color: var(--text-secondary); font-weight: normal;">| ${lData.avg_time_sec}s</span></span>
-                                    </div>
-                                `;
-                            }
-                        }
-                    } else rowsHtml = `<div style="font-size: 0.8rem; color: var(--text-secondary); text-align: center; padding: 1rem 0;">Données indisponibles</div>`;
-                }
-                contentContainer.innerHTML = `<div style="font-size: 0.85rem; font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">${titleText}</div>${rowsHtml}`;
-
-                tabsContainer.querySelectorAll('.preval-tab').forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        const idx = parseInt(tab.getAttribute('data-index'), 10);
-                        const isDone = idx < 3 ? (idx < attempt) : (attempt === 3);
-                        if (isDone && idx !== currentTab) {
-                            currentTab = idx;
-                            renderTabsAndContent();
-                        }
-                    });
-                });
-            };
-            renderTabsAndContent();
+                        <div style="font-size: 0.84rem; color: var(--text-primary); line-height: 1.5;">
+                            <div style="font-weight: 700; color: #10b981; margin-bottom: 0.3rem;">Félicitations ! ${prevalidatedCount} mots fondamentaux pré-validés</div>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.4rem;">${byLevelItems}</div>
+                            <div style="font-size: 0.78rem; color: var(--text-secondary);">Ces mots sont désormais marqués comme acquis. Concentrez-vous sur le vocabulaire à plus forte valeur pédagogique !</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        } else if (passedLevels.length > 0) {
+            prevalHtml = `
+                <div style="width: 100%; border: 1px solid var(--border-color); border-radius: 10px; padding: 0.75rem 1rem; background: var(--bg-color); box-sizing: border-box; text-align: left; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.4;">
+                    ${ICONS.info} Aucun nouveau mot fondamental à pré-valider pour ces niveaux (déjà acquis ou aucun mot level_step=1 disponible).
+                </div>
+            `;
         }
+
+        modal.innerHTML = `
+            <div class="card placement-test-card" style="max-width: 580px; width: 92%; max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-y: auto; padding: 1.4rem 1.6rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.85rem; background: var(--surface-color); border: 1px solid var(--border-color); position: relative; box-sizing: border-box; margin: auto;">
+                <button type="button" id="btn-close-results-x" class="modal-close-btn" aria-label="Fermer" title="Fermer">${ICONS.close}</button>
+                
+                <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">${getTranslation('test_results_title', 'Résultats du test de niveau')}</h2>
+                
+                <div style="background: rgba(59, 130, 246, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.6rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Niveau certifié</div>
+                    <div style="font-size: 1.5rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">${certifiedLabel}</div>
+                </div>
+
+                ${prevalHtml}
+
+                <div style="width: 100%; overflow-x: auto; background: var(--bg-color); border-radius: 10px; border: 1px solid var(--border-color);">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
+                        <thead>
+                            <tr style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.75rem; text-transform: uppercase;">
+                                <th style="padding: 0.45rem 0.85rem; text-align: left;">${getTranslation('test_summary_header_level', 'Niveau')}</th>
+                                <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_score', 'Score')}</th>
+                                <th style="padding: 0.45rem 0.85rem; text-align: center;">${getTranslation('test_summary_header_time', 'Temps moy.')}</th>
+                                <th style="padding: 0.45rem 0.85rem; text-align: right;">${getTranslation('test_summary_header_status', 'Statut')}</th>
+                            </tr>
+                        </thead>
+                        <tbody>${tableRowsHtml}</tbody>
+                    </table>
+                </div>
+
+                <!-- Seul bouton : Voir ma Progression (test officiel = pas de refaire ni de terminer seul) -->
+                <div style="display: flex; justify-content: center; width: 100%; margin-top: 0.25rem;">
+                    <button type="button" id="btn-go-progress" class="btn-primary" style="padding: 0.65rem 2rem; font-size: 0.95rem; font-weight: 700; width: auto; display: inline-flex; align-items: center; gap: 0.45rem;">
+                        ${ICONS.star} <span>Voir ma Progression</span>
+                    </button>
+                </div>
+            </div>
+        `;
+
+        const handleCloseOfficial = (e) => {
+            e.preventDefault();
+            closePlacementTest(true);
+            if (typeof onPlacementTestFinished === 'function') {
+                onPlacementTestFinished(testState.srcLang, testState.tgtLang, certifiedLevel);
+            }
+        };
+
+        const handleGoProgress = (e) => {
+            e.preventDefault();
+            closePlacementTest(true);
+            // Naviguer vers la vue Progression (nav-stats = page "Progression")
+            const navStats = document.getElementById('nav-stats');
+            if (navStats) {
+                navStats.click();
+            } else if (typeof renderView === 'function') {
+                renderView('stats');
+            }
+        };
+
+        document.getElementById('btn-close-results-x')?.addEventListener('click', handleGoProgress);
+        document.getElementById('btn-go-progress')?.addEventListener('click', handleGoProgress);
     }
 }

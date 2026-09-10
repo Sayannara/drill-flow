@@ -1,0 +1,484 @@
+a lot / much
+about
+above / over
+across / through
+action
+activity
+add
+address
+adult
+afraid / scared / frightened
+afternoon
+ago
+air
+all
+amazing / incredible / unbelievable
+angry / mad / cross
+another
+any
+anyone / anybody
+anything
+apartment / flat
+area / zone / region
+around / round
+arrive
+art
+article
+artist
+ask
+at
+aunt
+away / off / far
+back / backwards
+band / musical group
+bank
+bath
+beach
+become
+behind
+believe
+below / under
+best
+better
+between / among
+bill / check / invoice
+birthday
+blog
+blonde / blond
+boot
+bored
+boring / dull
+born
+both
+bottle
+bottom
+boyfriend
+break
+build / construct
+building / edifice
+business / company / firm
+busy / occupied
+by
+camera
+cannot / can't
+capital
+carrot
+carry
+cent
+centre / center / downtown
+chart / graph / diagram
+cheap / inexpensive / affordable
+check / verify
+choose / select / pick
+cinema / movies
+climb
+club
+color / colour
+company / business / firm
+complete / finish
+concert
+cooking
+correct / right
+could
+cousin
+cow
+cream
+cup / mug
+customer / client
+cut
+daily
+dance
+dancer
+dancing / dance
+dangerous / perilous / risky
+dark / dim
+date
+dear
+decide
+delicious / tasty / yummy
+detail
+dialogue / dialog / conversation
+dictionary
+die
+diet
+different / distinct / other
+difficult / hard
+dish / meal / course
+down / downward / downwards
+downstairs / below
+draw
+driver
+driving
+dry
+during
+each
+early
+east
+eighty
+else
+end
+enjoy
+enough
+euro
+even
+ever
+every
+everybody
+everyone
+everything / all
+example
+excited / thrilled
+exciting / thrilling
+exercise
+expensive / costly
+explain
+extra
+false / wrong / incorrect
+famous
+far / distant / away
+farm
+farmer
+fat
+favourite / favorite
+festival
+few
+fifth
+fill
+final
+finish / end
+fire
+fix / repair
+flat / apartment
+flight
+fly
+folder / directory
+follow
+football
+for
+forget
+form
+fourth
+free
+from
+front
+full / filled
+fun
+funny / amusing
+future
+garden
+geography
+get / receive
+gift / present
+girlfriend
+glass
+green
+grey / gray
+group
+grow up / grow
+guess
+guitar
+gym
+half
+happen / occur
+hard / tough
+hat
+hate
+have to
+health
+healthy
+here
+hey
+high / tall
+history
+hobby
+homework
+hope / wish
+horse
+hungry / starving
+husband
+ice
+ice cream
+idea
+if
+imagine
+in
+include
+interesting / engaging
+interview
+into
+island
+its
+jacket
+job
+join
+journey
+juice
+just
+keep
+key
+kilometre / kilometer
+kind / nice / polite
+kitchen
+lake
+language
+last
+later
+laugh
+learn / study
+leave
+left
+lesson
+let
+library
+lie
+light
+line
+list
+local
+long / lengthy
+lose
+machine
+magazine
+main
+many
+map
+market
+married
+matter / count
+maybe / perhaps
+meal
+mean
+meet
+meeting
+member
+menu
+metre / meter
+midnight
+mile
+miss
+mistake / error
+model
+modern
+moment / instant
+Monday
+more
+most
+mountain
+mouse
+mouth
+move
+museum
+must
+natural
+nature
+need
+need
+negative
+never
+news
+newspaper
+next
+nice / pleasant / friendly
+nineteen
+ninety
+no one / nobody
+north
+nose
+note
+nothing
+nurse
+object
+of
+off
+office
+on
+once
+onion
+online
+opinion / view
+other
+out
+outside
+over
+over there
+own
+page
+paint
+painting
+pair
+part
+party
+pass
+past
+pen
+pencil
+pepper
+perfect / flawless
+photograph
+piano
+picture
+piece
+pig
+place
+plan
+plant
+player
+point
+pool / swimming pool
+popular
+positive
+possible
+potato
+pound
+practice
+prefer
+prepare / get ready
+product
+project
+put
+quarter
+quiet / calm / silent
+quite / rather / fairly
+rain
+reader
+reading
+really / truly / actually
+reason
+red
+relax
+remember / recall
+result
+return
+rice
+ride
+road
+routine
+rule
+run
+sad / unhappy
+salt
+same
+Saturday
+science
+scientist
+season
+send
+sentence
+seventeen
+seventy
+share
+sheep
+shirt
+shoe
+shop / store
+shopping
+should / ought to
+show / display
+shower
+sick / ill
+sing
+singer
+sit / sit down
+situation
+skirt
+smart / clever / intelligent
+smoke
+snake
+snow
+so
+sofa / couch
+some
+somebody / someone
+something
+sometimes / at times
+song
+soon / shortly
+sound
+south
+spell
+spelling
+spend
+spring
+stand / stand up
+story / tale
+street
+strong / powerful
+style
+subject / topic
+summer
+sure / certain
+sweater / jumper
+swim
+swimming
+tall / high
+teach
+teacher
+team
+teenager / teen
+tennis
+terrible / horrible / awful
+test
+text
+than
+thank
+theatre / theater
+then / next / afterward
+there
+third
+thirsty
+thirteen
+thirty
+through
+Thursday
+tired / exhausted
+title
+to / toward
+together
+tonight / this evening
+tooth
+top
+tourist
+traffic
+travel
+trip / journey
+true / real
+try / attempt
+turn
+TV
+twice
+type / kind / sort
+umbrella
+uncle
+under
+until / till
+up / upward
+upstairs
+use
+usually / normally
+vacation / holidays
+vegetable
+village
+visitor
+waiter / waitress
+wake up
+walk
+wall
+warm
+wash / clean
+way / path
+wear
+weather
+west
+white
+wife / spouse
+win
+wine
+winter
+wonderful / marvelous
+word
+worker
+would like / would
+writer / author
+writing / handwriting
+wrong / incorrect / false
+young / youthful

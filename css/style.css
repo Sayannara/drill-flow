@@ -802,7 +802,6 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     flex-direction: column;
     gap: 1.25rem;
     position: relative;
-    overflow: hidden;
 }
 .cefr-card::before {
     content: '';
@@ -811,6 +810,7 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     left: 0;
     right: 0;
     height: 4px;
+    border-radius: 16px 16px 0 0;
     background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981, #eab308, #f97316, #a855f7);
 }
 .cefr-header {

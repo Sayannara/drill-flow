@@ -1,11 +1,11 @@
-import { vocabulary } from './data/vocabulary.js?v=180';
-import { initDrillSession, handleDrillKeydown, startAudioKeepAlive } from './drill.js?v=180';
+import { vocabulary } from './data/vocabulary.js?v=187';
+import { initDrillSession, handleDrillKeydown, startAudioKeepAlive } from './drill.js?v=187';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
-import { startPlacementTest } from './placement-test.js?v=180';
+import { startPlacementTest } from './placement-test.js?v=187';
 
 // --- Gestion des Langues (Internationalisation) ---
 export function getAppLanguage() {
@@ -694,12 +694,18 @@ function attachViewEvents(viewId) {
         const btnPlacementTest = document.getElementById('btn-open-placement-test');
         if (btnPlacementTest) {
             import('./storage.js').then(module => {
-                module.getPlacementTestData().then(ptData => {
-                    if (ptData && ptData.attempts_used >= 3) {
-                        const span = btnPlacementTest.querySelector('span');
-                        if (span) span.innerHTML = "Voir les résultats du test de niveau";
-                    }
-                });
+                const officialResult = module.getOfficialPlacementTestResult ? module.getOfficialPlacementTestResult() : null;
+                if (officialResult) {
+                    const span = btnPlacementTest.querySelector('span');
+                    if (span) span.innerHTML = "Test de niveau (Résultats & Entraînement)";
+                } else {
+                    module.getPlacementTestData().then(ptData => {
+                        if (ptData && (ptData.official_completed || ptData.attempts_used >= 1)) {
+                            const span = btnPlacementTest.querySelector('span');
+                            if (span) span.innerHTML = "Test de niveau (Résultats & Entraînement)";
+                        }
+                    });
+                }
             }).catch(() => {});
             btnPlacementTest.onclick = () => {
                 const selectSrc = document.getElementById('select-lang-source');
@@ -1625,11 +1631,18 @@ function renderSelectedPairStats(pair) {
                 </div>
             </div>
 
-            <!-- Multiplicateurs info -->
-            <div style="display: flex; justify-content: flex-end; align-items: center; padding-top: 0.5rem; border-top: 1px solid var(--border-color); font-size: 0.85rem;">
-                <div style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(0,0,0,0.03); padding: 0.35rem 0.65rem; border-radius: 6px;">
-                    ${translations[lang].stat_cefr_multipliers_hint}
-                </div>
+            <!-- Multiplicateurs info (icône i avec infobulle) -->
+            <div style="display: flex; justify-content: flex-end; align-items: center; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
+                <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='1'; t.style.visibility='visible';}" onmouseout="this.style.color='var(--text-secondary)'; const t=this.querySelector('.tooltip-content'); if(t){t.style.opacity='0'; t.style.visibility='hidden';}" onclick="const t=this.querySelector('.tooltip-content'); if(t){const isVis=t.style.opacity==='1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span class="tooltip-content" style="position: absolute; bottom: calc(100% + 8px); right: 0; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.55rem 0.85rem; border-radius: 8px; font-size: 0.78rem; white-space: nowrap; max-width: 90vw; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 100; font-weight: 500; line-height: 1.4; pointer-events: none;">
+                        ${translations[lang].stat_cefr_multipliers_hint}
+                    </span>
+                </span>
             </div>
         </div>
 

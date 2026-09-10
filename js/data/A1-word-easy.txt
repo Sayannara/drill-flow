@@ -1,0 +1,375 @@
+a / an
+actor / actress
+actress
+after
+again / once more
+age
+airport
+all right / alright / ok
+also / too / as well
+always
+and
+animal
+answer / reply
+apple
+April
+arm
+as / like
+August
+autumn / fall
+baby
+bad / poor
+bag / purse / sack
+ball
+banana
+bar / pub
+bathroom / washroom / restroom
+be
+beautiful / handsome / pretty
+because
+bed
+bedroom / bedchamber
+beer
+before
+begin / start
+beginning / start
+bicycle / bike / cycle
+big / large
+bike / bicycle
+bird
+black
+blue
+boat / ship
+body
+book / volume
+box
+boy / lad
+bread
+breakfast
+bring
+brother
+brown
+bus / coach
+but
+butter
+buy / purchase
+bye / goodbye
+cafe / coffee shop
+cake
+call / phone
+can
+car / automobile
+card
+cat
+chair / seat
+change / alter
+cheese
+chicken
+child / kid
+chocolate
+city / town
+class / lesson
+classroom
+clean
+clean / neat
+clock
+close / shut
+clothes / clothing
+coat / overcoat
+coffee
+cold / chilly
+college / university
+come
+computer / PC
+cook
+cool / great
+cost
+country
+course / class
+dad / daddy
+daughter
+day
+December
+desk
+dinner / supper
+dirty / filthy
+do / make
+doctor / physician
+dog
+dollar / buck
+door / gate
+dress / gown
+drink
+drive
+ear
+easy / simple
+eat
+egg
+eight
+eighteen
+elephant
+eleven
+email
+evening
+exam
+eye
+face
+fall
+family
+fantastic / awesome / great
+fast / quick
+father
+February
+feel
+fifteen
+fifty
+film / movie
+find
+fine / good / well
+first
+fish
+five
+floor
+flower
+food
+foot
+forty
+four
+fourteen
+Friday
+friend
+friendly / nice / kind
+fruit
+game
+girl
+give
+go
+good / fine
+goodbye / bye
+grandfather / grandpa
+grandmother / grandma
+grandparent
+great / awesome / wonderful
+hair
+hand
+happy / glad / cheerful
+have
+he
+head
+hear
+hello / hi
+help
+her
+hi / hello
+him
+his
+holiday
+home
+hospital
+hot / boiling
+hotel
+hour
+house
+how
+hundred
+I
+important
+information
+internet
+it
+January
+jeans
+July
+June
+know
+large / big / wide
+late
+leg
+letter
+life
+like
+lion
+listen
+little / small
+live
+look / watch
+love / like
+lunch
+make / do
+man / gentleman
+March
+match / game
+May
+me
+meat
+message
+milk
+million
+minute
+money
+month
+morning
+mother / mom
+movie / film
+much
+music
+my
+name
+near / close
+new / fresh
+night
+nine
+no
+not
+November
+now
+number
+October
+often / frequently
+ok / okay / all right
+old / aged / elderly
+one
+only / just / merely
+open
+or
+orange
+our
+pants / trousers
+paper
+parent
+park
+pay
+people
+person
+photo
+pizza
+plane
+play
+please
+police
+police officer / policeman / policewoman
+poor / needy
+practise / practice / train
+price
+problem
+pub / bar
+question
+quick / fast
+quickly / fast
+radio
+read
+ready / prepared
+restaurant
+rich / wealthy
+right
+river
+room / bedroom
+salad
+sandwich
+say / tell
+school
+sea
+second
+see
+September
+seven
+she
+short / brief
+show
+sister
+six
+sixteen
+sixty
+sleep
+slow
+small / little
+son
+sorry / excuse me
+soup
+space / room
+speak / talk
+special / particular
+sport
+start / begin
+station
+stop
+student
+study / learn
+sugar
+sun
+Sunday
+supermarket
+T-shirt
+table
+take
+talk / discuss
+taxi / cab
+tea
+telephone / phone
+television / TV
+tell / narrate
+ten
+thanks / thank you
+that
+the
+their
+them
+they
+thing
+think
+this
+thousand
+three
+ticket
+time
+today
+toilet / restroom
+tomato
+tomorrow
+too
+town / city
+train
+tree
+trousers / pants
+Tuesday
+twelve
+twenty
+two
+understand
+university / college
+us
+very / highly
+video
+visit
+wait
+want / wish
+watch
+watch / look at
+water
+we
+website / site
+Wednesday
+week
+weekend
+well / fine
+what
+when
+where
+which
+who
+why
+window
+with
+without
+woman
+work
+work / job
+world
+write
+year
+yellow
+yes
+yesterday
+you
+your
+zoo
