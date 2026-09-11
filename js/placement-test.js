@@ -613,7 +613,7 @@ function renderOfficialConfirmModal() {
 
             <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; padding: 1rem 1.15rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
                 <div>
-                    <strong style="color: var(--text-primary);">Test unique :</strong> Vous ne pourrez passer ce test de certification <strong>qu'une seule fois</strong> pour la paire <strong>${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}</strong>.
+                    <strong style="color: var(--text-primary);">Test unique :</strong> Vous ne pourrez passer ce test de validation <strong>qu'une seule fois</strong> pour la paire <strong>${getLanguageLabel(testState.srcLang)} ➔ ${getLanguageLabel(testState.tgtLang)}</strong>.
                 </div>
                 <div>
                     <strong style="color: var(--text-primary);">Pré-validation :</strong> Tous les mots fondamentaux (niveau 1) des paliers validés avec au moins 70% seront automatiquement pré-validés.
@@ -639,15 +639,138 @@ function renderOfficialConfirmModal() {
     });
 
     document.getElementById('btn-confirm-switch-practice')?.addEventListener('click', () => {
-        testState.isPractice = true;
-        testState.hasStarted = true;
-        loadLevel(0);
+        renderPreStartScreen('practice');
     });
 
     document.getElementById('btn-confirm-go-official')?.addEventListener('click', () => {
-        testState.isPractice = false;
-        testState.hasStarted = true;
-        loadLevel(0);
+        renderPreStartScreen('official');
+    });
+}
+
+/**
+ * Écran intermédiaire animé affichant les règles avant démarrage du test
+ */
+function renderPreStartScreen(mode) {
+    const modal = document.getElementById('placement-test-modal');
+    if (!modal) return;
+
+    const timerSec = getTestTimerSeconds();
+    const threshold = getTestPassThreshold();
+    const wordsCount = getTestWordsPerLevel();
+    const isPracticeMode = (mode === 'practice');
+
+    const steps = [
+        {
+            icon: ICONS.targetSmall,
+            bg: 'rgba(59,130,246,0.12)',
+            color: 'var(--primary-color)',
+            text: `<strong>${LEVELS.length} paliers (A1 à C2)</strong>`,
+            sub: `S'arrête dès qu'un niveau n'est pas franchi`
+        },
+        {
+            icon: ICONS.clock,
+            bg: 'rgba(59,130,246,0.12)',
+            color: 'var(--primary-color)',
+            text: `<strong>${wordsCount} questions par niveau</strong>`,
+            sub: `<strong>${timerSec} secondes</strong> par mot`
+        },
+        {
+            icon: ICONS.check,
+            bg: 'rgba(16,185,129,0.12)',
+            color: '#10b981',
+            text: `<strong>${threshold}% de réussite requis</strong> <span style="font-weight:normal;color:var(--text-secondary);">(au moins ${Math.ceil(wordsCount * threshold / 100)}/${wordsCount})</span>`,
+            sub: `Pour accéder au niveau supérieur`
+        },
+        {
+            icon: ICONS.bulb,
+            bg: 'rgba(245,158,11,0.12)',
+            color: '#f59e0b',
+            text: `Une phrase de contexte vous aiguille`,
+            sub: `Sur le sens exact à traduire`
+        }
+    ];
+
+    const stepsHtml = steps.map((step, i) => `
+        <div class="pre-start-step" data-step="${i}" style="display: flex; gap: 1rem; align-items: flex-start; opacity: 0; transform: translateY(10px); transition: opacity 0.35s ease, transform 0.35s ease;">
+            <div style="display: flex; flex-direction: column; align-items: center; flex-shrink: 0;">
+                <div style="width: 38px; height: 38px; border-radius: 50%; background: ${step.bg}; color: ${step.color}; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    ${step.icon}
+                </div>
+                ${i < steps.length - 1 ? `<div style="width: 2px; min-height: 28px; background: linear-gradient(to bottom, var(--border-color), transparent); margin-top: 4px;"></div>` : ''}
+            </div>
+            <div style="padding-top: 0.45rem; padding-bottom: 0.6rem;">
+                <div style="font-size: 0.9rem; color: var(--text-primary); line-height: 1.4;">${step.text}</div>
+                <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.1rem;">${step.sub}</div>
+            </div>
+        </div>
+    `).join('');
+
+    modal.innerHTML = `
+        <div class="card placement-test-card" style="max-width: 500px; width: 92%; padding: 1.8rem 2rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 1.5rem; background: var(--surface-color); border: 1px solid var(--border-color); text-align: left; box-sizing: border-box; margin: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <h2 style="margin: 0; font-size: 1.2rem; font-family: var(--font-heading); color: var(--text-primary);">
+                        ${isPracticeMode ? getTranslation('test_practice_title', 'Test en blanc') : getTranslation('test_official_title', 'Test officiel')}
+                    </h2>
+                    <p style="margin: 0.25rem 0 0; font-size: 0.8rem; color: var(--text-secondary);">
+                        ${isPracticeMode ? 'Aucun résultat enregistré · Rejouable à volonté' : 'Évaluation unique et définitive'}
+                    </p>
+                </div>
+                <button type="button" id="btn-pre-start-back" class="modal-close-btn" style="position: static; flex-shrink: 0;" aria-label="Retour" title="Retour">${ICONS.close}</button>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0; padding: 0.25rem 0;">
+                ${stepsHtml}
+            </div>
+
+            <button type="button" id="btn-pre-start-go" class="btn-primary" style="width: 100%; height: 48px; font-size: 1rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; opacity: 0; transform: translateY(6px); transition: opacity 0.35s ease, transform 0.35s ease;" disabled>
+                ${isPracticeMode ? ICONS.fileText : ICONS.rocket} <span>${isPracticeMode ? 'Commencer le test' : 'Commencer le test officiel'}</span>
+            </button>
+        </div>
+    `;
+
+    // Animation point par point
+    const stepEls = modal.querySelectorAll('.pre-start-step');
+    const btnGo = document.getElementById('btn-pre-start-go');
+
+    stepEls.forEach((el, i) => {
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, 150 + i * 280);
+    });
+
+    setTimeout(() => {
+        if (btnGo) {
+            btnGo.style.opacity = '1';
+            btnGo.style.transform = 'translateY(0)';
+            btnGo.disabled = false;
+        }
+    }, 150 + steps.length * 280 + 150);
+
+    document.getElementById('btn-pre-start-back')?.addEventListener('click', () => {
+        if (!isPracticeMode) {
+            renderOfficialConfirmModal();
+        } else {
+            import('./storage.js').then(async (module) => {
+                const officialResult = module.getOfficialPlacementTestResult();
+                const ptData = await module.getPlacementTestData();
+                const isOfficialDone = Boolean(officialResult || (ptData && ptData.official_completed));
+                renderIntroScreen(isOfficialDone, officialResult || ptData);
+            }).catch(() => renderIntroScreen(false, null));
+        }
+    });
+
+    document.getElementById('btn-pre-start-go')?.addEventListener('click', () => {
+        if (isPracticeMode) {
+            testState.isPractice = true;
+            testState.hasStarted = true;
+            loadLevel(0);
+        } else {
+            testState.isPractice = false;
+            testState.hasStarted = true;
+            loadLevel(0);
+        }
     });
 }
 
@@ -655,6 +778,7 @@ function renderOfficialConfirmModal() {
  * Écran d'accueil et consignes du test de niveau
  */
 function renderIntroScreen(isOfficialDone = false, pastData = null) {
+
     const modal = document.getElementById('placement-test-modal');
     if (!modal) return;
 
@@ -714,9 +838,7 @@ function renderIntroScreen(isOfficialDone = false, pastData = null) {
         document.getElementById('btn-close-placement-test')?.addEventListener('click', () => closePlacementTest(true));
         document.getElementById('btn-view-past-results')?.addEventListener('click', () => showPastResults(pastData));
         document.getElementById('btn-start-practice-only')?.addEventListener('click', () => {
-            testState.isPractice = true;
-            testState.hasStarted = true;
-            loadLevel(0);
+            renderPreStartScreen('practice');
         });
         return;
     }
@@ -751,26 +873,6 @@ function renderIntroScreen(isOfficialDone = false, pastData = null) {
                 </div>
             </div>
 
-            <!-- Paramètres & Consignes en liste compacte -->
-            <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
-                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
-                    <span style="color: var(--primary-color); display: inline-flex;">${ICONS.targetSmall}</span>
-                    <span><strong>${LEVELS.length} paliers (A1 à C2)</strong> • S'arrête dès qu'un niveau n'est pas franchi</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
-                    <span style="color: var(--primary-color); display: inline-flex;">${ICONS.clock}</span>
-                    <span><strong>${wordsCount} questions par niveau</strong> • <strong>${timerSec} secondes</strong> par mot</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
-                    <span style="color: #10b981; display: inline-flex;">${ICONS.check}</span>
-                    <span><strong>${threshold}% de réussite requis</strong> (au moins 14/20) pour accéder au niveau supérieur</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--text-secondary);">
-                    <span style="color: #f59e0b; display: inline-flex;">${ICONS.bulb}</span>
-                    <span>Une phrase de contexte vous aiguille sur le sens exact à traduire</span>
-                </div>
-            </div>
-
             <!-- Choix du mode : Test en blanc ou Test officiel -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: 0.25rem;">
                 
@@ -798,7 +900,7 @@ function renderIntroScreen(isOfficialDone = false, pastData = null) {
                             <span>Test officiel</span>
                         </div>
                         <p style="font-size: 0.78rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">
-                            Évaluation unique et définitive. Certifie votre niveau CEFR et pré-valide vos mots de base.
+                            Évaluation unique et définitive. Valide votre niveau CEFR et pré-valide vos mots de base.
                         </p>
                     </div>
                     <button type="button" id="btn-start-official" class="btn-primary" style="width: 100%; height: 42px; font-size: 0.88rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;">
@@ -817,9 +919,7 @@ function renderIntroScreen(isOfficialDone = false, pastData = null) {
     const btnPractice = document.getElementById('btn-start-practice');
     if (btnPractice) {
         btnPractice.onclick = () => {
-            testState.isPractice = true;
-            testState.hasStarted = true;
-            loadLevel(0);
+            renderPreStartScreen('practice');
         };
     }
 
@@ -1845,6 +1945,17 @@ async function finishTest() {
             renderOfficialConfirmModal();
         });
 
+        // Clic sur les lignes → détail des mots du niveau
+        modal.querySelectorAll('.placement-level-row').forEach(row => {
+            row.addEventListener('click', () => {
+                const lvl = row.dataset.level;
+                const res = testState.history[lvl];
+                if (lvl && res) openLevelDetailModal(lvl, res);
+            });
+            row.addEventListener('mouseenter', () => { row.style.background = 'rgba(255,255,255,0.04)'; });
+            row.addEventListener('mouseleave', () => { row.style.background = ''; });
+        });
+
         const handleClosePractice = (e) => {
             e.preventDefault();
             closePlacementTest(true);
@@ -1892,7 +2003,7 @@ async function finishTest() {
                 <h2 style="font-size: 1.35rem; font-family: var(--font-heading); color: var(--text-primary); margin: 0;">${getTranslation('test_results_title', 'Résultats du test de niveau')}</h2>
                 
                 <div style="background: rgba(59, 130, 246, 0.08); border: 1.5px solid ${certifiedColor}; border-radius: 10px; padding: 0.6rem 1.25rem; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;">
-                    <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Niveau certifié</div>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">Niveau validé</div>
                     <div style="font-size: 1.5rem; font-weight: 800; color: ${certifiedColor}; font-family: var(--font-heading); line-height: 1;">${certifiedLabel}</div>
                 </div>
 
@@ -1915,11 +2026,22 @@ async function finishTest() {
                 <!-- Seul bouton : Voir ma Progression (test officiel = pas de refaire ni de terminer seul) -->
                 <div style="display: flex; justify-content: center; width: 100%; margin-top: 0.25rem;">
                     <button type="button" id="btn-go-progress" class="btn-primary" style="padding: 0.65rem 2rem; font-size: 0.95rem; font-weight: 700; width: auto; display: inline-flex; align-items: center; gap: 0.45rem;">
-                        ${ICONS.star} <span>Voir ma Progression</span>
+                        <span>Voir ma Progression</span>
                     </button>
                 </div>
             </div>
         `;
+
+        // Clic sur les lignes → détail des mots du niveau
+        modal.querySelectorAll('.placement-level-row').forEach(row => {
+            row.addEventListener('click', () => {
+                const lvl = row.dataset.level;
+                const res = testState.history[lvl];
+                if (lvl && res) openLevelDetailModal(lvl, res);
+            });
+            row.addEventListener('mouseenter', () => { row.style.background = 'rgba(255,255,255,0.04)'; });
+            row.addEventListener('mouseleave', () => { row.style.background = ''; });
+        });
 
         const handleCloseOfficial = (e) => {
             e.preventDefault();

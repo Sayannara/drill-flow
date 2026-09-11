@@ -160,6 +160,8 @@ export const translations = {
         cert_name_info: "Le prénom et le nom ne sont modifiables qu'une fois tous les {days} jours.",
         cert_name_confirm: "Attention : vos prénom et nom seront verrouillés pendant {days} jours pour vos attestations. Confirmez-vous : {name} ?",
         btn_save_name: "Enregistrer",
+        cefr_level_0: "Niveau 0",
+        cefr_desc_0: "Initiation / Débutant",
         cefr_desc_A1: "Découverte / Débutant",
         cefr_desc_A2: "Survie / Élémentaire",
         cefr_desc_B1: "Seuil / Intermédiaire",
@@ -233,6 +235,12 @@ export const translations = {
         pillar_privacy_title: "Suivi de Progression",
         pillar_privacy_desc: "Créez un compte pour enregistrer votre avancement",
         about_title_notes: "Notes",
+        about_note_vocab_base: "L'apprentissage du vocabulaire est nécessaire pour apprendre une langue étrangère, c'est la base : plus on en apprend et plus il est simple d'en acquérir davantage.",
+        about_note_selection: "Les mots dans drillFlow n'ont pas été sélectionnés par hasard : ce sont les mots dont vous avez le plus besoin, les plus utiles.",
+        about_note_travel: "300 à 600 mots sont suffisants pour voyager.",
+        about_note_conversation: "Pour discuter, il faut connaître entre 1 000 et 3 000 mots.",
+        about_note_work: "Pour travailler, il faut plus de 6 000 mots.",
+        about_note_gamification: "Apprendre peut devenir un jeu !",
         about_note_pragmatic: "Notre approche est pragmatique : l'objectif est d'entraîner et de vérifier votre compréhension globale, plutôt que d'exiger une conformité stricte aux définitions exactes.",
         about_note_level: "Prenez en compte le niveau de difficulté d'un mot pour sa traduction.",
         about_note_cefr_words: "Le nombre de mots requis pour valider un niveau est relatif : il n'existe aucun quota officiel fixé par le CECRL. Nos paliers constituent des repères progressifs et pragmatiques pour structurer votre apprentissage.",
@@ -304,7 +312,7 @@ export const translations = {
         options_reset_confirm: "Réinitialiser toute la progression pour {pair} ? Cette action est irréversible.",
         options_reset_success: "Progression réinitialisée pour {pair}.",
         footer_rights: "Tous droits réservés.",
-        footer_deployed: "Déployé le 06/09/2026"
+        footer_deployed: "Déployé le 11/09/2026"
     },
     en: {
         // Nav
@@ -467,6 +475,8 @@ export const translations = {
         cert_name_info: "First and last names can only be edited once every {days} days.",
         cert_name_confirm: "Warning: your first and last names will be locked for {days} days to ensure the validity of your certificates. Do you confirm: {name}?",
         btn_save_name: "Save",
+        cefr_level_0: "Level 0",
+        cefr_desc_0: "Initiation / Beginner",
         cefr_desc_A1: "Breakthrough / Beginner",
         cefr_desc_A2: "Waystage / Elementary",
         cefr_desc_B1: "Threshold / Intermediate",
@@ -492,6 +502,12 @@ export const translations = {
         pillar_privacy_title: "Progress Tracking",
         pillar_privacy_desc: "Create an account to save your progress",
         about_title_notes: "Notes",
+        about_note_vocab_base: "Learning vocabulary is necessary to learn a foreign language, it is the foundation: the more you learn, the easier it becomes to acquire more.",
+        about_note_selection: "The words in drillFlow were not selected by chance: they are the most useful words you need the most.",
+        about_note_travel: "300 to 600 words are enough to travel.",
+        about_note_conversation: "To have a conversation, you need to know between 1,000 and 3,000 words.",
+        about_note_work: "To work, more than 6,000 words are required.",
+        about_note_gamification: "Learning can become a game!",
         about_note_pragmatic: "Our approach is pragmatic: the goal is to train and verify your overall understanding, rather than demanding strict conformity to exact definitions.",
         about_note_level: "Take into account the difficulty level of a word for its translation.",
         about_note_cefr_words: "The number of words required per level is relative: the CEFR defines no official vocabulary quota. Our milestones provide progressive, pragmatic benchmarks to guide your learning.",
@@ -563,7 +579,7 @@ export const translations = {
         options_reset_confirm: "Reset all progress for {pair}? This action cannot be undone.",
         options_reset_success: "Progress reset for {pair}.",
         footer_rights: "All rights reserved.",
-        footer_deployed: "Deployed on 2026-09-06"
+        footer_deployed: "Deployed on 2026-09-11"
     },
     de: {
         // Nav
@@ -726,6 +742,8 @@ export const translations = {
         cert_name_info: "Vor- und Nachname können nur einmal alle {days} Tage geändert werden.",
         cert_name_confirm: "Achtung: Ihr Vor- und Nachname werden für {days} Tage gesperrt, um die Gültigkeit Ihrer Zertifikate zu gewährleisten. Bestätigen Sie: {name}?",
         btn_save_name: "Speichern",
+        cefr_level_0: "Stufe 0",
+        cefr_desc_0: "Einstieg / Anfänger",
         cefr_desc_A1: "Einstieg / Anfänger",
         cefr_desc_A2: "Grundlagen / Elementar",
         cefr_desc_B1: "Mittelstufe / Selbstständig",
@@ -751,6 +769,12 @@ export const translations = {
         pillar_privacy_title: "Fortschrittskontrolle",
         pillar_privacy_desc: "Erstellen Sie ein Konto, um Ihren Fortschritt zu speichern",
         about_title_notes: "Hinweise",
+        about_note_vocab_base: "Das Erlernen von Wortschatz ist notwendig, um eine Fremdsprache zu lernen, es ist die Basis: Je mehr man lernt, desto einfacher ist es, weiteren zu erwerben.",
+        about_note_selection: "Die Wörter in drillFlow wurden nicht zufällig ausgewählt: Es sind die nützlichsten Wörter, die Sie am meisten brauchen.",
+        about_note_travel: "300 bis 600 Wörter reichen zum Reisen aus.",
+        about_note_conversation: "Um sich zu unterhalten, muss man zwischen 1.000 und 3.000 Wörter kennen.",
+        about_note_work: "Um zu arbeiten, sind mehr als 6.000 Wörter erforderlich.",
+        about_note_gamification: "Lernen kann zum Spiel werden!",
         about_note_pragmatic: "Unser Ansatz ist pragmatisch: Das Ziel ist es, Ihr allgemeines Verständnis zu trainieren und zu überprüfen, anstatt strikte Einhaltung genauer Definitionen zu fordern.",
         about_note_level: "Berücksichtigen Sie den Schwierigkeitsgrad eines Wortes bei der Übersetzung.",
         about_note_cefr_words: "Die Anzahl der pro Niveau zu erlernenden Wörter ist relativ: Der GER legt keine offiziellen Wortschatzquoten fest. Unsere Stufen bieten pragmatische und progressive Richtwerte für Ihren Lernfortschritt.",
@@ -822,7 +846,7 @@ export const translations = {
         options_reset_confirm: "Gesamten Fortschritt für {pair} zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.",
         options_reset_success: "Fortschritt für {pair} zurückgesetzt.",
         footer_rights: "Alle Rechte vorbehalten.",
-        footer_deployed: "Bereitgestellt am 06.09.2026"
+        footer_deployed: "Bereitgestellt am 11.09.2026"
     },
     es: {
         // Nav
@@ -985,6 +1009,8 @@ export const translations = {
         cert_name_info: "El nombre y apellido solo se pueden modificar una vez cada {days} días.",
         cert_name_confirm: "Atención: su nombre y apellido quedarán bloqueados durante {days} días para garantizar la validez de sus certificados. ¿Confirma: {name}?",
         btn_save_name: "Guardar",
+        cefr_level_0: "Nivel 0",
+        cefr_desc_0: "Iniciación / Principiante",
         cefr_desc_A1: "Acceso / Principiante",
         cefr_desc_A2: "Plataforma / Elemental",
         cefr_desc_B1: "Umbral / Intermedio",
@@ -1010,6 +1036,12 @@ export const translations = {
         pillar_privacy_title: "Seguimiento",
         pillar_privacy_desc: "Crea una cuenta para guardar tu progreso",
         about_title_notes: "Notas",
+        about_note_vocab_base: "El aprendizaje del vocabulario es necesario para aprender un idioma extranjero, es la base: cuanto más se aprende, más fácil es adquirir más.",
+        about_note_selection: "Las palabras en drillFlow no fueron seleccionadas por casualidad: son las palabras más útiles que más necesita.",
+        about_note_travel: "De 300 a 600 palabras son suficientes para viajar.",
+        about_note_conversation: "Para conversar, es necesario conocer entre 1.000 y 3.000 palabras.",
+        about_note_work: "Para trabajar, se necesitan más de 6.000 palabras.",
+        about_note_gamification: "¡Aprender puede convertirse en un juego!",
         about_note_pragmatic: "Nuestro enfoque es pragmático: el objetivo es entrenar y verificar su comprensión global, en lugar de exigir una estricta conformidad con las definiciones exactas.",
         about_note_level: "Tenga en cuenta el nivel de dificultad de una palabra para su traducción.",
         about_note_cefr_words: "El número de palabras necesarias para superar un nivel es relativo: no existe una cuota oficial establecida por el MCER. Nuestros niveles ofrecen referencias pragmáticas y progresivas para guiar su aprendizaje.",
@@ -1081,6 +1113,6 @@ export const translations = {
         options_reset_confirm: "¿Restablecer todo el progreso de {pair}? Esta acción es irreversible.",
         options_reset_success: "Progreso restablecido para {pair}.",
         footer_rights: "Todos los derechos reservados.",
-        footer_deployed: "Desplegado el 06/09/2026"
+        footer_deployed: "Desplegado el 11/09/2026"
     }
 };

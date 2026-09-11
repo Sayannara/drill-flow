@@ -52,11 +52,15 @@ export const CEFR_CONFIG = {
         C2: 3.5
     },
 
-    // Liste ordonnée des niveaux
+    // Liste ordonnée des niveaux pour les mots du vocabulaire
     levels: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
+
+    // Liste des paliers pour le stepper de progression
+    stepperLevels: ['0', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
 
     // Couleurs de badges et barres par niveau
     colors: {
+        0: { bg: 'rgba(100, 116, 139, 0.15)', text: '#64748b', border: '#64748b', solid: '#64748b' },
         A1: { bg: 'rgba(59, 130, 246, 0.15)', text: '#3b82f6', border: '#3b82f6', solid: '#3b82f6' },
         A2: { bg: 'rgba(6, 182, 212, 0.15)', text: '#06b6d4', border: '#06b6d4', solid: '#06b6d4' },
         B1: { bg: 'rgba(16, 185, 129, 0.15)', text: '#10b981', border: '#10b981', solid: '#10b981' },
@@ -95,11 +99,11 @@ export function getPointsBreakdownByLevel(validatedByLevel) {
 /**
  * Détermine le niveau global CECRL atteint à partir des points pondérés.
  * @param {number} points 
- * @returns {string} 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2'
+ * @returns {string} '0' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2'
  */
 export function getCefrLevelFromPoints(points) {
     const { thresholds, levels } = CEFR_CONFIG;
-    let reached = 'A1';
+    let reached = '0';
 
     for (let i = 0; i < levels.length; i++) {
         const lvl = levels[i];
@@ -121,13 +125,13 @@ export function getCefrProgressDetails(points) {
     const { thresholds, levels } = CEFR_CONFIG;
     const maxThreshold = thresholds[levels[levels.length - 1]]; // 7000
 
-    let currentLevel = 'A1';
+    let currentLevel = '0';
     let nextLevel = 'A1';
     let prevThreshold = 0;
     let nextThreshold = thresholds['A1'];
 
     if (points < thresholds['A1']) {
-        currentLevel = 'A1';
+        currentLevel = '0';
         nextLevel = 'A1';
         prevThreshold = 0;
         nextThreshold = thresholds['A1'];

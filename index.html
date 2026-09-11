@@ -79,8 +79,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=190">
-    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=190">
+    <link rel="stylesheet" href="css/style.css?v=193">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=193">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
@@ -767,60 +767,28 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Le Pouvoir des Mots -->
-                <div class="about-card">
-                    <h2>
-                        <span>🧠</span>
-                        <span>Pourquoi le vocabulaire ?</span>
-                    </h2>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">L'apprentissage du vocabulaire est la fondation incontournable pour maîtriser une langue étrangère. C'est la base de toute communication : plus on en apprend, plus il est simple d'en acquérir davantage.</p>
-                    
-                    <ul style="list-style-type: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem;">
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.95rem;">
-                            <span style="color: #f59e0b; flex-shrink: 0;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></span>
-                            <span><strong>300 à 600 mots</strong> suffisent pour se débrouiller en voyage.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.95rem;">
-                            <span style="color: #3b82f6; flex-shrink: 0;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-                            <span><strong>1 000 à 3 000 mots</strong> sont nécessaires pour tenir une conversation fluide.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.95rem;">
-                            <span style="color: #10b981; flex-shrink: 0;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
-                            <span><strong>Plus de 6 000 mots</strong> sont requis pour travailler et maîtriser la langue.</span>
-                        </li>
-                    </ul>
-
-                    <div style="background: rgba(59, 130, 246, 0.08); border-left: 3px solid var(--primary-color); padding: 1rem; border-radius: 0 8px 8px 0; margin-bottom: 1.25rem;">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--text-primary);"><strong>Sélection stratégique :</strong> Les mots dans drillFlow n'ont pas été sélectionnés par hasard. Ce sont statistiquement les termes dont vous avez le plus besoin, classés par fréquence d'utilité.</p>
+                <!-- Credits Banner -->
+                <div class="credits-banner animate-fade-in">
+                    <div class="avatar-badge">YG</div>
+                    <div style="max-width: 600px; text-align: center;">
+                        <p style="font-size: 1.1rem; color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem;" data-i18n="credits_title">Projet Piloté par Yann Greder</p>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;" data-i18n="credits_text">Ce site a été pensé, conçu et piloté par Yann Greder, puis développé et peaufiné en étroite collaboration (Pair Programming) avec une Intelligence Artificielle.</p>
+                        
+                        <a href="https://www.linkedin.com/in/y-greder/" target="_blank" class="linkedin-badge-btn">
+                            <svg style="width: 18px; height: 18px; fill: white;" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <span data-i18n="author_linkedin">Yann Greder - LinkedIn</span>
+                        </a>
                     </div>
-
-                    <div style="text-align: center; font-weight: 600; color: var(--primary-color); font-size: 1.05rem; padding-top: 0.5rem; border-top: 1px dashed var(--border-color);">
-                        Apprendre peut (et doit) devenir un jeu ! 🎯
+                    
+                    <div class="tags-container">
+                        <span class="tag-badge">#AIDemo</span>
+                        <span class="tag-badge">#WeAllAreDev</span>
+                        <span class="tag-badge">#BuildWithAI</span>
+                        <span class="tag-badge">#PairProgramming</span>
+                        <span class="tag-badge">#UXDesign</span>
+                        <span class="tag-badge">#CleanCode</span>
                     </div>
                 </div>
-                
-            <!-- Credits Banner -->
-            <div class="credits-banner animate-fade-in">
-                <div class="avatar-badge">YG</div>
-                <div style="max-width: 600px; text-align: center;">
-                    <p style="font-size: 1.1rem; color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem;" data-i18n="credits_title">Projet Piloté par Yann Greder</p>
-                    <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;" data-i18n="credits_text">Ce site a été pensé, conçu et piloté par Yann Greder, puis développé et peaufiné en étroite collaboration (Pair Programming) avec une Intelligence Artificielle.</p>
-                    
-                    <a href="https://www.linkedin.com/in/y-greder/" target="_blank" class="linkedin-badge-btn">
-                        <svg style="width: 18px; height: 18px; fill: white;" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        <span data-i18n="author_linkedin">Yann Greder - LinkedIn</span>
-                    </a>
-                </div>
-                
-                <div class="tags-container">
-                    <span class="tag-badge">#AIDemo</span>
-                    <span class="tag-badge">#WeAllAreDev</span>
-                    <span class="tag-badge">#BuildWithAI</span>
-                    <span class="tag-badge">#PairProgramming</span>
-                    <span class="tag-badge">#UXDesign</span>
-                    <span class="tag-badge">#CleanCode</span>
-                </div>
-            </div>
 
                 <!-- Card 2: Notes -->
                 <div class="about-card">
@@ -829,6 +797,30 @@
                         <span data-i18n="about_title_notes">Notes</span>
                     </h2>
                     <div class="about-notes-list">
+                        <div class="about-note-item">
+                            <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></span>
+                            <p class="about-note-text" data-i18n="about_note_vocab_base">L'apprentissage du vocabulaire est nécessaire pour apprendre une langue étrangère, c'est la base : plus on en apprend et plus il est simple d'en acquérir davantage.</p>
+                        </div>
+                        <div class="about-note-item">
+                            <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></span>
+                            <p class="about-note-text" data-i18n="about_note_selection">Les mots dans drillFlow n'ont pas été sélectionnés par hasard : ce sont les mots dont vous avez le plus besoin, les plus utiles.</p>
+                        </div>
+                        <div class="about-note-item">
+                            <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg></span>
+                            <p class="about-note-text" data-i18n="about_note_travel">300 à 600 mots sont suffisants pour voyager.</p>
+                        </div>
+                        <div class="about-note-item">
+                            <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>
+                            <p class="about-note-text" data-i18n="about_note_conversation">Pour discuter, il faut connaître entre 1 000 et 3 000 mots.</p>
+                        </div>
+                        <div class="about-note-item">
+                            <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></span>
+                            <p class="about-note-text" data-i18n="about_note_work">Pour travailler, il faut plus de 6 000 mots.</p>
+                        </div>
+                        <div class="about-note-item">
+                            <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="10" y2="12"></line><line x1="8" y1="10" x2="8" y2="14"></line><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line><rect x="2" y="6" width="20" height="12" rx="2"></rect></svg></span>
+                            <p class="about-note-text" data-i18n="about_note_gamification">Apprendre peut devenir un jeu !</p>
+                        </div>
                         <div class="about-note-item">
                             <span class="about-note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></span>
                             <p class="about-note-text" data-i18n="about_note_pragmatic">Notre approche est pragmatique : l'objectif est d'entraîner et de vérifier votre compréhension globale, plutôt que d'exiger une conformité stricte aux définitions exactes.</p>
@@ -1079,14 +1071,14 @@
 
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.8; font-family: var(--font-sans); line-height: 1.6;">
-        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v190</span> &bull; <span data-i18n="footer_deployed">Déployé le 11/09/2026</span></div>
+        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v193</span> &bull; <span data-i18n="footer_deployed">Déployé le 11/09/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/jspdf.umd.min.js"></script>
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=190"></script>
+    <script type="module" src="js/main.js?v=193"></script>
     <script>
         if ('serviceWorker' in navigator) {
             let refreshing = false;

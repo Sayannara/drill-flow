@@ -1,10 +1,10 @@
 import { vocabulary } from './data/vocabulary.js?v=187';
 import { initDrillSession, handleDrillKeydown, startAudioKeepAlive, getActivePoolMaxSize } from './drill.js?v=187';
-import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
+import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
-import { APP_CONFIG, getCertNameLockDays } from './config/app-config.js';
+import { APP_CONFIG, getCertNameLockDays, fetchAppConfigFromCloud } from './config/app-config.js';
 import { startPlacementTest } from './placement-test.js?v=187';
 
 // --- Gestion des Langues (Internationalisation) ---
@@ -454,10 +454,10 @@ function attachViewEvents(viewId) {
         const volDisp = document.getElementById('volume-display');
         
         // Charger les dernières préférences
-        const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
-        const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
-        const lastVol = localStorage.getItem('voc_last_vol') || '20';
-        const lastMode = localStorage.getItem('voc_last_mode') || 'smart';
+        const lastSrc = localStorage.getItem('voc_last_src') || localStorage.getItem('drillflow_default_src') || APP_CONFIG.DEFAULT_SRC;
+        const lastTgt = localStorage.getItem('voc_last_tgt') || localStorage.getItem('drillflow_default_tgt') || APP_CONFIG.DEFAULT_TGT;
+        const lastVol = localStorage.getItem('voc_last_vol') || localStorage.getItem('drillflow_default_volume') || APP_CONFIG.DEFAULT_VOLUME.toString();
+        const lastMode = localStorage.getItem('voc_last_mode') || localStorage.getItem('drillflow_default_mode') || APP_CONFIG.DEFAULT_MODE;
         
         const savedLevelsStr = localStorage.getItem('drill_levels');
         const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -1420,19 +1420,20 @@ function initStatsView() {
 }
 
 function getCefrTrackFillPct(pts) {
-    const levels = CEFR_CONFIG.levels;
-    const thresholds = CEFR_CONFIG.thresholds;
+    const stepperLevels = CEFR_CONFIG.stepperLevels || ['0', ...CEFR_CONFIG.levels];
+    const thresholds = { '0': 0, ...CEFR_CONFIG.thresholds };
+    if (pts <= 0) return 0;
     if (pts >= thresholds.C2) return 100;
-    if (pts <= thresholds.A1) {
-        // Avant ou à A1, la barre commence à la bulle A1 (0%)
-        return 0;
-    }
-    for (let i = 0; i < levels.length - 1; i++) {
-        const currentT = thresholds[levels[i]];
-        const nextT = thresholds[levels[i + 1]];
+
+    const segmentCount = stepperLevels.length - 1; // 6 segments
+    const segmentWidth = 100 / segmentCount;
+
+    for (let i = 0; i < segmentCount; i++) {
+        const currentT = thresholds[stepperLevels[i]];
+        const nextT = thresholds[stepperLevels[i + 1]];
         if (pts >= currentT && pts < nextT) {
             const fraction = (pts - currentT) / (nextT - currentT);
-            return (i * 20) + (fraction * 20);
+            return (i * segmentWidth) + (fraction * segmentWidth);
         }
     }
     return 100;
@@ -1495,32 +1496,41 @@ function renderSelectedPairStats(pair) {
     const progDetails = getCefrProgressDetails(points);
     const pointsBreakdown = getPointsBreakdownByLevel(validatedByLevel);
 
-    // Détection de l'augmentation du score depuis la dernière consultation
+    // Détection de l'augmentation du score et du niveau depuis la dernière consultation (multi-device via Firestore)
     const storageKey = `drillflow_prev_cefr_points_${pair}`;
-    const prevPointsRaw = localStorage.getItem(storageKey);
+    const lastViewed = getLastViewedProgress(pair);
     let hasIncreased = false;
+    let isNewTierCelebration = false;
     let startPoints = points;
 
-    if (prevPointsRaw !== null) {
-        const prevPoints = parseInt(prevPointsRaw, 10);
-        if (!isNaN(prevPoints) && points > prevPoints) {
+    if (lastViewed && typeof lastViewed.points === 'number') {
+        const prevPoints = lastViewed.points;
+        if (points > prevPoints) {
             hasIncreased = true;
             startPoints = prevPoints;
+            const prevLvl = getCefrLevelFromPoints(prevPoints);
+            const currentTierLvl = getCefrLevelFromPoints(points);
+            if (prevLvl !== currentTierLvl) {
+                isNewTierCelebration = true;
+            }
         }
     } else {
-        // Première visite : on enregistre le score actuel comme point de référence
-        localStorage.setItem(storageKey, points.toString());
+        // Première consultation absolue enregistrée dans le Cloud
+        saveLastViewedProgress(pair, points);
     }
 
     const levelColors = CEFR_CONFIG.colors;
     const currentLvl = progDetails.currentLevel;
-    const currentLvlColor = levelColors[currentLvl] || { bg: 'rgba(99,102,241,0.15)', text: '#6366f1', border: '#6366f1' };
+    const currentLvlColor = levelColors[currentLvl] || { bg: 'rgba(100,116,139,0.15)', text: '#64748b', border: '#64748b' };
     const levelDescKey = `cefr_desc_${currentLvl}`;
     const levelDesc = (translations[lang] && translations[lang][levelDescKey]) || '';
+    const displayCurrentLvl = currentLvl === '0' ? (translations[lang].cefr_level_0 || 'Niveau 0') : currentLvl;
 
     // Calcul du pourcentage de remplissage continu pour le stepper
     const levels = CEFR_CONFIG.levels;
+    const stepperLevels = CEFR_CONFIG.stepperLevels || ['0', ...levels];
     const thresholds = CEFR_CONFIG.thresholds;
+    const stepperThresholds = { '0': 0, ...thresholds };
     const trackFillPct = Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(points))));
     const targetFillStyleWidth = trackFillPct > 0 ? `calc(${trackFillPct}% + 18px)` : '0%';
 
@@ -1547,19 +1557,20 @@ function renderSelectedPairStats(pair) {
     }
 
     // Bulles des paliers
-    const stepsHtml = levels.map((lvl) => {
-        const thresh = thresholds[lvl];
+    const stepsHtml = stepperLevels.map((lvl) => {
+        const thresh = stepperThresholds[lvl];
         const isCompleted = points >= thresh;
         const wasCompleted = startPoints >= thresh;
         const isNewlyCompleted = hasIncreased && isCompleted && !wasCompleted;
         const isActive = !isCompleted && (progDetails.nextLevel === lvl);
         const stateClass = isCompleted ? (isNewlyCompleted ? 'completed newly-completed' : 'completed') : (isActive ? 'active' : '');
-        const badgeContent = isCompleted ? `${lvl} ✓` : lvl;
+        const badgeContent = isCompleted ? (lvl === '0' ? '0 ✓' : `${lvl} ✓`) : lvl;
+        const labelText = lvl === '0' ? (translations[lang].cefr_level_0 || 'Niv. 0') : lvl;
 
         return `
             <div class="cefr-step-item ${stateClass}">
                 <div class="cefr-step-bubble">${badgeContent}</div>
-                <span class="cefr-step-label">${lvl}</span>
+                <span class="cefr-step-label">${labelText}</span>
                 <span class="cefr-step-threshold">${thresh} pts</span>
             </div>
         `;
@@ -1607,14 +1618,14 @@ function renderSelectedPairStats(pair) {
                 <div>
                     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.25rem;">
                         <span class="cefr-level-badge-large" style="background: ${currentLvlColor.bg}; color: ${currentLvlColor.text}; border: 1px solid ${currentLvlColor.border};">
-                            ${currentLvl}
+                            ${currentLvl === '0' ? '0' : currentLvl}
                         </span>
                         <div>
                             <h2 style="margin: 0; font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading); color: var(--text-primary);">
-                                ${levelDesc || currentLvl}
+                                ${levelDesc || displayCurrentLvl}
                             </h2>
                             <div style="font-size: 0.82rem; color: var(--text-secondary);">
-                                ${translations[lang].stat_cefr_current || 'Niveau atteint :'} <strong style="color: var(--text-primary);">${currentLvl}</strong>
+                                ${translations[lang].stat_cefr_current || 'Niveau atteint :'} <strong style="color: var(--text-primary);">${displayCurrentLvl}</strong>
                             </div>
                         </div>
                     </div>
@@ -1732,23 +1743,27 @@ function renderSelectedPairStats(pair) {
                     neededElem.textContent = Math.max(0, progDetails.nextThreshold - currentVal);
                 }
             }, () => {
-                localStorage.setItem(storageKey, points.toString());
-
-                if (hasIncreased) {
-                    const prevLvl = getCefrLevelFromPoints(startPoints);
-                    const newLvl = getCefrLevelFromPoints(points);
-                    if (prevLvl !== newLvl && typeof confetti === 'function') {
-                        confetti({
-                            particleCount: 50,
-                            spread: 70,
-                            origin: { y: 0.35 }
-                        });
-                    }
-                }
+                saveLastViewedProgress(pair, points);
             });
+
+            // Déclenchement garanti des confettis si un nouveau niveau CECRL a été franchi
+            if (isNewTierCelebration && typeof confetti === 'function') {
+                setTimeout(() => {
+                    confetti({
+                        particleCount: 70,
+                        spread: 80,
+                        origin: { x: 0.3, y: 0.4 }
+                    });
+                    confetti({
+                        particleCount: 70,
+                        spread: 80,
+                        origin: { x: 0.7, y: 0.4 }
+                    });
+                }, 350);
+            }
         } else {
             pointsElem.textContent = '0';
-            localStorage.setItem(storageKey, '0');
+            saveLastViewedProgress(pair, 0);
         }
     }
 }
@@ -1769,6 +1784,9 @@ renderView = function(viewId, updateHash = true) {
 
 // Initialisation au chargement de la page
 window.addEventListener('DOMContentLoaded', () => {
+    // Synchronisation en arrière-plan de la configuration globale depuis Firebase
+    fetchAppConfigFromCloud().catch(e => console.warn('Sync cloud config:', e));
+
     // Interception des actions d'authentification Firebase (Validation email / Réinitialisation mot de passe)
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('mode') && urlParams.has('oobCode')) {
@@ -2535,8 +2553,9 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, tot
     // 3. NIVEAU CECRL GLOBAL ATTEINT & STATS TOTALES (Disposition spacieuse en 2 rangées : ZÉRO chevauchement)
     const points = calculateCefrPoints(validatedByLevel);
     const globalLevel = computeGlobalCefrLevel(validatedByLevel, totalByLevel);
+    const displayGlobalLevel = globalLevel === '0' ? (translations[lang].cefr_level_0 || 'Niveau 0') : globalLevel;
     const levelDescKey = `cefr_desc_${globalLevel}`;
-    const levelDesc = (translations[lang] && translations[lang][levelDescKey]) || 'Utilisateur';
+    const levelDesc = (translations[lang] && translations[lang][levelDescKey]) || (globalLevel === '0' ? 'Initiation' : 'Utilisateur');
 
     const globalBoxY = 244;
     const globalBoxH = 104;
@@ -2555,7 +2574,7 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, tot
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
     ctx.font = 'bold 20px "Outfit", sans-serif';
-    ctx.fillText(globalLevel, 91, globalBoxY + 39);
+    ctx.fillText(globalLevel === '0' ? '0' : globalLevel, 91, globalBoxY + 39);
 
     ctx.font = 'bold 8px "Inter", sans-serif';
     ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
@@ -2566,7 +2585,7 @@ function drawCertificateOnCanvas(ctx, src, tgt, validated, validatedByLevel, tot
     ctx.fillStyle = '#0f172a';
     ctx.font = 'bold 15px "Outfit", sans-serif';
     const globalLabel = translations[lang].cert_global_level || 'Niveau global atteint :';
-    ctx.fillText(`${globalLabel} ${globalLevel} — ${levelDesc}`, 130, globalBoxY + 31);
+    ctx.fillText(`${globalLabel} ${displayGlobalLevel} — ${levelDesc}`, 130, globalBoxY + 31);
 
     ctx.fillStyle = '#64748b';
     ctx.font = '400 11px "Inter", sans-serif';

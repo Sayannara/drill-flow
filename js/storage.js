@@ -33,6 +33,7 @@ export function clearAllLocalProgress() {
             }
         }
         keysToRemove.forEach(k => localStorage.removeItem(k));
+        localStorage.removeItem('drillflow_last_viewed_stats');
     } catch (e) {
         console.error("Erreur nettoyage local:", e);
     }
@@ -58,6 +59,14 @@ export async function fetchProgressFromCloud() {
                     const certInfo = data.certificates[pairKey];
                     if (certInfo && certInfo.cert_id) {
                         localStorage.setItem(`cert_id_${pairKey}`, certInfo.cert_id);
+                    }
+                }
+            }
+            if (data && data.last_viewed_stats) {
+                localStorage.setItem('drillflow_last_viewed_stats', JSON.stringify(data.last_viewed_stats));
+                for (const pairKey in data.last_viewed_stats) {
+                    if (data.last_viewed_stats[pairKey] && data.last_viewed_stats[pairKey].points != null) {
+                        localStorage.setItem(`drillflow_prev_cefr_points_${pairKey}`, String(data.last_viewed_stats[pairKey].points));
                     }
                 }
             }
@@ -377,6 +386,74 @@ export async function getOrGenerateCertificateId(src, tgt, level, validated, poi
     }
 
     return certId;
+}
+
+/**
+ * Récupère les données de la dernière consultation de progression pour une paire de langues
+ * @param {string} pairKey Ex: 'FR-EN'
+ * @returns {{ points: number, viewed_at: string } | null}
+ */
+export function getLastViewedProgress(pairKey) {
+    try {
+        const raw = localStorage.getItem('drillflow_last_viewed_stats');
+        if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed && parsed[pairKey] && typeof parsed[pairKey].points === 'number') {
+                return parsed[pairKey];
+            }
+        }
+    } catch (e) {}
+
+    // Fallback sur l'ancien stockage par paire si présent
+    const oldRaw = localStorage.getItem(`drillflow_prev_cefr_points_${pairKey}`);
+    if (oldRaw !== null) {
+        const pts = parseInt(oldRaw, 10);
+        if (!isNaN(pts)) return { points: pts, viewed_at: null };
+    }
+    return null;
+}
+
+/**
+ * Enregistre la consultation de progression (points et date) en local et dans Firestore
+ * @param {string} pairKey Ex: 'FR-EN'
+ * @param {number} points 
+ */
+export async function saveLastViewedProgress(pairKey, points) {
+    if (!pairKey || typeof points !== 'number' || isNaN(points)) return;
+
+    const now = new Date().toISOString();
+    let stats = {};
+    try {
+        const raw = localStorage.getItem('drillflow_last_viewed_stats');
+        if (raw) stats = JSON.parse(raw) || {};
+    } catch (e) {
+        stats = {};
+    }
+
+    stats[pairKey] = {
+        points: Math.round(points),
+        viewed_at: now
+    };
+
+    localStorage.setItem('drillflow_last_viewed_stats', JSON.stringify(stats));
+    localStorage.setItem(`drillflow_prev_cefr_points_${pairKey}`, String(Math.round(points)));
+
+    const user = getCurrentUser();
+    if (user && !user.isAnonymous) {
+        try {
+            const docRef = doc(db, "users", user.uid);
+            await setDoc(docRef, {
+                last_viewed_stats: {
+                    [pairKey]: {
+                        points: Math.round(points),
+                        viewed_at: now
+                    }
+                }
+            }, { merge: true });
+        } catch (err) {
+            console.warn("Erreur synchronisation Firestore last_viewed_stats:", err);
+        }
+    }
 }
 
 
