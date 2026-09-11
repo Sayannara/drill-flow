@@ -364,6 +364,19 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
     if (mode === 'smart') {
         // Smart Drill: Gestion du pool actif (cible : 100 mots par défaut, paramétrable admin)
         // Les mots du pool actif sont les mots tentés et non validés (attempts > 0, status !== 'validé', status !== 'ignoré')
+
+        // Comptage GLOBAL des mots tentés non validés (tous niveaux confondus)
+        // pour garantir que le pool actif ne dépasse jamais maxPoolSize au total,
+        // même quand l'utilisateur change de filtres de niveaux entre les sessions
+        const maxPoolSize = getActivePoolMaxSize();
+
+        const globalAttemptedCount = vocabulary.filter(w => {
+            const st = getWordStatus(source, target, w.id);
+            if (st === 'validé' || st === 'ignoré') return false;
+            const ss = getWordStats(source, target, w.id);
+            return ss && ss.attempts > 0;
+        }).length;
+
         const attemptedWords = [];
         const brandNewWords = [];
 
@@ -385,9 +398,8 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
             return dateA - dateB;
         });
 
-        const maxPoolSize = getActivePoolMaxSize();
-        // Places disponibles dans le pool pour de nouveaux mots
-        const availableSlotsInPool = Math.max(0, maxPoolSize - attemptedWords.length);
+        // Places calculées sur le comptage GLOBAL, pas sur le sous-ensemble filtré par levels
+        const availableSlotsInPool = Math.max(0, maxPoolSize - globalAttemptedCount);
 
         // Nombre de nouveaux mots pouvant être injectés dans cette session :
         // Ne peut jamais dépasser les places disponibles dans le pool
@@ -396,11 +408,12 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
         // Nombre de mots du pool actif à prendre dans la session
         let neededAttempted = volume - allowedNew;
 
-        // Si le pool actif ne contient pas assez de mots (ex: démarrage de l'appli ou pool presque vide)
+        // Si le pool actif (filtré par levels) ne contient pas assez de mots
         if (attemptedWords.length < neededAttempted) {
             neededAttempted = attemptedWords.length;
             allowedNew = Math.min(volume - neededAttempted, availableSlotsInPool);
-            if (attemptedWords.length === 0) {
+            // Uniquement au tout premier usage (aucun mot tenté globalement)
+            if (globalAttemptedCount === 0) {
                 allowedNew = Math.min(volume, maxPoolSize);
             }
         }
@@ -904,6 +917,16 @@ function handleValidation() {
         let isCorrect = false;
         let isTolerantMatch = false;
 
+        // Détecte l'auto-capitalisation mobile : seule la 1ère lettre diffère en casse
+        function isMobileAutoCap(input, exp) {
+            if (!input || !exp || input.length !== exp.length) return false;
+            if (input[0] !== input[0].toUpperCase()) return false; // pas de majuscule auto
+            if (input[0].toLowerCase() !== exp[0].toLowerCase()) return false; // lettre différente
+            return input.slice(1) === exp.slice(1); // le reste est identique
+        }
+        const strictPrimaryExpected = normalizeStrict(expected.split('/')[0]);
+        const isAutoCap = isMobileAutoCap(strictInput, strictPrimaryExpected);
+
         if (!isToleranceActive) {
             // Mode Strict : casse et accents doivent être rigoureusement respectés
             isCorrect = isStrictExactMatch;
@@ -916,10 +939,11 @@ function handleValidation() {
             } else if (isCaseInsensitiveMatch) {
                 isCorrect = true;
                 // En allemand, on ne spamme pas de warning pour la casse des 5 000 noms communs
-                if (tgtLang !== 'de') {
-                    isTolerantMatch = true;
-                } else {
+                // Sur mobile, on ne spamme pas de warning pour l'auto-capitalisation clavier
+                if (tgtLang === 'de' || isAutoCap) {
                     isTolerantMatch = false;
+                } else {
+                    isTolerantMatch = true;
                 }
             } else if (isAccentTolerantMatch) {
                 isCorrect = true;

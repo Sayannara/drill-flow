@@ -1,5 +1,5 @@
 import { vocabulary } from './data/vocabulary.js?v=187';
-import { initDrillSession, handleDrillKeydown, startAudioKeepAlive } from './drill.js?v=187';
+import { initDrillSession, handleDrillKeydown, startAudioKeepAlive, getActivePoolMaxSize } from './drill.js?v=187';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
@@ -642,6 +642,35 @@ function attachViewEvents(viewId) {
                 const remainingText = translations[lang].subtitle_home_remaining
                     .replace('{remaining}', `<span style="font-weight: bold; color: var(--primary-color);">${count}</span>`);
                 remainingEl.innerHTML = remainingText;
+
+                // --- Pool gauge indicator ---
+                const poolGauge = document.getElementById('pool-gauge');
+                const poolCount = document.getElementById('pool-gauge-count');
+                const poolFill = document.getElementById('pool-gauge-fill');
+                if (poolGauge && poolCount && poolFill) {
+                    const maxPool = getActivePoolMaxSize();
+                    let globalAttempted = 0;
+                    vocabulary.forEach(w => {
+                        const st = getWordStatus(src, tgt, w.id);
+                        if (st === 'validé' || st === 'ignoré') return;
+                        const ss = getWordStats(src, tgt, w.id);
+                        if (ss && ss.attempts > 0) globalAttempted++;
+                    });
+                    if (globalAttempted > 0) {
+                        poolGauge.style.display = '';
+                        poolCount.textContent = `${globalAttempted} / ${maxPool}`;
+                        const pct = Math.min(100, Math.round((globalAttempted / maxPool) * 100));
+                        poolFill.style.width = pct + '%';
+                        // Color coding
+                        let color = '#10b981'; // green
+                        if (pct >= 95) color = '#ef4444'; // red
+                        else if (pct >= 80) color = '#f59e0b'; // orange
+                        poolFill.style.background = color;
+                        poolCount.style.color = color;
+                    } else {
+                        poolGauge.style.display = 'none';
+                    }
+                }
             }
 
             if (selectSrc) selectSrc.addEventListener('change', updateAvailableCount);
