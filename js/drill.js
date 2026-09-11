@@ -1773,8 +1773,6 @@ export function handleDrillKeydown(e) {
     }
 }
 
-let keepAliveAudioCtx = null;
-let keepAliveOsc = null;
 let speakTimeoutId = null;
 let cachedVoices = [];
 
@@ -1858,30 +1856,8 @@ function getBestVoice(targetLangCode) {
     return matching[0];
 }
 
-// Maintient la liaison audio active en tâche de fond avec une onde sub-audible inaudible (30Hz)
-export function startAudioKeepAlive() {
-    try {
-        const AudioCtx = window.AudioContext || window.webkitAudioContext;
-        if (!AudioCtx) return;
-        if (!keepAliveAudioCtx) {
-            keepAliveAudioCtx = new AudioCtx();
-        }
-        if (keepAliveAudioCtx.state === 'suspended') {
-            keepAliveAudioCtx.resume();
-        }
-        if (!keepAliveOsc) {
-            keepAliveOsc = keepAliveAudioCtx.createOscillator();
-            const gain = keepAliveAudioCtx.createGain();
-            keepAliveOsc.frequency.value = 30;
-            gain.gain.value = 0.0005;
-            keepAliveOsc.connect(gain);
-            gain.connect(keepAliveAudioCtx.destination);
-            keepAliveOsc.start();
-        }
-    } catch (e) {
-        // Ignorer silencieusement si bloqué avant interaction
-    }
-}
+// Maintien audio supprimé : l'oscillateur Web Audio permanent provoquait l'affichage continu de l'icône audio/voix dans l'onglet du navigateur
+export function startAudioKeepAlive() {}
 
 // Fonction de prononciation utilisant la synthèse vocale du navigateur
 function speakWord(text, lang) {
@@ -1891,8 +1867,6 @@ function speakWord(text, lang) {
         clearTimeout(speakTimeoutId);
         speakTimeoutId = null;
     }
-
-    startAudioKeepAlive();
 
     // N'annuler que si une voix est effectivement en train de parler
     const wasSpeaking = window.speechSynthesis.speaking;

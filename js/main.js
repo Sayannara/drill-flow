@@ -1,5 +1,5 @@
 import { vocabulary } from './data/vocabulary.js?v=187';
-import { initDrillSession, handleDrillKeydown, startAudioKeepAlive, getActivePoolMaxSize } from './drill.js?v=187';
+import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=194';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
@@ -1806,9 +1806,11 @@ window.addEventListener('DOMContentLoaded', () => {
     // Appliquer la traduction initiale sur la page globale
     translatePage();
 
-    // Pré-activation de l'audio dès la première interaction utilisateur pour éviter toute coupure Bluetooth/DAC
+    // Pré-initialisation des voix dès la première interaction utilisateur sans maintenir de son permanent
     const primeAudio = () => {
-        startAudioKeepAlive();
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+            window.speechSynthesis.getVoices();
+        }
         window.removeEventListener('click', primeAudio);
         window.removeEventListener('keydown', primeAudio);
         window.removeEventListener('touchstart', primeAudio);
