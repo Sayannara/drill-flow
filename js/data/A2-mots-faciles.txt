@@ -1,0 +1,300 @@
+# Liste des 298 mots faciles du niveau A2 (étape 1 / fondamentaux)
+
+word_20 | FR: ah | EN: ah | ES: ah | DE: ah | interj
+word_281 | FR: assez / suffisamment | EN: enough / sufficiently | ES: suficiente / bastante | DE: genug / ausreichend | adverbe
+word_291 | FR: sauf / excepté | EN: except / apart from / but | ES: excepto / salvo | DE: außer | prep
+word_26 | FR: seul / solitaire | EN: alone / lonely / solitary | ES: solo / solitario | DE: allein / einsam | adjectif
+word_435 | FR: donner un coup de pied / botter | EN: kick | ES: patear / dar una patada | DE: treten / kicken | verbe
+word_558 | FR: emballer / faire sa valise | EN: pack / wrap | ES: empacar / hacer la maleta | DE: packen / einpacken | verbe
+word_318 | FR: filmer / tourner / enregistrer | EN: film / shoot / record | ES: filmar / rodar / grabar | DE: filmen / aufnehmen | verbe
+word_455 | FR: mener / diriger / guider | EN: lead / guide / direct | ES: guiar / liderar / dirigir | DE: führen / leiten | verbe
+word_626 | FR: pousser / presser | EN: push / press / shove | ES: empujar / apretar | DE: schieben / drücken / stoßen | verbe
+word_565 | FR: réussir / passer | EN: pass / succeed | ES: aprobar / pasar | DE: bestehen / vorbeigehen | verbe
+word_284 | FR: surtout / particulièrement / notamment | EN: especially / particularly / notably | ES: especialmente / sobre todo | DE: besonders / vor allem | adverbe
+word_404 | FR: y compris / avec | EN: including / with | ES: incluyendo / inclusive | DE: einschließlich / samt | prep
+word_4 | FR: accepter | EN: accept / agree to | ES: aceptar | DE: akzeptieren / annehmen | verbe
+word_55 | FR: attaquer | EN: attack | ES: atacar | DE: angreifen | verbe
+word_316 | FR: combattre / se battre / lutter | EN: fight / battle / struggle | ES: pelear / luchar / combatir | DE: kämpfen / streiten | verbe
+word_234 | FR: diriger / mener / guider | EN: direct / lead / guide | ES: dirigir / liderar / guiar | DE: leiten / führen | verbe
+word_362 | FR: guider / orienter / mener | EN: guide / lead / direct | ES: guiar / orientar / dirigir | DE: führen / leiten | verbe
+word_425 | FR: inviter / convier | EN: invite | ES: invitar / convidar | DE: einladen / bitten | verbe
+word_24 | FR: permettre / autoriser | EN: allow / permit / let | ES: permitir / autorizar | DE: erlauben / gestatten | verbe
+word_588 | FR: planter | EN: plant | ES: plantar | DE: pflanzen | verbe
+word_606 | FR: préférer | EN: prefer | ES: preferir | DE: bevorzugen / vorziehen | verbe
+word_653 | FR: refuser / rejeter | EN: refuse / decline / reject | ES: rechazar / negar | DE: ablehnen / verweigern | verbe
+word_658 | FR: réparer / dépanner | EN: repair / fix / mend | ES: reparar / arreglar | DE: reparieren / ausbessern | verbe
+word_660 | FR: répondre | EN: reply / answer / respond | ES: responder / contestar | DE: antworten / erwidern | verbe
+word_837 | FR: toucher / effleurer | EN: touch / feel | ES: tocar / palpar | DE: berühren / anfassen | verbe
+word_168 | FR: comparer | EN: compare / match | ES: comparar / cotejar | DE: vergleichen / abgleichen | verbe
+word_175 | FR: connecter / relier / brancher | EN: connect / link / plug in | ES: conectar / enlazar / unir | DE: verbinden / anschließen | verbe
+word_180 | FR: continuer / poursuivre | EN: continue / go on / carry on | ES: continuar / seguir | DE: weitergehen / fortsetzen | verbe
+word_130 | FR: célébrer / fêter | EN: celebrate | ES: celebrar / festejar | DE: feiern / zelebrieren | verbe
+word_219 | FR: décrire | EN: describe | ES: describir | DE: beschreiben | verbe
+word_225 | FR: détruire / démolir | EN: destroy / ruin / wreck | ES: destruir / destrozar | DE: zerstören / vernichten | verbe
+word_609 | FR: empêcher / éviter / prévenir | EN: prevent / stop / avoid | ES: impedir / evitar / prevenir | DE: verhindern / vermeiden | verbe
+word_400 | FR: imaginer / concevoir | EN: imagine / picture | ES: imaginar / figurarse | DE: sich vorstellen / erdenken | verbe
+word_552 | FR: organiser / planifier | EN: organise / organize / plan | ES: organizar / planear | DE: organisieren / planen | verbe
+word_619 | FR: promettre | EN: promise / pledge | ES: prometer | DE: versprechen / zusagen | verbe
+word_621 | FR: protéger / préserver | EN: protect / guard / shield | ES: proteger / resguardar | DE: schützen / beschützen | verbe
+word_607 | FR: préparer / cuisiner | EN: prepare / make | ES: preparar / cocinar | DE: vorbereiten / zubereiten | verbe
+word_51 | FR: comme / en tant que | EN: as | ES: como | DE: wie / als | prep
+word_34 | FR: n'importe lequel / n'importe laquelle | EN: any | ES: cualquiera | DE: irgendein / jeder | pron
+word_573 | FR: par | EN: per | ES: por | DE: pro | prep
+word_548 | FR: sur | EN: onto / upon | ES: sobre / encima de | DE: auf | prep
+word_23 | FR: tout / tous / toutes | EN: all | ES: todo / todos / todas | DE: alle / alles | pron
+word_17 | FR: après | EN: after | ES: después de | DE: nach | prep
+word_48 | FR: autour | EN: around | ES: alrededor | DE: herum | adverbe
+word_76 | FR: avant | EN: before | ES: antes de | DE: vor | prep
+word_37 | FR: de toute façon / en tout cas | EN: anyway / anyhow / in any case | ES: de todos modos / de todas formas | DE: jedenfalls / sowieso / wie dem auch sei | adverbe
+word_732 | FR: depuis | EN: since | ES: desde | DE: seit | prep
+word_27 | FR: le long de | EN: along | ES: a lo largo de | DE: entlang | prep
+word_266 | FR: non plus / soit | EN: either | ES: tampoco / o | DE: auch nicht / entweder | adverbe
+word_30 | FR: parmi | EN: among | ES: entre | DE: unter | prep
+word_888 | FR: pendant que | EN: while | ES: mientras | DE: während | conjonction
+word_25 | FR: presque / quasiment | EN: almost / nearly | ES: casi / por poco | DE: fast / beinahe | adverbe
+word_524 | FR: presque / à peu près | EN: nearly / almost | ES: casi / por poco | DE: fast / beinahe | adverbe
+word_414 | FR: à l'intérieur / dedans | EN: inside / indoors | ES: adentro / en el interior | DE: drinnen / innen | adverbe
+word_7 | FR: agir | EN: act | ES: actuar | DE: handeln | verbe
+word_415 | FR: au lieu de / à la place de | EN: instead / in place of | ES: en lugar de / en vez de | DE: stattdessen / anstatt | adverbe
+word_29 | FR: bien que | EN: although | ES: aunque | DE: obwohl | conjonction
+word_109 | FR: brûler | EN: burn | ES: quemar | DE: brennen / verbrennen | verbe
+word_378 | FR: cacher / dissimuler | EN: hide / conceal | ES: esconder / ocultar | DE: verstecken / verbergen | verbe
+word_18 | FR: contre | EN: against | ES: contra | DE: gegen | prep
+word_187 | FR: copier | EN: copy | ES: copiar | DE: kopieren | verbe
+word_584 | FR: cueillir / ramasser | EN: pick / gather | ES: recoger / recolectar | DE: pflücken / sammeln | verbe
+word_28 | FR: déjà | EN: already | ES: ya | DE: schon / bereits | adverbe
+word_439 | FR: embrasser / baiser | EN: kiss | ES: besar | DE: küssen | verbe
+word_83 | FR: entre | EN: between | ES: entre | DE: zwischen | prep
+word_394 | FR: faire mal / blesser | EN: hurt / injure / harm | ES: doler / lastimar / herir | DE: wehtun / verletzen | verbe
+word_778 | FR: faire un pas / marcher (sur qch) | EN: step | ES: dar un paso | DE: treten | verbe
+word_726 | FR: fermer | EN: shut / close | ES: cerrar | DE: schließen / zumachen | verbe
+word_384 | FR: frapper / toucher / cogner | EN: hit / strike | ES: golpear / pegar | DE: schlagen / treffen | verbe
+word_262 | FR: gagner / mériter | EN: earn / make | ES: ganar / devengar | DE: verdienen | verbe
+word_257 | FR: laisser tomber / lâcher | EN: drop / let fall | ES: dejar caer / soltar | DE: fallen lassen / abwerfen | verbe
+word_38 | FR: n'importe où | EN: anywhere | ES: en cualquier lugar / en cualquier parte | DE: irgendwo | adverbe
+word_35 | FR: n'importe qui | EN: anybody | ES: cualquiera | DE: irgendjemand | pron
+word_687 | FR: naviguer | EN: sail | ES: navegar | DE: segeln | verbe
+word_36 | FR: ne plus / plus / ne ... plus | EN: any more / anymore / no longer | ES: ya no | DE: nicht mehr | adverbe
+word_287 | FR: partout / aux quatre coins | EN: everywhere / all over | ES: en todas partes / por todos lados | DE: überall / allerorts | adverbe
+word_200 | FR: pleurer / crier | EN: cry / weep | ES: llorar / gritar | DE: weinen / schreien | verbe
+word_717 | FR: plusieurs | EN: several | ES: varios | DE: mehrere | adverbe
+word_461 | FR: prêter | EN: lend / loan | ES: prestar | DE: leihen / ausleihen | verbe
+word_759 | FR: quelque part | EN: somewhere | ES: en algún lugar | DE: irgendwo | adverbe
+word_470 | FR: relier / lier | EN: link / connect | ES: enlazar / conectar / unir | DE: verbinden | verbe
+word_775 | FR: rester / demeurer / loger | EN: stay / remain / lodge | ES: quedarse / permanecer / alojarse | DE: bleiben / verweilen / übernachten | verbe
+word_507 | FR: s'en soucier / déranger | EN: mind / bother / care | ES: importar / molestar | DE: ausmachen / stören | verbe
+word_434 | FR: sauter / bondir | EN: jump / leap / hop | ES: saltar / brincar | DE: springen / hüpfen | verbe
+word_667 | FR: se reposer / faire une pause | EN: rest / relax / take a break | ES: descansar / reposar | DE: sich ausruhen / rasten | verbe
+word_118 | FR: se soucier | EN: care | ES: preocuparse por | DE: sich kümmern | verbe
+word_673 | FR: sonner / retentir | EN: ring / chime | ES: sonar / repicar | DE: klingeln / läuten | verbe
+word_896 | FR: souhaiter / désirer | EN: wish / desire / want | ES: desear / querer | DE: wünschen / ersehnen | verbe
+word_466 | FR: soulever / lever / hausser | EN: lift / raise / elevate | ES: levantar / alzar | DE: heben / anheben | verbe
+word_332 | FR: suivant / suivante | EN: following / next | ES: siguiente / próximo | DE: folgend / nächste | adjectif
+word_386 | FR: tenir / garder | EN: hold / keep | ES: sostener / aguantar / sujetar | DE: halten / festhalten | verbe
+word_625 | FR: tirer | EN: pull / drag | ES: tirar / jalar | DE: ziehen / zerren | verbe
+word_437 | FR: tuer | EN: kill | ES: matar | DE: töten / umbringen | verbe
+word_710 | FR: vendre | EN: sell | ES: vender | DE: verkaufen | verbe
+word_474 | FR: verrouiller / fermer à clé | EN: lock | ES: cerrar con llave | DE: abschließen | verbe
+word_555 | FR: à l'extérieur / dehors | EN: outside / outdoors | ES: afuera / fuera | DE: draußen | adverbe
+word_303 | FR: échouer / rater | EN: fail / flunk | ES: fallar / fracasar / suspender | DE: scheitern / durchfallen | verbe
+word_692 | FR: économiser / sauver / sauvegarder | EN: save / rescue / store | ES: ahorrar / salvar / guardar | DE: sparen / retten / speichern | verbe
+word_40 | FR: apparaître / sembler | EN: appear / seem | ES: aparecer / parecer | DE: erscheinen / vorkommen | verbe
+word_78 | FR: appartenir | EN: belong | ES: pertenecer | DE: gehören | verbe
+word_127 | FR: attraper / capturer | EN: catch / grab | ES: atrapar / coger / agarrar | DE: fangen / erwischen | verbe
+word_702 | FR: chercher / rechercher / fouiller | EN: search / seek / look for | ES: buscar / investigar | DE: suchen / durchsuchen | verbe
+word_190 | FR: compter | EN: count | ES: contar | DE: zählen | verbe
+word_725 | FR: crier / hurler | EN: shout / yell / scream | ES: gritar / vociferar | DE: schreien / rufen | verbe
+word_97 | FR: emprunter | EN: borrow | ES: pedir prestado / tomar prestado | DE: leihen / borgen | verbe
+word_648 | FR: enregistrer | EN: record / tape | ES: grabar | DE: aufnehmen | verbe
+word_280 | FR: entrer / pénétrer | EN: enter / come in / go in | ES: entrar / ingresar | DE: betreten / eintreten / hereinkommen | verbe
+word_443 | FR: frapper / toquer | EN: knock / tap | ES: tocar / golpear | DE: klopfen / anklopfen | verbe
+word_750 | FR: fumer | EN: smoke | ES: fumar | DE: rauchen | verbe
+word_811 | FR: goûter | EN: taste | ES: probar | DE: schmecken | verbe
+word_826 | FR: jeter / lancer | EN: throw / toss / cast | ES: tirar / lanzar / arrojar | DE: werfen / schleudern | verbe
+word_633 | FR: lever / hausser / élever | EN: raise / lift / boost | ES: levantar / alzar / subir | DE: heben / anheben / erhöhen | verbe
+word_545 | FR: offrir / proposer | EN: offer / provide | ES: ofrecer / proponer | DE: anbieten / offerieren | verbe
+word_720 | FR: partager | EN: share | ES: compartir | DE: teilen | verbe
+word_662 | FR: rapporter / relater | EN: report / recount | ES: informar / relatar | DE: berichten / melden | verbe
+word_538 | FR: remarquer / s'apercevoir / observer | EN: notice / perceive / spot | ES: notar / fijarse / advertir | DE: bemerken / wahrnehmen | verbe
+word_901 | FR: s'inquiéter / se tracasser | EN: worry / fret | ES: preocuparse / inquietarse | DE: sich sorgen / beunruhigen | verbe
+word_77 | FR: se comporter / agir | EN: behave / act | ES: comportarse / actuar | DE: sich verhalten / benehmen | verbe
+word_493 | FR: se marier / épouser | EN: marry / wed | ES: casarse / contraer matrimonio | DE: heiraten | verbe
+word_748 | FR: sourire | EN: smile | ES: sonreír | DE: lächeln | verbe
+word_196 | FR: traverser | EN: cross | ES: cruzar | DE: überqueren | verbe
+word_776 | FR: voler / dérober | EN: steal / rob | ES: robar / hurtar | DE: stehlen / rauben | verbe
+word_19 | FR: être d'accord / accepter | EN: agree / concur | ES: estar de acuerdo / acordar | DE: zustimmen / einverstanden sein | verbe
+word_830 | FR: attacher / nouer / lier | EN: tie / bind / fasten | ES: atar / amarrar / ligar | DE: binden / festbinden | verbe
+word_449 | FR: atterrir | EN: land | ES: aterrizar | DE: landen | verbe
+word_827 | FR: bien rangé / soigné / ordonné | EN: tidy / neat / orderly | ES: ordenado / aseado | DE: ordentlich / gepflegt | adjectif
+word_114 | FR: camper | EN: camp | ES: acampar | DE: campen | verbe
+word_2 | FR: capable / en mesure | EN: able / capable | ES: capaz | DE: fähig / imstande | adjectif
+word_160 | FR: collectionner | EN: collect | ES: coleccionar | DE: sammeln | verbe
+word_238 | FR: disparaître | EN: disappear / vanish | ES: desaparecer / esfumarse | DE: verschwinden | verbe
+word_240 | FR: découvrir / trouver | EN: discover / find out | ES: descubrir / hallar | DE: entdecken / herausfinden | verbe
+word_326 | FR: en forme / vigoureux | EN: fit / healthy / in shape | ES: en forma / saludable | DE: fit / gesund | adjectif
+word_575 | FR: exécuter / jouer / présenter | EN: perform / execute / play | ES: interpretar / actuar / realizar | DE: aufführen / spielen / bieten | verbe
+word_880 | FR: faible / fragile | EN: weak / frail / fragile | ES: débil / frágil | DE: schwach / kraftlos | adjectif
+word_680 | FR: impoli / impolie / grossier | EN: rude / impolite / insolent | ES: grosero / grosera / maleducado | DE: unhöflich / frech | adjectif
+word_304 | FR: juste / équitable | EN: fair / just / equitable | ES: justo / justa / equitativo | DE: fair / gerecht | adjectif
+word_39 | FR: l'application | EN: app / application | ES: la aplicación | DE: die App | nom
+word_427 | FR: l'article / l'élément / l'objet | EN: item / article / object | ES: el artículo / el elemento / el objeto | DE: der Artikel / der Gegenstand | nom
+word_465 | FR: l'ascenseur | EN: lift / elevator | ES: el ascensor / el elevador | DE: der Aufzug / der Fahrstuhl | nom
+word_547 | FR: l'huile / le pétrole | EN: oil / petroleum | ES: el aceite / el petróleo | DE: das Öl / das Erdöl | nom
+word_353 | FR: l'or | EN: gold | ES: el oro | DE: das Gold | nom
+word_860 | FR: l'unité | EN: unit | ES: la unidad | DE: die Einheit | nom
+word_774 | FR: l'étoile / la vedette / la star | EN: star / celebrity | ES: la estrella / la celebridad | DE: der Stern / der Star | nom
+word_672 | FR: la bague / l'anneau | EN: ring | ES: el anillo / la sortija | DE: der Ring | nom
+word_482 | FR: la chance / la fortune | EN: luck / fortune | ES: la suerte / la fortuna | DE: das Glück | nom
+word_755 | FR: la chaussette | EN: sock | ES: el calcetín | DE: die Socke | nom
+word_429 | FR: la confiture / la marmelade | EN: jam / marmalade | ES: la mermelada | DE: die Marmelade / die Konfitüre | nom
+word_389 | FR: la corne | EN: horn | ES: el cuerno | DE: das Horn | nom
+word_138 | FR: la discussion / le bavardage | EN: chat / discussion / talk | ES: la charla / la plática | DE: der Plausch / das Gespräch | nom
+word_448 | FR: la lampe / la veilleuse | EN: lamp / light | ES: la lámpara | DE: die Lampe / die Leuchte | nom
+word_598 | FR: la pop / la musique pop | EN: pop / pop music | ES: el pop / la música pop | DE: der Pop / die Popmusik | nom
+word_760 | FR: la sorte / l'espèce / le genre | EN: sort / kind / type | ES: el tipo / la clase | DE: die Art / die Sorte | nom
+word_816 | FR: la tente | EN: tent | ES: la tienda | DE: das Zelt | nom
+word_881 | FR: la toile / le web | EN: web | ES: la red | DE: das Netz | nom
+word_875 | FR: la vue / le panorama / le regard | EN: view / vista / sight | ES: la vista / el panorama | DE: die Aussicht / der Blick | nom
+word_891 | FR: large / vaste | EN: wide / broad / vast | ES: ancho / amplio | DE: breit / weit | adjectif
+word_350 | FR: le but / l'objectif | EN: goal / objective / aim | ES: la meta / el objetivo | DE: das Ziel | nom
+word_113 | FR: le camp | EN: camp | ES: el campamento | DE: das Lager | nom
+word_139 | FR: le chef cuisinier / la cheffe cuisinière | EN: chef | ES: el chef / la chef | DE: der Küchenchef / die Küchenchefin | nom
+word_157 | FR: le code | EN: code | ES: el código | DE: der Code | nom
+word_484 | FR: le courrier / la poste | EN: mail / post | ES: el correo / la correspondencia | DE: die Post | nom
+word_327 | FR: le drapeau / la bannière | EN: flag / banner | ES: la bandera / el estandarte | DE: die Flagge / die Fahne | nom
+word_305 | FR: le fan / la fan / l'admirateur | EN: fan / supporter | ES: el fan / la fan | DE: der Fan / die Anhängerin | nom
+word_319 | FR: le film | EN: film / movie | ES: la película / el filme | DE: der Film | nom
+word_346 | FR: le gaz / l'essence | EN: gas / petrol / gasoline | ES: el gas / la gasolina | DE: das Gas / das Benzin | nom
+word_354 | FR: le golf | EN: golf | ES: el golf | DE: das Golf | nom
+word_367 | FR: le hall / le couloir / l'entrée | EN: hall / corridor / lobby | ES: el vestíbulo / el pasillo / el hall | DE: die Halle / der Flur | nom
+word_375 | FR: le héros / l'héroïne | EN: hero / heroine | ES: el héroe / la heroína | DE: der Held / die Heldin | nom
+word_430 | FR: le jazz | EN: jazz | ES: el jazz | DE: der Jazz | nom
+word_445 | FR: le labo / le laboratoire | EN: lab / laboratory | ES: el laboratorio / el lab | DE: das Labor | nom
+word_469 | FR: le lien | EN: link / connection | ES: el enlace / el vínculo | DE: die Verbindung / der Link | nom
+word_494 | FR: le masque | EN: mask | ES: la máscara / la careta | DE: die Maske | nom
+word_258 | FR: le médicament / le remède | EN: drug / medication / medicine | ES: el medicamento / la medicina | DE: das Medikament / die Arznei | nom
+word_530 | FR: le nid | EN: nest | ES: el nido | DE: das Nest | nom
+word_363 | FR: le pistolet / le revolver | EN: gun / pistol / handgun | ES: la pistola / el revólver | DE: die Pistole / die Waffe | nom
+word_347 | FR: le portail / la porte | EN: gate / portal | ES: la puerta / el portón | DE: das Tor / die Pforte | nom
+word_622 | FR: le pub / le bar | EN: pub / bar | ES: el pub / el bar | DE: die Kneipe / das Pub | nom
+word_634 | FR: le rat | EN: rat | ES: la rata | DE: die Ratte | nom
+word_674 | FR: le rock | EN: rock / rock music | ES: el rock / la música rock | DE: der Rock / die Rockmusik | nom
+word_736 | FR: le site | EN: site | ES: el sitio | DE: der Standort / die Website | nom
+word_738 | FR: le ski | EN: ski | ES: el esquí | DE: der Ski | nom
+word_635 | FR: le taux / le tarif | EN: rate / tariff | ES: la tasa / la tarifa | DE: die Rate / der Satz | nom
+word_838 | FR: le tour / la visite | EN: tour | ES: el recorrido | DE: die Tour | nom
+word_893 | FR: le vent | EN: wind | ES: el viento | DE: der Wind | nom
+word_581 | FR: photographier / prendre en photo | EN: photograph / shoot | ES: fotografiar | DE: fotografieren | verbe
+word_485 | FR: poster / envoyer par la poste | EN: mail / post | ES: enviar por correo / franquear | DE: per Post senden / abschicken | verbe
+word_213 | FR: profond | EN: deep / profound | ES: profundo / hondo | DE: tief / gründlich | adjectif
+word_96 | FR: réserver | EN: book / reserve | ES: reservar | DE: buchen / reservieren | verbe
+word_892 | FR: sauvage | EN: wild | ES: salvaje | DE: wild | adjectif
+word_639 | FR: se rendre compte / réaliser | EN: realise / realize / understand | ES: darse cuenta / percatarse | DE: erkennen / einsehen / begreifen | verbe
+word_8 | FR: actif / dynamique | EN: active / dynamic | ES: activo / dinámico | DE: aktiv / tatkräftig | adjectif
+word_16 | FR: affecter | EN: affect | ES: afectar | DE: beeinflussen | verbe
+word_57 | FR: assister à / participer à | EN: attend / participate in | ES: asistir / participar | DE: teilnehmen / besuchen | verbe
+word_128 | FR: causer / provoquer | EN: cause / trigger | ES: causar / provocar | DE: verursachen / bewirken | verbe
+word_483 | FR: chanceux / chanceuse / fortuné | EN: lucky / fortunate | ES: afortunado / afortunada | DE: glücklich | adjectif
+word_480 | FR: charmant / ravissant / adorable | EN: lovely / delightful / charming | ES: encantador / precioso / lindo | DE: lieblich / wunderschön / reizend | adjectif
+word_164 | FR: commun | EN: common | ES: común | DE: gemeinsam | adjectif
+word_233 | FR: direct / droit | EN: direct / straight | ES: directo / directa | DE: direkt | adjectif
+word_247 | FR: double | EN: double / dual | ES: doble | DE: doppelt | adjectif
+word_248 | FR: doubler / dupliquer | EN: double | ES: doblar / duplicar | DE: verdoppeln | verbe
+word_218 | FR: dépendre | EN: depend | ES: depender | DE: abhängen | verbe
+word_271 | FR: employer / embaucher / recruter | EN: employ / hire | ES: emplear / contratar | DE: beschäftigen / anstellen | verbe
+word_889 | FR: entier / complet / tout | EN: whole / entire / complete | ES: entero / completo / todo | DE: ganz / komplett / gesamt | adjectif
+word_288 | FR: exact / exacte / précis | EN: exact / accurate / precise | ES: exacto / exacta / preciso | DE: exakt / genau / präzise | adjectif
+word_292 | FR: exister | EN: exist | ES: existir | DE: existieren / bestehen | verbe
+word_336 | FR: formel / formelle | EN: formal / official | ES: formal / oficial | DE: formell / offiziell | adjectif
+word_339 | FR: frais / fraîche | EN: fresh / cool / crisp | ES: fresco / fresca | DE: frisch / kühl | adjectif
+word_391 | FR: humain / humaine | EN: human | ES: humano / humana | DE: menschlich | adjectif
+word_395 | FR: idéal / idéale / parfait | EN: ideal / perfect | ES: ideal / perfecto | DE: ideal / vollkommen | adjectif
+word_422 | FR: inventer / concevoir | EN: invent / create / devise | ES: inventar / idear | DE: erfinden / kreieren | verbe
+word_603 | FR: l'affiche / le poster | EN: poster | ES: el póster / el cartel | DE: das Poster / das Plakat | nom
+word_590 | FR: l'assiette | EN: plate | ES: el plato | DE: der Teller | nom
+word_56 | FR: l'attaque | EN: attack | ES: el ataque | DE: der Angriff | nom
+word_539 | FR: l'avis / la notification | EN: notice / announcement | ES: el aviso / la notificación | DE: der Hinweis / die Notiz / die Mitteilung | nom
+word_155 | FR: l'entraîneur / l'entraîneuse | EN: coach / trainer | ES: el entrenador / la entrenadora | DE: der Trainer / die Trainerin | nom
+word_283 | FR: l'erreur / la faute | EN: error / mistake | ES: el error / la falta | DE: der Fehler / das Versehen | nom
+word_285 | FR: l'essai / la dissertation / la rédaction | EN: essay / paper | ES: el ensayo / la redacción | DE: der Aufsatz / der Essay | nom
+word_580 | FR: l'essence / le carburant | EN: petrol / gasoline / gas | ES: la gasolina / el combustible | DE: das Benzin / der Kraftstoff | nom
+word_296 | FR: l'expert / l'experte | EN: expert / specialist | ES: el experto / la experta | DE: der Experte / die Expertin | nom
+word_357 | FR: l'herbe / le gazon | EN: grass / lawn | ES: la hierba / el césped | DE: das Gras / der Rasen | nom
+word_396 | FR: l'idiot / l'idiote | EN: idiot / fool | ES: el idiota / la idiota | DE: der Idiot / die Idiotin | nom
+word_399 | FR: l'image / la photo | EN: image / picture / photo | ES: la imagen / la foto | DE: das Bild / das Foto | nom
+word_413 | FR: l'insecte | EN: insect / bug | ES: el insecto / el bicho | DE: das Insekt | nom
+word_544 | FR: l'offre / la proposition | EN: offer / proposal | ES: la oferta / la propuesta | DE: das Angebot | nom
+word_549 | FR: l'option / le choix | EN: option / choice | ES: la opción / la elección | DE: die Option / die Wahl | nom
+word_450 | FR: l'ordinateur portable / le portable | EN: laptop / notebook | ES: la computadora portátil / el portátil | DE: der Laptop / das Notebook | nom
+word_276 | FR: l'énergie / la force / la vigueur | EN: energy / power / vigor | ES: la energía / la fuerza / el vigor | DE: die Energie / die Kraft | nom
+word_129 | FR: la cause | EN: cause | ES: la causa | DE: die Ursache | nom
+word_134 | FR: la chance / l'opportunité | EN: chance | ES: la oportunidad | DE: die Chance | nom
+word_161 | FR: la colonne | EN: column | ES: la columna | DE: die Spalte | nom
+word_162 | FR: la comédie | EN: comedy | ES: la comedia | DE: die Komödie | nom
+word_275 | FR: la fin / la conclusion / le dénouement | EN: ending / conclusion / finish | ES: el final / el desenlace / la conclusión | DE: das Ende / der Schluss | nom
+word_393 | FR: la hâte / la précipitation | EN: hurry / haste / rush | ES: la prisa / la premura | DE: die Eile / die Hast | nom
+word_501 | FR: la mémoire / le souvenir | EN: memory / recollection | ES: la memoria / el recuerdo | DE: das Gedächtnis / die Erinnerung | nom
+word_523 | FR: la nature | EN: nature | ES: la naturaleza | DE: die Natur | nom
+word_587 | FR: la planète | EN: planet | ES: el planeta | DE: der Planet | nom
+word_612 | FR: la prison | EN: prison / jail | ES: la prisión / la cárcel | DE: das Gefängnis | nom
+word_654 | FR: la région | EN: region / area | ES: la región / la zona | DE: die Region / die Gegend | nom
+word_691 | FR: la sauce | EN: sauce | ES: la salsa | DE: die Soße | nom
+word_713 | FR: la série | EN: series | ES: la serie | DE: die Serie | nom
+word_806 | FR: la tablette | EN: tablet | ES: la tableta | DE: das Tablet | nom
+word_870 | FR: la vallée | EN: valley | ES: el valle | DE: das Tal | nom
+word_125 | FR: le casino | EN: casino | ES: el casino | DE: das Casino | nom
+word_572 | FR: le centime / la pièce | EN: penny / cent | ES: el céntimo / el penique | DE: der Cent / der Penny | nom
+word_142 | FR: le choix | EN: choice | ES: la elección | DE: die Wahl | nom
+word_126 | FR: le château | EN: castle | ES: el castillo | DE: die Burg / das Schloss | nom
+word_191 | FR: le couple | EN: couple | ES: la pareja | DE: das Paar | nom
+word_194 | FR: le crime | EN: crime | ES: el crimen | DE: das Verbrechen | nom
+word_204 | FR: le cycle | EN: cycle | ES: el ciclo | DE: der Zyklus / der Kreislauf | nom
+word_207 | FR: le danger | EN: danger | ES: el peligro | DE: die Gefahr | nom
+word_215 | FR: le diplôme / le degré | EN: degree | ES: el título | DE: der Abschluss | nom
+word_647 | FR: le disque / le vinyle / le record | EN: record / disc / vinyl | ES: el disco / el vinilo / el récord | DE: die Schallplatte / die Platte / der Rekord | nom
+word_321 | FR: le doigt | EN: finger | ES: el dedo | DE: der Finger | nom
+word_251 | FR: le drame | EN: drama | ES: el drama | DE: das Drama | nom
+word_361 | FR: le guide / la guide | EN: guide / tour guide | ES: el guía / la guía | DE: der Reiseleiter / die Reiseleiterin | nom
+word_385 | FR: le hockey | EN: hockey | ES: el hockey | DE: das Hockey | nom
+word_229 | FR: le journal intime | EN: diary | ES: el diario | DE: das Tagebuch | nom
+word_456 | FR: le leader / la leader | EN: leader | ES: el líder / la líder | DE: der Anführer / die Anführerin | nom
+word_472 | FR: le litre | EN: litre / liter | ES: el litro | DE: der Liter | nom
+word_504 | FR: le milieu / le centre | EN: middle / center | ES: el medio / el centro | DE: die Mitte / das Zentrum | nom
+word_277 | FR: le moteur | EN: engine / motor | ES: el motor | DE: der Motor | nom
+word_503 | FR: le métal | EN: metal | ES: el metal | DE: das Metall | nom
+word_561 | FR: le palais | EN: palace | ES: el palacio | DE: der Palast | nom
+word_585 | FR: le pilote / la pilote | EN: pilot | ES: el piloto / la piloto | DE: der Pilot / die Pilotin | nom
+word_586 | FR: le pirate / la pirate | EN: pirate | ES: el pirata / la pirata | DE: der Pirat / die Piratin | nom
+word_661 | FR: le rapport / le compte-rendu | EN: report | ES: el informe / el reporte | DE: der Bericht | nom
+word_540 | FR: le roman | EN: novel | ES: la novela | DE: der Roman | nom
+word_340 | FR: le réfrigérateur / le frigo | EN: fridge / refrigerator | ES: el refrigerador / el frigorífico | DE: der Kühlschrank | nom
+word_689 | FR: le salaire / la paie | EN: salary / pay | ES: el salario / el sueldo | DE: das Gehalt / der Lohn | nom
+word_698 | FR: le score / le résultat / la marque | EN: score / mark / tally | ES: el puntaje / el resultado / el tanteador | DE: das Ergebnis / der Spielstand / der Punktestand | nom
+word_707 | FR: le secret | EN: secret | ES: el secreto | DE: das Geheimnis | nom
+word_711 | FR: le sens | EN: sense | ES: el sentido | DE: der Sinn | nom
+word_787 | FR: le stress | EN: stress | ES: el estrés | DE: der Stress | nom
+word_831 | FR: le tigre / la tigresse | EN: tiger | ES: el tigre / la tigresa | DE: der Tiger / die Tigerin | nom
+word_874 | FR: le virus | EN: virus | ES: el virus | DE: das Virus | nom
+word_498 | FR: les médias | EN: media | ES: los medios | DE: die Medien | nom
+word_486 | FR: majeur / majeure / important | EN: major / main / important | ES: mayor / principal / importante | DE: wichtig / bedeutend / groß | adjectif
+word_511 | FR: mobile / portable | EN: mobile / portable | ES: móvil / portátil | DE: mobil / tragbar | adjectif
+word_536 | FR: normal / normale | EN: normal | ES: normal | DE: normal | adjectif
+word_670 | FR: passer en revue / réviser / examiner | EN: review / revise / examine | ES: revisar / repasar / examinar | DE: überprüfen / wiederholen | verbe
+word_595 | FR: poli / polie / courtois | EN: polite / courteous / civil | ES: educado / educada / cortés | DE: höflich / anständig | adjectif
+word_468 | FR: probable / vraisemblable | EN: likely / probable | ES: probable / verosímil | DE: wahrscheinlich / vermutlich | adjectif
+word_623 | FR: public / publique | EN: public | ES: público / pública | DE: öffentlich | adjectif
+word_651 | FR: réduire / diminuer / baisser | EN: reduce / decrease / lower | ES: reducir / disminuir / bajar | DE: reduzieren / verringern / senken | verbe
+word_331 | FR: se concentrer / focaliser | EN: focus / concentrate | ES: concentrarse / enfocarse | DE: sich konzentrieren / fokussieren | verbe
+word_45 | FR: se disputer / débattre / se quereller | EN: argue / dispute / quarrel | ES: discutir / pelear / debatir | DE: streiten / diskutieren | verbe
+word_715 | FR: servir | EN: serve | ES: servir | DE: servieren | verbe
+word_731 | FR: simple / basique | EN: simple / basic / easy | ES: simple / sencillo / básico | DE: einfach / schlicht | adjectif
+word_754 | FR: social | EN: social | ES: social | DE: sozial | adjectif
+word_788 | FR: stupide / bête / idiot | EN: stupid / foolish / silly | ES: estúpido / tonto / bobo | DE: dumm / blöd / albern | adjectif
+word_66 | FR: terrible / affreux / horrible | EN: awful / terrible / horrible | ES: terrible / horrible / espantoso | DE: schrecklich / furchtbar / scheußlich | adjectif
+word_836 | FR: total | EN: total | ES: total | DE: gesamt | adjectif
+word_820 | FR: épais / gros | EN: thick / dense | ES: grueso / denso / espeso | DE: dick / dicht | adjectif
+word_32 | FR: ancien / antique | EN: ancient / antique | ES: antiguo / milenario | DE: alt / antik / uralt | adjectif
+word_49 | FR: arranger / organiser | EN: arrange / organize | ES: organizar / arreglar | DE: arrangieren / organisieren | verbe
+word_6 | FR: atteindre / accomplir / réussir | EN: achieve / accomplish / reach | ES: lograr / alcanzar / conseguir | DE: erreichen / schaffen | verbe
+word_59 | FR: attractif / séduisant / attrayant | EN: attractive / charming / appealing | ES: atractivo / seductor | DE: attraktiv / anziehend | adjectif
+word_132 | FR: certain / sûr | EN: certain / sure / definite | ES: cierto / seguro | DE: sicher / gewiss | adjectif

@@ -313,7 +313,7 @@ export const translations = {
         options_reset_confirm: "Réinitialiser toute la progression pour {pair} ? Cette action est irréversible.",
         options_reset_success: "Progression réinitialisée pour {pair}.",
         footer_rights: "Tous droits réservés.",
-        footer_deployed: "Déployé le 11/09/2026"
+        footer_deployed: "Déployé le 13/09/2026"
     },
     en: {
         // Nav
@@ -581,7 +581,7 @@ export const translations = {
         options_reset_confirm: "Reset all progress for {pair}? This action cannot be undone.",
         options_reset_success: "Progress reset for {pair}.",
         footer_rights: "All rights reserved.",
-        footer_deployed: "Deployed on 2026-09-11"
+        footer_deployed: "Deployed on 2026-09-13"
     },
     de: {
         // Nav
@@ -849,7 +849,7 @@ export const translations = {
         options_reset_confirm: "Gesamten Fortschritt für {pair} zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.",
         options_reset_success: "Fortschritt für {pair} zurückgesetzt.",
         footer_rights: "Alle Rechte vorbehalten.",
-        footer_deployed: "Bereitgestellt am 11.09.2026"
+        footer_deployed: "Bereitgestellt am 13.09.2026"
     },
     es: {
         // Nav
@@ -1117,6 +1117,6 @@ export const translations = {
         options_reset_confirm: "¿Restablecer todo el progreso de {pair}? Esta acción es irreversible.",
         options_reset_success: "Progreso restablecido para {pair}.",
         footer_rights: "Todos los derechos reservados.",
-        footer_deployed: "Desplegado el 11/09/2026"
+        footer_deployed: "Desplegado el 13/09/2026"
     }
 };

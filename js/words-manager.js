@@ -1,4 +1,4 @@
-import { vocabulary as originalVocabulary } from './data/vocabulary.js?v=186';
+import { vocabulary as originalVocabulary } from './data/vocabulary.js?v=202';
 import { initAdminAuthGate } from './admin-auth.js?v=3';
 
 // ==========================================================================
@@ -610,9 +610,9 @@ function updateStatusIndicator(state = 'saved') {
         dot.className = 'wm-status-dot';
         dot.style.background = '#10b981';
         if (modCount > 0) {
-            text.textContent = `Sauvegardé ⚡ (${modCount} modif.)`;
+            text.textContent = `Sauvegardé (${modCount} modif.)`;
         } else {
-            text.textContent = 'Sauvegardé ⚡';
+            text.textContent = 'Sauvegardé';
         }
     }
 }
@@ -847,6 +847,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Boutons d'action
+    const btnRefresh = document.getElementById('wm-btn-refresh');
+    if (btnRefresh) {
+        btnRefresh.addEventListener('click', () => {
+            window.location.reload();
+        });
+    }
+
     const btnExport = document.getElementById('wm-btn-export');
     if (btnExport) {
         btnExport.addEventListener('click', exportVocabularyFile);

@@ -346,8 +346,8 @@ async function initConfigPage() {
         // Enregistrement dans Firestore centralisé
         const result = await saveAppConfigToCloud(payload);
         if (result.success) {
-            updateSyncBadge('⚡ Sauvegardé dans la base de données', '#10b981');
-            if (!silent) showToast('⚡ Enregistré dans la base de données');
+            updateSyncBadge('Sauvegardé dans la base de données', '#10b981');
+            if (!silent) showToast('Enregistré dans la base de données');
             return true;
         } else {
             updateSyncBadge('⚠️ Sauvegardé en local (erreur cloud)', '#f59e0b');
@@ -423,7 +423,7 @@ async function initConfigPage() {
         const cloudData = await fetchAppConfigFromCloud();
         if (cloudData) {
             loadCurrentSettings();
-            updateSyncBadge('☁️ Connecté à la base de données ⚡', '#10b981');
+            updateSyncBadge('Connecté à la base de données', '#10b981');
         } else {
             updateSyncBadge('☁️ Mode local (défauts actifs)', '#64748b');
         }
