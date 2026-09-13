@@ -8,6 +8,7 @@ import {
     saveAppConfigToCloud
 } from './config/app-config.js';
 import { getCefrThresholds, DEFAULT_CEFR_THRESHOLDS } from './config/cefr.js';
+import { initAdminAuthGate } from './admin-auth.js?v=3';
 
 async function initConfigPage() {
     // 1. Éléments du formulaire
@@ -433,8 +434,11 @@ async function initConfigPage() {
 }
 
 // Lancement robuste quel que soit le timing de chargement du module
+function startAfterAuth() {
+    initAdminAuthGate(initConfigPage);
+}
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initConfigPage);
+    document.addEventListener('DOMContentLoaded', startAfterAuth);
 } else {
-    initConfigPage();
+    startAfterAuth();
 }

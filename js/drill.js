@@ -1,4 +1,4 @@
-import { vocabulary } from './data/vocabulary.js?v=180';
+import { vocabulary } from './data/vocabulary.js?v=196';
 import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js';
 import { translations } from './i18n.js';
 import { getCurrentUser } from './auth.js';
@@ -331,6 +331,84 @@ function highlightExampleSentence(sentence, targetWord, styleOrClass) {
     return sentence;
 }
 
+// Recherche si la saisie de l'utilisateur correspond à un synonyme légitime du mot source dans un autre niveau CECRL
+function findAlternativeLevelMatch(currentWord, userInput, langSource, langTarget, isToleranceActive) {
+    if (!userInput || !userInput.trim() || !currentWord) return null;
+    
+    const tgtLang = (langTarget || '').toLowerCase();
+    
+    // 1. Extraire les termes de la langue source du mot courant
+    const extractTerms = (val) => {
+        if (!val) return [];
+        const terms = [];
+        val.split('/').forEach(part => {
+            const noParens = normalizeText(part.replace(/\(.*?\)/g, ' '));
+            if (noParens) {
+                terms.push(noParens);
+                terms.push(...getArticleAlternatives(noParens));
+                terms.push(noParens.replace(/^(the |a |an |to |der |die |das |ein |eine |el |la |los |las |un |una |le |la |les |l'|se |s'|me |te |sich )/gi, '').trim());
+            }
+        });
+        return [...new Set(terms.filter(t => t.length > 0))];
+    };
+
+    const currentSourceTerms = extractTerms(currentWord[langSource]);
+    if (currentSourceTerms.length === 0) return null;
+
+    // 2. Options de saisie utilisateur
+    const normalizedInput = normalizeText(userInput);
+    const inputNoParens = normalizeText(userInput.replace(/\(.*?\)/g, ' '));
+    const userInputOpts = [
+        normalizedInput,
+        inputNoParens,
+        ...getArticleAlternatives(normalizedInput),
+        ...getArticleAlternatives(inputNoParens)
+    ];
+    if (userInput.includes('.')) {
+        const inputNoDots = normalizeText(userInput.replace(/\.{2,}/g, ' '));
+        userInputOpts.push(inputNoDots, ...getArticleAlternatives(inputNoDots));
+    }
+    const cleanUserInputOpts = [...new Set(userInputOpts.filter(t => t.length > 0))];
+    const tolerantInputOpts = isToleranceActive ? cleanUserInputOpts.map(opt => normalizeTolerant(opt, tgtLang)) : [];
+
+    // 3. Parcourir le vocabulaire à la recherche d'une carte d'un AUTRE niveau partageant la même source
+    for (const other of vocabulary) {
+        if (other.id === currentWord.id) continue;
+        if (!other.level || other.level === currentWord.level) continue;
+
+        const otherSourceTerms = extractTerms(other[langSource]);
+        const hasSourceOverlap = currentSourceTerms.some(st => otherSourceTerms.includes(st));
+        if (!hasSourceOverlap) continue;
+
+        // Vérifier si la saisie correspond à une traduction cible valide de cet autre mot
+        const otherTargetOptions = [];
+        (other[langTarget] || '').split('/').forEach(s => {
+            otherTargetOptions.push(normalizeText(s));
+            otherTargetOptions.push(normalizeText(s.replace(/\(.*?\)/g, ' ')));
+        });
+        const allOtherTargetOpts = [];
+        otherTargetOptions.forEach(opt => {
+            allOtherTargetOpts.push(...getArticleAlternatives(opt));
+            allOtherTargetOpts.push(opt.replace(/^(the |a |an |to |der |die |das |ein |eine |el |la |los |las |un |una |le |la |les |l'|se |s'|me |te |sich )/gi, '').trim());
+        });
+
+        const isMatch = cleanUserInputOpts.some(inputOpt => allOtherTargetOpts.includes(inputOpt));
+        if (isMatch) {
+            return { word: other, level: other.level };
+        }
+
+        if (isToleranceActive) {
+            const tolerantTargetOpts = allOtherTargetOpts.map(opt => normalizeTolerant(opt, tgtLang));
+            const isTolerantMatch = tolerantInputOpts.some(inputOpt => tolerantTargetOpts.includes(inputOpt));
+            if (isTolerantMatch) {
+                return { word: other, level: other.level };
+            }
+        }
+    }
+
+    return null;
+}
+
 
 // Variable configurable de la taille maximale du pool actif (100 par défaut, gérée par admin)
 export function getActivePoolMaxSize() {
@@ -634,7 +712,15 @@ function renderCurrentWord() {
     resultSection.classList.add('hidden');
     inputEl.value = '';
     inputEl.disabled = false;
+    inputEl.classList.remove('input-retry-highlight');
     sessionState.isWaitingAction = false;
+    sessionState.currentWordTriedSynonyms = new Set();
+
+    const retryHintEl = document.getElementById('drill-retry-hint');
+    if (retryHintEl) {
+        retryHintEl.innerHTML = '';
+        retryHintEl.style.display = 'none';
+    }
 
     const rewriteLine = document.getElementById('rewrite-line');
     const rewriteInput = document.getElementById('rewrite-input');
@@ -952,6 +1038,49 @@ function handleValidation() {
                 isCorrect = false;
                 isTolerantMatch = false;
             }
+        }
+
+        // Mécanisme de relance dynamique "Tant que" : validation bienveillante si synonyme d'un autre niveau
+        if (!isCorrect) {
+            if (!sessionState.currentWordTriedSynonyms) {
+                sessionState.currentWordTriedSynonyms = new Set();
+            }
+            const cleanInputKey = normalizeText(userInput.replace(/\(.*?\)/g, ' ')).trim();
+            if (cleanInputKey && !sessionState.currentWordTriedSynonyms.has(cleanInputKey)) {
+                const altMatch = findAlternativeLevelMatch(currentWord, userInput, sessionState.langSource, sessionState.langTarget, isToleranceActive);
+                if (altMatch) {
+                    sessionState.currentWordTriedSynonyms.add(cleanInputKey);
+
+                    const retryHintEl = document.getElementById('drill-retry-hint');
+                    if (retryHintEl) {
+                        const lang = getAppLanguage();
+                        const template = translations[lang]?.retry_diff_level_hint || translations['fr']?.retry_diff_level_hint || "Exact ! Mais \"{word}\" correspond au niveau {level}. Au niveau {targetLevel}, quel est le terme attendu ?";
+                        const cleanWordDisplay = escapeHtml(userInput.trim());
+                        const hintText = template
+                            .replace('{word}', `<strong>${cleanWordDisplay}</strong>`)
+                            .replace('{level}', `<span class="type-badge" style="font-size: 0.75rem; padding: 0.1rem 0.4rem; background: rgba(245, 158, 11, 0.25); color: #f59e0b; font-weight: 700;">${altMatch.level}</span>`)
+                            .replace('{targetLevel}', `<span class="type-badge" style="font-size: 0.75rem; padding: 0.1rem 0.4rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6; font-weight: 700;">${currentWord.level || ''}</span>`);
+
+                        const iconLamp = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>`;
+                        retryHintEl.innerHTML = `${iconLamp} <span>${hintText}</span>`;
+                        retryHintEl.style.display = 'inline-flex';
+                    }
+
+                    inputEl.classList.remove('input-retry-highlight');
+                    void inputEl.offsetWidth;
+                    inputEl.classList.add('input-retry-highlight');
+                    inputEl.focus();
+                    inputEl.select();
+
+                    return;
+                }
+            }
+        }
+
+        // Dès qu'on passe aux résultats (juste ou faux), masquer le bandeau d'indice de relance
+        const retryHintEl = document.getElementById('drill-retry-hint');
+        if (retryHintEl) {
+            retryHintEl.style.display = 'none';
         }
 
         // Affichage des résultats

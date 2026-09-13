@@ -1,6 +1,5 @@
 import { vocabulary as originalVocabulary } from './data/vocabulary.js?v=186';
-import { auth } from './firebase-config.js';
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { initAdminAuthGate } from './admin-auth.js?v=3';
 
 // ==========================================================================
 // Constantes & Configuration des Colonnes
@@ -11,7 +10,6 @@ const STORAGE_KEY_OVERRIDES = 'drillflow_vocab_overrides';
 const STORAGE_KEY_COLUMNS = 'drillflow_wm_columns';
 const STORAGE_KEY_FILTERS = 'drillflow_wm_filters';
 const STORAGE_KEY_COL_WIDTHS = 'drillflow_wm_col_widths';
-const STORAGE_KEY_AUTH = 'drillflow_admin_unlocked';
 
 const DEFAULT_COLUMN_WIDTHS = {
     id: 80,
@@ -740,59 +738,10 @@ function resetLocalOverrides() {
 }
 
 // ==========================================================================
-// Contrôle d'Accès Administrateur
-// ==========================================================================
-function initAdminAuthGate() {
-    const overlay = document.getElementById('wm-auth-overlay');
-    const form = document.getElementById('wm-auth-form');
-    const input = document.getElementById('wm-auth-input');
-    const errorEl = document.getElementById('wm-auth-error');
-    if (!overlay || !form || !input) return;
-
-    // Vérification de session déjà déverrouillée
-    if (sessionStorage.getItem(STORAGE_KEY_AUTH) === 'true') {
-        overlay.classList.add('hidden');
-        return;
-    }
-
-    // Vérification de l'utilisateur Firebase connecté
-    onAuthStateChanged(auth, (user) => {
-        if (user && user.email) {
-            const adminEmail = (user.email || '').toLowerCase();
-            // Accès autorisé si compte admin p-difm ou configuré
-            if (adminEmail.includes('p-difm') || adminEmail.includes('admin') || adminEmail.includes('ygreder')) {
-                sessionStorage.setItem(STORAGE_KEY_AUTH, 'true');
-                overlay.classList.add('hidden');
-                return;
-            }
-        }
-        // Sinon demander le code admin
-        overlay.classList.remove('hidden');
-    });
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const code = (input.value || '').trim();
-        // Code maître administrateur ou mot de passe de secours
-        if (code === 'drillflow' || code === 'admin' || code === 'drill2026' || code === 'drillflow2026') {
-            sessionStorage.setItem(STORAGE_KEY_AUTH, 'true');
-            overlay.classList.add('hidden');
-        } else {
-            if (errorEl) {
-                errorEl.textContent = 'Code administrateur incorrect.';
-                errorEl.style.display = 'block';
-            }
-            input.value = '';
-            input.focus();
-        }
-    });
-}
-
-// ==========================================================================
 // Branchement des Événements Globaux
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    initAdminAuthGate();
+    initAdminAuthGate(() => {});
     initData();
     initColumnSelector();
 

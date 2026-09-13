@@ -1,5 +1,6 @@
 import { db } from './firebase-config.js';
 import { collection, getDocs, doc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { initAdminAuthGate } from './admin-auth.js?v=3';
 
 let allReports = [];
 let currentSortCol = 'count';
@@ -491,7 +492,7 @@ async function loadReports() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadReports();
+    initAdminAuthGate(loadReports);
 
     const btnRefresh = document.getElementById('btn-refresh-admin');
     if (btnRefresh) {

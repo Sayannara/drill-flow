@@ -9,54 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css?v=181">
+    <link rel="stylesheet" href="/css/style.css?v=196">
+    <link rel="stylesheet" href="/css/words-manager.css?v=196">
     <style>
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
             font-family: var(--font-sans);
-            padding: 2rem 2.5rem;
-            width: 100%;
-            max-width: 100%;
             margin: 0;
             box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         .config-container {
             width: 100%;
             max-width: 860px;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: 2rem;
-        }
-        .admin-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.25rem;
-            width: 100%;
-        }
-        .admin-title {
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .admin-badge {
-            background: rgba(59, 130, 246, 0.2);
-            color: #3b82f6;
-            font-size: 0.8rem;
-            padding: 0.2rem 0.65rem;
-            border-radius: 6px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
         }
         .config-card {
             background-color: var(--surface-color);
@@ -157,9 +126,6 @@
             font-size: 0.95rem;
         }
         @media (max-width: 640px) {
-            body {
-                padding: 1.25rem 1rem;
-            }
             .config-card {
                 padding: 1.25rem 1rem;
             }
@@ -167,21 +133,52 @@
     </style>
 </head>
 <body>
-    <div class="config-container">
-        <div class="admin-header">
-            <div>
-                <h1 class="admin-title">
-                    drillFlow. <span class="admin-badge">CONFIGURATION</span>
+    <div class="wm-app">
+        <header class="wm-header">
+            <div class="wm-brand">
+                <h1 class="wm-title">
+                    <span class="logo-text"><span class="logo-white">drill</span><span class="logo-blue">Flow.</span></span>
+                    <span class="wm-badge">CONFIGURATION</span>
                 </h1>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem;">Panneau d'administration des paramètres, de l'algorithme et de l'affichage &bull; <span id="cfg-sync-status" style="color: #10b981; font-weight: 600;">⚡ Sauvegarde automatique dans le Cloud</span></p>
             </div>
-            <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
-                <a href="/admin/words.html" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; width: auto;">Words Manager</a>
-                <a href="/report.html" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; width: auto;">Signalements</a>
-                <a href="/admin/index.html" class="btn-primary btn-secondary-action" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; width: auto;">Statistiques</a>
-                <a href="/index.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; width: auto;">Site</a>
+            <div class="wm-nav-links">
+                <a href="/words.html" class="wm-nav-btn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                        <path d="M9 3v18"></path>
+                        <path d="M15 3v18"></path>
+                    </svg>
+                    Words Manager
+                </a>
+                <a href="/report.html" class="wm-nav-btn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                        <line x1="12" y1="9" x2="12" y2="13"></line>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                    Signalements
+                </a>
+                <a href="/index.html" class="wm-nav-btn btn-primary">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Site
+                </a>
+            </div>
+        </header>
+
+        <div class="wm-toolbar">
+            <div class="wm-tools-left">
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">Panneau d'administration des paramètres, de l'algorithme et de l'affichage</span>
+            </div>
+            <div class="wm-tools-right">
+                <span id="cfg-sync-status" class="wm-count-info" style="color: #10b981; font-weight: 600;">⚡ Sauvegarde automatique dans le Cloud</span>
             </div>
         </div>
+
+        <div class="wm-page-content">
+        <div class="config-container">
 
         <!-- 1. Algorithme Smart Drill -->
         <div class="config-card">
@@ -436,12 +433,38 @@
         <div class="config-actions" style="justify-content: center;">
             <button type="button" id="btn-reset-config" class="btn-primary btn-secondary-action" style="width: auto; padding: 0.75rem 1.75rem; font-size: 0.95rem;">↺ Rétablir les valeurs par défaut</button>
         </div>
+        </div>
+        </div>
     </div>
 
     <!-- Toast de confirmation -->
     <div id="config-toast" class="config-toast hidden"></div>
 
-    <script type="module" src="/js/config.js?v=181"></script>
+    <!-- Écran de contrôle d'accès Administrateur -->
+    <div id="wm-auth-overlay" class="wm-auth-overlay hidden">
+        <div class="wm-auth-card">
+            <div class="wm-auth-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            </div>
+            <h2 class="wm-auth-title">Accès Administrateur</h2>
+            <p class="wm-auth-desc">Cette page permet de modifier les paramètres de drillFlow. Connectez-vous avec
+                votre compte administrateur pour continuer.</p>
+            <form id="wm-auth-form" style="display: flex; flex-direction: column; gap: 0.85rem;">
+                <input type="email" id="wm-auth-email" class="wm-auth-input" placeholder="Adresse e-mail"
+                    autocomplete="username" autofocus>
+                <input type="password" id="wm-auth-input" class="wm-auth-input" placeholder="Mot de passe"
+                    autocomplete="current-password">
+                <p id="wm-auth-error" class="wm-auth-error" style="display: none;"></p>
+                <button type="submit" class="wm-auth-btn">Se connecter</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="/js/config.js?v=196"></script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
