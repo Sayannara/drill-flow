@@ -778,7 +778,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const updateClearButtonVisibility = () => {
             if (searchClear) {
-                searchClear.style.display = searchInput.value.trim() ? 'flex' : 'none';
+                const shouldShow = searchInput.value.trim();
+                if (shouldShow) {
+                    searchClear.style.removeProperty('display');
+                } else {
+                    searchClear.style.setProperty('display', 'none', 'important');
+                }
             }
         };
         updateClearButtonVisibility();

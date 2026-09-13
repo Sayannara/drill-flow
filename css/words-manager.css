@@ -188,7 +188,7 @@ html, body {
   padding: 0;
   width: 18px;
   height: 18px;
-  display: flex !important;
+  display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.15s ease;

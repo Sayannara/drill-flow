@@ -176,6 +176,7 @@ function renderTable() {
 
         // Recherche texte globale
         if (q) {
+            const inId = normalizeStr(item.docId).includes(q) || String(item.docId || '').replace(/\D/g, '').includes(q);
             const inFr = normalizeStr(item.fr).includes(q);
             const inEn = normalizeStr(item.en).includes(q);
             const inDe = normalizeStr(item.de).includes(q);
@@ -199,7 +200,7 @@ function renderTable() {
 
             const inUser = getUserEmails(item).some(u => normalizeStr(u).includes(q));
 
-            if (!inFr && !inEn && !inDe && !inEs && !inType && !inLevel && !inReason && !inPairs && !inComments && !inUser) {
+            if (!inId && !inFr && !inEn && !inDe && !inEs && !inType && !inLevel && !inReason && !inPairs && !inComments && !inUser) {
                 return false;
             }
         }
@@ -211,6 +212,12 @@ function renderTable() {
     filtered.sort((a, b) => {
         let comp = 0;
         switch (currentSortCol) {
+            case 'id': {
+                const numA = parseInt(String(a.docId || '').replace(/\D/g, ''), 10) || 0;
+                const numB = parseInt(String(b.docId || '').replace(/\D/g, ''), 10) || 0;
+                comp = numA - numB;
+                break;
+            }
             case 'count':
                 comp = (Number(a.count) || 1) - (Number(b.count) || 1);
                 break;
@@ -395,8 +402,10 @@ function renderTable() {
         const levelBadge = item.level ? `<span style="background: rgba(255,255,255,0.08); color: var(--text-primary); font-weight: 600; padding: 0.15rem 0.35rem; font-size: 0.72rem; border-radius: 4px;">${escapeHtml(item.level)}</span>` : '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
         const typeBadge = item.type ? `<span class="type-badge ${escapeHtml(item.type)}" style="padding: 0.15rem 0.35rem; font-size: 0.7rem; border-radius: 4px; text-transform: uppercase;">${escapeHtml(item.type)}</span>` : '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
 
+        const displayId = String(item.docId || '-').replace(/^word_/, '');
+
         tr.innerHTML = `
-            <td style="text-align: center; font-size: 0.8rem; color: var(--text-secondary);">${escapeHtml(item.docId || '-')}</td>
+            <td style="text-align: center; font-size: 0.8rem; font-weight: 500; color: var(--text-secondary);" title="${escapeHtml(item.docId || '')}">${escapeHtml(displayId)}</td>
             <td style="text-align: center; font-size: 0.9rem;">${reportCount}</td>
             <td style="white-space: nowrap;">${pairHtml}</td>
             <td style="max-width: 140px;">${exerciseWords.srcHtml}</td>
@@ -505,9 +514,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchInput) {
         const updateClearButtonVisibility = () => {
             if (searchClear) {
-                searchClear.style.display = searchInput.value.trim() ? 'flex' : 'none';
+                const shouldShow = searchInput.value.trim();
+                if (shouldShow) {
+                    searchClear.style.removeProperty('display');
+                } else {
+                    searchClear.style.setProperty('display', 'none', 'important');
+                }
             }
         };
+        updateClearButtonVisibility();
         searchInput.oninput = (e) => {
             updateClearButtonVisibility();
             searchFilter = e.target.value;
