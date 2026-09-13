@@ -131,7 +131,15 @@
 
         <div class="wm-toolbar">
             <div class="wm-tools-left">
-                <span style="color: var(--text-secondary); font-size: 0.9rem;">Mots signalés comme mal traduits par les utilisateurs</span>
+                <div class="wm-search-wrapper">
+                    <svg class="wm-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="admin-search" class="wm-search-input"
+                        placeholder="Rechercher un mot, traduction..." autocomplete="off">
+                </div>
             </div>
             <div class="wm-tools-right">
                 <span id="admin-count-info" class="wm-count-info">Chargement...</span>
