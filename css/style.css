@@ -329,6 +329,7 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     align-items: center;
     min-height: 220px;
     margin: auto;
+    transform: translateY(-5vh);
     box-sizing: border-box;
 }
 .drill-word-wrapper {
@@ -1267,11 +1268,12 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     .flashcard {
         padding: 1rem 0.5rem;
         margin-bottom: 0;
+        justify-content: center;
     }
     .drill-dynamic-area {
-        min-height: 380px;
-        transform: none;
-        margin: 0 auto;
+        min-height: auto;
+        transform: translateY(-2vh);
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
