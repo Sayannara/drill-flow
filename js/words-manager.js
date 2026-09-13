@@ -771,12 +771,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Recherche
     const searchInput = document.getElementById('wm-search-input');
+    const searchClear = document.getElementById('wm-search-clear');
     if (searchInput) {
         if (searchQuery) {
             searchInput.value = searchQuery;
         }
+        const updateClearButtonVisibility = () => {
+            if (searchClear) {
+                searchClear.style.display = searchInput.value.trim() ? 'flex' : 'none';
+            }
+        };
+        updateClearButtonVisibility();
         let searchDebounce = null;
         searchInput.addEventListener('input', (e) => {
+            updateClearButtonVisibility();
             clearTimeout(searchDebounce);
             searchDebounce = setTimeout(() => {
                 searchQuery = e.target.value;
@@ -784,6 +792,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 applyFiltersAndSort();
             }, 180);
         });
+        if (searchClear) {
+            searchClear.addEventListener('click', (e) => {
+                e.preventDefault();
+                searchInput.value = '';
+                searchQuery = '';
+                updateClearButtonVisibility();
+                saveFiltersState();
+                applyFiltersAndSort();
+            });
+        }
     }
 
     // Filtres

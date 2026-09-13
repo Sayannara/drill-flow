@@ -501,11 +501,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const searchInput = document.getElementById('admin-search');
+    const searchClear = document.getElementById('admin-search-clear');
     if (searchInput) {
+        const updateClearButtonVisibility = () => {
+            if (searchClear) {
+                searchClear.style.display = searchInput.value.trim() ? 'flex' : 'none';
+            }
+        };
         searchInput.oninput = (e) => {
+            updateClearButtonVisibility();
             searchFilter = e.target.value;
             renderTable();
         };
+        if (searchClear) {
+            searchClear.onclick = (e) => {
+                e.preventDefault();
+                searchInput.value = '';
+                searchFilter = '';
+                updateClearButtonVisibility();
+                renderTable();
+            };
+        }
     }
 
     const pairSelect = document.getElementById('filter-pair');
