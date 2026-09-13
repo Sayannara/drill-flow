@@ -23,8 +23,19 @@ export const APP_CONFIG = {
     DEFAULT_TEST_WORDS_PER_LEVEL: 12,
     DEFAULT_TEST_TIMER_DESKTOP: 20,
     DEFAULT_TEST_TIMER_MOBILE: 25,
-    DEFAULT_TEST_PASS_THRESHOLD: 50
+    DEFAULT_TEST_PASS_THRESHOLD: 50,
+
+    // Palier d'incitation Progression (mots validés pour afficher la tête de girafe)
+    DEFAULT_PROGRESSION_MILESTONE_STEP: 200
 };
+
+/**
+ * Récupère le palier d'incitation pour la progression (en mots validés)
+ */
+export function getProgressionMilestoneStep() {
+    const custom = localStorage.getItem('drillflow_progression_milestone_step');
+    return custom ? parseInt(custom, 10) : APP_CONFIG.DEFAULT_PROGRESSION_MILESTONE_STEP;
+}
 
 /**
  * Récupère le nombre de jours de verrouillage du nom/prénom (personnalisé ou par défaut)
@@ -95,6 +106,7 @@ export async function fetchAppConfigFromCloud() {
                     if (!localStorage.getItem('voc_last_tgt')) localStorage.setItem('voc_last_tgt', String(data.default_tgt));
                 }
                 if (data.cert_name_lock_days != null) localStorage.setItem('drillflow_cert_name_lock_days', String(data.cert_name_lock_days));
+                if (data.progression_milestone_step != null) localStorage.setItem('drillflow_progression_milestone_step', String(data.progression_milestone_step));
                 if (data.test_words_per_level != null) localStorage.setItem('drillflow_test_words_per_level', String(data.test_words_per_level));
                 if (data.test_timer_desktop != null) localStorage.setItem('drillflow_test_timer_desktop', String(data.test_timer_desktop));
                 if (data.test_timer_mobile != null) localStorage.setItem('drillflow_test_timer_mobile', String(data.test_timer_mobile));
@@ -145,6 +157,7 @@ export async function saveAppConfigToCloud(configData) {
             localStorage.setItem('voc_last_tgt', String(configData.default_tgt));
         }
         if (configData.cert_name_lock_days != null) localStorage.setItem('drillflow_cert_name_lock_days', String(configData.cert_name_lock_days));
+        if (configData.progression_milestone_step != null) localStorage.setItem('drillflow_progression_milestone_step', String(configData.progression_milestone_step));
         if (configData.test_words_per_level != null) localStorage.setItem('drillflow_test_words_per_level', String(configData.test_words_per_level));
         if (configData.test_timer_desktop != null) localStorage.setItem('drillflow_test_timer_desktop', String(configData.test_timer_desktop));
         if (configData.test_timer_mobile != null) localStorage.setItem('drillflow_test_timer_mobile', String(configData.test_timer_mobile));

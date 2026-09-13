@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css?v=206">
+    <link rel="stylesheet" href="../css/style.css?v=210">
     <style>
         body {
             background-color: var(--bg-color);
@@ -208,6 +208,17 @@
                     <input type="text" id="cfg-possible-volumes" value="5, 10, 15, 20" placeholder="ex: 5, 10, 15, 20" style="width: 240px; padding: 0.65rem 0.85rem; font-weight: 600; font-size: 1.05rem;">
                     <span class="config-hint" style="flex: 1; min-width: 240px;">
                         Paliers proposés sur le curseur de la page d'accueil, séparés par des virgules (actuellement par défaut : <strong>5, 10, 15, 20</strong>). Exemples personnalisables : <em>5, 10, 15, 20, 25, 30</em> ou <em>10, 20, 30, 50</em>.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Palier d'incitation Progression (Mascotte Girafe) -->
+            <div class="config-form-group" style="margin-top: 0.5rem;">
+                <label for="cfg-progression-milestone-step" class="config-label">Palier d'incitation Progression (tête de girafe)</label>
+                <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                    <input type="number" id="cfg-progression-milestone-step" min="10" max="5000" step="10" value="200" style="width: 140px; padding: 0.65rem 0.85rem; font-weight: 600; font-size: 1.05rem;">
+                    <span class="config-hint" style="flex: 1; min-width: 240px;">
+                        Multiple régulier de mots validés faisant apparaître la tête de girafe à gauche du menu <strong>Progression</strong> pour inciter l'apprenant à aller consulter ses statistiques (défaut : <strong>200</strong>, ex : 200, 400, ..., 1800, 2000...). Dès que la page Progression est visitée, la tête de girafe disparaît jusqu'au palier suivant.
                     </span>
                 </div>
             </div>
@@ -441,7 +452,7 @@
     <!-- Toast de confirmation -->
     <div id="config-toast" class="config-toast hidden"></div>
 
-    <script type="module" src="../js/config.js?v=206"></script>
+    <script type="module" src="../js/config.js?v=210"></script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {

@@ -128,7 +128,7 @@ export const vocabulary = [
   {
     "id": "word_9",
     "fr": "en fait / en réalité / effectivement",
-    "en": "actually / in fact / really",
+    "en": "actually / in fact / basically",
     "de": "eigentlich / tatsächlich / in der Tat",
     "es": "en realidad / de hecho / realmente",
     "type": "adverbe",

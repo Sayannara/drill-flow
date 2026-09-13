@@ -4,6 +4,7 @@ import {
     getCertNameLockDays, 
     getTestWordsPerLevel, 
     getTestPassThreshold,
+    getProgressionMilestoneStep,
     fetchAppConfigFromCloud,
     saveAppConfigToCloud
 } from './config/app-config.js';
@@ -21,6 +22,7 @@ async function initConfigPage() {
     const selectSrc = document.getElementById('cfg-default-src');
     const selectTgt = document.getElementById('cfg-default-tgt');
     const inputCertLockDays = document.getElementById('cfg-cert-lock-days');
+    const inputMilestoneStep = document.getElementById('cfg-progression-milestone-step');
 
     // Test de Niveau
     const inputTestWords = document.getElementById('cfg-test-words-per-level');
@@ -92,6 +94,9 @@ async function initConfigPage() {
         }
         if (inputCertLockDays) {
             inputCertLockDays.value = getCertNameLockDays().toString();
+        }
+        if (inputMilestoneStep) {
+            inputMilestoneStep.value = getProgressionMilestoneStep().toString();
         }
 
         // Test de Niveau
@@ -194,6 +199,7 @@ async function initConfigPage() {
         inputReinsertMax,
         inputVolume,
         inputCertLockDays,
+        inputMilestoneStep,
         inputTestWords,
         inputTestTimerDesktop,
         inputTestTimerMobile,
@@ -271,6 +277,12 @@ async function initConfigPage() {
             return false;
         }
 
+        const milestoneStep = inputMilestoneStep ? parseInt(inputMilestoneStep.value, 10) : APP_CONFIG.DEFAULT_PROGRESSION_MILESTONE_STEP;
+        if (isNaN(milestoneStep) || milestoneStep < 10) {
+            if (!silent) showToast('⚠️ Le palier d\'incitation de progression doit être d\'au moins 10 mots.', true);
+            return false;
+        }
+
         // Test de Niveau
         const testWords = inputTestWords ? parseInt(inputTestWords.value, 10) : APP_CONFIG.DEFAULT_TEST_WORDS_PER_LEVEL;
         if (isNaN(testWords) || testWords < 3 || testWords > 50) {
@@ -321,6 +333,7 @@ async function initConfigPage() {
             default_src: selectSrc ? selectSrc.value : APP_CONFIG.DEFAULT_SRC,
             default_tgt: selectTgt ? selectTgt.value : APP_CONFIG.DEFAULT_TGT,
             cert_name_lock_days: lockDays,
+            progression_milestone_step: milestoneStep,
             test_words_per_level: testWords,
             test_timer_desktop: testTimerDesk,
             test_timer_mobile: testTimerMob,
@@ -369,6 +382,7 @@ async function initConfigPage() {
         if (selectSrc) selectSrc.value = APP_CONFIG.DEFAULT_SRC;
         if (selectTgt) selectTgt.value = APP_CONFIG.DEFAULT_TGT;
         if (inputCertLockDays) inputCertLockDays.value = APP_CONFIG.CERT_NAME_LOCK_DAYS.toString();
+        if (inputMilestoneStep) inputMilestoneStep.value = APP_CONFIG.DEFAULT_PROGRESSION_MILESTONE_STEP.toString();
 
         // Test de niveau
         if (inputTestWords) inputTestWords.value = APP_CONFIG.DEFAULT_TEST_WORDS_PER_LEVEL.toString();

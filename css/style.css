@@ -152,6 +152,28 @@ body {
     background-color: rgba(59, 130, 246, 0.1);
 }
 
+/* Mascotte Girafe d'incitation Progression dans le menu */
+.nav-giraffe-mascot {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+    animation: giraffeMenuBounce 1.8s ease-in-out infinite;
+    flex-shrink: 0;
+    margin-right: 0.15rem;
+    pointer-events: none;
+    vertical-align: middle;
+}
+
+@keyframes giraffeMenuBounce {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-3px) scale(1.08);
+    }
+}
+
 .icon-btn {
     background: none;
     border: none;
@@ -329,6 +351,7 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
     align-items: center;
     min-height: 220px;
     margin: auto;
+    transform: translateY(-5vh);
     box-sizing: border-box;
 }
 .drill-word-wrapper {
@@ -2371,7 +2394,7 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
     width: 100%;
     max-width: 580px;
     box-sizing: border-box;

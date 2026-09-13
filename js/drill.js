@@ -1,6 +1,6 @@
-import { vocabulary } from './data/vocabulary.js?v=202';
+import { vocabulary } from './data/vocabulary.js?v=209';
 import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js';
-import { translations } from './i18n.js';
+import { translations } from './i18n.js?v=209';
 import { getCurrentUser } from './auth.js';
 
 function getAppLanguage() {
@@ -371,10 +371,10 @@ function findAlternativeLevelMatch(currentWord, userInput, langSource, langTarge
     const cleanUserInputOpts = [...new Set(userInputOpts.filter(t => t.length > 0))];
     const tolerantInputOpts = isToleranceActive ? cleanUserInputOpts.map(opt => normalizeTolerant(opt, tgtLang)) : [];
 
-    // 3. Parcourir le vocabulaire à la recherche d'une carte d'un AUTRE niveau partageant la même source
+    // 3. Parcourir le vocabulaire à la recherche d'une carte partageant la même source (même niveau ou autre niveau)
     for (const other of vocabulary) {
         if (other.id === currentWord.id) continue;
-        if (!other.level || other.level === currentWord.level) continue;
+        if (!other.level) continue;
 
         const otherSourceTerms = extractTerms(other[langSource]);
         const hasSourceOverlap = currentSourceTerms.some(st => otherSourceTerms.includes(st));
@@ -1054,15 +1054,23 @@ function handleValidation() {
                     const retryHintEl = document.getElementById('drill-retry-hint');
                     if (retryHintEl) {
                         const lang = getAppLanguage();
-                        const template = translations[lang]?.retry_diff_level_hint || translations['fr']?.retry_diff_level_hint || "Exact ! Mais \"{word}\" correspond au niveau {level}. Au niveau {targetLevel}, quel est le terme attendu ?";
+                        const isSameLevel = altMatch.level === currentWord.level;
                         const cleanWordDisplay = escapeHtml(userInput.trim());
+                        
+                        let template;
+                        if (isSameLevel) {
+                            template = translations[lang]?.retry_same_level_hint || translations['fr']?.retry_same_level_hint || "C'est tout à fait juste avec \"{word}\" ! Mais il y a un autre terme attendu (niveau {targetLevel}) : le connais-tu ?";
+                        } else {
+                            template = translations[lang]?.retry_diff_level_hint || translations['fr']?.retry_diff_level_hint || "C'est tout à fait juste avec \"{word}\" (niveau {level}) ! Mais il y a un autre terme attendu (niveau {targetLevel}) : le connais-tu ?";
+                        }
+
                         const hintText = template
                             .replace('{word}', `<strong>${cleanWordDisplay}</strong>`)
                             .replace('{level}', `<span class="type-badge" style="font-size: 0.75rem; padding: 0.1rem 0.4rem; background: rgba(245, 158, 11, 0.25); color: #f59e0b; font-weight: 700;">${altMatch.level}</span>`)
                             .replace('{targetLevel}', `<span class="type-badge" style="font-size: 0.75rem; padding: 0.1rem 0.4rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6; font-weight: 700;">${currentWord.level || ''}</span>`);
 
-                        const iconLamp = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>`;
-                        retryHintEl.innerHTML = `${iconLamp} <span>${hintText}</span>`;
+                        const mascotGiraffe = `<img src="assets/icons/giraffe-mascot.png" alt="drillFlow" style="width: 38px; height: 38px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25)); align-self: center;">`;
+                        retryHintEl.innerHTML = `${mascotGiraffe} <span>${hintText}</span>`;
                         retryHintEl.style.display = 'inline-flex';
                     }
 
@@ -1716,6 +1724,9 @@ function proceedNextWord(action) {
     }
 
     setWordStatus(sessionState.langSource, sessionState.langTarget, currentWord.id, finalStatus, false, explicitAttempts);
+    if (typeof window !== 'undefined' && typeof window.updateProgressionMilestoneGiraffe === 'function') {
+        window.updateProgressionMilestoneGiraffe();
+    }
 
     // Supprimer le mot de la session courante s'il est retiré ou réussi
     if (removeFromSession) {

@@ -1,10 +1,10 @@
-import { vocabulary } from './data/vocabulary.js?v=202';
-import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=200';
+import { vocabulary } from './data/vocabulary.js?v=209';
+import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=209';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
-import { translations } from './i18n.js';
+import { translations } from './i18n.js?v=209';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
-import { APP_CONFIG, getCertNameLockDays, fetchAppConfigFromCloud } from './config/app-config.js';
+import { APP_CONFIG, getCertNameLockDays, fetchAppConfigFromCloud, getProgressionMilestoneStep } from './config/app-config.js';
 import { startPlacementTest } from './placement-test.js?v=187';
 
 // --- Gestion des Langues (Internationalisation) ---
@@ -76,6 +76,39 @@ export function getValidatedCount(src, tgt) {
         }
     }
     return count;
+}
+
+// Affiche ou masque la tête de girafe à gauche de "Progression" selon les paliers de mots validés (ex: 200, 400, ... 1800, 2000)
+export function updateProgressionMilestoneGiraffe() {
+    const giraffeEl = document.getElementById('nav-stats-giraffe');
+    if (!giraffeEl) return;
+
+    const src = localStorage.getItem('voc_last_src') || localStorage.getItem('drillflow_default_src') || APP_CONFIG.DEFAULT_SRC;
+    const tgt = localStorage.getItem('voc_last_tgt') || localStorage.getItem('drillflow_default_tgt') || APP_CONFIG.DEFAULT_TGT;
+    const validatedCount = getValidatedCount(src, tgt);
+
+    const step = getProgressionMilestoneStep();
+    if (!step || step <= 0) {
+        giraffeEl.style.display = 'none';
+        return;
+    }
+
+    const currentMilestone = Math.floor(validatedCount / step) * step;
+    const ackKey = `drillflow_milestone_ack_${src}_${tgt}`;
+    const lastAck = parseInt(localStorage.getItem(ackKey) || '0', 10);
+
+    // Visible si au moins un palier est atteint et pas encore acquitté par une visite de la page
+    if (currentMilestone >= step && currentMilestone > lastAck) {
+        giraffeEl.style.display = 'inline-block';
+        const lang = getAppLanguage();
+        const template = translations[lang]?.milestone_giraffe_tooltip || translations['fr']?.milestone_giraffe_tooltip || "Cap des {count} mots validés atteint ! Viens voir ta progression !";
+        giraffeEl.title = template.replace('{count}', currentMilestone);
+    } else {
+        giraffeEl.style.display = 'none';
+    }
+}
+if (typeof window !== 'undefined') {
+    window.updateProgressionMilestoneGiraffe = updateProgressionMilestoneGiraffe;
 }
 
 export function translateElement(element, lang) {
@@ -422,6 +455,23 @@ function renderView(viewId) {
     const activeBtn = document.getElementById(`nav-${viewId}`);
     if (activeBtn) activeBtn.classList.add('active');
 
+    // Gestion de l'incitation de la girafe sur le menu Progression
+    if (viewId === 'stats') {
+        const src = localStorage.getItem('voc_last_src') || localStorage.getItem('drillflow_default_src') || APP_CONFIG.DEFAULT_SRC;
+        const tgt = localStorage.getItem('voc_last_tgt') || localStorage.getItem('drillflow_default_tgt') || APP_CONFIG.DEFAULT_TGT;
+        const validatedCount = getValidatedCount(src, tgt);
+        const step = getProgressionMilestoneStep();
+        if (step > 0) {
+            const currentMilestone = Math.floor(validatedCount / step) * step;
+            const ackKey = `drillflow_milestone_ack_${src}_${tgt}`;
+            localStorage.setItem(ackKey, String(currentMilestone));
+            const giraffeEl = document.getElementById('nav-stats-giraffe');
+            if (giraffeEl) giraffeEl.style.display = 'none';
+        }
+    } else {
+        updateProgressionMilestoneGiraffe();
+    }
+
     // Masquer le footer durant le drill et ajuster le padding du conteneur
     const appFooter = document.getElementById('app-footer-version');
     if (appFooter) {
@@ -502,6 +552,7 @@ function attachViewEvents(viewId) {
                 updateTargetOptions();
                 localStorage.setItem('voc_last_src', selectSrc.value);
                 if (selectTgt) localStorage.setItem('voc_last_tgt', selectTgt.value);
+                updateProgressionMilestoneGiraffe();
             });
         }
         updateTargetOptions();
@@ -511,6 +562,7 @@ function attachViewEvents(viewId) {
             }
             selectTgt.addEventListener('change', () => {
                 localStorage.setItem('voc_last_tgt', selectTgt.value);
+                updateProgressionMilestoneGiraffe();
             });
         }
         
@@ -605,8 +657,10 @@ function attachViewEvents(viewId) {
                 const src = selectSrc ? selectSrc.value : 'fr';
                 const tgt = selectTgt ? selectTgt.value : 'en';
                 const introEl = document.getElementById('home-intro-text');
-                const remainingEl = document.getElementById('home-remaining-text');
-                if (!introEl || !remainingEl) return;
+                const remainingBadge = document.getElementById('home-remaining-badge');
+                const remainingCountEl = document.getElementById('home-remaining-count');
+                const remainingLegacyEl = document.getElementById('home-remaining-text');
+                if (!introEl) return;
                 
                 const lang = getAppLanguage();
                 
@@ -615,9 +669,10 @@ function attachViewEvents(viewId) {
                     .replace('{total}', `<span style="font-weight: bold; color: var(--primary-color);">${vocabulary.length}</span>`);
                 introEl.innerHTML = totalText;
                 
-                // 2. Sentence with remaining count depending on language pair selection
+                // 2. Count depending on language pair selection and filters
                 if (src === tgt) {
-                    remainingEl.innerHTML = '';
+                    if (remainingBadge) remainingBadge.style.display = 'none';
+                    if (remainingLegacyEl) remainingLegacyEl.innerHTML = '';
                     return;
                 }
                 
@@ -639,9 +694,21 @@ function attachViewEvents(viewId) {
                     if (status !== 'validé' && status !== 'ignoré' && selectedLevels.includes(w.level)) count++;
                 });
                 
-                const remainingText = translations[lang].subtitle_home_remaining
-                    .replace('{remaining}', `<span style="font-weight: bold; color: var(--primary-color);">${count}</span>`);
-                remainingEl.innerHTML = remainingText;
+                if (remainingBadge) {
+                    remainingBadge.style.display = 'inline-flex';
+                    const tooltip = translations[lang]?.subtitle_home_remaining
+                        ? translations[lang].subtitle_home_remaining.replace('{remaining} ', '')
+                        : '';
+                    if (tooltip) remainingBadge.title = tooltip;
+                }
+                if (remainingCountEl) {
+                    remainingCountEl.textContent = count;
+                }
+                if (remainingLegacyEl) {
+                    const remainingText = translations[lang].subtitle_home_remaining
+                        .replace('{remaining}', `<span style="font-weight: bold; color: var(--primary-color);">${count}</span>`);
+                    remainingLegacyEl.innerHTML = remainingText;
+                }
 
                 // --- Pool gauge indicator ---
                 const poolGauge = document.getElementById('pool-gauge');
