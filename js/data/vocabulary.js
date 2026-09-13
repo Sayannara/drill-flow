@@ -12656,20 +12656,6 @@ export const vocabulary = [
     "ex_es": "Es el *peor* día de la semana."
   },
   {
-    "id": "word_905",
-    "fr": "ouah",
-    "en": "wow",
-    "de": "wow",
-    "es": "guau",
-    "type": "interj",
-    "level": "A2",
-    "level_step": null,
-    "ex_fr": "*Ouah*, ce gâteau est délicieux !",
-    "ex_en": "*Wow*, this cake is delicious!",
-    "ex_de": "*Wow*, dieser Kuchen ist lecker!",
-    "ex_es": "¡*Guau*, este pastel está delicioso!"
-  },
-  {
     "id": "word_906",
     "fr": "encore (dans une phrase négative/question)",
     "en": "yet",
@@ -19433,10 +19419,10 @@ export const vocabulary = [
   },
   {
     "id": "word_1389",
-    "fr": "étrange / bizarre / impair",
+    "fr": "étrange / bizarre (singulier, insolite)",
     "en": "odd / strange",
-    "de": "seltsam / merkwürdig / ungerade",
-    "es": "extraño / extraña / raro / rara / impar",
+    "de": "seltsam / merkwürdig",
+    "es": "extraño / extraña / raro / rara",
     "type": "adjectif",
     "level": "B1",
     "level_step": null,
@@ -112090,5 +112076,35 @@ export const vocabulary = [
     "ex_en": "The company serves clients across the entire *value spectrum*.",
     "ex_de": "Das Unternehmen bedient Kunden über das gesamte *Wertespektrum* hinweg.",
     "ex_es": "La empresa atiende a clientes en todo el *espectro de valores*."
+  },
+  {
+    "id": "word_8842",
+    "fr": "impair / impaire (nombre)",
+    "en": "odd",
+    "de": "ungerade",
+    "es": "impar",
+    "type": "adjectif",
+    "level": "B1",
+    "level_step": null,
+    "ex_fr": "Sept est un nombre *impair*.",
+    "ex_en": "Seven is an *odd* number.",
+    "ex_de": "Sieben ist eine *ungerade* Zahl.",
+    "ex_es": "Siete es un número *impar*."
+  },
+  {
+    "id": "word_8843",
+    "fr": "pair / paire (nombre)",
+    "en": "even",
+    "de": "gerade",
+    "es": "par",
+    "type": "adjectif",
+    "level": "B1",
+    "level_step": null,
+    "ex_fr": "Huit est un nombre *pair*.",
+    "ex_en": "Eight is an *even* number.",
+    "ex_de": "Acht ist eine *gerade* Zahl.",
+    "ex_es": "Ocho es un número *par*."
   }
 ];
+
+

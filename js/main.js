@@ -1,5 +1,5 @@
-import { vocabulary } from './data/vocabulary.js?v=187';
-import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=194';
+import { vocabulary } from './data/vocabulary.js?v=195';
+import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=195';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
 import { translations } from './i18n.js';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
