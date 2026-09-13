@@ -303,7 +303,7 @@ function renderTable() {
     if (filtered.length === 0) {
         tbodyEl.innerHTML = `
             <tr>
-                <td colspan="11" style="text-align: center; color: var(--text-secondary); padding: 3rem;">
+                <td colspan="12" style="text-align: center; color: var(--text-secondary); padding: 3rem;">
                     🔍 Aucun signalement ne correspond aux filtres appliqués.
                 </td>
             </tr>
@@ -396,6 +396,7 @@ function renderTable() {
         const typeBadge = item.type ? `<span class="type-badge ${escapeHtml(item.type)}" style="padding: 0.15rem 0.35rem; font-size: 0.7rem; border-radius: 4px; text-transform: uppercase;">${escapeHtml(item.type)}</span>` : '<span style="color: var(--text-secondary); opacity: 0.4;">-</span>';
 
         tr.innerHTML = `
+            <td style="text-align: center; font-size: 0.8rem; color: var(--text-secondary);">${escapeHtml(item.docId || '-')}</td>
             <td style="text-align: center; font-size: 0.9rem;">${reportCount}</td>
             <td style="white-space: nowrap;">${pairHtml}</td>
             <td style="max-width: 140px;">${exerciseWords.srcHtml}</td>
