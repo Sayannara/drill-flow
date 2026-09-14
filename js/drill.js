@@ -1059,18 +1059,21 @@ function handleValidation() {
                         
                         let template;
                         if (isSameLevel) {
-                            template = translations[lang]?.retry_same_level_hint || translations['fr']?.retry_same_level_hint || "C'est tout à fait juste avec \"{word}\" ! Mais il y a un autre terme attendu (niveau {targetLevel}) : le connais-tu ?";
+                            template = translations[lang]?.retry_same_level_hint || translations['fr']?.retry_same_level_hint || "Juste ! Avec \"{word}\" !<br>Un autre terme est attendu {targetLevel}";
                         } else {
-                            template = translations[lang]?.retry_diff_level_hint || translations['fr']?.retry_diff_level_hint || "C'est tout à fait juste avec \"{word}\" (niveau {level}) ! Mais il y a un autre terme attendu (niveau {targetLevel}) : le connais-tu ?";
+                            template = translations[lang]?.retry_diff_level_hint || translations['fr']?.retry_diff_level_hint || "Juste ! Avec \"{word}\" {level} !<br>Un autre terme est attendu {targetLevel}";
                         }
+
+                        const levelBadge = `<span class="type-badge" style="display: inline-block; font-size: 0.75rem; padding: 0.1rem 0.45rem; vertical-align: baseline; margin: 0 0.15rem; background: rgba(245, 158, 11, 0.25); color: #f59e0b; font-weight: 700;">${altMatch.level}</span>`;
+                        const targetLevelBadge = `<span class="type-badge" style="display: inline-block; font-size: 0.75rem; padding: 0.1rem 0.45rem; vertical-align: baseline; margin: 0 0.15rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6; font-weight: 700;">${currentWord.level || ''}</span>`;
 
                         const hintText = template
                             .replace('{word}', `<strong>${cleanWordDisplay}</strong>`)
-                            .replace('{level}', `<span class="type-badge" style="font-size: 0.75rem; padding: 0.1rem 0.4rem; background: rgba(245, 158, 11, 0.25); color: #f59e0b; font-weight: 700;">${altMatch.level}</span>`)
-                            .replace('{targetLevel}', `<span class="type-badge" style="font-size: 0.75rem; padding: 0.1rem 0.4rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6; font-weight: 700;">${currentWord.level || ''}</span>`);
+                            .replace('{level}', levelBadge)
+                            .replace('{targetLevel}', targetLevelBadge);
 
-                        const mascotGiraffe = `<img src="assets/icons/giraffe-mascot.png" alt="drillFlow" style="width: 38px; height: 38px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25)); align-self: center;">`;
-                        retryHintEl.innerHTML = `${mascotGiraffe} <span>${hintText}</span>`;
+                        const mascotGiraffe = `<img src="assets/icons/giraffe-mascot.png" alt="drillFlow" style="width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25)); align-self: center;">`;
+                        retryHintEl.innerHTML = `${mascotGiraffe} <div style="text-align: left; line-height: 1.45; font-size: 0.92rem;">${hintText}</div>`;
                         retryHintEl.style.display = 'inline-flex';
                     }
 
@@ -2572,11 +2575,12 @@ function openReportModal(currentWord, btnEl) {
 function showToast(msg) {
     const toast = document.getElementById('report-toast');
     if (!toast) return;
-    toast.innerHTML = `<span>${msg}</span>`;
+    const mascotWink = `<img src="assets/icons/giraffe-wink.png" alt="drillFlow" style="width: 32px; height: 32px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));">`;
+    toast.innerHTML = `<div style="display: flex; align-items: center; gap: 0.65rem;">${mascotWink}<span>${msg}</span></div>`;
     toast.classList.remove('hidden');
     setTimeout(() => {
         toast.classList.add('hidden');
-    }, 2500);
+    }, 2800);
 }
 
 function renderComparisonExample(containerLine, textEl, currentWord) {

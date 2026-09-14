@@ -354,17 +354,29 @@ async function initConfigPage() {
         localStorage.setItem('drillflow_theme', currentTheme);
         if (selectAppLang) localStorage.setItem('app_lang', selectAppLang.value);
 
-        updateSyncBadge('⏳ Enregistrement dans la base de données...', '#3b82f6');
+        updateSyncBadge('Enregistrement dans la base de données...', '#3b82f6');
+
+        const permAlert = document.getElementById('cfg-permission-alert');
 
         // Enregistrement dans Firestore centralisé
         const result = await saveAppConfigToCloud(payload);
         if (result.success) {
+            if (permAlert) permAlert.style.display = 'none';
             updateSyncBadge('Sauvegardé dans la base de données', '#10b981');
             if (!silent) showToast('Enregistré dans la base de données');
             return true;
         } else {
-            updateSyncBadge('⚠️ Sauvegardé en local (erreur cloud)', '#f59e0b');
-            if (!silent) showToast('⚠️ Sauvegarde locale réussie, erreur connexion base de données.', true);
+            const isPermError = result.code === 'permission-denied' ||
+                (result.error && (result.error.includes('permission') || result.error.includes('Permission')));
+
+            if (isPermError) {
+                if (permAlert) permAlert.style.display = 'block';
+                updateSyncBadge('Règle d\'accès Firestore requise', '#ef4444');
+                if (!silent) showToast('Autorisations Firestore requises pour app_settings', true);
+            } else {
+                updateSyncBadge('Sauvegardé en local (erreur cloud)', '#f59e0b');
+                if (!silent) showToast('Sauvegarde locale réussie, erreur connexion base de données.', true);
+            }
             return false;
         }
     }
@@ -432,18 +444,18 @@ async function initConfigPage() {
 
     // Chargement initial : on affiche d'abord les valeurs locales, puis on synchronise avec la DB
     loadCurrentSettings();
-    updateSyncBadge('⏳ Synchronisation cloud...', '#3b82f6');
+    updateSyncBadge('Synchronisation cloud...', '#3b82f6');
     try {
         const cloudData = await fetchAppConfigFromCloud();
         if (cloudData) {
             loadCurrentSettings();
             updateSyncBadge('Connecté à la base de données', '#10b981');
         } else {
-            updateSyncBadge('☁️ Mode local (défauts actifs)', '#64748b');
+            updateSyncBadge('Mode local (défauts actifs)', '#64748b');
         }
     } catch (e) {
         console.warn("Erreur chargement cloud:", e);
-        updateSyncBadge('⚠️ Connexion hors-ligne', '#f59e0b');
+        updateSyncBadge('Connexion hors-ligne', '#f59e0b');
     }
 }
 

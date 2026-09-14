@@ -224,5 +224,8 @@ export function updateAuthUI(user) {
 
 function openAuthModal() {
     const modal = document.getElementById('auth-modal');
-    if (modal) modal.classList.remove('hidden');
+    if (modal) {
+        modal.classList.remove('hidden');
+        window.dispatchEvent(new CustomEvent('auth-modal-opened'));
+    }
 }

@@ -1,7 +1,7 @@
-import { vocabulary } from './data/vocabulary.js?v=209';
-import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=209';
+import { vocabulary } from './data/vocabulary.js?v=211';
+import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=211';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
-import { translations } from './i18n.js?v=209';
+import { translations } from './i18n.js?v=211';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays, fetchAppConfigFromCloud, getProgressionMilestoneStep } from './config/app-config.js';
@@ -842,8 +842,8 @@ function attachViewEvents(viewId) {
 // --- Gestion de la vue Progression ---
 let currentProgPair = '';
 let currentStatsPair = '';
-let currentSortCol = 'source';
-let currentSortAsc = true;
+let currentSortCol = 'attempts';
+let currentSortAsc = false;
 
 const PROG_FILTERS_KEY = 'drillflow_prog_filters';
 
@@ -858,7 +858,7 @@ function getSavedProgressFilters() {
 function saveProgressFilters() {
     const types = ['nom', 'verbe', 'adjectif', 'adverbe', 'conjonction'];
     const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
-    const statuses = ['valide', 'actif', 'ignore'];
+    const statuses = ['actif', 'ignore'];
 
     const data = {
         types: {},
@@ -971,7 +971,7 @@ function initProgressView() {
                 currentSortAsc = !currentSortAsc;
             } else {
                 currentSortCol = sortKey;
-                currentSortAsc = true;
+                currentSortAsc = (sortKey === 'attempts') ? false : true;
             }
             renderProgressTable();
         };
@@ -1050,7 +1050,7 @@ function initProgressView() {
     function updateFilterCounts() {
         const types = ['nom', 'verbe', 'adjectif', 'adverbe', 'conjonction'];
         const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
-        const statuses = ['valide', 'actif', 'ignore'];
+        const statuses = ['actif', 'ignore'];
 
         const checkedTypes = types.filter(t => document.getElementById(`filter-type-${t}`)?.checked).length;
         const checkedLevels = levels.filter(l => document.getElementById(`filter-level-${l}`)?.checked).length;
@@ -1101,7 +1101,7 @@ function initProgressView() {
     });
 
     // Attach listeners for word status filters
-    ['valide', 'actif', 'ignore'].forEach(statusKey => {
+    ['actif', 'ignore'].forEach(statusKey => {
         const checkbox = document.getElementById(`filter-status-${statusKey}`);
         if (checkbox) {
             if (savedFilters?.statuses && savedFilters.statuses[statusKey] !== undefined) {
@@ -1136,7 +1136,7 @@ function initProgressView() {
                     if (el) el.checked = shouldCheck;
                 });
             } else if (group === 'statuses') {
-                ['valide', 'actif', 'ignore'].forEach(s => {
+                ['actif', 'ignore'].forEach(s => {
                     const el = document.getElementById(`filter-status-${s}`);
                     if (el) el.checked = shouldCheck;
                 });
@@ -1175,7 +1175,6 @@ function renderProgressTable() {
     const filterC1 = document.getElementById('filter-level-c1') ? document.getElementById('filter-level-c1').checked : true;
     const filterC2 = document.getElementById('filter-level-c2') ? document.getElementById('filter-level-c2').checked : true;
 
-    const filterStatusValide = document.getElementById('filter-status-valide') ? document.getElementById('filter-status-valide').checked : true;
     const filterStatusActif = document.getElementById('filter-status-actif') ? document.getElementById('filter-status-actif').checked : true;
     const filterStatusIgnore = document.getElementById('filter-status-ignore') ? document.getElementById('filter-status-ignore').checked : true;
 
@@ -1184,8 +1183,10 @@ function renderProgressTable() {
         const status = getWordStatus(src, tgt, word.id);
         if ((!stats || (!stats.attempts && !stats.max_attempts)) && status !== 'ignoré') return false;
 
+        // Exclusion des mots validés de la vue "Focus"
+        if (status === 'validé') return false;
+
         // Status filters
-        if (status === 'validé' && !filterStatusValide) return false;
         if (status === 'actif' && !filterStatusActif) return false;
         if (status === 'ignoré' && !filterStatusIgnore) return false;
 
@@ -1227,7 +1228,10 @@ function renderProgressTable() {
         
         if (valA < valB) return currentSortAsc ? -1 : 1;
         if (valA > valB) return currentSortAsc ? 1 : -1;
-        return 0;
+        // Tri secondaire stable par ordre alphabétique du mot source
+        const nameA = (a[src] || '').toLowerCase();
+        const nameB = (b[src] || '').toLowerCase();
+        return nameA.localeCompare(nameB);
     });
 
     // Mise à jour des icônes de tri
@@ -2047,12 +2051,40 @@ window.addEventListener('DOMContentLoaded', () => {
     // Modal Auth Logic
     const authModal = document.getElementById('auth-modal');
     
-    // Boutons génériques pour ouvrir la modale
-    const openAuthBtns = document.querySelectorAll('.btn-open-auth-modal');
-    openAuthBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            if (authModal) authModal.classList.remove('hidden');
-        });
+    function prepareAuthModal() {
+        const emailInput = document.getElementById('auth-email');
+        const passInput = document.getElementById('auth-password');
+        const rememberCheckbox = document.getElementById('auth-remember-me');
+        const authError = document.getElementById('auth-error');
+        if (authError) authError.style.display = 'none';
+        if (passInput) passInput.value = '';
+
+        const rememberedEmail = localStorage.getItem('drillflow_remembered_email');
+        if (rememberedEmail && emailInput) {
+            emailInput.value = rememberedEmail;
+            if (rememberCheckbox) rememberCheckbox.checked = true;
+            setTimeout(() => passInput?.focus(), 50);
+        } else {
+            if (rememberCheckbox) rememberCheckbox.checked = true;
+            setTimeout(() => emailInput?.focus(), 50);
+        }
+    }
+
+    const openAuthModalUI = () => {
+        if (authModal) {
+            authModal.classList.remove('hidden');
+            prepareAuthModal();
+        }
+    };
+
+    window.addEventListener('auth-modal-opened', prepareAuthModal);
+    prepareAuthModal(); // Pré-remplir dès le chargement initial
+
+    // Boutons pour ouvrir la modale (délégation d'événements pour les boutons créés dynamiquement)
+    document.addEventListener('click', (e) => {
+        if (e.target && e.target.closest('.btn-open-auth-modal')) {
+            openAuthModalUI();
+        }
     });
 
     const btnCloseAuth = document.getElementById('btn-close-auth');
@@ -2132,12 +2164,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const btnAuthSubmit = document.getElementById('btn-auth-submit');
-    const authForm = authModal ? authModal.querySelector('form') : null;
+    const authForm = document.getElementById('auth-form') || (authModal ? authModal.querySelector('form') : null);
 
     const handleAuthSubmit = async (e) => {
         if (e) e.preventDefault();
-        const email = document.getElementById('auth-email').value;
-        const pass = document.getElementById('auth-password').value;
+        const emailInput = document.getElementById('auth-email');
+        const passInput = document.getElementById('auth-password');
+        const rememberCheckbox = document.getElementById('auth-remember-me');
+
+        const email = emailInput ? emailInput.value.trim() : '';
+        const pass = passInput ? passInput.value : '';
         authError.style.display = 'none';
 
         if (btnAuthSubmit) {
@@ -2153,12 +2189,32 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if (res.success) {
+            // Mémorisation de l'e-mail si "Se souvenir de moi" est coché
+            if (rememberCheckbox && rememberCheckbox.checked) {
+                localStorage.setItem('drillflow_remembered_email', email);
+            } else {
+                localStorage.removeItem('drillflow_remembered_email');
+            }
+
+            // Inviter le gestionnaire de mots de passe natif du navigateur (Credential Management API)
+            if (window.PasswordCredential && navigator.credentials?.store) {
+                try {
+                    const cred = new PasswordCredential({
+                        id: email,
+                        password: pass,
+                        name: email
+                    });
+                    navigator.credentials.store(cred).catch(() => {});
+                } catch (_) {}
+            }
+
             if (res.isNewUser) {
                 authError.style.color = 'var(--success-color)';
                 authError.textContent = res.message;
                 authError.style.display = 'block';
             } else {
                 authModal.classList.add('hidden');
+                if (passInput) passInput.value = '';
             }
         } else {
             authError.style.color = res.isUnverified ? 'var(--primary-color)' : 'var(--error-color)';

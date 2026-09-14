@@ -118,7 +118,11 @@ export async function fetchAppConfigFromCloud() {
             }
         }
     } catch (err) {
-        console.warn("Impossible de charger la configuration cloud:", err);
+        if (err.code === 'permission-denied' || (err.message && err.message.includes('permission'))) {
+            console.error("Firestore: Accès refusé pour 'app_settings'. Vérifiez les règles de sécurité Firestore dans la console Firebase.", err);
+        } else {
+            console.warn("Impossible de charger la configuration cloud:", err);
+        }
     }
     return null;
 }
@@ -169,6 +173,6 @@ export async function saveAppConfigToCloud(configData) {
         return { success: true };
     } catch (err) {
         console.error("Erreur enregistrement config cloud:", err);
-        return { success: false, error: err.message || String(err) };
+        return { success: false, error: err.message || String(err), code: err.code };
     }
 }

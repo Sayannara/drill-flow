@@ -2,7 +2,7 @@ export const translations = {
     fr: {
         // Nav
         nav_drill: "Drill!",
-        nav_progress: "Mes mots",
+        nav_progress: "Focus",
         nav_stats: "Progression",
         nav_certs: "Attestations",
         nav_about: "Le Projet",
@@ -31,8 +31,8 @@ export const translations = {
         label_rewrite: "Récrire:",
         label_example: "Exemple:",
         placeholder_translation: "Traduction...",
-        retry_diff_level_hint: "C'est tout à fait juste avec \"{word}\" (niveau {level}) ! Mais il y a un autre terme attendu (niveau {targetLevel}) : le connais-tu ?",
-        retry_same_level_hint: "C'est tout à fait juste avec \"{word}\" ! Mais il y a un autre terme attendu (niveau {targetLevel}) : le connais-tu ?",
+        retry_diff_level_hint: "Juste ! Avec \"{word}\" {level} !<br>Un autre terme est attendu {targetLevel}",
+        retry_same_level_hint: "Juste ! Avec \"{word}\" !<br>Un autre terme est attendu {targetLevel}",
         status_correct: "Juste",
         status_incorrect: "Faux",
         action_review: "À revoir",
@@ -83,8 +83,8 @@ export const translations = {
         auth_logout: "Déconnexion",
         
         // Progress View
-        title_progress: "Mes mots",
-        subtitle_progress: "Suivez l'état d'apprentissage de vos mots : vocabulaire validé et mots à retravailler.",
+        title_progress: "Focus",
+        subtitle_progress: "Retrouvez vos mots en cours d'apprentissage actif et à perfectionner.",
         filter_types_label: "Filtrer par type :",
         filter_all: "Tous",
         filter_none: "Aucun",
@@ -271,6 +271,7 @@ export const translations = {
         auth_btn_signup: "S'inscrire",
         auth_btn_continue: "Continuer",
         auth_forgot_password: "Mot de passe oublié ?",
+        auth_remember_me: "Se souvenir de moi",
         auth_reset_sent: "Un e-mail de réinitialisation vous a été envoyé. Vérifiez vos spams.",
         auth_enter_email_for_reset: "Veuillez renseigner votre adresse e-mail ci-dessus.",
         report_btn: "Signaler",
@@ -320,7 +321,7 @@ export const translations = {
     en: {
         // Nav
         nav_drill: "Drill!",
-        nav_progress: "My Words",
+        nav_progress: "Focus",
         nav_stats: "Statistics",
         nav_certs: "Attestations",
         nav_about: "The Project",
@@ -349,8 +350,8 @@ export const translations = {
         label_rewrite: "Rewrite:",
         label_example: "Example:",
         placeholder_translation: "Translation...",
-        retry_diff_level_hint: "That's completely right with \"{word}\" (level {level})! But another term is expected (level {targetLevel}): do you know it?",
-        retry_same_level_hint: "That's completely right with \"{word}\"! But another term is expected (level {targetLevel}): do you know it?",
+        retry_diff_level_hint: "Correct! With \"{word}\" {level}!<br>Another term is expected {targetLevel}",
+        retry_same_level_hint: "Correct! With \"{word}\"!<br>Another term is expected {targetLevel}",
         status_correct: "Correct",
         status_incorrect: "Incorrect",
         action_review: "To review",
@@ -401,8 +402,8 @@ export const translations = {
         auth_logout: "Log Out",
         
         // Progress View
-        title_progress: "My Words",
-        subtitle_progress: "Track the learning status of your words: mastered vocabulary and words to practice.",
+        title_progress: "Focus",
+        subtitle_progress: "Track your active learning words and areas to practice.",
         filter_types_label: "Filter by type:",
         filter_all: "All",
         filter_none: "None",
@@ -541,6 +542,7 @@ export const translations = {
         auth_btn_signup: "Sign Up",
         auth_btn_continue: "Continue",
         auth_forgot_password: "Forgot password?",
+        auth_remember_me: "Remember me",
         auth_reset_sent: "A password reset email has been sent. Check your spam folder.",
         auth_enter_email_for_reset: "Please enter your email address above.",
         report_btn: "Report",
@@ -590,7 +592,7 @@ export const translations = {
     de: {
         // Nav
         nav_drill: "Drill!",
-        nav_progress: "Meine Wörter",
+        nav_progress: "Fokus",
         nav_stats: "Statistiken",
         nav_certs: "Bescheinigungen",
         nav_about: "Das Projekt",
@@ -619,8 +621,8 @@ export const translations = {
         label_rewrite: "Wiederholen:",
         label_example: "Beispiel:",
         placeholder_translation: "Übersetzung...",
-        retry_diff_level_hint: "Völlig richtig mit „{word}“ (Stufe {level})! Aber es wird ein anderes Wort gesucht (Stufe {targetLevel}): Kennst du es?",
-        retry_same_level_hint: "Völlig richtig mit „{word}“! Aber es wird ein anderes Wort gesucht (Stufe {targetLevel}): Kennst du es?",
+        retry_diff_level_hint: "Richtig! Mit „{word}“ {level}!<br>Ein anderes Wort wird gesucht {targetLevel}",
+        retry_same_level_hint: "Richtig! Mit „{word}“!<br>Ein anderes Wort wird gesucht {targetLevel}",
         status_correct: "Richtig",
         status_incorrect: "Falsch",
         action_review: "Wiederholen",
@@ -671,8 +673,8 @@ export const translations = {
         auth_logout: "Abmelden",
         
         // Progress View
-        title_progress: "Meine Wörter",
-        subtitle_progress: "Verfolgen Sie den Lernstatus Ihrer Wörter: gemeistertes Vokabular und zu wiederholende Wörter.",
+        title_progress: "Fokus",
+        subtitle_progress: "Verfolgen Sie Ihre aktiv zu lernenden und zu übenden Wörter.",
         filter_types_label: "Nach Typ filtern:",
         filter_all: "Alle",
         filter_none: "Keine",
@@ -811,6 +813,7 @@ export const translations = {
         auth_btn_signup: "Registrieren",
         auth_btn_continue: "Weiter",
         auth_forgot_password: "Passwort vergessen?",
+        auth_remember_me: "Angemeldet bleiben",
         auth_reset_sent: "Eine E-Mail zum Zurücksetzen des Passworts wurde gesendet. Überprüfen Sie Ihren Spam-Ordner.",
         auth_enter_email_for_reset: "Bitte geben Sie oben Ihre E-Mail-Adresse ein.",
         report_btn: "Melden",
@@ -860,7 +863,7 @@ export const translations = {
     es: {
         // Nav
         nav_drill: "¡Drill!",
-        nav_progress: "Mis palabras",
+        nav_progress: "Focus",
         nav_stats: "Estadísticas",
         nav_certs: "Atestaciones",
         nav_about: "El Proyecto",
@@ -889,8 +892,8 @@ export const translations = {
         label_rewrite: "Reescribir:",
         label_example: "Ejemplo:",
         placeholder_translation: "Traducción...",
-        retry_diff_level_hint: "¡Es totalmente correcto con \"{word}\" (nivel {level})! Pero se espera otro término (nivel {targetLevel}): ¿lo conoces?",
-        retry_same_level_hint: "¡Es totalmente correcto con \"{word}\"! Pero se espera otro término (nivel {targetLevel}): ¿lo conoces?",
+        retry_diff_level_hint: "¡Correcto! Con \"{word}\" {level} !<br>Se espera otro término {targetLevel}",
+        retry_same_level_hint: "¡Correcto! Con \"{word}\" !<br>Se espera otro término {targetLevel}",
         status_correct: "Correcto",
         status_incorrect: "Incorrecto",
         action_review: "A revisar",
@@ -941,8 +944,8 @@ export const translations = {
         auth_logout: "Cerrar sesión",
         
         // Progress View
-        title_progress: "Mis palabras",
-        subtitle_progress: "Siga el estado de aprendizaje de sus palabras: vocabulario validado y palabras por repasar.",
+        title_progress: "Focus",
+        subtitle_progress: "Revise sus palabras en aprendizaje activo y a perfeccionar.",
         filter_types_label: "Filtrar por tipo:",
         filter_all: "Todos",
         filter_none: "Ninguno",
@@ -1081,6 +1084,7 @@ export const translations = {
         auth_btn_signup: "Registrarse",
         auth_btn_continue: "Continuar",
         auth_forgot_password: "¿Olvidó su contraseña?",
+        auth_remember_me: "Recordarme",
         auth_reset_sent: "Se ha enviado un correo de restablecimiento. Revise su bandeja de entrada (y spam).",
         auth_enter_email_for_reset: "Por favor, introduzca su dirección de correo electrónico arriba.",
         report_btn: "Notificar",
