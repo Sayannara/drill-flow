@@ -2,7 +2,7 @@
 import { db } from './firebase-config.js';
 import { getCurrentUser } from './auth.js';
 import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
-import { vocabulary } from './data/vocabulary.js?v=209';
+import { vocabulary } from './data/vocabulary.js?v=212';
 
 const STORAGE_KEY = 'drillflow_progress';
 let localCache = null;
