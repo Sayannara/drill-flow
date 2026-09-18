@@ -2141,6 +2141,9 @@ function startContextDrill() {
         return;
     }
 
+    const flashcard = document.querySelector('.flashcard');
+    if (flashcard) flashcard.style.display = 'none';
+
     const endContainer = document.getElementById('end-session-container');
     if (endContainer) endContainer.style.display = 'none';
 
@@ -2457,6 +2460,13 @@ function showContextEndSession() {
         endContainer.style.display = 'flex';
         const promo = document.getElementById('context-drill-promo');
         if (promo) promo.style.display = 'none';
+
+        const btnNewBatch = document.getElementById('btn-new-batch');
+        if (btnNewBatch) {
+            btnNewBatch.onclick = () => {
+                document.getElementById('nav-home')?.click();
+            };
+        }
     }
 
     if (typeof confetti === 'function') {
@@ -2472,6 +2482,61 @@ function showContextEndSession() {
             confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
         }, 250);
     }
+}
+
+export function startDirectContextDrill(source, target, levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
+    sessionState.langSource = source;
+    sessionState.langTarget = target;
+    sessionState.mode = 'context';
+
+    let eligible = vocabulary.filter(w => {
+        return w['ex_' + target] && (levels.length === 0 || levels.includes(w.level));
+    });
+
+    if (eligible.length === 0) {
+        eligible = vocabulary.filter(w => w['ex_' + target]);
+    }
+
+    if (eligible.length === 0) {
+        alert("Aucun mot avec phrase d'exemple n'est disponible pour le moment dans cette langue.");
+        document.getElementById('nav-home')?.click();
+        return;
+    }
+
+    const userWords = eligible.filter(w => {
+        const stats = getWordStats(source, target, w.id);
+        return stats && stats.attempts > 0;
+    });
+
+    let pool = [];
+    if (userWords.length >= 5) {
+        pool = shuffle([...userWords]).slice(0, 8);
+    } else {
+        const others = eligible.filter(w => !userWords.includes(w));
+        pool = [...userWords, ...shuffle(others)].slice(0, 8);
+    }
+
+    sessionState.originalWords = pool;
+    sessionState.words = [...pool];
+
+    const flashcard = document.querySelector('.flashcard');
+    if (flashcard) flashcard.style.display = 'none';
+
+    const endContainer = document.getElementById('end-session-container');
+    if (endContainer) endContainer.style.display = 'none';
+
+    const headerSection = document.getElementById('drill-header-section');
+    if (headerSection) {
+        const srcEl = document.getElementById('drill-lang-source');
+        const tgtEl = document.getElementById('drill-lang-target');
+        if (srcEl) srcEl.textContent = source.toUpperCase();
+        if (tgtEl) tgtEl.textContent = target.toUpperCase();
+        headerSection.style.display = 'flex';
+        const gaugeCont = document.getElementById('drill-gauge-container');
+        if (gaugeCont) gaugeCont.style.display = 'none';
+    }
+
+    startContextDrill();
 }
 
 window.startContextDrill = startContextDrill;

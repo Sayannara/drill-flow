@@ -9,7 +9,7 @@ export const translations = {
         
         // Home View
         title_home: "Nouvelle session",
-        subtitle_home_intro: "{total} mots à apprendre gratuitement !",
+        subtitle_home_intro: "Apprenez {total} mots gratuitement !",
         subtitle_home_remaining: "{remaining} mots à valider avec les filtres sélectionnés",
         pool_label: "Pool actif",
         label_source: "Traduire de :",
@@ -23,6 +23,9 @@ export const translations = {
         mode_desc_smart: "Apprentissage optimisé via une réserve active limitant la surcharge mentale.",
         mode_desc_review: "100% de mots déjà validés pour consolider votre mémoire à long terme.",
         btn_start_drill: "Drill!",
+        triptych_panel_test: "Test initial",
+        triptych_panel_drill: "Drill !",
+        triptych_panel_practice: "Mise en pratique",
         
         // Drill View
         label_word: "Mot:",
@@ -329,7 +332,7 @@ export const translations = {
         
         // Home View
         title_home: "New Session",
-        subtitle_home_intro: "{total} words to learn for free!",
+        subtitle_home_intro: "Learn {total} words for free!",
         subtitle_home_remaining: "{remaining} words to validate with selected filters",
         pool_label: "Active pool",
         label_source: "Translate from:",
@@ -343,6 +346,9 @@ export const translations = {
         mode_desc_smart: "Optimized learning via an active pool to prevent cognitive overload.",
         mode_desc_review: "100% previously mastered words to consolidate long-term memory.",
         btn_start_drill: "Drill!",
+        triptych_panel_test: "Placement test",
+        triptych_panel_drill: "Drill!",
+        triptych_panel_practice: "Practice",
         
         // Drill View
         label_word: "Word:",
@@ -601,7 +607,7 @@ export const translations = {
         
         // Home View
         title_home: "Neue Sitzung",
-        subtitle_home_intro: "{total} Wörter kostenlos lernen!",
+        subtitle_home_intro: "Lerne {total} Wörter kostenlos!",
         subtitle_home_remaining: "{remaining} Wörter mit den ausgewählten Filtern zu lernen",
         pool_label: "Aktiver Pool",
         label_source: "Übersetzen von:",
@@ -615,6 +621,9 @@ export const translations = {
         mode_desc_smart: "Optimiertes Lernen durch einen aktiven Pool, um kognitive Überlastung zu vermeiden.",
         mode_desc_review: "100% bereits gelernte Wörter, um das Langzeitgedächtnis zu festigen.",
         btn_start_drill: "Drill!",
+        triptych_panel_test: "Einstufungstest",
+        triptych_panel_drill: "Drill!",
+        triptych_panel_practice: "Praxis",
         
         // Drill View
         label_word: "Wort:",
@@ -873,7 +882,7 @@ export const translations = {
         
         // Home View
         title_home: "Nueva sesión",
-        subtitle_home_intro: "¡{total} palabras para aprender gratis!",
+        subtitle_home_intro: "¡Aprende {total} palabras gratis!",
         subtitle_home_remaining: "{remaining} palabras por validar con los filtros seleccionados",
         pool_label: "Pool activo",
         label_source: "Traducir de:",
@@ -887,6 +896,9 @@ export const translations = {
         mode_desc_smart: "Aprendizaje optimizado mediante una reserva activa para evitar la sobrecarga cognitiva.",
         mode_desc_review: "100% de palabras ya aprendidas para consolidar la memoria a largo plazo.",
         btn_start_drill: "Drill!",
+        triptych_panel_test: "Test de nivel",
+        triptych_panel_drill: "¡Drill!",
+        triptych_panel_practice: "Práctica",
         
         // Drill View
         label_word: "Palabra:",

@@ -79,8 +79,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=217">
-    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=217">
+    <link rel="stylesheet" href="css/style.css?v=226">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=226">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
@@ -132,106 +132,194 @@
         <!-- Les vues seront injectées ici par le routeur JS -->
     </main>
 
-    <!-- Template Vue Accueil -->
+    <!-- Template Vue Accueil (Triptyque Style Zelda) -->
     <template id="view-home">
-        <div class="view-content animate-fade-in">
-            <p id="home-intro-text" style="text-align: center; font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 2.25rem; line-height: 1.6;"></p>
+        <div class="view-content animate-fade-in" style="width: 100%; max-width: 680px; margin: 0 auto; box-sizing: border-box;">
+            <!-- Phrase d'accroche hors de la boîte comme avant -->
+            <p id="home-intro-text" style="text-align: center; font-size: 1.15rem; font-weight: 600; color: var(--text-secondary); margin: 0 0 1.6rem 0; line-height: 1.5;"></p>
 
-            
-            <div class="card config-card">
-                <div id="home-lang-indicator-wrapper" style="text-align: center; margin-bottom: 1.25rem;">
-                    <button type="button" id="home-lang-indicator" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-weight: 600; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer; font-family: var(--font-sans); transition: all 0.2s;" title="Changer les langues dans les options">
-                        <span id="home-lang-pair-text">Français ➔ Anglais</span>
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                    </button>
-                </div>
+            <div class="triptych-container">
+                <!-- Flèches latérales grandes et vertes sans texte -->
+                <button type="button" class="triptych-arrow-btn triptych-arrow-prev" id="triptych-prev-btn" title="Test initial" aria-label="Test initial">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button type="button" class="triptych-arrow-btn triptych-arrow-next" id="triptych-next-btn" title="Mise en pratique" aria-label="Mise en pratique">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
 
-                <div class="form-group" style="margin-top: 0.5rem; margin-bottom: 2rem;">
-                    <label style="display: flex; align-items: center; gap: 0.4rem; position: relative;">
-                        <span data-i18n="label_level">Niveaux CECRL</span>
-                        <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; this.querySelector('.tooltip-content').style.opacity='1'; this.querySelector('.tooltip-content').style.visibility='visible';" onmouseout="this.style.color='var(--text-secondary)'; this.querySelector('.tooltip-content').style.opacity='0'; this.querySelector('.tooltip-content').style.visibility='hidden';" onclick="const t=this.querySelector('.tooltip-content'); const isVis = t.style.opacity === '1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" y1="16" x2="12" y2="12"></line>
-                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                            </svg>
-                            <span class="tooltip-content" data-i18n="tooltip_cefr_levels" style="position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 8px; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.75rem 0.9rem; border-radius: 8px; font-size: 0.8rem; width: 280px; max-width: 90vw; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 10; font-weight: normal; line-height: 1.45; pointer-events: none;">
-                                <strong style="display: block; text-align: center; margin-bottom: 0.4rem;">Cadre Européen Commun de Référence (CECRL)</strong>
-                                <div style="display: flex; flex-direction: column; gap: 0.2rem;">
-                                    <div><strong>A1 :</strong> Débutant (Découverte)</div>
-                                    <div><strong>A2 :</strong> Élémentaire (Survie)</div>
-                                    <div><strong>B1 :</strong> Intermédiaire (Seuil)</div>
-                                    <div><strong>B2 :</strong> Intermédiaire supérieur (Indépendant)</div>
-                                    <div><strong>C1 :</strong> Avancé (Autonome)</div>
-                                    <div><strong>C2 :</strong> Maîtrise / Bilingue</div>
+            <!-- Viewport masquant les débordements -->
+            <div class="triptych-viewport">
+                <div class="triptych-track" id="triptych-track">
+
+                    <!-- ==========================================================
+                         PANNEAU GAUCHE (0) : TEST INITIAL
+                         ========================================================== -->
+                    <div class="triptych-panel" id="triptych-panel-test">
+                        <div class="card config-card-compact" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 420px;">
+                            <div>
+                                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                                    <h2 style="font-size: 1.25rem; font-family: var(--font-heading); margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                                        <span>Test initial de niveau</span>
+                                    </h2>
+                                    <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); padding: 0.15rem 0.5rem; border-radius: 6px; border: 1px solid rgba(59, 130, 246, 0.3);">CECRL A1 ➔ C2</span>
                                 </div>
-                            </span>
-                        </span>
-                    </label>
-                    <div class="level-filter-group" style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap;" id="drill-level-checkboxes">
-                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                            <input type="checkbox" id="drill-level-a1" value="A1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
-                        </label>
-                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                            <input type="checkbox" id="drill-level-a2" value="A2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
-                        </label>
-                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                            <input type="checkbox" id="drill-level-b1" value="B1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">B1</span>
-                        </label>
-                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                            <input type="checkbox" id="drill-level-b2" value="B2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(234, 179, 8, 0.2); color: #eab308;">B2</span>
-                        </label>
-                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                            <input type="checkbox" id="drill-level-c1" value="C1" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(249, 115, 22, 0.2); color: #f97316;">C1</span>
-                        </label>
-                        <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; user-select: none; margin: 0;">
-                            <input type="checkbox" id="drill-level-c2" value="C2" checked style="accent-color: var(--primary-color); width: 15px; height: 15px; cursor: pointer;">
-                            <span class="type-badge" style="font-size: 0.7rem; padding: 0.15rem 0.45rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">C2</span>
-                        </label>
-                        <span id="home-remaining-badge" style="margin-left: 0.5rem; font-size: 0.88rem; font-weight: 600; color: var(--text-secondary); display: inline-flex; align-items: center;" title="Mots à valider avec les filtres sélectionnés">(<span id="home-remaining-count" style="color: var(--primary-color); font-weight: 700;">0</span>)</span>
-                    </div>
-                </div>
+                                <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.25rem;">
+                                    Évaluez vos compétences réelles pour calibrer votre apprentissage. Le test adaptatif s'ajuste en continu à votre niveau.
+                                </p>
 
-                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem; align-items: flex-start;">
-                    <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
-                        <label data-i18n="label_volume">Nombre de mots</label>
-                        <div class="range-container" style="display: flex; align-items: center; height: 42px; gap: 0.5rem;">
-                            <input type="range" id="input-volume" min="5" max="20" value="20" step="5" style="flex: 1; margin: 0;">
-                            <span id="volume-display" class="badge">20 mots</span>
+                                <!-- Statut du test (affiché dynamiquement si déjà passé) -->
+                                <div id="test-panel-status-card" style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem 1.15rem; margin-bottom: 1.25rem; display: none;">
+                                    <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem;">
+                                        <span id="test-panel-certified-badge" style="font-weight: 800; font-size: 1.1rem; color: var(--primary-color);">A1</span>
+                                        <span style="font-weight: 600; font-size: 0.9rem; color: var(--text-primary);">Niveau actuellement validé</span>
+                                    </div>
+                                    <div id="test-panel-status-date" style="font-size: 0.78rem; color: var(--text-secondary);">Validé lors de votre évaluation initiale.</div>
+                                </div>
+
+                                <div style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: #10b981;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Validation automatique des paliers de vocabulaire maîtrisés</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: #10b981;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Possibilité de repasser le test en entraînement libre</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" id="btn-open-placement-test" class="btn-primary" style="width: 100%; padding: 0.8rem; font-size: 0.95rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                <span>Démarrer le test initial</span>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="form-group" style="flex: 1.6; min-width: 290px; margin-bottom: 0;">
-                        <label data-i18n="label_mode">Mode d'entraînement</label>
-                        <div class="segmented-control" id="mode-segmented-control" style="display: flex; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; min-height: 42px;">
-                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex; border-right: 1px solid var(--border-color);">
-                                <input type="radio" name="drill-mode" value="smart" checked style="opacity: 0; position: absolute; width: 0; height: 0;">
-                                <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_smart">Smart Drill!</div>
-                            </label>
-                            <label style="flex: 1; text-align: center; cursor: pointer; margin: 0; position: relative; display: flex;">
-                                <input type="radio" name="drill-mode" value="review" style="opacity: 0; position: absolute; width: 0; height: 0;">
-                                <div class="segment-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.35rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; transition: all 0.2s;" data-i18n="mode_review">Révision</div>
-                            </label>
+                    <!-- ==========================================================
+                         PANNEAU CENTRAL (1) : DRILL (1-CLIC & 0 SCROLL SUR 14")
+                         ========================================================== -->
+                    <div class="triptych-panel" id="triptych-panel-drill">
+                        <div class="card config-card-compact" style="position: relative;">
+                            <!-- Badges de langue en haut à gauche comme durant le drill (ouvre Options) -->
+                            <div id="home-lang-indicator-wrapper" style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 1.45rem;">
+                                <button type="button" id="home-lang-indicator" class="home-drill-lang-pair-btn" style="background: transparent; border: none; padding: 0.15rem 0.2rem; display: inline-flex; align-items: center; gap: 0.65rem; cursor: pointer; border-radius: 8px;" title="Changer les langues dans les options" aria-label="Changer les langues dans les options">
+                                    <div class="lang-pair" style="display: flex; align-items: center; gap: 0.55rem; font-weight: 700;">
+                                        <span id="home-lang-source" class="lang-badge" style="font-size: 0.88rem; font-weight: 700; padding: 0.26rem 0.72rem; border-radius: 6px;">FR</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary); opacity: 0.7;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                        <span id="home-lang-target" class="lang-badge" style="font-size: 0.88rem; font-weight: 700; padding: 0.26rem 0.72rem; border-radius: 6px;">EN</span>
+                                    </div>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary); opacity: 0.75;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                </button>
+                            </div>
+
+                            <!-- Niveaux CECRL -->
+                            <div class="form-group" style="margin-bottom: 1.45rem; text-align: left;">
+                                <div style="display: flex; align-items: baseline; gap: 0.65rem; margin-bottom: 0.6rem;">
+                                    <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-primary);" data-i18n="label_level">Niveaux CECRL</span>
+                                    <span id="home-remaining-badge" style="font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); display: inline-flex; align-items: center;" title="Mots à valider avec les filtres sélectionnés">
+                                        (<span id="home-remaining-count" style="color: var(--primary-color); font-weight: 700;">0</span>&nbsp;mots)
+                                    </span>
+                                </div>
+                                <div class="level-filter-group" style="display: flex; gap: 0.55rem; align-items: center; justify-content: flex-start; flex-wrap: wrap;" id="drill-level-checkboxes">
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
+                                        <input type="checkbox" id="drill-level-a1" value="A1" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
+                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
+                                    </label>
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
+                                        <input type="checkbox" id="drill-level-a2" value="A2" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
+                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
+                                    </label>
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
+                                        <input type="checkbox" id="drill-level-b1" value="B1" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
+                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">B1</span>
+                                    </label>
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
+                                        <input type="checkbox" id="drill-level-b2" value="B2" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
+                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(234, 179, 8, 0.2); color: #eab308;">B2</span>
+                                    </label>
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
+                                        <input type="checkbox" id="drill-level-c1" value="C1" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
+                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(249, 115, 22, 0.2); color: #f97316;">C1</span>
+                                    </label>
+                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
+                                        <input type="checkbox" id="drill-level-c2" value="C2" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
+                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">C2</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Curseur Volume de mots -->
+                            <div class="form-group" style="margin-bottom: 1.75rem; text-align: left;">
+                                <label data-i18n="label_volume" style="font-size: 0.9rem; font-weight: 700; margin: 0 0 0.55rem 0; color: var(--text-primary); display: block;">Nombre de mots</label>
+                                <div class="range-container" style="display: flex; align-items: center; gap: 0.85rem; height: 38px;">
+                                    <input type="range" id="input-volume" min="5" max="20" value="20" step="5" style="width: 160px; max-width: 55%; margin: 0;">
+                                    <span id="volume-display" class="badge" style="font-size: 0.84rem; padding: 0.22rem 0.65rem;">20 mots</span>
+                                </div>
+                            </div>
+
+                            <!-- Gros bouton 1-CLIC direct -->
+                            <button id="btn-start-session" class="btn-primary" data-i18n="btn_start_drill" style="width: 100%; height: 52px; font-size: 1.15rem; font-weight: 800; letter-spacing: 0.02em; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; border-radius: 12px; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                <span>Drill!</span>
+                            </button>
                         </div>
-                        <div id="mode-description" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem; min-height: 2.4rem; line-height: 1.4;">Apprentissage optimisé via une réserve active limitant la surcharge mentale.</div>
                     </div>
-                </div>
 
-                <button id="btn-start-session" class="btn-primary" data-i18n="btn_start_drill" style="width: 100%; margin-top: 0.5rem;">Drill!</button>
+                    <!-- ==========================================================
+                         PANNEAU DROIT (2) : MISE EN PRATIQUE & RÉVISION
+                         ========================================================== -->
+                    <div class="triptych-panel" id="triptych-panel-practice">
+                        <div class="card config-card-compact" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 440px;">
+                            <div>
+                                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                                    <h2 style="font-size: 1.25rem; font-family: var(--font-heading); margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f59e0b;"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                                        <span>Mise en pratique</span>
+                                    </h2>
+                                    <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; background: rgba(245, 158, 11, 0.15); color: #f59e0b; padding: 0.15rem 0.5rem; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.3);">Atelier</span>
+                                </div>
+                                <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.25rem;">
+                                    Ancrez vos mots acquis dans des contextes réels et travaillez spécifiquement vos mots les plus récalcitrants.
+                                </p>
 
-                <div style="margin-top: 1.25rem; text-align: center; border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
-                    <button type="button" id="btn-open-placement-test" class="btn-placement-test" style="width: 100%; height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; font-weight: 600; font-size: 0.95rem; border-radius: 8px; border: 1px dashed var(--primary-color); background: rgba(59, 130, 246, 0.08); color: var(--primary-color); cursor: pointer; transition: all 0.2s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-                        <span data-i18n="btn_placement_test">Évaluer mon niveau (Test A1 à C2)</span>
-                        <span style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; background: rgba(245, 158, 11, 0.15); color: #f59e0b; padding: 0.15rem 0.45rem; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.35); line-height: 1;">Bêta</span>
-                    </button>
+                                <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 1.25rem;">
+                                    <!-- Tuile 1 : Révision des mots à perfectionner -->
+                                    <div id="btn-quick-review-mode" class="practice-activity-card" role="button" tabindex="0" title="Lancer la révision ciblée">
+                                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                            <div style="width: 34px; height: 34px; border-radius: 8px; background: rgba(59, 130, 246, 0.12); color: var(--primary-color); display: flex; align-items: center; justify-content: center;">
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                                            </div>
+                                            <div>
+                                                <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);">Révision ciblée</div>
+                                                <div style="font-size: 0.75rem; color: var(--text-secondary);">Mots nécessitant plusieurs tentatives</div>
+                                            </div>
+                                        </div>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary);"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </div>
+
+                                    <!-- Tuile 2 : Phrases & Contexte (Mise en situation) -->
+                                    <div id="btn-quick-context-mode" class="practice-activity-card" role="button" tabindex="0" title="Lancer les phrases de mise en situation">
+                                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                            <div style="width: 34px; height: 34px; border-radius: 8px; background: rgba(16, 185, 129, 0.12); color: #10b981; display: flex; align-items: center; justify-content: center;">
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                            </div>
+                                            <div>
+                                                <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);">Phrases de mise en situation</div>
+                                                <div style="font-size: 0.75rem; color: var(--text-secondary);">Complétez la phrase avec le mot juste</div>
+                                            </div>
+                                        </div>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary);"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </div>
         </div>
     </template>
 
@@ -1097,14 +1185,14 @@
 
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.8; font-family: var(--font-sans); line-height: 1.6;">
-        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v217</span> &bull; <span data-i18n="footer_deployed">Déployé le 18/09/2026</span></div>
+        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v226</span> &bull; <span data-i18n="footer_deployed">Déployé le 18/09/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/jspdf.umd.min.js"></script>
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=217"></script>
+    <script type="module" src="js/main.js?v=226"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

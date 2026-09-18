@@ -1,7 +1,7 @@
 import { vocabulary } from './data/vocabulary.js?v=215';
-import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=215';
+import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize, startDirectContextDrill } from './drill.js?v=220';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
-import { translations } from './i18n.js?v=215';
+import { translations } from './i18n.js?v=220';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays, fetchAppConfigFromCloud, getProgressionMilestoneStep } from './config/app-config.js';
@@ -270,6 +270,10 @@ function initOptionsModal() {
         updateProgressionMilestoneGiraffe();
 
         // Mettre à jour l'indicateur d'accueil si présent
+        const homeLangSrc = document.getElementById('home-lang-source');
+        const homeLangTgt = document.getElementById('home-lang-target');
+        if (homeLangSrc) homeLangSrc.textContent = src.toUpperCase();
+        if (homeLangTgt) homeLangTgt.textContent = tgt.toUpperCase();
         const homeIndicatorText = document.getElementById('home-lang-pair-text');
         if (homeIndicatorText) {
             homeIndicatorText.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
@@ -616,17 +620,19 @@ function attachViewEvents(viewId) {
         const savedLevelsStr = localStorage.getItem('drill_levels');
         const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
-        // Mettre à jour le badge indicateur de langue active
+        // Mettre à jour les badges indicateurs de langue active (style Drill)
+        const homeLangSrc = document.getElementById('home-lang-source');
+        const homeLangTgt = document.getElementById('home-lang-target');
         const homeLangIndicatorText = document.getElementById('home-lang-pair-text');
         const homeLangIndicatorBtn = document.getElementById('home-lang-indicator');
         const { src: activeSrc, tgt: activeTgt } = getActivePair();
+        if (homeLangSrc) homeLangSrc.textContent = activeSrc.toUpperCase();
+        if (homeLangTgt) homeLangTgt.textContent = activeTgt.toUpperCase();
         if (homeLangIndicatorText) {
             homeLangIndicatorText.textContent = `${getLangName(activeSrc)} ➔ ${getLangName(activeTgt)}`;
         }
         if (homeLangIndicatorBtn) {
             homeLangIndicatorBtn.onclick = () => {
-                const optModal = document.getElementById('options-modal');
-                if (optModal) optModal.classList.remove('hidden');
                 const optBtn = document.getElementById('options-btn');
                 if (optBtn) optBtn.click();
             };
@@ -692,32 +698,110 @@ function attachViewEvents(viewId) {
             });
         }
 
-        // Mode d'entraînement & Mise à jour dynamique de la description
+        // Mode d'entraînement & Mise à jour dynamique de la description (si présent)
         const savedModeRadio = document.querySelector(`input[name="drill-mode"][value="${lastMode}"]`);
         if (savedModeRadio) {
             savedModeRadio.checked = true;
         }
 
-        function updateModeDescription() {
-            const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
-            const modeDescEl = document.getElementById('mode-description');
-            if (!modeChecked || !modeDescEl) return;
-            const mode = modeChecked.value;
-            const lang = getAppLanguage();
-            const descKey = `mode_desc_${mode}`;
-            if (translations[lang] && translations[lang][descKey]) {
-                modeDescEl.textContent = translations[lang][descKey];
+        // ====================================================================
+        // Gestion du Triptyque de Navigation (Style Zelda)
+        // ====================================================================
+        let currentTriptychPanel = 1; // 0 = Test, 1 = Drill, 2 = Pratique
+        const triptychTrack = document.getElementById('triptych-track');
+        const triptychTabs = document.querySelectorAll('.triptych-tab-btn');
+        const prevArrowBtn = document.getElementById('triptych-prev-btn');
+        const nextArrowBtn = document.getElementById('triptych-next-btn');
+
+        function setTriptychPanel(index) {
+            if (index < 0 || index > 2 || !triptychTrack) return;
+            currentTriptychPanel = index;
+            const translateX = -(index * 33.333333);
+            triptychTrack.style.transform = `translateX(${translateX}%)`;
+
+            // Mettre à jour les onglets pilules (si présents)
+            if (triptychTabs && triptychTabs.length > 0) {
+                triptychTabs.forEach(btn => {
+                    const p = parseInt(btn.dataset.panel, 10);
+                    btn.classList.toggle('active', p === index);
+                });
+            }
+
+            const appLang = getAppLanguage();
+            const t = translations[appLang] || translations['fr'];
+
+            // Mettre à jour les flèches et leurs infobulles multilingues selon la position actuelle
+            if (prevArrowBtn) {
+                if (index === 0) {
+                    prevArrowBtn.style.display = 'none';
+                } else {
+                    prevArrowBtn.style.display = 'inline-flex';
+                    const targetName = (index === 1) ? (t.triptych_panel_test || 'Test initial') : (t.triptych_panel_drill || 'Drill !');
+                    prevArrowBtn.title = targetName;
+                    prevArrowBtn.setAttribute('aria-label', targetName);
+                }
+            }
+
+            if (nextArrowBtn) {
+                if (index === 2) {
+                    nextArrowBtn.style.display = 'none';
+                } else {
+                    nextArrowBtn.style.display = 'inline-flex';
+                    const targetName = (index === 1) ? (t.triptych_panel_practice || 'Mise en pratique') : (t.triptych_panel_drill || 'Drill !');
+                    nextArrowBtn.title = targetName;
+                    nextArrowBtn.setAttribute('aria-label', targetName);
+                }
             }
         }
 
-        const modeRadios = document.querySelectorAll('input[name="drill-mode"]');
-        modeRadios.forEach(radio => {
-            radio.addEventListener('change', () => {
-                updateModeDescription();
-                localStorage.setItem('voc_last_mode', radio.value);
-            });
-        });
-        updateModeDescription();
+        window.updateTriptychArrows = () => setTriptychPanel(currentTriptychPanel);
+
+        if (prevArrowBtn) {
+            prevArrowBtn.onclick = () => {
+                if (currentTriptychPanel > 0) setTriptychPanel(currentTriptychPanel - 1);
+            };
+        }
+
+        if (nextArrowBtn) {
+            nextArrowBtn.onclick = () => {
+                if (currentTriptychPanel < 2) setTriptychPanel(currentTriptychPanel + 1);
+            };
+        }
+
+        // Raccourcis clavier flèches gauche / droite (hors input)
+        const handleTriptychKeyboard = (e) => {
+            if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) return;
+            if (e.key === 'ArrowLeft') {
+                if (currentTriptychPanel > 0) setTriptychPanel(currentTriptychPanel - 1);
+            } else if (e.key === 'ArrowRight') {
+                if (currentTriptychPanel < 2) setTriptychPanel(currentTriptychPanel + 1);
+            }
+        };
+        window.addEventListener('keydown', handleTriptychKeyboard);
+
+        // Support swipe tactile sur mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const viewportEl = document.querySelector('.triptych-viewport');
+        if (viewportEl) {
+            viewportEl.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+            viewportEl.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                const diff = touchStartX - touchEndX;
+                if (Math.abs(diff) > 45) {
+                    if (diff > 0 && currentTriptychPanel < 2) {
+                        setTriptychPanel(currentTriptychPanel + 1);
+                    } else if (diff < 0 && currentTriptychPanel > 0) {
+                        setTriptychPanel(currentTriptychPanel - 1);
+                    }
+                }
+            }, { passive: true });
+        }
+
+        // Initialiser centré sur le Drill
+        setTriptychPanel(1);
 
         if (btnStart) {
             function updateAvailableCount() {
@@ -726,14 +810,16 @@ function attachViewEvents(viewId) {
                 const remainingBadge = document.getElementById('home-remaining-badge');
                 const remainingCountEl = document.getElementById('home-remaining-count');
                 const remainingLegacyEl = document.getElementById('home-remaining-text');
-                if (!introEl) return;
                 
                 const lang = getAppLanguage();
                 
-                // 1. Sentence with total count
-                const totalText = translations[lang].subtitle_home_intro
-                    .replace('{total}', `<span style="font-weight: bold; color: var(--primary-color);">${vocabulary.length}</span>`);
-                introEl.innerHTML = totalText;
+                // 1. Sentence with total count (si présent)
+                if (introEl) {
+                    const totalText = translations[lang]?.subtitle_home_intro
+                        ? translations[lang].subtitle_home_intro.replace('{total}', `<span style="font-weight: bold; color: var(--primary-color);">${vocabulary.length}</span>`)
+                        : '';
+                    introEl.innerHTML = totalText;
+                }
                 
                 // 2. Count depending on language pair selection and filters
                 if (src === tgt) {
@@ -771,8 +857,9 @@ function attachViewEvents(viewId) {
                     remainingCountEl.textContent = count;
                 }
                 if (remainingLegacyEl) {
-                    const remainingText = translations[lang].subtitle_home_remaining
-                        .replace('{remaining}', `<span style="font-weight: bold; color: var(--primary-color);">${count}</span>`);
+                    const remainingText = translations[lang]?.subtitle_home_remaining
+                        ? translations[lang].subtitle_home_remaining.replace('{remaining}', `<span style="font-weight: bold; color: var(--primary-color);">${count}</span>`)
+                        : '';
                     remainingLegacyEl.innerHTML = remainingText;
                 }
 
@@ -794,7 +881,6 @@ function attachViewEvents(viewId) {
                         poolCount.textContent = `${globalAttempted} / ${maxPool}`;
                         const pct = Math.min(100, Math.round((globalAttempted / maxPool) * 100));
                         poolFill.style.width = pct + '%';
-                        // Color coding
                         let color = '#10b981'; // green
                         if (pct >= 95) color = '#ef4444'; // red
                         else if (pct >= 80) color = '#f59e0b'; // orange
@@ -815,15 +901,15 @@ function attachViewEvents(viewId) {
             window.updateHomeWordCount = updateAvailableCount;
             updateAvailableCount();
 
-            // Empêcher les doublons d'écouteurs si la vue est rechargée
+            // Démarrage rapide 1-CLIC direct du Drill
             const newBtn = btnStart.cloneNode(true);
             btnStart.parentNode.replaceChild(newBtn, btnStart);
             
             newBtn.addEventListener('click', () => {
                 const { src, tgt } = getActivePair();
-                const vol = parseInt(document.getElementById('input-volume').dataset.val || document.getElementById('input-volume').value, 10);
-                const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
-                const mode = modeChecked ? modeChecked.value : 'smart';
+                const volInput = document.getElementById('input-volume');
+                const vol = parseInt(volInput?.dataset.val || volInput?.value || '20', 10);
+                const mode = 'smart'; // Drill direct rapide en mode smart
                 
                 const selectedLevels = [];
                 if (document.getElementById('drill-level-a1')?.checked) selectedLevels.push('A1');
@@ -839,28 +925,84 @@ function attachViewEvents(viewId) {
                 localStorage.setItem('voc_last_mode', mode);
                 localStorage.setItem('drill_levels', JSON.stringify(selectedLevels));
 
+                window.removeEventListener('keydown', handleTriptychKeyboard);
                 renderView('drill');
                 initDrillSession(src, tgt, vol, selectedLevels, mode);
             });
         }
 
+        // ====================================================================
+        // Branchements Panneau Droit (Mise en pratique / Révision ciblée & Contexte)
+        // ====================================================================
+        const startReviewSession = () => {
+            const { src, tgt } = getActivePair();
+            const volInput = document.getElementById('input-volume');
+            const vol = parseInt(volInput?.dataset.val || volInput?.value || '20', 10);
+            const selectedLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+            window.removeEventListener('keydown', handleTriptychKeyboard);
+            renderView('drill');
+            initDrillSession(src, tgt, vol, selectedLevels, 'review');
+        };
+
+        const startContextSession = () => {
+            const { src, tgt } = getActivePair();
+            const selectedLevels = [];
+            if (document.getElementById('drill-level-a1')?.checked) selectedLevels.push('A1');
+            if (document.getElementById('drill-level-a2')?.checked) selectedLevels.push('A2');
+            if (document.getElementById('drill-level-b1')?.checked) selectedLevels.push('B1');
+            if (document.getElementById('drill-level-b2')?.checked) selectedLevels.push('B2');
+            if (document.getElementById('drill-level-c1')?.checked) selectedLevels.push('C1');
+            if (document.getElementById('drill-level-c2')?.checked) selectedLevels.push('C2');
+            const levels = selectedLevels.length > 0 ? selectedLevels : ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+            window.removeEventListener('keydown', handleTriptychKeyboard);
+            renderView('drill');
+            startDirectContextDrill(src, tgt, levels);
+        };
+
+        const btnQuickReview = document.getElementById('btn-quick-review-mode');
+        if (btnQuickReview) btnQuickReview.onclick = startReviewSession;
+
+        const btnQuickContext = document.getElementById('btn-quick-context-mode');
+        if (btnQuickContext) btnQuickContext.onclick = startContextSession;
+
+        // ====================================================================
+        // Branchements Panneau Gauche (Test initial)
+        // ====================================================================
         const btnPlacementTest = document.getElementById('btn-open-placement-test');
         if (btnPlacementTest) {
             import('./storage.js').then(module => {
                 const officialResult = module.getOfficialPlacementTestResult ? module.getOfficialPlacementTestResult() : null;
+                const statusCard = document.getElementById('test-panel-status-card');
+                const certifiedBadge = document.getElementById('test-panel-certified-badge');
+                const statusDate = document.getElementById('test-panel-status-date');
+
                 if (officialResult) {
                     const span = btnPlacementTest.querySelector('span');
-                    if (span) span.innerHTML = "Test de niveau (Résultats & Entraînement)";
+                    if (span) span.innerHTML = "Refaire le test (Entraînement libre)";
+                    if (statusCard && certifiedBadge) {
+                        statusCard.style.display = 'block';
+                        certifiedBadge.textContent = officialResult.certifiedLevel || officialResult.level || 'A1';
+                        if (statusDate && officialResult.timestamp) {
+                            const d = new Date(officialResult.timestamp);
+                            statusDate.textContent = `Validé le ${d.toLocaleDateString()} (${officialResult.totalScore || 0} pts)`;
+                        }
+                    }
                 } else {
                     module.getPlacementTestData().then(ptData => {
                         if (ptData && (ptData.official_completed || ptData.attempts_used >= 1)) {
                             const span = btnPlacementTest.querySelector('span');
-                            if (span) span.innerHTML = "Test de niveau (Résultats & Entraînement)";
+                            if (span) span.innerHTML = "Refaire le test (Entraînement libre)";
+                            if (statusCard && certifiedBadge) {
+                                statusCard.style.display = 'block';
+                                certifiedBadge.textContent = ptData.certifiedLevel || 'A1';
+                            }
                         }
                     });
                 }
             }).catch(() => {});
+
             btnPlacementTest.onclick = () => {
+                window.removeEventListener('keydown', handleTriptychKeyboard);
                 const { src, tgt } = getActivePair();
                 startPlacementTest(src, tgt);
             };
@@ -2014,8 +2156,11 @@ window.addEventListener('DOMContentLoaded', () => {
                 translatePage();
                 
                 // Si on est sur l'accueil, mettre à jour le compteur disponible, le volume et la description du mode
-                const viewHomeEl = document.getElementById('home-intro-text');
+                const viewHomeEl = document.getElementById('home-intro-text') || document.getElementById('triptych-track');
                 if (viewHomeEl) {
+                    if (typeof window.updateHomeWordCount === 'function') {
+                        window.updateHomeWordCount();
+                    }
                     const selectSrc = document.getElementById('select-lang-source');
                     if (selectSrc) {
                         selectSrc.dispatchEvent(new Event('change'));
@@ -2034,6 +2179,9 @@ window.addEventListener('DOMContentLoaded', () => {
                         if (translations[newLang] && translations[newLang][descKey]) {
                             modeDescEl.textContent = translations[newLang][descKey];
                         }
+                    }
+                    if (typeof window.updateTriptychArrows === 'function') {
+                        window.updateTriptychArrows();
                     }
                 }
                 
