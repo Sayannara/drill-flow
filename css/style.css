@@ -987,11 +987,10 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 }
 .cefr-step-item.active .cefr-step-bubble {
     border-color: #f59e0b;
+    border-style: dashed;
     color: #f59e0b;
     background: var(--surface-color);
-    transform: scale(1.12);
-    box-shadow: 0 0 14px rgba(245, 158, 11, 0.4);
-    animation: cefrPulse 2s infinite;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
 }
 .cefr-step-item.newly-completed .cefr-step-bubble {
     animation: bubbleUnlock 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
@@ -2723,6 +2722,168 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
 
 .home-drill-lang-pair-btn:active {
     transform: scale(0.96);
+}
+
+/* ==========================================================================
+   Donut CECRL Fromage Interactif & Grille Drill 2 Colonnes
+   ========================================================================== */
+.drill-config-grid {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width: 540px) {
+    .drill-config-grid {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
+
+.cefr-donut-slice {
+    cursor: pointer;
+    transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease;
+    transform-origin: 70px 70px;
+}
+
+.cefr-donut-slice:hover {
+    filter: brightness(1.2) drop-shadow(0 2px 6px rgba(0,0,0,0.35));
+}
+
+.cefr-donut-slice.active {
+    opacity: 1;
+    transform: scale(1.035);
+}
+
+.cefr-donut-slice:not(.active) {
+    opacity: 0.25;
+    filter: grayscale(0.75);
+}
+
+.cefr-donut-text {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    fill: #ffffff;
+    pointer-events: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.cefr-donut-slice:not(.active) ~ text[data-level] {
+    opacity: 0.45;
+}
+
+.btn-quick-volume {
+    transition: all 0.18s ease;
+}
+
+.btn-quick-volume:hover {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.btn-quick-volume.active {
+    background: rgba(59, 130, 246, 0.18) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   Slider Cool & Futuriste
+   ========================================================================== */
+.cool-slider-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cool-range-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(to right, #3b82f6 100%, rgba(255, 255, 255, 0.12) 100%);
+    outline: none;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    margin: 0;
+}
+
+.cool-range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3.5px solid #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.65), 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+    transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease, background 0.15s ease;
+}
+
+.cool-range-input::-webkit-slider-thumb:hover {
+    transform: scale(1.22);
+    box-shadow: 0 0 16px rgba(59, 130, 246, 0.9), 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.cool-range-input:active::-webkit-slider-thumb {
+    cursor: grabbing;
+    transform: scale(1.28);
+    background: #3b82f6;
+    border-color: #ffffff;
+    box-shadow: 0 0 22px rgba(59, 130, 246, 1), 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.cool-range-input::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3.5px solid #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.65), 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+    transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease;
+}
+
+.cool-range-input::-moz-range-thumb:hover {
+    transform: scale(1.22);
+    box-shadow: 0 0 16px rgba(59, 130, 246, 0.9);
+}
+
+.cool-range-input:active::-moz-range-thumb {
+    cursor: grabbing;
+    transform: scale(1.28);
+    background: #3b82f6;
+    border-color: #ffffff;
+}
+
+.step-tick {
+    cursor: pointer;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    padding: 0.1rem 0.25rem;
+    border-radius: 4px;
+}
+
+.step-tick:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-1px);
+}
+
+.step-tick.active {
+    color: var(--primary-color) !important;
+    transform: scale(1.18);
 }
 
 

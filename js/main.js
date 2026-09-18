@@ -651,6 +651,53 @@ function attachViewEvents(viewId) {
         if (cbB2) cbB2.checked = savedLevels.includes('B2');
         if (cbC1) cbC1.checked = savedLevels.includes('C1');
         if (cbC2) cbC2.checked = savedLevels.includes('C2');
+
+        // Initialisation et gestion interactive du Donut Fromage CECRL
+        function syncCefrDonutUI() {
+            const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+            let activeCount = 0;
+            levels.forEach(lvl => {
+                const cb = document.getElementById(`drill-level-${lvl}`);
+                const slice = document.getElementById(`donut-slice-${lvl}`);
+                const isChecked = cb ? cb.checked : true;
+                if (slice) {
+                    if (isChecked) {
+                        slice.classList.add('active');
+                        activeCount++;
+                    } else {
+                        slice.classList.remove('active');
+                    }
+                }
+            });
+            const countDisplay = document.getElementById('donut-count-display');
+            if (countDisplay) {
+                countDisplay.textContent = `${activeCount}/6`;
+            }
+        }
+
+        const donutSvg = document.getElementById('cefr-donut-svg');
+        if (donutSvg) {
+            donutSvg.querySelectorAll('.cefr-donut-slice-group').forEach(group => {
+                group.style.cursor = 'pointer';
+                group.onclick = (e) => {
+                    e.stopPropagation();
+                    const lvl = group.dataset.level?.toLowerCase();
+                    const cb = document.getElementById(`drill-level-${lvl}`);
+                    if (cb) {
+                        cb.checked = !cb.checked;
+                        // Empêcher d'avoir 0 niveau sélectionné
+                        const allCbs = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].map(l => document.getElementById(`drill-level-${l}`));
+                        const anyChecked = allCbs.some(c => c && c.checked);
+                        if (!anyChecked) {
+                            cb.checked = true;
+                        }
+                        syncCefrDonutUI();
+                        cb.dispatchEvent(new Event('change'));
+                    }
+                };
+            });
+            syncCefrDonutUI();
+        }
         
         if (inputVol && volDisp) {
             const possibleVolumes = getPossibleVolumes();
@@ -677,10 +724,24 @@ function attachViewEvents(viewId) {
             inputVol.value = targetVol;
             inputVol.dataset.val = targetVol;
 
+            const updateSliderTrackFill = (val) => {
+                const min = parseInt(inputVol.min || '5', 10);
+                const max = parseInt(inputVol.max || '20', 10);
+                const pct = ((val - min) / (max - min)) * 100;
+                inputVol.style.background = `linear-gradient(to right, #3b82f6 0%, #06b6d4 ${pct}%, rgba(255, 255, 255, 0.12) ${pct}%, rgba(255, 255, 255, 0.12) 100%)`;
+                document.querySelectorAll('.step-tick').forEach(tick => {
+                    const tVal = parseInt(tick.dataset.step, 10);
+                    const isActive = (tVal === val);
+                    tick.classList.toggle('active', isActive);
+                    tick.style.color = tVal <= val ? 'var(--primary-color)' : 'var(--text-secondary)';
+                });
+            };
+
             const updateVolText = (v) => {
                 const lang = getAppLanguage();
                 const suffix = lang === 'fr' ? 'mots' : (lang === 'es' ? 'palabras' : (lang === 'de' ? 'Wörter' : 'words'));
                 volDisp.textContent = `${v} ${suffix}`;
+                updateSliderTrackFill(v);
             };
             updateVolText(targetVol);
             
@@ -695,6 +756,17 @@ function attachViewEvents(viewId) {
                 inputVol.dataset.val = chosen;
                 updateVolText(chosen);
                 localStorage.setItem('voc_last_vol', chosen.toString());
+            });
+
+            // Permettre le clic direct sur les crans 5, 10, 15, 20
+            document.querySelectorAll('.step-tick').forEach(tick => {
+                tick.onclick = () => {
+                    const chosen = parseInt(tick.dataset.step, 10);
+                    inputVol.value = chosen;
+                    inputVol.dataset.val = chosen;
+                    updateVolText(chosen);
+                    localStorage.setItem('voc_last_vol', chosen.toString());
+                };
             });
         }
 
@@ -889,6 +961,10 @@ function attachViewEvents(viewId) {
                     } else {
                         poolGauge.style.display = 'none';
                     }
+                }
+
+                if (typeof syncCefrDonutUI === 'function') {
+                    syncCefrDonutUI();
                 }
             }
 
@@ -1429,11 +1505,18 @@ function renderProgressTable() {
         }
     });
 
-    // Mise à jour du compteur de mots selon filtres
-    const countEl = document.getElementById('prog-filtered-count');
-    if (countEl) {
+    // Mise à jour du badge de comptage des mots dans l'en-tête
+    const progCountBadge = document.getElementById('prog-total-count-badge');
+    if (progCountBadge) {
         const lang = getAppLanguage();
-        countEl.innerHTML = formatFilteredCount(filtered.length, lang);
+        const isPlural = filtered.length > 1;
+        const formattedNum = filtered.length.toLocaleString(lang === 'fr' ? 'fr-FR' : (lang === 'de' ? 'de-DE' : (lang === 'es' ? 'es-ES' : 'en-US')));
+        let suffix = 'mots';
+        if (lang === 'en') suffix = `word${isPlural ? 's' : ''}`;
+        else if (lang === 'de') suffix = isPlural ? 'Wörter' : 'Wort';
+        else if (lang === 'es') suffix = `palabra${isPlural ? 's' : ''}`;
+        else suffix = `mot${isPlural ? 's' : ''}`;
+        progCountBadge.textContent = `${formattedNum} ${suffix}`;
     }
 
     // Réactivation groupée des mots ignorés actuellement affichés
@@ -1668,6 +1751,40 @@ function getCefrTrackFillPct(pts) {
     return 100;
 }
 
+/**
+ * Calcule la largeur CSS exacte de remplissage du stepper.
+ * Ajuste géométriquement la ligne en tenant compte du rayon des bulles pour que
+ * dans l'espace visible entre 2 bulles, la ligne représente rigoureusement
+ * le pourcentage d'avancement du palier (au pixel et 1% près).
+ */
+function getCefrTrackStyleWidth(pts) {
+    const stepperLevels = CEFR_CONFIG.stepperLevels || ['0', ...CEFR_CONFIG.levels];
+    const thresholds = { '0': 0, ...CEFR_CONFIG.thresholds };
+    if (pts <= 0) return '0%';
+    if (pts >= thresholds.C2) return '100%';
+
+    const segmentCount = stepperLevels.length - 1; // 6 segments
+    const segmentWidth = 100 / segmentCount;
+    const isMobile = typeof window !== 'undefined' && window.innerWidth <= 640;
+    const bubbleRadius = isMobile ? 16 : 19;
+
+    for (let i = 0; i < segmentCount; i++) {
+        const currentT = thresholds[stepperLevels[i]];
+        const nextT = thresholds[stepperLevels[i + 1]];
+        if (pts >= currentT && pts < nextT) {
+            const fraction = Math.min(1, Math.max(0, (pts - currentT) / (nextT - currentT)));
+            const pct = (i * segmentWidth) + (fraction * segmentWidth);
+            const offsetPx = Math.round((1 - 2 * fraction) * bubbleRadius);
+            if (offsetPx === 0) {
+                return `${pct.toFixed(2)}%`;
+            }
+            const sign = offsetPx > 0 ? '+' : '-';
+            return `calc(${pct.toFixed(2)}% ${sign} ${Math.abs(offsetPx)}px)`;
+        }
+    }
+    return '100%';
+}
+
 function animatePointsCounter(elem, startVal, endVal, duration = 2000, onProgress = null, onComplete = null) {
     if (!elem) return;
     const startTime = performance.now();
@@ -1760,11 +1877,8 @@ function renderSelectedPairStats(pair) {
     const stepperLevels = CEFR_CONFIG.stepperLevels || ['0', ...levels];
     const thresholds = CEFR_CONFIG.thresholds;
     const stepperThresholds = { '0': 0, ...thresholds };
-    const trackFillPct = Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(points))));
-    const targetFillStyleWidth = trackFillPct > 0 ? `calc(${trackFillPct}% + 18px)` : '0%';
-
-    const startTrackFillPct = hasIncreased ? Math.min(100, Math.max(0, Math.round(getCefrTrackFillPct(startPoints)))) : 0;
-    const startFillStyleWidth = startTrackFillPct > 0 ? `calc(${startTrackFillPct}% + 18px)` : '0%';
+    const targetFillStyleWidth = getCefrTrackStyleWidth(points);
+    const startFillStyleWidth = hasIncreased ? getCefrTrackStyleWidth(startPoints) : '0%';
 
     // Calcul du pourcentage du palier en cours
     const prevTierPoints = startPoints - progDetails.prevThreshold;
@@ -1776,13 +1890,32 @@ function renderSelectedPairStats(pair) {
     // Texte d'objectif prochain palier
     let nextMilestoneHtml = '';
     if (progDetails.isMax) {
-        nextMilestoneHtml = `<span style="color: var(--success-color); font-weight: 700;">${translations[lang].stat_cefr_max}</span>`;
+        nextMilestoneHtml = `
+            <div style="display: flex; align-items: center; gap: 0.45rem; color: var(--success-color); font-weight: 700;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                    <path d="M4 22h16"></path>
+                    <path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1h10v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34"></path>
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+                <span>${translations[lang].stat_cefr_max}</span>
+            </div>
+        `;
     } else {
         const startNeeded = hasIncreased ? Math.max(0, progDetails.nextThreshold - startPoints) : progDetails.pointsNeeded;
         const toGoText = (translations[lang].stat_cefr_to_go || '{points} pts restants pour {level}')
             .replace('{points}', `<strong id="cefr-points-needed">${startNeeded}</strong>`)
             .replace('{level}', `<strong>${progDetails.nextLevel}</strong>`);
-        nextMilestoneHtml = `<span style="color: var(--text-secondary);">${translations[lang].stat_cefr_next || 'Objectif :'} <span style="color: var(--text-primary); font-weight: 600;">${progDetails.nextLevel} (${progDetails.nextThreshold} pts)</span> &bull; ${toGoText}</span>`;
+        nextMilestoneHtml = `
+            <div style="display: flex; align-items: center; gap: 0.45rem; color: var(--text-secondary);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color); flex-shrink: 0;">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                <span>${translations[lang].stat_cefr_next || 'Objectif :'} <span style="color: var(--text-primary); font-weight: 600;">${progDetails.nextLevel} (${progDetails.nextThreshold} pts)</span> &bull; ${toGoText}</span>
+            </div>
+        `;
     }
 
     // Bulles des paliers
@@ -1874,6 +2007,10 @@ function renderSelectedPairStats(pair) {
                     <div style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 500; margin-top: 0.15rem;">
                         ${translations[lang].stat_cefr_points || 'Points de maîtrise'}
                     </div>
+                    <div style="display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.35rem; font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.2); padding: 0.2rem 0.55rem; border-radius: 6px;">
+                        <span>${translations[lang].stat_cefr_overall || 'Progression globale CECRL'} :</span>
+                        <strong style="color: var(--primary-color); font-weight: 800;">${progDetails.overallPct}%</strong>
+                    </div>
                 </div>
             </div>
 
@@ -1891,8 +2028,15 @@ function renderSelectedPairStats(pair) {
             <div style="margin-top: 0.85rem; padding: 0.85rem 1.1rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; display: flex; flex-direction: column; gap: 0.45rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; flex-wrap: wrap; gap: 0.4rem;">
                     <div>${nextMilestoneHtml}</div>
-                    <div style="font-weight: 800; font-size: 0.9rem; color: ${currentLvlColor.text};">
-                        ${progDetails.pctInTier}%
+                    <div style="display: flex; align-items: center; gap: 0.35rem;">
+                        ${!progDetails.isMax ? `
+                            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary);">
+                                ${(translations[lang].stat_cefr_tier_progress || 'Avancement vers {level} :').replace('{level}', progDetails.nextLevel)}
+                            </span>
+                        ` : ''}
+                        <span style="font-weight: 800; font-size: 0.95rem; color: ${currentLvlColor.text};">
+                            ${progDetails.pctInTier}%
+                        </span>
                     </div>
                 </div>
                 <div style="width: 100%; height: 9px; background: rgba(100, 116, 139, 0.18); border-radius: 999px; overflow: hidden;">

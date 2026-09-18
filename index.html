@@ -79,8 +79,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=226">
-    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=226">
+    <link rel="stylesheet" href="css/style.css?v=235">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=235">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
@@ -136,7 +136,19 @@
     <template id="view-home">
         <div class="view-content animate-fade-in" style="width: 100%; max-width: 680px; margin: 0 auto; box-sizing: border-box;">
             <!-- Phrase d'accroche hors de la boîte comme avant -->
-            <p id="home-intro-text" style="text-align: center; font-size: 1.15rem; font-weight: 600; color: var(--text-secondary); margin: 0 0 1.6rem 0; line-height: 1.5;"></p>
+            <p id="home-intro-text" style="text-align: center; font-size: 1.15rem; font-weight: 600; color: var(--text-secondary); margin: 0 0 1.25rem 0; line-height: 1.5;"></p>
+
+            <!-- Badges de langue sortis de la boîte en haut à gauche (ouvre Options) -->
+            <div id="home-lang-indicator-wrapper" style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 0.65rem; padding: 0 0.5rem;">
+                <button type="button" id="home-lang-indicator" class="home-drill-lang-pair-btn" style="background: transparent; border: none; padding: 0.15rem 0.2rem; display: inline-flex; align-items: center; gap: 0.65rem; cursor: pointer; border-radius: 8px;" title="Changer les langues dans les options" aria-label="Changer les langues dans les options">
+                    <div class="lang-pair" style="display: flex; align-items: center; gap: 0.55rem; font-weight: 700;">
+                        <span id="home-lang-source" class="lang-badge" style="font-size: 0.88rem; font-weight: 700; padding: 0.26rem 0.72rem; border-radius: 6px;">FR</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary); opacity: 0.7;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        <span id="home-lang-target" class="lang-badge" style="font-size: 0.88rem; font-weight: 700; padding: 0.26rem 0.72rem; border-radius: 6px;">EN</span>
+                    </div>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary); opacity: 0.75;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                </button>
+            </div>
 
             <div class="triptych-container">
                 <!-- Flèches latérales grandes et vertes sans texte -->
@@ -201,60 +213,86 @@
                          ========================================================== -->
                     <div class="triptych-panel" id="triptych-panel-drill">
                         <div class="card config-card-compact" style="position: relative;">
-                            <!-- Badges de langue en haut à gauche comme durant le drill (ouvre Options) -->
-                            <div id="home-lang-indicator-wrapper" style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 1.45rem;">
-                                <button type="button" id="home-lang-indicator" class="home-drill-lang-pair-btn" style="background: transparent; border: none; padding: 0.15rem 0.2rem; display: inline-flex; align-items: center; gap: 0.65rem; cursor: pointer; border-radius: 8px;" title="Changer les langues dans les options" aria-label="Changer les langues dans les options">
-                                    <div class="lang-pair" style="display: flex; align-items: center; gap: 0.55rem; font-weight: 700;">
-                                        <span id="home-lang-source" class="lang-badge" style="font-size: 0.88rem; font-weight: 700; padding: 0.26rem 0.72rem; border-radius: 6px;">FR</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary); opacity: 0.7;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        <span id="home-lang-target" class="lang-badge" style="font-size: 0.88rem; font-weight: 700; padding: 0.26rem 0.72rem; border-radius: 6px;">EN</span>
+                            <!-- Grille 2 Colonnes : Fromage CECRL à gauche | Nombre de mots à droite -->
+                            <div class="drill-config-grid">
+                                <!-- Colonne 1 : Donut Fromage CECRL -->
+                                <div style="flex: 1 1 190px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                                    <div style="height: 26px; display: flex; align-items: baseline; gap: 0.45rem; margin-bottom: 0.65rem;">
+                                        <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);" data-i18n="label_level">Niveaux CECRL</span>
+                                        <span id="home-remaining-badge" style="font-size: 0.76rem; font-weight: 600; color: var(--text-secondary);" title="Mots à valider avec les filtres sélectionnés">
+                                            (<span id="home-remaining-count" style="color: var(--primary-color); font-weight: 700;">0</span>&nbsp;mots)
+                                        </span>
                                     </div>
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary); opacity: 0.75;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                                </button>
-                            </div>
 
-                            <!-- Niveaux CECRL -->
-                            <div class="form-group" style="margin-bottom: 1.45rem; text-align: left;">
-                                <div style="display: flex; align-items: baseline; gap: 0.65rem; margin-bottom: 0.6rem;">
-                                    <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-primary);" data-i18n="label_level">Niveaux CECRL</span>
-                                    <span id="home-remaining-badge" style="font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); display: inline-flex; align-items: center;" title="Mots à valider avec les filtres sélectionnés">
-                                        (<span id="home-remaining-count" style="color: var(--primary-color); font-weight: 700;">0</span>&nbsp;mots)
-                                    </span>
-                                </div>
-                                <div class="level-filter-group" style="display: flex; gap: 0.55rem; align-items: center; justify-content: flex-start; flex-wrap: wrap;" id="drill-level-checkboxes">
-                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
-                                        <input type="checkbox" id="drill-level-a1" value="A1" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
-                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(59, 130, 246, 0.2); color: #3b82f6;">A1</span>
-                                    </label>
-                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
-                                        <input type="checkbox" id="drill-level-a2" value="A2" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
-                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(6, 182, 212, 0.2); color: #06b6d4;">A2</span>
-                                    </label>
-                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
-                                        <input type="checkbox" id="drill-level-b1" value="B1" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
-                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(16, 185, 129, 0.2); color: #10b981;">B1</span>
-                                    </label>
-                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
-                                        <input type="checkbox" id="drill-level-b2" value="B2" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
-                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(234, 179, 8, 0.2); color: #eab308;">B2</span>
-                                    </label>
-                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
-                                        <input type="checkbox" id="drill-level-c1" value="C1" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
-                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(249, 115, 22, 0.2); color: #f97316;">C1</span>
-                                    </label>
-                                    <label class="filter-checkbox-label" style="display: flex; align-items: center; gap: 0.28rem; cursor: pointer; user-select: none; margin: 0;">
-                                        <input type="checkbox" id="drill-level-c2" value="C2" checked style="accent-color: var(--primary-color); width: 16px; height: 16px; cursor: pointer;">
-                                        <span class="type-badge" style="font-size: 0.76rem; padding: 0.2rem 0.52rem; background: rgba(239, 68, 68, 0.2); color: #ef4444;">C2</span>
-                                    </label>
-                                </div>
-                            </div>
+                                    <!-- Donut interactif SVG 6 parts -->
+                                    <div class="cefr-donut-wrapper" style="width: 140px; height: 140px; position: relative;">
+                                        <svg viewBox="0 0 140 140" width="140" height="140" id="cefr-donut-svg" style="overflow: visible; user-select: none;">
+                                            <!-- Part A1 (haut-gauche : point de départ naturel) -->
+                                            <g class="cefr-donut-slice-group" data-level="A1">
+                                                <path class="cefr-donut-slice active" id="donut-slice-a1" data-level="A1" d="M 15.7 36.1 A 64 64 0 0 1 67.8 6.0 L 68.7 32.0 A 38 38 0 0 0 37.8 49.9 Z" fill="#3b82f6" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" />
+                                                <text class="cefr-donut-text" x="45" y="26" text-anchor="middle" dominant-baseline="central">A1</text>
+                                            </g>
+                                            <!-- Part A2 (milieu-gauche) -->
+                                            <g class="cefr-donut-slice-group" data-level="A2">
+                                                <path class="cefr-donut-slice active" id="donut-slice-a2" data-level="A2" d="M 13.5 100.0 A 64 64 0 0 1 13.5 40.0 L 36.4 52.2 A 38 38 0 0 0 36.4 87.8 Z" fill="#06b6d4" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" />
+                                                <text class="cefr-donut-text" x="19" y="70" text-anchor="middle" dominant-baseline="central">A2</text>
+                                            </g>
+                                            <!-- Part B1 (bas-gauche) -->
+                                            <g class="cefr-donut-slice-group" data-level="B1">
+                                                <path class="cefr-donut-slice active" id="donut-slice-b1" data-level="B1" d="M 67.8 134.0 A 64 64 0 0 1 15.7 103.9 L 37.8 90.1 A 38 38 0 0 0 68.7 108.0 Z" fill="#10b981" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" />
+                                                <text class="cefr-donut-text" x="45" y="114" text-anchor="middle" dominant-baseline="central">B1</text>
+                                            </g>
+                                            <!-- Part B2 (bas-droite) -->
+                                            <g class="cefr-donut-slice-group" data-level="B2">
+                                                <path class="cefr-donut-slice active" id="donut-slice-b2" data-level="B2" d="M 124.3 103.9 A 64 64 0 0 1 72.2 134.0 L 71.3 108.0 A 38 38 0 0 0 102.2 90.1 Z" fill="#eab308" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" />
+                                                <text class="cefr-donut-text" x="95" y="114" text-anchor="middle" dominant-baseline="central">B2</text>
+                                            </g>
+                                            <!-- Part C1 (milieu-droite) -->
+                                            <g class="cefr-donut-slice-group" data-level="C1">
+                                                <path class="cefr-donut-slice active" id="donut-slice-c1" data-level="C1" d="M 126.5 40.0 A 64 64 0 0 1 126.5 100.0 L 103.6 87.8 A 38 38 0 0 0 103.6 52.2 Z" fill="#f97316" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" />
+                                                <text class="cefr-donut-text" x="121" y="70" text-anchor="middle" dominant-baseline="central">C1</text>
+                                            </g>
+                                            <!-- Part C2 (haut-droite) -->
+                                            <g class="cefr-donut-slice-group" data-level="C2">
+                                                <path class="cefr-donut-slice active" id="donut-slice-c2" data-level="C2" d="M 72.2 6.0 A 64 64 0 0 1 124.3 36.1 L 102.2 49.9 A 38 38 0 0 0 71.3 32.0 Z" fill="#ef4444" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" />
+                                                <text class="cefr-donut-text" x="95" y="26" text-anchor="middle" dominant-baseline="central">C2</text>
+                                            </g>
 
-                            <!-- Curseur Volume de mots -->
-                            <div class="form-group" style="margin-bottom: 1.75rem; text-align: left;">
-                                <label data-i18n="label_volume" style="font-size: 0.9rem; font-weight: 700; margin: 0 0 0.55rem 0; color: var(--text-primary); display: block;">Nombre de mots</label>
-                                <div class="range-container" style="display: flex; align-items: center; gap: 0.85rem; height: 38px;">
-                                    <input type="range" id="input-volume" min="5" max="20" value="20" step="5" style="width: 160px; max-width: 55%; margin: 0;">
-                                    <span id="volume-display" class="badge" style="font-size: 0.84rem; padding: 0.22rem 0.65rem;">20 mots</span>
+                                            <!-- Disque Central évidé avec Compteur -->
+                                            <circle cx="70" cy="70" r="34" fill="var(--surface-color)" stroke="var(--border-color)" stroke-width="1.5" />
+                                            <text id="donut-count-display" x="70" y="65" text-anchor="middle" dominant-baseline="central" font-family="var(--font-heading)" font-size="14" font-weight="800" fill="var(--text-primary)">6/6</text>
+                                            <text x="70" y="78" text-anchor="middle" dominant-baseline="central" font-family="var(--font-sans)" font-size="8" font-weight="700" fill="var(--text-secondary)" letter-spacing="0.05em">CECRL</text>
+                                        </svg>
+                                    </div>
+
+                                    <!-- Checkboxes cachées pour compatibilité et persistance 100% stable -->
+                                    <div style="display: none;" id="drill-level-checkboxes">
+                                        <input type="checkbox" id="drill-level-a1" value="A1" checked>
+                                        <input type="checkbox" id="drill-level-a2" value="A2" checked>
+                                        <input type="checkbox" id="drill-level-b1" value="B1" checked>
+                                        <input type="checkbox" id="drill-level-b2" value="B2" checked>
+                                        <input type="checkbox" id="drill-level-c1" value="C1" checked>
+                                        <input type="checkbox" id="drill-level-c2" value="C2" checked>
+                                    </div>
+                                </div>
+
+                                <!-- Colonne 2 : Nombre de mots (Aligné en haut + Slider au milieu de la roue) -->
+                                <div style="flex: 1 1 200px; display: flex; flex-direction: column; justify-content: flex-start; text-align: left;">
+                                    <div style="height: 26px; display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.65rem;">
+                                        <label data-i18n="label_volume" style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary); margin: 0;">Nombre de mots</label>
+                                        <span id="volume-display" class="badge cool-vol-badge" style="font-size: 0.82rem; padding: 0.22rem 0.65rem; font-weight: 800; background: rgba(59, 130, 246, 0.15); color: var(--primary-color); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 8px;">20 mots</span>
+                                    </div>
+                                    <div style="height: 140px; display: flex; flex-direction: column; justify-content: center; width: 100%; gap: 0.75rem;">
+                                        <div class="cool-slider-wrapper">
+                                            <input type="range" id="input-volume" class="cool-range-input" min="5" max="20" value="20" step="5">
+                                        </div>
+                                        <div class="slider-step-ticks" style="display: flex; justify-content: space-between; padding: 0 4px; user-select: none;">
+                                            <span class="step-tick" data-step="5">5</span>
+                                            <span class="step-tick" data-step="10">10</span>
+                                            <span class="step-tick" data-step="15">15</span>
+                                            <span class="step-tick active" data-step="20">20</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -529,14 +567,18 @@
             </div>
 
             <div id="progress-content">
-                <div id="prog-lang-indicator-wrapper" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
-                    <button type="button" id="prog-lang-indicator" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-weight: 600; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.45rem; cursor: pointer; font-family: var(--font-sans); transition: all 0.2s;" title="Changer les langues dans les options">
-                        <span id="prog-lang-pair-text">Français ➔ Anglais</span>
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                    </button>
-                </div>
-
                 <div class="card progress-card" id="progress-main-card">
+                    <!-- En-tête de carte style Progression / Attestation -->
+                    <div class="stat-card-header" style="margin-bottom: 1.25rem; min-height: auto; padding-bottom: 0.85rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color);">
+                        <div style="display: flex; align-items: center; gap: 0.65rem;">
+                            <span class="stat-pair-name" id="prog-lang-pair-text">Français ➔ Anglais</span>
+                            <button type="button" id="prog-lang-indicator" style="background: transparent; border: none; padding: 0.2rem; color: var(--text-secondary); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; transition: color 0.2s;" title="Changer les langues dans les options" aria-label="Changer les langues dans les options">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            </button>
+                        </div>
+                        <span class="stat-percentage-badge" id="prog-total-count-badge"></span>
+                    </div>
+
                     <div class="progress-filters" style="display: flex; gap: 0.6rem; align-items: center; justify-content: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap; background: transparent; padding: 0; border: none;">
                         <div class="search-input-wrapper" style="position: relative; display: inline-flex; align-items: center; width: 210px; max-width: 100%;">
                             <input type="text" id="prog-search" data-i18n-placeholder="placeholder_search" placeholder="Rechercher un mot..." style="width: 100%; padding-right: 1.85rem; margin-bottom: 0;">
@@ -651,9 +693,6 @@
                             </div>
                         </div>
 
-                        <!-- Compteur de mots selon filtres -->
-                        <div id="prog-filtered-count" class="filter-results-count"></div>
-
                         <!-- Force le retour à la ligne dans la barre de filtres (flex-wrap) -->
                         <div id="row-break-reactivate" style="display: none; flex-basis: 100%; height: 0;"></div>
 
@@ -692,12 +731,19 @@
             <p class="page-subtitle" data-i18n="subtitle_stats">Suivez votre progression globale par paire de langues.</p>
             
             <div class="info-banner" style="margin: 0 auto 1.5rem auto; max-width: 720px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); padding: 0.75rem 1.25rem; border-radius: 10px; font-size: 0.9rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.75rem; text-align: left;">
-                <span style="font-size: 1.3rem; flex-shrink: 0;">💡</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; color: #f59e0b;">
+                    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+                    <path d="M9 18h6"></path>
+                    <path d="M10 22h4"></path>
+                </svg>
                 <span data-i18n="stats_notice_attempt">Pour garantir une mémorisation réflexe, un mot est validé uniquement s'il est réussi du premier coup lors d'un Drill! En cas d'erreur, il passe en révision.</span>
             </div>
             
             <div class="card stats-card" id="stats-gated-state" style="display: none; text-align: center; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 3rem;">
-                <span style="font-size: 3rem;">🔒</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
                 <p class="empty-text" style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary);">Contenu verrouillé</p>
                 <p class="empty-subtext" style="color: var(--text-secondary); max-width: 400px;">Créez un compte gratuit pour débloquer vos statistiques de performance.</p>
                 <button class="btn-primary btn-open-auth-modal" style="margin-top: 1rem; max-width: 250px;">S'inscrire / Se connecter</button>
@@ -1185,14 +1231,14 @@
 
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.8; font-family: var(--font-sans); line-height: 1.6;">
-        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v226</span> &bull; <span data-i18n="footer_deployed">Déployé le 18/09/2026</span></div>
+        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v235</span> &bull; <span data-i18n="footer_deployed">Déployé le 18/09/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/jspdf.umd.min.js"></script>
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=226"></script>
+    <script type="module" src="js/main.js?v=235"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
