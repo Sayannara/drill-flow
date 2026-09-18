@@ -335,7 +335,82 @@ select:focus, input[type="text"]:not(.input-section input):not(.rewrite-field):f
 }
 .lang-pair { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; }
 .lang-badge { background: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem; }
-.drill-progress { font-weight: bold; color: var(--text-secondary); }
+.drill-progress {
+    display: flex;
+    align-items: center;
+}
+
+.drill-gauge-container {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    user-select: none;
+}
+
+.drill-gauge-track {
+    position: relative;
+    width: 140px;
+    height: 12px;
+    background: var(--border-color);
+    border-radius: 9999px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .drill-gauge-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.drill-gauge-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #34d399, #10b981);
+    border-radius: 9999px;
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+}
+
+.drill-gauge-ticks {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.drill-gauge-tick {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1.5px;
+    background: var(--surface-color);
+    opacity: 0.75;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+[data-theme="dark"] .drill-gauge-tick {
+    background: var(--surface-color);
+    opacity: 0.85;
+}
+
+.drill-gauge-counter {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    min-width: 1.6rem;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+}
+
+@media (max-width: 380px) {
+    .drill-gauge-track {
+        width: 105px;
+    }
+}
 
 .flashcard {
     text-align: center;

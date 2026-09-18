@@ -1,4 +1,4 @@
-import { vocabulary } from './data/vocabulary.js?v=212';
+import { vocabulary } from './data/vocabulary.js?v=215';
 import { getWordStatus, setWordStatus, getWordStats, reportWordTranslation } from './storage.js';
 import { translations } from './i18n.js?v=209';
 import { getCurrentUser } from './auth.js';
@@ -11,6 +11,8 @@ let sessionState = {
     langSource: 'fr',
     langTarget: 'en',
     words: [],      // Mots actifs dans la session
+    originalWords: [],
+    initialCount: 0,
     currentIndex: 0, // Index du mot en cours
     isWaitingAction: false // Attend G, R ou Enter après validation
 };
@@ -544,6 +546,7 @@ export function initDrillSession(source, target, volume, levels = ['A1', 'A2', '
 
     sessionState.words = selectedWords;
     sessionState.originalWords = [...sessionState.words]; // Keep for context drill
+    sessionState.initialCount = selectedWords.length;
     sessionState.currentIndex = 0;
     sessionState.isWaitingAction = false;
     sessionState.wordSessionAttempts = {};
@@ -697,6 +700,57 @@ export function formatWordForDisplay(raw) {
     }).join('');
 }
 
+export function updateDrillGauge(isFinished = false) {
+    const total = sessionState.initialCount || (sessionState.originalWords ? sessionState.originalWords.length : (sessionState.words ? sessionState.words.length : 20));
+    const remaining = isFinished ? 0 : (sessionState.words ? sessionState.words.length : 0);
+    const completed = isFinished ? total : Math.max(0, total - remaining);
+    const percent = total > 0 ? Math.min(100, Math.round((completed / total) * 100)) : (isFinished ? 100 : 0);
+
+    const fillEl = document.getElementById('drill-gauge-fill');
+    const ticksEl = document.getElementById('drill-gauge-ticks');
+    const trackEl = document.getElementById('drill-gauge');
+    const counterEl = document.getElementById('drill-counter');
+    const containerEl = document.getElementById('drill-gauge-container');
+
+    if (fillEl) {
+        fillEl.style.width = `${percent}%`;
+    }
+
+    const lang = typeof getAppLanguage === 'function' ? getAppLanguage() : (typeof sessionState !== 'undefined' ? (sessionState.langTarget || 'fr').toLowerCase() : 'fr');
+    const suffix = (translations[lang] && translations[lang].words_remaining) || 'mot(s) restant(s)';
+    const titleText = isFinished
+        ? `Session terminée ! (${total}/${total})`
+        : `${remaining} ${suffix} (${completed}/${total})`;
+
+    if (trackEl) {
+        trackEl.setAttribute('aria-valuenow', completed);
+        trackEl.setAttribute('aria-valuemax', total);
+        trackEl.setAttribute('title', titleText);
+    }
+    if (containerEl) {
+        containerEl.setAttribute('title', titleText);
+    }
+
+    // Génération dynamique des graduations (ticks)
+    if (ticksEl && total > 1) {
+        const currentTicksTotal = ticksEl.getAttribute('data-total');
+        if (currentTicksTotal !== String(total)) {
+            ticksEl.setAttribute('data-total', String(total));
+            let html = '';
+            for (let i = 1; i < total; i++) {
+                const left = (i / total) * 100;
+                html += `<span class="drill-gauge-tick" style="left: ${left.toFixed(2)}%;"></span>`;
+            }
+            ticksEl.innerHTML = html;
+        }
+    }
+
+    if (counterEl) {
+        counterEl.textContent = isFinished ? '0' : `${remaining}`;
+        counterEl.setAttribute('title', titleText);
+    }
+}
+
 function renderCurrentWord() {
     const wordSourceEl = document.getElementById('drill-word-source');
     const inputEl = document.getElementById('drill-input');
@@ -754,7 +808,7 @@ function renderCurrentWord() {
     if (sessionState.words.length === 0) {
         // Fin de session ou plus de mots à apprendre !
         wordSourceEl.textContent = "Session terminée !";
-        counterEl.textContent = "-";
+        updateDrillGauge(true);
         inputEl.style.display = 'none';
         const badgeEl = document.getElementById('drill-word-type-badge');
         if (badgeEl) {
@@ -838,8 +892,7 @@ function renderCurrentWord() {
         }
     }
 
-    const suffix = translations[lang].words_remaining;
-    counterEl.textContent = `${sessionState.words.length} ${suffix}`;
+    updateDrillGauge(false);
     
     // Déterminer et afficher le préfixe visuel fixe (ex: "to ", "the ", "a ", "an ")
     const prefixEl = document.getElementById('drill-input-prefix');

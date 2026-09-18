@@ -1,4 +1,4 @@
-import { vocabulary as originalVocabulary } from './data/vocabulary.js?v=212';
+import { vocabulary as originalVocabulary } from './data/vocabulary.js?v=215';
 import { initAdminAuthGate } from './admin-auth.js?v=3';
 
 // ==========================================================================

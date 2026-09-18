@@ -79,8 +79,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=212">
-    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=212">
+    <link rel="stylesheet" href="css/style.css?v=217">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg?v=217">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
@@ -136,36 +136,17 @@
     <template id="view-home">
         <div class="view-content animate-fade-in">
             <p id="home-intro-text" style="text-align: center; font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 2.25rem; line-height: 1.6;"></p>
-            <h1 class="page-title" data-i18n="title_home" style="margin-bottom: 1.75rem;">Nouvelle session</h1>
+
             
             <div class="card config-card">
-                <div style="display: flex; gap: 1rem; align-items: flex-end;">
-                    <div class="form-group" style="flex: 1; margin-bottom: 0;">
-                        <label data-i18n="label_source">Traduire de :</label>
-                        <select id="select-lang-source">
-                            <option value="fr" selected data-i18n="lang_fr">Français</option>
-                            <option value="en" data-i18n="lang_en">Anglais</option>
-                            <option value="de" data-i18n="lang_de">Allemand</option>
-                            <option value="es" data-i18n="lang_es">Espagnol</option>
-                        </select>
-                    </div>
-
-                    <div style="display: flex; align-items: center; justify-content: center; height: 48px; color: var(--primary-color); padding: 0 0.25rem; flex-shrink: 0;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg>
-                    </div>
-
-                    <div class="form-group" style="flex: 1; margin-bottom: 0;">
-                        <label data-i18n="label_target">Vers :</label>
-                        <select id="select-lang-target">
-                            <option value="fr" data-i18n="lang_fr">Français</option>
-                            <option value="en" selected data-i18n="lang_en">Anglais</option>
-                            <option value="de" data-i18n="lang_de">Allemand</option>
-                            <option value="es" data-i18n="lang_es">Espagnol</option>
-                        </select>
-                    </div>
+                <div id="home-lang-indicator-wrapper" style="text-align: center; margin-bottom: 1.25rem;">
+                    <button type="button" id="home-lang-indicator" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-weight: 600; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer; font-family: var(--font-sans); transition: all 0.2s;" title="Changer les langues dans les options">
+                        <span id="home-lang-pair-text">Français ➔ Anglais</span>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </button>
                 </div>
 
-                <div class="form-group" style="margin-top: 2rem; margin-bottom: 2rem;">
+                <div class="form-group" style="margin-top: 0.5rem; margin-bottom: 2rem;">
                     <label style="display: flex; align-items: center; gap: 0.4rem; position: relative;">
                         <span data-i18n="label_level">Niveaux CECRL</span>
                         <span style="position: relative; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'; this.querySelector('.tooltip-content').style.opacity='1'; this.querySelector('.tooltip-content').style.visibility='visible';" onmouseout="this.style.color='var(--text-secondary)'; this.querySelector('.tooltip-content').style.opacity='0'; this.querySelector('.tooltip-content').style.visibility='hidden';" onclick="const t=this.querySelector('.tooltip-content'); const isVis = t.style.opacity === '1'; t.style.opacity=isVis?'0':'1'; t.style.visibility=isVis?'hidden':'visible';">
@@ -264,7 +245,13 @@
                     <span id="drill-lang-target" class="lang-badge">EN</span>
                 </div>
                 <div class="drill-progress">
-                    <span id="drill-counter">1 / 20</span>
+                    <div class="drill-gauge-container" id="drill-gauge-container" title="Progression du drill">
+                        <div class="drill-gauge-track" id="drill-gauge" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="20">
+                            <div class="drill-gauge-fill" id="drill-gauge-fill" style="width: 0%;"></div>
+                            <div class="drill-gauge-ticks" id="drill-gauge-ticks"></div>
+                        </div>
+                        <span id="drill-counter" class="drill-gauge-counter"></span>
+                    </div>
                 </div>
             </div>
 
@@ -454,10 +441,11 @@
             </div>
 
             <div id="progress-content">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
-                    <select id="prog-lang-pair" style="width: auto; min-width: 250px; max-width: 400px; padding: 0.8rem 1rem; border-radius: 8px; font-weight: 600; margin: 0;">
-                        <!-- Rempli dynamiquement -->
-                    </select>
+                <div id="prog-lang-indicator-wrapper" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+                    <button type="button" id="prog-lang-indicator" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-weight: 600; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.45rem; cursor: pointer; font-family: var(--font-sans); transition: all 0.2s;" title="Changer les langues dans les options">
+                        <span id="prog-lang-pair-text">Français ➔ Anglais</span>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </button>
                 </div>
 
                 <div class="card progress-card" id="progress-main-card">
@@ -634,11 +622,6 @@
             </div>
 
             <div id="stats-content" style="display: none;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
-                    <select id="stats-lang-pair" style="width: auto; min-width: 250px; max-width: 400px; padding: 0.8rem 1rem; border-radius: 8px; font-weight: 600; margin: 0;" data-i18n-title="stat_filter_pair" aria-label="Paire de langues">
-                        <!-- Rempli dynamiquement -->
-                    </select>
-                </div>
 
                 <div id="stats-container" style="display: flex; flex-direction: column; gap: 1.5rem;">
                     <!-- Rempli dynamiquement : Carte de Gamification CECRL + Statistiques détaillées -->
@@ -955,6 +938,42 @@
                 </button>
             </div>
 
+            <!-- Section 0 : Langues d'apprentissage (Traduire de / Vers) -->
+            <div class="options-section">
+                <label style="font-weight: 700; font-size: 0.88rem; display: block; margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="options_lang_title">Langues d'apprentissage</label>
+                <div style="display: flex; gap: 0.75rem; align-items: flex-end;">
+                    <div class="form-group" style="flex: 1; margin-bottom: 0;">
+                        <label data-i18n="label_source" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.3rem;">Traduire de :</label>
+                        <div style="position: relative;">
+                            <select id="select-lang-source" style="width: 100%; box-sizing: border-box; padding: 0.55rem 2rem 0.55rem 0.75rem; border-radius: 8px; border: 1.5px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 600; appearance: none; -webkit-appearance: none; cursor: pointer; outline: none; transition: border-color 0.2s;">
+                                <option value="fr" selected data-i18n="lang_fr">Français</option>
+                                <option value="en" data-i18n="lang_en">Anglais</option>
+                                <option value="de" data-i18n="lang_de">Allemand</option>
+                                <option value="es" data-i18n="lang_es">Espagnol</option>
+                            </select>
+                            <svg style="position: absolute; right: 0.6rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--text-secondary);" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; justify-content: center; height: 38px; color: var(--primary-color); padding: 0; flex-shrink: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg>
+                    </div>
+
+                    <div class="form-group" style="flex: 1; margin-bottom: 0;">
+                        <label data-i18n="label_target" style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.3rem;">Vers :</label>
+                        <div style="position: relative;">
+                            <select id="select-lang-target" style="width: 100%; box-sizing: border-box; padding: 0.55rem 2rem 0.55rem 0.75rem; border-radius: 8px; border: 1.5px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 600; appearance: none; -webkit-appearance: none; cursor: pointer; outline: none; transition: border-color 0.2s;">
+                                <option value="fr" data-i18n="lang_fr">Français</option>
+                                <option value="en" selected data-i18n="lang_en">Anglais</option>
+                                <option value="de" data-i18n="lang_de">Allemand</option>
+                                <option value="es" data-i18n="lang_es">Espagnol</option>
+                            </select>
+                            <svg style="position: absolute; right: 0.6rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--text-secondary);" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Section 1 : Thème visuel (Clair / Sombre) -->
             <div class="options-section">
                 <label style="font-weight: 700; font-size: 0.88rem; display: block; margin-bottom: 0.4rem; color: var(--text-primary);" data-i18n="options_theme_title">Thème d'affichage</label>
@@ -1078,14 +1097,14 @@
 
     <!-- Footer avec copyright et version -->
     <footer id="app-footer-version" style="text-align: center; padding: 1.25rem 0; color: var(--text-secondary); font-size: 0.75rem; opacity: 0.8; font-family: var(--font-sans); line-height: 1.6;">
-        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v212</span> &bull; <span data-i18n="footer_deployed">Déployé le 17/09/2026</span></div>
+        <div>&copy; 2026 drillFlow. <span data-i18n="footer_rights">Tous droits réservés.</span> &bull; <span class="app-version-num">v217</span> &bull; <span data-i18n="footer_deployed">Déployé le 18/09/2026</span></div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/jspdf.umd.min.js"></script>
     <script type="module" src="js/firebase-config.js"></script>
     <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/main.js?v=212"></script>
+    <script type="module" src="js/main.js?v=217"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

@@ -1,7 +1,7 @@
-import { vocabulary } from './data/vocabulary.js?v=212';
-import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=212';
+import { vocabulary } from './data/vocabulary.js?v=215';
+import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize } from './drill.js?v=215';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
-import { translations } from './i18n.js?v=212';
+import { translations } from './i18n.js?v=215';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays, fetchAppConfigFromCloud, getProgressionMilestoneStep } from './config/app-config.js';
@@ -78,13 +78,22 @@ export function getValidatedCount(src, tgt) {
     return count;
 }
 
+// Paire de langues d'apprentissage active dans les paramètres
+export function getActivePair() {
+    const src = localStorage.getItem('voc_last_src') || localStorage.getItem('drillflow_default_src') || APP_CONFIG.DEFAULT_SRC || 'fr';
+    const tgt = localStorage.getItem('voc_last_tgt') || localStorage.getItem('drillflow_default_tgt') || APP_CONFIG.DEFAULT_TGT || 'en';
+    return { src, tgt, pair: `${src}-${tgt}` };
+}
+if (typeof window !== 'undefined') {
+    window.getActivePair = getActivePair;
+}
+
 // Affiche ou masque la tête de girafe à gauche de "Progression" selon les paliers de mots validés (ex: 200, 400, ... 1800, 2000)
 export function updateProgressionMilestoneGiraffe() {
     const giraffeEl = document.getElementById('nav-stats-giraffe');
     if (!giraffeEl) return;
 
-    const src = localStorage.getItem('voc_last_src') || localStorage.getItem('drillflow_default_src') || APP_CONFIG.DEFAULT_SRC;
-    const tgt = localStorage.getItem('voc_last_tgt') || localStorage.getItem('drillflow_default_tgt') || APP_CONFIG.DEFAULT_TGT;
+    const { src, tgt } = getActivePair();
     const validatedCount = getValidatedCount(src, tgt);
 
     const step = getProgressionMilestoneStep();
@@ -206,8 +215,102 @@ function initOptionsModal() {
     const btnAccentsOff = document.getElementById('accents-opt-off');
     const pairSelect = document.getElementById('options-reset-pair');
     const btnReset = document.getElementById('btn-reset-pair');
+    const selectSrc = document.getElementById('select-lang-source');
+    const selectTgt = document.getElementById('select-lang-target');
 
     if (!optionsModal) return;
+
+    function updateTargetOptions() {
+        if (!selectSrc || !selectTgt) return;
+        const srcVal = selectSrc.value;
+        const prevTgtVal = selectTgt.value;
+        
+        selectTgt.innerHTML = '';
+        
+        const langs = [
+            { value: 'fr', text: 'Français' },
+            { value: 'en', text: 'Anglais' },
+            { value: 'de', text: 'Allemand' },
+            { value: 'es', text: 'Espagnol' }
+        ];
+        
+        langs.forEach(lang => {
+            if (lang.value !== srcVal) {
+                const opt = document.createElement('option');
+                opt.value = lang.value;
+                opt.textContent = getLangName(lang.value);
+                selectTgt.appendChild(opt);
+            }
+        });
+        
+        if (prevTgtVal !== srcVal && langs.some(l => l.value === prevTgtVal && l.value !== srcVal)) {
+            selectTgt.value = prevTgtVal;
+        } else {
+            const fallback = langs.find(l => l.value !== srcVal);
+            if (fallback) selectTgt.value = fallback.value;
+        }
+    }
+
+    function syncLanguageSelectors() {
+        if (!selectSrc || !selectTgt) return;
+        const { src, tgt } = getActivePair();
+        selectSrc.value = src;
+        updateTargetOptions();
+        if (tgt !== src) {
+            selectTgt.value = tgt;
+        }
+    }
+
+    function onLanguagePairChanged() {
+        if (!selectSrc || !selectTgt) return;
+        const src = selectSrc.value;
+        const tgt = selectTgt.value;
+        localStorage.setItem('voc_last_src', src);
+        localStorage.setItem('voc_last_tgt', tgt);
+        updateProgressionMilestoneGiraffe();
+
+        // Mettre à jour l'indicateur d'accueil si présent
+        const homeIndicatorText = document.getElementById('home-lang-pair-text');
+        if (homeIndicatorText) {
+            homeIndicatorText.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
+        }
+        if (typeof window.updateHomeWordCount === 'function') {
+            window.updateHomeWordCount();
+        }
+
+        // Mettre à jour l'indicateur de focus si présent
+        const progIndicatorText = document.getElementById('prog-lang-pair-text');
+        if (progIndicatorText) {
+            progIndicatorText.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)}`;
+        }
+
+        // Si la vue Focus est active, rafraîchir Focus
+        if (document.getElementById('prog-table-body')) {
+            initProgressView();
+        }
+
+        // Si la vue Stats est active, rafraîchir Stats
+        if (document.getElementById('stats-container')) {
+            initStatsView();
+        }
+
+        // Si la vue Certs est active, rafraîchir Certs
+        if (document.getElementById('certs-container')) {
+            initCertsView();
+        }
+    }
+
+    if (selectSrc) {
+        selectSrc.addEventListener('change', () => {
+            updateTargetOptions();
+            onLanguagePairChanged();
+        });
+    }
+    if (selectTgt) {
+        selectTgt.addEventListener('change', () => {
+            onLanguagePairChanged();
+        });
+    }
 
     function updateAudioButtonsUI(enabled) {
         if (btnAudioOff && btnAudioOn) {
@@ -241,6 +344,7 @@ function initOptionsModal() {
     }
 
     function openOptions() {
+        syncLanguageSelectors();
         const currentTheme = htmlEl.getAttribute('data-theme') || 'dark';
         updateThemeButtonsUI(currentTheme);
         const isAutoSpeak = localStorage.getItem('drillflow_auto_speak') === 'on';
@@ -425,6 +529,8 @@ function initOptionsModal() {
     window.addEventListener('auth-changed', () => {
         populateOptionsPairSelect();
     });
+
+    syncLanguageSelectors();
 }
 
 // --- Routeur SPA ---
@@ -504,68 +610,29 @@ function attachViewEvents(viewId) {
         const volDisp = document.getElementById('volume-display');
         
         // Charger les dernières préférences
-        const lastSrc = localStorage.getItem('voc_last_src') || localStorage.getItem('drillflow_default_src') || APP_CONFIG.DEFAULT_SRC;
-        const lastTgt = localStorage.getItem('voc_last_tgt') || localStorage.getItem('drillflow_default_tgt') || APP_CONFIG.DEFAULT_TGT;
         const lastVol = localStorage.getItem('voc_last_vol') || localStorage.getItem('drillflow_default_volume') || APP_CONFIG.DEFAULT_VOLUME.toString();
         const lastMode = localStorage.getItem('voc_last_mode') || localStorage.getItem('drillflow_default_mode') || APP_CONFIG.DEFAULT_MODE;
         
         const savedLevelsStr = localStorage.getItem('drill_levels');
         const savedLevels = savedLevelsStr ? JSON.parse(savedLevelsStr) : ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
-        const selectSrc = document.getElementById('select-lang-source');
-        const selectTgt = document.getElementById('select-lang-target');
-        
-        function updateTargetOptions() {
-            if (!selectSrc || !selectTgt) return;
-            const srcVal = selectSrc.value;
-            const prevTgtVal = selectTgt.value;
-            
-            selectTgt.innerHTML = '';
-            
-            const langs = [
-                { value: 'fr', text: 'Français' },
-                { value: 'en', text: 'Anglais' },
-                { value: 'de', text: 'Allemand' },
-                { value: 'es', text: 'Espagnol' }
-            ];
-            
-            langs.forEach(lang => {
-                if (lang.value !== srcVal) {
-                    const opt = document.createElement('option');
-                    opt.value = lang.value;
-                    opt.textContent = getLangName(lang.value);
-                    selectTgt.appendChild(opt);
-                }
-            });
-            
-            if (prevTgtVal !== srcVal) {
-                selectTgt.value = prevTgtVal;
-            } else {
-                const fallback = langs.find(l => l.value !== srcVal);
-                if (fallback) selectTgt.value = fallback.value;
-            }
+        // Mettre à jour le badge indicateur de langue active
+        const homeLangIndicatorText = document.getElementById('home-lang-pair-text');
+        const homeLangIndicatorBtn = document.getElementById('home-lang-indicator');
+        const { src: activeSrc, tgt: activeTgt } = getActivePair();
+        if (homeLangIndicatorText) {
+            homeLangIndicatorText.textContent = `${getLangName(activeSrc)} ➔ ${getLangName(activeTgt)}`;
+        }
+        if (homeLangIndicatorBtn) {
+            homeLangIndicatorBtn.onclick = () => {
+                const optModal = document.getElementById('options-modal');
+                if (optModal) optModal.classList.remove('hidden');
+                const optBtn = document.getElementById('options-btn');
+                if (optBtn) optBtn.click();
+            };
         }
 
-        if (selectSrc) {
-            selectSrc.value = lastSrc;
-            selectSrc.addEventListener('change', () => {
-                updateTargetOptions();
-                localStorage.setItem('voc_last_src', selectSrc.value);
-                if (selectTgt) localStorage.setItem('voc_last_tgt', selectTgt.value);
-                updateProgressionMilestoneGiraffe();
-            });
-        }
-        updateTargetOptions();
-        if (selectTgt) {
-            if (lastTgt !== lastSrc) {
-                selectTgt.value = lastTgt;
-            }
-            selectTgt.addEventListener('change', () => {
-                localStorage.setItem('voc_last_tgt', selectTgt.value);
-                updateProgressionMilestoneGiraffe();
-            });
-        }
-        
+
         const cbA1 = document.getElementById('drill-level-a1');
         const cbA2 = document.getElementById('drill-level-a2');
         const cbB1 = document.getElementById('drill-level-b1');
@@ -654,8 +721,7 @@ function attachViewEvents(viewId) {
 
         if (btnStart) {
             function updateAvailableCount() {
-                const src = selectSrc ? selectSrc.value : 'fr';
-                const tgt = selectTgt ? selectTgt.value : 'en';
+                const { src, tgt } = getActivePair();
                 const introEl = document.getElementById('home-intro-text');
                 const remainingBadge = document.getElementById('home-remaining-badge');
                 const remainingCountEl = document.getElementById('home-remaining-count');
@@ -740,14 +806,13 @@ function attachViewEvents(viewId) {
                 }
             }
 
-            if (selectSrc) selectSrc.addEventListener('change', updateAvailableCount);
-            if (selectTgt) selectTgt.addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-a1')) document.getElementById('drill-level-a1').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-a2')) document.getElementById('drill-level-a2').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-b1')) document.getElementById('drill-level-b1').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-b2')) document.getElementById('drill-level-b2').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-c1')) document.getElementById('drill-level-c1').addEventListener('change', updateAvailableCount);
             if (document.getElementById('drill-level-c2')) document.getElementById('drill-level-c2').addEventListener('change', updateAvailableCount);
+            window.updateHomeWordCount = updateAvailableCount;
             updateAvailableCount();
 
             // Empêcher les doublons d'écouteurs si la vue est rechargée
@@ -755,8 +820,7 @@ function attachViewEvents(viewId) {
             btnStart.parentNode.replaceChild(newBtn, btnStart);
             
             newBtn.addEventListener('click', () => {
-                const src = document.getElementById('select-lang-source').value;
-                const tgt = document.getElementById('select-lang-target').value;
+                const { src, tgt } = getActivePair();
                 const vol = parseInt(document.getElementById('input-volume').dataset.val || document.getElementById('input-volume').value, 10);
                 const modeChecked = document.querySelector('input[name="drill-mode"]:checked');
                 const mode = modeChecked ? modeChecked.value : 'smart';
@@ -769,15 +833,8 @@ function attachViewEvents(viewId) {
                 if (document.getElementById('drill-level-c1')?.checked) selectedLevels.push('C1');
                 if (document.getElementById('drill-level-c2')?.checked) selectedLevels.push('C2');
                 if (selectedLevels.length === 0) selectedLevels.push('A1', 'A2', 'B1', 'B2', 'C1', 'C2');
-                
-                if (src === tgt) {
-                    alert("Les deux langues doivent être différentes.");
-                    return;
-                }
 
-                // Sauvegarder les langues sélectionnées
-                localStorage.setItem('voc_last_src', src);
-                localStorage.setItem('voc_last_tgt', tgt);
+                // Sauvegarder les préférences
                 localStorage.setItem('voc_last_vol', vol);
                 localStorage.setItem('voc_last_mode', mode);
                 localStorage.setItem('drill_levels', JSON.stringify(selectedLevels));
@@ -804,12 +861,7 @@ function attachViewEvents(viewId) {
                 }
             }).catch(() => {});
             btnPlacementTest.onclick = () => {
-                const selectSrc = document.getElementById('select-lang-source');
-                const selectTgt = document.getElementById('select-lang-target');
-                const src = selectSrc ? selectSrc.value : (localStorage.getItem('voc_last_src') || 'fr');
-                const tgt = selectTgt ? selectTgt.value : (localStorage.getItem('voc_last_tgt') || 'en');
-                localStorage.setItem('voc_last_src', src);
-                localStorage.setItem('voc_last_tgt', tgt);
+                const { src, tgt } = getActivePair();
                 startPlacementTest(src, tgt);
             };
         }
@@ -903,7 +955,8 @@ function initProgressView() {
     }
     
     gatedState.style.display = 'none';
-    content.style.display = 'block';
+    if (emptyState) emptyState.style.display = 'none';
+    if (content) content.style.display = 'none';
     const progress = loadProgress();
     const usedPairs = Object.keys(progress).filter(key => {
         return progress[key] && typeof progress[key] === 'object' && Object.keys(progress[key]).length > 0;
@@ -920,46 +973,34 @@ function initProgressView() {
         return;
     }
 
-    if (emptyState) emptyState.style.display = 'none';
-    if (content) content.style.display = 'block';
+    // Utiliser la paire active depuis les paramètres
+    const { src: activeSrc, tgt: activeTgt, pair: activePair } = getActivePair();
 
-    const pairSelect = document.getElementById('prog-lang-pair');
-    if (pairSelect) {
-        pairSelect.innerHTML = '';
-        const lang = getAppLanguage();
-        usedPairs.forEach(pair => {
-            const [src, tgt] = pair.split('-');
-            const opt = document.createElement('option');
-            opt.value = pair;
-            const validatedCount = getValidatedCount(src, tgt);
-            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
-            pairSelect.appendChild(opt);
-        });
-
-        // Définir la paire sélectionnée par défaut sur la dernière paire enregistrée ou dernière session ou fr-en
-        const savedProgPair = localStorage.getItem('prog_last_pair');
-        const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
-        const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
-        const defaultPair = `${lastSrc}-${lastTgt}`;
-
-        if (savedProgPair && usedPairs.includes(savedProgPair)) {
-            currentProgPair = savedProgPair;
-            pairSelect.value = currentProgPair;
-        } else if (usedPairs.includes(currentProgPair)) {
-            pairSelect.value = currentProgPair;
-        } else if (usedPairs.includes(defaultPair)) {
-            currentProgPair = defaultPair;
-            pairSelect.value = currentProgPair;
-        } else {
-            currentProgPair = usedPairs[0];
-            pairSelect.value = currentProgPair;
-        }
-
-        pairSelect.onchange = (e) => {
-            currentProgPair = e.target.value;
-            localStorage.setItem('prog_last_pair', currentProgPair);
-            renderProgressTable();
+    // Mettre à jour le badge langue de la vue Progression
+    const progLangText = document.getElementById('prog-lang-pair-text');
+    const progLangIndicator = document.getElementById('prog-lang-indicator');
+    if (progLangText) {
+        progLangText.textContent = `${getLangName(activeSrc)} ➔ ${getLangName(activeTgt)}`;
+    }
+    if (progLangIndicator) {
+        progLangIndicator.onclick = () => {
+            const optBtn = document.getElementById('options-btn');
+            if (optBtn) optBtn.click();
         };
+    }
+
+    // Utiliser la paire active ; si elle n'a pas encore de données, afficher l'empty state
+    if (usedPairs.includes(activePair)) {
+        currentProgPair = activePair;
+        if (emptyState) emptyState.style.display = 'none';
+        if (content) content.style.display = 'block';
+    } else if (usedPairs.length > 0) {
+        // La paire active n'a pas encore de données, afficher empty state
+        if (emptyState) emptyState.style.display = 'flex';
+        if (content) content.style.display = 'none';
+        const btnGo = document.getElementById('btn-go-to-training');
+        if (btnGo) btnGo.onclick = () => renderView('home');
+        return;
     }
 
     // Attacher les events de tri
@@ -1415,7 +1456,6 @@ function initStatsView() {
     const gatedState = document.getElementById('stats-gated-state');
     const emptyState = document.getElementById('stats-empty-state');
     const content = document.getElementById('stats-content');
-    const pairSelect = document.getElementById('stats-lang-pair');
     
     // Gating check
     if (!getCurrentUser()) {
@@ -1447,46 +1487,22 @@ function initStatsView() {
         return;
     }
 
+    // Utiliser la paire active depuis les paramètres
+    const { src: activeSrc, tgt: activeTgt, pair: activePair } = getActivePair();
+
+    // Si la paire active n'a pas encore de données, afficher l'empty state
+    if (!usedPairs.includes(activePair)) {
+        if (emptyState) emptyState.style.display = 'flex';
+        if (content) content.style.display = 'none';
+        const btnGo = document.getElementById('btn-stats-go-to-training');
+        if (btnGo) btnGo.onclick = () => renderView('home');
+        return;
+    }
+
     if (emptyState) emptyState.style.display = 'none';
     if (content) content.style.display = 'block';
 
-    // Remplir le sélecteur de paire de langues
-    if (pairSelect) {
-        pairSelect.innerHTML = '';
-        const lang = getAppLanguage();
-        usedPairs.forEach(pair => {
-            const [src, tgt] = pair.split('-');
-            const opt = document.createElement('option');
-            opt.value = pair;
-            const validatedCount = getValidatedCount(src, tgt);
-            opt.textContent = `${getLangName(src)} ➔ ${getLangName(tgt)} (${formatValidatedCount(validatedCount, lang)})`;
-            pairSelect.appendChild(opt);
-        });
-
-        // Définir la paire sélectionnée par défaut
-        const lastSrc = localStorage.getItem('voc_last_src') || 'fr';
-        const lastTgt = localStorage.getItem('voc_last_tgt') || 'en';
-        const defaultPair = `${lastSrc}-${lastTgt}`;
-
-        if (usedPairs.includes(defaultPair)) {
-            currentStatsPair = defaultPair;
-            pairSelect.value = currentStatsPair;
-        } else if (currentStatsPair && usedPairs.includes(currentStatsPair)) {
-            pairSelect.value = currentStatsPair;
-        } else if (currentProgPair && usedPairs.includes(currentProgPair)) {
-            currentStatsPair = currentProgPair;
-            pairSelect.value = currentStatsPair;
-        } else {
-            currentStatsPair = usedPairs[0];
-            pairSelect.value = currentStatsPair;
-        }
-
-        pairSelect.onchange = (e) => {
-            currentStatsPair = e.target.value;
-            renderSelectedPairStats(currentStatsPair);
-        };
-    }
-
+    currentStatsPair = activePair;
     renderSelectedPairStats(currentStatsPair);
 }
 
@@ -1843,12 +1859,17 @@ function renderSelectedPairStats(pair) {
 const originalRenderView = renderView;
 const VALID_VIEWS = ['home', 'progress', 'stats', 'certs', 'about'];
 
+// Mapping viewId interne → slug URL propre (nom de la page dans la nav)
+const VIEW_TO_SLUG = { home: 'drill', progress: 'focus', stats: 'progression', certs: 'attestation', about: 'projet' };
+const SLUG_TO_VIEW = Object.fromEntries(Object.entries(VIEW_TO_SLUG).map(([v, s]) => [s, v]));
+
 renderView = function(viewId, updateHash = true) {
     originalRenderView(viewId);
     attachViewEvents(viewId);
     if (updateHash && VALID_VIEWS.includes(viewId)) {
-        if (window.location.hash !== `#${viewId}`) {
-            history.pushState(null, '', `#${viewId}`);
+        const slug = VIEW_TO_SLUG[viewId] || viewId;
+        if (window.location.hash !== `#${slug}`) {
+            history.pushState(null, '', `#${slug}`);
         }
     }
 };
@@ -1892,7 +1913,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Déterminer la vue initiale depuis le hash de l'URL (permet de rester sur la page active après un F5)
     const currentHash = window.location.hash.replace('#', '').trim();
-    const initialView = VALID_VIEWS.includes(currentHash) ? currentHash : 'home';
+    // Résoudre depuis le slug URL propre (ex: #drill → home, #focus → progress)
+    const initialView = SLUG_TO_VIEW[currentHash] || (VALID_VIEWS.includes(currentHash) ? currentHash : 'home');
 
     // Afficher la vue initiale
     renderView(initialView, false);
@@ -1904,7 +1926,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Support de la navigation par l'historique (boutons Précédent / Suivant du navigateur)
     window.addEventListener('popstate', () => {
         const hash = window.location.hash.replace('#', '').trim();
-        const targetView = VALID_VIEWS.includes(hash) ? hash : 'home';
+        const targetView = SLUG_TO_VIEW[hash] || (VALID_VIEWS.includes(hash) ? hash : 'home');
         const currentActiveBtn = document.querySelector('.nav-btn.active');
         const currentView = currentActiveBtn ? currentActiveBtn.id.replace('nav-', '') : '';
         if (currentView !== targetView) {
@@ -2371,6 +2393,17 @@ function initCertsView() {
         return;
     }
 
+    // Utiliser uniquement la paire active depuis les paramètres
+    const { src: activeSrc, tgt: activeTgt, pair: activePair } = getActivePair();
+
+    if (!usedPairs.includes(activePair)) {
+        if (emptyState) emptyState.style.display = 'flex';
+        if (container) container.style.display = 'none';
+        const btnGo = document.getElementById('btn-certs-go-to-training');
+        if (btnGo) btnGo.onclick = () => renderView('home');
+        return;
+    }
+
     if (emptyState) emptyState.style.display = 'none';
     if (container) {
         container.style.display = 'grid';
@@ -2379,7 +2412,8 @@ function initCertsView() {
 
     const lang = getAppLanguage();
 
-    const pairsData = usedPairs.map(pair => {
+    // Ne générer que la carte de la paire active
+    const activePairsData = [activePair].map(pair => {
         const [src, tgt] = pair.split('-');
         let validated = 0;
         const validatedByLevel = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
@@ -2401,10 +2435,7 @@ function initCertsView() {
         return { pair, src, tgt, validated, validatedByLevel, totalByLevel };
     });
 
-    // Trier par nombre de mots validés décroissant
-    pairsData.sort((a, b) => b.validated - a.validated);
-
-    pairsData.forEach(data => {
+    activePairsData.forEach(data => {
         const { src, tgt, validated } = data;
 
         // Creer une carte d'attestation
@@ -2451,6 +2482,7 @@ function initCertsView() {
         if (container) container.appendChild(card);
     });
 }
+
 
 function downloadCertificateAsPDF(canvas, filename) {
     try {
