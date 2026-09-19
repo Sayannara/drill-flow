@@ -34,6 +34,8 @@ L'agent doit **toujours** generer un artefact implementation_plan.md (avec Reque
      - Remarque utilisateur
      - Modification textuelle exacte proposee
    - Liste des signalements deja conformes / deja resolus dans la version actuelle.
+   - **Vérification anti-labels grammaticaux** : Retirer systématiquement toute mention `(verb)`, `(noun)`, `(adj)`, etc., et les doublons de verbes avec `to` (ex: `broadcast / to broadcast` -> `broadcast`).
+   - **Vérification d'intégrité** : Éliminer tout résidu HTML (`<br>`) ou fragment de notes laissé par erreur.
 
 2. **Partie 2 : Les autres mots (Cas structurels & Nuances)**
    - Mots necessitant une separation de carte (ex: *anywhere / everywhere*).

@@ -2739,6 +2739,14 @@ kbd { background: var(--surface-color); border: 1px solid var(--border-color); p
     .drill-config-grid {
         flex-direction: column;
         gap: 1.2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .drill-config-grid > div {
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
     }
 }
 

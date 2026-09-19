@@ -352,7 +352,7 @@ export const vocabulary = [
   {
     "id": "word_25",
     "fr": "presque / quasiment",
-    "en": "Désambiguïser ou unifier les cartes pour éviter d'évaluer deux fois exactement la même paire d'adverbes.",
+    "en": "almost / nearly",
     "de": "fast / beinahe",
     "es": "casi / por poco",
     "type": "adverbe",
@@ -2662,7 +2662,7 @@ export const vocabulary = [
   {
     "id": "word_190",
     "fr": "compter",
-    "en": "court (justice, tribunal)",
+    "en": "count",
     "de": "zählen",
     "es": "contar",
     "type": "verbe",
@@ -3278,7 +3278,7 @@ export const vocabulary = [
   {
     "id": "word_234",
     "fr": "diriger / mener / guider",
-    "en": "Différencier sémantiquement les 3 verbes :<br>- word_234 : direct (orienter, ordonner, diriger une équipe)<br>- word_362 : guide (guider des visiteurs, accompagner)<br>- word_455 : lead (mener, être en tête, commander)",
+    "en": "direct",
     "de": "leiten / führen",
     "es": "dirigir / liderar / guiar",
     "type": "verbe",
@@ -3389,10 +3389,10 @@ export const vocabulary = [
   },
   {
     "id": "word_242",
-    "fr": "la discussion / le débat / l'échange",
-    "en": "discussion / debate / talk",
-    "de": "die Diskussion / das Gespräch / die Debatte",
-    "es": "la discusión / el debate / la charla",
+    "fr": "la discussion / l'échange",
+    "en": "discussion / talk",
+    "de": "die Diskussion / das Gespräch",
+    "es": "la discusión / la charla",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -3417,10 +3417,10 @@ export const vocabulary = [
   },
   {
     "id": "word_244",
-    "fr": "la distance / l'écart",
-    "en": "distance / gap",
+    "fr": "la distance",
+    "en": "distance",
     "de": "die Entfernung / der Abstand",
-    "es": "la distancia / el alejamiento",
+    "es": "la distancia",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -3866,9 +3866,9 @@ export const vocabulary = [
   {
     "id": "word_276",
     "fr": "l'énergie / la force",
-    "en": "energy / power / vigor",
+    "en": "energy / power",
     "de": "die Energie / die Kraft",
-    "es": "la energía / la fuerza / el vigor",
+    "es": "la energía / la fuerza",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -3991,7 +3991,7 @@ export const vocabulary = [
   },
   {
     "id": "word_285",
-    "fr": "l'essai / la rédaction",
+    "fr": "la rédaction (scolaire) / l'essai",
     "en": "essay / paper",
     "de": "der Aufsatz / der Essay",
     "es": "el ensayo / la redacción",
@@ -4341,8 +4341,8 @@ export const vocabulary = [
   },
   {
     "id": "word_310",
-    "fr": "la peur / l'angoisse / la crainte",
-    "en": "fear / dread / fright",
+    "fr": "la peur / la crainte",
+    "en": "fear",
     "de": "die Angst / die Furcht",
     "es": "el miedo / el temor",
     "type": "nom",
@@ -4397,10 +4397,10 @@ export const vocabulary = [
   },
   {
     "id": "word_314",
-    "fr": "le champ / la prairie",
-    "en": "field / meadow",
-    "de": "das Feld / die Wiese",
-    "es": "el campo / el prado",
+    "fr": "le champ",
+    "en": "field",
+    "de": "das Feld",
+    "es": "el campo",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -4776,7 +4776,7 @@ export const vocabulary = [
   {
     "id": "word_341",
     "fr": "la grenouille",
-    "en": "scared / frightened / afraid",
+    "en": "frog",
     "de": "der Frosch",
     "es": "la rana",
     "type": "nom",
@@ -4901,10 +4901,10 @@ export const vocabulary = [
   },
   {
     "id": "word_351",
-    "fr": "la chèvre / le bouc",
-    "en": "giant / huge",
-    "de": "die Ziege / der Ziegenbock",
-    "es": "la cabra / el chivo",
+    "fr": "la chèvre",
+    "en": "goat",
+    "de": "die Ziege",
+    "es": "la cabra",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -4915,10 +4915,10 @@ export const vocabulary = [
   },
   {
     "id": "word_352",
-    "fr": "le dieu / la déesse",
-    "en": "glad / pleased / happy",
-    "de": "der Gott / die Göttin",
-    "es": "el dios / la diosa",
+    "fr": "le dieu",
+    "en": "god",
+    "de": "der Gott",
+    "es": "el dios",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -6680,7 +6680,7 @@ export const vocabulary = [
   {
     "id": "word_478",
     "fr": "fort / forte / bruyant / bruyante",
-    "en": "Différencier nettement :<br>- word_478 : loud (fort, sonore, volume élevé)<br>- word_534 : noisy (bruyant, agité, plein de bruit)",
+    "en": "loud",
     "de": "laut / lärmend",
     "es": "fuerte / ruidoso / ruidosa / alto / alta",
     "type": "adjectif",
@@ -6833,10 +6833,10 @@ export const vocabulary = [
   },
   {
     "id": "word_489",
-    "fr": "le manager / la manager",
-    "en": "ES: el gerente / la gerente / el mánager",
-    "de": "der Manager / die Managerin",
-    "es": "el gerente / la gerente / el gestor / la gestora",
+    "fr": "le responsable / le directeur / la directrice",
+    "en": "manager",
+    "de": "der Leiter / die Leiterin / der Manager / die Managerin",
+    "es": "el gerente / la gerente / el mánager",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -7100,7 +7100,7 @@ export const vocabulary = [
   {
     "id": "word_508",
     "fr": "le mien / la mienne",
-    "en": "mine (pronom possessif)",
+    "en": "mine",
     "de": "meiner / meine / meins",
     "es": "el mío / la mía",
     "type": "pron",
@@ -7324,7 +7324,7 @@ export const vocabulary = [
   {
     "id": "word_524",
     "fr": "presque / à peu près",
-    "en": "Harmoniser avec word_25.",
+    "en": "nearly / almost",
     "de": "fast / beinahe",
     "es": "casi / por poco",
     "type": "adverbe",
@@ -7618,7 +7618,7 @@ export const vocabulary = [
   {
     "id": "word_545",
     "fr": "offrir / proposer",
-    "en": "offer / provide",
+    "en": "offer",
     "de": "anbieten",
     "es": "ofrecer / proponer",
     "type": "verbe",
@@ -7898,7 +7898,7 @@ export const vocabulary = [
   {
     "id": "word_565",
     "fr": "réussir / avoir (examen)",
-    "en": "EN: pass (exam) / succeed<br>FR: réussir (un examen)<br>DE: bestehen<br>ES: aprobar",
+    "en": "pass (exam) / succeed",
     "de": "bestehen",
     "es": "aprobar / pasar",
     "type": "verbe",
@@ -8276,7 +8276,7 @@ export const vocabulary = [
   {
     "id": "word_592",
     "fr": "content / contente / ravi / ravie",
-    "en": "FR: content / contente / ravi",
+    "en": "pleased / glad / satisfied",
     "de": "erfreut / zufrieden",
     "es": "contento / contenta / satisfecho / satisfecha",
     "type": "adjectif",
@@ -9675,10 +9675,10 @@ export const vocabulary = [
   },
   {
     "id": "word_692",
-    "fr": "économiser (argent) / épargner / sauver",
-    "en": "EN: save (argent, économiser) / put aside<br>FR: économiser / mettre de côté<br>DE: sparen<br>ES: ahorrar / guardar (dinero)",
-    "de": "sparen / retten / speichern",
-    "es": "ahorrar / salvar / guardar",
+    "fr": "économiser (argent) / mettre de côté",
+    "en": "save (money) / put aside",
+    "de": "sparen",
+    "es": "ahorrar / guardar (dinero)",
     "type": "verbe",
     "level": "A2",
     "level_step": null,
@@ -9759,9 +9759,9 @@ export const vocabulary = [
   },
   {
     "id": "word_698",
-    "fr": "le score / le résultat / la marque",
-    "en": "score / mark / tally",
-    "de": "das Ergebnis / der Spielstand / der Punktestand",
+    "fr": "le score / le résultat",
+    "en": "score / mark",
+    "de": "das Ergebnis / der Spielstand",
     "es": "el marcador (ES) / el puntaje (LatAm) / el resultado",
     "type": "nom",
     "level": "A2",
@@ -10754,7 +10754,7 @@ export const vocabulary = [
   {
     "id": "word_769",
     "fr": "la scène (théâtre)",
-    "en": "EN: stage (théâtre, scène)<br>FR: la scène (théâtre)<br>DE: die Bühne<br>ES: el escenario",
+    "en": "stage (theatre)",
     "de": "die Bühne",
     "es": "el escenario",
     "type": "nom",
@@ -11566,7 +11566,7 @@ export const vocabulary = [
   {
     "id": "word_827",
     "fr": "bien rangé / bien rangée / ordonné / ordonnée",
-    "en": "tidy / neat / orderly",
+    "en": "tidy / neat",
     "de": "ordentlich / gepflegt",
     "es": "ordenado / ordenada / aseado / aseada",
     "type": "adjectif",
@@ -11761,8 +11761,8 @@ export const vocabulary = [
   },
   {
     "id": "word_841",
-    "fr": "Fiche à conserver (fusionner ou réassigner word_842)",
-    "en": "Conserver word_841 et supprimer ou recycler word_842 pour éliminer la redondance inutile dans la progression.",
+    "fr": "la tour",
+    "en": "tower",
     "de": "der Turm",
     "es": "la torre",
     "type": "nom",
@@ -11775,10 +11775,10 @@ export const vocabulary = [
   },
   {
     "id": "word_842",
-    "fr": "Doublon à supprimer ou remplacer par un mot manquant",
-    "en": "Fusionner avec word_841.",
+    "fr": "le clocher / la tour",
+    "en": "tower (church) / steeple",
     "de": "der Kirchturm / der Turm",
-    "es": "la torre",
+    "es": "la torre / el campanario",
     "type": "nom",
     "level": "A2",
     "level_step": null,
@@ -12363,8 +12363,8 @@ export const vocabulary = [
   },
   {
     "id": "word_884",
-    "fr": "le bienvenu / la bienvenue",
-    "en": "FR: bienvenu / bienvenue / EN: welcome / DE: willkommen / ES: bienvenido / bienvenida",
+    "fr": "bienvenu / bienvenue",
+    "en": "welcome",
     "de": "willkommen",
     "es": "bienvenido / bienvenida",
     "type": "adjectif",
@@ -12728,7 +12728,7 @@ export const vocabulary = [
   {
     "id": "word_911",
     "fr": "l'accès",
-    "en": "access (noun, entrance)",
+    "en": "access (entrance)",
     "de": "der Zugang / der Zugriff",
     "es": "el acceso",
     "type": "nom",
@@ -12742,7 +12742,7 @@ export const vocabulary = [
   {
     "id": "word_912",
     "fr": "accéder / avoir accès à",
-    "en": "access (verb) / to access",
+    "en": "access",
     "de": "zugreifen auf / Zugang haben zu",
     "es": "acceder",
     "type": "verbe",
@@ -12952,7 +12952,7 @@ export const vocabulary = [
   {
     "id": "word_928",
     "fr": "le but / l'objectif",
-    "en": "aim (noun, goal)",
+    "en": "aim (goal)",
     "de": "das Ziel",
     "es": "el objetivo / la meta",
     "type": "nom",
@@ -12966,7 +12966,7 @@ export const vocabulary = [
   {
     "id": "word_929",
     "fr": "viser / cibler",
-    "en": "aim (verb, target) / to aim",
+    "en": "aim (target) / aim",
     "de": "zielen",
     "es": "apuntar",
     "type": "verbe",
@@ -13133,7 +13133,7 @@ export const vocabulary = [
   },
   {
     "id": "word_941",
-    "fr": "agacé / agacée",
+    "fr": "agacé / agacée / embêté / embêtée",
     "en": "annoyed",
     "de": "verärgert / genervt",
     "es": "molesto / molesta / irritado / irritada",
@@ -13456,7 +13456,7 @@ export const vocabulary = [
   {
     "id": "word_964",
     "fr": "l'équilibre",
-    "en": "balance (noun, stability)",
+    "en": "balance (stability)",
     "de": "das Gleichgewicht",
     "es": "el equilibrio",
     "type": "nom",
@@ -13470,7 +13470,7 @@ export const vocabulary = [
   {
     "id": "word_965",
     "fr": "équilibrer",
-    "en": "balance (verb) / to balance",
+    "en": "balance",
     "de": "ausgleichen",
     "es": "equilibrar",
     "type": "verbe",
@@ -13498,7 +13498,7 @@ export const vocabulary = [
   {
     "id": "word_967",
     "fr": "interdire",
-    "en": "ban (verb) / to ban",
+    "en": "ban",
     "de": "verbieten",
     "es": "prohibir",
     "type": "verbe",
@@ -13526,7 +13526,7 @@ export const vocabulary = [
   {
     "id": "word_969",
     "fr": "la base",
-    "en": "base (noun, foundation)",
+    "en": "base (foundation)",
     "de": "die Basis",
     "es": "la base",
     "type": "nom",
@@ -13540,7 +13540,7 @@ export const vocabulary = [
   {
     "id": "word_970",
     "fr": "baser",
-    "en": "base (verb) / to base",
+    "en": "base",
     "de": "basieren",
     "es": "basar",
     "type": "verbe",
@@ -13708,7 +13708,7 @@ export const vocabulary = [
   {
     "id": "word_982",
     "fr": "le pâté de maisons",
-    "en": "block (noun, buildings)",
+    "en": "block (buildings)",
     "de": "der Block",
     "es": "el bloque / la manzana / la cuadra",
     "type": "nom",
@@ -13722,7 +13722,7 @@ export const vocabulary = [
   {
     "id": "word_983",
     "fr": "bloquer",
-    "en": "block (verb) / to block",
+    "en": "block",
     "de": "blockieren",
     "es": "bloquear",
     "type": "verbe",
@@ -13750,7 +13750,7 @@ export const vocabulary = [
   {
     "id": "word_985",
     "fr": "la bombe",
-    "en": "bomb (noun)",
+    "en": "bomb",
     "de": "die Bombe",
     "es": "la bomba",
     "type": "nom",
@@ -13764,7 +13764,7 @@ export const vocabulary = [
   {
     "id": "word_986",
     "fr": "bombarder",
-    "en": "bomb (verb) / to bomb",
+    "en": "bomb",
     "de": "bombardieren",
     "es": "bombardear",
     "type": "verbe",
@@ -14170,7 +14170,7 @@ export const vocabulary = [
   {
     "id": "word_1015",
     "fr": "le défi",
-    "en": "challenge (noun)",
+    "en": "challenge",
     "de": "die Herausforderung",
     "es": "el desafío / el reto",
     "type": "nom",
@@ -14184,7 +14184,7 @@ export const vocabulary = [
   {
     "id": "word_1016",
     "fr": "défier",
-    "en": "challenge (verb) / to challenge",
+    "en": "challenge",
     "de": "herausfordern",
     "es": "desafiar / retar",
     "type": "verbe",
@@ -14240,7 +14240,7 @@ export const vocabulary = [
   {
     "id": "word_1020",
     "fr": "la charge (électrique) / les frais",
-    "en": "charge (noun, fee, battery)",
+    "en": "charge (fee, battery)",
     "de": "die Ladung",
     "es": "la carga",
     "type": "nom",
@@ -14254,7 +14254,7 @@ export const vocabulary = [
   {
     "id": "word_1021",
     "fr": "facturer / faire payer",
-    "en": "charge (verb, bill) / to charge",
+    "en": "charge (bill) / charge",
     "de": "berechnen / verlangen",
     "es": "cobrar / facturar",
     "type": "verbe",
@@ -14380,7 +14380,7 @@ export const vocabulary = [
   {
     "id": "word_1030",
     "fr": "le clic",
-    "en": "click (noun)",
+    "en": "click",
     "de": "der Klick",
     "es": "el clic",
     "type": "nom",
@@ -14394,7 +14394,7 @@ export const vocabulary = [
   {
     "id": "word_1031",
     "fr": "cliquer",
-    "en": "click (verb) / to click",
+    "en": "click",
     "de": "klicken",
     "es": "hacer clic / pulsar",
     "type": "verbe",
@@ -14842,7 +14842,7 @@ export const vocabulary = [
   {
     "id": "word_1063",
     "fr": "le contraste",
-    "en": "contrast (noun)",
+    "en": "contrast",
     "de": "der Kontrast",
     "es": "el contraste",
     "type": "nom",
@@ -14856,7 +14856,7 @@ export const vocabulary = [
   {
     "id": "word_1064",
     "fr": "contraster",
-    "en": "contrast (verb) / to contrast",
+    "en": "contrast",
     "de": "kontrastieren / im Kontrast stehen",
     "es": "contrastar",
     "type": "verbe",
@@ -14925,10 +14925,10 @@ export const vocabulary = [
   },
   {
     "id": "word_1069",
-    "fr": "le décompte / le total",
-    "en": "count (noun, total)",
-    "de": "das Ferienhaus / die Hütte / das Landhaus",
-    "es": "la cabaña / la casa de campo",
+    "fr": "le chalet / la chaumière",
+    "en": "cottage",
+    "de": "das Ferienhaus / die Hütte",
+    "es": "la cabaña / la casita de campo",
     "type": "nom",
     "level": "B1",
     "level_step": null,
@@ -14940,7 +14940,7 @@ export const vocabulary = [
   {
     "id": "word_1070",
     "fr": "le coton",
-    "en": "count (verb) / to count",
+    "en": "cotton",
     "de": "die Baumwolle",
     "es": "el algodón",
     "type": "nom",
@@ -15444,9 +15444,9 @@ export const vocabulary = [
   {
     "id": "word_1106",
     "fr": "le désavantage / l'inconvénient",
-    "en": "discharge (noun)",
+    "en": "disadvantage",
     "de": "der Nachteil",
-    "es": "la desventaja / el inconveniente",
+    "es": "la desventaja",
     "type": "nom",
     "level": "B1",
     "level_step": null,
@@ -15458,7 +15458,7 @@ export const vocabulary = [
   {
     "id": "word_1107",
     "fr": "déçu / déçue",
-    "en": "discharge (verb) / to discharge",
+    "en": "disappointed",
     "de": "enttäuscht",
     "es": "decepcionado / decepcionada",
     "type": "adjectif",
@@ -17334,7 +17334,7 @@ export const vocabulary = [
   {
     "id": "word_1241",
     "fr": "le gardien / la gardienne",
-    "en": "guard (noun, person)",
+    "en": "guard (person)",
     "de": "der Wächter / die Wächterin",
     "es": "el guardia / la guardia",
     "type": "nom",
@@ -17348,7 +17348,7 @@ export const vocabulary = [
   {
     "id": "word_1242",
     "fr": "garder / surveiller",
-    "en": "guard (verb) / to guard",
+    "en": "guard",
     "de": "bewachen",
     "es": "vigilar / guardar",
     "type": "verbe",
@@ -20064,7 +20064,7 @@ export const vocabulary = [
   {
     "id": "word_1437",
     "fr": "empoisonner",
-    "en": "poison (verb) / to poison",
+    "en": "poison",
     "de": "vergiften",
     "es": "envenenar",
     "type": "verbe",
@@ -20078,7 +20078,7 @@ export const vocabulary = [
   {
     "id": "word_1438",
     "fr": "vénéneux / vénéneuse / toxique",
-    "en": "poison (noun)",
+    "en": "poison",
     "de": "giftig / toxisch",
     "es": "venenoso / venenosa / tóxico / tóxica",
     "type": "adjectif",
@@ -20302,7 +20302,7 @@ export const vocabulary = [
   {
     "id": "word_1454",
     "fr": "pratique",
-    "en": "praise (noun)",
+    "en": "practical",
     "de": "praktisch",
     "es": "práctico / práctica",
     "type": "adjectif",
@@ -20316,9 +20316,9 @@ export const vocabulary = [
   {
     "id": "word_1455",
     "fr": "prier",
-    "en": "praise (verb) / to praise",
+    "en": "pray",
     "de": "beten",
-    "es": "rezar / orar",
+    "es": "rezar",
     "type": "verbe",
     "level": "B1",
     "level_step": null,
@@ -21338,7 +21338,7 @@ export const vocabulary = [
   {
     "id": "word_1528",
     "fr": "le loyer",
-    "en": "rent (noun, payment)",
+    "en": "rent (payment)",
     "de": "die Miete",
     "es": "el alquiler (ES) / la renta (LatAm)",
     "type": "nom",
@@ -21464,8 +21464,8 @@ export const vocabulary = [
   {
     "id": "word_1537",
     "fr": "la réponse",
-    "en": "reward (noun)",
-    "de": "die Antwort / die Rückmeldung",
+    "en": "response",
+    "de": "die Antwort",
     "es": "la respuesta",
     "type": "nom",
     "level": "B1",
@@ -21478,7 +21478,7 @@ export const vocabulary = [
   {
     "id": "word_1538",
     "fr": "la responsabilité",
-    "en": "reward (verb) / to reward",
+    "en": "responsibility",
     "de": "die Verantwortung",
     "es": "la responsabilidad",
     "type": "nom",
@@ -21632,7 +21632,7 @@ export const vocabulary = [
   {
     "id": "word_1549",
     "fr": "rouler",
-    "en": "row (noun, line)",
+    "en": "roll",
     "de": "rollen",
     "es": "rodar",
     "type": "verbe",
@@ -21646,7 +21646,7 @@ export const vocabulary = [
   {
     "id": "word_1550",
     "fr": "romantique",
-    "en": "row (verb, boat) / to row",
+    "en": "romantic",
     "de": "romantisch",
     "es": "romántico / romántica",
     "type": "adjectif",
@@ -22108,7 +22108,7 @@ export const vocabulary = [
   {
     "id": "word_1583",
     "fr": "brillant / brillante",
-    "en": "shoot (noun, photo, film)",
+    "en": "shiny",
     "de": "glänzend",
     "es": "brillante",
     "type": "adjectif",
@@ -22122,7 +22122,7 @@ export const vocabulary = [
   {
     "id": "word_1584",
     "fr": "filmer / tourner",
-    "en": "shoot (verb) / to shoot",
+    "en": "shoot",
     "de": "drehen / filmen",
     "es": "rodar (ES) / filmar (LatAm)",
     "type": "verbe",
@@ -24026,7 +24026,7 @@ export const vocabulary = [
   {
     "id": "word_1721",
     "fr": "le bénévole / la bénévole",
-    "en": "volunteer (noun)",
+    "en": "volunteer",
     "de": "der Freiwillige / die Freiwillige",
     "es": "el voluntario / la voluntaria",
     "type": "nom",
@@ -24040,7 +24040,7 @@ export const vocabulary = [
   {
     "id": "word_1722",
     "fr": "se porter volontaire",
-    "en": "volunteer (verb) / to volunteer",
+    "en": "volunteer",
     "de": "sich freiwillig melden",
     "es": "ofrecerse como voluntario / ofrecerse",
     "type": "verbe",
@@ -24474,7 +24474,7 @@ export const vocabulary = [
   {
     "id": "word_1753",
     "fr": "académique / universitaire",
-    "en": "academic (adj)",
+    "en": "academic",
     "de": "akademisch",
     "es": "académico",
     "type": "adjectif",
@@ -24488,7 +24488,7 @@ export const vocabulary = [
   {
     "id": "word_1754",
     "fr": "l'universitaire",
-    "en": "academic (noun, scholar)",
+    "en": "academic (scholar)",
     "de": "der Akademiker / die Akademikerin",
     "es": "el académico / la académica",
     "type": "nom",
@@ -24880,7 +24880,7 @@ export const vocabulary = [
   {
     "id": "word_1782",
     "fr": "l'avancée / le progrès",
-    "en": "advance (noun) / progress",
+    "en": "advance / progress",
     "de": "der Fortschritt",
     "es": "el avance",
     "type": "nom",
@@ -24894,7 +24894,7 @@ export const vocabulary = [
   {
     "id": "word_1783",
     "fr": "avancer",
-    "en": "advance (verb) / to advance",
+    "en": "advance",
     "de": "vorrücken",
     "es": "avanzar",
     "type": "verbe",
@@ -25006,7 +25006,7 @@ export const vocabulary = [
   {
     "id": "word_1791",
     "fr": "l'aide",
-    "en": "aid (noun, help)",
+    "en": "aid (help)",
     "de": "die Hilfe",
     "es": "la ayuda",
     "type": "nom",
@@ -25020,7 +25020,7 @@ export const vocabulary = [
   {
     "id": "word_1792",
     "fr": "aider",
-    "en": "aid (verb, help) / to aid",
+    "en": "aid (help) / aid",
     "de": "helfen",
     "es": "ayudar",
     "type": "verbe",
@@ -25062,7 +25062,7 @@ export const vocabulary = [
   {
     "id": "word_1796",
     "fr": "l'extraterrestre / l'étranger",
-    "en": "alien (noun, creature)",
+    "en": "alien (creature)",
     "de": "der Außerirdische",
     "es": "el extraterrestre",
     "type": "nom",
@@ -25076,7 +25076,7 @@ export const vocabulary = [
   {
     "id": "word_1797",
     "fr": "étranger / étrangère",
-    "en": "alien (adj, foreign)",
+    "en": "alien (foreign)",
     "de": "fremd",
     "es": "ajeno / ajena",
     "type": "adjectif",
@@ -25398,7 +25398,7 @@ export const vocabulary = [
   {
     "id": "word_1820",
     "fr": "l'appel (justice) / le recours",
-    "en": "appeal (noun, legal)",
+    "en": "appeal (legal)",
     "de": "der Einspruch / die Berufung",
     "es": "la apelación / el recurso",
     "type": "nom",
@@ -25412,7 +25412,7 @@ export const vocabulary = [
   {
     "id": "word_1821",
     "fr": "faire appel / attirer",
-    "en": "appeal (verb) / to appeal",
+    "en": "appeal",
     "de": "ansprechen / reizen / gefallen",
     "es": "apelar / atraer",
     "type": "verbe",
@@ -25440,7 +25440,7 @@ export const vocabulary = [
   {
     "id": "word_1823",
     "fr": "l'approche",
-    "en": "approach (noun, method)",
+    "en": "approach (method)",
     "de": "der Ansatz / die Annäherung",
     "es": "el enfoque",
     "type": "nom",
@@ -25454,7 +25454,7 @@ export const vocabulary = [
   {
     "id": "word_1824",
     "fr": "approcher / s'approcher",
-    "en": "approach (verb) / to approach",
+    "en": "approach",
     "de": "sich nähern",
     "es": "acercarse",
     "type": "verbe",
@@ -25846,7 +25846,7 @@ export const vocabulary = [
   {
     "id": "word_1852",
     "fr": "la tentative",
-    "en": "attempt (noun, trial)",
+    "en": "attempt (trial)",
     "de": "der Versuch",
     "es": "el intento",
     "type": "nom",
@@ -25860,7 +25860,7 @@ export const vocabulary = [
   {
     "id": "word_1853",
     "fr": "tenter",
-    "en": "attempt (verb) / to attempt",
+    "en": "attempt",
     "de": "versuchen",
     "es": "intentar",
     "type": "verbe",
@@ -25916,7 +25916,7 @@ export const vocabulary = [
   {
     "id": "word_1857",
     "fr": "l'étiquette / le tag",
-    "en": "tag (noun, label)",
+    "en": "tag (label)",
     "de": "das Etikett",
     "es": "la etiqueta",
     "type": "nom",
@@ -25930,7 +25930,7 @@ export const vocabulary = [
   {
     "id": "word_1858",
     "fr": "étiqueter / taguer",
-    "en": "tag (verb, label) / to tag",
+    "en": "tag (label) / tag",
     "de": "markieren",
     "es": "etiquetar",
     "type": "verbe",
@@ -25972,7 +25972,7 @@ export const vocabulary = [
   {
     "id": "word_1861",
     "fr": "le robinet",
-    "en": "tap (noun, faucet) / faucet (US)",
+    "en": "tap (faucet) / faucet (US)",
     "de": "der Wasserhahn",
     "es": "el grifo (ES) / la llave / la canilla (LatAm)",
     "type": "nom",
@@ -25986,7 +25986,7 @@ export const vocabulary = [
   {
     "id": "word_1862",
     "fr": "tapoter / taper doucement",
-    "en": "tap (verb, touch) / to tap",
+    "en": "tap (touch) / tap",
     "de": "tippen / leicht klopfen",
     "es": "dar golpecitos / tocar",
     "type": "verbe",
@@ -26000,7 +26000,7 @@ export const vocabulary = [
   {
     "id": "word_1863",
     "fr": "la larme",
-    "en": "tear (noun, drop)",
+    "en": "tear (drop)",
     "de": "die Träne",
     "es": "la lágrima / el desgarro",
     "type": "nom",
@@ -26014,7 +26014,7 @@ export const vocabulary = [
   {
     "id": "word_1864",
     "fr": "déchirer",
-    "en": "tear (verb, rip) / to tear",
+    "en": "tear (rip) / tear",
     "de": "zerreißen / reißen",
     "es": "romper / desgarrar",
     "type": "verbe",
@@ -26126,7 +26126,7 @@ export const vocabulary = [
   {
     "id": "word_1872",
     "fr": "le terminal",
-    "en": "terminal (noun, station)",
+    "en": "terminal (station)",
     "de": "das Terminal",
     "es": "la terminal",
     "type": "nom",
@@ -26140,7 +26140,7 @@ export const vocabulary = [
   {
     "id": "word_1873",
     "fr": "terminal (phase finale)",
-    "en": "terminal (adj, final stage)",
+    "en": "terminal (final stage)",
     "de": "im Endstadium",
     "es": "terminal",
     "type": "adjectif",
@@ -26518,7 +26518,7 @@ export const vocabulary = [
   {
     "id": "word_1900",
     "fr": "la trace",
-    "en": "trace (noun, mark)",
+    "en": "trace (mark)",
     "de": "die Spur",
     "es": "el rastro",
     "type": "nom",
@@ -26532,7 +26532,7 @@ export const vocabulary = [
   {
     "id": "word_1901",
     "fr": "retracer / tracer",
-    "en": "trace (verb, track down)",
+    "en": "trace (track down)",
     "de": "zurückverfolgen",
     "es": "rastrear",
     "type": "verbe",
@@ -26546,7 +26546,7 @@ export const vocabulary = [
   {
     "id": "word_1902",
     "fr": "la piste / le chemin",
-    "en": "track (noun, trail / rail)",
+    "en": "track (trail / rail)",
     "de": "die Spur",
     "es": "la pista",
     "type": "nom",
@@ -26560,7 +26560,7 @@ export const vocabulary = [
   {
     "id": "word_1903",
     "fr": "suivre (à la trace)",
-    "en": "track (verb, follow)",
+    "en": "track (follow)",
     "de": "verfolgen",
     "es": "rastrear",
     "type": "verbe",
@@ -26630,7 +26630,7 @@ export const vocabulary = [
   {
     "id": "word_1908",
     "fr": "le transfert",
-    "en": "transfer (noun, relocation)",
+    "en": "transfer (relocation)",
     "de": "die Übertragung",
     "es": "la transferencia",
     "type": "nom",
@@ -26644,7 +26644,7 @@ export const vocabulary = [
   {
     "id": "word_1909",
     "fr": "transférer",
-    "en": "transfer (verb, move)",
+    "en": "transfer (move)",
     "de": "übertragen / verlegen",
     "es": "transferir",
     "type": "verbe",
@@ -26700,7 +26700,7 @@ export const vocabulary = [
   {
     "id": "word_1913",
     "fr": "le piège",
-    "en": "trap (noun, snare)",
+    "en": "trap (snare)",
     "de": "die Falle",
     "es": "la trampa",
     "type": "nom",
@@ -26714,7 +26714,7 @@ export const vocabulary = [
   {
     "id": "word_1914",
     "fr": "piéger",
-    "en": "trap (verb, snare) / to trap",
+    "en": "trap (snare) / trap",
     "de": "in die Falle locken",
     "es": "atrapar",
     "type": "verbe",
@@ -26826,7 +26826,7 @@ export const vocabulary = [
   {
     "id": "word_1922",
     "fr": "la confiance",
-    "en": "trust (noun, confidence)",
+    "en": "trust (confidence)",
     "de": "das Vertrauen",
     "es": "la confianza",
     "type": "nom",
@@ -26840,7 +26840,7 @@ export const vocabulary = [
   {
     "id": "word_1923",
     "fr": "faire confiance à",
-    "en": "trust (verb, believe in)",
+    "en": "trust (believe in)",
     "de": "vertrauen",
     "es": "confiar en",
     "type": "verbe",
@@ -27862,7 +27862,7 @@ export const vocabulary = [
   {
     "id": "word_1996",
     "fr": "le témoin / la témoin",
-    "en": "witness (noun, person)",
+    "en": "witness (person)",
     "de": "der Zeuge / die Zeugin",
     "es": "el testigo / la testigo",
     "type": "nom",
@@ -27876,7 +27876,7 @@ export const vocabulary = [
   {
     "id": "word_1997",
     "fr": "être témoin de",
-    "en": "witness (verb, observe)",
+    "en": "witness (observe)",
     "de": "bezeugen",
     "es": "presenciar",
     "type": "verbe",
@@ -27960,7 +27960,7 @@ export const vocabulary = [
   {
     "id": "word_2003",
     "fr": "la blessure",
-    "en": "wound (noun, injury) / injury",
+    "en": "wound (injury) / injury",
     "de": "die Wunde",
     "es": "la herida",
     "type": "nom",
@@ -27974,7 +27974,7 @@ export const vocabulary = [
   {
     "id": "word_2004",
     "fr": "blesser",
-    "en": "wound (verb, injure) / to wound",
+    "en": "wound (injure) / wound",
     "de": "verwunden",
     "es": "herir",
     "type": "verbe",
@@ -28394,7 +28394,7 @@ export const vocabulary = [
   {
     "id": "word_2034",
     "fr": "la faute / la responsabilité",
-    "en": "blame (noun, fault)",
+    "en": "blame (fault)",
     "de": "die Schuld",
     "es": "la culpa",
     "type": "nom",
@@ -28408,7 +28408,7 @@ export const vocabulary = [
   {
     "id": "word_2035",
     "fr": "blâmer",
-    "en": "blame (verb) / to blame",
+    "en": "blame",
     "de": "beschuldigen",
     "es": "culpar",
     "type": "verbe",
@@ -28590,7 +28590,7 @@ export const vocabulary = [
   {
     "id": "word_2048",
     "fr": "l'émission (TV/radio)",
-    "en": "broadcast (noun, show)",
+    "en": "broadcast (show)",
     "de": "die Sendung",
     "es": "la transmisión",
     "type": "nom",
@@ -28604,7 +28604,7 @@ export const vocabulary = [
   {
     "id": "word_2049",
     "fr": "diffuser",
-    "en": "broadcast (verb) / to broadcast",
+    "en": "broadcast",
     "de": "senden",
     "es": "transmitir",
     "type": "verbe",
@@ -28898,7 +28898,7 @@ export const vocabulary = [
   {
     "id": "word_2070",
     "fr": "le casting",
-    "en": "cast (noun, actors)",
+    "en": "cast (actors)",
     "de": "die Besetzung",
     "es": "el elenco",
     "type": "nom",
@@ -28912,7 +28912,7 @@ export const vocabulary = [
   {
     "id": "word_2071",
     "fr": "jeter / distribuer (rôle)",
-    "en": "cast (verb, assign) / to cast",
+    "en": "cast (assign) / cast",
     "de": "werfen",
     "es": "lanzar",
     "type": "verbe",
@@ -29444,7 +29444,7 @@ export const vocabulary = [
   {
     "id": "word_2109",
     "fr": "la bande dessinée",
-    "en": "comic (noun, book)",
+    "en": "comic (book)",
     "de": "der Comic",
     "es": "el cómic",
     "type": "nom",
@@ -29458,7 +29458,7 @@ export const vocabulary = [
   {
     "id": "word_2110",
     "fr": "comique",
-    "en": "comic (adj, funny) / comical",
+    "en": "comic (funny) / comical",
     "de": "komisch",
     "es": "cómico",
     "type": "adjectif",
@@ -29472,7 +29472,7 @@ export const vocabulary = [
   {
     "id": "word_2111",
     "fr": "le commandement / l'ordre",
-    "en": "command (noun, order)",
+    "en": "command (order)",
     "de": "der Befehl",
     "es": "el mando",
     "type": "nom",
@@ -29486,7 +29486,7 @@ export const vocabulary = [
   {
     "id": "word_2112",
     "fr": "commander",
-    "en": "command (verb, order)",
+    "en": "command (order)",
     "de": "befehlen",
     "es": "comandar",
     "type": "verbe",
@@ -29724,7 +29724,7 @@ export const vocabulary = [
   {
     "id": "word_2129",
     "fr": "la préoccupation / le souci",
-    "en": "concern (noun, worry)",
+    "en": "concern (worry)",
     "de": "die Sorge",
     "es": "la preocupación",
     "type": "nom",
@@ -29738,7 +29738,7 @@ export const vocabulary = [
   {
     "id": "word_2130",
     "fr": "concerner",
-    "en": "concern (verb) / to concern",
+    "en": "concern",
     "de": "betreffen",
     "es": "concernir",
     "type": "verbe",
@@ -30536,7 +30536,7 @@ export const vocabulary = [
   {
     "id": "word_2187",
     "fr": "le crash / l'accident",
-    "en": "crash (noun, accident)",
+    "en": "crash (accident)",
     "de": "der Absturz",
     "es": "el choque",
     "type": "nom",
@@ -30550,7 +30550,7 @@ export const vocabulary = [
   {
     "id": "word_2188",
     "fr": "s'écraser",
-    "en": "crash (verb, collide)",
+    "en": "crash (collide)",
     "de": "abstürzen",
     "es": "chocar",
     "type": "verbe",
@@ -30760,7 +30760,7 @@ export const vocabulary = [
   {
     "id": "word_2203",
     "fr": "le remède",
-    "en": "cure (noun, remedy)",
+    "en": "cure (remedy)",
     "de": "das Heilmittel",
     "es": "la cura",
     "type": "nom",
@@ -30774,7 +30774,7 @@ export const vocabulary = [
   {
     "id": "word_2204",
     "fr": "guérir",
-    "en": "cure (verb, heal) / to cure",
+    "en": "cure (heal) / cure",
     "de": "heilen",
     "es": "curar",
     "type": "verbe",
@@ -30816,7 +30816,7 @@ export const vocabulary = [
   {
     "id": "word_2207",
     "fr": "la courbe",
-    "en": "curve (noun, bend)",
+    "en": "curve (bend)",
     "de": "die Kurve",
     "es": "la curva",
     "type": "nom",
@@ -30830,7 +30830,7 @@ export const vocabulary = [
   {
     "id": "word_2208",
     "fr": "courber",
-    "en": "curve (verb, bend) / to curve",
+    "en": "curve (bend) / curve",
     "de": "biegen",
     "es": "curvar",
     "type": "verbe",
@@ -30858,7 +30858,7 @@ export const vocabulary = [
   {
     "id": "word_2210",
     "fr": "les produits laitiers",
-    "en": "dairy (noun, products)",
+    "en": "dairy (products)",
     "de": "die Molkereiprodukte",
     "es": "los lácteos",
     "type": "nom",
@@ -30872,7 +30872,7 @@ export const vocabulary = [
   {
     "id": "word_2211",
     "fr": "laitier",
-    "en": "dairy (adj, milk-related)",
+    "en": "dairy (milk-related)",
     "de": "Molkerei-",
     "es": "lácteo / láctea",
     "type": "adjectif",
@@ -30984,7 +30984,7 @@ export const vocabulary = [
   {
     "id": "word_2219",
     "fr": "le débat",
-    "en": "debate (noun, discussion)",
+    "en": "debate (discussion)",
     "de": "die Debatte",
     "es": "el debate",
     "type": "nom",
@@ -30998,7 +30998,7 @@ export const vocabulary = [
   {
     "id": "word_2220",
     "fr": "débattre",
-    "en": "debate (verb) / to debate",
+    "en": "debate",
     "de": "debattieren",
     "es": "debatir",
     "type": "verbe",
@@ -31068,7 +31068,7 @@ export const vocabulary = [
   {
     "id": "word_2225",
     "fr": "le déclin",
-    "en": "decline (noun, drop)",
+    "en": "decline (drop)",
     "de": "der Rückgang",
     "es": "el declive",
     "type": "nom",
@@ -31082,7 +31082,7 @@ export const vocabulary = [
   {
     "id": "word_2226",
     "fr": "décliner",
-    "en": "decline (verb, refuse / drop)",
+    "en": "decline (refuse / drop)",
     "de": "ablehnen",
     "es": "rechazar",
     "type": "verbe",
@@ -31110,7 +31110,7 @@ export const vocabulary = [
   {
     "id": "word_2228",
     "fr": "la diminution",
-    "en": "decrease (noun, drop)",
+    "en": "decrease (drop)",
     "de": "die Abnahme",
     "es": "la disminución",
     "type": "nom",
@@ -31124,7 +31124,7 @@ export const vocabulary = [
   {
     "id": "word_2229",
     "fr": "diminuer",
-    "en": "decrease (verb) / to decrease",
+    "en": "decrease",
     "de": "abnehmen",
     "es": "disminuir",
     "type": "verbe",
@@ -31152,7 +31152,7 @@ export const vocabulary = [
   {
     "id": "word_2231",
     "fr": "la défaite",
-    "en": "defeat (noun, loss)",
+    "en": "defeat (loss)",
     "de": "die Niederlage",
     "es": "la derrota",
     "type": "nom",
@@ -31166,7 +31166,7 @@ export const vocabulary = [
   {
     "id": "word_2232",
     "fr": "vaincre",
-    "en": "defeat (verb, beat)",
+    "en": "defeat (beat)",
     "de": "besiegen",
     "es": "derrotar",
     "type": "verbe",
@@ -31250,7 +31250,7 @@ export const vocabulary = [
   {
     "id": "word_2238",
     "fr": "le retard",
-    "en": "delay (noun, lateness)",
+    "en": "delay (lateness)",
     "de": "die Verzögerung",
     "es": "el retraso",
     "type": "nom",
@@ -31264,7 +31264,7 @@ export const vocabulary = [
   {
     "id": "word_2239",
     "fr": "retarder",
-    "en": "delay (verb, postpone)",
+    "en": "delay (postpone)",
     "de": "verzögern",
     "es": "retrasar",
     "type": "verbe",
@@ -31362,7 +31362,7 @@ export const vocabulary = [
   {
     "id": "word_2246",
     "fr": "la demande",
-    "en": "demand (noun, request)",
+    "en": "demand (request)",
     "de": "die Nachfrage",
     "es": "la demanda",
     "type": "nom",
@@ -31376,7 +31376,7 @@ export const vocabulary = [
   {
     "id": "word_2247",
     "fr": "exiger",
-    "en": "demand (verb, require)",
+    "en": "demand (require)",
     "de": "fordern",
     "es": "exigir",
     "type": "verbe",
@@ -31488,7 +31488,7 @@ export const vocabulary = [
   {
     "id": "word_2255",
     "fr": "la caution / le dépôt de garantie",
-    "en": "deposit (noun, bail / bank)",
+    "en": "deposit (bail / bank)",
     "de": "die Kaution",
     "es": "el depósito",
     "type": "nom",
@@ -31502,7 +31502,7 @@ export const vocabulary = [
   {
     "id": "word_2256",
     "fr": "déposer",
-    "en": "deposit (verb, put down)",
+    "en": "deposit (put down)",
     "de": "deponieren",
     "es": "depositar",
     "type": "verbe",
@@ -31600,7 +31600,7 @@ export const vocabulary = [
   {
     "id": "word_2263",
     "fr": "le désir",
-    "en": "desire (noun, wish)",
+    "en": "desire (wish)",
     "de": "das Verlangen",
     "es": "el deseo",
     "type": "nom",
@@ -31614,7 +31614,7 @@ export const vocabulary = [
   {
     "id": "word_2264",
     "fr": "désirer",
-    "en": "desire (verb, want)",
+    "en": "desire (want)",
     "de": "begehren",
     "es": "desear",
     "type": "verbe",
@@ -31950,7 +31950,7 @@ export const vocabulary = [
   {
     "id": "word_2288",
     "fr": "l'affichage",
-    "en": "display (noun, exhibition)",
+    "en": "display (exhibition)",
     "de": "die Anzeige",
     "es": "la pantalla",
     "type": "nom",
@@ -31964,7 +31964,7 @@ export const vocabulary = [
   {
     "id": "word_2289",
     "fr": "afficher",
-    "en": "display (verb, show)",
+    "en": "display (show)",
     "de": "anzeigen",
     "es": "mostrar",
     "type": "verbe",
@@ -32146,7 +32146,7 @@ export const vocabulary = [
   {
     "id": "word_2302",
     "fr": "le divorce",
-    "en": "divorce (noun, separation)",
+    "en": "divorce (separation)",
     "de": "die Scheidung",
     "es": "el divorcio",
     "type": "nom",
@@ -32160,7 +32160,7 @@ export const vocabulary = [
   {
     "id": "word_2303",
     "fr": "divorcer",
-    "en": "divorce (verb) / to divorce",
+    "en": "divorce",
     "de": "sich scheiden lassen",
     "es": "divorciarse",
     "type": "verbe",
@@ -32174,7 +32174,7 @@ export const vocabulary = [
   {
     "id": "word_2304",
     "fr": "le document",
-    "en": "document (noun, paper)",
+    "en": "document (paper)",
     "de": "das Dokument",
     "es": "el documento",
     "type": "nom",
@@ -32188,7 +32188,7 @@ export const vocabulary = [
   {
     "id": "word_2305",
     "fr": "documenter",
-    "en": "document (verb, record)",
+    "en": "document (record)",
     "de": "dokumentieren",
     "es": "documentar",
     "type": "verbe",
@@ -32300,7 +32300,7 @@ export const vocabulary = [
   {
     "id": "word_2313",
     "fr": "le brouillon",
-    "en": "draft (noun, outline)",
+    "en": "draft (outline)",
     "de": "der Entwurf",
     "es": "el borrador",
     "type": "nom",
@@ -32314,7 +32314,7 @@ export const vocabulary = [
   {
     "id": "word_2314",
     "fr": "rédiger (un brouillon)",
-    "en": "draft (verb, write)",
+    "en": "draft (write)",
     "de": "entwerfen",
     "es": "redactar",
     "type": "verbe",
@@ -33084,7 +33084,7 @@ export const vocabulary = [
   {
     "id": "word_2369",
     "fr": "l'estimation",
-    "en": "estimate (noun, valuation)",
+    "en": "estimate (valuation)",
     "de": "die Schätzung",
     "es": "la estimación",
     "type": "nom",
@@ -33098,7 +33098,7 @@ export const vocabulary = [
   {
     "id": "word_2370",
     "fr": "estimer",
-    "en": "estimate (verb) / to estimate",
+    "en": "estimate",
     "de": "schätzen",
     "es": "estimar",
     "type": "verbe",
@@ -33224,7 +33224,7 @@ export const vocabulary = [
   {
     "id": "word_2379",
     "fr": "le mal",
-    "en": "evil (noun, wickedness)",
+    "en": "evil (wickedness)",
     "de": "das Böse",
     "es": "el mal",
     "type": "nom",
@@ -33238,7 +33238,7 @@ export const vocabulary = [
   {
     "id": "word_2380",
     "fr": "maléfique",
-    "en": "evil (adj, wicked)",
+    "en": "evil (wicked)",
     "de": "böse",
     "es": "malvado",
     "type": "adjectif",
@@ -33350,7 +33350,7 @@ export const vocabulary = [
   {
     "id": "word_2388",
     "fr": "l'excuse (prétexte) / le prétexte",
-    "en": "excuse (noun, pretext)",
+    "en": "excuse (pretext)",
     "de": "die Ausrede / der Vorwand",
     "es": "la excusa / el pretexto",
     "type": "nom",
@@ -33364,7 +33364,7 @@ export const vocabulary = [
   {
     "id": "word_2389",
     "fr": "excuser",
-    "en": "excuse (verb, forgive)",
+    "en": "excuse (forgive)",
     "de": "entschuldigen",
     "es": "excusar",
     "type": "verbe",
@@ -33616,7 +33616,7 @@ export const vocabulary = [
   {
     "id": "word_2407",
     "fr": "l'extrait",
-    "en": "extract (noun, passage)",
+    "en": "extract (passage)",
     "de": "der Auszug",
     "es": "el extracto",
     "type": "nom",
@@ -33630,7 +33630,7 @@ export const vocabulary = [
   {
     "id": "word_2408",
     "fr": "extraire",
-    "en": "extract (verb, remove)",
+    "en": "extract (remove)",
     "de": "extrahieren",
     "es": "extraer",
     "type": "verbe",
@@ -33770,7 +33770,7 @@ export const vocabulary = [
   {
     "id": "word_2418",
     "fr": "le faux",
-    "en": "fake (noun, forgery)",
+    "en": "fake (forgery)",
     "de": "die Fälschung",
     "es": "la falsificación",
     "type": "nom",
@@ -33784,7 +33784,7 @@ export const vocabulary = [
   {
     "id": "word_2419",
     "fr": "faux",
-    "en": "fake (adj, counterfeit)",
+    "en": "fake (counterfeit)",
     "de": "falsch",
     "es": "falso",
     "type": "adjectif",
@@ -33924,7 +33924,7 @@ export const vocabulary = [
   {
     "id": "word_2429",
     "fr": "la finance",
-    "en": "finance (noun, money)",
+    "en": "finance (money)",
     "de": "die Finanzen",
     "es": "las finanzas",
     "type": "nom",
@@ -33938,7 +33938,7 @@ export const vocabulary = [
   {
     "id": "word_2430",
     "fr": "financer",
-    "en": "finance (verb, fund)",
+    "en": "finance (fund)",
     "de": "finanzieren",
     "es": "financiar",
     "type": "verbe",
@@ -33994,7 +33994,7 @@ export const vocabulary = [
   {
     "id": "word_2434",
     "fr": "l'entreprise (cabinet, firme)",
-    "en": "firm (noun, company)",
+    "en": "firm (company)",
     "de": "die Firma",
     "es": "la empresa (firma, bufete)",
     "type": "nom",
@@ -34008,7 +34008,7 @@ export const vocabulary = [
   {
     "id": "word_2435",
     "fr": "ferme",
-    "en": "firm (adj, solid)",
+    "en": "firm (solid)",
     "de": "fest",
     "es": "firme",
     "type": "adjectif",
@@ -34134,7 +34134,7 @@ export const vocabulary = [
   {
     "id": "word_2444",
     "fr": "l'imbécile / le fou",
-    "en": "fool (noun, idiot)",
+    "en": "fool (idiot)",
     "de": "der Narr",
     "es": "el tonto",
     "type": "nom",
@@ -34148,7 +34148,7 @@ export const vocabulary = [
   {
     "id": "word_2445",
     "fr": "tromper",
-    "en": "fool (verb, trick)",
+    "en": "fool (trick)",
     "de": "täuschen",
     "es": "engañar",
     "type": "verbe",
@@ -34176,7 +34176,7 @@ export const vocabulary = [
   {
     "id": "word_2447",
     "fr": "les prévisions",
-    "en": "forecast (noun, prediction)",
+    "en": "forecast (prediction)",
     "de": "die Vorhersage",
     "es": "el pronóstico",
     "type": "nom",
@@ -34190,7 +34190,7 @@ export const vocabulary = [
   {
     "id": "word_2448",
     "fr": "prévoir",
-    "en": "forecast (verb, predict)",
+    "en": "forecast (predict)",
     "de": "vorhersagen",
     "es": "pronosticar",
     "type": "verbe",
@@ -34526,7 +34526,7 @@ export const vocabulary = [
   {
     "id": "word_2472",
     "fr": "le fonds",
-    "en": "fund (noun, money reserve)",
+    "en": "fund (money reserve)",
     "de": "der Fonds",
     "es": "el fondo",
     "type": "nom",
@@ -34540,7 +34540,7 @@ export const vocabulary = [
   {
     "id": "word_2473",
     "fr": "financer",
-    "en": "fund (verb, finance)",
+    "en": "fund (finance)",
     "de": "finanzieren",
     "es": "financiar",
     "type": "verbe",
@@ -34960,7 +34960,7 @@ export const vocabulary = [
   {
     "id": "word_2503",
     "fr": "la subvention",
-    "en": "grant (noun, subsidy)",
+    "en": "grant (subsidy)",
     "de": "der Zuschuss",
     "es": "la subvención",
     "type": "nom",
@@ -34974,7 +34974,7 @@ export const vocabulary = [
   {
     "id": "word_2504",
     "fr": "accorder",
-    "en": "grant (verb, allow)",
+    "en": "grant (allow)",
     "de": "gewähren",
     "es": "conceder",
     "type": "verbe",
@@ -35128,7 +35128,7 @@ export const vocabulary = [
   {
     "id": "word_2515",
     "fr": "le mal / le tort",
-    "en": "harm (noun, damage)",
+    "en": "harm (damage)",
     "de": "der Schaden",
     "es": "el daño",
     "type": "nom",
@@ -35142,7 +35142,7 @@ export const vocabulary = [
   {
     "id": "word_2516",
     "fr": "nuire à",
-    "en": "harm (verb, hurt)",
+    "en": "harm (hurt)",
     "de": "schaden",
     "es": "dañar",
     "type": "verbe",
@@ -35576,7 +35576,7 @@ export const vocabulary = [
   {
     "id": "word_2547",
     "fr": "l'idéal",
-    "en": "ideal (noun, perfection)",
+    "en": "ideal (perfection)",
     "de": "das Ideal",
     "es": "el ideal",
     "type": "nom",
@@ -35590,7 +35590,7 @@ export const vocabulary = [
   {
     "id": "word_2548",
     "fr": "idéal",
-    "en": "ideal (adj, perfect)",
+    "en": "ideal (perfect)",
     "de": "ideal",
     "es": "ideal",
     "type": "adjectif",
@@ -36682,7 +36682,7 @@ export const vocabulary = [
   {
     "id": "word_2626",
     "fr": "l'articulation",
-    "en": "joint (noun, anatomy)",
+    "en": "joint (anatomy)",
     "de": "das Gelenk",
     "es": "la articulación",
     "type": "nom",
@@ -36696,7 +36696,7 @@ export const vocabulary = [
   {
     "id": "word_2627",
     "fr": "commun / conjoint",
-    "en": "joint (adj, shared)",
+    "en": "joint (shared)",
     "de": "gemeinsam",
     "es": "conjunto",
     "type": "adjectif",
@@ -37214,7 +37214,7 @@ export const vocabulary = [
   {
     "id": "word_2664",
     "fr": "la charge",
-    "en": "load (noun, cargo)",
+    "en": "load (cargo)",
     "de": "die Last",
     "es": "la carga",
     "type": "nom",
@@ -37228,7 +37228,7 @@ export const vocabulary = [
   {
     "id": "word_2665",
     "fr": "charger (camion/arme)",
-    "en": "load (verb, fill)",
+    "en": "load (fill)",
     "de": "laden",
     "es": "cargar",
     "type": "verbe",
@@ -37578,7 +37578,7 @@ export const vocabulary = [
   {
     "id": "word_2690",
     "fr": "le maître / la maîtresse",
-    "en": "master (noun, expert)",
+    "en": "master (expert)",
     "de": "der Meister / die Meisterin",
     "es": "el maestro / la maestra",
     "type": "nom",
@@ -37592,7 +37592,7 @@ export const vocabulary = [
   {
     "id": "word_2691",
     "fr": "maîtriser",
-    "en": "master (verb) / to master",
+    "en": "master",
     "de": "meistern",
     "es": "dominar",
     "type": "verbe",
@@ -37620,7 +37620,7 @@ export const vocabulary = [
   {
     "id": "word_2693",
     "fr": "le compagnon / le pote",
-    "en": "mate (noun, friend)",
+    "en": "mate (friend)",
     "de": "der Kumpel",
     "es": "el compañero",
     "type": "nom",
@@ -37634,7 +37634,7 @@ export const vocabulary = [
   {
     "id": "word_2694",
     "fr": "s'accoupler",
-    "en": "mate (verb, breed)",
+    "en": "mate (breed)",
     "de": "sich paaren",
     "es": "aparearse",
     "type": "verbe",
@@ -38040,7 +38040,7 @@ export const vocabulary = [
   {
     "id": "word_2723",
     "fr": "le moniteur / l'écran",
-    "en": "monitor (noun, screen)",
+    "en": "monitor (screen)",
     "de": "der Monitor",
     "es": "el monitor",
     "type": "nom",
@@ -38054,7 +38054,7 @@ export const vocabulary = [
   {
     "id": "word_2724",
     "fr": "surveiller",
-    "en": "monitor (verb, watch)",
+    "en": "monitor (watch)",
     "de": "überwachen",
     "es": "monitorear",
     "type": "verbe",
@@ -38670,7 +38670,7 @@ export const vocabulary = [
   {
     "id": "word_2768",
     "fr": "l'objet",
-    "en": "object (noun, thing)",
+    "en": "object (thing)",
     "de": "das Objekt",
     "es": "el objeto",
     "type": "nom",
@@ -38684,7 +38684,7 @@ export const vocabulary = [
   {
     "id": "word_2769",
     "fr": "objecter / s'opposer",
-    "en": "object (verb, oppose)",
+    "en": "object (oppose)",
     "de": "widersprechen",
     "es": "objetar",
     "type": "verbe",
@@ -39202,7 +39202,7 @@ export const vocabulary = [
   {
     "id": "word_2806",
     "fr": "le plan",
-    "en": "outline (noun, plan)",
+    "en": "outline (plan)",
     "de": "die Gliederung",
     "es": "el esquema",
     "type": "nom",
@@ -39216,7 +39216,7 @@ export const vocabulary = [
   {
     "id": "word_2807",
     "fr": "esquisser",
-    "en": "outline (verb, sketch)",
+    "en": "outline (sketch)",
     "de": "skizzieren",
     "es": "esbozar",
     "type": "verbe",
@@ -39356,7 +39356,7 @@ export const vocabulary = [
   {
     "id": "word_2817",
     "fr": "le rythme / l'allure",
-    "en": "pace (noun, speed)",
+    "en": "pace (speed)",
     "de": "das Tempo",
     "es": "el ritmo",
     "type": "nom",
@@ -39370,7 +39370,7 @@ export const vocabulary = [
   {
     "id": "word_2818",
     "fr": "faire les cent pas",
-    "en": "pace (verb, walk back and forth)",
+    "en": "pace (walk back and forth)",
     "de": "auf und ab gehen",
     "es": "caminar de un lado a otro",
     "type": "verbe",
@@ -39426,7 +39426,7 @@ export const vocabulary = [
   {
     "id": "word_2822",
     "fr": "la panique",
-    "en": "panic (noun, terror)",
+    "en": "panic (terror)",
     "de": "die Panik",
     "es": "el pánico",
     "type": "nom",
@@ -39440,7 +39440,7 @@ export const vocabulary = [
   {
     "id": "word_2823",
     "fr": "paniquer",
-    "en": "panic (verb) / to panic",
+    "en": "panic",
     "de": "in Panik geraten",
     "es": "entrar en pánico",
     "type": "verbe",
@@ -39636,7 +39636,7 @@ export const vocabulary = [
   {
     "id": "word_2837",
     "fr": "la pause",
-    "en": "pause (noun, break)",
+    "en": "pause (break)",
     "de": "die Pause",
     "es": "la pausa",
     "type": "nom",
@@ -39650,7 +39650,7 @@ export const vocabulary = [
   {
     "id": "word_2838",
     "fr": "faire une pause",
-    "en": "pause (verb) / to pause",
+    "en": "pause",
     "de": "pausieren",
     "es": "hacer una pausa",
     "type": "verbe",
@@ -39762,7 +39762,7 @@ export const vocabulary = [
   {
     "id": "word_2846",
     "fr": "le permis",
-    "en": "permit (noun, license)",
+    "en": "permit (license)",
     "de": "die Genehmigung",
     "es": "el permiso",
     "type": "nom",
@@ -39776,7 +39776,7 @@ export const vocabulary = [
   {
     "id": "word_2847",
     "fr": "permettre",
-    "en": "permit (verb, allow)",
+    "en": "permit (allow)",
     "de": "erlauben",
     "es": "permitir",
     "type": "verbe",
@@ -39874,7 +39874,7 @@ export const vocabulary = [
   {
     "id": "word_2854",
     "fr": "le tas / la pile",
-    "en": "pile (noun, heap)",
+    "en": "pile (heap)",
     "de": "der Stapel",
     "es": "la pila",
     "type": "nom",
@@ -39888,7 +39888,7 @@ export const vocabulary = [
   {
     "id": "word_2855",
     "fr": "empiler",
-    "en": "pile (verb, stack)",
+    "en": "pile (stack)",
     "de": "stapeln",
     "es": "apilar",
     "type": "verbe",
@@ -40014,7 +40014,7 @@ export const vocabulary = [
   {
     "id": "word_2864",
     "fr": "la pose",
-    "en": "pose (noun, posture)",
+    "en": "pose (posture)",
     "de": "die Pose",
     "es": "la pose",
     "type": "nom",
@@ -40028,7 +40028,7 @@ export const vocabulary = [
   {
     "id": "word_2865",
     "fr": "poser (pour photo) / constituer",
-    "en": "pose (verb, present)",
+    "en": "pose (present)",
     "de": "posieren / darstellen",
     "es": "posar / representar",
     "type": "verbe",
@@ -40070,7 +40070,7 @@ export const vocabulary = [
   {
     "id": "word_2868",
     "fr": "le potentiel",
-    "en": "potential (noun, capability)",
+    "en": "potential (capability)",
     "de": "das Potenzial",
     "es": "el potencial",
     "type": "nom",
@@ -40084,7 +40084,7 @@ export const vocabulary = [
   {
     "id": "word_2869",
     "fr": "potentiel",
-    "en": "potential (adj, possible)",
+    "en": "potential (possible)",
     "de": "potenziell",
     "es": "potencial",
     "type": "adjectif",
@@ -40770,7 +40770,7 @@ export const vocabulary = [
   {
     "id": "word_2918",
     "fr": "l'achat",
-    "en": "purchase (noun, buy)",
+    "en": "purchase (buy)",
     "de": "der Kauf",
     "es": "la compra",
     "type": "nom",
@@ -40784,7 +40784,7 @@ export const vocabulary = [
   {
     "id": "word_2919",
     "fr": "acheter",
-    "en": "purchase (verb, buy)",
+    "en": "purchase (buy)",
     "de": "kaufen",
     "es": "comprar",
     "type": "verbe",
@@ -40994,7 +40994,7 @@ export const vocabulary = [
   {
     "id": "word_2934",
     "fr": "le rang",
-    "en": "rank (noun, status)",
+    "en": "rank (status)",
     "de": "der Rang",
     "es": "el rango",
     "type": "nom",
@@ -41008,7 +41008,7 @@ export const vocabulary = [
   {
     "id": "word_2935",
     "fr": "classer",
-    "en": "rank (verb, classify)",
+    "en": "rank (classify)",
     "de": "einstufen",
     "es": "clasificar",
     "type": "verbe",
@@ -41470,7 +41470,7 @@ export const vocabulary = [
   {
     "id": "word_2968",
     "fr": "la remarque",
-    "en": "remark (noun, comment)",
+    "en": "remark (comment)",
     "de": "die Bemerkung",
     "es": "el comentario",
     "type": "nom",
@@ -41484,7 +41484,7 @@ export const vocabulary = [
   {
     "id": "word_2969",
     "fr": "remarquer",
-    "en": "remark (verb, note)",
+    "en": "remark (note)",
     "de": "bemerken",
     "es": "comentar",
     "type": "verbe",
@@ -41540,7 +41540,7 @@ export const vocabulary = [
   {
     "id": "word_2973",
     "fr": "le représentant / la représentante",
-    "en": "representative (noun, delegate)",
+    "en": "representative (delegate)",
     "de": "der Vertreter / die Vertreterin",
     "es": "el representante",
     "type": "nom",
@@ -41554,7 +41554,7 @@ export const vocabulary = [
   {
     "id": "word_2974",
     "fr": "représentatif",
-    "en": "representative (adj)",
+    "en": "representative",
     "de": "repräsentativ",
     "es": "representativo",
     "type": "adjectif",
@@ -41610,7 +41610,7 @@ export const vocabulary = [
   {
     "id": "word_2978",
     "fr": "la recherche (étude)",
-    "en": "research (noun, study)",
+    "en": "research (study)",
     "de": "die Forschung",
     "es": "la investigación",
     "type": "nom",
@@ -41624,7 +41624,7 @@ export const vocabulary = [
   {
     "id": "word_2979",
     "fr": "faire des recherches",
-    "en": "research (verb, investigate)",
+    "en": "research (investigate)",
     "de": "forschen",
     "es": "investigar",
     "type": "verbe",
@@ -41890,7 +41890,7 @@ export const vocabulary = [
   {
     "id": "word_2998",
     "fr": "la récompense",
-    "en": "reward (noun, prize)",
+    "en": "reward (prize)",
     "de": "die Belohnung",
     "es": "la recompensa",
     "type": "nom",
@@ -41904,7 +41904,7 @@ export const vocabulary = [
   {
     "id": "word_2999",
     "fr": "récompenser",
-    "en": "reward (verb, compensate)",
+    "en": "reward (compensate)",
     "de": "belohnen",
     "es": "recompensar",
     "type": "verbe",
@@ -43332,7 +43332,7 @@ export const vocabulary = [
   {
     "id": "word_3101",
     "fr": "le sponsor / le parrain",
-    "en": "sponsor (noun, patron)",
+    "en": "sponsor (patron)",
     "de": "der Sponsor / die Sponsorin",
     "es": "el patrocinador / la patrocinadora",
     "type": "nom",
@@ -43346,7 +43346,7 @@ export const vocabulary = [
   {
     "id": "word_3102",
     "fr": "sponsoriser",
-    "en": "sponsor (verb, fund)",
+    "en": "sponsor (fund)",
     "de": "sponsern",
     "es": "patrocinar",
     "type": "verbe",
@@ -43668,7 +43668,7 @@ export const vocabulary = [
   {
     "id": "word_3125",
     "fr": "la grève",
-    "en": "strike (noun, walkout)",
+    "en": "strike (walkout)",
     "de": "der Streik",
     "es": "la huelga",
     "type": "nom",
@@ -43682,7 +43682,7 @@ export const vocabulary = [
   {
     "id": "word_3126",
     "fr": "frapper",
-    "en": "strike (verb, hit)",
+    "en": "strike (hit)",
     "de": "schlagen",
     "es": "golpear",
     "type": "verbe",
@@ -43948,7 +43948,7 @@ export const vocabulary = [
   {
     "id": "word_3145",
     "fr": "le suspect / la suspecte",
-    "en": "suspect (noun, accused)",
+    "en": "suspect (accused)",
     "de": "der Verdächtige / die Verdächtige",
     "es": "el sospechoso / la sospechosa",
     "type": "nom",
@@ -43962,7 +43962,7 @@ export const vocabulary = [
   {
     "id": "word_3146",
     "fr": "suspecter / se douter",
-    "en": "suspect (verb, doubt)",
+    "en": "suspect (doubt)",
     "de": "verdächtigen",
     "es": "sospechar",
     "type": "verbe",
@@ -45809,10 +45809,10 @@ export const vocabulary = [
   },
   {
     "id": "word_3278",
-    "fr": "pouvoir",
-    "en": "EN: can (ability)<br>FR: pouvoir (capacité)",
+    "fr": "pouvoir (capacité)",
+    "en": "can (ability)",
     "de": "können",
-    "es": "poder",
+    "es": "poder (capacidad)",
     "type": "verbe",
     "level": "A1",
     "level_step": 1,
@@ -46677,8 +46677,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3341",
-    "fr": "la date",
-    "en": "EN: date (calendar)<br>FR: la date (calendrier)",
+    "fr": "la date (calendrier)",
+    "en": "date (calendar)",
     "de": "das Datum",
     "es": "la fecha",
     "type": "nom",
@@ -48105,8 +48105,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3444",
-    "fr": "voler (air, ailes)",
-    "en": "EN: fly (in the air)<br>FR: voler (dans les airs)",
+    "fr": "voler (air, ciel)",
+    "en": "fly (air)",
     "de": "fliegen",
     "es": "volar",
     "type": "verbe",
@@ -48273,8 +48273,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3456",
-    "fr": "libre (disponible, non occupé)",
-    "en": "EN: free (available)<br>FR: libre (disponible)",
+    "fr": "libre (disponible)",
+    "en": "free (available)",
     "de": "frei",
     "es": "libre",
     "type": "adjectif",
@@ -48512,7 +48512,7 @@ export const vocabulary = [
   {
     "id": "word_3473",
     "fr": "donner",
-    "en": "EN: glasses (spectacles)<br>FR: les lunettes",
+    "en": "give",
     "de": "geben",
     "es": "dar",
     "type": "verbe",
@@ -48805,8 +48805,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3494",
-    "fr": "dur / dure / difficile",
-    "en": "EN: hard (solid)<br>FR: dur / dure (matière, solide)",
+    "fr": "dur / dure (matière, solide)",
+    "en": "hard (solid)",
     "de": "hart",
     "es": "duro / dura",
     "type": "adjectif",
@@ -49030,7 +49030,7 @@ export const vocabulary = [
   {
     "id": "word_3510",
     "fr": "haut / haute / élevé / élevée",
-    "en": "EN: high<br>Corriger l'exemple en : The mountain is very high.",
+    "en": "high",
     "de": "hoch",
     "es": "alto / alta / elevado / elevada",
     "type": "adjectif",
@@ -49883,9 +49883,9 @@ export const vocabulary = [
   },
   {
     "id": "word_3571",
-    "fr": "la gauche",
-    "en": "EN: left (direction)<br>FR: la gauche (direction)",
-    "de": "die Linke / die linke Seite.",
+    "fr": "la gauche (direction)",
+    "en": "left (direction)",
+    "de": "die Linke / links",
     "es": "la izquierda",
     "type": "nom",
     "level": "A1",
@@ -49939,10 +49939,10 @@ export const vocabulary = [
   },
   {
     "id": "word_3575",
-    "fr": "la lettre (courrier, alphabet)",
-    "en": "EN: letter (mail)<br>FR: la lettre (courrier)<br>DE: der Brief<br>ES: la carta",
-    "de": "der Brief / der Buchstabe",
-    "es": "la carta (correspondencia) / la letra (alfabeto)",
+    "fr": "la lettre (courrier)",
+    "en": "letter (mail)",
+    "de": "der Brief",
+    "es": "la carta",
     "type": "nom",
     "level": "A1",
     "level_step": 1,
@@ -50388,7 +50388,7 @@ export const vocabulary = [
   {
     "id": "word_3607",
     "fr": "mai",
-    "en": "EN: May (month)<br>FR: mai",
+    "en": "May (month)",
     "de": "der Mai",
     "es": "mayo",
     "type": "nom",
@@ -51241,8 +51241,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3669",
-    "fr": "la note (message, mémo)",
-    "en": "EN: note (message)<br>FR: la note / le mot (message écrit)",
+    "fr": "la note / le mot (message)",
+    "en": "note (message)",
     "de": "die Notiz",
     "es": "la nota",
     "type": "nom",
@@ -51563,8 +51563,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3692",
-    "fr": "l'orange",
-    "en": "EN: orange (fruit)<br>FR: l'orange (fruit)",
+    "fr": "l'orange (fruit)",
+    "en": "orange (fruit)",
     "de": "die Orange",
     "es": "la naranja",
     "type": "nom",
@@ -51731,8 +51731,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3704",
-    "fr": "le papier",
-    "en": "EN: paper (material)<br>FR: le papier (matière)",
+    "fr": "le papier (matière)",
+    "en": "paper (material)",
     "de": "das Papier",
     "es": "el papel",
     "type": "nom",
@@ -51759,8 +51759,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3706",
-    "fr": "le parc",
-    "en": "EN: park (garden)<br>FR: le parc (jardin public)",
+    "fr": "le parc (jardin)",
+    "en": "park (garden)",
     "de": "der Park",
     "es": "el parque",
     "type": "nom",
@@ -51787,9 +51787,9 @@ export const vocabulary = [
   },
   {
     "id": "word_3708",
-    "fr": "la fête",
-    "en": "EN: party (celebration)<br>FR: la fête (soirée, célébration)",
-    "de": "die Party / das Fest",
+    "fr": "la fête (célébration)",
+    "en": "party (celebration)",
+    "de": "die Feier / die Party",
     "es": "la fiesta",
     "type": "nom",
     "level": "A1",
@@ -52053,8 +52053,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3728",
-    "fr": "la plante",
-    "en": "EN: plant (botany)<br>FR: la plante (végétal)",
+    "fr": "la plante (végétal)",
+    "en": "plant (botany)",
     "de": "die Pflanze",
     "es": "la planta",
     "type": "nom",
@@ -52726,8 +52726,8 @@ export const vocabulary = [
   {
     "id": "word_3776",
     "fr": "la droite (direction)",
-    "en": "EN: right (direction)<br>FR: la droite (direction)",
-    "de": "die Rechte / die rechte Seite (ou requalifier la carte en adverbe \r\nechts).",
+    "en": "right (direction)",
+    "de": "die Rechte / rechts",
     "es": "la derecha",
     "type": "nom",
     "level": "A1",
@@ -52991,9 +52991,9 @@ export const vocabulary = [
   },
   {
     "id": "word_3795",
-    "fr": "deuxième",
-    "en": "EN: second (2nd)<br>FR: deuxième / second / seconde",
-    "de": "zweite / zweiter",
+    "fr": "deuxième / second / seconde",
+    "en": "second (2nd)",
+    "de": "zweiter / zweite / zweites",
     "es": "segundo / segunda",
     "type": "num",
     "level": "A1",
@@ -53006,7 +53006,7 @@ export const vocabulary = [
   {
     "id": "word_3796",
     "fr": "la seconde (temps)",
-    "en": "EN: second (time)<br>FR: la seconde (temps)",
+    "en": "second (time)",
     "de": "die Sekunde",
     "es": "el segundo",
     "type": "nom",
@@ -53677,10 +53677,10 @@ export const vocabulary = [
   },
   {
     "id": "word_3846",
-    "fr": "le son / le bruit",
-    "en": "EN: sound<br>FR: le son<br>DE: der Klang / der Ton<br>ES: el sonido",
-    "de": "der Klang / das Geräusch",
-    "es": "el sonido / el ruido",
+    "fr": "le son",
+    "en": "sound",
+    "de": "der Klang / der Ton",
+    "es": "el sonido",
     "type": "nom",
     "level": "A1",
     "level_step": 2,
@@ -53720,9 +53720,9 @@ export const vocabulary = [
   {
     "id": "word_3849",
     "fr": "l'espace / la place",
-    "en": "EN: space / room (place)<br>FR: l'espace / la place",
+    "en": "space / room",
     "de": "der Raum / der Platz",
-    "es": "el espacio / el sitio",
+    "es": "el espacio / el lugar",
     "type": "nom",
     "level": "A1",
     "level_step": 1,
@@ -53817,8 +53817,8 @@ export const vocabulary = [
   },
   {
     "id": "word_3856",
-    "fr": "le printemps",
-    "en": "EN: spring (season)<br>FR: le printemps (saison)",
+    "fr": "le printemps (saison)",
+    "en": "spring (season)",
     "de": "der Frühling",
     "es": "la primavera",
     "type": "nom",
@@ -54686,9 +54686,9 @@ export const vocabulary = [
   {
     "id": "word_3918",
     "fr": "le temps / l'heure",
-    "en": "EN: time (duration, clock)<br>FR: le temps / l'heure",
+    "en": "time (clock, duration)",
     "de": "die Zeit",
-    "es": "el tiempo (duración, hora) / la hora",
+    "es": "el tiempo / la hora",
     "type": "nom",
     "level": "A1",
     "level_step": 1,
@@ -55497,10 +55497,10 @@ export const vocabulary = [
   },
   {
     "id": "word_3976",
-    "fr": "la montre",
-    "en": "EN: watch (clock) ou watch<br>FR: la montre (horlogerie)",
-    "de": "die Uhr / die Armbanduhr",
-    "es": "el reloj / el reloj de pulsera",
+    "fr": "la montre (horlogerie)",
+    "en": "watch (clock)",
+    "de": "die Armbanduhr / die Uhr",
+    "es": "el reloj",
     "type": "nom",
     "level": "A1",
     "level_step": 1,
@@ -55511,10 +55511,10 @@ export const vocabulary = [
   },
   {
     "id": "word_3977",
-    "fr": "regarder (télévision, écran)",
-    "en": "EN: watch (screen, TV)<br>FR: regarder (télévision, écran)",
-    "de": "schauen / fernsehen",
-    "es": "mirar / ver",
+    "fr": "regarder (écran, TV)",
+    "en": "watch (screen, TV)",
+    "de": "schauen / ansehen",
+    "es": "ver / mirar",
     "type": "verbe",
     "level": "A1",
     "level_step": 1,
@@ -71492,10 +71492,10 @@ export const vocabulary = [
     "type": "verbe",
     "level": "C1",
     "level_step": null,
-    "ex_fr": "Le laboratoire cherche à *utiliser* des algorithmes d'intelligence artificielle pour accélérer le criblage de molécules thérapeutiques.",
-    "ex_en": "The laboratory seeks to *utilise* artificial intelligence algorithms to accelerate the screening of therapeutic compounds.",
-    "ex_de": "Das Labor versucht, Algorithmen der künstlichen Intelligenz zu *nutzen*, um das Screening therapeutischer Moleküle zu beschleunigen.",
-    "ex_es": "El laboratorio busca *utilizar* algoritmos de inteligencia artificial para acelerar el cribado de moléculas terapéuticas."
+    "ex_fr": "Le comité a décidé d'*utiliser* ces ressources pour soutenir l'innovation.",
+    "ex_en": "The committee decided to *utilise* these resources to support innovation.",
+    "ex_de": "Der Ausschuss beschloss, diese Ressourcen zu *nutzen*, um Innovationen zu unterstützen.",
+    "ex_es": "El comité decidió *utilizar* estos recursos para apoyar la innovación."
   },
   {
     "id": "word_5120",
@@ -111596,7 +111596,7 @@ export const vocabulary = [
   {
     "id": "word_8845",
     "fr": "l'attrait / le charme",
-    "en": "appeal (noun, charm) / attraction",
+    "en": "appeal (charm) / attraction",
     "de": "der Reiz / die Anziehungskraft",
     "es": "el atractivo / el encanto",
     "type": "nom",

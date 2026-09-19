@@ -1,7 +1,7 @@
-import { vocabulary } from './data/vocabulary.js?v=215';
-import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize, startDirectContextDrill } from './drill.js?v=220';
+import { vocabulary } from './data/vocabulary.js?v=237';
+import { initDrillSession, handleDrillKeydown, getActivePoolMaxSize, startDirectContextDrill } from './drill.js?v=237';
 import { loadProgress, setWordStatus, getWordStatus, getWordStats, resetPairProgress, saveUserProfile, getOrGenerateCertificateId, getLastViewedProgress, saveLastViewedProgress } from './storage.js';
-import { translations } from './i18n.js?v=220';
+import { translations } from './i18n.js?v=237';
 import { authenticateUser, loginUser, signUpUser, resetPassword, getCurrentUser, updateAuthUI } from './auth.js';
 import { CEFR_CONFIG, calculateCefrPoints, getPointsBreakdownByLevel, getCefrLevelFromPoints, getCefrProgressDetails } from './config/cefr.js';
 import { APP_CONFIG, getCertNameLockDays, fetchAppConfigFromCloud, getProgressionMilestoneStep } from './config/app-config.js';
